@@ -10,5 +10,3 @@ description: >-
 The Monitor page is currently under development
 {% endhint %}
 
-
-

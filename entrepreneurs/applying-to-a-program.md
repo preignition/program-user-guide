@@ -1,4 +1,0 @@
-# Homepage
-
-content under development
-

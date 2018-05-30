@@ -6,24 +6,24 @@ description: >-
 
 # Resources
 
-### Step 1- Accessing the resources page
+## Step 1- Accessing the resources page
 
 * The resources page is accessed via the [portfolio page](https://docs.preignition.org/~/edit/primary/program-users/introduction-to-the-portfolio-page)
 * The name of the active program is clearly indicated
 
-![](../../../.gitbook/assets/image%20%2816%29.png)
+![](../../../.gitbook/assets/image-16.png)
 
-### Step 2- Overview of the resources page
+## Step 2- Overview of the resources page
 
 * Clicking on the ‘resources’ icon takes you though to the following screen
 
-![](../../../.gitbook/assets/image%20%2838%29.png)
+![](../../../.gitbook/assets/image-38.png)
 
-### Step 3- Resources explained
+## Step 3- Resources explained
 
-![](../../../.gitbook/assets/image%20%2852%29.png)
+![](../../../.gitbook/assets/image-52.png)
 
-### Step 4- Detailed guidance notes for resources
+## Step 4- Detailed guidance notes for resources
 
 * Detailed guidance notes are provided for each type of resource
 * [Testing and editing surveys](https://docs.preignition.org/~/edit/primary/advanced-users/testing-and-editing-surveys)
