@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 
-## USERS \(PROGRAM AND ADVANCED\)
+## USER GUIDE
 
 * [Portfolio](users-program-and-advanced/portfolio/README.md)
   * [Selection](users-program-and-advanced/portfolio/selection/README.md)
