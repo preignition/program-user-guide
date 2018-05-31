@@ -8,7 +8,7 @@ description: >-
 
 ## Step 1- Accessing the selection page
 
-* The selection page is accessed via the [portfolio page](https://docs.preignition.org/~/edit/primary/program-users/introduction-to-the-portfolio-page)
+* The selection page is accessed via the [portfolio page](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio)
 * The name of the active program is clearly indicated, as well as recent activity on the selection process
 
 ![Showing the portfolio page for a &apos;Test Program&apos;](../../../.gitbook/assets/image-25.png)
@@ -29,7 +29,7 @@ description: >-
 ![](../../../.gitbook/assets/image-21.png)
 
 {% hint style="info" %}
-Programs are able to define their own selection process so it may have more or less stages than shown above. Refer to '[Creating or editing a selection process](https://docs.preignition.org/~/edit/primary/creating-or-editing-a-selection-process)' for further guidance
+Programs are able to define their own selection process so it may have more or less stages than shown above. Refer to '[Creating or editing a selection process](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/resources/selection-process)' for further guidance
 {% endhint %}
 
 ## Step 4- Using the selection dashboard to filter businesses
