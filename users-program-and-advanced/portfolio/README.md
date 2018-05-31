@@ -62,7 +62,7 @@ Refer to the [Businesses](https://program-user-docs.preignition.org/~/edit/prima
 * This section allows users to set up and manage key resources for a program such as surveys, work flows, notifications etc
 
 {% hint style="info" %}
-Refer to the [Resources](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio) page for more details
+Refer to the [Resources](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/resources) page for more details
 {% endhint %}
 
 ## Step 7- Settings
@@ -72,6 +72,6 @@ Refer to the [Resources](https://program-user-docs.preignition.org/~/edit/primar
 * This section allows users to define and edit key settings for a program such as language, currency, user rights etc.
 
 {% hint style="info" %}
-Refer to the [Settings](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio) page for more details
+Refer to the [Settings](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings) page for more details
 {% endhint %}
 
