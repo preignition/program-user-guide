@@ -31,7 +31,7 @@ description: >-
 * The graph shows the number of businesses that have applied to the program in the last month
 
 {% hint style="info" %}
-Refer to the [Selection](https://program-user-docs.preignition.org/users-program-and-advanced/portfolio) page for more details
+Refer to the [Selection](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings) page for more details
 {% endhint %}
 
 ## Step 4- Monitor
