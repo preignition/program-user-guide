@@ -8,7 +8,7 @@ description: >-
 
 ## Step 1- Accessing the settings page
 
-* The settings page is accessed via the [portfolio page](https://docs.preignition.org/~/edit/primary/program-users/introduction-to-the-portfolio-page)
+* The settings page is accessed via the [portfolio page](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio)
 * The name of the active program is clearly indicated
 
 ![](../../../.gitbook/assets/image-29.png)
@@ -25,12 +25,13 @@ description: >-
 
 ## Step 4- Detailed guidance notes for settings
 
-* Detailed guidance notes are provided for each type of setting
-* Profile
-* Presentation
-* My profile
-* Members
+Detailed guidance notes are available for each type of setting.
+
+* [Profile](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings/profile)
+* [Presentation](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings/presentation)
+* [My profile](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings/my-profile)
+* [Members](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings/members)
 * Labels- Not yet implemented
-* Communication
-* Batches
+* [Communication](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings/communication)
+* [Batches](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings/batches)
 
