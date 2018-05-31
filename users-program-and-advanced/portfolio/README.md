@@ -31,7 +31,7 @@ description: >-
 * The graph shows the number of businesses that have applied to the program in the last month
 
 {% hint style="info" %}
-Refer to the [Selection](https://docs.preignition.org/~/edit/primary/program-users/introduction-to-the-portfolio-page/introduction-to-the-selection-page) page for more details
+Refer to the [Selection](https://program-user-docs.preignition.org/users-program-and-advanced/portfolio) page for more details
 {% endhint %}
 
 ## Step 4- Monitor
@@ -41,7 +41,7 @@ Refer to the [Selection](https://docs.preignition.org/~/edit/primary/program-use
 * This section enables a user to monitor recent activity on the program and monitor the performance of the app
 
 {% hint style="warning" %}
-Refer to the [Monitor](https://docs.preignition.org/~/edit/primary/program-users/introduction-to-the-portfolio-page/introduction-to-monitor-page) page for more details. This feature is under development
+Refer to the [Monitor](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio) page for more details. This feature is under development
 {% endhint %}
 
 ## Step 5- Businesses
@@ -52,7 +52,7 @@ Refer to the [Monitor](https://docs.preignition.org/~/edit/primary/program-users
 * Users are also able to access detailed information on an individual business
 
 {% hint style="warning" %}
-Refer to the [Businesses](https://docs.preignition.org/~/edit/primary/program-users/introduction-to-the-portfolio-page/businesses) page for more details. This feature is under development
+Refer to the [Businesses](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio) page for more details. This feature is under development
 {% endhint %}
 
 ## Step 6- Resources
@@ -62,7 +62,7 @@ Refer to the [Businesses](https://docs.preignition.org/~/edit/primary/program-us
 * This section allows users to set up and manage key resources for a program such as surveys, work flows, notifications etc
 
 {% hint style="info" %}
-Refer to the[ Resources](https://docs.preignition.org/~/edit/primary/program-users/introduction-to-the-portfolio-page/introduction-to-resources-page) page for more details
+Refer to the [Resources](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio) page for more details
 {% endhint %}
 
 ## Step 7- Settings
@@ -72,6 +72,6 @@ Refer to the[ Resources](https://docs.preignition.org/~/edit/primary/program-use
 * This section allows users to define and edit key settings for a program such as language, currency, user rights etc.
 
 {% hint style="info" %}
-Refer to the [Settings](https://docs.preignition.org/~/edit/primary/program-users/introduction-to-the-portfolio-page/settings) page for more details
+Refer to the [Settings](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio) page for more details
 {% endhint %}
 
