@@ -8,7 +8,7 @@ description: >-
 
 ## Step 1- Accessing the resources page
 
-* The resources page is accessed via the [portfolio page](https://docs.preignition.org/~/edit/primary/program-users/introduction-to-the-portfolio-page)
+* The resources page is accessed via the [portfolio](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio) page
 * The name of the active program is clearly indicated
 
 ![](../../../.gitbook/assets/image-16.png)
@@ -25,9 +25,11 @@ description: >-
 
 ## Step 4- Detailed guidance notes for resources
 
-* Detailed guidance notes are provided for each type of resource
-* [Testing and editing surveys](https://docs.preignition.org/~/edit/primary/advanced-users/testing-and-editing-surveys)
-* [Creating and editing a selection process](https://docs.preignition.org/~/edit/primary/advanced-users/creating-or-editing-a-selection-process)
-* [Creating and editing categories](https://docs.preignition.org/~/edit/primary/advanced-users/batches/categories)
-* Creating and editing [notifications](https://docs.preignition.org/~/edit/primary/program-users/introduction-to-resources-page/notifications)
+Detailed guidance notes are available for each type of resource.
+
+* [Surveys](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/resources/surveys)
+* [Survey Part](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/resources/survey-part)
+* [Selection process](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/resources/selection-process)
+* [Categories](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/resources/categories)
+* [Notifications](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/resources/notifications)
 
