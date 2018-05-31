@@ -20,6 +20,8 @@ Examples of reports include:
 * Bench marking reports showing how a business or group of businesses compares to a wider group.
 
 {% hint style="warning" %}
-The Business page is under development and is currently not accessible from www.preignition.org. We will be working closely with accelerator programs and impact investors to understand their reporting requirements
+The Business page is under development and is currently not accessible from [www.preignition.org](https://preignition.org/main/home). We will be working closely with accelerator programs and impact investors to understand their reporting requirements
 {% endhint %}
+
+
 
