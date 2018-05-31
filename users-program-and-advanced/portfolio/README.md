@@ -41,7 +41,7 @@ Refer to the [Selection](https://program-user-docs.preignition.org/~/edit/primar
 * This section enables a user to monitor recent activity on the program and monitor the performance of the app
 
 {% hint style="warning" %}
-Refer to the [Monitor](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio) page for more details. This feature is under development
+Refer to the [Monitor](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/monitor) page for more details. This feature is under development
 {% endhint %}
 
 ## Step 5- Businesses
