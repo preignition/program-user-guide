@@ -31,4 +31,5 @@
 
 * [Production site v Test Site](users-faq/production-site-v-test-site.md)
 * [Changing active portfolio](users-faq/changing-active-portfolio.md)
+* [How to test a survey](users-faq/how-to-test-a-survey.md)
 

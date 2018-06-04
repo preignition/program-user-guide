@@ -15,7 +15,7 @@ description: >-
 * 'Portfolio’ and ‘Admin’ appear as additional options on the main menu bar
 * Select ‘Portfolio’
 
-![](../../.gitbook/assets/image.png)
+![](../../.gitbook/assets/image%20%283%29.png)
 
 ## Step 2- Overview of the portfolio page
 
