@@ -1,10 +1,10 @@
 ---
 description: >-
-  This section introduces the main features accessible on the portfolio page. It
+  This section introduces the main features accessible on the Program page. It
   is intended for Program Users and Advanced Users
 ---
 
-# Portfolio
+# Program
 
 ## Step 1- Logging on
 
@@ -12,16 +12,16 @@ description: >-
 
 ![Arrow shows where to sign in](../../.gitbook/assets/image-10.png)
 
-* 'Portfolio’ and ‘Admin’ appear as additional options on the main menu bar
-* Select ‘Portfolio’
+* 'Program’ and ‘Admin’ appear as additional options on the main menu bar
+* Select ‘Program’
 
-![](../../.gitbook/assets/image%20%283%29.png)
+![](../../.gitbook/assets/image%20%288%29.png)
 
-## Step 2- Overview of the portfolio page
+## Step 2- Overview of the Program page
 
 * Five main options appear 
 
-![Showing the portfolio page for a &apos;Test Program&apos;](../../.gitbook/assets/image-13.png)
+![](../../.gitbook/assets/image%20%287%29.png)
 
 ## Step 3- Selection
 

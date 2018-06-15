@@ -4,7 +4,7 @@
 
 ## USER GUIDE
 
-* [Portfolio](users-program-and-advanced/portfolio/README.md)
+* [Program](users-program-and-advanced/portfolio/README.md)
   * [Selection](users-program-and-advanced/portfolio/selection/README.md)
     * [Reviewing a business](users-program-and-advanced/portfolio/selection/reviewing-a-business.md)
     * [Moving a business through the selection process](users-program-and-advanced/portfolio/selection/moving-a-business-through-the-selection-process.md)
@@ -18,13 +18,13 @@
     * [Notifications](users-program-and-advanced/portfolio/resources/notifications.md)
   * [Settings](users-program-and-advanced/portfolio/settings/README.md)
     * [Profile](users-program-and-advanced/portfolio/settings/profile.md)
-    * Presentation
+    * [Presentation](users-program-and-advanced/portfolio/settings/presentation.md)
     * [My profile](users-program-and-advanced/portfolio/settings/my-profile.md)
     * [Members](users-program-and-advanced/portfolio/settings/members.md)
     * [Labels](users-program-and-advanced/portfolio/settings/labels.md)
     * [Communication](users-program-and-advanced/portfolio/settings/communication.md)
     * [Batches](users-program-and-advanced/portfolio/settings/batches.md)
-* Admin
+* [Admin](users-program-and-advanced/admin/README.md)
   * [Tenants](users-program-and-advanced/admin/tenants.md)
 
 ## FAQ
