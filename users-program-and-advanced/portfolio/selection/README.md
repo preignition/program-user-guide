@@ -8,10 +8,10 @@ description: >-
 
 ## Step 1- Accessing the selection page
 
-* The selection page is accessed via the [portfolio page](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio)
+* The selection page is accessed via the [program page](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio)
 * The name of the active program is clearly indicated, as well as recent activity on the selection process
 
-![Showing the portfolio page for a &apos;Test Program&apos;](../../../.gitbook/assets/image-25.png)
+![Showing the Program page for the &apos;test program&apos;](../../../.gitbook/assets/image%20%289%29.png)
 
 ## Step 2- Overview of the selection page
 
