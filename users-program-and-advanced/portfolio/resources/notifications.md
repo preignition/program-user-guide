@@ -55,7 +55,7 @@ The important elements of a notification template are as follows:
 
 * This section is not needed and will be removed in the future
 
-### Step 5- Updating a notification template
+### Step 4- Updating a notification template
 
 In order for changes to a notification template to take effect they must be 'published'.
 
