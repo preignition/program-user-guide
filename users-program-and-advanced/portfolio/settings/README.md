@@ -8,7 +8,7 @@ description: >-
 
 ## Step 1- Accessing the settings page
 
-* The settings page is accessed via the [portfolio page](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio)
+* The settings page is accessed via the [program page](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio)
 * The name of the active program is clearly indicated
 
 ![](../../../.gitbook/assets/image-29.png)
@@ -17,7 +17,7 @@ description: >-
 
 * Clicking on the ‘settings’ icon takes you though to the following screen
 
-![](../../../.gitbook/assets/image-4.png)
+![](../../../.gitbook/assets/image%20%2818%29.png)
 
 ## Step 3- Settings explained
 
