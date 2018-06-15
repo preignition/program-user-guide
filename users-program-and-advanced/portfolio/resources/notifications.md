@@ -40,7 +40,7 @@ The important elements of a notification template are as follows:
 ![](../../../.gitbook/assets/image%20%284%29.png)
 
 * The 'title template' is the main title given to an email or message on the bulletin board
-* The 'excerpt template' appears as the first line in a email of message on the bulletin board
+* The 'excerpt template' appears as the first line in a email or message on the bulletin board
 
 **html content template**
 
@@ -55,7 +55,7 @@ The important elements of a notification template are as follows:
 
 * This section is not needed and will be removed in the future
 
-### Step 4- Updating a notification template
+### Step 5- Updating a notification template
 
 In order for changes to a notification template to take effect they must be 'published'.
 
@@ -64,6 +64,6 @@ In order for changes to a notification template to take effect they must be 'pub
 If the publish button is in grey it means that you don't have permission to edit the notification template.
 
 {% hint style="warning" %}
-Further work is needed to make it easy for a User to edit and create notification templates and to specify when the template will be used.  
+Further work is needed to make it easy for a user to edit and create notification templates and to specify when the template will be used.  
 {% endhint %}
 
