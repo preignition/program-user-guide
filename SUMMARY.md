@@ -15,7 +15,7 @@
     * [Survey Part](users-program-and-advanced/portfolio/resources/survey-part.md)
     * [Selection process](users-program-and-advanced/portfolio/resources/selection-process.md)
     * [Categories](users-program-and-advanced/portfolio/resources/categories.md)
-    * [Notifications](users-program-and-advanced/portfolio/resources/notifications/README.md)
+    * [Notification](users-program-and-advanced/portfolio/resources/notifications/README.md)
       * [Editing notifications](users-program-and-advanced/portfolio/resources/notifications/editing-notifications.md)
   * [Settings](users-program-and-advanced/portfolio/settings/README.md)
     * [Profile](users-program-and-advanced/portfolio/settings/profile.md)
