@@ -21,7 +21,11 @@ description: >-
 
 ![](../../../.gitbook/assets/image%20%2816%29.png)
 
-### Step 3- Overview of a notification template
+### Step 3- Creating a new notification template
+
+* To create a new notification template simply click the 'create new' button
+
+### Step 4- Overview of a notification template
 
 The important elements of a notification template are as follows:
 
@@ -29,7 +33,7 @@ The important elements of a notification template are as follows:
 
 ![](../../../.gitbook/assets/image%20%2811%29.png)
 
-* These are used for internal purposes to keep track of different templates.  Neither the title of description is seen by entrepreneurs
+* These are used for internal purposes to keep track of different templates.  Neither the title or the description is seen by entrepreneurs
 
 **Title template and excerpt template** 
 
@@ -51,7 +55,7 @@ The important elements of a notification template are as follows:
 
 * This section is not needed and will be removed in the future
 
-### Step 4- Updating a notification template
+### Step 5- Updating a notification template
 
 In order for changes to a notification template to take effect they must be 'published'.
 
