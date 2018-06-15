@@ -35,6 +35,6 @@ Changes to the Presentation page are immediately reflected in the programs landi
 {% endhint %}
 
 {% hint style="info" %}
-The Presentation page currently requires a knowledge of mark down to ensure proper formatting.  Contact 
+The Presentation page currently requires a knowledge of mark down to ensure proper formatting.  Contact help@preignition.org if you need assistance 
 {% endhint %}
 
