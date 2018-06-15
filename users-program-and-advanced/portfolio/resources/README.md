@@ -8,16 +8,16 @@ description: >-
 
 ## Step 1- Accessing the resources page
 
-* The resources page is accessed via the [portfolio](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio) page
+* The resources page is accessed via the [program](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio) page
 * The name of the active program is clearly indicated
 
-![](../../../.gitbook/assets/image-16.png)
+![](../../../.gitbook/assets/image%20%286%29.png)
 
 ## Step 2- Overview of the resources page
 
 * Clicking on the ‘resources’ icon takes you though to the following screen
 
-![](../../../.gitbook/assets/image-38.png)
+![](../../../.gitbook/assets/image%20%282%29.png)
 
 ## Step 3- Resources explained
 
