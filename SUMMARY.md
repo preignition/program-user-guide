@@ -15,7 +15,8 @@
     * [Survey Part](users-program-and-advanced/portfolio/resources/survey-part.md)
     * [Selection process](users-program-and-advanced/portfolio/resources/selection-process.md)
     * [Categories](users-program-and-advanced/portfolio/resources/categories.md)
-    * [Notifications](users-program-and-advanced/portfolio/resources/notifications.md)
+    * [Notifications](users-program-and-advanced/portfolio/resources/notifications/README.md)
+      * [Editing notifications](users-program-and-advanced/portfolio/resources/notifications/editing-notifications.md)
   * [Settings](users-program-and-advanced/portfolio/settings/README.md)
     * [Profile](users-program-and-advanced/portfolio/settings/profile.md)
     * [Presentation](users-program-and-advanced/portfolio/settings/presentation.md)
@@ -32,5 +33,4 @@
 * [Production site v Test Site](users-faq/production-site-v-test-site.md)
 * [Changing active portfolio](users-faq/changing-active-portfolio.md)
 * [How to test a survey](users-faq/how-to-test-a-survey.md)
-* [Editing notifications](users-faq/editing-notifications.md)
 
