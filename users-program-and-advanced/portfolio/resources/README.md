@@ -8,7 +8,7 @@ description: >-
 
 ## Step 1- Accessing the resources page
 
-* The resources page is accessed via the [program](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio) page
+* The resources page is accessed via the [program](https://program-user-docs.preignition.org/~/edit/drafts/-LFMmRn-kR0r-yY1WvIl/users-program-and-advanced/portfolio) page
 * The name of the active program is clearly indicated
 
 ![](../../../.gitbook/assets/image%20%2821%29.png)
