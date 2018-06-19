@@ -13,7 +13,7 @@
   * [Resources](users-program-and-advanced/portfolio/resources/README.md)
     * [Survey- Beta](users-program-and-advanced/portfolio/resources/surveys/README.md)
       * [Testing an existing survey- Beta](users-program-and-advanced/portfolio/resources/surveys/editing-an-existing-survey-beta.md)
-      * [Editing an existing survey- Beta](users-program-and-advanced/portfolio/resources/surveys/editing-an-existing-survey-beta-1.md)
+      * [Editing a survey- Beta](users-program-and-advanced/portfolio/resources/surveys/editing-an-existing-survey-beta-1.md)
       * [Creating a new survey- Beta](users-program-and-advanced/portfolio/resources/surveys/creating-a-new-survey-beta.md)
     * [Survey Part](users-program-and-advanced/portfolio/resources/survey-part.md)
     * [Selection process](users-program-and-advanced/portfolio/resources/selection-process.md)

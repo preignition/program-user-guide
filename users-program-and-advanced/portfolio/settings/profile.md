@@ -12,7 +12,7 @@ The Profile page should be set up at the inception of a new program.  These dete
 
 ### Step 1- Overview of the Profile page
 
-![](../../../.gitbook/assets/image%20%2821%29.png)
+![](../../../.gitbook/assets/image%20%2823%29.png)
 
 The Profile page is where key settings for a Program are determined such as:
 
