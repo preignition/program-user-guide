@@ -23,5 +23,7 @@ description: >-
 ### Step 3-  Editing an existing survey
 
 * The feature is designed for Program Users
-* Refer to 'Editing an existing survey'
+* Refer to '[Editing an existing survey](https://program-user-docs.preignition.org/~/edit/drafts/-LFNB2hfnEiTbxGjEQcP/users-program-and-advanced/portfolio/resources/surveys/editing-an-existing-survey-beta)'
+
+
 

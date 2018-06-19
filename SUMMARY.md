@@ -13,6 +13,7 @@
   * [Resources](users-program-and-advanced/portfolio/resources/README.md)
     * [Survey- Beta](users-program-and-advanced/portfolio/resources/surveys/README.md)
       * [Creating a new survey- Beta](users-program-and-advanced/portfolio/resources/surveys/creating-a-new-survey-beta.md)
+      * [Editing an existing survey- Beta](users-program-and-advanced/portfolio/resources/surveys/editing-an-existing-survey-beta.md)
       * [How to test a survey](users-program-and-advanced/portfolio/resources/surveys/how-to-test-a-survey.md)
     * [Survey Part](users-program-and-advanced/portfolio/resources/survey-part.md)
     * [Selection process](users-program-and-advanced/portfolio/resources/selection-process.md)
@@ -33,5 +34,4 @@
 
 * [Production site v Test Site](users-faq/production-site-v-test-site.md)
 * [Changing active portfolio](users-faq/changing-active-portfolio.md)
-* [Editing an existing survey- Beta](users-faq/editing-an-existing-survey-beta.md)
 
