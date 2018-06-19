@@ -52,7 +52,7 @@ Refer to the [Monitor](https://program-user-docs.preignition.org/~/edit/drafts/-
 * Users are also able to access detailed information on an individual business
 
 {% hint style="warning" %}
-Refer to the [Businesses](https://program-user-docs.preignition.org/~/edit/drafts/-LFMZVONed2CdhnKStAa/users-program-and-advanced/portfolio/businesses) page for more details. This feature is under development
+Refer to the [Businesses](https://program-user-docs.preignition.org/~/edit/drafts/-LFMdC8NivIZ5vp84-LV/users-program-and-advanced/portfolio/businesses) page for more details. This feature is under development
 {% endhint %}
 
 ## Step 6- Resources
@@ -74,6 +74,4 @@ Refer to the [Resources](https://program-user-docs.preignition.org/~/edit/primar
 {% hint style="info" %}
 Refer to the [Settings](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings) page for more details
 {% endhint %}
-
-
 
