@@ -12,7 +12,7 @@ This section is intended for Advanced Users only.
 
 ### Step 1- Overview of the Survey process page
 
-![](../../../.gitbook/assets/image%20%2841%29.png)
+![](../../../../.gitbook/assets/image%20%2841%29.png)
 
 * From the Selection process page a user can view, edit and create selection processes
 * The person who creates the selection process will be shown as the 'owner' 
