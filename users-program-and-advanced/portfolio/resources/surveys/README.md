@@ -18,7 +18,7 @@ description: >-
 ### Step 2- Creating a new survey
 
 * This feature is designed for Advanced Users.
-* Refer to 'Creating a new Survey'
+* Refer to '[Creating a new Survey](https://program-user-docs.preignition.org/~/edit/drafts/-LFNAka1xluDRlv7QI7u/users-program-and-advanced/portfolio/resources/surveys/creating-a-new-survey-beta)'
 
 ### Step 3-  Editing an existing survey
 
