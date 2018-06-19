@@ -4,7 +4,7 @@ description: >-
   and Advanced Users
 ---
 
-# Monitor
+# Monitor- Beta
 
 {% hint style="warning" %}
 The Monitor page is currently under development
