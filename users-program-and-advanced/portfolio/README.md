@@ -31,7 +31,7 @@ description: >-
 * The graph shows the number of businesses that have applied to the program in the last month
 
 {% hint style="info" %}
-Refer to the [Selection](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings) page for more details
+Refer to the [Selection](https://program-user-docs.preignition.org/~/edit/drafts/-LFMZVONed2CdhnKStAa/users-program-and-advanced/portfolio/selection) page for more details
 {% endhint %}
 
 ## Step 4- Monitor
@@ -41,7 +41,7 @@ Refer to the [Selection](https://program-user-docs.preignition.org/~/edit/primar
 * This section enables a user to monitor recent activity on the program and monitor the performance of the app
 
 {% hint style="warning" %}
-Refer to the [Monitor](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/monitor) page for more details. This feature is under development
+Refer to the [Monitor](https://program-user-docs.preignition.org/~/edit/drafts/-LFMZVONed2CdhnKStAa/users-program-and-advanced/portfolio/monitor) page for more details. This feature is under development
 {% endhint %}
 
 ## Step 5- Businesses
@@ -52,7 +52,7 @@ Refer to the [Monitor](https://program-user-docs.preignition.org/~/edit/primary/
 * Users are also able to access detailed information on an individual business
 
 {% hint style="warning" %}
-Refer to the [Businesses](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/businesses) page for more details. This feature is under development
+Refer to the [Businesses](https://program-user-docs.preignition.org/~/edit/drafts/-LFMZVONed2CdhnKStAa/users-program-and-advanced/portfolio/businesses) page for more details. This feature is under development
 {% endhint %}
 
 ## Step 6- Resources
@@ -74,4 +74,6 @@ Refer to the [Resources](https://program-user-docs.preignition.org/~/edit/primar
 {% hint style="info" %}
 Refer to the [Settings](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings) page for more details
 {% endhint %}
+
+
 
