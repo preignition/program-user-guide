@@ -14,7 +14,6 @@
     * [Survey- Beta](users-program-and-advanced/portfolio/resources/surveys/README.md)
       * [Creating a new survey- Beta](users-program-and-advanced/portfolio/resources/surveys/creating-a-new-survey-beta.md)
       * [Testing an existing survey- Beta](users-program-and-advanced/portfolio/resources/surveys/editing-an-existing-survey-beta.md)
-      * [How to test a survey](users-program-and-advanced/portfolio/resources/surveys/how-to-test-a-survey.md)
     * [Survey Part](users-program-and-advanced/portfolio/resources/survey-part.md)
     * [Selection process](users-program-and-advanced/portfolio/resources/selection-process.md)
     * [Categories](users-program-and-advanced/portfolio/resources/categories.md)
