@@ -10,17 +10,17 @@ description: >-
 
 Each program has it's own 'landing page' on Preignition, which enables a program to present itself to entrepreneurs. 
 
-![This is an example of TBN East Africa&apos;s landing page](../../../.gitbook/assets/image%20%289%29.png)
+![This is an example of TBN East Africa&apos;s landing page](../../../.gitbook/assets/image%20%2810%29.png)
 
 ### Step 2- The Presentation page enables a program to customize their landing page
 
-![This is an example of TBN East Africa&apos;s Presentation page](../../../.gitbook/assets/image%20%2826%29.png)
+![This is an example of TBN East Africa&apos;s Presentation page](../../../.gitbook/assets/image%20%2828%29.png)
 
 ### Step 3- Link between the landing page and presentation page
 
-![](../../../.gitbook/assets/image%20%2812%29.png)
-
 ![](../../../.gitbook/assets/image%20%2813%29.png)
+
+![](../../../.gitbook/assets/image%20%2814%29.png)
 
 **Program title \(1\)-**  This is the title of the program
 

@@ -6,11 +6,11 @@ description: This page shows a user how to test a survey
 
 ### Step 1- Select 'resources' 
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../../../../.gitbook/assets/image%20%2815%29.png)
 
 ### Step 2-  Select 'survey'
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](../../../../.gitbook/assets/image%20%2832%29.png)
 
 * Select the 'Survey' option from the menu on the left hand side
 * The surveys which you have access to will appear under the heading 'Shared with me'
@@ -18,18 +18,18 @@ description: This page shows a user how to test a survey
 
 ### Step 3-  Double click on the survey you want to test
 
-![](../.gitbook/assets/image%20%2831%29.png)
+![](../../../../.gitbook/assets/image%20%2833%29.png)
 
 * This brings up the following screen.
 * Click  on the 'composition' option
 
 ### Step 4-  Select the 'test the survey' option
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../../../../.gitbook/assets/image%20%287%29.png)
 
 ### Step 5- Test the survey
 
-![](../.gitbook/assets/image%20%2822%29.png)
+![](../../../../.gitbook/assets/image%20%2823%29.png)
 
 * From here you can test the survey
 
