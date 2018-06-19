@@ -20,10 +20,10 @@ description: >-
 * This feature is designed for Advanced Users.
 * Refer to '[Creating a new Survey](https://program-user-docs.preignition.org/~/edit/drafts/-LFNAka1xluDRlv7QI7u/users-program-and-advanced/portfolio/resources/surveys/creating-a-new-survey-beta)'
 
-### Step 3-  Editing an existing survey
+### Step 3-  Testing and editing an existing survey
 
 * The feature is designed for Program Users
-* Refer to '[Editing an existing survey](https://program-user-docs.preignition.org/~/edit/drafts/-LFNB2hfnEiTbxGjEQcP/users-program-and-advanced/portfolio/resources/surveys/editing-an-existing-survey-beta)'
+* Refer to '[Testing and editing an existing survey](https://program-user-docs.preignition.org/~/edit/drafts/-LFNB2hfnEiTbxGjEQcP/users-program-and-advanced/portfolio/resources/surveys/editing-an-existing-survey-beta)'
 
 
 
