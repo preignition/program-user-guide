@@ -6,13 +6,9 @@ description: >-
 
 # Survey- Beta
 
-{% hint style="warning" %}
-The Survey page is in beta format.  For now Users will need help creating new surveys from scratch
-{% endhint %}
-
 ### Step 1- Overview of the Survey page
 
-![](../../../.gitbook/assets/image%20%2816%29.png)
+![](../../../../.gitbook/assets/image%20%2816%29.png)
 
 * From the Survey page a user can view, edit and create surveys
 * The person who creates the survey will be shown as the 'owner' 
@@ -27,5 +23,5 @@ The Survey page is in beta format.  For now Users will need help creating new su
 ### Step 3-  Editing an existing survey
 
 * The feature is designed for Program Users
-* Refer to 'Editing and existing survey'
+* Refer to 'Editing an existing survey'
 
