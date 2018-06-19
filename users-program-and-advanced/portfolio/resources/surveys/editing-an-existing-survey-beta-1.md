@@ -14,7 +14,7 @@ The Survey page is in beta format.  Users may need assistance editing a survey.
 * A cog icon will appear when you hover over a question.
 * Double clicking on the cog icon will enable a user to edit the relevant question
 
-![](../../../../.gitbook/assets/image%20%2852%29.png)
+![](../../../../.gitbook/assets/image%20%2853%29.png)
 
 ### Step 2- Editing a question
 
@@ -32,7 +32,7 @@ The Survey page is in beta format.  Users may need assistance editing a survey.
 
 * Select the 'Build' option 'create new build'
 
-![](../../../../.gitbook/assets/image%20%2848%29.png)
+![](../../../../.gitbook/assets/image%20%2849%29.png)
 
 * You will be asked to submit a 'build message' to help with versioning control and then submit the build.
 * At this point the amended survey will be deployed.
