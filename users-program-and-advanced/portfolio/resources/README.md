@@ -27,9 +27,9 @@ description: >-
 
 Detailed guidance notes are available for each type of resource.
 
-* [Surveys](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/resources/surveys)
-* [Survey Part](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/resources/survey-part)
-* [Selection process](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/resources/selection-process)
-* [Categories](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/resources/categories)
-* [Notifications](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/resources/notifications)
+* [Surveys](https://program-user-docs.preignition.org/~/edit/drafts/-LFMn01-C-D_7xApAmsF/users-program-and-advanced/portfolio/resources/surveys)
+* [Survey Part](https://program-user-docs.preignition.org/~/edit/drafts/-LFMn01-C-D_7xApAmsF/users-program-and-advanced/portfolio/resources/survey-part)
+* [Selection process](https://program-user-docs.preignition.org/~/edit/drafts/-LFMn01-C-D_7xApAmsF/users-program-and-advanced/portfolio/resources/selection-process)
+* [Categories](https://program-user-docs.preignition.org/~/edit/drafts/-LFMn01-C-D_7xApAmsF/users-program-and-advanced/portfolio/resources/categories)
+* [Notifications](https://program-user-docs.preignition.org/~/edit/drafts/-LFMn01-C-D_7xApAmsF/users-program-and-advanced/portfolio/resources/notifications)
 
