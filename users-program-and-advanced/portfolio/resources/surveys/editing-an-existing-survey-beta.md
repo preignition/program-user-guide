@@ -7,7 +7,7 @@ description: >-
 # Testing an existing survey- Beta
 
 {% hint style="warning" %}
-The survey page is in beta format.  For now users may need assistance with testing an existing survey.
+The survey page is in beta format.  Users will be able to test an existing survey but may require assistance to edit a survey.
 {% endhint %}
 
 ### Step 1- Select the survey that you would like to test
@@ -21,8 +21,8 @@ The survey page is in beta format.  For now users may need assistance with testi
 ![](../../../../.gitbook/assets/image%20%2837%29.png)
 
 * You will now be able to test the survey.
-* The survey will respond as is a entrepreneur is completing it.
-* However there is no option to 'submit' the survey as the end.
+* The survey will respond as if an entrepreneur is completing it.
+* There is no option to 'submit' the survey at the end.
 
 ![](../../../../.gitbook/assets/image%20%2827%29.png)
 
