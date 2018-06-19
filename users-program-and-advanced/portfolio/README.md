@@ -15,13 +15,13 @@ description: >-
 * 'Program’ and ‘Admin’ appear as additional options on the main menu bar
 * Select ‘Program’
 
-![](../../.gitbook/assets/image%20%2839%29.png)
+![](../../.gitbook/assets/image%20%2844%29.png)
 
 ## Step 2- Overview of the Program page
 
 * Five main options appear 
 
-![](../../.gitbook/assets/image%20%2837%29.png)
+![](../../.gitbook/assets/image%20%2841%29.png)
 
 ## Step 3- Selection
 
