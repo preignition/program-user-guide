@@ -14,7 +14,7 @@ Each program has it's own 'landing page' on Preignition, which enables a program
 
 ### Step 2- The Presentation page enables a program to customize their landing page
 
-![This is an example of TBN East Africa&apos;s Presentation page](../../../.gitbook/assets/image%20%2823%29.png)
+![This is an example of TBN East Africa&apos;s Presentation page](../../../.gitbook/assets/image%20%2824%29.png)
 
 ### Step 3- Link between the landing page and presentation page
 

@@ -11,7 +11,7 @@ description: >-
 * The selection page is accessed via the [program page](https://program-user-docs.preignition.org/~/edit/drafts/-LFMf79wbvb88HHUPzQV/users-program-and-advanced/portfolio)
 * The name of the active program is clearly indicated, as well as recent activity on the selection process
 
-![Showing the Program page for the &apos;test program&apos;](../../../.gitbook/assets/image%20%2833%29.png)
+![Showing the Program page for the &apos;test program&apos;](../../../.gitbook/assets/image%20%2834%29.png)
 
 ## Step 2- Overview of the selection page
 
@@ -35,9 +35,9 @@ Programs are able to define their own selection process so it may have more or l
 ## Step 4- Using the selection dashboard to filter businesses
 
 * The selection dashboard is interactive and can be used to filter the business list
-* In this example businesses can be filtered based on their batch, category, sector or registration type
+* In this example businesses can be filtered based on their batch, sector or registration type
 
-![](../../../.gitbook/assets/image-42.png)
+![](../../../.gitbook/assets/image%20%2822%29.png)
 
 ## Step 5- Filtering businesses based on stage of selection process
 

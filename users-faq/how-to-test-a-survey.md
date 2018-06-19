@@ -10,7 +10,7 @@ description: This page shows a user how to test a survey
 
 ### Step 2-  Select 'survey'
 
-![](../.gitbook/assets/image%20%2827%29.png)
+![](../.gitbook/assets/image%20%2828%29.png)
 
 * Select the 'Survey' option from the menu on the left hand side
 * The surveys which you have access to will appear under the heading 'Shared with me'
@@ -18,7 +18,7 @@ description: This page shows a user how to test a survey
 
 ### Step 3-  Double click on the survey you want to test
 
-![](../.gitbook/assets/image%20%2828%29.png)
+![](../.gitbook/assets/image%20%2829%29.png)
 
 * This brings up the following screen.
 * Click  on the 'composition' option
