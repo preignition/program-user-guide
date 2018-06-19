@@ -62,7 +62,7 @@ Refer to the [Businesses](https://program-user-docs.preignition.org/~/edit/draft
 * This section allows users to set up and manage key resources for a program such as surveys, work flows, notifications etc
 
 {% hint style="info" %}
-Refer to the [Resources](https://program-user-docs.preignition.org/~/edit/drafts/-LFMdc07T0abKnScvt2c/users-program-and-advanced/portfolio) page for more details
+Refer to the [Resources](https://program-user-docs.preignition.org/~/edit/drafts/-LFMeIfFL4VZClDZDQQE/users-program-and-advanced/portfolio/resources) page for more details
 {% endhint %}
 
 ## Step 7- Settings
