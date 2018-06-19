@@ -12,7 +12,7 @@ This section is intended for Advanced Users only.
 
 ### Step 1- Overview of the Survey process page
 
-![](../../../../.gitbook/assets/image%20%2841%29.png)
+![](../../../../.gitbook/assets/image%20%2842%29.png)
 
 * From the Selection process page a user can view, edit and create selection processes
 * The person who creates the selection process will be shown as the 'owner' 
@@ -22,7 +22,7 @@ This section is intended for Advanced Users only.
 ### Step 2- Creating a new selection process
 
 * This feature is designed for Advanced Users.
-* Refer to 'Creating a new selection process'
+* Refer to '[Creating a selection process](https://program-user-docs.preignition.org/~/edit/drafts/-LFNbsjdoZseaN8xDQIn/users-program-and-advanced/portfolio/resources/selection-process/creating-a-selection-process-beta)'
 
 ### Step 3-  Editing a selection process
 

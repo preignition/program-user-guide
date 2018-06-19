@@ -14,13 +14,13 @@ Each program has it's own 'landing page' on Preignition, which enables a program
 
 ### Step 2- The Presentation page enables a program to customize their landing page
 
-![This is an example of TBN East Africa&apos;s Presentation page](../../../.gitbook/assets/image%20%2835%29.png)
+![This is an example of TBN East Africa&apos;s Presentation page](../../../.gitbook/assets/image%20%2836%29.png)
 
 ### Step 3- Link between the landing page and presentation page
 
-![](../../../.gitbook/assets/image%20%2816%29.png)
+![](../../../.gitbook/assets/image%20%2817%29.png)
 
-![](../../../.gitbook/assets/image%20%2818%29.png)
+![](../../../.gitbook/assets/image%20%2819%29.png)
 
 **Program title \(1\)-**  This is the title of the program
 

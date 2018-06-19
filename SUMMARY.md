@@ -17,6 +17,7 @@
       * [Creating a new survey- Beta](users-program-and-advanced/portfolio/resources/surveys/creating-a-new-survey-beta.md)
     * [Survey Part- Beta](users-program-and-advanced/portfolio/resources/survey-part.md)
     * [Selection process-Beta](users-program-and-advanced/portfolio/resources/selection-process/README.md)
+      * [Editing a selection process- Beta](users-program-and-advanced/portfolio/resources/selection-process/editing-a-selection-process-beta.md)
       * [Creating a selection process- Beta](users-program-and-advanced/portfolio/resources/selection-process/creating-a-selection-process-beta.md)
     * [Categories](users-program-and-advanced/portfolio/resources/categories.md)
     * [Notification](users-program-and-advanced/portfolio/resources/notifications.md)

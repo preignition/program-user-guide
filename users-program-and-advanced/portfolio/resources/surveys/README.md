@@ -8,7 +8,7 @@ description: >-
 
 ### Step 1- Overview of the Survey page
 
-![](../../../../.gitbook/assets/image%20%2821%29.png)
+![](../../../../.gitbook/assets/image%20%2822%29.png)
 
 * From the Survey page a user can view, edit and create surveys
 * The person who creates the survey will be shown as the 'owner' 
