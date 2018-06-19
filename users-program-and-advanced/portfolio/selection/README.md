@@ -1,7 +1,7 @@
 ---
 description: >-
-  This section introduces users to the selection page.  It is intended for
-  Program Users and Advances Users
+  This section introduces the selection page.  It is intended for Program Users
+  and Advances Users
 ---
 
 # Selection
