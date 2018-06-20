@@ -27,7 +27,7 @@ description: >-
 
 ![Entry point for managing the selection process](../../.gitbook/assets/image-35.png)
 
-* This feature enables an user to manage the selection process for a particular program
+* This feature enables a user to manage the selection process for a particular program
 * The graph shows the number of businesses that have applied to the program in the last month
 
 {% hint style="info" %}
