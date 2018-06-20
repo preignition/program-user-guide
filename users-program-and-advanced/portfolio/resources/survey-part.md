@@ -5,6 +5,6 @@ description: This page introduced Survey Parts.  It is intended for Advanced Use
 # Survey Part- Beta
 
 {% hint style="danger" %}
-This page is intended for Advanced Users only.
+This page is outstanding.
 {% endhint %}
 

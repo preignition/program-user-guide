@@ -6,8 +6,8 @@ description: >-
 
 # Selection process-Beta
 
-{% hint style="danger" %}
-This section is intended for Advanced Users only.
+{% hint style="warning" %}
+The Selection process is in beta format.  Currently users will need help editing and creating a selection process.
 {% endhint %}
 
 ### Step 1- Overview of the Survey process page
