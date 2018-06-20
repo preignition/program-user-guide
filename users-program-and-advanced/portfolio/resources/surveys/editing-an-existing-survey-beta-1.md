@@ -20,6 +20,7 @@ The Survey page is in beta format.  Users may need assistance editing a survey.
 
 * The user interface for editing a question is under development
 * For now we suggest that users get assistance from the preignition team to edit a question.
+* Contact help@preignition.org for assistance
 
 ![](../../../../.gitbook/assets/image%20%2817%29.png)
 
@@ -30,11 +31,12 @@ The Survey page is in beta format.  Users may need assistance editing a survey.
 
 ![](../../../../.gitbook/assets/image%20%282%29.png)
 
-* Select the 'Build' option 'create new build'
+* Select the 'Build' option and click 'create new build'
 
 ![](../../../../.gitbook/assets/image%20%2852%29.png)
 
-* You will be asked to submit a 'build message' to help with versioning control and then submit the build.
+* You will be asked to submit a 'build message'
+* This helps with versioning control
 * At this point the amended survey will be deployed.
 
 ![](../../../../.gitbook/assets/image%20%2813%29.png)
