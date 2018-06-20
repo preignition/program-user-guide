@@ -64,6 +64,8 @@ In order for changes to a notification template to take effect they must be 'pub
 If the publish button is in grey it means that you don't have permission to edit the notification template.
 
 {% hint style="warning" %}
-Further work is needed to make it easy for a user to edit and create notification templates and to specify when the template will be used.  
+Further work is needed to make it easy for a user to edit and create notification templates and to specify when the template will be used.  If you need assistance please contact help@preignition.org
 {% endhint %}
+
+
 
