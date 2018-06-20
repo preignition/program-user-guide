@@ -6,6 +6,10 @@ description: >-
 
 # Testing a survey- Beta
 
+{% hint style="warning" %}
+The survey page is in beta format.  Further development is needed to improve the user experience.
+{% endhint %}
+
 ### Step 1- Select the survey that you would like to test
 
 * Select the survey, right click and select 'test'
