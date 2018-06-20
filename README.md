@@ -6,7 +6,7 @@ description: This page introduces the user guide.
 
 ### Purpose {#purpose}
 
-To provide users with clear instructions for Preignition.
+To provide users with clear instructions for using Preignition.
 
 ### Audience {#audience}
 
@@ -18,7 +18,7 @@ There are 2 separate audiences for this user guide.
 
 ### Structure {#structure}
 
-The user guide reflects the structure of the Preignition website.  There is a section of the User Guide for each section of the site.  
+The user guide reflects the structure of the Preignition platform.  There is a section of the User Guide for each section of the application.  
 
 {% hint style="warning" %}
 Some sections of the User Guide are only relevant to Advanced Users.  These sections are clearly indicated.
@@ -26,5 +26,5 @@ Some sections of the User Guide are only relevant to Advanced Users.  These sect
 
 There is a Frequently Asked Questions section at the end of the User Guide.
 
-Please contact info@preignition.org if these instructions are not clear or if you still have questions
+Please contact help@preignition.org if these instructions are not clear or if you still have questions
 
