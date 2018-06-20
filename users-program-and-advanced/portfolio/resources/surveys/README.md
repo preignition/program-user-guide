@@ -22,7 +22,7 @@ The Survey page is in Beta format.  It will be developed to make it easier to us
 ### Step 2- Testing a survey
 
 * This feature is designed for Program Users.
-* Refer to '[Testing a survey](https://program-user-docs.preignition.org/~/edit/drafts/-LFRkRW8iOUegS8qTKiM/users-program-and-advanced/portfolio/resources/surveys/editing-an-existing-survey-beta) '
+* Refer to '[Testing a survey](https://program-user-docs.preignition.org/~/edit/drafts/-LFSMEz9oM0G8lbetT5a/users-program-and-advanced/portfolio/resources/surveys/editing-an-existing-survey-beta) '
 
 ### Step 3-  Editing a survey
 
