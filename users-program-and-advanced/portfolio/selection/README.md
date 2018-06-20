@@ -22,7 +22,7 @@ description: >-
 | **Selection** | Gives an overview of the selection workflow. |  |
 | --- | --- | --- |
 | **Profile** | Shows key information about the businesses at a particular stage in the selection process.  Variables can be used to further filter the business list |  |
-| **Business List** | Shows name of individual businesses based on selection stage and business profile |  |
+| **Business List** | Shows the names of individual businesses based on the selection stage and business profile |  |
 
 ## Step 3- Selection stages explained
 
