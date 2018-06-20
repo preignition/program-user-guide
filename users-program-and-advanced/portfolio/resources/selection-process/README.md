@@ -22,12 +22,12 @@ The Selection process is in beta format.  Currently users will need help editing
 ### Step 2- Editing a selection process
 
 * This feature is designed for Advanced Users.
-* Refer to '[Editing a selection process](https://program-user-docs.preignition.org/~/edit/drafts/-LFSPQV27pzDL3__75mr/users-program-and-advanced/portfolio/resources/selection-process/editing-a-selection-process-beta)'
+* Refer to '[Editing a selection process](https://program-user-docs.preignition.org/~/edit/drafts/-LFSW9U82ZVDdeMyC_0x/users-program-and-advanced/portfolio/resources/selection-process/editing-a-selection-process-beta)'
 
 ### Step 3-  Creating a selection process
 
 * The feature is designed for Advanced Users
-* Refer to ''[Creating a selection process](https://program-user-docs.preignition.org/~/edit/drafts/-LFSPQV27pzDL3__75mr/users-program-and-advanced/portfolio/resources/selection-process/creating-a-selection-process-beta)'
+* Refer to '[Creating a selection process](https://program-user-docs.preignition.org/~/edit/drafts/-LFSW9U82ZVDdeMyC_0x/users-program-and-advanced/portfolio/resources/selection-process/creating-a-selection-process-beta)'
 
 
 
