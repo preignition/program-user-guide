@@ -7,21 +7,22 @@ description: >-
 # Businesses- Beta
 
 {% hint style="warning" %}
-The businesses page is currently under development and is not accessible from [www.preignition.org](https://preignition.org/main/home).    This page describes the features which will be available in the future.
+The Businesses page is in beta version and is currently not accessible to users.
 {% endhint %}
 
-The Businesses page is where a user can report on the performance of their program.
+* The businesses page is under development.
+* In the future this will be were users can report on the performance of their program.
 
-A wide variety of reports can be run using data which has been collected from businesses and is available on the platform.
+### Future developments
 
-Examples of reports include:
+* Users will be able to run a wide range of reports from the Businesses page, such as
+  * _**Portfolio reports**_ giving an overview of their program or a particular cohort or year
+  * _**Impact reports**_ showing how businesses have developed over time
+  * _**Bench marking**_ reports showing how a business or group of businesses compares to a wider group.
 
-* Portfolio reports showing the key characteristics of a group of businesses at a point in time
+### Example of a portfolio report
+
+* This is an example of a Portfolio report showing the key characteristics of a group of businesses at a point in time
 
 ![Early version of a portfolio report](../../.gitbook/assets/image-57.png)
-
-* Impact reports showing the progress a business or group of businesses has made over time
-* Bench marking reports showing how a business or group of businesses compares to a wider group.
-
-
 
