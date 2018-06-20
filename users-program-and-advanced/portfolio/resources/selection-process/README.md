@@ -14,10 +14,10 @@ The Selection process is in beta format.  Currently users will need help editing
 
 ![](../../../../.gitbook/assets/image%20%2845%29.png)
 
-* From the Selection process page a user can view, edit and create selection processes
-* The person who creates the selection process will be shown as the 'owner' 
+* From the Selection process page a user will be able to view, edit and create selection processes
+* The person who creates the selection process is shown as the 'owner' 
 * The date the selection process was last modified is also shown.
-* A user can only view surveys which have been shared with them.
+* A user can only view selection processes which have been shared with them.
 
 ### Step 2- Editing a selection process
 
