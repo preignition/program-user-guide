@@ -48,13 +48,14 @@ Define the key parameters for the new survey such as:
 ![](../../../../.gitbook/assets/image%20%2826%29.png)
 
 {% hint style="warning" %}
-The user interface will be developed to enable advanced users to compose their own surveys.  For now new surveys will be composed by the Preignition team.
+The user interface will be developed to enable Advanced Users to compose their own surveys.  For now new surveys will be composed by the Preignition team.
 {% endhint %}
 
 ### Step 6- Scoring
 
-* Program are able to 'score' survey questions in sophisticated ways.
-* The scoring user interface is under development.  For now surveys are scored by the Preignition team.
+* Programs are able to 'score' survey questions in sophisticated ways.
+* The scoring user interface is under development.  
+* For now surveys are scored by the Preignition team.
 
 ![](../../../../.gitbook/assets/image%20%2840%29.png)
 
