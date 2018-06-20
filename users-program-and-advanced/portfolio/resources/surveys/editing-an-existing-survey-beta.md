@@ -4,7 +4,7 @@ description: >-
   Program Users.
 ---
 
-# Testing an existing survey- Beta
+# Testing a survey- Beta
 
 ### Step 1- Select the survey that you would like to test
 
