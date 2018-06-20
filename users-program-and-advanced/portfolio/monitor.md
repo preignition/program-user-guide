@@ -9,7 +9,7 @@ description: >-
 * The Monitor page is accessed via the [program page](https://program-user-docs.preignition.org/~/edit/drafts/-LFMf79wbvb88HHUPzQV/users-program-and-advanced/portfolio)​
 
 {% hint style="warning" %}
-The Monitor page is in beta version and currently has limited functionality.
+The Monitor page is in beta version and is currently not accessible to users
 {% endhint %}
 
 
