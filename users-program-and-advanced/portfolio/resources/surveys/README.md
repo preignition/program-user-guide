@@ -6,6 +6,10 @@ description: >-
 
 # Survey- Beta
 
+{% hint style="warning" %}
+The Survey page is in Beta format.  It will be developed to make it easier to use.
+{% endhint %}
+
 ### Step 1- Overview of the Survey page
 
 ![](../../../../.gitbook/assets/image%20%283%29.png)
