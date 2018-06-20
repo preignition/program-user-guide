@@ -29,7 +29,7 @@ description: >-
 ![](../../../.gitbook/assets/image-21.png)
 
 {% hint style="info" %}
-Programs are able to define their own selection process so it may have more or less stages than shown above. 
+Programs are able to define their own selection process so it may have more or less stages than shown above.   Refer to the page '[Creating a selection process](https://program-user-docs.preignition.org/~/edit/drafts/-LFRXcsl8F9MFzBDXy1R/users-program-and-advanced/portfolio/resources/selection-process/creating-a-selection-process-beta)' for more information.
 {% endhint %}
 
 ## Step 4- Using the selection dashboard to filter businesses
