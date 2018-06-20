@@ -19,15 +19,18 @@ The Survey page is in Beta format.  It will be developed to make it easier to us
 * The date the survey was last modified is also shown.
 * A user can only view surveys which have been shared with them.
 
-### Step 2- Creating a new survey
+### Step 2- Testing a survey
 
-* This feature is designed for Advanced Users.
-* Refer to '[Creating a new Survey](https://program-user-docs.preignition.org/~/edit/drafts/-LFNAka1xluDRlv7QI7u/users-program-and-advanced/portfolio/resources/surveys/creating-a-new-survey-beta)'
+* This feature is designed for Program Users.
+* Refer to '[Testing a survey](https://program-user-docs.preignition.org/~/edit/drafts/-LFRkRW8iOUegS8qTKiM/users-program-and-advanced/portfolio/resources/surveys/editing-an-existing-survey-beta) '
 
-### Step 3-  Testing and editing an existing survey
+### Step 3-  Editing a survey
 
-* The feature is designed for Program Users
-* Refer to '[Testing and editing an existing survey](https://program-user-docs.preignition.org/~/edit/drafts/-LFNB2hfnEiTbxGjEQcP/users-program-and-advanced/portfolio/resources/surveys/editing-an-existing-survey-beta)'
+* This feature is designed for Program Users
+* Refer to '[Editing a survey](https://program-user-docs.preignition.org/~/edit/drafts/-LFRkRW8iOUegS8qTKiM/users-program-and-advanced/portfolio/resources/surveys/editing-an-existing-survey-beta-1)'
 
+### Step 4- Creating a new survey
 
+* This feature is designed for Advanced Users
+* Refer to '[Creating a new survey](https://program-user-docs.preignition.org/~/edit/drafts/-LFRkRW8iOUegS8qTKiM/users-program-and-advanced/portfolio/resources/surveys/creating-a-new-survey-beta)'
 
