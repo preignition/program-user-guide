@@ -19,15 +19,15 @@ The Selection process is in beta format.  Currently users will need help editing
 * The date the selection process was last modified is also shown.
 * A user can only view surveys which have been shared with them.
 
-### Step 2- Creating a new selection process
+### Step 2- Editing a selection process
 
-* This feature is designed for Advanced Users.
-* Refer to '[Creating a selection process](https://program-user-docs.preignition.org/~/edit/drafts/-LFNbsjdoZseaN8xDQIn/users-program-and-advanced/portfolio/resources/selection-process/creating-a-selection-process-beta)'
+* This feature is designed for Program Users.
+* Refer to '[Editing a selection process](https://program-user-docs.preignition.org/~/edit/drafts/-LFSPQV27pzDL3__75mr/users-program-and-advanced/portfolio/resources/selection-process/editing-a-selection-process-beta)'
 
-### Step 3-  Editing a selection process
+### Step 3-  Creating a selection process
 
 * The feature is designed for Advanced Users
-* Refer to ''Editing a selection process'
+* Refer to ''[Creating a selection process](https://program-user-docs.preignition.org/~/edit/drafts/-LFSPQV27pzDL3__75mr/users-program-and-advanced/portfolio/resources/selection-process/creating-a-selection-process-beta)'
 
 
 
