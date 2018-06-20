@@ -21,7 +21,7 @@ The Selection process is in beta format.  Currently users will need help editing
 
 ### Step 2- Editing a selection process
 
-* This feature is designed for Program Users.
+* This feature is designed for Advanced Users.
 * Refer to '[Editing a selection process](https://program-user-docs.preignition.org/~/edit/drafts/-LFSPQV27pzDL3__75mr/users-program-and-advanced/portfolio/resources/selection-process/editing-a-selection-process-beta)'
 
 ### Step 3-  Creating a selection process
