@@ -20,7 +20,7 @@
       * [Editing a selection process- Beta](users-program-and-advanced/portfolio/resources/selection-process/editing-a-selection-process-beta.md)
       * [Creating a selection process- Beta](users-program-and-advanced/portfolio/resources/selection-process/creating-a-selection-process-beta.md)
     * [Categories- Beta](users-program-and-advanced/portfolio/resources/categories.md)
-    * [Notification](users-program-and-advanced/portfolio/resources/notifications.md)
+    * [Notification- Beta](users-program-and-advanced/portfolio/resources/notifications.md)
   * [Settings](users-program-and-advanced/portfolio/settings/README.md)
     * [Profile](users-program-and-advanced/portfolio/settings/profile.md)
     * [Presentation](users-program-and-advanced/portfolio/settings/presentation.md)
