@@ -12,11 +12,13 @@ Certain fields of Preignition, such as [notifications](https://program-user-docs
 
 We intend to develop Preignition so text can be formatted without users needing to use html.  For now some basic knowledge of html is required.
 
-The following guidance is taken from a website called [Tutorials Point.](https://www.tutorialspoint.com/html/html_basic_tags.htm)  Tutorials Point includes a lot more information about html.  
+The following guidance is taken from a website called [Tutorials Point.](https://www.tutorialspoint.com/html/html_basic_tags.htm)  Tutorials Point includes a lot more useful and accessible information about html.  
 
 ### Heading tag
 
-Most documents start with a heading. You can use different sizes for your headings. HTML has six levels of headings, which use the elements **&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;,** and **&lt;h6&gt;**. While displaying any heading, a browser adds one line before and one line after that heading.
+Most documents start with a heading. You can use different sizes for your headings. HTML has six levels of headings, which use the elements **&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;,** and **&lt;h6&gt;**. 
+
+While displaying any heading, a browser adds one line before and one line after that heading.
 
 #### Example
 
@@ -91,7 +93,7 @@ The following word uses a **bold** typeface.
 
 ### Display name feature
 
-This enables a entrepreneurs actual display name to be included in a notification.  For example say an entrepreneurs display name is 'John Smith'.  The following code
+This enables a entrepreneurs name to be included in a notification.  For example say an entrepreneurs name is 'John Smith'.  The following code
 
 &lt;p&gt;Dear {{displayName}},&lt;/p&gt;
 
