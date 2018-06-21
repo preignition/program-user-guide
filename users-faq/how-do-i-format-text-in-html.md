@@ -6,7 +6,7 @@ description: This page gives a brief introduction to formatting text in html
 
 ### Question
 
-Certain fields of Preignition, such as [notifications](https://program-user-docs.preignition.org/~/edit/drafts/-LFWl9S-Pg03NHvFiFEh/users-faq/how-do-i-format-text-in-html), currently require users to format text using html.  I am not familiar with html and so need some help.
+Certain fields of Preignition, such as [notifications](https://program-user-docs.preignition.org/~/edit/drafts/-LFWwbAsAH6jKOL1M1X_/users-program-and-advanced/portfolio/resources/notifications), currently require users to format text using html.  I am not familiar with html and so need some help.
 
 ### Answer
 
