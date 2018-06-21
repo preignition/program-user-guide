@@ -8,7 +8,7 @@ description: >-
 
 ## Step 1- Accessing the settings page
 
-* The settings page is accessed via the [program page](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio)
+* The settings page is accessed via the [program page](https://program-user-docs.preignition.org/~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio)
 * The name of the active program is clearly indicated
 
 ![](../../../.gitbook/assets/image-29.png)
@@ -27,11 +27,11 @@ description: >-
 
 Detailed guidance notes are available for each type of setting.
 
-* [Profile](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings/profile)
-* [Presentation](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings/presentation)
-* [My profile](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings/my-profile)
-* [Members](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings/members)
+* [Profile](https://program-user-docs.preignition.org/~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio/settings/profile)
+* [Presentation](https://program-user-docs.preignition.org/~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio/settings/presentation)
+* [My profile](https://program-user-docs.preignition.org/~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio/settings/my-profile)
+* [Members](https://program-user-docs.preignition.org/~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio/settings/members)
 * Labels- Not yet implemented
-* [Communication](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings/communication)
-* [Batches](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings/batches)
+* [Communication](https://program-user-docs.preignition.org/~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio/settings/communication)
+* [Batches](https://program-user-docs.preignition.org/~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio/settings/batches)
 
