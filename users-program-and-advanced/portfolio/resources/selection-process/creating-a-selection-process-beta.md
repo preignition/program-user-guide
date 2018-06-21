@@ -12,11 +12,11 @@ The selection process page is in beta format.  Users will need help creating a n
 
 ### Step 1- Select 'create new selection'
 
-![](../../../../.gitbook/assets/image%20%2852%29.png)
+![](../../../../.gitbook/assets/image%20%2853%29.png)
 
 ### Step 2- Define the key parameters for the new selection process
 
-![](../../../../.gitbook/assets/image%20%2816%29.png)
+![](../../../../.gitbook/assets/image%20%2817%29.png)
 
 Define the key parameters for the new survey such as:
 
