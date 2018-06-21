@@ -21,13 +21,13 @@ description: >-
 
 ## Step 3- Settings explained
 
-![](../../../.gitbook/assets/image-19.png)
+![](../../../.gitbook/assets/image%20%2865%29.png)
 
 ## Step 4- Detailed guidance notes for settings
 
 Detailed guidance notes are available for each type of setting.
 
-* [Profile](https://program-user-docs.preignition.org/~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio/settings/profile)
+* Program settings
 * [Presentation](https://program-user-docs.preignition.org/~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio/settings/presentation)
 * [My profile](https://program-user-docs.preignition.org/~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio/settings/my-profile)
 * [Members](https://program-user-docs.preignition.org/~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio/settings/members)
