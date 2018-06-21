@@ -8,7 +8,7 @@ description: >-
 
 ### Step 1- Overview of the notification page
 
-![](../../../.gitbook/assets/image%20%2841%29.png)
+![](../../../.gitbook/assets/image%20%2849%29.png)
 
 * From the notification page a user can view, edit and create messages to be sent to entrepreneurs either via email or a message which appears on the entrepreneur's bulletin board.
 * The person who creates the template will be shown as the 'owner' 
@@ -19,7 +19,7 @@ description: >-
 * To view or edit a notification template simply double click on the relevant template
 * Alternatively you can right click and select the 'edit' option
 
-![](../../../.gitbook/assets/image%20%2839%29.png)
+![](../../../.gitbook/assets/image%20%2847%29.png)
 
 ### Step 3- Creating a new notification template
 
@@ -31,20 +31,20 @@ The important elements of a notification template are as follows:
 
 **Title and description**
 
-![](../../../.gitbook/assets/image%20%2830%29.png)
+![](../../../.gitbook/assets/image%20%2836%29.png)
 
 * These are used for internal purposes to keep track of different templates.  Neither the title or the description is seen by entrepreneurs
 
 **Title template and excerpt template** 
 
-![](../../../.gitbook/assets/image%20%287%29.png)
+![](../../../.gitbook/assets/image%20%289%29.png)
 
 * The 'title template' is the main title given to an email or message on the bulletin board
 * The 'excerpt template' appears as the first line in a email or message on the bulletin board
 
 **html content template**
 
-![](../../../.gitbook/assets/image%20%2832%29.png)
+![](../../../.gitbook/assets/image%20%2838%29.png)
 
 * This is where the main text is created or edited.
 * html is currently used for formatting.  
@@ -52,7 +52,7 @@ The important elements of a notification template are as follows:
 
 **Text content template**
 
-![](../../../.gitbook/assets/image%20%2860%29.png)
+![](../../../.gitbook/assets/image%20%2870%29.png)
 
 * This section is not needed and will be removed in the future
 
@@ -60,7 +60,7 @@ The important elements of a notification template are as follows:
 
 In order for changes to a notification template to take effect they must be 'published'.
 
-![](../../../.gitbook/assets/image%20%2825%29.png)
+![](../../../.gitbook/assets/image%20%2829%29.png)
 
 If the publish button is in grey it means that you don't have permission to edit the notification template.
 
