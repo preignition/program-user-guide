@@ -48,6 +48,7 @@ The important elements of a notification template are as follows:
 
 * This is where the main text is created or edited.
 * html is currently used for formatting.  
+* For help with html refer the FAQ entitled '[How do I format text in html](https://program-user-docs.preignition.org/~/edit/drafts/-LFXK6WGPDS_uBptFmkc/users-faq/how-do-i-format-text-in-html)?'
 
 **Text content template**
 
