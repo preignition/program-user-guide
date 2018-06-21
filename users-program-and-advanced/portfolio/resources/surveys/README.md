@@ -26,7 +26,7 @@ The Survey page is in Beta format.  It will be developed to make it easier to us
 
 ### Step 3-  Editing a survey
 
-* This feature is designed for Program Users
+* This feature is designed for Advanced Users
 * Refer to '[Editing a survey](https://program-user-docs.preignition.org/~/edit/drafts/-LFRkRW8iOUegS8qTKiM/users-program-and-advanced/portfolio/resources/surveys/editing-an-existing-survey-beta-1)'
 
 ### Step 4- Creating a new survey
