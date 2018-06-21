@@ -10,7 +10,7 @@ Certain fields of Preignition, such as [notifications](https://program-user-docs
 
 ### Answer
 
-We intend to develop Preignition so that text can be formatted without users needing to use html.  For now some basic knowledge of html is required.
+We intend to develop Preignition so text can be formatted without users needing to use html.  For now some basic knowledge of html is required.
 
 The following guidance is taken from a website called [Tutorials Point.](https://www.tutorialspoint.com/html/html_basic_tags.htm)  Tutorials Point includes a lot more information about html.  
 
