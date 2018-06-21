@@ -27,7 +27,7 @@ description: >-
 
 Detailed guidance notes are available for each type of setting.
 
-* Program settings
+* [Program settings](https://program-user-docs.preignition.org/~/edit/drafts/-LFXfGruRiTmg7XcHoMG/users-program-and-advanced/portfolio/settings/profile)
 * [Presentation](https://program-user-docs.preignition.org/~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio/settings/presentation)
 * [My profile](https://program-user-docs.preignition.org/~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio/settings/my-profile)
 * [Members](https://program-user-docs.preignition.org/~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio/settings/members)

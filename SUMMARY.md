@@ -22,7 +22,7 @@
     * [Categories- Beta](users-program-and-advanced/portfolio/resources/categories.md)
     * [Notification- Beta](users-program-and-advanced/portfolio/resources/notifications.md)
   * [Settings](users-program-and-advanced/portfolio/settings/README.md)
-    * [Profile](users-program-and-advanced/portfolio/settings/profile.md)
+    * [Program Settings](users-program-and-advanced/portfolio/settings/profile.md)
     * [Presentation](users-program-and-advanced/portfolio/settings/presentation.md)
     * [My profile](users-program-and-advanced/portfolio/settings/my-profile.md)
     * [Members](users-program-and-advanced/portfolio/settings/members.md)
