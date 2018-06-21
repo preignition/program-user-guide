@@ -7,7 +7,7 @@ description: >-
 # Editing a selection process- Beta
 
 {% hint style="warning" %}
-The selection process page is in beta format.  For now Advanced Users will need assistance to edit a selection process.
+The selection process page is in beta format.  Advanced Users will need assistance to edit a selection process.
 {% endhint %}
 
 ### Step 1- Select the selection process to be edited
@@ -31,7 +31,7 @@ The selection process page is in beta format.  For now Advanced Users will need 
 
 ### Step 4- Transitions
 
-* The transitions tab shows the transitions which can happen between the various nodes.
+* The transitions tab shows the transitions which happen between the various nodes.
 
 ![](../../../../.gitbook/assets/image%20%2848%29.png)
 
