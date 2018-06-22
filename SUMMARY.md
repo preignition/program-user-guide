@@ -35,6 +35,6 @@
 ## FAQ
 
 * [Production site v Test Site](users-faq/production-site-v-test-site.md)
-* [Changing active portfolio](users-faq/changing-active-portfolio.md)
+* [How do I change the active program](users-faq/changing-active-portfolio.md)
 * [How do I format text in html?](users-faq/how-do-i-format-text-in-html.md)
 
