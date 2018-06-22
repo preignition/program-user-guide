@@ -52,7 +52,7 @@ The important elements of a notification template are as follows:
 
 **Text content template**
 
-![](../../../.gitbook/assets/image%20%2877%29.png)
+![](../../../.gitbook/assets/image%20%2879%29.png)
 
 * This section is not needed and will be removed in the future
 

@@ -10,7 +10,7 @@ description: >-
 
 * Users can customize their personal profile and settings from the 'My profile' page
 
-![](../../../.gitbook/assets/image%20%2870%29.png)
+![](../../../.gitbook/assets/image%20%2871%29.png)
 
 ### Step 2- Editing a profile
 
@@ -27,13 +27,22 @@ description: >-
 
 ### Step 3- Updating an email address
 
-* Click on 'Update email address
+* Click on 'Update email address'
 
 ![](../../../.gitbook/assets/image%20%2824%29.png)
 
-* You hat the updated email is a valid email address
+* You will be asked to confirm that the updated email is a valid email address
 
-![](../../../.gitbook/assets/image%20%2883%29.png)
+![](../../../.gitbook/assets/image%20%2885%29.png)
+
+* You will be asked to log in before the email address will be updated.
+* Enter your old email address here, ie not the new one which you are requesting
+
+![](../../../.gitbook/assets/image%20%2866%29.png)
+
+* You will now see a message confirming that your new email address has been verified.
+
+![](../../../.gitbook/assets/image%20%2872%29.png)
 
 ### Step 4- Updating a profile picture
 

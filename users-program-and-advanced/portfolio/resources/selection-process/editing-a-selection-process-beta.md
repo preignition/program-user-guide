@@ -14,7 +14,7 @@ The selection process page is in beta format.  Advanced Users will need assistan
 
 * Right click on the selection process to be edited and select 'edit'
 
-![](../../../../.gitbook/assets/image%20%2866%29.png)
+![](../../../../.gitbook/assets/image%20%2867%29.png)
 
 ### Step 2- Settings 
 
