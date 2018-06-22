@@ -22,9 +22,9 @@ Each program has it's own 'landing page' on Preignition.  This enables a program
 
 ### Step 3- Link between the landing page and presentation page
 
-![](../../../.gitbook/assets/image%20%2824%29.png)
+![](../../../.gitbook/assets/image%20%2826%29.png)
 
-![](../../../.gitbook/assets/image%20%2827%29.png)
+![](../../../.gitbook/assets/image%20%2829%29.png)
 
 **Program title \(1\)-**  This is the title of the program
 

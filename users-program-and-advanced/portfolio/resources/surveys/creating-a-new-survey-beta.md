@@ -18,7 +18,7 @@ The survey page is in beta format.  Users will need help creating a new survey f
 
 ### Step 2- Define the key parameters for the new survey
 
-![](../../../../.gitbook/assets/image%20%2843%29.png)
+![](../../../../.gitbook/assets/image%20%2845%29.png)
 
 Define the key parameters for the new survey such as:
 
@@ -32,20 +32,20 @@ Define the key parameters for the new survey such as:
 
 * If the survey needs to be translated, a user will be asked to select the language that the survey is to be translated into
 
-![](../../../../.gitbook/assets/image%20%2868%29.png)
+![](../../../../.gitbook/assets/image%20%2871%29.png)
 
 ### Step 4- Scoring
 
 * If the survey includes scored questions a new 'scoring' menu option will appear
 
-![](../../../../.gitbook/assets/image%20%2862%29.png)
+![](../../../../.gitbook/assets/image%20%2864%29.png)
 
 ### Step 5- Composition
 
 * Click on the 'Composition' menu option
 * This is where a user defines the survey structure and creates the survey questions
 
-![](../../../../.gitbook/assets/image%20%2836%29.png)
+![](../../../../.gitbook/assets/image%20%2838%29.png)
 
 {% hint style="warning" %}
 The user interface will be developed to enable Advanced Users to compose their own surveys.  For now new surveys will be composed by the Preignition team.
@@ -57,7 +57,7 @@ The user interface will be developed to enable Advanced Users to compose their o
 * The scoring user interface is under development.  
 * For now surveys are scored by the Preignition team.
 
-![](../../../../.gitbook/assets/image%20%2854%29.png)
+![](../../../../.gitbook/assets/image%20%2856%29.png)
 
 ### Step 7- Build
 
@@ -65,7 +65,7 @@ The user interface will be developed to enable Advanced Users to compose their o
 * This enable effective versioning of surveys.
 * The current 'build' is highlighted along with details of when the build was deployed. 
 
-![](../../../../.gitbook/assets/image%20%2873%29.png)
+![](../../../../.gitbook/assets/image%20%2876%29.png)
 
 ### Step 8- Share
 
@@ -73,5 +73,5 @@ The user interface will be developed to enable Advanced Users to compose their o
 * This allows the owner of a survey to assign rights to the survey to other user.
 * Users can granted rights to either view or edit the survey
 
-![](../../../../.gitbook/assets/image%20%2845%29.png)
+![](../../../../.gitbook/assets/image%20%2847%29.png)
 

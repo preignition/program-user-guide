@@ -1,16 +1,45 @@
 ---
 description: >-
   This page described how a user can update their profile.  It is intended for
-  entrepreneurs, Program Users and Advanced Users.
+  Program Users and Advanced Users.
 ---
 
 # My profile
 
-## Step 1
+### Step 1- Overview of the My profile page
 
-Entrepreneurs can access the 'My Profile' page from their [Entrepreneurs Space](https://docs.preignition.org/~/edit/primary/entrepreneurs/entrepreneur-space). Program Users and Advanced Users can also assess their 'My Profile' page from [Settings](https://program-user-docs.preignition.org/~/edit/primary/users-program-and-advanced/portfolio/settings).
+* Users can customize their personal profile and settings from the 'My profile' page
 
-![Showing how to access User Profile from the Entrepreneur Space](../../../.gitbook/assets/image-53.png)
+![](../../../.gitbook/assets/image%20%2870%29.png)
 
-![Showing how to access My profile from settings page](../../../.gitbook/assets/image-1.png)
+### Step 2- Editing a profile
+
+* Activate the slider entitled 'Edit my profile' 
+
+![](../../../.gitbook/assets/image%20%2823%29.png)
+
+* All fields can now be edited, including
+  * Name
+  * Gender
+  * Email address
+  * Display name
+  * Active program
+
+### Step 3- Updating an email address
+
+* Click on 'Update email address
+
+![](../../../.gitbook/assets/image%20%2824%29.png)
+
+* You hat the updated email is a valid email address
+
+![](../../../.gitbook/assets/image%20%2883%29.png)
+
+### Step 4- Updating a profile picture
+
+### Step 5- Updating a display name
+
+### Step 6- Program management
+
+
 
