@@ -14,7 +14,7 @@ The selection process page is in beta format.  Advanced Users will need assistan
 
 * Right click on the selection process to be edited and select 'edit'
 
-![](../../../../.gitbook/assets/image%20%2862%29.png)
+![](../../../../.gitbook/assets/image%20%2863%29.png)
 
 ### Step 2- Settings 
 
@@ -33,5 +33,5 @@ The selection process page is in beta format.  Advanced Users will need assistan
 
 * The transitions tab shows the transitions which happen between the various nodes.
 
-![](../../../../.gitbook/assets/image%20%2858%29.png)
+![](../../../../.gitbook/assets/image%20%2859%29.png)
 

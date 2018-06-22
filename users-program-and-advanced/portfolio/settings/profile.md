@@ -7,12 +7,12 @@ description: >-
 # Program Settings
 
 {% hint style="danger" %}
-The Program Settings page should be set up at the inception of a new program.  These determine key program settings which are not possible to change at a later date.
+The Program Settings page should be set up at the inception of a new program.  These key settings can not be changed at a later date.
 {% endhint %}
 
 ### Step 1- Overview of the Program Settings page
 
-![](../../../.gitbook/assets/image%20%2833%29.png)
+![](../../../.gitbook/assets/image%20%2843%29.png)
 
 The Program Settings page is where key settings for a Program are determined such as:
 
