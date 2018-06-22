@@ -6,21 +6,25 @@ description: >-
 
 # Presentation
 
+{% hint style="warning" %}
+The Presentation page currently requires a knowledge of mark down to ensure proper formatting of a program's logo.  Contact help@preignition.org if you need assistance 
+{% endhint %}
+
 ### Step 1- Each program has its own 'landing page' 
 
-Each program has it's own 'landing page' on Preignition, which enables a program to present itself to entrepreneurs. 
+Each program has it's own 'landing page' on Preignition.  This enables a program to customize the way it present itself to entrepreneurs. 
 
-![This is an example of TBN East Africa&apos;s landing page](../../../.gitbook/assets/image%20%2815%29.png)
+![This is an example of TBN East Africa&apos;s landing page](../../../.gitbook/assets/image%20%2816%29.png)
 
 ### Step 2- The Presentation page enables a program to customize their landing page
 
-![This is an example of TBN East Africa&apos;s Presentation page](../../../.gitbook/assets/image%20%2849%29.png)
+![This is an example of TBN East Africa&apos;s Presentation page](../../../.gitbook/assets/image%20%2811%29.png)
 
 ### Step 3- Link between the landing page and presentation page
 
-![](../../../.gitbook/assets/image%20%2823%29.png)
+![](../../../.gitbook/assets/image%20%2824%29.png)
 
-![](../../../.gitbook/assets/image%20%2826%29.png)
+![](../../../.gitbook/assets/image%20%2827%29.png)
 
 **Program title \(1\)-**  This is the title of the program
 
@@ -32,9 +36,5 @@ Each program has it's own 'landing page' on Preignition, which enables a program
 
 {% hint style="warning" %}
 Changes to the Presentation page are immediately reflected in the programs landing page.  There is no 'publish' option at present.
-{% endhint %}
-
-{% hint style="info" %}
-The Presentation page currently requires a knowledge of mark down to ensure proper formatting.  Contact help@preignition.org if you need assistance 
 {% endhint %}
 

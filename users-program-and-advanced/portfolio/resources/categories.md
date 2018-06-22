@@ -19,14 +19,14 @@ This section is in beta format.  For now users will need help creating categorie
   * Consider
   * Drop
 
-![](../../../.gitbook/assets/image%20%2834%29.png)
+![](../../../.gitbook/assets/image%20%2835%29.png)
 
 * Grouping businesses in this way enables TBN Keyna to focus their efforts on reviewing business which have been categorized as 'Consider'.  
 * 'Pre-select' business are likely to be accepted to the next stage of the selection process, whereas 'Drop' businesses are likely to be rejected. 
 
 ### Step 2- Overview of the Category page
 
-![](../../../.gitbook/assets/image%20%2824%29.png)
+![](../../../.gitbook/assets/image%20%2825%29.png)
 
 * From the Category page a user can view, edit and create categories
 * The person who creates the category is shown as the 'owner' 
@@ -38,13 +38,13 @@ This section is in beta format.  For now users will need help creating categorie
 * To view or edit a category simply double click on the relevant template
 * Alternatively you can right click and select the 'edit' option
 
-![](../../../.gitbook/assets/image%20%2847%29.png)
+![](../../../.gitbook/assets/image%20%2848%29.png)
 
 ### Step 4- Creating a new Category
 
 * To create a new Category simply click the 'create new' button
 
-![](../../../.gitbook/assets/image%20%2876%29.png)
+![](../../../.gitbook/assets/image%20%2877%29.png)
 
 ### Step 5- Overview of a Category template
 
@@ -58,13 +58,13 @@ This section is in beta format.  For now users will need help creating categorie
 
 **Documentation** 
 
-![](../../../.gitbook/assets/image%20%2851%29.png)
+![](../../../.gitbook/assets/image%20%2852%29.png)
 
 * This is an internal description of the category and is not visible to entrepreneurs
 
 **Category labels**
 
-![](../../../.gitbook/assets/image%20%2856%29.png)
+![](../../../.gitbook/assets/image%20%2857%29.png)
 
 * This is whether the category labels are defined
 * Category labels can be added or deleted using the buttons on the right hand side.
@@ -74,7 +74,7 @@ This section is in beta format.  For now users will need help creating categorie
 
 * In order for changes to a Category template to take effect they must be 'published'.
 
-![](../../../.gitbook/assets/image%20%2831%29.png)
+![](../../../.gitbook/assets/image%20%2832%29.png)
 
 * If the publish button is in grey it means that you don't have permission to edit the Category template.
 
