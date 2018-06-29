@@ -29,14 +29,7 @@ While displaying any heading, a browser adds one line before and one line after 
       <h4>This is heading 4</h4>
       <h5>This is heading 5</h5>
       <h6>This is heading 6</h6>             
- 
- This will produce the following result −
-This is heading 1
-This is heading 2
-This is heading 3
-This is heading 4
-This is heading 5
-This is heading 6
+  This will produce the following result −This is heading 1This is heading 2This is heading 3This is heading 4This is heading 5This is heading 6
 ```
 
 ### Paragraph Tag
