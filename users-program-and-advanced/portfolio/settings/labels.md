@@ -7,10 +7,6 @@ description: >-
 # Labels
 
 {% hint style="danger" %}
-This page is intended for Advanced Users only.
-{% endhint %}
-
-{% hint style="warning" %}
 The labels page is under development.
 {% endhint %}
 
