@@ -7,7 +7,7 @@ description: >-
 # Editing a selection process- Beta
 
 {% hint style="warning" %}
-The selection process page is in beta format.  Advanced Users will need assistance to edit a selection process.
+The selection process page is in beta format.  For now Advanced Users will need assistance to edit a selection process.
 {% endhint %}
 
 ### Step 1- Select the selection process to be edited
