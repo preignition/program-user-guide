@@ -18,13 +18,13 @@ description: >-
 * New members can be search for
 * New members must have created an account on Preignition
 
-![](../../../.gitbook/assets/image%20%2891%29.png)
+![](../../../.gitbook/assets/image%20%2892%29.png)
 
 ### Step 3-  Assign a role to the new member
 
 * Next assign a role to the new member.  There are 4 options which are shown below.
 
-![](../../../.gitbook/assets/image%20%2888%29.png)
+![](../../../.gitbook/assets/image%20%2889%29.png)
 
 ### Step 4- Existing members
 
