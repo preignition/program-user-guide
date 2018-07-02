@@ -11,7 +11,7 @@ The Businesses page is in beta version and is currently not accessible to users.
 {% endhint %}
 
 * The businesses page is under development.
-* In the future this will be were users can report on the performance of their program.
+* In the future this will be where users can report on the performance of their program.
 
 ### Future developments
 
