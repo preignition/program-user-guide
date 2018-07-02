@@ -66,9 +66,8 @@ This section is in beta format.  For now users will need help creating categorie
 
 ![](../../../.gitbook/assets/image%20%2866%29.png)
 
-* This is whether the category labels are defined
+* This is where the category labels are defined
 * Category labels can be added or deleted using the buttons on the right hand side.
-* This section is not needed and will be removed in the future
 
 ### Step 5- Updating a Category
 
