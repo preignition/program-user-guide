@@ -12,7 +12,7 @@ description: >-
 
 ![Arrow shows where to sign in](../../.gitbook/assets/image-10.png)
 
-* 'Program’ and ‘Admin’ appear as additional options on the main menu bar
+* Depending on your assigned user rights either 'Program’ or 'Program' and ‘Admin’ appear as additional options on the main menu bar
 * Select ‘Program’
 
 ![](../../.gitbook/assets/image%20%2892%29.png)
