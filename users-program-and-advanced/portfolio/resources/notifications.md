@@ -39,7 +39,7 @@ The important elements of a notification template are as follows:
 
 ![](../../../.gitbook/assets/image%20%2814%29.png)
 
-* The 'title template' is the main title given to an email or message on the bulletin board
+* The 'title template' is the main title given in an email or message on the bulletin board
 * The 'excerpt template' appears as the first line in a email or message on the bulletin board
 
 **html content template**
