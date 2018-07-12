@@ -32,13 +32,13 @@ Define the key parameters for the new survey such as:
 
 * If the survey needs to be translated, a user will be asked to select the language that the survey is to be translated into
 
-![](../../../../.gitbook/assets/image%20%2894%29.png)
+![](../../../../.gitbook/assets/image%20%2896%29.png)
 
 ### Step 4- Scoring
 
 * If the survey includes scored questions a new 'scoring' menu option will appear
 
-![](../../../../.gitbook/assets/image%20%2881%29.png)
+![](../../../../.gitbook/assets/image%20%2883%29.png)
 
 ### Step 5- Composition
 
@@ -57,7 +57,7 @@ The user interface will be developed to enable Advanced Users to compose their o
 * The scoring user interface is under development.  
 * For now surveys are scored by the Preignition team.
 
-![](../../../../.gitbook/assets/image%20%2872%29.png)
+![](../../../../.gitbook/assets/image%20%2874%29.png)
 
 ### Step 7- Build
 
@@ -65,7 +65,7 @@ The user interface will be developed to enable Advanced Users to compose their o
 * This enable effective versioning of surveys.
 * The current 'build' is highlighted along with details of when the build was deployed. 
 
-![](../../../../.gitbook/assets/image%20%2899%29.png)
+![](../../../../.gitbook/assets/image%20%28101%29.png)
 
 ### Step 8- Share
 

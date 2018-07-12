@@ -38,13 +38,13 @@ This section is in beta format.  For now users will need help creating categorie
 * To view or edit a category simply double click on the relevant template
 * Alternatively you can right click and select the 'edit' option
 
-![](../../../.gitbook/assets/image%20%2865%29.png)
+![](../../../.gitbook/assets/image%20%2866%29.png)
 
 ### Step 4- Creating a new Category
 
 * To create a new Category simply click the 'create new' button
 
-![](../../../.gitbook/assets/image%20%28106%29.png)
+![](../../../.gitbook/assets/image%20%28108%29.png)
 
 ### Step 5- Overview of a Category template
 
@@ -58,13 +58,13 @@ This section is in beta format.  For now users will need help creating categorie
 
 **Documentation** 
 
-![](../../../.gitbook/assets/image%20%2869%29.png)
+![](../../../.gitbook/assets/image%20%2870%29.png)
 
 * This is an internal description of the category and is not visible to entrepreneurs
 
 **Category labels**
 
-![](../../../.gitbook/assets/image%20%2875%29.png)
+![](../../../.gitbook/assets/image%20%2877%29.png)
 
 * This is where the category labels are defined
 * Category labels can be added or deleted using the buttons on the right hand side.
