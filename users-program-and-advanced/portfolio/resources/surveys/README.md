@@ -12,7 +12,7 @@ The Survey page is in Beta format.  It will be developed to make it easier to us
 
 ### Step 1- Overview of the Survey page
 
-![](../../../../.gitbook/assets/image%20%285%29.png)
+![](../../../../.gitbook/assets/image%20%287%29.png)
 
 * From the Survey page a user can view, edit and create surveys
 * The person who creates the survey will be shown as the 'owner' 
