@@ -4,7 +4,7 @@ description: >-
   Preignition of a technical issue?
 ---
 
-# How do i inform the technical team of an issue?
+# How do i inform the Preignition team of a technical issue
 
 ### Question 
 
