@@ -37,5 +37,5 @@
 * [How do I change the active program?](users-faq/changing-active-portfolio.md)
 * [How do I format text in html?](users-faq/how-do-i-format-text-in-html.md)
 * [How do i inform the Preignition team of a technical issue?](users-faq/how-do-i-inform-the-technical-team-of-an-issue.md)
-* [How do I test that my program's selection process is working?](users-faq/how-do-i-test-that-my-programs-selection-process-if-working.md)
+* [How do I test my program?](users-faq/how-do-i-test-that-my-programs-selection-process-if-working.md)
 
