@@ -1,7 +1,3 @@
----
-description: This page introduces the user guide.
----
-
 # Introduction
 
 ### Purpose {#purpose}

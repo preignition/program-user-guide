@@ -17,13 +17,13 @@ name of the domain. `program` for members of program domain \(e.g. businesses\).
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="programID" type="string" required=true %}
-ID of the program to get member from 
+ID of the program to get member from
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=false %}
-Authorization header in the form of "Bearer: tokenSring"  to identify the user initiating the request.
+Authorization header in the form of "Bearer: tokenSring" to identify the user initiating the request.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
@@ -67,6 +67,4 @@ Could not find a cake matching this query.
 {% hint style="warning" %}
 The request need either token Query Parameter or Header Authorization.
 {% endhint %}
-
-
 

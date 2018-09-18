@@ -10,11 +10,7 @@ Get Survey Data
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows to get an export of survey data, based on \`resourceID\` and \`programID\`.   
-  
-Usually, export links are build by the application using the export tool \(see export tool \).   
-   
-  
+This endpoint allows to get an export of survey data, based on \`resourceID\` and \`programID\`.Usually, export links are build by the application using the export tool \(see export tool \).
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -35,16 +31,16 @@ return format, either \("csv" - default or "json"\).
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="refKey" type="string" required=true %}
-a key pointing to a list of businesses. The export tool stores a list of selected businesses that will be looped over while building the export object.  `refKey` is a pointer to this location.
+a key pointing to a list of businesses. The export tool stores a list of selected businesses that will be looped over while building the export object. `refKey` is a pointer to this location.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="returnType" type="string" required=false %}
-"code" or "human" \(default\).   
-Specify the type of return. "human" will convert codes into human-readable lookups. 
+"code" or "human" \(default\).  
+Specify the type of return. "human" will convert codes into human-readable lookups.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="buildID" type="string" required=false %}
-The `buildID` of the survey \(`resourceID`\). A build is a frozen snapshot of survey definition at a given time. It is equivalent to a version number.   
+The `buildID` of the survey \(`resourceID`\). A build is a frozen snapshot of survey definition at a given time. It is equivalent to a version number.  
 The default value is the current `buildID` for `programID`
 {% endapi-method-parameter %}
 
@@ -85,6 +81,6 @@ Could not find a cake matching this query.
 {% endapi-method %}
 
 {% hint style="warning" %}
-Export links last a maximum of 1 hour  and can only be user once. A new `token` and `refKey` need to be obtained for the next export \(from the expor tool\). 
+Export links last a maximum of 1 hour and can only be user once. A new `token` and `refKey` need to be obtained for the next export \(from the expor tool\).
 {% endhint %}
 
