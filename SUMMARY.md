@@ -39,3 +39,7 @@
 * [How do i inform the Preignition team of a technical issue?](users-faq/how-do-i-inform-the-technical-team-of-an-issue.md)
 * [How do I test my program?](users-faq/how-do-i-test-that-my-programs-selection-process-if-working.md)
 
+## API 
+
+* [survey](api/survey.md)
+* [member](api/member.md)
