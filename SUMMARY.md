@@ -3,6 +3,17 @@
 * [Introduction](README.md)
 
 ## USER GUIDE
+* [Introduction](entrepreneurs/introduction.md)
+* [Applying for a program](entrepreneurs/applying-for-a-program.md)
+* [Entrepreneur space](entrepreneurs/entrepreneur-space.md)
+* [Completing a survey](entrepreneurs/completing-a-survey.md)
+* [User profile](entrepreneurs/user-profile.md)
+
+## FAQ (USER)
+* [What happens if i forget my password?](misc/what-happens-if-i-forget-my-password.md)
+* [How do I log back into my account?](misc/how-do-i-log-into-my-account.md)
+
+## PROGRAM USER GUIDE
 
 * [Program](users-program-and-advanced/portfolio/README.md)
   * [Selection](users-program-and-advanced/portfolio/selection/README.md)
@@ -32,7 +43,7 @@
 * [Admin](users-program-and-advanced/admin/README.md)
   * [Tenants](users-program-and-advanced/admin/tenants.md)
 
-## FAQ
+## FAQ (PROGRAM USER)
 
 * [How do I change the active program?](users-faq/changing-active-portfolio.md)
 * [How do I format text in html?](users-faq/how-do-i-format-text-in-html.md)
