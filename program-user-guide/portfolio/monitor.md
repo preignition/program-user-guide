@@ -20,6 +20,20 @@ Testing rendering of Monitor section 2
 
 {% enddoc %}
 
+
+{% doc id="doc-content" %}
+## Content
+Testing rendering of Monitor section 2
+
+{% enddoc %}
+
+<div id="test">
+  I am a test
+
+  ## hey title
+
+</div>
+
 {% hint style="warning" %}
 The Monitor page is in beta version and is currently not accessible to users
 {% endhint %}
