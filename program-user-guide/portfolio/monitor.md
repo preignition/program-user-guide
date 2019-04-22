@@ -8,22 +8,10 @@ description: >-
 
 * The Monitor page is accessed via the [program page](https://program-user-docs.preignition.org/~/edit/drafts/-LFMf79wbvb88HHUPzQV/users-program-and-advanced/portfolio)​
 
-<div id>
-  <!-- 
-  ## test comments
-   -->
-  <![CDATA[
-  ## test cdata
-  This is a test : 
-  - [ ] do this
-  - [ ] then do that
-   ]]>
-</div>
-
-
 <div id="startBlock">
   <!-- keepthis -->
 </div>
+
 ## tit1e
 Will this be kept
 
