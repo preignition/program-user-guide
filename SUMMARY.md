@@ -4,11 +4,11 @@
 
 ## ENTREPRENEUR USER GUIDE
 
-* [Introduction](user-guide/introduction.md)
-* [Applying for a program](user-guide/applying-for-a-program.md)
-* [Entrepreneur space](user-guide/entrepreneur-space.md)
-* [Completing a survey](user-guide/completing-a-survey.md)
-* [User profile](user-guide/user-profile.md)
+* [Introduction](entrepreneur-user-guide/introduction.md)
+* [Applying for a program](entrepreneur-user-guide/applying-for-a-program.md)
+* [Entrepreneur space](entrepreneur-user-guide/entrepreneur-space.md)
+* [Completing a survey](entrepreneur-user-guide/completing-a-survey.md)
+* [User profile](entrepreneur-user-guide/user-profile.md)
 
 ## FAQ \(USER\)
 

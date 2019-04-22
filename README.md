@@ -1,10 +1,10 @@
 # Introduction
 
-### Purpose {#purpose}
+### Purpose <a id="purpose"></a>
 
 To provide users with clear instructions for using Preignition. 
 
-### Audience {#audience}
+### Audience <a id="audience"></a>
 
 There are 2 separate audiences for this user guide.
 
@@ -36,7 +36,7 @@ There are 2 separate audiences for this user guide.
       </td>
     </tr>
   </tbody>
-</table>### Structure {#structure}
+</table>### Structure <a id="structure"></a>
 
 The user guide reflects the structure of the Preignition platform.  There is a section of the User Guide for each section of the application.  
 

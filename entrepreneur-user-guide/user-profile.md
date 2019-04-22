@@ -4,13 +4,13 @@ description: This page describes how entrepreneurs can view and edit their user 
 
 # User profile
 
-## Step 1- Overview of the User Profile page {#step-1-overview-of-the-my-profile-page}
+## Step 1- Overview of the User Profile page <a id="step-1-overview-of-the-my-profile-page"></a>
 
 * Entrepreneurs can customize their user profile from their entrepreneur space
 
 ![](../.gitbook/assets/image_guide-22.png)
 
-## Step 2- Editing a profile {#step-2-editing-a-profile}
+## Step 2- Editing a profile <a id="step-2-editing-a-profile"></a>
 
 * Activate the slider entitled 'Edit my profile'
 
@@ -22,7 +22,7 @@ description: This page describes how entrepreneurs can view and edit their user 
   * Email address
   * Display name
 
-## Step 3- Updating an email address {#step-3-updating-an-email-address}
+## Step 3- Updating an email address <a id="step-3-updating-an-email-address"></a>
 
 * The example below shows the process of updating an email address from est01@tindercapital.com to test01@tindercapital.com
 * Click on 'Update email address'
@@ -48,14 +48,14 @@ description: This page describes how entrepreneurs can view and edit their user 
 
 ![](../.gitbook/assets/image_guide-68.png)
 
-## Step 4- Updating a profile picture {#step-4-updating-a-profile-picture}
+## Step 4- Updating a profile picture <a id="step-4-updating-a-profile-picture"></a>
 
 * Hover over the image\_guide field and click on the heading 'change image\_guide'
 * You will now be able to select an image\_guide stored on your computer
 
 ![](../.gitbook/assets/image_guide-20.png)
 
-## Step 5- Updating a display name {#step-5-updating-a-display-name}
+## Step 5- Updating a display name <a id="step-5-updating-a-display-name"></a>
 
 * The display name is important as it is used throughout the platform to refer to the user.
 * It can be updated by simply updating the 'display name' field
