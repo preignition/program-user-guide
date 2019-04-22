@@ -8,17 +8,9 @@ description: >-
 
 * The Monitor page is accessed via the [program page](https://program-user-docs.preignition.org/~/edit/drafts/-LFMf79wbvb88HHUPzQV/users-program-and-advanced/portfolio)​
 
-<div id="startBlock">
-  <!-- keepthis -->
-</div>
+## title 1 - not sure it keeps divs
 
-## tit1e
 Will this be kept
-
-<div id="endBlock">
-  <!-- keepthis -->
-</div>
-
 
 {% hint style="warning" %}
 The Monitor page is in beta version and is currently not accessible to users
@@ -27,7 +19,7 @@ The Monitor page is in beta version and is currently not accessible to users
 ```text
 Code
 
-end code 
+end code
 ```
 
 * [ ] Task 1
@@ -36,3 +28,4 @@ end code
 $$
 a = b *2
 $$
+
