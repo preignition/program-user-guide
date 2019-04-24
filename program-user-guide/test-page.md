@@ -1,5 +1,7 @@
 ---
-description: This is a test page I am not sure why description has two lines ...
+description: >-
+  This is a test page I am not sure why description has two lines ... But we can
+  check what happens if the desc is longer... and **even longer**
 ---
 
 # test page
