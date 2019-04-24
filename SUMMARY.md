@@ -17,6 +17,7 @@
 
 ## PROGRAM USER GUIDE
 
+* [test page](program-user-guide/test-page.md)
 * [Program](program-user-guide/portfolio/README.md)
   * [Selection](program-user-guide/portfolio/selection/README.md)
     * [Reviewing a business](program-user-guide/portfolio/selection/reviewing-a-business.md)
