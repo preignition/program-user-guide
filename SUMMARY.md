@@ -57,3 +57,7 @@
 * [survey](api/survey.md)
 * [member](api/member.md)
 
+## web-components
+
+* [widget-resource-access](web-components/widget-resource-access.md)
+
