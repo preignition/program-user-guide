@@ -4,7 +4,7 @@
 
 define owner for this resource.
 
-### [User Access])(#user-access)
+### [User Access](#user-access)
 
 A resource is protected from non authenticated users to view or modify its content.
 
