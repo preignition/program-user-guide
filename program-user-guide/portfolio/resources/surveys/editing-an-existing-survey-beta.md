@@ -8,17 +8,17 @@ The survey page is in beta format.  Further development is needed to improve the
 
 * Select the survey, right click and select 'test'
 
-![](../../../../.gitbook/assets/image%20%28106%29.png)
+![](../../../../.gitbook/assets/image%20%28111%29.png)
 
 ### Step 2- Test the survey
 
-![](../../../../.gitbook/assets/image%20%2879%29.png)
+![](../../../../.gitbook/assets/image%20%2884%29.png)
 
 * You will now be able to test the survey.
 * The survey will respond as if an entrepreneur is completing it.
 * There is no option to 'submit' the survey at the end.
 
-![](../../../../.gitbook/assets/image%20%2860%29.png)
+![](../../../../.gitbook/assets/image%20%2864%29.png)
 
 ### 
 
