@@ -17,11 +17,11 @@ description: >-
 
 * Clicking on the ‘settings’ icon takes you though to the following screen
 
-![](../../../.gitbook/assets/image%20%2895%29.png)
+![](../../../.gitbook/assets/image%20%2897%29.png)
 
 ## Step 3- Settings explained
 
-![](../../../.gitbook/assets/image%20%2896%29.png)
+![](../../../.gitbook/assets/image%20%2898%29.png)
 
 ## Step 4- Detailed guidance notes for settings
 

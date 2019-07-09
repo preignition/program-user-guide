@@ -10,13 +10,13 @@ description: >-
 
 * Users can customize their personal profile from the 'My profile' page
 
-![](../../../.gitbook/assets/image%20%2897%29.png)
+![](../../../.gitbook/assets/image%20%2899%29.png)
 
 ### Step 2- Editing a profile
 
 * Activate the slider entitled 'Edit my profile' 
 
-![](../../../.gitbook/assets/image%20%2833%29.png)
+![](../../../.gitbook/assets/image%20%2834%29.png)
 
 * All fields on this page can now be edited, including
   * Name
@@ -30,33 +30,33 @@ description: >-
 * The example below shows the process of updating an emails address from info@tindercapital.com to jerry@tindercapital.com
 * Click on 'Update email address'
 
-![](../../../.gitbook/assets/image%20%2834%29.png)
+![](../../../.gitbook/assets/image%20%2835%29.png)
 
 * Enter your new address \(jerry@tindercapital.com\)
 * You will be asked to send a verification message to this new email address
 * This step checks that the new email address is valid
 
-![](../../../.gitbook/assets/image%20%2815%29.png)
+![](../../../.gitbook/assets/image%20%2816%29.png)
 
 * Before the email address is updated you will have to enter your email address and password.
 * Enter your old email address here, ie info@tindercapital.com
 
-![](../../../.gitbook/assets/image%20%2890%29.png)
+![](../../../.gitbook/assets/image%20%2892%29.png)
 
 * Check your email and click on the link to verify the new email address
 
-![](../../../.gitbook/assets/image%20%2821%29.png)
+![](../../../.gitbook/assets/image%20%2822%29.png)
 
 You will now see a message confirming that your new email address has been verified.
 
-![](../../../.gitbook/assets/image%20%2899%29.png)
+![](../../../.gitbook/assets/image%20%28101%29.png)
 
 ### Step 4- Updating a profile picture
 
 * Hover over the image field and click on the heading 'change image'
 * You will now be able to select an image stored on your computer
 
-![](../../../.gitbook/assets/image%20%2888%29.png)
+![](../../../.gitbook/assets/image%20%2890%29.png)
 
 ### Step 5- Updating a display name
 
@@ -72,5 +72,5 @@ You will now see a message confirming that your new email address has been verif
 
 * The drop down menu under 'Update active program' will show all the programs that a user has access rights to.  In the example below the user has assess to two programs.
 
-![](../../../.gitbook/assets/image%20%2816%29.png)
+![](../../../.gitbook/assets/image%20%2817%29.png)
 

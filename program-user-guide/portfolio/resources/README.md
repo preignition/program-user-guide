@@ -11,13 +11,13 @@ description: >-
 * The resources page is accessed via the [program](https://program-user-docs.preignition.org/~/edit/drafts/-LFMmRn-kR0r-yY1WvIl/users-program-and-advanced/portfolio) page
 * The name of the active program is clearly indicated
 
-![](../../../.gitbook/assets/image%20%2865%29.png)
+![](../../../.gitbook/assets/image%20%2866%29.png)
 
 ## Step 2- Overview of the resources page
 
 * Clicking on the ‘resources’ icon takes you though to the following screen
 
-![](../../../.gitbook/assets/image%20%2829%29.png)
+![](../../../.gitbook/assets/image%20%2830%29.png)
 
 ## Step 3- Resources explained
 

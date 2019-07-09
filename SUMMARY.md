@@ -61,3 +61,8 @@
 
 * [widget-resource-access](web-components/widget-resource-access.md)
 
+## Release Notes
+
+* [Survey Builder](release-notes/survey-builder.md)
+* [Untitled](release-notes/untitled.md)
+
