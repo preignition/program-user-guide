@@ -64,5 +64,4 @@
 ## Release Notes
 
 * [Survey Builder](release-notes/survey-builder.md)
-* [Untitled](release-notes/untitled.md)
 
