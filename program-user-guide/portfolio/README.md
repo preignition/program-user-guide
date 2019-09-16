@@ -8,18 +8,18 @@ description: This section of the User Guide introduces Program Users to Preignit
 
 * Go to [www.preignition.org](https://preignition.org/main/home) and sign in using your email and password
 
-![The arrow indicates where to sign in](../../.gitbook/assets/image%20%2839%29.png)
+![The arrow indicates where to sign in](../../.gitbook/assets/image%20%2841%29.png)
 
 * Depending on your user rights either 'Program’ or 'Program' and ‘Admin’ appear as additional options on the main menu bar
 * Select ‘Program’
 
-![](../../.gitbook/assets/image%20%28138%29.png)
+![](../../.gitbook/assets/image%20%28141%29.png)
 
 ## Step 2- Overview of the Program page
 
 * Five main options appear 
 
-![](../../.gitbook/assets/image%20%28121%29.png)
+![](../../.gitbook/assets/image%20%28124%29.png)
 
 ## Step 3- Selection
 
@@ -34,7 +34,7 @@ Refer to the [Selection](https://program-user-docs.preignition.org/~/edit/drafts
 
 ## Step 4- Monitor
 
-![](../../.gitbook/assets/image%20%2894%29.png)
+![](../../.gitbook/assets/image%20%2896%29.png)
 
 * This section enables a user to monitor recent activity on the program and monitor the performance of the app
 
@@ -44,7 +44,7 @@ Refer to the [Monitor](https://program-user-docs.preignition.org/~/edit/drafts/-
 
 ## Step 5- Businesses
 
-![](../../.gitbook/assets/image%20%2857%29.png)
+![](../../.gitbook/assets/image%20%2859%29.png)
 
 * This section allows users to report on the progress of an individual business, a cohort of businesses or the overall program.
 * Users are also able to access detailed information on an individual business
@@ -55,7 +55,7 @@ Refer to the [Businesses](https://program-user-docs.preignition.org/~/edit/draft
 
 ## Step 6- Resources
 
-![](../../.gitbook/assets/image%20%2858%29.png)
+![](../../.gitbook/assets/image%20%2860%29.png)
 
 * This section allows users to set up and manage key resources for a program such as surveys, work flows, notifications etc
 
@@ -65,7 +65,7 @@ Refer to the [Resources](https://program-user-docs.preignition.org/~/edit/drafts
 
 ## Step 7- Settings
 
-![](../../.gitbook/assets/image%20%2861%29.png)
+![](../../.gitbook/assets/image%20%2863%29.png)
 
 * This section allows users to define and edit key settings for a program such as language, currency, user rights etc.
 

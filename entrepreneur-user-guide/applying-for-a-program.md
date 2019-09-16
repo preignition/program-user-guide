@@ -9,7 +9,7 @@ description: This page describes how an entrepreneur can apply for a program.
 * Each program which uses preignition has its own landing page.
 * This can be accessed via a link on the program's own website or via the preignition homepage
 
-![Example of the landing page for TBN Kenya](../.gitbook/assets/image%20%2831%29.png)
+![Example of the landing page for TBN Kenya](../.gitbook/assets/image%20%2832%29.png)
 
 ## Step 2- Creating an account
 
@@ -19,7 +19,7 @@ description: This page describes how an entrepreneur can apply for a program.
 
 * Verify their email address
 
-![](../.gitbook/assets/image%20%28143%29.png)
+![](../.gitbook/assets/image%20%28146%29.png)
 
 * And agree to Preignition's Terms of Service and Privacy Policy
 

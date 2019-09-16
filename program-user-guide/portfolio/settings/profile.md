@@ -12,7 +12,7 @@ The Program Settings page should be set up at the inception of a new program.  T
 
 ### Step 1- Overview of the Program Settings page
 
-![](../../../.gitbook/assets/image%20%2878%29.png)
+![](../../../.gitbook/assets/image%20%2880%29.png)
 
 The Program Settings page is where key settings for a Program are determined such as:
 
