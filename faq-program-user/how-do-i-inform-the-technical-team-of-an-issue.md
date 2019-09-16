@@ -21,7 +21,7 @@ However the best way of keeping track of issues is to record them in Gitlab.
 
 * The first time you log in and then periodically you will be asked to enter a two-factor authentication code.
 
-![](../.gitbook/assets/image%20%28127%29.png)
+![](../.gitbook/assets/image%20%28128%29.png)
 
 * To obtain the code you will need to download the 'Google Authenticator' from the play store
 
@@ -73,7 +73,7 @@ However the best way of keeping track of issues is to record them in Gitlab.
 * The board view is especially helpful as it shows the status of the issue.
 * Further filters can also be applied, eg by 'label'
 
-![Example of a issues board being filtered by the TBN label](../.gitbook/assets/image%20%28118%29.png)
+![Example of a issues board being filtered by the TBN label](../.gitbook/assets/image%20%28119%29.png)
 
   
 If you need further help with Gitlab, then please contact help@preignition.org 

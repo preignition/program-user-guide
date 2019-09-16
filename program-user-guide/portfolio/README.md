@@ -13,13 +13,13 @@ description: This section of the User Guide introduces Program Users to Preignit
 * Depending on your user rights either 'Program’ or 'Program' and ‘Admin’ appear as additional options on the main menu bar
 * Select ‘Program’
 
-![](../../.gitbook/assets/image%20%28141%29.png)
+![](../../.gitbook/assets/image%20%28142%29.png)
 
 ## Step 2- Overview of the Program page
 
 * Five main options appear 
 
-![](../../.gitbook/assets/image%20%28124%29.png)
+![](../../.gitbook/assets/image%20%28125%29.png)
 
 ## Step 3- Selection
 

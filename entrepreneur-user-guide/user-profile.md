@@ -29,13 +29,13 @@ description: This page describes how entrepreneurs can view and edit their user 
 * The example below shows the process of updating an email address from testing@tindercapital.com to testing01@tindercapital.com
 * First select 'Update email address'
 
-![](../.gitbook/assets/image%20%28120%29.png)
+![](../.gitbook/assets/image%20%28121%29.png)
 
 * Enter your new address \(testing01@tindercapital.com\) 
 * Click the button 'set email to testing01@tindercapital.com'
 * As an additional security step, this action requires recent authentication.  You may get a message asking you to 'Log in again before retrying this request'.
 
-![](../.gitbook/assets/image%20%28148%29.png)
+![](../.gitbook/assets/image%20%28149%29.png)
 
 * When you have successfully changed your email address, you will get a message notifying you that an email verification has been sent to your new email address.  Please verify you new email address as soon as possible and within 3 day of making the change.
 
@@ -46,14 +46,14 @@ description: This page describes how entrepreneurs can view and edit their user 
 * Hover over the image field and click on the heading 'change image'
 * You will now be able to select an image\_guide stored on your computer
 
-![](../.gitbook/assets/image%20%28128%29.png)
+![](../.gitbook/assets/image%20%28129%29.png)
 
 ## Step 5- Updating a display name <a id="step-5-updating-a-display-name"></a>
 
 * The display name is important as it is used throughout the platform to refer to the user.
 * It can be updated by simply updating the 'display name' field
 
-![](../.gitbook/assets/image%20%28117%29.png)
+![](../.gitbook/assets/image%20%28118%29.png)
 
 ## Step 6- Resetting your password
 

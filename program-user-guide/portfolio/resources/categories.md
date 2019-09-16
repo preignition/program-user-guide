@@ -44,7 +44,7 @@ This section is in beta format.  For now users will need help creating categorie
 
 * To create a new Category simply click the 'create new' button
 
-![](../../../.gitbook/assets/image%20%28145%29.png)
+![](../../../.gitbook/assets/image%20%28146%29.png)
 
 ### Step 5- Overview of a Category template
 

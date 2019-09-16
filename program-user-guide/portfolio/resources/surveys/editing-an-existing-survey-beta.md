@@ -8,7 +8,7 @@ The survey page is in beta format.  Further development is needed to improve the
 
 * Select the survey, right click and select 'test'
 
-![](../../../../.gitbook/assets/image%20%28134%29.png)
+![](../../../../.gitbook/assets/image%20%28135%29.png)
 
 ### Step 2- Test the survey
 

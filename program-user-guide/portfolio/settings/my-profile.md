@@ -10,7 +10,7 @@ description: >-
 
 * Users can customize their personal profile from the 'My profile' page
 
-![](../../../.gitbook/assets/image%20%28126%29.png)
+![](../../../.gitbook/assets/image%20%28127%29.png)
 
 ### Step 2- Editing a profile
 
@@ -49,7 +49,7 @@ description: >-
 
 You will now see a message confirming that your new email address has been verified.
 
-![](../../../.gitbook/assets/image%20%28129%29.png)
+![](../../../.gitbook/assets/image%20%28130%29.png)
 
 ### Step 4- Updating a profile picture
 

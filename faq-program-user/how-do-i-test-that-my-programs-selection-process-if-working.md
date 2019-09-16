@@ -23,7 +23,7 @@ I want to test that my program is properly set up on Preignition but I don't wan
 
 * To review the 'test' section page, go to the live selection page and add`?testMode=true to the URL.`
 
-![Example of the &apos;test&apos; selection page for TBN program](../.gitbook/assets/image%20%28144%29.png)
+![Example of the &apos;test&apos; selection page for TBN program](../.gitbook/assets/image%20%28145%29.png)
 
 * Only testMembers are shown
 * The selection process mirrors the actual selection process

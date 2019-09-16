@@ -26,7 +26,7 @@ Define the key parameters for the new survey such as:
 
 * If the survey needs to be translated, a user will be asked to select the language that the survey is to be translated into
 
-![](../../../../.gitbook/assets/image%20%28130%29.png)
+![](../../../../.gitbook/assets/image%20%28131%29.png)
 
 ### Step 4- Scoring
 
@@ -59,7 +59,7 @@ The user interface will be developed to enable Advanced Users to compose their o
 * This enable effective versioning of surveys.
 * The current 'build' is highlighted along with details of when the build was deployed. 
 
-![](../../../../.gitbook/assets/image%20%28135%29.png)
+![](../../../../.gitbook/assets/image%20%28136%29.png)
 
 ### Step 8- Share
 

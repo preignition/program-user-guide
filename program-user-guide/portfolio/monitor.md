@@ -36,6 +36,22 @@ The Monitor page has 4 subsections
 
 ![](../../.gitbook/assets/image%20%28107%29.png)
 
-* 
+## Step 4- Members
+
+* To be developed. This page will list members currently online for the active program
+
+## Step 5- Messages
+
+* This shows all the messages that have been sent out on the active program and indicates whether the messages have been delivered or not.
+* As with 'activity' the time period can currently only be defined based on the last number of days
+
+![](../../.gitbook/assets/image%20%28117%29.png)
+
+* The page is in beta version.  Will be developed to provide more information for messages which have failed to be delivered
+
+## Step 6- Health
+
+* To be developed.  Will summarize any issues outstanding on the program.
+
 
 
