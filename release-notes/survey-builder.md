@@ -10,17 +10,17 @@ Preignition is proud to introduce a powerful Survey Builder to allow users bette
 
 Building a survey with Preignition involves 4 step: **Building** the survey, **Testing** it, **Deploying** and finally **Analyzing** it. 
 
-![4 - steps workflow for constructing a survey](../.gitbook/assets/image%20%2890%29.png)
+![4 - steps workflow for constructing a survey](../.gitbook/assets/image%20%2893%29.png)
 
 ### Build
 
 The first step is about composing the content of the survey. A Preview mode allows to add to the survey by simple drag and drop gesture.  
 
-![Build preview mode for adding content](../.gitbook/assets/image%20%2849%29.png)
+![Build preview mode for adding content](../.gitbook/assets/image%20%2852%29.png)
 
 Then, a detail view mode is giving access to detailed question settings.
 
-![Detailed view for editing a question](../.gitbook/assets/image%20%2855%29.png)
+![Detailed view for editing a question](../.gitbook/assets/image%20%2858%29.png)
 
 ### Test
 
@@ -60,11 +60,11 @@ Surveys can be translated into multiple languages. ****Users can chose to transl
 
 Some field attributes \(hidden, invalid, required\) can dynamically depend on survey entries. An expression builder is provided to write those logic expression and test them. 
 
-![Logic builder for a hidden attribute, along with the expression tester. ](../.gitbook/assets/image%20%2887%29.png)
+![Logic builder for a hidden attribute, along with the expression tester. ](../.gitbook/assets/image%20%2890%29.png)
 
 ### Scoring 
 
 Automated scores can be calculated on survey submission. This is useful for instance for rapid screening of new entries. 
 
-![Testing survey scoring for one dimension. Final score is displayed on basis of answers and scoring settings.](../.gitbook/assets/image%20%2851%29.png)
+![Testing survey scoring for one dimension. Final score is displayed on basis of answers and scoring settings.](../.gitbook/assets/image%20%2854%29.png)
 
