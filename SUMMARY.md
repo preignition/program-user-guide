@@ -5,6 +5,7 @@
 ## ENTREPRENEUR USER GUIDE
 
 * [Introduction](entrepreneur-user-guide/introduction.md)
+* [Homepage](entrepreneur-user-guide/homepage.md)
 * [Applying for a program](entrepreneur-user-guide/applying-for-a-program.md)
 * [Entrepreneur space](entrepreneur-user-guide/entrepreneur-space.md)
 * [Completing a survey](entrepreneur-user-guide/completing-a-survey.md)
