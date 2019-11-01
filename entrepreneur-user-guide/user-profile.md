@@ -44,7 +44,7 @@ description: This page describes how entrepreneurs can view and edit their user 
 ## Step 4- Updating a profile picture <a id="step-4-updating-a-profile-picture"></a>
 
 * Hover over the image field and click on the heading 'change image'
-* You will now be able to select an image\_guide stored on your computer
+* You will now be able to select an image stored on your computer
 
 ![](../.gitbook/assets/image%20%28133%29.png)
 

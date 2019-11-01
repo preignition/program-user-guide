@@ -1,5 +1,5 @@
 ---
-description: This page introduced the 'entrepreneur space'
+description: This page introduces the 'entrepreneur space'
 ---
 
 # Entrepreneur space
@@ -14,9 +14,9 @@ description: This page introduced the 'entrepreneur space'
 ## Step 2-  Bulletin board
 
 * This is where entrepreneurs will receive messages and calls to action from the program they have applied to.
-* For instance an entrepreneur maybe invited to [complete a survey](https://docs.preignition.org/~/edit/drafts/-LGf63xP-P20DbsmGzBQ/entrepreneurs/completing-a-survey).  
+* For instance an entrepreneur maybe invited to [complete a survey](completing-a-survey.md).  
 
 ## Step 3- User Profile
 
-* The entrepreneur can also edit their [User Profile](https://docs.preignition.org/~/edit/drafts/-LGf63xP-P20DbsmGzBQ/entrepreneurs/user-profile) from their entrepreneur space. 
+* The entrepreneur can also edit their [User Profile](user-profile.md) from their entrepreneur space. 
 
