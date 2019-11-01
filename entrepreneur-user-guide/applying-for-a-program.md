@@ -25,5 +25,5 @@ description: This page describes how an entrepreneur can apply for a program.
 
 ## Step 3-  Entrepreneur space
 
-* Once an entrepreneur has created an account and applied to a program, they will automatically be directed to an '[entrepreneur space](https://docs.preignition.org/~/edit/drafts/-LGf5mwXyHR3XwR4-zao/entrepreneurs/entrepreneur-space)' where they will receive messages from the program they have applied to.
+* Once an entrepreneur has created an account and applied to a program, they will automatically be directed to an '[entrepreneur space](entrepreneur-space.md)' where they will receive messages from the program they have applied to.
 
