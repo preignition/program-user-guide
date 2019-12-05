@@ -1,14 +1,15 @@
 ---
 description: >-
-  This section introduces the resources page.  It is intended for Program Users
-  and Advanced Users.
+  This page describes how program resources and be created, edited and
+  deployed.  Resources include surveys, selection processes and notifications. 
+  They can all be customized to a specific program
 ---
 
 # Resources
 
 ## Step 1- Accessing the resources page
 
-* The resources page is accessed via the [program](https://program-user-docs.preignition.org/~/edit/drafts/-LFMmRn-kR0r-yY1WvIl/users-program-and-advanced/portfolio) page
+* The resources page is accessed via the [program](../) page
 * The name of the active program is clearly indicated
 
 ![](../../../.gitbook/assets/image%20%2868%29.png)
@@ -17,7 +18,7 @@ description: >-
 
 * Clicking on the ‘resources’ icon takes you though to the following screen
 
-![](../../../.gitbook/assets/image%20%28143%29.png)
+![](../../../.gitbook/assets/image%20%28146%29.png)
 
 ## Step 3- Resources explained
 
@@ -27,8 +28,10 @@ description: >-
 
 Detailed guidance notes are available for each type of resource.
 
-* [Survey](https://program-user-docs.preignition.org/~/edit/drafts/-LFR_9AWZ2owVdfY5gnR/users-program-and-advanced/portfolio/resources/surveys)
-* [Section](https://program-user-docs.preignition.org/~/edit/drafts/-LFR_9AWZ2owVdfY5gnR/users-program-and-advanced/portfolio/resources/survey-part)
-* [Selection](https://program-user-docs.preignition.org/~/edit/drafts/-LFXZnHFct15EbmnsOBK/users-program-and-advanced/portfolio/resources/selection-process)
-* [Notification](https://program-user-docs.preignition.org/~/edit/drafts/-LFXZnHFct15EbmnsOBK/users-program-and-advanced/portfolio/resources/notifications)
+* [Survey](surveys/)
+* [Section](survey-part.md)
+* [Selection](selection-process/)
+* [Notification](notifications.md)
+
+
 

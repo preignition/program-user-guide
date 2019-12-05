@@ -11,7 +11,7 @@ description: >-
 * The selection page is accessed via the [program page](https://program-user-docs.preignition.org/~/edit/drafts/-LFMf79wbvb88HHUPzQV/users-program-and-advanced/portfolio)
 * The name of the active program is clearly indicated, as well as recent activity on the selection process
 
-![Showing the Program page for the &apos;test program&apos;](../../../.gitbook/assets/image%20%28158%29.png)
+![Showing the Program page for the &apos;test program&apos;](../../../.gitbook/assets/image%20%28161%29.png)
 
 ## Step 2- Overview of the selection page
 
@@ -19,17 +19,18 @@ description: >-
 
 ![](../../../.gitbook/assets/image-51.png)
 
-| **Selection** | Gives an overview of the selection workflow. |  |
-| :--- | :--- | :--- |
-| **Profile** | Shows key information about the businesses at a particular stage in the selection process.  Variables can be used to further filter the business list |  |
-| **Business List** | Shows the names of individual businesses based on the selection stage and business profile |  |
+| **Heading** | Description |
+| :--- | :--- |
+| **Selection** | Gives an overview of the selection workflow |
+| **Profile** | Shows key variables which can be used to further filter the business list |
+| **Business List** | Shows the names of individual businesses based on the selection stage and business profile |
 
 ## Step 3- Selection stages explained
 
 ![](../../../.gitbook/assets/image-21.png)
 
 {% hint style="info" %}
-Programs are able to define their own selection process so it may have more or less stages than shown above.   Refer to the page '[Creating a selection process](https://program-user-docs.preignition.org/~/edit/drafts/-LFRXcsl8F9MFzBDXy1R/users-program-and-advanced/portfolio/resources/selection-process/creating-a-selection-process-beta)' for more information.
+Programs are able to define their own selection process so it may have more or less stages than shown above.   Refer to the page '[Creating a selection process](../resources/selection-process/creating-a-selection-process-beta.md)' for more information.
 {% endhint %}
 
 ## Step 4- Using the selection dashboard to filter businesses
@@ -37,7 +38,7 @@ Programs are able to define their own selection process so it may have more or l
 * The selection dashboard is interactive and can be used to filter the business list
 * In this example businesses can be filtered based on their batch, sector or registration type
 
-![](../../../.gitbook/assets/image%20%2892%29.png)
+![](../../../.gitbook/assets/image%20%2894%29.png)
 
 ## Step 5- Filtering businesses based on stage of selection process
 

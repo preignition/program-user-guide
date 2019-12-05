@@ -13,13 +13,13 @@ description: This section of the User Guide introduces Program Users to Preignit
 * Depending on your user rights either 'Program’ or 'Program' and ‘Admin’ appear as additional options on the main menu bar
 * Select ‘Program’
 
-![](../../.gitbook/assets/image%20%28152%29.png)
+![](../../.gitbook/assets/image%20%28155%29.png)
 
 ## Step 2- Overview of the Program page
 
 * Five main options appear 
 
-![](../../.gitbook/assets/image%20%28133%29.png)
+![](../../.gitbook/assets/image%20%28136%29.png)
 
 ## Step 3- Selection
 
@@ -34,7 +34,7 @@ Refer to the [Selection](selection/) page for more details
 
 ## Step 4- Monitor
 
-![](../../.gitbook/assets/image%20%28103%29.png)
+![](../../.gitbook/assets/image%20%28105%29.png)
 
 * This section enables a user to monitor recent activity on the program and monitor the performance of the app
 

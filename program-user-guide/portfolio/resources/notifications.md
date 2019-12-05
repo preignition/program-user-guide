@@ -8,7 +8,7 @@ description: >-
 
 ### Step 1- Overview of the notification page
 
-![](../../../.gitbook/assets/image%20%2899%29.png)
+![](../../../.gitbook/assets/image%20%28101%29.png)
 
 * From the notification page a user can view, edit and create messages to be sent to entrepreneurs either via email or a message which appears on the entrepreneur's bulletin board.
 * The person who creates the template will be shown as the 'owner' 
@@ -19,7 +19,7 @@ description: >-
 * To view or edit a notification template simply double click on the relevant template
 * Alternatively you can right click and select the 'edit' option
 
-![](../../../.gitbook/assets/image%20%2896%29.png)
+![](../../../.gitbook/assets/image%20%2898%29.png)
 
 ### Step 3- Creating a new notification template
 
@@ -31,7 +31,7 @@ The important elements of a notification template are as follows:
 
 **Title and description**
 
-![](../../../.gitbook/assets/image%20%2879%29.png)
+![](../../../.gitbook/assets/image%20%2880%29.png)
 
 * These are used for internal purposes to keep track of different templates.  Neither the title or the description is seen by entrepreneurs
 
@@ -44,7 +44,7 @@ The important elements of a notification template are as follows:
 
 **html content template**
 
-![](../../../.gitbook/assets/image%20%2881%29.png)
+![](../../../.gitbook/assets/image%20%2882%29.png)
 
 * This is where the main text is created or edited.
 * html is currently used for formatting.  
@@ -52,7 +52,7 @@ The important elements of a notification template are as follows:
 
 **Text content template**
 
-![](../../../.gitbook/assets/image%20%28149%29.png)
+![](../../../.gitbook/assets/image%20%28152%29.png)
 
 * This section is not needed and will be removed in the future
 

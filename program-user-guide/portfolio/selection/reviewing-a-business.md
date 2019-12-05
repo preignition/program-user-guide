@@ -1,7 +1,5 @@
 ---
-description: >-
-  This section describes how to review a business.  It is intended for Program
-  Users and Advanced Users
+description: This page explains how program users can review a business
 ---
 
 # Reviewing a business
@@ -12,7 +10,7 @@ description: >-
 
 * Select the available surveys and check that all surveys have been completed
 
-## Step 2- Use the selection dashboard to filter the business list
+## Step 2- Use the selection dashboard to filter the business list \(if required\)
 
 * If required, a user can use the selection dashboard to filter the businesses to be reviewed.
 

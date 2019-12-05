@@ -19,7 +19,7 @@ description: This page describes how an entrepreneur can apply for a program.
 
 * Verify their email address
 
-![](../.gitbook/assets/image%20%28157%29.png)
+![](../.gitbook/assets/image%20%28160%29.png)
 
 * And agree to Preignition's Terms of Service and Privacy Policy
 

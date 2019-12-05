@@ -10,7 +10,7 @@ description: >-
 
 * Users can customize their personal profile from the 'My profile' page
 
-![](../../../.gitbook/assets/image%20%28135%29.png)
+![](../../../.gitbook/assets/image%20%28138%29.png)
 
 ### Step 2- Editing a profile
 
@@ -41,7 +41,7 @@ description: >-
 * Before the email address is updated you will have to enter your email address and password.
 * Enter your old email address here, ie info@tindercapital.com
 
-![](../../../.gitbook/assets/image%20%28124%29.png)
+![](../../../.gitbook/assets/image%20%28127%29.png)
 
 * Check your email and click on the link to verify the new email address
 
@@ -49,14 +49,14 @@ description: >-
 
 You will now see a message confirming that your new email address has been verified.
 
-![](../../../.gitbook/assets/image%20%28139%29.png)
+![](../../../.gitbook/assets/image%20%28142%29.png)
 
 ### Step 4- Updating a profile picture
 
 * Hover over the image field and click on the heading 'change image'
 * You will now be able to select an image stored on your computer
 
-![](../../../.gitbook/assets/image%20%28122%29.png)
+![](../../../.gitbook/assets/image%20%28125%29.png)
 
 ### Step 5- Updating a display name
 

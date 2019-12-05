@@ -1,7 +1,7 @@
 ---
 description: >-
-  This section describes how to move a business through a selection process.  It
-  is intended for Program Users and Advanced Users
+  This page describes how a program user can move a business through a selection
+  process.
 ---
 
 # Moving a business through the selection process
@@ -37,4 +37,8 @@ The options are always to reject the business or move it to the next stage in th
 ![](../../../.gitbook/assets/image-40.png)
 
 * The page needs to be refreshed in order for these changes to take effect.  In the future this will happen automatically
+
+## Step 5- Notifications
+
+The selection process can be set up to automatically notify applicants when they have been moved to a different stage of a selections process.  Notifications can appear on the applicants bulletin board or be emailed or both.
 

@@ -26,7 +26,7 @@ Make sure that the 'reply to' email address is checked regularly.
 
 * email signatures and footers can be entered in the bottom two fields
 
-![](../../../.gitbook/assets/image%20%28131%29.png)
+![](../../../.gitbook/assets/image%20%28134%29.png)
 
 * A knowledge of markdown formatting is required.
 * Please contact help@prignition.org if you need assistance.

@@ -1,7 +1,5 @@
 ---
-description: >-
-  This section introduces the Monitor Page.  It is intended for Program Users
-  and Advanced Users.
+description: This section introduces the Monitor Page.
 ---
 
 # Monitor- Beta
@@ -34,7 +32,7 @@ The Monitor page has 4 subsections
 * Currently the time period can only be defined based on the last number of days
 * The page is currently in beta version.  It will be upgraded to make the types of activity that have occurred easier to analyse
 
-![](../../.gitbook/assets/image%20%28115%29.png)
+![](../../.gitbook/assets/image%20%28117%29.png)
 
 ## Step 4- Members
 
@@ -45,7 +43,7 @@ The Monitor page has 4 subsections
 * This shows all the messages that have been sent out on the active program and indicates whether the messages have been delivered or not.
 * As with 'activity' the time period can currently only be defined based on the last number of days
 
-![](../../.gitbook/assets/image%20%28125%29.png)
+![](../../.gitbook/assets/image%20%28128%29.png)
 
 * The page is in beta version.  Will be developed to provide more information for messages which have failed to be delivered
 

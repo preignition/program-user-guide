@@ -10,7 +10,7 @@ Preignition is proud to introduce a powerful Survey Builder to allow users bette
 
 Building a survey with Preignition involves 4 step: **Building** the survey, **Testing** it, **Deploying** and finally **Analyzing** it. 
 
-![4 - steps workflow for constructing a survey](../.gitbook/assets/image%20%28109%29.png)
+![4 - steps workflow for constructing a survey](../.gitbook/assets/image%20%28111%29.png)
 
 ### Build
 
@@ -60,7 +60,7 @@ Surveys can be translated into multiple languages. ****Users can chose to transl
 
 Some field attributes \(hidden, invalid, required\) can dynamically depend on survey entries. An expression builder is provided to write those logic expression and test them. 
 
-![Logic builder for a hidden attribute, along with the expression tester. ](../.gitbook/assets/image%20%28106%29.png)
+![Logic builder for a hidden attribute, along with the expression tester. ](../.gitbook/assets/image%20%28108%29.png)
 
 ### Scoring 
 
