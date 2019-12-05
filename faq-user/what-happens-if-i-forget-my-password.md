@@ -10,7 +10,7 @@ I have forgotten my password for Preignition or want to change my password.
 
 ## Answer
 
-It is fairly straight forward to reset your password
+It is straight forward to reset your password
 
 ### Step 1
 
