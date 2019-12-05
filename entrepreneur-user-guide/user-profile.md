@@ -8,13 +8,13 @@ description: This page describes how entrepreneurs can view and edit their user 
 
 * Entrepreneurs can customize their user profile from their entrepreneur space
 
-![](../.gitbook/assets/image%20%2861%29.png)
+![](../.gitbook/assets/image%20%2865%29.png)
 
 ## Step 2- Editing a profile <a id="step-2-editing-a-profile"></a>
 
 * Activate the slider entitled 'Edit my profile'
 
-![](../.gitbook/assets/image%20%2825%29.png)
+![](../.gitbook/assets/image%20%2827%29.png)
 
 * All fields on this page can now be edited, including
   * Display name
@@ -29,31 +29,31 @@ description: This page describes how entrepreneurs can view and edit their user 
 * The example below shows the process of updating an email address from testing@tindercapital.com to testing01@tindercapital.com
 * First select 'Update email address'
 
-![](../.gitbook/assets/image%20%28132%29.png)
+![](../.gitbook/assets/image%20%28141%29.png)
 
 * Enter your new address \(testing01@tindercapital.com\) 
 * Click the button 'set email to testing01@tindercapital.com'
 * As an additional security step, this action requires recent authentication.  You may get a message asking you to 'Log in again before retrying this request'.
 
-![](../.gitbook/assets/image%20%28162%29.png)
+![](../.gitbook/assets/image%20%28172%29.png)
 
 * When you have successfully changed your email address, you will get a message notifying you that an email verification has been sent to your new email address.  Please verify you new email address as soon as possible and within 3 day of making the change.
 
-![](../.gitbook/assets/image%20%2843%29.png)
+![](../.gitbook/assets/image%20%2846%29.png)
 
 ## Step 4- Updating a profile picture <a id="step-4-updating-a-profile-picture"></a>
 
 * Hover over the image field and click on the heading 'change image'
 * You will now be able to select an image stored on your computer
 
-![](../.gitbook/assets/image%20%28141%29.png)
+![](../.gitbook/assets/image%20%28151%29.png)
 
 ## Step 5- Updating a display name <a id="step-5-updating-a-display-name"></a>
 
 * The display name is important as it is used throughout the platform to refer to the user.
 * It can be updated by simply updating the 'display name' field
 
-![](../.gitbook/assets/image%20%28129%29.png)
+![](../.gitbook/assets/image%20%28138%29.png)
 
 ## Step 6- Resetting your password
 
@@ -61,5 +61,5 @@ description: This page describes how entrepreneurs can view and edit their user 
 * You will see a notification that a reset password email has been sent to your email account
 * Go to this email and follow the instructions
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2817%29.png)
 

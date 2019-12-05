@@ -34,7 +34,7 @@
       * [Editing a selection process- Beta](program-user-guide/portfolio/resources/selection-process/editing-a-selection-process-beta.md)
       * [Creating a selection process- Beta](program-user-guide/portfolio/resources/selection-process/creating-a-selection-process-beta.md)
     * [Categories- Beta](program-user-guide/portfolio/resources/categories.md)
-    * [Notification- Beta](program-user-guide/portfolio/resources/notifications.md)
+    * [Notification](program-user-guide/portfolio/resources/notifications.md)
   * [Settings](program-user-guide/portfolio/settings/README.md)
     * [Program Settings](program-user-guide/portfolio/settings/profile.md)
     * [Presentation](program-user-guide/portfolio/settings/presentation.md)
