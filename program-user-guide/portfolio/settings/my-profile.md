@@ -10,13 +10,13 @@ description: >-
 
 * Users can customize their personal profile from the 'My profile' page
 
-![](../../../.gitbook/assets/image%20%28131%29.png)
+![](../../../.gitbook/assets/image%20%28135%29.png)
 
 ### Step 2- Editing a profile
 
 * Activate the slider entitled 'Edit my profile' 
 
-![](../../../.gitbook/assets/image%20%2846%29.png)
+![](../../../.gitbook/assets/image%20%2850%29.png)
 
 * All fields on this page can now be edited, including
   * Name
@@ -30,7 +30,7 @@ description: >-
 * The example below shows the process of updating an emails address from info@tindercapital.com to jerry@tindercapital.com
 * Click on 'Update email address'
 
-![](../../../.gitbook/assets/image%20%2847%29.png)
+![](../../../.gitbook/assets/image%20%2851%29.png)
 
 * Enter your new address \(jerry@tindercapital.com\)
 * You will be asked to send a verification message to this new email address
@@ -41,22 +41,22 @@ description: >-
 * Before the email address is updated you will have to enter your email address and password.
 * Enter your old email address here, ie info@tindercapital.com
 
-![](../../../.gitbook/assets/image%20%28120%29.png)
+![](../../../.gitbook/assets/image%20%28124%29.png)
 
 * Check your email and click on the link to verify the new email address
 
-![](../../../.gitbook/assets/image%20%2827%29.png)
+![](../../../.gitbook/assets/image%20%2829%29.png)
 
 You will now see a message confirming that your new email address has been verified.
 
-![](../../../.gitbook/assets/image%20%28134%29.png)
+![](../../../.gitbook/assets/image%20%28139%29.png)
 
 ### Step 4- Updating a profile picture
 
 * Hover over the image field and click on the heading 'change image'
 * You will now be able to select an image stored on your computer
 
-![](../../../.gitbook/assets/image%20%28118%29.png)
+![](../../../.gitbook/assets/image%20%28122%29.png)
 
 ### Step 5- Updating a display name
 
