@@ -6,72 +6,39 @@ description: This page describes how a program user can create a new survey.
 
 ## Step 1- Select 'Create New Survey'
 
-![](../../../../.gitbook/assets/image%20%2881%29.png)
+* A new survey can be created by clicking on 'create new survey' or by right clicking and selecting 'create'
 
-## Step 2- 
+![](../../../../.gitbook/assets/image%20%2884%29.png)
 
-### 
+## Step 2- Name the survey
 
-### 
+* Name the survey
 
-### 
+![](../../../../.gitbook/assets/image%20%28178%29.png)
 
-### Step 2- Define the key parameters for the new survey
+## Step 3- Give the survey a title and sub-title
 
-![](../../../../.gitbook/assets/image%20%2893%29.png)
+* These will appear at the top of the survey
 
-Define the key parameters for the new survey such as:
+![](../../../../.gitbook/assets/image%20%28148%29.png)
 
-* Title of the survey
-* Brief description
-* Primary language
-* Indicate whether the survey needs to be translated
-* Indicate whether the survey includes scored questions
+## Step 4- Add a page to your survey
 
-### Step 3- Translation
+![](../../../../.gitbook/assets/image%20%2822%29.png)
 
-* If the survey needs to be translated, a user will be asked to select the language that the survey is to be translated into
+## **Step 5- Name your new page**
 
-![](../../../../.gitbook/assets/image%20%28153%29.png)
+* Give your new page a title and short description
+* These will appear at the top of the page.
+* The page name will appear in the survey structure on the left hand column
 
-### Step 4- Scoring
+![](../../../../.gitbook/assets/image%20%2863%29.png)
 
-* If the survey includes scored questions a new 'scoring' menu option will appear
+## Step 6- Add a new section
 
-![](../../../../.gitbook/assets/image%20%28133%29.png)
+* Click on the 'add new section' button.
 
-### Step 5- Composition
+![](../../../../.gitbook/assets/image%20%2894%29.png)
 
-* Click on the 'Composition' menu option
-* This is where a user defines the survey structure and creates the survey questions
-
-![](../../../../.gitbook/assets/image%20%2885%29.png)
-
-{% hint style="warning" %}
-The user interface will be developed to enable Advanced Users to compose their own surveys.  For now new surveys will be composed by the Preignition team.
-{% endhint %}
-
-### Step 6- Scoring
-
-* Programs are able to 'score' survey questions in sophisticated ways.
-* The scoring user interface is under development.  
-* For now surveys are scored by the Preignition team.
-
-![](../../../../.gitbook/assets/image%20%28116%29.png)
-
-### Step 7- Build
-
-* Before a new survey or amended survey is deployed a new 'build' must be created.
-* This enable effective versioning of surveys.
-* The current 'build' is highlighted along with details of when the build was deployed. 
-
-![](../../../../.gitbook/assets/image%20%28159%29.png)
-
-### Step 8- Share
-
-* Select the 'Share option'
-* This allows the owner of a survey to assign rights to the survey to other user.
-* Users can granted rights to either view or edit the survey
-
-![](../../../../.gitbook/assets/image%20%2897%29.png)
+## Step 8- 
 

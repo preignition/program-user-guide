@@ -13,7 +13,7 @@ The Monitor Page is in beta format.  Currently of limited use to Users.
 * The Monitor page is accessed via the menu or the monitor icon on the  program page
 * Recent activity on the program is shown on the monitor icon 
 
-![](../../.gitbook/assets/image%20%2838%29.png)
+![](../../.gitbook/assets/image%20%2839%29.png)
 
 ## Step 2-  Overview of the Monitor Page
 
@@ -24,7 +24,7 @@ The Monitor page has 4 subsections
 * Messages
 * Health
 
-![](../../.gitbook/assets/image%20%2844%29.png)
+![](../../.gitbook/assets/image%20%2845%29.png)
 
 ## Step 3- Activity
 
@@ -32,7 +32,7 @@ The Monitor page has 4 subsections
 * Currently the time period can only be defined based on the last number of days
 * The page is currently in beta version.  It will be upgraded to make the types of activity that have occurred easier to analyse
 
-![](../../.gitbook/assets/image%20%28126%29.png)
+![](../../.gitbook/assets/image%20%28130%29.png)
 
 ## Step 4- Members
 
@@ -43,7 +43,7 @@ The Monitor page has 4 subsections
 * This shows all the messages that have been sent out on the active program and indicates whether the messages have been delivered or not.
 * As with 'activity' the time period can currently only be defined based on the last number of days
 
-![](../../.gitbook/assets/image%20%28137%29.png)
+![](../../.gitbook/assets/image%20%28141%29.png)
 
 * The page is in beta version.  Will be developed to provide more information for messages which have failed to be delivered
 

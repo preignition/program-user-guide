@@ -14,15 +14,15 @@ Programs design their own surveys and responses can be manually reviewed or auto
 
 ## Step 2- Overview of the Survey page
 
-![](../../../../.gitbook/assets/image%20%2899%29.png)
+![](../../../../.gitbook/assets/image%20%28103%29.png)
 
-* The main survey page show all the surveys that have been shared with a particular program or with the active user.
+* The main survey page shows all the surveys that have been shared with a particular program or with the active user.
 * The title of the survey is shown, along with the owner, date it was last modified and resource ID.
 
 ## Step 3- Creating a new survey
 
 * To create a new survey simply click the button 'create new survey'
-* This can also be down by right clicking your mouse and selecting 'create'
+* This can also be done by right clicking your mouse and selecting 'create'
 * More information about creating a new survey is available under '[creating a new survey](creating-a-new-survey-beta.md)'
 
 ## Step 4- Editing, testing or deleting an existing survey
@@ -30,7 +30,7 @@ Programs design their own surveys and responses can be manually reviewed or auto
 * To edit or test an existing survey simple double click on the survey 
 * Right clicking on an existing survey brings up an option to remove a survey
 
-![](../../../../.gitbook/assets/image%20%28132%29.png)
+![](../../../../.gitbook/assets/image%20%28136%29.png)
 
 ### 
 
