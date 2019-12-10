@@ -8,16 +8,16 @@ description: >-
 
 ## Step 1- Introduction to Surveys
 
-Business support programs can use surveys to collect information from businesses either at the selection stage or later in their program's life cycle.  For instance information can be collected on a periodic basis to measure and report on the progress that a business has made.
+Business Support Organisations can use surveys to collect information from businesses either at the selection stage or later in their program's life cycle.  For instance information can be collected on a regular basis to measure and report on the progress that a business has made.
 
 Programs design their own surveys and responses can be manually reviewed or automatically scored. 
 
 ## Step 2- Overview of the Survey page
 
-![](../../../../.gitbook/assets/image%20%28103%29.png)
+![](../../../../.gitbook/assets/image%20%28104%29.png)
 
 * The main survey page shows all the surveys that have been shared with a particular program or with the active user.
-* The title of the survey is shown, along with the owner, date it was last modified and resource ID.
+* The title of the survey is shown, along with the owner, the date it was last modified and resource ID.
 
 ## Step 3- Creating a new survey
 
@@ -30,7 +30,7 @@ Programs design their own surveys and responses can be manually reviewed or auto
 * To edit or test an existing survey simple double click on the survey 
 * Right clicking on an existing survey brings up an option to remove a survey
 
-![](../../../../.gitbook/assets/image%20%28136%29.png)
+![](../../../../.gitbook/assets/image%20%28137%29.png)
 
 ### 
 
