@@ -27,6 +27,7 @@
   * [Resources](program-user-guide/portfolio/resources/README.md)
     * [Survey](program-user-guide/portfolio/resources/surveys/README.md)
       * [Creating a new survey](program-user-guide/portfolio/resources/surveys/creating-a-new-survey-beta.md)
+      * [Adding Questions to a Survey](program-user-guide/portfolio/resources/surveys/adding-questions-to-a-survey.md)
       * [Testing a survey- Beta](program-user-guide/portfolio/resources/surveys/editing-an-existing-survey-beta.md)
       * [Editing a survey- Beta](program-user-guide/portfolio/resources/surveys/editing-an-existing-survey-beta-1.md)
     * [Survey Part- Beta](program-user-guide/portfolio/resources/survey-part.md)
