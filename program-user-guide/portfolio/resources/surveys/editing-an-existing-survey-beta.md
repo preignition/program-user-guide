@@ -1,24 +1,24 @@
-# Testing a survey- Beta
+---
+description: This page describes how to test your survey once you have set it up.
+---
 
-{% hint style="warning" %}
-The survey page is in beta format.  Further development is needed to improve the user experience.
-{% endhint %}
+# Testing your survey
 
-### Step 1- Select the survey that you would like to test
+## Step 1- Click on 'Test' from the top menu
 
-* Select the survey, right click and select 'test'
+* For now after selecting test, you will also need to select the first page of the survey.  In the future this will load automatically 
 
-![](../../../../.gitbook/assets/image%20%28171%29.png)
+![](../../../../.gitbook/assets/image%20%28132%29.png)
 
-### Step 2- Test the survey
+* You can also test a survey directly from the main survey page 
 
-![](../../../../.gitbook/assets/image%20%28126%29.png)
+![](../../../../.gitbook/assets/image%20%28116%29.png)
+
+## Step 2- Test the survey
+
+![](../../../../.gitbook/assets/image%20%28162%29.png)
 
 * You will now be able to test the survey.
-* The survey will respond as if an entrepreneur is completing it.
-* There is no option to 'submit' the survey at the end.
-
-![](../../../../.gitbook/assets/image%20%28100%29.png)
-
-### 
+* The survey will respond as if an respondent is completing it.
+* The only different is that there is no option to 'submit' the survey at the end.
 

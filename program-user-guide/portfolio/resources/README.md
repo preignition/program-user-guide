@@ -12,13 +12,13 @@ description: >-
 * The resources page is accessed via the [program](../) page
 * The name of the active program is clearly indicated
 
-![](../../../.gitbook/assets/image%20%2879%29.png)
+![](../../../.gitbook/assets/image%20%2883%29.png)
 
 ## Step 2- Overview of the resources page
 
 * Clicking on the ‘resources’ icon takes you though to the following screen
 
-![](../../../.gitbook/assets/image%20%28169%29.png)
+![](../../../.gitbook/assets/image%20%28183%29.png)
 
 ## Step 3- Resources explained
 
