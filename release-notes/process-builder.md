@@ -10,7 +10,7 @@ Preignition contained a Process Engine since early version of the application. H
 
 Processes are configured through 2 main views: `Compose` and `Access`. Certain type of specialized processes like Selections have additional views \(e.g. `Selection`, `Batch` and `Campaign`\).
 
-![Process builder overall view. The active View is &apos;Apply to Program&apos; state  ](.gitbook/assets/image%20%2838%29.png)
+![Process builder overall view. The active View is &apos;Apply to Program&apos; state  ](../.gitbook/assets/image%20%2838%29.png)
 
 ## Composition
 
@@ -18,7 +18,7 @@ A process is build in the `Compose` view, which comprises three sections. On the
 
 Users can add / remove process items from the tree grid \(via a context menu\). 
 
-![Expanded Process Tree Grid, with a context menu](.gitbook/assets/image%20%28160%29.png)
+![Expanded Process Tree Grid, with a context menu](../.gitbook/assets/image%20%28160%29.png)
 
 ### States, Transitions, actions
 
@@ -28,19 +28,19 @@ Actions are triggered whenever a state is activated. For the time being, users c
 
 Some type of actions require further settings. For instance, an email template has to be set when the type of action is "send an email".
 
-![Choosing a type of action](.gitbook/assets/image%20%28178%29.png)
+![Choosing a type of action](../.gitbook/assets/image%20%28178%29.png)
 
 ### Process Validation
 
 The app checks whether a process is valid. The user is informed in case of missing elements \(like missing transition, missing email template, ...\). An invalid process cannot be published. 
 
-![Example of an invalid process.](.gitbook/assets/image%20%2885%29.png)
+![Example of an invalid process ](../.gitbook/assets/image%20%28196%29.png)
 
 ## Access
 
 Like other Preignition resources, processes have an owner and can share different type of access \(edit, view\).  
 
-![Process Access page. ](.gitbook/assets/image%20%2822%29.png)
+![Process Access page. ](../.gitbook/assets/image%20%2822%29.png)
 
 ## Selection Process
 
@@ -54,9 +54,9 @@ This view allows to add human readable `aliases` for a selection process, define
 
 It is also possible to describe the program so that businesses starting the selection process are well informed.  
 
-![Setting aliases and steward to a selection process](.gitbook/assets/image%20%2846%29.png)
+![Setting aliases and steward to a selection process](../.gitbook/assets/image%20%2846%29.png)
 
-![Presentation of a program - displayed to businesses applying.](.gitbook/assets/image%20%2825%29.png)
+![Presentation of a program - displayed to businesses applying.](../.gitbook/assets/image%20%2825%29.png)
 
 ### Batches
 
@@ -64,7 +64,7 @@ Multiple batches can be defined for a selection process. This allows to group bu
 
 
 
-![One active batch starting from a certain date, without closing date.](.gitbook/assets/image%20%28199%29.png)
+![One active batch starting from a certain date, without closing date.](../.gitbook/assets/image%20%28200%29.png)
 
 ### Campaign
 
@@ -72,7 +72,7 @@ It is useful to be able to trace how a business got access to a certain program.
 
 For instance, a `campaign` link can be distributed to a partner relaying program communication. Alternatively, a different `campaign` link can be shared on twitter and other social media / email campaign. 
 
-![Example of one link to be shared with a specific partner. ](.gitbook/assets/image%20%28114%29.png)
+![Example of one link to be shared with a specific partner. ](../.gitbook/assets/image%20%28114%29.png)
 
 
 

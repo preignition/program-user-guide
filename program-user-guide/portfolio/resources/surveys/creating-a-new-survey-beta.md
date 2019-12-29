@@ -15,7 +15,7 @@ description: This page describes how a program user can create a new survey.
 * Name the survey
 * This is used internally and is not visible to entrepreneurs
 
-![](../../../../.gitbook/assets/image%20%28211%29.png)
+![](../../../../.gitbook/assets/image%20%28212%29.png)
 
 
 
@@ -54,7 +54,7 @@ description: This page describes how a program user can create a new survey.
 * In order to see the structure of your survey you need to activate the 'preview' toggle
 * You will then be able to add questions to your survey sections
 
-![Screen before &apos;preview&apos; toggle is activated](../../../../.gitbook/assets/image%20%28210%29.png)
+![Screen before &apos;preview&apos; toggle is activated](../../../../.gitbook/assets/image%20%28211%29.png)
 
 ![Screen after &apos;preview&apos; toggle is activated](../../../../.gitbook/assets/image%20%28161%29.png)
 

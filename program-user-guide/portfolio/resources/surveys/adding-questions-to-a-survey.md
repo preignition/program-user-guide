@@ -13,7 +13,7 @@ description: This page describes how questions can be added to a survey
 
 * The arrow beside 'text' can be expanded to reveal more text based options
 
-![](../../../../.gitbook/assets/image%20%28215%29.png)
+![](../../../../.gitbook/assets/image%20%28216%29.png)
 
 ## Step 2- Drag and drop under the relevant section
 

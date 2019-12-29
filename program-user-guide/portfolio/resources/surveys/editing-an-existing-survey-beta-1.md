@@ -10,7 +10,7 @@ The Survey page is in beta format.  Users may need assistance editing a survey.
 * A cog icon will appear when you hover over a question.
 * Double clicking on the cog icon will enable a user to edit the relevant question
 
-![](../../../../.gitbook/assets/image%20%28200%29.png)
+![](../../../../.gitbook/assets/image%20%28201%29.png)
 
 ### Step 2- Editing a question
 

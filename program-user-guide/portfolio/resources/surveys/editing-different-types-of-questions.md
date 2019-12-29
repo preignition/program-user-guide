@@ -31,7 +31,7 @@ description: This page describes how to edit different types of questions
 
 * Click on the 'options' tab and add the options you would like the respondent to choose from
 
-![](../../../../.gitbook/assets/image%20%28203%29.png)
+![](../../../../.gitbook/assets/image%20%28204%29.png)
 
 ![](../../../../.gitbook/assets/image%20%28174%29.png)
 

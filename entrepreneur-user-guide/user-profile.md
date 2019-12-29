@@ -35,7 +35,7 @@ description: This page describes how entrepreneurs can view and edit their user 
 * Click the button 'set email to testing01@tindercapital.com'
 * As an additional security step, this action requires recent authentication.  You may get a message asking you to 'Log in again before retrying this request'.
 
-![](../.gitbook/assets/image%20%28212%29.png)
+![](../.gitbook/assets/image%20%28213%29.png)
 
 * When you have successfully changed your email address, you will get a message notifying you that an email verification has been sent to your new email address.  Please verify you new email address as soon as possible and within 3 day of making the change.
 
