@@ -29,7 +29,7 @@ While displaying any heading, a browser adds one line before and one line after 
 
 This will produce the following result:
 
-![](../.gitbook/assets/image%20%2890%29.png)
+![](../.gitbook/assets/image%20%2895%29.png)
 
 ### Paragraph Tag
 

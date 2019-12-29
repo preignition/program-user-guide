@@ -9,31 +9,31 @@ description: This page describes how questions can be added to a survey
 * A list of the types of question that can be included are shown in the right hand column.
 * Questions can be text based, choice based, media based or free text
 
-![](../../../../.gitbook/assets/image%20%2856%29.png)
+![](../../../../.gitbook/assets/image%20%2860%29.png)
 
 * The arrow beside 'text' can be expanded to reveal more text based options
 
-![](../../../../.gitbook/assets/image%20%28205%29.png)
+![](../../../../.gitbook/assets/image%20%28215%29.png)
 
 ## Step 2- Drag and drop under the relevant section
 
 * To add a question, simply drag and drop it under the relevant section
 
-![](../../../../.gitbook/assets/image%20%28143%29.png)
+![](../../../../.gitbook/assets/image%20%28150%29.png)
 
 * You will receive a notification that the new question has been added successfully
 
-![](../../../../.gitbook/assets/image%20%28174%29.png)
+![](../../../../.gitbook/assets/image%20%28183%29.png)
 
 ## Step 3- Edit the question
 
 * To edit a question, click on the cog symbol which appears beside the question
 
-![](../../../../.gitbook/assets/image%20%2864%29.png)
+![](../../../../.gitbook/assets/image%20%2868%29.png)
 
 * This will bring up the following options for a 'text' question
 
-![](../../../../.gitbook/assets/image%20%2830%29.png)
+![](../../../../.gitbook/assets/image%20%2832%29.png)
 
 * The 'label' is the question name.
 * The placeholder enables you to provide some additional guidance to help the respondent answer the question

@@ -8,15 +8,15 @@ description: This page describes how to test your survey once you have set it up
 
 * For now after selecting test, you will also need to select the first page of the survey.  In the future this will load automatically 
 
-![](../../../../.gitbook/assets/image%20%28132%29.png)
+![](../../../../.gitbook/assets/image%20%28139%29.png)
 
 * You can also test a survey directly from the main survey page 
 
-![](../../../../.gitbook/assets/image%20%28116%29.png)
+![](../../../../.gitbook/assets/image%20%28123%29.png)
 
 ## Step 2- Test the survey
 
-![](../../../../.gitbook/assets/image%20%28162%29.png)
+![](../../../../.gitbook/assets/image%20%28170%29.png)
 
 * You will now be able to test the survey.
 * The survey will respond as if an respondent is completing it.

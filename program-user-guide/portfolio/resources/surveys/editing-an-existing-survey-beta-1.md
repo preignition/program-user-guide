@@ -10,7 +10,7 @@ The Survey page is in beta format.  Users may need assistance editing a survey.
 * A cog icon will appear when you hover over a question.
 * Double clicking on the cog icon will enable a user to edit the relevant question
 
-![](../../../../.gitbook/assets/image%20%28190%29.png)
+![](../../../../.gitbook/assets/image%20%28200%29.png)
 
 ### Step 2- Editing a question
 
@@ -18,7 +18,7 @@ The Survey page is in beta format.  Users may need assistance editing a survey.
 * For now we suggest that users get assistance from the preignition team to edit a question.
 * Contact help@preignition.org for assistance
 
-![](../../../../.gitbook/assets/image%20%2859%29.png)
+![](../../../../.gitbook/assets/image%20%2863%29.png)
 
 ### Step 3- Building a survey which has been edited
 
@@ -29,11 +29,11 @@ The Survey page is in beta format.  Users may need assistance editing a survey.
 
 * Select the 'Build' option and click 'create new build'
 
-![](../../../../.gitbook/assets/image%20%28184%29.png)
+![](../../../../.gitbook/assets/image%20%28193%29.png)
 
 * You will be asked to submit a 'build message'
 * This helps with versioning control
 * At this point the amended survey will be deployed.
 
-![](../../../../.gitbook/assets/image%20%2851%29.png)
+![](../../../../.gitbook/assets/image%20%2855%29.png)
 
