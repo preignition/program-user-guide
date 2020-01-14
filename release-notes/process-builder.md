@@ -4,7 +4,9 @@ description: Release note regarding process builder
 
 # Process Builder
 
-Preignition contained a Process Engine since early version of the application. However editing processes was difficult and demanded a deep knowledge of application's internal logic. The new process builder aims at changing this and provide an easy way to adjust processes according to client's need.
+Preignition contained a Process Engine since early version of the application. However editing processes was difficult and demanded a deep knowledge of the application's internal logic. 
+
+The new process builder aims at changing this and provide an easy way to adjust processes according to client's need.
 
 ## Overall
 
@@ -50,7 +52,7 @@ Additional information can be set for those type of processes.
 
 ### Selection page
 
-This view allows to add human readable `aliases` for a selection process, define a user who will be the default `steward` for businesses applying to the program. 
+This view allows to add human readable `aliases` for a selection process, or define a user who will be the default `steward` for businesses applying to the program. 
 
 It is also possible to describe the program so that businesses starting the selection process are well informed.  
 
