@@ -28,21 +28,25 @@ The Todo page also keep track of pending reporting tasks.
 
 ![One pending reporting task](../.gitbook/assets/selection_018.png)
 
-Let us now focus on how the report editor. It presents 4 sections: Overview, When, What, Who and Activity, briefly described below.
+Let us now focus on the new report editor. 
 
-### Overview
+### Report Editor
+
+The report editor presents 4 sections: Overview, When, What, Who and Activity, briefly described below.
+
+#### Overview
 
 The **Overview** section presents a summary of reporting settings, along with an activation tool, in charge of scheduling reporting instances. 
 
 ![Screenshot of report editor](../.gitbook/assets/image%20%2860%29.png)
 
-### When
+#### When
 
 As its name indicates, the **When** section allows users to set when reports should be scheduled. This involves a starting date, a reporting frequency and possibly an end date. Users can also decide how long responsible person for sending the report will be allocated to. 
 
 ![Screenshot of report editor When section](../.gitbook/assets/image%20%28146%29.png)
 
-### What and Who
+#### What and Who
 
 Here, users devise which form shall be used, and who is going to be involved in the reporting exercise.
 
@@ -50,7 +54,7 @@ The application provides various rules to define business groups. They can be de
 
 ![Select groups of businesses involved in reporting exercise](../.gitbook/assets/image%20%2816%29.png)
 
-### Activity
+#### Activity
 
 An Activity tab provides the list of all past reporting instances, with completion details, persons involved in reporting and access to provided information. 
 
