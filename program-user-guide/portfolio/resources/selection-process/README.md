@@ -12,7 +12,7 @@ The Selection process is in beta format.  Currently users will need help editing
 
 ### Step 1- Overview of the Survey process page
 
-![](../../../../.gitbook/assets/image%20%28146%29.png)
+![](../../../../.gitbook/assets/image%20%28155%29.png)
 
 * From the Selection process page a user will be able to view, edit and create selection processes
 * The person who creates the selection process is shown as the 'owner' 

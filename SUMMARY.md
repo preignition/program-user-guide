@@ -68,4 +68,5 @@
 
 * [Survey Builder](release-notes/survey-builder.md)
 * [Process Builder](release-notes/process-builder.md)
+* [Reporting](release-notes/reporting.md)
 

@@ -12,7 +12,7 @@ Notifications are messages which can be sent to entrepreneurs either on their bu
 
 ## Step 2-  Notification page  
 
-![](../../../.gitbook/assets/image%20%2814%29.png)
+![](../../../.gitbook/assets/image%20%2815%29.png)
 
 * The notification page shows all the notifications that have been shared either with the program or with the active user
 * Each notification has a title, owner, date last modified and a resource ID.
@@ -22,7 +22,7 @@ Notifications are messages which can be sent to entrepreneurs either on their bu
 * To view or edit a notification template simply double click on the relevant template
 * Alternatively you can right click and select the 'edit' option
 
-![](../../../.gitbook/assets/image%20%28134%29.png)
+![](../../../.gitbook/assets/image%20%28141%29.png)
 
 ## Step 3- Creating a new notification template
 
@@ -34,7 +34,7 @@ The important elements of a notification template are as follows:
 
 #### **Designation**
 
-![](../../../.gitbook/assets/image%20%2894%29.png)
+![](../../../.gitbook/assets/image%20%28100%29.png)
 
 * These are used for internal purposes to keep track of different notification templates.  
 * Neither the 'name' or the 'description' is seen by entrepreneurs
@@ -45,7 +45,7 @@ It is a good idea to give notification templates a unique number or reference so
 
 **Content**
 
-![](../../../.gitbook/assets/image%20%2851%29.png)
+![](../../../.gitbook/assets/image%20%2854%29.png)
 
 * The content section is where the notification text is entered
 * Each notification has a 'Title'.  This will be visible to the entrepreneur either as the title of an email or the heading of a message on their bulletin board
@@ -58,24 +58,24 @@ It is a good idea to give notification templates a unique number or reference so
 
 * In order for a notification to be used, it must first be published by selecting the 'publish' button
 
-![](../../../.gitbook/assets/image%20%2824%29.png)
+![](../../../.gitbook/assets/image%20%2826%29.png)
 
 ## Step 6- Use 
 
 * Beside the 'publish' button there are three tabs
 * The 'content' tab has been covered already
 
-![](../../../.gitbook/assets/image%20%28113%29.png)
+![](../../../.gitbook/assets/image%20%28120%29.png)
 
 * The 'Use' tab shows how the notification template is deployed in other parts of the application.  
 * Further work is needed on this page
 
-![](../../../.gitbook/assets/image%20%28173%29.png)
+![](../../../.gitbook/assets/image%20%28183%29.png)
 
 ## Step 7- Access
 
 * This tab shows the resource owner and allows the resource owner to give access to other program staff to edit or view the notification.
 * The resource ownership can also be assigned to another program staff.
 
-![](../../../.gitbook/assets/image%20%2874%29.png)
+![](../../../.gitbook/assets/image%20%2879%29.png)
 

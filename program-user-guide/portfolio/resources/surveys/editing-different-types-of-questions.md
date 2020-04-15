@@ -8,36 +8,36 @@ description: This page describes how to edit different types of questions
 
 * There are a number of different options for text based questions 
 
-![](../../../../.gitbook/assets/image%20%2862%29.png)
+![](../../../../.gitbook/assets/image%20%2867%29.png)
 
 * They are all edited in a similar way
 * All text based questions have a label, placeholder, required tick box and a 'special attributes' field
 * The have been discussed in the page '[Adding questions to a survey'](adding-questions-to-a-survey.md)
 
-![](../../../../.gitbook/assets/image%20%2848%29.png)
+![](../../../../.gitbook/assets/image%20%2851%29.png)
 
 ## Step 2- Choice based questions
 
 * There are a number of different options for choice based questions
 
-![](../../../../.gitbook/assets/image%20%2835%29.png)
+![](../../../../.gitbook/assets/image%20%2837%29.png)
 
 * Each choice based question is edited slightly differently.
 * However the main different between editing choice based questions and text based questions, is that the former frequently have an addition 'options' tab, where you specify the options the respondent can choose from.
 
  
 
-![This is an example of a &apos;dropdown&apos; question](../../../../.gitbook/assets/image%20%2897%29.png)
+![This is an example of a &apos;dropdown&apos; question](../../../../.gitbook/assets/image%20%28103%29.png)
 
 * Click on the 'options' tab and add the options you would like the respondent to choose from
 
-![](../../../../.gitbook/assets/image%20%28204%29.png)
+![](../../../../.gitbook/assets/image%20%28214%29.png)
 
-![](../../../../.gitbook/assets/image%20%28174%29.png)
+![](../../../../.gitbook/assets/image%20%28184%29.png)
 
 * Click on the preview toggle to return to the main survey view
 
-![](../../../../.gitbook/assets/image%20%28124%29.png)
+![](../../../../.gitbook/assets/image%20%28131%29.png)
 
 ## Step 3- Media based questions
 
@@ -45,11 +45,11 @@ description: This page describes how to edit different types of questions
 * Editing a media based question is straight forward. 
 * Simply give it a label and placeholder and decide whether to make it a required question.
 
-![](../../../../.gitbook/assets/image%20%28152%29.png)
+![](../../../../.gitbook/assets/image%20%28161%29.png)
 
 * Toggle 'preview' to return to the main survey view
 
-![](../../../../.gitbook/assets/image%20%28117%29.png)
+![](../../../../.gitbook/assets/image%20%28124%29.png)
 
 ## Step 4- Fields
 
@@ -57,9 +57,9 @@ description: This page describes how to edit different types of questions
 * 'Free text' allows you to enter a text box anywhere you like within your survey.
 * Mark down is supported if you want to customize the look and feel of the text box.
 
-![](../../../../.gitbook/assets/image%20%2854%29.png)
+![](../../../../.gitbook/assets/image%20%2857%29.png)
 
 * Toggle the 'preview tab' to return to the main survey view
 
-![](../../../../.gitbook/assets/image%20%28149%29.png)
+![](../../../../.gitbook/assets/image%20%28158%29.png)
 

@@ -21,25 +21,25 @@ I have opened an account on Preignition but can't remember how to access it.
 * If you are signed in already the homepage will look like this
 * You can proceed directly to your personalized 'entrepreneur space'
 
-![](../.gitbook/assets/image%20%2864%29.png)
+![](../.gitbook/assets/image%20%2869%29.png)
 
 ### Step 3
 
 * If you are logged out, the homepage will look like this
 * Click on the 'sign-in' logo to sign into your account
 
-![](../.gitbook/assets/image%20%2842%29.png)
+![](../.gitbook/assets/image%20%2844%29.png)
 
 ### Step 4
 
 * Enter your email and the password that you used to set up the account
 * Select sign-in
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](../.gitbook/assets/image%20%2832%29.png)
 
 ### Step 5
 
 * You will be taken back to the homepage where you will see the option to access your personalized 'entrepreneur space'
 
-![](../.gitbook/assets/image%20%28186%29.png)
+![](../.gitbook/assets/image%20%28196%29.png)
 
