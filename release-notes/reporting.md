@@ -10,7 +10,7 @@ Preignition is proud to announce the launch of its new reporting feature. It ena
 
 The reporting feature leverages Preignition [survey ](survey-builder.md)and [process](process-builder.md) builders to provide a flexible tool both in terms of the content collected and the steps involved \(e.g. sending recurrent email invite\).
 
-The reporting feature is an important component in a more comprehensive Monitoring an Evaluation package, allowing to bind information regularly collected with program key indicators.
+The reporting feature is an important component in a more comprehensive Monitoring and Evaluation package, allowing to bind information regularly collected with program key indicators.
 
 But first, let us see what it changes for users responsible for reporting. 
 
