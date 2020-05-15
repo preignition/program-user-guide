@@ -2,7 +2,7 @@
 description: Release Note on new Survey Builder
 ---
 
-# Survey Builder
+# Form Builder
 
 Preignition is proud to introduce a powerful Survey Builder to allow users better devise how information is collected.
 

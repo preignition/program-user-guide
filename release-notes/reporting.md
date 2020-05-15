@@ -8,7 +8,7 @@ description: Release Note for the new reporting feature
 
 Preignition is proud to announce the launch of its new reporting feature. It enables programs to collect  information from users on recurrent basis. For instance, quarterly or annually progress reports from key businesses. It also allows to easily monitor and drive this data collection exercise. 
 
-The reporting feature leverages Preignition [survey ](survey-builder.md)and [process](process-builder.md) builders to provide a flexible tool both in terms of the content collected and the steps involved \(e.g. sending recurrent email invite\).
+The reporting feature leverages Preignition [survey ](form-builder.md)and [process](process-builder.md) builders to provide a flexible tool both in terms of the content collected and the steps involved \(e.g. sending recurrent email invite\).
 
 The reporting feature is an important component in a more comprehensive Monitoring and Evaluation package, allowing to bind information regularly collected with program key indicators.
 
