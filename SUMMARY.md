@@ -55,6 +55,13 @@
 * [How do i inform the Preignition team of a technical issue?](faq-program-user/how-do-i-inform-the-technical-team-of-an-issue.md)
 * [How do I test my program?](faq-program-user/how-do-i-test-that-my-programs-selection-process-if-working.md)
 
+## Release Notes
+
+* [Form Builder](release-notes/form-builder.md)
+* [Process Builder](release-notes/process-builder.md)
+* [Reporting](release-notes/reporting.md)
+* [Survey](release-notes/survey.md)
+
 ## API
 
 * [survey](api/survey.md)
@@ -63,11 +70,4 @@
 ## web-components
 
 * [widget-resource-access](web-components/widget-resource-access.md)
-
-## Release Notes
-
-* [Form Builder](release-notes/form-builder.md)
-* [Process Builder](release-notes/process-builder.md)
-* [Reporting](release-notes/reporting.md)
-* [Survey](release-notes/survey.md)
 
