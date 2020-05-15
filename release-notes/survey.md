@@ -34,6 +34,12 @@ Batches enable survey editors to group responses. It also allows to set a starti
 
 ![Batch tool to group survey responses, or set start and end date](../.gitbook/assets/batch.png)
 
+#### Presentation
+
+Here, Survey editors decide how to present the survey respondents. Formatting and rich content is added via [Markdown](https://en.wikipedia.org/wiki/Markdown) editing. Presentation settings can be translated in all active language of the form used in the survey. 
+
+![Inform respondents about the Survey they are going to fill-in.](../.gitbook/assets/presentation.png)
+
 #### Activity
 
 The Activity page provides a summary of how busy the survey was the last month. It also display the number of users currently responding to the survey \(in real-time\).
@@ -46,7 +52,7 @@ Once a survey is created and active, users can access it through the chosen dist
 
 ![Survey Landing stepper \(first time a user access a survey\).](../.gitbook/assets/stepper.png)
 
-Once the stepper completed, the survey made visible.
+Once the stepper completed, the survey is made visible.
 
 
 
