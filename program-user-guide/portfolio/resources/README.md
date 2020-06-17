@@ -28,8 +28,8 @@ description: >-
 
 Detailed guidance notes are available for each type of resource.
 
-* [Survey](surveys/)
-* [Section](survey-part.md)
+* [Survey](form/)
+* [Section](form-section.md)
 * [Selection](selection-process/)
 * [Notification](notifications.md)
 
