@@ -1,5 +1,5 @@
 ---
-description: How to use Form logic to dynamically show or hied part of a form
+description: How to use Form logic to dynamically show or hide part of a form
 ---
 
 # Logic
@@ -8,15 +8,15 @@ A `Logic` tab appears under `advanced mode`  for `Page`, `Section` and `Question
 
 Under this tab, it is possible to write logical expression that will control survey attributes while users fill in the form. 
 
-For `Pages` and `Sections`, form logic is used to control whether a page or a section is visible or hidden. For `Questions`,  `required`, `invalid` and `read-only` attributes can be evaluated similarly, and in addition to `hidden` attribute.
+For `Pages` and `Sections`, form logic is used to control whether a page or a section is visible or hidden. For `Questions`,  `required`, `invalid` and `read-only` attributes can be evaluated similarly, in addition to `hidden` attribute.
 
-The form engine will dynamically evaluates the value of a logical expression and assigned it to its bound attribute. For example if an expression evaluates to `true` for a `hidden` attribute, the relevant form item will be hidden. 
+The form engine dynamically evaluates the value of a logical expression and assignes it to its bound attribute. For example when an expression evaluates to `true` for a `hidden` attribute, the relevant form item will be hidden. 
 
 ### How to write a logical expression
 
-Logical expression are mathematical expressions written in the context of the form data. Most of the time , you wish to instruct the form engine to hide a specific field when some conditions are met. 
+Logical expression are mathematical expressions written in the context of the form data. Most of the time, you wish to instruct the form engine to hide a specific field when some conditions are met. 
 
-For instance in the figure below, a section will be hidden when "answer to `what do you prefer` question is apple and the answer to the question `estimate your cost` is higher to 50". The value of the expression depends on answer to the two questions  `what do you prefer` and  `estimate your cost` . When the expression evaluates to true, the section is hidden. It is shown otherwise.
+For instance in the figure below, a section will be hidden when the answer to `what do you prefer` question is `apple` and the answer to the question `estimate your cost` is higher to 50. The value of the expression depends on answer to the two questions  `what do you prefer` and  `estimate your cost` . When the expression evaluates to true, the section is hidden. It is shown otherwise.
 
 ![Screenshot of a logical expression. ](../../../../.gitbook/assets/image%20%28229%29.png)
 
@@ -24,7 +24,7 @@ For instance in the figure below, a section will be hidden when "answer to `what
 
 To bring questions into the expression builder, you need to drag the specific question item from the structure grid and drop it into the expression field. 
 
-To bring answers of choice-based questions into the expression builder, do the same with question options on the structure grid. 
+To bring answers of choice-based questions into the expression builder, do the same with question options from the structure grid. 
 
 The rest of the expression \(logic like equal `==` or not equal `!=`\) is then typed as usual with the keyboard. 
 
@@ -44,7 +44,7 @@ The reason is that "answer to question A == 1" will always be `false` when quest
 
 A test toggle button can be activated to render all questions concerned by the expression. You can then answer the questions and check the value of the expression. 
 
-Logic expressions are also evaluated when user test the for itself. 
+Logic expressions are also evaluated when user tests the for itself. 
 
 ### Syntax
 
