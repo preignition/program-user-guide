@@ -6,7 +6,7 @@ description: Release note for the new survey application
 
 Preignition is launching a new Survey Tool! Here is the release note.
 
-The application already has a [Form Builder](form-builder.md) and a [Reporting](reporting.md) tool for recurrent data collection. The new survey tool allows to launch one-off data collection exercices. 
+The application already has a [Form Builder](form-builder/) and a [Reporting](reporting.md) tool for recurrent data collection. The new survey tool allows to launch one-off data collection exercices. 
 
 ![Accessing Survey tool through resource page.](../.gitbook/assets/menu.png)
 
