@@ -59,6 +59,7 @@
 ## Release Notes
 
 * [Form Builder](release-notes/form-builder/README.md)
+  * [import/export](release-notes/form-builder/importexport.md)
   * [Section Container](release-notes/form-builder/sectioncontainer.md)
 * [Process Builder](release-notes/process-builder.md)
 * [Reporting](release-notes/reporting.md)
