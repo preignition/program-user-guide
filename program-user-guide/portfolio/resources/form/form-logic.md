@@ -46,6 +46,18 @@ A test toggle button can be activated to render all questions concerned by the e
 
 Logic expressions are also evaluated when user tests the for itself. 
 
+### Trick for writing complex logic
+
+It is easier to think in terms of when an item should be displayed rather than when it should be hidden.
+
+![A more complex expression](../../../../.gitbook/assets/image%20%28239%29.png)
+
+For instance, the above expression reads as:
+
+it is **displayed** when \(`if you agree to complete` is **true** `AND` \(`where you attending college` is **yes** `OR` `Do you have school-age children` is **yes**\)\).
+
+Then invert the expression \( !\(`expression`\) \) to hide it for the same configuration.
+
 ### Syntax
 
 The expression builder relies on [jexel](https://www.npmjs.com/package/jexl)  and use the same syntax. 
