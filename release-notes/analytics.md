@@ -14,11 +14,13 @@ We are proud to introduce our new analytics dashboard to explore and visualize s
 Data is collected to be analyzed! Survey analytics makes this easy.
 {% endhint %}
 
-With survey analytics, survey authors visualize survey data as it comes. The application displays one chart per question summarizing count of entries. Type of chart depends on the type of collected information \(e.g. choropleth map for geographical data, pie chart for categorical data, histogram for continuous data\).
+With survey analytics, survey authors visualize survey data as it comes. The application displays one chart per question summarizing distribution of answers. 
+
+Type of chart depends on the type of collected information \(e.g. choropleth map for geographical data, pie chart for categorical data, histogram for continuous data\).
 
 ### Based on survey structure
 
-The analytics follows the structure of the underlying survey form. Each survey page inherits an analytics page displaying question answers  for this page. 
+The analytics follows the structure of the underlying survey form. Each survey page inherits an analytics page displaying all question answers. 
 
 ![Screenshot of analytics, with survey structure on left menu](../.gitbook/assets/image%20%28241%29.png)
 
@@ -48,11 +50,11 @@ This approach allows for very efficient ways to interact with survey data. It is
 
 ## Configure the dashboard
 
-Analytics editors can modify the look of the dashboard. For instance, change the layout, structure, titles, colors of individual charts is easy. 
+Analytics editors can modify the look of the dashboard. For instance, change the layout, structure, titles, colors of individual charts is easy.  
 
 ![Screenshot of the dashboard composition editor](../.gitbook/assets/image%20%28245%29.png)
 
-It is also possible to set settings by type of charts \(which will be inherited by all charts of the same type\), or by type of data. 
+It is also possible to modify generic settings by type of charts \(which will be inherited by all charts of the same type\), or by type of data. 
 
 {% embed url="https://youtu.be/JGXc1aw2XGc?loop=1&modestbranding=1&autoplay=1" caption="Setting new color range for continuous data" %}
 
