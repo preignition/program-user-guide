@@ -20,7 +20,7 @@ With survey analytics, survey authors visualize survey data as it comes. The app
 
 The analytics follows the structure of the underlying survey form. Each survey page inherits an analytics page displaying question answers  for this page. 
 
-![Screenshot of analytics, with survey structure on left menu](../.gitbook/assets/image%20%28240%29.png)
+![Screenshot of analytics, with survey structure on left menu](../.gitbook/assets/image%20%28241%29.png)
 
 ### Meta data
 
@@ -28,21 +28,45 @@ A meta data section appears at the top of each page. It contains information suc
 
 To keep charts from one page to another, it is possible to mark charts as `favorite`  . 
 
+### Raw data
+
+Text field are displayed as raw data on a table. Answers in other languages than the survey original language are translated back and also displayed. 
+
+{% embed url="https://youtu.be/VL-nh2glGso?autoplay=1&modestbranding=1&loop=1" caption="See raw data for answers" %}
+
+
+
 ## Analyze and filter
 
-The analytics provides a way to dynamically analyze and filter data, allowing to see subset of survey data on the go. By clicking on chart sections \(for instance clicking on the `yes` part of a pie chart \), the visualization will automatically \(and efficiently\[^1\] \) update all other charts \(for instance, filter out respondents not having answered `yes` to the selected question\).  
+The analytics provides a way to dynamically analyze and filter data, allowing to see subset of survey data on the go. By clicking on chart sections \(for instance clicking on the `yes` part of a pie chart \), the visualization will automatically and efficiently update all other charts \(for instance, filter out respondents not having answered `yes` to the selected question\).  
 
 {% hint style="info" %}
-In analytics, charts are at the same time visualization tools and dynamic filtering tools
+In analytics, charts are at the same time visualization and dynamic filtering tools
 {% endhint %}
+
+This approach allows for very efficient ways to interact with survey data. It is for instance easy to see differences between respondents from different countries, languages, or gender.
 
 ## Configure the dashboard
 
+Analytics editors can modify the look of the dashboard. For instance, change the layout, structure, titles, colors of individual charts is easy. 
+
+![Screenshot of the dashboard composition editor](../.gitbook/assets/image%20%28245%29.png)
+
+It is also possible to set settings by type of charts \(which will be inherited by all charts of the same type\), or by type of data. 
+
+{% embed url="https://youtu.be/JGXc1aw2XGc?loop=1&modestbranding=1&autoplay=1" caption="Setting new color range for continuous data" %}
+
+
+
 ## Export data
 
+Survey data can be exported for further analysis by more specialized tools like R, Julia, Stats or SPSS. 
 
+![Consent form highlighting data handling responsibilty](../.gitbook/assets/image%20%28244%29.png)
 
-\[^1\]: We use an efficient algoriyth..
+Different type and format of exports are available. For instance, anonymized export will remove all fields marked as `private` in the form definition. 
+
+![](../.gitbook/assets/image%20%28240%29.png)
 
 
 
