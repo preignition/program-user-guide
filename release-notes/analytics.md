@@ -6,7 +6,7 @@ description: Release note on new survey Analytics
 
 We are proud to introduce our new analytics dashboard to explore and visualize survey data.
 
-{% embed url="https://youtu.be/mrmI\_mv0OUw?modestbranding=1&loop=1&autoplay=1" caption="Preview of survey dynamic analytics" %}
+{% embed url="https://youtu.be/mrmI\_mv0OUw?modestbranding=1&loop=1&autoplay=1" caption="Example of user interactive with dynamic analytics, filtering by type of answers and date of submssion" %}
 
 ## Visualize survey data
 
