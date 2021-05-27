@@ -75,3 +75,9 @@
 
 * [widget-resource-access](web-components/widget-resource-access.md)
 
+## How to guides
+
+---
+
+* [How to add a question to a form](how-to-add-a-question-to-a-form.md)
+
