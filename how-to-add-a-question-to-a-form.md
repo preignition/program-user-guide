@@ -36,7 +36,7 @@ description: All the steps you need to add a question to a form
 
 ## Step 5
 
-* The following is an example og how you can customise a simple text based question
+* The following is an example of how you can customise a simple text based question
 * There are seperate guidance notes on text based, choiced based and media based question types which explain how to customize questions in more detail
 * However common features of questions include:
   * 'label'- shows how the question will appear on a form
@@ -45,7 +45,7 @@ description: All the steps you need to add a question to a form
   * 'placeholder'- can also be used to add guidance or context.  Placeholder text is visible until overwritten by a respondents answer
   * 'required'- requires the respondent to answer the question in order to submit the survey
   * 'specific attributes' - varies depending on question
-  * 'privacy'- excludes this feild from certain data exports 
+  * 'privacy'- This feild will not appear in anonymised data exports 
 
 ![](.gitbook/assets/image%20%28252%29.png)
 
