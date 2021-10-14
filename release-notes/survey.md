@@ -42,17 +42,15 @@ Here, Survey editors decide how to present the survey respondents. Formatting an
 
 #### Activity
 
-The Activity page provides a summary of how busy the survey was the last month. It also display the number of users currently responding to the survey \(in real-time\).
+The Activity page provides a summary of how busy the survey was the last month. It also display the number of users currently responding to the survey (in real-time).
 
 ![Summary of survey activity for last month, with number of users currently accessing the survey.](../.gitbook/assets/activity.png)
 
 ### Accessing a Survey for Data Entry
 
-Once a survey is created and active, users can access it through the chosen distribution channels. First time they access a survey, they will be guided though a stepper informing them about the current survey \(presentation above\), asking them to create an account \(or continue as guest users\) and requesting their consent on terms of use. 
+Once a survey is created and active, users can access it through the chosen distribution channels. First time they access a survey, they will be guided though a stepper informing them about the current survey (presentation above), asking them to create an account (or continue as guest users) and requesting their consent on terms of use. 
 
-![Survey Landing stepper \(first time a user access a survey\).](../.gitbook/assets/stepper.png)
+![Survey Landing stepper (first time a user access a survey).](../.gitbook/assets/stepper.png)
 
 Once the stepper completed, the survey is made visible.
-
-
 

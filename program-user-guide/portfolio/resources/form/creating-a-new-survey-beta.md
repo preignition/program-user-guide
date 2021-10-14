@@ -8,14 +8,14 @@ description: This page describes how a program user can create a new survey.
 
 * A new survey can be created by clicking on 'create new survey' or by right clicking and selecting 'create'
 
-![](../../../../.gitbook/assets/image%20%28104%29.png)
+![](<../../../../.gitbook/assets/image (204).png>)
 
 ## Step 2- Name the survey
 
 * Name the survey
 * This is used internally and is not visible to entrepreneurs
 
-![](../../../../.gitbook/assets/image%20%28222%29.png)
+![](<../../../../.gitbook/assets/image (217).png>)
 
 
 
@@ -23,11 +23,11 @@ description: This page describes how a program user can create a new survey.
 
 * The survey title appears at the top of the survey and so is visible to entrepreneurs
 
-![](../../../../.gitbook/assets/image%20%28185%29.png)
+![](<../../../../.gitbook/assets/image (218).png>)
 
 ## Step 4- Add a page to your survey
 
-![](../../../../.gitbook/assets/image%20%2825%29.png)
+![](<../../../../.gitbook/assets/image (220).png>)
 
 ## **Step 5- Name your new page**
 
@@ -35,7 +35,7 @@ description: This page describes how a program user can create a new survey.
 * These will appear at the top of the page.
 * The page name will also appear in the survey structure on the left hand column
 
-![](../../../../.gitbook/assets/image%20%2880%29.png)
+![](<../../../../.gitbook/assets/image (221).png>)
 
 ## Step 6- Add a new section
 
@@ -43,18 +43,17 @@ description: This page describes how a program user can create a new survey.
 * Use sections to break the survey down into logical and manageable parts
 * Questions are added to sections not pages.  Therefore your survey will need at least one section 
 
-![](../../../../.gitbook/assets/image%20%28115%29.png)
+![](<../../../../.gitbook/assets/image (222).png>)
 
 ## Step 8- Give the section a name, title and sub-title
 
-![](../../../../.gitbook/assets/image%20%2828%29.png)
+![](<../../../../.gitbook/assets/image (223).png>)
 
 ## Step 9- Activate the 'preview' toggle
 
 * In order to see the structure of your survey you need to activate the 'preview' toggle
 * You will then be able to add questions to your survey sections
 
-![Screen before &apos;preview&apos; toggle is activated](../../../../.gitbook/assets/image%20%28221%29.png)
+![Screen before 'preview' toggle is activated](<../../../../.gitbook/assets/image (224).png>)
 
-![Screen after &apos;preview&apos; toggle is activated](../../../../.gitbook/assets/image%20%28171%29.png)
-
+![Screen after 'preview' toggle is activated](<../../../../.gitbook/assets/image (225).png>)

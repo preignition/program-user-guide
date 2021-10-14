@@ -1,9 +1,3 @@
----
-description: >-
-  This page describes how to create and edit categories.  It is intended for
-  Advanced Users only.
----
-
 # Categories- Beta
 
 {% hint style="warning" %}
@@ -19,14 +13,14 @@ This section is in beta format.  For now users will need help creating categorie
   * Consider
   * Drop
 
-![](../../../.gitbook/assets/image%20%28106%29.png)
+![](<../../../.gitbook/assets/image (106).png>)
 
 * Grouping businesses in this way enables TBN Keyna to focus their efforts on reviewing business which have been categorized as 'Consider'.  
 * 'Pre-select' business are likely to be accepted to the next stage of the selection process, whereas 'Drop' businesses are likely to be rejected. 
 
 ### Step 2- Overview of the Category page
 
-![](../../../.gitbook/assets/image%20%2875%29.png)
+![](<../../../.gitbook/assets/image (108).png>)
 
 * From the Category page a user can view, edit and create categories
 * The person who creates the category is shown as the 'owner' 
@@ -38,33 +32,33 @@ This section is in beta format.  For now users will need help creating categorie
 * To view or edit a category simply double click on the relevant template
 * Alternatively you can right click and select the 'edit' option
 
-![](../../../.gitbook/assets/image%20%28134%29.png)
+![](<../../../.gitbook/assets/image (109).png>)
 
 ### Step 4- Creating a new Category
 
 * To create a new Category simply click the 'create new' button
 
-![](../../../.gitbook/assets/image%20%28218%29.png)
+![](<../../../.gitbook/assets/image (110).png>)
 
 ### Step 5- Overview of a Category template
 
 * The important elements of a notification template are as follows:
 
-**Title** 
+**Title **
 
-![](../../../.gitbook/assets/image%20%286%29.png)
+![](<../../../.gitbook/assets/image (112).png>)
 
 * This is the name of the Category
 
 **Documentation** 
 
-![](../../../.gitbook/assets/image%20%28139%29.png)
+![](<../../../.gitbook/assets/image (113).png>)
 
 * This is an internal description of the category and is not visible to entrepreneurs
 
 **Category labels**
 
-![](../../../.gitbook/assets/image%20%28154%29.png)
+![](<../../../.gitbook/assets/image (114).png>)
 
 * This is where the category labels are defined
 * Category labels can be added or deleted using the buttons on the right hand side.
@@ -73,9 +67,7 @@ This section is in beta format.  For now users will need help creating categorie
 
 * In order for changes to a Category template to take effect they must be 'published'.
 
-![](../../../.gitbook/assets/image%20%2887%29.png)
+![](<../../../.gitbook/assets/image (115).png>)
 
 * If the publish button is in grey it means that you don't have permission to edit the Category template.
-
-
 

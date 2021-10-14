@@ -8,24 +8,23 @@ The selection process page is in beta format.  For now Advanced Users will need 
 
 * Right click on the selection process to be edited and select 'edit'
 
-![](../../../../.gitbook/assets/image%20%28179%29.png)
+![](<../../../../.gitbook/assets/image (100).png>)
 
 ### Step 2- Settings 
 
 * This is where the main settings for the selection process are defined.
 
-![](../../../../.gitbook/assets/image%20%2878%29.png)
+![](<../../../../.gitbook/assets/image (101).png>)
 
 ### Step 3- Nodes
 
 * The steps in a selection process are referred to as 'nodes'
 * The nodes tab is where nodes are managed. 
 
-![](../../../../.gitbook/assets/image%20%2872%29.png)
+![](<../../../../.gitbook/assets/image (102).png>)
 
 ### Step 4- Transitions
 
 * The transitions tab shows the transitions which happen between the various nodes.
 
-![](../../../../.gitbook/assets/image%20%28164%29.png)
-
+![](<../../../../.gitbook/assets/image (103).png>)

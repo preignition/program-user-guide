@@ -1,17 +1,10 @@
----
-description: >-
-  This page describes how to manage settings used to communicate with
-  entrepreneurs such as email footers and 'reply to' email addresses.  It is
-  intended for Advanced Users only.
----
-
 # Communication
 
 ### Step 1- Overview of the Communication page
 
 * The communication page has some basic settings  related to communicating with entrepreneurs who have registered to a program
 
-![](../../../.gitbook/assets/image%20%2818%29.png)
+![](<../../../.gitbook/assets/image (136).png>)
 
 ### Step 2-  email addresses
 
@@ -26,8 +19,7 @@ Make sure that the 'reply to' email address is checked regularly.
 
 * email signatures and footers can be entered in the bottom two fields
 
-![](../../../.gitbook/assets/image%20%28187%29.png)
+![](<../../../.gitbook/assets/image (137).png>)
 
 * A knowledge of markdown formatting is required.
 * Please contact help@prignition.org if you need assistance.
-

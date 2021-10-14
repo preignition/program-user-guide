@@ -14,7 +14,7 @@ Programs design their own surveys and responses can be manually reviewed or auto
 
 ## Step 2- Overview of the Survey page
 
-![](../../../../.gitbook/assets/image%20%28127%29.png)
+![](<../../../../.gitbook/assets/image (202).png>)
 
 * The main survey page shows all the surveys that have been shared with a particular program or with the active user.
 * The title of the survey is shown, along with the owner, the date it was last modified and resource ID.
@@ -30,7 +30,6 @@ Programs design their own surveys and responses can be manually reviewed or auto
 * To edit or test an existing survey simple double click on the survey 
 * Right clicking on an existing survey brings up an option to remove a survey
 
-![](../../../../.gitbook/assets/image%20%28168%29.png)
+![](<../../../../.gitbook/assets/image (203).png>)
 
-### 
-
+###
