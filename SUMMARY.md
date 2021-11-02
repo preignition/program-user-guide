@@ -11,7 +11,7 @@
 * [Completing a survey](entrepreneur-user-guide/completing-a-survey.md)
 * [User profile](entrepreneur-user-guide/user-profile.md)
 
-## FAQ \(USER\)
+## FAQ (USER)
 
 * [What happens if i forget my password?](faq-user/what-happens-if-i-forget-my-password.md)
 * [How do I log back into my account?](faq-user/how-do-i-log-into-my-account.md)
@@ -49,7 +49,7 @@
 * [Admin](program-user-guide/admin/README.md)
   * [Tenants](program-user-guide/admin/tenants.md)
 
-## FAQ \(PROGRAM USER\)
+## FAQ (PROGRAM USER)
 
 * [How do I change the active program?](faq-program-user/changing-active-portfolio.md)
 * [How do I format text in html?](faq-program-user/how-do-i-format-text-in-html.md)
@@ -77,7 +77,7 @@
 
 ## How to guides
 
----
+***
 
 * [How to add a question to a form](how-to-add-a-question-to-a-form.md)
-
+* [How to use logic in a form](how-to-use-logic-in-a-form.md)
