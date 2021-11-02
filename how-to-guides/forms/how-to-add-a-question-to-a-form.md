@@ -9,30 +9,30 @@ description: All the steps you need to add a question to a form
 * This guide assumes you have already created a form and added a page and section.
 * Your screen will now look like this
 
-![Screenshot showing a blank section](<.gitbook/assets/image (287).png>)
+![Screenshot showing a blank section](<../../.gitbook/assets/image (287).png>)
 
 ## Step 2
 
 * A list of question types is listed on the right hand side of the page
 * Expanding the 'V' symbol by the 'text' option, provides some additional text based quesion types
 
-![Screenshot showing additional text based question types](<.gitbook/assets/image (288).png>)
+![Screenshot showing additional text based question types](<../../.gitbook/assets/image (288).png>)
 
 ## Step 3
 
 * You can 'drag and drop' your prefered question type into the middle section of the page
 
-![Screenshot showing a 'text' question being added to 'section 1'](<.gitbook/assets/image (289).png>)
+![Screenshot showing a 'text' question being added to 'section 1'](<../../.gitbook/assets/image (289).png>)
 
 * The new question will appear in the form structure in the left hand side of the page
 
-![](<.gitbook/assets/image (291).png>)
+![](<../../.gitbook/assets/image (291).png>)
 
 ## Step 4
 
 * Selecting the 'cog' icon beside a question, enables you to customise the question
 
-![](<.gitbook/assets/image (293).png>)
+![](<../../.gitbook/assets/image (293).png>)
 
 ## Step 5
 
@@ -45,6 +45,6 @@ description: All the steps you need to add a question to a form
   * 'placeholder'- can also be used to add guidance or context.  Placeholder text is visible until overwritten by a respondents answer
   * 'required'- requires the respondent to answer the question in order to submit the survey
   * 'specific attributes' - varies depending on question
-  * 'privacy'- This feild will not appear in anonymised data exports 
+  * 'privacy'- This feild will not appear in anonymised data exports&#x20;
 
-![](<.gitbook/assets/image (295).png>)
+![](<../../.gitbook/assets/image (295).png>)

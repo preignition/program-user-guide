@@ -77,7 +77,6 @@
 
 ## How to guides
 
-***
-
-* [How to add a question to a form](how-to-add-a-question-to-a-form.md)
-* [How to use logic in a form](how-to-use-logic-in-a-form.md)
+* [Forms](how-to-guides/forms/README.md)
+  * [Introduction to form logic](how-to-guides/forms/introduction-to-form-logic.md)
+  * [How to add a question to a form](how-to-guides/forms/how-to-add-a-question-to-a-form.md)
