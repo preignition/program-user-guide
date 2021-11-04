@@ -78,5 +78,6 @@
 ## How to guides
 
 * [Forms](how-to-guides/forms/README.md)
+  * [Adding questions to a form](how-to-guides/forms/how-to-add-a-question-to-a-form.md)
   * [Introduction to form logic](how-to-guides/forms/introduction-to-form-logic.md)
-  * [How to add a question to a form](how-to-guides/forms/how-to-add-a-question-to-a-form.md)
+  * [Using tooltips](how-to-guides/forms/using-tooltips.md)
