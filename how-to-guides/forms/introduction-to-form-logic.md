@@ -16,7 +16,7 @@ Logical expressions are mathematical expressions which return a result of either
 
 For example, you may be interested in whether your respondents like fruit or not.  If they do, you would like to ask a follow up question to understand the sort of fruit they like. &#x20;
 
-The follow up question doesn't make sense if the answer to the first question is 'no'.  This is where logic can help to hide the follow up question.
+The follow up question doesn't make sense if the answer to the first question is 'no'.  Logic can help to hide the follow up question.
 
 ![Example of a question where logic can help](<../../.gitbook/assets/image (300).png>)
 
@@ -32,16 +32,16 @@ Below is an example of the logic feild for the question we outlined above about 
 
 ![](<../../.gitbook/assets/image (304).png>)
 
+{% hint style="info" %}
+Always add the logic to the Page, Section or Question which you want the action to be applied to
+{% endhint %}
+
 Logic has been added to the follow up question 'what sort of fruit do you like?' so that is is displayed or hidden depending on the answer to the previous question 'Do you like fruit?'
 
 * The question 'Do you like fruit?' has been dragged from the structure grid into the expression feild along with the answer 'No'
 * An equals sign (==) has been entered to set up a mathmatical expression.  ie Is the answer to the question 'Do you like fruit?'  'No'? &#x20;
 * If the respondent then answers 'No', the expression result will be 'true' and the question will be hidden. &#x20;
 * In all other scenarios such as the respondent not answering the question 'Do you like fruit' or answering 'Yes', the expression result will be 'false' and the follow up question will be displayed
-
-{% hint style="info" %}
-Always add the logic to the question which you want the action to be applied to
-{% endhint %}
 
 ## Testing a logical expression
 
@@ -61,7 +61,7 @@ The question 'what sort of fruit do you like?' is a good example. &#x20;
 
 With the logical expresssion written above, the follow up question is visible initially and is only hidden if a respondent answers 'No' to the the question 'Do you like fruit?'
 
-It would be preferable if the question is hidden initially and only appears if a respondent answers 'Yes' to the question 'Do you like fruit?'
+It would be preferable if the question is hidden initially and is only displayed if a respondent answers 'Yes' to the question 'Do you like fruit?'
 
 {% hint style="info" %}
 Use !(  ) to invert the expression and hide a question initially
