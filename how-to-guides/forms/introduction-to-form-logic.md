@@ -32,12 +32,16 @@ Below is an example of the logic feild for the question we outlined above about 
 
 ![](<../../.gitbook/assets/image (304).png>)
 
-Logic has been added to display or hide the follow up question 'what sort of fruit do you like?' depending on the answer to the previous question 'Do you like fruit?'
+Logic has been added to the follow up question 'what sort of fruit do you like?' so that is is displayed or hidden depending on the answer to the previous question 'Do you like fruit?'
 
 * The question 'Do you like fruit?' has been dragged from the structure grid into the expression feild along with the answer 'No'
-* An equals sign (==) has been entered to effectively set up a mathmatical expression.  ie Is the answer to the question 'Do you like fruit?'  'No'? &#x20;
+* An equals sign (==) has been entered to set up a mathmatical expression.  ie Is the answer to the question 'Do you like fruit?'  'No'? &#x20;
 * If the respondent then answers 'No', the expression result will be 'true' and the question will be hidden. &#x20;
 * In all other scenarios such as the respondent not answering the question 'Do you like fruit' or answering 'Yes', the expression result will be 'false' and the follow up question will be displayed
+
+{% hint style="info" %}
+Always add the logic to the question which you want the action to be applied to
+{% endhint %}
 
 ## Testing a logical expression
 
@@ -49,7 +53,7 @@ This brings up all the questions that have been refered to in the expression.   
 Form logic is extremely powerful and adds focus and dynamism to your forms.  However it takes some pratice.  We suggest starting with simple expressions and testing regularly
 {% endhint %}
 
-## How to initially hide a question?
+## How to hide a question initially?
 
 Often you will want a hide a question initially, and for it only to appear based on an answer to a previous question
 
@@ -66,8 +70,8 @@ Use !(  ) to invert the expression and hide a question initially
 ![](<../../.gitbook/assets/image (297).png>)
 
 * Adding !(  ) around the logical expression, inverts it.  Therefore in the example above, the expression asks whether the answer to the question 'Do you like fruit?' does NOT equal 'yes'
-* If the answer is blank or no the expression result will be 'True' and the follow up question will be hidden
-* Only is the answer is 'Yes' will the expression result be 'False' and the follow up question will be displayed&#x20;
+* If the question 'Do you like fruit' is not answered or the answer is 'No' the expression result will be 'True' and the follow up question will be hidden
+* Only if the answer is 'Yes' will the expression result be 'False' and the follow up question will be displayed&#x20;
 
 ## What logic options are available?
 
