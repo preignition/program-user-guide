@@ -8,7 +8,7 @@ description: >-
 
 ## Backround
 
-This page introduces the basic principles of form logic.  There are seperate 'How To Guides' giving more detailed instructions about form logic.
+This page introduces the basic principles of form logic.  There are seperate 'How To Guides' giving more detailed instructions about adding logic to a form.
 
 ## What is a logical expression?
 
@@ -16,7 +16,7 @@ Logical expressions are mathematical expressions which return a result of either
 
 For example, you may be interested in whether your respondents like fruit or not.  If they do, you would like to ask a follow up question to understand the sort of fruit they like. &#x20;
 
-The follow up question doesn't make sense if the answer to the first question is 'no'.  This is where logic can help.
+The follow up question doesn't make sense if the answer to the first question is 'no'.  This is where logic can help to hide the follow up question.
 
 ![Example of a question where logic can help](<../../.gitbook/assets/image (300).png>)
 
@@ -26,35 +26,62 @@ The follow up question doesn't make sense if the answer to the first question is
 To access the logic function you must have the 'advanced' toggle on at the top of the screen.&#x20;
 {% endhint %}
 
-In advanced mode, a Logic tab appears for Pages, Sections and Questions.  Below is an example of the logic feild for the question we outlined above about fruit preferences
+In advanced mode, a Logic tab appears in the form builder for Pages, Sections and Questions. &#x20;
+
+Below is an example of the logic feild for the question we outlined above about fruit preferences
 
 ![](<../../.gitbook/assets/image (304).png>)
 
-Logic has been added to display or hide this question depending on the answer to the previous question 'Do you like fruit?'
+Logic has been added to display or hide the follow up question 'what sort of fruit do you like?' depending on the answer to the previous question 'Do you like fruit?'
 
 * The question 'Do you like fruit?' has been dragged from the structure grid into the expression feild along with the answer 'No'
-* A equals sign (==) has been entered to effectively set up a scenario.  ie Is the answer to the question 'Do you like fruit?'  'No'. &#x20;
-* If the respondent then answers 'No', the expression result will be true and the feild will be hidden. &#x20;
-* In all other scenarios such as the respondent not answering the question 'Do you like fruit' or answering 'Yes', the expression result will be false and the feild will be displayed
+* An equals sign (==) has been entered to effectively set up a mathmatical expression.  ie Is the answer to the question 'Do you like fruit?'  'No'? &#x20;
+* If the respondent then answers 'No', the expression result will be 'true' and the question will be hidden. &#x20;
+* In all other scenarios such as the respondent not answering the question 'Do you like fruit' or answering 'Yes', the expression result will be 'false' and the follow up question will be displayed
 
 ## Testing a logical expression
 
-It is possible to test a logical expression by toggling on the button 'test expression' as shown in the example above.  This brings up all questions that have been refered to in the expression.   Try answering the questions and check whether the expression result gives your desired outcome.
+It is possible to test a logical expression by toggling on the button 'test expression' as shown in the example above. &#x20;
+
+This brings up all the questions that have been refered to in the expression.   Try answering the questions and check whether the expression result gives your desired outcome.
 
 {% hint style="info" %}
-Form logic is extremely powerful and can be used to make your forms targeted and dynamic.  However it takes some pratice so we suggest starting with simple expressions and testing regularly
+Form logic is extremely powerful and adds focus and dynamism to your forms.  However it takes some pratice.  We suggest starting with simple expressions and testing regularly
 {% endhint %}
 
 ## How to initially hide a question?
 
 Often you will want a hide a question initially, and for it only to appear based on an answer to a previous question
 
-The follow up question about fruit preferences is a good example.  With the logical expression we have written the follow up question is visible by default and is only hidden if a respondent answers 'No' to the question 'Do you like fruit?'.   It would be preferable if the question is hidden initially and only appears if a respondent answers 'Yes' to the question 'Do you like fruit'
+The question 'what sort of fruit do you like?' is a good example. &#x20;
+
+With the logical expresssion written above, the follow up question is visible initially and is only hidden if a respondent answers 'No' to the the question 'Do you like fruit?'
+
+It would be preferable if the question is hidden initially and only appears if a respondent answers 'Yes' to the question 'Do you like fruit?'
 
 {% hint style="info" %}
-Use != instead of == to hide a question initially
-
-The reason is that if nothing is entered in a feild the result of the logical expression will be false.  As the feild is hidden when the result of the expression is true, the fild will initially be displayed.
+Use !(  ) to invert the expression and hide a question initially
 {% endhint %}
 
-&#x20;
+![](<../../.gitbook/assets/image (297).png>)
+
+* Adding !(  ) around the logical expression, inverts it.  Therefore in the example above, the expression asks whether the answer to the question 'Do you like fruit?' does NOT equal 'yes'
+* If the answer is blank or no the expression result will be 'True' and the follow up question will be hidden
+* Only is the answer is 'Yes' will the expression result be 'False' and the follow up question will be displayed&#x20;
+
+## What logic options are available?
+
+A wide range of logic options are available.   The most commonly used are as follows:
+
+| Operator                   | Symbol |
+| -------------------------- | ------ |
+| Equal                      | ==     |
+| Not equal                  | !=     |
+| Greater than               | >      |
+| Greater than or equal      | >=     |
+| Less than                  | <      |
+| Less than or equal         | <=     |
+| Element in array or string | in     |
+| Logical AND                | &&     |
+| logical OR                 | \|\|   |
+| Negate                     | !      |
