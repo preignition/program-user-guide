@@ -18,7 +18,7 @@ This is visble in the left hand column in the form 'build' mode
 
 &#x20;
 
-![](<../../.gitbook/assets/image (307).png>)
+![](<../../.gitbook/assets/image (307) (1).png>)
 
 Select 'add new term' and give the term a unique name
 

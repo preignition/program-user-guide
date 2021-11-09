@@ -67,7 +67,7 @@ It would be preferable if the question is hidden initially and is only displayed
 Use !(  ) to invert the expression and hide a question initially
 {% endhint %}
 
-![](<../../.gitbook/assets/image (297).png>)
+![](<../../.gitbook/assets/image (297) (1).png>)
 
 * Adding !(  ) around the logical expression, inverts it.  Therefore in the example above, the expression asks whether the answer to the question 'Do you like fruit?' does NOT equal 'yes'
 * If the question 'Do you like fruit' is not answered or the answer is 'No' the expression result will be 'True' and the follow up question will be hidden
