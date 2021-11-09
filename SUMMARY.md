@@ -1,10 +1,15 @@
 # Table of contents
 
-* [Introduction](README.md)
+## How to guides
 
-## ENTREPRENEUR USER GUIDE
+* [Forms](README.md)
+  * [Adding questions to a form](how-to-guides/forms/how-to-add-a-question-to-a-form.md)
+  * [Introduction to form logic](how-to-guides/forms/introduction-to-form-logic.md)
+  * [Using tooltips](how-to-guides/forms/using-tooltips.md)
+  * [Easy Read](how-to-guides/forms/easy-read.md)
 
-* [Introduction](entrepreneur-user-guide/introduction.md)
+## LEGACY DOCUMENTATION <a href="entrepreneur-user-guide" id="entrepreneur-user-guide"></a>
+
 * [Homepage](entrepreneur-user-guide/homepage.md)
 * [Applying for a program](entrepreneur-user-guide/applying-for-a-program.md)
 * [Entrepreneur space](entrepreneur-user-guide/entrepreneur-space.md)
@@ -74,11 +79,3 @@
 ## web-components
 
 * [widget-resource-access](web-components/widget-resource-access.md)
-
-## How to guides
-
-* [Forms](how-to-guides/forms/README.md)
-  * [Adding questions to a form](how-to-guides/forms/how-to-add-a-question-to-a-form.md)
-  * [Introduction to form logic](how-to-guides/forms/introduction-to-form-logic.md)
-  * [Using tooltips](how-to-guides/forms/using-tooltips.md)
-  * [Easy Read](how-to-guides/forms/easy-read.md)
