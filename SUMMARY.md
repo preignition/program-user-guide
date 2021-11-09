@@ -7,6 +7,9 @@
   * [Introduction to form logic](how-to-guides/forms/introduction-to-form-logic.md)
   * [Using tooltips](how-to-guides/forms/using-tooltips.md)
   * [Easy Read](how-to-guides/forms/easy-read.md)
+* [Surveys](how-to-guides/surveys/README.md)
+  * [Creating a new survey](how-to-guides/surveys/creating-a-new-survey.md)
+  * [Survey settings](how-to-guides/surveys/survey-settings.md)
 
 ## LEGACY DOCUMENTATION <a href="entrepreneur-user-guide" id="entrepreneur-user-guide"></a>
 
