@@ -4,7 +4,7 @@ description: It is possible to create an Easy Read version of a form
 
 # Easy Read
 
-## Context
+## Introduction
 
 Forms should adapt to the needs and preferences of respondents.  Some respondents may want an Easy Read version of a form. &#x20;
 
@@ -38,7 +38,7 @@ You must first enable the 'Easy Read' accessibility mode in the form.  &#x20;
 
 You will see two additional menu options appear under the form definition menu
 
-![](<../../.gitbook/assets/image (311).png>)
+![](<../../.gitbook/assets/image (311) (1).png>)
 
 ## Step 3
 
@@ -61,7 +61,7 @@ Initially the text in the Easy Read mode is derived from the standard mode.  How
 ![](<../../.gitbook/assets/image (305).png>)
 
 * The![](<../../.gitbook/assets/image (302).png>)emoji shows the text as it appears in the standard version of the form.  It can't be edited here.
-* The ![](<../../.gitbook/assets/image (309).png>)emoji shows the text as it appears in the Easy Read version of the form.  It can be edited here.
+* The ![](<../../.gitbook/assets/image (309) (1).png>)emoji shows the text as it appears in the Easy Read version of the form.  It can be edited here.
 * Any changes to the Easy Read text will be highlighted in the 'Easy Read version' structure grid as shown above
 
 {% hint style="info" %}
@@ -74,7 +74,7 @@ It is possible to upload pictures or youtube videos to complement questions in E
 
 These will appear to the left of the question&#x20;
 
-![](<../../.gitbook/assets/image (300).png>)
+![](<../../.gitbook/assets/image (300) (1).png>)
 
 For videos, simply add the video link or ID in the box entitled 'Youtube Settings'
 
@@ -96,7 +96,7 @@ In this example the visibility settings make 'Section 1' visible in the standard
 
 The Easy Read version of a form can be tested in the usual way.  However this 'Easy Read' icon must be selected from the top menu
 
-![](<../../.gitbook/assets/image (299).png>)
+![](<../../.gitbook/assets/image (299) (1).png>)
 
 ## Step 8
 

@@ -6,7 +6,7 @@ description: >-
 
 # Introduction to form logic
 
-## Backround
+## Introduction
 
 This page introduces the basic principles of form logic.  There are seperate 'How To Guides' giving more detailed instructions about adding logic to a form.
 
@@ -18,7 +18,7 @@ For example, you may be interested in whether your respondents like fruit or not
 
 The follow up question doesn't make sense if the answer to the first question is 'no'.  Logic can help to hide the follow up question.
 
-![Example of a question where logic can help](<../../.gitbook/assets/image (300) (1).png>)
+![Example of a question where logic can help](<../../.gitbook/assets/image (300) (1) (1).png>)
 
 ## How to write a logical expression?
 

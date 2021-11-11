@@ -4,17 +4,17 @@ description: All the steps you need to create a new survey
 
 # Creating a new survey
 
-## Context
+## Introduction
 
 {% hint style="info" %}
-Forms decide what information you collect from your Respondents
+Forms decide **what** information you collect from your Respondents
 
-Surveys decide how you collect that information
+Surveys decide **how** you collect that information
 {% endhint %}
 
-Survey settings are where you can do the following:
+Survey settings allow you to do the following:
 
-* Select a Form to be used in a survey
+* Select the Form to be used in a survey
 * Create links to distribute your survey
 * Design a landing page to present your survey
 * Decide user rights for your survey
@@ -28,8 +28,64 @@ To create a new survey select 'Survey' from the Resource Type list and 'Create N
 
 ## Step 2
 
-You will be prompted to give your new survey a name
+You will be asked to give your new survey a name
 
 ![](<../../.gitbook/assets/image (315).png>)
 
-There are seperate User Guides for each stage of creating a survey
+## Step 3
+
+Under the 'settings' tab you can give your survey a name and select a form
+
+![](<../../.gitbook/assets/image (313).png>)
+
+![](<../../.gitbook/assets/image (309).png>)
+
+## Step 4
+
+Under the 'Distribute' tab there is a tool for generating links to you survey.
+
+This is covered in a seperate How To Guide called 'Options for distributing surveys'
+
+![](<../../.gitbook/assets/image (299).png>)
+
+## Step 5
+
+Under the 'Batch' tab you can determine when your survey is open and closed.  It can be used to group your survey respondents into batches.
+
+This is covered in a seperate How to Guide called 'Using Survey Batches'
+
+{% hint style="info" %}
+It is not necessary to use the batch feature.  An initial batch with an open start and end date is created by default
+{% endhint %}
+
+![](<../../.gitbook/assets/image (312).png>)
+
+## Step 6
+
+The 'presentation' tab allows you to give your survey a title and create a page which respondents will land on before agreeing to Terms of Use annd starting the survey.
+
+Mark down is supported, so images and videos can be incorporated.   See a seperate How To Guide called 'Options available in free text feilds'&#x20;
+
+&#x20;
+
+![](<../../.gitbook/assets/image (311).png>)
+
+## Step 7
+
+The 'access' tab allows you to control user rights for the survey
+
+![](<../../.gitbook/assets/image (300).png>)
+
+## Step 8
+
+The 'terms' tab enables you ask your respondents to agree to your terms before responding to your survey
+
+{% hint style="info" %}
+It is your choice whether to ask respondents to agree to your own terms.  By default, users will have to agree to Preigntion's terms of service before responding to a survey.
+{% endhint %}
+
+![](<../../.gitbook/assets/image (301).png>)
+
+## Step 9
+
+Before&#x20;
