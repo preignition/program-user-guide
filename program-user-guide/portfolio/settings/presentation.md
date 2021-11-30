@@ -1,12 +1,12 @@
 # Presentation
 
 {% hint style="warning" %}
-The Presentation page currently requires a knowledge of mark down to ensure proper formatting of a program's logo.  Contact help@preignition.org if you need assistance 
+The Presentation page currently requires a knowledge of mark down to ensure proper formatting of a program's logo.  Contact help@preignition.org if you need assistance&#x20;
 {% endhint %}
 
-### Step 1- Each program has its own 'landing page' 
+### Step 1- Each program has its own 'landing page'&#x20;
 
-Each program has it's own 'landing page' on Preignition.  This enables a program to customize the way it present itself to entrepreneurs. 
+Each program has it's own 'landing page' on Preignition.  This enables a program to customize the way it present itself to entrepreneurs.&#x20;
 
 ![This is an example of TBN East Africa's landing page](<../../../.gitbook/assets/image (70).png>)
 
@@ -20,9 +20,9 @@ Each program has it's own 'landing page' on Preignition.  This enables a program
 
 ![](<../../../.gitbook/assets/image (74).png>)
 
-**Program title (1)-  **This is the title of the program
+**Program title (1)-**  This is the title of the program
 
-**Program logo (2)- **The program logo.  Currently mark down is used to present this properly.  In the future a Program will simply be able to upload their logo.
+**Program logo (2)-** The program logo.  Currently mark down is used to present this properly.  In the future a Program will simply be able to upload their logo.
 
 **Program summary (3)-** Program summary appears at the beginning of the description field after the logo.  Mark down has been used to format the summary so that it stands out.
 

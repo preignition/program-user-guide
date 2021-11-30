@@ -15,15 +15,15 @@ This section is in beta format.  For now users will need help creating categorie
 
 ![](<../../../.gitbook/assets/image (106).png>)
 
-* Grouping businesses in this way enables TBN Keyna to focus their efforts on reviewing business which have been categorized as 'Consider'.  
-* 'Pre-select' business are likely to be accepted to the next stage of the selection process, whereas 'Drop' businesses are likely to be rejected. 
+* Grouping businesses in this way enables TBN Keyna to focus their efforts on reviewing business which have been categorized as 'Consider'. &#x20;
+* 'Pre-select' business are likely to be accepted to the next stage of the selection process, whereas 'Drop' businesses are likely to be rejected.&#x20;
 
 ### Step 2- Overview of the Category page
 
 ![](<../../../.gitbook/assets/image (108).png>)
 
 * From the Category page a user can view, edit and create categories
-* The person who creates the category is shown as the 'owner' 
+* The person who creates the category is shown as the 'owner'&#x20;
 * The date the category was last modified is also shown.
 * A user can only view categories which have been shared with them.
 
@@ -44,13 +44,13 @@ This section is in beta format.  For now users will need help creating categorie
 
 * The important elements of a notification template are as follows:
 
-**Title **
+**Title**&#x20;
 
 ![](<../../../.gitbook/assets/image (112).png>)
 
 * This is the name of the Category
 
-**Documentation** 
+**Documentation**&#x20;
 
 ![](<../../../.gitbook/assets/image (113).png>)
 

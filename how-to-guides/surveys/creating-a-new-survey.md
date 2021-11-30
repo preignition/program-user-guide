@@ -20,6 +20,10 @@ Survey settings allow you to do the following:
 * Decide user rights for your survey
 * Specify any Terms you need Respondents to agree to before answering your survey
 
+{% hint style="warning" %}
+Remember to 'Publish' your survey so any changes you have made are actived for new respondents (see step 10 for how to publish)&#x20;
+{% endhint %}
+
 ## Step 1
 
 To create a new survey select 'Survey' from the Resource Type list and 'Create New Survey'
@@ -84,8 +88,23 @@ The 'terms' tab enables you ask your respondents to agree to your terms before r
 It is your choice whether to ask respondents to agree to your own terms.  By default, users will have to agree to Preigntion's terms of service before responding to a survey.
 {% endhint %}
 
+To add your own terms toggle the button 'add survey terms' and write your terms.  As in most text feilds in the app, Markdown is supported
+
 ![](<../../.gitbook/assets/image (301).png>)
 
 ## Step 9
 
-Before&#x20;
+The 'Activity' tab gives an overview of recent activity on the survey.
+
+![](<../../.gitbook/assets/image (306).png>)
+
+## Step 10
+
+You need to 'publish' your survey for new respondents to see any changes that you have made to your survey.
+
+To publish your survey simply press the blue 'Publish' button in the top right corner.
+
+A notification message confirming that the resouce has been published will appear.
+
+![](<../../.gitbook/assets/image (314).png>)
+
