@@ -10,8 +10,9 @@
 * [Surveys](how-to-guides/surveys/README.md)
   * [Creating a new survey](how-to-guides/surveys/creating-a-new-survey.md)
   * [Survey settings](how-to-guides/surveys/survey-settings.md)
+  * [Generating survey links](how-to-guides/surveys/generating-survey-links.md)
 
-## LEGACY DOCUMENTATION <a href="entrepreneur-user-guide" id="entrepreneur-user-guide"></a>
+## LEGACY DOCUMENTATION <a href="#entrepreneur-user-guide" id="entrepreneur-user-guide"></a>
 
 * [Homepage](entrepreneur-user-guide/homepage.md)
 * [Applying for a program](entrepreneur-user-guide/applying-for-a-program.md)
