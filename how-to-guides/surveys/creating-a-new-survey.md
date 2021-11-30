@@ -40,9 +40,9 @@ You will be asked to give your new survey a name
 
 Under the 'settings' tab you can give your survey a name and select a form
 
-![](<../../.gitbook/assets/image (313).png>)
+![](<../../.gitbook/assets/image (313) (1).png>)
 
-![](<../../.gitbook/assets/image (309).png>)
+![](<../../.gitbook/assets/image (309) (1).png>)
 
 ## Step 4
 
@@ -62,7 +62,7 @@ This is covered in a seperate How to Guide called 'Using Survey Batches'
 It is not necessary to use the batch feature.  An initial batch with an open start and end date is created by default
 {% endhint %}
 
-![](<../../.gitbook/assets/image (312).png>)
+![](<../../.gitbook/assets/image (312) (1).png>)
 
 ## Step 6
 
@@ -72,7 +72,7 @@ Mark down is supported, so images and videos can be incorporated.   See a sepera
 
 &#x20;
 
-![](<../../.gitbook/assets/image (311).png>)
+![](<../../.gitbook/assets/image (311) (1).png>)
 
 ## Step 7
 
