@@ -40,7 +40,7 @@ You will be asked to give your new survey a name
 
 Under the 'settings' tab you can give your survey a name and select a form
 
-![](<../../.gitbook/assets/image (313) (1).png>)
+![](<../../.gitbook/assets/image (313) (1) (1).png>)
 
 ![](<../../.gitbook/assets/image (309) (1).png>)
 
