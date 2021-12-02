@@ -7,7 +7,7 @@ description: All the steps you need to create a new survey
 ## Introduction
 
 {% hint style="info" %}
-Forms decide **what** information you collect from your Respondents
+Forms decide **what** information you want to collect from your Respondents
 
 Surveys decide **how** you collect that information
 {% endhint %}
@@ -21,7 +21,7 @@ Survey settings allow you to do the following:
 * Specify any Terms you need Respondents to agree to before answering your survey
 
 {% hint style="warning" %}
-Remember to 'Publish' your survey so any changes you have made are actived for new respondents (see step 10 for how to publish)&#x20;
+Remember to 'Publish' your survey so any changes you have made are actived for new respondents (see [step 10](creating-a-new-survey.md#step-10) for how to publish)&#x20;
 {% endhint %}
 
 ## Step 1
@@ -32,13 +32,13 @@ To create a new survey select 'Survey' from the Resource Type list and 'Create N
 
 ## Step 2
 
-You will be asked to give your new survey a name
+Give your new survey a name
 
 ![](<../../.gitbook/assets/image (315) (1).png>)
 
 ## Step 3
 
-Under the 'settings' tab you can give your survey a name and select a form
+Under the 'settings' tab you can edit the survey name and select the form you want to use to collect data
 
 ![](<../../.gitbook/assets/image (313) (1) (1).png>)
 
@@ -48,18 +48,18 @@ Under the 'settings' tab you can give your survey a name and select a form
 
 Under the 'Distribute' tab there is a tool for generating links to you survey.
 
-This is covered in a seperate How To Guide called 'Options for distributing surveys'
+This is covered in a seperate How To Guide called '[Generating survey links](generating-survey-links.md)'
 
 ![](<../../.gitbook/assets/image (299).png>)
 
 ## Step 5
 
-Under the 'Batch' tab you can determine when your survey is open and closed.  It can be used to group your survey respondents into batches.
+Under the 'Batch' tab you can determine when your survey is open and closed.  It can be used to group your survey respondents into 'batches'.
 
-This is covered in a seperate How to Guide called 'Using Survey Batches'
+This is covered in a seperate How to Guide called 'Using survey batches'
 
-{% hint style="info" %}
-It is not necessary to use the batch feature.  An initial batch with an open start and end date is created by default
+{% hint style="warning" %}
+An initial batch is created by default with an open 'end date'.  To activate this batch you will need to enter a 'from date'
 {% endhint %}
 
 ![](<../../.gitbook/assets/image (312) (1) (1).png>)

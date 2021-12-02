@@ -11,6 +11,7 @@
   * [Creating a new survey](how-to-guides/surveys/creating-a-new-survey.md)
   * [Survey settings](how-to-guides/surveys/survey-settings.md)
   * [Generating survey links](how-to-guides/surveys/generating-survey-links.md)
+  * [Using survey batches](how-to-guides/surveys/using-survey-batches.md)
 
 ## LEGACY DOCUMENTATION <a href="#entrepreneur-user-guide" id="entrepreneur-user-guide"></a>
 
