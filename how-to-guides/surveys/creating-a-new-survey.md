@@ -28,7 +28,7 @@ Remember to 'Publish' your survey so any changes you have made are actived for n
 
 To create a new survey select 'Survey' from the Resource Type list and 'Create New Survey'
 
-![](<../../.gitbook/assets/image (304).png>)
+![](<../../.gitbook/assets/image (300).png>)
 
 ## Step 2
 
@@ -78,7 +78,7 @@ Mark down is supported, so images and videos can be incorporated.   See a sepera
 
 The 'access' tab allows you to control user rights for the survey
 
-![](<../../.gitbook/assets/image (300).png>)
+![](<../../.gitbook/assets/image (300) (1).png>)
 
 ## Step 8
 
@@ -107,4 +107,3 @@ To publish your survey simply press the blue 'Publish' button in the top right c
 A notification message confirming that the resouce has been published will appear.
 
 ![](<../../.gitbook/assets/image (314).png>)
-
