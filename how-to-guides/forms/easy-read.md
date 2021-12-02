@@ -46,7 +46,7 @@ If you want to use images to complement question in your Easy Read form you must
 
 This can be done by uploading an image or dragging and dropping animage from your computer
 
-![](<../../.gitbook/assets/image (298).png>)
+![](<../../.gitbook/assets/image (298) (1).png>)
 
 {% hint style="danger" %}
 It is important that you have the rights to use any images which you upload. &#x20;
@@ -80,7 +80,7 @@ These will appear to the left of the question&#x20;
 
 For videos, simply add the video link or ID in the box entitled 'Youtube Settings'
 
-![](<../../.gitbook/assets/image (303).png>)
+![](<../../.gitbook/assets/image (303) (1).png>)
 
 ## Step 6
 

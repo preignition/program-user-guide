@@ -16,13 +16,13 @@ Links can be shared however you choose, including sharing via your website, emai
 
 Select 'Open Link Builder'
 
-![](<../../.gitbook/assets/image (302).png>)
+![](<../../.gitbook/assets/image (303).png>)
 
 ## Step 2
 
 The survey link at the bottom of the page will adapt depending on the options you choose
 
-![](<../../.gitbook/assets/image (297).png>)
+![](<../../.gitbook/assets/image (298).png>)
 
 {% hint style="success" %}
 The survey links stay the same when new versions of the survey are published
@@ -50,9 +50,32 @@ To create an alias link see the How to Guide '[Creating alias survey links](crea
 
 ## Step 5
 
-'Survey options' will vary depending upon whether the survey mode is 'test' or 'production'
+The 'Survey options' you are presented with will vary depending upon whether the survey mode is 'test' or 'production'
 
-In test mode you will have the option to display the landing page while testing the form&#x20;
+In test mode you will have the option whether or not to display the landing page while testing the form&#x20;
 
 ![](<../../.gitbook/assets/image (316).png>)
 
+In production mode you have the option to force respondents to use the latest version of the survey even if they have started answering a previous version
+
+{% hint style="success" %}
+By default respondents will not be presented with a newer version of a survey if they have started answering a previous version.  &#x20;
+{% endhint %}
+
+![](<../../.gitbook/assets/image (302).png>)
+
+## Step 6
+
+If the form you are using has accessibility modes, a survey link can be generated so these are activated automatically when a respondent clicks on the link
+
+In the example below, the 'read aloud' feature would be automtically activated
+
+&#x20;
+
+![](<../../.gitbook/assets/image (297).png>)
+
+## Step 7
+
+Click on the ![](<../../.gitbook/assets/image (314).png>)icon to copy the link to your clipboard.  You can now share it how you choose&#x20;
+
+![](<../../.gitbook/assets/image (304).png>)

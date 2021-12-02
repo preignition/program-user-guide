@@ -106,4 +106,4 @@ To publish your survey simply press the blue 'Publish' button in the top right c
 
 A notification message confirming that the resouce has been published will appear.
 
-![](<../../.gitbook/assets/image (314).png>)
+![](<../../.gitbook/assets/image (314) (1).png>)
