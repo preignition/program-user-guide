@@ -54,7 +54,7 @@ Tooltips must be written in the following way:
 
 Once you have added your tooltip you can go to the 'test' mode to test how it is working.
 
-![](<../../.gitbook/assets/image (315).png>)
+![](<../../.gitbook/assets/image (315) (1).png>)
 
 
 
