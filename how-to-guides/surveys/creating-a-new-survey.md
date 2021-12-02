@@ -34,7 +34,7 @@ To create a new survey select 'Survey' from the Resource Type list and 'Create N
 
 You will be asked to give your new survey a name
 
-![](<../../.gitbook/assets/image (315).png>)
+![](<../../.gitbook/assets/image (315) (1).png>)
 
 ## Step 3
 
@@ -62,7 +62,7 @@ This is covered in a seperate How to Guide called 'Using Survey Batches'
 It is not necessary to use the batch feature.  An initial batch with an open start and end date is created by default
 {% endhint %}
 
-![](<../../.gitbook/assets/image (312) (1).png>)
+![](<../../.gitbook/assets/image (312) (1) (1).png>)
 
 ## Step 6
 

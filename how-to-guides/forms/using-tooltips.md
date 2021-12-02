@@ -16,9 +16,9 @@ The first step is to provide definations of any complex words in the form 'gloss
 
 This is visble in the left hand column in the form 'build' mode
 
-&#x20;
+![](<../../.gitbook/assets/image (312).png>)
 
-![](<../../.gitbook/assets/image (307) (1).png>)
+
 
 Select 'add new term' and give the term a unique name
 
@@ -34,7 +34,7 @@ Once you have defined a word in the form glossary you can add a tooltip in the f
 
 Tooltips can be located anywhere in a form such as a section title, a question or a answer option.
 
-![Example of a tooltip being added to a question](<../../.gitbook/assets/image (305) (1).png>)
+![Example of a tooltip being added to a question](<../../.gitbook/assets/image (305) (1) (1).png>)
 
 ## Step 3
 
@@ -54,7 +54,9 @@ Tooltips must be written in the following way:
 
 Once you have added your tooltip you can go to the 'test' mode to test how it is working.
 
-![](<../../.gitbook/assets/image (306) (1) (1).png>)
+![](<../../.gitbook/assets/image (315).png>)
+
+
 
 ## Step 5
 
