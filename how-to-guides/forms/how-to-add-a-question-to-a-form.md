@@ -2,14 +2,14 @@
 description: All the steps you need to add a question to a form
 ---
 
-# How to add a question to a form
+# Adding questions to a form
 
 ## Step 1
 
 * This guide assumes you have already created a form and added a page and section.
 * Your screen will now look like this
 
-![Screenshot showing a blank section](<../../.gitbook/assets/image (287).png>)
+![](<../../.gitbook/assets/image (301).png>)
 
 ## Step 2
 

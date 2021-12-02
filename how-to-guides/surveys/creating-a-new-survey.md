@@ -90,7 +90,7 @@ It is your choice whether to ask respondents to agree to your own terms.  By def
 
 To add your own terms toggle the button 'add survey terms' and write your terms.  As in most text feilds in the app, Markdown is supported
 
-![](<../../.gitbook/assets/image (301).png>)
+![](<../../.gitbook/assets/image (301) (1).png>)
 
 ## Step 9
 
