@@ -10,11 +10,11 @@ The survey 'settings' menu is where you name the survey and select a form to be 
 
 ## Step 1
 
-The section at the top of the page provides details of when the surveys was created, last updated, last published and who the owner is
+The section at the top of the page provides details of when the survey was created, last updated, last published and who the owner is
 
 The designation section is where the survey name can be edited
 
-Like with all resources, surveys can be organized using labels
+Like with all resources, surveys can be organized using labels.  See the seperate How to Guide called '[Using labels](../../settings/using-labels.md)'
 
 ![](<../../.gitbook/assets/image (300).png>)
 
@@ -22,13 +22,13 @@ Like with all resources, surveys can be organized using labels
 
 Form enables you to embed a form into the survey.  The form needs to have been 'published' before it can be used in a survey
 
-![](<../../.gitbook/assets/image (309).png>)
+![](<../../.gitbook/assets/image (309) (1).png>)
 
 ## Step 3
 
 Once you have selected a form you will be asked whether you want to always use the current version of the form or whether you want to use a specifc version
 
-![](<../../.gitbook/assets/image (302).png>)
+![](<../../.gitbook/assets/image (302) (1).png>)
 
 {% hint style="info" %}
 In most cases you will want to use the current version of the form.  However there maybe times, such as when a form is being updated, when it makes sense to use an previous version

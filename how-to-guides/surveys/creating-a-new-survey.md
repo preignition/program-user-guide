@@ -42,7 +42,7 @@ Under the 'settings' tab you can edit the survey name and select the form you wa
 
 ![](<../../.gitbook/assets/image (313) (1) (1).png>)
 
-![](<../../.gitbook/assets/image (309) (1).png>)
+![](<../../.gitbook/assets/image (309) (1) (1).png>)
 
 ## Step 4
 

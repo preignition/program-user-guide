@@ -12,6 +12,12 @@
   * [Survey settings](how-to-guides/surveys/survey-settings.md)
   * [Generating survey links](how-to-guides/surveys/generating-survey-links.md)
   * [Using survey batches](how-to-guides/surveys/using-survey-batches.md)
+  * [Creating alias survey links](how-to-guides/surveys/creating-alias-survey-links.md)
+
+***
+
+* [Settings](settings/README.md)
+  * [Using labels](settings/using-labels.md)
 
 ## LEGACY DOCUMENTATION <a href="#entrepreneur-user-guide" id="entrepreneur-user-guide"></a>
 
