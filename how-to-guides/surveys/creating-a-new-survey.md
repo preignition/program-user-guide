@@ -56,7 +56,7 @@ This is covered in a seperate How To Guide called '[Generating survey links](gen
 
 Under the 'Batch' tab you can determine when your survey is open and closed.  It can be used to group your survey respondents into 'batches'.
 
-This is covered in a seperate How to Guide called 'Using survey batches'
+This is covered in a seperate How to Guide called '[Using survey batches](using-survey-batches.md)'
 
 {% hint style="warning" %}
 An initial batch is created by default with an open 'end date'.  To activate this batch you will need to enter a 'from date'
@@ -66,9 +66,9 @@ An initial batch is created by default with an open 'end date'.  To activate thi
 
 ## Step 6
 
-The 'presentation' tab allows you to give your survey a title and create a page which respondents will land on before agreeing to Terms of Use annd starting the survey.
+The 'Presentation' tab allows you to give your survey a title and create a page which respondents will land on before agreeing to the Terms of Use and starting the survey.
 
-Mark down is supported, so images and videos can be incorporated.   See a seperate How To Guide called 'Options available in free text feilds'&#x20;
+Mark down is supported, so images and videos can be incorporated.   See the How To Guide called 'Using free text feilds'&#x20;
 
 &#x20;
 
@@ -76,21 +76,19 @@ Mark down is supported, so images and videos can be incorporated.   See a sepera
 
 ## Step 7
 
-The 'access' tab allows you to control user rights for the survey
+The 'Access' tab allows you to control user rights for the survey
 
 ![](<../../.gitbook/assets/image (300) (1) (1).png>)
 
 ## Step 8
 
-The 'terms' tab enables you ask your respondents to agree to your terms before responding to your survey
+The 'Terms' tab enables you ask your respondents to agree to your terms before responding to your survey
 
 {% hint style="info" %}
 It is your choice whether to ask respondents to agree to your own terms.  By default, users will have to agree to Preigntion's terms of service before responding to a survey.
 {% endhint %}
 
-To add your own terms toggle the button 'add survey terms' and write your terms.  As in most text feilds in the app, Markdown is supported
-
-![](<../../.gitbook/assets/image (301) (1).png>)
+For more information, see the How to Guide 'Survey Terms'
 
 ## Step 9
 
@@ -100,7 +98,9 @@ The 'Activity' tab gives an overview of recent activity on the survey.
 
 ## Step 10
 
-You need to 'publish' your survey for new respondents to see any changes that you have made to your survey.
+{% hint style="success" %}
+You need to 'Publish' your survey in order for new respondents to see any changes that you have made to your survey.
+{% endhint %}
 
 To publish your survey simply press the blue 'Publish' button in the top right corner.
 
