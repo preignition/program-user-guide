@@ -12,10 +12,10 @@
   * [Creating a new survey](how-to-guides/surveys/creating-a-new-survey.md)
   * [Survey settings](how-to-guides/surveys/survey-settings.md)
   * [Generating survey links](how-to-guides/surveys/generating-survey-links.md)
-  * [Creating alias survey links](how-to-guides/surveys/creating-alias-survey-links.md)
-  * [Using survey batches](how-to-guides/surveys/using-survey-batches.md)
   * [Survey respondent accounts](how-to-guides/surveys/survey-respondent-accounts.md)
   * [Language settings for surveys](how-to-guides/surveys/language-settings-for-surveys.md)
+  * [Creating alias survey links](how-to-guides/surveys/creating-alias-survey-links.md)
+  * [Using survey batches](how-to-guides/surveys/using-survey-batches.md)
 
 ***
 
