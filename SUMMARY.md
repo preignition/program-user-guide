@@ -16,6 +16,7 @@
   * [Language settings for surveys](how-to-guides/surveys/language-settings-for-surveys.md)
   * [Creating alias survey links](how-to-guides/surveys/creating-alias-survey-links.md)
   * [Using survey batches](how-to-guides/surveys/using-survey-batches.md)
+  * [Presenting surveys](how-to-guides/surveys/presenting-surveys.md)
 
 ***
 
