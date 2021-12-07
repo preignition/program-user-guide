@@ -50,7 +50,7 @@ Under the 'Distribute' tab there is a tool for generating links to you survey.
 
 This is covered in a seperate How To Guide called '[Generating survey links](generating-survey-links.md)'
 
-![](<../../.gitbook/assets/image (299).png>)
+![](<../../.gitbook/assets/image (299) (1).png>)
 
 ## Step 5
 
@@ -72,7 +72,7 @@ Mark down is supported, so images and videos can be incorporated.   See the How 
 
 &#x20;
 
-![](<../../.gitbook/assets/image (311) (1).png>)
+![](<../../.gitbook/assets/image (311) (1) (1).png>)
 
 ## Step 7
 

@@ -38,7 +38,7 @@ You must first enable the 'Easy Read' accessibility mode in the form.  &#x20;
 
 You will see two additional menu options appear under the form definition menu
 
-![](<../../.gitbook/assets/image (317) (1) (1).png>)
+![](<../../.gitbook/assets/image (317) (1) (1) (1).png>)
 
 ## Step 3
 

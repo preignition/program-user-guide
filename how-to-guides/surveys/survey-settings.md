@@ -48,4 +48,4 @@ In order for a survey to be active, the batch settings must have a 'from date' w
 
 The survey settings page has a link to the data section where survey results can be visualized and exported.
 
-![](<../../.gitbook/assets/image (310).png>)
+![](<../../.gitbook/assets/image (310) (1).png>)
