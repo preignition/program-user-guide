@@ -46,7 +46,7 @@ If you want to use images to complement question in your Easy Read form you must
 
 This can be done by uploading an image or dragging and dropping animage from your computer
 
-![](<../../.gitbook/assets/image (298) (1).png>)
+![](<../../.gitbook/assets/image (298) (1) (1).png>)
 
 {% hint style="danger" %}
 It is important that you have the rights to use any images which you upload. &#x20;
@@ -61,7 +61,7 @@ Initially the text in the Easy Read mode is derived from the standard mode.  How
 ![](<../../.gitbook/assets/image (307) (1).png>)
 
 * The![](<../../.gitbook/assets/image (302) (1) (1).png>)emoji shows the text as it appears in the standard version of the form.  It can't be edited here.
-* The ![](<../../.gitbook/assets/image (309) (1) (1) (1) (1).png>)emoji shows the text as it appears in the Easy Read version of the form.  It can be edited here.
+* The ![](<../../.gitbook/assets/image (309) (1) (1) (1) (1) (1).png>)emoji shows the text as it appears in the Easy Read version of the form.  It can be edited here.
 * Any changes to the Easy Read text will be highlighted in the 'Easy Read version' structure grid as shown above
 
 {% hint style="info" %}

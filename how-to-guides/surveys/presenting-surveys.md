@@ -48,3 +48,13 @@ The Presentation tab allows you to customise how you present your survey to resp
 
 ![Screenshot showing how 'complementary presentation appears to repondents](<../../.gitbook/assets/image (306).png>)
 
+## Step 5
+
+* If the survey will be shared in other languages, there will be an option to draft both the 'short presentation' and 'complementary' presentation in the other languages
+* Select the language for translation
+
+![](<../../.gitbook/assets/image (309).png>)
+
+* And write the translation in the additional feilds that appear
+
+![](<../../.gitbook/assets/image (298).png>)

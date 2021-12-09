@@ -22,7 +22,7 @@ Select 'Open Link Builder'
 
 The survey link at the bottom of the page will adapt depending on the options you choose
 
-![](<../../.gitbook/assets/image (298).png>)
+![](<../../.gitbook/assets/image (298) (1).png>)
 
 {% hint style="success" %}
 The survey links stay the same when new versions of the survey are published
@@ -34,7 +34,7 @@ The 'survey mode' option allows you create either a test link or a production li
 
 &#x20;&#x20;
 
-![](<../../.gitbook/assets/image (309) (1).png>)
+![](<../../.gitbook/assets/image (309) (1) (1).png>)
 
 Test links are used to test the survey before it goes live.  Answers are not saved to the database. &#x20;
 
