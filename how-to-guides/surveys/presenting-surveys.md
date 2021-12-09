@@ -14,8 +14,24 @@ Respondents want some information about your survey before completing it. &#x20;
 
 The Presentation tab allows you to customise how you present your survey to respondents
 
-* The 'short presentation' appears when respondents click on a survey link and is used to introduce the survey before they start responding
-* The 'complementary presentation' appear on a seperate tab and can be used to give more details about the survey.  It can be accessed at any time
+* The 'short presentation' appears when respondents click on a survey link.  It can be used to introduce the survey to respondents
+* The 'complementary presentation' appears on a seperate tab and can be used to give more details about the survey.  It can be accessed by respondents at any time
 
 ## Step 1
+
+* Write the text for the 'short presentation'
+* Markdown is supported so you can customize the look and feel of your text
+
+![](<../../.gitbook/assets/image (306).png>)
+
+## Step 2
+
+* This is how the 'short presentation' appears to respondents when they click on a survey link
+
+![](<../../.gitbook/assets/image (303).png>)
+
+## Step 3
+
+* Write the text for the 'complementary presentation'
+* Again, markdown is supported
 

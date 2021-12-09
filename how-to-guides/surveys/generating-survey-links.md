@@ -16,7 +16,7 @@ Links can be shared however you choose, including sharing via your website, emai
 
 Select 'Open Link Builder'
 
-![](<../../.gitbook/assets/image (303).png>)
+![](<../../.gitbook/assets/image (303) (1).png>)
 
 ## Step 2
 
