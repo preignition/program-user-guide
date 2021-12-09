@@ -74,7 +74,7 @@ It is possible to upload pictures or youtube videos to complement questions in E
 
 These will appear to the left of the question&#x20;
 
-![](<../../.gitbook/assets/image (313).png>)
+![](<../../.gitbook/assets/image (313) (1).png>)
 
 
 

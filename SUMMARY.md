@@ -18,6 +18,7 @@
   * [Using survey batches](how-to-guides/surveys/using-survey-batches.md)
   * [Presenting surveys](how-to-guides/surveys/presenting-surveys.md)
   * [Access rights for a survey](how-to-guides/surveys/access-rights-for-a-survey.md)
+  * [Survey terms](how-to-guides/surveys/survey-terms.md)
 
 ***
 

@@ -40,7 +40,7 @@ Give your new survey a name
 
 Under the 'settings' tab you can edit the survey name and select the form you want to use to collect data
 
-![](<../../.gitbook/assets/image (313) (1) (1).png>)
+![](<../../.gitbook/assets/image (313) (1) (1) (1).png>)
 
 ![](<../../.gitbook/assets/image (309) (1) (1) (1) (1).png>)
 
@@ -50,7 +50,7 @@ Under the 'Distribute' tab there is a tool for generating links to you survey.
 
 This is covered in a seperate How To Guide called '[Generating survey links](generating-survey-links.md)'
 
-![](<../../.gitbook/assets/image (299) (1).png>)
+![](<../../.gitbook/assets/image (299) (1) (1).png>)
 
 ## Step 5
 
@@ -106,4 +106,4 @@ To publish your survey simply press the blue 'Publish' button in the top right c
 
 A notification message confirming that the resouce has been published will appear.
 
-![](<../../.gitbook/assets/image (314) (1).png>)
+![](<../../.gitbook/assets/image (314) (1) (1).png>)
