@@ -16,7 +16,7 @@ The first step is to provide definations of any complex words in the form 'gloss
 
 This is visble in the left hand column in the form 'build' mode
 
-![](<../../.gitbook/assets/image (312).png>)
+![](<../../.gitbook/assets/image (312) (1).png>)
 
 
 

@@ -32,3 +32,20 @@ The access tab enables you to define ownership and user rights for a particular 
 
 ## Step 4
 
+* User rights can be revoked at any time by users with a high level of authorisation
+* This is done by double-clicking on the user and selecting the option to revoke the user
+
+![](<../../.gitbook/assets/image (312).png>)
+
+## Step 5
+
+There are 4 different types of survey users:
+
+**Owner**- Has full rights on the survey.  Can modify ownership of the survey or add or revoke all other users
+
+**Editor**- Has full rights on the survey.  Can not modify ownership
+
+**Viewer**- Has rights to view the survey.  Can not add or revoke other users
+
+**Translator**- Has the rights to view the survey and edit the survey in a specified language.  Can not add or revoke other users.&#x20;
+
