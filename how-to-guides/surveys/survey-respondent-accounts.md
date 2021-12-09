@@ -16,7 +16,7 @@ To select the type of account respondents require to complete a survey go to Acc
 
 &#x20;
 
-![](<../../.gitbook/assets/image (315) (1).png>)
+![](<../../.gitbook/assets/image (315) (1) (1).png>)
 
 ## Anonymous Account
 
