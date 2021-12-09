@@ -19,6 +19,7 @@
   * [Presenting surveys](how-to-guides/surveys/presenting-surveys.md)
   * [Access rights for a survey](how-to-guides/surveys/access-rights-for-a-survey.md)
   * [Survey terms](how-to-guides/surveys/survey-terms.md)
+  * [Publishing surveys](how-to-guides/surveys/publishing-surveys.md)
 
 ***
 

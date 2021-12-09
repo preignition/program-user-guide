@@ -28,7 +28,7 @@ This brings up a free text feild where you can add your own terms. &#x20;
 
 Mark down is supported
 
-![](<../../.gitbook/assets/image (314) (1).png>)
+![](<../../.gitbook/assets/image (314) (1) (1).png>)
 
 ## Step 3
 
@@ -40,13 +40,13 @@ The terms can be translated into any of the languages which are active for the s
 
 Once your terms are written, you can customize how they will be presented to survey respondents
 
-![](<../../.gitbook/assets/image (310).png>)
+![](<../../.gitbook/assets/image (310) (1).png>)
 
 ## Step 5
 
 By default, terms appear as a popup window when a user click on a terms link
 
-![](<../../.gitbook/assets/image (314).png>)
+![](<../../.gitbook/assets/image (314) (1).png>)
 
 ## Step 6
 
