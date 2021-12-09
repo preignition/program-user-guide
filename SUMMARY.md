@@ -17,6 +17,7 @@
   * [Creating alias survey links](how-to-guides/surveys/creating-alias-survey-links.md)
   * [Using survey batches](how-to-guides/surveys/using-survey-batches.md)
   * [Presenting surveys](how-to-guides/surveys/presenting-surveys.md)
+  * [Access rights for a survey](how-to-guides/surveys/access-rights-for-a-survey.md)
 
 ***
 

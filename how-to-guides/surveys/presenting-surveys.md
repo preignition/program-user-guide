@@ -22,7 +22,7 @@ The Presentation tab allows you to customise how you present your survey to resp
 * Write the text for the 'short presentation'
 * Markdown is supported so you can customize the look and feel of your text
 
-![](<../../.gitbook/assets/image (307).png>)
+![](<../../.gitbook/assets/image (308).png>)
 
 ## Step 2
 
@@ -42,7 +42,7 @@ The Presentation tab allows you to customise how you present your survey to resp
 
 * This is how the 'complementary presentation' will appear to survey respondents
 
-![Screenshot showing how respondents access the 'complementary presentation'](<../../.gitbook/assets/image (315).png>)
+![Screenshot showing how respondents access the 'complementary presentation'](<../../.gitbook/assets/image (316).png>)
 
 
 
