@@ -83,7 +83,7 @@ You must have the section highlighted that you want to add questions to
 
 ## Step 10
 
-You can now drag and drop questions into the shaded section
+You can now drag and drop questions into the shaded middle section
 
 ![](<../../.gitbook/assets/image (300).png>)
 
