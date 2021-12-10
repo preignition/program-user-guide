@@ -34,7 +34,7 @@ The 'survey mode' option allows you create either a test link or a production li
 
 &#x20;&#x20;
 
-![](<../../.gitbook/assets/image (309) (1) (1).png>)
+![](<../../.gitbook/assets/image (309) (1) (1) (1).png>)
 
 Test links are used to test the survey before it goes live.  Answers are not saved to the database. &#x20;
 
@@ -44,7 +44,7 @@ Production links are the links you share to get responses to your survey.  Answe
 
 The 'survey name' option allows you to use the default link name or a more readable alias which you can customised.
 
-![](<../../.gitbook/assets/image (318) (1).png>)
+![](<../../.gitbook/assets/image (318) (1) (1).png>)
 
 To create an alias link see the How to Guide '[Creating alias survey links](creating-alias-survey-links.md)'
 
@@ -78,4 +78,4 @@ In the example below, the 'read aloud' feature would be automtically activated
 
 Click on the ![](<../../.gitbook/assets/image (314) (1) (1) (1).png>)icon to copy the link to your clipboard.  You can now share it how you choose&#x20;
 
-![](<../../.gitbook/assets/image (304).png>)
+![](<../../.gitbook/assets/image (304) (1).png>)

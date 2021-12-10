@@ -8,6 +8,7 @@
   * [Using tooltips](how-to-guides/forms/using-tooltips.md)
   * [Easy Read](how-to-guides/forms/easy-read.md)
   * [Translate forms](how-to-guides/forms/translate-forms.md)
+  * [Creating a new form](how-to-guides/forms/creating-a-new-form.md)
 * [Surveys](how-to-guides/surveys/README.md)
   * [Creating a new survey](how-to-guides/surveys/creating-a-new-survey.md)
   * [Survey settings](how-to-guides/surveys/survey-settings.md)

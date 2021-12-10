@@ -22,7 +22,7 @@ Like with all resources, surveys can be organized using labels.  See the seperat
 
 Form enables you to embed a form into the survey.  The form needs to have been 'published' before it can be used in a survey
 
-![](<../../.gitbook/assets/image (309) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (309) (1) (1) (1) (1).png>)
 
 ## Step 3
 

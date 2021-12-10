@@ -38,7 +38,7 @@ You must first enable the 'Easy Read' accessibility mode in the form.  &#x20;
 
 You will see two additional menu options appear under the form definition menu
 
-![](<../../.gitbook/assets/image (317) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (317) (1) (1) (1) (1).png>)
 
 ## Step 3
 
@@ -58,10 +58,10 @@ Selecting 'Easy Read Version' in the form definition menu displays the form in t
 
 Initially the text in the Easy Read mode is derived from the standard mode.  However it can be edited here.
 
-![](<../../.gitbook/assets/image (307) (1).png>)
+![](<../../.gitbook/assets/image (307) (1) (1).png>)
 
 * The![](<../../.gitbook/assets/image (302) (1) (1).png>)emoji shows the text as it appears in the standard version of the form.  It can't be edited here.
-* The ![](<../../.gitbook/assets/image (309) (1) (1) (1) (1) (1).png>)emoji shows the text as it appears in the Easy Read version of the form.  It can be edited here.
+* The ![](<../../.gitbook/assets/image (309) (1) (1) (1) (1) (1) (1).png>)emoji shows the text as it appears in the Easy Read version of the form.  It can be edited here.
 * Any changes to the Easy Read text will be highlighted in the 'Easy Read version' structure grid as shown above
 
 {% hint style="info" %}
@@ -88,7 +88,7 @@ Toggling on the Visibility Modes toggle gives the option to make Pages, Sections
 
 This is useful if you would like to present a shorter form in the Easy Read mode&#x20;
 
-![](<../../.gitbook/assets/image (307) (1) (1).png>)
+![](<../../.gitbook/assets/image (307) (1) (1) (1).png>)
 
 In this example the visibility settings make 'Section 1' visible in the standard mode but hidden on International Sign and Easy Read mode. &#x20;
 

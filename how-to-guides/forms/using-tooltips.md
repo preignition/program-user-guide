@@ -22,7 +22,7 @@ This is visble in the left hand column in the form 'build' mode
 
 Select 'add new term' and give the term a unique name
 
-![](<../../.gitbook/assets/image (304) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (304) (1) (1) (1) (1).png>)
 
 {% hint style="info" %}
 The glossary term name must be unique, in small characters and no spaces
@@ -54,7 +54,7 @@ Tooltips must be written in the following way:
 
 Once you have added your tooltip you can go to the 'test' mode to test how it is working.
 
-![](<../../.gitbook/assets/image (315) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (315) (1) (1) (1) (1).png>)
 
 
 

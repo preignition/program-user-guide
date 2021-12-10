@@ -30,7 +30,7 @@ In advanced mode, a Logic tab appears in the form builder for Pages, Sections an
 
 Below is an example of the logic feild for the question we outlined above about fruit preferences
 
-![](<../../.gitbook/assets/image (304) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (304) (1) (1) (1) (1) (1).png>)
 
 {% hint style="info" %}
 Always add the logic to the Page, Section or Question which you want the action to be applied to
