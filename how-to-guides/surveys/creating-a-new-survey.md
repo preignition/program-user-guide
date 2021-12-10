@@ -28,7 +28,7 @@ Remember to 'Publish' your survey so any changes you have made are actived for n
 
 To create a new survey select 'Survey' from the Resource Type list and 'Create New Survey'
 
-![](<../../.gitbook/assets/image (300) (1).png>)
+![](<../../.gitbook/assets/image (300) (1) (1).png>)
 
 ## Step 2
 
@@ -40,7 +40,7 @@ Give your new survey a name
 
 Under the 'settings' tab you can edit the survey name and select the form you want to use to collect data
 
-![](<../../.gitbook/assets/image (313) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (313) (1) (1) (1) (1).png>)
 
 ![](<../../.gitbook/assets/image (309) (1) (1) (1) (1) (1).png>)
 
@@ -62,7 +62,7 @@ This is covered in a seperate How to Guide called '[Using survey batches](using-
 An initial batch is created by default with an open 'end date'.  To activate this batch you will need to enter a 'from date'
 {% endhint %}
 
-![](<../../.gitbook/assets/image (312) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (312) (1) (1) (1) (1).png>)
 
 ## Step 6
 
@@ -72,13 +72,13 @@ Mark down is supported, so images and videos can be incorporated.   See the How 
 
 &#x20;
 
-![](<../../.gitbook/assets/image (311) (1) (1).png>)
+![](<../../.gitbook/assets/image (311) (1) (1) (1).png>)
 
 ## Step 7
 
 The 'Access' tab allows you to control user rights for the survey
 
-![](<../../.gitbook/assets/image (300) (1) (1).png>)
+![](<../../.gitbook/assets/image (300) (1) (1) (1).png>)
 
 ## Step 8
 

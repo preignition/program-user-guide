@@ -22,20 +22,20 @@ These topics are covered in more detail in seperate 'How To' notes
 
 To create a new form select 'Form' from the Resource Type list and 'Create New Form'
 
-![](<../../.gitbook/assets/image (318).png>)
+![](<../../.gitbook/assets/image (320).png>)
 
 ## Step 2
 
-Give your new form a name amd select 'confirm'
+Give your new form a name and select 'confirm'
 
-![](<../../.gitbook/assets/image (304).png>)
+![](<../../.gitbook/assets/image (321).png>)
 
 ## Step 3
 
-* Under 'designation' you can name the form for internal purposes
-* Under 'presentation' you can name the form for external purposes.  This will appear at the top of the form and will be visible to repondents
+* Under 'designation' you can name the form for internal purposes.  This won't be visible to respondents and so will not need to be translated
+* Under 'presentation' you can name the form for external purposes.  This will appear at the top of the form and will need to be translated into all active languages
 
-![](<../../.gitbook/assets/image (319).png>)
+![](<../../.gitbook/assets/image (317).png>)
 
 ## Step 4
 
@@ -45,47 +45,52 @@ You will not be able to add questions until you have added a new page and new se
 
 Select 'Add new page'
 
-![](<../../.gitbook/assets/image (309).png>)
+![](<../../.gitbook/assets/image (301).png>)
 
 ## Step 5
 
 * Give your page a title and sub-title
-* These will appear at the top of the page and be visible to respondents
+* These will appear at the top of the page and will be visible to respondents
 
-![](<../../.gitbook/assets/image (307).png>)
+![](<../../.gitbook/assets/image (313).png>)
 
 ## Step 6
 
 You can now add a new section
 
-![](<../../.gitbook/assets/image (315).png>)
+![](<../../.gitbook/assets/image (318).png>)
+
+## Step 7
+
+* Under 'designation' you can name the section for internal purposes.  This won't be visible to respondents and so will not need to be translated
+* Under 'presentation' you can name the section for external purposes.  This will appear within the form and will need to be translated into all active languages
+
+![](<../../.gitbook/assets/image (303).png>)
 
 ## Step 8
 
-The 'Terms' tab enables you ask your respondents to agree to your terms before responding to your survey
+You are now ready to add questions.  To do this select 'Add Content'
 
-![](<../../.gitbook/assets/image (317).png>)
-
-
-
-t is your choice whether to ask respondents to agree to your own terms.  By default, users will have to agree to Preigntion's terms of service before responding to a survey.
-
-For more information, see the How to Guide 'Survey Terms'
+![](<../../.gitbook/assets/image (312).png>)
 
 ## Step 9
 
-The 'Activity' tab gives an overview of recent activity on the survey.
+{% hint style="warning" %}
+You must have the section highlighted that you want to add questions to
+{% endhint %}
 
-![](<../../.gitbook/assets/image (306) (1) (1).png>)
+![](<../../.gitbook/assets/image (311).png>)
 
 ## Step 10
 
-{% hint style="success" %}
-You need to 'Publish' your survey in order for new respondents to see any changes that you have made to your survey.
-{% endhint %}
+You can now drag and drop questions into the shaded section
 
-To publish your survey simply press the blue 'Publish' button in the top right corner.
+![](<../../.gitbook/assets/image (300).png>)
 
-A notification message confirming that the resouce has been published will appear.
+## Step 11
 
-![](<../../.gitbook/assets/image (314) (1) (1) (1) (1).png>)
+Once dropped, you will be prompted to edit the new question&#x20;
+
+![](<../../.gitbook/assets/image (302).png>)
+
+The different question types are covered in more detail in separate 'How To' notes

@@ -9,7 +9,7 @@ description: All the steps you need to add a question to a form
 * This guide assumes you have already created a form and added a page and section.
 * Your screen will now look like this
 
-![](<../../.gitbook/assets/image (301) (1).png>)
+![](<../../.gitbook/assets/image (301) (1) (1).png>)
 
 ## Step 2
 

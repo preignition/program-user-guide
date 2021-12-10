@@ -16,7 +16,7 @@ You can easily customise your survey links to make them easier for respondents t
 
 
 
-![](<../../.gitbook/assets/image (311).png>)
+![](<../../.gitbook/assets/image (311) (1).png>)
 
 ## Step 2
 

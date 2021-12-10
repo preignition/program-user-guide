@@ -20,7 +20,7 @@ You have the option to ask respondents to agree to you own terms of service if y
 
 To add your own terms, go to the 'Terms' tab and toggle on 'Add Survey Terms'
 
-![](<../../.gitbook/assets/image (312).png>)
+![](<../../.gitbook/assets/image (312) (1).png>)
 
 ## Step 2
 
@@ -40,7 +40,7 @@ The terms can be translated into any of the languages which are active for the s
 
 Once your terms are written, you can customize how they will be presented to survey respondents
 
-![](<../../.gitbook/assets/image (310) (1).png>)
+![](<../../.gitbook/assets/image (310) (1) (1).png>)
 
 ## Step 5
 

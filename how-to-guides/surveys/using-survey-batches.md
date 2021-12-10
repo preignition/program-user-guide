@@ -32,7 +32,7 @@ You can organise batches by giving them a label and description
 
 Select 'create new batch' to create a new batch
 
-![](<../../.gitbook/assets/image (310) (1) (1).png>)
+![](<../../.gitbook/assets/image (310) (1) (1) (1).png>)
 
 ## Step 5
 
