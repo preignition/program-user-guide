@@ -8,7 +8,7 @@ description: Tooltips can be used to explain complex or technical words
 
 It is possible to add tooltips to your forms to explain words which are complex or difficult to understand.
 
-![An example of a tooltip to explain the meaning of the word 'complex'](<../../.gitbook/assets/image (299) (1) (1) (1) (1) (1).png>)
+![An example of a tooltip to explain the meaning of the word 'complex'](<../../.gitbook/assets/image (299) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 1
 

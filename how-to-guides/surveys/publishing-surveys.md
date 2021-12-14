@@ -22,4 +22,4 @@ A survey can be unpublished at any time from the survey settings page.  This wil
 
 It can republished at any time.
 
-![](<../../.gitbook/assets/image (310) (1).png>)
+![](<../../.gitbook/assets/image (310) (1) (1).png>)

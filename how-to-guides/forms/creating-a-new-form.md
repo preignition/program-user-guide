@@ -58,7 +58,7 @@ Select 'Add new page'
 
 You can now add a new section
 
-![](<../../.gitbook/assets/image (318).png>)
+![](<../../.gitbook/assets/image (318) (1).png>)
 
 ## Step 7
 

@@ -12,7 +12,7 @@ Choice based questions ask Respondents to make a choice between on one or more o
 
 Choice based question types are shown in the right hand column
 
-![](<../../../.gitbook/assets/image (309).png>)
+![](<../../../.gitbook/assets/image (310).png>)
 
 ## Single checkbox
 
@@ -26,7 +26,7 @@ The question is edited as follows:
 
 And appears to Repondents as follows:
 
-![](<../../../.gitbook/assets/image (317).png>)
+![](<../../../.gitbook/assets/image (318).png>)
 
 ## Checkbox group
 
@@ -46,9 +46,25 @@ Under 'options' you can enter the options you want to appear in the question
 * You can ask Respondents to specify if they select an 'other' option
 * You can decide whether the option is exclusive or not.  If an option is exclusive Respondents will not be able to select other options if they have already selected an exclusive option
 
-Checkbox groups appear to Respondents like this:
+Checkbox groups question appear to Respondents like this:
 
 ![](<../../../.gitbook/assets/image (304).png>)
 
 ## Dropdown
+
+{% hint style="info" %}
+Dropdown is a closed-ended question that allows respondents to choose one answer choice from a list of choices presented in a dropdown menu
+{% endhint %}
+
+Edit the question in the usual way and select 'Options'
+
+![](<../../../.gitbook/assets/image (317).png>)
+
+Under 'Options' enter the options you want to appear in the dropdown list
+
+![](<../../../.gitbook/assets/image (309).png>)
+
+The dropdown question appears to Respondents like this:
+
+![](<../../../.gitbook/assets/image (299).png>)
 

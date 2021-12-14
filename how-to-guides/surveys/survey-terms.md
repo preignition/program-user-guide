@@ -34,13 +34,13 @@ Mark down is supported
 
 The terms can be translated into any of the languages which are active for the survey
 
-![](<../../.gitbook/assets/image (299) (1).png>)
+![](<../../.gitbook/assets/image (299) (1) (1).png>)
 
 ## Step 4
 
 Once your terms are written, you can customize how they will be presented to survey respondents
 
-![](<../../.gitbook/assets/image (310) (1) (1).png>)
+![](<../../.gitbook/assets/image (310) (1) (1) (1).png>)
 
 ## Step 5
 
@@ -52,4 +52,4 @@ By default, terms appear as a popup window when a user click on a terms link
 
 This is how your terms will appear if you select the option 'under sign checkbox as plain text'
 
-![](<../../.gitbook/assets/image (299).png>)
+![](<../../.gitbook/assets/image (299) (1).png>)

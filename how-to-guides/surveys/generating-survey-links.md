@@ -44,7 +44,7 @@ Production links are the links you share to get responses to your survey.  Answe
 
 The 'survey name' option allows you to use the default link name or a more readable alias which you can customised.
 
-![](<../../.gitbook/assets/image (318) (1) (1).png>)
+![](<../../.gitbook/assets/image (318) (1) (1) (1).png>)
 
 To create an alias link see the How to Guide '[Creating alias survey links](creating-alias-survey-links.md)'
 
