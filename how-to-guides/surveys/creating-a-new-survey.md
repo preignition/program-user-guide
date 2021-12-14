@@ -34,7 +34,7 @@ To create a new survey select 'Survey' from the Resource Type list and 'Create N
 
 Give your new survey a name
 
-![](<../../.gitbook/assets/image (315) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (315) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 3
 

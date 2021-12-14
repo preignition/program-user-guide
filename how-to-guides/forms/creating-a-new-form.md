@@ -28,7 +28,7 @@ To create a new form select 'Form' from the Resource Type list and 'Create New F
 
 Give your new form a name and select 'confirm'
 
-![](<../../.gitbook/assets/image (321).png>)
+![](<../../.gitbook/assets/image (321) (1).png>)
 
 ## Step 3
 
@@ -65,7 +65,7 @@ You can now add a new section
 * Under 'designation' you can name the section for internal purposes.  This won't be visible to respondents and so does not need to be translated
 * Under 'presentation' you can name the section for external purposes.  This will appear within the form and will need to be translated languages which are active for the form
 
-![](<../../.gitbook/assets/image (303) (1).png>)
+![](<../../.gitbook/assets/image (303) (1) (1).png>)
 
 ## Step 8
 

@@ -16,7 +16,7 @@ Links can be shared however you choose, including sharing via your website, emai
 
 Select 'Open Link Builder'
 
-![](<../../.gitbook/assets/image (303) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (303) (1) (1) (1) (1).png>)
 
 ## Step 2
 
@@ -54,7 +54,7 @@ The 'Survey options' you are presented with will vary depending upon whether the
 
 In test mode you will have the option whether or not to display the landing page while testing the form&#x20;
 
-![](<../../.gitbook/assets/image (316) (1) (1).png>)
+![](<../../.gitbook/assets/image (316) (1) (1) (1).png>)
 
 In production mode you have the option to force respondents to use the latest version of the survey even if they have started answering a previous version
 

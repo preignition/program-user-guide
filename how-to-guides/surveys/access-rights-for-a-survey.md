@@ -13,7 +13,7 @@ The access tab enables you to define ownership and user rights for a particular 
 * The 'access' tab shows the existing user roles for the survey
 * The person who created the survey will be the default 'Survey Owner'
 
-![](<../../.gitbook/assets/image (315) (1) (1).png>)
+![](<../../.gitbook/assets/image (315) (1) (1) (1).png>)
 
 ## Step 2
 

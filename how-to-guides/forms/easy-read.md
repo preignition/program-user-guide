@@ -80,7 +80,7 @@ These will appear to the left of the question&#x20;
 
 For videos, simply add the video link or ID in the box entitled 'Youtube Settings'
 
-![](<../../.gitbook/assets/image (303) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (303) (1) (1) (1) (1) (1).png>)
 
 ## Step 6
 
@@ -98,7 +98,7 @@ In this example the visibility settings make 'Section 1' visible in the standard
 
 The Easy Read version of a form can be tested in the usual way.  However this 'Easy Read' icon must be selected from the top menu
 
-![](<../../.gitbook/assets/image (316) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (316) (1) (1) (1) (1).png>)
 
 ## Step 8
 
