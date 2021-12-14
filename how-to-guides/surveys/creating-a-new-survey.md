@@ -34,7 +34,7 @@ To create a new survey select 'Survey' from the Resource Type list and 'Create N
 
 Give your new survey a name
 
-![](<../../.gitbook/assets/image (315) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (315) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 3
 
@@ -94,7 +94,7 @@ For more information, see the How to Guide 'Survey Terms'
 
 The 'Activity' tab gives an overview of recent activity on the survey.
 
-![](<../../.gitbook/assets/image (306) (1) (1).png>)
+![](<../../.gitbook/assets/image (306) (1) (1) (1).png>)
 
 ## Step 10
 
@@ -106,4 +106,4 @@ To publish your survey simply press the blue 'Publish' button in the top right c
 
 A notification message confirming that the resouce has been published will appear.
 
-![](<../../.gitbook/assets/image (314) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (314) (1) (1) (1) (1) (1).png>)

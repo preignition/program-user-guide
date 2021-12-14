@@ -65,7 +65,7 @@ You can now add a new section
 * Under 'designation' you can name the section for internal purposes.  This won't be visible to respondents and so does not need to be translated
 * Under 'presentation' you can name the section for external purposes.  This will appear within the form and will need to be translated languages which are active for the form
 
-![](<../../.gitbook/assets/image (303).png>)
+![](<../../.gitbook/assets/image (303) (1).png>)
 
 ## Step 8
 
@@ -99,7 +99,7 @@ The different question types are covered in more detail in separate 'How To' not
 
 You can test your form at any time by selecting 'Test' from the menu at the top of the page
 
-![](<../../.gitbook/assets/image (323).png>)
+![](<../../.gitbook/assets/image (324).png>)
 
 This presents the form in the format that Respondents will see it
 

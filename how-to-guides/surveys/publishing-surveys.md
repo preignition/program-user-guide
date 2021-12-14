@@ -8,13 +8,13 @@ Surveys need to be 'published' in order for respondents to see any changes that 
 
 You can publish a survey by selecting 'publish' in the top right
 
-![](<../../.gitbook/assets/image (306).png>)
+![](<../../.gitbook/assets/image (306) (1).png>)
 
 ## Step 2
 
 You will receive a notification that the survey has been published and the 'last published' date will be updated
 
-![](<../../.gitbook/assets/image (314).png>)
+![](<../../.gitbook/assets/image (314) (1).png>)
 
 ## Step 3
 
