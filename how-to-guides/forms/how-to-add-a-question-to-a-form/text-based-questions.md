@@ -48,7 +48,7 @@ Be mindful that it is good practice to keep labels short and clear.  Helper text
 
 The helper text appears under the question label when the question is focused on.  It can be used to provide additional help to Respondents when answering a specific question
 
-![](<../../../.gitbook/assets/image (312).png>)
+![](<../../../.gitbook/assets/image (313).png>)
 
 ## Step 7
 

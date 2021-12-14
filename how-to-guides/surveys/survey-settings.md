@@ -42,7 +42,7 @@ The activation feild describes whether the survey is currently 'active'.   The s
 In order for a survey to be active, the batch settings must have a 'from date' which is in the past and a 'to date' which is in the future or left blank.  The survey must also be published
 {% endhint %}
 
-![](<../../.gitbook/assets/image (313) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (313) (1) (1) (1) (1).png>)
 
 ## Step 5
 

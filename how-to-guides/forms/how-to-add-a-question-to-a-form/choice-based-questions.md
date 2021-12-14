@@ -68,3 +68,20 @@ The dropdown question appears to Respondents like this:
 
 ![](<../../../.gitbook/assets/image (299).png>)
 
+## Radio group
+
+{% hint style="info" %}
+Radio Group questions operate in the same way as Checkbox group questions.  However Respondents can only select one option
+{% endhint %}
+
+Edit the question in the usual way and select 'Options'
+
+![](<../../../.gitbook/assets/image (306).png>)
+
+Under 'Options' enter the options you want to be available
+
+![](<../../../.gitbook/assets/image (312).png>)
+
+The radio group question appears to Respondents like this:
+
+![](<../../../.gitbook/assets/image (308).png>)

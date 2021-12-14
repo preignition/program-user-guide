@@ -40,7 +40,7 @@ Give your new survey a name
 
 Under the 'settings' tab you can edit the survey name and select the form you want to use to collect data
 
-![](<../../.gitbook/assets/image (313) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (313) (1) (1) (1) (1) (1).png>)
 
 ![](<../../.gitbook/assets/image (309) (1) (1) (1) (1) (1) (1).png>)
 
@@ -94,7 +94,7 @@ For more information, see the How to Guide 'Survey Terms'
 
 The 'Activity' tab gives an overview of recent activity on the survey.
 
-![](<../../.gitbook/assets/image (306) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (306) (1) (1) (1) (1).png>)
 
 ## Step 10
 

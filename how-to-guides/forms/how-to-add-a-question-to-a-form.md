@@ -24,7 +24,7 @@ The options under 'Form Definition' are explained in separate How To notes
 
 The second column provides an overview of your form in a tree structure.  You can see the form title, pages, sections and questions
 
-![](<../../.gitbook/assets/image (306).png>)
+![](<../../.gitbook/assets/image (306) (1).png>)
 
 ## Step 4
 

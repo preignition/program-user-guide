@@ -52,7 +52,7 @@ Select 'Add new page'
 * Give your page a title and sub-title
 * These will appear at the top of the page and will be visible to respondents
 
-![](<../../.gitbook/assets/image (313).png>)
+![](<../../.gitbook/assets/image (313) (1).png>)
 
 ## Step 6
 
