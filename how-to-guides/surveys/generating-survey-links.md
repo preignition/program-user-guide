@@ -22,7 +22,7 @@ Select 'Open Link Builder'
 
 The survey link at the bottom of the page will adapt depending on the options you choose
 
-![](<../../.gitbook/assets/image (298) (1).png>)
+![](<../../.gitbook/assets/image (298) (1) (1).png>)
 
 {% hint style="success" %}
 The survey links stay the same when new versions of the survey are published
@@ -78,4 +78,4 @@ In the example below, the 'read aloud' feature would be automtically activated
 
 Click on the ![](<../../.gitbook/assets/image (314) (1) (1) (1) (1).png>)icon to copy the link to your clipboard.  You can now share it how you choose&#x20;
 
-![](<../../.gitbook/assets/image (304) (1) (1).png>)
+![](<../../.gitbook/assets/image (304) (1) (1) (1).png>)

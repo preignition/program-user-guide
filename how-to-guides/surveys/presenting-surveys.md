@@ -57,4 +57,4 @@ The Presentation tab allows you to customise how you present your survey to resp
 
 * And write the translation in the additional feilds that appear
 
-![](<../../.gitbook/assets/image (298).png>)
+![](<../../.gitbook/assets/image (298) (1).png>)

@@ -48,7 +48,7 @@ The new question will appear in the form structure in the left hand side of the 
 
 Selecting the 'cog' icon beside a question, enables you to customise the question
 
-![](<../../.gitbook/assets/image (304).png>)
+![](<../../.gitbook/assets/image (304) (1).png>)
 
 ## Step 7
 
