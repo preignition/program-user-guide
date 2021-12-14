@@ -18,17 +18,51 @@ Initially two text based question type are visible &#x20;
 
 Clicking on the ![](<../../../.gitbook/assets/image (320).png>)symbol reveals some additional text based options
 
-![](<../../../.gitbook/assets/image (316).png>)
+![](<../../../.gitbook/assets/image (316) (1).png>)
 
 ## Step 3
 
 A text based question looks like this
 
-![](<../../../.gitbook/assets/image (303).png>)
+![](<../../../.gitbook/assets/image (316).png>)
 
-* Under 'Designation' give the question a label
-* Check the accessibility box for a more accessible label variant (disable animation and better handle long labels
-* The helper text appears under the question label when the question is focused on.  It can be used to give Respondents help when answering the question
-* Check the 'Validation' box if you want to require Respendents to answer this question
+## Step 4
 
-![Screenshot showing how 'helper text' appears when a question is selected](<../../../.gitbook/assets/image (308).png>)
+Under 'Designation' give the question a label
+
+![](<../../../.gitbook/assets/image (322).png>)
+
+## Step 5
+
+You can check the accessibility box if you want longer label (ie more than 100 characters)
+
+{% hint style="info" %}
+Be mindful that it is good practice to keep labels short and clear.  Helper text can be used to provide additional information about the question&#x20;
+{% endhint %}
+
+![](<../../../.gitbook/assets/image (323).png>)
+
+&#x20;
+
+## Step 6
+
+The helper text appears under the question label when the question is focused on.  It can be used to provide additional help to Respondents when answering a specific question
+
+![](<../../../.gitbook/assets/image (312).png>)
+
+## Step 7
+
+Select the 'Validation' box if you require Respondents to answer the question
+
+![](<../../../.gitbook/assets/image (321).png>)
+
+## Step 8
+
+The other text based questions operate in the same way.  The only differences are as follows:
+
+* Currency and number questions provide an options for setting a maximum and minimum value for answers
+* Date questions require Respondents to enter a date in the format dd/mm/yyyy
+* Email questions require Respondents to enter a recognised email format ie the answer must include @ to be accepted
+* Long text gives an option to set the number of rows that will be visible and the maximum number of rows that are available
+
+![](<../../../.gitbook/assets/image (324).png>)

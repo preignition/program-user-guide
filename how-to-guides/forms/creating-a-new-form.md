@@ -28,7 +28,7 @@ To create a new form select 'Form' from the Resource Type list and 'Create New F
 
 Give your new form a name and select 'confirm'
 
-![](<../../.gitbook/assets/image (321) (1).png>)
+![](<../../.gitbook/assets/image (321) (1) (1).png>)
 
 ## Step 3
 
@@ -71,7 +71,7 @@ You can now add a new section
 
 You are now ready to add questions.  To do this select 'Add Content'
 
-![](<../../.gitbook/assets/image (312).png>)
+![](<../../.gitbook/assets/image (312) (1).png>)
 
 ## Step 9
 
@@ -99,7 +99,7 @@ The different question types are covered in more detail in separate 'How To' not
 
 You can test your form at any time by selecting 'Test' from the menu at the top of the page
 
-![](<../../.gitbook/assets/image (324).png>)
+![](<../../.gitbook/assets/image (324) (1).png>)
 
 This presents the form in the format that Respondents will see it
 
@@ -115,6 +115,6 @@ Go to 'Deploy' in the top menu, select 'Publish' in the side mene and select 'Cr
 
 &#x20;
 
-![](<../../.gitbook/assets/image (322).png>)
+![](<../../.gitbook/assets/image (322) (1).png>)
 
 See the seperate 'How To note '[Publishing a Form](https://app.gitbook.com/o/-LCmmrbb3mPcyvxukobx/s/-LDglCKkoaiLL-wpvCjA/c/kjEpt7kq2p2GIogt0eWt/how-to-guides/forms/publishing-a-form)' for more details
