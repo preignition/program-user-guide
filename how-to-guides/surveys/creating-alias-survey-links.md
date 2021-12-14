@@ -22,4 +22,4 @@ You can easily customise your survey links to make them easier for respondents t
 
 * The aliases you have created will not be availble to be used in the link builder
 
-![](<../../.gitbook/assets/image (308) (1) (1).png>)
+![](<../../.gitbook/assets/image (308) (1) (1) (1).png>)

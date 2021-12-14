@@ -27,7 +27,7 @@ The easy read version of the form renders the form and the interface differently
 
 You must first enable the 'Easy Read' accessibility mode in the form.  &#x20;
 
-![](<../../.gitbook/assets/image (308) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (308) (1) (1) (1) (1) (1).png>)
 
 * Under the build menu, select the form title in the structure grid in the left hand column
 * Toggle on the 'advanced' mode
@@ -92,7 +92,7 @@ This is useful if you would like to present a shorter form in the Easy Read mode
 
 In this example the visibility settings make 'Section 1' visible in the standard mode but hidden on International Sign and Easy Read mode. &#x20;
 
-![](<../../.gitbook/assets/image (308) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (308) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 7
 

@@ -22,7 +22,7 @@ These topics are covered in more detail in seperate 'How To' notes
 
 To create a new form select 'Form' from the Resource Type list and 'Create New Form'
 
-![](<../../.gitbook/assets/image (320).png>)
+![](<../../.gitbook/assets/image (320) (1).png>)
 
 ## Step 2
 
