@@ -85,3 +85,17 @@ Under 'Options' enter the options you want to be available
 The radio group question appears to Respondents like this:
 
 ![](<../../../.gitbook/assets/image (308).png>)
+
+## Ratings
+
+{% hint style="info" %}
+Rating questions ask Responents to rate something using a simple star system
+{% endhint %}
+
+Edit the question in the usual way.  The only different is that you can set the number of stars you want presented and whether or not to allow Respondents to select zero stars
+
+![](<../../../.gitbook/assets/image (300).png>)
+
+Rating questions appear to Respondents like this:
+
+![](<../../../.gitbook/assets/image (328).png>)

@@ -85,7 +85,7 @@ You must have the section highlighted in the tree structure in the left hand col
 
 Drag and drop questions into the shaded middle section
 
-![](<../../.gitbook/assets/image (300).png>)
+![](<../../.gitbook/assets/image (300) (1).png>)
 
 ## Step 11
 

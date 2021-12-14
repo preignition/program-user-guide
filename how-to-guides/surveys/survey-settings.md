@@ -16,7 +16,7 @@ The designation section is where the survey name can be edited
 
 Like with all resources, surveys can be organized using labels.  See the seperate How to Guide called '[Using labels](../../settings/using-labels.md)'
 
-![](<../../.gitbook/assets/image (300) (1).png>)
+![](<../../.gitbook/assets/image (300) (1) (1).png>)
 
 ## Step 2
 
