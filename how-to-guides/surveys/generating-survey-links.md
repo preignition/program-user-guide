@@ -78,4 +78,4 @@ In the example below, the 'read aloud' feature would be automtically activated
 
 Click on the ![](<../../.gitbook/assets/image (314) (1) (1) (1).png>)icon to copy the link to your clipboard.  You can now share it how you choose&#x20;
 
-![](<../../.gitbook/assets/image (304) (1).png>)
+![](<../../.gitbook/assets/image (304) (1) (1).png>)
