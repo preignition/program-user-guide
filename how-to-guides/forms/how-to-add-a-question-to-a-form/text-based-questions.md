@@ -30,7 +30,7 @@ A text based question looks like this
 
 Under 'Designation' give the question a label
 
-![](<../../../.gitbook/assets/image (322).png>)
+![](<../../../.gitbook/assets/image (323).png>)
 
 ## Step 5
 
@@ -40,7 +40,7 @@ You can check the accessibility box if you want longer label (ie more than 100 c
 Be mindful that it is good practice to keep labels short and clear.  Helper text can be used to provide additional information about the question&#x20;
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (323).png>)
+![](<../../../.gitbook/assets/image (325).png>)
 
 &#x20;
 
@@ -65,4 +65,4 @@ The other text based questions operate in the same way.  The only differences ar
 * Email questions require Respondents to enter a recognised email format ie the answer must include @ to be accepted
 * Long text gives an option to set the number of rows that will be visible and the maximum number of rows that are available
 
-![](<../../../.gitbook/assets/image (324).png>)
+![](<../../../.gitbook/assets/image (326).png>)
