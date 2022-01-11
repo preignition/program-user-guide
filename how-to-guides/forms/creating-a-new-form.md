@@ -1,8 +1,8 @@
 ---
-description: All the steps you need to create a new form
+description: All the steps you need to create a new Form
 ---
 
-# Creating a form
+# Creating a Form
 
 ## Introduction
 
@@ -12,96 +12,96 @@ Forms determine **what** information you collect from your Respondents
 
 This page gives a brief overview of the following
 
-* Creating a new form
-* Adding questions
-* Publishing a form
+* Creating a new Form
+* Adding Questions
+* Publishing a Form
 
 These topics are covered in more detail in seperate 'How To' notes
 
 ## Step 1
 
-To create a new form select 'Form' from the Resource Type list and 'Create New Form'
+To create a new Form select 'Form' from the Resource Type list and 'Create New Form'
 
 ![](<../../.gitbook/assets/image (320) (1).png>)
 
 ## Step 2
 
-Give your new form a name and select 'confirm'
+Give your new Form a name and select 'Confirm'
 
 ![](<../../.gitbook/assets/image (321) (1) (1).png>)
 
 ## Step 3
 
-* Under 'designation' you can name the form for internal purposes.  This won't be visible to respondents and so does not need to be translated
-* Under 'presentation' you can name the form for external purposes.  This will appear at the top of the form and will need to be translated into languages which are active for the form
+* Under 'Designation' you can name the Form for internal purposes.  This won't be visible to respondents and does not need to be translated
+* Under 'Presentation' you can name the Form for external purposes.  This will appear at the top of the Form.  It needs to be translated into languages which are active for the Form
 
 ![](<../../.gitbook/assets/image (317) (1).png>)
 
 ## Step 4
 
 {% hint style="warning" %}
-You will not be able to add questions until you have added a new page and a new section
+You will not be able to add Questions until you have added a new Page and a new Section
 {% endhint %}
 
-Select 'Add new page'
+Select 'Add new Page'
 
 ![](<../../.gitbook/assets/image (301) (1).png>)
 
 ## Step 5
 
-* Give your page a title and sub-title
-* These will appear at the top of the page and will be visible to respondents
+* Give your Page a title and sub-title
+* These will appear at the top of the Page and will be visible to Respondents
 
 ![](<../../.gitbook/assets/image (313) (1).png>)
 
 ## Step 6
 
-You can now add a new section
+You can now add a new Section
 
 ![](<../../.gitbook/assets/image (318) (1).png>)
 
 ## Step 7
 
-* Under 'designation' you can name the section for internal purposes.  This won't be visible to respondents and so does not need to be translated
-* Under 'presentation' you can name the section for external purposes.  This will appear within the form and will need to be translated languages which are active for the form
+* Under 'Designation' you can name the Section for internal purposes.  This won't be visible to respondents and does not need to be translated
+* Under 'Presentation' you can name the Section for external purposes.  This will appear within the Form and will need to be translated languages which are active for the Form
 
 ![](<../../.gitbook/assets/image (303) (1) (1).png>)
 
 ## Step 8
 
-You are now ready to add questions.  To do this select 'Add Content'
+You are now ready to add Questions.  To do this select 'Add Content'
 
 ![](<../../.gitbook/assets/image (312) (1).png>)
 
 ## Step 9
 
 {% hint style="warning" %}
-You must have the section highlighted in the tree structure in the left hand column that you want to add questions to
+You must have the Section highlighted in the tree structure in the left hand column that you want to add Questions to
 {% endhint %}
 
 ![](<../../.gitbook/assets/image (311).png>)
 
 ## Step 10
 
-Drag and drop questions into the shaded middle section
+Drag and drop Questions into the shaded middle section
 
 ![](<../../.gitbook/assets/image (300) (1).png>)
 
 ## Step 11
 
-Once dropped, you will be prompted to edit the new question&#x20;
+Once dropped, you will be prompted to edit the new Question&#x20;
 
 ![](<../../.gitbook/assets/image (302).png>)
 
-The different question types are covered in more detail in separate 'How To' notes
+The different Question types are covered in more detail in separate 'How To' notes
 
 ## Step 12
 
-You can test your form at any time by selecting 'Test' from the menu at the top of the page
+You can test your Form at any time by selecting 'Test' from the menu at the top of the page
 
 ![](<../../.gitbook/assets/image (324) (1).png>)
 
-This presents the form in the format that Respondents will see it
+The Test Mode presents the Form in the format that Respondents will see it
 
 ![](<../../.gitbook/assets/image (301).png>)
 
@@ -109,9 +109,11 @@ See the separate 'How To' note '[Testing a Form](https://app.gitbook.com/o/-LCmm
 
 ## Step 13
 
-In order for any changes you have made to your form to be visible to Respondents, the form must be 'Published'
+In order for any changes you have made to your Form to be visible to Respondents, the Form must be 'Published'
 
-Go to 'Deploy' in the top menu, select 'Publish' in the side mene and select 'Create and Publish a new Version'&#x20;
+* Go to 'Deploy' in the top menu
+* Select 'Publish' in the side menu
+* Se;ect 'Create and Publish a new Version'&#x20;
 
 &#x20;
 

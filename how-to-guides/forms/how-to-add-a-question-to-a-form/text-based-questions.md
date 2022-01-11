@@ -1,43 +1,46 @@
 ---
-description: This page covers everything you need to know about text based questions
+description: This page covers everything you need to know about text based Questions
 ---
 
-# Text based questions
+# Text based Questions
 
 {% hint style="success" %}
-Text based questions are questions which are responded to by entering text or numbers
+Text based Questions are Questions which are responded to by entering text or numbers
 {% endhint %}
 
 ## Step 1
 
-Initially two text based question type are visible &#x20;
+Initially two text based Question type are visible &#x20;
+
+* Text
+* Long Text
 
 ![](<../../../.gitbook/assets/image (315).png>)
 
 ## Step 2
 
-Clicking on the ![](<../../../.gitbook/assets/image (320).png>)symbol reveals some additional text based options
+Clicking on the ![](<../../../.gitbook/assets/image (320).png>)symbol beside the 'Text' label reveals some additional text based options
 
 ![](<../../../.gitbook/assets/image (316) (1).png>)
 
 ## Step 3
 
-A text based question looks like this
+A text based Question looks like this
 
 ![](<../../../.gitbook/assets/image (316).png>)
 
 ## Step 4
 
-Under 'Designation' give the question a label
+Under 'Designation' give the Question a label
 
-![](<../../../.gitbook/assets/image (323).png>)
+![](<../../../.gitbook/assets/image (323) (1).png>)
 
 ## Step 5
 
 You can check the accessibility box if you want longer label (ie more than 100 characters)
 
 {% hint style="info" %}
-Be mindful that it is good practice to keep labels short and clear.  Helper text can be used to provide additional information about the question&#x20;
+Be mindful that it is good practice to keep labels short and clear.  Helper text can be used to provide additional information about the Question if needed&#x20;
 {% endhint %}
 
 ![](<../../../.gitbook/assets/image (327).png>)
@@ -46,13 +49,15 @@ Be mindful that it is good practice to keep labels short and clear.  Helper text
 
 ## Step 6
 
-The helper text appears under the question label when the question is focused on.  It can be used to provide additional help to Respondents when answering a specific question
+The helper text appears under the Question label when a Respondent focusses on a Question.  It can be used to provide additional help to Respondents when answering a specific Question
 
 ![](<../../../.gitbook/assets/image (313).png>)
 
 ## Step 7
 
 Select the 'Validation' box if you require Respondents to answer the question
+
+Respondents will not be able to 'Submit' the form unless all required feilds are completed
 
 ![](<../../../.gitbook/assets/image (321).png>)
 
