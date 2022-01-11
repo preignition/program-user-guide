@@ -6,7 +6,7 @@
   * [Creating a form](how-to-guides/forms/creating-a-new-form.md)
   * [Adding Questions to a Form](how-to-guides/forms/how-to-add-a-question-to-a-form.md)
     * [Text based Questions](how-to-guides/forms/how-to-add-a-question-to-a-form/text-based-questions.md)
-    * [Choice based questions](how-to-guides/forms/how-to-add-a-question-to-a-form/choice-based-questions.md)
+    * [Choice based Questions](how-to-guides/forms/how-to-add-a-question-to-a-form/choice-based-questions.md)
     * [Media based questions](how-to-guides/forms/how-to-add-a-question-to-a-form/media-based-questions.md)
     * [Free text feilds](how-to-guides/forms/how-to-add-a-question-to-a-form/free-text-feilds.md)
   * [Testing a form](how-to-guides/forms/testing-a-form.md)
