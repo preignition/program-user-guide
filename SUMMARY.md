@@ -11,7 +11,7 @@
     * [Free text feilds](how-to-guides/forms/how-to-add-a-question-to-a-form/free-text-feilds.md)
   * [Testing a form](how-to-guides/forms/testing-a-form.md)
   * [Publishing a form](how-to-guides/forms/publishing-a-form.md)
-  * [Introduction to form logic](how-to-guides/forms/introduction-to-form-logic.md)
+  * [Introduction to Form logic](how-to-guides/forms/introduction-to-form-logic.md)
   * [Using tooltips](how-to-guides/forms/using-tooltips.md)
   * [Easy Read](how-to-guides/forms/easy-read.md)
   * [Translate forms](how-to-guides/forms/translate-forms.md)
