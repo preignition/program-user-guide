@@ -31,7 +31,7 @@ The rest of the expression (logic like equal `==` or not equal `!=`) is then typ
 &#x20;
 
 {% hint style="info" %}
-Use `!=` instead of `== for `hidden expression.
+Use `!=` instead of `== for` hidden expression.
 
 If you want to initially hide an item (and only show it when the user has answered a specific question), construct your expression with `!=`.&#x20;
 
@@ -139,7 +139,7 @@ Available custom transforms are:
 
 *   `length` for computing the length of an Array. This is useful for validating group of checkbox answers and limiting the number of boxes checked. For instance limiting the number of answers of a question \`Select all colors you like\` to more than 2 answer, one would add this expression to the validity logic expression:
 
-    ![](<../../../../.gitbook/assets/image (296) (1) (1).png>)
+    ![](<../../../../.gitbook/assets/image (296) (1) (1) (1).png>)
 
 
 

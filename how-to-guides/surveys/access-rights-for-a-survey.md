@@ -28,7 +28,7 @@ The access tab enables you to define ownership and user rights for a particular 
 * It is possible to add users to the survey with different levels of user rights
 * Again, the user must already have an account on the app which is associate with your organisation
 
-![](<../../.gitbook/assets/image (307) (1).png>)
+![](<../../.gitbook/assets/image (307) (1) (1).png>)
 
 ## Step 4
 
