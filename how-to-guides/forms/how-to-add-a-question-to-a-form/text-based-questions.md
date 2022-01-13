@@ -21,13 +21,13 @@ Initially two text based Question type are visible &#x20;
 
 Clicking on the ![](<../../../.gitbook/assets/image (320).png>)symbol beside the 'Text' label reveals some additional text based options
 
-![](<../../../.gitbook/assets/image (316) (1).png>)
+![](<../../../.gitbook/assets/image (316) (1) (1).png>)
 
 ## Step 3
 
 A text based Question looks like this
 
-![](<../../../.gitbook/assets/image (316).png>)
+![](<../../../.gitbook/assets/image (316) (1).png>)
 
 ## Step 4
 

@@ -54,7 +54,7 @@ The 'Survey options' you are presented with will vary depending upon whether the
 
 In test mode you will have the option whether or not to display the landing page while testing the form&#x20;
 
-![](<../../.gitbook/assets/image (316) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (316) (1) (1) (1) (1) (1).png>)
 
 In production mode you have the option to force respondents to use the latest version of the survey even if they have started answering a previous version
 
@@ -76,6 +76,6 @@ In the example below, the 'read aloud' feature would be automtically activated
 
 ## Step 7
 
-Click on the ![](<../../.gitbook/assets/image (314) (1) (1) (1) (1).png>)icon to copy the link to your clipboard.  You can now share it how you choose&#x20;
+Click on the ![](<../../.gitbook/assets/image (314) (1) (1) (1) (1) (1).png>)icon to copy the link to your clipboard.  You can now share it how you choose&#x20;
 
 ![](<../../.gitbook/assets/image (304) (1) (1) (1).png>)

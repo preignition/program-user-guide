@@ -98,7 +98,7 @@ In this example, the visibility settings make 'Section 1' visible in the standar
 
 The Easy Read version of a Form can be tested in the usual way.  However the 'Easy Read' icon must be selected from the top menu
 
-![](<../../.gitbook/assets/image (316) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (316) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 8
 

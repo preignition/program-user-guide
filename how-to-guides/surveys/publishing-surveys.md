@@ -14,7 +14,7 @@ You can publish a survey by selecting 'publish' in the top right
 
 You will receive a notification that the survey has been published and the 'last published' date will be updated
 
-![](<../../.gitbook/assets/image (314) (1).png>)
+![](<../../.gitbook/assets/image (314) (1) (1).png>)
 
 ## Step 3
 
@@ -22,4 +22,4 @@ A survey can be unpublished at any time from the survey settings page.  This wil
 
 It can republished at any time.
 
-![](<../../.gitbook/assets/image (310) (1) (1).png>)
+![](<../../.gitbook/assets/image (310) (1) (1) (1).png>)

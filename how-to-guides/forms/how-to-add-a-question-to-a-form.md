@@ -30,7 +30,7 @@ The second column provides an overview of your Form in a tree structure.  You ca
 
 The column on the right hand side provides the different Question types that can be added to the Form
 
-![](<../../.gitbook/assets/image (314).png>)
+![](<../../.gitbook/assets/image (314) (1).png>)
 
 ## Step 4
 

@@ -99,7 +99,7 @@ The different Question types are covered in more detail in separate 'How To' not
 
 You can test your Form at any time by selecting 'Test' from the menu at the top of the page
 
-![](<../../.gitbook/assets/image (324) (1).png>)
+![](<../../.gitbook/assets/image (324) (1) (1).png>)
 
 The Test Mode presents the Form in the format that Respondents will see it
 
