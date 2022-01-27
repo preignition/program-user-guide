@@ -28,7 +28,7 @@ Form enables you to embed a form into the survey.  The form needs to have been '
 
 Once you have selected a form you will be asked whether you want to always use the current version of the form or whether you want to use a specifc version
 
-![](<../../.gitbook/assets/image (302) (1) (1).png>)
+![](<../../.gitbook/assets/image (302) (1) (1) (1).png>)
 
 {% hint style="info" %}
 In most cases you will want to use the current version of the form.  However there maybe times, such as when a form is being updated, when it makes sense to use an previous version

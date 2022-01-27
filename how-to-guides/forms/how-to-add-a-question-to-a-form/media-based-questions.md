@@ -18,13 +18,13 @@ There is only one Media based Question which is the 'Upload' question shown in t
 
 Give the question a label and add helper text if you would like
 
-![](<../../../.gitbook/assets/image (307).png>)
+![](<../../../.gitbook/assets/image (307) (1).png>)
 
 ## Step 3
 
 The question looks like this to Respondents:
 
-![](<../../../.gitbook/assets/image (296).png>)
+![](<../../../.gitbook/assets/image (296) (1).png>)
 
 Respondents can select 'Upload Files' and select a file stored on their own device.
 

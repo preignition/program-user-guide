@@ -12,7 +12,7 @@ Free text feilds can be used to add text to Forms.
 
 The Free Text option is shown in the right hand column
 
-![](<../../../.gitbook/assets/image (324).png>)
+![](<../../../.gitbook/assets/image (325).png>)
 
 ## Step 2
 
@@ -22,11 +22,11 @@ Write your content in the feild provided.   You can format your text and even ad
 
 See the How to Guide ['Introduction to Markdown](../introduction-to-markdown.md)' for guidance
 
-![](<../../../.gitbook/assets/image (314).png>)
+![](<../../../.gitbook/assets/image (316).png>)
 
 ## Step 3
 
 The preview feild shows how the text feild will appear to Respondents
 
-![](<../../../.gitbook/assets/image (318).png>)
+![](<../../../.gitbook/assets/image (319).png>)
 

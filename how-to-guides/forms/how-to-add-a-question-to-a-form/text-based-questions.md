@@ -15,11 +15,11 @@ Initially two text based Question type are visible &#x20;
 * Text
 * Long Text
 
-![](<../../../.gitbook/assets/image (315).png>)
+![](<../../../.gitbook/assets/image (315) (1).png>)
 
 ## Step 2
 
-Clicking on the ![](<../../../.gitbook/assets/image (320).png>)symbol beside the 'Text' label reveals some additional text based options
+Clicking on the ![](<../../../.gitbook/assets/image (320) (1).png>)symbol beside the 'Text' label reveals some additional text based options
 
 ![](<../../../.gitbook/assets/image (316) (1) (1).png>)
 
@@ -59,7 +59,7 @@ Select the 'Validation' box if you require Respondents to answer the question
 
 Respondents will not be able to 'Submit' the form unless all required feilds are completed
 
-![](<../../../.gitbook/assets/image (321).png>)
+![](<../../../.gitbook/assets/image (321) (1).png>)
 
 ## Step 8
 

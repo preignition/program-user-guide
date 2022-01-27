@@ -62,7 +62,7 @@ In production mode you have the option to force respondents to use the latest ve
 By default respondents will not be presented with a newer version of a survey if they have started answering a previous version.  &#x20;
 {% endhint %}
 
-![](<../../.gitbook/assets/image (302) (1).png>)
+![](<../../.gitbook/assets/image (302) (1) (1).png>)
 
 ## Step 6
 

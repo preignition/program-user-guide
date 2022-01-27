@@ -8,7 +8,7 @@
     * [Text based Questions](how-to-guides/forms/how-to-add-a-question-to-a-form/text-based-questions.md)
     * [Choice based Questions](how-to-guides/forms/how-to-add-a-question-to-a-form/choice-based-questions.md)
     * [Media based Questions](how-to-guides/forms/how-to-add-a-question-to-a-form/media-based-questions.md)
-    * [Free text fields](how-to-guides/forms/how-to-add-a-question-to-a-form/free-text-fields.md)
+    * [Free text fields](how-to-guides/forms/how-to-add-a-question-to-a-form/free-text-feilds.md)
   * [Testing a form](how-to-guides/forms/testing-a-form.md)
   * [Publishing a form](how-to-guides/forms/publishing-a-form.md)
   * [Introduction to Form logic](how-to-guides/forms/introduction-to-form-logic.md)

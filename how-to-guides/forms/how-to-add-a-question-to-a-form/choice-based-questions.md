@@ -58,7 +58,7 @@ Dropdown is a closed-ended Question that allows Respondents to choose one answer
 
 Edit the Question in the usual way and select 'Options'
 
-![](<../../../.gitbook/assets/image (317).png>)
+![](<../../../.gitbook/assets/image (317) (1).png>)
 
 Under 'Options' enter the options you want to appear in the dropdown list
 
@@ -76,7 +76,7 @@ Radio Group Questions operate in the same way as Checkbox group Questions.  Howe
 
 Edit the Question in the usual way and select 'Options'
 
-![](<../../../.gitbook/assets/image (306).png>)
+![](<../../../.gitbook/assets/image (306) (1).png>)
 
 Under 'Options' enter the options you want to be available
 
@@ -98,4 +98,4 @@ Edit the Question in the usual way.  You can set the number of stars you want pr
 
 Rating Questions appear to Respondents like this:
 
-![](<../../../.gitbook/assets/image (328).png>)
+![](<../../../.gitbook/assets/image (328) (1).png>)

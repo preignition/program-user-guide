@@ -22,20 +22,20 @@ These topics are covered in more detail in seperate 'How To' notes
 
 To create a new Form select 'Form' from the Resource Type list and 'Create New Form'
 
-![](<../../.gitbook/assets/image (320) (1).png>)
+![](<../../.gitbook/assets/image (320) (1) (1).png>)
 
 ## Step 2
 
 Give your new Form a name and select 'Confirm'
 
-![](<../../.gitbook/assets/image (321) (1) (1).png>)
+![](<../../.gitbook/assets/image (321) (1) (1) (1).png>)
 
 ## Step 3
 
 * Under 'Designation' you can name the Form for internal purposes.  This won't be visible to respondents and does not need to be translated
 * Under 'Presentation' you can name the Form for external purposes.  This will appear at the top of the Form.  It needs to be translated into languages which are active for the Form
 
-![](<../../.gitbook/assets/image (317) (1).png>)
+![](<../../.gitbook/assets/image (317) (1) (1).png>)
 
 ## Step 4
 
@@ -79,7 +79,7 @@ You are now ready to add Questions.  To do this select 'Add Content'
 You must have the Section highlighted in the tree structure in the left hand column that you want to add Questions to
 {% endhint %}
 
-![](<../../.gitbook/assets/image (311).png>)
+![](<../../.gitbook/assets/image (311) (1).png>)
 
 ## Step 10
 
@@ -91,7 +91,7 @@ Drag and drop Questions into the shaded middle section
 
 Once dropped, you will be prompted to edit the new Question&#x20;
 
-![](<../../.gitbook/assets/image (302).png>)
+![](<../../.gitbook/assets/image (302) (1).png>)
 
 The different Question types are covered in more detail in separate 'How To' notes
 
