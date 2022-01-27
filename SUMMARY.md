@@ -18,6 +18,7 @@
   * [Form Behaviour](how-to-guides/forms/form-behaviour.md)
   * [Access rights for forms](how-to-guides/forms/access-rights-for-forms.md)
   * [Introduction to Markdown](how-to-guides/forms/introduction-to-markdown.md)
+  * [Image Library](how-to-guides/forms/image-library.md)
 * [Surveys](how-to-guides/surveys/README.md)
   * [Creating a new survey](how-to-guides/surveys/creating-a-new-survey.md)
   * [Survey settings](how-to-guides/surveys/survey-settings.md)

@@ -22,7 +22,7 @@ The single checkbox provides a single option which Respondents can select or not
 
 The Question is edited as follows:
 
-![](<../../../.gitbook/assets/image (326) (1).png>)
+![](<../../../.gitbook/assets/image (326) (1) (1).png>)
 
 And appears to Repondents as follows:
 

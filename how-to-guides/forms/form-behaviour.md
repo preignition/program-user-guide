@@ -18,7 +18,7 @@ Form beviour settings can be found in the left hand column when in the Form Buil
 
 There are two accessibility modes whch can be activated for a Form
 
-![](<../../.gitbook/assets/image (324).png>)
+![](<../../.gitbook/assets/image (325).png>)
 
 | Accessibility Mode                           | Description                                                                                                                                                                                                                        |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -31,7 +31,7 @@ The Read Aloud feature is activated by default.  A Read Aloud button is presente
 
 The feature can be deactived by ticking the box in the 'Prevented Modes' section as shown below
 
-![](<../../.gitbook/assets/image (325).png>)
+![](<../../.gitbook/assets/image (326).png>)
 
 ## Step 4
 
