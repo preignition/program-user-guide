@@ -22,3 +22,14 @@ Selecting the 'Image Library' from the menu, gives Users two option to add image
 
 ## Step 3
 
+Once added the images will be displayed in a gallery format
+
+![](<../../.gitbook/assets/image (321).png>)
+
+## Step 4
+
+Clicking on an image, gives an option to either download or delete the image
+
+&#x20;
+
+![](<../../.gitbook/assets/image (313).png>)

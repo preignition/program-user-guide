@@ -35,7 +35,7 @@ The access tab enables you to define ownership and user rights for a particular 
 * User rights can be revoked at any time by users with a high level of authorisation
 * This is done by double-clicking on the user and selecting the option to revoke the user
 
-![](<../../.gitbook/assets/image (313) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (313) (1) (1) (1) (1).png>)
 
 ## Step 5
 

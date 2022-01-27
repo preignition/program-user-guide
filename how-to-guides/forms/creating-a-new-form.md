@@ -28,7 +28,7 @@ To create a new Form select 'Form' from the Resource Type list and 'Create New F
 
 Give your new Form a name and select 'Confirm'
 
-![](<../../.gitbook/assets/image (321) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (321) (1) (1) (1) (1).png>)
 
 ## Step 3
 
@@ -52,7 +52,7 @@ Select 'Add new Page'
 * Give your Page a title and sub-title
 * These will appear at the top of the Page and will be visible to Respondents
 
-![](<../../.gitbook/assets/image (313) (1) (1).png>)
+![](<../../.gitbook/assets/image (313) (1) (1) (1).png>)
 
 ## Step 6
 

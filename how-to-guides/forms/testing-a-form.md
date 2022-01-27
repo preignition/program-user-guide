@@ -41,7 +41,7 @@ In the Test mode the top menu has the following options:
 | Option                                           | Description                                                                                 |
 | ------------------------------------------------ | ------------------------------------------------------------------------------------------- |
 | ![](<../../.gitbook/assets/image (310) (1).png>) | View all content on the Form, regardless of logic or accessibility modes                    |
-| ![](<../../.gitbook/assets/image (321).png>)     | Test the Form in any language that has been activativated for the Form                      |
+| ![](<../../.gitbook/assets/image (321) (1).png>) | Test the Form in any language that has been activativated for the Form                      |
 | ![](<../../.gitbook/assets/image (296) (1).png>) | Activate Read Aloud                                                                         |
 | ![](<../../.gitbook/assets/image (316).png>)     | Activate International Sign mode.  This will only appear if applied as an accessiblity mode |
 | ![](<../../.gitbook/assets/image (302).png>)     | Activate Easy Read mode.  This will only appear if applied as an accessibility mode         |
@@ -56,7 +56,7 @@ The comments feature ![](<../../.gitbook/assets/image (325) (1).png>) provides a
 
 Users with the appropriate user rights can comment on questions, respond to other Users comments and mark comments as resolved
 
-![](<../../.gitbook/assets/image (313).png>)
+![](<../../.gitbook/assets/image (313) (1).png>)
 
 ## Step 6
 

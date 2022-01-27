@@ -51,7 +51,7 @@ Be mindful that it is good practice to keep labels short and clear.  Helper text
 
 The helper text appears under the Question label when a Respondent focusses on a Question.  It can be used to provide additional help to Respondents when answering a specific Question
 
-![](<../../../.gitbook/assets/image (313) (1).png>)
+![](<../../../.gitbook/assets/image (313) (1) (1).png>)
 
 ## Step 7
 
@@ -59,7 +59,7 @@ Select the 'Validation' box if you require Respondents to answer the question
 
 Respondents will not be able to 'Submit' the form unless all required feilds are completed
 
-![](<../../../.gitbook/assets/image (321) (1).png>)
+![](<../../../.gitbook/assets/image (321) (1) (1).png>)
 
 ## Step 8
 
