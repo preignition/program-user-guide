@@ -38,17 +38,17 @@ In the Test mode the top menu has the following options:
 
 ![](<../../.gitbook/assets/image (330).png>)
 
-| Option                                        | Description                                                                                 |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| ![](<../../.gitbook/assets/image (310).png>)  | View all content on the Form, regardless of logic or accessibility modes                    |
-| ![](<../../.gitbook/assets/image (321).png>)  | Test the Form in any language that has been activativated for the Form                      |
-| ![](<../../.gitbook/assets/image (296).png>)  | Activate Read Aloud                                                                         |
-| ![](<../../.gitbook/assets/image (316).png>)  | Activate International Sign mode.  This will only appear if applied as an accessiblity mode |
-| ![](<../../.gitbook/assets/image (302).png>)  | Activate Easy Read mode.  This will only appear if applied as an accessibility mode         |
-| ![](<../../.gitbook/assets/image (308).png>)  | Adjust the zoom level so you can see more of the form in a single view                      |
-| ![](<../../.gitbook/assets/image (306).png>)  | Enables you to drag and drop the questions                                                  |
-| ![](<../../.gitbook/assets/image (327).png>)  | Activates a 'comments' feature.  This is explained below                                    |
-| ![](<../../.gitbook/assets/image (326).png>)  | View and clear test data so you can retest a blank Form                                     |
+| Option                                           | Description                                                                                 |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| ![](<../../.gitbook/assets/image (310) (1).png>) | View all content on the Form, regardless of logic or accessibility modes                    |
+| ![](<../../.gitbook/assets/image (321).png>)     | Test the Form in any language that has been activativated for the Form                      |
+| ![](<../../.gitbook/assets/image (296) (1).png>) | Activate Read Aloud                                                                         |
+| ![](<../../.gitbook/assets/image (316).png>)     | Activate International Sign mode.  This will only appear if applied as an accessiblity mode |
+| ![](<../../.gitbook/assets/image (302).png>)     | Activate Easy Read mode.  This will only appear if applied as an accessibility mode         |
+| ![](<../../.gitbook/assets/image (308).png>)     | Adjust the zoom level so you can see more of the form in a single view                      |
+| ![](<../../.gitbook/assets/image (306).png>)     | Enables you to drag and drop the questions                                                  |
+| ![](<../../.gitbook/assets/image (327).png>)     | Activates a 'comments' feature.  This is explained below                                    |
+| ![](<../../.gitbook/assets/image (326).png>)     | View and clear test data so you can retest a blank Form                                     |
 
 ## Step 5
 

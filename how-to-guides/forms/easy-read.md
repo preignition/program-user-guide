@@ -80,7 +80,7 @@ These will appear to the left of the Question&#x20;
 
 For videos, simply add the video link or ID in the box entitled 'Youtube Settings'
 
-![](<../../.gitbook/assets/image (303) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (303) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 6
 

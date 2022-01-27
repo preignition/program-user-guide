@@ -18,7 +18,7 @@ Once you have added a Page and Section, and selected 'Add Content' your screen w
 
 The options under 'Form Definition' are explained in separate 'How To' notes
 
-![](<../../.gitbook/assets/image (303) (1).png>)
+![](<../../.gitbook/assets/image (303) (1) (1).png>)
 
 ## Step 3
 

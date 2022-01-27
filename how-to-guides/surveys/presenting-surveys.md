@@ -28,7 +28,7 @@ The Presentation tab allows you to customise how you present your survey to resp
 
 * This is how the 'short presentation' appears to respondents when they click on a survey link
 
-![](<../../.gitbook/assets/image (303) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (303) (1) (1) (1) (1).png>)
 
 ## Step 3
 
