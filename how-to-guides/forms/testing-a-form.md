@@ -36,7 +36,7 @@ The main difference between the Test mode and when Respondents are completing a 
 
 In the Test mode the top menu has the following options:
 
-![](<../../.gitbook/assets/image (330).png>)
+![](<../../.gitbook/assets/image (330) (1).png>)
 
 | Option                                           | Description                                                                                 |
 | ------------------------------------------------ | ------------------------------------------------------------------------------------------- |
@@ -52,7 +52,7 @@ In the Test mode the top menu has the following options:
 
 ## Step 5
 
-The comments feature ![](<../../.gitbook/assets/image (325).png>) provides a powerful tool for Users to collaborate when creating forms.
+The comments feature ![](<../../.gitbook/assets/image (325) (1).png>) provides a powerful tool for Users to collaborate when creating forms.
 
 Users with the appropriate user rights can comment on questions, respond to other Users comments and mark comments as resolved
 

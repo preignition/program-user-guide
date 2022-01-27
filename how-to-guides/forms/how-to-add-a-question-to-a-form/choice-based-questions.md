@@ -58,7 +58,7 @@ Dropdown is a closed-ended Question that allows Respondents to choose one answer
 
 Edit the Question in the usual way and select 'Options'
 
-![](<../../../.gitbook/assets/image (317) (1).png>)
+![](<../../../.gitbook/assets/image (317) (1) (1).png>)
 
 Under 'Options' enter the options you want to appear in the dropdown list
 

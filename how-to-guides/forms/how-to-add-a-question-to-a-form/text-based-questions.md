@@ -33,7 +33,7 @@ A text based Question looks like this
 
 Under 'Designation' give the Question a label
 
-![](<../../../.gitbook/assets/image (323) (1) (1).png>)
+![](<../../../.gitbook/assets/image (323) (1) (1) (1).png>)
 
 ## Step 5
 

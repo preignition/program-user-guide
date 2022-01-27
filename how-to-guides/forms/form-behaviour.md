@@ -20,4 +20,34 @@ There are two accessibility modes whch can be activated for a Form
 
 ![](<../../.gitbook/assets/image (324).png>)
 
-![](<../../.gitbook/assets/image (310).png>) Easy Read mode presents the Form in a simplified interface.  Sections of the Form can be hidden to make the Form shorter and questions can be simplified.   See the How To&#x20;
+| Accessibility Mode                           | Description                                                                                                                                                                                                                        |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](<../../.gitbook/assets/image (323).png>) | Easy Read mode presents the Form in a simplified interface.  Sections of the Form can be hidden to make the Form shorter and questions can be simplified.   See the How To guide '[Easy Read](easy-read.md)' for more information  |
+| ![](<../../.gitbook/assets/image (330).png>) | Sign Language mode allows Form builders to show or hide items specifically for this mode.  This can be used to attach videos for questions when this mode is activated.  See the How To guide 'Sign Language' for more information |
+
+## Step 3
+
+The Read Aloud feature is activated by default.  A Read Aloud button is presented beside each question.  Clicking on this button reads the question aloud to the Respondent.  Once entered, the Respondents answer can also be read.
+
+The feature can be deactived by ticking the box in the 'Prevented Modes' section as shown below
+
+![](<../../.gitbook/assets/image (325).png>)
+
+## Step 4
+
+The layout option allows you to specify whether illustrations can be added to complement questions
+
+![](<../../.gitbook/assets/image (297).png>)
+
+## Step 5
+
+Enabling illustrations brings up these additional options:
+
+* Under which mode illustrations will be presented (Easy Mode only by default)&#x20;
+* Where the illustration will be placed in relation to the question.  By default the app will determin the best positioning depending on the the Respondent's screen size&#x20;
+
+![](<../../.gitbook/assets/image (317).png>)
+
+## Step 6
+
+The Theme settings are not yet developed.  This will enable Users to have greater control over the Forms appearance by altering things like font and background colour settings.

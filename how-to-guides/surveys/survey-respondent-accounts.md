@@ -32,7 +32,7 @@ To select the type of account respondents require to complete a survey go to Acc
 * Accounts can be opened using an email and password or their google or facebook account if they have one
 * &#x20;Best suited to surveys where you want to control access or follow up with respondents afterwards
 
-![](<../../.gitbook/assets/image (317) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (317) (1) (1) (1) (1) (1).png>)
 
 ## Verified Accounts
 

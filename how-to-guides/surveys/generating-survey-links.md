@@ -72,7 +72,7 @@ In the example below, the 'read aloud' feature would be automtically activated
 
 &#x20;
 
-![](<../../.gitbook/assets/image (297) (1).png>)
+![](<../../.gitbook/assets/image (297) (1) (1).png>)
 
 ## Step 7
 

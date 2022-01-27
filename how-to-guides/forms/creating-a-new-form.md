@@ -35,7 +35,7 @@ Give your new Form a name and select 'Confirm'
 * Under 'Designation' you can name the Form for internal purposes.  This won't be visible to respondents and does not need to be translated
 * Under 'Presentation' you can name the Form for external purposes.  This will appear at the top of the Form.  It needs to be translated into languages which are active for the Form
 
-![](<../../.gitbook/assets/image (317) (1) (1).png>)
+![](<../../.gitbook/assets/image (317) (1) (1) (1).png>)
 
 ## Step 4
 

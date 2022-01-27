@@ -22,7 +22,7 @@ Write your content in the feild provided.   You can format your text and even ad
 
 See the How to Guide ['Introduction to Markdown](../introduction-to-markdown.md)' for guidance
 
-![](<../../../.gitbook/assets/image (317).png>)
+![](<../../../.gitbook/assets/image (317) (1).png>)
 
 ## Step 3
 

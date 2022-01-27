@@ -14,7 +14,7 @@ You may want control when your survey is open and closed and group respondents d
 
 * A default batch is created automatically by the application
 
-![Example of a default batch created by the application](<../../.gitbook/assets/image (317) (1) (1) (1).png>)
+![Example of a default batch created by the application](<../../.gitbook/assets/image (317) (1) (1) (1) (1).png>)
 
 ## Step 2
 

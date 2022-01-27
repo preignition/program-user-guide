@@ -21,7 +21,7 @@ The access tab enables you to define ownership and user rights for a particular 
 * Select the user you want to transfer ownership to
 * The user must already have an account on the app which is associated with your organisation
 
-![](<../../.gitbook/assets/image (297).png>)
+![](<../../.gitbook/assets/image (297) (1).png>)
 
 ## Step 3
 
