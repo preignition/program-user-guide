@@ -45,20 +45,20 @@ You will not be able to add Questions until you have added a new Page and a new 
 
 Select 'Add new Page'
 
-![](<../../.gitbook/assets/image (301) (1).png>)
+![](<../../.gitbook/assets/image (301) (1) (1).png>)
 
 ## Step 5
 
 * Give your Page a title and sub-title
 * These will appear at the top of the Page and will be visible to Respondents
 
-![](<../../.gitbook/assets/image (313) (1).png>)
+![](<../../.gitbook/assets/image (313) (1) (1).png>)
 
 ## Step 6
 
 You can now add a new Section
 
-![](<../../.gitbook/assets/image (318) (1).png>)
+![](<../../.gitbook/assets/image (318) (1) (1).png>)
 
 ## Step 7
 
@@ -103,7 +103,7 @@ You can test your Form at any time by selecting 'Test' from the menu at the top 
 
 The Test Mode presents the Form in the format that Respondents will see it
 
-![](<../../.gitbook/assets/image (301).png>)
+![](<../../.gitbook/assets/image (301) (1).png>)
 
 See the separate 'How To' note '[Testing a Form](https://app.gitbook.com/o/-LCmmrbb3mPcyvxukobx/s/-LDglCKkoaiLL-wpvCjA/c/kjEpt7kq2p2GIogt0eWt/how-to-guides/forms/testing-a-form)' for more details
 

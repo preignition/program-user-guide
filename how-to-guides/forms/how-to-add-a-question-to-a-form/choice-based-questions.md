@@ -26,7 +26,7 @@ The Question is edited as follows:
 
 And appears to Repondents as follows:
 
-![](<../../../.gitbook/assets/image (318).png>)
+![](<../../../.gitbook/assets/image (318) (1).png>)
 
 ## Checkbox group
 

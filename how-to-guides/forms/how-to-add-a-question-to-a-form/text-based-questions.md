@@ -43,7 +43,7 @@ You can check the accessibility box if you want longer label (ie more than 100 c
 Be mindful that it is good practice to keep labels short and clear.  Helper text can be used to provide additional information about the Question if needed&#x20;
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (327).png>)
+![](<../../../.gitbook/assets/image (327) (1).png>)
 
 &#x20;
 
@@ -51,7 +51,7 @@ Be mindful that it is good practice to keep labels short and clear.  Helper text
 
 The helper text appears under the Question label when a Respondent focusses on a Question.  It can be used to provide additional help to Respondents when answering a specific Question
 
-![](<../../../.gitbook/assets/image (313).png>)
+![](<../../../.gitbook/assets/image (313) (1).png>)
 
 ## Step 7
 
