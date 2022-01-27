@@ -42,7 +42,7 @@ Questions are added by dragging and dropping them into the middle section of the
 
 The new Question will appear in the Form structure in the left hand side of the Page
 
-![](<../../.gitbook/assets/image (323) (1) (1).png>)
+![](<../../.gitbook/assets/image (323) (1) (1) (1).png>)
 
 ## Step 6
 

@@ -18,7 +18,7 @@ The first step is to provide definitions of any complex words in the Form 'gloss
 
 The 'Glossary' is visible in the left hand column in the Form 'Build' mode
 
-![](<../../.gitbook/assets/image (312) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (312) (1) (1) (1) (1).png>)
 
 ## Step 2
 
@@ -36,7 +36,7 @@ Once you have defined a word in the Form glossary you can add a Tooltip in the F
 
 Tooltips can be located anywhere in a Form such as a Section title, a Question or an Answer option.
 
-![Example of a tooltip being added to a question](<../../.gitbook/assets/image (305) (1) (1) (1) (1) (1).png>)
+![Example of a tooltip being added to a question](<../../.gitbook/assets/image (305) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 4
 

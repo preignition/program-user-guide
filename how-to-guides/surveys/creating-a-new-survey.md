@@ -42,7 +42,7 @@ Under the 'settings' tab you can edit the survey name and select the form you wa
 
 ![](<../../.gitbook/assets/image (313) (1) (1) (1) (1) (1) (1).png>)
 
-![](<../../.gitbook/assets/image (309) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (309) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 4
 
@@ -62,7 +62,7 @@ This is covered in a seperate How to Guide called '[Using survey batches](using-
 An initial batch is created by default with an open 'end date'.  To activate this batch you will need to enter a 'from date'
 {% endhint %}
 
-![](<../../.gitbook/assets/image (312) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (312) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 6
 

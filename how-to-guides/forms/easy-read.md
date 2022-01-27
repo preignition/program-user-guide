@@ -27,7 +27,7 @@ The 'Easy Read' version renders the Form and the interface differently, but answ
 
 You must first enable the 'Easy Read' accessibility mode in the Form.  &#x20;
 
-![](<../../.gitbook/assets/image (308) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (308) (1) (1) (1) (1) (1) (1) (1).png>)
 
 * Under the Build menu, select the Form title in the tree grid in the left hand column
 * Toggle on the 'Advanced' mode
@@ -61,7 +61,7 @@ Initially the text in the Easy Read mode is the same as the text in the standard
 ![](<../../.gitbook/assets/image (307) (1) (1) (1) (1).png>)
 
 * The![](<../../.gitbook/assets/image (302) (1) (1) (1) (1).png>)emoji shows the text as it appears in the standard version of the Form.  It can't be edited here.
-* The ![](<../../.gitbook/assets/image (309) (1) (1) (1) (1) (1) (1) (1).png>)emoji shows the text as it appears in the Easy Read version of the Form.  It can be edited here.
+* The ![](<../../.gitbook/assets/image (309) (1) (1) (1) (1) (1) (1) (1) (1).png>)emoji shows the text as it appears in the Easy Read version of the Form.  It can be edited here.
 * Any changes to the Easy Read text will be highlighted in the 'Easy Read Version' tree grid as shown above
 
 {% hint style="info" %}
@@ -92,7 +92,7 @@ This is useful if you would like to present a shorter version of a Form in the E
 
 In this example, the visibility settings make 'Section 1' visible in the standard mode but hidden in 'International Sign' and 'Easy Read' mode &#x20;
 
-![](<../../.gitbook/assets/image (308) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (308) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 7
 

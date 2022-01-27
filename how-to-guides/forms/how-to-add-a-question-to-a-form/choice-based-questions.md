@@ -22,7 +22,7 @@ The single checkbox provides a single option which Respondents can select or not
 
 The Question is edited as follows:
 
-![](<../../../.gitbook/assets/image (326).png>)
+![](<../../../.gitbook/assets/image (326) (1).png>)
 
 And appears to Repondents as follows:
 
@@ -62,7 +62,7 @@ Edit the Question in the usual way and select 'Options'
 
 Under 'Options' enter the options you want to appear in the dropdown list
 
-![](<../../../.gitbook/assets/image (309).png>)
+![](<../../../.gitbook/assets/image (309) (1).png>)
 
 The dropdown Question appears to Respondents like this:
 
@@ -80,11 +80,11 @@ Edit the Question in the usual way and select 'Options'
 
 Under 'Options' enter the options you want to be available
 
-![](<../../../.gitbook/assets/image (312).png>)
+![](<../../../.gitbook/assets/image (312) (1).png>)
 
 The radio group Question appears to Respondents like this:
 
-![](<../../../.gitbook/assets/image (308).png>)
+![](<../../../.gitbook/assets/image (308) (1).png>)
 
 ## Ratings
 

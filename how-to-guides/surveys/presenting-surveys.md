@@ -22,7 +22,7 @@ The Presentation tab allows you to customise how you present your survey to resp
 * Write the text for the 'short presentation'
 * Markdown is supported so you can customize the look and feel of your text
 
-![](<../../.gitbook/assets/image (308) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (308) (1) (1) (1) (1).png>)
 
 ## Step 2
 
@@ -53,7 +53,7 @@ The Presentation tab allows you to customise how you present your survey to resp
 * If the survey will be shared in other languages, there will be an option to draft both the 'short presentation' and 'complementary' presentation in the other languages
 * Select the language for translation
 
-![](<../../.gitbook/assets/image (309) (1) (1).png>)
+![](<../../.gitbook/assets/image (309) (1) (1) (1).png>)
 
 * And write the translation in the additional feilds that appear
 
