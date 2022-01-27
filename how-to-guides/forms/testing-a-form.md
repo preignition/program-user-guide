@@ -47,7 +47,7 @@ In the Test mode the top menu has the following options:
 | ![](<../../.gitbook/assets/image (302).png>)     | Activate Easy Read mode.  This will only appear if applied as an accessibility mode         |
 | ![](<../../.gitbook/assets/image (308).png>)     | Adjust the zoom level so you can see more of the form in a single view                      |
 | ![](<../../.gitbook/assets/image (306).png>)     | Enables you to drag and drop the questions                                                  |
-| ![](<../../.gitbook/assets/image (327).png>)     | Activates a 'comments' feature.  This is explained below                                    |
+| ![](<../../.gitbook/assets/image (327) (1).png>) | Activates a 'comments' feature.  This is explained below                                    |
 | ![](<../../.gitbook/assets/image (326) (1).png>) | View and clear test data so you can retest a blank Form                                     |
 
 ## Step 5
