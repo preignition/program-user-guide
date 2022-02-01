@@ -14,7 +14,7 @@ The section at the top of the page provides details of when the survey was creat
 
 The designation section is where the survey name can be edited
 
-Like with all resources, surveys can be organized using labels.  See the seperate How to Guide called '[Using labels](../../settings/using-labels.md)'
+Like with all resources, surveys can be organized using labels.  See the seperate How to Guide called '[Using labels](../settings/using-labels.md)'
 
 ![](<../../.gitbook/assets/image (300) (1) (1).png>)
 

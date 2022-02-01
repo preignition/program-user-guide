@@ -98,4 +98,4 @@ Edit the Question in the usual way.  You can set the number of stars you want pr
 
 Rating Questions appear to Respondents like this:
 
-![](<../../../.gitbook/assets/image (328) (1).png>)
+![](<../../../.gitbook/assets/image (328) (1) (1).png>)

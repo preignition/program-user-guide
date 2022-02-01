@@ -12,7 +12,7 @@ Free text feilds can be used to add text to Forms.
 
 The Free Text option is shown in the right hand column
 
-![](<../../../.gitbook/assets/image (328).png>)
+![](<../../../.gitbook/assets/image (328) (1).png>)
 
 ## Step 2
 

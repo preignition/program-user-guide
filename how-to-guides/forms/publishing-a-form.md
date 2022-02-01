@@ -30,7 +30,7 @@ Select 'Create and Publish a New Version'
 
 You will be promoted to give the version a label.  This will help you to differentiate between versions of the Form
 
-![](<../../.gitbook/assets/image (334).png>)
+![](<../../.gitbook/assets/image (334) (1).png>)
 
 ## Step 5
 
@@ -54,7 +54,7 @@ In this example the Version build was not sucessful.  The error is identifies an
 
 Right clicking on a row on the Version grid provides a way of easily deleting or rolling back a version so it become the current version
 
-![](<../../.gitbook/assets/image (322).png>)
+![](<../../.gitbook/assets/image (322) (1).png>)
 
 ## Step 8
 

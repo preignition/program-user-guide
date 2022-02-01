@@ -117,6 +117,6 @@ In order for any changes you have made to your Form to be visible to Respondents
 
 &#x20;
 
-![](<../../.gitbook/assets/image (322) (1) (1).png>)
+![](<../../.gitbook/assets/image (322) (1) (1) (1).png>)
 
 See the seperate 'How To note '[Publishing a Form](https://app.gitbook.com/o/-LCmmrbb3mPcyvxukobx/s/-LDglCKkoaiLL-wpvCjA/c/kjEpt7kq2p2GIogt0eWt/how-to-guides/forms/publishing-a-form)' for more details
