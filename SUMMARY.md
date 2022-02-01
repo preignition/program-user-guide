@@ -19,6 +19,7 @@
   * [Translate forms](how-to-guides/forms/translate-forms.md)
   * [Access rights for forms](how-to-guides/forms/access-rights-for-forms.md)
   * [Introduction to Markdown](how-to-guides/forms/introduction-to-markdown.md)
+  * [Sign Language](how-to-guides/forms/sign-language.md)
 * [Surveys](how-to-guides/surveys/README.md)
   * [Creating a new survey](how-to-guides/surveys/creating-a-new-survey.md)
   * [Survey settings](how-to-guides/surveys/survey-settings.md)

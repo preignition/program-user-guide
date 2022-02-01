@@ -12,13 +12,13 @@ Form behavior enables you to customise your Form so it adaps to the specific nee
 
 Form beviour settings can be found in the left hand column when in the Form Build mode&#x20;
 
-![](<../../.gitbook/assets/image (296).png>)
+![](<../../.gitbook/assets/image (296) (1).png>)
 
 ## Step 2
 
 There are two accessibility modes whch can be activated for a Form
 
-![](<../../.gitbook/assets/image (325).png>)
+![](<../../.gitbook/assets/image (325) (1).png>)
 
 | Accessibility Mode                           | Description                                                                                                                                                                                                                        |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

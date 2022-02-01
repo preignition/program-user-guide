@@ -40,7 +40,7 @@ The terms can be translated into any of the languages which are active for the s
 
 Once your terms are written, you can customize how they will be presented to survey respondents
 
-![](<../../.gitbook/assets/image (310) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (310) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 5
 

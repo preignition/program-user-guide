@@ -12,7 +12,7 @@ Choice based Questions ask Respondents to make a choice between one or more opti
 
 Choice based Question types are shown in the right hand column
 
-![](<../../../.gitbook/assets/image (310) (1) (1).png>)
+![](<../../../.gitbook/assets/image (310) (1) (1) (1).png>)
 
 ## Single checkbox
 
@@ -62,7 +62,7 @@ Edit the Question in the usual way and select 'Options'
 
 Under 'Options' enter the options you want to appear in the dropdown list
 
-![](<../../../.gitbook/assets/image (309) (1).png>)
+![](<../../../.gitbook/assets/image (309) (1) (1).png>)
 
 The dropdown Question appears to Respondents like this:
 
