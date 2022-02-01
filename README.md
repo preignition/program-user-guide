@@ -1,9 +1,6 @@
 ---
-description: Step by steps guides on everything related to forms
+description: This section covers everything you need to know about the settings options
 ---
 
-# Forms
+# Settings
 
-{% hint style="success" %}
-Forms allow you to specify what information you want to collect from Respondents.  Once Published, Forms can be embedded into Surveys
-{% endhint %}
