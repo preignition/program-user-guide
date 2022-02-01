@@ -48,7 +48,7 @@ Under 'options' you can enter the options you want to appear in the Question
 
 Checkbox groups Question appear to Respondents like this:
 
-![](<../../../.gitbook/assets/image (304).png>)
+![](<../../../.gitbook/assets/image (304) (1).png>)
 
 ## Dropdown
 
@@ -76,7 +76,7 @@ Radio Group Questions operate in the same way as Checkbox group Questions.  Howe
 
 Edit the Question in the usual way and select 'Options'
 
-![](<../../../.gitbook/assets/image (306) (1).png>)
+![](<../../../.gitbook/assets/image (306) (1) (1).png>)
 
 Under 'Options' enter the options you want to be available
 

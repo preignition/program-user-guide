@@ -72,7 +72,7 @@ Mark down is supported, so images and videos can be incorporated.   See the How 
 
 &#x20;
 
-![](<../../.gitbook/assets/image (311) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (311) (1) (1) (1) (1) (1).png>)
 
 ## Step 7
 
@@ -94,7 +94,7 @@ For more information, see the How to Guide 'Survey Terms'
 
 The 'Activity' tab gives an overview of recent activity on the survey.
 
-![](<../../.gitbook/assets/image (306) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (306) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 10
 

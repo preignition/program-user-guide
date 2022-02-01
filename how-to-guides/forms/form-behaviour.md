@@ -18,7 +18,7 @@ Form beviour settings can be found in the left hand column when in the Form Buil
 
 There are two accessibility modes whch can be activated for a Form
 
-![](<../../.gitbook/assets/image (325) (1).png>)
+![](<../../.gitbook/assets/image (325) (1) (1).png>)
 
 | Accessibility Mode                           | Description                                                                                                                                                                                                                        |
 | -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

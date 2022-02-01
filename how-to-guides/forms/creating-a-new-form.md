@@ -79,7 +79,7 @@ You are now ready to add Questions.  To do this select 'Add Content'
 You must have the Section highlighted in the tree structure in the left hand column that you want to add Questions to
 {% endhint %}
 
-![](<../../.gitbook/assets/image (311) (1).png>)
+![](<../../.gitbook/assets/image (311) (1) (1).png>)
 
 ## Step 10
 

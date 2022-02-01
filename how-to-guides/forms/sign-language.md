@@ -14,13 +14,13 @@ Forms adapt to the needs and preferences of Respondents.  Some Respondents may w
 
 You must first enable the 'International Sign' accessibility mode in the Form Behaviour page.  &#x20;
 
-![](<../../.gitbook/assets/image (325).png>)
+![](<../../.gitbook/assets/image (325) (1).png>)
 
 ## Step 2
 
 You will see an additional 'Sign Language' menu option appear under the Form Definition menu
 
-![](<../../.gitbook/assets/image (327).png>)
+![](<../../.gitbook/assets/image (327) (1).png>)
 
 ## Step 3
 

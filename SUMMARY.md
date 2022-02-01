@@ -32,6 +32,8 @@
   * [Access rights for a survey](how-to-guides/surveys/access-rights-for-a-survey.md)
   * [Survey terms](how-to-guides/surveys/survey-terms.md)
   * [Publishing surveys](how-to-guides/surveys/publishing-surveys.md)
+* [Analytics](how-to-guides/analytics/README.md)
+  * [Exporting Survey Data](how-to-guides/analytics/exporting-survey-data.md)
 
 ***
 

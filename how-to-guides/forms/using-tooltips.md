@@ -24,7 +24,7 @@ The 'Glossary' is visible in the left hand column in the Form 'Build' mode
 
 Select 'add new term' and give the term a unique name
 
-![](<../../.gitbook/assets/image (304) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (304) (1) (1) (1) (1) (1) (1) (1).png>)
 
 {% hint style="warning" %}
 The glossary term name must be unique, in small characters and no spaces

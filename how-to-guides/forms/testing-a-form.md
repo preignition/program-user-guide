@@ -24,7 +24,7 @@ Test completing the Form to see how it reacts.  If your Form incorporates logic,
 
 ## Step 3
 
-Questions can be edited directly from the test page by selecting the ![](<../../.gitbook/assets/image (331).png>)icon which appear beside the question when it is focussed on
+Questions can be edited directly from the test page by selecting the ![](<../../.gitbook/assets/image (331) (1).png>)icon which appear beside the question when it is focussed on
 
 &#x20;
 
@@ -38,21 +38,21 @@ In the Test mode the top menu has the following options:
 
 ![](<../../.gitbook/assets/image (330) (1).png>)
 
-| Option                                               | Description                                                                                 |
-| ---------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| ![](<../../.gitbook/assets/image (310) (1) (1).png>) | View all content on the Form, regardless of logic or accessibility modes                    |
-| ![](<../../.gitbook/assets/image (321) (1).png>)     | Test the Form in any language that has been activativated for the Form                      |
-| ![](<../../.gitbook/assets/image (296) (1) (1).png>) | Activate Read Aloud                                                                         |
-| ![](<../../.gitbook/assets/image (316).png>)         | Activate International Sign mode.  This will only appear if applied as an accessiblity mode |
-| ![](<../../.gitbook/assets/image (302).png>)         | Activate Easy Read mode.  This will only appear if applied as an accessibility mode         |
-| ![](<../../.gitbook/assets/image (308).png>)         | Adjust the zoom level so you can see more of the form in a single view                      |
-| ![](<../../.gitbook/assets/image (306).png>)         | Enables you to drag and drop the questions                                                  |
-| ![](<../../.gitbook/assets/image (327) (1) (1).png>) | Activates a 'comments' feature.  This is explained below                                    |
-| ![](<../../.gitbook/assets/image (326) (1).png>)     | View and clear test data so you can retest a blank Form                                     |
+| Option                                                   | Description                                                                                 |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| ![](<../../.gitbook/assets/image (310) (1) (1).png>)     | View all content on the Form, regardless of logic or accessibility modes                    |
+| ![](<../../.gitbook/assets/image (321) (1).png>)         | Test the Form in any language that has been activativated for the Form                      |
+| ![](<../../.gitbook/assets/image (296) (1) (1).png>)     | Activate Read Aloud                                                                         |
+| ![](<../../.gitbook/assets/image (316).png>)             | Activate International Sign mode.  This will only appear if applied as an accessiblity mode |
+| ![](<../../.gitbook/assets/image (302).png>)             | Activate Easy Read mode.  This will only appear if applied as an accessibility mode         |
+| ![](<../../.gitbook/assets/image (308).png>)             | Adjust the zoom level so you can see more of the form in a single view                      |
+| ![](<../../.gitbook/assets/image (306) (1).png>)         | Enables you to drag and drop the questions                                                  |
+| ![](<../../.gitbook/assets/image (327) (1) (1) (1).png>) | Activates a 'comments' feature.  This is explained below                                    |
+| ![](<../../.gitbook/assets/image (326) (1).png>)         | View and clear test data so you can retest a blank Form                                     |
 
 ## Step 5
 
-The comments feature ![](<../../.gitbook/assets/image (325) (1) (1).png>) provides a powerful tool for Users to collaborate when creating forms.
+The comments feature ![](<../../.gitbook/assets/image (325) (1) (1) (1).png>) provides a powerful tool for Users to collaborate when creating forms.
 
 Users with the appropriate user rights can comment on questions, respond to other Users comments and mark comments as resolved
 

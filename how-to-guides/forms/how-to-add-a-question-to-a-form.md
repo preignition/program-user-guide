@@ -24,7 +24,7 @@ The options under 'Form Definition' are explained in separate 'How To' notes
 
 The second column provides an overview of your Form in a tree structure.  You can see the Form title, Pages, Sections and Questions
 
-![](<../../.gitbook/assets/image (306) (1) (1).png>)
+![](<../../.gitbook/assets/image (306) (1) (1) (1).png>)
 
 ## Step 4
 
@@ -48,7 +48,7 @@ The new Question will appear in the Form structure in the left hand side of the 
 
 Selecting the 'cog' icon beside a Question, enables you to customise the Question
 
-![](<../../.gitbook/assets/image (304) (1).png>)
+![](<../../.gitbook/assets/image (304) (1) (1).png>)
 
 ## Step 7
 
