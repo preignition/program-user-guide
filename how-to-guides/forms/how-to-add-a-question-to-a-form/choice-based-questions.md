@@ -40,7 +40,7 @@ Edit the Question in the usual way and select 'options'&#x20;
 
 Under 'options' you can enter the options you want to appear in the Question
 
-![](<../../../.gitbook/assets/image (324) (1) (1).png>)
+![](<../../../.gitbook/assets/image (324) (1) (1) (1).png>)
 
 * You can decide whether you want the options to appear on their own line
 * You can ask Respondents to specify an answer if they select the 'other' option

@@ -16,11 +16,11 @@ Forms can adapt to the needs and preferences of Respondents.  Some Respondents m
 
 1. Presented in a simplied interface
 2. Selected Pages, Sections and Questions can be either displayed or hidden in 'Easy Read' mode
-3. The text can be modified to make it easier to understand
+3. Questions can be modified to make them easier to understand
 4. Images can be added to complement Questions
 
 {% hint style="info" %}
-The 'Easy Read' version renders the Form and the interface differently, but answers to Questions are stored in the same dataset as for other versions of the survey. In the analytics, it is possible to visualize a subset of the data, consisting of answers submitted under the Easy Read version.
+The 'Easy Read' version renders the Form and the interface differently, but answers to Questions are stored in the same dataset as for other versions of the survey. In the analytics, it is possible to create a subset of the data, consisting of answers submitted under the Easy Read version.
 {% endhint %}
 
 ## Step 1
@@ -44,7 +44,7 @@ You will see two additional menu options appear under the Form Definition menu
 
 If you want to use images to complement Questions in your 'Easy Read' Form you must first add them to your 'Easy Read Libary'
 
-This can be done by uploading an image or dragging and dropping an image from your computer
+This can be done by uploading an image or dragging and dropping an image from your computer.  See the How To Guide '[Image Library](image-library.md)' for more details
 
 ![](<../../.gitbook/assets/image (298) (1) (1) (1).png>)
 

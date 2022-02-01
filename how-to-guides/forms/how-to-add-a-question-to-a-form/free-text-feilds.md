@@ -28,5 +28,5 @@ See the How to Guide ['Introduction to Markdown](../introduction-to-markdown.md)
 
 The preview feild shows how the text feild will appear to Respondents
 
-![](<../../../.gitbook/assets/image (324) (1).png>)
+![](<../../../.gitbook/assets/image (324) (1) (1).png>)
 
