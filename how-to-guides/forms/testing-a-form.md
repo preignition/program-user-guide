@@ -28,7 +28,7 @@ Questions can be edited directly from the test page by selecting the ![](<../../
 
 &#x20;
 
-![](<../../.gitbook/assets/image (329).png>)
+![](<../../.gitbook/assets/image (329) (1).png>)
 
 ## Step 4
 
