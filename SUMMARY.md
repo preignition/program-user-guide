@@ -38,6 +38,7 @@
   * [Main Settings](how-to-guides/settings/main-settings.md)
   * [Presentation](how-to-guides/settings/presentation.md)
   * [Using labels](how-to-guides/settings/using-labels.md)
+  * [My Profile](how-to-guides/settings/my-profile.md)
 
 ## Release Notes
 

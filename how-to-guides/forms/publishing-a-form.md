@@ -44,7 +44,7 @@ Clicking on a row in the grid, shows some additional information about the versi
 
 In this example the Form has been sucessfully Published and is available in English and French
 
-![](<../../.gitbook/assets/image (305).png>)
+![](<../../.gitbook/assets/image (305) (1).png>)
 
 In this example the Version build was not sucessful.  The error is identifies and an option is provided to edit the Form so the error can be corrected
 

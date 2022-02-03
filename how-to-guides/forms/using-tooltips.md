@@ -36,7 +36,7 @@ Once you have defined a word in the Form glossary you can add a Tooltip in the F
 
 Tooltips can be located anywhere in a Form such as a Section title, a Question or an Answer option.
 
-![Example of a tooltip being added to a question](<../../.gitbook/assets/image (305) (1) (1) (1) (1) (1) (1).png>)
+![Example of a tooltip being added to a question](<../../.gitbook/assets/image (305) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 4
 
