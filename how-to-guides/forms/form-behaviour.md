@@ -20,10 +20,10 @@ There are two accessibility modes whch can be activated for a Form
 
 ![](<../../.gitbook/assets/image (325) (1) (1).png>)
 
-| Accessibility Mode                           | Description                                                                                                                                                                                                                        |
-| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](<../../.gitbook/assets/image (323).png>) | Easy Read mode presents the Form in a simplified interface.  Sections of the Form can be hidden to make the Form shorter and questions can be simplified.   See the How To guide '[Easy Read](easy-read.md)' for more information  |
-| ![](<../../.gitbook/assets/image (330).png>) | Sign Language mode allows Form builders to show or hide items specifically for this mode.  This can be used to attach videos for questions when this mode is activated.  See the How To guide 'Sign Language' for more information |
+| Accessibility Mode                               | Description                                                                                                                                                                                                                        |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![](<../../.gitbook/assets/image (323) (1).png>) | Easy Read mode presents the Form in a simplified interface.  Sections of the Form can be hidden to make the Form shorter and questions can be simplified.   See the How To guide '[Easy Read](easy-read.md)' for more information  |
+| ![](<../../.gitbook/assets/image (330).png>)     | Sign Language mode allows Form builders to show or hide items specifically for this mode.  This can be used to attach videos for questions when this mode is activated.  See the How To guide 'Sign Language' for more information |
 
 ## Step 3
 

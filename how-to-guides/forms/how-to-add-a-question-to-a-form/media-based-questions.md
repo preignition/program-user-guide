@@ -12,7 +12,7 @@ Media based Questions invite Respondents to upload media files, including pictur
 
 There is only one Media based Question which is the 'Upload' question shown in the right hand column
 
-![](<../../../.gitbook/assets/image (323) (1) (1).png>)
+![](<../../../.gitbook/assets/image (323) (1) (1) (1).png>)
 
 ## Step 2
 

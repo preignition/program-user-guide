@@ -37,8 +37,9 @@
 * [Settings](how-to-guides/settings/README.md)
   * [Main Settings](how-to-guides/settings/main-settings.md)
   * [Presentation](how-to-guides/settings/presentation.md)
-  * [Using labels](how-to-guides/settings/using-labels.md)
   * [My Profile](how-to-guides/settings/my-profile.md)
+  * [Using labels](how-to-guides/settings/using-labels.md)
+  * [Users](how-to-guides/settings/users.md)
 
 ## Release Notes
 
