@@ -46,7 +46,6 @@
 * [Process Builder](release-notes/process-builder.md)
 * [Reporting](release-notes/reporting.md)
 * [Survey](release-notes/survey.md)
-* [Analytics](release-notes/analytics.md)
 
 ## API
 
