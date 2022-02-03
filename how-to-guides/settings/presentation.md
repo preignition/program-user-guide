@@ -16,6 +16,18 @@ The presentation page appears as an option in the menu in the left hand column
 
 ## Step 2
 
-You can give you&#x20;
+The presentation page allows you to:
+
+* Name your organisation
+* Provide a short overview of your organisation
+* Provide a more detailed description of your organisation
+
+Markdown is supported so you can format your text and easily add images or videos.  See the How To note '[Introduction to Markdow](../forms/introduction-to-markdown.md)n' for more information
 
 ![](<../../.gitbook/assets/image (299).png>)
+
+## Step 3
+
+The presentation page can be translated into any languages which are activated for the program.
+
+{% embed url="https://youtu.be/HBdBEuGxi6U" %}

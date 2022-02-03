@@ -36,8 +36,8 @@
   * [Exporting Survey Data](how-to-guides/analytics/exporting-survey-data.md)
 * [Settings](how-to-guides/settings/README.md)
   * [Main Settings](how-to-guides/settings/main-settings.md)
-  * [Using labels](how-to-guides/settings/using-labels.md)
   * [Presentation](how-to-guides/settings/presentation.md)
+  * [Using labels](how-to-guides/settings/using-labels.md)
 
 ## Release Notes
 
