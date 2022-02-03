@@ -71,7 +71,7 @@ You can now add a new Section
 
 You are now ready to add Questions.  To do this select 'Add Content'
 
-![](<../../.gitbook/assets/image (312) (1) (1).png>)
+![](<../../.gitbook/assets/image (312) (1) (1) (1).png>)
 
 ## Step 9
 

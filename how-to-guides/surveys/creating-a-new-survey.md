@@ -50,7 +50,7 @@ Under the 'Distribute' tab there is a tool for generating links to you survey.
 
 This is covered in a seperate How To Guide called '[Generating survey links](generating-survey-links.md)'
 
-![](<../../.gitbook/assets/image (299) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (299) (1) (1) (1) (1) (1).png>)
 
 ## Step 5
 
@@ -62,7 +62,7 @@ This is covered in a seperate How to Guide called '[Using survey batches](using-
 An initial batch is created by default with an open 'end date'.  To activate this batch you will need to enter a 'from date'
 {% endhint %}
 
-![](<../../.gitbook/assets/image (312) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (312) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 6
 

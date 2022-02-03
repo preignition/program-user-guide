@@ -20,7 +20,7 @@ You have the option to ask respondents to agree to you own terms of service if y
 
 To add your own terms, go to the 'Terms' tab and toggle on 'Add Survey Terms'
 
-![](<../../.gitbook/assets/image (312) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (312) (1) (1) (1) (1).png>)
 
 ## Step 2
 
@@ -34,7 +34,7 @@ Mark down is supported
 
 The terms can be translated into any of the languages which are active for the survey
 
-![](<../../.gitbook/assets/image (299) (1) (1).png>)
+![](<../../.gitbook/assets/image (299) (1) (1) (1).png>)
 
 ## Step 4
 
@@ -52,4 +52,4 @@ By default, terms appear as a popup window when a user click on a terms link
 
 This is how your terms will appear if you select the option 'under sign checkbox as plain text'
 
-![](<../../.gitbook/assets/image (299) (1).png>)
+![](<../../.gitbook/assets/image (299) (1) (1).png>)

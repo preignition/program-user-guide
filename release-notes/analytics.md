@@ -22,7 +22,7 @@ Example of user interactive with dynamic analytics, filtering by type of answers
 
 The analytics page follows the structure of the underlying Form used in the Survey.  The Survey pages are displayed in the left hand column and there is a graph showing the responses for each question. &#x20;
 
-![Screenshot of analytics, with survey structure on left menu](<../../.gitbook/assets/image (282).png>)
+![Screenshot of analytics, with survey structure on left menu](<../.gitbook/assets/image (282).png>)
 
 ## Meta data
 
@@ -54,7 +54,7 @@ This approach allows for very efficient ways to interact with survey data. It is
 
 Analytics editors can modify the look of the dashboard. For instance, change the layout, structure, titles, colors of individual charts is easy. &#x20;
 
-![Screenshot of the dashboard composition editor](<../../.gitbook/assets/image (284).png>)
+![Screenshot of the dashboard composition editor](<../.gitbook/assets/image (284).png>)
 
 It is also possible to modify generic settings by type of charts (which will be inherited by all charts of the same type), or by type of data.&#x20;
 
@@ -68,9 +68,9 @@ Setting new color range for continuous data
 
 Survey data can be exported for further analysis by more specialized tools like R, Julia, Stats or SPSS.&#x20;
 
-![Consent form highlighting data handling responsibilty](<../../.gitbook/assets/image (285).png>)
+![Consent form highlighting data handling responsibilty](<../.gitbook/assets/image (285).png>)
 
 Different type and format of exports are available. For instance, anonymized export will remove all fields marked as `private` in the form definition.&#x20;
 
-![](<../../.gitbook/assets/image (286).png>)
+![](<../.gitbook/assets/image (286).png>)
 

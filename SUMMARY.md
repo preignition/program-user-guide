@@ -32,11 +32,12 @@
   * [Access rights for a survey](how-to-guides/surveys/access-rights-for-a-survey.md)
   * [Survey terms](how-to-guides/surveys/survey-terms.md)
   * [Publishing surveys](how-to-guides/surveys/publishing-surveys.md)
-* [Analytics](how-to-guides/analytics/README.md)
+* [Analytics](release-notes/analytics.md)
   * [Exporting Survey Data](how-to-guides/analytics/exporting-survey-data.md)
 * [Settings](how-to-guides/settings/README.md)
-  * [Using labels](how-to-guides/settings/using-labels.md)
   * [Main Settings](how-to-guides/settings/main-settings.md)
+  * [Using labels](how-to-guides/settings/using-labels.md)
+  * [Presentation](how-to-guides/settings/presentation.md)
 
 ## Release Notes
 

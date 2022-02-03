@@ -10,7 +10,7 @@ description: Tooltips can be used to explain complex or technical words
 Tooltips can be added to Forms to explain words which are complex or difficult to understand.
 {% endhint %}
 
-![An example of a tooltip to explain the meaning of the word 'complex'](<../../.gitbook/assets/image (299) (1) (1) (1) (1) (1) (1).png>)
+![An example of a tooltip to explain the meaning of the word 'complex'](<../../.gitbook/assets/image (299) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 1
 
@@ -18,7 +18,7 @@ The first step is to provide definitions of any complex words in the Form 'gloss
 
 The 'Glossary' is visible in the left hand column in the Form 'Build' mode
 
-![](<../../.gitbook/assets/image (312) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (312) (1) (1) (1) (1) (1).png>)
 
 ## Step 2
 

@@ -20,7 +20,7 @@ You may want control when your survey is open and closed and group respondents d
 
 * You need to set a 'from' date which is in the past in order for the batch to be activated
 
-![](<../../.gitbook/assets/image (299) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (299) (1) (1) (1) (1).png>)
 
 ## Step 3
 

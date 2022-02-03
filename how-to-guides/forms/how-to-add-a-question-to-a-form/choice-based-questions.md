@@ -66,7 +66,7 @@ Under 'Options' enter the options you want to appear in the dropdown list
 
 The dropdown Question appears to Respondents like this:
 
-![](<../../../.gitbook/assets/image (299).png>)
+![](<../../../.gitbook/assets/image (299) (1).png>)
 
 ## Radio group
 
@@ -80,7 +80,7 @@ Edit the Question in the usual way and select 'Options'
 
 Under 'Options' enter the options you want to be available
 
-![](<../../../.gitbook/assets/image (312) (1).png>)
+![](<../../../.gitbook/assets/image (312) (1) (1).png>)
 
 The radio group Question appears to Respondents like this:
 
