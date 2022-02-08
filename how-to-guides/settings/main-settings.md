@@ -5,12 +5,12 @@ description: This page covers everything you need to know about the Main Setting
 # Main Settings
 
 {% hint style="success" %}
-The Main Settings should be confirmed when you register an account on the platform.  Make sure you do this carefully as some of these settings can not be changed at a later date
+Confirm the Main Settings when you register an account on the platform.  Make sure you do this carefully as some of these settings can not be changed at a later date
 {% endhint %}
 
 ## Step 1
 
-The Main Settings appear in the left hand column.   They cover the following:
+The Main Settings appear in the left hand column.   They include the following:
 
 * Organisation name.  Can be changed.
 * Main country, language and currency.  Once set, can't be changed

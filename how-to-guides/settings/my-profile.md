@@ -5,18 +5,18 @@ description: This note describes how to set up your personal profile on the plat
 # My Profile
 
 {% hint style="info" %}
-Each Account Holder can create their own profile on the platform.  This is also where emails and passwords can be reset
+Each Account Holder can create their own profile on the platform.  You can also reset your email or passwords from here
 {% endhint %}
 
 ## Step 1
 
-The 'My Profile' settings are accessed in the menue settings in the left hand column
+The 'My Profile' settings are accessed in the menu settings in the left hand column
 
 ![](<../../.gitbook/assets/image (305).png>)
 
 ## Step 2
 
-To edit your profile toggle on the 'edit profile' button
+To edit your profile, toggle on the 'edit profile' button in the top right hand corner
 
 This will enable you to:
 
