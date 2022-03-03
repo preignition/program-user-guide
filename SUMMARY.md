@@ -5,10 +5,19 @@
 * [Settings](README.md)
 * [Portal](tutorials/portal.md)
 * [Resources](tutorials/resources.md)
+* [Creating a Form](tutorials/creating-a-form.md)
+* [Creating a Survey](tutorials/creating-a-survey.md)
+* [Analytics](tutorials/analytics.md)
 
 ## How to guides
 
-* [Forms](<README (1).md>)
+* [Settings](how-to-guides/settings/README.md)
+  * [Main Settings](how-to-guides/settings/main-settings.md)
+  * [Presentation](how-to-guides/settings/presentation.md)
+  * [My Profile](how-to-guides/settings/my-profile.md)
+  * [Users](how-to-guides/settings/users.md)
+  * [Using labels](how-to-guides/settings/using-labels.md)
+* [Forms](README.md)
   * [Creating a Form](how-to-guides/forms/creating-a-new-form.md)
   * [Adding Questions to a Form](how-to-guides/forms/how-to-add-a-question-to-a-form.md)
     * [Text based Questions](how-to-guides/forms/how-to-add-a-question-to-a-form/text-based-questions.md)
@@ -40,12 +49,6 @@
   * [Publishing surveys](how-to-guides/surveys/publishing-surveys.md)
 * [Analytics](release-notes/analytics.md)
   * [Exporting Survey Data](how-to-guides/analytics/exporting-survey-data.md)
-* [Settings](how-to-guides/settings/README.md)
-  * [Main Settings](how-to-guides/settings/main-settings.md)
-  * [Presentation](how-to-guides/settings/presentation.md)
-  * [My Profile](how-to-guides/settings/my-profile.md)
-  * [Users](how-to-guides/settings/users.md)
-  * [Using labels](how-to-guides/settings/using-labels.md)
 
 ## Release Notes
 

@@ -1,11 +1,11 @@
 ---
-description: This note describes how to set up your personal profile
+description: This note describes how to set up your personal profile on the platform
 ---
 
 # My Profile
 
 {% hint style="info" %}
-Each User can create their own profile on the platform.  You can also reset your email or passwords
+Each Account Holder can create their own profile on the platform.  You can also reset your email or passwords from here
 {% endhint %}
 
 ## Step 1
@@ -22,10 +22,10 @@ This will enable you to:
 
 * Change how your name is displayed on the platform
 * Upload a profile picture
-* Specify your gender
+* Set your gender
 * Reset your email&#x20;
 * Reset your password
 
-If you have user rights on more than one program you can also choose which is your active program
+&#x20;If you have user rights on more than one program you will also be able to choose which is your active program
 
 ![](<../../.gitbook/assets/image (329).png>)
