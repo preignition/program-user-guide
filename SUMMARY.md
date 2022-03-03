@@ -1,6 +1,10 @@
 # Table of contents
 
-* [TUTORIALS](README.md)
+## TUTORIALS
+
+* [Settings](README.md)
+* [Portal](tutorials/portal.md)
+* [Resources](tutorials/resources.md)
 
 ## How to guides
 
