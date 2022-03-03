@@ -2,8 +2,10 @@
 description: Step by steps guides on everything related to forms
 ---
 
-# Forms
+# Settings
 
-{% hint style="success" %}
-Forms allow you to specify what information you want to collect from Respondents.  Once Published, Forms can be embedded into Surveys
+{% hint style="info" %}
+This short tutorial introduces Settings.  For more information refer to the [Settings How To Guides](how-to-guides/settings/)
 {% endhint %}
+
+{% embed url="https://www.youtube.com/watch?v=q7s_vW4maAM" %}
