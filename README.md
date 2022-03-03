@@ -1,9 +1,6 @@
 ---
-description: Step by steps guides on everything related to forms
+description: Short videos which introduce the main elements of the platform
 ---
 
-# Forms
+# TUTORIALS
 
-{% hint style="success" %}
-Forms allow you to specify what information you want to collect from Respondents.  Once Published, Forms can be embedded into Surveys
-{% endhint %}

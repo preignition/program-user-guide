@@ -12,9 +12,9 @@ Confirm the Main Settings when you register an account on the platform.  Make su
 
 The Main Settings appear in the left hand column.   They include the following:
 
-* Organisation name.  Can be changed.
+* Organisation name.  Can be changed
 * Main country, language and currency.  Once set, can't be changed
-* Domain.  Your organisations website.  This can be changed
+* Domain.  Your organisations website.  Can be changed
 
 ![](<../../.gitbook/assets/image (328).png>)
 
