@@ -1,7 +1,6 @@
-# Settings
+# Main Intro
 
 {% hint style="info" %}
-This short tutorial introduced you to Settings.  For more information refer to the [Settings How To Guide](how-to-guides/settings/)
+This is the main intro page for documentation
 {% endhint %}
 
-{% embed url="https://www.youtube.com/watch?v=q7s_vW4maAM" %}

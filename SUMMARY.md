@@ -1,8 +1,9 @@
 # Table of contents
 
+* [Intro](README.md)
 ## TUTORIALS
 
-* [Settings](README.md)
+* [Settings](tutorials/settings.md)
 * [Resources](tutorials/resources.md)
 * [Creating a Form](tutorials/creating-a-form.md)
 * [Creating a Survey](tutorials/creating-a-survey.md)
