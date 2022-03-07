@@ -18,7 +18,7 @@
   * [My Profile](how-to-guides/settings/my-profile.md)
   * [Users](how-to-guides/settings/users.md)
   * [Using labels](how-to-guides/settings/using-labels.md)
-* [Forms](README.md)
+* [Forms](how-to-guides/forms/README.md)
   * [Creating a Form](how-to-guides/forms/creating-a-new-form.md)
   * [Adding Questions to a Form](how-to-guides/forms/how-to-add-a-question-to-a-form.md)
     * [Text based Questions](how-to-guides/forms/how-to-add-a-question-to-a-form/text-based-questions.md)
