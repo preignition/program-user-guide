@@ -17,26 +17,26 @@ It is straight forward to reset your password
 * Go to the sign-in field and enter your email
 * Enter any text in the password field and select 'sign-in'
 
-![](<../.gitbook/assets/image\_guide (75).png>)
+![](../.gitbook/assets/image\_guide-75.png)
 
 ### Step 2
 
 * If you attempt to sign in with an incorrect password you will see a message that comes up 'oups, seem i forgot my password'
 * Select this option
 
-![](<../.gitbook/assets/image\_guide (61).png>)
+![](../.gitbook/assets/image\_guide-61.png)
 
 ### Step 3
 
 * A message will appear confirming that a reset password email has been sent to the email registered on preignition
 
-![](<../.gitbook/assets/image\_guide (49).png>)
+![](../.gitbook/assets/image\_guide-49.png)
 
 ### Step 4
 
 * Check your email and reset your password
 
-![](<../.gitbook/assets/image\_guide (8).png>)
+![](../.gitbook/assets/image\_guide-8.png)
 
 ### Step 5
 

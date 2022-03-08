@@ -22,7 +22,7 @@ The presentation page allows you to:
 * Provide a short overview of your organisation
 * Provide a more detailed description of your organisation
 
-Markdown is supported so you can format your text and easily add images or videos.  See the How To note '[Introduction to Markdow](../forms/introduction-to-markdown.md)n' for more information
+Markdown is supported so you can format your text and easily add images or videos.  See the How To note '[Introduction to Markdow](broken-reference)n' for more information
 
 ![](<../../.gitbook/assets/image (299).png>)
 

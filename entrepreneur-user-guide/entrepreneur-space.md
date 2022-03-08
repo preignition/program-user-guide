@@ -9,7 +9,7 @@ description: This page introduces the 'entrepreneur space'
 * Once an entrepreneur has created an account on preignition and applied to a program, they will automatically be directed to their 'entrepreneur space'
 * The entrepreneur space is customized to reflect the branding of the program that the entrepreneur has applied for.
 
-![Example of an entrepreneur space for an entrepreneur who has applied for TBN Kenya](<../.gitbook/assets/image\_guide (41).png>)
+![Example of an entrepreneur space for an entrepreneur who has applied for TBN Kenya](../.gitbook/assets/image\_guide-41.png)
 
 ## Step 2-  Bulletin board
 

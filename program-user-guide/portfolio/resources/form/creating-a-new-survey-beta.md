@@ -27,7 +27,7 @@ description: This page describes how a program user can create a new survey.
 
 ## Step 4- Add a page to your survey
 
-![](<../../../../.gitbook/assets/image (220).png>)
+![](<../../../../.gitbook/assets/image (219).png>)
 
 ## **Step 5- Name your new page**
 

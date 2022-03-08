@@ -7,7 +7,7 @@ description: >-
 # Users
 
 {% hint style="success" %}
-The Users page makes it easy to add or remove users to your program and assign appropriate user rights
+The Users page makes it easy to add or remove users for your program and assign appropriate user rights
 {% endhint %}
 
 ## Step 1

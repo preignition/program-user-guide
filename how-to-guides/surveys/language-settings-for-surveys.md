@@ -19,4 +19,4 @@ The survey can be shared in any language which has been set for the form which i
 
 ## Step 2
 
-See the How To note '[Translate forms](../forms/translate-forms.md)' to translate a form into different languages
+See the How To note '[Translate forms](broken-reference)' to translate a form into different languages

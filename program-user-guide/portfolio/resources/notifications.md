@@ -51,7 +51,7 @@ It is a good idea to give notification templates a unique number or reference so
 * Each notification has a 'Title'.  This will be visible to the entrepreneur either as the title of an email or the heading of a message on their bulletin board
 * The 'excerpt' section is only needed for notifications which will be shared via an entrepreneurs bulletin board.  It is a summary of the notification which appears before the main content.
 * The 'notification content' section is where the main text of the notification should be entered.   The message can be entered as simple text although markdown is supported to make a greater range of formatting and design options available.
-* Notification messages can include special fields like 'displayName'.  When the notification is sent 'displayName' will be replaced by the name of the entrepreneur that the message is being sent to.  A special field is always surrounded by {{ }} marks.  All special fields which are available to be used in the notification template will be clealy shown.
+* Notification messages can include special fields like 'displayName'.  When the notification is sent 'displayName' will be replaced by the name of the entrepreneur that the message is being sent to.  A special field is always surrounded by \{{ \}} marks.  All special fields which are available to be used in the notification template will be clealy shown.
 * The 'content preview' column shows how the notification will be displayed to the entrepreneur.&#x20;
 
 ## Step 5- Publishing a notification template
@@ -70,7 +70,7 @@ It is a good idea to give notification templates a unique number or reference so
 * The 'Use' tab shows how the notification template is deployed in other parts of the application. &#x20;
 * Further work is needed on this page
 
-![](<../../../.gitbook/assets/image (213).png>)
+![](<../../../.gitbook/assets/image (212).png>)
 
 ## Step 7- Access
 

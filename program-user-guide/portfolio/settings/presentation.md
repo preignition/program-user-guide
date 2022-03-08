@@ -8,7 +8,7 @@ The Presentation page currently requires a knowledge of mark down to ensure prop
 
 Each program has it's own 'landing page' on Preignition.  This enables a program to customize the way it present itself to entrepreneurs.&#x20;
 
-![This is an example of TBN East Africa's landing page](<../../../.gitbook/assets/image (70).png>)
+![This is an example of TBN East Africa's landing page](<../../../.gitbook/assets/image (69).png>)
 
 ### Step 2- The Presentation page enables a program to customize their landing page
 

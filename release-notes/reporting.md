@@ -8,31 +8,31 @@ description: Release Note for the new reporting feature
 Release note video
 {% endembed %}
 
-Preignition is proud to announce the launch of its new reporting feature. It enables programs to collect  information from users on recurrent basis. For instance, quarterly or annually progress reports from key businesses. It also allows to easily monitor and drive this data collection exercise. 
+Preignition is proud to announce the launch of its new reporting feature. It enables programs to collect  information from users on recurrent basis. For instance, quarterly or annually progress reports from key businesses. It also allows to easily monitor and drive this data collection exercise.&#x20;
 
 The reporting feature leverages Preignition [survey ](form-builder/)and [process](process-builder.md) builders to provide a flexible tool both in terms of the content collected and the steps involved (e.g. sending recurrent email invite).
 
 The reporting feature is an important component in a more comprehensive Monitoring and Evaluation package, allowing to bind information regularly collected with program key indicators.
 
-But first, let us see what it changes for users responsible for reporting. 
+But first, let us see what it changes for users responsible for reporting.&#x20;
 
-### Reporting Users 
+### Reporting Users&#x20;
 
-Reporting users receive emails and/or notifications inviting them to take part in the reporting exercise. 
+Reporting users receive emails and/or notifications inviting them to take part in the reporting exercise.&#x20;
 
-![Example of a notification invite from Entrepreneur space](<../.gitbook/assets/image (268).png>)
+![Example of a notification invite from Entrepreneur space](<../.gitbook/assets/image (267).png>)
 
 ![Example of an email invite. Email content can be modified.](<../.gitbook/assets/image (265).png>)
 
-Clicking on provided links drives users to their respective reporting form. 
+Clicking on provided links drives users to their respective reporting form.&#x20;
 
 ![First section of a reporting form, providing context to the user. ](<../.gitbook/assets/image (266).png>)
 
 The Todo page also keep track of pending reporting tasks.
 
-![One pending reporting task](../.gitbook/assets/Selection\_018.png)
+![One pending reporting task](../.gitbook/assets/selection\_018.png)
 
-Let us now focus on the new report editor. 
+Let us now focus on the new report editor.&#x20;
 
 ### Report Editor
 
@@ -40,13 +40,13 @@ The report editor presents 4 sections: Overview, When, What, Who and Activity, b
 
 #### Overview
 
-The **Overview** section presents a summary of reporting settings, along with an activation tool, in charge of scheduling reporting instances. 
+The **Overview** section presents a summary of reporting settings, along with an activation tool, in charge of scheduling reporting instances.&#x20;
 
-![Screenshot of report editor](<../.gitbook/assets/image (259).png>)
+![Screenshot of report editor](<../.gitbook/assets/image (258).png>)
 
 #### When
 
-As its name indicates, the **When** section allows users to set when reports should be scheduled. This involves a starting date, a reporting frequency and possibly an end date. Users can also decide how long responsible person for sending the report will be allocated to. 
+As its name indicates, the **When** section allows users to set when reports should be scheduled. This involves a starting date, a reporting frequency and possibly an end date. Users can also decide how long responsible person for sending the report will be allocated to.&#x20;
 
 ![Screenshot of report editor When section](<../.gitbook/assets/image (261).png>)
 
@@ -60,7 +60,7 @@ The application provides various rules to define business groups. They can be de
 
 #### Activity
 
-An Activity tab provides the list of all past reporting instances, with completion details, persons involved in reporting and access to provided information. 
+An Activity tab provides the list of all past reporting instances, with completion details, persons involved in reporting and access to provided information.&#x20;
 
 ![List of reporting instances and list of businesses involved](<../.gitbook/assets/image (264).png>)
 

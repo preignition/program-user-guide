@@ -14,7 +14,7 @@ Podio uses the term `cohort` for the same concept. Preignition keeps `cohort` fo
 
 Batches are managed by `master` users from the settings page:
 
-![Main Batch page](<../../../.gitbook/assets/image (27).png>)
+![Main Batch page](../../../.gitbook/assets/image-27.png)
 
 The active batch is marked with a `star` on the batch list grid. `Master` users activate other batches by clicking on the `set as active batch` button.
 
@@ -24,11 +24,11 @@ A batch has `label`, `description`, `from` date and `to` date fields.
 
 Users activate edit mode by clicking on a row in the grid:
 
-![Batch details](<../../../.gitbook/assets/image (31).png>)
+![Batch details](../../../.gitbook/assets/image-31.png)
 
 If a `From` date is set, the application process will be closed before this date. It is possible to provide a message to be displayed to users trying to apply before application opening:
 
-![Example of batch closing date](<../../../.gitbook/assets/image (46).png>)
+![Example of batch closing date](../../../.gitbook/assets/image-46.png)
 
 Similarly, setting a `To` date will prevent businesses to apply after the given date.
 
@@ -36,6 +36,6 @@ Similarly, setting a `To` date will prevent businesses to apply after the given 
 
 When a business tries to apply to a program and the current batch is not open, it will be provided with the appropriate notification:
 
-![Message informing users that the application process is currently closed](<../../../.gitbook/assets/image (56).png>)
+![Message informing users that the application process is currently closed](../../../.gitbook/assets/image-56.png)
 
 Businesses can indicate their interest by providing an email address

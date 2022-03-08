@@ -5,7 +5,7 @@
 * The settings page is accessed via the [program page](https://program-user-docs.preignition.org/\~/edit/drafts/-LFXa08d6g2yPgWJJMdg/users-program-and-advanced/portfolio)
 * The name of the active program is clearly indicated
 
-![](<../../../.gitbook/assets/image (29).png>)
+![](../../../.gitbook/assets/image-29.png)
 
 ## Step 2- Overview of the settings page
 
