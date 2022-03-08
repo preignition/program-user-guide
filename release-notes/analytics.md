@@ -39,7 +39,6 @@ See raw data for answers
 {% endembed %}
 
 
-
 ## Analyze and filter
 
 The analytics provides a way to dynamically analyze and filter data, allowing to see subset of survey data on the go. By clicking on chart sections (for instance clicking on the `yes` part of a pie chart ), the visualization will automatically and efficiently update all other charts (for instance, filter out respondents not having answered `yes` to the selected question). &#x20;

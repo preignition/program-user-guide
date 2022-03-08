@@ -6,6 +6,8 @@ description: This page covers how to create an 'Easy Read' version of a Form
 
 ## Introduction
 
+I want to add some text
+
 Forms can adapt to the needs and preferences of Respondents.  Some Respondents may want an 'Easy Read' version of a Form. &#x20;
 
 {% hint style="success" %}
