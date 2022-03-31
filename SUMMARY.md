@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Intro](README.md)
+
 ## TUTORIALS
 
 * [Settings](tutorials/settings.md)
@@ -114,3 +115,7 @@
   * [How do I format text in html?](faq-program-user/how-do-i-format-text-in-html.md)
   * [How do i inform the Preignition team of a technical issue?](faq-program-user/how-do-i-inform-the-technical-team-of-an-issue.md)
   * [How do I test my program?](faq-program-user/how-do-i-test-that-my-programs-selection-process-if-working.md)
+
+***
+
+* [Images for news articles](images-for-news-articles.md)
