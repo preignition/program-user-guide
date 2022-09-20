@@ -6,7 +6,7 @@ description: This section covers everything you need to know about building form
 
 Available how-to Guide for forms:
 
-* [Creating a Form](how-to-guides/forms/creating-a-new-form.md)
+* [Creating a Form](../../how-to-guides/forms/creating-a-new-form.md)
 * [Adding Questions to a Form](how-to-guides/forms/how-to-add-a-question-to-a-form.md)
   * [Text based Questions](how-to-guides/forms/how-to-add-a-question-to-a-form/text-based-questions.md)
   * [Choice based Questions](how-to-guides/forms/how-to-add-a-question-to-a-form/choice-based-questions.md)
