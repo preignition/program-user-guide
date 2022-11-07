@@ -13,6 +13,8 @@
 
 ## How to guides
 
+* [Survey App](how-to-guides/survey-app/README.md)
+  * [Creating a new survey](how-to-guides/survey-app/creating-a-new-survey.md)
 * [Settings](how-to-guides/settings/README.md)
   * [Main Settings](how-to-guides/settings/main-settings.md)
   * [Presentation](how-to-guides/settings/presentation.md)
