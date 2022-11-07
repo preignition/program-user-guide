@@ -11,7 +11,7 @@ I want to test that my program is properly set up on Preignition but I don't wan
 * Adding `?testMode=true` to the `/apply/{programAlias}` URL will add a new user as a 'testMember'
 * All the logic of the account set up and application process will run as normal, except that testMembers will not show up in the program's live selection page.
 
-![Example of creating a testMember account on the TBN program](<../.gitbook/assets/image (153).png>)
+![Example of creating a testMember account on the TBN program](<../.gitbook/assets/image (152).png>)
 
 * A 'test mode' message will be displayed.\
 

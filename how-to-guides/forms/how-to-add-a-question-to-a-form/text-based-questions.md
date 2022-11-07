@@ -10,7 +10,7 @@ Text based Questions are Questions which are responded to by entering text or nu
 
 ## Step 1
 
-Initially two text based Question type are visible &#x20;
+Initially two text based Question type are visible
 
 * Text
 * Long Text
@@ -19,7 +19,7 @@ Initially two text based Question type are visible &#x20;
 
 ## Step 2
 
-Clicking on the ![](<../../../.gitbook/assets/image (320) (1).png>)symbol beside the 'Text' label reveals some additional text based options
+Clicking on the ![](<../../../.gitbook/assets/image (305) (1) (1) (2).png>)symbol beside the 'Text' label reveals some additional text based options
 
 ![](<../../../.gitbook/assets/image (316) (1) (1).png>)
 
@@ -40,16 +40,14 @@ Under 'Designation' give the Question a label
 You can check the accessibility box if you want longer label (ie more than 100 characters)
 
 {% hint style="info" %}
-Be mindful that it is good practice to keep labels short and clear.  Helper text can be used to provide additional information about the Question if needed&#x20;
+Be mindful that it is good practice to keep labels short and clear. Helper text can be used to provide additional information about the Question if needed
 {% endhint %}
 
 ![](<../../../.gitbook/assets/image (327) (1) (1) (1) (1).png>)
 
-&#x20;
-
 ## Step 6
 
-The helper text appears under the Question label when a Respondent focusses on a Question.  It can be used to provide additional help to Respondents when answering a specific Question
+The helper text appears under the Question label when a Respondent focusses on a Question. It can be used to provide additional help to Respondents when answering a specific Question
 
 ![](<../../../.gitbook/assets/image (313) (1) (1).png>)
 
@@ -63,7 +61,7 @@ Respondents will not be able to 'Submit' the form unless all required feilds are
 
 ## Step 8
 
-The other text based questions operate in the same way.  The only differences are as follows:
+The other text based questions operate in the same way. The only differences are as follows:
 
 * Currency and number questions provide an options for setting a maximum and minimum value for answers
 * Date questions require Respondents to enter a date in the format dd/mm/yyyy
