@@ -16,11 +16,11 @@ The Free Text option is shown in the right hand column
 
 ## Step 2
 
-Give the free text feild a name.  This will not be visible to Respondents
+Give the free text feild a name. This will not be visible to Respondents
 
-Write your content in the feild provided.   You can format your text and even add images or videos using markdown.  &#x20;
+Write your content in the feild provided. You can format your text and even add images or videos using markdown.
 
-See the How to Guide ['Introduction to Markdown](../introduction-to-markdown.md)' for guidance
+See the How to Guide ['Introduction to Markdown](../../forms/introduction-to-markdown.md)' for guidance
 
 ![](<../../../.gitbook/assets/image (317) (1).png>)
 
@@ -29,4 +29,3 @@ See the How to Guide ['Introduction to Markdown](../introduction-to-markdown.md)
 The preview feild shows how the text feild will appear to Respondents
 
 ![](<../../../.gitbook/assets/image (324) (1) (1).png>)
-
