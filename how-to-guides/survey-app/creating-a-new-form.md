@@ -12,11 +12,11 @@ Click on the form in order to edit it.
 
 ## Step 2
 
-The name you have given to your form will appear under both 'name' and 'title'.  You can edit it here.
+The name you gave to your form when you created your new survey will appear under both 'name' and 'title'.  You can edit both here.
 
-&#x20;**Name -** This is for internal purposes.  It won't be visible to respondents
+**Name -** This is the name of the form for internal purposes.  It won't be visible to respondents
 
-**Title -** This will appear on the top of your form and will be visible to respondents.  You will be able to translate your title if you set your form to be multi-lingual
+**Title -** This will appear on the top of your form and will be visible to respondents.  You will be able to translate your title if your form is multi-lingual
 
 <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
@@ -28,11 +28,13 @@ Labels are explained in a seperate 'how to' guide.
 
 ## Step 4
 
-The application automatically creates the first page of your form.  This appears on the tree structure of your survey on the left side of the screen. &#x20;
+The application automatically creates the first page of your form.  This appears in the tree structure of your survey on the left side of the screen. &#x20;
 
-In the example above the first page is named 'About you'.
+In the example below the first page is named 'About you'.
 
 You have the option to start working on this page or add a new page by selecting the 'add new page' button.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 5
 
@@ -44,18 +46,28 @@ You can ammend the page name and provide a page sub title
 
 ## Step 6
 
-Pages are organised into sections and question are added to sections. &#x20;
+Pages are organised into sections.  Question are added to sections. &#x20;
 
 The application automatically creates the first section for your first page.  This appears on the tree struture under the first page. &#x20;
 
-In the example above the first section is named 'first section'&#x20;
+In the example below the first section is named 'first section'&#x20;
 
-You have the option to start working on this section or add a new section by selecting the 'add new section' button.
+You have the option to start working on this section by clicking on it, or adding a new section by selecting the 'add new section' button.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 7
 
 To edit a section, highlight it in the tree structure
 
+The 'name' is for internal purposes only and won't be visible on your form
 
+You can give the section a 'title' and 'sub-title' which will appear on your form.  The section 'title' will replace the section 'name' in the tree structure as shown in the short video below
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+{% embed url="https://youtu.be/CNv0tnAM1AE" %}
+
+## Step 8
+
+You are now ready to add questions to the section you have created.
+
+The next 'how to' guide will show you how to do this.
