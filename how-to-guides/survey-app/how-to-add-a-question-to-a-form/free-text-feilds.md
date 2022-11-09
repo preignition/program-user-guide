@@ -1,8 +1,8 @@
 ---
-description: This page covers everything you need to know about free text fields
+description: This page covers the basic things you need to know about free text fields
 ---
 
-# Free text fields
+# Free text fields- basics
 
 {% hint style="success" %}
 Free text feilds can be used to add text to Forms.
@@ -16,7 +16,7 @@ The Free Text option is shown in the right hand column
 
 ## Step 2
 
-Give the free text feild a name. This will not be visible to Respondents
+Give the free text feild a name. This will not be visible to respondents
 
 Write your content in the feild provided. You can format your text and even add images or videos using markdown.
 
