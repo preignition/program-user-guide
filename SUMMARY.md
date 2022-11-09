@@ -22,7 +22,7 @@
     * [Media based questions](how-to-guides/survey-app/how-to-add-a-question-to-a-form/media-based-questions.md)
     * [Free text fields- basics](how-to-guides/survey-app/how-to-add-a-question-to-a-form/free-text-feilds.md)
   * [Testing a form](how-to-guides/survey-app/testing-a-form.md)
-  * [Publishing a form](how-to-guides/survey-app/publishing-a-form.md)
+  * [Publishing a form](how-to-guides/forms/publishing-a-form.md)
 * [Settings](how-to-guides/settings/README.md)
   * [Main Settings](how-to-guides/settings/main-settings.md)
   * [Presentation](how-to-guides/settings/presentation.md)
