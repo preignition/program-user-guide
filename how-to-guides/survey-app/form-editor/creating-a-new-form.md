@@ -8,7 +8,7 @@ description: A step by step guide to creating a new form
 
 Click on the form in order to edit it.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
@@ -18,7 +18,7 @@ The name you gave to your form when you created your new survey will appear unde
 
 **Title -** This will appear on the top of your form and will be visible to respondents.  You will be able to translate your title if your form is multi-lingual
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3
 
@@ -34,7 +34,7 @@ In the example below the first page is named 'About you'.
 
 You have the option to start working on this page or add a new page by selecting the 'add new page' button.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 5
 
@@ -42,7 +42,7 @@ To edit a page, highlight it in the tree structure.
 
 You can ammend the page name and provide a page sub title
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 6
 
@@ -54,7 +54,7 @@ In the example below the first section is named 'first section'&#x20;
 
 You have the option to start working on this section by clicking on it, or adding a new section by selecting the 'add new section' button.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 7
 

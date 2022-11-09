@@ -12,19 +12,19 @@ Media based questions invite respondents to upload media files, including pictur
 
 There is only one Media based question which is the 'Upload' question shown in the right hand column
 
-![](<../../../.gitbook/assets/image (323) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (323) (1) (1) (1).png>)
 
 ## Step 2
 
 Give the question a label and add helper text if you would like
 
-![](<../../../.gitbook/assets/image (307) (1).png>)
+![](<../../../../.gitbook/assets/image (307) (1).png>)
 
 ## Step 3
 
 The question looks like this to Respondents:
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 Respondents can select 'Upload Files' and select a file stored on their own device.
 
