@@ -19,7 +19,7 @@
   * [Adding Questions to a Form](how-to-guides/survey-app/how-to-add-a-question-to-a-form/README.md)
     * [Text based Questions](how-to-guides/survey-app/how-to-add-a-question-to-a-form/text-based-questions.md)
     * [Choice based questions](how-to-guides/survey-app/how-to-add-a-question-to-a-form/choice-based-questions.md)
-    * [Media based Questions](how-to-guides/survey-app/how-to-add-a-question-to-a-form/media-based-questions.md)
+    * [Media based questions](how-to-guides/survey-app/how-to-add-a-question-to-a-form/media-based-questions.md)
     * [Free text fields](how-to-guides/survey-app/how-to-add-a-question-to-a-form/free-text-feilds.md)
 * [Settings](how-to-guides/settings/README.md)
   * [Main Settings](how-to-guides/settings/main-settings.md)
