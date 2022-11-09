@@ -31,13 +31,17 @@ A text based Question looks like this
 
 ## Step 4
 
-Under 'Designation' give the Question a label
+Under 'Designation' give the Question a label. &#x20;
+
+{% hint style="info" %}
+The 'label' is how the questions will appear on the form.  So make it as clear and conside as possible.  Avoid long questions as they won't render well on small screens or mobiles
+{% endhint %}
 
 ![](<../../../.gitbook/assets/image (323) (1) (1) (1) (1).png>)
 
 ## Step 5
 
-You can check the accessibility box if you want longer label (ie more than 100 characters)
+You can check the accessibility box if you want longer label (ie more than 100 characters).  Checking this box will 'wrap' the text on multiple lines if needed.
 
 {% hint style="info" %}
 Be mindful that it is good practice to keep labels short and clear. Helper text can be used to provide additional information about the Question if needed
@@ -47,7 +51,7 @@ Be mindful that it is good practice to keep labels short and clear. Helper text 
 
 ## Step 6
 
-The helper text appears under the Question label when a Respondent focusses on a Question. It can be used to provide additional help to Respondents when answering a specific Question
+The helper text appears under the question label when a respondent focusses on a question. It can be used to provide additional help to respondents when answering a specific question
 
 ![](<../../../.gitbook/assets/image (313) (1) (1).png>)
 

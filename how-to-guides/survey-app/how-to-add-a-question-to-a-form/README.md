@@ -16,13 +16,13 @@ Once you have added a Page and Section, and selected 'Add Content' your screen w
 
 ## Step 2
 
-The options under 'Form Definition' are explained in separate 'How To' notes
+The options under 'Form Definition' are explained in separate 'how to' notes
 
 ![](<../../../.gitbook/assets/image (303) (1) (1).png>)
 
 ## Step 3
 
-The second column provides an overview of your Form in a tree structure. You can see the Form title, Pages, Sections and Questions
+The second column provides an overview of your Form in a tree structure. You can see the Form Title, Pages, Sections and Questions
 
 ![](<../../../.gitbook/assets/image (306) (1) (1) (1).png>)
 
@@ -52,4 +52,4 @@ Selecting the 'cog' icon beside a Question, enables you to customise the Questio
 
 ## Step 7
 
-There are seperate 'How To' notes covering the main Question types that are available
+There are seperate 'how to' notes covering the main Question types that are available
