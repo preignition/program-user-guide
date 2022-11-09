@@ -34,7 +34,7 @@ Then select 'Summary' from the top menu
 
 On the summary page you will be asked to confirm that you want to create a new survey or to cancel.
 
-<img src="../../.gitbook/assets/image (3).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (3) (2).png" alt="" data-size="original">
 
 ## Step 5
 

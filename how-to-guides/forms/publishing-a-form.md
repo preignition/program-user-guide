@@ -36,7 +36,7 @@ You will be promoted to give the version a label. This will help you to differen
 
 The grid shows some summary information about the different versions of the form that have been Published
 
-The current version will be marked with a&#x20;
+The current version will be marked with a![](<../../.gitbook/assets/image (10).png>)
 
 ![](<../../.gitbook/assets/image (309) (1).png>)
 
@@ -44,20 +44,20 @@ The current version will be marked with a&#x20;
 
 Clicking on a row in the grid, shows some additional information about the version
 
-In this example the Form has been sucessfully Published and is available in English and French
+In this example the form has been sucessfully published and is available in English and French
 
 ![](<../../.gitbook/assets/image (305) (1).png>)
 
-In this example the Version build was not sucessful. The error is identifies and an option is provided to edit the Form so the error can be corrected
+In this example the Version build was not sucessful. The error is identified and an option is provided to edit the form so the error can be corrected
 
 ![](<../../.gitbook/assets/image (320).png>)
 
 ## Step 7
 
-Right clicking on a row on the Version grid provides a way of easily deleting or rolling back a version so it become the current version
+Right clicking on a row on the Version grid provides a way of deleting or rolling back a version so it become the current version
 
 ![](<../../.gitbook/assets/image (322) (1).png>)
 
 ## Step 8
 
-Once you have 'Published' a Form it is available to be used elsewhere in the application
+Once you have 'Published' a form it is available to be used in a survey.
