@@ -13,7 +13,7 @@ Available how-to Guide for forms:
   * [Media based Questions](../survey-app/how-to-add-a-question-to-a-form/media-based-questions.md)
   * [Free text fields](../survey-app/how-to-add-a-question-to-a-form/free-text-feilds.md)
 * [Testing a form](../survey-app/testing-a-form.md)
-* [Publishing a form](publishing-a-form.md)
+* [Publishing a form](../survey-app/publishing-a-form.md)
 * [Introduction to Form logic](introduction-to-form-logic.md)
 * [Using Tooltips](using-tooltips.md)
 * [Form Behaviour](form-behaviour.md)

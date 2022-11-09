@@ -5,12 +5,12 @@ description: This page covers everything you need to know about publishing a for
 # Publishing a form
 
 {% hint style="success" %}
-A Form must be 'Published' before it can be used in a Survey
+A form must be 'Published' before it can be used in a survey
 {% endhint %}
 
 ## Step 1
 
-To 'Publish' a Form, go 'Deploy' in the top menu of the Form Builder
+To 'Publish' a form, go 'Deploy' in the top menu of the form builder
 
 ![](<../../.gitbook/assets/image (314).png>)
 
@@ -28,13 +28,15 @@ Select 'Create and Publish a New Version'
 
 ## Step 4
 
-You will be promoted to give the version a label.  This will help you to differentiate between versions of the Form
+You will be promoted to give the version a label. This will help you to differentiate between versions of the form
 
 ![](<../../.gitbook/assets/image (334) (1).png>)
 
 ## Step 5
 
-The grid shows some summary information about the different versions of the Form that have been Published, including which is the current version.
+The grid shows some summary information about the different versions of the form that have been Published
+
+The current version will be marked with a ![](../../.gitbook/assets/image.png).
 
 ![](<../../.gitbook/assets/image (309) (1).png>)
 
@@ -46,7 +48,7 @@ In this example the Form has been sucessfully Published and is available in Engl
 
 ![](<../../.gitbook/assets/image (305) (1).png>)
 
-In this example the Version build was not sucessful.  The error is identifies and an option is provided to edit the Form so the error can be corrected
+In this example the Version build was not sucessful. The error is identifies and an option is provided to edit the Form so the error can be corrected
 
 ![](<../../.gitbook/assets/image (320).png>)
 
