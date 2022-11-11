@@ -27,7 +27,7 @@ The 'Easy Read' version renders the Form and the interface differently, but answ
 
 You must first enable the 'Easy Read' accessibility mode in the Form.
 
-![](<../../.gitbook/assets/image (308) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (308) (1) (1) (1) (1) (1) (1) (1).png>)
 
 * Under the Build menu, select the Form title in the tree grid in the left hand column
 * Toggle on the 'Advanced' mode
@@ -38,7 +38,7 @@ You must first enable the 'Easy Read' accessibility mode in the Form.
 
 You will see two additional menu options appear under the Form Definition menu
 
-![](<../../.gitbook/assets/image (317) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (317) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 3
 
@@ -46,7 +46,7 @@ If you want to use images to complement Questions in your 'Easy Read' Form you m
 
 This can be done by uploading an image or dragging and dropping an image from your computer. See the How To Guide '[Image Library](image-library.md)' for more details
 
-![](<../../.gitbook/assets/image (298) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (298) (1) (1) (1).png>)
 
 {% hint style="danger" %}
 It is your responsbility to make sure that you have the appropriate rights to use any images which you upload to your 'Easy Read Libary'
@@ -58,10 +58,10 @@ Selecting 'Easy Read Version' in the Form Definition menu displays the form in t
 
 Initially the text in the Easy Read mode is the same as the text in the standard mode. However it can be edited here.
 
-![](<../../.gitbook/assets/image (307) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (307) (1) (1) (1) (1).png>)
 
-* The![](<../../.gitbook/assets/image (297) (1) (1) (1) (3).png>)emoji shows the text as it appears in the standard version of the Form. It can't be edited here.
-* The ![](<../../.gitbook/assets/image (309) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)emoji shows the text as it appears in the Easy Read version of the Form. It can be edited here.
+* The![](<../../../.gitbook/assets/image (297) (1) (1) (1) (3).png>)emoji shows the text as it appears in the standard version of the Form. It can't be edited here.
+* The ![](<../../../.gitbook/assets/image (309) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)emoji shows the text as it appears in the Easy Read version of the Form. It can be edited here.
 * Any changes to the Easy Read text will be highlighted in the 'Easy Read Version' tree grid as shown above
 
 {% hint style="info" %}
@@ -74,11 +74,11 @@ It is possible to upload pictures or youtube videos to complement Questions in E
 
 These will appear to the left of the Question
 
-![](<../../.gitbook/assets/image (313) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (313) (1) (1) (1) (1) (1).png>)
 
 For videos, simply add the video link or ID in the box entitled 'Youtube Settings'
 
-![](<../../.gitbook/assets/image (303) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (303) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 6
 
@@ -86,17 +86,17 @@ Toggling on the 'Visibility Modes' button gives the option to make Pages, Sectio
 
 This is useful if you would like to present a shorter version of a Form in the Easy Read mode
 
-![](<../../.gitbook/assets/image (307) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (307) (1) (1) (1) (1) (1).png>)
 
 In this example, the visibility settings make 'Section 1' visible in the standard mode but hidden in 'International Sign' and 'Easy Read' mode
 
-![](<../../.gitbook/assets/image (308) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (308) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 7
 
 The Easy Read version of a Form can be tested in the usual way. However the 'Easy Read' icon must be selected from the top menu
 
-![](<../../.gitbook/assets/image (316) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (316) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 8
 

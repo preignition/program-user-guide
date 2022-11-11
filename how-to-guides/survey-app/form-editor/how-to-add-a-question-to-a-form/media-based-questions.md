@@ -24,7 +24,7 @@ Give the question a label and add helper text if you would like
 
 The question looks like this to Respondents:
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
 
 Respondents can select 'Upload Files' and select a file stored on their own device.
 

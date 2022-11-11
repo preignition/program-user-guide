@@ -1,10 +1,8 @@
 ---
-description: >-
-  This page provides an introduction to Form logic.  Advanced Form logic is
-  covered in a separate 'how to' note
+description: This page provides an introduction to form logic.
 ---
 
-# Introduction to Form logic
+# Introduction to form logic
 
 {% hint style="success" %}
 Adding logic to a form enables you to customize how the form behaves when respondents are filling it in
@@ -14,7 +12,7 @@ Adding logic to a form enables you to customize how the form behaves when respon
 
 Logical expressions are mathematical expressions which return a result of either True or False. A defined action such as Hide, Required, Invalid or Read-Only is then applied depending upon the result.
 
-For example, you may be interested in whether your respondents like fruit or not. If they do, you would like to ask a follow up Question to understand the sort of fruit they like.
+For example, you may be interested in whether your respondents like fruit or not. If they do, you would like to ask a follow up question to understand the sort of fruit they like.
 
 It doesn't make sense to ask the follow up question if the answer to the first question is 'no'. Logic allows you to hide the follow up question.
 
@@ -23,7 +21,7 @@ It doesn't make sense to ask the follow up question if the answer to the first q
 ## How to write a logical expression?
 
 {% hint style="info" %}
-To access the logic function you must have the 'Advanced' toggle on at the top of the screen.
+To access the logic function you must switch on the 'Advanced' toggle at the top of the screen.
 {% endhint %}
 
 In advanced mode, a Logic tab appears in the form builder for pages, sections and questions.
@@ -39,9 +37,9 @@ Always add the logical expression to the page, section or question which you wan
 Logic has been added to the follow up question 'what sort of fruit do you like?' so that it is displayed or hidden depending on the answer to the previous question 'Do you like fruit?'
 
 * The question 'Do you like fruit?' has been dragged from the tree grid in the left hand column into the expression feild along with the answer 'No'
-* An equals sign (==) has been entered to set up a mathmatical expression. ie Is the answer to the question 'Do you like fruit?' 'No'?
+* An equals sign (==) has been entered to set up a mathmatical expression. ie is the answer to the question 'Do you like fruit?' 'No'?
 * If the respondent then answers 'No', the expression result will be 'true' and the follow up question 'what sort of fruit do you like?' will be hidden.
-* In all other scenarios, such as Respondent not answering the question 'Do you like fruit' or answering 'Yes', the expression result will be 'false' and the follow up question will be displayed
+* In all other scenarios, such as respondent not answering the question 'Do you like fruit' or answering 'Yes', the expression result will be 'false' and the follow up question will be displayed
 
 ## Testing a logical expression
 
@@ -55,7 +53,7 @@ Try answering the questions and check whether the expression result gives your d
 Form logic is extremely powerful and adds focus and dynamism to your forms. However it takes some pratice. We suggest starting with simple expressions and testing regularly
 {% endhint %}
 
-## How to hide a Question initially
+## How to hide a question initially
 
 Often you will want a question to be hidden at first and for it only to appear based on an answer to a previous question
 

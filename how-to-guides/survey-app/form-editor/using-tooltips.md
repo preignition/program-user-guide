@@ -1,8 +1,8 @@
 ---
-description: Tooltips can be used to explain complex or technical words
+description: Tooltips can be used to provide definitions of complex or technical words
 ---
 
-# Using Tooltips
+# Using tooltips
 
 ## Introduction
 
@@ -32,9 +32,9 @@ The glossary term name must be unique, in small characters and no spaces
 
 ## Step 3
 
-Once you have defined a word in the Form glossary you can add a Tooltip in the Form itself.
+Once you have defined a word in the form glossary you can add a Tooltip in the form itself.
 
-Tooltips can be located anywhere in a Form such as a Section title, a Question or an Answer option.
+Tooltips can be located in various places in a form including in a section title or a question label.
 
 ![Example of a tooltip being added to a question](<../../../.gitbook/assets/image (305) (1) (1) (1) (1) (1) (1) (1).png>)
 
@@ -49,7 +49,7 @@ Tooltips must be written in the following way:
 | <mark style="background-color:blue;">\<pwi-form-tooltip</mark>  | Opening parenthesis                                                                                               |
 | <mark style="background-color:purple;">term=complex</mark>      | Refers to the term name as defined in the form glossary. In this example the term name is 'complex'               |
 | <mark style="background-color:orange;">position=top</mark>      | Indicates where the tooltip should appear. If not mentioned, the app will automatically determine the positioning |
-| <mark style="background-color:red;">>complex<</mark>            | The word in the Form which is having a tooltip attached to it                                                     |
+| <mark style="background-color:red;">>complex<</mark>            | The word in the form which is having a tooltip attached to it                                                     |
 | <mark style="background-color:green;">/pwi-form-tooltip></mark> | Closing parenthesis                                                                                               |
 
 ## Step 4

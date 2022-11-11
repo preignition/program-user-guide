@@ -37,9 +37,9 @@ In the Test mode the top menu has the following options:
 | Option                                                      | Description                                                                           |
 | ----------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | ![](<../../../.gitbook/assets/image (7).png>)               | View all content on the form, regardless of logic or accessibility modes              |
-| ![](../../../.gitbook/assets/image.png)                     | Test the form in any language that has been activativated for the Form                |
+| ![](<../../../.gitbook/assets/image (2).png>)               | Test the form in any language that has been activativated for the Form                |
 | ![](<../../../.gitbook/assets/image (296) (1) (1).png>)     | Activate Read Aloud                                                                   |
-| ![](<../../../.gitbook/assets/image (2).png>)               | Activate Sign Language mode. This will only appear if applied as an accessiblity mode |
+| ![](<../../../.gitbook/assets/image (2) (3).png>)           | Activate Sign Language mode. This will only appear if applied as an accessiblity mode |
 | ![](<../../../.gitbook/assets/image (302).png>)             | Activate Easy Read mode. This will only appear if applied as an accessibility mode    |
 | ![](<../../../.gitbook/assets/image (308).png>)             | Adjust the zoom level so you can see more of the form in a single view                |
 | ![](<../../../.gitbook/assets/image (306) (1).png>)         | Enables you to drag and drop the questions                                            |
@@ -56,8 +56,8 @@ Users with the appropriate user rights can comment on questions, respond to othe
 
 ## Step 6
 
-Once you have checked that your form is working smoothly, you are ready to 'Deploy' the Form.
+Once you have checked that your form is working smoothly, you are ready to 'Publish' the Form.
 
 {% hint style="info" %}
-Forms must be 'Deloyed' before they can be used in surveys. If you have changed your form in any way, it must also be 'Deployed' before these changes become effective.
+Forms must be 'Published' before they can be used in surveys. If you have changed your form in any way, it must also be 'Published' before these changes become effective.
 {% endhint %}

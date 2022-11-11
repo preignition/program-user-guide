@@ -36,7 +36,7 @@ You will be promoted to give the version a label. This will help you to differen
 
 The grid shows some summary information about the different versions of the form that have been Published
 
-The current version will be marked with a![](<../../../.gitbook/assets/image (10).png>)
+The current version will be marked with a![](<../../../.gitbook/assets/image (10) (2).png>)
 
 ![](<../../../.gitbook/assets/image (309) (1).png>)
 
