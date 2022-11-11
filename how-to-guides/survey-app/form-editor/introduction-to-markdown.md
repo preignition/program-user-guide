@@ -50,7 +50,7 @@ Rendered as follows:
 
 This example shows you how to include an image
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 Images should be added in the following way:
 
