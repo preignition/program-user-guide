@@ -44,7 +44,7 @@ This example shows how to include a link
 
 Rendered as follows:
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4
 
@@ -65,7 +65,7 @@ Images should be added in the following way:
 
 &#x20;The image is rendered like this
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 5
 

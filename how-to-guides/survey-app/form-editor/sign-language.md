@@ -9,7 +9,7 @@ description: >-
 {% hint style="success" %}
 Forms adapt to the needs and preferences of respondents.&#x20;
 
-Some Respondents may want questions to be presented to them in Sign Language
+Some Respondents may want questions to be presented in Sign Language
 {% endhint %}
 
 ## Step 1
@@ -42,7 +42,7 @@ The structure of the form is shown as a tree grid in the left hand column. Pages
 
 ## Step 6
 
-Visibility Modes can be applied to pages, sections or questions. This makes them visible to a specific audience only. By default no Visibility Mode is applies, meaning the page, section or question is visible to everyone.
+Visibility Modes can be applied to pages, sections or questions. This makes them visible to a specific audience only. By default no Visibility Mode is applied, meaning the page, section or question is visible to everyone.
 
 Below is an example of a visbility mode being applied to a Section.
 
@@ -56,7 +56,12 @@ If a Visibility Mode is applied high up in the tree grid structure, the Visibili
 
 ## Step 7
 
-Video size
+Sign Language videos can be added to support questions.   To do this your video must first be uploaded onto Youtube and marked 'public' under the video's visibility settings.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+* Enter our Youtube video's unique 11 character video ID in the first feild
+* The parameters feild allows you to customise some additional settings for your video such as branding and what happens when the video finishes.  A 'modest branding' option is selected by default.  A link is provided to some Youtube guidance if you want to custiomise this feild.&#x20;
 
 ## Step 8
 

@@ -8,7 +8,7 @@ description: A step by step guide to creating a new form
 
 Click on the form in order to edit it.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
@@ -54,7 +54,7 @@ In the example below the first section is named 'first section'&#x20;
 
 You have the option to start working on this section by clicking on it, or adding a new section by selecting the 'add new section' button.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 7
 
