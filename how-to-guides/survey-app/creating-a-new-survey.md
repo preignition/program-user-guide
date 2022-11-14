@@ -28,7 +28,7 @@ Alternatively you can skip this step and select an exisiting form later on.
 
 Then select 'Summary' from the top menu
 
-<img src="../../.gitbook/assets/image (8).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (8) (1).png" alt="" data-size="original">
 
 ## Step 4
 
@@ -40,7 +40,7 @@ On the summary page you will be asked to confirm that you want to create a new s
 
 If you select 'confirm' you will be taken to a summary page for your new survey, showing the 'Survey Editor' the 'Form Editor' and the 'Analytics' page.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Congratulations you have created your struture for your new survey.  The following 'how to' guides will show you how to build it out.

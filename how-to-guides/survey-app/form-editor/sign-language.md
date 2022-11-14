@@ -69,7 +69,12 @@ The video 'Thumbnail' which first appears when your form loads is determined by 
 
 We recommend selecting a thumbnail where the first line of text is visible.  Youtube suggests 3 screen shots of your video as thumbnail options.  If you are fortunate, one of these might include your first line of text.  If not you may have to take a screenshot where the first line of text is visible and upload this as a thumbnail.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 9
 
+As soon as you have added your Youtube video ID, it will appear under 'Video Preview'. &#x20;
+
+You can also go to 'Test' in the top menu to see how the video appears in the form itself.  Remember you will have to activate the Sign Language accessibility mode in the top menu in order for the videos to be shown ![](<../../../.gitbook/assets/image (2).png>)&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
