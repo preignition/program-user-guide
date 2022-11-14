@@ -34,7 +34,7 @@ In the example below the first page is named 'About you'.
 
 You have the option to start working on this page or add a new page by selecting the 'add new page' button.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 5
 

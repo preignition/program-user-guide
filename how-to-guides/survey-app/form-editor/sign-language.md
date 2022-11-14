@@ -58,11 +58,18 @@ If a Visibility Mode is applied high up in the tree grid structure, the Visibili
 
 Sign Language videos can be added to support questions.   To do this your video must first be uploaded onto Youtube and marked 'public' under the video's visibility settings.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Enter our Youtube video's unique 11 character video ID in the first feild
 * The parameters feild allows you to customise some additional settings for your video such as branding and what happens when the video finishes.  A 'modest branding' option is selected by default.  A link is provided to some Youtube guidance if you want to custiomise this feild.&#x20;
 
 ## Step 8
 
-Thumb nails
+The video 'Thumbnail' which first appears when your form loads is determined by the settings in your Youtube account.
+
+We recommend selecting a thumbnail where the first line of text is visible.  Youtube suggests 3 screen shots of your video as thumbnail options.  If you are fortunate, one of these might include your first line of text.  If not you may have to take a screenshot where the first line of text is visible and upload this as a thumbnail.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+## Step 9
+
