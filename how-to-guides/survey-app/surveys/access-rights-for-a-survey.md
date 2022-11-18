@@ -13,7 +13,7 @@ The access tab enables you to define ownership and user rights for a particular 
 * The 'access' tab shows the existing user roles for the survey
 * The person who created the survey will be the default 'Survey Owner'
 
-![](<../../.gitbook/assets/image (315) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (315) (1) (1) (1) (1).png>)
 
 ## Step 2
 
@@ -21,21 +21,21 @@ The access tab enables you to define ownership and user rights for a particular 
 * Select the user you want to transfer ownership to
 * The user must already have an account on the app which is associated with your organisation
 
-![](<../../.gitbook/assets/image (297) (1).png>)
+![](<../../../.gitbook/assets/image (297) (1).png>)
 
 ## Step 3
 
 * It is possible to add users to the survey with different levels of user rights
 * Again, the user must already have an account on the app which is associate with your organisation
 
-![](<../../.gitbook/assets/image (307) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (307) (1) (1) (1).png>)
 
 ## Step 4
 
 * User rights can be revoked at any time by users with a high level of authorisation
 * This is done by double-clicking on the user and selecting the option to revoke the user
 
-![](<../../.gitbook/assets/image (313) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (313) (1) (1) (1) (1).png>)
 
 ## Step 5
 

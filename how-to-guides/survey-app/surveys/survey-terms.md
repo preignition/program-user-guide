@@ -20,7 +20,7 @@ You have the option to ask respondents to agree to you own terms of service if y
 
 To add your own terms, go to the 'Terms' tab and toggle on 'Add Survey Terms'
 
-![](<../../.gitbook/assets/image (312) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (312) (1) (1) (1) (1).png>)
 
 ## Step 2
 
@@ -28,28 +28,28 @@ This brings up a free text feild where you can add your own terms. &#x20;
 
 Mark down is supported
 
-![](<../../.gitbook/assets/image (314) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (314) (1) (1) (1) (1).png>)
 
 ## Step 3
 
 The terms can be translated into any of the languages which are active for the survey
 
-![](<../../.gitbook/assets/image (299) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (299) (1) (1) (1).png>)
 
 ## Step 4
 
 Once your terms are written, you can customize how they will be presented to survey respondents
 
-![](<../../.gitbook/assets/image (310) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (310) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 5
 
 By default, terms appear as a popup window when a user click on a terms link
 
-![](<../../.gitbook/assets/image (314) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (314) (1) (1) (1).png>)
 
 ## Step 6
 
 This is how your terms will appear if you select the option 'under sign checkbox as plain text'
 
-![](<../../.gitbook/assets/image (299) (1) (1).png>)
+![](<../../../.gitbook/assets/image (299) (1) (1).png>)

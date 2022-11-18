@@ -10,7 +10,7 @@ description: >-
 
 Additional langauge options must first be selected in your organisations main 'Settings' page.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Let us know if you would like an additional language which is not currently available on the app and we will do our best to support you.
 

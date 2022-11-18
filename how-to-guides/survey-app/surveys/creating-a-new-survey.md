@@ -26,31 +26,23 @@ Remember to 'Publish' your survey so any changes you have made are actived for n
 
 ## Step 1
 
-To create a new survey select 'Survey' from the Resource Type list and 'Create New Survey'
+Click on the survey editor in order to edit it.
 
-![](<../../.gitbook/assets/image (300) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
-Give your new survey a name
+Under the 'settings' tab you can edit the survey name, give it a label and select the form you want to use to collect data.
 
-![](<../../.gitbook/assets/image (315) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+We recommend always using the latest version of the form, unless you have specific reason for selecting an earlier version.
 
-## Step 3
-
-Under the 'settings' tab you can edit the survey name and select the form you want to use to collect data
-
-![](<../../.gitbook/assets/image (313) (1) (1) (1) (1) (1) (1) (1).png>)
-
-![](<../../.gitbook/assets/image (310) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
-
-## Step 4
+{% embed url="https://youtu.be/whgU6HSPsTo" %}
 
 Under the 'Distribute' tab there is a tool for generating links to you survey.
 
 This is covered in a seperate How To Guide called '[Generating survey links](generating-survey-links.md)'
 
-![](<../../.gitbook/assets/image (299) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (299) (1) (1) (1) (1) (1).png>)
 
 ## Step 5
 
@@ -62,7 +54,7 @@ This is covered in a seperate How to Guide called '[Using survey batches](using-
 An initial batch is created by default with an open 'end date'.  To activate this batch you will need to enter a 'from date'
 {% endhint %}
 
-![](<../../.gitbook/assets/image (312) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (312) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 6
 
@@ -72,13 +64,13 @@ Mark down is supported, so images and videos can be incorporated.   See the How 
 
 &#x20;
 
-![](<../../.gitbook/assets/image (311) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (311) (1) (1) (1) (1) (1).png>)
 
 ## Step 7
 
 The 'Access' tab allows you to control user rights for the survey
 
-![](<../../.gitbook/assets/image (300) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (300) (1) (1) (1) (1).png>)
 
 ## Step 8
 
@@ -94,7 +86,7 @@ For more information, see the How to Guide 'Survey Terms'
 
 The 'Activity' tab gives an overview of recent activity on the survey.
 
-![](<../../.gitbook/assets/image (306) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (306) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 10
 
@@ -106,4 +98,4 @@ To publish your survey simply press the blue 'Publish' button in the top right c
 
 A notification message confirming that the resouce has been published will appear.
 
-![](<../../.gitbook/assets/image (314) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (314) (1) (1) (1) (1) (1) (1).png>)

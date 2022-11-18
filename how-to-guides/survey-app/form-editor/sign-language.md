@@ -77,4 +77,4 @@ As soon as you have added your Youtube video ID, it will appear under 'Video Pre
 
 You can also go to 'Test' in the top menu to see how the video appears in the form itself.  Remember you will have to activate the Sign Language accessibility mode in the top menu in order for the videos to be shown ![](<../../../.gitbook/assets/image (2).png>)&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
