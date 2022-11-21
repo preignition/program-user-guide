@@ -12,7 +12,7 @@ This page shows you how to edit a survey. &#x20;
 
 Start by clicking on the 'Survey Editor' feild&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 

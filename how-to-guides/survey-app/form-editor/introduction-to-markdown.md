@@ -65,7 +65,7 @@ Images should be added in the following way:
 
 &#x20;The image is rendered like this
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 5
 

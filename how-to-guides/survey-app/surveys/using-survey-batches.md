@@ -17,7 +17,7 @@ In order for a survey to be active, it must be part of an active batch.  This me
 
 * Batch settings can be found under the 'Survey Definition' menu
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
