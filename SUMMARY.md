@@ -42,6 +42,7 @@
     * [Creating alias survey links](how-to-guides/survey-app/surveys/creating-alias-survey-links.md)
     * [Survey batches](how-to-guides/survey-app/surveys/using-survey-batches.md)
     * [Presenting surveys](how-to-guides/survey-app/surveys/presenting-surveys.md)
+    * [Access rights for surveys](how-to-guides/survey-app/surveys/access-rights-for-forms.md)
     * [Access rights for a survey](how-to-guides/survey-app/surveys/access-rights-for-a-survey.md)
     * [Survey terms](how-to-guides/survey-app/surveys/survey-terms.md)
     * [Publishing surveys](how-to-guides/survey-app/surveys/publishing-surveys.md)
