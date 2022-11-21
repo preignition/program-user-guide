@@ -37,6 +37,7 @@
     * [Editing a survey](how-to-guides/survey-app/surveys/creating-a-new-survey.md)
     * [Distributing your survey](how-to-guides/survey-app/surveys/generating-survey-links.md)
     * [Survey respondent accounts](how-to-guides/survey-app/surveys/survey-respondent-accounts.md)
+    * [Redirection after completing survey](how-to-guides/survey-app/surveys/redirection-after-completing-survey.md)
     * [Language settings for surveys](how-to-guides/survey-app/surveys/language-settings-for-surveys.md)
     * [Creating alias survey links](how-to-guides/survey-app/surveys/creating-alias-survey-links.md)
     * [Using survey batches](how-to-guides/survey-app/surveys/using-survey-batches.md)

@@ -75,6 +75,6 @@ We recommend selecting a thumbnail where the first line of text is visible.  You
 
 As soon as you have added your Youtube video ID, it will appear under 'Video Preview'. &#x20;
 
-You can also go to 'Test' in the top menu to see how the video appears in the form itself.  Remember you will have to activate the Sign Language accessibility mode in the top menu in order for the videos to be shown ![](<../../../.gitbook/assets/image (2).png>)&#x20;
+You can also go to 'Test' in the top menu to see how the video appears in the form itself.  Remember you will have to activate the Sign Language accessibility mode in the top menu in order for the videos to be shown ![](<../../../.gitbook/assets/image (2) (1).png>)&#x20;
 
 <figure><img src="../../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
