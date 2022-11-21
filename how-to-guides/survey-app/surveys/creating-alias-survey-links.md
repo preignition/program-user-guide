@@ -5,7 +5,7 @@ description: It is possible to create aliases to customise your survey links
 # Creating alias survey links
 
 {% hint style="success" %}
-You can easily customise your survey links to make them easier for respondents to understand
+You can customise your survey links to make them easier for respondents to read
 {% endhint %}
 
 ## Step 1

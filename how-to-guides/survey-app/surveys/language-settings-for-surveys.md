@@ -12,11 +12,14 @@ The survey can be shared in any language which has been set for the form which i
 
 ## Step 1
 
-* The 'language' tab will display all the languages which have been selected for the form which is embedded in the survey
+* Select 'Distribute' in the Survey Definition menu and select the 'Language' option under 'Configuration'
+* You will see all the languages which have been activated for the form which is embedded in the survey
 * Simply check the box to activate the language&#x20;
 
-![](<../../../.gitbook/assets/image (301) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
-See the How To note '[Translate forms](broken-reference)' to translate a form into different languages
+You will now be able to translate all text that will be viewed by respondents.
+
+See the how to guide [Translate forms](../form-editor/translate-forms.md) to translate a form into different languages.
