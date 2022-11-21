@@ -2,19 +2,22 @@
 description: Survey batches are used to control when your survey is open
 ---
 
-# Using survey batches
+# Survey batches
 
 ## Context
 
 {% hint style="success" %}
-You may want control when your survey is open and closed and group respondents depending on when they submit a survey.  Survey batches provide an easy way to do this
+In order for a survey to be active, it must be part of an active batch.  This means the batch must have a 'from' date which is in the past and a 'to' date which is in the future or left blank&#x20;
 {% endhint %}
+
+* Batches provide a way to control when your survey is active by setting a 'from' and 'to' date.  Respondents clicking on a survey link outside of these date will be informed that the survey is closed.
+* Batches also provided a way of grouping respondents based on when they completed a survey as the data set can be filtered by 'batch'.  This is helpful if you run an annual surveys and want to be able to analyse results by year. &#x20;
 
 ## Step 1
 
-* A default batch is created automatically by the application
+* Batch settings can be found under the 'Survey Definition' menu
 
-![Example of a default batch created by the application](<../../../.gitbook/assets/image (317) (1) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
@@ -36,4 +39,4 @@ Select 'create new batch' to create a new batch
 
 ## Step 5
 
-When analysis survey results, responses can be filtered by batch&#x20;
+When analysing survey results, responses can be filtered by batch&#x20;

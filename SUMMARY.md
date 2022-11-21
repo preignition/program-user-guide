@@ -40,7 +40,7 @@
     * [Redirection after completing survey](how-to-guides/survey-app/surveys/redirection-after-completing-survey.md)
     * [Language settings for surveys](how-to-guides/survey-app/surveys/language-settings-for-surveys.md)
     * [Creating alias survey links](how-to-guides/survey-app/surveys/creating-alias-survey-links.md)
-    * [Using survey batches](how-to-guides/survey-app/surveys/using-survey-batches.md)
+    * [Survey batches](how-to-guides/survey-app/surveys/using-survey-batches.md)
     * [Presenting surveys](how-to-guides/survey-app/surveys/presenting-surveys.md)
     * [Access rights for a survey](how-to-guides/survey-app/surveys/access-rights-for-a-survey.md)
     * [Survey terms](how-to-guides/survey-app/surveys/survey-terms.md)

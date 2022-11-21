@@ -16,7 +16,7 @@ To set the type of account you require respondents to have to complete a survey,
 
 &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
 
 ## Anonymous Account
 

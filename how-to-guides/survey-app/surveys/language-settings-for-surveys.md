@@ -16,7 +16,7 @@ The survey can be shared in any language which has been set for the form which i
 * You will see all the languages which have been activated for the form which is embedded in the survey
 * Simply check the box to activate the language&#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 

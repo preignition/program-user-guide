@@ -12,7 +12,7 @@ Under the 'Distribute' heading in the 'Survey Definition' menu you will see the 
 
 This allows you to set where a respondent willl be redirected to after completing the survey.
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
