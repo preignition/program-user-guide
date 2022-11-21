@@ -2,7 +2,7 @@
 description: This page shows you how to generate links for your surveys
 ---
 
-# Generating survey links
+# Distributing your survey
 
 ## Context
 
@@ -12,21 +12,23 @@ Respondents will access your survey using links.  The 'Link builder' generates t
 Links can be shared however you choose, including sharing via your website, email or social media
 {% endhint %}
 
-## &#x20;Step 1
+## Step 1
 
-Select 'Open Link Builder'
+Select 'Distribute' in the 'Survey definition' menu.
 
-![](<../../../.gitbook/assets/image (303) (1) (1) (1) (1) (1).png>)
+You will see default links for testing the survey and for sharing the finalised survey.
+
+The 'Link Builder' provides some additional options.
+
+<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
-The survey link at the bottom of the page will adapt depending on the options you choose
+The Link Builder gives you a lot of control over how you share your survey.  For instance you can share a 'test' link or a 'production' link or a link with an accessibility mode already activated.
 
-![](<../../../.gitbook/assets/image (298) (1) (1).png>)
+{% embed url="https://youtu.be/6PJiKt2hE9Y" %}
 
-{% hint style="success" %}
-The survey links stay the same when new versions of the survey are published
-{% endhint %}
+You will notice that the link changes whenever a new option is selected.   However the survey links stay the same when new verson of the survey are published so you don't need to worry about sharing new links.
 
 ## Step 3
 
@@ -36,13 +38,13 @@ The 'survey mode' option allows you create either a test link or a production li
 
 ![](<../../../.gitbook/assets/image (309) (1) (1) (1) (1) (1) (1).png>)
 
-Test links are used to test the survey before it goes live.  Answers are not saved to the database. &#x20;
+Test links are used to test the survey before it goes live.  Respondents answers are not saved to the database. &#x20;
 
 Production links are the links you share to get responses to your survey.  Answers are saved to the database automatically&#x20;
 
 ## Step 4
 
-The 'survey name' option allows you to use the default link name or a more readable alias which you can customised.
+The 'survey name' option allows you to use the default link name or a more readable 'alias' which you can customised.
 
 ![](<../../../.gitbook/assets/image (318) (1) (1) (1) (1).png>)
 

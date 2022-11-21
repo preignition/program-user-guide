@@ -1,32 +1,16 @@
 ---
-description: All the steps you need to create a new survey
+description: All the steps you need to edit a survey
 ---
 
-# Creating a new survey
-
-## Introduction
-
-{% hint style="info" %}
-Forms decide **what** information you want to collect from your Respondents
-
-Surveys decide **how** you collect that information
-{% endhint %}
-
-Survey settings allow you to do the following:
-
-* Select the Form to be used in a survey
-* Create links to distribute your survey
-* Design a landing page to present your survey
-* Decide user rights for your survey
-* Specify any Terms you need Respondents to agree to before answering your survey
-
-{% hint style="warning" %}
-Remember to 'Publish' your survey so any changes you have made are actived for new respondents (see [step 10](creating-a-new-survey.md#step-10) for how to publish)&#x20;
-{% endhint %}
+# Editing a survey
 
 ## Step 1
 
-Click on the survey editor in order to edit it.
+To create a new survey see the how to guide [Creating a new survey.](../creating-a-new-survey.md)
+
+This page shows you how to edit a survey. &#x20;
+
+Start by clicking on the 'Survey Editor' feild&#x20;
 
 <figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
@@ -38,64 +22,12 @@ We recommend always using the latest version of the form, unless you have specif
 
 {% embed url="https://youtu.be/whgU6HSPsTo" %}
 
-Under the 'Distribute' tab there is a tool for generating links to you survey.
+## Step 3
 
-This is covered in a seperate How To Guide called '[Generating survey links](generating-survey-links.md)'
-
-![](<../../../.gitbook/assets/image (299) (1) (1) (1) (1) (1).png>)
-
-## Step 5
-
-Under the 'Batch' tab you can determine when your survey is open and closed.  It can be used to group your survey respondents into 'batches'.
-
-This is covered in a seperate How to Guide called '[Using survey batches](using-survey-batches.md)'
-
-{% hint style="warning" %}
-An initial batch is created by default with an open 'end date'.  To activate this batch you will need to enter a 'from date'
-{% endhint %}
-
-![](<../../../.gitbook/assets/image (312) (1) (1) (1) (1) (1) (1) (1).png>)
-
-## Step 6
-
-The 'Presentation' tab allows you to give your survey a title and create a page which respondents will land on before agreeing to the Terms of Use and starting the survey.
-
-Mark down is supported, so images and videos can be incorporated.   See the How To Guide called 'Using free text feilds'&#x20;
-
-&#x20;
-
-![](<../../../.gitbook/assets/image (311) (1) (1) (1) (1) (1).png>)
-
-## Step 7
-
-The 'Access' tab allows you to control user rights for the survey
-
-![](<../../../.gitbook/assets/image (300) (1) (1) (1) (1).png>)
-
-## Step 8
-
-The 'Terms' tab enables you ask your respondents to agree to your terms before responding to your survey
+The activation feild describes whether the survey is currently 'active'.   The survey must be active in order for responses to be saved to the database.
 
 {% hint style="info" %}
-It is your choice whether to ask respondents to agree to your own terms.  By default, users will have to agree to Preigntion's terms of service before responding to a survey.
+In order for a survey to be active, the batch settings must have a 'from date' which is in the past and a 'to date' which is in the future or left blank.  The survey must also be published
 {% endhint %}
 
-For more information, see the How to Guide 'Survey Terms'
-
-## Step 9
-
-The 'Activity' tab gives an overview of recent activity on the survey.
-
-![](<../../../.gitbook/assets/image (306) (1) (1) (1) (1) (1) (1).png>)
-
-## Step 10
-
-{% hint style="success" %}
-You need to 'Publish' your survey in order for new respondents to see any changes that you have made to your survey.
-{% endhint %}
-
-To publish your survey simply press the blue 'Publish' button in the top right corner.
-
-A notification message confirming that the resouce has been published will appear.
-
-![](<../../../.gitbook/assets/image (314) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
