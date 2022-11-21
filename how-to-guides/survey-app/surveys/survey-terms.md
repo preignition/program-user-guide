@@ -4,19 +4,27 @@ description: >-
   have to agree to before starting your survey
 ---
 
-# Survey terms
+# Survey terms- advanced
 
 {% hint style="success" %}
-It is simple to add your own survey terms
+Although this is an advanced feature, it is simple to add your own survey terms
 {% endhint %}
 
 ## Context
 
-In order to respond to a survey on the application, respondents must agree to the software providers terms of service.  These can be viewed [here](https://idata.tools/home/terms)
+In order to respond to a survey on the application, respondents must agree to the software providers terms of service.&#x20;
 
 You have the option to ask respondents to agree to you own terms of service if you would like
 
 ## Step 1
+
+To add your own survey terms, first toggle on the 'Advanced' settings.
+
+You will see additional options appear in the Survey Definition menu, including 'Terms'
+
+{% embed url="https://youtu.be/B_fbSwGY3n4" %}
+
+## Step 2
 
 To add your own terms, go to the 'Terms' tab and toggle on 'Add Survey Terms'
 

@@ -42,7 +42,7 @@ There are three different presentation feilds:
 
 <figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption><p>Landing page with no accessibilty mode activated</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>The same landing page, with the Easy Read Accessibility mode activated</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>The same landing page, with the Easy Read Accessibility mode activated</p></figcaption></figure>
 
 ## Step 4
 
@@ -62,7 +62,7 @@ There are three different presentation feilds:
 * Finally write a 'Thank you' message which will be shared with respondents once they have completed the survey
 * Markdown is supported and CSS Classes can be used to display or hide accessibility modes
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 7
 
