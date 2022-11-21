@@ -16,7 +16,7 @@ Give your survey a name and brief description.  &#x20;
 
 Then select 'Form' from the top menu
 
-![](<../../.gitbook/assets/image (7) (1).png>)
+![](<../../.gitbook/assets/image (7) (1) (1).png>)
 
 ## Step 3
 

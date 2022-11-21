@@ -12,11 +12,11 @@ description: >-
 In order to complete a survey, respondents must have an account.  The type of account that is required can be controlled by the person designing the survey.  &#x20;
 {% endhint %}
 
-To select the type of account respondents require to complete a survey go to Accounts Type
+To set the type of account you require respondents to have to complete a survey, go to 'Distribute' under the Survey Definition mene and go to 'Allowed Account Type'
 
 &#x20;
 
-![](<../../../.gitbook/assets/image (315) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Anonymous Account
 
@@ -24,7 +24,7 @@ To select the type of account respondents require to complete a survey go to Acc
 * The respondent doesn't need to do anything
 * Upon accepting the Terms of Service the application automatically creates an anonomous account on behalf of the respondent
 * The respondent is invited to upgrade their account to a Personal Account once the survey is submitted
-* Best suited to public surveys where you do not need to control access or follow up with respondents
+* This is best suited to public surveys where you do not need to control access or follow up with respondents
 
 ## Personal Accounts
 
