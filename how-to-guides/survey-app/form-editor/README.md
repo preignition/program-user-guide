@@ -6,7 +6,7 @@ description: >-
 
 # Form Editor
 
-Available how-to Guide for forms:
+Available how-to guide for forms:
 
 * [Creating a new form](creating-a-new-form.md)
 * [Adding questions to a form](how-to-add-a-question-to-a-form/)

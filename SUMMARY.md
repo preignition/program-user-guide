@@ -45,15 +45,14 @@
     * [Survey access rights](how-to-guides/survey-app/surveys/access-rights-for-a-survey.md)
     * [Survey terms- advanced](how-to-guides/survey-app/surveys/survey-terms.md)
     * [Publishing surveys](how-to-guides/survey-app/surveys/publishing-surveys.md)
+  * [Analytics](how-to-guides/survey-app/analytics/README.md)
+    * [Exporting Survey Data](how-to-guides/survey-app/analytics/exporting-survey-data.md)
 * [Settings](how-to-guides/settings/README.md)
   * [Main Settings](how-to-guides/settings/main-settings.md)
   * [Presentation](how-to-guides/settings/presentation.md)
   * [My Profile](how-to-guides/settings/my-profile.md)
   * [Users](how-to-guides/settings/users.md)
   * [Using labels](how-to-guides/settings/using-labels.md)
-* [Forms](how-to-guides/forms.md)
-* [Analytics](how-to-guides/analytics/README.md)
-  * [Exporting Survey Data](how-to-guides/analytics/exporting-survey-data.md)
 
 ## Release Notes
 
