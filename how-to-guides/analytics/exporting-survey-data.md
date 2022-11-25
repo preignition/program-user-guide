@@ -12,13 +12,13 @@ if you export data from the platform, you are responsible for the privacy of the
 
 From the Analytics page, double click on the survey you want to export
 
-![](<../../../.gitbook/assets/image (327).png>)
+![](<../../.gitbook/assets/image (327).png>)
 
 ## Step 2
 
 Select the file download icon
 
-![](<../../../.gitbook/assets/image (304).png>)
+![](<../../.gitbook/assets/image (304).png>)
 
 ## Step 3
 
@@ -26,13 +26,13 @@ A privacy warning window will be activated, reminding you of your data protectio
 
 You will need to tick the box confirming that you understand these responsibilitis before you can export survey data
 
-![](<../../../.gitbook/assets/image (311).png>)
+![](<../../.gitbook/assets/image (311).png>)
 
 ## Step 4
 
 There are various options for to chose from when exporting survey data
 
-![](<../../../.gitbook/assets/image (331).png>)
+![](<../../.gitbook/assets/image (331).png>)
 
 ## Step 5
 
@@ -58,10 +58,10 @@ Once you have decided how you want to export the survey data, select 'Export Now
 
 &#x20;&#x20;
 
-![](<../../../.gitbook/assets/image (306).png>)
+![](<../../.gitbook/assets/image (306).png>)
 
 ## Step 8
 
 The data will start downloading automatically
 
-![](<../../../.gitbook/assets/image (325).png>)
+![](<../../.gitbook/assets/image (325).png>)

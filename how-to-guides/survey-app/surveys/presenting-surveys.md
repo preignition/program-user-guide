@@ -68,7 +68,7 @@ There are three different presentation feilds:
 
 This is an example of how the 'Thank You Message' as written above, is presented to respondents when they have completed the survey.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 8
 
