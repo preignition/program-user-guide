@@ -42,7 +42,7 @@ There are three different presentation feilds:
 
 <figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption><p>Landing page with no accessibilty mode activated</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>The same landing page, with the Easy Read Accessibility mode activated</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>The same landing page, with the Easy Read Accessibility mode activated</p></figcaption></figure>
 
 ## Step 4
 
@@ -68,7 +68,7 @@ There are three different presentation feilds:
 
 This is an example of how the 'Thank You Message' as written above, is presented to respondents when they have completed the survey.
 
-<figure><img src="../../../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 8
 

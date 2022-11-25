@@ -14,7 +14,7 @@ You can publish a survey from the 'Settings' menu under Survey Definition.  Sele
 
 You will receive a notification that the survey has been published and the 'last published' date will be updated
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 

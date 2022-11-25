@@ -8,7 +8,7 @@ description: A step by step guide to creating a new form
 
 Click on the form in order to edit it.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
