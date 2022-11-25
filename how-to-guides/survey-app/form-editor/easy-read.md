@@ -33,7 +33,7 @@ Activate the 'Easy Read' mode under '[Form Behaviour](form-behaviour.md)'
 
 An Easy Read option appears in the 'Form Definition' menu&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3
 

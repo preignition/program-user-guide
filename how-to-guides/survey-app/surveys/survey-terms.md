@@ -14,7 +14,7 @@ Although this is an advanced feature, it is simple to add your own survey terms
 
 In order to respond to a survey on the application, respondents must agree to the software providers terms of service.&#x20;
 
-You have the option to ask respondents to agree to you own terms of service if you would like
+You have the option to ask respondents to agree to your own terms of service if you would like
 
 ## Step 1
 
@@ -26,17 +26,13 @@ You will see additional options appear in the Survey Definition menu, including 
 
 ## Step 2
 
-To add your own terms, go to the 'Terms' tab and toggle on 'Add Survey Terms'
+To add your your own terms, toggle on 'Add Survey Terms'
 
-![](<../../../.gitbook/assets/image (312) (1) (1) (1) (1).png>)
+Markdown is supported and CSS Classes can be used to display or hide accessibility modes.
 
-## Step 2
+You can use the Preview tab to see how your terms will be presented to respondents
 
-This brings up a free text feild where you can add your own terms. &#x20;
-
-Mark down is supported
-
-![](<../../../.gitbook/assets/image (314) (1) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3
 

@@ -32,7 +32,7 @@ Images of any size and shape can be uploaded, but we recommend using square imag
 
 There are many free tools which you can use to resize your images, including [Adobe Express](https://express.adobe.com/sp).
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Examples of standard image sizes from Adobe Express</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Examples of standard image sizes from Adobe Express</p></figcaption></figure>
 
 ## Step 4
 
