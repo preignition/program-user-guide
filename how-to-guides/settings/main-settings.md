@@ -10,13 +10,25 @@ Confirm the Main Settings when you register an account on the platform.  Make su
 
 ## Step 1
 
+Program settings can be accessed from the homepage by users who are signed in and have appropriate user rights.
+
+They can be accessed by clicking on the name of your program which will be shown to the right of the survey app in the top menu
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+## Step 2
+
 The Main Settings appear in the left hand column.   They include the following:
 
 * Organisation name.  Can be changed
 * Main country, language and currency.  Once set, can't be changed
 * Domain.  Your organisations website.  Can be changed
 
-![](<../../.gitbook/assets/image (328).png>)
+<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 

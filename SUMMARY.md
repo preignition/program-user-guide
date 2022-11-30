@@ -48,7 +48,7 @@
   * [Analytics](how-to-guides/analytics/README.md)
     * [Introduction to survey analytics](how-to-guides/survey-app/analytics/introduction-to-survey-analytics.md)
     * [Exporting Survey Data](how-to-guides/analytics/exporting-survey-data.md)
-* [Settings](how-to-guides/settings/README.md)
+* [Program Settings](how-to-guides/settings/README.md)
   * [Main Settings](how-to-guides/settings/main-settings.md)
   * [Presentation](how-to-guides/settings/presentation.md)
   * [My Profile](how-to-guides/settings/my-profile.md)

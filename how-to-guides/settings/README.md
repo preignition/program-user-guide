@@ -1,11 +1,13 @@
 ---
-description: This section covers everything you need to know about the settings options
+description: This section covers everything you need to know about program settings
 ---
 
-# Settings
+# Program Settings
 
-Settings are accessed from the top menu
+Available how to guides for program settings:
 
-The various settings options in the left hand column are explained in this section
-
-![](<../../.gitbook/assets/image (334).png>)
+* Main Settings
+* Presentation
+* My profile
+* Users
+* Labels

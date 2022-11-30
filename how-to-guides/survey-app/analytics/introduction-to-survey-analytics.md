@@ -44,7 +44,7 @@ In the example below we can look at responses from India, who submitted their su
 
 Filters can be cleared by clicking on the filter option on in the 'details' feild or under the feild where the filter has been applied
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 5
 
