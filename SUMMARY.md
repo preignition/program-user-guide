@@ -57,7 +57,8 @@
 
 ## FAQ
 
-* [Introduction to FAQ](faq/introduction-to-faq.md)
+* [Introduction to FAQ](faq/introduction-to-faq/README.md)
+  * [What is the best file format for Easy Read images?](faq/introduction-to-faq/what-is-the-best-file-format-for-easy-read-images.md)
 
 ## Release Notes
 
