@@ -55,6 +55,10 @@
   * [Users](how-to-guides/settings/users.md)
   * [Using labels](how-to-guides/settings/using-labels.md)
 
+## FAQ
+
+* [Introduction to FAQ](faq/introduction-to-faq.md)
+
 ## Release Notes
 
 * [Form Builder](release-notes/form-builder/README.md)
