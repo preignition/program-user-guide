@@ -5,22 +5,18 @@ description: This page describes how you can export survey data for further anal
 # Exporting Survey Data
 
 {% hint style="warning" %}
-if you export data from the platform, you are responsible for the privacy of the exported data.   Exported data must be treated in line with relevant data protection regulations such as GDPR
+If you export data from the platform, you are responsible for the privacy of the exported data.   Exported data must be treated in line with relevant data protection regulations such as GDPR
 {% endhint %}
 
 ## Step 1
 
-From the Analytics page, double click on the survey you want to export
+From the analytics page, click on the three lines beside the survey name in the top menu
 
-![](<../../.gitbook/assets/image (327).png>)
+This will expand the view and display the 'download' symbol
+
+{% embed url="https://youtu.be/ICCaPpUXqp0" %}
 
 ## Step 2
-
-Select the file download icon
-
-![](<../../.gitbook/assets/image (304).png>)
-
-## Step 3
 
 A privacy warning window will be activated, reminding you of your data protection and data privacy responsibilities.
 
@@ -46,7 +42,7 @@ First select the data form that you want to export your data in.   There are two
 
 Next select the type of data that you would like to export.  There are three choices:
 
-**Anonymized**- Provides the option of exporting an anonymized data set.  MetaData and all feilds marked as 'private' on your form will not be exported.   This is a great option for protecting personal data as long as you have marked all questions which as for personal data as private
+**Anonymized**- Provides the option of exporting an anonymized data set.  MetaData and all feilds marked as 'private' on your form will not be exported.   This is a great option for protecting personal data as long as you have marked all questions which ask for personal data as private
 
 **Raw-** Provides the option of exporting all the data that has been collected against a survey, including MetaData and all response feilds.  Great care should be taken with this sort of data.
 
