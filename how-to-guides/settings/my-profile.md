@@ -41,3 +41,13 @@ It is best practice to 'verify' your updated email address.
 ## Step 4
 
 To reset your password, select 'reset password' and follow the prompts.
+
+## Step 5
+
+Changing your email or password requires you to have been signed into your account recently.  If you attempt to change either setting when you have been logged in to your account for more than a few minutes, you will see this error message.
+
+&#x20;
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+You will need to log out of your account, log back in and immediately change these settings.
