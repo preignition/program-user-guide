@@ -14,7 +14,7 @@ Program settings can be accessed from the homepage by users who are signed in an
 
 They can be accessed by clicking on the name of your program which will be shown to the right of the survey app in the top menu
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 
 

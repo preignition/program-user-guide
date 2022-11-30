@@ -1,18 +1,18 @@
 ---
-description: This note describes how to set up your personal profile
+description: This page describes how to set up your personal profile
 ---
 
 # My Profile
 
 {% hint style="info" %}
-Each User can create their own profile on the platform.  You can also reset your email or passwords
+Each user can create their own profile on the platform.  You can also reset your email or passwords from this page
 {% endhint %}
 
 ## Step 1
 
-The 'My Profile' settings are accessed in the menu settings in the left hand column
+The 'My profile' settings are accessed in the menu settings in the left hand column
 
-![](<../../.gitbook/assets/image (305).png>)
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
@@ -28,4 +28,16 @@ This will enable you to:
 
 If you have user rights on more than one program you can also choose which is your active program
 
-![](<../../.gitbook/assets/image (329).png>)
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+## Step 3
+
+To update your email, select 'update email' and follow the prompts. &#x20;
+
+It is best practice to 'verify' your updated email address.
+
+{% embed url="https://youtu.be/MEc7ftIy4sU" %}
+
+## Step 4
+
+To reset your password, select 'reset password' and follow the prompts.
