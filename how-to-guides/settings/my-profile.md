@@ -42,11 +42,11 @@ It is best practice to 'verify' your updated email address.
 
 To reset your password, select 'reset password' and follow the prompts.
 
+{% embed url="https://youtu.be/AX4K6AXqni4" %}
+
 ## Step 5
 
 Changing your email or password requires you to have been signed into your account recently.  If you attempt to change either setting when you have been logged in to your account for more than a few minutes, you will see this error message.
-
-&#x20;
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
