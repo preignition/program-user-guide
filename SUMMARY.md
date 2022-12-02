@@ -58,6 +58,12 @@
 ## FAQ
 
 * [Introduction to FAQ](faq/introduction-to-faq/README.md)
+  * [Why and how do we collect data?](faq/introduction-to-faq/why-and-how-do-we-collect-data.md)
+  * [How do we protect sensitive data?](faq/introduction-to-faq/how-do-we-protect-sensitive-data.md)
+  * [What is GDPR?](faq/introduction-to-faq/what-is-gdpr.md)
+  * [Is our service GDPR compliant?](faq/introduction-to-faq/is-our-service-gdpr-compliant.md)
+  * [How can i make my surveys GDPR compliant?](faq/introduction-to-faq/how-can-i-make-my-surveys-gdpr-compliant.md)
+  * [Where is data stored?](faq/introduction-to-faq/where-is-data-stored.md)
   * [What is the best file format for Easy Read images?](faq/introduction-to-faq/what-is-the-best-file-format-for-easy-read-images.md)
 
 ## Release Notes
