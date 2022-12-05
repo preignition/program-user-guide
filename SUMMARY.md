@@ -64,8 +64,8 @@
   * [What rights do individuals have under GDPR?](faq/introduction-to-faq/what-rights-do-individuals-have-under-gdpr.md)
   * [What obligations do controllers have under GDPR?](faq/introduction-to-faq/what-obligations-do-controllers-have-under-gdpr.md)
   * [What obligations do processors have under GDPR?](faq/introduction-to-faq/what-obligations-do-processors-have-under-gdpr.md)
-  * [How can i make my surveys GDPR compliant?](faq/introduction-to-faq/how-can-i-make-my-surveys-gdpr-compliant.md)
   * [Where is data stored?](faq/introduction-to-faq/where-is-data-stored.md)
+  * [How can I make my surveys GDPR compliant?](faq/introduction-to-faq/how-can-i-make-my-surveys-gdpr-compliant.md)
   * [What is the best file format for Easy Read images?](faq/introduction-to-faq/what-is-the-best-file-format-for-easy-read-images.md)
 
 ## Release Notes
