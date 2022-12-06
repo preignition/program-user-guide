@@ -59,7 +59,7 @@
 
 * [Introduction to FAQ](faq/introduction-to-faq/README.md)
   * [Why and how do we collect data?](faq/introduction-to-faq/why-and-how-do-we-collect-data.md)
-  * [How do we protect sensitive data?](faq/introduction-to-faq/how-do-we-protect-sensitive-data.md)
+  * [How do we protect data?](faq/introduction-to-faq/how-do-we-protect-data.md)
   * [What is GDPR?](faq/introduction-to-faq/what-is-gdpr.md)
   * [What rights do individuals have under GDPR?](faq/introduction-to-faq/what-rights-do-individuals-have-under-gdpr.md)
   * [What obligations do controllers have under GDPR?](faq/introduction-to-faq/what-obligations-do-controllers-have-under-gdpr.md)
