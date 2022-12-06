@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Like many digital services companies we use a 3rd party service provided by google called [Firebase](https://firebase.google.com/).   Firebase is an app development platform that helps us build and grow apps users love. It is backed by Google and trusted by millions of businesses around the world.
+Like many digital services companies we use a 3rd party service provided by google called [Firebase](https://firebase.google.com/).   Firebase is an app development platform that helps us build and grow our apps. It is backed by Google and trusted by millions of businesses around the world.
 
 The Service uses the following products from Firebase for its core functionalities:
 
