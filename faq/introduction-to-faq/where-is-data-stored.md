@@ -32,7 +32,7 @@ The other Firebase services run on global Google infrastructure. They could proc
 
 No, the GDPR does not require EU personal data to stay in the EU. &#x20;
 
-The general principle for transfers of data outside the EU is outlined in [Article 44 of GDPR](https://gdpr-info.eu/art-44-gdpr/).  This can be summarised as saying, if you transfer EU personal data out of the EU, make sure that this data still enjoys the same level of protection it gets under GDPR.  In other words, the entity or company that you pass the data to outside the EU must be under a legally binding obligation to follow GDPR data protection principles or the equivalent.
+The general principle for transfers of data outside the EU is outlined in [Article 44 of GDPR](https://gdpr-info.eu/art-44-gdpr/).  This can be summarised as saying, if you transfer EU personal data out of the EU, you must ensure that this data still enjoys the same level of protection it gets under GDPR.  In other words, the entity or company that you pass the data to outside the EU must be under a legally binding obligation to follow GDPR data protection principles or the equivalent.
 
 ## Does Firebase have a legally binding obligation to follow GDPR data protection principles or the equivalent?
 
@@ -40,6 +40,6 @@ The Privacy Shield frameworks provided a mechanism to comply with data protectio
 
 In light of the Court of Justice of the European Union ruling on data transfers, invalidating the EU-U.S. Privacy Shield, Firebase has moved to reliance on Standard Contractual Clauses for relevant data transfers, which, as per the ruling, can continue to be a valid legal mechanism to transfer data under the GDPR. The European Commission approved[ new versions of the Standard Contractual Clauses on June 4, 2021.](https://cloud.google.com/terms/eu-model-contract-clause)
 
-Firebase are committed to having a lawful basis for data transfers in compliance with applicable data protection laws.
+Firebase are committed to having a lawful basis for data transfers in compliance with applicable data protection laws.&#x20;
 
 &#x20; &#x20;

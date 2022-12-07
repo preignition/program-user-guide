@@ -2,7 +2,7 @@
 
 ## Data controllers and their responsibilities
 
-[Articles 24-43 of GDPR](https://gdpr-info.eu/art-24-gdpr/) sets out the responsibilities of controllers and processors.   We have attempted to summarise them here but recommend you refer to the regulation for the definitive rules.
+[Articles 24-43 of GDPR](https://gdpr-info.eu/art-24-gdpr/) sets out the responsibilities of controllers.   We have attempted to summarise them here but recommend you refer to the regulation for the definitive rules.
 
 Controllers make decisions about processing activities. They exercise overall control of the personal data being processed and are ultimately in charge of and responsible for the processing.&#x20;
 

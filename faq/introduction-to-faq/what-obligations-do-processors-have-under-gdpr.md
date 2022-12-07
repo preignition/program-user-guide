@@ -2,7 +2,7 @@
 
 ## Data processors and their responsibilities
 
-[Articles 24-43 of GDPR](https://gdpr-info.eu/art-24-gdpr/) sets out the responsibilities of controllers and processors.   We have attempted to summarise them here but recommend you refer to the regulation for the definitive rules.
+[Articles 24-43 of GDPR](https://gdpr-info.eu/art-24-gdpr/) sets out the responsibilities of processors.   We have attempted to summarise them here but recommend you refer to the regulation for the definitive rules.
 
 Processors act on behalf of the relevant controller and under their authority. In doing so, they serve the controller’s interests rather than their own.  Although a processor may make its own day-to-day operational decisions, Article 29 says it should only process personal data in line with a controller’s instructions, unless it is required to do otherwise by law.
 

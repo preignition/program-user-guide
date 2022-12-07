@@ -1,12 +1,8 @@
-# How do we protect data?
-
-{% hint style="danger" %}
-This page needs to be reviewed by Christophe
-{% endhint %}
+# How do we protect sensitive data?
 
 ## Introduction
 
-The security and privacy of our Users, Respondents and Visitor's data is of paramount importance to us.  We use some of latest technologies for internet security that are available today to help us keep your data safe.  In addition we gather only as much personal data as is needed to provide our Services to our Users in a secure, efficient and effective way.  We comply with the GDPR regulations, which aim to protect personal and sensitive information.
+The security and privacy of our Users, Respondents and Visitor's data is a huge priority for us.  We use some of latest technologies for internet security that are available today to help us keep your data safe.  In addition we gather only as much personal data as is needed to provide our Services to our Users in a secure, efficient and effective way.  We comply with the GDPR regulations, which aim to protect personal and sensitive information.
 
 Here is a list of our security measuers:
 
@@ -22,7 +18,7 @@ We use password procedures (including superior complex passwords special charact
 
 ### Preventing unauthorized access to data
 
-On our web application we have differentiated access rights (profiles, roles), as well as access reports and logging. Our admins do not share accounts, and each have unique user IDs.&#x20;
+On our website we have differentiated access rights (profiles, roles), as well as access reports and logging. Our admins do not share accounts, and each have unique user IDs.&#x20;
 
 <mark style="color:orange;">Our employees all use only latest Apple devices for design and development. They are required to have password protected logins on their devices, as well as using</mark> [<mark style="color:orange;">Apple’s FileValut technology</mark>](https://support.apple.com/en-us/HT204837) <mark style="color:orange;">to encrypt their hard-disks.</mark> &#x20;
 
