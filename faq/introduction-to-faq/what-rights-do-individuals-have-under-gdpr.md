@@ -58,13 +58,3 @@ GDPR [Article 12-23](https://gdpr-info.eu/chapter-3/) set out the rights of data
 * The GDPR has provisions on:
   * automated individual decision-making (making a decision solely by automated means without any human involvement); and
   * profiling (automated processing of personal data to evaluate certain things about an individual). Profiling can be part of an automated decision-making process.
-* The GDPR applies to all automated individual decision-making and profiling.
-* Article 22 of the GDPR has additional rules to protect individuals if you are carrying out solely automated decision-making that has legal or similarly significant effects on them.
-* You can only carry out this type of decision-making where the decision is:
-  * necessary for the entry into or performance of a contract; or
-  * authorised by domestic law applicable to the controller; or
-  * based on the individual’s explicit consent.
-* You must identify whether any of your processing falls under Article 22 and, if so, make sure that you:
-  * give individuals information about the processing;
-  * introduce simple ways for them to request human intervention or challenge a decision;
-  * carry out regular checks to make sure that your systems are working as intended.
