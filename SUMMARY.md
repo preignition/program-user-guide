@@ -57,16 +57,16 @@
 
 ## FAQ
 
-* [Introduction to FAQ](faq/introduction-to-faq/README.md)
-  * [Why and how do we collect data?](faq/introduction-to-faq/why-and-how-do-we-collect-data.md)
-  * [How do we protect data?](faq/introduction-to-faq/how-do-we-protect-data.md)
-  * [What is GDPR?](faq/introduction-to-faq/what-is-gdpr.md)
-  * [What rights do individuals have under GDPR?](faq/introduction-to-faq/what-rights-do-individuals-have-under-gdpr.md)
-  * [What obligations do controllers have under GDPR?](faq/introduction-to-faq/what-obligations-do-controllers-have-under-gdpr.md)
-  * [What obligations do processors have under GDPR?](faq/introduction-to-faq/what-obligations-do-processors-have-under-gdpr.md)
-  * [Where is data stored?](faq/introduction-to-faq/where-is-data-stored.md)
-  * [How can I make my surveys GDPR compliant?](faq/introduction-to-faq/how-can-i-make-my-surveys-gdpr-compliant.md)
-  * [What is the best file format for Easy Read images?](faq/introduction-to-faq/what-is-the-best-file-format-for-easy-read-images.md)
+* [Data privacy and security](faq/data-privacy-and-security/README.md)
+  * [Why and how do we collect data?](faq/data-privacy-and-security/why-and-how-do-we-collect-data.md)
+  * [How do we protect data?](faq/data-privacy-and-security/how-do-we-protect-data.md)
+  * [What is GDPR?](faq/data-privacy-and-security/what-is-gdpr.md)
+  * [What rights do individuals have under GDPR?](faq/data-privacy-and-security/what-rights-do-individuals-have-under-gdpr.md)
+  * [What obligations do controllers have under GDPR?](faq/data-privacy-and-security/what-obligations-do-controllers-have-under-gdpr.md)
+  * [What obligations do processors have under GDPR?](faq/data-privacy-and-security/what-obligations-do-processors-have-under-gdpr.md)
+  * [Where is data stored?](faq/data-privacy-and-security/where-is-data-stored.md)
+  * [How can I make my surveys GDPR compliant?](faq/data-privacy-and-security/how-can-i-make-my-surveys-gdpr-compliant.md)
+  * [What is the best file format for Easy Read images?](faq/data-privacy-and-security/what-is-the-best-file-format-for-easy-read-images.md)
 
 ## Release Notes
 
