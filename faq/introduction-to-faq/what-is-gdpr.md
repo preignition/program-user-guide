@@ -2,9 +2,11 @@
 
 ## What is the GDPR?
 
-The [GDPR](https://en.wikipedia.org/wiki/General\_Data\_Protection\_Regulation) (General Data Protection Regulation) is a comprehensive data protection law (in effect May 25, 2018) in the European Union that aims to improve the protection of personal data.&#x20;
+On 25 May 2018, the [General Data Protection Regulation (GDPR)](https://gdpr-info.eu/) became law across the European Union.  Many other countries and jurisdictions are following suit with similar privacy laws such as the California Consumer Privacy Act (CCPA).
 
-We are living in an era of rapid technological developments, expanding globalization, and more complex international flows of personal data, specially in the digital world. GDPR tries to update and replace the mixture of the current national data protection laws with a single set of rules, directly enforceable in each EU member state. &#x20;
+We welcome GDPR as we belive that strong regulation is needed at a global level to ensure all businesses take the protection of people’s data seriously.&#x20;
+
+We like the 'principles based' approach to data protection which GDPR takes.  It provides a robust and practical framework for addressing data protection matters.  It is also aligned with our core values of giving individuals more control over their data whilst also keeping is safe.
 
 ### What does the GDPR regulate?
 
@@ -22,23 +24,33 @@ Overall the GDPR provides a central point of enforcement by requiring companies 
 
 ### Key Definitions under GDPR
 
-GDPR concerns the 'processing' of 'data subjects' 'personal data' by data 'controllers’ and data 'processors’.
+GDPR concerns the 'processing' of 'personal data' of 'data subjects' by data 'controllers’ and data 'processors’.  There are more stringent rules concerning the processing of 'sensitive personal data'
 
 **Processing-**  This includes collection, storage, transfer, or use of data.
 
-**Data subject-** Data subject refers to any individual person who can be identified, directly or indirectly, via an identifier such as a name, an ID number, location data, or via factors specific to the person's physical, physiological, genetic, mental, economic, cultural or social identity.
-
 **Personal data-** GDPR defines the notion of “personal data” very broadly, which covers any information relating to an identified or identifiable individual
 
-**Controller-**  Controllers are the main decision-makers – they exercise overall control over the purposes and means of the processing of personal data.  Processors act on behalf of, and only on the instructions of, the relevant controller.  If you use our service to create surveys and collect data from Respondents, you will be the controller for this data.
+**Sensitive personal data-** essentially any personal data which relates to any of the following:
 
-**Processor-**  Processors are responsible for processing personal data on behalf of a controller.  GDPR places specific legal obligations on processors; for example, they are required to maintain records of personal data and processing activities and have legal liability if they are responsible for a breach.
+* racial or ethnic origin
+* political opinions
+* religious beliefs
+* trade union membership
+* health (physical or mental)
+* sexual activity
+* genetic and biometric data
+
+**Data subject-** Data subject refers to any individual person who can be identified, directly or indirectly, via an identifier such as a name, an ID number, location data, or via factors specific to the person's physical, physiological, genetic, mental, economic, cultural or social identity.
+
+**Controller-**  Controllers are the main decision-makers – they exercise overall control over the purposes and means of the processing of personal data.  Processors act on behalf of, and only on the instructions of, the relevant controller.  If you use our services to create surveys and collect data from Respondents, you will be the controller for this data.
+
+**Processor-**  Processors are responsible for processing personal data on behalf of a controller.  GDPR places specific legal obligations on processors; for example, they are required to maintain records of personal data and processing activities and have legal liability if they are responsible for a breach. If you use our services to create survets and collect data from Respondents, we are the processor for this data.
 
 ### Principles underpinning GDPR
 
 #### What are the principles?&#x20;
 
-Article 5 of the GDPR sets out seven key principles which lie at the heart of the general data protection regime.
+[Article 5 of the GDPR ](https://gdpr-info.eu/chapter-2/)sets out seven key principles which lie at the heart of the General Data Protection Regulation .
 
 Article 5(1) requires that personal data shall be: ****&#x20;
 
@@ -62,7 +74,6 @@ More detail on each principle is provided in the [regulation](https://gdpr-info.
 
 ### Why are the principles important? <a href="#why_are_the_principles_important" id="why_are_the_principles_important"></a>
 
-The principles lie at the heart of the GDPR. They are set out right at the start of the legislation, and inform everything that follows. They don’t give hard and fast rules, but rather embody the spirit of the general data protection regime - and as such there are very limited exceptions.
+The principles lie at the heart of the GDPR. They are set out right at the start of the legislation, and inform everything that follows. They don’t give hard and fast rules, but rather embody the spirit of the General Data Protection Regulation - and as such there are very limited exceptions.
 
 Compliance with the spirit of these key principles is therefore a fundamental building block for good data protection practice. It is also key to your compliance with the detailed provisions of the GDPR.
-
