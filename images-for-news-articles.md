@@ -8,4 +8,4 @@
 
 ![Example of how 'tooltips' can be used to explain words in Accessible Surveys](<.gitbook/assets/image (3) (1) (1).png>)
 
-![Example of a grid question created in Survey Monkey](<.gitbook/assets/image (2) (2).png>)
+![Example of a grid question created in Survey Monkey](<.gitbook/assets/image (2) (2) (1).png>)

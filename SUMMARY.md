@@ -86,6 +86,7 @@
 ## web-components
 
 * [widget-resource-access](web-components/widget-resource-access.md)
+* [Copying text into markdown editor](web-components/copying-text-into-markdown-editor.md)
 
 ## LEGACY DOCUMENTATION <a href="#entrepreneur-user-guide" id="entrepreneur-user-guide"></a>
 
