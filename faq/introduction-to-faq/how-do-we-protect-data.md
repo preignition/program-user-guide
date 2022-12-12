@@ -1,35 +1,46 @@
-# How do we protect sensitive data?
+# How do we protect data?
 
 ## Introduction
 
-The security and privacy of our Users, Respondents and Visitor's data is a huge priority for us.  We use some of latest technologies for internet security that are available today to help us keep your data safe.  In addition we gather only as much personal data as is needed to provide our Services to our Users in a secure, efficient and effective way.  We comply with the GDPR regulations, which aim to protect personal and sensitive information.
+The security and privacy of our Users, Respondents and Visitor's data is of paramount importance to us. &#x20;
 
-Here is a list of our security measuers:
+We use some of latest technologies for internet security that are available today to help us keep your data safe.  In addition we gather only as much personal data as is needed to provide our Services in a secure, efficient and effective way. &#x20;
 
-### Preventing unauthorized access (in the physical sense) to premises and facilities where data is processed
+We comply with the GDPR regulations, which aim to protect personal and sensitive information.
 
-As explained in [this page](why-and-how-do-we-collect-data.md), we store and process data using technologies provided by Google. Here you can read about how Google protects their data centers: [Google Cloud Services’ security](https://cloud.google.com/security/security-design/).  &#x20;
+### Data Processing and Security Terms <a href="#data-processing-and-security-terms" id="data-processing-and-security-terms"></a>
 
-### Preventing unauthorized access to our IT systems
+When customers use our Services, Preignition is generally a data processor under GDPR and processes personal data on behalf of our Users.
 
-We use password procedures (including superior complex passwords special characters, regular change of passwords). We also use two step authentication for our accounts at Google.&#x20;
+#### Google grade security level <a href="#google-grade-security-level" id="google-grade-security-level"></a>
 
-<mark style="color:orange;">Additionally for our own administrator dashboard, not only we use complex passwords and username, but also we have incorporated multiple authentication layers to prevent unauthorized access.</mark> &#x20;
+Our system uses a 3rd party service made by Google called [Firebase](https://firebase.google.com/). In the context of GDPR, Google acts as a data processor for Preignition.&#x20;
 
-### Preventing unauthorized access to data
+The Service uses the following products from Firebase for its core functionalities. They provide the service and its users with high-level security standards across the entire application stack, including authentication, data storage and transmission.
 
-On our website we have differentiated access rights (profiles, roles), as well as access reports and logging. Our admins do not share accounts, and each have unique user IDs.&#x20;
+* [**Real-time database**](https://firebase.google.com/products/realtime-database).
+* [**Hosting**](https://firebase.google.com/products/hosting)
+* [**Authentication**](https://firebase.google.com/products/auth)
+* [**Cloud Firestore**](https://firebase.google.com/products/firestore)
+* [**Cloud Functions**](https://firebase.google.com/products/functions)
+* [**Cloud Storage**](https://firebase.google.com/products/storage)
 
-<mark style="color:orange;">Our employees all use only latest Apple devices for design and development. They are required to have password protected logins on their devices, as well as using</mark> [<mark style="color:orange;">Apple’s FileValut technology</mark>](https://support.apple.com/en-us/HT204837) <mark style="color:orange;">to encrypt their hard-disks.</mark> &#x20;
+#### Data encryption <a href="#data-encryption" id="data-encryption"></a>
 
-### Preventing disclosure of personal data
+Firebase services encrypt data in transit using HTTPS and logically isolate customer data.
 
-We use encrypted transfer (sFTP, SSL). All communications with our websites are sent over 256 SSL/TLS connections. Secure Sockets Layer (SSL) and Transport Layer Security (TLS) technology (the successor technology to SSL) protect communications by using both server authentication and data encryption.&#x20;
+In addition, the Firebase services Preignition uses for storage also encrypt their data at rest.
 
-SSL allows sensitive information such as credit card numbers, personal information, and login credentials to be transmitted securely. So, if an attacker is able to intercept all data being sent between your browser and our servers, they cannot see and use that encrypted information.&#x20;
+[More about firebase privacy and security can be found here](https://firebase.google.com/support/privacy)
 
-We use a very strong 256-bit TLS encryption for all data transfer both on our website, app and all our surveys. Additionally, our firewall restricts access to all ports except 80 (http) and 443 (https).&#x20;
+#### Security Rules and Authentication <a href="#security-rules-and-authentication" id="security-rules-and-authentication"></a>
 
-We also always apply latest security patches for all open-source libraries, as well as all purchased libraries, apps, add-ons, or 3rd party services that we use. Be it on our website, app, or development and design programs. Additionally, the latest security patches are applied to all operating systems on our servers regularly.&#x20;
+We use Firebase authentication and security rules to ensure granular control of who has read, write or update access to what in the application.
 
-We code in Javscript and PHP, and our servers run nginix, MySQL and CouchDB on Ubuntu Linux. Also, our engineers use the best routines and industry-standards, and secure coding guidelines to provide secure coding.   &#x20;
+We allow email and password based authentication, as well as federated identity providers authentication such as Gmail or Facebook. In some cases, we also allow anonymous authentication without requiring users to sign in first by creating temporary anonymous accounts.
+
+[More about security rules and authentication here ](https://firebase.google.com/docs/rules)
+
+### Your Responsibilities <a href="#your-responsibilities" id="your-responsibilities"></a>
+
+Our Users are responsible for maintaining the security of their account by using suitably complicated passwords and storing them safely.   Users should also make sure that they have enough security on their own systems; to keep any survey data that they download to their own computer secure.
