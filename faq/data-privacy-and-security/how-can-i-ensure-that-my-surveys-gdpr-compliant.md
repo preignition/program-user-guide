@@ -31,35 +31,29 @@ Consent basically means getting permissions for something you want to do.  Conse
 
 This means you cannot use tactics like pre-ticked checkboxes, or trick people somehow to agree with something that they don’t really understand or haven't properly read.
 
-Unambiguous consent
-
 ### For collecting non-sensitive data:
 
-According to the GDPR, for non-sensitive data, you need “unambiguous, affirmative” consent, not “explicit” consent. Therefore, you can rely on a completely unmistakable notice along the lines for example:
+According to the GDPR, for non-sensitive data, you need “unambiguous, affirmative” consent, not “explicit” consent. Therefore, you can rely on a completely unmistakable notice at the start of your survey.
 
-“ By filling out this form you agree that we will process your data in line with our our privacy policy ”
+for example:
 
-A good place to have this information in your questionnaires is the [Welcome page](https://www.surveylegend.com/user-guide/welcome-page/). This feature allows you to add a starting screen for your surveys or forms, which can only include data, pictures, and a button to START the survey.
+> By filling out this survey you agree that we will process your data in line with our our privacy policy
 
-This [article helps you write a proper Privacy Policy for your surveys](https://www.surveylegend.com/how-to-write-gdpr-proof-privacy-policy-for-surveys/).
+A good place to have this information in your questionnaires is the Landing Page. This feature allows you to add a starting page for your surveys or forms, which can only include data, pictures, and a button to START the survey.
 
-![Example of a getting consent for non-sensitive data in a survey](https://www.surveylegend.com/wordpress/wp-content/themes/sage/resources/images/tutorials/gdpr-obtain-consent-for-non-sensitive-data-using-a-welcome-page.png)
+
 
 &#x20;
 
-The image above shows an example of a getting consent for non-sensitive data in a survey, using a Welcome Page.
+The image above shows an example of a getting consent for non-sensitive data in a survey, using a landing page.
 
 You provide clear information and put a note for getting consent. Note that this is just a simple example. The amount of information that you provide here and how you describe it is up to you and your research case.
 
 Remember that you must explain personal data processed, purpose of processing, intended retention, subject rights, source of data, conditions of processing. Of course it can become a heavy start for a survey and you don’t want to scare people. So, it’s good to keep it short and add a link to your privacy policy page, or a page that fully describes your research process.
 
-Note:
+### For collecting sensitive data:
 
-You can easily link any piece of text to external pages, for example to your “policy page” or a page that explains why and how you are doing this survey. Read more about [adding links to your survey content](https://www.surveylegend.com/user-guide/rich-text-editing/).
-
-&#x20;For collecting sensitive data:
-
-According to the GDPR, to collect [sensitive data](https://www.surveylegend.com/gdpr/how-to-make-gdpr-proof-surveys-or-forms/#sensitive-personal-data), you need “explicit” consent.
+According to the GDPR, to collect sensitive data, you need “explicit” consent.
 
 As we already mentioned, individuals must understand clearly and unambiguously what they are giving permission to. Therefore,you must simply articulate your request and be specific.
 
