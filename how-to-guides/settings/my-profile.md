@@ -28,7 +28,7 @@ This will enable you to:
 
 If you have user rights on more than one program you can also choose which is your active program
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3
 
