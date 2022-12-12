@@ -18,10 +18,12 @@ So if you have a Data Protection Officer, ask them to check your supplier’s (p
 
 The first Principle of GDPR is that personal data must be 'processed lawfully'. &#x20;
 
-We understand this to mean that the following is in place:
+We understand this to mean that either of the following is in place:
 
 1. **Consent.**  When collecting personal data your respondents must deliberately and willfully tell you that it is OK that you collect data about them, for the purposes that you clearly explain to them.&#x20;
 2. **Legitimate interest.**  When collecting personal data you (your organization or company) should be able to convincingly prove that collecting personal data is in your **** legitimate interest.  ie that it’s in your (and your customers’) interests to collect feedback, data and their personal info.  For example to solve their problems, or enhance your services.
+
+If you genuinely feel that your research and use of data has a legitimate interest and is respectful of your Respondents, then don’t feel that you need to obtain consent. Just make sure you’re completely transparent about “how” and “why” you’re planing to use data in your survey process. Also give people the chance contact you for further info or to opt-out. Otherwise, you must obtain consent.
 
 ## Don't cut corners when getting consent
 
@@ -29,15 +31,80 @@ Consent basically means getting permissions for something you want to do.  Conse
 
 This means you cannot use tactics like pre-ticked checkboxes, or trick people somehow to agree with something that they don’t really understand or haven't properly read.
 
-The new law says:
+Unambiguous consent
 
-> When the processing has multiple purposes, consent should be given for all of them
+### For collecting non-sensitive data:
 
-Also, your request for consent must be clear, brief and not disruptive to the use of the service for which it is provided.
+According to the GDPR, for non-sensitive data, you need “unambiguous, affirmative” consent, not “explicit” consent. Therefore, you can rely on a completely unmistakable notice along the lines for example:
 
-If you genuinely feel that your research and use of data has a legitimate interest and is respectful of your Respondents, then don’t feel that you need to obtain consent. Just make sure you’re completely transparent about “how” and “why” you’re planing to use data in your survey process. Also give people the chance contact you for further info or to opt-out. Otherwise, you must obtain consent.
+“ By filling out this form you agree that we will process your data in line with our our privacy policy ”
 
-See the FAQ '[How to write a GDPR-proof Privacy Policy for your Surveys](how-to-write-gdpr-proof-privacy-policy-for-your-surveys.md)' for more guidance about how to put this into practice.
+A good place to have this information in your questionnaires is the [Welcome page](https://www.surveylegend.com/user-guide/welcome-page/). This feature allows you to add a starting screen for your surveys or forms, which can only include data, pictures, and a button to START the survey.
+
+This [article helps you write a proper Privacy Policy for your surveys](https://www.surveylegend.com/how-to-write-gdpr-proof-privacy-policy-for-surveys/).
+
+![Example of a getting consent for non-sensitive data in a survey](https://www.surveylegend.com/wordpress/wp-content/themes/sage/resources/images/tutorials/gdpr-obtain-consent-for-non-sensitive-data-using-a-welcome-page.png)
+
+&#x20;
+
+The image above shows an example of a getting consent for non-sensitive data in a survey, using a Welcome Page.
+
+You provide clear information and put a note for getting consent. Note that this is just a simple example. The amount of information that you provide here and how you describe it is up to you and your research case.
+
+Remember that you must explain personal data processed, purpose of processing, intended retention, subject rights, source of data, conditions of processing. Of course it can become a heavy start for a survey and you don’t want to scare people. So, it’s good to keep it short and add a link to your privacy policy page, or a page that fully describes your research process.
+
+Note:
+
+You can easily link any piece of text to external pages, for example to your “policy page” or a page that explains why and how you are doing this survey. Read more about [adding links to your survey content](https://www.surveylegend.com/user-guide/rich-text-editing/).
+
+&#x20;For collecting sensitive data:
+
+According to the GDPR, to collect [sensitive data](https://www.surveylegend.com/gdpr/how-to-make-gdpr-proof-surveys-or-forms/#sensitive-personal-data), you need “explicit” consent.
+
+As we already mentioned, individuals must understand clearly and unambiguously what they are giving permission to. Therefore,you must simply articulate your request and be specific.
+
+What is important here is that, consent should be given in the form of a clear affirmative action on the part of the data subject. In practical terms, this means asking for a positive “opt-in”. It also means that pre-ticked boxes should not be used, before they start the survey.
+
+So, after explaining your privacy policy and how / why of your research, you can start the survey by asking a first question like this one:
+
+Note:
+
+Use a [Single Selection](https://www.surveylegend.com/user-guide/single-selection/) question (NOT a Multiple Selection question).
+
+Make this question compulsory by enabling the [Answer is required](https://www.surveylegend.com/user-guide/demand-required-answer/) setting!
+
+\* Is it OK for you, if we use your personal data such as your health status which you provide when filling out this questionnaire (in accordance with our privacy policy as explained in the beginning)?
+
+* Yes
+* No
+
+Here you see that you are providing a clear “opt-in” possibility. Respondents must give you permission to use their data, since answering is required.
+
+&#x20;
+
+Tip:
+
+Perhaps you want to collect several pieces of sensitive data about your respondents. Therefore, it might easily become too much and too intimidating to describe why you need to collect each of them at the beginning of the survey.
+
+So, do we have a nicer solution for this? Oh yes!
+
+What you can do is to simply describe the way data will be used right under the question itself. SurveyLegend has a little nifty feature called [Instructions For Respondents](https://www.surveylegend.com/user-guide/instructions-for-respondents/). Enabling this will add a piece of text with a smaller font size underneath the question text, where you can explain why you need the data.
+
+Also, make sure to turn on the “Always visible instructions” setting, so that your respondents won’t miss your explanation. Here is an example of how it could look like:
+
+What is your full name?
+
+We need this to be able to verify your membership at our institute.
+
+What is your email address?
+
+We need your email to be able to send you information about your results of this survey.
+
+What is your ethnic origin?
+
+This information helps our organization to have better marketing campaigns and external communications, reaching the right audience.
+
+This way, you are not only more transparent and more clear about your use of their data (which is in accordance with GDPR regulation), but also, it is easier for a human brain to process the information. It will be less scary and less intimidating to answer your questions.
 
 ## Make it easy for Respondents to refuse consent
 
@@ -53,27 +120,21 @@ It is a good idea to ask for consent at the beginning of your survey and before 
 
 If your respondent’s refuse consent but have either already answered some questions containing personal data, or provide personal data anyway, it is your responsibility to manually remove any of their personal data which is collected.   We can help you do this but it can be time consuming and so is best avoided.
 
+## Have a GDPR-proof Privacy Policy for your Surveys
+
+##
+
 ## Make sure you share collected data in a GDPR-friendly way
 
 With our service, you can export collected survey data in different formats, and share it with 3rd parties (externally, not within our system).
 
-However, the risk is that you may unintentionally expose personal or sensitive data in this way, because everything will be included in your exported data.
+You will be reminded of your data protection responsbilities before downloading any data.  You will also have the option of downloading an 'anonmyized' dataset. &#x20;
 
-However, we offer a better way of sharing data in real-time!!, which does not expose any personally identifiable information to the viewers.
+An 'anonmyized' dataset won't include any metadata or data response feild that have been marked as 'private' by the person who created the survey.
 
-You can do so, simply by activating a [public link to share your real time data](https://www.surveylegend.com/user-guide/share-survey-results-publicly-using-a-link/), by going to the [![Real-time survey results](https://www.surveylegend.com/wordpress/wp-content/themes/sage/resources/images/img/icons/dashboard-live-analytic.svg) Live Analytics](https://www.surveylegend.com/user-guide/live-analytics/) view, and clicking on the ![share data icon GDPR friendly](https://www.surveylegend.com/wordpress/wp-content/themes/sage/resources/images/img/icons/dashboard-transfer.svg) Share data menu.
+If you do export a 'raw' or 'humanized' version of your survey results it is your responsibility for keeping the data safe and treating it in line with GDPR.&#x20;
 
-![Clicking on the Share Data button gives you options of sharing your surveys privately or publicly.](https://www.surveylegend.com/wordpress/wp-content/themes/sage/resources/images/tutorials/Publicly-Export-Share-Survey-Results-Menu.png)
-
-&#x20;
-
-Our system automatically filters away all text-based questions and answers (which are normally the ones that contain personally identifiable data) and shows other questions and graphs to your visitors. They cannot see individual respondents or download the data. Additionally, no other info about individual respondent’s devices, or cities or countries is shown to them.
-
-Learn more about [sharing survey results in real time, in a GDPR-friendly way…](https://www.surveylegend.com/user-guide/share-survey-results-privately-using-a-link/)
-
-***
-
-## In case of data breach
+## Make sure you take appropriate action in case of a data breach
 
 What happens if you figure out that there has been some data breach and your collected personal data has been exposed to third parties?
 
@@ -92,41 +153,3 @@ In [Article 33](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L\
 If you identify that there is a “high risk to their rights and freedoms”, then you must notify your respondents too.
 
 For most types of feedback forms, it’s quite difficult to consider the data-breach as high-risk. Unless you’re processing sensitive data, for example if your business is in the health sector.
-
-***
-
-## Will I have to pay a 20 million Euros fine if something happens?
-
-Almost certainly not! This €20,000,000 has been a hot headline but this is for the absolute worst cases. There is also a lower fine of 10 million Euros which is also for standard offences.
-
-According to [ICO’s news blog](https://ico.org.uk/about-the-ico/news-and-events/blog-gdpr-sorting-the-fact-from-the-fiction/), fines are the last resort. The law is there to help (or sort of force) businesses to do the right thing and correct their structure. It’s to protect people. It is not about giving fines to small businesses here and there.
-
-Fines are for the bad guys with bad intentions! You’re not one of them. You’re a legend, already finishing this article, because you want to do the right thing.
-
-***
-
-## But our organization has nothing to do with EU citizens
-
-Many people wonder about this. Our company is not located in the EU. We’re not dealing with citizens of Europian Union? Should we still care about GDPR?
-
-Well, the short answer is: “usually not, but it depends”. However, the right answer is, “Of course you should!”.
-
-Unlike the old law of Data Protection Directive, the GDPR can apply to any globally operating company. It is not made just for those located in the EU.
-
-Under the GDPR, organizations may be in scope if:
-
-* the organization is established in the EU, or
-* the organization is not established in the EU but the data processing activities are with regard to EU individuals and relate to the offering of goods and services to them or the monitoring of their behavior.
-
-Even if your company is not established here, we recommend you to take the law very seriosuly and reform how you handle personal data in your organization.
-
-The GDPR is about having a healthy digital culture in the company. It is about respecting privacy of individuals. It is not about EU citizens.
-
-It’s true that the initiative has taken place in EU to protect their own citizens. But first of all, how do you know when your own company will enforce similar laws? Isn’t it better to be ready for it already? Secondly, why not practicing a better version of treatment for personal information of people who trust you and give it to you? There is noting wrong with that 🙂
-
-And you never know, maybe someone from EU answers your surveys and then…. things go ?
-
-If for some reason you must treat citizens of other regions differently in your surveys when it comes to personal data collection, then use our [survey logics](https://www.surveylegend.com/user-guide/survey-logic/), ask if they are from EU, and if the answer is NO, do show or hide those questions that you must.
-
-
-
