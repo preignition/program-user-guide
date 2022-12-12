@@ -24,7 +24,7 @@ The link will take you to the Markdown page on Wikipedia where you will see some
 
 The 'preview' feature shows you how the feild will appear to respondents.
 
-<figure><img src="../../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 

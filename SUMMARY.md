@@ -86,8 +86,6 @@
 ## web-components
 
 * [widget-resource-access](web-components/widget-resource-access.md)
-* [Copying text into markdown editor](web-components/copying-text-into-markdown-editor.md)
-* [Adjusting the character limit on freetext feilds](web-components/adjusting-the-character-limit-on-freetext-feilds.md)
 
 ## LEGACY DOCUMENTATION <a href="#entrepreneur-user-guide" id="entrepreneur-user-guide"></a>
 
@@ -138,3 +136,8 @@
 ***
 
 * [Images for news articles](images-for-news-articles.md)
+
+## DEVELOPER NOTES
+
+* [Adjusting the character limit on freetext feilds](developer-notes/adjusting-the-character-limit-on-freetext-feilds.md)
+* [Copying text into markdown editor](developer-notes/copying-text-into-markdown-editor.md)

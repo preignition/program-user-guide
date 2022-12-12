@@ -41,23 +41,23 @@ for example:
 
 A good place to have this information in your questionnaires is the Landing Page. This feature allows you to add a starting page for your surveys or forms, which can only include data, pictures, and a button to START the survey.
 
-
-
-&#x20;
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Example of a landing page gettig consent for non-senitive data in a survey</p></figcaption></figure>
 
 The image above shows an example of a getting consent for non-sensitive data in a survey, using a landing page.
 
-You provide clear information and put a note for getting consent. Note that this is just a simple example. The amount of information that you provide here and how you describe it is up to you and your research case.
+Note that this is just a simple example. The amount of information that you provide here and how you describe it is up to you and your research case.
 
-Remember that you must explain personal data processed, purpose of processing, intended retention, subject rights, source of data, conditions of processing. Of course it can become a heavy start for a survey and you don’t want to scare people. So, it’s good to keep it short and add a link to your privacy policy page, or a page that fully describes your research process.
+Remember that you must explain what personal data is being processed, purpose of processing, intended retention, subject rights, source of data, conditions of processing. Of course it can become a heavy start for a survey and you don’t want to scare people. So, it’s good to keep it short and add a link to your privacy policy page, or a page that fully describes your research process.
 
 ### For collecting sensitive data:
 
 According to the GDPR, to collect sensitive data, you need “explicit” consent.
 
-As we already mentioned, individuals must understand clearly and unambiguously what they are giving permission to. Therefore,you must simply articulate your request and be specific.
+Therefore in addition to the information you provide for collecting non-sensitive data, it is important that consent is given in the form of a clear affirmative action on the part of the data subject.  In practical terms, this means asking for a positive “opt-in”.&#x20;
 
-What is important here is that, consent should be given in the form of a clear affirmative action on the part of the data subject. In practical terms, this means asking for a positive “opt-in”. It also means that pre-ticked boxes should not be used, before they start the survey.
+There are two main ways of doing this using our service.
+
+#### Adding&#x20;
 
 So, after explaining your privacy policy and how / why of your research, you can start the survey by asking a first question like this one:
 
