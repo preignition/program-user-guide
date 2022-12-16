@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This page provides some practical instructutions our Users, to help them apply GDPR principles to ensure that their surveys are GDPR compliant.
+This page provides some practical instructutions to help our Users run surveys that are fully GDPR compliant.
 
 ## Make sure that your survey provider is GDPR compliant&#x20;
 
@@ -12,40 +12,42 @@ This page provides some practical instructutions our Users, to help them apply G
 
 It is therefore your responsibility to make sure that your data processors operate in a GDPR-compliant way. &#x20;
 
-So if you have a Data Protection Officer, ask them to check your supplier’s (processors’) privacy and security policies to ensure that they adhere to the GDPR (here are our [terms and privacy policy](https://accessiblesurveys.com/home/terms))
+So if you have a Data Protection Officer, ask them to check your supplier’s (processors’) privacy and security policies to ensure that they adhere to the GDPR.
+
+We can assuree you that our survey took is GDPR compliant and you can read our [terms and privacy policy](https://accessiblesurveys.com/home/terms) here
 
 ## Make sure you have a lawful basis for processing your respondent's data
 
 The first Principle of GDPR is that personal data must be 'processed lawfully'. &#x20;
 
-We understand this to mean that either of the following is in place:
+We understand this to mean that either or both of the following is in place:
 
 1. **Consent.**  When collecting personal data your respondents must deliberately and willfully tell you that it is OK that you collect data about them, for the purposes that you clearly explain to them.&#x20;
-2. **Legitimate interest.**  When collecting personal data you (your organization or company) should be able to convincingly prove that collecting personal data is in your **** legitimate interest.  ie that it’s in your (and your customers’) interests to collect feedback, data and their personal info.  For example to solve their problems, or enhance your services.
+2. **Legitimate interest.**  When collecting personal data you (your organization or company) should be able to convincingly prove that collecting personal data is in your **** legitimate interest.  ie that it’s in your (and your customers’) interests to collect feedback, data and their personal info.  For example to solve your customer's problems, or enhance your services.
 
-If you genuinely feel that your research and use of data has a legitimate interest and is respectful of your Respondents, then don’t feel that you need to obtain consent. Just make sure you’re completely transparent about “how” and “why” you’re planing to use data in your survey process. Also give people the chance contact you for further info or to opt-out. Otherwise, you must obtain consent.
+If you genuinely feel that your research and use of data has a legitimate interest and is respectful of your Respondents, then don’t feel that you also need to obtain consent. Just make sure you’re completely transparent about “how” and “why” you are collecting data and the part it plays in your research process. Also give people the chance contact you for further info or to opt-out. Otherwise, you must obtain consent.
 
 ## Don't cut corners when getting consent
 
-Consent basically means getting permissions for something you want to do.  Consent must be “_unambiguous_”, and in the case of sensitive data, “_explicit_”.&#x20;
+Consent basically means getting permissions for something you want to do.  Consent must be “_unambiguous_”, and in the case of sensitive personal data, “_explicit_”.&#x20;
 
 This means you cannot use tactics like pre-ticked checkboxes, or trick people somehow to agree with something that they don’t really understand or haven't properly read.
 
 ### For collecting non-sensitive data:
 
-According to the GDPR, for non-sensitive data, you need “unambiguous, affirmative” consent, not “explicit” consent. Therefore, you can rely on a completely unmistakable notice at the start of your survey.
+According to the GDPR, for non-sensitive data, you need “unambiguous, affirmative” consent, not “explicit” consent. Therefore, you can rely on a clear notice at the start of your survey.
 
 for example:
 
 > By filling out this survey you agree that we will process your data in line with our our privacy policy
 
-A good place to have this information in your questionnaires is the Landing Page. This feature allows you to add a starting page for your surveys or forms, which can only include data, pictures, and a button to START the survey.
+A good place to have this information in your questionnaires is the [Landing Page](../../how-to-guides/survey-app/surveys/presenting-surveys.md). This feature allows you to add a welcome page for your survey, which can include data, pictures, and a button to START the survey.
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Example of a landing page gettig consent for non-senitive data in a survey</p></figcaption></figure>
 
 The image above shows an example of a getting consent for non-sensitive data in a survey, using a landing page.
 
-Note that this is just a simple example. The amount of information that you provide here and how you describe it is up to you and your research case.
+Note that this is just an example. The amount of information that you provide here and how you describe it is up to you and your research case.
 
 Remember that you must explain what personal data is being processed, purpose of processing, intended retention, subject rights, source of data, conditions of processing. Of course it can become a heavy start for a survey and you don’t want to scare people. So, it’s good to keep it short and add a link to your privacy policy page, or a page that fully describes your research process.
 
@@ -57,9 +59,13 @@ Therefore in addition to the information you provide for collecting non-sensitiv
 
 There are two main ways of doing this using our service.
 
-#### Adding&#x20;
+#### Adding a single opt in question at the start of your survey
 
-So, after explaining your privacy policy and how / why of your research, you can start the survey by asking a first question like this one:
+After explaining your privacy policy and how you will use and protect respondents data on your landing page, you can start your survey by asking a first question like this one:
+
+
+
+
 
 Note:
 
