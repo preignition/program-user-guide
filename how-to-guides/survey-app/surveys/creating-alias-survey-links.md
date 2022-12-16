@@ -19,7 +19,7 @@ You can customise your survey links to make them easier for respondents to read
 Only lowercase letter and numbers are allowed for aliases
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 

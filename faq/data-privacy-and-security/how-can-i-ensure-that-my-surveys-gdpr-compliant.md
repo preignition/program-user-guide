@@ -43,7 +43,7 @@ for example:
 
 A good place to have this information in your questionnaires is the [Landing Page](../../how-to-guides/survey-app/surveys/presenting-surveys.md). This feature allows you to add a welcome page for your survey, which can include data, pictures, and a button to START the survey.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Example of a landing page gettig consent for non-senitive data in a survey</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (3).png" alt=""><figcaption><p>Example of a landing page gettig consent for non-senitive data in a survey</p></figcaption></figure>
 
 The image above shows an example of a getting consent for non-sensitive data in a survey, using a landing page.
 
@@ -71,23 +71,17 @@ Users have the option to add their own terms which can be displayed either on th
 
 Perhaps you want to collect several pieces of sensitive data about your respondents. Therefore, it might easily become too much and too intimidating to describe why you need to collect each of them at the beginning of the survey.
 
-What you can do is to simply describe the way data will be used right under the question itself. Our platform has a feature called . Enabling this will add a piece of text with a smaller font size underneath the question text, where you can explain why you need the data.
+What you can do provide general information about why you are collecting Respondents data and how you will protect in on your landing page.  Then describe the way specific bit of data will be used right under the question itself.&#x20;
 
-Also, make sure to turn on the “Always visible instructions” setting, so that your respondents won’t miss your explanation. Here is an example of how it could look like:
+Our platform has a feature called 'helper text' . Helper text is announced by screen readers and adds a piece of text with a smaller font size underneath the question text.  You can use this to explain why you need the data.  Make sure these questions are marked as 'optional'. &#x20;
 
-What is your full name?
+Here is a couple of examples of how it could look like:
 
-We need this to be able to verify your membership at our institute.
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-What is your email address?
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-We need your email to be able to send you information about your results of this survey.
-
-What is your ethnic origin?
-
-This information helps our organization to have better marketing campaigns and external communications, reaching the right audience.
-
-This way, you are not only more transparent and more clear about your use of their data (which is in accordance with GDPR regulation), but also, it is easier for a human brain to process the information. It will be less scary and less intimidating to answer your questions.
+This way, you are not only more transparent and more clear about your use of their data (which is in accordance with GDPR regulation), but also, it is easier for a human brain to process the information.  It will be less scary and less intimidating to answer your questions.
 
 ## Make it easy for Respondents to refuse consent
 
@@ -99,13 +93,11 @@ You must make it as easy for respondents to refuse consent as it is for them to 
 It is a good idea to ask for consent at the beginning of your survey and before Respondents have provided any personal data. &#x20;
 {% endhint %}
 
-&#x20;&#x20;
-
 If your respondent’s refuse consent but have either already answered some questions containing personal data, or provide personal data anyway, it is your responsibility to manually remove any of their personal data which is collected.   We can help you do this but it can be time consuming and so is best avoided.
 
 ## Have a GDPR-proof Privacy Policy for your Surveys
 
-##
+Make sure you have a Privacy Policy which you can refer to which is compliant with GDPR.  This guide can help you write a [GDPR Privacy Policy](how-to-write-gdpr-proof-privacy-policy-for-your-surveys.md) if you don't already have one in place.
 
 ## Make sure you share collected data in a GDPR-friendly way
 
