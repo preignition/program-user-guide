@@ -43,7 +43,7 @@ for example:
 
 A good place to have this information in your questionnaires is the [Landing Page](../../how-to-guides/survey-app/surveys/presenting-surveys.md). This feature allows you to add a welcome page for your survey, which can include data, pictures, and a button to START the survey.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Example of a landing page gettig consent for non-senitive data in a survey</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Example of a landing page gettig consent for non-senitive data in a survey</p></figcaption></figure>
 
 The image above shows an example of a getting consent for non-sensitive data in a survey, using a landing page.
 
@@ -59,36 +59,19 @@ Therefore in addition to the information you provide for collecting non-sensitiv
 
 There are two main ways of doing this using our service.
 
-#### Adding a single opt in question at the start of your survey
+#### Asking Respondents to agree to your terms before they start you survey
 
-After explaining your privacy policy and how you will use and protect respondents data on your landing page, you can start your survey by asking a first question like this one:
+Respondents are asked to agree to our own Terms of Service before they can start a survey.
 
+Users have the option to add their own terms which can be displayed either on the page itself or as a pop up box.   This is an excellent way of getting explicit consent for collecting sensitive personal data as Respondents must give this consent before they can commence the survey.  There is also a clear opt out option.  &#x20;
 
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-
-
-Note:
-
-Use a [Single Selection](https://www.surveylegend.com/user-guide/single-selection/) question (NOT a Multiple Selection question).
-
-Make this question compulsory by enabling the [Answer is required](https://www.surveylegend.com/user-guide/demand-required-answer/) setting!
-
-\* Is it OK for you, if we use your personal data such as your health status which you provide when filling out this questionnaire (in accordance with our privacy policy as explained in the beginning)?
-
-* Yes
-* No
-
-Here you see that you are providing a clear “opt-in” possibility. Respondents must give you permission to use their data, since answering is required.
-
-&#x20;
-
-Tip:
+#### Ask Respondents to give explicit consent before answering a specific question
 
 Perhaps you want to collect several pieces of sensitive data about your respondents. Therefore, it might easily become too much and too intimidating to describe why you need to collect each of them at the beginning of the survey.
 
-So, do we have a nicer solution for this? Oh yes!
-
-What you can do is to simply describe the way data will be used right under the question itself. SurveyLegend has a little nifty feature called [Instructions For Respondents](https://www.surveylegend.com/user-guide/instructions-for-respondents/). Enabling this will add a piece of text with a smaller font size underneath the question text, where you can explain why you need the data.
+What you can do is to simply describe the way data will be used right under the question itself. Our platform has a feature called . Enabling this will add a piece of text with a smaller font size underneath the question text, where you can explain why you need the data.
 
 Also, make sure to turn on the “Always visible instructions” setting, so that your respondents won’t miss your explanation. Here is an example of how it could look like:
 

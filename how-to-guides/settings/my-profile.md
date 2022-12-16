@@ -12,7 +12,7 @@ Each user can create their own profile on the platform.  You can also reset your
 
 The 'My profile' settings are accessed in the menu settings in the left hand column
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
