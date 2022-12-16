@@ -16,7 +16,7 @@ The 'Analytics' feild shows recent activity on the survey's active batch.
 
 Clicking on this feild takes you into survey analytics
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 

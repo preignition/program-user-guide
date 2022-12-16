@@ -77,9 +77,9 @@ Our platform has a feature called 'helper text' . Helper text is announced by sc
 
 Here is a couple of examples of how it could look like:
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 This way, you are not only more transparent and more clear about your use of their data (which is in accordance with GDPR regulation), but also, it is easier for a human brain to process the information.  It will be less scary and less intimidating to answer your questions.
 
