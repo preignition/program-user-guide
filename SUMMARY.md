@@ -67,7 +67,8 @@
   * [Where is data stored?](faq/introduction-to-faq/where-is-data-stored.md)
   * [How can I ensure that my surveys GDPR compliant?](faq/data-privacy-and-security/how-can-i-ensure-that-my-surveys-gdpr-compliant.md)
   * [How to Write GDPR-proof Privacy Policy for your Surveys](faq/data-privacy-and-security/how-to-write-gdpr-proof-privacy-policy-for-your-surveys.md)
-  * [What is the best file format for Easy Read images?](faq/introduction-to-faq/what-is-the-best-file-format-for-easy-read-images.md)
+* [Accessibility modes](faq/accessibility-modes.md)
+* [What is the best file format for Easy Read images?](faq/what-is-the-best-file-format-for-easy-read-images.md)
 
 ## Release Notes
 
