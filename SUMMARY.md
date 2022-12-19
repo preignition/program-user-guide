@@ -139,5 +139,5 @@
 
 ## DEVELOPER NOTES
 
-* [Adjusting the character limit on freetext feilds](developer-notes/adjusting-the-character-limit-on-freetext-feilds.md)
 * [Copying text into markdown editor](developer-notes/copying-text-into-markdown-editor.md)
+* [Adjusting the character limit on freetext feilds](developer-notes/adjusting-the-character-limit-on-freetext-feilds.md)
