@@ -34,6 +34,10 @@ Below is an example of the logic feild for the question we outlined above about 
 Always add the logical expression to the page, section or question which you want the action to be applied to
 {% endhint %}
 
+{% hint style="success" %}
+Always select the option 'Lock this question while editing logic'
+{% endhint %}
+
 Logic has been added to the follow up question 'what sort of fruit do you like?' so that it is displayed or hidden depending on the answer to the previous question 'Do you like fruit?'
 
 * The question 'Do you like fruit?' has been dragged from the tree grid in the left hand column into the expression feild along with the answer 'No'
