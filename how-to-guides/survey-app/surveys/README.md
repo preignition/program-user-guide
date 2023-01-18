@@ -1,7 +1,5 @@
 ---
-description: >-
-  This section covers everything you need to know about creating, editing and
-  publishing surveys
+description: This section covers everything you need to know about creating, editing and publishing surveys
 ---
 
 # Survey Editor
