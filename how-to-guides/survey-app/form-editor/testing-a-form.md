@@ -36,7 +36,7 @@ In the Test mode the top menu has the following options:
 
 | Option                                                      | Description                                                                           |
 | ----------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| ![](<../../../.gitbook/assets/image (7) (1).png>)           | View all content on the form, regardless of logic or accessibility modes              |
+| ![](<../../../.gitbook/assets/image (7) (1) (2).png>)       | View all content on the form, regardless of logic or accessibility modes              |
 | ![](<../../../.gitbook/assets/image (2) (1) (3).png>)       | Test the form in any language that has been activativated for the Form                |
 | ![](<../../../.gitbook/assets/image (296) (1) (1).png>)     | Activate Read Aloud                                                                   |
 | ![](<../../../.gitbook/assets/image (2) (3) (1).png>)       | Activate Sign Language mode. This will only appear if applied as an accessiblity mode |

@@ -8,7 +8,7 @@ Open the consol page by pressing F12
 
 Select the arrow logo and go to the section that you want to copy
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3
 

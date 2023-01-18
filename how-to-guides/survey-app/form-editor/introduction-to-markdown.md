@@ -69,6 +69,30 @@ Images should be added in the following way:
 
 ## Step 5
 
+The following example shows how text can be put inside a coloured box
+
+\<div class="warning" style='padding:0.1em; background-color: #0073AE; color:#ffffff'>
+
+\<span>
+
+\<p style='margin-top:1em; text-align:center'>
+
+\<b>On the importance of sentence length\</b>\</p>
+
+\<p style='margin-left:1em;'>
+
+This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It's like a stuck record. The ear demands some variety.
+
+\</p>
+
+\</div>
+
+The box is rendered like this:
+
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+## Step 6
+
 That is a brief introduction to Markdown.  For more information, refer to [_The Markdown Guide._  ](https://www.markdownguide.org/)Their ['basic syntax](https://www.markdownguide.org/basic-syntax/)' page covers most of what you need to know and other pages cover advanced user cases. &#x20;
 
 \
