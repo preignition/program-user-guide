@@ -20,7 +20,7 @@ Look for the line starting 'pwi-md-editor' in the elements feild
 
 Go to the bottom of the consol field and type $0.maxLength=\[number of characters wanted]  Press enter
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4
 
