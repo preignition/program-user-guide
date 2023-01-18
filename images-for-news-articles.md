@@ -1,8 +1,6 @@
 # Images for news articles
 
-![](<.gitbook/assets/image (1).png>)
 
-<figure><img src=".gitbook/assets/Selection_193.png" alt=""><figcaption></figcaption></figure>
 
 ![Example of an Easy Read question in Accessible Surveys](<.gitbook/assets/image (1) (1) (1) (1).png>)
 
