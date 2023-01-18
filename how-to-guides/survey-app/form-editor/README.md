@@ -1,7 +1,5 @@
 ---
-description: >-
-  This section covers everything you need to know about creating, editing and
-  publishing forms
+description: This section covers everything you need to know about creating, editing and  publishing forms
 ---
 
 # Form Editor
