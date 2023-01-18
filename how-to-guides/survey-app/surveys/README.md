@@ -7,9 +7,11 @@ description: This section covers everything you need to know about creating, edi
 ## Introduction
 
 {% hint style="info" %}
+
 Forms decide **what** information you want to collect from respondents
 
 Surveys decide **how** you collect that information
+
 {% endhint %}
 
 Survey settings allow you to do the following:
