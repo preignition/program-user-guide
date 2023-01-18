@@ -1,16 +1,16 @@
 ---
-description: This page covers everything you need to know about text based Questions
+description: This page covers everything you need to know about text based questions
 ---
 
-# Text based Questions
+# Text based questions
 
 {% hint style="success" %}
-Text based Questions are Questions which are responded to by entering text or numbers
+Text based questions are questions which are responded to by entering text or numbers
 {% endhint %}
 
 ## Step 1
 
-Initially two text based Question type are visible
+Initially two text based question type are visible
 
 * Text
 * Long Text
@@ -25,16 +25,16 @@ Clicking on the ![](<../../../../.gitbook/assets/image (305) (1) (1) (2).png>)sy
 
 ## Step 3
 
-A text based Question looks like this
+A text based question looks like this
 
 ![](<../../../../.gitbook/assets/image (316) (1).png>)
 
 ## Step 4
 
-Under 'Designation' give the Question a label. &#x20;
+Under 'Designation' give the question a label. &#x20;
 
 {% hint style="info" %}
-The 'label' is how the questions will appear on the form.  So make it as clear and conside as possible.  Avoid long questions as they won't render well on small screens or mobiles
+The 'label' is how the questions will appear on the form.  Make it as clear and concise as possible.  Avoid long questions as they won't render well on small screens or mobiles
 {% endhint %}
 
 ![](<../../../../.gitbook/assets/image (323) (1) (1) (1) (1).png>)
@@ -48,6 +48,16 @@ Be mindful that it is good practice to keep labels short and clear. Helper text 
 {% endhint %}
 
 ![](<../../../../.gitbook/assets/image (327) (1) (1) (1) (1).png>)
+
+Selecting the 'more accessible label' option allows you to write the label in markdown: you can include style and even advanced html.  This also allows to include tooltips for complex terms as below:
+
+For example:
+
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+renders as:
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 6
 
