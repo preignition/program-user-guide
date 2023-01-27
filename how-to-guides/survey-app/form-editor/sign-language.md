@@ -1,15 +1,11 @@
 ---
-description: >-
-  This page tells you everything you need to know adding Sign Language to your
-  form
+description: This page tells you everything you need to know adding Sign Language to your form
 ---
 
 # Sign Language
 
 {% hint style="success" %}
-Forms adapt to the needs and preferences of respondents.&#x20;
-
-Some Respondents may want questions to be presented in Sign Language
+Forms adapt to the needs and preferences of respondents.&#x20; Some Respondents may want questions to be presented in Sign Language
 {% endhint %}
 
 ## Step 1
