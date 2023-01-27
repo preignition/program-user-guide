@@ -5,12 +5,12 @@ description: This page tells you everything you need to know adding Sign Languag
 # Sign Language
 
 {% hint style="success" %}
-Forms adapt to the needs and preferences of respondents.&#x20; Some Respondents may want questions to be presented in Sign Language
+Forms adapt to the needs and preferences of respondents. Some Respondents may want questions to be presented in Sign Language
 {% endhint %}
 
 ## Step 1
 
-&#x20;First activate the 'International Sign' accessibility mode in the [Form Behaviour](form-behaviour.md) page.
+First activate the 'International Sign' accessibility mode in the [Form Behaviour](form-behaviour.md) page.
 
 ## Step 2
 
