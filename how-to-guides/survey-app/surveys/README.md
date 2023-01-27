@@ -21,3 +21,4 @@ Survey settings allow you to do the following:
 {% hint style="warning" %}
 Remember to 'Publish' your survey so any changes you have made are actived for new respondents
 {% endhint %}
+image.png

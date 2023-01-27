@@ -9,9 +9,7 @@ description: This page covers how to create an 'Easy Read' version of a form
 Forms can adapt to the needs and preferences of respondents. Some respondents may want an 'Easy Read' version of a form.
 
 {% hint style="success" %}
-“Making information easier to understand for people ... is about more than making your text size bigger and putting some symbols or pictures in your document.&#x20;
-
-It’s about working with the people your information is for, finding out together how you can make the information useful and accessible for them. There are no quick answers, and it isn’t easy... but it can be fun.” ([EasyInfo, ‘About making information easier’](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment\_data/file/215923/dh\_121927.pdf))
+“Making information easier to understand for people ... is about more than making your text size bigger and putting some symbols or pictures in your document. It’s about working with the people your information is for, finding out together how you can make the information useful and accessible for them. There are no quick answers, and it isn’t easy... but it can be fun.” ([EasyInfo, ‘About making information easier’](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment\_data/file/215923/dh\_121927.pdf))
 {% endhint %}
 
 'Easy Read' forms offer the following advantages:
@@ -22,9 +20,7 @@ It’s about working with the people your information is for, finding out togeth
 4. Images can be added to complement questions
 
 {% hint style="info" %}
-The 'Easy Read' version renders the form and the interface differently, but answers to questions are stored in the same dataset as for other versions of the survey.&#x20;
-
-In the analytics, it is possible to create a subset of the data, consisting of answers submitted using the Easy Read version of a form.
+The 'Easy Read' version renders the form and the interface differently, but answers to questions are stored in the same dataset as for other versions of the survey.  In the analytics, it is possible to create a subset of the data, consisting of answers submitted using the Easy Read version of a form.
 {% endhint %}
 
 ## Step 1
