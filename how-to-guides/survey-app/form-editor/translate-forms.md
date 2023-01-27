@@ -1,7 +1,5 @@
 ---
-description: >-
-  This page covers everything you need to know about translating your form into
-  an additional language
+description: This page covers everything you need to know about translating your form into an additional language
 ---
 
 # Translate forms
