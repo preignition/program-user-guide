@@ -1,7 +1,5 @@
 ---
-description: >-
-  This page provides an introduction to using Markdown to format free text
-  feilds
+description: This page provides an introduction to using Markdown to format free text feilds
 ---
 
 # Using Markdown
