@@ -1,7 +1,5 @@
 ---
-description: >-
-  This page shows you how to deteremine where a repondent will be redirected to
-  after completing a survey
+description: This page shows you how to determine where a respondent will be redirected after completing a survey
 ---
 
 # Redirection after completing survey
