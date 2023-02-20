@@ -1,7 +1,5 @@
 ---
-description: >-
-  This page shows you how to define the type of account you want your survey
-  respondents to have
+description: This page shows you how to define the type of account you want your respondents to have
 ---
 
 # Survey respondent accounts
