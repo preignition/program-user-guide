@@ -11,7 +11,7 @@ Although this is an advanced feature, it is simple to add your own survey terms
 
 ## Context
 
-In order to respond to a survey on the application, respondents must agree to the software providers terms of service.&#x20;
+In order to respond to a survey on the application, respondents must agree to the software providers terms of service.
 
 You have the option to ask respondents to agree to your own terms of service if you would like
 
