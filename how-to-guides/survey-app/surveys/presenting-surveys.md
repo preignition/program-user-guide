@@ -1,6 +1,5 @@
 ---
-description: The presentation tab allows you to create a landing page which respondents
-will see when they click on a survey link
+description: The presentation tab allows you to create a landing page which respondents will see when they click on a survey link
 ---
 
 # Presenting surveys
