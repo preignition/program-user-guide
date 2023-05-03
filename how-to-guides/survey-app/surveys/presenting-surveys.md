@@ -56,6 +56,7 @@ There are three different presentation feilds:
 
 ## Step 6
 
+
 * Finally write a 'Thank you' message which will be shared with respondents once they have completed the survey
 * Markdown is supported and CSS Classes can be used to display or hide accessibility modes
 
