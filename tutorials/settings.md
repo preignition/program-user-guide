@@ -1,5 +1,7 @@
 # Settings
 
+This is a test from cg
+
 {% hint style="info" %}
 This short tutorial introduced you to Settings.  For more information refer to the [Settings How To Guide](../how-to-guides/settings/)
 {% endhint %}
