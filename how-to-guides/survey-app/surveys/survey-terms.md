@@ -1,6 +1,5 @@
 ---
-description: This page describes how you can add your own survey terms which respondents
-have to agree to before starting your survey
+description: This page describes how you can add your own survey terms which respondents have to agree to before starting your survey
 ---
 
 # Survey terms- advanced
