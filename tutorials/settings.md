@@ -1,7 +1,9 @@
-# Settings
+# Introduction to the form editor
 
 {% hint style="info" %}
-This short tutorial introduced you to Settings Test.  For more information refer to the [Settings How To Guide](../how-to-guides/settings/)
+This 3 minute tutorial introduces you to the Form Editor.  For more information refer to the Form Editor[ ](../how-to-guides/settings/)[How to Guide](../how-to-guides/survey-app/form-editor/)
 {% endhint %}
 
-{% embed url="https://www.youtube.com/watch?v=q7s_vW4maAM" %}
+{% embed url="https://youtu.be/zL3t-Plokp8" %}
+Short video introducing the form editor
+{% endembed %}

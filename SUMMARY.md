@@ -5,7 +5,7 @@
 ## TUTORIALS
 
 * [Introduction to creating a new survey](tutorials/creating-a-survey.md)
-* [Settings](tutorials/settings.md)
+* [Introduction to the form editor](tutorials/settings.md)
 * [Resources](tutorials/resources.md)
 * [Creating a Form](tutorials/creating-a-form.md)
 * [Portal](tutorials/portal.md)
