@@ -4,10 +4,10 @@
 
 ## TUTORIALS
 
+* [Introduction to creating a new survey](tutorials/creating-a-survey.md)
 * [Settings](tutorials/settings.md)
 * [Resources](tutorials/resources.md)
 * [Creating a Form](tutorials/creating-a-form.md)
-* [Creating a Survey](tutorials/creating-a-survey.md)
 * [Portal](tutorials/portal.md)
 * [Analytics](tutorials/analytics.md)
 
