@@ -1,10 +1,8 @@
 # Table of contents
 
-* [Intro](README.md)
-
 ## TUTORIALS
 
-* [Introduction to creating a new survey](tutorials/introduction-to-creating-a-new-survey.md)
+* [Introduction to creating a new survey](README.md)
 * [Introduction to the form editor](tutorials/introduction-to-the-form-editor.md)
 * [Introduction to testing a form](tutorials/introduction-to-testing-a-form.md)
 * [Introduction to publishing a form](tutorials/introduction-to-publishing-a-form.md)
