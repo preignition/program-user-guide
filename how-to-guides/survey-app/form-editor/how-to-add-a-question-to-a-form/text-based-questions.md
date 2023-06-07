@@ -19,7 +19,7 @@ Initially two text based question type are visible
 
 ## Step 2
 
-Clicking on the ![](<../../../../.gitbook/assets/image (305) (1) (1) (2).png>)symbol beside the 'Text' label reveals some additional text based options
+Clicking on the ![](<../../../../.gitbook/assets/image (305) (1) (1) (1).png>)symbol beside the 'Text' label reveals some additional text based options
 
 ![](<../../../../.gitbook/assets/image (316) (1) (1).png>)
 
@@ -31,17 +31,17 @@ A text based question looks like this
 
 ## Step 4
 
-Under 'Designation' give the question a label. &#x20;
+Under 'Designation' give the question a label.
 
 {% hint style="info" %}
-The 'label' is how the questions will appear on the form.  Make it as clear and concise as possible.  Avoid long questions as they won't render well on small screens or mobiles
+The 'label' is how the questions will appear on the form. Make it as clear and concise as possible. Avoid long questions as they won't render well on small screens or mobiles
 {% endhint %}
 
 ![](<../../../../.gitbook/assets/image (323) (1) (1) (1) (1).png>)
 
 ## Step 5
 
-You can check the accessibility box if you want longer label (ie more than 100 characters).  Checking this box will 'wrap' the text on multiple lines if needed.
+You can check the accessibility box if you want longer label (ie more than 100 characters). Checking this box will 'wrap' the text on multiple lines if needed.
 
 {% hint style="info" %}
 Be mindful that it is good practice to keep labels short and clear. Helper text can be used to provide additional information about the Question if needed
@@ -49,7 +49,7 @@ Be mindful that it is good practice to keep labels short and clear. Helper text 
 
 ![](<../../../../.gitbook/assets/image (327) (1) (1) (1) (1).png>)
 
-Selecting the 'more accessible label' option allows you to write the label in markdown: you can include style and even advanced html.  This also allows to include tooltips for complex terms as below:
+Selecting the 'more accessible label' option allows you to write the label in markdown: you can include style and even advanced html. This also allows to include tooltips for complex terms as below:
 
 For example:
 

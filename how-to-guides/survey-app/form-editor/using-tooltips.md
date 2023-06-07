@@ -7,7 +7,7 @@ description: Tooltips can be used to provide definitions of complex or technical
 ## Introduction
 
 {% hint style="success" %}
-Tooltips can be added to forms to explain words which are complex or difficult to understand.  Tooltips can be added in most places in a form, but can't yet be added to answer options
+Tooltips can be added to forms to explain words which are complex or difficult to understand. Tooltips can be added in most places in a form, but can't yet be added to answer options
 {% endhint %}
 
 ![An example of a tooltip to explain the meaning of the word 'complex'](<../../../.gitbook/assets/image (299) (1) (1) (1) (1) (1) (1) (1).png>)
@@ -18,13 +18,13 @@ The first step is to provide definitions of any complex words in the form 'gloss
 
 The 'Glossary' is visible in the left hand column in the form 'Build' mode
 
-![](<../../../.gitbook/assets/image (312) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (305) (1) (1) (1) (1) (1).png>)
 
 ## Step 2
 
 Select 'add new term' and give the term a unique name
 
-![](<../../../.gitbook/assets/image (304) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (301) (1) (1) (1) (1) (1) (1) (1) (2).png>)
 
 {% hint style="warning" %}
 The glossary term name must be unique, in small characters and no spaces

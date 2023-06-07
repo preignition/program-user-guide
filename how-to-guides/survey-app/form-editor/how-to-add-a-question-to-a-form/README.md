@@ -2,7 +2,7 @@
 description: All the steps you need to add a question to a form
 ---
 
-# Adding Questions to a Form
+# Adding questions to a form
 
 {% hint style="success" %}
 This page assumes you have already created a Form and added a Page and Section
@@ -12,7 +12,7 @@ This page assumes you have already created a Form and added a Page and Section
 
 Once you have added a Page and Section, and selected 'Add Content' your screen will look like this:
 
-![](<../../../../.gitbook/assets/image (319) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (308) (1) (1) (1).png>)
 
 ## Step 2
 

@@ -6,7 +6,7 @@ description: This page explains how program users can review a business
 
 ## Step 1- Select the ‘review’ node in a selection process
 
-![](../../../.gitbook/assets/image-36.png)
+![](<../../../.gitbook/assets/image (36).png>)
 
 * Select the available surveys and check that all surveys have been completed
 
@@ -20,7 +20,7 @@ description: This page explains how program users can review a business
 
 ![](../../../.gitbook/assets/image-20.png)
 
-![](../../../.gitbook/assets/image-43.png)
+![](<../../../.gitbook/assets/image (43).png>)
 
 {% hint style="warning" %}
 In the future a reviewer will be able to ‘score’ narrative answers directly from this page

@@ -8,9 +8,9 @@ description: >-
 
 ## Step 1- Introduction to notifications
 
-Notifications are messages which can be sent to entrepreneurs either on their bulletin board or via email.  Notifications are created as separate resources.  They can then be deployed in other resources such as surveys and selection processes.
+Notifications are messages which can be sent to entrepreneurs either on their bulletin board or via email. Notifications are created as separate resources. They can then be deployed in other resources such as surveys and selection processes.
 
-## Step 2-  Notification page &#x20;
+## Step 2- Notification page
 
 ![](<../../../.gitbook/assets/image (205).png>)
 
@@ -36,7 +36,7 @@ The important elements of a notification template are as follows:
 
 ![](<../../../.gitbook/assets/image (208).png>)
 
-* These are used for internal purposes to keep track of different notification templates. &#x20;
+* These are used for internal purposes to keep track of different notification templates.
 * Neither the 'name' or the 'description' is seen by entrepreneurs
 
 {% hint style="info" %}
@@ -48,11 +48,11 @@ It is a good idea to give notification templates a unique number or reference so
 ![](<../../../.gitbook/assets/image (209).png>)
 
 * The content section is where the notification text is entered
-* Each notification has a 'Title'.  This will be visible to the entrepreneur either as the title of an email or the heading of a message on their bulletin board
-* The 'excerpt' section is only needed for notifications which will be shared via an entrepreneurs bulletin board.  It is a summary of the notification which appears before the main content.
-* The 'notification content' section is where the main text of the notification should be entered.   The message can be entered as simple text although markdown is supported to make a greater range of formatting and design options available.
-* Notification messages can include special fields like 'displayName'.  When the notification is sent 'displayName' will be replaced by the name of the entrepreneur that the message is being sent to.  A special field is always surrounded by \{{ \}} marks.  All special fields which are available to be used in the notification template will be clealy shown.
-* The 'content preview' column shows how the notification will be displayed to the entrepreneur.&#x20;
+* Each notification has a 'Title'. This will be visible to the entrepreneur either as the title of an email or the heading of a message on their bulletin board
+* The 'excerpt' section is only needed for notifications which will be shared via an entrepreneurs bulletin board. It is a summary of the notification which appears before the main content.
+* The 'notification content' section is where the main text of the notification should be entered. The message can be entered as simple text although markdown is supported to make a greater range of formatting and design options available.
+* Notification messages can include special fields like 'displayName'. When the notification is sent 'displayName' will be replaced by the name of the entrepreneur that the message is being sent to. A special field is always surrounded by \{{ \}} marks. All special fields which are available to be used in the notification template will be clealy shown.
+* The 'content preview' column shows how the notification will be displayed to the entrepreneur.
 
 ## Step 5- Publishing a notification template
 
@@ -60,17 +60,17 @@ It is a good idea to give notification templates a unique number or reference so
 
 ![](<../../../.gitbook/assets/image (210).png>)
 
-## Step 6- Use&#x20;
+## Step 6- Use
 
 * Beside the 'publish' button there are three tabs
 * The 'content' tab has been covered already
 
 ![](<../../../.gitbook/assets/image (211).png>)
 
-* The 'Use' tab shows how the notification template is deployed in other parts of the application. &#x20;
+* The 'Use' tab shows how the notification template is deployed in other parts of the application.
 * Further work is needed on this page
 
-![](<../../../.gitbook/assets/image (212).png>)
+![](<../../../.gitbook/assets/image (213).png>)
 
 ## Step 7- Access
 

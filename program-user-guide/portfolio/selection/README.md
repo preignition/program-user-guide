@@ -11,7 +11,7 @@
 
 * Clicking on the ‘selection’ icon takes you though to the following screen
 
-![](../../../.gitbook/assets/image-51.png)
+![](<../../../.gitbook/assets/image (51).png>)
 
 | **Heading**       | Description                                                                                |
 | ----------------- | ------------------------------------------------------------------------------------------ |
@@ -24,7 +24,7 @@
 ![](../../../.gitbook/assets/image-21.png)
 
 {% hint style="info" %}
-Programs are able to define their own selection process so it may have more or less stages than shown above.   Refer to the page '[Creating a selection process](../resources/selection-process/creating-a-selection-process-beta.md)' for more information.
+Programs are able to define their own selection process so it may have more or less stages than shown above. Refer to the page '[Creating a selection process](../resources/selection-process/creating-a-selection-process-beta.md)' for more information.
 {% endhint %}
 
 ## Step 4- Using the selection dashboard to filter businesses
@@ -45,7 +45,7 @@ Programs are able to define their own selection process so it may have more or l
 * The surveys associated with a particular stage of the selection process are shown under 'Business List'
 * Highlighting a survey will bring up a new column showing the % completion of the selected survey
 
-![As expected at the review stage, all surveys are 100% complete](../../../.gitbook/assets/image-54.png)
+![As expected at the review stage, all surveys are 100% complete](<../../../.gitbook/assets/image (54).png>)
 
 * Clicking on a business, brings up more details about the selected business
 

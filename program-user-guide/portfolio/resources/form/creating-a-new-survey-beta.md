@@ -17,8 +17,6 @@ description: This page describes how a program user can create a new survey.
 
 ![](<../../../../.gitbook/assets/image (217).png>)
 
-
-
 ## Step 3- Give the survey a title and sub-title
 
 * The survey title appears at the top of the survey and so is visible to entrepreneurs
@@ -27,7 +25,7 @@ description: This page describes how a program user can create a new survey.
 
 ## Step 4- Add a page to your survey
 
-![](<../../../../.gitbook/assets/image (219).png>)
+![](<../../../../.gitbook/assets/image (220).png>)
 
 ## **Step 5- Name your new page**
 
@@ -41,7 +39,7 @@ description: This page describes how a program user can create a new survey.
 
 * Click on the 'add new section' button
 * Use sections to break the survey down into logical and manageable parts
-* Questions are added to sections not pages.  Therefore your survey will need at least one section&#x20;
+* Questions are added to sections not pages. Therefore your survey will need at least one section
 
 ![](<../../../../.gitbook/assets/image (222).png>)
 
