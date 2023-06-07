@@ -6,10 +6,8 @@
 
 * [Introduction to creating a new survey](tutorials/creating-a-survey.md)
 * [Introduction to the form editor](tutorials/settings.md)
-* [Resources](tutorials/resources.md)
-* [Creating a Form](tutorials/creating-a-form.md)
-* [Portal](tutorials/portal.md)
-* [Analytics](tutorials/analytics.md)
+* [Introduction to testing a form](tutorials/resources.md)
+* [Introduction to publishing a form](tutorials/creating-a-form.md)
 
 ## How to guides
 

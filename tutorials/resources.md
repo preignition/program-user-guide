@@ -1,7 +1,9 @@
-# Resources
+# Introduction to testing a form
 
 {% hint style="info" %}
-This short tutorial introduces Resources 123.  For more information refer to the relevant How To Guide
+This 2 minute tutorial shows you how to test a form. For more information refer to the relevant [How To Guide](../how-to-guides/survey-app/form-editor/testing-a-form.md)
 {% endhint %}
 
-{% embed url="https://www.youtube.com/watch?v=dJ9-ekj6IFE" %}
+{% embed url="https://youtu.be/w1pGiudESmg" %}
+Short video which shows how to test a form
+{% endembed %}

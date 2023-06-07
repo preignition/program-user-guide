@@ -2,62 +2,68 @@
 
 {% swagger baseUrl="https://preignition.org/api" path="/v1/data/:programID/survey/:resourceID" method="get" summary="Get Survey Data" %}
 {% swagger-description %}
-This endpoint allows to get an export of survey data, based on `resourceID` and `programID`.Usually, export links are build by the application using the export tool (see export tool ).
+This endpoint allows to get an export of survey data, based on 
+
+`resourceID`
+
+ and 
+
+`programID`
+
+.Usually, export links are build by the application using the export tool (see export tool ).
 {% endswagger-description %}
 
-{% swagger-parameter in="path" name="resourceID" type="string" %}
+{% swagger-parameter in="path" name="resourceID" type="string" required="false" %}
 The ID of the resource (survey)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="path" name="programID" type="string" %}
+{% swagger-parameter in="path" name="programID" type="string" required="false" %}
 ID of the program
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="format" type="string" %}
+{% swagger-parameter in="query" name="format" type="string" required="false" %}
 return format, either ("csv" - default or "json").
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="refKey" type="string" %}
-a key pointing to a list of businesses. The export tool stores a list of selected businesses that will be looped over while building the export object. 
+{% swagger-parameter in="query" name="refKey" type="string" required="false" %}
+a key pointing to a list of businesses. The export tool stores a list of selected businesses that will be looped over while building the export object.
 
 `refKey`
 
- is a pointer to this location.
+is a pointer to this location.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="returnType" type="string" %}
+{% swagger-parameter in="query" name="returnType" type="string" required="false" %}
 "code" or "human" (default).
 
-\
-
+\\
 
 Specify the type of return. "human" will convert codes into human-readable lookups.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="buildID" type="string" %}
-The 
+{% swagger-parameter in="query" name="buildID" type="string" required="false" %}
+The
 
 `buildID`
 
- of the survey (
+of the survey (
 
 `resourceID`
 
 ). A build is a frozen snapshot of survey definition at a given time. It is equivalent to a version number.
 
-\
+\\
 
-
-The default value is the current 
+The default value is the current
 
 `buildID`
 
- for 
+for
 
 `programID`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="token" type="string" %}
+{% swagger-parameter in="query" name="token" type="string" required="false" %}
 A valid token to identify the user initiating the request
 {% endswagger-parameter %}
 

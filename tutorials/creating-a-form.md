@@ -1,7 +1,9 @@
-# Creating a Form
+# Introduction to publishing a form
 
 {% hint style="info" %}
-This short tutorial shows you how to create a Form.  For more information refer to the [Forms How to Guide](broken-reference)
+This 60 second tutorial shows you how to publish a form. For more information refer to the relevant [How to Guide](../how-to-guides/survey-app/form-editor/publishing-a-form.md)
 {% endhint %}
 
-{% embed url="https://www.youtube.com/watch?v=8V9n9MrkMG4" %}
+{% embed url="https://youtu.be/jBzJ1rmaQlg" %}
+Short video showing how to publish a form
+{% endembed %}

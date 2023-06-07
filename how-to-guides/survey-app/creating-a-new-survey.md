@@ -12,11 +12,11 @@ Select 'New Survey' on your survey workspace
 
 ## Step 2
 
-Give your survey a name and brief description.  &#x20;
+Give your survey a name and brief description.
 
 Then select 'Form' from the top menu
 
-![](<../../.gitbook/assets/image (7) (1) (1).png>)
+![](<../../.gitbook/assets/image (10) (1).png>)
 
 ## Step 3
 
@@ -43,5 +43,5 @@ If you select 'confirm' you will be taken to a summary page for your new survey,
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-Congratulations you have created your struture for your new survey.  The following 'how to' guides will show you how to build it out.
+Congratulations you have created your struture for your new survey. The following 'how to' guides will show you how to build it out.
 {% endhint %}

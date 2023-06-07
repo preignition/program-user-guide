@@ -2,7 +2,7 @@
 
 ### Question
 
-I want to test that my program is properly set up on Preignition but I don't want to interfere with my program's live data.  What should I do?
+I want to test that my program is properly set up on Preignition but I don't want to interfere with my program's live data. What should I do?
 
 ### Answer
 
@@ -11,16 +11,15 @@ I want to test that my program is properly set up on Preignition but I don't wan
 * Adding `?testMode=true` to the `/apply/{programAlias}` URL will add a new user as a 'testMember'
 * All the logic of the account set up and application process will run as normal, except that testMembers will not show up in the program's live selection page.
 
-![Example of creating a testMember account on the TBN program](<../.gitbook/assets/image (152).png>)
+![Example of creating a testMember account on the TBN program](<../.gitbook/assets/image (152) (2).png>)
 
-* A 'test mode' message will be displayed.\
-
+* A 'test mode' message will be displayed.\\
 
 ![](<../.gitbook/assets/image (151).png>)
 
 * Apply for the program as usual.
 
-### Step 2-  Review the 'test' selection page
+### Step 2- Review the 'test' selection page
 
 * To review the 'test' section page, go to the live selection page and add`?testMode=true to the URL.`
 
@@ -31,4 +30,3 @@ I want to test that my program is properly set up on Preignition but I don't wan
 * The only exception is that the 'apply date' is not shown.
 
 ![](<../.gitbook/assets/image (157).png>)
-

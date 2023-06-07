@@ -20,14 +20,14 @@ Forms can adapt to the needs and preferences of respondents. Some respondents ma
 4. Images can be added to complement questions
 
 {% hint style="info" %}
-The 'Easy Read' version renders the form and the interface differently, but answers to questions are stored in the same dataset as for other versions of the survey.  In the analytics, it is possible to create a subset of the data, consisting of answers submitted using the Easy Read version of a form.
+The 'Easy Read' version renders the form and the interface differently, but answers to questions are stored in the same dataset as for other versions of the survey. In the analytics, it is possible to create a subset of the data, consisting of answers submitted using the Easy Read version of a form.
 {% endhint %}
 
 ## Step 1
 
 Activate the 'Easy Read' mode under '[Form Behaviour](form-behaviour.md)'
 
-An Easy Read option appears in the 'Form Definition' menu&#x20;
+An Easy Read option appears in the 'Form Definition' menu
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -47,7 +47,7 @@ Initially the text in the Easy Read mode is the same as the text in the standard
 
 ![](<../../../.gitbook/assets/image (307) (1) (1) (1) (1).png>)
 
-* The![](<../../../.gitbook/assets/image (297) (1) (1) (1) (3).png>)emoji shows the text as it appears in the standard version of the form. It can't be edited here.
+* The![](<../../../.gitbook/assets/image (297) (1) (1) (1) (3) (1).png>)emoji shows the text as it appears in the standard version of the form. It can't be edited here.
 * The ![](<../../../.gitbook/assets/image (309) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)emoji shows the text as it appears in the Easy Read version of the Form. It can be edited here.
 * Any changes to the Easy Read text will be highlighted in the 'Easy Read Version' tree grid as shown above
 
