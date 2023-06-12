@@ -7,6 +7,7 @@
 * [Introduction to testing a form](tutorials/introduction-to-testing-a-form.md)
 * [Introduction to publishing a form](tutorials/introduction-to-publishing-a-form.md)
 * [Introduction to Easy Read](tutorials/introduction-to-easy-read.md)
+* [This is a new file](tutorials/this-is-new-file.md)
 
 ## How to guides
 
