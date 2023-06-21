@@ -7,7 +7,7 @@
 * [Introduction to testing a form](tutorials/introduction-to-testing-a-form.md)
 * [Introduction to publishing a form](tutorials/introduction-to-publishing-a-form.md)
 * [Introduction to Easy Read](tutorials/introduction-to-easy-read.md)
-* [Introduction to Sign Language](tutorials/introduction-to-easy-read-1.md)
+* [Introduction to Sign Language](tutorials/introduction-to-sign-language.md)
 
 ## How to guides
 
