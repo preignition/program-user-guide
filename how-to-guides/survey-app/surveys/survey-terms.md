@@ -1,5 +1,7 @@
 ---
-description: This page describes how you can add your own survey terms which respondents have to agree to before starting your survey
+description: >-
+  This page describes how you can add your own survey terms which respondents
+  have to agree to before starting your survey
 ---
 
 # Survey terms- advanced
@@ -30,7 +32,7 @@ Markdown is supported and CSS Classes can be used to display or hide accessibili
 
 You can use the Preview tab to see how your terms will be presented to respondents
 
-![](<../../../.gitbook/assets/image (2) (2).png>)
+![](<../../../.gitbook/assets/image (2) (2) (2).png>)
 
 ## Step 3
 

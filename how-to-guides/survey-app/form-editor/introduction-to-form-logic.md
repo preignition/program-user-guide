@@ -10,7 +10,11 @@ Adding logic to a form enables you to customize how the form behaves when respon
 
 ## What is a logical expression?
 
-Logical expressions are mathematical expressions which return a result of either True or False. A defined action such as Hide, Required, Invalid or Read-Only is then applied depending upon the result.
+Logical expressions are mathematical expressions which return a result of either True or False.&#x20;
+
+A defined action is then applied depending upon the result.  For Pages and Sections, form logic is used to control whether a page or section is visible or hidden.  For Questions, 'required', 'invalid' and 'read-only' attributes can be also be applied in addition to the 'hidden' attribute'
+
+## Worked example&#x20;
 
 For example, you may be interested in whether your respondents like fruit or not. If they do, you would like to ask a follow up question to understand the sort of fruit they like.
 
@@ -21,18 +25,12 @@ It doesn't make sense to ask the follow up question if the answer to the first q
 ## How to write a logical expression?
 
 {% hint style="info" %}
-To access the logic function you must switch on the 'Advanced' toggle at the top of the screen.
+To access the logic function you must switch on the 'Advanced' toggle at the top of the screen.  A 'logic mode' icon will appear in the bottom right hand corner when you are in on a page, section or question.&#x20;
 {% endhint %}
-
-In advanced mode, a Logic tab appears in the form builder for pages, sections and questions.
 
 Below is an example of the logic feild for the question we outlined above about fruit
 
-![](<../../../.gitbook/assets/image (304) (1) (1) (1) (1) (1) (1) (1) (1).png>)
-
-{% hint style="info" %}
-Always add the logical expression to the page, section or question which you want the action to be applied to
-{% endhint %}
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot, showing how the 'logic mode' icon appears in the bottom left hand corner on a question when the 'advanced' tab is activated</p></figcaption></figure>
 
 {% hint style="success" %}
 Always select the option 'Lock this question while editing logic'
@@ -51,6 +49,10 @@ It is possible to test a logical expression by toggling on the button 'test expr
 
 This brings up all the questions that have been refered to in the expression.
 
+{% embed url="https://youtu.be/k1HRzC63SsA" %}
+Video showing how to test a logical expression
+{% endembed %}
+
 Try answering the questions and check whether the expression result gives your desired outcome.
 
 {% hint style="info" %}
@@ -68,13 +70,13 @@ With the logical expresssion written above, the follow up question is visible in
 It would be preferable if the question is hidden initially and is only displayed if a respondent answers 'Yes' to the question 'Do you like fruit?'
 
 {% hint style="info" %}
-Use !( ) to invert the expression and hide a question initially
+Use ! to invert the expression and hide a question initially
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (297) (1) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot showing how ! has been used to invert the expression and hide a question initially</p></figcaption></figure>
 
-* Adding !( ) around the logical expression, inverts it.
-* In the example above, the expression now asks whether the answer to the question 'Do you like fruit?' does NOT equal 'yes'
+* Use != for Not Equal. &#x20;
+* In the example above, the expression now asks whether the answer to the question 'Do you like fruit?' does Not equal 'yes'
 * If the question 'Do you like fruit' is not answered or the answer is 'No' the expression result will be 'True' and the follow up question will be hidden
 * Only if the answer is 'Yes' will the expression result be 'False' and the follow up question will be displayed
 
@@ -94,3 +96,13 @@ A wide range of logic options are available. The most commonly used are as follo
 | Logical AND                | &&     |
 | logical OR                 | \|\|   |
 | Negate                     | !      |
+
+## Tips for applying logic
+
+* Apply the logic to the resource (Page, Section or question) which you want the action to be applied to
+* Apply the logic as high up in the form structure as possible.  If you have a number of Questions which you want to apply the same logic expression to, add them to a Section, and apply the logic to the section.
+* When writting complex logic, it is easier to think in terms of when an item should be displayed, rather than when it should be hidden.  Create the expesssion with this in mind and then invert the expression using (!(expression) to hide it for the same configuration.
+* Always select the option 'Lock this question while editing logic' and unselect this option when you have finished writting the logical expression.
+
+&#x20;
+
