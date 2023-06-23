@@ -30,7 +30,7 @@ To access the logic function you must switch on the 'Advanced' toggle at the top
 
 Below is an example of the logic feild for the question we outlined above about fruit
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot, showing how the 'logic mode' icon appears in the bottom left hand corner on a question when the 'advanced' tab is activated</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Screenshot, showing how the 'logic mode' icon appears in the bottom left hand corner on a question when the 'advanced' tab is activated</p></figcaption></figure>
 
 {% hint style="success" %}
 Always select the option 'Lock this question while editing logic'
@@ -73,7 +73,7 @@ It would be preferable if the question is hidden initially and is only displayed
 Use ! to invert the expression and hide a question initially
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot showing how ! has been used to invert the expression and hide a question initially</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Screenshot showing how ! has been used to invert the expression and hide a question initially</p></figcaption></figure>
 
 * Use != for Not Equal. &#x20;
 * In the example above, the expression now asks whether the answer to the question 'Do you like fruit?' does Not equal 'yes'
