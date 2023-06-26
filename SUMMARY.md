@@ -26,6 +26,7 @@
     * [Advanced form logic](how-to-guides/survey-app/form-editor/advanced-form-logic.md)
     * [Using tooltips](how-to-guides/survey-app/form-editor/using-tooltips.md)
     * [Using Markdown](how-to-guides/survey-app/form-editor/introduction-to-markdown.md)
+    * [Adding an accessibility options page](how-to-guides/survey-app/form-editor/adding-an-accessibility-options-page.md)
     * [Form Behaviour](how-to-guides/survey-app/form-editor/form-behaviour.md)
     * [Image Library](how-to-guides/survey-app/form-editor/image-library.md)
     * [Easy Read](how-to-guides/survey-app/form-editor/easy-read.md)

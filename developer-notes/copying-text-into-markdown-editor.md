@@ -26,7 +26,7 @@ Go sources, select mdtotext and select 'run'
 
 Go to bottom of consol panel and type mdToText($0) and enter
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 6
 

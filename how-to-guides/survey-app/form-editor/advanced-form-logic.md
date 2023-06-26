@@ -32,11 +32,11 @@ The expression is applied to the 'Food Preferences' page and asks whether the re
 
 Only if the answer is 16 or above will the expression = false and the page will be displayed.
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 The following expression can then be applied to the 'Not Eligible' page so this page appears if the respondent's age is 15 or less.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 The result for a survey respondent is as follows:
 
@@ -62,7 +62,7 @@ In this example the || symbol is used to show or hide a question based on the an
 
 &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Screenshot showing how the || expression can be used to display or hide a question based on the answers to two proceeding questions</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Screenshot showing how the || expression can be used to display or hide a question based on the answers to two proceeding questions</p></figcaption></figure>
 
 The above expression reads as:
 
@@ -78,7 +78,7 @@ The in operator can be used to check whether an element appears in a list of opt
 
 In this example the in operator is used to display or hide a question based on a selection from a proceeding checkbox list.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshoot showing how the in operator can be used to display or hide a question based on a slection from a prceeding checkbox list</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption><p>Screenshoot showing how the in operator can be used to display or hide a question based on a slection from a prceeding checkbox list</p></figcaption></figure>
 
 The above expression reads as:
 
@@ -96,7 +96,7 @@ It works by first checking to see if the first segment of an expression is true.
 
 In this example the ternary operator is used to display or hide a page based on the answers to three preceeding questions.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Example of the ternary operator being used to display or hide a page based on the answers to three preceeding questions</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>Example of the ternary operator being used to display or hide a page based on the answers to three preceeding questions</p></figcaption></figure>
 
 The above expression works as follow:
 
@@ -128,4 +128,4 @@ This is useful for validating a group of checkbox answers and limiting the numbe
 
 &#x20;&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption><p>Screenshot showing how the length expression can be used to limit the number os</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Screenshot showing how the length expression can be used to limit the number os</p></figcaption></figure>
