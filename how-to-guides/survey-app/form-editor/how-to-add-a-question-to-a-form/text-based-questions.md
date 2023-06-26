@@ -53,7 +53,7 @@ Selecting the 'more accessible label' option allows you to write the label in ma
 
 For example:
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 renders as:
 

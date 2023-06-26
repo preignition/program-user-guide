@@ -77,7 +77,7 @@ Our platform has a feature called 'helper text' . Helper text is announced by sc
 
 Here is a couple of examples of how it could look like:
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 

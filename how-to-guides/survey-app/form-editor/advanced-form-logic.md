@@ -22,7 +22,7 @@ The following comparison operators are available
 | Less than or equal         | <=     |
 | Element in array or string | in     |
 
-## Worked example
+### Worked example
 
 This is an example of the !( > ) symbol being used to show or hide pages based on a respondent's age.
 
@@ -32,11 +32,11 @@ The expression is applied to the 'Food Preferences' page and asks whether the re
 
 Only if the answer is 16 or above will the expression = false and the page will be displayed.
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 The following expression can then be applied to the 'Not Eligible' page so this page appears if the respondent's age is 15 or less.
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 The result for a survey respondent is as follows:
 
@@ -56,13 +56,13 @@ The result for a survey respondent is as follows:
 | Logical AND      | &&     |
 | Logical OR       | \|\|   |
 
-## Worked example
+### Worked example
 
 In this example the || symbol is used to show or hide a question based on the answers to two preceeding questions.
 
 &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Screenshot showing how the || expression can be used to display or hide a question based on the answers to two proceeding questions</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Screenshot showing how the || expression can be used to display or hide a question based on the answers to two proceeding questions</p></figcaption></figure>
 
 The above expression reads as:
 
@@ -70,7 +70,44 @@ It is true and therefore hidden when ('do you have children that go to school is
 
 The expression is then inverted using ! to display it for the same configuration. &#x20;
 
+## in operator
 
+The in operator can be used to check whether an element appears in a list of options
+
+### Worked example
+
+In this example the in operator is used to display or hide a question based on a selection from a proceeding checkbox list.
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Screenshoot showing how the in operator can be used to display or hide a question based on a slection from a prceeding checkbox list</p></figcaption></figure>
+
+The above expression reads as:
+
+It is true and therefore hidden when 'apples' is selected as a response to the question 'what fruit do your like to eat?'
+
+The expression is then inverted using ! to display it for the same configuration. &#x20;
+
+## **Ternary operator**
+
+The ternary operator, also known as the conditional operator, is very useful when writing complex logical expressions. &#x20;
+
+It works by first checking to see if the first segment of an expression is true.  If so the consequent segment is evaluated.  Otherwise, the alternative is.  If the consequent section is missing, the test result itself will be used instead.
+
+### Worked  example
+
+In this example the ternary operator is used to display or hide a page based on the answers to three preceeding questions.
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Example of the ternary operator being used to display or hide a page based on the answers to three preceeding questions</p></figcaption></figure>
+
+The above expression works as follow:
+
+The first statement is evaluated initially.  It asks whether the option 'a person without disabilities' has been selected as an option from the question 'Which do you consider yourself to be? &#x20;
+
+If it equates to **false** the alternative is returned.  The alternative appears after the : at the end of the statement and in this instance is true**.**  &#x20;
+
+If it equates to true the consequent segment is evaluated. &#x20;
+
+In this instance the consequent segment asks whether the answer to the question 'do you currently work for the government of the country you live in' is NOT equal to No or whether the answer to the question 'do you currently work for a United Nations Country Team is NOT equal to No.  This expression will only be false if the answer to both these questions is 'No'.
+
+The result of this logical expression is return a true expression result (and hide the page) in all circustances except if the respondent is a person without disabilities who does not currently work for the government of the counntry they live in or currently work for a United Nations Country Team.&#x20;
 
 &#x20;&#x20;
-

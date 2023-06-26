@@ -26,13 +26,13 @@ Selecting the 'Image Library' from the menu, gives users two option to add image
 Make sure your images are a consistent size before uploading to your image library
 {% endhint %}
 
-In order for your images to look their best in your forms, it is important that they are a consistent size.  Your should resize your images before uploading them to your image library.
+In order for your images to look their best in your forms, it is important that they are a consistent size. Your should resize your images before uploading them to your image library.
 
 Images of any size and shape can be uploaded, but we recommend using square images to illustrate questions.
 
 There are many free tools which you can use to resize your images, including [Adobe Express](https://express.adobe.com/sp).
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Examples of standard image sizes from Adobe Express</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (2).png" alt=""><figcaption><p>Examples of standard image sizes from Adobe Express</p></figcaption></figure>
 
 ## Step 4
 
