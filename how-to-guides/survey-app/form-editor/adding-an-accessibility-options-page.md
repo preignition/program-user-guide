@@ -16,13 +16,13 @@ Add a new page and section at the beginning of your form.  Give the page a title
 
 &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt="Screenshot showing a new page and section being added at the beginning of a form"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt="Screenshot showing a new page and section being added at the beginning of a form"><figcaption></figcaption></figure>
 
 ## Step 2
 
 Drag and drop to add a new 'free text' question into the section that you have just created.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt="Screenshot showing a new &#x27;Free Text&#x27; feild being added to the form.  By dragging the question type from the left hand column and dropping into the middle section of the page."><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt="Screenshot showing a new &#x27;Free Text&#x27; feild being added to the form.  By dragging the question type from the left hand column and dropping into the middle section of the page."><figcaption></figcaption></figure>
 
 ## Step 3
 

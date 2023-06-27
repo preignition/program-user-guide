@@ -5,7 +5,7 @@ description: This page provides an introduction to form logic.
 # Introduction to form logic
 
 {% hint style="success" %}
-Adding logic to a form enables you to customize how the form behaves when respondents are filling it in
+Adding logic to a form enables you to customize how your form behaves when respondents are filling it in
 {% endhint %}
 
 ## What is a logical expression?
@@ -20,7 +20,7 @@ For example, you may be interested in whether your respondents like fruit or not
 
 It doesn't make sense to ask the follow up question if the answer to the first question is 'no'. Logic allows you to hide the follow up question.
 
-![Example of a question where logic can help](<../../../.gitbook/assets/image (300) (1) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (300) (1) (1) (1) (1) (1) (1).png" alt="Screenshot showing a question, &#x22;do you like fruit&#x22; and a follow up question asking &#x22;what sort of fruit do you like?&#x22;"><figcaption><p>Example of a question where logic can help</p></figcaption></figure>
 
 ## How to write a logical expression?
 
@@ -30,7 +30,7 @@ To access the logic function you must switch on the 'Advanced' toggle at the top
 
 Below is an example of the logic feild for the question we outlined above about fruit
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>Screenshot, showing how the 'logic mode' icon appears in the bottom left hand corner on a question when the 'advanced' tab is activated</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption><p>Screenshot, showing how the 'logic mode' icon appears in the bottom left hand corner on a question when the 'advanced' tab is activated</p></figcaption></figure>
 
 {% hint style="success" %}
 Always select the option 'Lock this question while editing logic'
@@ -61,7 +61,7 @@ Form logic is extremely powerful and adds focus and dynamism to your forms. Howe
 
 ## How to hide a question initially
 
-Often you will want a question to be hidden at first and for it only to appear based on an answer to a previous question
+Often you will want a question to be hidden initially and for it only to appear based on an answer to a previous question
 
 The question 'what sort of fruit do you like?' is a good example.
 
@@ -73,7 +73,9 @@ It would be preferable if the question is hidden initially and is only displayed
 Use ! to invert the expression and hide a question initially
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption><p>Screenshot showing how ! has been used to invert the expression and hide a question initially</p></figcaption></figure>
+
+
+<figure><img src="../../../.gitbook/assets/image (17).png" alt="A screenshot, showing a logic icon appearing in the bottom right hand corner when the &#x27;Advanced&#x27; toggle is activated.  The &#x27;Advanced&#x27; toggle appear in the top right hand corner of the image."><figcaption><p>Screenshot, showing how the ! symbol has been used to invert the logical expression written within the brackets</p></figcaption></figure>
 
 * Use != for Not Equal. &#x20;
 * In the example above, the expression now asks whether the answer to the question 'Do you like fruit?' does Not equal 'yes'
@@ -97,12 +99,12 @@ A wide range of logic options are available. The most commonly used are as follo
 | logical OR                 | \|\|   |
 | Negate                     | !      |
 
-## Tips for applying logic
+## Tips for applying form logic
 
 * Apply the logic to the resource (Page, Section or question) which you want the action to be applied to
-* Apply the logic as high up in the form structure as possible.  If you have a number of Questions which you want to apply the same logic expression to, add them to a Section, and apply the logic to the section.
+* Apply the logic as high up in the form structure as possible.  If you have a number of Questions which you want to apply the same logic expression to, first add the questions to a Section, and apply the logic to the section.
 * When writting complex logic, it is easier to think in terms of when an item should be displayed, rather than when it should be hidden.  Create the expesssion with this in mind and then invert the expression using (!(expression) to hide it for the same configuration.
-* Always select the option 'Lock this question while editing logic' and unselect this option when you have finished writting the logical expression.
+* Always select the option 'Lock this question while editing logic' and unselect this option when you have finished writing the logical expression.
 
 &#x20;
 
