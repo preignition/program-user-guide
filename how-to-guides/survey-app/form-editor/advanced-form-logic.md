@@ -32,11 +32,11 @@ The expression is applied to the 'Food Preferences' page and asks whether the re
 
 Only if the answer is 16 or above will the expression = false and the page will be displayed.
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt="Screenshot showing an example of a logical expression being used to hide or display a page based on a respondents age."><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt="Screenshot showing an example of a logical expression being used to hide or display a page based on a respondents age."><figcaption></figcaption></figure>
 
 The following expression can then be applied to the 'Not Eligible' page so this page appears if the respondent's age is 15 or less.
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt="Screenshot showing an example of a logical expression being used to hide or display a page based on a respondents age."><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20).png" alt="Screenshot showing an example of a logical expression being used to hide or display a page based on a respondents age."><figcaption></figcaption></figure>
 
 The result for a survey respondent is as follows:
 
@@ -62,7 +62,7 @@ short video showing how a comparitive logical expression can be used to hide or 
 
 In this example the || symbol is used to display or hide a question based on the answers to two preceeding questions.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt="Screenshot showing how the || symbol can be used to display or hide a question based on the answers to two preceeding questions."><figcaption><p>Screenshot showing how the || expression can be used to display or hide a question based on the answers to two proceeding questions</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt="Screenshot showing how the || symbol can be used to display or hide a question based on the answers to two preceeding questions."><figcaption><p>Screenshot showing how the || expression can be used to display or hide a question based on the answers to two proceeding questions</p></figcaption></figure>
 
 The above expression works as follows:
 
@@ -82,7 +82,7 @@ The in operator can be used to check whether an element appears in a list of opt
 
 In this example the in operator is used to display or hide a question based on a selection from a proceeding checkbox list.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="Screenshot showing an example of a logical expression using the &#x27;in&#x27; operator"><figcaption><p>Screenshoot showing how the in operator can be used to display or hide a question based on a slection from a prceeding checkbox list</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt="Screenshot showing an example of a logical expression using the &#x27;in&#x27; operator"><figcaption><p>Screenshoot showing how the in operator can be used to display or hide a question based on a slection from a prceeding checkbox list</p></figcaption></figure>
 
 The above expression reads as:
 
@@ -100,7 +100,7 @@ It works by first checking to see if the first segment of an expression is true.
 
 In this example the ternary operator is used to hide or display the question 'Did you like this survey' based on the respondent's answer to the question 'Do you agree to participate in this survey'
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="Screenshot showing a simple worked example of using the ternary operator to hide or display a question based on a respondent&#x27;s answer to a previous question"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt="Screenshot showing a simple worked example of using the ternary operator to hide or display a question based on a respondent&#x27;s answer to a previous question"><figcaption></figcaption></figure>
 
 The above expression works as follow:
 
@@ -140,14 +140,16 @@ They can be combined with the ! expression to invert the expression within the b
 
 ## Custom Transforms
 
-The application adds custom transforms to simplify expressions.  Transforms use the | pipe operator.
+The application adds custom transforms to simplify expressions.  Transforms use the | pipe operator. &#x20;
 
-Currently the only available custom transforms is:
+### Length (for computing the length of an array)
 
-### `length for computing the length of an Array`
+This is useful for validating a group of checkbox answers and limiting the number of boxes checked. &#x20;
 
-This is useful for validating a group of checkbox answers and limiting the number of boxes checked.  For instance limiting the number of answers of a question \`Select all colors you like\` to more than 2 answers, one would add this expression to the validity logic expression:
+For instance limiting the number of answers of a question \`What colors do you like\` to no more than 2 answers, one would add this expression to the validity logic expression:
 
-&#x20;&#x20;
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="Screenshot showing how the length operator can be used to limit the number of checkboxes which are checked"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption><p>Screenshot showing how the length expression can be used to limit the number os</p></figcaption></figure>
+A custom validation message can then be added under the settings option.   This message will appear if a respondents checks 3 or more colours.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt="Screenshot showing how a custom validation message can be created under the settings option."><figcaption></figcaption></figure>
