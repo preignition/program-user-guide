@@ -8,6 +8,7 @@
 * [Introduction to publishing a form](tutorials/introduction-to-publishing-a-form.md)
 * [Introduction to Easy Read](tutorials/introduction-to-easy-read.md)
 * [Introduction to Sign Language](tutorials/introduction-to-sign-language.md)
+* [Introduction to form logic](tutorials/introduction-to-form-logic.md)
 
 ## How to guides
 
