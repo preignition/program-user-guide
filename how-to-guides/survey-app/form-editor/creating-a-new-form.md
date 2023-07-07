@@ -1,12 +1,12 @@
 ---
-description: A step by step guide to creating a new form
+description: A step by step guide to strucuturing a form
 ---
 
-# Creating a new form
+# Structuring a form
 
 ## Step 1
 
-Click on the form in order to edit it.
+Click on the form editor feild in order to edit it.
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

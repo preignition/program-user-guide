@@ -15,7 +15,7 @@
 * [Survey App](how-to-guides/survey-app/README.md)
   * [Creating a new survey](how-to-guides/survey-app/creating-a-new-survey.md)
   * [Form Editor](how-to-guides/survey-app/form-editor/README.md)
-    * [Creating a new form](how-to-guides/survey-app/form-editor/creating-a-new-form.md)
+    * [Structuring a form](how-to-guides/survey-app/form-editor/creating-a-new-form.md)
     * [Adding questions to a form](how-to-guides/survey-app/form-editor/how-to-add-a-question-to-a-form/README.md)
       * [Text based questions](how-to-guides/survey-app/form-editor/how-to-add-a-question-to-a-form/text-based-questions.md)
       * [Choice based questions](how-to-guides/survey-app/form-editor/how-to-add-a-question-to-a-form/choice-based-questions.md)
