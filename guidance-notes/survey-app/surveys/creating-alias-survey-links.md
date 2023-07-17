@@ -12,14 +12,14 @@ You can customise your survey links to make them easier for respondents to read
 
 * Go to 'Distribute' in the Survey Definition menu
 * Select 'Alias' under the heading 'Configuration'
-* You can add aliases as shown below.  You can add as many aliases as you wish
+* You can add aliases as shown below. You can add as many aliases as you wish
 * Select 'enter' to confirm the alias
 
 {% hint style="info" %}
 Only lowercase letter and numbers are allowed for aliases
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (2) (4).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 

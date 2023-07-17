@@ -16,7 +16,7 @@ Add a new page and section at the beginning of your form.  Give the page a title
 
 &#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="Screenshot showing a new page and section being added at the beginning of a form"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="Screenshot showing a new page and section being added at the beginning of a form"><figcaption></figcaption></figure>
 
 ## Step 2
 
