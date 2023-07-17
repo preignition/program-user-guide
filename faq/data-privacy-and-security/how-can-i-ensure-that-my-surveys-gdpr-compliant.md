@@ -41,7 +41,7 @@ for example:
 
 > By filling out this survey you agree that we will process your data in line with our our privacy policy
 
-A good place to have this information in your questionnaires is the [Landing Page](../../how-to-guides/survey-app/surveys/presenting-surveys.md). This feature allows you to add a welcome page for your survey, which can include data, pictures, and a button to START the survey.
+A good place to have this information in your questionnaires is the [Landing Page](../../guidance-notes/survey-app/surveys/presenting-surveys.md). This feature allows you to add a welcome page for your survey, which can include data, pictures, and a button to START the survey.
 
 <figure><img src="../../.gitbook/assets/image (4) (3).png" alt=""><figcaption><p>Example of a landing page gettig consent for non-senitive data in a survey</p></figcaption></figure>
 

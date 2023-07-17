@@ -32,4 +32,4 @@ Go to bottom of consol panel and type mdToText($0) and enter
 
 The text will now appear in Markdown (MD). You can copy and paste into a markdown editor.
 
-<figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (2) (2).png" alt=""><figcaption></figcaption></figure>

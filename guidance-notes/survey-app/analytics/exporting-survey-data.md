@@ -5,7 +5,7 @@ description: This page describes how you can export survey data for further anal
 # Exporting Survey Data
 
 {% hint style="warning" %}
-If you export data from the platform, you are responsible for the privacy of the exported data.   Exported data must be treated in line with relevant data protection regulations such as GDPR
+If you export data from the platform, you are responsible for the privacy of the exported data. Exported data must be treated in line with relevant data protection regulations such as GDPR
 {% endhint %}
 
 ## Step 1
@@ -22,17 +22,17 @@ A privacy warning window will be activated, reminding you of your data protectio
 
 You will need to tick the box confirming that you understand these responsibilitis before you can export survey data
 
-![](<../../.gitbook/assets/image (311).png>)
+![](<../../../.gitbook/assets/image (311).png>)
 
 ## Step 4
 
 There are various options for to chose from when exporting survey data
 
-![](<../../.gitbook/assets/image (331).png>)
+![](<../../../.gitbook/assets/image (331).png>)
 
 ## Step 5
 
-First select the data form that you want to export your data in.   There are two choices:
+First select the data form that you want to export your data in. There are two choices:
 
 **json**- JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa)
 
@@ -40,11 +40,11 @@ First select the data form that you want to export your data in.   There are two
 
 ## Step 6
 
-Next select the type of data that you would like to export.  There are three choices:
+Next select the type of data that you would like to export. There are three choices:
 
-**Anonymized**- Provides the option of exporting an anonymized data set.  MetaData and all feilds marked as 'private' on your form will not be exported.   This is a great option for protecting personal data as long as you have marked all questions which ask for personal data as private
+**Anonymized**- Provides the option of exporting an anonymized data set. MetaData and all feilds marked as 'private' on your form will not be exported. This is a great option for protecting personal data as long as you have marked all questions which ask for personal data as private
 
-**Raw-** Provides the option of exporting all the data that has been collected against a survey, including MetaData and all response feilds.  Great care should be taken with this sort of data.
+**Raw-** Provides the option of exporting all the data that has been collected against a survey, including MetaData and all response feilds. Great care should be taken with this sort of data.
 
 **Humanized**- Similar to raw data, but with transalated responses and question lookups added
 
@@ -52,12 +52,10 @@ Next select the type of data that you would like to export.  There are three cho
 
 Once you have decided how you want to export the survey data, select 'Export Now'
 
-&#x20;&#x20;
-
-![](<../../.gitbook/assets/image (306).png>)
+![](<../../../.gitbook/assets/image (306).png>)
 
 ## Step 8
 
 The data will start downloading automatically
 
-![](<../../.gitbook/assets/image (325).png>)
+![](<../../../.gitbook/assets/image (325).png>)
