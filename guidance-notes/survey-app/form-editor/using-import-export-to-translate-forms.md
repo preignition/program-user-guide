@@ -1,7 +1,7 @@
 # Using import/ export to translate forms
 
 {% hint style="info" %}
-The import/ export feature facilitates working with translators by making it possible for a form to be translated outside the platfrom and then imported back in.
+The import/ export feature facilitates working with translators by making it possible for a form to be translated outside the platform and then imported back in.
 {% endhint %}
 
 ## Step 1
@@ -24,7 +24,7 @@ A privacy warning notice will appear.  You will be asked to confirm that you hav
 
 For the time being, 'localize' is the only type of export available.  Choose the language that you want to translate the form into and select 'Export Now'
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Screenshot showing 'French' as the language to translate the form into</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Screenshot showing 'French' as the language to translate the form into</p></figcaption></figure>
 
 ## Step 4
 
@@ -41,12 +41,36 @@ The json file can be shared with translators.  The file contains all the fields 
 Take care not to change any of the metadata values contained within the file.  These are used to validate and guide the data import process.  If these are changed it will not be possible to import the file back into the platform.
 
 {% hint style="info" %}
-The file must be work editied in a json editor and imported back into the platform in this file format.
+The file must be editied in a json editor and imported back into the platform in the json file format.
 {% endhint %}
 
 ## Step 6
 
-Once the exported form has been worked on and the appropriate feilds have been translated, the file can be imported back into the platfom.
+There are many text editors available which are suitable for editing json files.  Some of them are free and others are paid for. &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+Some text editors are only available on-line where as others are installed locally on your computer.   Generally text editors that are installed locally provide greater functionality than on-line editors.  For instance allowing for multiple cursor editing, viewing your files in a tree view and running automatic search and replace.     &#x20;
+
+&#x20;A list of the best free text editors which can be installed locally is available from Lifewire.com: [https://www.lifewire.com/best-free-text-editors-4155819](https://www.lifewire.com/best-free-text-editors-4155819)
+
+For an online tool, JSON Editor On-line is a popular choice.  [https://jsoneditoronline.org/](https://jsoneditoronline.org/)&#x20;
+
+&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Screenshot showing a json file being edited within JSON Editor Online</p></figcaption></figure>
+
+## Step 7
+
+Once the exported form has been worked on and the appropriate fields have been translated, the file can be imported back into the platform.
+
+Go to the 'Import' feild and select 'Upload translated file'.  Drag and drop is supported
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot showing the translated file being imported back onto the platform</p></figcaption></figure>
+
+## Step 8
+
+To complete the process, select the imported file from the 'latest import/ export' table and select 'process import'.
+
+The translated feild will be imported into the platform.
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Scfreenshot showing the 'process import' button in the 'latest import/ export' table</p></figcaption></figure>
 

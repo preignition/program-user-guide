@@ -10,15 +10,15 @@ Any changes made to your survey must be 'published' before they become effective
 
 ## Step 1
 
-You can publish a survey from the 'Settings' menu under Survey Definition.  Select 'publish' in the top right corner
+You can publish a survey from the 'Settings' menu under Survey Definition. Select 'publish' in the top right corner
 
 You will receive a notification that the survey has been published and the 'last published' date will be updated
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
-A survey can be unpublished at any time from the survey settings page.  This will unactivate the survey, meaning that it can no longer be responded to.
+A survey can be unpublished at any time from the survey settings page. This will unactivate the survey, meaning that it can no longer be responded to.
 
 It can republished at any time.
 
