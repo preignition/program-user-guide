@@ -35,6 +35,7 @@
     * [Translate forms](guidance-notes/survey-app/form-editor/translate-forms.md)
     * [Using import/ export to translate forms](guidance-notes/survey-app/form-editor/using-import-export-to-translate-forms.md)
     * [Access rights for forms](guidance-notes/survey-app/form-editor/access-rights-for-forms.md)
+    * [Sharing options across multiple questions](guidance-notes/survey-app/form-editor/sharing-options-across-multiple-questions.md)
   * [Survey Editor](guidance-notes/survey-app/surveys/README.md)
     * [Editing a survey](guidance-notes/survey-app/surveys/creating-a-new-survey.md)
     * [Distributing your survey](guidance-notes/survey-app/surveys/generating-survey-links.md)

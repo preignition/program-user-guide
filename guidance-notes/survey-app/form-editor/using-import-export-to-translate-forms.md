@@ -32,7 +32,7 @@ A new row appears on the Export/ Import grid, with a link to download the same e
 
 Exported file will now be available as a downloaded json file.
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (4).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 5
 
