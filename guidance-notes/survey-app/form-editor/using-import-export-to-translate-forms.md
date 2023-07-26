@@ -64,7 +64,7 @@ Once the exported form has been worked on and the appropriate fields have been t
 
 Go to the 'Import' feild and select 'Upload translated file'.  Drag and drop is supported
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot showing the translated file being imported back onto the platform</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Screenshot showing the translated file being imported back onto the platform</p></figcaption></figure>
 
 ## Step 8
 
