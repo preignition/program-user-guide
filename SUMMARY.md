@@ -72,11 +72,11 @@
   * [How to Write GDPR-proof Privacy Policy for your Surveys](faq/data-privacy-and-security/how-to-write-gdpr-proof-privacy-policy-for-your-surveys.md)
 * [Accessibility modes](faq/accessibility-modes.md)
 * [What is the best file format for Easy Read images?](faq/what-is-the-best-file-format-for-easy-read-images.md)
-* [How to user free text](faq/md/README.md)
+* [How to use free text](faq/md/README.md)
   * [Convenient Class for Accessible Surveys Free Text Field](faq/md/convenient-class-for-accessible-surveys-free-text-field.md)
   * [CSS tokens available in Markdown Free Text](faq/md/css-tokens-available-in-markdown-free-text.md)
-  * [Web-components available in Markdown Free Text](faq/md/md-web-components.md)
-  * [Accessibility Modes](faq/md/md-accessibility-mode.md)
+  * [Web-components available in Markdown Free Text](faq/md/web-components-available-in-markdown-free-text.md)
+  * [Accessibility Modes](faq/md/accessibility-mode.md)
 
 ## Release Notes
 
