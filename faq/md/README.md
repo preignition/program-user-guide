@@ -88,7 +88,7 @@ Here is an example of a markdown text that uses all the features described above
 
 ## More information
 
-- [Convenient Class for Accessible Surveys Free Text Field](./md-convenience-class.md)
-- [CSS tokens available in Markdown Free Text](./md-css-tokens.md)
-- [Web-components available in Markdown Free Text](./md-web-components.md)
-- [Accessibility Modes](./md-accessibility-mode.md)
+- [Convenient Class for Accessible Surveys Free Text Field](md-convenience-class.md)
+- [CSS tokens available in Markdown Free Text](md-css-tokens.md)
+- [Web-components available in Markdown Free Text](md-web-components.md)
+- [Accessibility Modes](md-accessibility-mode.md)
