@@ -85,3 +85,10 @@ Here is an example of a markdown text that uses all the features described above
 - `show-when-signlanguage` and `show-when-easyread` are pre-defined convenience class that shows or hide the content depending on the accessibility mode
 - `lite-youtube` is a web-component that displays a youtube video
 - `div` is an HTML tag that creates a box
+
+## More information
+
+- [Convenient Class for Accessible Surveys Free Text Field](./md-convenience-class.md)
+- [CSS tokens available in Markdown Free Text](./md-css-tokens.md)
+- [Web-components available in Markdown Free Text](./md-web-components.md)
+- [Accessibility Modes](./md-accessibility-mode.md)

@@ -73,6 +73,10 @@
 * [Accessibility modes](faq/accessibility-modes.md)
 * [What is the best file format for Easy Read images?](faq/what-is-the-best-file-format-for-easy-read-images.md)
 * [How to user free text](faq/md/README.md)
+  * [Convenient Class for Accessible Surveys Free Text Field](./md-convenience-class.md)
+  * [CSS tokens available in Markdown Free Text](./md-css-tokens.md)
+  * [Web-components available in Markdown Free Text](./md-web-components.md)
+  * [Accessibility Modes](./md-accessibility-mode.md)
 
 ## Release Notes
 
