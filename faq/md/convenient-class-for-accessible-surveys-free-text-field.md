@@ -4,7 +4,9 @@ Convention class are a convenient way to style your content. They are especially
 
 ## Layout
 
-The layout sytem is based on [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox). 
+The layout system is based on [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox). 
+
+CSS Flexbox is a layout system that allows you to arrange elements in a flexible way and adapt to different screen size. It is especially useful to create responsive layouts.
 
 The following classes are available:
 
