@@ -1,5 +1,7 @@
 ---
-description: This page covers everything you need to know about translating your form into an additional language
+description: >-
+  This page covers everything you need to know about translating your form into
+  an additional language
 ---
 
 # Translate forms
@@ -20,13 +22,13 @@ Back in the form editor, you will see the additional languages you have selected
 
 ## Step 3
 
-You now have two options to automatically translate your form.  You will be able to adjust the translation manually later.
+You now have two options to automatically translate your form. You will be able to adjust the translation manually later.
 
-Option 1- Translate empty fields only.  This is a safe procedure where only non-translated feilds are automatically translated
+Option 1- Translate empty fields only. This is a safe procedure where only non-translated feilds are automatically translated
 
-Option2- Override translation.  This option overrides all previously translated feilds.  Manually edited feilds are lost.&#x20;
+Option2- Override translation. This option overrides all previously translated feilds. Manually edited feilds are lost.
 
-Once you have translated your form you will be able to see the translation in the tree strcuture in the left hand column.   The translated text can be manually translated.  Changes will be saved automatically.
+Once you have translated your form you will be able to see the translation in the tree structure in the left hand column. The translated text can be manually translated. Changes will be saved automatically.
 
 {% embed url="https://youtu.be/rL9ibgHMER4" %}
 
@@ -34,7 +36,7 @@ Once you have translated your form you will be able to see the translation in th
 
 Once you have translated your form you can test and edit your translations.
 
-&#x20;Go to 'Test' in the top menu and select the language you would like to test.
+Go to 'Test' in the top menu and select the language you would like to test.
 
 You can edit questions directly from here.
 
@@ -44,4 +46,4 @@ However to edit Pages or Sections you will need to go back into the 'Localize' o
 
 ## Step 5
 
-Your form may be translated into multiple languages.  Each language can be managed sepaterately in the manner described above.
+Your form may be translated into multiple languages. Each language can be managed sepaterately in the manner described above.
