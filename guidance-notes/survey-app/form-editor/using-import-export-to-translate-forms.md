@@ -70,7 +70,9 @@ For an online tool, JSON Editor On-line is a popular choice.  [https://jsonedito
 
 The following video shows how a file can be exported from the platform, editied in JSON Editor On-line and imported back to the platform.
 
-
+{% embed url="https://youtu.be/HT57p5Ex20s" %}
+&#x20;3 minute video showing how a file can be edited in JSON Editor on-line
+{% endembed %}
 
 ## Step 8&#x20;
 
@@ -80,7 +82,7 @@ Go to the 'Import' feild and select 'Upload translated file'.  Drag and drop is 
 
 <figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Screenshot showing the translated file being imported back onto the platform</p></figcaption></figure>
 
-## Step 8
+## Step 9
 
 To complete the process, select the imported file from the 'latest import/ export' table and select 'process import'.
 
