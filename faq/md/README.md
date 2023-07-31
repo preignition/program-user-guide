@@ -1,4 +1,4 @@
-# How to user free text
+# How to Use free text
 
 ### Introduction to Accessible Surveys free text field - a.k.a. Markdown
 
