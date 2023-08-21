@@ -70,13 +70,14 @@
   * [Where is data stored?](faq/introduction-to-faq/where-is-data-stored.md)
   * [How can I ensure that my surveys GDPR compliant?](faq/data-privacy-and-security/how-can-i-ensure-that-my-surveys-gdpr-compliant.md)
   * [How to Write GDPR-proof Privacy Policy for your Surveys](faq/data-privacy-and-security/how-to-write-gdpr-proof-privacy-policy-for-your-surveys.md)
-* [Accessibility modes](faq/accessibility-modes.md)
 * [What is the best file format for Easy Read images?](faq/what-is-the-best-file-format-for-easy-read-images.md)
 * [How to use free text](faq/md/README.md)
   * [Convenient Class for Accessible Surveys Free Text Field](faq/md/convenient-class-for-accessible-surveys-free-text-field.md)
   * [CSS tokens available in Markdown Free Text](faq/md/css-tokens-available-in-markdown-free-text.md)
   * [Web-components available in Markdown Free Text](faq/md/web-components-available-in-markdown-free-text.md)
   * [Accessibility Modes](faq/md/accessibility-mode.md)
+* [FAQ about the Form Editor](faq/faq-about-the-form-editor/README.md)
+  * [How do I resolve warnings when publishing a form?](faq/faq-about-the-form-editor/how-do-i-resolve-warnings-when-publishing-a-form.md)
 
 ## Release Notes
 
