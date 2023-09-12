@@ -1,5 +1,5 @@
 ---
-description: A step by step guide to creating a new survey Test
+description: A step by step guide to creating a new survey
 ---
 
 # Creating a new survey
@@ -12,11 +12,9 @@ Select 'New Survey' on your survey workspace
 
 ## Step 2
 
-Give your survey a name and brief description.
+Give your survey a name and brief description.  The select 'next'
 
-Then select 'Form' from the top menu
-
-![](<../../.gitbook/assets/image (7) (1) (1).png>)
+![](<../../.gitbook/assets/image (38).png>)
 
 ## Step 3
 
@@ -26,22 +24,32 @@ You can create a new form by giving it a name, description and first page.
 
 Alternatively you can skip this step and select an exisiting form later on.
 
-Then select 'Summary' from the top menu
+Then selecy 'next'
 
-<img src="../../.gitbook/assets/image (8) (1).png" alt="" data-size="original">
+&#x20;![](<../../.gitbook/assets/image (39).png>)
 
 ## Step 4
 
-On the summary page you will be asked to confirm that you want to create a new survey or to cancel.
+On the summary page you will be asked to confirm that you want to create a new survey.
 
-<img src="../../.gitbook/assets/image (3) (2) (1).png" alt="" data-size="original">
+![](<../../.gitbook/assets/image (41).png>)
 
 ## Step 5
 
-If you select 'confirm' you will be taken to a summary page for your new survey, showing the 'Survey Editor' the 'Form Editor' and the 'Analytics' page.
+If you created a new form you will now see a summary page showing the 'Survey Editor' the 'Form Editor' and the 'Analytics' page.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
+## Step 6
+
+If you chose to select an exisiting form later on, your summary page will show the 'Survey Editor' and 'Analytics' page.
+
+You can select an existing form from the survey editor.
+
+{% embed url="https://youtu.be/nOd9LJo-zSw?si=jNM6nr9Dvb4xluh-" %}
+Short video shwing how to select an existing form
+{% endembed %}
+
 {% hint style="success" %}
-Congratulations you have created your struture for your new survey. The following 'how to' guides will show you how to build it out.
+Congratulations you have a new survey. The following 'how to' guides will show you how to build it out.
 {% endhint %}
