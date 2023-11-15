@@ -1,4 +1,4 @@
-# How to Use free text
+# How to use free text
 
 ### Introduction to Accessible Surveys free text field - a.k.a. Markdown
 
@@ -39,17 +39,6 @@ This is also possible and explained in the [markdown accessibility mode section]
 Here is an example of a markdown text that uses all the features described above:
 
 ```markdown
-<style>
-	.gap {
-		gap: var(--space-medium);
-	}
-	.box {
-		background-color: var(--color-primary);
-		color: var(--color-on-primary);
-		padding: var(--space-medium);
-		margin: var(--space-medium);
-	}
-</style>
 
 # This is a title
 
@@ -65,7 +54,7 @@ Here is an example of a markdown text that uses all the features described above
 		
 		### With a video:
 		
-		<lite-youtube id="xVytWVHX4N0"></lite-youtube>
+		<lite-youtube videoid="xVytWVHX4N0"></lite-youtube>
 
 		### And a styled box: 
 		
@@ -75,6 +64,17 @@ Here is an example of a markdown text that uses all the features described above
 	</div>
 </div>
 
+<style>
+	.gap {
+		gap: var(--space-medium);
+	}
+	.box {
+		background-color: var(--color-primary);
+		color: var(--color-on-primary);
+		padding: var(--space-medium);
+		margin: var(--space-medium);
+	}
+</style>
 ```
 
 * the `style` tag is used to define the classes used in the markdown text
