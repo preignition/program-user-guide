@@ -12,6 +12,10 @@ This section is an introduction to what is possible to do with accessible survey
 * **as HTML** Markdown also allows you to write HTML code directly. For example, to make a word bold, you can use the HTML tag `<strong>bold</strong>`. To make a word italic, you can use the HTML tag `<em>italic</em>`. Writing in HTML directly gives you a lot of control over your content and layout as any HTML tag is supported. Please check the [HTML syntax](https://www.w3schools.com/html/default.asp) for more information.
 * **with Convenient web-components** Accessible surveys adds a couple of convenient web-components that can be added to the markdown text. For example, it is possible to add a player to youtube video, or AccessibleSurveys.com accessibility menu, or tooltips. Detailed information about these components is available in the [markdown web-components section](md-web-components.md).
 
+{% hint style="success" %}
+When combining Markdown and HTML, markdown lines must have an empty line above and no space at the beginning of the line.
+{% endhint %}
+
 #### How to style in Markdown
 
 Markdown allows you to style the content in different ways.
@@ -44,22 +48,26 @@ Here is an example of a markdown text that uses all the features described above
 
 <div class="layout horizontal wrap gap">
 	<div class="flex show-when-signlanguage">
-		This is displayed only in **sign language mode**.
+
+This is displayed only in **sign language mode**.
 	</div>
 	<div class="flex show-when-easyread">
-		This is displayed only in **easy read mode**.
+
+This is displayed only in **easy read mode**.
 	</div>
 	<div class="flex-2">
-		This is displayed in all modes. It is twice the width of the above elements
-		
-		### With a video:
-		
-		<lite-youtube videoid="xVytWVHX4N0"></lite-youtube>
 
-		### And a styled box: 
-		
-		<div class="box">
-			I am in a box
+This is displayed in all modes. It is twice the width of the above elements
+
+### With a video:
+
+<lite-youtube videoid="xVytWVHX4N0"></lite-youtube>
+
+### And a styled box: 
+
+<div class="box">
+
+I am in a box
 		</div>
 	</div>
 </div>

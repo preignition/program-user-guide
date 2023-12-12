@@ -110,14 +110,19 @@ will display iData Form guidance.
 It is sometime helpful to add icons directly in the text. [Material icons](https://fonts.google.com/icons) are available through the following syntax:
 
 ```html
-<md-icon>sentiment_satisfied_alt</md-icon>
+<lapp-icon>info</lapp-icon>
 ```
 
 Produces:
 
-## Video - `<lite-youtube>`
+> <img src="image/icon.png" alt="icon example" data-size="original">
 
-The element for rendering youtube video is [lite-youtube](https://github.com/paulirish/lite-youtube-embed).
+
+## Video - `<lapp-youtube>` or `<lite-youtube>`
+
+The element for rendering youtube video is [lite-youtube](https://github.com/paulirish/lite-youtube-embed). We deploy an alternative version of this element called `lapp-youtube` that adds default parameters for allowing to pause videos when necessary, and display videos from the same channel when the video is finished.
+
+Prefer using `lapp-youtube` over `lite-youtube` as default parameters are added for you.
 
 #### Properties
 
@@ -129,17 +134,24 @@ The element for rendering youtube video is [lite-youtube](https://github.com/pau
 
 #### Example
 
-Use any [YouTube Embedded Players and Player Parameters](https://developers.google.com/youtube/player\_parameters) you like. We recomend setting `modestbranding` to `2` and `rel` to `0` as below to minimize youtube branding and avoid showing related video after the video was just played.
+Use any [YouTube Embedded Players and Player Parameters](https://developers.google.com/youtube/player\_parameters) you like. We recommend setting `rel` to `0` as below to avoid showing unrelated video after the video was just played.
 
 ```html
-<lite-youtube videoid="xVytWVHX4N0" params="modestbranding=2&rel=0"></lite-youtube>
+<lapp-youtube videoid="xVytWVHX4N0" ></lapp-youtube>
+```
+Or, using the `lite-youtube` element:
+
+```html
+
+```html
+<lapp-youtube videoid="xVytWVHX4N0" param="rel=0&enablejsapi=1"></lapp-youtube>
 ```
 
 ## Accessibility
 
 ### a11y-menu
 
-A menu for accessibility settings. It allows to activate, unactivivate or change settings for application theme and contrast, text size, easyread or simplified interface.
+A menu for accessibility settings. It allows to activate, deactivate or change settings for application theme and contrast, text size, easyread or simplified interface.
 
 In context of forms or survey, it also display readaloud and Internation Sign settings.
 
@@ -157,7 +169,7 @@ produces:
 
 | Property  | Attribute | Type     | Description                                                                                                                                                                                                           |
 | --------- | --------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `context` | `context` | `string` | <p>used to show or hide specific accessility items depending on application context.<br>For instance, <code>readaloud</code>. <code>internationl sign</code> are visible only when context = <code>survey</code>.</p> |
+| `context` | `context` | `string` | <p>used to show or hide specific accessibility items depending on application context.<br>For instance, <code>readaloud</code>. <code>international sign</code> are visible only when context = <code>survey</code>.</p> |
 
 ### a11y-dialog-button
 
