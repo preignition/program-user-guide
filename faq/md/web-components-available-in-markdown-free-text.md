@@ -3,7 +3,18 @@
 This document describes the web components that can be used in the free text field of AccessibleSurveys.com.
 
 {% hint style="success" %}
-Web component tag MUST be closed: `<lite-youtube videoid="xVytWVHX4N0"></lite-youtube>` and not `<lite-youtube videoid="xVytWVHX4N0">`
+Web component tag **MUST** be closed: 
+
+This will work: 
+```html
+<lapp-youtube videoid="videoid"></lapp-youtube>
+```
+
+This will not work: 
+```html
+<lapp-youtube videoid="videoid">
+``````
+
 {% endhint %}
 
 ### Tooltips
@@ -134,14 +145,13 @@ Prefer using `lapp-youtube` over `lite-youtube` as default parameters are added 
 
 #### Example
 
-Use any [YouTube Embedded Players and Player Parameters](https://developers.google.com/youtube/player\_parameters) you like. We recommend setting `rel` to `0` as below to avoid showing unrelated video after the video was just played.
+Use any [YouTube Embedded Players and Player Parameters](https://developers.google.com/youtube/player\_parameters) you like. For `lite-youtube` We recommend setting `rel` to `0` as below to avoid showing unrelated video after the video was just played. Those parameters are added by default in `lapp-youtube`.
 
 ```html
-<lapp-youtube videoid="xVytWVHX4N0" ></lapp-youtube>
+<lapp-youtube videoid="xVytWVHX4N0"></lapp-youtube>
 ```
-Or, using the `lite-youtube` element:
 
-```html
+Or, using the `lite-youtube` element:
 
 ```html
 <lapp-youtube videoid="xVytWVHX4N0" param="rel=0&enablejsapi=1"></lapp-youtube>
@@ -202,8 +212,8 @@ However there are cases where it makes sense to introduce each accessibility con
 
 | Control                                   | Description                                       | Example                                                   |
 | ----------------------------------------- | ------------------------------------------------- | --------------------------------------------------------- |
-| `<a11y-easyread></a11y-easyread>`         | On/Off easyread accessibility settings            | > ![pfo-accessibility-easyread example](image/t1.png)     |
-| `<a11y-readaloud></a11y-readaloud>`       | On/Off readaloud accessibility settings           | > ![pfo-accessibility-readaloud example](image/t2.png)    |
-| `<a11y-signlanguage></a11y-signlanguage>` | On/Off International Sign (IS) accessibility mode | > ![pfo-accessibility-signlanguage example](image/t3.png) |
-| `<a11y-theme></a11y-theme>`               | Display a list of available themes                | > ![pfo-accessibility-theme example](image/t4.png)        |
-| `<a11y-font></a11y-font>`                 | set font size                                     | > ![pfo-accessibility-font example](image/t5.png)         |
+| `<a11y-easyread></a11y-easyread>`         | On/Off easyread accessibility settings            | ![pfo-accessibility-easyread example](image/t1.png)     |
+| `<a11y-readaloud></a11y-readaloud>`       | On/Off readaloud accessibility settings           | ![pfo-accessibility-readaloud example](image/t2.png)    |
+| `<a11y-signlanguage></a11y-signlanguage>` | On/Off International Sign (IS) accessibility mode | ![pfo-accessibility-signlanguage example](image/t3.png) |
+| `<a11y-theme></a11y-theme>`               | Display a list of available themes                | ![pfo-accessibility-theme example](image/t4.png)        |
+| `<a11y-font></a11y-font>`                 | set font size                                     | ![pfo-accessibility-font example](image/t5.png)         |
