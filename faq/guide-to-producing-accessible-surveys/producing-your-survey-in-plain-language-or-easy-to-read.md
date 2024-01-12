@@ -101,13 +101,13 @@ An inclusive approach recommends involving the target audience throughout the pr
 * [Easy English vs Plain English, a guide to creating accessible content](https://centreforinclusivedesign.org.au/wp-content/uploads/2020/04/Easy-English-vs-Plain-English\_accessible.pdf), Centre for Inclusive Design
 * A list of [Frequently Asked Questions about Easy to Read](https://www.inclusion-europe.eu/frequently-asked-questions-about-easy-to-read-etr/), produced by Inclusion Europe
 * [Do not write for us without us! Involving people with intellectual disabilities in the writing of texts that are easy to read and understand](http://sid.usal.es/idocs/F8/FDO23139/write\_for\_us.pdf), Inclusion Europe
-* A great example of an Easy to Read resource: the [Listen Include Respect Guidelines](https://www.listenincluderespect.com/) produced by Down Syndrome International and Inclusion International are guidelines in Easy to Read about how to consult, engage and include people with intellectual disabilities. They include a [section on surveys](https://www.listenincluderespect.com/surveys).
+* A great example of an Easy to Read resource: the [Listen Include Respect Guidelines](https://www.listenincluderespect.com/) produced by [Down Syndrome International](https://www.ds-int.org/) and [Inclusion International](https://inclusion-international.org/) are guidelines in Easy to Read about how to consult, engage and include people with intellectual disabilities. They include a [section on surveys](https://www.listenincluderespect.com/surveys).
 
 ### Tips and resources to produce Plain Language
 
 * [Plain Language Tips and Examples](http://editorhub.phsa.ca/writing-style/write-for-the-web/plain-language-tips-examples), produced by the Web Editor Hub
-* [How To Make Information Accessible](https://www.changepeople.org/getmedia/923a6399-c13f-418c-bb29-051413f7e3a3/How-to-make-info-accessible-guide-2016-Final), a comprehensive guide to producing easy read documents, produced by CHANGE, a Learning Disability Rights Charity
-* Inclusion Europe produced a list of words and their Plain Language definitions in different European languages:&#x20;
+* [How To Make Information Accessible](https://www.changepeople.org/getmedia/923a6399-c13f-418c-bb29-051413f7e3a3/How-to-make-info-accessible-guide-2016-Final), a comprehensive guide to producing easy read documents, produced by [CHANGE](https://www.changepeople.org/), a Learning Disability Rights Charity
+* [Inclusion Europe](https://www.inclusion-europe.eu/) produced a list of words and their Plain Language definitions in different European languages:&#x20;
   * [English](https://www.inclusion-europe.eu/easy-to-read-term/)&#x20;
   * [French](https://www.inclusion-europe.eu/fr/dictionnaire/)
   * [German](https://www.inclusion-europe.eu/de/woerterbuch/)
@@ -118,8 +118,8 @@ An inclusive approach recommends involving the target audience throughout the pr
 
 * [CHANGE](https://www.changepeople.org/) provide a range of services and resources and can help create bespoke accessible information in Easy Read and video formats for organisations all over the world
 * [People First](https://www.peoplefirst.org.nz/) is an Organization of People with Disabilities representing people with learning disabilities in New Zealand. Their [MakeItEasy team ](https://www.makeiteasy.org.nz/)provides services to produce documents in EasyRead formats. Contact email: [makeiteasy@peoplefirst.org.nz](mailto:makeiteasy@peoplefirst.org.nz)&#x20;
-* Many of Inclusion Europe member organisations produce Easy to Read language in their respective languages. A [list with contacts is available here](https://www.inclusion-europe.eu/about-us/#members).
-* ‘Easy on the i’ is an information design service that produces easy to understand information, developed by Learning Disability Service. The website includes a[ checklist to produce Easy to Read content](https://www.learningdisabilityservice-leeds.nhs.uk/wp-content/uploads/2021/10/Easy-Read-Checklist.pdf), and an [image bank](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/image-bank/) which is a large library of free images.
+* Many of[ Inclusion Europe](https://www.inclusion-europe.eu/)'s member organisations produce Easy to Read language in their respective languages. A [list with contacts is available here](https://www.inclusion-europe.eu/about-us/#members).
+* [‘Easy on the i’](https://www.learningdisabilityservice-leeds.nhs.uk/) is an information design service that produces easy to understand information, developed by Learning Disability Service. The website includes a[ checklist to produce Easy to Read content](https://www.learningdisabilityservice-leeds.nhs.uk/wp-content/uploads/2021/10/Easy-Read-Checklist.pdf), and an [image bank](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/image-bank/) which is a large library of free images.
 * [Open Collaboration for Cognitive Accessibility](https://openaccessibility.ca/services/) provides a range of accessibility testing services, including Easy Read adaptations  &#x20;
 * [Say It Easy](https://www.sayiteasy.eu/) provides Easy to Read and Graphic design services. Contact: [https://www.sayiteasy.eu/about-contact](https://www.sayiteasy.eu/about-contact)&#x20;
 * The [Plain English Campaign](https://www.plainenglish.co.uk/services.html) provides services for Plain Language in English
