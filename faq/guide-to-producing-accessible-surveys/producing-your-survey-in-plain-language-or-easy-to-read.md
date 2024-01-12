@@ -4,6 +4,10 @@
 <mark style="color:blue;">**Plain Language and Easy to Read makes information more accessible for everyone**</mark>.
 {% endhint %}
 
+{% embed url="https://www.youtube.com/watch?v=ol5tZ2hnUgE" %}
+Introduction to Easy Read and Plain Language produced by [Open Canada](https://openaccessibility.ca/)
+{% endembed %}
+
 ## Summary
 
 * Using Plain Language and Easy to Read makes information more accessible for everyone. It presents content in a way that is simple and easy to understand.&#x20;
@@ -15,7 +19,11 @@
 
 Writing in Plain Language or Easy to Read makes information more accessible for everyone as it presents content in a simple and clear way, with a language that is concise and easy to understand. Plain Language and Easy to Read are two recommended ways of ensuring this.&#x20;
 
+### Plain Language
+
 Plain Language is a direct style of writing in a clear and concise way. It is useful to help everyone read and understand information quickly and easily. The goal of Plain Language is to make sure the audience can understand the information the first time they read or hear it. It assumes that people can read at a reasonable level.&#x20;
+
+### Easy to Read
 
 Easy to Read is an accessible and alternative form of communication. It uses short sentences together with an image or picture. It uses simple, everyday words, focuses on key information, explains hard words, has clear sections and headings with images to support each point and uses large text size.&#x20;
 
@@ -62,7 +70,7 @@ Easy to Read and Plain Language are not direct translations of one another. They
 ## Recommendations:
 
 * The most inclusive approach is to plan for one Easy to Read survey, as it will be accessible to the widest range of people and provide comparable data across all respondents
-* Alternately, having your survey in Plain Language is a must. If not using Easy to Read, Plain Language should be your baseline style for all information based material, as it is direct and to the point. Do not plan a survey in complex wording and another in Plain Language.  Your survey results will not be comparable. &#x20;
+* Alternately, having your survey in Plain Language is a must.  Plain Language should be your baseline style for all information based material, as it is direct and to the point. Do not plan a survey in complex wording and another in Plain Language.  Your survey results will not be comparable. &#x20;
 * Do not run a survey in Plain Language and another one in Easy to Read. This means that you will use different text content, which will reduce comparability of your data between respondents who chose Easy to Read and others who chose Plain Language. It also means that respondents choosing the Easy to Read mode automatically receive a different set of questions, which is not inclusive.
 * A possible alternative is to plan for a shorter and longer version of your survey. You can start your survey with the most important questions and ask mid-way if people wish to continue. Those willing to stop would get the submit button. Those agreeing to continue would receive additional questions. This is not discriminatory as anyone can choose the time they dedicate.&#x20;
 * You can also choose to produce an Easy to Read survey and disclose images as an option. [Accessible Surveys](http://www.accessiblesurveys.com) is the only tool that allows you to upload images and choose whether to activate the Easy to Read mode or not. The content of the text should remain the same to allow comparability.
@@ -72,15 +80,15 @@ Easy to Read and Plain Language are not direct translations of one another. They
 
 An inclusive approach recommends involving the target audience throughout the process of creating a survey. This means testers with intellectual disabilities can check if your content is clear and usable. Clearly communicated information is also more inclusive and useful to your wider audience.&#x20;
 
-To prepare accessible content:
+### To prepare accessible content:
 
 * Try to write from the beginning in plain, everyday language yourself. Or brief the main writer of the survey to do so. See for example tips to write in Plain Language in the list of resources below.
 * Get support from experts in Plain Language and/or Easy to Read to convert or confirm that your language is indeed easy to read and understand. We strongly recommend working with organisations who consult people with intellectual disabilities in the process. For Easy to Read, they will also produce images at the same time.
 * Review the questions in detail once converted into Plain Language/ Easy to Read to check this does not alter the meaning and way you want to use the data
-* Use definitions in plain language for complex words. Accessible Surveys allows for additional information such as definitions of words or guidance to appear when respondents hover their mouse over a word.&#x20;
+* Use definitions in plain language for complex words. [Accessible Surveys](https://www.accessiblesurveys.com) allows for additional information such as definitions of words or guidance to appear when a word has focus.
 * If the survey is being translated into another language, check the final version with a person with an intellectual disability who speaks that language. Plain language sometimes gets lost in translation.
 
-To produce Easy to Read images
+### To produce Easy to Read images
 
 * Do not attempt to illustrate your text yourself if you are not trained in Easy to Read. Contact an organisation who has expertise in producing Easy to Read documents. The best way to choose the right pictures for a survey is to ask people with intellectual disabilities. Below we provide contact information of organisations providing such services.
 * Using pictures can be helpful for people to understand questions and multiple choice options.  The pictures must relate to the specific survey question and help reinforce its meaning. ​Images of people (either illustrations or photos) are easier to understand than symbols.&#x20;
@@ -90,7 +98,6 @@ To produce Easy to Read images
 
 ### About Easy to Read and Plain Language
 
-* A [short video on Plain Language and Easy to Read](https://www.youtube.com/watch?v=ol5tZ2hnUgE), produced by Open Canada
 * [Easy English vs Plain English, a guide to creating accessible content](https://centreforinclusivedesign.org.au/wp-content/uploads/2020/04/Easy-English-vs-Plain-English\_accessible.pdf), Centre for Inclusive Design
 * A list of [Frequently Asked Questions about Easy to Read](https://www.inclusion-europe.eu/frequently-asked-questions-about-easy-to-read-etr/), produced by Inclusion Europe
 * [Do not write for us without us! Involving people with intellectual disabilities in the writing of texts that are easy to read and understand](http://sid.usal.es/idocs/F8/FDO23139/write\_for\_us.pdf), Inclusion Europe
