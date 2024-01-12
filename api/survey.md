@@ -2,15 +2,7 @@
 
 {% swagger baseUrl="https://preignition.org/api" path="/v1/data/:programID/survey/:resourceID" method="get" summary="Get Survey Data" %}
 {% swagger-description %}
-This endpoint allows to get an export of survey data, based on 
-
-`resourceID`
-
- and 
-
-`programID`
-
-.Usually, export links are build by the application using the export tool (see export tool ).
+This endpoint allows to get an export of survey data, based on `resourceID` and `programID`.Usually, export links are build by the application using the export tool (see export tool ).
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="resourceID" type="string" required="false" %}

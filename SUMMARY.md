@@ -78,6 +78,8 @@
   * [Accessibility Modes](faq/md/accessibility-mode.md)
 * [FAQ about the Form Editor](faq/faq-about-the-form-editor/README.md)
   * [How do I resolve warnings when publishing a form?](faq/faq-about-the-form-editor/how-do-i-resolve-warnings-when-publishing-a-form.md)
+* [GUIDE TO PRODUCING ACCESSIBLE SURVEYS](faq/guide-to-producing-accessible-surveys/README.md)
+  * [Producing your survey in Plain Language or Easy to Read](faq/guide-to-producing-accessible-surveys/producing-your-survey-in-plain-language-or-easy-to-read.md)
 
 ## Release Notes
 
