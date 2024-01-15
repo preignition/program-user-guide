@@ -8,7 +8,7 @@
 
 ## Summary
 
-Surveys in sign language(s) are important to allow deaf people to respond in their language.  Deaf people report it makes a big difference for them to access a survey withsigned videos.&#x20;
+Surveys in sign language(s) are important to allow deaf people to respond in their language.  Deaf people report it makes a big difference for them to access a survey with signed videos.&#x20;
 
 When preparing a survey in sign language, make sure that you:
 
@@ -19,13 +19,13 @@ When preparing a survey in sign language, make sure that you:
 
 ## Why make a survey available in Sign Language?
 
-> "I understood the questions, and it gave me confidence in answering. Sometimes if it’s in English, I’m not always sure. Whereas with ASL (American Sign Language) based multiple choice options, I felt very confident and clear with my answers because ASL is my first language."([Worcester Polytechnic Institute, ASL Education Centre](https://users.wpi.edu/\~esolovey/papers/mahajan-chi22.pdf))&#x20;
+> "I understood the questions, and it gave me confidence in answering. Sometimes if it’s in English, I’m not always sure. Whereas with ASL (American Sign Language) based multiple choice options, I felt very confident and clear with my answers because ASL is my first language." ([Worcester Polytechnic Institute, ASL Education Centre](https://users.wpi.edu/\~esolovey/papers/mahajan-chi22.pdf))&#x20;
 
 It is not appropriate to assume that all deaf people can read and respond using written languages.&#x20;
 
 Deaf people consistently report a preference for websites that incorporate signed languages, regardless of their level of fluency with print languages.&#x20;
 
-Some deaf people are bilingual or multilingual signers, with excellent command of one or more signed and written languages (e.g. American Sign Language and English or International Sign). Other deaf people have much stronger fluency in their national sign language. Finally, many deaf people living in the Global South do not have access at all to written language and education, while they may have some comprehension in their national sign language.&#x20;
+Some deaf people are bilingual or multilingual signers, with excellent command of one or more signed and written languages (e.g. American Sign Language and English or International Sign). Other deaf people have much stronger fluency in their national sign language. Finally, many deaf people living in the Global South do not have access to written language and education, while they may have some comprehension in their national sign language.&#x20;
 
 Survey tools are typically designed for written text, and therefore miss a lot of deaf respondents.
 
@@ -42,7 +42,7 @@ If you want to run your survey in sign language, make sure you choose an appropr
 ### Choose an online survey tool that allows video format&#x20;
 
 * Several online survey tools allow for video upload at the level of the question. Fewer allow you to upload videos linked to questions and also to response options. No tools currently allow you to record a video to answer an open-ended question (Accessible Surveys is exploring with partners the feasibility and interest to develop this feature).&#x20;
-* When online survey tools allow the use of videos, signers responding may still face challenges related to the platform design: for example, they may need to navigate multiple videos while adjusting manually window size and placement of videos, or video uploading can take a lot of time and cause frustration.
+* When online survey tools allow the use of videos, signers responding may still face challenges related to the platform design: for example, they may need to navigate multiple videos while manually adjusting window size and placement of videos, or video uploading can take a lot of time and cause frustration.
 * Respondents using videos usually prefer clean and simple page designs, limits on the number of videos per page or screen, video length, and speed controls.&#x20;
 
 ### Ensure quality of the videos&#x20;
@@ -59,7 +59,7 @@ Signers recording the questions and response options in video format should enfo
 
 The signer’s proficiency level in the concerned signed language and knowledge of the deaf culture and community is important to avoid confusion and increase the trust and confidence of the respondent.&#x20;
 
-Record separate videos for each question:
+### Record separate videos for each question:
 
 * If the survey platform allows this, record one video including one single question and the related response options in a single video sequence. Response options should be introduced by the interpreter in the exact same order as they appear on the screen. Once recorded, do not shift the order of responses to avoid errors in recording people’s answers.
 * Including captions is recommended, following recommended standards for sufficient size and contrast. If you are not a signer, this will help you identify and upload the right videos with the right question on the survey app.&#x20;
@@ -67,8 +67,25 @@ Record separate videos for each question:
 
 Testing of videos by a deaf person native of the chosen sign language, who is not the signer recording the video is important to confirm that it can be understood. Professional interpreters recording videos usually offer this option.
 
-\
+## Resources
 
+### Contact details
+
+Here are contact details of organisations providing sign language services.  We recommend obtaining a couple of quotes as part of your procurement process.&#x20;
+
+* [Drip Media](https://www.dripmedia.co.uk/).  Provides a range of sign language services.  Multiple sign languages supported. - Contact: Ramon Wolfe, [ramon@dripmedia.tv](mailto:ramon@dripmedia.tv)&#x20;
+* [Overseas Interpreting](http://overseasinterpreting.com/) - Contact: [office@overseasinterpreting.com](mailto:office@overseasinterpreting.com) &#x20;
+* [World Association of Sign Language Interpreters ](http://www.wasli.org)(WASLI) - Contact: [secretary.wasli@gmail.com](mailto:secretary.wasli@gmail.com)&#x20;
+* [Sign Solutions](https://www.signsolutions.uk.com/).  Provides a range of BSL translation services.
+* [Involve.](https://involve.vc/involve-interpreter/)  Provides a range of BSL translation services.
+
+### Guidelines for engaging providers of sign language services
+
+* Guidelines on [Securing and Utilizing the Services of Sign Language Interpreters for the UN](https://wfdeaf.org/news/resources/httpswfdeaf-orgwp-contentuploads201702interpreter-guidelines-for-un-updated-august-2017-1-pdf/), WASLI and World Federation of the Deaf, 2017
+
+### Relevant Academic Articles
+
+* An article about barriers and preferences of deaf respondents to online surveys: [Towards Sign Language-centric Design of ASL Survey Tools](https://users.wpi.edu/\~esolovey/papers/mahajan-chi22.pdf), Worcester Polytechnic Institute, ASL Education Centre, 2022.
 
 \
 
