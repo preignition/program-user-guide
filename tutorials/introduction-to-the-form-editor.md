@@ -1,7 +1,7 @@
 # Introduction to the form editor
 
 {% hint style="info" %}
-This 3 minute video show you how to edit a form.  For more detailed guidance refer to the revelant [How to Guide](../guidance-notes/survey-app/form-editor/)
+This 3 minute video show you how to edit a form.  For step by step instructions refer to the relevant [Guidance Note](../guidance-notes/survey-app/form-editor/).
 {% endhint %}
 
 {% embed url="https://youtu.be/zL3t-Plokp8" %}
