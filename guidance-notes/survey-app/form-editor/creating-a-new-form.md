@@ -1,22 +1,22 @@
----
-description: A step by step guide to strucuturing a form
----
-
 # Structuring a form
+
+{% hint style="info" %}
+A step by step guide to structuring a form
+{% endhint %}
 
 ## Step 1
 
-Click on the form editor feild in order to edit it.
+Click on the 'Form Editor' feild in order to edit it.
 
 <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
-The name you gave to your form when you created your new survey will appear under both 'name' and 'title'. You can edit both here.
+The name you gave your form when you created your new survey will appear under both 'name' and 'title'. You can edit both here.
 
 **Name -** This is the name of the form for internal purposes. It won't be visible to respondents
 
-**Title -** This will appear on the top of your form and will be visible to respondents. You will be able to translate your title if your form is multi-lingual
+**Title -** This appears on the top of your form and will be visible to respondents.  You are able to translate your title if your form is multi-lingual
 
 <figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
@@ -24,11 +24,11 @@ The name you gave to your form when you created your new survey will appear unde
 
 If you have many forms you might want use 'Labels' to organise them.
 
-Labels are explained in a seperate 'how to' guide.
+Labels are explained in a seperate Guidance Note.
 
 ## Step 4
 
-The application automatically creates the first page of your form. This appears in the tree structure of your survey on the left side of the screen.
+The application automatically creates a first page for your form. This appears in the tree structure of your survey on the left side of the screen.
 
 In the example below the first page is named 'About you'.
 
@@ -40,13 +40,17 @@ You have the option to start working on this page or add a new page by selecting
 
 To edit a page, highlight it in the tree structure.
 
-You can ammend the page name and provide a page sub title
+You can ammend the page name and provide a page sub title.  The page sub title is optional.
 
 <figure><img src="../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 6
 
-Pages are organised into sections. Question are added to sections.
+Pages are organised into sections and question are added to sections. &#x20;
+
+{% hint style="info" %}
+Sections provide additional flexibility when editing forms.  Form logic can be applied to pages, sections and questions and sections can be shared across different forms.
+{% endhint %}
 
 The application automatically creates the first section for your first page. This appears on the tree struture under the first page.
 
