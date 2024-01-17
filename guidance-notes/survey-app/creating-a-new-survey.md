@@ -50,9 +50,7 @@ If you chose to select an exisiting form later on, your summary page will show t
 
 You can select an existing form from the survey editor.
 
-{% embed url="https://youtu.be/nOd9LJo-zSw?si=jNM6nr9Dvb4xluh-" %}
-Short video shwing how to select an existing form
-{% endembed %}
+{% embed url="https://youtu.be/nOd9LJo-zSw" %} Short video showing how to select an existing form {% endembed %}
 
 {% hint style="success" %}
 Congratulations you have sucessfull created a new survey.  The following 'Guidance Notes' will show you how to build it out.
