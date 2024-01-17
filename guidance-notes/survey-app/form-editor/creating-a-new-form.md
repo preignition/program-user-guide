@@ -14,9 +14,9 @@ Click on the 'Form Editor' feild in order to edit it.
 
 The name you gave your form when you created your new survey will appear under both 'name' and 'title'. You can edit both here.
 
-**Name -** This is the name of the form for internal purposes. It won't be visible to respondents
+**Name -** This is the name of the form for internal purposes. It is not visible to respondents
 
-**Title -** This appears on the top of your form and will be visible to respondents.  You are able to translate your title if your form is multi-lingual
+**Title -** This appears on the top of your form and is visible to respondents.  You are able to translate your title if your form is multi-lingual
 
 <figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
@@ -64,14 +64,18 @@ You have the option to start working on this section by clicking on it, or addin
 
 To edit a section, highlight it in the tree structure
 
-The 'name' is for internal purposes only and won't be visible on your form
+The 'name' is for internal purposes only and won't be seem by survey respondents.
 
-You can give the section a 'title' and 'sub-title' which will appear on your form. The section 'title' will replace the section 'name' in the tree structure as shown in the short video below
+You can give the section a 'title' and 'sub-title' which will appear on your form.&#x20;
+
+The section 'title' will replace the section 'name' in the tree structure as shown in the short video below
 
 {% embed url="https://youtu.be/CNv0tnAM1AE" %}
 
 ## Step 8
 
-You are now ready to add questions to the section you have created.
+{% hint style="success" %}
+Congratulations!  You can now add questions to the section you have created
+{% endhint %}
 
-The next 'how to' guide will show you how to do this.
+The Guidance Note '[Adding questions to a form](how-to-add-a-question-to-a-form/)' will show you how to do this.
