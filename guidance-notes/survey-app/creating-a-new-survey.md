@@ -8,11 +8,15 @@ description: A step by step guide to creating a new survey
 
 Select 'New Survey' on your survey workspace
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21).png" alt="Screenshot of a survey workspace.  A list of suveys is displayed in a grid.  There is a button with the label &#x27;New Survey&#x27; in the bottom right hand corner"><figcaption></figcaption></figure>
 
 ## Step 2
 
 Give your survey a name and brief description.  The select 'next'
+
+{% hint style="warning" %}
+You will not be able to move to the next step unless the survey has both a name and description.
+{% endhint %}
 
 ![](<../../.gitbook/assets/image (38).png>)
 
@@ -22,9 +26,9 @@ Surveys use 'Forms' to collect data
 
 You can create a new form by giving it a name, description and first page.
 
-Alternatively you can skip this step and select an exisiting form later on.
+If you already have a form that you want to use in your survey, you can skip this step and select an exisiting form later on.
 
-Then selecy 'next'
+Then select 'next'
 
 &#x20;![](<../../.gitbook/assets/image (39).png>)
 
@@ -51,5 +55,5 @@ Short video shwing how to select an existing form
 {% endembed %}
 
 {% hint style="success" %}
-Congratulations you have a new survey. The following 'how to' guides will show you how to build it out.
+Congratulations you have sucessfull created a new survey.  The following 'Guidance Notes' will show you how to build it out.
 {% endhint %}
