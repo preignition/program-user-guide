@@ -1,8 +1,8 @@
----
-description: A step by step guide to creating a new survey
----
-
 # Creating a new survey
+
+{% hint style="info" %}
+A step by step guide to creating a new survey
+{% endhint %}
 
 ## Step 1
 
