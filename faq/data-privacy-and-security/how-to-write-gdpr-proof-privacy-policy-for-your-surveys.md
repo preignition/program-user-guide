@@ -38,7 +38,7 @@ We have gone through the requirements of the GDPR for writing privacy policies, 
 
 You can present your privacy policy in different ways. It could be a part of your survey’s welcome page, like the example below, which illustrates a fair way of getting consent for collecting none-sensitive data.
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 However, if suitable for your case, you can split up your privacy policy and spread it within the survey, displaying information where they are most relevant. This helps you make reading your privacy policy less scary and less intimidating for readers, while letting them know how and why you are collecting their data.
 

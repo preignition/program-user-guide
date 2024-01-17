@@ -13,11 +13,11 @@ The access tab enables you to define ownership and user rights for a particular 
 * The 'access' tab appears under the 'Survey Definition' menu and shows the existing user roles for the survey
 * The person who created the survey will be the default 'Survey Owner'
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
-* To change the survey owner select 'modify ownership'&#x20;
+* To change the survey owner select 'modify ownership'
 * Select the user you want to transfer ownership to
 * The user must already have an account on the app which is associated with your organisation
 
@@ -41,11 +41,10 @@ The access tab enables you to define ownership and user rights for a particular 
 
 There are 4 different types of survey users:
 
-**Owner**- Has full rights on the survey.  Can modify ownership of the survey or add or revoke all other users
+**Owner**- Has full rights on the survey. Can modify ownership of the survey or add or revoke all other users
 
-**Editor**- Has full rights on the survey.  Can not modify ownership
+**Editor**- Has full rights on the survey. Can not modify ownership
 
-**Viewer**- Has rights to view the survey.  Can not add or revoke other users
+**Viewer**- Has rights to view the survey. Can not add or revoke other users
 
-**Translator**- Has the rights to view the survey and edit the survey in a specified language.  Can not add or revoke other users.&#x20;
-
+**Translator**- Has the rights to view the survey and edit the survey in a specified language. Can not add or revoke other users.

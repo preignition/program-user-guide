@@ -30,7 +30,7 @@ A privacy warning notice will appear.  You will be asked to confirm that you hav
 
 For the time being, 'localize' is the only type of export available.  Choose the language that you want to translate the form into and select 'Export Now'
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Screenshot showing 'French' as the language to translate the form into</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Screenshot showing 'French' as the language to translate the form into</p></figcaption></figure>
 
 ## Step 5
 
@@ -64,7 +64,7 @@ For an online tool, JSON Editor On-line is a popular choice.  [https://jsonedito
 
 &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Screenshot showing a json file being edited within JSON Editor Online</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (5).png" alt=""><figcaption><p>Screenshot showing a json file being edited within JSON Editor Online</p></figcaption></figure>
 
 ## Step 7
 
@@ -80,7 +80,7 @@ Once the exported form has been worked on and the appropriate fields have been t
 
 Go to the 'Import' feild and select 'Upload translated file'.  Drag and drop is supported
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Screenshot showing the translated file being imported back onto the platform</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the translated file being imported back onto the platform</p></figcaption></figure>
 
 ## Step 9
 
@@ -88,5 +88,5 @@ To complete the process, select the imported file from the 'latest import/ expor
 
 The translated feild will be imported into the platform.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Scfreenshot showing the 'process import' button in the 'latest import/ export' table</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Scfreenshot showing the 'process import' button in the 'latest import/ export' table</p></figcaption></figure>
 

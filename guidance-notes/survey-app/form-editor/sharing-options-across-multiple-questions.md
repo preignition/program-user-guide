@@ -52,7 +52,7 @@ Add option choices as usual. &#x20;
 
 Because you are in the 'advanced' mode there are some additional feilds which can be completed if required. &#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="Screenshot showing how new options can be created"><figcaption><p>Screenshot showing how new options can be created</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt="Screenshot showing how new options can be created"><figcaption><p>Screenshot showing how new options can be created</p></figcaption></figure>
 
 ## Step 6
 

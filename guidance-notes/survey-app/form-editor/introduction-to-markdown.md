@@ -89,7 +89,7 @@ This sentence has five words. Here are five more words. Five-word sentences are 
 
 The box is rendered like this:
 
-<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 6
 

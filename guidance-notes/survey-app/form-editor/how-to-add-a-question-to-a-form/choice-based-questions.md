@@ -44,7 +44,7 @@ Under 'options' you can enter the options you want to be presented to respondent
 
 * You can decide whether you want the options to appear on their own line
 * You can ask respondents to specify an answer if they select the 'other' option
-* You can decide whether the option is exclusive or not. If an option is exclusive respondents will not be able to select other options if they have already selected an exclusive option. &#x20;
+* You can decide whether the option is exclusive or not. If an option is exclusive respondents will not be able to select other options if they have already selected an exclusive option.
 
 Checkbox groups question appear to respondents like this:
 
@@ -103,7 +103,7 @@ Rating questions appear to respondents like this:
 ## Slider
 
 {% hint style="info" %}
-Slider questions ask respondents to to choose an option on a sliding scale. &#x20;
+Slider questions ask respondents to to choose an option on a sliding scale.
 {% endhint %}
 
 Edit the question in the usual way. You can set the minimum and maximum values for the scale
@@ -112,4 +112,4 @@ Edit the question in the usual way. You can set the minimum and maximum values f
 
 Rating questions appear to respondents like this:
 
-<figure><img src="../../../../.gitbook/assets/image (5) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>

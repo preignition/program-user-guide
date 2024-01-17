@@ -1,55 +1,59 @@
----
-description: All the steps you need to add a question to a form
----
-
 # Adding questions to a form
 
-{% hint style="success" %}
+{% hint style="info" %}
+All the steps you need to add a questions to a form. &#x20;
+
 This page assumes you have already created a Form and added a Page and Section
 {% endhint %}
 
 ## Step 1
 
-Once you have added a Page and Section, and selected 'Add Content' your screen will look like this:
+Once you have added a Page and Section, selected the 'Add Content' logo in the bottom right of your screen.
 
-![](<../../../../.gitbook/assets/image (308) (1) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot showing the 'add content' icon in the bottom right of the screen</p></figcaption></figure>
 
 ## Step 2
 
-The options under 'Form Definition' are explained in separate 'how to' notes
+Your screen will look like this:
 
-![](<../../../../.gitbook/assets/image (303) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot showing the screen in the 'Add Content Mode'</p></figcaption></figure>
 
 ## Step 3
 
+The options under 'Form Definition' are explained in separate Guidance Notes.
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Screenshot showing the options under the 'Form Definition' menu</p></figcaption></figure>
+
+## Step 4
+
 The second column provides an overview of your Form in a tree structure. You can see the Form Title, Pages, Sections and Questions
 
-![](<../../../../.gitbook/assets/image (306) (1) (1) (1).png>)
-
-## Step 4
-
-The column on the right hand side provides the different Question types that can be added to the Form
-
-![](<../../../../.gitbook/assets/image (314) (1).png>)
-
-## Step 4
-
-Questions are added by dragging and dropping them into the middle section of the Form
-
-![](<../../../../.gitbook/assets/image (315) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Screenshot showing the form struture in a tree view</p></figcaption></figure>
 
 ## Step 5
 
-The new Question will appear in the Form structure in the left hand side of the Page
+The column on the right hand side provides the different Question types that can be added to the Form
 
-![](<../../../../.gitbook/assets/image (323) (1) (1) (1) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Screenshot showing the question types that can be added to a form</p></figcaption></figure>
 
 ## Step 6
 
-Selecting the 'cog' icon beside a Question, enables you to customise the Question
+Questions are added by dragging and dropping them into the middle section of the Form
 
-![](<../../../../.gitbook/assets/image (304) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Screenshot showing a 'dropbox' question being added to a form</p></figcaption></figure>
 
 ## Step 7
 
-There are seperate 'how to' notes covering the main Question types that are available
+The new Question will appear in the Form tree structure in the left hand side of the page
+
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Screenshot showing the new question appearing in the tree structure </p></figcaption></figure>
+
+## Step 8
+
+Selecting the red 'cog' icon beside a Question, enables you to edit the Question
+
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Screenshot showing the red 'cog' item beside a question</p></figcaption></figure>
+
+## Step 8
+
+There are seperate Guidance Notes covering the main Question types that are available

@@ -82,7 +82,7 @@ The in operator can be used to check whether an element appears in a list of opt
 
 In this example the in operator is used to display or hide a question based on a selection from a proceeding checkbox list.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt="Screenshot showing an example of a logical expression using the &#x27;in&#x27; operator"><figcaption><p>Screenshoot showing how the in operator can be used to display or hide a question based on a slection from a prceeding checkbox list</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt="Screenshot showing an example of a logical expression using the &#x27;in&#x27; operator"><figcaption><p>Screenshoot showing how the in operator can be used to display or hide a question based on a slection from a prceeding checkbox list</p></figcaption></figure>
 
 The above expression reads as:
 
@@ -100,7 +100,7 @@ It works by first checking to see if the first segment of an expression is true.
 
 In this example the ternary operator is used to hide or display the question 'Did you like this survey' based on the respondent's answer to the question 'Do you agree to participate in this survey'
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt="Screenshot showing a simple worked example of using the ternary operator to hide or display a question based on a respondent&#x27;s answer to a previous question"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (2).png" alt="Screenshot showing a simple worked example of using the ternary operator to hide or display a question based on a respondent&#x27;s answer to a previous question"><figcaption></figcaption></figure>
 
 The above expression works as follow:
 
@@ -118,7 +118,7 @@ The consequent segment can include a series of logical expressions as shown in t
 
 In this example the ternary operator is used to display or hide a page based on the answers to three preceeding questions.
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Example of the ternary operator being used to display or hide a page based on the answers to three preceeding questions</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Example of the ternary operator being used to display or hide a page based on the answers to three preceeding questions</p></figcaption></figure>
 
 The above expression works as follow:
 
