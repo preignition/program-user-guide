@@ -12,13 +12,13 @@ Select 'New Survey' on your survey workspace
 
 ## Step 2
 
-Give your survey a name and brief description.  The select 'next'
-
-{% hint style="warning" %}
-You will not be able to move to the next step unless the survey has both a name and description.
-{% endhint %}
+Give your survey a name and brief description. The select 'next'
 
 ![](<../../.gitbook/assets/image (38).png>)
+
+{% hint style="warning" %}
+You will not be able to move to the next step until the survey has a name and description.
+{% endhint %}
 
 ## Step 3
 
@@ -30,7 +30,7 @@ If you already have a form that you want to use in your survey, you can skip thi
 
 Then select 'next'
 
-&#x20;![](<../../.gitbook/assets/image (39).png>)
+![](<../../.gitbook/assets/image (39).png>)
 
 ## Step 4
 
@@ -50,8 +50,10 @@ If you chose to select an exisiting form later on, your summary page will show t
 
 You can select an existing form from the survey editor.
 
-{% embed url="https://youtu.be/nOd9LJo-zSw" %} Short video showing how to select an existing form {% endembed %}
+{% embed url="https://youtu.be/nOd9LJo-zSw" %}
+Short video showing how to select an existing form
+{% endembed %}
 
 {% hint style="success" %}
-Congratulations you have sucessfull created a new survey.  The following 'Guidance Notes' will show you how to build it out.
+Congratulations you have sucessfull created a new survey. The following 'Guidance Notes' will show you how to build it out.
 {% endhint %}
