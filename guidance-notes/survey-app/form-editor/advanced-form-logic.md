@@ -82,7 +82,7 @@ The in operator can be used to check whether an element appears in a list of opt
 
 In this example the in operator is used to display or hide a question based on a selection from a proceeding checkbox list.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt="Screenshot showing an example of a logical expression using the &#x27;in&#x27; operator"><figcaption><p>Screenshoot showing how the in operator can be used to display or hide a question based on a slection from a prceeding checkbox list</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt="Screenshot showing an example of a logical expression using the &#x27;in&#x27; operator"><figcaption><p>Screenshoot showing how the in operator can be used to display or hide a question based on a slection from a prceeding checkbox list</p></figcaption></figure>
 
 The above expression reads as:
 
@@ -118,7 +118,7 @@ The consequent segment can include a series of logical expressions as shown in t
 
 In this example the ternary operator is used to display or hide a page based on the answers to three preceeding questions.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Example of the ternary operator being used to display or hide a page based on the answers to three preceeding questions</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (3).png" alt=""><figcaption><p>Example of the ternary operator being used to display or hide a page based on the answers to three preceeding questions</p></figcaption></figure>
 
 The above expression works as follow:
 

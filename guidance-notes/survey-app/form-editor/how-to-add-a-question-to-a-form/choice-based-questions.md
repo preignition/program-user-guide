@@ -4,7 +4,7 @@ description: This page covers everything you need to know about choice based que
 
 # Choice based questions
 
-{% hint style="success" %}
+{% hint style="info" %}
 Choice based questions ask respondents to make a choice between one or more options
 {% endhint %}
 
@@ -12,7 +12,17 @@ Choice based questions ask respondents to make a choice between one or more opti
 
 Choice based question types are shown in the right hand column
 
-![](<../../../../.gitbook/assets/image (310) (1) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot showing choice based questions</p></figcaption></figure>
+
+## Which choice based question should I use?
+
+**Single checkbox-** Respondents can check a single box.  Useful for asking respondents to give consent.
+
+**Checkbox group-** Useful if you want respondnets to be able to select more than 1 option from a list of options.
+
+**Dropdown group-**  Allows respondents to select a single option from a list of options.  Useful if the list of options is large and you don't want them all to be displayed initially.
+
+Radio group- Like the dropdown group, it allows respondents to select a single option from a list of options.  However the options are displayed on the screen.  Useful if a small number of options is available.
 
 ## Single checkbox
 
@@ -22,11 +32,11 @@ The single checkbox provides a single option which Respondents can select or not
 
 The Question is edited as follows:
 
-![](<../../../../.gitbook/assets/image (326) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot showing the input options for a checkbox question</p></figcaption></figure>
 
 And appears to repondents as follows:
 
-![](<../../../../.gitbook/assets/image (318) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Screenshot showing how a checkbox question appears to survey respondents</p></figcaption></figure>
 
 ## Checkbox group
 
@@ -36,19 +46,19 @@ The Checkbox group asks respondents to select from a range of options. More than
 
 Edit the question in the usual way and select 'options'
 
-![](<../../../../.gitbook/assets/image (298).png>)
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Screenshot showing a label and helper text being input for a checkbox group question</p></figcaption></figure>
 
 Under 'options' you can enter the options you want to be presented to respondents
 
-![](<../../../../.gitbook/assets/image (324) (1) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Screenshot showing the options input feild for a checkbox group question</p></figcaption></figure>
 
-* You can decide whether you want the options to appear on their own line
-* You can ask respondents to specify an answer if they select the 'other' option
-* You can decide whether the option is exclusive or not. If an option is exclusive respondents will not be able to select other options if they have already selected an exclusive option.
+* You can decide whether you want the options to appear on their own line or side-by-side
+* You can ask respondents to specify an answer if they select the 'other' option.  You can also customise the prompt label that is presented by entering it into the 'specify other text label' field
+* You can decide whether the option is exclusive or not. If an option is exclusive respondents will not be able to select other options if they have already selected an exclusive option.  They can deselect am exclusive option and choose another option.
 
 Checkbox groups question appear to respondents like this:
 
-![](<../../../../.gitbook/assets/image (304) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Screenshot showing how checkbox group questions appear to respondents.</p></figcaption></figure>
 
 ## Dropdown
 
