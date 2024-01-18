@@ -1,9 +1,7 @@
 # Adding questions to a form
 
 {% hint style="info" %}
-All the steps you need to add a questions to a form. &#x20;
-
-This page assumes you have already created a Form and added a Page and Section
+All the steps you need to add a questions to a form. This page assumes you have already created a Form and added a Page and Section
 {% endhint %}
 
 ## Step 1
