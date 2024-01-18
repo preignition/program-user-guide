@@ -76,4 +76,6 @@ The other text based questions operate in the a similar way. The main difference
 * Email questions require Respondents to enter a recognised email format ie the answer must include @ to be accepted
 * Long text gives an option to set the number of rows that will be visible and the maximum number of rows that are available
 
-![](<../../../../.gitbook/assets/image (329) (1) (1).png>)
+{% hint style="success" %}
+Congratulations- you can now add text based questions!
+{% endhint %}
