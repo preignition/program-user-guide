@@ -1,9 +1,3 @@
----
-description: >-
-  This page covers everything you need to know about Rating, Slider, Order and
-  Range type questions
----
-
 # Rating, Slider, Order and Range questions
 
 ## Ratings
@@ -60,8 +54,6 @@ The question is editing in the same way as a slider question
 Range questions (with labels and ticks enabled) appear to respondents like this:
 
 <figure><img src="../../../../.gitbook/assets/image (53).png" alt=""><figcaption><p>Screenshot showing how Range questions are presented to a survey respondent</p></figcaption></figure>
-
-
 
 {% hint style="success" %}
 Congratulation!  You can now add Rating, Slider, Order and Range questions
