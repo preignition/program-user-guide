@@ -12,7 +12,7 @@ Choice based questions ask respondents to make a choice between one or more opti
 
 Choice based question types are shown in the right hand column
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot showing choice based questions</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Screenshot showing choice based questions</p></figcaption></figure>
 
 ## Which choice based question should I use?
 
@@ -32,11 +32,11 @@ The single checkbox provides a single option which Respondents can select or not
 
 The Question is edited as follows:
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot showing the input options for a checkbox question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Screenshot showing the input options for a checkbox question</p></figcaption></figure>
 
 And appears to repondents as follows:
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Screenshot showing how a checkbox question appears to survey respondents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Screenshot showing how a checkbox question appears to survey respondents</p></figcaption></figure>
 
 ## Checkbox group
 
@@ -66,17 +66,11 @@ Checkbox groups question appear to respondents like this:
 Dropdown is a closed-ended question that allows respondents to choose one answer choice from a list of choices presented in a dropdown menu
 {% endhint %}
 
-Edit the question in the usual way and select 'Options'
-
-![](<../../../../.gitbook/assets/image (317) (1) (1).png>)
-
-Under 'Options' enter the options you want to appear in the dropdown list
-
-![](<../../../../.gitbook/assets/image (309) (1) (1).png>)
+The question label and opions are entered in a similar way to that for checkbox group questions.
 
 The dropdown Question appears to Respondents like this:
 
-![](<../../../../.gitbook/assets/image (299) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot showing how dropdown questions appear to survey respondents</p></figcaption></figure>
 
 ## Radio group
 
@@ -84,17 +78,9 @@ The dropdown Question appears to Respondents like this:
 Radio Group questions operate in the same way as Checkbox group questions. However respondents can only select one option
 {% endhint %}
 
-Edit the question in the usual way and select 'Options'
-
-![](<../../../../.gitbook/assets/image (306) (1) (1).png>)
-
-Under 'Options' enter the options you want to be available
-
-![](<../../../../.gitbook/assets/image (312) (1) (1).png>)
-
 The radio group Question appears to Respondents like this:
 
-![](<../../../../.gitbook/assets/image (308) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot showing how a radio group question appears to respondents</p></figcaption></figure>
 
 ## Ratings
 

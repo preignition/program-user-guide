@@ -14,13 +14,13 @@ Once you have added a Page and Section, selected the 'Add Content' logo in the b
 
 Your screen will look like this:
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the screen in the 'Add Content Mode'</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the screen in the 'Add Content Mode'</p></figcaption></figure>
 
 ## Step 3
 
 The options under 'Form Definition' are explained in separate Guidance Notes.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Screenshot showing the options under the 'Form Definition' menu</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the options under the 'Form Definition' menu</p></figcaption></figure>
 
 ## Step 4
 
