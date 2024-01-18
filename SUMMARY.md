@@ -19,6 +19,7 @@
     * [Adding questions to a form](guidance-notes/survey-app/form-editor/how-to-add-a-question-to-a-form/README.md)
       * [Text based questions](guidance-notes/survey-app/form-editor/how-to-add-a-question-to-a-form/text-based-questions.md)
       * [Choice based questions](guidance-notes/survey-app/form-editor/how-to-add-a-question-to-a-form/choice-based-questions.md)
+      * [Rating, Slider, Order and Range questions](guidance-notes/survey-app/form-editor/how-to-add-a-question-to-a-form/choice-based-questions-1.md)
       * [Media based questions](guidance-notes/survey-app/form-editor/how-to-add-a-question-to-a-form/media-based-questions.md)
       * [Introduction to free text fields](guidance-notes/survey-app/form-editor/how-to-add-a-question-to-a-form/free-text-feilds.md)
     * [Testing a form](guidance-notes/survey-app/form-editor/testing-a-form.md)
