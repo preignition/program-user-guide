@@ -1,18 +1,18 @@
 ---
-description: This page provides and introduction to free text fields
+description: This page provides an introduction to free text fields
 ---
 
 # Introduction to free text fields
 
 {% hint style="success" %}
-Free text feilds can be used to add text to Forms.
+You can add formatted text boxes to your form using Free Text
 {% endhint %}
 
 ## Step 1
 
 The Free Text option is shown in the right hand column
 
-![](<../../../../.gitbook/assets/image (328) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot showing the Free Text option</p></figcaption></figure>
 
 ## Step 2
 
@@ -20,12 +20,22 @@ Give the free text feild a name. This will not be visible to respondents
 
 Write your content in the feild provided. You can format your text and even add images or videos using markdown.
 
-See the How to Guide ['Introduction to Markdown](../introduction-to-markdown.md)' for guidance
+See the Guidance Note ['Introduction to Markdown](../introduction-to-markdown.md)' for instructions on how to use Markdown.
 
-![](<../../../../.gitbook/assets/image (317) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Screenshot showing the input feilds for Free Text</p></figcaption></figure>
 
 ## Step 3
 
-The preview feild shows how the text feild will appear to Respondents
+The preview tab shows how the text will appear to Respondents
 
-![](<../../../../.gitbook/assets/image (311) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Screenshot showing how the text appears in the preview tab</p></figcaption></figure>
+
+## Step 4
+
+This is how the free text feild is presented to respondents
+
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Screenshot showing an example of free text </p></figcaption></figure>
+
+{% hint style="info" %}
+The formating options that you have with free text feilds is almost limitless.  See the Guidance Note on [Using Markdown](../introduction-to-markdown.md) for more information
+{% endhint %}
