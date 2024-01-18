@@ -58,8 +58,8 @@ Feild can be unpinned at any time.
 
 Each feild can be viewed as a chart or as raw data
 
-| ![](<../../../.gitbook/assets/image (4) (1) (1).png>) | ![](<../../../.gitbook/assets/image (3) (6).png>) |
-| ----------------------------------------------------- | ------------------------------------------------- |
+| ![](<../../../.gitbook/assets/image (4) (1) (1) (1).png>) | ![](<../../../.gitbook/assets/image (3) (6).png>) |
+| --------------------------------------------------------- | ------------------------------------------------- |
 
 ## Step 7
 

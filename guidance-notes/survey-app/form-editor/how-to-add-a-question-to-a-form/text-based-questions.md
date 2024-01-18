@@ -4,7 +4,7 @@ description: This page covers everything you need to know about text based quest
 
 # Text based questions
 
-{% hint style="success" %}
+{% hint style="info" %}
 Text based questions are questions which are responded to by entering text or numbers
 {% endhint %}
 
@@ -15,19 +15,19 @@ Initially two text based question type are visible
 * Text
 * Long Text
 
-![](<../../../../.gitbook/assets/image (315) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot showing text and long text question types</p></figcaption></figure>
 
 ## Step 2
 
-Clicking on the ![](<../../../../.gitbook/assets/image (305) (1) (1) (1).png>)symbol beside the 'Text' label reveals some additional text based options
+Clicking on the ![](<../../../../.gitbook/assets/image (305) (1) (1) (1).png>)symbol beside the 'Text' label reveals some additional text based questions
 
-![](<../../../../.gitbook/assets/image (316) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot showing additional text based questions</p></figcaption></figure>
 
 ## Step 3
 
 A text based question looks like this
 
-![](<../../../../.gitbook/assets/image (316) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Screenshot showing the input options for a text based question</p></figcaption></figure>
 
 ## Step 4
 
@@ -37,45 +37,39 @@ Under 'Designation' give the question a label.
 The 'label' is how the questions will appear on the form. Make it as clear and concise as possible. Avoid long questions as they won't render well on small screens or mobiles
 {% endhint %}
 
-![](<../../../../.gitbook/assets/image (323) (1) (1) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Screenshot showing a 'label' being written for a text question</p></figcaption></figure>
 
 ## Step 5
 
-You can check the accessibility box if you want longer label (ie more than 100 characters). Checking this box will 'wrap' the text on multiple lines if needed.
+Always check the 'Accessibility' box under the label.   This will make sure that the label 'wraps' on small screens if you have a long label.
 
 {% hint style="info" %}
-Be mindful that it is good practice to keep labels short and clear. Helper text can be used to provide additional information about the Question if needed
+It is good practice to keep labels short and concise.  Helper text can be used to provide additional information about the question if needed
 {% endhint %}
 
-![](<../../../../.gitbook/assets/image (327) (1) (1) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Screenshot showing the location of the 'Accessibility' box</p></figcaption></figure>
 
-Selecting the 'more accessible label' option allows you to write the label in markdown: you can include style and even advanced html. This also allows to include tooltips for complex terms as below:
+Selecting the 'more accessible label' option allows you to write the label in markdown. &#x20;
 
-For example:
+This means you can add styling to your question label and also allows you to include 'tooltips' to explain difficult words.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (2).png" alt=""><figcaption></figcaption></figure>
-
-renders as:
-
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
-
-## Step 6
-
-The helper text appears under the question label when a respondent focusses on a question. It can be used to provide additional help to respondents when answering a specific question
-
-![](<../../../../.gitbook/assets/image (313) (1) (1).png>)
+See seperate Guidance Notes on [Using Markdown](../introduction-to-markdown.md) and [Using Tooltips](../using-tooltips.md)
 
 ## Step 7
 
 Select the 'Validation' box if you require Respondents to answer the question
 
-Respondents will not be able to 'Submit' the form unless all required feilds are completed
+If Respondents don't answer a required question, they will be told that they have missed a required question immediately.   They will be able to continue to fill in the survey but will be redirectly to complete required questions before they can submit their survey.   All prompts are announced to Screen Readers.&#x20;
 
-![](<../../../../.gitbook/assets/image (321) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Screenshot showing the location of the 'Validation' box</p></figcaption></figure>
 
 ## Step 8
 
-The other text based questions operate in the same way. The only differences are as follows:
+It is possible to set a maximum character length for text answers and to show the character counter to respondents.  There will be no restrictions on the length of answers if no maxium length is set.
+
+## Step 9
+
+The other text based questions operate in the a similar way. The main differences are as follows:
 
 * Currency and number questions provide an options for setting a maximum and minimum value for answers
 * Date questions require Respondents to enter a date in the format dd/mm/yyyy
