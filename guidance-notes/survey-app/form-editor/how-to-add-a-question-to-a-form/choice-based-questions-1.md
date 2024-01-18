@@ -1,7 +1,5 @@
 ---
-description: >-
-  This page covers everything you need to know about Rating, Slider, Order and
-  Range type questions
+description: This page covers everything you need to know about Rating, Slider, Order and Range type questions
 ---
 
 # Rating, Slider, Order and Range questions
