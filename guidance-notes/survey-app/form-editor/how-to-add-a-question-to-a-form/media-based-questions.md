@@ -12,20 +12,24 @@ Media based questions invite respondents to upload media files, including pictur
 
 There is only one Media based question which is the 'Upload' question shown in the right hand column
 
-![](<../../../../.gitbook/assets/image (323) (1) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshpt showing the 'upload' question</p></figcaption></figure>
 
 ## Step 2
 
 Give the question a label and add helper text if you would like
 
-![](<../../../../.gitbook/assets/image (307) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot showing the input feilds for a Upload question</p></figcaption></figure>
 
 ## Step 3
 
-The question looks like this to Respondents:
+The upload question looks like this to Respondents:
 
-<figure><img src="../../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Screenshot showing how an Upload question is presented to respondents</p></figcaption></figure>
 
 Respondents can select 'Upload Files' and select a file stored on their own device.
 
 They can also drag and drop files into the 'Drop files here' field.
+
+{% hint style="success" %}
+Congratulations- you now know how to add an Upload question to your form
+{% endhint %}

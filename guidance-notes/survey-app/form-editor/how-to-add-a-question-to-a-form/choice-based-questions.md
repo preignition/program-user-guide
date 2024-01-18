@@ -12,7 +12,7 @@ Choice based questions ask respondents to make a choice between one or more opti
 
 Choice based question types are shown in the right hand column
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Screenshot showing choice based questions</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Screenshot showing choice based questions</p></figcaption></figure>
 
 ## Which choice based question should I use?
 
@@ -32,11 +32,11 @@ The single checkbox provides a single option which Respondents can select or not
 
 The Question is edited as follows:
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Screenshot showing the input options for a checkbox question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input options for a checkbox question</p></figcaption></figure>
 
 And appears to repondents as follows:
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Screenshot showing how a checkbox question appears to survey respondents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Screenshot showing how a checkbox question appears to survey respondents</p></figcaption></figure>
 
 ## Checkbox group
 
@@ -70,7 +70,7 @@ The question label and opions are entered in a similar way to that for checkbox 
 
 The dropdown Question appears to Respondents like this:
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot showing how dropdown questions appear to survey respondents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Screenshot showing how dropdown questions appear to survey respondents</p></figcaption></figure>
 
 ## Radio group
 
@@ -80,7 +80,7 @@ Radio Group questions operate in the same way as Checkbox group questions. Howev
 
 The radio group Question appears to Respondents like this:
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot showing how a radio group question appears to respondents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Screenshot showing how a radio group question appears to respondents</p></figcaption></figure>
 
 ## Ratings
 
