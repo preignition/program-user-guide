@@ -12,7 +12,7 @@ Choice based questions ask respondents to make a choice between one or more opti
 
 Choice based question types are shown in the right hand column
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Screenshot showing choice based questions</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing choice based questions</p></figcaption></figure>
 
 ## Which choice based question should I use?
 
@@ -32,11 +32,11 @@ The single checkbox provides a single option which Respondents can select or not
 
 The Question is edited as follows:
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input options for a checkbox question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input options for a checkbox question</p></figcaption></figure>
 
 And appears to repondents as follows:
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how a checkbox question appears to survey respondents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how a checkbox question appears to survey respondents</p></figcaption></figure>
 
 ## Checkbox group
 
@@ -46,11 +46,11 @@ The Checkbox group asks respondents to select from a range of options. More than
 
 Edit the question in the usual way and select 'options'
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Screenshot showing a label and helper text being input for a checkbox group question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Screenshot showing a label and helper text being input for a checkbox group question</p></figcaption></figure>
 
 Under 'options' you can enter the options you want to be presented to respondents
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Screenshot showing the options input feild for a checkbox group question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Screenshot showing the options input feild for a checkbox group question</p></figcaption></figure>
 
 * You can decide whether you want the options to appear on their own line or side-by-side
 * You can ask respondents to specify an answer if they select the 'other' option.  You can also customise the prompt label that is presented by entering it into the 'specify other text label' field
@@ -58,7 +58,7 @@ Under 'options' you can enter the options you want to be presented to respondent
 
 Checkbox groups question appear to respondents like this:
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Screenshot showing how checkbox group questions appear to respondents.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption><p>Screenshot showing how checkbox group questions appear to respondents.</p></figcaption></figure>
 
 ## Dropdown
 
@@ -70,7 +70,7 @@ The question label and opions are entered in a similar way to that for checkbox 
 
 The dropdown Question appears to Respondents like this:
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Screenshot showing how dropdown questions appear to survey respondents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Screenshot showing how dropdown questions appear to survey respondents</p></figcaption></figure>
 
 ## Radio group
 
@@ -80,7 +80,7 @@ Radio Group questions operate in the same way as Checkbox group questions. Howev
 
 The radio group Question appears to Respondents like this:
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how a radio group question appears to respondents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how a radio group question appears to respondents</p></figcaption></figure>
 
 ## Ratings
 
