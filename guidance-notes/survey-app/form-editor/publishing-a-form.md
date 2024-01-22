@@ -32,7 +32,7 @@ The grid shows summary information about the different versions of the form that
 
 The current version will be marked with a![](<../../../.gitbook/assets/image (15) (2).png>)
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Screenshot of a grid showing the different versions of the form that have been published</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Screenshot of a grid showing the different versions of the form that have been published</p></figcaption></figure>
 
 ## Step 6
 

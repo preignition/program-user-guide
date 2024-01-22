@@ -50,7 +50,7 @@ Edit the question in the usual way and select 'options'
 
 Under 'options' you can enter the options you want to be presented to respondents
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Screenshot showing the options input feild for a checkbox group question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the options input feild for a checkbox group question</p></figcaption></figure>
 
 * You can decide whether you want the options to appear on their own line or side-by-side
 * You can ask respondents to specify an answer if they select the 'other' option.  You can also customise the prompt label that is presented by entering it into the 'specify other text label' field

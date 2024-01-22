@@ -38,7 +38,7 @@ The column on the right hand side shows the different Question types that can be
 
 Questions are added by dragging and dropping them into the middle section of the Form
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a 'dropbox' question being added to a form</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a 'dropbox' question being added to a form</p></figcaption></figure>
 
 ## Step 7
 

@@ -61,7 +61,7 @@ Select the 'Validation' box if you require Respondents to answer the question
 
 If Respondents don't answer a required question, they will be told that they have missed a required question immediately.   They will be able to continue to fill in the survey but will be redirectly to complete required questions before they can submit their survey.   All prompts are announced to Screen Readers.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the location of the 'Validation' box</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the location of the 'Validation' box</p></figcaption></figure>
 
 ## Step 8
 

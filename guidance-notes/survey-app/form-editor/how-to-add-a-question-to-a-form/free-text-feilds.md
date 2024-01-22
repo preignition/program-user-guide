@@ -34,7 +34,7 @@ The preview tab shows how the text will appear to Respondents
 
 This is how the free text feild is presented to respondents
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Screenshot showing an example of free text </p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Screenshot showing an example of free text </p></figcaption></figure>
 
 {% hint style="info" %}
 The formating options that you have with free text feilds is almost limitless.  See the Guidance Note on [Using Markdown](../introduction-to-markdown.md) for more information

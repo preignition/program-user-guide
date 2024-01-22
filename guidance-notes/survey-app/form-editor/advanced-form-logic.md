@@ -32,11 +32,11 @@ The expression is applied to the 'Food Preferences' page and asks whether the re
 
 Only if the answer is 16 or above will the expression = false and the page will be displayed.
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt="Screenshot showing an example of a logical expression being used to hide or display a page based on a respondents age."><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt="Screenshot showing an example of a logical expression being used to hide or display a page based on a respondents age."><figcaption><p>Screenshot showing how the !(>) can be used to show or hide a page depending upon an respondent's age</p></figcaption></figure>
 
 The following expression can then be applied to the 'Not Eligible' page so this page appears if the respondent's age is 15 or less.
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt="Screenshot showing an example of a logical expression being used to hide or display a page based on a respondents age."><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20).png" alt="Screenshot showing an example of a logical expression being used to hide or display a page based on a respondents age."><figcaption><p>Screenshot showing how the !(>) can be used to show or hide a page depending upon an respondent's age</p></figcaption></figure>
 
 The result for a survey respondent is as follows:
 
@@ -82,17 +82,17 @@ The in operator can be used to check whether an element appears in a list of opt
 
 In this example the in operator is used to display or hide a question based on a selection from a proceeding checkbox list.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt="Screenshot showing an example of a logical expression using the &#x27;in&#x27; operator"><figcaption><p>Screenshoot showing how the in operator can be used to display or hide a question based on a slection from a prceeding checkbox list</p></figcaption></figure>
+The expression is true and therefore hidden when 'apples' is selected as a response to the question 'what fruit do your like to eat?'
 
-The above expression reads as:
-
-It is true and therefore hidden when 'apples' is selected as a response to the question 'what fruit do your like to eat?'
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot showing how the in operator can be used to display or hide a question based on a selection from a prceeding checkbox list</p></figcaption></figure>
 
 The expression is then inverted using ! to display it for the same configuration. &#x20;
 
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt="Screenshot showing an example of a logical expression using the &#x27;in&#x27; operator"><figcaption><p>Screenshot showing how ! can be used to invert a logical expression</p></figcaption></figure>
+
 ## **Ternary operator**
 
-The ternary operator, also known as the conditional operator, is very useful when writing complex logical expressions. &#x20;
+The ternary operator, also known as the conditional operator, is very useful when writing complex logical expressions.  It works in a similar way to the 'if' function in excel.
 
 It works by first checking to see if the first segment of an expression is true.  If so the consequent segment is evaluated.  Otherwise, the alternative is.  If the consequent section is missing, the test result itself will be used instead.
 
@@ -100,7 +100,7 @@ It works by first checking to see if the first segment of an expression is true.
 
 In this example the ternary operator is used to hide or display the question 'Did you like this survey' based on the respondent's answer to the question 'Do you agree to participate in this survey'
 
-<figure><img src="../../../.gitbook/assets/image (5) (2).png" alt="Screenshot showing a simple worked example of using the ternary operator to hide or display a question based on a respondent&#x27;s answer to a previous question"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (2).png" alt="Screenshot showing a simple worked example of using the ternary operator to hide or display a question based on a respondent&#x27;s answer to a previous question"><figcaption><p>Screenshot showing a worked example of the ternary operator</p></figcaption></figure>
 
 The above expression works as follow:
 
@@ -134,7 +134,7 @@ The result of this logical expression is return a true expression result (and hi
 
 ## Parentheses
 
-Parentheses operate as you would expect them to.  They are used in logical expressions primarily to modify the normal order of operations.   In an expression involving parentheses, the terms present inside the parentheses () are evaluated first.
+Parentheses operate as you would expect them to.  They are used in logical expressions primarily to modify the normal order of operations.   In an expression involving parentheses, the terms inside the parentheses () are evaluated first.
 
 They can be combined with the ! expression to invert the expression within the brackets as shown in a number of examples given above.
 
@@ -148,8 +148,8 @@ This is useful for validating a group of checkbox answers and limiting the numbe
 
 For instance limiting the number of answers of a question \`What colors do you like\` to no more than 2 answers, one would add this expression to the validity logic expression:
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt="Screenshot showing how the length operator can be used to limit the number of checkboxes which are checked"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16).png" alt="Screenshot showing how the length operator can be used to limit the number of checkboxes which are checked"><figcaption><p>Screenshot showing how the 'Length' operator can be used to limit the number of options a respondent can select for a checkbox group question</p></figcaption></figure>
 
 A custom validation message can then be added under the settings option.   This message will appear if a respondents checks 3 or more colours.
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt="Screenshot showing how a custom validation message can be created under the settings option."><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt="Screenshot showing how a custom validation message can be created under the settings option."><figcaption><p>Screenshot showing how a custom validation message can be added under the 'settings' option.</p></figcaption></figure>
