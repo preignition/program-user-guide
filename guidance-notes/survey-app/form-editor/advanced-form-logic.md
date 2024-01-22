@@ -71,7 +71,7 @@ It is true and therefore hidden when ('do you have children that go to school is
 The expression is then inverted using ! to display it for the same configuration.
 
 {% hint style="info" %}
-if we want to hide something (result being true), it is important to use `||`and not `&&` because `true || false = true (hidden)`, while `true && false = false (displayed)`. &#x20;
+if we want to hide something (result being true), it is important to use `||`and not '&&' because `true || false = true (hidden)`, while `true '&&' false = false (displayed)`. &#x20;
 {% endhint %}
 
 ## in operator
