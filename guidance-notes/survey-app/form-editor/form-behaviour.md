@@ -1,52 +1,64 @@
 ---
-description: This page covers everything you need to know about Form behaviour
+description: This page covers everything you need to know about Form Behaviour
 ---
 
 # Form Behaviour
 
 {% hint style="success" %}
-Form behavior enables you to customise your Form so it adaps to the specific needs of your Respondents
+Form behaviour enables you to customise your Form so it adapts to the specific needs of Respondents
 {% endhint %}
 
 ## Step 1
 
-Form beviour settings can be found in the left hand column when in the Form Build mode
+Form Behaviour can be found in the Form Definition menu in the left hand column
 
-![](<../../../.gitbook/assets/image (296) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (64).png" alt=""><figcaption><p>Screenshot showing Form Behaviour in the Form Definition menu</p></figcaption></figure>
 
 ## Step 2
 
-There are two accessibility modes whch can be activated for a Form
+There are three accessibility modes whch can be activated for a Form
 
-![](<../../../.gitbook/assets/image (325) (1) (1).png>)
+<figure><img src="../../../.gitbook/assets/image (65).png" alt=""><figcaption><p>Screenshot showing the three accessibility modes which can be activated for a form</p></figcaption></figure>
 
-| Accessibility Mode                                  | Description                                                                                                                                                                                                                      |
-| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](<../../../.gitbook/assets/image (323) (1).png>) | Easy Read mode presents the Form in a simplified interface. Sections of the Form can be hidden to make the Form shorter and questions can be simplified. See the How To guide '[Easy Read](easy-read.md)' for more information   |
-| ![](<../../../.gitbook/assets/image (330).png>)     | Sign Language mode allows Form builders to show or hide items specifically for this mode. This can be used to attach videos for questions when this mode is activated. See the How To guide 'Sign Language' for more information |
+
+
+<table><thead><tr><th width="204">Accessibility Mode</th><th>Description</th></tr></thead><tbody><tr><td><img src="../../../.gitbook/assets/image (66).png" alt="" data-size="original"></td><td><strong>Easy Read</strong> mode presents a simplified form interface to the user.  Parts of the form can be hidden (pages, sections or questions) and illustrations can be added.  See the '<a href="easy-read.md">Easy Read</a>' Guidance Note for more information</td></tr><tr><td><img src="../../../.gitbook/assets/image (67).png" alt="" data-size="original"></td><td><strong>Sign Language</strong> mode allows form builders to attach videos for questions which are displayed when this mode is activated.  See the '<a href="sign-language.md">Sign Language</a>' Guidance Note for more information</td></tr><tr><td><img src="../../../.gitbook/assets/image (68).png" alt="" data-size="original"></td><td><strong>Voice Recording</strong> mode allows survey respondents to leave voice messages as answers to text based questions.</td></tr></tbody></table>
+
+Once activated, these modes can be accesses from the form builder as shown below
+
+<figure><img src="../../../.gitbook/assets/image (76).png" alt=""><figcaption><p>Screenshot showing the accessibility mode buttons in the form builder</p></figcaption></figure>
 
 ## Step 3
 
-The Read Aloud feature is activated by default. A Read Aloud button is presented beside each question. Clicking on this button reads the question aloud to the Respondent. Once entered, the Respondents answer can also be read.
+The **Read Aloud** feature is activated by default. A Read Aloud button is presented beside each question. Clicking on this button reads the question aloud to the Respondent. Once entered, the Respondent's answer is also read aloud.
 
 The feature can be deactived by ticking the box in the 'Prevented Modes' section as shown below
 
-![](<../../../.gitbook/assets/image (326).png>)
+<figure><img src="../../../.gitbook/assets/image (69).png" alt=""><figcaption><p>Screenshot showing the Read Aloud accessibility mode being turned off for a form</p></figcaption></figure>
 
 ## Step 4
 
-The layout option allows you to specify whether illustrations can be added to complement questions
+The localize option allows you to mark the form as multilingual
 
-![](<../../../.gitbook/assets/image (297).png>)
+<figure><img src="../../../.gitbook/assets/image (71).png" alt=""><figcaption><p>Screenshot showing a form being marked as multilingual</p></figcaption></figure>
+
+Once a form is localised, a 'localised mode' also appears in the form builder view
+
+<figure><img src="../../../.gitbook/assets/image (77).png" alt=""><figcaption><p>Screenshot showing the 'localize mode' appearing in the form builder view</p></figcaption></figure>
 
 ## Step 5
 
-Enabling illustrations brings up these additional options:
+Layout gives the option to illustate a question with an image or video.  It also allows you to choose the positioning of the illustration as shown below
 
-* Under which mode illustrations will be presented (Easy Mode only by default)
-* Where the illustration will be placed in relation to the question. By default the app will determin the best positioning depending on the the Respondent's screen size
+<figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption><p>Screenshot showing how illustrations for questions can be enabled.</p></figcaption></figure>
 
-![](<../../../.gitbook/assets/image (317).png>)
+{% hint style="warning" %}
+We recommend you allow for the automatic positioning of illustrations as the best position for an illustration will depend on the screen size the repondent is using.
+{% endhint %}
+
+If you activate Easy Read for your form, 'enable illustrations for questions will be activated automatically as will the setting 'Only show illustrations when Easy Read is activated'
+
+<figure><img src="../../../.gitbook/assets/image (80).png" alt=""><figcaption><p>Screenshot showing the default layout options when Easy Read mode is activated.</p></figcaption></figure>
 
 ## Step 6
 
