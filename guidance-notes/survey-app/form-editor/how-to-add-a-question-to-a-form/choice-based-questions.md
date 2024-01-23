@@ -32,7 +32,7 @@ The single checkbox provides a single option which Respondents can select or not
 
 The Question is edited as follows:
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input options for a checkbox question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input options for a checkbox question</p></figcaption></figure>
 
 And appears to repondents as follows:
 
@@ -80,7 +80,7 @@ Radio Group questions operate in the same way as Checkbox group questions. Howev
 
 The radio group Question appears to Respondents like this:
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how a radio group question appears to respondents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how a radio group question appears to respondents</p></figcaption></figure>
 
 ## Ratings
 

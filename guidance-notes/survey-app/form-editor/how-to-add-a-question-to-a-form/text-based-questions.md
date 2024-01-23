@@ -21,7 +21,7 @@ Initially two text based question type are visible
 
 Clicking on the <mark style="color:blue;">**^**</mark> symbol beside the 'Text' label reveals some additional text based questions
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing additional text based questions</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing additional text based questions</p></figcaption></figure>
 
 ## Step 3
 
