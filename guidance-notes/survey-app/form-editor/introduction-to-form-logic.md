@@ -24,7 +24,7 @@ For example, you may be interested in whether your respondents like fruit or not
 
 It doesn't make sense to ask the follow up question if the answer to the first question is 'no'. Logic allows you to hide the follow up question.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Example of a question where logic can help</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Example of a question where logic can help</p></figcaption></figure>
 
 ## How to write a logical expression?
 
@@ -34,7 +34,7 @@ To access the logic function you must switch on the 'Advanced' toggle at the top
 
 Below is an example of the logic feild for the question we outlined above about fruit
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Screenshot showing the advanced toggle being activated.  The 'logic mode' icon appears in the bottom right of the screen.  The 'lock this question while editing logic' toggle has been activated.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the advanced toggle being activated.  The 'logic mode' icon appears in the bottom right of the screen.  The 'lock this question while editing logic' toggle has been activated.</p></figcaption></figure>
 
 {% hint style="success" %}
 Always select the option 'Lock this question while editing logic'.&#x20;
@@ -77,7 +77,7 @@ It would be preferable if the question is hidden initially and is only displayed
 Use ! to invert the expression and hide a question initially
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Screenshot showing how to hide a question initially using !=</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how to hide a question initially using !=</p></figcaption></figure>
 
 * Use != for Not Equal. &#x20;
 * In the example above, the expression now asks whether the question 'Do you like fruit?' does **Not** **equal** 'yes'
