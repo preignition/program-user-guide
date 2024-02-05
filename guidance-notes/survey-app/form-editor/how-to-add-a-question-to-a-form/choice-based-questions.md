@@ -80,21 +80,7 @@ The dropdown Question appears to Respondents like this:
 Radio Group questions operate in the same way as Checkbox group questions. However respondents can only select one option
 {% endhint %}
 
-The radio group Question appears to Respondents like this:
-
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how a radio group question appears to respondents</p></figcaption></figure>
-
-## Ratings
-
-{% hint style="info" %}
-Rating questions ask responents to rate something using a star system
-{% endhint %}
-
-Edit the question in the usual way. You can set the number of stars you want presented and whether or not to allow respondents to select zero stars
-
-![](<../../../../.gitbook/assets/image (300).png>)
-
-Rating questions appear to respondents like this:
+The radio group Question appears to Respondents like this:o respondents like this:
 
 ![](<../../../../.gitbook/assets/image (328) (1) (1).png>)
 
