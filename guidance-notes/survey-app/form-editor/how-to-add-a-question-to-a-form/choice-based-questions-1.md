@@ -41,6 +41,8 @@ Short video demonstrating a 'Order' question in accessible surveys. The list sho
 ](https://youtu.be/SJ7JJSZVKSQ)
 {% endembed %}
 
+Validity logic can be applied to customise the number of items that you a require respondents to rank, ie if you want to require every option in a list to be ordered.  See the guide note 'Advanced form Logic' for detailed instructions.
+
 ## Range
 
 Range questions present respondents with a sliding scale in a similar way to a Slider question.  However respondents can specify a range on the scale rather than a single point.

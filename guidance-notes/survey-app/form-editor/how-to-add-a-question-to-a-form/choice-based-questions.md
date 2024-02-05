@@ -80,20 +80,9 @@ The dropdown Question appears to Respondents like this:
 Radio Group questions operate in the same way as Checkbox group questions. However respondents can only select one option
 {% endhint %}
 
-The radio group Question appears to Respondents like this:o respondents like this:
+The radio group question appears to respondents like this:
 
-![](<../../../../.gitbook/assets/image (328) (1) (1).png>)
+<figure><img src="../../../../.gitbook/assets/image (83).png" alt=""><figcaption><p>Screenshot showing an an example of a radion group question</p></figcaption></figure>
 
-## Slider
 
-{% hint style="info" %}
-Slider questions ask respondents to to choose an option on a sliding scale.
-{% endhint %}
 
-Edit the question in the usual way. You can set the minimum and maximum values for the scale
-
-<figure><img src="../../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
-
-Rating questions appear to respondents like this:
-
-<figure><img src="../../../../.gitbook/assets/image (5) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -142,9 +142,9 @@ They can be combined with the ! expression to invert the expression within the b
 
 The application adds custom transforms to simplify expressions. Transforms use the | pipe operator.
 
-### Length (for computing the length of an array)
+### Using 'Length' to customise the number of checkbox options selected
 
-This is useful for validating a group of checkbox answers and customising the number of boxes you require a respondent to select.
+You can use the 'length' operator to customise the number of checkbox optionsd you require a respondent to select.
 
 For instance limiting the number of answers of a question \`What colors do you like\` to no more than 2 answers, add this expression to the validity logic expression:
 
@@ -160,4 +160,24 @@ This short video shows how the validity logic can be applied to customising the 
 
 {% embed url="https://youtu.be/hlYPHC46LbM" %}
 
-&#x20;
+### Using 'Length' to customise the number of order question items to be ordered
+
+In a similar way, the 'length' operator can be used to customise the number of order question items to be ordered by a respondent.
+
+For instance to require respondents to order all the items in this list the following validity expression can be used:
+
+<figure><img src="../../../.gitbook/assets/image (84).png" alt=""><figcaption><p>Screenshot showing a logical expression to customise the number or items to be ordered</p></figcaption></figure>
+
+The expression result will be 'true' (and therefore 'valid') when:
+
+* The number of options ordered is more than 2 (ie all the options are selected)&#x20;
+* OR (||) no options are selected.  The number of options selected is blank ("")
+
+A custom validation message can be added under the settings option. This message will appear if a respondents orders some but not all of the options.  The message will be announced to screen readers.
+
+<figure><img src="../../../.gitbook/assets/image (87).png" alt=""><figcaption><p>Screenshot showing how a custom validation message can be added under the 'settings' option.</p></figcaption></figure>
+
+If a respondents orders some but not all of the options, they will be able to continue to fill in the survey.  However they will not be able to submit the survey until either all or none of the options have been ordered.  Respondents will be redirected to the 'invalid' question so the issue can be resolved.
+
+This short video shows how the validity logic can be applied to customising the number of order question items to be ordered.
+
