@@ -60,6 +60,8 @@ Checkbox groups question appear to respondents like this:
 
 <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how checkbox group questions appear to respondents.</p></figcaption></figure>
 
+The 'Validity' logic mode can be used to specify the exact number of checkbox options you require a respondent to select.  See the guidance note '[Advanced form logic](../advanced-form-logic.md#length-for-computing-the-length-of-an-array)' for detailed instruction. &#x20;
+
 ## Dropdown
 
 {% hint style="info" %}

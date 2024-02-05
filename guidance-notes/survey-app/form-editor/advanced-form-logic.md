@@ -144,12 +144,20 @@ The application adds custom transforms to simplify expressions. Transforms use t
 
 ### Length (for computing the length of an array)
 
-This is useful for validating a group of checkbox answers and limiting the number of boxes checked.
+This is useful for validating a group of checkbox answers and customising the number of boxes you require a respondent to select.
 
-For instance limiting the number of answers of a question \`What colors do you like\` to no more than 2 answers, one would add this expression to the validity logic expression:
+For instance limiting the number of answers of a question \`What colors do you like\` to no more than 2 answers, add this expression to the validity logic expression:
 
 <figure><img src="../../../.gitbook/assets/image (16).png" alt="Screenshot showing how the length operator can be used to limit the number of checkboxes which are checked"><figcaption><p>Screenshot showing how the 'Length' operator can be used to limit the number of options a respondent can select for a checkbox group question</p></figcaption></figure>
 
-A custom validation message can then be added under the settings option. This message will appear if a respondents checks 3 or more colours.
+A custom validation message can then be added under the settings option. This message will appear if a respondents checks 3 or more colours.  The message will be announced to screen readers.
 
 <figure><img src="../../../.gitbook/assets/image (11).png" alt="Screenshot showing how a custom validation message can be created under the settings option."><figcaption><p>Screenshot showing how a custom validation message can be added under the 'settings' option.</p></figcaption></figure>
+
+If a respondents selects more than 3 colours they will be able to continue to fill in the survey.  However they will not be able to submit the survey until the required number of options have been selected.  Respondents will be redirected to the 'invalid' question so the issue can be resolved.
+
+This short video shows how the validity logic can be applied to customising the number of boxes of a checkbox question you require a respondent to select.
+
+{% embed url="https://youtu.be/hlYPHC46LbM" %}
+
+&#x20;
