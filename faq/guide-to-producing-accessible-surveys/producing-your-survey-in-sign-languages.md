@@ -3,7 +3,7 @@
 
 
 {% hint style="info" %}
-<mark style="color:blue;">**Surveys in sign language(s) are important to allow deaf people to respond in their language**</mark>
+<p>**Surveys in sign language(s) are important to allow deaf people to respond in their language**</p>
 {% endhint %}
 
 ## Summary

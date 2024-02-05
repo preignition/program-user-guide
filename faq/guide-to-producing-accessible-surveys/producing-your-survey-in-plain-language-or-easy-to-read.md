@@ -1,7 +1,7 @@
 # Producing your survey in Plain Language or Easy to Read
 
 {% hint style="info" %}
-<mark style="color:blue;">**Plain Language and Easy to Read makes information more accessible for everyone**</mark>.
+<p>**Plain Language and Easy to Read makes information more accessible for everyone**</p>.
 {% endhint %}
 
 {% embed url="https://www.youtube.com/watch?v=ol5tZ2hnUgE" %}
