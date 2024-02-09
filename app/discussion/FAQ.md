@@ -46,13 +46,13 @@ We take the privacy and security of your personal information seriously. We have
 
 ### Can I make my discussions or comments private?
 
-This depends on the channel settings. 
+This depends on the channel privacy settings. Channels are either `public` or `private`.
 
 Channels have 3 levels of privacy settings:
-- `Public` channels are visible to everyone. Users belonging to a `team` (for `generic` channels) or respondents of a survey (for `survey` channels) can create discussion. Anyone signed-in can join and participate in the discussions. Anyone can react and vote on content.
-- `Private` channels are visible to everyone, but only members can join and participate in the discussions. Members are invited by the channel owner or editors. For `survey` channels, respondents would be  automatically added as members .  Anyone can react and vote on content.
-- `Secret` channels are not visible to everyone. Only members can join and participate in the discussions. Members are invited by the channel owner or editors. 
-Only members can react and vote on content.
+- `Public` channels are visible to everyone. Users belonging to a `team` (for `generic` channels) or respondents of a survey (for `survey` channels) can create discussion. Anyone with a verified email-address can join and participate in the discussions. Anyone signed-in can react and vote on content. Channels are `public` by default.
+- `Private` channels are not visible to everyone. Only members can join and participate in the discussions. Members are invited by the channel owner or editors. For `survey` channels, respondents would be  automatically added as members.  Anyone can react and vote on content.
+<!-- - `Secret` channels are not visible to everyone. Only members can join and participate in the discussions. Members are invited by the channel owner or editors. 
+Only members can react and vote on content. -->
 
 ## Support and Feedback
 

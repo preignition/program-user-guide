@@ -8,21 +8,29 @@
 - [x] add Code of Conduct
 - [x] other types of categories can have answers
 - [x] remove comments title when there is no comment
-- [ ] allow to drop images in the editor (downloadURL)
-- [ ] fix discussion does not display after creation
-- [ ] add user notification on channel creation (and on add user as editor) 
+- [x] allow to drop images in the editor (downloadURL)
+- [x] fix discussion does not display after creation
+- [x] redirect to discussions after delete discussion
+- [x] review email text (you you)
+- [x] add user notification on channel creation (and on add user as editor. This require a new trigger on document creation on entityResource)
 - [ ] allow to mute notifications
-- [ ] style links
-- [ ] implement user rights
-- [ ] add pinned discussions
+- [x] style links
+- [x] implement user rights
+- [x] style reply 
+- [x] reply miss right menu and reaction
+- [x] reply should be editable
+- [ ] add Contextual help
+- [x] add pinned discussions
 - [ ] more info when creating discussion (e.g. warning not for survey)
 - [ ] add right page for channel
 - [ ] add danger zone for freezing channel
 - [ ] add links for unsubscribe
+- [x] add orderBy for reply  comments and discussion
 - [ ] handle flagged content
 - [ ] add `from` field in notification emails
 - [ ] handle email reply and integrate in the list of comments. This includes rethinking email metadata and adding 
 - [ ] add subscribe to discussion
+- [x] answered by miss name
 
 ### TL:DR;
 
