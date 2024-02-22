@@ -22,7 +22,11 @@ To create a new discussion, navigate to the homepage of the app and click on the
 
 ### Can I edit or delete my discussions or comments?
 
-Yes, you can edit or delete your own discussions and comments. Simply navigate to the discussion or comment you want to modify, and you will find options to edit or delete it.
+Yes, you can edit or delete your own discussions and comments. Simply navigate to the discussion or comment you want to modify, and you will find options to edit or delete it, top right of the discussion or comment.
+
+### Still, it seems I can't add new discussions, or add comments and replies?
+
+Only users with the right to create discussions can create discussions. This right is given by the channel owner or editors. On the main (default) channel, all users belonging to a team have the right to create discussions. All users with a verified email-address can join and participate in the discussions. Anyone signed-in can react and vote on content.
 
 ### How can I report inappropriate content?
 
