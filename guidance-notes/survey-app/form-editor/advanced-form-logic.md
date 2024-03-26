@@ -179,6 +179,10 @@ A custom validation message can be added under the settings option. This message
 
 If a respondents orders some but not all of the options, they will be able to continue to fill in the survey.  However they will not be able to submit the survey until either all or none of the options have been ordered.  Respondents will be redirected to the 'invalid' question so the issue can be resolved.
 
+{% hint style="info" %}
+This logical expression has a limitation.  If the question is marked as 'required' the question will appear in red when the page loads even before the question has received focus.  The only way to resolve this currently is to accept this behaviour or not to mark the question as required&#x20;
+{% endhint %}
+
 This short video shows how the validity logic can be applied to customising the number of order question items to be ordered.
 
 {% embed url="https://youtu.be/i6l9cJ4djrs" %}
