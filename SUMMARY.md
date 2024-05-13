@@ -82,6 +82,8 @@
 * [Guide to producing Accessible Surveys](faq/guide-to-producing-accessible-surveys/README.md)
   * [Producing your survey in Plain Language or Easy to Read](faq/guide-to-producing-accessible-surveys/producing-your-survey-in-plain-language-or-easy-to-read.md)
   * [Producing your survey in sign languages](faq/guide-to-producing-accessible-surveys/producing-your-survey-in-sign-languages.md)
+* [FAQ about survey data and analytics](faq/faq-about-survey-data-and-analytics/README.md)
+  * [How do I ensure that the data in my CSV file is properly formatted?](faq/faq-about-survey-data-and-analytics/how-do-i-ensure-that-the-data-in-my-csv-file-is-properly-formatted.md)
 
 ## Release Notes
 
