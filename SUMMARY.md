@@ -9,6 +9,7 @@
 * [Introduction to Easy Read](tutorials/introduction-to-easy-read.md)
 * [Introduction to Sign Language](tutorials/introduction-to-sign-language.md)
 * [Introduction to form logic](tutorials/introduction-to-form-logic.md)
+* [Introduction to the Customer Portal](tutorials/introduction-to-the-customer-portal.md)
 
 ## GUIDANCE NOTES
 
