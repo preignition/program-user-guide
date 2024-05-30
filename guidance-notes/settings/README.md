@@ -4,25 +4,10 @@ description: This section covers everything you need to know about the Customer 
 
 # Customer Portal
 
-The customer portal therefore has 2 main sections. &#x20;
+The customer portal allows customers to control all aspects of their account on Accessible Surveys. &#x20;
 
-The first section is labelled ‘Portal’.  This is where you can view and edit the main account settings. &#x20;
+This part of the application is currently under development.   However you can already complete key tasks like review your subscription or add members to your account or to a specific team.
 
-The second section is labelled ‘Team’.  This is where you can access the settings for a specific team.
+The first section is labelled [‘Portal’.](main-settings/)  This is where you can view and edit the main account settings. &#x20;
 
-* Customer Portal
-  * Profile
-  * Subscription
-  * Account Holders
-  * Teams
-  * Apps
-  * Authentication
-  * Danger Zone
-* Team Settings
-  * Profile
-  * Presentation
-  * Team Members
-  * Communication
-  * Channels
-  * App User Settings
-  * Danger Zone
+The second section is labelled [‘Team’.](presentation.md)  This is where you view and edit the settings for a specific team.
