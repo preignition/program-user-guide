@@ -56,6 +56,7 @@
 * [Customer Portal](guidance-notes/settings/README.md)
   * [Portal](guidance-notes/settings/main-settings/README.md)
     * [Profile](guidance-notes/settings/main-settings/profile.md)
+    * [Subscription](guidance-notes/settings/main-settings/subscription.md)
   * [Team](guidance-notes/settings/presentation.md)
   * [My Profile](guidance-notes/settings/my-profile.md)
   * [Users](guidance-notes/settings/users.md)
