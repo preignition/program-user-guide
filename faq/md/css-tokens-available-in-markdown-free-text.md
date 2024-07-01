@@ -12,49 +12,49 @@ Color system is inspired from [Material Design color system](https://m3.material
 Using color tokens instead of hard-coded colors will ensure that the color is coherent with the current theme, or that it will also work in dark mode.
 
 ### Main colors
-| Token |  Description | 
-| ----- | ------------ |
-| `--color-primary` | Primary color of the theme |
-| `--color-on-primary` | Color to apply on Primary color |
-| `--color-primary-container` | Primary Container color of the theme |
-| `--color-on-primary-container` | Color to apply on Primary Container color |
-| `--color-secondary` | Secondary color of the theme |
-| `--color-on-secondary` | Color to apply on Secondary color |
-| `--color-secondary-container` | Secondary Container color of the theme |
-| `--color-on-secondary-container` | Color to apply on Secondary Container color |
-| `--color-tertiary` | Tertiary color of the theme |
-| `--color-on-tertiary` | Color to apply on Tertiary color |
-| `--color-tertiary-container` | Tertiary Container color of the theme |
-| `--color-on-tertiary-container` | Color to apply on Tertiary Container color |
+| Token |  Description | Result |
+| ----- | ------------ | ------- |
+| `--color-primary` | Primary color of the theme | <div style="background: var(--color-primary); width: 20px; height: 20px;"> |
+| `--color-on-primary` | Color to apply on Primary color | <div style="background: var(--color-on-primary); width: 20px; height: 20px;"> |
+| `--color-primary-container` | Primary Container color of the theme | <div style="background: var(--color-primary-container); width: 20px; height: 20px;"> |
+| `--color-on-primary-container` | Color to apply on Primary Container color | <div style="background: var(--color-on-primary-container); width: 20px; height: 20px;"> |
+| `--color-secondary` | Secondary color of the theme | <div style="background: var(--color-secondary); width: 20px; height: 20px;"> |
+| `--color-on-secondary` | Color to apply on Secondary color | <div style="background: var(--color-on-secondary); width: 20px; height: 20px;"> |
+| `--color-secondary-container` | Secondary Container color of the theme | <div style="background: var(--color-secondary-container); width: 20px; height: 20px;"> |
+| `--color-on-secondary-container` | Color to apply on Secondary Container color | <div style="background: var(--color-on-secondary-container); width: 20px; height: 20px;"> |
+| `--color-tertiary` | Tertiary color of the theme | <div style="background: var(--color-tertiary); width: 20px; height: 20px;"> |
+| `--color-on-tertiary` | Color to apply on Tertiary color | <div style="background: var(--color-on-tertiary); width: 20px; height: 20px;"> |
+| `--color-tertiary-container` | Tertiary Container color of the theme | <div style="background: var(--color-tertiary-container); width: 20px; height: 20px;"> |
+| `--color-on-tertiary-container` | Color to apply on Tertiary Container color | <div style="background: var(--color-on-tertiary-container); width: 20px; height: 20px;"> |
 
 ### Status colors
-| Token |  Description | 
-| ----- | ------------ |
-| `--color-error` | Error color of the theme |
-| `--color-on-error` | Color to apply on Error color |
-| `--color-error-container` | Error Container color of the theme |
-| `--color-on-error-container` | Color to apply on Error Container color |
-| `--color-success` | Success color of the theme |
-| `--color-on-success` | Color to apply on Success color |
-| `--color-success-container` | Success Container color of the theme |
-| `--color-on-success-container` | Color to apply on Success Container color |
-| `--color-warning` | Warning color of the theme |
-| `--color-on-warning` | Color to apply on Warning color |
-| `--color-warning-container` | Warning Container color of the theme |
-| `--color-on-warning-container` | Color to apply on Warning Container color |
+| Token |  Description | Result |
+| ----- | ------------ | ------- |
+| `--color-error` | Error color of the theme |  <div style="background: var(--color-error); width: 20px; height: 20px;"> | 
+| `--color-on-error` | Color to apply on Error color |  <div style="background: var(--color-on-error); width: 20px; height: 20px;"> | 
+| `--color-error-container` | Error Container color of the theme |  <div style="background: var(--color-error-container); width: 20px; height: 20px;"> | 
+| `--color-on-error-container` | Color to apply on Error Container color |  <div style="background: var(--color-on-error-container); width: 20px; height: 20px;"> | 
+| `--color-success` | Success color of the theme |  <div style="background: var(--color-success); width: 20px; height: 20px;"> | 
+| `--color-on-success` | Color to apply on Success color |  <div style="background: var(--color-on-success); width: 20px; height: 20px;"> | 
+| `--color-success-container` | Success Container color of the theme |  <div style="background: var(--color-success-container); width: 20px; height: 20px;"> | 
+| `--color-on-success-container` | Color to apply on Success Container color |  <div style="background: var(--color-on-success-container); width: 20px; height: 20px;"> | 
+| `--color-warning` | Warning color of the theme |  <div style="background: var(--color-warning); width: 20px; height: 20px;"> | 
+| `--color-on-warning` | Color to apply on Warning color |  <div style="background: var(--color-on-warning); width: 20px; height: 20px;"> | 
+| `--color-warning-container` | Warning Container color of the theme |  <div style="background: var(--color-warning-container); width: 20px; height: 20px;"> | 
+| `--color-on-warning-container` | Color to apply on Warning Container color |  <div style="background: var(--color-on-warning-container); width: 20px; height: 20px;"> | 
 
 ### Neutral colors
-| Token |  Description | 
-| ----- | ------------ |
-| `--color-outline` | Color to use for outlines |
-| `--color-surface` | Color to use for surface |
-| `--color-on-surface` | Color to apply on surface |
-| `--color-surface-variant` | Variant Color to use for surface |
-| `--color-on-surface-variant` | Color to apply on surface variant |
-| `--color-background` | Color to use for background |
-| `--color-on-background` | Color to apply on background |
-| `--color-surface-container` | Color to use for surface container |
-| `--color-on-surface-container` | Color to apply on surface container |
+| Token |  Description | Result |
+| ----- | ------------ | ------ |
+| `--color-outline` | Color to use for outlines |  <div style="background: var(--color-outline); width: 20px; height: 20px;"> |
+| `--color-surface` | Color to use for surface |  <div style="background: var(--color-surface); width: 20px; height: 20px;"> |
+| `--color-on-surface` | Color to apply on surface |  <div style="background: var(--color-on-surface); width: 20px; height: 20px;"> |
+| `--color-surface-variant` | Variant Color to use for surface |  <div style="background: var(--color-surface-variant); width: 20px; height: 20px;"> |
+| `--color-on-surface-variant` | Color to apply on surface variant |  <div style="background: var(--color-on-surface-variant); width: 20px; height: 20px;"> |
+| `--color-background` | Color to use for background |  <div style="background: var(--color-background); width: 20px; height: 20px;"> |
+| `--color-on-background` | Color to apply on background |  <div style="background: var(--color-on-background); width: 20px; height: 20px;"> |
+| `--color-surface-container` | Color to use for surface container |  <div style="background: var(--color-surface-container); width: 20px; height: 20px;"> |
+| `--color-on-surface-container` | Color to apply on surface container |  <div style="background: var(--color-on-surface-container); width: 20px; height: 20px;"> |
 
 ## Space
 
