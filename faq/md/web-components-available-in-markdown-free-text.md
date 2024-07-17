@@ -131,7 +131,7 @@ Produces:
 
 ## Video - `<lapp-youtube>` or `<lite-youtube>`
 
-The element for rendering youtube video is [lite-youtube](https://github.com/paulirish/lite-youtube-embed). We deploy an alternative version of this element called `lapp-youtube` that adds default parameters for allowing to pause videos when necessary, and display videos from the same channel when the video is finished.
+The element for rendering youtube video is [lite-youtube ](https://github.com/paulirish/lite-youtube-embed). We deploy an alternative version of this element called `lapp-youtube` that adds default parameters for allowing to pause videos when necessary, and display videos from the same channel when the video is finished.
 
 Prefer using `lapp-youtube` over `lite-youtube` as default parameters are added for you.
 

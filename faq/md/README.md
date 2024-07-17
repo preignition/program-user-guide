@@ -61,7 +61,7 @@ This is displayed in all modes. It is twice the width of the above elements
 
 ### With a video:
 
-<lite-youtube videoid="xVytWVHX4N0"></lite-youtube>
+<lapp-youtube videoid="xVytWVHX4N0"></lapp-youtube>
 
 ### And a styled box: 
 
@@ -91,7 +91,7 @@ I am in a box
 * `wrap` is a user defined class (defined in the `<style>` tag) that sets the gap between elements
 * `box` is a user defined class (defined in the `<style>` tag) that sets colors and margins
 * `show-when-signlanguage` and `show-when-easyread` are pre-defined convenience class that shows or hide the content depending on the accessibility mode
-* `lite-youtube` is a web-component that displays a youtube video
+* `lapp-youtube` is a web-component that displays a youtube video
 * `div` is an HTML tag that creates a box
 
 ### More information
