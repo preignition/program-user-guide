@@ -1,6 +1,7 @@
 # Table of contents
 
 * [TRAINING GUIDE](README.md)
+  * [Training Materials](training-guide/training-materials.md)
 
 ## TUTORIALS
 

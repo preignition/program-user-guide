@@ -28,9 +28,19 @@ The training guide does not cover every feature which is offered.  Links to Guid
 
 ## Training Materials
 
-The following training materials are available for you to download.  You will need these to create your 'Training Survey'
+The following training materials are available for you to download.  You will need these to create your Training Survey
 
-Survey questions
+### Survey questions
+
+{% file src=".gitbook/assets/1. Survey Questions.pdf" %}
+
+### Text for landing page and thank you message
+
+{% file src=".gitbook/assets/2. Text for Landing Page and Thank You Message.pdf" %}
+
+
+
+<figure><img src=".gitbook/assets/1.1  ER image for Survey.png" alt="" width="188"><figcaption></figcaption></figure>
 
 Easy Read images&#x20;
 
