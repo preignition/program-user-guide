@@ -6,7 +6,9 @@ description: >-
 
 # Training Materials
 
-The following training materials are available for you to download.  You will need these to create your Training Survey
+The following training materials are available for you to download. &#x20;
+
+You will need these to create your Training Survey
 
 ### Survey questions
 
@@ -17,8 +19,6 @@ The following training materials are available for you to download.  You will ne
 {% file src="../.gitbook/assets/2. Text for Landing Page and Thank You Message.pdf" %}
 
 ### Easy Read Images
-
-
 
 <div>
 
@@ -44,11 +44,24 @@ The following training materials are available for you to download.  You will ne
 
 </div>
 
-&#x20;
-
 {% hint style="info" %}
 These Easy Read images are available for free on [Easy on the i.](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/)    Easy on the i’ is the information design service within the Learning Disability Service at Leeds and York Partnership NHS Foundation Trust.  The images remain the intellectual property of Leeds and York Partnership NHS Foundation Trust ('LYPFT') and are copyright LYPFT
 {% endhint %}
 
-Links to Sign Language videos
+## Links to Sign Language videos
 
+#### BSL video for question 1.1 "Which survey tool does your organisation use the most?"
+
+{% embed url="https://youtu.be/dsL489ipJxM" %}
+
+#### BSL video for question 1.2 "I am satisfied with my current survey tool"
+
+{% embed url="https://youtu.be/6KxVTBEfcUQ" %}
+
+#### BSL video for question 1.3 "What do you like about the survey tool you are using?"
+
+{% embed url="https://youtu.be/4LfklqWfq3A" %}
+
+#### BSL video for question 1.4 "What frustrates you about the survey tool you are using?"
+
+{% embed url="https://youtu.be/hK1L5y5iRds" %}

@@ -25,23 +25,3 @@ Each section will take approximately 30 minutes to complete although you are wel
 Each section has its own learning outcomes.&#x20;
 
 The training guide does not cover every feature which is offered.  Links to Guidance Notes which cover additional and advanced features are provided under the relevant section.
-
-## Training Materials
-
-The following training materials are available for you to download.  You will need these to create your Training Survey
-
-### Survey questions
-
-{% file src=".gitbook/assets/1. Survey Questions.pdf" %}
-
-### Text for landing page and thank you message
-
-{% file src=".gitbook/assets/2. Text for Landing Page and Thank You Message.pdf" %}
-
-
-
-<figure><img src=".gitbook/assets/1.1  ER image for Survey.png" alt="" width="188"><figcaption></figcaption></figure>
-
-Easy Read images&#x20;
-
-Links to Sign Language videos
