@@ -28,7 +28,7 @@ You will need the following learning materials for this session.
 
 The following video
 
-## Advanced features not covered in this session
+## Advanced features related to creating a survey not covered in this session
 
 * [x] [Advanced form logic](../guidance-notes/survey-app/form-editor/advanced-form-logic.md)
 * [x] [Using tooltips](../guidance-notes/survey-app/form-editor/using-tooltips.md)
