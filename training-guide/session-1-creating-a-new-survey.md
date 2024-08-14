@@ -6,5 +6,5 @@ This session shows you how to create a new survey and add the questions you want
 
 On completing this session, you should feel confident completing the following tasks.
 
-* [x] Creating a new survey
-* [x] Understanding how pages work
+* [ ] Creating a new survey
+* [ ] Understanding how pages work
