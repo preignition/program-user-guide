@@ -2,6 +2,7 @@
 
 * [TRAINING GUIDE](README.md)
   * [Training Materials](training-guide/training-materials.md)
+  * [Session 1- Creating a new survey](training-guide/session-1-creating-a-new-survey.md)
 
 ## TUTORIALS
 
