@@ -24,6 +24,15 @@ You will need the following learning materials for this session.
 
 [Survey Questions](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LDglCKkoaiLL-wpvCjA%2Fuploads%2FB6IrtchwR55nYEKJ3HGZ%2F1.%20Survey%20Questions.pdf?alt=media\&token=e6084315-e6ef-4a68-97ae-98a9e2ddc640)
 
-## Learning Contect
+## Learning Content
 
 The following video
+
+## Advanced features not covered in this session
+
+* [x] [Advanced form logic](../guidance-notes/survey-app/form-editor/advanced-form-logic.md)
+* [x] [Using tooltips](../guidance-notes/survey-app/form-editor/using-tooltips.md)
+*
+*
+
+## &#x20;
