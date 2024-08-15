@@ -6,11 +6,13 @@ description: This session covers how to create a new survey and add questions to
 
 ## Session Overview
 
-This session will guide you though the process of creating a new survey and adding questions to your form.   It explains how a Form is structured using Pages, Sections and Questions and introduces you to some commonly used question types.   It also shows you how you can test your form as you build it.&#x20;
+This session will guide you though the process of creating a new survey and adding questions to your Form.   It explains how a Form is structured using Pages, Sections and Questions and introduces you to some commonly used question types.   It also shows you how you can test your form as you build it.&#x20;
 
-It will cover how to add simple form logic for your 'Form' so respondents are only asked relevant questions.
+Once you have added some question it will show you how to add simple form logic so respondents are only asked relevant questions.
 
-&#x20;&#x20;
+Lastly it will show you how to 'publish' your Form and how to grant your team mates access rights to your Form.
+
+The session will take approximately 30 mins to complete.  I hope that you enjoy it! &#x20;
 
 ## Learning outcomes
 
