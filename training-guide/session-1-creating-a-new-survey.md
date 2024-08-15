@@ -4,6 +4,14 @@ description: This session covers how to create a new survey and add questions to
 
 # Session 1- Creating a new survey
 
+## Session Overview
+
+This session will guide you though the process of creating a new survey and adding questions to your form.   It explains how a Form is structured using Pages, Sections and Questions and introduces you to some commonly used question types.   It also shows you how you can test your form as you build it.&#x20;
+
+It will cover how to add simple form logic for your 'Form' so respondents are only asked relevant questions.
+
+&#x20;&#x20;
+
 ## Learning outcomes
 
 On completing this session, you will feel confident with the following.

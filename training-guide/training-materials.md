@@ -6,9 +6,11 @@ description: >-
 
 # Training Materials
 
-The following training materials are available for you to download. &#x20;
+{% hint style="info" %}
+We suggest that you download these training materials before you start the course.  You will need them to create your 'Training Survey'. &#x20;
 
-You will need these to create your Training Survey
+You do not need to download the BSL videos. &#x20;
+{% endhint %}
 
 ### Survey questions
 
