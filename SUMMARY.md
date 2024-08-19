@@ -1,7 +1,6 @@
 # Table of contents
 
 * [TRAINING GUIDE](README.md)
-  * [Training Materials](training-guide/training-materials.md)
   * [Session 1- Creating a new survey](training-guide/session-1-creating-a-new-survey.md)
   * [Session 2- Adding accessibility options to a form](training-guide/session-2-adding-accessibility-options-to-a-form.md)
 

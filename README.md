@@ -8,21 +8,17 @@ description: A complete guide to creating your first survey on Accessible Survey
 
 This Training Guide accompanies you to create your first survey on Accessible Surveys. &#x20;
 
-By following this guide and using the training materials provided, you willl create a demonstration 'Training Survey'.
+By following this guide and using the training materials provided, you will create a demonstration 'Training Survey'.  This will introduce you to the key features of Accessible Surveys.
 
-Through this hands on on-line training exercise, you will be introduced to the key features of Accessible Surveys.
+This Training Guide complements the other on-line help that is available in the form of Tutorials, Guidance Notes and Frequently Asked Questions. &#x20;
 
 {% hint style="success" %}
 On completing the training, you will feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
 {% endhint %}
 
-This Training Guide complements the other on-line help that is available in the form of Tutorials, Guidance Notes and Frequently Asked Questions. &#x20;
-
-The Training Guide assumes you have created an account on Accessible Surveys and have access to the survey application.
-
 ## Structure of the guide
 
-This Training Guide follows the natural process of creating, sharing and analying a survey and is divided into 5 sections:
+This Training Guide follows the natural process of creating, sharing and analying a survey and is divided into 5 sessions:
 
 1. Creating a new survey.
 2. Adding accessibility options to a form
@@ -34,12 +30,33 @@ The training guide does not cover every feature which is offered.  Links to Guid
 
 ## Time Commitment
 
-We estimate that it will take approximately 30 minutes to complete each section.  Some people will take less time and some people will take more time.  We encourage you to go at your own pace and revisit sections if you need to.
+We estimate that it will take approximately 30 minutes to complete most sessions although session 1 will take aproximately 45 mins .  Some people will take less time and some people will take more time.  We encourage you to go at your own pace and revisit sessions if you need to.
 
-This means that it is likely to take between 2-3 hours to complete the entire course.  Although this is a significant investment of time it will save you a lot of time in the long run.
+This means that it is likely to take between 2-3 hours to complete the entire course.  Although we recognise that this is a significant investment of time it will save you a lot of time in the long run.
 
 {% hint style="info" %}
-Once you are through the learning curve of using a new platform you will be able to create accessible surveys easily and quickly.
+Once have created your first survey you will be familiar with the platfrom.  Putting you in a great position to create your next survey easily and quickly.
+{% endhint %}
+
+## Training Materials
+
+We have provided the following training material to help you create your first survey.
+
+* [x] Survey questions
+* [x] Text for 'landing page' and 'thank you' message
+* [x] Images for Easy Read version
+* [x] BSL videos for sign language version &#x20;
+
+The session will have a link to an materials needed in the session.  You may find it helpful to download these materials onto your computer before you start the session.  For instance it will save you time writing your survey questions if you can copy and paste from the 'survey questions' pdf.&#x20;
+
+## Suggested Learning Method
+
+Each session includes a Youtube video where Jerry, one of of the Co-Founders of Accessible Surveys, will accompany you to create a 'Training Survey'
+
+You should follow the steps in the video as closely as you can.  The video can be paused so you can go at your own pace.
+
+{% hint style="info" %}
+It will help you follow the training video, if you can access it on a large screen on a seperate computer
 {% endhint %}
 
 ## Learning Outcomes
@@ -49,7 +66,7 @@ There are two overall learning objectives of this course. &#x20;
 On completing this course;
 
 1. You will feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
-2. You will be aware of the advanced features offered by Accesissible Surveys and know how to access Guidance Notes on these features.&#x20;
+2. You will be aware of the advanced features offered by Accessible Surveys and know how to access Guidance Notes on these features.&#x20;
 
 Each section of this guide has its own learning outcomes.  It is recommended that you are comfortable with the learning outcomes of a section before starting the next section.
 

@@ -19,9 +19,9 @@ On completing this session, you will feel confident with the following.
 
 You will need the following learning materials for this session.
 
-[Easy Read Images](training-materials.md#easy-read-images)
+[Easy Read Images](broken-reference)
 
-[Links for BSL videos](training-materials.md#links-to-sign-language-videos)
+[Links for BSL videos](broken-reference)
 
 ## Learning Content
 

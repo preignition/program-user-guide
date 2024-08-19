@@ -12,7 +12,7 @@ Once you have added some question it will show you how to add simple form logic 
 
 Lastly it will show you how to 'publish' your Form and how to grant your team mates access rights to your Form.
 
-The session will take approximately 30 mins to complete.  I hope that you enjoy it! &#x20;
+The session is slightly longer than the other sessions and will take approximately 45 mins to complete.  I hope that you enjoy it! &#x20;
 
 ## Learning outcomes
 
@@ -34,9 +34,13 @@ You will need the following learning materials for this session.
 
 [Survey Questions](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LDglCKkoaiLL-wpvCjA%2Fuploads%2FB6IrtchwR55nYEKJ3HGZ%2F1.%20Survey%20Questions.pdf?alt=media\&token=e6084315-e6ef-4a68-97ae-98a9e2ddc640)
 
+{% hint style="info" %}
+I suggest you download and save the 'Survey Questions' on to your device before starting the session.  You can then copy and paste the questions into your training survey, saving you time.
+{% endhint %}
+
 ## Learning Content
 
-The following video will guide you through the process of creating a new survey and adding questions to your Form.
+In this video, Jerry guides you through the process of creating a new survey and adding questions to your Form.
 
 Follow along and create your own training survey.
 
