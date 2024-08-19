@@ -36,7 +36,13 @@ You will need the following learning materials for this session.
 
 ## Learning Content
 
-The following video
+The following video will guide you through the process of creating a new survey and adding questions to your Form.
+
+Follow along and create your own training survey.
+
+The video is 22 minutes long.
+
+{% embed url="https://youtu.be/kthdjQpKwrY" %}
 
 ## Advanced features related to creating a survey not covered in this session
 
