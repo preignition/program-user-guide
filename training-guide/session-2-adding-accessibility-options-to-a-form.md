@@ -6,26 +6,65 @@ description: This session covers how to add accessibilty options to your form.
 
 ## Learning outcomes
 
-On completing this session, you will feel confident with the following.
+On completing this session, you will feel confident to do the following.
 
-* [x] Using the Form Behaviour menu to activate accessibility modes
-* [x] Creating an Easy Read version of your survey
-* [x] Creating a sign language version of your survey
-* [x] Understanding how the Voice Recording mode works
-* [x] Testing your form when the accessibility modes have been added
-* [x] Reminder to 'Publish' your Form and why this is necessary
+* [x] Use the Form Behaviour menu to activate accessibility modes
+* [x] Create an Easy Read version of your survey
+* [x] Add a single sign language to your form
+* [x] Chose a Read Aloud voice for your survey
+* [x] Understand how the Voice Recording mode works
+* [x] Test the accessibility modes&#x20;
+* [x] 'Publish' your Form to make your changes available to survey respondents.
+
+{% hint style="info" %}
+The 'Training Survey' supports British Sign Language (BSL).  You can offer whichever sign language you choose and even offer multiple sign languages.  This is covered in a seperate Guidance Note.
+{% endhint %}
 
 ## Learning Materials
 
 You will need the following learning materials for this session.
 
-[Easy Read Images](broken-reference)
+#### Easy Read Images
 
-[Links for BSL videos](broken-reference)
+<div>
+
+<figure><img src="../.gitbook/assets/1.1  ER image for Survey.png" alt=""><figcaption><p>1.1 ER image for 'Which survey tool does your organisation use the most?'</p></figcaption></figure>
+
+ 
+
+<figure><img src="../.gitbook/assets/1.2 ER image for Satisfaction.png" alt=""><figcaption><p>1.2 ER image for 'I am satisifed with my current survey tool'</p></figcaption></figure>
+
+ 
+
+<figure><img src="../.gitbook/assets/1.3 ER image for what do you like.png" alt=""><figcaption><p>1.3 ER image for 'What do you like about the survey tool you are using?' </p></figcaption></figure>
+
+ 
+
+<figure><img src="../.gitbook/assets/1.4 ER image for what frustrates you.png" alt=""><figcaption><p>1.4 ER image for 'What frustrates you about the survey tool that you are using?'</p></figcaption></figure>
+
+ 
+
+<figure><img src="../.gitbook/assets/2.1 ER image do you like this survey.png" alt=""><figcaption><p>2.1 ER image for 'Do you like this survey?'</p></figcaption></figure>
+
+</div>
+
+{% hint style="info" %}
+These images are made available under licence from Photosymbols.   You can use them for training purposes but you will need your own licence if you want to use them in your survey. &#x20;
+{% endhint %}
+
+#### Links for BSL videos
 
 ## Learning Content
 
-The following video
+In this video, Jerry guides you through the process of adding accessibility options to your Form.
+
+Follow along and add Easy Read, British Sign Language, Read Aloud and Voice Recording accessibility options to your own Training Survey.
+
+The video is X minutes long.
+
+{% hint style="info" %}
+This survey supports British Sign Language (BSL).  It is possible to alter the sign language which is offered and also offer multiple sign languages.
+{% endhint %}
 
 ## Advanced features related to adding accessibility modes to a Form not covered in this session
 
