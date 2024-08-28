@@ -6,13 +6,13 @@ description: This session covers how to create a new survey and add questions to
 
 ## Session Overview
 
-This session will guide you though the process of creating a new survey and adding questions to your Form.   It explains how a Form is structured using Pages, Sections and Questions and introduces you to some commonly used question types.   It also shows you how you can test your form as you build it.&#x20;
+This session will guide you though the process of creating a new survey and adding questions to your Form.   It explains how a Form is structured using Pages, Sections and Questions and introduces some commonly used question types.   It also shows how you can test your form as you build it.&#x20;
 
-Once you have added some question it will show you how to add simple form logic so respondents are only asked relevant questions.
+Once you have added some question it shows how to add form logic so respondents are only asked relevant questions.
 
-Lastly it will show you how to 'publish' your Form and how to grant your team mates access rights to your Form.
+Lastly it will show you how to 'publish' your Form and how to grant your team members access rights to your Form.
 
-The session is slightly longer than the other sessions and will take approximately 45 mins to complete.  I hope that you enjoy it! &#x20;
+This first session is slightly longer than the other sessions and will take approximately 45 mins to complete.  I hope that you enjoy it! &#x20;
 
 ## Learning outcomes
 
@@ -42,13 +42,13 @@ I suggest you download and save the 'Survey Questions' on to your device before 
 
 In this video, Jerry guides you through the process of creating a new survey and adding questions to your Form.
 
-Follow along and create your own training survey.
+Follow along and create your own Training Survey.
 
 The video is 22 minutes long.
 
 {% embed url="https://youtu.be/kthdjQpKwrY" %}
 
-## Advanced features related to creating a survey not covered in this session
+## Advanced features not covered in this session
 
 * [x] [Advanced form logic](../guidance-notes/survey-app/form-editor/advanced-form-logic.md)
 * [x] [Using tooltips](../guidance-notes/survey-app/form-editor/using-tooltips.md)
