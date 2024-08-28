@@ -54,17 +54,37 @@ These images are made available under licence from Photosymbols.   You can use t
 
 #### Links for BSL videos
 
+{% embed url="https://youtu.be/dsL489ipJxM" fullWidth="false" %}
+1.1 BSL video for 'Which survey tool does your organisation use the most?'
+{% endembed %}
+
+{% embed url="https://youtu.be/6KxVTBEfcUQ" %}
+1.2 BSL video for 'I am satisifed with my current survey tool'
+{% endembed %}
+
+{% embed url="https://youtu.be/4LfklqWfq3A" %}
+1.3 BSL video for 'What do you like about the survey tool you are using?'&#x20;
+{% endembed %}
+
+{% embed url="https://youtu.be/hK1L5y5iRds" %}
+1.4 BSL video for 'What frustrates you about the survey tool that you are using?'
+{% endembed %}
+
+{% embed url="https://youtu.be/Zne0RX2she4" %}
+2.1 BSL video for 'Do you like this survey?'
+{% endembed %}
+
+{% hint style="info" %}
+Currently survey builders need to create their own sign language videos.   We can provide details of recommended sign language service providers.
+{% endhint %}
+
 ## Learning Content
 
 In this video, Jerry guides you through the process of adding accessibility options to your Form.
 
-Follow along and add Easy Read, British Sign Language, Read Aloud and Voice Recording accessibility options to your own Training Survey.
+Follow along to add Easy Read, British Sign Language, Read Aloud and Voice Recording accessibility options to your own Training Survey.
 
 The video is X minutes long.
-
-{% hint style="info" %}
-This survey supports British Sign Language (BSL).  It is possible to alter the sign language which is offered and also offer multiple sign languages.
-{% endhint %}
 
 ## Advanced features related to adding accessibility modes to a Form not covered in this session
 
