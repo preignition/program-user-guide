@@ -9,9 +9,9 @@ description: This session covers how to add accessibilty options to your form.
 On completing this session, you will feel confident to do the following.
 
 * [x] Use the Form Behaviour menu to activate accessibility modes
-* [x] Create an Easy Read version of your survey
-* [x] Add a single sign language to your form
-* [x] Chose a Read Aloud voice for your survey
+* [x] Create an Easy Read version of your form
+* [x] Add a sign language to your form
+* [x] Choose a Read Aloud voice for your survey
 * [x] Understand how the Voice Recording mode works
 * [x] Test the accessibility modes&#x20;
 * [x] 'Publish' your Form to make your changes available to survey respondents.
@@ -54,28 +54,10 @@ These images are made available under licence from Photosymbols.   You can use t
 
 #### Links for BSL videos
 
-{% embed url="https://youtu.be/dsL489ipJxM" fullWidth="false" %}
-1.1 BSL video for 'Which survey tool does your organisation use the most?'
-{% endembed %}
-
-{% embed url="https://youtu.be/6KxVTBEfcUQ" %}
-1.2 BSL video for 'I am satisifed with my current survey tool'
-{% endembed %}
-
-{% embed url="https://youtu.be/4LfklqWfq3A" %}
-1.3 BSL video for 'What do you like about the survey tool you are using?'&#x20;
-{% endembed %}
-
-{% embed url="https://youtu.be/hK1L5y5iRds" %}
-1.4 BSL video for 'What frustrates you about the survey tool that you are using?'
-{% endembed %}
-
-{% embed url="https://youtu.be/Zne0RX2she4" %}
-2.1 BSL video for 'Do you like this survey?'
-{% endembed %}
+<table><thead><tr><th width="442">Question</th><th>Youtube ID for BSL video</th></tr></thead><tbody><tr><td>1.1  'Which survey tool does your organisation use the most?'</td><td><a href="https://youtu.be/dsL489ipJxM">dsL489ipJxM</a></td></tr><tr><td>1.2  'I am satisifed with my current survey tool'</td><td><a href="https://youtu.be/6KxVTBEfcUQ">6KxVTBEfcUQ</a></td></tr><tr><td>1.3  'What do you like about the survey tool you are using?' </td><td><a href="https://youtu.be/4LfklqWfq3A">4LfklqWfq3A</a></td></tr><tr><td>1.4  'What frustrates you about the survey tool that you are using?'</td><td><a href="https://youtu.be/hK1L5y5iRds">hK1L5y5iRds</a></td></tr><tr><td>2.1  'Do you like this survey?'</td><td><a href="https://youtu.be/Zne0RX2she4">Zne0RX2she4</a></td></tr></tbody></table>
 
 {% hint style="info" %}
-Currently survey builders need to create their own sign language videos.   We can provide details of recommended sign language service providers.
+Currently survey builders need to create their own sign language videos.   If required, we can provide details of recommended sign language service providers.
 {% endhint %}
 
 ## Learning Content
@@ -89,11 +71,4 @@ The video is X minutes long.
 ## Advanced features related to adding accessibility modes to a Form not covered in this session
 
 * [x] Adding an Accessibility Menu
-* [x] Adding multiple sign languages
-
-
-
-*
-*
-
-## &#x20;
+* [x] Adding multiple sign languages&#x20;
