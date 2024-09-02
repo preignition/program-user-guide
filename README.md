@@ -13,7 +13,7 @@ By following this guide and using the training materials provided, you will crea
 This Training Guide complements the other on-line help that is available in the form of Tutorials, Guidance Notes and Frequently Asked Questions. &#x20;
 
 {% hint style="success" %}
-On completing the Training Guide, you will feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
+On completing the Training Guide, you should feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
 {% endhint %}
 
 ## Structure of the Guide
@@ -40,14 +40,14 @@ Once have created your demonstration Training Survey you will be familiar with t
 
 ## Training Materials
 
-We have provided the following training material to help you create your first survey.
+We have provided the following training materials to help you create your first survey.
 
 * [x] Survey questions
 * [x] Text for 'landing page' and 'thank you' message
 * [x] Images for Easy Read version
 * [x] BSL videos for sign language version &#x20;
 
-Each session includes link to any training materials needed in the session.  You may find it helpful to download these materials onto your computer before you start the session. &#x20;
+Each session includes link to any training materials needed to complete that session.  You may find it helpful to download these materials onto your computer before you start the session. &#x20;
 
 For instance it will save you time writing your survey questions if you can copy and paste from the 'survey questions' pdf.&#x20;
 
@@ -67,9 +67,13 @@ There are two overall learning objectives of this course. &#x20;
 
 On completing this course;
 
-1. You will feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
+1. You should feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
 2. You will be aware of the advanced features offered by Accessible Surveys and know how to access Guidance Notes on these features.&#x20;
 
 Each section of this guide has its own learning outcomes.  It is recommended that you are comfortable with the learning outcomes of a session before starting the next session.
 
 If you have any suggestions for how this guide can be improved, please email us at contact@accessiblesurveys.com
+
+{% hint style="success" %}
+You are now ready to start the first Training Session.  This will show you how to create a new survey.  Click the arrow below to start!
+{% endhint %}
