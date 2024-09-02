@@ -57,7 +57,7 @@ Currently survey builders need to create their own sign language videos.   If re
 </div>
 
 {% hint style="info" %}
-These images are made available under licence from Photosymbols.   You can use them for training purposes but you will need your own licence if you want to use them in your survey. &#x20;
+These images are sourced from [Easy on the i](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/).   This a great libary of free symbols, photos and graphics which can be used when creating Easy Read materials. &#x20;
 {% endhint %}
 
 ## Learning Content
@@ -66,9 +66,11 @@ In this video, Jerry guides you through the process of adding accessibility opti
 
 Follow along to add Easy Read, British Sign Language, Read Aloud and Voice Recording accessibility options to your own Training Survey.
 
-The video is X minutes long.
+The video is 14 minutes long.
+
+{% embed url="https://youtu.be/YtCUkqib7Ss" %}
 
 ## Advanced features related to adding accessibility modes to a Form not covered in this session
 
-* [x] Adding an Accessibility Menu
+* [x] [Adding an Accessibility Menu](../guidance-notes/survey-app/form-editor/adding-an-accessibility-options-page.md)
 * [x] Adding multiple sign languages&#x20;
