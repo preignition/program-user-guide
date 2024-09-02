@@ -74,6 +74,8 @@ Each section of this guide has its own learning outcomes.  It is recommended tha
 
 If you have any suggestions for how this guide can be improved, please email us at contact@accessiblesurveys.com
 
+## Next Steps
+
 {% hint style="success" %}
 You are now ready to start the first Training Session.  This will show you how to create a new survey.  Click the arrow below to start!
 {% endhint %}
