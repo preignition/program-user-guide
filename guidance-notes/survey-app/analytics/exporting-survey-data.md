@@ -8,6 +8,10 @@ description: This page describes how you can export survey data for further anal
 If you export data from the platform, you are responsible for the privacy of the exported data. Exported data must be treated in line with relevant data protection regulations such as GDPR
 {% endhint %}
 
+{% hint style="info" %}
+Exporting your data from the platform is a sensitive action.  You need to have the necessary user rights and have signed into your account recently in order to export survey data.  If you get an error message it means that you don't have the necessary rights or you need to sign out of your account and sign in again and try again.
+{% endhint %}
+
 ## Step 1
 
 From the analytics page, click on the three lines beside the survey name in the top menu
