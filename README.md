@@ -21,8 +21,8 @@ On completing the Training Guide, you should feel confident building, testing, s
 This Training Guide follows the natural process of creating, sharing and analying a survey and is divided into 5 sessions:
 
 1. Creating a new survey.
-2. Adding accessibility options to a form
-3. Translating a form into different languages
+2. Adding accessibility options to a Form
+3. Translating a Form into different languages
 4. Sharing and testing your survey using the survey editor
 5. Analysing your survey responses and exporting your survey data
 
