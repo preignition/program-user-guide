@@ -21,13 +21,13 @@ Initially two text based question type are visible
 
 Clicking on the <mark style="color:blue;">**^**</mark> symbol beside the 'Text' label reveals some additional text based questions
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing additional text based questions</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing additional text based questions</p></figcaption></figure>
 
 ## Step 3
 
 A text based question looks like this
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input options for a text based question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input options for a text based question</p></figcaption></figure>
 
 ## Step 4
 
@@ -37,7 +37,7 @@ Under 'Designation' give the question a label.
 The 'label' is how the questions will appear on the form. Make it as clear and concise as possible. Avoid long questions as they won't render well on small screens or mobiles
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a 'label' being written for a text question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a 'label' being written for a text question</p></figcaption></figure>
 
 ## Step 5
 
