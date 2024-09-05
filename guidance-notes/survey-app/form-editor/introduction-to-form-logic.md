@@ -34,7 +34,7 @@ To access the logic function you must switch on the 'Advanced' toggle at the top
 
 Below is an example of the logic feild for the question we outlined above about fruit
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the advanced toggle being activated.  The 'logic mode' icon appears in the bottom right of the screen.  The 'lock this question while editing logic' toggle has been activated.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the advanced toggle being activated.  The 'logic mode' icon appears in the bottom right of the screen.  The 'lock this question while editing logic' toggle has been activated.</p></figcaption></figure>
 
 {% hint style="success" %}
 Always select the option 'Lock this question while editing logic'.&#x20;

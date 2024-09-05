@@ -49,11 +49,11 @@ These are the steps to follow to customise the ratio and file size of an image u
 
 3. Upload your image and select 'Resize for Instagram'
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing an image uploaded to Adobe Express being resized for Instagram</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing an image uploaded to Adobe Express being resized for Instagram</p></figcaption></figure>
 
 4. Centre your iamge and select 'Download'
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Screenshot showing an image being altered to a square ratio</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Screenshot showing an image being altered to a square ratio</p></figcaption></figure>
 
 5. When you download the file you will be able to see the file size of the image.  In the example below the file size is 1,183 KB which exceeds the recommended file size of 400 KB or less
 

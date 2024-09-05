@@ -24,13 +24,13 @@ Additional languages are activated for an organisation from the 'Customer Portal
 
 You will be an Account Holder if you created an account for your organisation on Accessible Surveys or have been subsequently been added as an Account Holder.  When signed into your account, you will be able to view and access the 'Customer' portal from the homepage.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Screenshot for a user who is an Account Holder.  The Customer portal is available and the user is able to activate additinal languages for their organisation.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Screenshot for a user who is an Account Holder.  The Customer portal is available and the user is able to activate additinal languages for their organisation.</p></figcaption></figure>
 
 If you are not an Account Holder, when signed in to your account you will not be able to view or access the 'Customer' portal from the homepage. &#x20;
 
 If French and Spanish haven't already been activated for your organsisation, you will need to ask an Account Holder to activate them for your so you can complete this training session. &#x20;
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Screenshot of a homepage for a user who is not an Account Holder.  The Customer portal is not available and the user is not able to activate additional languages for their organisation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Screenshot of a homepage for a user who is not an Account Holder.  The Customer portal is not available and the user is not able to activate additional languages for their organisation</p></figcaption></figure>
 
 ## Learning Materials
 

@@ -12,7 +12,7 @@ A form must be 'Published' before it can be used in a survey.  If a form is chan
 
 To 'Publish' a form, go 'Deploy' in the top menu of the form builder and select 'Publish'
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing Deploy in the top menu and the 'Publish' button on the right of the page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing Deploy in the top menu and the 'Publish' button on the right of the page</p></figcaption></figure>
 
 ## Step 3
 
