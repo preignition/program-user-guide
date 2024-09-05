@@ -30,7 +30,7 @@ If you are not an Account Holder, when signed in to your account you will not be
 
 If French and Spanish haven't already been activated for your organsisation, you will need to ask an Account Holder to activate them for your so you can complete this training session. &#x20;
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot of a homepage for a user who is not an Account Holder.  The Customer portal is not available and the user is not able to activate additional languages for their organisation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Screenshot of a homepage for a user who is not an Account Holder.  The Customer portal is not available and the user is not able to activate additional languages for their organisation</p></figcaption></figure>
 
 ## Learning Materials
 
