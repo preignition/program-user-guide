@@ -22,7 +22,7 @@ Write your content in the feild provided. You can format your text and even add 
 
 See the Guidance Note ['Introduction to Markdown](../introduction-to-markdown.md)' for instructions on how to use Markdown.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input feilds for Free Text</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input feilds for Free Text</p></figcaption></figure>
 
 ## Step 3
 

@@ -8,19 +8,19 @@ description: >-
 
 {% hint style="info" %}
 This part of the application is under development and some actions are not supported.  The note below describes what is currently in place. &#x20;
-
-If you need additional help managing your subscription please email contact@accessiblesurveys.com&#x20;
 {% endhint %}
 
-## Subscription
+If you need additional help managing your subscription please email contact@accessiblesurveys.com&#x20;
 
-This is what the 'Subscription' page looks like when you are within your trail period
+This is what the 'Subscription' page looks like when you are within your trail period and are yet to set up a payment method. &#x20;
 
 <figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption><p>Screenshot showing what the Subscription page looks like when you are within your trial perion</p></figcaption></figure>
 
-When you are out of your trail period it will look like this:
+This is what the 'Subscription' page looks like when you are ouside your trail period and are yet to set up a payment method. &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+When you have set up a payment method, you will just see the details of your current subscription
 
 ## Setting up a payment method
 

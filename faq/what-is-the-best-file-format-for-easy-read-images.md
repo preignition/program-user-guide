@@ -45,19 +45,19 @@ These are the steps to follow to customise the ratio and file size of an image u
 1. Go to [https://new.express.adobe.com/](https://new.express.adobe.com/) and sign into your account or create one for free
 2. Once you have opened an account go to the 'resize file' option as shown below.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Screenshot showing the 'Resize Image' option in Adobe Express</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Screenshot showing the 'Resize Image' option in Adobe Express</p></figcaption></figure>
 
 3. Upload your image and select 'Resize for Instagram'
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing an image uploaded to Adobe Express being resized for Instagram</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing an image uploaded to Adobe Express being resized for Instagram</p></figcaption></figure>
 
 4. Centre your iamge and select 'Download'
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Screenshot showing an image being altered to a square ratio</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing an image being altered to a square ratio</p></figcaption></figure>
 
 5. When you download the file you will be able to see the file size of the image.  In the example below the file size is 1,183 KB which exceeds the recommended file size of 400 KB or less
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Screenshot showing a downloaded image with a file size of 1,183 KB</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Screenshot showing a downloaded image with a file size of 1,183 KB</p></figcaption></figure>
 
 6. To reduce the file size choose 'resize for custom' and choose a smaller width and height px.  In the example below 540 px has been chosen.  Download the image again.
 

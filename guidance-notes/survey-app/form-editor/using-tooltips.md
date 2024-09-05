@@ -38,9 +38,9 @@ Once you have defined a word in the form glossary you can add a Tooltip in the f
 
 Tooltips can be located in various places in a form including in a section title, a question label or a question option.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a tooltip being added to a redio button label to explain the word 'participate'</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a tooltip being added to a redio button label to explain the word 'participate'</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how the tooltip appears when the word 'participate' receives focus</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how the tooltip appears when the word 'participate' receives focus</p></figcaption></figure>
 
 ## Step 4
 
@@ -62,7 +62,7 @@ Tooltips must be written in the following way:
 
 Once you have added your Tooltip you can go to the 'Test' mode to test how it is working.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a tooltip being tested in the 'test' mode</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a tooltip being tested in the 'test' mode</p></figcaption></figure>
 
 ## Step 5
 
