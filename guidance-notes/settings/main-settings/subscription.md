@@ -51,3 +51,11 @@ You can view and download your invoices from the 'invoice' menu.
 You can view your payment history under 'payments'
 
 <figure><img src="../../../.gitbook/assets/image (98).png" alt=""><figcaption><p>Screenshot showing how you can view your payment history</p></figcaption></figure>
+
+## Quota
+
+Under 'Quota' you can see the number of 'Surveys' and 'Teams' you have available under your current plan. &#x20;
+
+In the future you will be able to puchase additions surveys or teams from here if this is more cost effective than upgrading your plan.  This feature is not yet in place.
+
+<figure><img src="../../../.gitbook/assets/image (99).png" alt=""><figcaption><p>Screenshot showing the the organisations quota of surveys and teams.</p></figcaption></figure>
