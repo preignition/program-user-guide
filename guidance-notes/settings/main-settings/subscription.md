@@ -26,5 +26,28 @@ When you have set up a payment method, you will just see the details of your cur
 
 It is possible to set up a payment method at any time.  However the way of doing this will depend upon whether you are in your trail period or not.
 
-The short video below shows how to set up a payment method in both circumstances.  As shown in the video you can set up a standing Direct Debit with your bank or pay by a debit or credit card.
+The short video below shows how to set up a payment method in both circumstances.  As shown in the video you can set up a Direct Debit with your bank or pay using a debit or credit card.
 
+{% embed url="https://youtu.be/s0GHw74y4yg" %}
+Short video which shows how to set up a payment method.
+{% endembed %}
+
+## Upgrading, changing or cancelling your plan
+
+It is not currently possible to upgrade or change your plan from the Subscription page.  If you would like to do this please email contact@accessiblesurveys.com
+
+If you would like to cancel your plan, this can be done from the billing potral as shown in the video below.
+
+{% embed url="https://youtu.be/S4DkYq6G70w" %}
+
+## Invoice
+
+You can view and download your invoices from the 'invoice' menu.
+
+<figure><img src="../../../.gitbook/assets/image (97).png" alt=""><figcaption><p>Screenshot showing how you can view and download invoices</p></figcaption></figure>
+
+## Payment
+
+You can view your payment history under 'payments'
+
+<figure><img src="../../../.gitbook/assets/image (98).png" alt=""><figcaption><p>Screenshot showing how you can view your payment history</p></figcaption></figure>
