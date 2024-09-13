@@ -53,6 +53,8 @@ Follow along to translate your Training Survey into French and Spanish.
 The video is 8 mins 24 seconds long and we estimate that it will take you about 20 minutes to complete the session.
 
 {% embed url="https://youtu.be/bNYOXsFzWQA" %}
+Training video showing how to translate a Form into different languages
+{% endembed %}
 
 ## Advanced features related to translating a Form into different languages not covered in this session
 
