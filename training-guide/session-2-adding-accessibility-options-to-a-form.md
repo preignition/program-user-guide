@@ -4,6 +4,12 @@ description: This session covers how to add accessibilty options to your Form.
 
 # Session 2- Adding accessibility options to a Form
 
+## Session overview
+
+In session 1, you created a new survey and added some questions to your form. &#x20;
+
+In this session you will learn how to add accessibility features to your form including sign language, Easy Read, Read aloud and voice recording accessibility options.
+
 ## Learning outcomes
 
 On completing this session, you should feel confident to do the following.
@@ -17,7 +23,7 @@ On completing this session, you should feel confident to do the following.
 * [x] 'Publish' your Form to make your changes available to survey respondents.
 
 {% hint style="info" %}
-The 'Training Survey' supports British Sign Language (BSL).  You can offer whichever sign language you choose and even offer multiple sign languages.  This is covered in a seperate Guidance Note.
+The 'Training Survey' supports British Sign Language (BSL).  You can offer whichever sign language you choose and even offer multiple sign languages. &#x20;
 {% endhint %}
 
 ## Learning Materials
@@ -26,9 +32,11 @@ You will need the following learning materials for this session.
 
 #### Links for British Sign Language (BSL) videos
 
-When you come to add BSL video to your form these Youtube links will come in handy.  Simply copy the link into the appropriate place in your form.  The training video will show you how!
+When you come to add BSL videos to your form, you will need these Youtube links. &#x20;
 
-<table><thead><tr><th width="442">Question</th><th>Youtube ID for BSL video</th></tr></thead><tbody><tr><td>1.1  'Which survey tool does your organisation use the most?'</td><td><a href="https://youtu.be/dsL489ipJxM">dsL489ipJxM</a></td></tr><tr><td>1.2  'I am satisifed with my current survey tool'</td><td><a href="https://youtu.be/6KxVTBEfcUQ">6KxVTBEfcUQ</a></td></tr><tr><td>1.3  'What do you like about the survey tool you are using?' </td><td><a href="https://youtu.be/4LfklqWfq3A">4LfklqWfq3A</a></td></tr><tr><td>1.4  'What frustrates you about the survey tool that you are using?'</td><td><a href="https://youtu.be/hK1L5y5iRds">hK1L5y5iRds</a></td></tr><tr><td>2.1  'Do you like this survey?'</td><td><a href="https://youtu.be/Zne0RX2she4">Zne0RX2she4</a></td></tr></tbody></table>
+Simply copy the 11 digit Youtube ID into the appropriate place in your form.  The training video will show you how!
+
+<table><thead><tr><th width="442">Question</th><th>Youtube ID</th></tr></thead><tbody><tr><td>1.1  'Which survey tool does your organisation use the most?'</td><td><a href="https://youtu.be/dsL489ipJxM">dsL489ipJxM</a></td></tr><tr><td>1.2  'I am satisifed with my current survey tool'</td><td><a href="https://youtu.be/6KxVTBEfcUQ">6KxVTBEfcUQ</a></td></tr><tr><td>1.3  'What do you like about the survey tool you are using?' </td><td><a href="https://youtu.be/4LfklqWfq3A">4LfklqWfq3A</a></td></tr><tr><td>1.4  'What frustrates you about the survey tool that you are using?'</td><td><a href="https://youtu.be/hK1L5y5iRds">hK1L5y5iRds</a></td></tr><tr><td>2.1  'Do you like this survey?'</td><td><a href="https://youtu.be/Zne0RX2she4">Zne0RX2she4</a></td></tr></tbody></table>
 
 {% hint style="info" %}
 Currently survey builders need to create their own sign language videos.   If required, we can provide details of recommended sign language service providers.
@@ -36,7 +44,9 @@ Currently survey builders need to create their own sign language videos.   If re
 
 #### Easy Read Images
 
-When you come to adding Easy Read images to your Form, these images are the ones to use.  I suggest you download these into a seperate folder on you computer before you start the session.  The video will show you how to add the images to the correct place in your Form.
+When you come to adding Easy Read images to your Form, these images are the ones to use. &#x20;
+
+I suggest you download these into a seperate folder on you computer before you start the session.  The video will show you how to add the images to the correct place in your Form.
 
 
 
@@ -63,7 +73,7 @@ When you come to adding Easy Read images to your Form, these images are the ones
 </div>
 
 {% hint style="info" %}
-These images are sourced from [Easy on the i](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/).   This a great libary of free symbols, photos and graphics which can be used when creating Easy Read materials. &#x20;
+These images are sourced from [Easy on the i](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/).   This a great libary of free symbols, photos and graphics which can be used when creating Easy Read surveys. &#x20;
 {% endhint %}
 
 ## Learning Content
