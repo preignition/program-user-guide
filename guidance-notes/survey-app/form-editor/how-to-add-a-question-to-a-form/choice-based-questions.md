@@ -84,11 +84,10 @@ The radio group question appears to respondents like this:
 
 <figure><img src="../../../../.gitbook/assets/image (83).png" alt=""><figcaption><p>Screenshot showing an an example of a radion group question</p></figcaption></figure>
 
-
-
 ## Altering the type of options question used
 
 It is easy to alter the type of options question used without recreating the question.  This short video shows you how this can be done.
 
-
-
+{% embed url="https://youtu.be/n1pvDEjxucY" %}
+Short video showing you how to alter the type of option question used
+{% endembed %}
