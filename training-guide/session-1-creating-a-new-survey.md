@@ -6,7 +6,9 @@ description: This session covers how to create a new survey and add questions to
 
 ## Session Overview
 
-This session guides you through the process of creating a new survey and adding questions to your Form.   It explains how a Form is structured using Pages, Sections and Questions and introduces some commonly used question types.   It also shows how you can test your Form as you build it.&#x20;
+This session guides you through the process of creating a new survey and adding questions to your Form.  &#x20;
+
+It explains how a Form is structured using Pages, Sections and Questions and introduces some commonly used question types.   It also shows how you can test your Form as you build it.&#x20;
 
 Once you have added some questions, it shows how to add form logic so respondents are only asked relevant questions.
 
@@ -42,7 +44,7 @@ I suggest you download and save the 'Survey Questions' on to your device before 
 
 In this video, Jerry guides you through the process of creating a new survey and adding questions to your Form.
 
-Follow along and create your own Training Survey.
+Follow the steps in the video precisely and and create your own Training Survey.
 
 The video is 22 minutes long.
 
