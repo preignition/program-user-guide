@@ -4,6 +4,14 @@ description: This session covers how to translate a Form into different language
 
 # Session 3- Translating a Form into different languages
 
+## Session overview
+
+In session 2, you added accessiblity options to your form. &#x20;
+
+In this session you will learn how to translate your form into French and Spanish. &#x20;
+
+The platform supports a very wide range of languages.  The process you will learn here applies to any language you would like to offer your survey in.
+
 ## Learning outcomes
 
 On completing this session, you should feel confident to do the following.
