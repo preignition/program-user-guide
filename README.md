@@ -1,24 +1,24 @@
 ---
-description: A complete guide to creating your first survey on Accessible Surveys
+description: >-
+  A complete guide to creating a demonstration 'Training Survey' on Accessible
+  Surveys
 ---
 
 # TRAINING GUIDE
 
 ## Introduction
 
-This Training Guide accompanies you to create your first survey on Accessible Surveys. &#x20;
-
-By following this guide and using the training materials provided, you will create a demonstration 'Training Survey'.  This will introduce you to all the key features of Accessible Surveys.
-
-This Training Guide complements the other on-line help that is available in the form of Tutorials, Guidance Notes and Frequently Asked Questions. &#x20;
+By following this Training Guide and using the training materials provided, you will create a demonstration 'Training Survey'.  This process will familiarise you with the platform and introduce you to all the key features of Accessible Surveys.
 
 {% hint style="success" %}
 On completing the Training Guide, you should feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
 {% endhint %}
 
+This Training Guide complements the other on-line help that is available in the form of Tutorials, Guidance Notes and Frequently Asked Questions. &#x20;
+
 ## Structure of the Guide
 
-This Training Guide follows the natural process of creating, sharing and analying a survey and is divided into 5 sessions:
+This Training Guide follows the natural process of building, testing, sharing and analying a survey and is divided into 5 sessions:
 
 1. Creating a new survey.
 2. Adding accessibility options to a Form
@@ -47,9 +47,7 @@ We have provided the following training materials to help you create your first 
 * [x] Images for Easy Read version
 * [x] BSL videos for sign language version &#x20;
 
-Each session includes link to any training materials needed to complete that session.  You may find it helpful to download these materials onto your computer before you start the session. &#x20;
-
-For instance it will save you time writing your survey questions if you can copy and paste from the 'survey questions' pdf.&#x20;
+Each session includes links to any training materials needed to complete that session.  You may find it helpful to download these materials onto your computer before you start the session. &#x20;
 
 ## Suggested Learning Method
 
