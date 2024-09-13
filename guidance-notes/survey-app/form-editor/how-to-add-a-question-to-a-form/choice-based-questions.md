@@ -22,7 +22,7 @@ Choice based question types are shown in the right hand column
 
 **Dropdown group-**  Allows respondents to select a single option from a list of options.  Useful if the list of options is large and you don't want them all to be displayed initially.
 
-Radio group- Like the dropdown group, it allows respondents to select a single option from a list of options.  However the options are displayed on the screen.  Useful if a small number of options is available.
+**Radio group-** Like the dropdown group, it allows respondents to select a single option from a list of options.  However the options are displayed on the screen.  Useful if a small number of options is available.
 
 ## Single checkbox
 
@@ -54,7 +54,7 @@ Under 'options' you can enter the options you want to be presented to respondent
 
 * You can decide whether you want the options to appear on their own line or side-by-side
 * You can ask respondents to specify an answer if they select the 'other' option.  You can also customise the prompt label that is presented by entering it into the 'specify other text label' field
-* You can decide whether the option is exclusive or not. If an option is exclusive respondents will not be able to select other options if they have already selected an exclusive option.  They can deselect am exclusive option and choose another option.
+* You can decide whether the option is exclusive or not. If an option is exclusive respondents will not be able to select other options if they have already selected an exclusive option.  They can deselect an exclusive option and choose another option.
 
 Checkbox groups question appear to respondents like this:
 
@@ -83,6 +83,12 @@ Radio Group questions operate in the same way as Checkbox group questions. Howev
 The radio group question appears to respondents like this:
 
 <figure><img src="../../../../.gitbook/assets/image (83).png" alt=""><figcaption><p>Screenshot showing an an example of a radion group question</p></figcaption></figure>
+
+
+
+## Altering the type of options question used
+
+It is easy to alter the type of options question used without recreating the question.  This short video shows you how this can be done.
 
 
 
