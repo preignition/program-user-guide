@@ -50,16 +50,16 @@ In this video, Jerry guides you through the process of translating your Form int
 
 Follow along to translate your Training Survey into French and Spanish.
 
-The video is X minutes long and we estimate that it will take you about X minutes to complete the session.
+The video is 8 mins 24 seconds long and we estimate that it will take you about 20 minutes to complete the session.
 
-{% embed url="https://youtu.be/YtCUkqib7Ss" %}
+{% embed url="https://youtu.be/bNYOXsFzWQA" %}
 
 ## Advanced features related to translating a Form into different languages not covered in this session
 
-* [x] [Adding an Accessibility Menu](../guidance-notes/survey-app/form-editor/adding-an-accessibility-options-page.md)
+* [x] [Using import/ export to translate forms](../guidance-notes/survey-app/form-editor/using-import-export-to-translate-forms.md)
 
 ## Next Steps
 
 {% hint style="success" %}
-You have completed the second Training Session!  You can click on the arrow below to start the third Training Session.  This shows you how to translate your Form into mutiple languages.
+You have completed the third Training Session!  You can click on the arrow below to start the fourth Training Session.  This shows you how to test and share survey links.
 {% endhint %}
