@@ -12,7 +12,7 @@ Choice based questions ask respondents to make a choice between one or more opti
 
 Choice based question types are shown in the right hand column
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing choice based questions</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing choice based questions</p></figcaption></figure>
 
 ## Which choice based question should I use?
 
@@ -32,11 +32,11 @@ The single checkbox provides a single option which Respondents can select or not
 
 The Question is edited as follows:
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input options for a checkbox question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input options for a checkbox question</p></figcaption></figure>
 
 And appears to repondents as follows:
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how a checkbox question appears to survey respondents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how a checkbox question appears to survey respondents</p></figcaption></figure>
 
 ## Checkbox group
 
@@ -46,7 +46,7 @@ The Checkbox group asks respondents to select from a range of options. More than
 
 Edit the question in the usual way and select 'options'
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a label and helper text being input for a checkbox group question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a label and helper text being input for a checkbox group question</p></figcaption></figure>
 
 Under 'options' you can enter the options you want to be presented to respondents
 
@@ -72,7 +72,7 @@ The question label and opions are entered in a similar way to that for checkbox 
 
 The dropdown Question appears to Respondents like this:
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how dropdown questions appear to survey respondents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how dropdown questions appear to survey respondents</p></figcaption></figure>
 
 ## Radio group
 

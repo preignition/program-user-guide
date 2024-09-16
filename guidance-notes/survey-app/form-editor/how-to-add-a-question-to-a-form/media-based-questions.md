@@ -18,13 +18,13 @@ There is only one Media based question which is the 'Upload' question shown in t
 
 Give the question a label and add helper text if you would like
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input feilds for a Upload question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input feilds for a Upload question</p></figcaption></figure>
 
 ## Step 3
 
 The upload question looks like this to Respondents:
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how an Upload question is presented to respondents</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how an Upload question is presented to respondents</p></figcaption></figure>
 
 Respondents can select 'Upload Files' and select a file stored on their own device.
 

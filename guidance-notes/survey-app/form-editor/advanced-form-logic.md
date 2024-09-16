@@ -88,7 +88,7 @@ The expression is true and therefore hidden when 'apples' is selected as a respo
 
 The expression is then inverted using ! to display it for the same configuration.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Screenshot showing an example of a logical expression using the &#x27;in&#x27; operator"><figcaption><p>Screenshot showing how ! can be used to invert a logical expression</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Screenshot showing an example of a logical expression using the &#x27;in&#x27; operator"><figcaption><p>Screenshot showing how ! can be used to invert a logical expression</p></figcaption></figure>
 
 ## **Ternary operator**
 

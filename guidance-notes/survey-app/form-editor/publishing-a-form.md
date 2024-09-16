@@ -12,19 +12,19 @@ A form must be 'Published' before it can be used in a survey.  If a form is chan
 
 To 'Publish' a form, go 'Deploy' in the top menu of the form builder and select 'Publish'
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing Deploy in the top menu and the 'Publish' button on the right of the page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing Deploy in the top menu and the 'Publish' button on the right of the page</p></figcaption></figure>
 
 ## Step 3
 
 Select 'Create and Publish a New Version'
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the 'Create and Publish' button</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the 'Create and Publish' button</p></figcaption></figure>
 
 ## Step 4
 
 You will be prompted to give the version a label. This will help you to differentiate between different versions of the form
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 5
 

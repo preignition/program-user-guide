@@ -34,7 +34,7 @@
     * [Advanced form logic](guidance-notes/survey-app/form-editor/advanced-form-logic.md)
     * [Using tooltips](guidance-notes/survey-app/form-editor/using-tooltips.md)
     * [Using Markdown](guidance-notes/survey-app/form-editor/introduction-to-markdown.md)
-    * [Adding an accessibility options page](guidance-notes/survey-app/form-editor/adding-an-accessibility-options-page.md)
+    * [Adding an accessibility menu](guidance-notes/survey-app/form-editor/adding-an-accessibility-options-page.md)
     * [Form Behaviour](guidance-notes/survey-app/form-editor/form-behaviour.md)
     * [Image Library](guidance-notes/survey-app/form-editor/image-library.md)
     * [Easy Read](guidance-notes/survey-app/form-editor/easy-read.md)
