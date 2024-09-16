@@ -28,7 +28,7 @@ Simply copy this code to make the menu appear&#x20;
 
 The menu allows respondents to activate, deactivate or change accessibility settings directly from the menu.
 
-It is intellegent, in that it will only show the accessibility options that you have activated for your survey.
+It is intelligent, in that it will only show the accessibility options that you have activated for your survey.
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>This is an example of how an accessibilty menu appears to survey respondents.</p></figcaption></figure>
 
@@ -40,7 +40,7 @@ This short video show you how you can add an accessibility menu to a survey's 'L
 
 ## Step 4&#x20;
 
-You can also add an accessibility menu as the first page of your survey but following these instructions.
+Alternatively, you can add an accessibility menu as the first page of your survey by following these instructions.
 
 Add a new page and section at the beginning of your form.  Give the page a title like 'Accessibility'.  The section should have a name but not a title or sub title&#x20;
 
@@ -60,6 +60,6 @@ Copy and paste the accessibility menu into the free text field.
 
 If you have included an accessibility menu in your form, be careful if you auto translate the form.
 
-It will translate the word "survey" in the code, and the menu will not render properly.
+The auto translate will translate the word "survey" in the code, and the menu will not render properly when that language is activated.
 
 You will need to manually correct the code in the translated version of the Form.&#x20;
