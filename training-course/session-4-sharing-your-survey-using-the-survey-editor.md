@@ -24,13 +24,19 @@ On completing this session, you should feel confident to do the following.
 
 ## Learning Materials
 
-The following code should be used to add an 'Accessibility Menu' to your landing page. &#x20;
+You will need the following learning materials to complete this session. &#x20;
 
-Simply copy and pasts the code into your landing page as shown in the video.  &#x20;
+The PDF file below includes the text you should use for the Landing Page and Thank You Message.
 
-```markup
-<a11y-menu context="survey"></a11y-menu>
-```
+{% file src="../.gitbook/assets/Text for Landing Page and Thank You Message.pdf" %}
+
+The Accessible Surveys logo should be uploaded to the Landing Page as shown in the video
+
+<div align="left">
+
+<figure><img src="../.gitbook/assets/AS logo_small.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ## Learning Content
 
