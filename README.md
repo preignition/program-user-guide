@@ -1,24 +1,28 @@
 ---
 description: >-
-  A complete guide to creating a demonstration 'Training Survey' on Accessible
-  Surveys
+  An on-line training course to help new users create a demonstration 'Training
+  Survey' on Accessible Surveys
 ---
 
-# TRAINING GUIDE
+# TRAINING COURSE
 
 ## Introduction
 
-By following this Training Guide and using the training materials provided, you will create a demonstration 'Training Survey'.  This process will familiarise you with the platform and introduce you to all the key features of Accessible Surveys.
+This training course will accompany you to create a short 'Training Survey on Accessible Surveys' for demonstartion purposes. &#x20;
+
+This process will familiarise you with the platform and introduce you to all the key features of Accessible Surveys.
 
 {% hint style="success" %}
-On completing the Training Guide, you should feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
+On completing this training course, you should feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
 {% endhint %}
 
-This Training Guide complements the other on-line help that is available in the form of Tutorials, Guidance Notes and Frequently Asked Questions. &#x20;
+This training course complements the other on-line help that is available in the form of Tutorials, Guidance Notes and Frequently Asked Questions.
+
+You should complete this course before creating your own surveys on Accessible Surveys. &#x20;
 
 ## Structure of the Guide
 
-This Training Guide follows the natural process of building, testing, sharing and analying a survey and is divided into 5 sessions:
+The course follows the natural process of building, testing, sharing and analying a survey and is divided into 5 sessions:
 
 1. Creating a new survey.
 2. Adding accessibility options to a Form
@@ -26,7 +30,7 @@ This Training Guide follows the natural process of building, testing, sharing an
 4. Sharing and testing your survey using the survey editor
 5. Analysing your survey responses and exporting your survey data
 
-The Training Guide does not cover every feature which is offered.  Links to Guidance Notes which cover additional and advanced features are provided under the relevant section.
+The training course does not cover every feature which is offered.  Links to Guidance Notes which cover additional and advanced features are provided under the relevant section.
 
 ## Time Commitment
 
@@ -68,9 +72,9 @@ On completing this course;
 1. You should feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
 2. You will be aware of the advanced features offered by Accessible Surveys and know how to access Guidance Notes on these features.&#x20;
 
-Each section of this guide has its own learning outcomes.  It is recommended that you are comfortable with the learning outcomes of a session before starting the next session.
+Each session of this course has its own learning outcomes.  It is recommended that you are comfortable with the learning outcomes of a session before starting the next session.
 
-If you have any suggestions for how this guide can be improved, please email us at contact@accessiblesurveys.com
+If you have any suggestions for how this course can be improved, please email us at contact@accessiblesurveys.com
 
 ## Next Steps
 
