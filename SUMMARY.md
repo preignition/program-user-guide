@@ -1,9 +1,10 @@
 # Table of contents
 
 * [TRAINING COURSE](README.md)
-  * [Session 1- Creating a new survey](training-course/session-1-creating-a-new-survey.md)
-  * [Session 2- Adding accessibility options to a Form](training-course/session-2-adding-accessibility-options-to-a-form.md)
-  * [Session 3- Translating a Form into different languages](training-course/session-3-translating-a-form-into-different-languages.md)
+  * [Session 1- Creating a new survey](training-guide/session-1-creating-a-new-survey.md)
+  * [Session 2- Adding accessibility options to a Form](training-guide/session-2-adding-accessibility-options-to-a-form.md)
+  * [Session 3- Translating a Form into different languages](training-guide/session-3-translating-a-form-into-different-languages.md)
+  * [Session 4- Sharing your survey using the Survey Editor](training-course/session-4-sharing-your-survey-using-the-survey-editor.md)
 
 ## TUTORIALS
 

@@ -20,14 +20,14 @@ This training course complements the other on-line help that is available in the
 
 You should complete this course before creating your own surveys on Accessible Surveys. &#x20;
 
-## Structure of the Guide
+## Structure of the Course
 
 The course follows the natural process of building, testing, sharing and analying a survey and is divided into 5 sessions:
 
 1. Creating a new survey.
 2. Adding accessibility options to a Form
 3. Translating a Form into different languages
-4. Sharing and testing your survey using the survey editor
+4. Sharing your survey using the survey editor
 5. Analysing your survey responses and exporting your survey data
 
 The training course does not cover every feature which is offered.  Links to Guidance Notes which cover additional and advanced features are provided under the relevant section.
