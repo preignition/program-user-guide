@@ -15,11 +15,11 @@ This session covers how you can share your survey using the Survey Editor
 On completing this session, you should feel confident to do the following.
 
 * [x] Create a 'landing page' and 'thank you message' for your survey
-* [x] Use batches to control when your survey is active
-* [x] Build different types of survey links using the 'link builder'
-* [x] Control access to your survey and customise where respondnets will be redirected to when they have submitted a survey&#x20;
 * [x] Know how to translate the 'landing page' and 'thank you message' into additional languages
-* [x] Know how to give team members access to your survey
+* [x] Use batches to control when your survey is active
+* [x] Control access to your survey
+* [x] Customise where respondents will be redirected to when they have submitted a survey&#x20;
+* [x] Build different types of survey links using the 'link builder'
 * [x] Know how to 'Publish' a survey and why this is important
 
 ## Learning Materials
@@ -42,4 +42,4 @@ The Accessible Surveys logo should be uploaded to the Landing Page as shown in t
 
 In this video, Jerry guides you through the process of sharing your survey using the Survey Editor.
 
-The video is X mins long and we estimate that it will take you about X minutes to complete the session.
+The video is 20 mins long and we estimate that it will take you about 40 minutes to complete the session.
