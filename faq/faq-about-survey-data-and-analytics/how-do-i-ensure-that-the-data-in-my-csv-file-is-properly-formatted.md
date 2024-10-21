@@ -1,10 +1,10 @@
 # How do I ensure that the data in my CSV file is properly formatted?
 
-## Question:  When I download my survey data in a CSV file, the data is not appearing in the correct column.  How do I resolve this issue?
+## Question:  When I download my survey data in a CSV file, the data is not appearing in the correct format.  How do I resolve this issue?
 
-The underlying issue is likely to be caused by how excel is opening the CSV file.  Excel sometimes has trouble recognizing the encoding of a CSV file when you open it directly.
+The underlying issue is likely to be caused by how your computer is set up to format CSV files. &#x20;
 
-There are a number of ways to resolve this.
+There are 2 ways to resolve this.
 
 ### Option 1-  Opening the file in excel
 
@@ -12,15 +12,15 @@ When you use the "Import Data" feature in Excel, Excel lets you specify that the
 
 To ensure Excel always opens CSV files with the correct characters, follow these steps:
 
-1. Save the CSV file on your computer
-2. Open Excel first, don't double-click the CSV file.
+1. Save the CSV file on your computer without opening the file.
+2. Open a new Excel document.
 3. In Excel, go to the Data tab on the ribbon.
 4. Click From Text/CSV.
 5. Select your CSV file and click Import.
 6. In the preview window, if it looks incorrect, select 65001: Unicode (UTF-8) from the dropdown menu for the file origin.
 7. Click Load.
 
-If you do this each time, Excel should display the characters correctly from your UTF-8 encoded CSV file.
+Excel should display the characters correctly from your UTF-8 encoded CSV file.
 
 ### Option 2- Opening the file in another type of spreadsheet
 
