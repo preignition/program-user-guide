@@ -25,9 +25,12 @@ On completing this session, you should feel confident to do the following.
 
 You will need the following learning materials to complete this session. &#x20;
 
-The text below should be used when responding to the test survey in French.
+The text below should be used when responding to the test survey in Spanish.
 
->
+
+
+\
+
 
 
 
