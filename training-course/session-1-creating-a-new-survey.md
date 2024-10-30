@@ -23,7 +23,7 @@ On completing this session, you should feel confident with the following.
 * [x] Creating a new survey
 * [x] Understanding the 3 main elements of a survey (Form Editor, Survey Editor and Analytics)
 * [x] Understanding the structure of a Form (Pages, Sections and Questions)
-* [x] Know how to add a varity of questions (text, radio group, checkbox group and ratings)
+* [x] Know how to add a variety of questions (text, radio group, checkbox group and ratings)
 * [x] Be able to add additional Pages
 * [x] Know how to test a Form
 * [x] Know how to add simple logic to a Form

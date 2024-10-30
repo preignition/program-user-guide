@@ -1,5 +1,5 @@
 ---
-description: This session covers how to add accessibilty options to your Form.
+description: This session covers how to add accessibility options to your Form.
 ---
 
 # Session 2- Adding accessibility options to a Form

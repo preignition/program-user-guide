@@ -1,15 +1,17 @@
 # Table of contents
 
-* [TRAINING COURSE](README.md)
-  * [Session 1- Creating a new survey](training-guide/session-1-creating-a-new-survey.md)
-  * [Session 2- Adding accessibility options to a Form](training-guide/session-2-adding-accessibility-options-to-a-form.md)
-  * [Session 3- Translating a Form into different languages](training-guide/session-3-translating-a-form-into-different-languages.md)
-  * [Session 4- Sharing your survey using the Survey Editor](training-course/session-4-sharing-your-survey-using-the-survey-editor.md)
-  * [Session 5- Analysing your survey responses and exporting your survey data](training-course/session-5-analysing-your-survey-responses-and-exporting-your-survey-data.md)
+## TRAINING COURSE
+
+* [Introduction](training-course/README.md)
+* [Session 1- Creating a new survey](training-course/session-1-creating-a-new-survey.md)
+* [Session 2- Adding accessibility options to a Form](training-course/session-2-adding-accessibility-options-to-a-form.md)
+* [Session 3- Translating a Form into different languages](training-course/session-3-translating-a-form-into-different-languages.md)
+* [Session 4- Sharing your survey using the Survey Editor](training-course/session-4-sharing-your-survey-using-the-survey-editor.md)
+* [Session 5- Analysing your survey responses and exporting your survey data](training-course/session-5-analysing-your-survey-responses-and-exporting-your-survey-data.md)
 
 ## TUTORIALS
 
-* [Introduction to creating a new survey](<README (1).md>)
+* [Introduction to creating a new survey](tutorials/README.md)
 * [Introduction editing a form](tutorials/introduction-to-the-form-editor.md)
 * [Introduction to testing a form](tutorials/introduction-to-testing-a-form.md)
 * [Introduction to publishing a form](tutorials/introduction-to-publishing-a-form.md)

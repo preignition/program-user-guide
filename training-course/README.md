@@ -1,14 +1,13 @@
 ---
-description: >-
-  An on-line training course to help new users create a demonstration 'Training
-  Survey' on Accessible Surveys
+description: An on-line training course to help new users create their first Survey.
 ---
 
-# TRAINING COURSE
+
+# Training Course
 
 ## Introduction
 
-This training course will accompany you to create a short 'Training Survey on Accessible Surveys' for demonstartion purposes. &#x20;
+This training course will accompany you to create a short 'Training Survey on Accessible Surveys' for demonstration purposes. &#x20;
 
 This process will familiarise you with the platform and introduce you to all the key features of Accessible Surveys.
 
@@ -22,7 +21,7 @@ You should complete this course before creating your own surveys on Accessible S
 
 ## Structure of the Course
 
-The course follows the natural process of building, testing, sharing and analying a survey and is divided into 5 sessions:
+The course follows the natural process of building, testing, sharing and analysing a survey and is divided into 5 sessions:
 
 1. Creating a new survey.
 2. Adding accessibility options to a Form
@@ -34,12 +33,12 @@ The training course does not cover every feature which is offered.  Links to Gui
 
 ## Time Commitment
 
-We estimate that it will take approximately 30 minutes to complete most sessions although session 1 will take aproximately 45 mins .  Some people will take less time and some people will take more time.  We encourage you to go at your own pace and revisit sessions if needed.
+We estimate that it will take approximately 30 minutes to complete most sessions although session 1 will take approximately 45 mins .  Some people will take less time and some people will take more time.  We encourage you to go at your own pace and revisit sessions if needed.
 
 This means that it is likely to take between 2-3 hours to complete the entire course.  We recognise that this is a significant investment of time but are confident that it will save you a lot of time in the long run.
 
 {% hint style="info" %}
-Once have created your demonstration Training Survey you will be familiar with the platfrom.  Putting you in a great position to create your next survey easily and quickly.
+Once have created your demonstration Training Survey you will be familiar with the platform.  Putting you in a great position to create your next survey easily and quickly.
 {% endhint %}
 
 ## Training Materials
@@ -60,7 +59,7 @@ Each session includes a Youtube video where Jerry, one of of the Co-Founders of 
 You should follow the steps in the video exactly.  The video can be paused so you can go at your own pace.
 
 {% hint style="info" %}
-It will help you follow the training video, if you can access it on a large screen on a seperate computer
+It will help you follow the training video, if you can access it on a large screen on a separate computer
 {% endhint %}
 
 ## Learning Outcomes

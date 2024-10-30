@@ -1,7 +1,5 @@
 ---
-description: >-
-  This session shows you how you can analyse your survey data from the
-  'Analytics' page
+description: This session shows you how you can analyse your survey data from the 'Analytics' page
 ---
 
 # Session 5- Analysing your survey responses and exporting your survey data
@@ -17,7 +15,7 @@ This final session covers how you can analyse and export your data from the Anal
 On completing this session, you should feel confident to do the following.
 
 * [x] Using the analytics dashboard to filter your dataset&#x20;
-* [x] Using 'edit feild settings' to customise the look and feel of the dashboard
+* [x] Using 'edit field settings' to customise the look and feel of the dashboard
 * [x] Using the 'pin' feature to make charts appear at the top of the page&#x20;
 * [x] Exporting your survey data using different data formats and types of export
 
@@ -26,13 +24,6 @@ On completing this session, you should feel confident to do the following.
 You will need the following learning materials to complete this session. &#x20;
 
 The text below should be used when responding to the test survey in Spanish.
-
-
-
-\
-
-
-
 
 ## Learning Content
 
