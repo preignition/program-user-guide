@@ -32,14 +32,14 @@ The other Firebase services run on global Google infrastructure. They could proc
 
 No, the GDPR does not require EU personal data to stay in the EU.
 
-The general principle for transfers of data outside the EU is outlined in [Article 44 of GDPR](https://gdpr-info.eu/art-44-gdpr/).&#x20;
+The transfer of personal data to third countries or international organisations is covered by [Articles 44-50](https://gdpr-info.eu/art-44-gdpr/) of the Act.
 
-This can be summarised as saying, if you transfer EU personal data out of the EU, you must ensure that this data still enjoys the same level of protection it gets under GDPR. In other words, the entity or company that you pass the data to outside the EU must be under a legally binding obligation to follow GDPR data protection principles or the equivalent.
+The general principle can be summarised as saying, if you transfer EU personal data out of the EU, you must ensure that this data still enjoys the same level of protection it gets under GDPR.&#x20;
 
-## Does Firebase have a legally binding obligation to follow GDPR data protection principles or the equivalent?
+In other words, the entity or company that you pass the data to outside the EU must be under a legally binding obligation to follow GDPR data protection principles or the equivalent.
 
-The Privacy Shield frameworks provided a mechanism to comply with data protection requirements when transferring EEA, UK or Swiss personal data to the United States and onwards.
+## What is our legal basis for transfering EU personal data outside of the EU?
 
-In light of the Court of Justice of the European Union ruling on data transfers, invalidating the EU-U.S. Privacy Shield, Firebase has moved to reliance on Standard Contractual Clauses for relevant data transfers, which, as per the ruling, can continue to be a valid legal mechanism to transfer data under the GDPR. The European Commission approved[ new versions of the Standard Contractual Clauses on June 4, 2021.](https://cloud.google.com/terms/eu-model-contract-clause)
+We base our GDPR compliance on Google Cloud’s Approach to [European Standard Contractual Clauses (SCC)](https://services.google.com/fh/files/misc/gc\_new\_eu\_scc.pdf), issued on 4 June 2021 by the European Commission.  On 21 March 2022, the UK Information Commissioner’s international data transfer addendum (the “UK Addendum”) became effective, enabling the use of EU SCCs in amended form for transfers of personal data under the UK version of the EU GDPR (the “UK GDPR”). &#x20;
 
-Firebase are committed to having a lawful basis for data transfers in compliance with applicable data protection laws.
+The modernized SCCs apply to us and legitimate the transfer of Customer Personal Data outside of the EU as we have certified that the European Protection Law applies to us and have signed Google's Coud Data Processing Addendum (CDPA).&#x20;
