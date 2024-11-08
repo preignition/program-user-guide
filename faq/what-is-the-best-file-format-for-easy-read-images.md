@@ -14,8 +14,6 @@ Your images will look best in your survey if they are consistent with each other
 
 ### File size
 
-test
-
 {% hint style="info" %}
 Your image file size should be 400 KB or less
 {% endhint %}
