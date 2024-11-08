@@ -4,6 +4,17 @@ You might want to display or hide some content depending on the accessibility mo
 
 The mechanism is based on specifying a [css class](https://developer.mozilla.org/en-US/docs/Web/CSS/Class\_selectors) to the item requiring dynamic display capabilities.
 
+## this os a new para
+
+blabla
+
+{% embed url="https://youtu.be/videoid?autoplay=1&modestbranding=1&loop=1" %}
+alt text
+{% endembed %}
+this is the text 
+
+
+
 For instance a paragraph to be displayed only when easyread is on should be written as:
 
 ```html
