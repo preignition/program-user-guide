@@ -5,8 +5,8 @@ description: A training course to help new users create their first survey.
 ## Introduction
 
 This course accompanies you to create a short 'Training Survey'.  
-By creating a simple survey you will get to know the platform well.
 
+By creating a simple survey you will get to know the platform well.
 {% hint style="success" %}
 On completing the course, you will feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
 {% endhint %}
@@ -56,10 +56,11 @@ We suggest that you download these materials onto your computer before you start
 Each session includes a Youtube video where Jerry, one of the Co-Founders of Accessible Surveys, will help you create a 'Training Survey'
 
 You should follow the steps in the video exactly. The video can be paused so you can go at your own pace.
-Tip 1
+
+**Tip 1**
 {% hint style="info" %}
 Create surveys on a computer rather than a phone or tablet.{% endhint %}
-Tip 2
+**Tip 2**
 {% hint style="info" %}
 It will help if you can view the training course on one device and create your training survey on a separate device  
 {% endhint %}
