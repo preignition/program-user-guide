@@ -6,13 +6,9 @@ description: This session covers how to create a new survey and add questions to
 
 ## Session Overview
 
-This session guides you through the process of creating a new survey and adding questions to your Form.  &#x20;
+This session helps you create a new survey and add questions to your Form.  &#x20;
 
-It explains how a Form is structured using Pages, Sections and Questions and introduces some commonly used question types.   It also shows how you can test your Form as you build it.&#x20;
-
-Once you have added some questions, it shows how to add form logic so respondents are only asked relevant questions.
-
-Lastly it will show you how to 'Publish' your Form and how to grant your team members access rights to your Form.
+It explains how a Form is structured using Pages, Sections and Questions.  It also shows how you can test your Form as you build it.&#x20;
 
 This first session is slightly longer than the other sessions and will take approximately 45 mins to complete.  I hope that you enjoy it! &#x20;
 
@@ -21,9 +17,9 @@ This first session is slightly longer than the other sessions and will take appr
 On completing this session, you should feel confident with the following.
 
 * [x] Creating a new survey
-* [x] Understanding the 3 main elements of a survey (Form Editor, Survey Editor and Analytics)
+* [x] Understanding the 3 main parts of a survey (Form Editor, Survey Editor and Analytics)
 * [x] Understanding the structure of a Form (Pages, Sections and Questions)
-* [x] Know how to add a variety of questions (text, radio group, checkbox group and ratings)
+* [x] Know how to add a variety of question types (text, radio group, checkbox group and ratings)
 * [x] Be able to add additional Pages
 * [x] Know how to test a Form
 * [x] Know how to add simple logic to a Form
@@ -37,14 +33,14 @@ You will need the following learning materials to complete this session.  The PD
 [Survey Questions](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LDglCKkoaiLL-wpvCjA%2Fuploads%2FB6IrtchwR55nYEKJ3HGZ%2F1.%20Survey%20Questions.pdf?alt=media\&token=e6084315-e6ef-4a68-97ae-98a9e2ddc640)
 
 {% hint style="info" %}
-I suggest you download and save the 'Survey Questions' on to your device before starting this training session.  You can then copy and paste the questions into your training survey, saving you time.
+Download the 'Survey Questions' on to your device before starting this training session.  You can then copy and paste the questions into your training survey, saving you time.
 {% endhint %}
 
 ## Learning Content
 
 In this video, Jerry guides you through the process of creating a new survey and adding questions to your Form.
 
-Follow the steps in the video precisely and and create your own Training Survey.
+Follow the steps in the video precisely and create your own Training Survey.
 
 The video is 22 minutes long.
 
