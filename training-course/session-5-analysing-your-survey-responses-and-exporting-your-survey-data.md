@@ -14,9 +14,9 @@ This final session covers how you can analyse and export your data from the Anal
 
 On completing this session, you should feel confident to do the following.
 
-* [x] Using the analytics dashboard to filter your dataset&#x20;
-* [x] Using 'edit field settings' to customise the look and feel of the dashboard
-* [x] Using the 'pin' feature to make charts appear at the top of the page&#x20;
+* [x] Use the analytics dashboard to filter your dataset&#x20;
+* [x] Use 'edit field settings' to customise the look and feel of the dashboard
+* [x] Use the 'pin' feature to make charts appear at the top of the page&#x20;
 * [x] Exporting your survey data using different data formats and types of export
 
 ## Learning Materials
@@ -24,6 +24,9 @@ On completing this session, you should feel confident to do the following.
 You will need the following learning materials to complete this session. &#x20;
 
 The text below should be used when responding to the test survey in Spanish.
+
+[Survey Responses in Spanish](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LDglCKkoaiLL-wpvCjA%2Fuploads%2FB6IrtchwR55nYEKJ3HGZ%2F1.%20Survey%20Questions.pdf?alt=media\&token=e6084315-e6ef-4a68-97ae-98a9e2ddc640)
+
 
 ## Learning Content
 

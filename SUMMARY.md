@@ -20,6 +20,7 @@
 * [Introduction to form logic](tutorials/introduction-to-form-logic.md)
 * [Introduction to the Customer Portal](tutorials/introduction-to-the-customer-portal.md)
 
+
 ## GUIDANCE NOTES
 
 * [Survey App](guidance-notes/survey-app/README.md)
