@@ -40,3 +40,9 @@ Select 'create new batch' to create a new batch
 ## Step 5
 
 When analysing survey results, responses can be filtered by batch
+
+## Step 6
+
+To make the change effective, remember to got to "Settings" and 'Publish' a new version of your Survey.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot showing the Settings Menu on the left of the page and the blue 'Publish' button in the top right.</p></figcaption></figure>

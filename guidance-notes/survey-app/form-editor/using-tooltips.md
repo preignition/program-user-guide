@@ -38,7 +38,7 @@ Once you have defined a word in the form glossary you can add a Tooltip in the f
 
 Tooltips can be located in various places in a form including in a section title, a question label or a question option.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a tooltip being added to a redio button label to explain the word 'participate'</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a tooltip being added to a redio button label to explain the word 'participate'</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how the tooltip appears when the word 'participate' receives focus</p></figcaption></figure>
 

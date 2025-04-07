@@ -6,15 +6,15 @@ description: This session covers how to translate a Form into different language
 
 ## Session overview
 
-In session 2, you added accessibility options to your form. &#x20;
+In session 2, you added accessibility options to your form.
 
-In this session you will learn how to translate your form into French and Spanish. &#x20;
+In this session you will learn how to translate your form into French and Spanish.
 
-The platform supports a very wide range of languages.  The process you will learn here applies to any language you would like to offer your survey in.
+The platform supports a very wide range of languages. The process you will learn here applies to any language you would like to offer your survey in.
 
 ## Learning outcomes
 
-On completing this session, you should feel confident to; 
+On completing this session, you should feel confident to;
 
 * [x] Add new languages for your organisation, either yourself or with the support of the Account Holder
 * [x] Translate your Form into any new languages that have been added
@@ -28,23 +28,23 @@ On completing this session, you should feel confident to;
 Only Account Holders can activate additional languages for their organisation
 {% endhint %}
 
-New languages are added for an organisation from the 'Customer Portal'.  Only Account Holders have access to the Customer Portal.
+New languages are added for an organisation from the 'Customer Portal'. Only Account Holders have access to the Customer Portal.
 
-You will be an Account Holder if you created the account for your organisation on Accessible Surveys or have been subsequently been added as an Account Holder.  
+You will be an Account Holder if you created the account for your organisation on Accessible Surveys or have been subsequently been added as an Account Holder.
 
 When signed into your account, you will be able to view and access the 'Customer' portal from the homepage.
 
 <figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Screenshot for a user who is an Account Holder.</p></figcaption></figure>
 
-If you are not an Account Holder, when signed in to your account you will not be able to view or access the 'Customer' portal from the homepage. &#x20;
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot of a homepage for a user who is not an Account Holder.</p></figcaption></figure>
+If you are not an Account Holder, when signed in to your account you will not be able to view or access the 'Customer' portal from the homepage.
 
-If French and Spanish haven't already been added for your organisation, you will need to ask an Account Holder to add them for your so you can complete this training session. &#x20;
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot of a homepage for a user who is not an Account Holder.</p></figcaption></figure>
 
+If French and Spanish haven't already been added for your organisation, you will need to ask an Account Holder to add them for your so you can complete this training session.
 
 ## Learning Materials
 
-No Learning Materials are required to complete this session.   &#x20;
+No Learning Materials are required to complete this session.
 
 ## Learning Content
 
@@ -65,5 +65,5 @@ Training video showing how to translate a Form into different languages
 ## Next Steps
 
 {% hint style="success" %}
-You have completed the third Training Session!  You can click on the arrow below to start the fourth Training Session.  This shows you how to test and share survey links.
+You have completed the third Training Session! You can click on the arrow below to start the fourth Training Session. This shows you how to test and share survey links.
 {% endhint %}
