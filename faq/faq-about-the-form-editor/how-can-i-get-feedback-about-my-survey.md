@@ -4,13 +4,15 @@
 
 "Having invested time and money in creating an accessible survey on Accessible Surveys, I am keen to get feedback from people who have completed the survey. &#x20;
 
-It would be useful to know what aspects of the survey they enjoyed or would like to see improved.  It would also be great if I could get their consent to share their feedback publically.  &#x20;
+I would like to know what aspects of the survey they enjoyed or would like to see improved.  It would also be great if I could get their consent to share their feedback publically.  &#x20;
 
-Is there an easy why of doing this?"
+What is the best way of doing this?"
 
 ## Answer
 
-Yes! Many customers choose to include several questions at the end of their survey to gather this type of feedback.  Here is worked example which you can use.
+Many customers choose to include several questions at the end of their survey to gather this type of feedback. &#x20;
+
+Here is worked example which you can use.
 
 ### &#x20;Step 1
 
@@ -36,7 +38,7 @@ Add two additional 'Long text" questions with the following labels:
 
 "Please tell us what you did not like about the survey"
 
-We suggest you edit Long text questions as follow:
+We suggest you edit 'Long text' questions as follow:
 
 <figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Screenshot showing how the Long text questions can be presented</p></figcaption></figure>
 
@@ -64,7 +66,7 @@ Add logical expressions so the follow up questions only appear based on the rati
 
 ### Step 6
 
-You only want to know about what the respondent liked about the survey and to get their permission to share their feedback if they have given your survey a rating of 9 or 10 stars.
+You only want to know what the respondent liked about the survey and to get their permission to share their feedback if they have given the survey a rating of 9 or 10 stars.
 
 This can be acheived as follows:
 
@@ -72,7 +74,9 @@ This can be acheived as follows:
 
 Instructions
 
-<table data-header-hidden><thead><tr><th width="78"></th><th></th></tr></thead><tbody><tr><td><mark style="color:red;"><strong>1</strong></mark></td><td>Highlight the first question you want to apply the logic to in the tree structure</td></tr><tr><td><mark style="color:red;"><strong>2</strong></mark></td><td>Toggle on the 'Advanced' tab</td></tr><tr><td><mark style="color:red;"><strong>3</strong></mark></td><td>Select the 'logic' item from the task toolbar</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="78"></th><th></th></tr></thead><tbody><tr><td><mark style="color:red;"><strong>1</strong></mark></td><td>Highlight the question "Please tell us what you liked about the survey" in the tree structure</td></tr><tr><td><mark style="color:red;"><strong>2</strong></mark></td><td>Toggle on the 'Advanced' tab</td></tr><tr><td><mark style="color:red;"><strong>3</strong></mark></td><td>Select the 'logic' item from the task toolbar</td></tr></tbody></table>
+
+Next write your logical expression.
 
 <figure><img src="../../.gitbook/assets/image (104).png" alt=""><figcaption><p>Sceenshot showing how to write a logical expression</p></figcaption></figure>
 
@@ -82,9 +86,9 @@ Instructions
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-The logical expression asks whether the value entered to the question 'Did you like this survey?' is **not** equal to 9 or more. &#x20;
+The logical expression uses the invert function (!) an asks whether the value entered to the question 'Did you like this survey?' is **not** equal to 9 or more. &#x20;
 
-If the answer is blank or less than 9, the expression if TRUE and the question "Please tell us what you liked about the survey" is hidden.
+If the answer is blank or less than 9, the expression is TRUE and the question "Please tell us what you liked about the survey" is hidden.
 
 If the answer is 9 or 10, the expression is FALSE and the question "Please tell us what you liked about the survey" is displayed.  &#x20;
 
@@ -106,11 +110,13 @@ Instructions:
 
 <table data-header-hidden><thead><tr><th width="94" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">1</td><td valign="top">Copy the logical expression</td></tr><tr><td valign="top">2</td><td valign="top">Toggle off the button 'Lock this question while editing logic'</td></tr></tbody></table>
 
+Then copy the expression into the next question.&#x20;
+
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 Instructions:
 
-<table data-header-hidden><thead><tr><th width="84" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">1</td><td valign="top">Highlight the question "Permission to share your feedback with others..." from the tree structure</td></tr><tr><td valign="top">2</td><td valign="top">Paste the logical expression into the expression feild</td></tr><tr><td valign="top">3</td><td valign="top">Select 'OK' to confirm that you want to paste the expression</td></tr><tr><td valign="top">4</td><td valign="top">Test the expression as before</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="84" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">1</td><td valign="top">Highlight the question "Permission to share your feedback with others..." from the tree structure</td></tr><tr><td valign="top">2</td><td valign="top">Paste the logical expression into the expression field</td></tr><tr><td valign="top">3</td><td valign="top">Select 'OK' to confirm that you want to paste the expression</td></tr><tr><td valign="top">4</td><td valign="top">Test the expression as before</td></tr></tbody></table>
 
 ### Step 8
 
@@ -130,7 +136,7 @@ The first part of the logical expression asks whether the value entered to the q
 
 If the answer 4 or more OR if there is no answer to the question, the expression is TRUE and the question "Please tell us what you did not like about the survey" is hidden.
 
-If the answer is less than 4, the expression if FALSE and the question "Please tell us what you did not like about the survey is displayed.
+If the answer is less than 4, the expression is FALSE and the question "Please tell us what you did not like about the survey is displayed.
 
 {% hint style="success" %}
 This is a sophisticated example of a logical expression.  Even if you do not totally understand how the logic is working, writing the expression exactly as shown above will produce the desired effect.
