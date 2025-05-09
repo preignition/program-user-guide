@@ -6,7 +6,7 @@ description: This page show you how to edit your organisation's profile
 
 The Profile page has two seconds for 'Public' and 'Private' settings.  These are described below.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Screenshot showing the Public and Private menu options in the top right corner.  Public setting are shown by default.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the Public and Private menu options in the top right corner.  Public setting are shown by default.</p></figcaption></figure>
 
 ## Public Settings
 

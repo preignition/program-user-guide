@@ -8,7 +8,7 @@ The Customer Portal is a restricted part of the platform and can only be accesse
 
 It allows Account Holders to control all aspects of their account on Accessible Surveys. &#x20;
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The screenshot above shows how the customer portal can be accessed from the homepage by Account Holders.  If you can't see 'Customer' in the top menu, you do not have the necessary rights to access this part of the application.

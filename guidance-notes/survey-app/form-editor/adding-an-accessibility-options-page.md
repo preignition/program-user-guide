@@ -12,7 +12,7 @@ Adding an accessibility menu at the start of your survey helps makes the accessi
 
 Accessibility settings can be activitated by survey respondents from the accessibility settings icon which is always available in the top right hand corner of the screen.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Screenshot, showing the location of the Accessibility Settings icon in the top right hand corner of the screen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Screenshot, showing the location of the Accessibility Settings icon in the top right hand corner of the screen</p></figcaption></figure>
 
 However adding an accessibility menu to your survey can make these options more prominent.&#x20;
 
@@ -30,7 +30,7 @@ The menu allows respondents to activate, deactivate or change accessibility sett
 
 It is intelligent, in that it will only show the accessibility options that you have activated for your survey.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>This is an example of how an accessibilty menu appears to survey respondents.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>This is an example of how an accessibilty menu appears to survey respondents.</p></figcaption></figure>
 
 ## Step 3
 
@@ -44,11 +44,11 @@ Alternatively, you can add an accessibility menu as the first page of your surve
 
 Add a new page and section at the beginning of your form.  Give the page a title like 'Accessibility'.  The section should have a name but not a title or sub title&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Screenshot showing an Accessibility page added at the start of a Form</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Screenshot showing an Accessibility page added at the start of a Form</p></figcaption></figure>
 
 Drag and drop to add a new 'free text' question into the section that you have just created.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Screenshot showing a new &#x27;Free Text&#x27; feild being added to the form.  By dragging the question type from the left hand column and dropping into the middle section of the page."><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Screenshot showing a new &#x27;Free Text&#x27; feild being added to the form.  By dragging the question type from the left hand column and dropping into the middle section of the page."><figcaption></figcaption></figure>
 
 Copy and paste the accessibility menu into the free text field.
 
