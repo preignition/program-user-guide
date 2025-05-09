@@ -15,19 +15,19 @@ Initially two text based question type are visible
 * Text
 * Long Text
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Screenshot showing text and long text question types</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption><p>Screenshot showing text and long text question types</p></figcaption></figure>
 
 ## Step 2
 
 Clicking on the <mark style="color:blue;">**^**</mark> symbol beside the 'Text' label reveals some additional text based questions
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing additional text based questions</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing additional text based questions</p></figcaption></figure>
 
 ## Step 3
 
 A text based question looks like this
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input options for a text based question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input options for a text based question</p></figcaption></figure>
 
 ## Step 4
 
@@ -37,7 +37,7 @@ Under 'Designation' give the question a label.
 The 'label' is how the questions will appear on the form. Make it as clear and concise as possible. Avoid long questions as they won't render well on small screens or mobiles
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a 'label' being written for a text question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a 'label' being written for a text question</p></figcaption></figure>
 
 ## Step 5
 
@@ -47,7 +47,7 @@ Always check the 'Accessibility' box under the label.   This will make sure that
 It is good practice to keep labels short and concise.  Helper text can be used to provide additional information about the question if needed
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the location of the 'Accessibility' box</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the location of the 'Accessibility' box</p></figcaption></figure>
 
 Selecting the 'more accessible label' option allows you to write the label in markdown. &#x20;
 
@@ -61,7 +61,7 @@ Select the 'Validation' box if you require Respondents to answer the question
 
 If Respondents don't answer a required question, they will be told that they have missed a required question immediately.   They will be able to continue to fill in the survey but will be redirectly to complete required questions before they can submit their survey.   All prompts are announced to Screen Readers.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the location of the 'Validation' box</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the location of the 'Validation' box</p></figcaption></figure>
 
 ## Step 8
 

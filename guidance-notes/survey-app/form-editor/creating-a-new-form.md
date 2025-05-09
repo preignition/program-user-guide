@@ -8,7 +8,7 @@ A step by step guide to structuring a form
 
 Click on the 'Form Editor' feild in order to edit it.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2
 
@@ -18,7 +18,7 @@ The name you gave your form when you created your new survey will appear under b
 
 **Title -** This appears on the top of your form and is visible to respondents.  You are able to translate your title if your form is multi-lingual
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3
 

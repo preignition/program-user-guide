@@ -45,4 +45,4 @@ When analysing survey results, responses can be filtered by batch
 
 To make the change effective, remember to got to "Settings" and 'Publish' a new version of your Survey.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot showing the Settings Menu on the left of the page and the blue 'Publish' button in the top right.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Screenshot showing the Settings Menu on the left of the page and the blue 'Publish' button in the top right.</p></figcaption></figure>

@@ -6,7 +6,7 @@ This page provides some practical instructutions to help our Users run surveys t
 
 ## Make sure that your survey provider is GDPR compliant
 
-[Article 28](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L\_.2016.119.01.0001.01.ENG\&toc=OJ:L:2016:119:TOC#d1e3150-1-1) of GDPR states that:
+[Article 28](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG\&toc=OJ:L:2016:119:TOC#d1e3150-1-1) of GDPR states that:
 
 > The controller shall use only processors providing sufficient guarantees to implement appropriate technical and organisational measures in such a manner that processing will meet the requirements of this Regulation and ensure the protection of the rights of the data subject.
 
@@ -65,7 +65,7 @@ Respondents are asked to agree to our own Terms of Service before they can start
 
 Users have the option to add their own terms which can be displayed either on the page itself or as a pop up box. This is an excellent way of getting explicit consent for collecting sensitive personal data as Respondents must give this consent before they can commence the survey. There is also a clear opt out option.
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Ask Respondents to give explicit consent before answering a specific question
 
@@ -79,7 +79,7 @@ Here is a couple of examples of how it could look like:
 
 <figure><img src="../../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This way, you are not only more transparent and more clear about your use of their data (which is in accordance with GDPR regulation), but also, it is easier for a human brain to process the information. It will be less scary and less intimidating to answer your questions.
 
@@ -121,7 +121,7 @@ Reporting is only required for breaches which will result in:
 
 “discrimination, damage to reputation, financial loss, loss of confidentiality or any other significant economic or social disadvantage.”
 
-In [Article 33](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L\_.2016.119.01.0001.01.ENG#d1e3434-1-1) they mention that if your respondents’ personal information is exposed in a way that results in risking or damaging them, you (the data controller) not later than 72 hours after having become aware of it, must notify the personal data breach to the supervisory authority competent in accordance.
+In [Article 33](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG#d1e3434-1-1) they mention that if your respondents’ personal information is exposed in a way that results in risking or damaging them, you (the data controller) not later than 72 hours after having become aware of it, must notify the personal data breach to the supervisory authority competent in accordance.
 
 ### Reporting to your respondents
 

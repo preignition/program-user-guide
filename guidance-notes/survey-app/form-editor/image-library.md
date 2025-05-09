@@ -12,13 +12,13 @@ An image must first be added to the Image Library before it can be used in a for
 
 The Image Library is accessed from the Form Definition menu in the form Build mode
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the Image Library in the Form Definition menu</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the Image Library in the Form Definition menu</p></figcaption></figure>
 
 ## Step 2
 
 Once in the Image Library, users have two ways to add images. Images can either be uploaded directly using the 'upload images' button or dropped into the image library workspace.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the two options for adding an image to the image library</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the two options for adding an image to the image library</p></figcaption></figure>
 
 ## Step 3
 
@@ -38,7 +38,7 @@ For more guidance on resizing you images, please see the Frequently Asked Questi
 
 Once added the images will be displayed in a gallery format.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Screenshot of images uploaded to the Image Library</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Screenshot of images uploaded to the Image Library</p></figcaption></figure>
 
 ## Step 5
 

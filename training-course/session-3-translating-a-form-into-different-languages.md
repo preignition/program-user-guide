@@ -34,11 +34,11 @@ You will be an Account Holder if you created the account for your organisation o
 
 When signed into your account, you will be able to view and access the 'Customer' portal from the homepage.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Screenshot for a user who is an Account Holder.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot for a user who is an Account Holder.</p></figcaption></figure>
 
 If you are not an Account Holder, when signed in to your account you will not be able to view or access the 'Customer' portal from the homepage.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot of a homepage for a user who is not an Account Holder.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot of a homepage for a user who is not an Account Holder.</p></figcaption></figure>
 
 If French and Spanish haven't already been added for your organisation, you will need to ask an Account Holder to add them for your so you can complete this training session.
 

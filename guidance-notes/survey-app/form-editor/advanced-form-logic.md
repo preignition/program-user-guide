@@ -32,7 +32,7 @@ The expression is applied to the 'Food Preferences' page and asks whether the re
 
 Only if the answer is 16 or above will the expression = false and the page will be displayed.
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt="Screenshot showing an example of a logical expression being used to hide or display a page based on a respondents age."><figcaption><p>Screenshot showing how the !(>) can be used to show or hide a page depending upon an respondent's age</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (2).png" alt="Screenshot showing an example of a logical expression being used to hide or display a page based on a respondents age."><figcaption><p>Screenshot showing how the !(>) can be used to show or hide a page depending upon an respondent's age</p></figcaption></figure>
 
 The following expression can then be applied to the 'Not Eligible' page so this page appears if the respondent's age is 15 or less.
 
@@ -84,11 +84,11 @@ In this example the in operator is used to display or hide a question based on a
 
 The expression is true and therefore hidden when 'apples' is selected as a response to the question 'what fruit do your like to eat?'
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption><p>Screenshot showing how the in operator can be used to display or hide a question based on a selection from a prceeding checkbox list</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how the in operator can be used to display or hide a question based on a selection from a prceeding checkbox list</p></figcaption></figure>
 
 The expression is then inverted using ! to display it for the same configuration.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Screenshot showing an example of a logical expression using the &#x27;in&#x27; operator"><figcaption><p>Screenshot showing how ! can be used to invert a logical expression</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Screenshot showing an example of a logical expression using the &#x27;in&#x27; operator"><figcaption><p>Screenshot showing how ! can be used to invert a logical expression</p></figcaption></figure>
 
 ## **Ternary operator**
 
@@ -152,7 +152,7 @@ For instance limiting the number of answers of a question \`What colors do you l
 
 A custom validation message can then be added under the settings option. This message will appear if a respondents checks 3 or more colours.  The message will be announced to screen readers.
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt="Screenshot showing how a custom validation message can be created under the settings option."><figcaption><p>Screenshot showing how a custom validation message can be added under the 'settings' option.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt="Screenshot showing how a custom validation message can be created under the settings option."><figcaption><p>Screenshot showing how a custom validation message can be added under the 'settings' option.</p></figcaption></figure>
 
 If a respondents selects more than 3 colours they will be able to continue to fill in the survey.  However they will not be able to submit the survey until the required number of options have been selected.  Respondents will be redirected to the 'invalid' question so the issue can be resolved.
 

@@ -1,5 +1,5 @@
 # Table of contents
- 
+
 ## TRAINING COURSE
 
 * [Introduction](README.md)
@@ -19,7 +19,6 @@
 * [Introduction to Sign Language](tutorials/introduction-to-sign-language.md)
 * [Introduction to form logic](tutorials/introduction-to-form-logic.md)
 * [Introduction to the Customer Portal](tutorials/introduction-to-the-customer-portal.md)
-
 
 ## GUIDANCE NOTES
 
@@ -92,6 +91,7 @@
   * [Accessibility Modes](faq/md/accessibility-mode.md)
 * [FAQ about the Form Editor](faq/faq-about-the-form-editor/README.md)
   * [How do I resolve warnings when publishing a form?](faq/faq-about-the-form-editor/how-do-i-resolve-warnings-when-publishing-a-form.md)
+  * [How can I get feedback about my survey?](faq/faq-about-the-form-editor/how-can-i-get-feedback-about-my-survey.md)
 * [Guide to producing Accessible Surveys](faq/guide-to-producing-accessible-surveys/README.md)
   * [Producing your survey in Plain Language or Easy to Read](faq/guide-to-producing-accessible-surveys/producing-your-survey-in-plain-language-or-easy-to-read.md)
   * [Producing your survey in sign languages](faq/guide-to-producing-accessible-surveys/producing-your-survey-in-sign-languages.md)
