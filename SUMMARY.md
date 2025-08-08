@@ -1,5 +1,26 @@
 # Table of contents
 
+## ACCESSIBLE SURVEYS APP
+
+* [Accessible Surveys App](accessible-surveys-app/README.md)
+  * [Tutorials](accessible-surveys-app/tutorials/README.md)
+  * [Training Course](accessible-surveys-app/training-course/README.md)
+  * [Application Views](accessible-surveys-app/app/README.md)
+    * [Overview](accessible-surveys-app/app/overview.md)
+    * [Build](accessible-surveys-app/app/build/README.md)
+      * [Compose](accessible-surveys-app/app/build/compose.md)
+      * [Form Behavior](accessible-surveys-app/app/build/form-behavior.md)
+      * [Localize](accessible-surveys-app/app/build/localize.md)
+      * [Image Library](accessible-surveys-app/app/build/image-library.md)
+    * [Test](accessible-surveys-app/app/test.md)
+    * [Share](accessible-surveys-app/app/share/README.md)
+      * [Status](accessible-surveys-app/app/share/status.md)
+      * [Publish](accessible-surveys-app/app/share/publish.md)
+      * [Distribute](accessible-surveys-app/app/share/distribute.md)
+      * [Account Type](accessible-surveys-app/app/share/account-type.md)
+      * [Redirection](accessible-surveys-app/app/share/redirection.md)
+      * [Access](accessible-surveys-app/app/share/access.md)
+
 ## TRAINING COURSE
 
 * [Introduction](README.md)
