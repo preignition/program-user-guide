@@ -1,39 +1,37 @@
 ---
-description: This session covers how to create a new survey and add questions to your form.
+description: This session covers how to create a new survey and add pages and questions
 ---
 
 # Session 1- Creating a new survey
 
 ## Session Overview
 
-This session helps you create a new survey and add questions to your Form.  &#x20;
+This session will accompany you to create a new survey, including an 'Introductory Page' and a 'Thank You Page'. &#x20;
 
-It explains how a Form is structured using Pages, Sections and Questions.  It also shows how you can test your Form as you build it.&#x20;
+It explains how a Survey is structured using Pages, Sections and Questions. It also shows how you can test your Form as you build it.
 
-This first session is slightly longer than the other sessions and will take approximately 45 mins to complete.  I hope that you enjoy it! &#x20;
+This first session is slightly longer than the other sessions and will take approximately 20 mins to complete. I hope that you enjoy it!
 
 ## Learning outcomes
 
 On completing this session, you should feel confident with the following.
 
 * [x] Creating a new survey
-* [x] Understanding the 3 main parts of a survey (Form Editor, Survey Editor and Analytics)
-* [x] Understanding the structure of a Form (Pages, Sections and Questions)
+* [x] Understanding the main parts of a survey (Introductory Page, Form and Thank You Page)
+* [x] Understanding how a Form is structured (Pages, Sections and Questions)
 * [x] Know how to add a variety of question types (text, radio group, checkbox group and ratings)
-* [x] Be able to add additional Pages
+* [x] Know to add additional Pages
 * [x] Know how to test a Form
-* [x] Know how to add simple logic to a Form
-* [x] Know how to to 'Publish' a Form and why this is necessary
-* [x] Know how to give team members access to a form&#x20;
+* [x] Know how to add simple logic
 
 ## Learning Materials
 
-You will need the following learning materials to complete this session.  The PDF file below includes the questions you should include in your 'Training Survey'.
+You will need the following learning materials to complete this session. The PDF file below includes the questions you should include in your 'Training Survey' as well as text for the 'Introductory Page' and 'Thank You Page'&#x20;
 
 [Survey Questions](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LDglCKkoaiLL-wpvCjA%2Fuploads%2FB6IrtchwR55nYEKJ3HGZ%2F1.%20Survey%20Questions.pdf?alt=media\&token=e6084315-e6ef-4a68-97ae-98a9e2ddc640)
 
 {% hint style="info" %}
-Download the 'Survey Questions' on to your device before starting this training session.  You can then copy and paste the questions into your training survey, saving you time.
+Download the 'Survey Questions' on to your device before starting this training session. You can then copy and paste the questions into your training survey, saving you time.
 {% endhint %}
 
 ## Learning Content
@@ -54,5 +52,5 @@ The video is 22 minutes long.
 ## Next Steps
 
 {% hint style="success" %}
-You have completed the first Training Session!  You can click on the arrow below to start the second Training Session.  This shows you how to add accessibility options to your Form.
+You have completed the first Training Session! You can click on the arrow below to start the second Training Session. This shows you how to add accessibility options to your Form.
 {% endhint %}
