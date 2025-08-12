@@ -26,12 +26,12 @@ On completing this session, you should feel confident with the following.
 
 ## Learning Materials
 
-You will need the following learning materials to complete this session. The PDF file below includes the questions you should include in your 'Training Survey' as well as text for the 'Introductory Page' and 'Thank You Page'&#x20;
+You will need the following learning materials to complete this session. The PDF file below includes the text for the 'Introductory Page' and 'Thank You Page' questions as well as the questions to include in your Form. &#x20;
 
-[Survey Questions](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LDglCKkoaiLL-wpvCjA%2Fuploads%2FB6IrtchwR55nYEKJ3HGZ%2F1.%20Survey%20Questions.pdf?alt=media\&token=e6084315-e6ef-4a68-97ae-98a9e2ddc640)
+[Text for Training Survey](https://drive.google.com/file/d/1IgSwJIfl8nkrVgiSqi5EIKhhtknTviN-/view?usp=sharing)
 
 {% hint style="info" %}
-Download the 'Survey Questions' on to your device before starting this training session. You can then copy and paste the questions into your training survey, saving you time.
+Download the 'Text for Training Survey' on to your device before starting this training session. You can then copy and paste the questions into your training survey, saving you time.
 {% endhint %}
 
 ## Learning Content
