@@ -1,14 +1,14 @@
 ---
-description: A training course to help new users create their first survey.
+description: >-
+  A training course to help new users create a training survey and become
+  familiar with the survey tool
 ---
 
 # Introduction
 
 ### Introduction
 
-This course accompanies you to create a short 'Training Survey'.
-
-By creating a simple survey you will get to know the platform well.
+This course accompanies you to create a short 'Training Survey'.  By creating a simple survey you will get to know the platform well.   This survey does not count as part of your survey quota.&#x20;
 
 {% hint style="success" %}
 On completing the course, you will feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
@@ -16,16 +16,16 @@ On completing the course, you will feel confident building, testing, sharing and
 
 You should complete this course before creating your own surveys on Accessible Surveys.
 
-There is other help available in the on-line help, including 'Tutorials', 'Guidance Notes' and 'Frequently Asked Questions' (FAQs)
+There is other help available, including 'Tutorials', 'Guidance Notes' and 'Frequently Asked Questions' (FAQs)
 
 ### Structure of the Course
 
-The course follows the process of building, testing, sharing and analysing a survey and is divided into 5 sessions:
+The course follows the life cycle of building, testing, sharing and analysing a survey and is divided into 5 sessions:
 
 1. Creating a new survey.
-2. Adding accessibility options to a Form
-3. Translating a Form into different languages
-4. Sharing your survey
+2. Adding accessibility options&#x20;
+3. Translating a survey in different languages
+4. Testing and sharing your survey
 5. Analysing your survey responses and exporting your survey data
 
 The training course does not cover every feature which is offered.
@@ -34,22 +34,18 @@ Links to Guidance Notes which cover additional and advanced features are provide
 
 ### Time Commitment
 
-We estimate that it will take approximately 30 minutes to complete most sessions, although session 1 will take approximately 45 mins . Some people will take less time and some people will take more time. We encourage you to go at your own pace and revisit sessions if needed.
+We estimate that it will take approximately 15 minutes to complete most sessions, although session 1 will take approximately 20 mins . Some people will take less time and some people will take more time. We encourage you to go at your own pace and revisit sessions if needed.
 
-It is likely to take between 2-3 hours to complete the entire course. We recognise that this is a significant investment of your time but are confident that it will be time well spent.
-
-{% hint style="info" %}
-Once have created your 'Training Survey' you will know the platfrom well. You will be in a great position to create your next survey easily and quickly.
-{% endhint %}
+It is likely to take between 1-2 hours to complete the entire course. We recognise that this is a significant investment of your time but are confident that it will be time well spent.
 
 ### Training Materials
 
 We have provided the following training materials to help you create your training survey.
 
+* [x] Text for your 'Introductory Page' and 'Thank You Page'
 * [x] Survey questions
-* [x] Text for 'landing page' and 'thank you' message
-* [x] Images for Easy Read version
-* [x] BSL videos for sign language version
+* [x] Easy Read imaged
+* [x] British Sign Language videos&#x20;
 
 Each session includes links to any training materials needed to complete that session.
 
@@ -57,7 +53,7 @@ We suggest that you download these materials onto your computer before you start
 
 ### Suggested Learning Method
 
-Each session includes a Youtube video where Jerry, one of the Co-Founders of Accessible Surveys, will help you create a 'Training Survey'
+Each session includes a Youtube video where Jerry, one of the Co-Founders of Accessible Surveys, will help you create a short 'Training Survey'.
 
 You should follow the steps in the video exactly. The video can be paused so you can go at your own pace.
 
@@ -70,7 +66,7 @@ Create surveys on a computer rather than a phone or tablet.
 **Tip 2**
 
 {% hint style="info" %}
-It will help if you can view the training course on one device and create your training survey on a separate device
+View the training course on separate device if you have one.
 {% endhint %}
 
 ### Learning Outcomes
