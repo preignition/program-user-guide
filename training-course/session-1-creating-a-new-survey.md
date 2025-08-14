@@ -10,16 +10,16 @@ This session will accompany you to create a new survey, including an 'Introducto
 
 It explains how a Survey is structured using Pages, Sections and Questions. It also shows how you can test your Form as you build it.
 
-This first session is slightly longer than the other sessions and will take approximately 20 mins to complete. I hope that you enjoy it!
+This first session is longer than the other sessions and will take approximately 25 mins to complete. I hope that you enjoy it!
 
 ## Learning outcomes
 
 On completing this session, you should feel confident with the following.
 
 * [x] Creating a new survey
-* [x] Understanding the main parts of a survey (Introductory Page, Form and Thank You Page)
+* [x] Understanding the main elements of a survey (Introductory Page, Form and Thank You Page)
 * [x] Understanding how a Form is structured (Pages, Sections and Questions)
-* [x] Know how to add a variety of question types (text, radio group, checkbox group and ratings)
+* [x] Know how to add a variety of question types (text, radio group, and ratings)
 * [x] Know to add additional Pages
 * [x] Know how to test a Form
 * [x] Know how to add simple logic
@@ -40,7 +40,7 @@ In this video, Jerry guides you through the process of creating a new survey and
 
 Follow the steps in the video precisely and create your own Training Survey.
 
-The video is 22 minutes long.
+The video is 18 minutes long.
 
 {% embed url="https://youtu.be/kthdjQpKwrY" %}
 

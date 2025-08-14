@@ -1,7 +1,7 @@
 ---
 description: >-
   A training course to help new users create a training survey and become
-  familiar with the survey tool
+  familiar with Accessible Surveys
 ---
 
 # Introduction
@@ -14,7 +14,7 @@ This course accompanies you to create a short 'Training Survey'.  By creating a 
 On completing the course, you will feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
 {% endhint %}
 
-You should complete this course before creating your own surveys on Accessible Surveys.
+You should complete this course before creating your own surveys.
 
 There is other help available, including 'Tutorials', 'Guidance Notes' and 'Frequently Asked Questions' (FAQs)
 
@@ -34,13 +34,13 @@ Links to Guidance Notes which cover additional and advanced features are provide
 
 ### Time Commitment
 
-We estimate that it will take approximately 15 minutes to complete most sessions, although session 1 will take approximately 20 mins . Some people will take less time and some people will take more time. We encourage you to go at your own pace and revisit sessions if needed.
+We estimate that it will take approximately 15 minutes to complete most sessions, although session 1 will take approximately 25 mins . Some people will take less time and some people will take more time. We encourage you to go at your own pace and revisit sessions if needed.
 
 It is likely to take between 1-2 hours to complete the entire course. We recognise that this is a significant investment of your time but are confident that it will be time well spent.
 
 ### Training Materials
 
-We have provided the following training materials to help you create your training survey.
+We provide the following training materials to help you create your training survey.
 
 * [x] Text for your 'Introductory Page' and 'Thank You Page'
 * [x] Survey questions
@@ -53,7 +53,7 @@ We suggest that you download these materials onto your computer before you start
 
 ### Suggested Learning Method
 
-Each session includes a Youtube video where Jerry, one of the Co-Founders of Accessible Surveys, will help you create a short 'Training Survey'.
+Each session includes a Youtube video where Jerry, one of the Co-Founders of Accessible Surveys, helps you create a short 'Training Survey'.
 
 You should follow the steps in the video exactly. The video can be paused so you can go at your own pace.
 
