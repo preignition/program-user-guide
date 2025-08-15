@@ -64,7 +64,7 @@ The video is 12 minutes long and we estimate that it will take you about 15 to 2
 ## Advanced features related to adding accessibility modes not covered in this session
 
 * [x] Making your Introduction Page and Thank You Page available in Easy Read
-* [x] Making yoru survey available in multiple sign languages
+* [x] Making your survey available in multiple sign languages
 
 ## Next Steps
 
