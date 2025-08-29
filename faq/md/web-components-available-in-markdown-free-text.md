@@ -3,18 +3,19 @@
 This document describes the web components that can be used in the free text field of AccessibleSurveys.com.
 
 {% hint style="success" %}
-Web component tag **MUST** be closed: 
+Web component tag **MUST** be closed:
 
-This will work: 
+This will work:
+
 ```html
 <lapp-youtube videoid="videoid"></lapp-youtube>
 ```
 
-This will not work: 
+This will not work:
+
 ```html
 <lapp-youtube videoid="videoid">
-``````
-
+```
 {% endhint %}
 
 ### Tooltips
@@ -39,17 +40,17 @@ When a user over the tooltip with or activate it :
 
 **Properties**
 
-| Property      | Attribute     | Type      | Default | Description                                                                                                                                                                                                                                                                                 |
-| ------------- | ------------- | --------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `container`   | `container`   | `object`  |         | the `container` used to decide how to position tooltip before opening.                                                                                                                                                                                                                      |
-| `fireonclick` | `fireonclick` | `boolean` |         | When true, activate tooltip on click event (and not just on hover)                                                                                                                                                                                                                          |
-| `heading`     | `heading`     | `string`  |         | Tooltip title.                                                                                                                                                                                                                                                                              |
-| `message`     | `message`     | `string`  |         | message appearing when tooltip is active                                                                                                                                                                                                                                                    |
-| `noIcon`      | `noIcon`      | `boolean` | false   | Do not display the `info` icon top right of tooltip when true                                                                                                                                                                                                                               |
-| `opened`      |               | `boolean` | false   |                                                                                                                                                                                                                                                                                             |
-| `position`    | `position`    | `string`  |         | <p>Placement of the tooltip. Note that the actual placement may vary as needed to keep the tooltip<br>inside of the viewport {'top' | 'top-start' | 'top-end' | 'right' | 'right-start' | 'right-end' | 'bottom' | 'bottom-start' | 'bottom-end' | 'left' | 'left-start' | 'left-end' }</p> |
-| `skipFocus`   | `skipFocus`   | `boolean` |         | <p>tooltip is not activatable by tap if true.<br>To use for instance when sloted element is a button (which will receive focus)</p>                                                                                                                                                         |
-| `tipwidth`    | `tipwidth`    | `string`  | 200     | Wdth of the tooltip - overrides css properties.                                                                                                                                                                                                                                             |
+| Property      | Attribute     | Type      | Default | Description                                                                                                                             |
+| ------------- | ------------- | --------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `container`   | `container`   | `object`  |         | the `container` used to decide how to position tooltip before opening.                                                                  |
+| `fireonclick` | `fireonclick` | `boolean` |         | When true, activate tooltip on click event (and not just on hover)                                                                      |
+| `heading`     | `heading`     | `string`  |         | Tooltip title.                                                                                                                          |
+| `message`     | `message`     | `string`  |         | message appearing when tooltip is active                                                                                                |
+| `noIcon`      | `noIcon`      | `boolean` | false   | Do not display the `info` icon top right of tooltip when true                                                                           |
+| `opened`      |               | `boolean` | false   |                                                                                                                                         |
+| `position`    | `position`    | `string`  |         | <p>Placement of the tooltip. Note that the actual placement may vary as needed to keep the tooltip<br>inside of the viewport {'top'</p> |
+| `skipFocus`   | `skipFocus`   | `boolean` |         | <p>tooltip is not activatable by tap if true.<br>To use for instance when sloted element is a button (which will receive focus)</p>     |
+| `tipwidth`    | `tipwidth`    | `string`  | 200     | Wdth of the tooltip - overrides css properties.                                                                                         |
 
 ### pwi-form-tooltip
 
@@ -69,22 +70,22 @@ Produces:
 
 #### Properties
 
-| Property         | Attribute        | Type      | Default                      | Description                                                                                                                                                                                                                                                                                 |
-| ---------------- | ---------------- | --------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `appName`        | `app-name`       | `string`  |                              | `appName`                                                                                                                                                                                                                                                                                   |
-| `container`      | `container`      | `object`  |                              | the `container` used to decide how to position tooltip before opening.                                                                                                                                                                                                                      |
-| `fireonclick`    | `fireonclick`    | `boolean` |                              | When true, activate tooltip on click event (and not just on hover)                                                                                                                                                                                                                          |
-| `heading`        | `heading`        | `string`  |                              | Tooltip title.                                                                                                                                                                                                                                                                              |
-| `loadingMessage` | `loadingMessage` | `string`  | "loading remote tooltip ..." | <p><code>loadingMessage</code> message appearing before<br>remote content was loaded</p>                                                                                                                                                                                                    |
-| `message`        | `message`        | `string`  |                              | message appearing when tooltip is active                                                                                                                                                                                                                                                    |
-| `noIcon`         | `noIcon`         | `boolean` | false                        | Do not display the `info` icon top right of tooltip when true                                                                                                                                                                                                                               |
-| `opened`         |                  | `boolean` | false                        |                                                                                                                                                                                                                                                                                             |
-| `path`           | `path`           | `string`  |                              | `path` database path                                                                                                                                                                                                                                                                        |
-| `position`       | `position`       | `string`  |                              | <p>Placement of the tooltip. Note that the actual placement may vary as needed to keep the tooltip<br>inside of the viewport {'top' | 'top-start' | 'top-end' | 'right' | 'right-start' | 'right-end' | 'bottom' | 'bottom-start' | 'bottom-end' | 'left' | 'left-start' | 'left-end' }</p> |
-| `resource`       | `resource`       | `object`  |                              | <p><code>resource</code> the resource object to get<br>context from. It can be a form or a section.<br>For editor shall not set this propery as it is handled by the application.</p>                                                                                                       |
-| `skipFocus`      | `skipFocus`      | `boolean` | true                         | <p>tooltip is not actiabtable by tap if true.<br>To use for instance when sloted element is a button (which will receive focus)</p>                                                                                                                                                         |
-| `term`           | `term`           | `string`  |                              | `term` the term id to get tooltip for                                                                                                                                                                                                                                                       |
-| `tipwidth`       | `tipwidth`       | `string`  | 200                          | Wdth of the tooltip - overrides css properties.                                                                                                                                                                                                                                             |
+| Property         | Attribute        | Type      | Default                      | Description                                                                                                                                                                           |
+| ---------------- | ---------------- | --------- | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `appName`        | `app-name`       | `string`  |                              | `appName`                                                                                                                                                                             |
+| `container`      | `container`      | `object`  |                              | the `container` used to decide how to position tooltip before opening.                                                                                                                |
+| `fireonclick`    | `fireonclick`    | `boolean` |                              | When true, activate tooltip on click event (and not just on hover)                                                                                                                    |
+| `heading`        | `heading`        | `string`  |                              | Tooltip title.                                                                                                                                                                        |
+| `loadingMessage` | `loadingMessage` | `string`  | "loading remote tooltip ..." | <p><code>loadingMessage</code> message appearing before<br>remote content was loaded</p>                                                                                              |
+| `message`        | `message`        | `string`  |                              | message appearing when tooltip is active                                                                                                                                              |
+| `noIcon`         | `noIcon`         | `boolean` | false                        | Do not display the `info` icon top right of tooltip when true                                                                                                                         |
+| `opened`         |                  | `boolean` | false                        |                                                                                                                                                                                       |
+| `path`           | `path`           | `string`  |                              | `path` database path                                                                                                                                                                  |
+| `position`       | `position`       | `string`  |                              | <p>Placement of the tooltip. Note that the actual placement may vary as needed to keep the tooltip<br>inside of the viewport {'top'</p>                                               |
+| `resource`       | `resource`       | `object`  |                              | <p><code>resource</code> the resource object to get<br>context from. It can be a form or a section.<br>For editor shall not set this propery as it is handled by the application.</p> |
+| `skipFocus`      | `skipFocus`      | `boolean` | true                         | <p>tooltip is not actiabtable by tap if true.<br>To use for instance when sloted element is a button (which will receive focus)</p>                                                   |
+| `term`           | `term`           | `string`  |                              | `term` the term id to get tooltip for                                                                                                                                                 |
+| `tipwidth`       | `tipwidth`       | `string`  | 200                          | Wdth of the tooltip - overrides css properties.                                                                                                                                       |
 
 ## Guidance - `<pfo-survey-guidance>`
 
@@ -128,7 +129,6 @@ Produces:
 
 > <img src="image/icon.png" alt="icon example" data-size="original">
 
-
 ## Video - `<lapp-youtube>` or `<lite-youtube>`
 
 The element for rendering youtube video is [lite-youtube ](https://github.com/paulirish/lite-youtube-embed). We deploy an alternative version of this element called `lapp-youtube` that adds default parameters for allowing to pause videos when necessary, and display videos from the same channel when the video is finished.
@@ -145,7 +145,7 @@ Prefer using `lapp-youtube` over `lite-youtube` as default parameters are added 
 
 #### Example
 
-Use any [YouTube Embedded Players and Player Parameters](https://developers.google.com/youtube/player\_parameters) you like. For `lite-youtube` We recommend setting `rel` to `0` as below to avoid showing unrelated video after the video was just played. Those parameters are added by default in `lapp-youtube`.
+Use any [YouTube Embedded Players and Player Parameters](https://developers.google.com/youtube/player_parameters) you like. For `lite-youtube` We recommend setting `rel` to `0` as below to avoid showing unrelated video after the video was just played. Those parameters are added by default in `lapp-youtube`.
 
 ```html
 <lapp-youtube videoid="xVytWVHX4N0"></lapp-youtube>
@@ -177,8 +177,8 @@ produces:
 
 #### Properties
 
-| Property  | Attribute | Type     | Description                                                                                                                                                                                                           |
-| --------- | --------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Property  | Attribute | Type     | Description                                                                                                                                                                                                              |
+| --------- | --------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `context` | `context` | `string` | <p>used to show or hide specific accessibility items depending on application context.<br>For instance, <code>readaloud</code>. <code>international sign</code> are visible only when context = <code>survey</code>.</p> |
 
 ### a11y-dialog-button
@@ -210,8 +210,8 @@ Individual controls exists for each accessibility settings. We recommend the use
 
 However there are cases where it makes sense to introduce each accessibility controls individually.
 
-| Control                                   | Description                                       | Example                                                   |
-| ----------------------------------------- | ------------------------------------------------- | --------------------------------------------------------- |
+| Control                                   | Description                                       | Example                                                 |
+| ----------------------------------------- | ------------------------------------------------- | ------------------------------------------------------- |
 | `<a11y-easyread></a11y-easyread>`         | On/Off easyread accessibility settings            | ![pfo-accessibility-easyread example](image/t1.png)     |
 | `<a11y-readaloud></a11y-readaloud>`       | On/Off readaloud accessibility settings           | ![pfo-accessibility-readaloud example](image/t2.png)    |
 | `<a11y-signlanguage></a11y-signlanguage>` | On/Off International Sign (IS) accessibility mode | ![pfo-accessibility-signlanguage example](image/t3.png) |
