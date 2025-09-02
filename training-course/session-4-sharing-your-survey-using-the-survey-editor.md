@@ -1,54 +1,44 @@
 ---
-description: This session shows you how you can share you survey using the Survey Editor
+description: This session shows you how you can test and share your survey
 ---
 
-# Session 4- Sharing your survey using the Survey Editor
+# Session 4- Sharing your survey
 
 ## Session overview
 
-The previous sessions of this training course have accompanied you to create the Form that your survey uses to collect data, apply accessibility options and translate it into additional languages.
+The previous sessions of this training course have accompanied you to build your survey, apply accessibility options and translate it into additional languages.
 
-This session covers how you can share your survey using the Survey Editor
+This session covers how you can test and share your survey.
 
 ## Learning outcomes
 
 On completing this session, you should feel confident to do the following.
 
-* [x] Create a 'landing page' and 'thank you message' for your survey
-* [x] Know how to translate the 'landing page' and 'thank you message' into additional languages
-* [x] Use batches to control when your survey is active
-* [x] Control how respondents access to your survey
+* [x] Choose how to make your survey active
+* [x] Know how to 'publish' a new version of your survey
+* [x] Generate different types of survey links&#x20;
+* [x] Choose the type of account respondents need to have to complete your survey
 * [x] Customise where respondents will be redirected to when they have submitted a survey&#x20;
-* [x] Build different types of survey links using the 'link builder'
-* [x] Know how to 'Publish' a survey and why this is important
+* [x] Know how to give members of your team access to your survey
 
 ## Learning Materials
 
-You will need the following learning materials to complete this session. &#x20;
-
-The PDF file below includes the text you should use for the "Landing Page" and "Thank You" message.
-
-{% file src="../.gitbook/assets/Text for Landing Page and Thank You Message.pdf" %}
-
-The Accessible Surveys logo should be uploaded to the Landing Page as shown in the video
-
-<div align="left">
-
-<figure><img src="../.gitbook/assets/AS logo_small.png" alt=""><figcaption><p>Accessible Survey logo</p></figcaption></figure>
-
-</div>
+There are no learning materials needed to complete this session. &#x20;
 
 ## Learning Content
 
-In this video, Jerry guides you through the process of sharing your survey using the Survey Editor.
+In this video, Jerry guides you through the process of testing and sharing your survey.
 
-The video is 20 mins long and we estimate that it will take you about 40 minutes to complete the session.
+The video is X mins long and we estimate that it will take you about X minutes to complete the session.
 
 {% embed url="https://youtu.be/P8hHuIOClvI" %}
 
-## Advanced features related to the Survey Editor covered in this session
+## Advanced features related to sharing your survey not covered in this session
 
-* [x] Adding Accessibility modes to your landing page and thank you message&#x20;
+* [x] Generating emails to send to respondents with 'Personal' or 'Verified Accounts'
+* [x] Using Batches to group responses submitted in a specified time period
+* [x] Using webhooks to send notifications or data about a survey event to another system
+* [x] Adding your own Survey Terms, which respondents must accept before starting your survey
 
 ## Next Steps
 
