@@ -29,9 +29,9 @@ There are no learning materials needed to complete this session. &#x20;
 
 In this video, Jerry guides you through the process of testing and sharing your survey.
 
-The video is X mins long and we estimate that it will take you about X minutes to complete the session.
+The video is 10 mins long and we estimate that it will take you about 15 minutes to complete the session.
 
-{% embed url="https://youtu.be/P8hHuIOClvI" %}
+{% embed url="https://youtu.be/KHb_SrGdvz8" %}
 
 ## Advanced features related to sharing your survey not covered in this session
 
