@@ -42,19 +42,21 @@ However tooltips can also be added to question labels and option labels by copyi
 
 ## Step 3
 
-Once you have added your tooltip you can go to the 'Test' mode to test how it is working.
+The method to test your tooltip depends upon where it has been added.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a tooltip being tested in the 'test' mode</p></figcaption></figure>
+If your tooltip has been added to the 'Introduction Page' or 'Thank You Page', it can be tested from the 'Preview'  tab as shown below;
 
-## Step 6
+<figure><img src="../../../.gitbook/assets/image (105).png" alt=""><figcaption><p>Screenshot showing a tooltip being tested in the 'preview' tab of the Introduction Page</p></figcaption></figure>
 
-Tooltip's can be added to option labels as shown below:
+If your tooltip has been added to your Form, it can be tested from the 'Test' view as shown below;
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing a tooltip being added to decribe the word 'Appples'</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (111).png" alt=""><figcaption><p>Screenshot showing a tooltip being tested in the 'Test' view of the survey builder</p></figcaption></figure>
 
-To add s Tooltip to an options label you must toggle on the 'Advanced' mode and select the option 'allow options to be written in markdown' as shown below:
+## Step 4
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshop showing how to add tooltips to option labels</p></figcaption></figure>
+This short video shows a tooltip to explain the word 'survey' being added to the 'Introduction Page' and 'Question Label' of a survey.  A tooltip can be added to an 'Option Label' in the same way as a 'Question Label' &#x20;
+
+
 
 {% hint style="success" %}
 Congratulations!  You now know how to add Tooltip to explain words that are difficult to understand
