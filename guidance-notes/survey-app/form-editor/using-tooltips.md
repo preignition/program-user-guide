@@ -54,9 +54,11 @@ If your tooltip has been added to your Form, it can be tested from the 'Test' vi
 
 ## Step 4
 
-This short video shows a tooltip to explain the word 'survey' being added to the 'Introduction Page' and 'Question Label' of a survey.  A tooltip can be added to an 'Option Label' in the same way as a 'Question Label' &#x20;
+This short video shows a tooltip being added to the 'Introduction Page', a 'Question Label' and an 'Option Label'. &#x20;
 
-
+{% embed url="https://youtu.be/BjX1lQTfAS0" %}
+Short video showing how to add tooltips to a survey&#x20;
+{% endembed %}
 
 {% hint style="success" %}
 Congratulations!  You now know how to add Tooltip to explain words that are difficult to understand
