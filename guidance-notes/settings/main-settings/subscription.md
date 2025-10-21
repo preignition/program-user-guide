@@ -18,7 +18,7 @@ This is what the 'Subscription' page looks like when you are within your trail p
 
 This is what the 'Subscription' page looks like when you are ouside your trail period and are yet to set up a payment method. &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 When you have set up a payment method, you will just see the details of your current subscription
 

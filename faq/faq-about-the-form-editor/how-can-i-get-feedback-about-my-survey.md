@@ -24,7 +24,7 @@ Drag and drop a 'rating' question to the end of your form as shown below.
 
 We suggest you edit the question as follows:
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Screenshot showing how the rating question can be presented</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how the rating question can be presented</p></figcaption></figure>
 
 Instructions:
 
@@ -84,7 +84,7 @@ Instructions
 
 <table data-header-hidden><thead><tr><th width="65" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><mark style="color:red;"><strong>1</strong></mark></td><td valign="top">Toggle on 'lock this question while editing logic'</td></tr><tr><td valign="top"><mark style="color:red;"><strong>2</strong></mark></td><td valign="top">Write the logical expression as shown below</td></tr></tbody></table>
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 The logical expression uses the invert function (!) an asks whether the value entered to the question 'Did you like this survey?' is **not** equal to 9 or more. &#x20;
 

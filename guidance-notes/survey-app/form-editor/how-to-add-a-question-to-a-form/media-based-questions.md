@@ -18,7 +18,7 @@ There is only one Media based question which is the 'Upload' question shown in t
 
 Give the question a label and add helper text if you would like
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input feilds for a Upload question</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the input feilds for a Upload question</p></figcaption></figure>
 
 ## Step 3
 

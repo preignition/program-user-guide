@@ -12,7 +12,7 @@ An image must first be added to the Image Library before it can be used in a for
 
 The Image Library is accessed from the Form Definition menu in the form Build mode
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the Image Library in the Form Definition menu</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the Image Library in the Form Definition menu</p></figcaption></figure>
 
 ## Step 2
 

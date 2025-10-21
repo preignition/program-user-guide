@@ -12,7 +12,7 @@ Adding an accessibility menu at the start of your survey helps makes the accessi
 
 Accessibility settings can be activitated by survey respondents from the accessibility settings icon which is always available in the top right hand corner of the screen.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Screenshot, showing the location of the Accessibility Settings icon in the top right hand corner of the screen</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot, showing the location of the Accessibility Settings icon in the top right hand corner of the screen</p></figcaption></figure>
 
 However adding an accessibility menu to your survey can make these options more prominent.&#x20;
 
@@ -30,7 +30,7 @@ The menu allows respondents to activate, deactivate or change accessibility sett
 
 It is intelligent, in that it will only show the accessibility options that you have activated for your survey.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>This is an example of how an accessibilty menu appears to survey respondents.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>This is an example of how an accessibilty menu appears to survey respondents.</p></figcaption></figure>
 
 ## Step 3
 
