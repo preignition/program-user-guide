@@ -1,8 +1,8 @@
 {
   "config": {
-    "MD013": false,
-    "MD024": false,
-    "MD033": false,
-    "MD034": false
+    "line-length": false,
+    "no-duplicate-heading": false,
+    "no-inline-html": false,
+    "no-bare-urls": false
   }
 }
