@@ -29,7 +29,7 @@ Assets like images, diagrams, and other media should be stored in a structured w
 - **Store assets locally:** Place all assets referenced by your Markdown files within this `assets` directory.
 - **Use relative paths:** Link to assets using relative paths. This ensures that the links are not broken if the project is moved or viewed on different systems.
 
-##### Example Directory Structure
+#### Example Directory Structure
 
 ```md
 .
@@ -52,7 +52,7 @@ In `feature-a/README.md`, you would reference the image like this:
 
 ## Content Best Practices
 
-#### Test
+### Test
 
 - **Structure with Headings:** Use headings (`#`, `##`, `###`, etc.) to create a clear hierarchy.
 - **Keep it Concise:** Write clear and simple sentences. Use lists and tables to present complex information.
@@ -73,7 +73,7 @@ description: This page shows you how to generate links for your surveys
 
 Or, for longer descriptions:
 
-```
+```md
 ---
 description: >-
   A training course to help new users create a training survey and become
@@ -100,3 +100,20 @@ Only lowercase letter and numbers are allowed for aliases
 ```md
 {% embed url="https://youtu.be/Vu9NUKzv_LQ" %}
 ```
+
+## Rule enforcement
+
+To maintain consistency and quality across the documentation, we use a linting tool called `markdownlint`. This tool checks Markdown files against a set of predefined rules and best practices.
+
+There is a GitHub Action set up to automatically run `markdownlint` on all Markdown files in the repository whenever changes are pushed. This helps catch formatting issues and ensures adherence to our Markdown standards.
+
+The results of the linting process will be displayed in the GitHub Actions tab of the repository, allowing contributors to quickly identify and fix any issues. It is available from https://github.com/preignition/program-user-guide/actions.
+
+The list of rules is as follows: https://github.com/DavidAnson/markdownlint/blob/main/README.md
+
+Some rules are disabled:
+
+- MD013: Line length
+- MD024: Multiple headers with the same content
+- MD033: Inline HTML
+- MD034: Bare URLs
