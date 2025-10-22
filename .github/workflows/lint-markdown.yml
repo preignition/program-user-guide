@@ -17,6 +17,8 @@ jobs:
       - name: Run markdownlint
         uses: DavidAnson/markdownlint-cli2-action@v20
         with:
+          config: |
+            .markdownlint-cli2.jsonc
           globs: |
             **/*.md
             !node_modules
