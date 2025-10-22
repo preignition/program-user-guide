@@ -31,7 +31,7 @@ Assets like images, diagrams, and other media should be stored in a structured w
 
 #### Example Directory Structure
 
-```
+```md
 .
 ├── feature-a/
 │   ├── README.md
