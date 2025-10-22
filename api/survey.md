@@ -6,14 +6,14 @@
 
 This endpoint allows to get an export of survey data, based on `resourceID` and `programID`.Usually, export links are build by the application using the export tool (see export tool ).
 
-#### Path Parameters
+### Path Parameters
 
 | Name       | Type   | Description                     |
 | ---------- | ------ | ------------------------------- |
 | resourceID | string | The ID of the resource (survey) |
 | programID  | string | ID of the program               |
 
-#### Query Parameters
+### Query Parameters
 
 | Name       | Type   | Description                                                                                                                                                                                                                                                                                                                  |
 | ---------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -25,6 +25,7 @@ This endpoint allows to get an export of survey data, based on `resourceID` and 
 
 {% tabs %}
 {% tab title="200 Cake successfully retrieved." %}
+
 ```javascript
 {
     "name": "Cake's name",
@@ -32,14 +33,17 @@ This endpoint allows to get an export of survey data, based on `resourceID` and 
     "cake": "Binary cake"
 }
 ```
+
 {% endtab %}
 
 {% tab title="404 Could not find a cake matching this query." %}
+
 ```javascript
 {
     "message": "Ain't no cake like that."
 }
 ```
+
 {% endtab %}
 {% endtabs %}
 
