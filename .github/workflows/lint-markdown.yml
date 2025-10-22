@@ -17,6 +17,7 @@ jobs:
       - name: Run markdownlint
         uses: DavidAnson/markdownlint-cli2-action@v20
         with:
+          fix: true
           config: |
             .markdownlint-cli2.jsonc
           globs: |
