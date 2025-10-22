@@ -29,7 +29,7 @@ Assets like images, diagrams, and other media should be stored in a structured w
 - **Store assets locally:** Place all assets referenced by your Markdown files within this `assets` directory.
 - **Use relative paths:** Link to assets using relative paths. This ensures that the links are not broken if the project is moved or viewed on different systems.
 
-###### Example Directory Structure
+##### Example Directory Structure
 
 ```md
 .
