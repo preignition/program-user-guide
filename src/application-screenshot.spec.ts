@@ -14,33 +14,32 @@ let hasRunFirst = false;
 
 test.describe('Survey Builder Screenshots', () => {
   test.beforeEach(async ({ page }) => {
-    if (!hasRunFirst) {
-      page.on('console', msg => {
-        if (msg.type() === 'error') {
-          console.error(msg.text());
-        }
-      });
-      await page.goto(`http://localhost:${port}/`);
-      await page.waitForTimeout(2000);
-    } else {
-      console.info('Skipping login, already done');
-    }
-    hasRunFirst = true;
+    console.info('Running before each');
+    // if (!hasRunFirst) {
+    page.on('console', msg => {
+      if (msg.type() === 'error') {
+        console.error(msg.text());
+      }
+    });
+    await page.goto(`http://localhost:${port}/`);
+    await page.waitForTimeout(2000);
+    // } else {
+    //   console.info('Skipping login, already done');
+    // }
+    // hasRunFirst = true;
   });
 
   const baseUrl = `http://localhost:${port}`;
   const suffix = `s/edit/survey/${surveyId}`;
   const locations: LocationT[] = [
-    // { url: '', filePath: 'home' },
+    { url: '', filePath: 'home' },
     { url: 'overview/analytics', filePath: 'overview-analytics' },
     { url: 'build/compose', filePath: 'build/compose' },
     { url: 'build/behavior', filePath: 'build/behavior' },
     { url: 'build/localize', filePath: 'build' },
     { url: 'build/library', filePath: 'build' },
     { url: 'build/prompt', filePath: 'build' },
-    // { url: '', name: 'dummy1', filePath: 'home', skip: true },
-    { url: 'build/deleted-items', filePath: 'build' },
-    { url: 'test', filePath: 'test' },
+    { url: 'build/deleted-items', filePath: 'build', name: 'restore' },
     { url: 'share/status', filePath: 'share' },
     { url: 'share/build', filePath: 'share' },
     { url: 'share/distribute', filePath: 'share' },
@@ -48,33 +47,37 @@ test.describe('Survey Builder Screenshots', () => {
     { url: 'share/redirection', filePath: 'share' },
     { url: 'share/access', filePath: 'share' },
     { url: 'share/message', filePath: 'share' },
-    { url: 'test1', filePath: 'home', skip: true },
-    // { url: '', name: 'dummy2', filePath: 'home', skip: true },
     { url: 'share/batch', filePath: 'share' },
     { url: 'share/webhook', filePath: 'share' },
     { url: 'share/terms', filePath: 'share' },
   ];
 
-  for (const location of locations) {
-    test(`should take a screenshot of ${location.url} ${location.name || ''}`, async ({ page }) => {
-      page.on('console', msg => {
-        if (msg.type() === 'error') {
-          
-          console.error(location.url + ':' + msg.text());
-          expect(true, 'failing for ' + location.url).toBe(false);
-          
-        }
-      });
-  
-
+  test(`should take a screenshot of all locations}`, async ({ page }) => {
+    let l: LocationT;
+    page.on('console', msg => {
+      if (msg.type() === 'error') {
+        console.error(l.url + ':' + msg.text());
+        // expect(true, 'failing for ' + l.url).toBe(false);
+      }
+    });
+    
+    
+    for (const location of locations) {
+      l = location;
+      console.info('Navigating to ', location.url);
       const url = location.url ? `${baseUrl}/${suffix}/${location.url}` : '';
       await page.goto(url);
       if (location.skip) {
-        await page.waitForTimeout(1000);
+        await page.waitForTimeout(500);
         return 
       }
-      await page.waitForTimeout(4000);
-      await page.screenshot({ path: `accessible-data/survey/${location.filePath}/assets/${location.url.replace(/\//g, '-')}.png`, fullPage: true });
-    });
-  }
-});
+      await page.waitForTimeout(2000);
+      await page.screenshot({
+        path: `accessible-data/survey/${location.filePath}/assets/${location.name ? 
+          `${location.filePath}-${location.name}` : 
+          location.url.replace(/\//g, '-')}.png`, fullPage: true
+      });
+    }
+  });
+}
+);
