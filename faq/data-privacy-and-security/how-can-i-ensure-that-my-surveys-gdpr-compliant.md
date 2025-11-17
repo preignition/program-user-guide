@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This page provides some practical instructutions to help our Users run surveys that are fully GDPR compliant.
+This page provides some practical instructions to help our Users run surveys that are fully GDPR compliant.
 
 ## Make sure that your survey provider is GDPR compliant
 
