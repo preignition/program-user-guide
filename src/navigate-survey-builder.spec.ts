@@ -128,7 +128,6 @@ const screenshotWithAdvanced = async (context: Context) => {
   // click advanced again
   await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck();
   await page.waitForTimeout(50);
-
 }
 
 
