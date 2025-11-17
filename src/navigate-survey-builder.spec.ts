@@ -70,7 +70,7 @@ class Context implements ContextT {
   async screenshot(name: string, options?: Partial<PageScreenshotOptions>) {
     await this.page.waitForTimeout(100);
     return this.page.screenshot({
-      path: `${this.path}/assets/auto-${name}.png`,
+      path: `${this.path}/assets/${name}-auto.png`,
       ...options,
     })
   }
@@ -221,7 +221,8 @@ test('test', async ({ page }) => {
   await screenshotWithAdvanced(context);
 
   await page.getByText('choice-based fields').click();
-  await page.getByText('Boolean fields').click();
+  await page.waitForTimeout(50);
+  await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Boolean fields' }).first().click();
   
   console.info(`Capturing boolean fields`);
   context
@@ -234,13 +235,14 @@ test('test', async ({ page }) => {
   await page.getByText('Switch field').click();
   await screenshotWithAdvanced(context);
   
-  await page.getByText('Boolean fields').click();
-  await page.getByText('Media Based Fields').first().click();
+  await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Boolean fields' }).first().click();
+  await page.waitForTimeout(50);
+  await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Media Based Fields' }).first().click();
 
   console.info(`Capturing media based fields`);
   context
     .setName('media');
-  await page.getByText('File Upload field').click();
+  await page.locator('vaadin-grid-cell-content').filter({ hasText: 'File Upload field' }).click();
   await screenshotWithAdvanced(context);
   
  
@@ -265,14 +267,14 @@ test('test', async ({ page }) => {
 
   // IMAGE LIBRARY
   context
-    .setPath('../../image-library')
+    .setPath('../image-library')
     .setName('image-library');
   await page.getByText('Image Library').click();
   await screenshotWithAdvanced(context);
 
   // SHARE
   context
-    .setPath('../share')
+    .setPath('../../share')
     .setName('share');
   await page.getByRole('link', { name: 'share' }).click();
   await screenshotAllSize(context);
@@ -280,17 +282,17 @@ test('test', async ({ page }) => {
   // STATUS
   context
     .setName('status');
-  await page.getByText('Status').click();
+  await page.getByText('Status').first().click();
   await screenshotWithAdvanced(context);
   // PUBLISH
   context
     .setName('publish');
-  await page.getByText('Distribute').click();
+  await page.getByText('Publish').first().click();
   await screenshotWithAdvanced(context);
 
   context
     .setName('distribute');
-  await page.getByText('Distribute').click();
+  await page.getByText('Distribute').first().click();
   await screenshotWithAdvanced(context);
 
   // SETTINGS
@@ -311,7 +313,7 @@ test('test', async ({ page }) => {
   await screenshotWithAdvanced(context);
 
 
-  await page.locator('vaadin-grid-cell-content:nth-child(16) > vaadin-grid-tree-toggle > span:nth-child(2)').click();
+  
   
 });
 
