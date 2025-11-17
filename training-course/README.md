@@ -1,0 +1,2 @@
+Training Course
+[Session 1- Creating a new survey](session-1-creating-a-new-survey.md) [text](session-2-adding-accessibility-options-to-a-form.md) [text](session-3-translating-a-form-into-different-languages.md) [text](session-4-sharing-your-survey-using-the-survey-editor.md) [text](session-5-analysing-your-survey-responses-and-exporting-your-survey-data.md)
