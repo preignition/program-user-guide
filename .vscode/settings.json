@@ -1,5 +1,8 @@
 {
   "files.exclude": {
     "**/build/**": false,
+  },
+  "search.exclude": {
+    "**/build/**": false,
   }
 }
