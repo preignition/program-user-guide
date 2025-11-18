@@ -140,37 +140,37 @@ const screenshotAllModes = async (context: Context) => {
   const { page, name } = context;
 
   await page.getByRole('button', { name: 'Settings Mode' }).click();
-  await page.waitForTimeout(200);
+  await page.waitForTimeout(350);
   await context
     .setName(name)
     .screenshot();
   await page.getByRole('button', { name: 'Localize Mode' }).click();
-  await page.waitForTimeout(200);
+  await page.waitForTimeout(350);
   await context
     .setName(`${name}-localize`)
     .screenshot();
   await page.getByRole('button', { name: 'Read Aloud Mode' }).click();
-  await page.waitForTimeout(200);
+  await page.waitForTimeout(350);
   await context
     .setName(`${name}-readaloud`)
     .screenshot();
   await page.getByRole('button', { name: 'Easy Read Mode' }).click();
-  await page.waitForTimeout(200);
+  await page.waitForTimeout(350);
   await context
     .setName(`${name}-easyread`)
     .screenshot();
   await page.getByRole('button', { name: 'Sign language Mode' }).click();
-  await page.waitForTimeout(200);
+  await page.waitForTimeout(350);
   await context
     .setName(`${name}-signlanguage`)
     .screenshot();
   await page.getByRole('button', { name: 'Visibility Mode' }).click();
-  await page.waitForTimeout(200);
+  await page.waitForTimeout(350);
   await context
     .setName(`${name}-visibility`)
     .screenshot();
   await page.getByRole('button', { name: 'Settings Mode' }).click();
-  await page.waitForTimeout(200);
+  await page.waitForTimeout(350);
 }
 
 
@@ -186,7 +186,48 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await page.goto(baseUrl);
     await page.waitForTimeout(2000);
     await page.getByRole('link', { name: 'Survey', exact: true }).click();
-    await page.waitForTimeout(500);
+    await page.waitForTimeout(1000);
+    
+    // WORKSPACE
+    await context
+      .setName('workspace')
+      .setArea([{ name: 'fab', clip: fabBar }])
+      .screenshot();
+    context.removeArea('fab')
+      
+
+    // CREATE SUREVEY
+    await page.getByRole('button', { name: 'New Survey' }).click();
+    await page.getByRole('textbox', { name: 'name', exact: true }).click();
+    await page.getByRole('textbox', { name: 'name', exact: true }).fill('test');
+    await page.getByRole('textbox', { name: 'name', exact: true }).press('Tab');
+    await page.getByRole('textbox', { name: 'description', exact: true }).fill('test');
+    await page.getByRole('textbox', { name: 'description', exact: true }).click();
+    await page.getByRole('textbox', { name: 'description', exact: true }).fill('test description');
+    await context
+      .setName('create-survey')
+      .setArea([{ name: 'dialog', clip: dialog }])
+      .screenshot();
+    
+    await page.getByRole('button', { name: 'Form', exact: true }).click();
+    await page.locator('#form-create > .layout > lapp-text-field > .text-field > .field > .input-wrapper').first().click();
+    await page.getByRole('textbox', { name: 'name', exact: true }).fill('Form 1');
+    await page.getByRole('textbox', { name: 'name', exact: true }).press('Tab');
+    await page.getByRole('textbox', { name: 'description', exact: true }).fill('Form description');
+    await context
+      .setName('create-form')
+      .screenshot();
+    await page.getByRole('button', { name: 'Summary' }).click();
+    
+    // WORKSPACE
+    await context
+      .setName('create-summary')
+      .screenshot();
+    
+    context.removeArea('dialog')
+    await page.getByRole('button', { name: 'Summary' }).press('Escape');
+      
+
     await page.getByText('Survey Habits and Experience').first().click();
     await page.waitForTimeout(500);
     await page.getByRole('button', { name: 'Edit' }).click();
@@ -221,7 +262,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     (await context
       .setPath('compose')
       .setName('compose')
-      .addArea('modes', modesBar)
+      .addArea('modes', fabBar)
       .addArea('grid', treeGrid)
       .screenshot()
     ).removeArea('modes').removeArea('grid');
@@ -541,9 +582,16 @@ const toolbar: ClipT = {
   height: 64,
 };
 
-const modesBar: ClipT = {
+const fabBar: ClipT = {
   x: 1000,
-  y: 990,
+  y: 965,
   width: 580,
-  height: 60,
+  height: 80,
+};
+
+const dialog: ClipT = {
+  x: 500,
+  y: 160,
+  width: 600,
+  height: 760,
 };
