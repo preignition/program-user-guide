@@ -105,7 +105,7 @@ class Context implements ContextT {
         this.area
           .filter(a => a.advanced === true)
           .map(a => this.page.screenshot({
-            path: `${this.path}/assets/${name}-advanced-${a.name}-auto.png`,
+            path: `${this.path}/assets/${name}-${a.name}-advanced-auto.png`,
             clip: a.clip,
           })) 
         ]
