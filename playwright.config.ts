@@ -9,9 +9,9 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  // workers: 1,
   reporter: 'html',
   use: {
+    viewport: { width: 1600, height: 1080 },
     actionTimeout: 0,
     baseURL: 'http://localhost:7173',
     trace: 'on-first-retry',
