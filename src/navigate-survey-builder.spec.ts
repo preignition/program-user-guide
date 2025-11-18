@@ -1,48 +1,24 @@
 import { test, expect, type PageScreenshotOptions, type Page } from '@playwright/test';
 import * as path from 'path';
 
-const clipMenu: PageScreenshotOptions['clip'] = {
-  x: 0,
-  y: 64,
-  width: 256,
-  height: 500,
-};
-const clipTreeViewContent: PageScreenshotOptions['clip'] = {
-  x: 290,
-  y: 64,
-  width: 337,
-  height: 500,
-};
-const clipBuildContent: PageScreenshotOptions['clip'] = {
-  x: 635,
-  y: 64,
-  width: 730,
-  height: 800,
-};
-
-// full content without menu
-const clipFullContent: PageScreenshotOptions['clip'] = {
-  height: 896,
-  y: 84,
-  width: 1072.4705810546875,
-  x: 292
-}
-
 type ContextT = {
   url: string;
   page: Page;
   name: string;
   path: string;
-  screenshotType: 'fullPage' | 'viewport' | 'clip';
 }
 
+type AreaT = {
+  name: string;
+  clip?: ClipT;
+  advanced?: boolean;
+}
 class Context implements ContextT {
   url: string;
   name: string;
   path: string;
   page: Page;
-  screenshotType: 'fullPage' | 'viewport' | 'clip';
-  options?: Partial<PageScreenshotOptions>;
+  area: AreaT[] = [];
   constructor(
     url: string,
     path: string,
@@ -51,6 +27,20 @@ class Context implements ContextT {
     this.path = path;
     this.url = url;
   } 
+
+  setArea(area: AreaT[]) {
+    this.area = area;
+    return this;
+  }
+
+  addArea(name: string, clip?: ClipT, advanced?: boolean) {
+    this.area.push({ name, clip, advanced });
+    return this;
+  }
+  removeArea(name: string) {
+    this.area = this.area.filter(a => a.name !== name);
+    return this;
+  }
   
   setName(name: string) {
     this.name = name;
@@ -67,12 +57,69 @@ class Context implements ContextT {
     return this;
   }
 
-  async screenshot(name: string, options?: Partial<PageScreenshotOptions>) {
-    await this.page.waitForTimeout(100);
-    return this.page.screenshot({
-      path: `${this.path}/assets/${name}-auto.png`,
-      ...options,
-    })
+  async screenshot(advanced?: boolean) {
+    const name = this.name;
+    const advancedModeSwitch = this.page.getByRole('switch', { name: 'toggle advanced mode' });
+    const isAdvancedMode = await advancedModeSwitch.isChecked();
+    let pageIsLargerThanViewport = await this.page.evaluate(() => {
+      return document.body.scrollHeight > window.innerHeight || document.body.scrollWidth > window.innerWidth;
+    });
+    // await this.page.waitForTimeout(50);
+    await this.page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck();
+    await this.page.waitForTimeout(50); 
+    
+    await Promise.all(
+
+      [this.page.screenshot({
+        path: `${this.path}/assets/${name}-auto.png`,
+      }),
+      pageIsLargerThanViewport &&
+      this.page.screenshot({
+        path: `${this.path}/assets/${name}-full-auto.png`,
+        fullPage: true,
+      }),
+      this.area.map(a => this.page.screenshot({
+        path: `${this.path}/assets/${name}-${a.name}-auto.png`,
+        clip: a.clip,
+      })) 
+      ]
+    )
+
+    if (advanced) {
+      // click advanced
+      await this.page.getByRole('switch', { name: 'toggle advanced mode' }).check();
+      await this.page.waitForTimeout(50);
+      pageIsLargerThanViewport = await this.page.evaluate(() => {
+        return document.body.scrollHeight > window.innerHeight || document.body.scrollWidth > window.innerWidth;
+      });
+      await Promise.all(
+
+        [this.page.screenshot({
+          path: `${this.path}/assets/${name}-advanced-auto.png`,
+        }),
+        pageIsLargerThanViewport &&
+        this.page.screenshot({
+          path: `${this.path}/assets/${name}-advanced-full-auto.png`,
+          fullPage: true,
+        }),
+        this.area
+          .filter(a => a.advanced === true)
+          .map(a => this.page.screenshot({
+            path: `${this.path}/assets/${name}-advanced-${a.name}-auto.png`,
+            clip: a.clip,
+          })) 
+        ]
+      )  
+       
+    }
+    if (isAdvancedMode) {
+      await advancedModeSwitch.check();
+    } else {
+      await advancedModeSwitch.uncheck();
+
+    }
+    await this.page.waitForTimeout(50); 
+    return this;
   }
 }
 
@@ -81,238 +128,422 @@ const baseUrl = `http://localhost:${port}`;
 const surveyId = '3BBFzJneqakYoyDu02c2';
 
 const suffix = `s/edit/survey/${surveyId}/build/compose/survey/intro`;
-const context = new Context(
-  `http://localhost:${port}/${suffix}`,
-  'accessible-data/survey/',
-);
 
-const screenshotAllSize = async (context: Context) => {  
-  await context.screenshot(`${context.name}`, { fullPage: false });
-  await context.screenshot(`${context.name}-fullpage`, { fullPage: true });
-  await context.screenshot(`${context.name}-clip`, { clip: clipBuildContent });
-}
+
+// const screenshotAllSize = async (context: Context) => {  
+//   await context.screenshot(`${context.name}`, { fullPage: false });
+//   await context.screenshot(`${context.name}-fullpage`, { fullPage: true });
+//   await context.screenshot(`${context.name}-clip`, { clip: clipBuildContent });
+// }
 
 const screenshotAllModes = async (context: Context) => {
-  const page = context.page;
+  const { page, name } = context;
+
   await page.getByRole('button', { name: 'Settings Mode' }).click();
-  await context.screenshot(`${context.name}`);
-  await context.screenshot(`${context.name}-clip`, { clip: clipBuildContent });
+  await page.waitForTimeout(200);
+  await context
+    .setName(name)
+    .screenshot();
   await page.getByRole('button', { name: 'Localize Mode' }).click();
-  await context.screenshot(`${context.name}-localize`);
-  await context.screenshot(`${context.name}-localize-clip`, { clip: clipBuildContent });
+  await page.waitForTimeout(200);
+  await context
+    .setName(`${name}-localize`)
+    .screenshot();
   await page.getByRole('button', { name: 'Read Aloud Mode' }).click();
-  await context.screenshot(`${context.name}-readaloud`);
-  await context.screenshot(`${context.name}-readaloud-clip`, { clip: clipBuildContent });
+  await page.waitForTimeout(200);
+  await context
+    .setName(`${name}-readaloud`)
+    .screenshot();
   await page.getByRole('button', { name: 'Easy Read Mode' }).click();
-  await context.screenshot(`${context.name}-easyread`);
-  await context.screenshot(`${context.name}-easyread-clip`, { clip: clipBuildContent });
+  await page.waitForTimeout(200);
+  await context
+    .setName(`${name}-easyread`)
+    .screenshot();
   await page.getByRole('button', { name: 'Sign language Mode' }).click();
-  await context.screenshot(`${context.name}-signlanguage`);
-  await context.screenshot(`${context.name}-signlanguage-clip`, { clip: clipBuildContent });
+  await page.waitForTimeout(200);
+  await context
+    .setName(`${name}-signlanguage`)
+    .screenshot();
   await page.getByRole('button', { name: 'Visibility Mode' }).click();
-  await context.screenshot(`${context.name}-visibility`);
-  await context.screenshot(`${context.name}-visibility-clip`, { clip: clipBuildContent });
+  await page.waitForTimeout(200);
+  await context
+    .setName(`${name}-visibility`)
+    .screenshot();
   await page.getByRole('button', { name: 'Settings Mode' }).click();
-}
-
-const screenshotWithAdvanced = async (context: Context) => {
-  const page = context.page;
-  await context.screenshot(`${context.name}`, { clip: clipFullContent });
-  await context.screenshot(`${context.name}-clip`, { clip: clipBuildContent });
-  // click advanced
-  await page.getByRole('switch', { name: 'toggle advanced mode' }).check();
-  await page.waitForTimeout(50);
-
-  await context.screenshot(`${context.name}-advanced`, { clip: clipFullContent });
-  await context.screenshot(`${context.name}-advanced-clip`, { clip: clipBuildContent });
-  // click advanced again
-  await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck();
-  await page.waitForTimeout(50);
+  await page.waitForTimeout(200);
 }
 
 
-test('test', async ({ page }) => {
-  context.setPage(page);
-  await page.setViewportSize({ width: 1400, height: 1000 });
-  await page.goto(baseUrl);
-  await page.waitForTimeout(2000);
-  await page.getByRole('link', { name: 'Survey', exact: true }).click();
-  await page.waitForTimeout(500);
-  await page.getByText('Survey Habits and Experience').first().click();
-  await page.waitForTimeout(500);
-  await page.getByRole('button', { name: 'Edit' }).click();
-  await page.waitForTimeout(500);
-  await page.getByText('Compose').click();
-  // we need some time here let authentication settle
-  // another wait to ensure everything is loaded
-  await page.waitForTimeout(100);
+test.describe('Survey Builder Navigation and Screenshots', () => {
 
-  // COMPOSE
-  console.info(`Capturing compose`);
+  test('survey', async ({ page }) => {
+    const context = new Context(
+      `http://localhost:${port}/${suffix}`,
+      'accessible-data/survey/',
+    );
+    context.setPage(page);
+    await page.setViewportSize({ width: 1600, height: 1080 });
+    await page.goto(baseUrl);
+    await page.waitForTimeout(2000);
+    await page.getByRole('link', { name: 'Survey', exact: true }).click();
+    await page.waitForTimeout(500);
+    await page.getByText('Survey Habits and Experience').first().click();
+    await page.waitForTimeout(500);
+    await page.getByRole('button', { name: 'Edit' }).click();
+    await page.waitForTimeout(500);
+    await page.getByText('Compose').click();
+    // we need some time here let authentication settle
+    // another wait to ensure everything is loaded
+    await page.waitForTimeout(100);
 
-  context
-    .setPath('build/compose')
-    .setName('compose');
-  await page.getByText('Compose').click();
-  await screenshotAllSize(context);
+    
+    // APP
+    await context
+      .setName('app')
+      .setArea([{ name: 'toolbar', clip: toolbar }])
+      .screenshot();
+    context.removeArea('toolbar')
+      .addArea('menu', menu)
+      
+    // BUILD
+    console.info(`Capturing build`);
 
-  // PAGE
-  console.info(`Capturing page intro`);
-  context
-    .setName('page');
-  await page.getByText('Content Page for documentation').click();
-  await screenshotAllSize(context);
+    await page.getByText('Compose').click();  
+    (await context
+      .setPath('build')
+      .setName('build')
+      .addArea('menu', menu)
+      .screenshot()
+    ).removeArea('menu');
 
-  // SECTION
-  console.info(`Capturing section`);
-  context
-    .setName('section');
-  await page.getByText('text-based fields').click();    
-  await screenshotAllSize(context);
+    // COMPOSE
+    console.info(`Capturing compose`);
+    (await context
+      .setPath('compose')
+      .setName('compose')
+      .addArea('modes', modesBar)
+      .addArea('grid', treeGrid)
+      .screenshot()
+    ).removeArea('modes').removeArea('grid');
 
-  // QUESTION
-  console.info(`Capturing question`);
-  context
-    .setPath('question')
-    .setName('question');
-  await page.getByText('Text field').click();
-  await screenshotAllSize(context);
-  await screenshotAllModes(context);
 
-  console.info(`Capturing text-based fields`);
-  context
-    .setName('text-field');
-  await screenshotWithAdvanced(context);
+    context
+      .addArea('content', pageContent)
+      .addArea('grid', treeGrid, true)
+      .addArea('view', treeView, true)
+      ;
+
+    // INFO PAGE
+    await page.getByText('Introduction Page').first().click();
+    console.info(`Capturing page intro`);
+    context
+      .setName('intro')
+      .setPath('text-page')
+      .screenshot();
+
+    await page.getByText('intro 1').first().click();
+    console.info(`Capturing page intro 1`);
+    context
+      .setName('intro-item')
+      .screenshot();
+
+    // FORM
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'form' }).first().click();
+    await page.waitForTimeout(50);
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'form' }).first().click();
+    console.info(`Capturing form`);
+    context
+      .setPath('../form')
+      .setName('page')
+      .screenshot();
+
+    // PAGE
+    await page.getByText('Content Page for documentation').click();
+    console.info(`Capturing page intro`);
+    context
+      .setPath('../page')
+      .setName('page')
+      .screenshot();
+
+    // SECTION
+    await page.getByText('text-based fields').click();    
+    console.info(`Capturing section`);
+    context
+      .setPath('../section')
+      .setName('section')
+      .screenshot();
+
+    // QUESTION
+    await page.getByText('Text field').click();
+    console.info(`Capturing question`);
+    await context
+      .setPath('../question')
+      .setName('question')
+      .screenshot();
+    await screenshotAllModes(context);
+
+    console.info(`Capturing text-based fields`);
+    context
+      .setName('text-field');
+    
+    await page.getByText('Text area field').click();
+    await context
+      .setName('text-area')
+      .screenshot(true)
+      ;
   
-  context
-    .setName('text-area');
-  await page.getByText('Text area field').click();
-  await screenshotWithAdvanced(context);
-
-  await page.getByText('text-based fields').click();
-  await page.getByText('choice-based fields').click();
+    await page.getByText('text-based fields').click();
+    await page.waitForTimeout(50);
+    await page.getByText('choice-based fields').click();
   
-  console.info(`Capturing choice-based fields`);
-  context
-    .setName('radio-group');
-  await page.getByText('Radio group').click();
-  await screenshotWithAdvanced(context);
+    await page.getByText('Radio group').click();
+    console.info(`Capturing choice-based fields`);
+    await context
+      .setName('radio-group')
+      .screenshot(true);
   
-  context
-    .setName('checkbox-group');
-  await page.getByText('Checkbox group').first().click();
-  await screenshotWithAdvanced(context);
+    await page.getByText('Checkbox group').first().click();
+    await context
+      .setName('checkbox-group')
+      .screenshot(true);
   
-  context
-    .setName('dropdown');
-  await page.getByText('Dropdown').click();
-  await screenshotWithAdvanced(context);
+    await page.getByText('Dropdown').click();
+    await context
+      .setName('dropdown')
+      .screenshot(true);
   
-  context
-    .setName('rating');
-  await page.getByText('Rating').click();
-  await screenshotWithAdvanced(context);
+    await page.getByText('Rating').click();
+    await context
+      .setName('rating')
+      .screenshot(true);
 
+    await page.getByText('Ranking').click();
+    await context 
+      .setName('ranking')
+      .screenshot(true);
 
-  context 
-    .setName('ranking');
-  await page.getByText('Ranking').click();
-  await screenshotWithAdvanced(context);
-
-  await page.getByText('choice-based fields').click();
-  await page.waitForTimeout(50);
-  await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Boolean fields' }).first().click();
+    await page.getByText('choice-based fields').click();
+    await page.waitForTimeout(50);
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Boolean fields' }).first().click();
   
-  console.info(`Capturing boolean fields`);
-  context
-    .setName('checkbox');
-  await page.getByText('Checkbox field').click();
-  await screenshotWithAdvanced(context);
+    await page.getByText('Checkbox field').click();
+    console.info(`Capturing boolean fields`);
+    await context
+      .setName('checkbox')
+      .screenshot(true);
   
-  context
-    .setName('switch');
-  await page.getByText('Switch field').click();
-  await screenshotWithAdvanced(context);
+    await page.getByText('Switch field').click();
+    await context
+      .setName('switch')
+      .screenshot(true);
   
-  await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Boolean fields' }).first().click();
-  await page.waitForTimeout(50);
-  await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Media Based Fields' }).first().click();
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Boolean fields' }).first().click();
+    await page.waitForTimeout(50);
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Media Based Fields' }).first().click();
 
-  console.info(`Capturing media based fields`);
-  context
-    .setName('media');
-  await page.locator('vaadin-grid-cell-content').filter({ hasText: 'File Upload field' }).click();
-  await screenshotWithAdvanced(context);
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'File Upload field' }).click();
+    console.info(`Capturing media based fields`);
+    await context
+      .setName('media')
+      .screenshot(true);
   
- 
-  // Behavior
-  console.info(`Capturing behavior`);
-  context
-    .setPath('../../behavior')
-    .setName('behavior');    
-  await page.getByText('Form Behavior').click();
-  await screenshotAllSize(context);
-  await screenshotWithAdvanced(context);
-
-  
-  // Localize
-  console.info(`Capturing localize`);
-  context
-    .setPath('../localize')
-    .setName('localize');    
-  await page.getByText('Localize').click();
-  await screenshotAllSize(context);
-  await screenshotWithAdvanced(context);
-
-  // IMAGE LIBRARY
-  context
-    .setPath('../image-library')
-    .setName('image-library');
-  await page.getByText('Image Library').click();
-  await screenshotWithAdvanced(context);
-
-  // SHARE
-  context
-    .setPath('../../share')
-    .setName('share');
-  await page.getByRole('link', { name: 'share' }).click();
-  await screenshotAllSize(context);
-
-  // STATUS
-  context
-    .setName('status');
-  await page.getByText('Status').first().click();
-  await screenshotWithAdvanced(context);
-  // PUBLISH
-  context
-    .setName('publish');
-  await page.getByText('Publish').first().click();
-  await screenshotWithAdvanced(context);
-
-  context
-    .setName('distribute');
-  await page.getByText('Distribute').first().click();
-  await screenshotWithAdvanced(context);
-
-  // SETTINGS
-  context
-    .setName('account-type');
-  await page.getByText('Account type').click();
-  await screenshotWithAdvanced(context);
-
-  context
-    .setName('redirection');
-  await page.getByText('Redirection').click();
-  await screenshotWithAdvanced(context);
-
-  context
-    .setName('access');
-
-  await page.getByText('Access', { exact: true }).click();
-  await screenshotWithAdvanced(context);
-
+    context
+      .removeArea('grid')
+      .removeArea('view')
+      .removeArea('content')
+      .addArea('content', pageContent, true)
+      ;
+    // Behavior
+    await page.getByText('Form Behavior').click();
+    console.info(`Capturing behavior`);
+    await context
+      .setPath('../../behavior')
+      .setName('behavior')
+      .screenshot(true);
 
   
-  
-});
+    // LOCALIZE
+    await page.getByText('Localize').click();
+    console.info(`Capturing localize`);
+    await context
+      .setPath('../localize')
+      .setName('localize')
+      .screenshot(true);
+    
+    // IMAGE LIBRARY
+    await page.getByText('Image Library').click();
+    console.info(`Capturing image library`);
+    await context
+      .setPath('../image-library')
+      .setName('image-library')
+      .screenshot(true);
 
+    await page.getByRole('switch', { name: 'toggle advanced mode' }).check();
+    await page.waitForTimeout(50);      
+
+    // PROMPT
+    await page.getByText('Prompt').first().click();
+    console.info(`Capturing prompt`);
+    await context
+      .setPath('../prompt')
+      .setName('prompt')
+      .screenshot(true);
+
+
+    // RESTORE
+
+    await page.locator('#list').getByText('Restore', { exact: true }).click();
+    console.info(`Capturing restore`);
+    await context
+      .setPath('../restore')
+      .setName('restore')
+      .screenshot(true);
+
+
+    await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck();
+    await page.waitForTimeout(50);      
+
+    // SHARE
+    await page.getByRole('link', { name: 'share' }).click();
+    console.info(`Capturing share`);
+    await context
+      .setPath('../../share')
+      .setName('share')
+      .screenshot(true);
+
+    // STATUS
+    await page.getByText('Status').first().click();
+    console.info(`Capturing status`);
+    await context
+      .setPath('status')
+      .setName('status')
+      .screenshot(true);
+  
+    // PUBLISH
+    await page.getByText('Publish').first().click();
+    console.info(`Capturing publish`);
+    await context
+      .setPath('../publish')
+      .setName('publish')
+      .screenshot(true);
+
+    await page.getByText('Distribute').first().click();
+    console.info(`Capturing distribute`);
+    await context
+      .setPath('../distribute')
+      .setName('distribute')
+      .screenshot(true);
+
+    // SETTINGS
+    await page.getByText('Account type').click();
+    console.info(`Capturing account type`);
+    await context
+      .setPath('../account-type')
+      .setName('account-type')
+      .screenshot(true);
+
+    await page.getByText('Redirection').click();
+    console.info(`Capturing redirection`);
+    await context
+      .setPath('../redirection')
+      .setName('redirection')
+      .screenshot(true);
+
+    await page.getByText('Access', { exact: true }).click();
+    console.info(`Capturing access`);
+    await context
+      .setPath('../access')
+      .setName('access')
+      .screenshot(true);
+
+    await page.getByRole('switch', { name: 'toggle advanced mode' }).check();
+    await page.waitForTimeout(50);      
+
+    // EMAIL
+    await page.getByText('Email').first().click();
+    console.info(`Capturing email`);
+    await context
+      .setPath('../email')
+      .setName('email')
+      .screenshot(true);
+
+    // BATCH
+    await page.getByText('Batch').first().click();
+    console.info(`Capturing batch`);
+    await context
+      .setPath('../batch')
+      .setName('batch')
+      .screenshot(true);
+
+    // WEBHOOK
+    await page.getByText('Webhook').first().click();
+    console.info(`Capturing webhook`);
+    await context
+      .setPath('../webhook')
+      .setName('webhook')
+      .screenshot(true);
+    
+
+    // TERMS
+    await page.locator('#list').getByText('Terms', { exact: true, }).click();
+    console.info(`Capturing terms`);
+    await context
+      .setPath('../terms')
+      .setName('terms')
+      .screenshot(true);
+     
+
+
+    await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck();
+    await page.waitForTimeout(50);   
+
+
+  
+  
+  });
+})
+
+
+type ClipT = PageScreenshotOptions['clip'];
+
+
+const menu: ClipT = {
+  x: 0,
+  y: 64,
+  width: 256,
+  height: 500,
+};
+const treeGrid: ClipT = {
+  x: 292,
+  y: 84,
+  width: 402,
+  height: 976,
+};
+const treeView: ClipT = {
+  x: 702,
+  y: 84,
+  height: 976,
+  width: 862,
+};
+
+// full content without menu
+const pageContent: ClipT = {
+  x: 292,
+  y: 84,
+  height: 976,
+  width: 1272,
+}
+
+const toolbar: ClipT = {
+  x: 0,
+  y: 0,
+  width: 1600,
+  height: 64,
+};
+
+const modesBar: ClipT = {
+  x: 1000,
+  y: 990,
+  width: 580,
+  height: 60,
+};
