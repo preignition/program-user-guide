@@ -1,9 +1,16 @@
 ---
-description: Define the logic and flow of your survey.
+description: This section explains how to control the behavior of your survey, such as setting time limits and customizing navigation.
 ---
 
-# Form Behaviour
+# Survey Behavior
 
-Configure how your survey behaves based on user responses and defined rules.
+Here you can define various behavioral settings for your survey to control how users interact with it.
 
-<figure><img src="./assets/behavior-auto.png" alt="Survey Form Behaviour Settings"><figcaption>Survey Form Behaviour Settings</figcaption></figure>
+<figure>
+  <img src="assets/auto-build-behavior.png" alt="Survey behavior settings page.">
+  <figcaption>Survey behavior settings page.</figcaption>
+</figure>
+
+## Contents
+
+This folder contains assets for the survey behavior section.

@@ -1,14 +1,19 @@
 ---
-description: An overview of the Survey application in Accessible Data.
+description: This section provides a comprehensive guide to using the Survey app, from creating and building surveys to sharing them and analyzing the results.
 ---
 
-# Survey
+# Survey App Documentation
 
-This section provides a comprehensive guide to creating, managing, and analyzing surveys using the Accessible Data platform.
+Welcome to the Survey app documentation. This guide will walk you through everything you need to know to create, manage, and share your surveys effectively.
 
-## Table of Contents
+<figure>
+  <img src="assets/auto-home-home.png" alt="Survey App Home Page">
+  <figcaption>The main dashboard of the Survey app.</figcaption>
+</figure>
 
-* [Overview](./overview/README.md)
-* [Build](./build/README.md)
-* [Test](./test/README.md)
-* [Share](./share/README.md)
+## Contents
+
+- [Overview](./overview/README.md)
+- [Build](./build/README.md)
+- [Share](./share/README.md)
+- [Test](./test/README.md)
