@@ -7,7 +7,7 @@ description: This section explains how to add and configure different types of q
 Questions are the core of your survey. Learn how to add various question types and customize them to your needs.
 
 <figure>
-  <img src="assets/auto-build-compose-settings-text-field.png" alt="Survey question settings.">
+  <img src="assets/compose-settings-text-field.png" alt="Survey question settings.">-auto.png
   <figcaption>Survey question settings.</figcaption>
 </figure>
 

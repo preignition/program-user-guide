@@ -7,7 +7,7 @@ description: This section explains the different ways you can distribute your su
 Learn about the various methods for distributing your survey, including sharing links, sending emails, and embedding it on your website.
 
 <figure>
-  <img src="assets/auto-share-distribute.png" alt="The survey distribution options page.">
+  <img src="assets/distribute-auto.png" alt="The survey distribution options page.">
   <figcaption>The survey distribution options page.</figcaption>
 </figure>
 

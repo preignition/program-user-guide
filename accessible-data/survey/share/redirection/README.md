@@ -7,7 +7,7 @@ description: This section explains how to redirect respondents to a specific URL
 Redirect respondents to a thank-you page, your website, or any other URL after they submit their survey.
 
 <figure>
-  <img src="assets/auto-share-redirection.png" alt="The survey redirection settings page.">
+  <img src="assets/redirection-auto.png" alt="The survey redirection settings page.">
   <figcaption>The survey redirection settings page.</figcaption>
 </figure>
 

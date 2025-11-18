@@ -7,7 +7,7 @@ description: This section explains how to use batches to send your survey to a l
 Batches allow you to send your survey to a large list of respondents simultaneously, making it easy to manage large-scale survey distribution.
 
 <figure>
-  <img src="assets/auto-share-batch.png" alt="The survey batches page.">
+  <img src="assets/batch-auto.png" alt="The survey batches page.">
   <figcaption>The survey batches page.</figcaption>
 </figure>
 

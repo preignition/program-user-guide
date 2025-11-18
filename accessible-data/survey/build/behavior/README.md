@@ -7,7 +7,7 @@ description: This section explains how to control the behavior of your survey, s
 Here you can define various behavioral settings for your survey to control how users interact with it.
 
 <figure>
-  <img src="assets/auto-build-behavior.png" alt="Survey behavior settings page.">
+  <img src="assets/behavior-auto.png" alt="Survey behavior settings page.">-auto.png
   <figcaption>Survey behavior settings page.</figcaption>
 </figure>
 

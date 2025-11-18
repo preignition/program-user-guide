@@ -7,7 +7,7 @@ description: This section explains how to use webhooks to integrate your survey 
 Webhooks allow you to send real-time data from your survey to other applications, enabling powerful integrations and automations.
 
 <figure>
-  <img src="assets/auto-share-webhook.png" alt="The survey webhooks configuration page.">
+  <img src="assets/webhook-auto.png" alt="The survey webhooks configuration page.">
   <figcaption>The survey webhooks configuration page.</figcaption>
 </figure>
 

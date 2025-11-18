@@ -7,7 +7,7 @@ description: This section explains how to publish your survey and make it live f
 When you're ready, publish your survey to make it accessible to your target audience. This section guides you through the process.
 
 <figure>
-  <img src="assets/auto-share-build.png" alt="The survey publishing options page.">
+  <img src="assets/build-auto.png" alt="The survey publishing options page.">
   <figcaption>The survey publishing options page.</figcaption>
 </figure>
 

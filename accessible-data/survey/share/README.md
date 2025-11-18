@@ -7,19 +7,19 @@ description: Learn how to distribute your survey and manage responses.
 This section explains the different methods for sharing your survey and managing how respondents can access it.
 
 <figure>
-  <img src="assets/auto-share-status.png" alt="The survey sharing options page.">
+  <img src="assets/status-auto.png" alt="The survey sharing options page.">
   <figcaption>The survey sharing options page.</figcaption>
 </figure>
 
 ## Contents
 
-- [Status](./status.md)
-- [Publish](./publish.md)
-- [Distribute](./distribute.md)
-- [Account Type](./account.md)
-- [Redirection](./redirection.md)
-- [Access](./access.md)
-- [Email](./message.md)
-- [Batch](./batch.md)
-- [Webhooks](./webhooks.md)
-- [Terms](./terms.md)
+- [Status](./status/README.md)
+- [Publish](./publish/README.md)
+- [Distribute](./distribute/README.md)
+- [Account Type](./account/README.md)
+- [Redirection](./redirection/README.md)
+- [Access](./access/README.md)
+- [Email](./message/README.md)
+- [Batch](./batch/README.md)
+- [Webhooks](./webhooks/README.md)
+- [Terms](./terms/README.md)

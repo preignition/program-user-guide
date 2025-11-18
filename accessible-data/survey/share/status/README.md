@@ -7,7 +7,7 @@ description: This section explains how to check the status of your survey and ma
 Monitor the status of your survey, see how many responses you've received, and open or close it to new respondents.
 
 <figure>
-  <img src="assets/auto-share-status.png" alt="The survey status page.">
+  <img src="assets/status-auto.png" alt="The survey status page.">
   <figcaption>The survey status page.</figcaption>
 </figure>
 

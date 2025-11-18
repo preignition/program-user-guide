@@ -7,7 +7,7 @@ description: This section explains how to add text pages to your survey for intr
 Text pages allow you to add informational content to your survey, such as welcome messages, instructions, or consent forms.
 
 <figure>
-  <img src="assets/auto-build-compose-text-page.png" alt="Survey text page settings.">
+  <img src="assets/compose-text-page.png" alt="Survey text page settings.">-auto.png
   <figcaption>Survey text page settings.</figcaption>
 </figure>
 

@@ -7,7 +7,7 @@ description: This section explains how to translate your survey into multiple la
 The localization feature allows you to provide your survey in multiple languages, making it accessible to a wider audience.
 
 <figure>
-  <img src="assets/auto-build-localize.png" alt="The survey localization interface.">
+  <img src="assets/localize-auto.png" alt="The survey localization interface.">-auto.png
   <figcaption>The survey localization interface.</figcaption>
 </figure>
 
