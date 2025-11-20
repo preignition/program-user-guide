@@ -59,13 +59,15 @@ class Context implements ContextT {
 
   async screenshot(advanced?: boolean) {
     const name = this.name;
-    const advancedModeSwitch = this.page.getByRole('switch', { name: 'toggle advanced mode' });
-    const isAdvancedMode = await advancedModeSwitch.isChecked();
+    const advancedModeSwitch = (await this.page.getByRole('switch', { name: 'toggle advanced mode' }).isVisible())
+      ? this.page.getByRole('switch', { name: 'toggle advanced mode' })
+      : undefined;
+    const isAdvancedMode = await advancedModeSwitch?.isChecked() || false;
     let pageIsLargerThanViewport = await this.page.evaluate(() => {
       return document.body.scrollHeight > window.innerHeight || document.body.scrollWidth > window.innerWidth;
     });
     // await this.page.waitForTimeout(50);
-    await this.page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck();
+    await advancedModeSwitch?.uncheck();
     await this.page.waitForTimeout(50); 
     
     await Promise.all(
@@ -87,7 +89,7 @@ class Context implements ContextT {
 
     if (advanced) {
       // click advanced
-      await this.page.getByRole('switch', { name: 'toggle advanced mode' }).check();
+      await advancedModeSwitch?.check();
       await this.page.waitForTimeout(50);
       pageIsLargerThanViewport = await this.page.evaluate(() => {
         return document.body.scrollHeight > window.innerHeight || document.body.scrollWidth > window.innerWidth;
@@ -113,9 +115,9 @@ class Context implements ContextT {
        
     }
     if (isAdvancedMode) {
-      await advancedModeSwitch.check();
+      await advancedModeSwitch?.check();
     } else {
-      await advancedModeSwitch.uncheck();
+      await advancedModeSwitch?.uncheck();
 
     }
     await this.page.waitForTimeout(50); 
@@ -196,7 +198,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     context.removeArea('fab')
       
 
-    // CREATE SUREVEY
+    // CREATE SURVEY
     await page.getByRole('button', { name: 'New Survey' }).click();
     await page.getByRole('textbox', { name: 'name', exact: true }).click();
     await page.getByRole('textbox', { name: 'name', exact: true }).fill('test');
@@ -277,31 +279,29 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     // INFO PAGE
     await page.getByText('Introduction Page').first().click();
     console.info(`Capturing page intro`);
-    context
+    await context
       .setName('intro')
       .setPath('text-page')
       .screenshot();
 
     await page.getByText('intro 1').first().click();
     console.info(`Capturing page intro 1`);
-    context
+    await context
       .setName('intro-item')
       .screenshot();
 
     // FORM
-    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'form' }).first().click();
-    await page.waitForTimeout(50);
-    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'form' }).first().click();
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Form' }).first().click();
     console.info(`Capturing form`);
-    context
+    await context
       .setPath('../form')
-      .setName('page')
+      .setName('form')
       .screenshot();
 
     // PAGE
     await page.getByText('Content Page for documentation').click();
     console.info(`Capturing page intro`);
-    context
+    await context
       .setPath('../page')
       .setName('page')
       .screenshot();
@@ -309,7 +309,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     // SECTION
     await page.getByText('text-based fields').click();    
     console.info(`Capturing section`);
-    context
+    await context
       .setPath('../section')
       .setName('section')
       .screenshot();
