@@ -7,7 +7,7 @@ description: This section explains how to use sections to group related question
 Sections help you organize your survey by grouping related questions, making it more structured and readable.
 
 <figure>
-  <img src="assets/section-auto.png" alt="Survey section settings.">-auto.png
+  <img src="assets/section-auto.png" alt="Survey section settings.">
   <figcaption>Survey section settings.</figcaption>
 </figure>
 
