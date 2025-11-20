@@ -7,7 +7,7 @@ description: Learn how to add and arrange questions in your survey.
 The compose view is where you build the structure of your survey by adding and organizing questions, pages, and other elements.
 
 <figure>
-  <img src="assets/page-auto.png" alt="The survey compose view, showing the question tree and editing area.">-auto.png
+  <img src="assets/compose-auto.png" alt="The survey compose view, showing the question tree and editing area.">
   <figcaption>The survey compose view, showing the question tree and editing area.</figcaption>
 </figure>
 
