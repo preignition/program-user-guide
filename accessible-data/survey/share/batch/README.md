@@ -11,6 +11,18 @@ Batches allow you to send your survey to a large list of respondents simultaneou
   <figcaption>The survey batches page.</figcaption>
 </figure>
 
+## Interface Overview
+
+The **Batches** page is your control center for managing survey availability over time.
+
+- **Batch List**: Displays all created batches with their names, start/end dates, and current status (Active, Scheduled, or Closed).
+- **Create Batch**: Click "Create New Batch" to define a new availability window.
+- **Batch Details**:
+    - **Name**: A descriptive name for the batch (e.g., "Q1 2024 Survey").
+    - **Start Date**: The date and time when the survey becomes accessible.
+    - **End Date**: The date and time when the survey automatically closes.
+    - **Status**: Indicates if the batch is currently live. Only one batch can be active at a time.
+
 ## Contents
 
 This folder contains assets for the survey batches section.

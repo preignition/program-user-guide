@@ -11,6 +11,18 @@ When you're ready, publish your survey to make it accessible to your target audi
   <figcaption>The survey publishing options page.</figcaption>
 </figure>
 
+## Interface Overview
+
+The **Publish** page is the final step in making your survey live.
+
+- **Publish Button**: The main action button. Clicking this makes your latest changes available to respondents.
+- **Version History**: A table listing all previous versions of your survey.
+    - **Version**: The version number (e.g., v1, v2).
+    - **Date**: When this version was published.
+    - **Published By**: The user who published this version.
+    - **Status**: Indicates which version is currently live.
+- **Rollback**: Options to revert to a previous version if needed.
+
 ## Contents
 
 This folder contains assets for the survey publishing section.

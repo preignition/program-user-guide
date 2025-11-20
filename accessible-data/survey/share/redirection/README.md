@@ -11,6 +11,16 @@ Redirect respondents to a thank-you page, your website, or any other URL after t
   <figcaption>The survey redirection settings page.</figcaption>
 </figure>
 
+## Interface Overview
+
+The **Redirection** page controls where respondents are sent after they complete your survey.
+
+- **Redirection Options**:
+    - **Custom URL**: Redirect respondents to a specific webpage, such as your company website or a special landing page. Enter the full URL in the provided field.
+    - **Thank You Page**: Display a standard "Thank You" message within the survey app. You can customize the text of this message.
+    - **Home Page**: Redirect respondents back to the main survey portal or home page.
+- **Auto-Redirect**: Enable this to automatically redirect users after a few seconds, or leave it disabled to require them to click a "Continue" button.
+
 ## Contents
 
 This folder contains assets for the survey redirection section.

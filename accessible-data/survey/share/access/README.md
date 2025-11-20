@@ -11,6 +11,18 @@ Control who can take your survey by setting access permissions. You can make you
   <figcaption>The survey access settings page.</figcaption>
 </figure>
 
+## Interface Overview
+
+The **Access Settings** page allows you to manage who can view and edit your survey.
+
+- **User List**: The main table displays all users currently associated with the survey, showing their name, email, and current role.
+- **Add User**: Use the "Add User" button to invite new collaborators. You will need to enter their email address and select a role.
+- **Roles**:
+    - **Owner**: Full control, including deleting the survey and managing other users.
+    - **Editor**: Can edit the survey content and settings but cannot manage users.
+    - **Viewer**: Read-only access to the survey and results.
+    - **Translator**: Can only access the translation interface.
+
 ## Contents
 
 This folder contains assets for the survey access section.

@@ -11,6 +11,16 @@ Set up terms and conditions that respondents must agree to before they can acces
   <figcaption>The survey terms and conditions editor.</figcaption>
 </figure>
 
+## Interface Overview
+
+The **Terms** page allows you to add legal or informational text that respondents must agree to.
+
+- **Enable Terms**: A checkbox to activate the terms and conditions step at the start of the survey.
+- **Terms Editor**: A rich text area where you can paste or write your terms. You can format text, add links to external privacy policies, and use lists.
+- **Agreement Type**: Choose how respondents agree:
+    - **Implicit**: "By continuing, you agree..."
+    - **Explicit**: Requires checking a "I agree" box before proceeding.
+
 ## Contents
 
 This folder contains assets for the survey terms section.
