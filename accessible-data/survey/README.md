@@ -1,5 +1,5 @@
 ---
-description: This section provides a comprehensive guide to using the Survey app, from creating and building surveys to sharing them and analyzing the results.
+description: Introduction
 ---
 
 # Survey App Documentation
