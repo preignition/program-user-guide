@@ -1,5 +1,5 @@
 ---
-description: This section explains how to use batches to send your survey to a large number of respondents at once.
+description: This section explains how to use batches to keep survey responses together based on when they were completed.
 ---
 
 ## Advanced Settings
