@@ -23,6 +23,10 @@ The **Access Settings** page allows you to manage who can view and edit your sur
     - **Viewer**: Read-only access to the survey and results.
     - **Translator**: Can only access the translation interface.
 
+## Advanced Settings
+
+For more granular control, check out the [Advanced Access Settings](./advanced.md).
+
 ## Contents
 
 This folder contains assets for the survey access section.

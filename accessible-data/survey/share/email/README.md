@@ -22,6 +22,10 @@ The **Email** page allows you to compose and send survey invitations directly fr
     - **Placeholders**: Use dynamic tags (e.g., `{{survey_link}}`, `{{first_name}}`) to personalize each email and ensure every respondent gets their unique survey link.
 - **Send Options**: Choose to send the email immediately or schedule it for a future date and time.
 
+## Advanced Settings
+
+For SMTP configuration and deliverability settings, check [Advanced Email Settings](./advanced.md).
+
 ## Contents
 
 This folder contains assets for the survey email section.

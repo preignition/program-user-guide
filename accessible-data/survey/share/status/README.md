@@ -23,6 +23,10 @@ The **Status** page gives you a quick snapshot of your survey's current state.
     - **Completion Rate**: The percentage of users who started and finished the survey.
     - **Last Response**: The date and time of the most recent submission.
 
+## Advanced Settings
+
+For quota management and detailed status metrics, check [Advanced Status Settings](./advanced.md).
+
 ## Contents
 
 This folder contains assets for the survey status section.

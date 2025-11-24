@@ -20,6 +20,10 @@ The **Distribute** page provides the tools you need to get your survey in front 
 - **Social Share**: Quick links to share your survey directly to platforms like Facebook, Twitter, and LinkedIn.
 - **Embed Code**: An HTML snippet that allows you to embed the survey directly into your own website or blog.
 
+## Advanced Settings
+
+For custom tracking and domain masking, see [Advanced Distribution Settings](./advanced.md).
+
 ## Contents
 
 This folder contains assets for the survey distribution section.

@@ -21,6 +21,10 @@ The **Account Types** page lets you define who is eligible to take your survey.
 
 Select the appropriate option to enforce the desired level of security and access control for your survey.
 
+## Advanced Settings
+
+For detailed authentication configuration, see [Advanced Account Settings](./advanced.md).
+
 ## Contents
 
 This folder contains assets for the respondent account types section.

@@ -25,6 +25,16 @@ The **Share** section is your hub for managing the lifecycle of your survey. Fro
 
 ## Contents
 
+### How tos
+
+- [How to share a survey](./sharing-a-survey.md)
+
+### Workflow
+- [Sharing Workflow](./sharing-workflow.md)
+
+
+### Modules
+
 - [Status](./status/README.md)
 - [Publish](./publish/README.md)
 - [Distribute](./distribute/README.md)
@@ -35,3 +45,4 @@ The **Share** section is your hub for managing the lifecycle of your survey. Fro
 - [Batch](./batch/README.md)
 - [Webhooks](./webhooks/README.md)
 - [Terms](./terms/README.md)
+

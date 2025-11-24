@@ -21,6 +21,10 @@ The **Terms** page allows you to add legal or informational text that respondent
     - **Implicit**: "By continuing, you agree..."
     - **Explicit**: Requires checking a "I agree" box before proceeding.
 
+## Advanced Settings
+
+For multi-language terms and versioning, see [Advanced Terms Settings](./advanced.md).
+
 ## Contents
 
 This folder contains assets for the survey terms section.

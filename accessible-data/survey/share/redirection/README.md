@@ -21,6 +21,10 @@ The **Redirection** page controls where respondents are sent after they complete
     - **Home Page**: Redirect respondents back to the main survey portal or home page.
 - **Auto-Redirect**: Enable this to automatically redirect users after a few seconds, or leave it disabled to require them to click a "Continue" button.
 
+## Advanced Settings
+
+For conditional redirection logic, refer to [Advanced Redirection Settings](./advanced.md).
+
 ## Contents
 
 This folder contains assets for the survey redirection section.

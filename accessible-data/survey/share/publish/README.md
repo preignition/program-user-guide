@@ -23,6 +23,10 @@ The **Publish** page is the final step in making your survey live.
     - **Status**: Indicates which version is currently live.
 - **Rollback**: Options to revert to a previous version if needed.
 
+## Advanced Settings
+
+For version control and rollback features, see [Advanced Publishing Settings](./advanced.md).
+
 ## Contents
 
 This folder contains assets for the survey publishing section.

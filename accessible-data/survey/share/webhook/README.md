@@ -23,6 +23,10 @@ The **Webhooks** page enables real-time integration with external systems.
     - **Trigger Events**: Select when the webhook should fire (e.g., "Response Completed", "Response Updated").
     - **Status**: Toggle to enable or disable the webhook without deleting it.
 
+## Advanced Settings
+
+For custom headers and retry policies, refer to [Advanced Webhook Settings](./advanced.md).
+
 ## Contents
 
 This folder contains assets for the survey webhooks section.
