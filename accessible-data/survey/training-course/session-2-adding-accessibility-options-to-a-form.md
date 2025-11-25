@@ -1,39 +1,39 @@
 ---
-description: This session covers how to add accessibility options to your Survey.
+description: This session covers how to add accessibility options to your 'Survey'.
 ---
 
 # Session 2- Adding accessibility options
 
-## Session overview
+## Session Overview
 
-In session 1, you created a new survey and added some questions to your form.
+In session 1, you created a new 'Survey' and added some questions to your 'Form'.
 
-In this session you will learn how to add accessibility features including sign language, Easy Read, Read aloud and voice recording.
+In this session, you will learn how to add accessibility features including sign language, Easy Read, Read aloud and voice recording.
 
-## Learning outcomes
+## Learning Outcomes
 
 On completing this session, you should feel confident to;
 
-* [x] Use the Form Behaviour menu to activate accessibility modes
-* [x] Create an Easy Read version of your Survey
-* [x] Add a sign language to your Survey
-* [x] Choose a Read Aloud voice for your Survey
+* [x] Use the 'Form Behavior' menu to activate accessibility modes
+* [x] Create an Easy Read version of your 'Survey'
+* [x] Add a sign language to your 'Survey'
+* [x] Choose a Read Aloud voice for your 'Survey'
 * [x] Understand how the Voice Recording option works
 * [x] Test the accessibility options
 
 {% hint style="info" %}
-The 'Training Survey' supports British Sign Language (BSL). You can offer whichever sign language you choose and even offer several different sign languages.
+The 'Training Survey' supports British Sign Language (BSL). You can offer whichever sign language you choose and even offer multiple sign languages.
 {% endhint %}
 
 ## Learning Materials
 
 You will need the following learning materials for this session.
 
-#### Links for British Sign Language (BSL) videos
+### Links for British Sign Language (BSL) videos
 
-When you add BSL videos to your survey, you will need these Youtube links.
+When you add BSL videos to your 'Training Survey', you will need these Youtube links.
 
-Simply copy the 11 digit Youtube ID into the appropriate place in your survey. The training video will show you how!
+Simply copy the 11 digit Youtube ID into the appropriate place in your 'Survey'. The training video will show you how!
 
 <table><thead><tr><th width="442">Question</th><th>Youtube ID</th></tr></thead><tbody><tr><td>1.1 'Which survey tool does your organisation use the most?'</td><td><a href="https://youtu.be/dsL489ipJxM">dsL489ipJxM</a></td></tr><tr><td>1.2 'I am satisifed with my current survey tool'</td><td><a href="https://youtu.be/6KxVTBEfcUQ">6KxVTBEfcUQ</a></td></tr><tr><td>1.3 'What do you like about the survey tool you are using?'</td><td><a href="https://youtu.be/4LfklqWfq3A">4LfklqWfq3A</a></td></tr><tr><td>1.4 'What frustrates you about the survey tool that you are using?'</td><td><a href="https://youtu.be/hK1L5y5iRds">hK1L5y5iRds</a></td></tr><tr><td>2.1 'Do you like this survey?'</td><td><a href="https://youtu.be/Zne0RX2she4">Zne0RX2she4</a></td></tr></tbody></table>
 
@@ -43,9 +43,9 @@ Currently survey builders need to create their own sign language videos. If requ
 
 #### Easy Read Images
 
-When you add Easy Read images to your Survey, these images are the ones to use.
+When you add Easy Read images to your 'Survey, these images are the ones to use.
 
-I suggest you download these into a seperate folder on you computer before you start the session. The video will show you how to add the images to your survey.
+I suggest you download these into a separate folder on your computer before you start the session. The video will show you how to add the images to your survey.
 
 <div><figure><img src="../.gitbook/assets/1.1  ER image for Survey.png" alt=""><figcaption><p>1 ER image for 'Which survey tool does your organisation use the most?'</p></figcaption></figure> <figure><img src="../.gitbook/assets/1.2 ER image for Satisfaction.png" alt=""><figcaption><p>2 ER image for 'I am satisifed with my current survey tool'</p></figcaption></figure> <figure><img src="../.gitbook/assets/1.3 ER image for what do you like.png" alt=""><figcaption><p>3 ER image for 'What do you like about the survey tool you are using?'</p></figcaption></figure> <figure><img src="../.gitbook/assets/1.4 ER image for what frustrates you.png" alt=""><figcaption><p>4 ER image for 'What frustrates you about the survey tool that you are using?'</p></figcaption></figure> <figure><img src="../.gitbook/assets/2.1 ER image do you like this survey.png" alt=""><figcaption><p>5 ER image for 'Do you like this survey?'</p></figcaption></figure></div>
 
