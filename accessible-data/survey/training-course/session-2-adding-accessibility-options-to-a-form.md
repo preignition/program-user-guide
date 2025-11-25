@@ -6,20 +6,20 @@ description: This session covers how to add accessibility options to your 'Surve
 
 ## Session Overview
 
-In session 1, you created a new 'Survey' and added some questions to your 'Form'.
+In session 1, you created a new 'Survey', added an 'Introduction Page', a 'Thank You Page' and some 'Questions' to your 'Form'.
 
 In this session, you will learn how to add accessibility features including sign language, Easy Read, Read aloud and voice recording.
 
 ## Learning Outcomes
 
-On completing this session, you should feel confident to;
+On completing this session, you should feel confident;
 
-* [x] Use the 'Form Behavior' menu to activate accessibility modes
-* [x] Create an Easy Read version of your 'Survey'
-* [x] Add a sign language to your 'Survey'
-* [x] Choose a Read Aloud voice for your 'Survey'
-* [x] Understand how the Voice Recording option works
-* [x] Test the accessibility options
+* [x] Using the 'Form Behavior' menu to activate accessibility modes
+* [x] Creating an Easy Read version of your 'Survey'
+* [x] Adding a sign language to your 'Survey'
+* [x] Choosing a Read Aloud voice for your 'Survey'
+* [x] Understanding how the Voice Recording option works
+* [x] Testing the accessibility options
 
 {% hint style="info" %}
 The 'Training Survey' supports British Sign Language (BSL). You can offer whichever sign language you choose and even offer multiple sign languages.
@@ -41,16 +41,19 @@ Simply copy the 11 digit Youtube ID into the appropriate place in your 'Survey'.
 Currently survey builders need to create their own sign language videos. If required, we can provide details of recommended sign language service providers.
 {% endhint %}
 
-#### Easy Read Images
+### Easy Read Images
 
 When you add Easy Read images to your 'Survey, these images are the ones to use.
 
+| | | |
+| :---: | :---: | :---: |
+| <img src="assets/1 ER image for Survey.png" alt="Easy Read image for 'Which survey tool does your organisation use the most?'" width="100%"> | <img src="assets/2 ER image for Satisfaction.png" alt="Easy Read image for 'I am satisifed with my current survey tool'" width="100%"> | <img src="assets/3 ER image for what do you like.png" alt="Easy Read image for 'What do you like about the survey tool you are using?'" width="100%"> |
+| <img src="assets/4 ER image for what frustrates you.png" alt="Easy Read image for 'What frustrates you about the survey tool that you are using?'" width="100%"> | <img src="assets/5 ER image do you like this survey.png" alt="Easy Read image for 'Do you like this survey?'" width="100%"> | |
+
 I suggest you download these into a separate folder on your computer before you start the session. The video will show you how to add the images to your survey.
 
-<div><figure><img src="../.gitbook/assets/1.1  ER image for Survey.png" alt=""><figcaption><p>1 ER image for 'Which survey tool does your organisation use the most?'</p></figcaption></figure> <figure><img src="../.gitbook/assets/1.2 ER image for Satisfaction.png" alt=""><figcaption><p>2 ER image for 'I am satisifed with my current survey tool'</p></figcaption></figure> <figure><img src="../.gitbook/assets/1.3 ER image for what do you like.png" alt=""><figcaption><p>3 ER image for 'What do you like about the survey tool you are using?'</p></figcaption></figure> <figure><img src="../.gitbook/assets/1.4 ER image for what frustrates you.png" alt=""><figcaption><p>4 ER image for 'What frustrates you about the survey tool that you are using?'</p></figcaption></figure> <figure><img src="../.gitbook/assets/2.1 ER image do you like this survey.png" alt=""><figcaption><p>5 ER image for 'Do you like this survey?'</p></figcaption></figure></div>
-
 {% hint style="info" %}
-These images are sourced from [Easy on the i](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/). This a great libary of free symbols, photos and graphics which can be used when creating Easy Read surveys.
+These images are sourced from [Easy on the i](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/). This is a great library of free symbols, photos and graphics which can be used when creating Easy Read surveys.
 {% endhint %}
 
 ## Learning Content
@@ -63,11 +66,12 @@ The video is 12 minutes long and we estimate that it will take you about 15 to 2
 
 ## Advanced features related to adding accessibility modes not covered in this session
 
-* [x] Making your Introduction Page and Thank You Page available in Easy Read
-* [x] Making your survey available in multiple sign languages
+* [x] Adding Easy Read to your 'Introduction Page' and 'Thank You Page'
+* [x] Adding multiple sign languages to your 'Survey'
 
 ## Next Steps
 
 {% hint style="success" %}
-You have completed the second Training Session! You can click on the arrow below to start the third Training Session. This shows you how to translate your survey into mutiple languages.
+You have completed the second Training Session! You can now start the third Training Session.
+This shows you how to translate your 'Survey' into multiple languages.
 {% endhint %}
