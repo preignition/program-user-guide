@@ -1,14 +1,14 @@
 ---
-description: This session shows you how to translate your survey into different languages
+description: This training session shows you how to translate your survey into different languages
 ---
 
-# Session 3- Translating a survey
+# Session 3- Translating your survey
 
 ## Session Overview
 
 In session 2, you added accessibility options to your survey.
 
-In this session, you will learn how to translate your survey into French and Spanish.
+In this session, you will translate your survey into French and Spanish.
 
 Accessible Surveys supports a very wide range of languages.
 
@@ -16,21 +16,21 @@ The process you will learn here applies to any language.
 
 ## Learning Outcomes
 
-On completing this session, you should feel confident to;
+On completing this session, you should feel confident;
 
-* [x] Add new languages for your 'Organization'
-* [x] Translate your survey into any new languages that have been added
-* [x] Test the translated versions of your survey
-* [x] Translate questions that have been subsequently added or amended
-* [x] Know language options are presented to survey respondents
+* [x] Adding new languages for your 'Organization'
+* [x] Translating your survey into any new languages that have been added
+* [x] Testing the translated versions of your survey
+* [x] Translating questions that have been subsequently added or amended
+* [x] Knowing how language options are presented to survey respondents
 
-## Activating New Languages
+## Activating Additional Languages
 
 {% hint style="info" %}
-Only 'Account Holders' can activate additional languages for their 'Organization'
+Only 'Account Holders' can activate additional languages for their 'Organization' as this related to the organization's subscription plan.
 {% endhint %}
 
-New languages are added for an 'Organization' from the 'Customer Portal'. Only 'Account Holders' have access to the 'Customer Portal'.
+Additional languages are added for an 'Organization' from the 'Customer Portal'. Only 'Account Holders' have access to the 'Customer Portal'.
 
 You will be an 'Account Holder' if you created the account for your 'Organization' on Accessible Surveys or have been subsequently been added as an 'Account Holder'.
 

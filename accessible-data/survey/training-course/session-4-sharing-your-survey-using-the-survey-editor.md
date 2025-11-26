@@ -14,10 +14,10 @@ In this session, you will learn how to test and share your survey.
 
 On completing this session, you should feel confident;
 
-* [x] Choosing how to make your survey active
-* [x] Knowing how to 'Publish' a new version of your survey
+* [x] Activating your survey
+* [x] Publishing a new version of your survey
 * [x] Generating different types of survey links
-* [x] Choosing the type of account respondents need to have to complete your survey
+* [x] Choosing the type of account you want respondents to have to complete your survey
 * [x] Choosing where respondents will be redirected to when they have submitted your survey
 * [x] Giving members of your team access to your survey
 

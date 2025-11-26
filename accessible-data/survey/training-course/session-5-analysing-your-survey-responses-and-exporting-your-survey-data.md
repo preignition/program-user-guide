@@ -31,7 +31,7 @@ The text below should be used when responding to the test survey in Spanish.
 
 ## Learning Content
 
-In this video, Jerry guides you through the process of using the Analytics Page to analyse your survey responses and export your dataset.
+In this video, Jerry guides you through the process of using the Analytics Page to analyze your survey responses and export your dataset.
 
 The video is 17 mins long and we estimate that it will take you about 30 minutes to complete the session.
 
