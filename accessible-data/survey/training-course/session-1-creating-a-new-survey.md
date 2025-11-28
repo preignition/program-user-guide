@@ -44,7 +44,7 @@ Follow the steps in the video precisely and create your own 'Training Survey'.
 
 The video is 18 minutes long.
 
-{% embed url="https://youtu.be/zx7LD73pZGw" %}
+{% embed url="https://youtu.be/5RyWIKc-XDU" %}
 
 ## Advanced features not covered in this session
 
