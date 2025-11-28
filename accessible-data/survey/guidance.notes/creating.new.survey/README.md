@@ -32,38 +32,87 @@ You will not be able to move to the next step until the survey has a name and de
 
 ## Step 3
 
-Surveys use 'Forms' to collect data
+Surveys use 'Forms' to collect data.
 
-You can create a new form by giving it a name, description and first page.
+<figure>
+  <img src="assets/form.settings.png" alt="Screenshot showing four different ways to create a form.">
+  <figcaption>Screenshot showing four different ways to create a form.</figcaption>
+</figure>
 
-If you already have a form that you want to use in your survey, you can skip this step and select an exisiting form later on.
+There are 4 ways to create a form:
 
-Then select 'next'
+1. **Create a new empty form** - Build a form from scratch using a powerful form builder
 
-![](<../../.gitbook/assets/image (39).png>)
+2. **Create a new form, using a prompt to create the content** - Create a new form using AI prompts to generate content which can be reviewed and edited
+
+3. **Create a new form, based on an existing document** - If you have your questions in a document, you can save that document as a PDF or markdown file and upload it.  The questions and form structure will be imported annd can be reviewed and edited.
+
+4. **Skip this step and use a form you have created previously** - You will be able to select a form that has been created previously.
+
+{% hint style="info" %}
+For an indepth demonstration of the different options available to create a form, refer to the Masterclass 'Creating a Form'.
+{% endhint %}
 
 ## Step 4
 
-On the summary page you will be asked to confirm that you want to create a new survey.
+If you selected 'Create a new empty form' you will be asked to give the form a name and description.
 
-![](<../../.gitbook/assets/image (41).png>)
+<figure>
+  <img src="assets/naming.new.form.png" alt="Screenshot showing where to enter the form name and description.">
+  <figcaption>Give your form a name and description.</figcaption>
+</figure>
+
+{% hint style="warning" %}
+The next button will not be enabled until the form has a name and description.
+{% endhint %}
 
 ## Step 5
 
-If you created a new form you will now see a summary page showing the 'Survey Editor' the 'Form Editor' and the 'Analytics' page.
+If you selected 'Create a new form, using a prompt to create the content', you can use AI prompts to generate the content for your form.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <img src="assets/new.form.prompts.png" alt="Screenshot showing prompt for generating form content">
+  <figcaption>Use AI prompts to generate the content for your form.</figcaption>
+</figure>
+
+In this example the following prompt has been used:
+
+"Create a short staff satisfaction survey.  The survey should have 3 pages, no more than 15 questions and take 5 minutes or less to complete.  The first page should ask about working environment and pay, the second should ask about job satisfaction and professional development and the last page should ask what can be improved."
+
+{% hint style="info" %}
+Why don't you try creating a survey using this prompt?  It will take some time to process, but it will give you a good idea of how the AI prompts work.
+{% endhint %}
 
 ## Step 6
 
-If you chose to select an exisiting form later on, your summary page will show the 'Survey Editor' and 'Analytics' page.
+If you selected 'Create a new form, based on an existing document', you will see an option to upload a file.  This can be a PDF or markdown file.
 
-You can select an existing form from the survey editor.
+<figure>
+  <img src="assets/new.form.upload.png" alt="Screenshot showing where to upload a file.">
+  <figcaption>Option to upload a file.</figcaption>
+</figure>
 
-{% embed url="https://youtu.be/nOd9LJo-zSw" %}
-Short video showing how to select an existing form
-{% endembed %}
+The questions and form structure will be imported and can be reviewed and edited.
+
+{% hint style="info" %}
+The maximum file size is 2MB.  Larger documents can be split into multiple files and uploaded one at a time.
+{% endhint %}
+
+## Step 7
+
+If you selected 'Skip this step and select an existing form later on', you can proceed to the next step.  
+
+## Step 8
+
+Whichever option you selected, when you select 'Next' you will be taken to a summary page.
+
+You will be asked to confirm that you want to create the survey.
+
+<figure>
+  <img src="assets/create-summary-dialog-auto.png" alt="Screenshot showing a summary of the new survey and an option to cancel or confirm.">
+  <figcaption>Option to cancel or confirm the creation of the survey.</figcaption>
+</figure>
 
 {% hint style="success" %}
-Congratulations you have sucessfull created a new survey. The following 'Guidance Notes' will show you how to build it out.
+Congratulations you have successfully created a new survey. The Guidance Notes 'Editing a Survey' will show you how to build it out.
 {% endhint %}
