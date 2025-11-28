@@ -18,21 +18,21 @@ The Guidance Notes follow the natural process of creating and managing surveys.
 
 They cover the following areas:
 
-* **Create a Survey** - Get started by building a new survey from scratch
+* **Creating a Survey** - Get started by building a new survey from scratch
 
-* **Edit a Survey** - Make changes and updates to your existing surveys
+* **Editing a Survey** - Make changes and updates to your existing surveys
 
-* **Add Accessibility Options** - Add features like Easy Read, sign language, read aloud and voice recording
+* **Adding Accessibility Options** - Add features like Easy Read, sign language, read aloud and voice recording
 
-* **Translate a Survey** - Make your survey available in multiple languages
+* **Translating a Survey** - Make your survey available in multiple languages
 
-* **Test a Survey** - Ensure your survey works correctly before sharing it
+* **Testing a Survey** - Ensure your survey works correctly before sharing it
 
-* **Share a Survey** - Publish and distribute your survey to respondents
+* **Sharing a Survey** - Publish and distribute your survey to respondents
 
-* **Analyze Survey Results** - Review survey responses and export your data
+* **Analyzing Survey Results** - Review survey responses and export your data
 
-* **Manage Your Account and Team Settings** - Configure your organization and team settings and access
+* **Managing Your Account and Team Settings** - Configure your organization and team settings and access
 
 ## How to Use These Guides
 
