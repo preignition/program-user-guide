@@ -8,26 +8,30 @@ I am aware that Accessible Surveys operates a 'Referral Scheme'.  I would like t
 
 ## Why does Accessible Surveys have a 'Referral Scheme'?
 
-If we are to thrive, we need to let people know we exist.  We have found that our customers are fantastic advocates and frequently introduce us to new organizations.
+We need to let people know we exist.  We have found that our customers are fantastic advocates and frequently introduce us to new organizations.
 
 We want to encourage and reward this.  We have therefore created a paid 'Referral Scheme'.  This creates benefits for referrers and organizations who are referred to us.
 
 ## How does the 'Referral Scheme' work?
 
-When you create a customer account, you have access to a 'Referral' page as shown in the screenshot below.  
+When you create a customer account, you have access to a 'Referral' page.  
 
 <figure>
   <img src="assets/referral.page.png" alt="Screenshot of the Referral page in the customer portal.">
   <figcaption>The Referral page displays in the left hand navigation menu.</figcaption>
 </figure>
 
-From here you can access and share your unique referral link.
+From the Referral page, you can access and share your unique referral link.
 
-When someone signs up using your referral link and becomes a paying customer, you both receive rewards.  The referred customer receives a **10% discount** for a period of 12 months, and you receive **25% of the total subscription fee paid for the first 12 months**.
+When someone signs up using your referral link and becomes a paying customer, you both receive rewards.  
 
-## How do I know who has signed up using my referral link?
+- The referred customer receives a **10% discount** for a period of 12 months
 
-You will receive an email like this one, whenever a new customer creates an account using your referral link.
+- You receive **25% of the total subscription** fee paid for the first 12 months
+
+## How do I know who used my referral link?
+
+Whenever a new customer creates an account using your referral link, you will receive an email notification, like the one shown below.
 
 <figure>
   <img src="assets/referral.signup.email.png" alt="Email notification for a new referral signup.">
@@ -47,12 +51,14 @@ This part of the application will be further developed, so you have more detaile
 
 You must have a valid payment method set up on your account under 'Subscription' to receive rewards payments.
 
+This is available in the left hand navigation menu in the Customer Portal as shown below.
+
 <figure>
   <img src="assets/subscription.png" alt="Screenshot of the Subscription page showing in the left hand navigation menu in the Customer Portal.">
   <figcaption>Subscription page is available in the left hand navigation menu.</figcaption>
 </figure>
 
-Rewards are credited to your account within 30 days of the referred customer's first payment.
+{% hint style="info" %} Rewards are credited to your account within 30 days of the referred customer's first payment. {% endhint %}
 
 ## Do I need to be an organization to be a referrer?
 
