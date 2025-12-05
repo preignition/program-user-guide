@@ -1,5 +1,5 @@
 ---
-description: This section explains how the referral scheme works.
+description: How does the 'Referral Scheme' work?
 ---
 
 # How does the 'Referral Scheme' work?
