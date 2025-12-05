@@ -68,7 +68,7 @@ Referrers just need to have a customer account on Accessible Surveys, with up to
 
 ## How do organizations I refer to Accessible Surveys receive their discount?
 
-When an organization creates a customer account on Accessible Surveys using your 'Referral Link', they automatically receive a 10% discount for their first 12 months.
+When an organization signs up using your 'Referral Link', they automatically receive a 10% discount for their first 12 months.
 
 <figure>
   <img src="assets/referral.discount.png" alt="Screenshot of a customer invoice with a 10% 'Referral Discount' applied.">
