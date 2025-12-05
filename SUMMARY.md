@@ -70,7 +70,7 @@
 
 ## FAQ
 
-* [Referral Scheme](faq/customer.portal/referral.scheme.md)
+* [Referral Scheme](accessible-data/faq/customer.portal/referral.scheme.md)
 * [Data privacy and security](faq/introduction-to-faq/README.md)
   * [Why and how do we collect data?](faq/introduction-to-faq/why-and-how-do-we-collect-data.md)
   * [How do we protect data?](faq/introduction-to-faq/how-do-we-protect-data.md)
