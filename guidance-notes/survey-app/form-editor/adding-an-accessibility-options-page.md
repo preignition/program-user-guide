@@ -14,13 +14,13 @@ Accessibility settings can be activitated by survey respondents from the accessi
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot, showing the location of the Accessibility Settings icon in the top right hand corner of the screen</p></figcaption></figure>
 
-However adding an accessibility menu to your survey can make these options more prominent.&#x20;
+However adding an accessibility menu to your survey can make these options more prominent.
 
 ## Step 2
 
-The accessibility menu can be added to any feild that supports Markdown.  This includes the 'landing page' or a 'free text' feild within your form.
+The accessibility menu can be added to any feild that supports Markdown. This includes the 'landing page' or a 'free text' feild within your form.
 
-Simply copy this code to make the menu appear&#x20;
+Simply copy this code to make the menu appear
 
 ```markup
 <a11y-menu context="survey"></a11y-menu>
@@ -38,13 +38,13 @@ This short video show you how you can add an accessibility menu to a survey's 'L
 
 {% embed url="https://youtu.be/jBdiUyD_dek" %}
 
-## Step 4&#x20;
+## Step 4
 
 Alternatively, you can add an accessibility menu as the first page of your survey by following these instructions.
 
-Add a new page and section at the beginning of your form.  Give the page a title like 'Accessibility'.  The section should have a name but not a title or sub title&#x20;
+Add a new page and section at the beginning of your form. Give the page a title like 'Accessibility'. The section should have a name but not a title or sub title
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Screenshot showing an Accessibility page added at the start of a Form</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing an Accessibility page added at the start of a Form</p></figcaption></figure>
 
 Drag and drop to add a new 'free text' question into the section that you have just created.
 
@@ -62,4 +62,4 @@ If you have included an accessibility menu in your form, be careful if you auto 
 
 The auto translate will translate the word "survey" in the code, and the menu will not render properly when that language is activated.
 
-You will need to manually correct the code in the translated version of the Form.&#x20;
+You will need to manually correct the code in the translated version of the Form.

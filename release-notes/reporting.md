@@ -20,7 +20,7 @@ But first, let us see what it changes for users responsible for reporting.
 
 Reporting users receive emails and/or notifications inviting them to take part in the reporting exercise.
 
-![Example of a notification invite from Entrepreneur space](<../.gitbook/assets/image (268).png>)
+![Example of a notification invite from Entrepreneur space](<../.gitbook/assets/image (267) (1).png>)
 
 ![Example of an email invite. Email content can be modified.](<../.gitbook/assets/image (265).png>)
 
@@ -30,7 +30,7 @@ Clicking on provided links drives users to their respective reporting form.
 
 The Todo page also keep track of pending reporting tasks.
 
-![One pending reporting task](../.gitbook/assets/Selection\_018.png)
+![One pending reporting task](../.gitbook/assets/Selection_018.png)
 
 Let us now focus on the new report editor.
 
@@ -42,7 +42,7 @@ The report editor presents 4 sections: Overview, When, What, Who and Activity, b
 
 The **Overview** section presents a summary of reporting settings, along with an activation tool, in charge of scheduling reporting instances.
 
-![Screenshot of report editor](<../.gitbook/assets/image (259).png>)
+![Screenshot of report editor](<../.gitbook/assets/image (258) (1).png>)
 
 #### When
 

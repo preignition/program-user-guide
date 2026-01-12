@@ -70,9 +70,7 @@ It is true and therefore hidden when ('do you have children that go to school is
 
 The expression is then inverted using ! to display it for the same configuration.
 
-{% hint style="info" %}
-if you want to hide something (result being true), it is important to use ||and not && because true || false = true (hidden), while true && false = false (displayed)\`.
-{% endhint %}
+if you want to hide something (result being true), it is important to use ||and not && because true || false = true (hidden), while true && false = false (displayed)\\\`. \{% endhint %\}
 
 ## in operator
 
@@ -110,9 +108,7 @@ If the first statement equates to **false** the alternative is returned. The alt
 
 If the first statement equates to true the consequent segment is evaluated. The consequent statement appears immediately after the ? symbol. In this instance the consequent returns false.
 
-{% hint style="info" %}
-The consequent segment can include a series of logical expressions as shown in the example below. The alternative statement can be written as either true or false. This makes the ternary operator highly flexible and suitable for writing complex logical expressions
-{% endhint %}
+\{% hint style="info" %\} The consequent segment can include a series of logical expressions as shown in the example below. The alternative statement can be written as either true or false. This makes the ternary operator highly flexible and suitable for writing complex logical expressions \{% endhint %\}
 
 ### Additional example of the ternary operator
 
@@ -146,15 +142,17 @@ The application adds custom transforms to simplify expressions. Transforms use t
 
 You can use the 'length' operator to customise the number of checkbox optionsd you require a respondent to select.
 
-For instance limiting the number of answers of a question \`What colors do you like\` to no more than 2 answers, add this expression to the validity logic expression:
+For instance limiting the number of answers of a question \`
+
+What colors do you like\` to no more than 2 answers, add this expression to the validity logic expression:
 
 <figure><img src="../../../.gitbook/assets/image (16).png" alt="Screenshot showing how the length operator can be used to limit the number of checkboxes which are checked"><figcaption><p>Screenshot showing how the 'Length' operator can be used to limit the number of options a respondent can select for a checkbox group question</p></figcaption></figure>
 
-A custom validation message can then be added under the settings option. This message will appear if a respondents checks 3 or more colours.  The message will be announced to screen readers.
+A custom validation message can then be added under the settings option. This message will appear if a respondents checks 3 or more colours. The message will be announced to screen readers.
 
 <figure><img src="../../../.gitbook/assets/image (11) (1).png" alt="Screenshot showing how a custom validation message can be created under the settings option."><figcaption><p>Screenshot showing how a custom validation message can be added under the 'settings' option.</p></figcaption></figure>
 
-If a respondents selects more than 3 colours they will be able to continue to fill in the survey.  However they will not be able to submit the survey until the required number of options have been selected.  Respondents will be redirected to the 'invalid' question so the issue can be resolved.
+If a respondents selects more than 3 colours they will be able to continue to fill in the survey. However they will not be able to submit the survey until the required number of options have been selected. Respondents will be redirected to the 'invalid' question so the issue can be resolved.
 
 This short video shows how the validity logic can be applied to customising the number of boxes of a checkbox question you require a respondent to select.
 
@@ -170,17 +168,17 @@ For instance to require respondents to order all the items in this list the foll
 
 The expression result will be 'true' (and therefore 'valid') when:
 
-* The number of options ordered is more than 2 (ie all the options are selected)&#x20;
-* OR (||) no options are selected.  The number of options selected is blank ("")
+* The number of options ordered is more than 2 (ie all the options are selected)
+* OR (||) no options are selected. The number of options selected is blank ("")
 
-A custom validation message can be added under the settings option. This message will appear if a respondents orders some but not all of the options.  The message will be announced to screen readers.
+A custom validation message can be added under the settings option. This message will appear if a respondents orders some but not all of the options. The message will be announced to screen readers.
 
 <figure><img src="../../../.gitbook/assets/image (87).png" alt=""><figcaption><p>Screenshot showing how a custom validation message can be added under the 'settings' option.</p></figcaption></figure>
 
-If a respondents orders some but not all of the options, they will be able to continue to fill in the survey.  However they will not be able to submit the survey until either all or none of the options have been ordered.  Respondents will be redirected to the 'invalid' question so the issue can be resolved.
+If a respondents orders some but not all of the options, they will be able to continue to fill in the survey. However they will not be able to submit the survey until either all or none of the options have been ordered. Respondents will be redirected to the 'invalid' question so the issue can be resolved.
 
 {% hint style="info" %}
-This logical expression has a limitation.  If the question is marked as 'required' the question will appear in red when the page loads even before the question has received focus.  The only way to resolve this currently is to accept this behaviour or not to mark the question as required&#x20;
+This logical expression has a limitation. If the question is marked as 'required' the question will appear in red when the page loads even before the question has received focus. The only way to resolve this currently is to accept this behaviour or not to mark the question as required
 {% endhint %}
 
 This short video shows how the validity logic can be applied to customising the number of order question items to be ordered.

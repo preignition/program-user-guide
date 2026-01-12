@@ -2,19 +2,19 @@
 
 ## Question
 
-"Having invested time and money in creating an accessible survey on Accessible Surveys, I am keen to get feedback from people who have completed the survey. &#x20;
+"Having invested time and money in creating an accessible survey on Accessible Surveys, I am keen to get feedback from people who have completed the survey.
 
-I would like to know what aspects of the survey they enjoyed or would like to see improved.  It would also be great if I could get their consent to share their feedback publically.  &#x20;
+I would like to know what aspects of the survey they enjoyed or would like to see improved. It would also be great if I could get their consent to share their feedback publically.
 
 What is the best way of doing this?"
 
 ## Answer
 
-Many customers choose to include several questions at the end of their survey to gather this type of feedback. &#x20;
+Many customers choose to include several questions at the end of their survey to gather this type of feedback.
 
 Here is worked example which you can use.
 
-### &#x20;Step 1
+### Step 1
 
 Drag and drop a 'rating' question to the end of your form as shown below.
 
@@ -40,7 +40,7 @@ Add two additional 'Long text" questions with the following labels:
 
 We suggest you edit 'Long text' questions as follow:
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Screenshot showing how the Long text questions can be presented</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (3).png" alt=""><figcaption><p>Screenshot showing how the Long text questions can be presented</p></figcaption></figure>
 
 Instructions:
 
@@ -50,7 +50,7 @@ Instructions:
 
 Add a 'Single checkbox' question after the question "Please tell us what you liked about the survey" and before the question "Please tell us what you did not like about the survey" as show below.
 
-<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Screenshot showing a 'Single checkbox' question being added to the form</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption><p>Screenshot showing a 'Single checkbox' question being added to the form</p></figcaption></figure>
 
 We suggest you edit the Single checkbox as follow:
 
@@ -86,17 +86,17 @@ Instructions
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-The logical expression uses the invert function (!) an asks whether the value entered to the question 'Did you like this survey?' is **not** equal to 9 or more. &#x20;
+The logical expression uses the invert function (!) an asks whether the value entered to the question 'Did you like this survey?' is **not** equal to 9 or more.
 
 If the answer is blank or less than 9, the expression is TRUE and the question "Please tell us what you liked about the survey" is hidden.
 
-If the answer is 9 or 10, the expression is FALSE and the question "Please tell us what you liked about the survey" is displayed.  &#x20;
+If the answer is 9 or 10, the expression is FALSE and the question "Please tell us what you liked about the survey" is displayed.
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Instructions
 
-<table data-header-hidden><thead><tr><th width="109"></th><th></th></tr></thead><tbody><tr><td><mark style="color:red;"><strong>1</strong></mark></td><td>Toggle on the 'test expression' button </td></tr><tr><td><mark style="color:red;"><strong>2</strong></mark></td><td>Test whether the expression is working as intended</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="109"></th><th></th></tr></thead><tbody><tr><td><mark style="color:red;"><strong>1</strong></mark></td><td>Toggle on the 'test expression' button</td></tr><tr><td><mark style="color:red;"><strong>2</strong></mark></td><td>Test whether the expression is working as intended</td></tr></tbody></table>
 
 ### Step 7
 
@@ -110,7 +110,7 @@ Instructions:
 
 <table data-header-hidden><thead><tr><th width="94" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">1</td><td valign="top">Copy the logical expression</td></tr><tr><td valign="top">2</td><td valign="top">Toggle off the button 'Lock this question while editing logic'</td></tr></tbody></table>
 
-Then copy the expression into the next question.&#x20;
+Then copy the expression into the next question.
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
@@ -128,18 +128,18 @@ This can be acheived as follows:
 
 Instructions:
 
-<table data-header-hidden><thead><tr><th width="85" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><mark style="color:red;"><strong>1</strong></mark></td><td valign="top">Select the question "Please tell us what you did not like about the survey" from the tree structure.</td></tr><tr><td valign="top"><mark style="color:red;"><strong>2</strong></mark></td><td valign="top">Toggle on the button "Lock this question while editing logic"</td></tr><tr><td valign="top"><mark style="color:red;"><strong>3</strong></mark></td><td valign="top">Write the logical expression exactly as shown.  </td></tr><tr><td valign="top"><mark style="color:red;"><strong>4</strong></mark></td><td valign="top">Test the logical expression</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="85" valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top"><mark style="color:red;"><strong>1</strong></mark></td><td valign="top">Select the question "Please tell us what you did not like about the survey" from the tree structure.</td></tr><tr><td valign="top"><mark style="color:red;"><strong>2</strong></mark></td><td valign="top">Toggle on the button "Lock this question while editing logic"</td></tr><tr><td valign="top"><mark style="color:red;"><strong>3</strong></mark></td><td valign="top">Write the logical expression exactly as shown.</td></tr><tr><td valign="top"><mark style="color:red;"><strong>4</strong></mark></td><td valign="top">Test the logical expression</td></tr></tbody></table>
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-The first part of the logical expression asks whether the value entered to the question 'Did you like this survey?' is **not** 3 or less.  The second part of the logical expression uses an OR (||) fuction to assess whether there is no answer to the question 'Did you like this survey?' &#x20;
+The first part of the logical expression asks whether the value entered to the question 'Did you like this survey?' is **not** 3 or less. The second part of the logical expression uses an OR (||) fuction to assess whether there is no answer to the question 'Did you like this survey?'
 
 If the answer 4 or more OR if there is no answer to the question, the expression is TRUE and the question "Please tell us what you did not like about the survey" is hidden.
 
 If the answer is less than 4, the expression is FALSE and the question "Please tell us what you did not like about the survey is displayed.
 
 {% hint style="success" %}
-This is a sophisticated example of a logical expression.  Even if you do not totally understand how the logic is working, writing the expression exactly as shown above will produce the desired effect.
+This is a sophisticated example of a logical expression. Even if you do not totally understand how the logic is working, writing the expression exactly as shown above will produce the desired effect.
 {% endhint %}
 
 ### Step 9
@@ -147,4 +147,3 @@ This is a sophisticated example of a logical expression.  Even if you do not tot
 Lastly test the form to check that the logical expression is working as intended.
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
-

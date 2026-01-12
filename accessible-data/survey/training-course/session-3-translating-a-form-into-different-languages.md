@@ -1,8 +1,10 @@
 ---
-description: This training session shows you how to translate your survey into different languages
+description: >-
+  This training session shows you how to translate your survey into different
+  languages
 ---
 
-# Session 3- Translating your survey
+# Session 3- Translating a survey
 
 ## Session Overview
 
@@ -36,17 +38,11 @@ You will be an 'Account Holder' if you created the account for your 'Organizatio
 
 When signed into your account, you will be able to view and access the 'Customer' portal from the homepage.
 
-<figure>
-  <img src="assets/account-holder-homepage.png" alt="Homepage for an Account Holder with 'Customer' highlighted.">
-  <figcaption><p>Screenshot of a homepage for an 'Account Holder'.</p></figcaption>
-</figure>
+<figure><img src="../../../.gitbook/assets/account-holder-homepage.png" alt="Homepage for an Account Holder with &#x27;Customer&#x27; highlighted."><figcaption><p>Screenshot of a homepage for an 'Account Holder'.</p></figcaption></figure>
 
 If you are a 'Team Member' but not an 'Account Holder', when signed in to your account you will not be able to view or access the 'Customer' portal from the homepage.
 
-<figure>
-  <img src="assets/team-member-homepage.png" alt="screenshot of a homepage for a 'Team Member'">
-  <figcaption><p>Screenshot of a homepage for a 'Team Member'.</p></figcaption>
-</figure>
+<figure><img src="../../../.gitbook/assets/team-member-homepage.png" alt="screenshot of a homepage for a &#x27;Team Member&#x27;"><figcaption><p>Screenshot of a homepage for a 'Team Member'.</p></figcaption></figure>
 
 If French and Spanish haven't already been added for your 'Organization', you will need to ask an 'Account Holder' to add them for your 'Organization' so you can complete this training session.
 

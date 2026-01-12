@@ -32,11 +32,11 @@ Here is a tooltip example: <pwi-tooltip message="this is the tooltip" position="
 
 Produces:
 
-> <img src="image/tooltip-hover.png" alt="tooltip example" data-size="original">
+> <img src="../../.gitbook/assets/tooltip-hover.png" alt="tooltip example" data-size="original">
 
 When a user over the tooltip with or activate it :
 
-> <img src="image/tooltip.png" alt="tooltip example" data-size="original">
+> <img src="../../.gitbook/assets/tooltip.png" alt="tooltip example" data-size="original">
 
 **Properties**
 
@@ -66,7 +66,7 @@ Usually, only `term` property should be used:
 
 Produces:
 
-> <img src="image/tooltip-complex.png" alt="tooltip example" data-size="original">
+> <img src="../../.gitbook/assets/tooltip-complex.png" alt="tooltip example" data-size="original">
 
 #### Properties
 
@@ -127,7 +127,7 @@ It is sometime helpful to add icons directly in the text. [Material icons](https
 
 Produces:
 
-> <img src="image/icon.png" alt="icon example" data-size="original">
+> <img src="../../.gitbook/assets/icon.png" alt="icon example" data-size="original">
 
 ## Video - `<lapp-youtube>` or `<lite-youtube>`
 
@@ -173,7 +173,7 @@ In context of forms or survey, it also display readaloud and Internation Sign se
 
 produces:
 
-> <img src="image/menu.png" alt="tooltip example" data-size="original">
+> <img src="../../.gitbook/assets/menu (1).png" alt="tooltip example" data-size="original">
 
 #### Properties
 
@@ -193,7 +193,7 @@ It renders with `open accessibility settings` label and an accessibility Icon
 
 Produces:
 
-> <img src="image/button.png" alt="accessibility dialog button example" data-size="original">
+> <img src="../../.gitbook/assets/button.png" alt="accessibility dialog button example" data-size="original">
 
 #### Properties
 
@@ -210,10 +210,10 @@ Individual controls exists for each accessibility settings. We recommend the use
 
 However there are cases where it makes sense to introduce each accessibility controls individually.
 
-| Control                                   | Description                                       | Example                                                 |
-| ----------------------------------------- | ------------------------------------------------- | ------------------------------------------------------- |
-| `<a11y-easyread></a11y-easyread>`         | On/Off easyread accessibility settings            | ![pfo-accessibility-easyread example](image/t1.png)     |
-| `<a11y-readaloud></a11y-readaloud>`       | On/Off readaloud accessibility settings           | ![pfo-accessibility-readaloud example](image/t2.png)    |
-| `<a11y-signlanguage></a11y-signlanguage>` | On/Off International Sign (IS) accessibility mode | ![pfo-accessibility-signlanguage example](image/t3.png) |
-| `<a11y-theme></a11y-theme>`               | Display a list of available themes                | ![pfo-accessibility-theme example](image/t4.png)        |
-| `<a11y-font></a11y-font>`                 | set font size                                     | ![pfo-accessibility-font example](image/t5.png)         |
+| Control                                   | Description                                       | Example                                                                 |
+| ----------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------------------- |
+| `<a11y-easyread></a11y-easyread>`         | On/Off easyread accessibility settings            | ![pfo-accessibility-easyread example](../../.gitbook/assets/t1.png)     |
+| `<a11y-readaloud></a11y-readaloud>`       | On/Off readaloud accessibility settings           | ![pfo-accessibility-readaloud example](../../.gitbook/assets/t2.png)    |
+| `<a11y-signlanguage></a11y-signlanguage>` | On/Off International Sign (IS) accessibility mode | ![pfo-accessibility-signlanguage example](../../.gitbook/assets/t3.png) |
+| `<a11y-theme></a11y-theme>`               | Display a list of available themes                | ![pfo-accessibility-theme example](../../.gitbook/assets/t4.png)        |
+| `<a11y-font></a11y-font>`                 | set font size                                     | ![pfo-accessibility-font example](../../.gitbook/assets/t5.png)         |

@@ -7,26 +7,26 @@ description: >-
 # Subscription
 
 {% hint style="info" %}
-This part of the application is under development and some actions are not supported.  The note below describes what is currently in place. &#x20;
+This part of the application is under development and some actions are not supported. The note below describes what is currently in place.
 {% endhint %}
 
-If you need additional help managing your subscription please email contact@accessiblesurveys.com&#x20;
+If you need additional help managing your subscription please email contact@accessiblesurveys.com
 
-This is what the 'Subscription' page looks like when you are within your trail period and are yet to set up a payment method. &#x20;
+This is what the 'Subscription' page looks like when you are within your trail period and are yet to set up a payment method.
 
 <figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption><p>Screenshot showing what the Subscription page looks like when you are within your trial perion</p></figcaption></figure>
 
-This is what the 'Subscription' page looks like when you are ouside your trail period and are yet to set up a payment method. &#x20;
+This is what the 'Subscription' page looks like when you are ouside your trail period and are yet to set up a payment method.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 When you have set up a payment method, you will just see the details of your current subscription
 
 ## Setting up a payment method
 
-It is possible to set up a payment method at any time.  However the way of doing this will depend upon whether you are in your trail period or not.
+It is possible to set up a payment method at any time. However the way of doing this will depend upon whether you are in your trail period or not.
 
-The short video below shows how to set up a payment method in both circumstances.  As shown in the video you can set up a Direct Debit with your bank or pay using a debit or credit card.
+The short video below shows how to set up a payment method in both circumstances. As shown in the video you can set up a Direct Debit with your bank or pay using a debit or credit card.
 
 {% embed url="https://youtu.be/s0GHw74y4yg" %}
 Short video which shows how to set up a payment method.
@@ -34,7 +34,7 @@ Short video which shows how to set up a payment method.
 
 ## Upgrading, changing or cancelling your plan
 
-It is not currently possible to upgrade or change your plan from the Subscription page.  If you would like to do this please email contact@accessiblesurveys.com
+It is not currently possible to upgrade or change your plan from the Subscription page. If you would like to do this please email contact@accessiblesurveys.com
 
 If you would like to cancel your plan, this can be done from the billing potral as shown in the video below.
 
@@ -54,8 +54,8 @@ You can view your payment history under 'payments'
 
 ## Quota
 
-Under 'Quota' you can see the number of 'Surveys' and 'Teams' you have available under your current plan. &#x20;
+Under 'Quota' you can see the number of 'Surveys' and 'Teams' you have available under your current plan.
 
-In the future you will be able to puchase additions surveys or teams from here if this is more cost effective than upgrading your plan.  This feature is not yet in place.
+In the future you will be able to puchase additions surveys or teams from here if this is more cost effective than upgrading your plan. This feature is not yet in place.
 
 <figure><img src="../../../.gitbook/assets/image (99).png" alt=""><figcaption><p>Screenshot showing the the organisations quota of surveys and teams.</p></figcaption></figure>

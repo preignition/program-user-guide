@@ -12,7 +12,7 @@ An image must first be added to the Image Library before it can be used in a for
 
 The Image Library is accessed from the Form Definition menu in the form Build mode
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the Image Library in the Form Definition menu</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (2).png" alt=""><figcaption><p>Screenshot showing the Image Library in the Form Definition menu</p></figcaption></figure>
 
 ## Step 2
 
@@ -26,7 +26,7 @@ Once in the Image Library, users have two ways to add images. Images can either 
 Make sure your images are a consistent size before uploading them to your image library
 {% endhint %}
 
-In order for your images to good in your forms, it is important that they are a consistent ratio and appropriate size for the web. &#x20;
+In order for your images to good in your forms, it is important that they are a consistent ratio and appropriate size for the web.
 
 Your should resize your images **before** uploading them to your image library.
 

@@ -12,7 +12,7 @@ Form behaviour enables you to customise your Form so it adapts to the specific n
 
 Form Behaviour can be found in the Form Definition menu in the left hand column
 
-<figure><img src="../../../.gitbook/assets/image (64).png" alt=""><figcaption><p>Screenshot showing Form Behaviour in the Form Definition menu</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (63) (1).png" alt=""><figcaption><p>Screenshot showing Form Behaviour in the Form Definition menu</p></figcaption></figure>
 
 ## Step 2
 
@@ -20,13 +20,11 @@ There are three accessibility modes whch can be activated for a Form
 
 <figure><img src="../../../.gitbook/assets/image (65).png" alt=""><figcaption><p>Screenshot showing the three accessibility modes which can be activated for a form</p></figcaption></figure>
 
-
-
-<table><thead><tr><th width="204">Accessibility Mode</th><th>Description</th></tr></thead><tbody><tr><td><img src="../../../.gitbook/assets/image (66).png" alt="" data-size="original"></td><td><strong>Easy Read</strong> mode presents a simplified form interface to the user.  Parts of the form can be hidden (pages, sections or questions) and illustrations can be added.  See the '<a href="easy-read.md">Easy Read</a>' Guidance Note for more information</td></tr><tr><td><img src="../../../.gitbook/assets/image (81).png" alt="" data-size="original"></td><td><strong>Sign Language</strong> mode allows form builders to attach videos for questions which are displayed when this mode is activated.  See the '<a href="sign-language.md">Sign Language</a>' Guidance Note for more information</td></tr><tr><td><img src="../../../.gitbook/assets/image (82).png" alt="" data-size="original"></td><td><strong>Voice Recording</strong> mode allows survey respondents to leave voice messages as answers to text based questions.</td></tr></tbody></table>
+<table><thead><tr><th width="204">Accessibility Mode</th><th>Description</th></tr></thead><tbody><tr><td><img src="../../../.gitbook/assets/image (66).png" alt="" data-size="original"></td><td><strong>Easy Read</strong> mode presents a simplified form interface to the user. Parts of the form can be hidden (pages, sections or questions) and illustrations can be added. See the '<a href="easy-read.md">Easy Read</a>' Guidance Note for more information</td></tr><tr><td><img src="../../../.gitbook/assets/image (81).png" alt="" data-size="original"></td><td><strong>Sign Language</strong> mode allows form builders to attach videos for questions which are displayed when this mode is activated. See the '<a href="sign-language.md">Sign Language</a>' Guidance Note for more information</td></tr><tr><td><img src="../../../.gitbook/assets/image (82).png" alt="" data-size="original"></td><td><strong>Voice Recording</strong> mode allows survey respondents to leave voice messages as answers to text based questions.</td></tr></tbody></table>
 
 Once activated, these modes can be accesses from the form builder as shown below
 
-<figure><img src="../../../.gitbook/assets/image (76).png" alt=""><figcaption><p>Screenshot showing the accessibility mode buttons in the form builder</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (72) (1).png" alt=""><figcaption><p>Screenshot showing the accessibility mode buttons in the form builder</p></figcaption></figure>
 
 ## Step 3
 
@@ -48,9 +46,9 @@ Once a form is localised, a 'localised mode' also appears in the form builder vi
 
 ## Step 5
 
-Layout gives the option to illustate a question with an image or video.  It also allows you to choose the positioning of the illustration as shown below
+Layout gives the option to illustate a question with an image or video. It also allows you to choose the positioning of the illustration as shown below
 
-<figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption><p>Screenshot showing how illustrations for questions can be enabled.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (78) (1).png" alt=""><figcaption><p>Screenshot showing how illustrations for questions can be enabled.</p></figcaption></figure>
 
 {% hint style="warning" %}
 We recommend you allow for the automatic positioning of illustrations as the best position for an illustration will depend on the screen size the repondent is using.

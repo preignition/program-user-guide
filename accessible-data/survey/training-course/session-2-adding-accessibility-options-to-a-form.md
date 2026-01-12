@@ -1,5 +1,7 @@
 ---
-description: This training session shows you how to add accessibility options to your survey.
+description: >-
+  This training session shows you how to add accessibility options to your
+  survey.
 ---
 
 # Session 2- Adding accessibility options
@@ -45,10 +47,10 @@ Currently survey builders need to create their own sign language videos. If requ
 
 When you add Easy Read images to your survey, these images are the ones to use.
 
-| | | |
-| :---: | :---: | :---: |
-| <img src="assets/1 ER image for Survey.png" alt="Easy Read image for 'Which survey tool does your organisation use the most?'" width="100%"> | <img src="assets/2 ER image for Satisfaction.png" alt="Easy Read image for 'I am satisifed with my current survey tool'" width="100%"> | <img src="assets/3 ER image for what do you like.png" alt="Easy Read image for 'What do you like about the survey tool you are using?'" width="100%"> |
-| <img src="assets/4 ER image for what frustrates you.png" alt="Easy Read image for 'What frustrates you about the survey tool that you are using?'" width="100%"> | <img src="assets/5 ER image do you like this survey.png" alt="Easy Read image for 'Do you like this survey?'" width="100%"> | |
+|                                                                                                                                                               |                                                                                                                                     |                                                                                                                                                    |
+| :-----------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: |
+|           ![Easy Read image for 'Which survey tool does your organisation use the most?'](<../../../.gitbook/assets/1 ER image for Survey (1).png>)           | ![Easy Read image for 'I am satisifed with my current survey tool'](<../../../.gitbook/assets/2 ER image for Satisfaction (1).png>) | ![Easy Read image for 'What do you like about the survey tool you are using?'](<../../../.gitbook/assets/3 ER image for what do you like (1).png>) |
+| ![Easy Read image for 'What frustrates you about the survey tool that you are using?'](<../../../.gitbook/assets/4 ER image for what frustrates you (1).png>) |       ![Easy Read image for 'Do you like this survey?'](<../../../.gitbook/assets/5 ER image do you like this survey (1).png>)      |                                                                                                                                                    |
 
 I suggest you download these into a separate folder on your computer before you start the session. The video will show you how to add the images to your survey.
 
@@ -72,6 +74,5 @@ The video is 12 minutes long and we estimate that it will take you about 15 to 2
 ## Next Steps
 
 {% hint style="success" %}
-You have completed the second Training Session! You can now start the third Training Session.
-This shows you how to translate your survey into multiple languages.
+You have completed the second Training Session! You can now start the third Training Session. This shows you how to translate your survey into multiple languages.
 {% endhint %}

@@ -30,7 +30,7 @@ You will need the following learning materials to complete this session.
 
 The PDF file below includes the text for the 'Introductory Page' and 'Thank You Page', as well as the 'Questions' to include in your 'Form'.
 
-[\[Text for Training Survey\]](<assets/1.  Text for Training Survey.pdf>)
+[\[Text for Training Survey\]](https://drive.google.com/file/d/1IgSwJIfl8nkrVgiSqi5EIKhhtknTviN-/view?usp=sharing)
 
 {% hint style="info" %}
 Download the 'Text for Training Survey' on to your device before starting this training session. You can then copy and paste the content into your training survey, saving you time.
