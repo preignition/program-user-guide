@@ -1,59 +1,85 @@
+---
+description: This page describes how you can create a new survey from scratch.
+---
+
 # Creating a new survey
 
 {% hint style="info" %}
 A step by step guide to creating a new survey
 {% endhint %}
 
-## Step 1
+## Step 1: Start the creation process
 
-Select 'New Survey' on your survey workspace
+Select **New Survey** on your survey workspace.
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt="Screenshot of a survey workspace.  A list of suveys is displayed in a grid.  There is a button with the label &#x27;New Survey&#x27; in the bottom right hand corner"><figcaption></figcaption></figure>
+<figure>
+  <img src="assets/creating-a-new-survey/step-1-click-new-survey.png" alt="Click new survey button">
+  <figcaption>Click new survey button</figcaption>
+</figure>
 
-## Step 2
+## Step 2: Provide survey details
 
-Give your survey a name and brief description. The select 'next'
+Give your survey a **Name** and a brief **Description**. 
 
-![](<../../.gitbook/assets/image (38).png>)
+<figure>
+  <img src="assets/creating-a-new-survey/step-2-fill-name-and-description.png" alt="Fill in name and description">
+  <figcaption>Fill in name and description</figcaption>
+</figure>
 
 {% hint style="warning" %}
 You will not be able to move to the next step until the survey has a name and description.
 {% endhint %}
 
-## Step 3
+Then, select **Next**.
 
-Surveys use 'Forms' to collect data
+<figure>
+  <img src="assets/creating-a-new-survey/step-2-press-next.png" alt="Press next button">
+  <figcaption>Press next button</figcaption>
+</figure>
 
-You can create a new form by giving it a name, description and first page.
+## Step 3: Choose or create a form
 
-If you already have a form that you want to use in your survey, you can skip this step and select an exisiting form later on.
+Surveys use 'Forms' to collect data.
 
-Then select 'next'
+You can create a new form right away by providing a name, description, and first page title.
 
-![](<../../.gitbook/assets/image (39).png>)
+<figure>
+  <img src="assets/creating-a-new-survey/step-3-choose-type-of-form.png" alt="Choose type of form">
+  <figcaption>Choose type of form</figcaption>
+</figure>
 
-## Step 4
+If you already have a form that you want to use in your survey, you can choose to select an existing form instead. 
 
-On the summary page you will be asked to confirm that you want to create a new survey.
+Fill in the necessary form details.
 
-![](<../../.gitbook/assets/image (41).png>)
+<figure>
+  <img src="assets/creating-a-new-survey/step-3-fill-form-details.png" alt="Fill in form details">
+  <figcaption>Fill in form details</figcaption>
+</figure>
 
-## Step 5
+Then, select **Next**.
 
-If you created a new form you will now see a summary page showing the 'Survey Editor' the 'Form Editor' and the 'Analytics' page.
+<figure>
+  <img src="assets/creating-a-new-survey/step-3-press-next.png" alt="Press next button">
+  <figcaption>Press next button</figcaption>
+</figure>
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+## Step 4: Review and Confirm
 
-## Step 6
+On the summary page, you will be asked to confirm your choices and verify that you want to create the new survey with these settings.
 
-If you chose to select an exisiting form later on, your summary page will show the 'Survey Editor' and 'Analytics' page.
+<figure>
+  <img src="assets/creating-a-new-survey/step-4-confirm.png" alt="Review survey details">
+  <figcaption>Review survey details</figcaption>
+</figure>
 
-You can select an existing form from the survey editor.
+Click **Confirm**.
 
-{% embed url="https://youtu.be/nOd9LJo-zSw" %}
-Short video showing how to select an existing form
-{% endembed %}
+<figure>
+  <img src="assets/creating-a-new-survey/step-4-press-confirm.png" alt="Press confirm button">
+  <figcaption>Press confirm button</figcaption>
+</figure>
 
 {% hint style="success" %}
-Congratulations you have sucessfull created a new survey. The following 'Guidance Notes' will show you how to build it out.
+Congratulations, you have successfully created a new survey! You will now be redirected to the survey editor.
 {% endhint %}
