@@ -181,7 +181,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
   test('survey', async ({ page }) => {
     const context = new Context(
       `http://localhost:${port}/${suffix}`,
-      'accessible-data/survey/',
+      'accessible-data/survey/reference',
     )
     context.setPage(page)
     await page.setViewportSize({ width: 1600, height: 1080 })
@@ -274,7 +274,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .addArea('content', pageContent)
       .addArea('grid', treeGrid, true)
       .addArea('view', treeView, true)
-      
+
 
     // INFO PAGE
     await page.getByText('Introduction Page').first().click()
@@ -331,7 +331,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await context
       .setName('text-area')
       .screenshot(true)
-      
+
 
     await page.getByText('text-based fields').click()
     await page.waitForTimeout(50)
@@ -393,7 +393,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .removeArea('view')
       .removeArea('content')
       .addArea('content', pageContent, true)
-      
+
     // Behavior
     await page.getByText('Form Behavior').click()
     console.info(`Capturing behavior`)
