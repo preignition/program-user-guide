@@ -12,7 +12,9 @@
   "packageManager": "pnpm@10.18.3",
   "devDependencies": {
     "@playwright/test": "^1.56.1",
+    "@types/node": "^25.4.0",
     "dotenv": "^17.2.3",
+    "firebase-admin": "^13.7.0",
     "playwright": "^1.56.1",
     "typescript": "^5.9.3"
   }

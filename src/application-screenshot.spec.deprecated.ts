@@ -184,7 +184,7 @@ test.describe('Survey Builder Screenshots', () => {
         await page.screenshot({
           path: `accessible-data/survey/${fullFilePath}/assets/auto-${location.name ?
             `${location.name}` :
-            location.url.split('/').pop()}.png`,
+            location.url!.split('/').pop()}.png`,
           fullPage: false,
           ...(location.options || {})
         })

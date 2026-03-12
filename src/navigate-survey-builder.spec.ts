@@ -1,129 +1,8 @@
-import { test, type Page, type PageScreenshotOptions } from '@playwright/test'
-import * as path from 'path'
+import { test } from '@playwright/test'
+import { Context } from './Context.ts'
+import { ClipT } from './types.ts'
+import { takeScreenshotAllModes } from './utils/takeScreenshotAllModes.ts'
 
-type ContextT = {
-  url: string
-  page: Page
-  name: string
-  path: string
-}
-
-type AreaT = {
-  name: string
-  clip?: ClipT
-  advanced?: boolean
-}
-class Context implements ContextT {
-  url: string
-  name: string
-  path: string
-  page: Page
-  area: AreaT[] = [];
-  constructor(
-    url: string,
-    path: string,
-
-  ) {
-    this.path = path
-    this.url = url
-  }
-
-  setArea(area: AreaT[]) {
-    this.area = area
-    return this
-  }
-
-  addArea(name: string, clip?: ClipT, advanced?: boolean) {
-    this.area.push({ name, clip, advanced })
-    return this
-  }
-  removeArea(name: string) {
-    this.area = this.area.filter(a => a.name !== name)
-    return this
-  }
-
-  setName(name: string) {
-    this.name = name
-    return this
-  }
-
-  setPath(segment: string) {
-    this.path = path.join(this.path, segment)
-    return this
-  }
-
-  setPage(page: Page) {
-    this.page = page
-    return this
-  }
-
-  async screenshot(advanced?: boolean) {
-    const name = this.name
-    const advancedModeSwitch = (await this.page.getByRole('switch', { name: 'toggle advanced mode' }).isVisible())
-      ? this.page.getByRole('switch', { name: 'toggle advanced mode' })
-      : undefined
-    const isAdvancedMode = await advancedModeSwitch?.isChecked() || false
-    let pageIsLargerThanViewport = await this.page.evaluate(() => {
-      return document.body.scrollHeight > window.innerHeight || document.body.scrollWidth > window.innerWidth
-    })
-    // await this.page.waitForTimeout(50);
-    await advancedModeSwitch?.uncheck()
-    await this.page.waitForTimeout(50)
-
-    await Promise.all(
-
-      [this.page.screenshot({
-        path: `${this.path}/assets/${name}-auto.png`,
-      }),
-      pageIsLargerThanViewport &&
-      this.page.screenshot({
-        path: `${this.path}/assets/${name}-full-auto.png`,
-        fullPage: true,
-      }),
-      this.area.map(a => this.page.screenshot({
-        path: `${this.path}/assets/${name}-${a.name}-auto.png`,
-        clip: a.clip,
-      }))
-      ]
-    )
-
-    if (advanced) {
-      // click advanced
-      await advancedModeSwitch?.check()
-      await this.page.waitForTimeout(50)
-      pageIsLargerThanViewport = await this.page.evaluate(() => {
-        return document.body.scrollHeight > window.innerHeight || document.body.scrollWidth > window.innerWidth
-      })
-      await Promise.all(
-
-        [this.page.screenshot({
-          path: `${this.path}/assets/${name}-advanced-auto.png`,
-        }),
-        pageIsLargerThanViewport &&
-        this.page.screenshot({
-          path: `${this.path}/assets/${name}-advanced-full-auto.png`,
-          fullPage: true,
-        }),
-        this.area
-          .filter(a => a.advanced === true)
-          .map(a => this.page.screenshot({
-            path: `${this.path}/assets/${name}-${a.name}-advanced-auto.png`,
-            clip: a.clip,
-          }))
-        ]
-      )
-
-    }
-    if (isAdvancedMode) {
-      await advancedModeSwitch?.check()
-    } else {
-      await advancedModeSwitch?.uncheck()
-
-    }
-    await this.page.waitForTimeout(50)
-    return this
-  }
-}
 
 const port = process.env.PLAYWRIGHT_PORT || '7174'
 const baseUrl = `http://localhost:${port}`
@@ -131,49 +10,6 @@ const surveyId = '3BBFzJneqakYoyDu02c2'
 
 const suffix = `s/edit/survey/${surveyId}/build/compose/survey/intro`
 
-
-// const screenshotAllSize = async (context: Context) => {  
-//   await context.screenshot(`${context.name}`, { fullPage: false });
-//   await context.screenshot(`${context.name}-fullpage`, { fullPage: true });
-//   await context.screenshot(`${context.name}-clip`, { clip: clipBuildContent });
-// }
-
-const screenshotAllModes = async (context: Context) => {
-  const { page, name } = context
-
-  await page.getByRole('button', { name: 'Settings Mode' }).click()
-  await page.waitForTimeout(350)
-  await context
-    .setName(name)
-    .screenshot()
-  await page.getByRole('button', { name: 'Localize Mode' }).click()
-  await page.waitForTimeout(350)
-  await context
-    .setName(`${name}-localize`)
-    .screenshot()
-  await page.getByRole('button', { name: 'Read Aloud Mode' }).click()
-  await page.waitForTimeout(350)
-  await context
-    .setName(`${name}-readaloud`)
-    .screenshot()
-  await page.getByRole('button', { name: 'Easy Read Mode' }).click()
-  await page.waitForTimeout(350)
-  await context
-    .setName(`${name}-easyread`)
-    .screenshot()
-  await page.getByRole('button', { name: 'Sign language Mode' }).click()
-  await page.waitForTimeout(350)
-  await context
-    .setName(`${name}-signlanguage`)
-    .screenshot()
-  await page.getByRole('button', { name: 'Visibility Mode' }).click()
-  await page.waitForTimeout(350)
-  await context
-    .setName(`${name}-visibility`)
-    .screenshot()
-  await page.getByRole('button', { name: 'Settings Mode' }).click()
-  await page.waitForTimeout(350)
-}
 
 
 test.describe('Survey Builder Navigation and Screenshots', () => {
@@ -196,7 +32,6 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .setArea([{ name: 'fab', clip: fabBar }])
       .screenshot()
     context.removeArea('fab')
-
 
     // CREATE SURVEY
     await page.getByRole('button', { name: 'New Survey' }).click()
@@ -321,7 +156,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .setPath('../question')
       .setName('question')
       .screenshot()
-    await screenshotAllModes(context)
+    await takeScreenshotAllModes(context)
 
     console.info(`Capturing text-based fields`)
     context
@@ -544,8 +379,6 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
   })
 })
 
-
-type ClipT = PageScreenshotOptions['clip']
 
 
 const menu: ClipT = {
