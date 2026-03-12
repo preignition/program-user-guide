@@ -34,41 +34,43 @@ Fundamental tasks for building your survey and forms, including adding questions
 
 ---
 
-## 2. Accessibility & Translation
+## 2. Accessibility
 
 Implementing specialized features like Easy Read, Sign Language videos, and multi-language support.
 
 ### Accessibility Features
 
-- [Adding an accessibility menu](./accessibility-and-translation/adding-an-accessibility-menu.md) - *in progress*
-- [Easy Read](./accessibility-and-translation/easy-read.md) - *in progress*
-- [Sign Language](./accessibility-and-translation/sign-language.md) - *in progress*
+- [Adding an accessibility menu](./accessibility/adding-an-accessibility-menu.md) - *in progress*
+- [Easy Read](./accessibility/easy-read.md) - *in progress*
+- [Sign Language](./accessibility/sign-language.md) - *in progress*
+
+## 3. Localization & Translation
 
 ### Translation & Localization
 
-- [Translate forms](./accessibility-and-translation/translate-forms.md) - *in progress*
-- [Using import/export to translate forms](./accessibility-and-translation/using-import-export-to-translate-forms.md) - *in progress*
+- [Translate forms](./accessibility/localization/translate-forms.md) - *in progress*
+- [Using import/export to translate forms](./accessibility/localization/using-import-export-to-translate-forms.md) - *in progress*
 
 ---
 
-## 3. Logic & Behavior
+## 4. Logic & Behavior
 
 Controlling survey flow, adding logical expressions, and customizing form behavior.
 
-- [Introduction to form logic](./logic-and-behavior/introduction-to-form-logic.md) - *in progress*
-- [Advanced form logic](./logic-and-behavior/advanced-form-logic.md) - *in progress*
+- [Introduction to form logic](./logic-and-behavior/introduction-to-logic.md) - *in progress*
+- [Advanced form logic](./logic-and-behavior/advanced-logic.md) - *in progress*
 - [Form behaviour](./logic-and-behavior/form-behaviour.md) - *in progress*
 
 ---
 
-## 4. Distribution & Data
+## 5. Distribution & Data
 
 Generating links, managing survey batches, configuring respondent accounts, and analyzing or exporting survey data.
 
 ### Sharing & Distribution
 
 - [Distributing your survey (Generating links)](./distribution-and-data/generating-survey-links.md) - *in progress*
-- [Creating alias survey links](./distribution-and-data/creating-alias-survey-links.md) - *in progress*
+- [Creating alias survey links](./distribution-and-data/creating-alias.md) - *in progress*
 - [Survey batches](./distribution-and-data/using-survey-batches.md) - *in progress*
 - [Survey respondent accounts](./distribution-and-data/survey-respondent-accounts.md) - *in progress*
 - [Redirection after completing survey](./distribution-and-data/redirection-after-completing-survey.md) - *in progress*
@@ -76,5 +78,5 @@ Generating links, managing survey batches, configuring respondent accounts, and 
 
 ### Analytics & Export
 
-- [Introduction to survey analytics](./distribution-and-data/introduction-to-survey-analytics.md) - *in progress*
+- [Introduction to survey analytics](./distribution-and-data/survey-analytics.md) - *in progress*
 - [Exporting survey data](./distribution-and-data/exporting-survey-data.md) - *in progress*

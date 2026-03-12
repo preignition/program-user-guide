@@ -11,6 +11,7 @@ These guides provide step-by-step instructions for the fundamental tasks of buil
 - [How to create a new survey](./creating-a-new-survey.md)
 - [How to edit an existing survey](./editing-an-existing-survey.md)
 - [How to delete a survey](./deleting-a-survey.md)
+- [How to mark a survey as favorite](./marking-a-survey-as-favorite.md)
 
 ## Adding Content
 
