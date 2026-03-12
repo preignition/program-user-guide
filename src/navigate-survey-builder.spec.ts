@@ -1,4 +1,4 @@
-import { test, expect, type PageScreenshotOptions, type Page } from '@playwright/test';
+import { test, type Page, type PageScreenshotOptions } from '@playwright/test';
 import * as path from 'path';
 
 type ContextT = {
@@ -22,11 +22,11 @@ class Context implements ContextT {
   constructor(
     url: string,
     path: string,
-    
+
   ) {
     this.path = path;
     this.url = url;
-  } 
+  }
 
   setArea(area: AreaT[]) {
     this.area = area;
@@ -41,12 +41,12 @@ class Context implements ContextT {
     this.area = this.area.filter(a => a.name !== name);
     return this;
   }
-  
+
   setName(name: string) {
     this.name = name;
     return this;
   }
-  
+
   setPath(segment: string) {
     this.path = path.join(this.path, segment);
     return this;
@@ -68,8 +68,8 @@ class Context implements ContextT {
     });
     // await this.page.waitForTimeout(50);
     await advancedModeSwitch?.uncheck();
-    await this.page.waitForTimeout(50); 
-    
+    await this.page.waitForTimeout(50);
+
     await Promise.all(
 
       [this.page.screenshot({
@@ -83,7 +83,7 @@ class Context implements ContextT {
       this.area.map(a => this.page.screenshot({
         path: `${this.path}/assets/${name}-${a.name}-auto.png`,
         clip: a.clip,
-      })) 
+      }))
       ]
     )
 
@@ -109,10 +109,10 @@ class Context implements ContextT {
           .map(a => this.page.screenshot({
             path: `${this.path}/assets/${name}-${a.name}-advanced-auto.png`,
             clip: a.clip,
-          })) 
+          }))
         ]
-      )  
-       
+      )
+
     }
     if (isAdvancedMode) {
       await advancedModeSwitch?.check();
@@ -120,12 +120,12 @@ class Context implements ContextT {
       await advancedModeSwitch?.uncheck();
 
     }
-    await this.page.waitForTimeout(50); 
+    await this.page.waitForTimeout(50);
     return this;
   }
 }
 
-const port = process.env.PLAYWRIGHT_PORT || '7173';
+const port = process.env.PLAYWRIGHT_PORT || '7174';
 const baseUrl = `http://localhost:${port}`;
 const surveyId = '3BBFzJneqakYoyDu02c2';
 
@@ -189,14 +189,14 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await page.waitForTimeout(2000);
     await page.getByRole('link', { name: 'Survey', exact: true }).click();
     await page.waitForTimeout(1000);
-    
+
     // WORKSPACE
     await context
       .setName('workspace')
       .setArea([{ name: 'fab', clip: fabBar }])
       .screenshot();
     context.removeArea('fab')
-      
+
 
     // CREATE SURVEY
     await page.getByRole('button', { name: 'New Survey' }).click();
@@ -210,7 +210,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .setName('create-survey')
       .setArea([{ name: 'dialog', clip: dialog }])
       .screenshot();
-    
+
     await page.getByRole('button', { name: 'Form', exact: true }).click();
     await page.locator('#form-create > .layout > lapp-text-field > .text-field > .field > .input-wrapper').first().click();
     await page.getByRole('textbox', { name: 'name', exact: true }).fill('Form 1');
@@ -220,15 +220,15 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .setName('create-form')
       .screenshot();
     await page.getByRole('button', { name: 'Summary' }).click();
-    
+
     // WORKSPACE
     await context
       .setName('create-summary')
       .screenshot();
-    
+
     context.removeArea('dialog')
     await page.getByRole('button', { name: 'Summary' }).press('Escape');
-      
+
 
     await page.getByText('Survey Habits and Experience').first().click();
     await page.waitForTimeout(500);
@@ -239,7 +239,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     // another wait to ensure everything is loaded
     await page.waitForTimeout(100);
 
-    
+
     // APP
     await context
       .setName('app')
@@ -247,11 +247,11 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .screenshot();
     context.removeArea('toolbar')
       .addArea('menu', menu)
-      
+
     // BUILD
     console.info(`Capturing build`);
 
-    await page.getByText('Compose').click();  
+    await page.getByText('Compose').click();
     (await context
       .setPath('build')
       .setName('build')
@@ -307,7 +307,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .screenshot();
 
     // SECTION
-    await page.getByText('text-based fields').click();    
+    await page.getByText('text-based fields').click();
     console.info(`Capturing section`);
     await context
       .setPath('../section')
@@ -326,58 +326,58 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     console.info(`Capturing text-based fields`);
     context
       .setName('text-field');
-    
+
     await page.getByText('Text area field').click();
     await context
       .setName('text-area')
       .screenshot(true)
       ;
-  
+
     await page.getByText('text-based fields').click();
     await page.waitForTimeout(50);
     await page.getByText('choice-based fields').click();
-  
+
     await page.getByText('Radio group').click();
     console.info(`Capturing choice-based fields`);
     await context
       .setName('radio-group')
       .screenshot(true);
-  
+
     await page.getByText('Checkbox group').first().click();
     await context
       .setName('checkbox-group')
       .screenshot(true);
-  
+
     await page.getByText('Dropdown').click();
     await context
       .setName('dropdown')
       .screenshot(true);
-  
+
     await page.getByText('Rating').click();
     await context
       .setName('rating')
       .screenshot(true);
 
     await page.getByText('Ranking').click();
-    await context 
+    await context
       .setName('ranking')
       .screenshot(true);
 
     await page.getByText('choice-based fields').click();
     await page.waitForTimeout(50);
     await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Boolean fields' }).first().click();
-  
+
     await page.getByText('Checkbox field').click();
     console.info(`Capturing boolean fields`);
     await context
       .setName('checkbox')
       .screenshot(true);
-  
+
     await page.getByText('Switch field').click();
     await context
       .setName('switch')
       .screenshot(true);
-  
+
     await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Boolean fields' }).first().click();
     await page.waitForTimeout(50);
     await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Media Based Fields' }).first().click();
@@ -387,7 +387,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await context
       .setName('media')
       .screenshot(true);
-  
+
     context
       .removeArea('grid')
       .removeArea('view')
@@ -402,7 +402,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .setName('behavior')
       .screenshot(true);
 
-  
+
     // LOCALIZE
     await page.getByText('Localize').click();
     console.info(`Capturing localize`);
@@ -410,7 +410,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .setPath('../localize')
       .setName('localize')
       .screenshot(true);
-    
+
     // IMAGE LIBRARY
     await page.getByText('Image Library').click();
     console.info(`Capturing image library`);
@@ -420,7 +420,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .screenshot(true);
 
     await page.getByRole('switch', { name: 'toggle advanced mode' }).check();
-    await page.waitForTimeout(50);      
+    await page.waitForTimeout(50);
 
     // PROMPT
     await page.getByText('Prompt').first().click();
@@ -442,7 +442,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
 
 
     await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck();
-    await page.waitForTimeout(50);      
+    await page.waitForTimeout(50);
 
     // SHARE
     await page.getByRole('link', { name: 'share' }).click();
@@ -459,7 +459,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .setPath('status')
       .setName('status')
       .screenshot(true);
-  
+
     // PUBLISH
     await page.getByText('Publish').first().click();
     console.info(`Capturing publish`);
@@ -498,7 +498,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .screenshot(true);
 
     await page.getByRole('switch', { name: 'toggle advanced mode' }).check();
-    await page.waitForTimeout(50);      
+    await page.waitForTimeout(50);
 
     // EMAIL
     await page.getByText('Email').first().click();
@@ -523,7 +523,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .setPath('../webhook')
       .setName('webhook')
       .screenshot(true);
-    
+
 
     // TERMS
     await page.locator('#list').getByText('Terms', { exact: true, }).click();
@@ -532,15 +532,15 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .setPath('../terms')
       .setName('terms')
       .screenshot(true);
-     
+
 
 
     await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck();
-    await page.waitForTimeout(50);   
+    await page.waitForTimeout(50);
 
 
-  
-  
+
+
   });
 })
 

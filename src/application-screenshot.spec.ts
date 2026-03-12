@@ -1,4 +1,4 @@
-import { test, expect, type PageScreenshotOptions } from '@playwright/test';
+import { test, type PageScreenshotOptions } from '@playwright/test';
 type LocationT = {
   url?: string;
   filePath?: string;
@@ -9,7 +9,7 @@ type LocationT = {
   children?: LocationT[];
 }
 
-const port = process.env.PLAYWRIGHT_PORT || '7173';
+const port = process.env.PLAYWRIGHT_PORT || '7174';
 const surveyId = 'tENAtrUDB11Wy2YWYoq9';
 
 const clipMenu: PageScreenshotOptions['clip'] = {
@@ -53,7 +53,7 @@ test.describe('Survey Builder Screenshots', () => {
   });
 
 
-  
+
   const baseUrl = `http://localhost:${port}`;
   const suffix = `s/edit/survey/${surveyId}`;
   const locations: LocationT[] = [
@@ -108,7 +108,7 @@ test.describe('Survey Builder Screenshots', () => {
             {
               url: 'question',
               filePath: 'question',
-              options: { clip: clipBuildContent }, 
+              options: { clip: clipBuildContent },
               children: [
                 { url: 'N8ux3u8mgki5GBzPKjxc.OhpUogRZt1il1w4KJxvv', name: 'text-field', options: { clip: clipBuildContent } },
                 { url: 'N8ux3u8mgki5GBzPKjxc.2NBT47FzQ2CfC0gsBQYE', name: 'text-area', options: { clip: clipBuildContent } },
@@ -123,7 +123,7 @@ test.describe('Survey Builder Screenshots', () => {
               ]
             }
 
-              
+
           ]
         },
         { url: 'behavior', },
@@ -133,7 +133,7 @@ test.describe('Survey Builder Screenshots', () => {
         { url: 'deleted-items', name: 'restore' },
       ]
     },
-   
+
     { url: 'overview/analytics', filePath: 'overview-analytics' }, ,
   ];
 
@@ -145,9 +145,9 @@ test.describe('Survey Builder Screenshots', () => {
         // expect(true, 'failing for ' + l.url).toBe(false);
       }
     });
-    
-    
-    
+
+
+
     async function processLocations(currentLocations: LocationT[], parentUrl: string = '', parentFilePath: string = '') {
       for (const location of currentLocations) {
         l = location;
@@ -175,7 +175,7 @@ test.describe('Survey Builder Screenshots', () => {
             await page.mouse.click(click[0], click[1]);
             await page.waitForTimeout(100);
           }
-        } 
+        }
         if (location.skip) {
           await page.waitForTimeout(100);
           continue;
@@ -188,7 +188,7 @@ test.describe('Survey Builder Screenshots', () => {
           fullPage: false,
           ...(location.options || {})
         });
-      
+
 
         if (location.children) {
           await processLocations(location.children, `${parentUrl}${location.url ? ('/' + location.url) : ''}`, fullFilePath);
