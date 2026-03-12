@@ -8,7 +8,7 @@ Welcome to the comprehensive user guide for the **Accessible Surveys App**.
 
 Whether you're building your first survey, managing advanced accessibility features (like Easy Read, Sign Language, or Read Aloud), distributing to respondents, or analyzing the data you've collected, this guide provides all the information you need.
 
-> **Note on Documentation Migration:** We are currently migrating our documentation from the old `guidance-notes` structure to a new, user-centric structure based on the [Diátaxis framework](https://diataxis.fr/). The content remains the same, but it is now organized into four distinct types of documentation to better serve your needs based on what you are trying to achieve.
+> **Note on Documentation Migration:** We are currently migrating our documentation from the old `guidance-notes` structure to a new, user-centric structure. The content remains the same, but it is now organized into four distinct types of documentation to better serve your needs based on what you are trying to achieve.
 
 ## How this documentation is organized
 
