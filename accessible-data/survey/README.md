@@ -1,68 +1,50 @@
 ---
-description: Introduction.  A training course to help new users become familiar with Accessible Surveys
+description: Welcome to the Accessible Surveys App User Guide. This guide covers everything you need to know to create, manage, and analyze your surveys.
 ---
-# Introduction
 
-This course accompanies new customers to create a short 'Training Survey'.  We have found this to be the best way to help new customers become familiar with the platform.
+# Accessible Surveys App User Guide
 
-{% hint style="info" %}
-On completing this course, you will feel confident building, testing, sharing and analyzing surveys on Accessible Surveys.
-{% endhint %}
+Welcome to the comprehensive user guide for the **Accessible Surveys App**.
 
-You should complete this course *before* creating your first survey.  Creating the 'Training Survey' will not count as part of your survey quota.
+Whether you're building your first survey, managing advanced accessibility features (like Easy Read, Sign Language, or Read Aloud), distributing to respondents, or analyzing the data you've collected, this guide provides all the information you need.
 
-There is other help available. Please check our [Tutorials](../../tutorials/README.md), [Guidance Notes](../../guidance-notes/survey-app/README.md) and [FAQs](../../faq/introduction-to-faq/README.md).
+> **Note on Documentation Migration:** We are currently migrating our documentation from the old `guidance-notes` structure to a new, user-centric structure based on the [Diátaxis framework](https://diataxis.fr/). The content remains the same, but it is now organized into four distinct types of documentation to better serve your needs based on what you are trying to achieve.
 
-## Structure of the Course
+## How this documentation is organized
 
-The course follows the life cycle of building, testing, sharing and analyzing a survey.  It is divided into 5 sessions:
+To help you find exactly what you need when you need it, our documentation is divided into the following sections:
 
-1. Creating a new survey.
-2. Adding accessibility options
-3. Translating a survey into different languages
-4. Testing and sharing your survey
-5. Analyzing your survey responses and exporting your survey data
+### 1. [Tutorials](./tutorial/README.md) (Learning-oriented)
 
-The training course does not cover every feature which is offered.
+**Are you new to Accessible Surveys and want to learn by doing?**  
+Our tutorials take you by the hand and guide you through a complete learning experience.
 
-Links to [Guidance Notes](../../guidance-notes) which cover additional and advanced features are provided under the relevant training session.
+- Start with our **Training Course** to learn how to create, build, translate, test, share, and analyze a survey from scratch.
 
-## Time Commitment
+### 2. [How-to Guides](./how-to/README.md) (Goal-oriented)
 
-We estimate that it will take approximately 15 minutes to complete most sessions, although session 1 will take approximately 25 minutes.
+**Do you need practical directions to complete a specific task?**  
+How-to guides are recipes that help you solve real-world problems. If you already know the basics and just need to know *"How do I add a tooltip?"* or *"How do I export my data?"*, you'll find step-by-step instructions here.
+*(Note: Our older step-by-step guides from the legacy `guidance.notes` section are being integrated here).*
 
-Some people will take less time and some people will take more time. We encourage you to go at your own pace and revisit sessions if needed.
+### 3. [Reference](./reference/README.md) (Information-oriented)
 
-It is likely to take between 1-2 hours to complete the entire training course. We recognize that this is a significant investment of your time but are confident that it will be time well spent.
+**Do you need technical descriptions, facts, or details while you work?**  
+The Reference section provides austere, descriptive information about the platform's features, settings, and machinery. It is organized around the natural lifecycle of a survey:
 
-## Training Materials
+- **[Build](./reference/build/README.md):** Information on composing your survey, structuring pages and questions, setting up form behavior, localizing, and managing the image library.
+- **[Test](./reference/test/README.md):** Details on the testing interface, preview modes, and simulation tools.
+- **[Share](./reference/share/README.md):** Details on publishing, distributing links, configuring respondent access rights, batches, webhooks, and redirection.
 
-We provide the following training materials to help you create your training survey.
+### 4. [Explanation](./explanation/README.md) (Understanding-oriented)
 
-- [x] Text for your 'Introductory Page' and 'Thank You Page'
-- [x] Survey questions
-- [x] Easy Read images
-- [x] British Sign Language videos
+**Do you want to understand the bigger picture or the "why" behind a feature?**  
+The Explanation section provides discursive background, context, and design concepts. Use this when you want to deepen your understanding of topics like advanced form logic, the necessity of accessible formats, or data privacy.
 
-Each training session includes links to any training materials needed to complete that session.
+---
 
-{% hint style="info" %}
-We suggest that you download training materials onto your computer before you start the session.
-{% endhint %}
+## Getting Started
 
-## Learning Outcomes
+If you are new to the platform, we strongly recommend starting with our [**Training Course**](./tutorial/README.md). It is the fastest way to become confident building, testing, sharing, and analyzing surveys on Accessible Surveys.
 
-There are two main learning objectives of this training course.
-
-On completing this training course;
-
-1. You should feel confident building, testing, sharing and analyzing surveys on Accessible Surveys.
-2. You should be aware of the advanced features offered by Accessible Surveys and know how to access support on these features.
-
-Each training session has its own learning outcomes. It is recommended that you are comfortable with the learning outcomes of a session before starting the next session.
-
-If need help or have suggestions for how this training course can be improved, please email us at contact@accessiblesurveys.com
-
-## Next Steps
-
-You are now ready to start [Training Session 1](training-course/session-1-creating-a-new-survey.md). This will show you how to create a new survey.
+If you are looking for specific instructions or reference material, simply choose the section above that matches what you are trying to do today!
