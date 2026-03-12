@@ -1,74 +1,74 @@
-import { test, type Page, type PageScreenshotOptions } from '@playwright/test';
-import * as path from 'path';
+import { test, type Page, type PageScreenshotOptions } from '@playwright/test'
+import * as path from 'path'
 
 type ContextT = {
-  url: string;
-  page: Page;
-  name: string;
-  path: string;
+  url: string
+  page: Page
+  name: string
+  path: string
 }
 
 type AreaT = {
-  name: string;
-  clip?: ClipT;
-  advanced?: boolean;
+  name: string
+  clip?: ClipT
+  advanced?: boolean
 }
 class Context implements ContextT {
-  url: string;
-  name: string;
-  path: string;
-  page: Page;
+  url: string
+  name: string
+  path: string
+  page: Page
   area: AreaT[] = [];
   constructor(
     url: string,
     path: string,
 
   ) {
-    this.path = path;
-    this.url = url;
+    this.path = path
+    this.url = url
   }
 
   setArea(area: AreaT[]) {
-    this.area = area;
-    return this;
+    this.area = area
+    return this
   }
 
   addArea(name: string, clip?: ClipT, advanced?: boolean) {
-    this.area.push({ name, clip, advanced });
-    return this;
+    this.area.push({ name, clip, advanced })
+    return this
   }
   removeArea(name: string) {
-    this.area = this.area.filter(a => a.name !== name);
-    return this;
+    this.area = this.area.filter(a => a.name !== name)
+    return this
   }
 
   setName(name: string) {
-    this.name = name;
-    return this;
+    this.name = name
+    return this
   }
 
   setPath(segment: string) {
-    this.path = path.join(this.path, segment);
-    return this;
+    this.path = path.join(this.path, segment)
+    return this
   }
 
   setPage(page: Page) {
-    this.page = page;
-    return this;
+    this.page = page
+    return this
   }
 
   async screenshot(advanced?: boolean) {
-    const name = this.name;
+    const name = this.name
     const advancedModeSwitch = (await this.page.getByRole('switch', { name: 'toggle advanced mode' }).isVisible())
       ? this.page.getByRole('switch', { name: 'toggle advanced mode' })
-      : undefined;
-    const isAdvancedMode = await advancedModeSwitch?.isChecked() || false;
+      : undefined
+    const isAdvancedMode = await advancedModeSwitch?.isChecked() || false
     let pageIsLargerThanViewport = await this.page.evaluate(() => {
-      return document.body.scrollHeight > window.innerHeight || document.body.scrollWidth > window.innerWidth;
-    });
+      return document.body.scrollHeight > window.innerHeight || document.body.scrollWidth > window.innerWidth
+    })
     // await this.page.waitForTimeout(50);
-    await advancedModeSwitch?.uncheck();
-    await this.page.waitForTimeout(50);
+    await advancedModeSwitch?.uncheck()
+    await this.page.waitForTimeout(50)
 
     await Promise.all(
 
@@ -89,11 +89,11 @@ class Context implements ContextT {
 
     if (advanced) {
       // click advanced
-      await advancedModeSwitch?.check();
-      await this.page.waitForTimeout(50);
+      await advancedModeSwitch?.check()
+      await this.page.waitForTimeout(50)
       pageIsLargerThanViewport = await this.page.evaluate(() => {
-        return document.body.scrollHeight > window.innerHeight || document.body.scrollWidth > window.innerWidth;
-      });
+        return document.body.scrollHeight > window.innerHeight || document.body.scrollWidth > window.innerWidth
+      })
       await Promise.all(
 
         [this.page.screenshot({
@@ -115,21 +115,21 @@ class Context implements ContextT {
 
     }
     if (isAdvancedMode) {
-      await advancedModeSwitch?.check();
+      await advancedModeSwitch?.check()
     } else {
-      await advancedModeSwitch?.uncheck();
+      await advancedModeSwitch?.uncheck()
 
     }
-    await this.page.waitForTimeout(50);
-    return this;
+    await this.page.waitForTimeout(50)
+    return this
   }
 }
 
-const port = process.env.PLAYWRIGHT_PORT || '7174';
-const baseUrl = `http://localhost:${port}`;
-const surveyId = '3BBFzJneqakYoyDu02c2';
+const port = process.env.PLAYWRIGHT_PORT || '7174'
+const baseUrl = `http://localhost:${port}`
+const surveyId = '3BBFzJneqakYoyDu02c2'
 
-const suffix = `s/edit/survey/${surveyId}/build/compose/survey/intro`;
+const suffix = `s/edit/survey/${surveyId}/build/compose/survey/intro`
 
 
 // const screenshotAllSize = async (context: Context) => {  
@@ -139,40 +139,40 @@ const suffix = `s/edit/survey/${surveyId}/build/compose/survey/intro`;
 // }
 
 const screenshotAllModes = async (context: Context) => {
-  const { page, name } = context;
+  const { page, name } = context
 
-  await page.getByRole('button', { name: 'Settings Mode' }).click();
-  await page.waitForTimeout(350);
+  await page.getByRole('button', { name: 'Settings Mode' }).click()
+  await page.waitForTimeout(350)
   await context
     .setName(name)
-    .screenshot();
-  await page.getByRole('button', { name: 'Localize Mode' }).click();
-  await page.waitForTimeout(350);
+    .screenshot()
+  await page.getByRole('button', { name: 'Localize Mode' }).click()
+  await page.waitForTimeout(350)
   await context
     .setName(`${name}-localize`)
-    .screenshot();
-  await page.getByRole('button', { name: 'Read Aloud Mode' }).click();
-  await page.waitForTimeout(350);
+    .screenshot()
+  await page.getByRole('button', { name: 'Read Aloud Mode' }).click()
+  await page.waitForTimeout(350)
   await context
     .setName(`${name}-readaloud`)
-    .screenshot();
-  await page.getByRole('button', { name: 'Easy Read Mode' }).click();
-  await page.waitForTimeout(350);
+    .screenshot()
+  await page.getByRole('button', { name: 'Easy Read Mode' }).click()
+  await page.waitForTimeout(350)
   await context
     .setName(`${name}-easyread`)
-    .screenshot();
-  await page.getByRole('button', { name: 'Sign language Mode' }).click();
-  await page.waitForTimeout(350);
+    .screenshot()
+  await page.getByRole('button', { name: 'Sign language Mode' }).click()
+  await page.waitForTimeout(350)
   await context
     .setName(`${name}-signlanguage`)
-    .screenshot();
-  await page.getByRole('button', { name: 'Visibility Mode' }).click();
-  await page.waitForTimeout(350);
+    .screenshot()
+  await page.getByRole('button', { name: 'Visibility Mode' }).click()
+  await page.waitForTimeout(350)
   await context
     .setName(`${name}-visibility`)
-    .screenshot();
-  await page.getByRole('button', { name: 'Settings Mode' }).click();
-  await page.waitForTimeout(350);
+    .screenshot()
+  await page.getByRole('button', { name: 'Settings Mode' }).click()
+  await page.waitForTimeout(350)
 }
 
 
@@ -182,74 +182,74 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     const context = new Context(
       `http://localhost:${port}/${suffix}`,
       'accessible-data/survey/',
-    );
-    context.setPage(page);
-    await page.setViewportSize({ width: 1600, height: 1080 });
-    await page.goto(baseUrl);
-    await page.waitForTimeout(2000);
-    await page.getByRole('link', { name: 'Survey', exact: true }).click();
-    await page.waitForTimeout(1000);
+    )
+    context.setPage(page)
+    await page.setViewportSize({ width: 1600, height: 1080 })
+    await page.goto(baseUrl)
+    await page.waitForTimeout(2000)
+    await page.getByRole('link', { name: 'Survey', exact: true }).click()
+    await page.waitForTimeout(1000)
 
     // WORKSPACE
     await context
       .setName('workspace')
       .setArea([{ name: 'fab', clip: fabBar }])
-      .screenshot();
+      .screenshot()
     context.removeArea('fab')
 
 
     // CREATE SURVEY
-    await page.getByRole('button', { name: 'New Survey' }).click();
-    await page.getByRole('textbox', { name: 'name', exact: true }).click();
-    await page.getByRole('textbox', { name: 'name', exact: true }).fill('test');
-    await page.getByRole('textbox', { name: 'name', exact: true }).press('Tab');
-    await page.getByRole('textbox', { name: 'description', exact: true }).fill('test');
-    await page.getByRole('textbox', { name: 'description', exact: true }).click();
-    await page.getByRole('textbox', { name: 'description', exact: true }).fill('test description');
+    await page.getByRole('button', { name: 'New Survey' }).click()
+    await page.getByRole('textbox', { name: 'name', exact: true }).click()
+    await page.getByRole('textbox', { name: 'name', exact: true }).fill('test')
+    await page.getByRole('textbox', { name: 'name', exact: true }).press('Tab')
+    await page.getByRole('textbox', { name: 'description', exact: true }).fill('test')
+    await page.getByRole('textbox', { name: 'description', exact: true }).click()
+    await page.getByRole('textbox', { name: 'description', exact: true }).fill('test description')
     await context
       .setName('create-survey')
       .setArea([{ name: 'dialog', clip: dialog }])
-      .screenshot();
+      .screenshot()
 
-    await page.getByRole('button', { name: 'Form', exact: true }).click();
-    await page.locator('#form-create > .layout > lapp-text-field > .text-field > .field > .input-wrapper').first().click();
-    await page.getByRole('textbox', { name: 'name', exact: true }).fill('Form 1');
-    await page.getByRole('textbox', { name: 'name', exact: true }).press('Tab');
-    await page.getByRole('textbox', { name: 'description', exact: true }).fill('Form description');
+    await page.getByRole('button', { name: 'Form', exact: true }).click()
+    await page.locator('#form-create > .layout > lapp-text-field > .text-field > .field > .input-wrapper').first().click()
+    await page.getByRole('textbox', { name: 'name', exact: true }).fill('Form 1')
+    await page.getByRole('textbox', { name: 'name', exact: true }).press('Tab')
+    await page.getByRole('textbox', { name: 'description', exact: true }).fill('Form description')
     await context
       .setName('create-form')
-      .screenshot();
-    await page.getByRole('button', { name: 'Summary' }).click();
+      .screenshot()
+    await page.getByRole('button', { name: 'Summary' }).click()
 
     // WORKSPACE
     await context
       .setName('create-summary')
-      .screenshot();
+      .screenshot()
 
     context.removeArea('dialog')
-    await page.getByRole('button', { name: 'Summary' }).press('Escape');
+    await page.getByRole('button', { name: 'Summary' }).press('Escape')
 
 
-    await page.getByText('Survey Habits and Experience').first().click();
-    await page.waitForTimeout(500);
-    await page.getByRole('button', { name: 'Edit' }).click();
-    await page.waitForTimeout(500);
-    await page.getByText('Compose').click();
+    await page.getByText('Survey Habits and Experience').first().click()
+    await page.waitForTimeout(500)
+    await page.getByRole('button', { name: 'Edit' }).click()
+    await page.waitForTimeout(500)
+    await page.getByText('Compose').click()
     // we need some time here let authentication settle
     // another wait to ensure everything is loaded
-    await page.waitForTimeout(100);
+    await page.waitForTimeout(100)
 
 
     // APP
     await context
       .setName('app')
       .setArea([{ name: 'toolbar', clip: toolbar }])
-      .screenshot();
+      .screenshot()
     context.removeArea('toolbar')
       .addArea('menu', menu)
 
     // BUILD
-    console.info(`Capturing build`);
+    console.info(`Capturing build`)
 
     await page.getByText('Compose').click();
     (await context
@@ -257,7 +257,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .setName('build')
       .addArea('menu', menu)
       .screenshot()
-    ).removeArea('menu');
+    ).removeArea('menu')
 
     // COMPOSE
     console.info(`Capturing compose`);
@@ -267,285 +267,285 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .addArea('modes', fabBar)
       .addArea('grid', treeGrid)
       .screenshot()
-    ).removeArea('modes').removeArea('grid');
+    ).removeArea('modes').removeArea('grid')
 
 
     context
       .addArea('content', pageContent)
       .addArea('grid', treeGrid, true)
       .addArea('view', treeView, true)
-      ;
+      
 
     // INFO PAGE
-    await page.getByText('Introduction Page').first().click();
-    console.info(`Capturing page intro`);
+    await page.getByText('Introduction Page').first().click()
+    console.info(`Capturing page intro`)
     await context
       .setName('intro')
       .setPath('text-page')
-      .screenshot();
+      .screenshot()
 
-    await page.getByText('intro 1').first().click();
-    console.info(`Capturing page intro 1`);
+    await page.getByText('intro 1').first().click()
+    console.info(`Capturing page intro 1`)
     await context
       .setName('intro-item')
-      .screenshot();
+      .screenshot()
 
     // FORM
-    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Form' }).first().click();
-    console.info(`Capturing form`);
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Form' }).first().click()
+    console.info(`Capturing form`)
     await context
       .setPath('../form')
       .setName('form')
-      .screenshot();
+      .screenshot()
 
     // PAGE
-    await page.getByText('Content Page for documentation').click();
-    console.info(`Capturing page intro`);
+    await page.getByText('Content Page for documentation').click()
+    console.info(`Capturing page intro`)
     await context
       .setPath('../page')
       .setName('page')
-      .screenshot();
+      .screenshot()
 
     // SECTION
-    await page.getByText('text-based fields').click();
-    console.info(`Capturing section`);
+    await page.getByText('text-based fields').click()
+    console.info(`Capturing section`)
     await context
       .setPath('../section')
       .setName('section')
-      .screenshot();
+      .screenshot()
 
     // QUESTION
-    await page.getByText('Text field').click();
-    console.info(`Capturing question`);
+    await page.getByText('Text field').click()
+    console.info(`Capturing question`)
     await context
       .setPath('../question')
       .setName('question')
-      .screenshot();
-    await screenshotAllModes(context);
+      .screenshot()
+    await screenshotAllModes(context)
 
-    console.info(`Capturing text-based fields`);
+    console.info(`Capturing text-based fields`)
     context
-      .setName('text-field');
+      .setName('text-field')
 
-    await page.getByText('Text area field').click();
+    await page.getByText('Text area field').click()
     await context
       .setName('text-area')
       .screenshot(true)
-      ;
+      
 
-    await page.getByText('text-based fields').click();
-    await page.waitForTimeout(50);
-    await page.getByText('choice-based fields').click();
+    await page.getByText('text-based fields').click()
+    await page.waitForTimeout(50)
+    await page.getByText('choice-based fields').click()
 
-    await page.getByText('Radio group').click();
-    console.info(`Capturing choice-based fields`);
+    await page.getByText('Radio group').click()
+    console.info(`Capturing choice-based fields`)
     await context
       .setName('radio-group')
-      .screenshot(true);
+      .screenshot(true)
 
-    await page.getByText('Checkbox group').first().click();
+    await page.getByText('Checkbox group').first().click()
     await context
       .setName('checkbox-group')
-      .screenshot(true);
+      .screenshot(true)
 
-    await page.getByText('Dropdown').click();
+    await page.getByText('Dropdown').click()
     await context
       .setName('dropdown')
-      .screenshot(true);
+      .screenshot(true)
 
-    await page.getByText('Rating').click();
+    await page.getByText('Rating').click()
     await context
       .setName('rating')
-      .screenshot(true);
+      .screenshot(true)
 
-    await page.getByText('Ranking').click();
+    await page.getByText('Ranking').click()
     await context
       .setName('ranking')
-      .screenshot(true);
+      .screenshot(true)
 
-    await page.getByText('choice-based fields').click();
-    await page.waitForTimeout(50);
-    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Boolean fields' }).first().click();
+    await page.getByText('choice-based fields').click()
+    await page.waitForTimeout(50)
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Boolean fields' }).first().click()
 
-    await page.getByText('Checkbox field').click();
-    console.info(`Capturing boolean fields`);
+    await page.getByText('Checkbox field').click()
+    console.info(`Capturing boolean fields`)
     await context
       .setName('checkbox')
-      .screenshot(true);
+      .screenshot(true)
 
-    await page.getByText('Switch field').click();
+    await page.getByText('Switch field').click()
     await context
       .setName('switch')
-      .screenshot(true);
+      .screenshot(true)
 
-    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Boolean fields' }).first().click();
-    await page.waitForTimeout(50);
-    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Media Based Fields' }).first().click();
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Boolean fields' }).first().click()
+    await page.waitForTimeout(50)
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Media Based Fields' }).first().click()
 
-    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'File Upload field' }).click();
-    console.info(`Capturing media based fields`);
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'File Upload field' }).click()
+    console.info(`Capturing media based fields`)
     await context
       .setName('media')
-      .screenshot(true);
+      .screenshot(true)
 
     context
       .removeArea('grid')
       .removeArea('view')
       .removeArea('content')
       .addArea('content', pageContent, true)
-      ;
+      
     // Behavior
-    await page.getByText('Form Behavior').click();
-    console.info(`Capturing behavior`);
+    await page.getByText('Form Behavior').click()
+    console.info(`Capturing behavior`)
     await context
       .setPath('../../behavior')
       .setName('behavior')
-      .screenshot(true);
+      .screenshot(true)
 
 
     // LOCALIZE
-    await page.getByText('Localize').click();
-    console.info(`Capturing localize`);
+    await page.getByText('Localize').click()
+    console.info(`Capturing localize`)
     await context
       .setPath('../localize')
       .setName('localize')
-      .screenshot(true);
+      .screenshot(true)
 
     // IMAGE LIBRARY
-    await page.getByText('Image Library').click();
-    console.info(`Capturing image library`);
+    await page.getByText('Image Library').click()
+    console.info(`Capturing image library`)
     await context
       .setPath('../image-library')
       .setName('image-library')
-      .screenshot(true);
+      .screenshot(true)
 
-    await page.getByRole('switch', { name: 'toggle advanced mode' }).check();
-    await page.waitForTimeout(50);
+    await page.getByRole('switch', { name: 'toggle advanced mode' }).check()
+    await page.waitForTimeout(50)
 
     // PROMPT
-    await page.getByText('Prompt').first().click();
-    console.info(`Capturing prompt`);
+    await page.getByText('Prompt').first().click()
+    console.info(`Capturing prompt`)
     await context
       .setPath('../prompt')
       .setName('prompt')
-      .screenshot(true);
+      .screenshot(true)
 
 
     // RESTORE
 
-    await page.locator('#list').getByText('Restore', { exact: true }).click();
-    console.info(`Capturing restore`);
+    await page.locator('#list').getByText('Restore', { exact: true }).click()
+    console.info(`Capturing restore`)
     await context
       .setPath('../restore')
       .setName('restore')
-      .screenshot(true);
+      .screenshot(true)
 
 
-    await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck();
-    await page.waitForTimeout(50);
+    await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck()
+    await page.waitForTimeout(50)
 
     // SHARE
-    await page.getByRole('link', { name: 'share' }).click();
-    console.info(`Capturing share`);
+    await page.getByRole('link', { name: 'share' }).click()
+    console.info(`Capturing share`)
     await context
       .setPath('../../share')
       .setName('share')
-      .screenshot(true);
+      .screenshot(true)
 
     // STATUS
-    await page.getByText('Status').first().click();
-    console.info(`Capturing status`);
+    await page.getByText('Status').first().click()
+    console.info(`Capturing status`)
     await context
       .setPath('status')
       .setName('status')
-      .screenshot(true);
+      .screenshot(true)
 
     // PUBLISH
-    await page.getByText('Publish').first().click();
-    console.info(`Capturing publish`);
+    await page.getByText('Publish').first().click()
+    console.info(`Capturing publish`)
     await context
       .setPath('../publish')
       .setName('publish')
-      .screenshot(true);
+      .screenshot(true)
 
-    await page.getByText('Distribute').first().click();
-    console.info(`Capturing distribute`);
+    await page.getByText('Distribute').first().click()
+    console.info(`Capturing distribute`)
     await context
       .setPath('../distribute')
       .setName('distribute')
-      .screenshot(true);
+      .screenshot(true)
 
     // SETTINGS
-    await page.getByText('Account type').click();
-    console.info(`Capturing account type`);
+    await page.getByText('Account type').click()
+    console.info(`Capturing account type`)
     await context
       .setPath('../account-type')
       .setName('account-type')
-      .screenshot(true);
+      .screenshot(true)
 
-    await page.getByText('Redirection').click();
-    console.info(`Capturing redirection`);
+    await page.getByText('Redirection').click()
+    console.info(`Capturing redirection`)
     await context
       .setPath('../redirection')
       .setName('redirection')
-      .screenshot(true);
+      .screenshot(true)
 
-    await page.getByText('Access', { exact: true }).click();
-    console.info(`Capturing access`);
+    await page.getByText('Access', { exact: true }).click()
+    console.info(`Capturing access`)
     await context
       .setPath('../access')
       .setName('access')
-      .screenshot(true);
+      .screenshot(true)
 
-    await page.getByRole('switch', { name: 'toggle advanced mode' }).check();
-    await page.waitForTimeout(50);
+    await page.getByRole('switch', { name: 'toggle advanced mode' }).check()
+    await page.waitForTimeout(50)
 
     // EMAIL
-    await page.getByText('Email').first().click();
-    console.info(`Capturing email`);
+    await page.getByText('Email').first().click()
+    console.info(`Capturing email`)
     await context
       .setPath('../email')
       .setName('email')
-      .screenshot(true);
+      .screenshot(true)
 
     // BATCH
-    await page.getByText('Batch').first().click();
-    console.info(`Capturing batch`);
+    await page.getByText('Batch').first().click()
+    console.info(`Capturing batch`)
     await context
       .setPath('../batch')
       .setName('batch')
-      .screenshot(true);
+      .screenshot(true)
 
     // WEBHOOK
-    await page.getByText('Webhook').first().click();
-    console.info(`Capturing webhook`);
+    await page.getByText('Webhook').first().click()
+    console.info(`Capturing webhook`)
     await context
       .setPath('../webhook')
       .setName('webhook')
-      .screenshot(true);
+      .screenshot(true)
 
 
     // TERMS
-    await page.locator('#list').getByText('Terms', { exact: true, }).click();
-    console.info(`Capturing terms`);
+    await page.locator('#list').getByText('Terms', { exact: true, }).click()
+    console.info(`Capturing terms`)
     await context
       .setPath('../terms')
       .setName('terms')
-      .screenshot(true);
+      .screenshot(true)
 
 
 
-    await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck();
-    await page.waitForTimeout(50);
+    await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck()
+    await page.waitForTimeout(50)
 
 
 
 
-  });
+  })
 })
 
 
-type ClipT = PageScreenshotOptions['clip'];
+type ClipT = PageScreenshotOptions['clip']
 
 
 const menu: ClipT = {
@@ -553,19 +553,19 @@ const menu: ClipT = {
   y: 64,
   width: 256,
   height: 500,
-};
+}
 const treeGrid: ClipT = {
   x: 292,
   y: 84,
   width: 402,
   height: 976,
-};
+}
 const treeView: ClipT = {
   x: 702,
   y: 84,
   height: 976,
   width: 862,
-};
+}
 
 // full content without menu
 const pageContent: ClipT = {
@@ -580,18 +580,18 @@ const toolbar: ClipT = {
   y: 0,
   width: 1600,
   height: 64,
-};
+}
 
 const fabBar: ClipT = {
   x: 1000,
   y: 965,
   width: 580,
   height: 80,
-};
+}
 
 const dialog: ClipT = {
   x: 500,
   y: 160,
   width: 600,
   height: 760,
-};
+}
