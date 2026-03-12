@@ -14,27 +14,23 @@ If you already understand the basics of the platform and find yourself asking *"
 
 Fundamental tasks for building your survey and forms, including adding questions, using tooltips, and Markdown formatting.
 
-### Survey & Form Management
-- [Creating a new survey](./create-and-edit/creating-a-new-survey.md)
-- [Structuring a form](./create-and-edit/creating-a-new-form.md)
-- [Publishing a form](./create-and-edit/publishing-a-form.md)
-- [Testing a form](./create-and-edit/testing-a-form.md)
+## Survey & Form Management
 
-### Adding Content
-- **Adding questions to a form:**
-  - [Introduction to adding questions](./create-and-edit/adding-questions-to-a-form/README.md)
-  - [Text based questions](./create-and-edit/adding-questions-to-a-form/text-based-questions.md)
-  - [Choice based questions](./create-and-edit/adding-questions-to-a-form/choice-based-questions.md)
-  - [Rating, Slider, Order and Range questions](./create-and-edit/adding-questions-to-a-form/choice-based-questions-1.md)
-  - [Media based questions](./create-and-edit/adding-questions-to-a-form/media-based-questions.md)
-  - [Introduction to free text fields](./create-and-edit/adding-questions-to-a-form/free-text-feilds.md)
-- [Using tooltips](./create-and-edit/using-tooltips.md)
-- [Using Markdown](./create-and-edit/using-markdown.md)
-- [Image library](./create-and-edit/image-library.md)
+- [How to create a new survey](./create-and-edit/creating-a-new-survey.md) - *in progress*
+- [How to publish a form](./create-and-edit/publishing-a-form.md) - *in progress*
+- [How to test a form](./create-and-edit/testing-a-form.md) - *in progress*
 
-### Collaboration & Organization
-- [Access rights for forms](./create-and-edit/access-rights-for-forms.md)
-- [Sharing options across multiple questions](./create-and-edit/sharing-options-across-multiple-questions.md)
+## Adding Content
+
+- [How to add content to a form](./create-and-edit/adding-content-to-a-form.md) - *in progress*
+- [How to choose the right question type](./create-and-edit/choosing-the-right-question-type.md) - *in progress*
+- [How to use tooltips to explain complex terms](./create-and-edit/using-tooltips.md) - *in progress*
+- [How to use Markdown for formatting](./create-and-edit/using-markdown.md) - *in progress*
+
+## Collaboration & Organization
+
+- [How to set access rights for forms](./create-and-edit/access-rights-for-forms.md) - *in progress*
+- [How to share options across multiple questions](./create-and-edit/sharing-options-across-multiple-questions.md) - *in progress*
 
 ---
 
@@ -43,13 +39,15 @@ Fundamental tasks for building your survey and forms, including adding questions
 Implementing specialized features like Easy Read, Sign Language videos, and multi-language support.
 
 ### Accessibility Features
-- [Adding an accessibility menu](./accessibility-and-translation/adding-an-accessibility-menu.md)
-- [Easy Read](./accessibility-and-translation/easy-read.md)
-- [Sign Language](./accessibility-and-translation/sign-language.md)
+
+- [Adding an accessibility menu](./accessibility-and-translation/adding-an-accessibility-menu.md) - *in progress*
+- [Easy Read](./accessibility-and-translation/easy-read.md) - *in progress*
+- [Sign Language](./accessibility-and-translation/sign-language.md) - *in progress*
 
 ### Translation & Localization
-- [Translate forms](./accessibility-and-translation/translate-forms.md)
-- [Using import/export to translate forms](./accessibility-and-translation/using-import-export-to-translate-forms.md)
+
+- [Translate forms](./accessibility-and-translation/translate-forms.md) - *in progress*
+- [Using import/export to translate forms](./accessibility-and-translation/using-import-export-to-translate-forms.md) - *in progress*
 
 ---
 
@@ -57,9 +55,9 @@ Implementing specialized features like Easy Read, Sign Language videos, and mult
 
 Controlling survey flow, adding logical expressions, and customizing form behavior.
 
-- [Introduction to form logic](./logic-and-behavior/introduction-to-form-logic.md)
-- [Advanced form logic](./logic-and-behavior/advanced-form-logic.md)
-- [Form behaviour](./logic-and-behavior/form-behaviour.md)
+- [Introduction to form logic](./logic-and-behavior/introduction-to-form-logic.md) - *in progress*
+- [Advanced form logic](./logic-and-behavior/advanced-form-logic.md) - *in progress*
+- [Form behaviour](./logic-and-behavior/form-behaviour.md) - *in progress*
 
 ---
 
@@ -68,13 +66,15 @@ Controlling survey flow, adding logical expressions, and customizing form behavi
 Generating links, managing survey batches, configuring respondent accounts, and analyzing or exporting survey data.
 
 ### Sharing & Distribution
-- [Distributing your survey (Generating links)](./distribution-and-data/generating-survey-links.md)
-- [Creating alias survey links](./distribution-and-data/creating-alias-survey-links.md)
-- [Survey batches](./distribution-and-data/using-survey-batches.md)
-- [Survey respondent accounts](./distribution-and-data/survey-respondent-accounts.md)
-- [Redirection after completing survey](./distribution-and-data/redirection-after-completing-survey.md)
-- [Survey terms](./distribution-and-data/survey-terms.md)
+
+- [Distributing your survey (Generating links)](./distribution-and-data/generating-survey-links.md) - *in progress*
+- [Creating alias survey links](./distribution-and-data/creating-alias-survey-links.md) - *in progress*
+- [Survey batches](./distribution-and-data/using-survey-batches.md) - *in progress*
+- [Survey respondent accounts](./distribution-and-data/survey-respondent-accounts.md) - *in progress*
+- [Redirection after completing survey](./distribution-and-data/redirection-after-completing-survey.md) - *in progress*
+- [Survey terms](./distribution-and-data/survey-terms.md) - *in progress*
 
 ### Analytics & Export
-- [Introduction to survey analytics](./distribution-and-data/introduction-to-survey-analytics.md)
-- [Exporting survey data](./distribution-and-data/exporting-survey-data.md)
+
+- [Introduction to survey analytics](./distribution-and-data/introduction-to-survey-analytics.md) - *in progress*
+- [Exporting survey data](./distribution-and-data/exporting-survey-data.md) - *in progress*
