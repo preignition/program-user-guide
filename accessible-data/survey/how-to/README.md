@@ -16,21 +16,22 @@ Fundamental tasks for building your survey and forms, including adding questions
 
 ## Survey & Form Management
 
-- [How to create a new survey](./create-and-edit/creating-a-new-survey.md) - *in progress*
-- [How to publish a form](./create-and-edit/publishing-a-form.md) - *in progress*
-- [How to test a form](./create-and-edit/testing-a-form.md) - *in progress*
+- [How to create a new survey](./creating-a-new-survey.md) - *in progress*
+- [How to Edit a survey](./editing-a-survey.md) - *in progress*
+- [How to publish a form](./publishing-a-form.md) - *in progress*
+- [How to test a form](./testing-a-form.md) - *in progress*
 
 ## Adding Content
 
-- [How to add content to a form](./create-and-edit/adding-content-to-a-form.md) - *in progress*
-- [How to choose the right question type](./create-and-edit/choosing-the-right-question-type.md) - *in progress*
-- [How to use tooltips to explain complex terms](./create-and-edit/using-tooltips.md) - *in progress*
-- [How to use Markdown for formatting](./create-and-edit/using-markdown.md) - *in progress*
+- [How to add content to a form](./adding-content-to-a-form.md) - *in progress*
+- [How to choose the right question type](./choosing-the-right-question-type.md) - *in progress*
+- [How to use tooltips to explain complex terms](./using-tooltips.md) - *in progress*
+- [How to use Markdown for formatting](./using-markdown.md) - *in progress*
 
 ## Collaboration & Organization
 
-- [How to set access rights for forms](./create-and-edit/access-rights-for-forms.md) - *in progress*
-- [How to share options across multiple questions](./create-and-edit/sharing-options-across-multiple-questions.md) - *in progress*
+- [How to set access rights for forms](./access-rights-for-forms.md) - *in progress*
+- [How to share options across multiple questions](./sharing-options-across-multiple-questions.md) - *in progress*
 
 ---
 
@@ -40,16 +41,16 @@ Implementing specialized features like Easy Read, Sign Language videos, and mult
 
 ### Accessibility Features
 
-- [Adding an accessibility menu](./accessibility/adding-an-accessibility-menu.md) - *in progress*
-- [Easy Read](./accessibility/easy-read.md) - *in progress*
-- [Sign Language](./accessibility/sign-language.md) - *in progress*
+- [Adding an accessibility menu](./adding-an-accessibility-menu.md) - *in progress*
+- [Easy Read](./easy-read.md) - *in progress*
+- [Sign Language](./sign-language.md) - *in progress*
 
 ## 3. Localization & Translation
 
 ### Translation & Localization
 
-- [Translate forms](./accessibility/localization/translate-forms.md) - *in progress*
-- [Using import/export to translate forms](./accessibility/localization/using-import-export-to-translate-forms.md) - *in progress*
+- [Translate forms](./translate-forms.md) - *in progress*
+- [Using import/export to translate forms](./using-import-export-to-translate-forms.md) - *in progress*
 
 ---
 
@@ -57,9 +58,9 @@ Implementing specialized features like Easy Read, Sign Language videos, and mult
 
 Controlling survey flow, adding logical expressions, and customizing form behavior.
 
-- [Introduction to form logic](./logic-and-behavior/introduction-to-logic.md) - *in progress*
-- [Advanced form logic](./logic-and-behavior/advanced-logic.md) - *in progress*
-- [Form behaviour](./logic-and-behavior/form-behaviour.md) - *in progress*
+- [Introduction to form logic](./introduction-to-logic.md) - *in progress*
+- [Advanced form logic](./advanced-logic.md) - *in progress*
+- [Form behaviour](./form-behaviour.md) - *in progress*
 
 ---
 
@@ -69,14 +70,14 @@ Generating links, managing survey batches, configuring respondent accounts, and 
 
 ### Sharing & Distribution
 
-- [Distributing your survey (Generating links)](./distribution-and-data/generating-survey-links.md) - *in progress*
-- [Creating alias survey links](./distribution-and-data/creating-alias.md) - *in progress*
-- [Survey batches](./distribution-and-data/using-survey-batches.md) - *in progress*
-- [Survey respondent accounts](./distribution-and-data/survey-respondent-accounts.md) - *in progress*
-- [Redirection after completing survey](./distribution-and-data/redirection-after-completing-survey.md) - *in progress*
-- [Survey terms](./distribution-and-data/survey-terms.md) - *in progress*
+- [Distributing your survey (Generating links)](./generating-survey-links.md) - *in progress*
+- [Creating alias survey links](./creating-alias.md) - *in progress*
+- [Survey batches](./using-survey-batches.md) - *in progress*
+- [Survey respondent accounts](./survey-respondent-accounts.md) - *in progress*
+- [Redirection after completing survey](./redirection-after-completing-survey.md) - *in progress*
+- [Survey terms](./survey-terms.md) - *in progress*
 
 ### Analytics & Export
 
-- [Introduction to survey analytics](./distribution-and-data/survey-analytics.md) - *in progress*
-- [Exporting survey data](./distribution-and-data/exporting-survey-data.md) - *in progress*
+- [Introduction to survey analytics](./survey-analytics.md) - *in progress*
+- [Exporting survey data](./exporting-survey-data.md) - *in progress*
