@@ -1,29 +1,33 @@
 ---
-description: This section explains the different ways you can distribute your survey to respondents.
+description: Reference documentation for distributing your survey to respondents.
 ---
 
 # Distribute Your Survey
 
-Learn about the various methods for distributing your survey, including sharing links, sending emails, and embedding it on your website.
+The **Distribute** page provides the tools and settings necessary to generate and manage access links for your survey.
 
 <figure>
-  <img src="assets/distribute-auto.png" alt="The survey distribution options page.">
-  <figcaption>The survey distribution options page.</figcaption>
+  <img src="assets/distribute-auto.png" alt="The survey distribution interface">
+  <figcaption>The survey distribution interface</figcaption>
 </figure>
 
 ## Interface Overview
 
-The **Distribute** page provides the tools you need to get your survey in front of respondents.
+<figure>
+  <img src="assets/distribute-content-auto.png" alt="Distribution settings content">
+  <figcaption>Distribution settings content</figcaption>
+</figure>
 
-- **Survey Link**: The primary URL for your survey. You can copy this link to share via email, chat, or social media.
-- **QR Code**: A generated QR code that links directly to your survey. Download this image to include on printed materials like posters or flyers.
-- **Social Share**: Quick links to share your survey directly to platforms like Facebook, Twitter, and LinkedIn.
-- **Embed Code**: An HTML snippet that allows you to embed the survey directly into your own website or blog.
+The **Distribute** page allows you to generate custom links to share via email, chat, social media, or your own website. 
+
+- **Survey Mode**: Select the operational mode for the generated link.
+    - **Production**: Links intended for real respondents. Answers submitted via these links are automatically saved to the database.
+    - **Test**: Links intended for previewing and testing the survey before it goes live. Answers submitted via test links are **not** saved to the database.
+- **Survey Name / Alias**: Choose the base path for your URL. You can use the default cryptic survey identifier or an "alias" (a more readable, customized link text).
+- **Survey Options**: Configuration toggles that vary depending on whether the survey is in test or production mode (e.g., forcing respondents to use the latest version of the survey, displaying a landing page).
+- **Accessibility Modes**: Generate a link that automatically activates a specific accessibility mode (e.g., Read Aloud, Easy Read, Sign Language) when a respondent clicks on it.
+- **Survey Link & QR Code**: View and copy the generated link or download a QR code corresponding to the link configuration.
 
 ## Advanced Settings
 
-For custom tracking and domain masking, see [Advanced Distribution Settings](./advanced.md).
-
-## Contents
-
-This folder contains assets for the survey distribution section.
+For custom tracking, domain masking, and creating alias survey links, see the [Advanced Distribution Settings](./advanced.md).

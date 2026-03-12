@@ -1,31 +1,32 @@
 ---
-description: This section explains how to send your survey to respondents via email.
+description: Reference documentation for distributing your survey via email invitations.
 ---
 
 # Email Your Survey
 
-Email is a powerful way to distribute your survey. Learn how to craft and send effective survey invitations to your target audience.
+The **Email** page allows you to compose and dispatch survey invitations directly to respondents from within the platform.
 
 <figure>
-  <img src="assets/message-auto.png" alt="The survey email invitation editor.">
-  <figcaption>The survey email invitation editor.</figcaption>
+  <img src="assets/email-auto.png" alt="The survey email invitation interface">
+  <figcaption>The survey email invitation interface</figcaption>
 </figure>
 
 ## Interface Overview
 
-The **Email** page allows you to compose and send survey invitations directly from the platform.
+<figure>
+  <img src="assets/email-content-auto.png" alt="Email settings content">
+  <figcaption>Email settings content</figcaption>
+</figure>
 
-- **Recipients**: Manage your distribution list. You can manually enter email addresses, upload a CSV file, or select from a saved contact list.
-- **Message Editor**:
-    - **Subject**: The subject line of your email. Make it engaging to increase open rates.
-    - **Body**: A rich text editor to compose your message. You can format text, add links, and insert images.
-    - **Placeholders**: Use dynamic tags (e.g., `{{survey_link}}`, `{{first_name}}`) to personalize each email and ensure every respondent gets their unique survey link.
-- **Send Options**: Choose to send the email immediately or schedule it for a future date and time.
+The **Email** configuration manages the built-in email distribution workflow.
+
+- **Recipients List**: Define your target audience by manually entering email addresses, importing a structured CSV file, or selecting an existing contact list.
+- **Message Editor**: Contains the interface for drafting your invitation.
+    - **Subject**: The subject line for your email invitation.
+    - **Body**: A rich text field for composing your message. You can format the text, hyperlink content, and attach images.
+    - **Dynamic Placeholders**: Incorporate template tags (e.g., `{{survey_link}}`, `{{first_name}}`) to automatically personalize individual emails, ensuring each recipient receives their distinct trackable survey link.
+- **Delivery Options**: Execute the delivery immediately or schedule the broadcast for a specified future date and time.
 
 ## Advanced Settings
 
-For SMTP configuration and deliverability settings, check [Advanced Email Settings](./advanced.md).
-
-## Contents
-
-This folder contains assets for the survey email section.
+For SMTP integration, bounce management, and advanced deliverability rules, review the [Advanced Email Settings](./advanced.md).

@@ -14,3 +14,8 @@ Manage complex legal requirements and consent forms.
 ## Multi-Language Terms
 
 Upload specific terms and conditions for each language your survey supports. Advanced settings also allow for versioning of legal documents, ensuring you track exactly which version of the terms each respondent agreed to.
+
+<figure>
+  <img src="assets/terms-content-advanced-auto.png" alt="terms advanced content">
+  <figcaption>terms advanced content</figcaption>
+</figure>

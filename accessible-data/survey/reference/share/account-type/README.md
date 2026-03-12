@@ -1,30 +1,30 @@
 ---
-description: This section explains the different account types for survey respondents.
+description: Reference documentation for defining respondent account types.
 ---
 
 # Respondent Account Types
 
-Understand the different types of accounts your survey respondents can use, and how to manage them.
+The **Account Types** page details the authentication requirements for your respondents, dictating how they interact with and access the survey.
 
 <figure>
-  <img src="assets/account-auto.png" alt="The survey respondent account types page.">
-  <figcaption>The survey respondent account types page.</figcaption>
+  <img src="assets/account-type-auto.png" alt="The survey respondent account types interface">
+  <figcaption>The survey respondent account types interface</figcaption>
 </figure>
 
 ## Interface Overview
 
-The **Account Types** page lets you define who is eligible to take your survey.
+<figure>
+  <img src="assets/account-type-content-auto.png" alt="Account type settings content">
+  <figcaption>Account type settings content</figcaption>
+</figure>
 
-- **Anonymous**: Allows anyone with the link to take the survey. No login is required.
-- **Verified Users**: Requires respondents to log in to their account before accessing the survey. This ensures one response per person and tracks user identity.
+The **Account Types** configuration defines who is eligible to take your survey and what verification is required.
+
+- **Anonymous Accounts (Default)**: Allows anyone with the link to take the survey. No explicit login is required. The application automatically creates an anonymous session on behalf of the respondent. Respondents are invited to upgrade their account to a Personal Account upon submission.
+- **Personal Accounts**: Requires respondents to create or log in to an account prior to commencing the survey (e.g., using email/password or a social provider like Google or Facebook). This option tracks user identity across submissions.
+- **Verified Accounts**: Similar to Personal Accounts, but additionally requires respondents to verify their email address. Respondents receive a verification email and must click a link. Although they can begin the survey, they may not be considered fully verified until the email is confirmed.
 - **Email Invite Only**: Restricts access to a specific list of email addresses. Each respondent receives a unique link.
-
-Select the appropriate option to enforce the desired level of security and access control for your survey.
 
 ## Advanced Settings
 
-For detailed authentication configuration, see [Advanced Account Settings](./advanced.md).
-
-## Contents
-
-This folder contains assets for the respondent account types section.
+For detailed authentication configuration, Single Sign-On (SSO), and Multi-Factor Authentication (MFA), see the [Advanced Account Settings](./advanced.md).

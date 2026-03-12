@@ -1,78 +1,33 @@
 ---
-description: This section explains how to use batches to keep survey responses together based on when they were completed.
+description: Reference documentation for defining temporal batches to group responses and control survey availability.
 ---
-
-## Advanced Settings
-
-For automated scheduling options, refer to [Advanced Batch Settings](./advanced.md).
-
-## Contents
-
-This folder contains assets for the survey batches section.
 
 # Survey Batches
 
-Batches allow you to send your survey to a large list of respondents simultaneously, making it easy to manage large-scale survey distribution.
+The **Batches** page allows you to schedule distinct periods of availability for your survey, making it easy to orchestrate longitudinal data collection.
 
 <figure>
-  <img src="assets/batch-auto.png" alt="The survey batches page.">
-  <figcaption>The survey batches page.</figcaption>
+  <img src="assets/batch-auto.png" alt="The survey batches interface">
+  <figcaption>The survey batches interface</figcaption>
 </figure>
 
 ## Interface Overview
 
+<figure>
+  <img src="assets/batch-content-auto.png" alt="Batch settings content">
+  <figcaption>Batch settings content</figcaption>
+</figure>
 
-The **Batches** page is your control center for managing survey availability over time.
+The **Batches** configuration defines exact temporal windows for your survey's operation. A survey must be attached to an active batch in order to accept incoming responses.
 
-- **Batch List**: Displays all created batches with their names, start/end dates, and current status (Active, Scheduled, or Closed).
-- **Create Batch**: Click "Create New Batch" to define a new availability window.
-- **Batch Details**:
-    - **Name**: A descriptive name for the batch (e.g., "Q1 2024 Survey").
-    - **Start Date**: The date and time when the survey becomes accessible.
-    - **End Date**: The date and time when the survey automatically closes.
-    - **Status**: Indicates if the batch is currently live. Only one batch can be active at a time.
+- **Batch List**: A master index displaying all registered batches alongside their identifying labels, start/end boundaries, and operational status (Active, Scheduled, or Closed).
+- **Batch Creation & Management**: Select "Create New Batch" to establish a new time block. Modifying a batch requires entering the following criteria:
+    - **Name & Description**: A descriptive title and optional text to organize and easily identify the batch (e.g., "Q1 2024 Global Survey").
+    - **Start Date (From Date)**: The precise timestamp when the survey opens. If this date is set in the past, the batch evaluates as immediately live.
+    - **End Date (To Date)**: The timestamp when the survey systematically closes. If omitted, the survey remains open indefinitely until manually closed or superseded.
 
-## Why use Batches?
+*Note: Grouping respondents via batches natively separates collected answers in the Analytics dashboard, which is ideal for isolating and comparing results generated in different time periods.*
 
-{% hint style="success" %}
-In order for a survey to be active, it must be part of an active batch. This means the batch must have a 'from' date which is in the past and a 'to' date which is in the future or left blank.
-{% endhint %}
+## Advanced Settings
 
-*   **Control Availability**: Batches provide a way to control when your survey is active by setting a 'from' and 'to' date. Respondents clicking on a survey link outside of these dates will be informed that the survey is closed.
-*   **Group Responses**: Batches also provide a way of grouping respondents based on when they completed a survey, as the data set can be filtered by 'batch'. This is helpful if you run annual surveys and want to be able to analyze results by year.
-
-## How to Configure Batches
-
-### Step 1: Navigate to Batch Settings
-
-Batch settings can be found under the 'Survey Definition' menu.
-
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
-
-### Step 2: Set Activation Dates
-
-You need to set a 'from' date which is in the past in order for the batch to be activated immediately.
-
-![](<../../../.gitbook/assets/image (299) (1) (1) (1) (1).png>)
-
-### Step 3: Add Label and Description
-
-You can organize batches by giving them a label and description.
-
-![](<../../../.gitbook/assets/image (309) (1) (1) (1) (1) (1).png>)
-
-### Step 4: Create the Batch
-
-Select 'create new batch' to finalize and create the new batch.
-
-![](<../../../.gitbook/assets/image (310) (1) (1) (1) (1) (1) (1) (1).png>)
-
-### Step 5: Publish Your Survey
-
-To make the change effective, remember to go to "Settings" and 'Publish' a new version of your Survey.
-
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Screenshot showing the Settings Menu on the left of the page and the blue 'Publish' button in the top right.</p></figcaption></figure>
-
-## Analyzing Results
-
-When analyzing survey results, responses can be filtered by batch to compare data across different time periods or distribution groups.
+For configuring automated API triggers and recurring batch creation cycles, examine the [Advanced Batch Settings](./advanced.md).

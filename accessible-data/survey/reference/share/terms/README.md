@@ -1,84 +1,34 @@
 ---
-description: This section explains how to add terms and conditions to your survey.
+description: Reference documentation for implementing custom terms and conditions for your respondents.
 ---
 
 # Survey Terms
 
-Set up terms and conditions that respondents must agree to before they can access your survey.
+The **Terms** page enables you to impose custom legal agreements, consent protocols, or conditions that respondents must explicitly or implicitly accept prior to initiating the survey.
 
 <figure>
-  <img src="assets... " alt="The survey terms and conditions editor.">
-  <figcaption>The survey terms and conditions editor.</figcaption>
+  <img src="assets/terms-auto.png" alt="The survey terms and conditions interface">
+  <figcaption>The survey terms and conditions interface</figcaption>
 </figure>
 
 ## Interface Overview
 
-The **Terms** page allows you to add legal or informational text that respondents must agree to.
+<figure>
+  <img src="assets/terms-content-auto.png" alt="Terms settings content">
+  <figcaption>Terms settings content</figcaption>
+</figure>
 
-- **Enable Terms**: A checkbox to activate the terms and conditions step at the start of the survey.
-- **Terms Editor**: A rich text area where you can paste or write your terms. You can format text, add links to external privacy policies, and use lists.
-- **Agreement Type**: Choose how respondents agree:
-    - **Implicit**: "By continuing, you agree..."
-    - **Explicit**: Requires checking a "I agree" box before proceeding.
+By default, all respondents must agree to the platform's overarching terms of service. The **Terms** configuration allows you to inject your organization's specific requirements into this flow.
+
+- **Custom Survey Terms Toggle**: A switch that activates the presentation of your bespoke terms and conditions before the respondent begins the survey.
+- **Terms Editor**: A rich text field supporting Markdown syntax. It allows you to format your legal text, embed hyperlinks to external privacy policies, and apply CSS classes specifically designed to respect various accessibility modes (e.g., hiding/showing content for Easy Read mode).
+- **Agreement Presentation**: Dictates how the terms are displayed to the respondent.
+    - **Popup Window (Default)**: The terms are hidden behind a hyperlink and rendered in a modal window upon interaction.
+    - **Plain Text**: The terms are displayed fully inline immediately above the "I agree" sign checkbox.
+- **Preview Tab**: Allows you to simulate how your formatted terms and conditions will visually render to respondents before pushing changes live.
+
+*Note: Custom terms can be translated natively into any localized language activated for your survey.*
 
 ## Advanced Settings
 
-For multi-language terms and versioning, see [Advanced Terms Settings](./advanced.md).
-
-## Contents
-
-This folder contains assets for the survey terms section.
-
-# Survey terms- advanced
-
-{% hint style="success" %}
-Although this is an advanced feature, it is simple to add your own survey terms
-{% endhint %}
-
-## Context
-
-In order to respond to a survey on the application, respondents must agree to the software providers terms of service.
-
-You have the option to ask respondents to agree to your own terms of service if you would like
-
-## Step 1
-
-To add your own survey terms, first toggle on the 'Advanced' settings.
-
-You will see additional options appear in the Survey Definition menu, including 'Terms'
-
-{% embed url="https://youtu.be/B_fbSwGY3n4" %}
-
-## Step 2
-
-To add your your own terms, toggle on 'Add Survey Terms'
-
-Markdown is supported and CSS Classes can be used to display or hide accessibility modes.
-
-You can use the Preview tab to see how your terms will be presented to respondents
-
-![](<../../../.gitbook/assets/image (2) (2).png>)
-
-## Step 3
-
-The terms can be translated into any of the languages which are active for the survey
-
-![](<../../../.gitbook/assets/image (299) (1) (1) (1).png>)
-
-## Step 4
-
-Once your terms are written, you can customize how they will be presented to survey respondents
-
-![](<../../../.gitbook/assets/image (310) (1) (1) (1) (1) (1) (1).png>)
-
-## Step 5
-
-By default, terms appear as a popup window when a user click on a terms link
-
-![](<../../../.gitbook/assets/image (314) (1) (1) (1).png>)
-
-## Step 6
-
-This is how your terms will appear if you select the option 'under sign checkbox as plain text'
-
-![](<../../../.gitbook/assets/image (299) (1) (1).png>)
+For configuring specific multi-language terms mappings and tracking explicit document versioning for legal compliance, view the [Advanced Terms Settings](./advanced.md).

@@ -14,3 +14,8 @@ Build robust integrations with advanced webhook controls.
 ## Custom Headers and Retries
 
 Configure custom HTTP headers for authentication with your endpoint. You can also define specific retry policies for failed delivery attempts and view detailed logs of all webhook payloads for debugging.
+
+<figure>
+  <img src="assets/webhook-content-advanced-auto.png" alt="webhook advanced content">
+  <figcaption>webhook advanced content</figcaption>
+</figure>

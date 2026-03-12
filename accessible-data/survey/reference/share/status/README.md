@@ -1,10 +1,10 @@
 ---
-description: This section explains how to check the status of your survey and manage its availability.
+description: Reference documentation for checking the status of your survey and managing its availability.
 ---
 
 # Survey Status
 
-Monitor the status of your survey, see how many responses you've received, and open or close it to new respondents.
+The **Status** page provides information on the current operational state of your survey and allows you to configure its activation strategy.
 
 <figure>
   <img src="assets/status-auto.png" alt="The survey status page.">
@@ -13,20 +13,19 @@ Monitor the status of your survey, see how many responses you've received, and o
 
 ## Interface Overview
 
-The **Status** page gives you a quick snapshot of your survey's current state.
+<figure>
+  <img src="assets/status-content-auto.png" alt="Status settings content.">
+  <figcaption>Status settings content.</figcaption>
+</figure>
 
-- **Status Toggle**: A prominent switch to manually Open or Close the survey.
-    - **Open**: The survey is live and accepting responses.
-    - **Closed**: The survey is offline. Respondents attempting to access it will see a "Survey Closed" message.
-- **Response Summary**: Displays key metrics such as:
-    - **Total Responses**: The number of completed surveys.
-    - **Completion Rate**: The percentage of users who started and finished the survey.
-    - **Last Response**: The date and time of the most recent submission.
+The **Status** page allows you to set how and when your survey is open for collecting responses.
+
+- **Deployed Status**: Displays the current status of the survey (e.g., "Active"). It indicates whether the survey is currently open for responses.
+- **Strategy**: Defines the mechanism used to make the survey active. The available strategies are:
+    - **Immediate (default)**: The survey is active immediately for responses once a first version is published.
+    - **Manual**: The survey is activated manually by toggling its status.
+    - **Scheduled**: The survey is active based on a schedule. You can set specific open and/or close dates.
 
 ## Advanced Settings
 
-For quota management and detailed status metrics, check [Advanced Status Settings](./advanced.md).
-
-## Contents
-
-This folder contains assets for the survey status section.
+For detailed status metrics and advanced configurations, refer to the [Advanced Status Settings](./advanced.md).

@@ -14,3 +14,8 @@ Configure complex redirection logic based on respondent behavior.
 ## Conditional Redirection
 
 Instead of a single destination, use advanced settings to define rules that redirect respondents to different URLs based on their answers or score. This is ideal for A/B testing or personalized post-survey journeys.
+
+<figure>
+  <img src="assets/redirection-content-advanced-auto.png" alt="redirection advanced content">
+  <figcaption>redirection advanced content</figcaption>
+</figure>

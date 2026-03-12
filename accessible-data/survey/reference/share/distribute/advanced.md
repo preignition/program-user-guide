@@ -14,3 +14,8 @@ Optimize how your survey reaches your audience with advanced distribution tools.
 ## Custom Links and Tracking
 
 Create custom tracking links to monitor the performance of different distribution channels (e.g., social media vs. newsletter). You can also configure domain masking to serve the survey from your own branded domain.
+
+<figure>
+  <img src="assets/distribute-content-advanced-auto.png" alt="distribute advanced content">
+  <figcaption>distribute advanced content</figcaption>
+</figure>

@@ -14,3 +14,8 @@ Configure detailed authentication requirements for your respondents.
 ## Authentication Providers
 
 Advanced settings enable integration with third-party identity providers (SSO) or the configuration of multi-factor authentication for verified users, ensuring the highest level of security for your survey data.
+
+<figure>
+  <img src="assets/account-type-content-advanced-auto.png" alt="account-type advanced content">
+  <figcaption>account-type advanced content</figcaption>
+</figure>

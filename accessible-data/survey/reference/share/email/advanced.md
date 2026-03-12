@@ -14,3 +14,8 @@ Take full control over your email campaigns with advanced configuration options.
 ## SMTP and Deliverability
 
 Connect your own SMTP server to send emails directly from your infrastructure, ensuring better deliverability and brand consistency. You can also configure advanced retry logic and bounce handling.
+
+<figure>
+  <img src="assets/email-content-advanced-auto.png" alt="email advanced content">
+  <figcaption>email advanced content</figcaption>
+</figure>
