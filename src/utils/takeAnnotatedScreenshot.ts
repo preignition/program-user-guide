@@ -29,11 +29,17 @@ export async function takeAnnotatedScreenshot(
   // 1. Inject CSS to highlight the element (e.g., a thick red border)
   await locator.evaluate((node, outlineStyle) => {
     // Save original styles if you need to revert them later
-    node.dataset.originalOutline = node.style.outline
-    node.dataset.originalOutlineOffset = node.style.outlineOffset
+    const host = node.parentNode?.host
+    let targetNode = node
+    if (node && node instanceof HTMLButtonElement && host) {
+      targetNode = host
+    }
+
+    targetNode.dataset.originalOutline = targetNode.style.outline
+    targetNode.dataset.originalOutlineOffset = targetNode.style.outlineOffset
     // Apply the highlight
-    node.style.outline = outlineStyle.outline
-    node.style.outlineOffset = outlineStyle.outlineOffset
+    targetNode.style.outline = outlineStyle.outline
+    targetNode.style.outlineOffset = outlineStyle.outlineOffset
   }, outlineStyle)
 
   // Wait a brief moment for styles to paint
@@ -56,8 +62,12 @@ export async function takeAnnotatedScreenshot(
 
   // 4. (Optional) Revert the styling so the test can continue cleanly
   await locator.evaluate((node) => {
-    node.style.outline = node.dataset.originalOutline || ''
-    node.style.outlineOffset = node.dataset.originalOutlineOffset || ''
+    const host = node.parentNode?.host
+    let targetNode = node
+    if (node && node instanceof HTMLButtonElement && host) {
+      targetNode = host
+    }
+    targetNode.style.outline = targetNode.dataset.originalOutline || ''
+    targetNode.style.outlineOffset = targetNode.dataset.originalOutlineOffset || ''
   })
 }
-

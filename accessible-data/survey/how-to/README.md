@@ -16,7 +16,7 @@ Fundamental tasks for building your survey and forms, including adding questions
 
 ## Survey & Form Management
 
-- [How to create a new survey](./creating-a-new-survey.md) - *in progress*
+- [How to create a new survey](./creating-a-new-survey.md)
 - [How to Edit a survey](./editing-a-survey.md) - *in progress*
 - [How to publish a form](./publishing-a-form.md) - *in progress*
 - [How to test a form](./testing-a-form.md) - *in progress*
@@ -25,7 +25,7 @@ Fundamental tasks for building your survey and forms, including adding questions
 
 - [How to add content to a form](./adding-content-to-a-form.md) - *in progress*
 - [How to choose the right question type](./choosing-the-right-question-type.md) - *in progress*
-- [How to use tooltips to explain complex terms](./using-tooltips.md) - *in progress*
+- [How to use tooltips to explain complex terms](./using-to`oltips.md) - *in progress*
 - [How to use Markdown for formatting](./using-markdown.md) - *in progress*
 
 ## Collaboration & Organization
