@@ -6,7 +6,7 @@ description: Deepen your understanding of Accessible Surveys with discursive bac
 
 The **Explanation** section is understanding-oriented. While Tutorials take you by the hand and How-to Guides provide exact steps to solve a problem, Explanations zoom out to provide the big picture.
 
-These articles are designed for study. They offer context, historical background, architectural reasons, and the "why" behind the design decisions of the Accessible Surveys platform. 
+These articles are designed for study. They offer context, historical background, architectural reasons, and the "why" behind the design decisions of the Accessible Surveys platform.
 
 ## Key Concepts
 

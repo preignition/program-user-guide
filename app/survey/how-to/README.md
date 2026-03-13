@@ -41,9 +41,11 @@ Implementing specialized features like Easy Read, Sign Language videos, and mult
 
 ### Accessibility Features
 
-- [Adding an accessibility menu](./adding-an-accessibility-menu.md) - *in progress*
+- [How to add an accessibility menu](./adding-an-accessibility-menu.md) - *in progress*
 - [Easy Read](./easy-read.md) - *in progress*
 - [Sign Language](./sign-language.md) - *in progress*
+
+---
 
 ## 3. Localization & Translation
 
