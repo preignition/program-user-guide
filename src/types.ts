@@ -1,7 +1,6 @@
 import { type Page, type PageScreenshotOptions } from '@playwright/test'
 
 export type ContextT = {
-  url: string
   page: Page
   name: string
   path: string

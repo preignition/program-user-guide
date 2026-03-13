@@ -4,7 +4,6 @@ import { AreaT, ClipT, ContextT, OutlineStyleT } from "./types.ts"
 import { takeAnnotatedScreenshot } from "./utils/takeAnnotatedScreenshot.ts"
 
 export class Context implements ContextT {
-  url: string
   name!: string
   path: string
   page!: Page
@@ -14,12 +13,10 @@ export class Context implements ContextT {
     outlineOffset: '4px',
   }
   constructor(
-    url: string,
     path: string,
     page?: Page
   ) {
     this.path = path
-    this.url = url
     if (page) {
       this.setPage(page)
     }
@@ -81,6 +78,8 @@ export class Context implements ContextT {
       outlineStyle
     })
   }
+
+
 
   async screenshot(advanced?: boolean) {
     const name = this.name

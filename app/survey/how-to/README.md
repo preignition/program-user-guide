@@ -25,7 +25,7 @@ Fundamental tasks for building your survey and forms, including adding questions
 
 - [How to add content to a form](./adding-content-to-a-form.md) - *in progress*
 - [How to choose the right question type](./choosing-the-right-question-type.md) - *in progress*
-- [How to use tooltips to explain complex terms](./using-to`oltips.md) - *in progress*
+- [How to use tooltips to explain complex terms](./using-tooltips.md) - *in progress*
 - [How to use Markdown for formatting](./using-markdown.md) - *in progress*
 
 ## Collaboration & Organization
@@ -39,17 +39,14 @@ Fundamental tasks for building your survey and forms, including adding questions
 
 Implementing specialized features like Easy Read, Sign Language videos, and multi-language support.
 
-### Accessibility Features
-
 - [How to add an accessibility menu](./adding-an-accessibility-menu.md) - *in progress*
-- [Easy Read](./easy-read.md) - *in progress*
-- [Sign Language](./sign-language.md) - *in progress*
+- [How to activate accessibility modes](./activating-accessibility-modes.md)
+- [How to use Easy Read](./easy-read.md) - *in progress*
+- [How to use Sign Language](./sign-language.md) - *in progress*
 
 ---
 
 ## 3. Localization & Translation
-
-### Translation & Localization
 
 - [Translate forms](./translate-forms.md) - *in progress*
 - [Using import/export to translate forms](./using-import-export-to-translate-forms.md) - *in progress*
