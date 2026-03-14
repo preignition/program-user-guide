@@ -9,6 +9,7 @@ const a11yPort = '7174'
 const baseUrl = `http://localhost:${port}` // playwright team
 const a11yBaseUrl = `http://localhost:${a11yPort}` // accessible data team
 const satisfactionSurveyId = '3BBFzJneqakYoyDu02c2'
+const mainPath = 'app/survey/how-to'
 
 let locator: Locator
 const suffix = ``
@@ -19,11 +20,8 @@ let surveyName = 'My New Survey'
 
 test.describe('How-To', async () => {
   // try {
-  test('Create and Edit', async ({ page }) => {
-    const context = new Context(
-      'app/survey/how-to',
-      page
-    )
+  test('Survey and Form Management', async ({ page }) => {
+    const context = new Context(mainPath, page)
     await page.setViewportSize({ width: 1600, height: 1080 })
     await page.goto(baseUrl)
 
@@ -31,207 +29,284 @@ test.describe('How-To', async () => {
     await page.getByRole('link', { name: 'Survey', exact: true }).click()
     await page.waitForTimeout(1000)
 
-    // ## Create a new survey
-    context.setName('creating-a-new-survey')
-    // ### Step 1: Click on Create Survey button
-    locator = page.getByRole('button', { name: 'New Survey' })
-    await context.annotatedScreenshot(locator, 'step-1-click-new-survey')
-    await locator.click()
+    test.step('How to create a new survey', async () => {
+      context.setName('creating-a-new-survey')
+      // ### Step 1: Click on Create Survey button
+      locator = page.getByRole('button', { name: 'New Survey' })
+      await context.annotatedScreenshot(locator, 'step-1-click-new-survey')
+      await locator.click()
 
-    // ### Step 2: Give a name and description 
-    await page.getByRole('textbox', { name: 'name' }).click()
-    await page.getByRole('textbox', { name: 'name' }).fill(surveyName)
-    await page.getByRole('textbox', { name: 'name' }).press('Tab')
-    await page.getByRole('textbox', { name: 'description' }).fill('this survey will be accessible')
+      // ### Step 2: Give a name and description 
+      await page.getByRole('textbox', { name: 'name' }).click()
+      await page.getByRole('textbox', { name: 'name' }).fill(surveyName)
+      await page.getByRole('textbox', { name: 'name' }).press('Tab')
+      await page.getByRole('textbox', { name: 'description' }).fill('this survey will be accessible')
 
-    locator = page.getByRole('dialog', { name: 'Create a new Survey' })
-    await context.annotatedScreenshot(locator, 'step-2-fill-name-and-description')
+      locator = page.getByRole('dialog', { name: 'Create a new Survey' })
+      await context.annotatedScreenshot(locator, 'step-2-fill-name-and-description')
 
-    locator = page.getByRole('button', { name: 'Next' })
-    await context.annotatedScreenshot(locator, 'step-2-press-next')
-    await locator.click()
+      locator = page.getByRole('button', { name: 'Next' })
+      await context.annotatedScreenshot(locator, 'step-2-press-next')
+      await locator.click()
 
-    // ### Step 3: Click Next and decide the type of Form (new form, import or create content)
-    locator = page.getByRole('radiogroup')
-    await context.annotatedScreenshot(locator, 'step-3-choose-type-of-form')
-    await page.getByRole('textbox', { name: 'name' }).click()
-    await page.getByRole('textbox', { name: 'name' }).fill('my new form')
-    await page.getByRole('textbox', { name: 'name' }).press('Tab')
-    await page.getByRole('textbox', { name: 'description' }).fill('a for to collect data')
-    await page.getByRole('textbox', { name: 'description' }).press('Tab')
-    await page.getByRole('textbox', { name: 'first page title' }).fill('Page 1')
+      // ### Step 3: Click Next and decide the type of Form (new form, import or create content)
+      locator = page.getByRole('radiogroup')
+      await context.annotatedScreenshot(locator, 'step-3-choose-type-of-form')
+      await page.getByRole('textbox', { name: 'name' }).click()
+      await page.getByRole('textbox', { name: 'name' }).fill('my new form')
+      await page.getByRole('textbox', { name: 'name' }).press('Tab')
+      await page.getByRole('textbox', { name: 'description' }).fill('a for to collect data')
+      await page.getByRole('textbox', { name: 'description' }).press('Tab')
+      await page.getByRole('textbox', { name: 'first page title' }).fill('Page 1')
 
-    locator = page.getByRole('dialog', { name: 'Create a new Survey' })
-    await context.annotatedScreenshot(locator, 'step-3-fill-form-details')
+      locator = page.getByRole('dialog', { name: 'Create a new Survey' })
+      await context.annotatedScreenshot(locator, 'step-3-fill-form-details')
 
-    locator = page.getByRole('button', { name: 'Next' })
-    await context.annotatedScreenshot(locator, 'step-3-press-next')
-    await locator.click()
+      locator = page.getByRole('button', { name: 'Next' })
+      await context.annotatedScreenshot(locator, 'step-3-press-next')
+      await locator.click()
 
-    // ### Step 4: Confirm
-    locator = page.getByRole('dialog', { name: 'Create a new Survey' })
-    await context.annotatedScreenshot(locator, 'step-4-confirm')
+      // ### Step 4: Confirm
+      locator = page.getByRole('dialog', { name: 'Create a new Survey' })
+      await context.annotatedScreenshot(locator, 'step-4-confirm')
 
-    locator = page.getByRole('button', { name: 'Confirm' })
-    await context.annotatedScreenshot(locator, 'step-4-press-confirm')
+      locator = page.getByRole('button', { name: 'Confirm' })
+      await context.annotatedScreenshot(locator, 'step-4-press-confirm')
+      await locator.click()
+      await page.waitForTimeout(2000)
+
+    })
+
+    test.step('How to edit a survey', async () => {
+      // ## Edit the survey
+      context.setName('editing-a-new-survey')
+
+      // ### Step 1: Click on the survey to edit
+      await page.getByText('My New Survey').first().click()
+      locator = page.locator('vaadin-grid-cell-content').filter({ hasText: 'Status Overview of main' })
+      await context.annotatedScreenshot(locator, 'step-1-expand-survey-row')
+      locator = page.getByRole('button', { name: 'Edit Survey' })
+      await context.annotatedScreenshot(locator, 'step-1-click-edit-survey')
+      await locator.click()
+
+      // ### Step 2: Navigate to Build and the tree view
+      locator = page.locator('vaadin-split-layout div').filter({ hasText: 'Overall Structure Introduction Page Form Page 1 Submit Message Thank You Page' })
+      await context.annotatedScreenshot(locator, 'step-2-grid-structure')
+
+      locator = page.locator('vaadin-grid-cell-content').filter({ hasText: 'Form' })
+      await locator.click()
+
+      const currentUrl = page.url()
+      const surveyIdMatch = currentUrl.match(/\/survey\/([^/]+)\/build/)
+      if (surveyIdMatch) {
+        surveyId = surveyIdMatch[1]
+      }
+      const formIdMatch = currentUrl.match(/\/form\/([^/]+)$/)
+      if (formIdMatch) {
+        formId = formIdMatch[1]
+      }
+      expect(surveyId).toBeTruthy()
+      expect(formId).toBeTruthy()
+
+
+      locator = page.locator('vaadin-grid-cell-content').filter({ hasText: 'Page 1' })
+      await context.annotatedScreenshot(locator, 'step-2-click-page-1')
+      await locator.click()
+
+      locator = page.locator('vaadin-split-layout div').filter({ hasText: 'Page 1 title used in the page' })
+      await context.annotatedScreenshot(locator, 'step-2-page-1-title')
+
+
+      // ### Step 3: Navigate the content view
+      locator = page.getByRole('button', { name: 'Add Content Mode' })
+      await context.annotatedScreenshot(locator, 'step-3-click-add-content-mode')
+      await locator.click()
+    })
+
+
+    test.step('How to add content to a form', async () => {
+      context.setName('adding-content-to-a-survey')
+
+      // go back to the tree view / settings mode
+      await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Page 1' }).click()
+      await page.locator('vaadin-grid-cell-content:nth-child(7) > vaadin-grid-tree-toggle > span:nth-child(2)').click()
+
+      // ### Step 1: Activate Section
+      await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Section' }).dblclick()
+      locator = page.locator('.app-drawer > .mdc-drawer-app-content')
+      await context.annotatedScreenshot(locator, 'step-1-section-view')
+
+      // ### Step 2: Add question
+      locator = page.getByRole('button', { name: 'Add a new Question' })
+      await context.annotatedScreenshot(locator, 'step-2-add-question-button')
+      await locator.click()
+
+      locator = page.getByRole('dialog', { name: 'Confirm Action' })
+      await context.annotatedScreenshot(locator, 'step-2-confirm-add-question-dialog')
+
+      locator = page.getByRole('button', { name: 'ok' })
+      await context.annotatedScreenshot(locator, 'step-2-confirm-add-question-dialog-ok')
+      await locator.click()
+
+      // TODO: the locator here do not work well
+      await page.locator('div:nth-child(3) > md-filled-button > lapp-icon > svg > path').click()
+      await page.locator('vaadin-grid-cell-content:nth-child(8) > vaadin-grid-tree-toggle > span:nth-child(2)').click()
+      await page.getByText('question label').click()
+      await page.getByRole('textbox', { name: 'label' }).click()
+      await page.getByRole('textbox', { name: 'label' }).press('ControlOrMeta+Shift+ArrowLeft')
+      await page.getByRole('textbox', { name: 'label' }).press('ControlOrMeta+Shift+ArrowLeft')
+      await page.getByRole('textbox', { name: 'label' }).fill('What is your name')
+      await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Section' }).click()
+      await page.getByRole('button', { name: 'Add a new Question' }).click()
+      await page.locator('lapp-choice-radio:nth-child(2) > .radio-field > .field > #list > lapp-choice-list-item:nth-child(3) > lapp-radio > .container > .touch-target').click()
+      await page.getByRole('button', { name: 'OK' }).click()
+      await page.locator('vaadin-grid-cell-content:nth-child(8) > vaadin-grid-tree-toggle > span:nth-child(2)').click()
+      await page.getByText('question label').click()
+      await page.getByRole('textbox', { name: 'label' }).click()
+      await page.getByRole('textbox', { name: 'label' }).press('ControlOrMeta+Shift+ArrowLeft')
+      await page.getByRole('textbox', { name: 'label' }).press('ControlOrMeta+Shift+ArrowLeft')
+      await page.getByRole('textbox', { name: 'label' }).fill('How old are you')
+
+    })
+
+    test.step('How to mark a survey as favorite', async () => {
+      // ## Mark as favorite
+      context.setName('marking-a-survey-as-favorite')
+      await page.goto(`${baseUrl}/s/workspace`)
+      // ### Step 1: Click on the star icon to mark as favorite
+      await page.getByText('My New Survey').first().click({
+        button: 'right'
+      })
+      locator = page.locator('md-list-item')
+        .filter({ hasText: 'star' }).getByRole('listitem')
+      await context.annotatedScreenshot(locator, 'step-1-right-click-survey')
+
+    })
+
+    test.step('How to delete a survey', async () => {
+
+      // ## Delete the survey
+      context.setName('deleting-a-survey')
+      await page.goto(`${baseUrl}/s/workspace`)
+      // ### Step 1: Click on the survey to delete
+      await page.getByText('My New Survey').first().click({
+        button: 'right'
+      })
+      locator = page.locator('md-list-item')
+        .filter({ hasText: 'delete survey' }).getByRole('listitem')
+      await context.annotatedScreenshot(locator, 'step-1-right-click-survey')
+      await locator.click()
+
+      // ### Step 2: Confirm deletion
+      locator = page.getByText('Confirm Action')
+      await context.annotatedScreenshot(locator, 'step-2-confirm-deletion')
+
+      locator = page.getByRole('button', { name: 'Confirm Action' })
+      await context.annotatedScreenshot(locator, 'step-2-click-confirm-deletion')
+      // we do not want to delete the survey here as we want to use it for the next steps, so we won't click on confirm, but in a real test, we would click and then verify that the survey is deleted
+      // the survey is deleted at the en d of the test suite in a cleanup step
+    })
+    return
+  })
+
+  test('How to test a form', async ({ page }) => {
+    const context = new Context(mainPath, page)
+    context.setName('testing-a-form')
+    await initializePage(page, a11yBaseUrl, `s/edit/survey/${satisfactionSurveyId}/build/test`)
+
+    // ## Step 1: Navigate to the test view. This is rendering the form as a respondent would see it, 
+    // but in a separate environment that allows to test the form with assistive technologies and different accessibility modes without affecting the form being edited.
+
+    locator = page.getByRole('link', { name: 'test' })
     await locator.click()
     await page.waitForTimeout(2000)
-    // ## Edit the survey
-    context.setName('editing-a-new-survey')
+    await context.annotatedScreenshot(locator, 'step-1-click-test-link')
 
-    // ### Step 1: Click on the survey to edit
-    await page.getByText('My New Survey').first().click()
-    locator = page.locator('vaadin-grid-cell-content').filter({ hasText: 'Status Overview of main' })
-    await context.annotatedScreenshot(locator, 'step-1-expand-survey-row')
-    locator = page.getByRole('button', { name: 'Edit Survey' })
-    await context.annotatedScreenshot(locator, 'step-1-click-edit-survey')
-    await locator.click()
 
-    // ### Step 2: Navigate to Build and the tree view
-    locator = page.locator('vaadin-split-layout div').filter({ hasText: 'Overall Structure Introduction Page Form Page 1 Submit Message Thank You Page' })
-    await context.annotatedScreenshot(locator, 'step-2-grid-structure')
-
-    locator = page.locator('vaadin-grid-cell-content').filter({ hasText: 'Form' })
-    await locator.click()
-
-    const currentUrl = page.url()
-    const surveyIdMatch = currentUrl.match(/\/survey\/([^/]+)\/build/)
-    if (surveyIdMatch) {
-      surveyId = surveyIdMatch[1]
+    // ## Step 2: Navigate through the form as a respondent would do and test the different functionalities (e.g. logic expressions, accessibility modes, etc.)
+    // use the test toolbar for this
+    const toolbarButtons = [
+      { name: 'test the form in different', screenshot: 'step-2-test-toolbar-language' },
+      { name: 'activate read aloud', screenshot: 'step-2-test-toolbar-read-aloud' },
+      { name: 'activate sign language', screenshot: 'step-2-test-toolbar-sign-language' },
+      { name: 'activate Easyread emulate mode', screenshot: 'step-2-test-toolbar-easyread' },
+      { name: 'activate voice recording', screenshot: 'step-2-test-toolbar-voice-recording' },
+      { name: 'view all items (regardless of', screenshot: 'step-2-test-toolbar-view-all-items' },
+      { name: 'adjust zoom level', screenshot: 'step-2-test-toolbar-adjust-zoom' },
+      { name: 'activate edit mode', screenshot: 'step-2-test-toolbar-activate-edit-mode' },
+      { name: 'View how the form data is', screenshot: 'step-2-test-toolbar-view-form-data' },
+      { name: 'open accessibility menu', screenshot: 'step-2-test-toolbar-open-accessibility-menu' }
+    ]
+    for (const btn of toolbarButtons) {
+      const button = page.getByRole('button', { name: btn.name })
+      await context.annotatedScreenshot(button, btn.screenshot, 11)
     }
-    const formIdMatch = currentUrl.match(/\/form\/([^/]+)$/)
-    if (formIdMatch) {
-      formId = formIdMatch[1]
-    }
-    expect(surveyId).toBeTruthy()
-    expect(formId).toBeTruthy()
 
-
-    locator = page.locator('vaadin-grid-cell-content').filter({ hasText: 'Page 1' })
-    await context.annotatedScreenshot(locator, 'step-2-click-page-1')
+    // Step 3: Edit the form while in test mode and see the changes applied in real time in the test view
+    locator = page.getByRole('button', { name: 'activate edit mode' })
+    await context.annotatedScreenshot(locator, 'step-3-click-activate-edit-mode')
     await locator.click()
 
-    locator = page.locator('vaadin-split-layout div').filter({ hasText: 'Page 1 title used in the page' })
-    await context.annotatedScreenshot(locator, 'step-2-page-1-title')
-
-
-    // ### Step 3: Navigate the content view
-    locator = page.getByRole('button', { name: 'Add Content Mode' })
-    await context.annotatedScreenshot(locator, 'step-3-click-add-content-mode')
+    locator = page.getByRole('button', { name: 'Edit Does your' })
+    await context.annotatedScreenshot(locator, 'step-3-click-edit-question')
     await locator.click()
 
-    // ## Add Content to the survey
-    context.setName('adding-content-to-a-survey')
+    locator = page.getByRole('dialog')
+    await context.annotatedScreenshot(locator, 'step-3-edit-question-dialog')
 
-    // go back to the tree view / settings mode
+    await page.getByRole('dialog').press('Escape')
 
-    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Page 1' }).click()
-    await page.locator('vaadin-grid-cell-content:nth-child(7) > vaadin-grid-tree-toggle > span:nth-child(2)').click()
-
-    // ### Step 1: Activate Section
-    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Section' }).dblclick()
-    locator = page.locator('.app-drawer > .mdc-drawer-app-content')
-    await context.annotatedScreenshot(locator, 'step-1-section-view')
-
-    // ### Step 2: Add question
-    locator = page.getByRole('button', { name: 'Add a new Question' })
-    await context.annotatedScreenshot(locator, 'step-2-add-question-button')
+    // ## Step 4 (optional): Share the form to other team members to get feedback
+    // - build the form
+    locator = page.getByRole('link', { name: 'share' })
+    await context.annotatedScreenshot(locator, 'step-4-click-test-toolbar-share-link')
     await locator.click()
 
-    locator = page.getByRole('dialog', { name: 'Confirm Action' })
-    await context.annotatedScreenshot(locator, 'step-2-confirm-add-question-dialog')
-
-    locator = page.getByRole('button', { name: 'ok' })
-    await context.annotatedScreenshot(locator, 'step-2-confirm-add-question-dialog-ok')
+    locator = page.getByText('Publish', { exact: true })
+    await context.annotatedScreenshot(locator, 'step-4-click-build-and-publish')
     await locator.click()
 
-    await page.locator('div:nth-child(3) > md-filled-button > lapp-icon > svg > path').click()
-    await page.locator('vaadin-grid-cell-content:nth-child(8) > vaadin-grid-tree-toggle > span:nth-child(2)').click()
-    await page.getByText('question label').click()
-    await page.getByRole('textbox', { name: 'label' }).click()
-    await page.getByRole('textbox', { name: 'label' }).press('ControlOrMeta+Shift+ArrowLeft')
-    await page.getByRole('textbox', { name: 'label' }).press('ControlOrMeta+Shift+ArrowLeft')
-    await page.getByRole('textbox', { name: 'label' }).fill('What is your name')
-    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Section' }).click()
-    await page.getByRole('button', { name: 'Add a new Question' }).click()
-    await page.locator('lapp-choice-radio:nth-child(2) > .radio-field > .field > #list > lapp-choice-list-item:nth-child(3) > lapp-radio > .container > .touch-target').click()
-    await page.getByRole('button', { name: 'OK' }).click()
-    await page.locator('vaadin-grid-cell-content:nth-child(8) > vaadin-grid-tree-toggle > span:nth-child(2)').click()
-    await page.getByText('question label').click()
-    await page.getByRole('textbox', { name: 'label' }).click()
-    await page.getByRole('textbox', { name: 'label' }).press('ControlOrMeta+Shift+ArrowLeft')
-    await page.getByRole('textbox', { name: 'label' }).press('ControlOrMeta+Shift+ArrowLeft')
-    await page.getByRole('textbox', { name: 'label' }).fill('How old are you')
-
-    // ## Mark as favorite
-    context.setName('marking-a-survey-as-favorite')
-    await page.goto(`${baseUrl}/s/workspace`)
-    // ### Step 1: Click on the star icon to mark as favorite
-    await page.getByText('My New Survey').first().click({
-      button: 'right'
-    })
-    locator = page.locator('md-list-item')
-      .filter({ hasText: 'star' }).getByRole('listitem')
-    await context.annotatedScreenshot(locator, 'step-1-right-click-survey')
-
-
-    // ## Delete the survey
-    context.setName('deleting-a-survey')
-    await page.goto(`${baseUrl}/s/workspace`)
-    // ### Step 1: Click on the survey to delete
-    await page.getByText('My New Survey').first().click({
-      button: 'right'
-    })
-    locator = page.locator('md-list-item')
-      .filter({ hasText: 'delete survey' }).getByRole('listitem')
-    await context.annotatedScreenshot(locator, 'step-1-right-click-survey')
+    locator = page.getByRole('button', { name: 'Create a new Version of the' })
+    await context.annotatedScreenshot(locator, 'step-4-click-create-new-version')
     await locator.click()
 
-    // ### Step 2: Confirm deletion
-    locator = page.getByText('Confirm Action')
-    await context.annotatedScreenshot(locator, 'step-2-confirm-deletion')
+    await page.locator('.input-wrapper').click()
+    await page.getByRole('textbox', { name: 'Versioning Message' }).fill('New test version')
+    locator = page.getByRole('dialog', { name: 'Build the Survey' })
+    await context.annotatedScreenshot(locator, 'step-4-click-build-the-survey-dialog')
+    // we need to close the dialog
+    page.getByRole('button', { name: 'Cancel' }).click()
 
-    locator = page.getByRole('button', { name: 'Confirm Action' })
-    await context.annotatedScreenshot(locator, 'step-2-click-confirm-deletion')
-    // we do not want to delete the survey here as we want to use it for the next steps, so we won't click on confirm, but in a real test, we would click and then verify that the survey is deleted
-    // the survey is deleted at the en d of the test suite in a cleanup step
-    return
+    // Step 5: Generate links to share the form with other team members to get feedback
+    // - share the test link with other team members
+
+    locator = page.getByText('Distribute', { exact: true })
+    await context.annotatedScreenshot(locator, 'step-5-generate-links-to-share')
+    await locator.click()
+    locator = page.getByRole('button', { name: 'Display Link for Test' })
+    await context.annotatedScreenshot(locator, 'step-5-click-display-link-for-test')
+    await locator.click()
+
+    locator = page.getByText('Displaying Test Link Use Test')
+    await context.annotatedScreenshot(locator, 'step-5-display-test-link')
   })
 
-  test('How to activate accessibility modes', async ({ page }) => {
+  test('How to publish a form', async ({ page }) => {
+  })
+
+  test('How to provide rich formatting', async ({ page }) => {
+  })
+
+  test('How to use form logic', async ({ page }) => {
 
     const context = new Context(
       'app/survey/how-to',
       page
     )
-    context.setName('activating-accessibility-modes')
-    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/behavior`)
 
-    // ### Step 1: Navigate to Behavior
-    locator = page.getByTestId('page-drawer-menu')
-    console.log('locator', locator)
-    await context.annotatedScreenshot(locator, 'step-1-navigate-to-form-behaviour')
-
-    // Step 2: Enable different accessibility modes
-    locator = page.getByRole('listbox', { name: 'Modes Activated' })
-    await context.annotatedScreenshot(locator, 'step-2-form-behaviour')
-
-    // Step 3: got back to compose mode and Toggle between the different accessibility modes 
-    return
-  })
-
-  test('Logic', async ({ page }) => {
-
-    const context = new Context(
-      'app/survey/how-to',
-      page
-    )
-    await page.setViewportSize({ width: 1600, height: 1080 })
-    await page.goto(baseUrl)
-    await page.goto(`${baseUrl}/s/edit/survey/${surveyId}/build/compose`)
-
-    // ## Form Logic
+    // TODO: use another survey than the new one here 
     context.setName('form-logic')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/compose`)
 
     // ### Step 1: Activate Visibility Mode
     locator = page.getByRole('button', { name: 'Visibility Mode' })
@@ -266,6 +341,50 @@ test.describe('How-To', async () => {
     await page.getByText('== "0"').fill('\n')
 
   })
+
+  test('How to set access rights for forms', async ({ page }) => {
+  })
+
+  test('How to share options across multiple questions', async ({ page }) => {
+  })
+
+  test('How to share content across multiple forms and surveys', async ({ page }) => {
+  })
+
+  test('How to add an accessibility menu', async ({ page }) => {
+  })
+
+  test('How to activate accessibility modes', async ({ page }) => {
+
+    const context = new Context(
+      'app/survey/how-to',
+      page
+    )
+    context.setName('activating-accessibility-modes')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/behavior`)
+
+    // ### Step 1: Navigate to Behavior
+    locator = page.getByTestId('page-drawer-menu')
+    console.log('locator', locator)
+    await context.annotatedScreenshot(locator, 'step-1-navigate-to-form-behaviour')
+
+    // Step 2: Enable different accessibility modes
+    locator = page.getByRole('listbox', { name: 'Modes Activated' })
+    await context.annotatedScreenshot(locator, 'step-2-form-behaviour')
+
+    // Step 3: got back to compose mode and Toggle between the different accessibility modes 
+    return
+  })
+
+  test('How to use Easy Read', async ({ page }) => {
+  })
+
+  test('How to use Sign Language', async ({ page }) => {
+  })
+
+  test('How to explain complex terms', async ({ page }) => {
+  })
+
   test('Accessibility', async ({ page }) => {
 
     const context = new Context(

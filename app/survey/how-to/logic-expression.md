@@ -109,4 +109,3 @@ A wide range of logic options are available. The most commonly used are as follo
 * Always select the option 'Lock this question while editing logic' and unselect this option when you have finished writing the logical expression.
 
 &#x20;
-

@@ -3,6 +3,20 @@ import path from "path"
 import { AreaT, ClipT, ContextT, OutlineStyleT } from "./types.ts"
 import { takeAnnotatedScreenshot } from "./utils/takeAnnotatedScreenshot.ts"
 
+/**
+ * Context class to manage screenshot contexts, including page, areas of interest, and outline styles.
+ * Provides methods to set up the context and take annotated screenshots of specific elements or areas on the page.
+ * Example usage:
+ * const context = new Context('path/to/screenshots', page)
+ *   .setName('my-test')
+ *   .addArea('header', { x: 0, y: 0, width: 800, height: 100 })
+ *   .addArea('footer', { x: 0, y: 500, width: 800, height: 100 }, true)
+ *   .setOutlineStyle({ outline: '2px dashed blue', outlineOffset: '2px' })
+ * await context.screenshot()
+ * await context.annotatedScreenshot(page.locator('#main-content'), 'main-content')
+ *
+ * This will take screenshots of the entire page and the specified areas, as well as an annotated screenshot of the main content element.
+ */
 export class Context implements ContextT {
   name!: string
   path: string
@@ -12,6 +26,11 @@ export class Context implements ContextT {
     outline: '4px solid #bc004b',
     outlineOffset: '4px',
   }
+  /**
+   * Initializes a new Context instance with the given path and optional page.
+   * @param path The base path where screenshots will be saved
+   * @param page Optional Playwright Page object to associate with this context
+   */
   constructor(
     path: string,
     page?: Page

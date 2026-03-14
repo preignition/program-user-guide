@@ -14,24 +14,26 @@ If you already understand the basics of the platform and find yourself asking *"
 
 Fundamental tasks for building your survey and forms, including adding questions, using tooltips, and Markdown formatting.
 
-## Survey & Form Management
+### Survey & Form Management
 
 - [How to create a new survey](./creating-a-new-survey.md)
-- [How to Edit a survey](./editing-a-survey.md) - *in progress*
-- [How to publish a form](./publishing-a-form.md) - *in progress*
-- [How to test a form](./testing-a-form.md) - *in progress*
+- [How to edit a survey](./editing-a-survey.md)
+- [How to test a form](./testing-a-form.md)
+- [How to publish a survey](./publishing-a-survey.md) - *in progress*
+- [How to mark a survey as favorite](./marking-a-survey-as-favorite.md)
+- [How to delete a survey](./deleting-a-survey.md)
 
-## Adding Content
+### Adding Content
 
-- [How to add content to a form](./adding-content-to-a-form.md) - *in progress*
-- [How to choose the right question type](./choosing-the-right-question-type.md) - *in progress*
-- [How to use tooltips to explain complex terms](./using-tooltips.md) - *in progress*
-- [How to use Markdown for formatting](./using-markdown.md) - *in progress*
+- [How to add content to a form](./adding-content-to-a-form.md)
+- [How to provide rich formatting](./providing-rich-formatting.md) - *in progress*
+- [How to use form logic](./logic-expression.md) - *in progress*
 
-## Collaboration & Organization
+### Collaboration & Organization
 
 - [How to set access rights for forms](./access-rights-for-forms.md) - *in progress*
 - [How to share options across multiple questions](./sharing-options-across-multiple-questions.md) - *in progress*
+- [How to share content across multiple forms and surveys](./sharing-content-across-multiple-forms-and-surveys.md) - *in progress*
 
 ---
 
@@ -43,40 +45,29 @@ Implementing specialized features like Easy Read, Sign Language videos, and mult
 - [How to activate accessibility modes](./activating-accessibility-modes.md)
 - [How to use Easy Read](./easy-read.md) - *in progress*
 - [How to use Sign Language](./sign-language.md) - *in progress*
+- [How to explain complex terms](./using-tooltips.md) - *in progress*
 
 ---
 
 ## 3. Localization & Translation
 
+- [How to create a multilingual survey](./creating-a-multilingual-survey.md) - *in progress*
 - [Translate forms](./translate-forms.md) - *in progress*
 - [Using import/export to translate forms](./using-import-export-to-translate-forms.md) - *in progress*
 
 ---
 
-## 4. Logic & Behavior
-
-Controlling survey flow, adding logical expressions, and customizing form behavior.
-
-- [Introduction to form logic](./introduction-to-logic.md) - *in progress*
-- [Advanced form logic](./advanced-logic.md) - *in progress*
-- [Form behaviour](./form-behaviour.md) - *in progress*
-
----
-
-## 5. Distribution & Data
+## 4. Sharing & Distribution
 
 Generating links, managing survey batches, configuring respondent accounts, and analyzing or exporting survey data.
 
-### Sharing & Distribution
-
 - [Distributing your survey (Generating links)](./generating-survey-links.md) - *in progress*
 - [Creating alias survey links](./creating-alias.md) - *in progress*
-- [Survey batches](./using-survey-batches.md) - *in progress*
-- [Survey respondent accounts](./survey-respondent-accounts.md) - *in progress*
+- [How to use survey batches](./using-batches.md) - *in progress*
 - [Redirection after completing survey](./redirection-after-completing-survey.md) - *in progress*
 - [Survey terms](./survey-terms.md) - *in progress*
 
-### Analytics & Export
+## 5. Analytics & Export
 
 - [Introduction to survey analytics](./survey-analytics.md) - *in progress*
 - [Exporting survey data](./exporting-survey-data.md) - *in progress*

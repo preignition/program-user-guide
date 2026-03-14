@@ -6,13 +6,13 @@ description: This page explains how to activate different accessibility modes fo
 
 This guide will show you how to enable different accessibility modes, such as Read Aloud, Easy Read, Sign Language, and Voice Recording, so your respondents can take the survey in the way that best suits them.
 
-### Step 1: Navigate to Form Behavior
+## Step 1: Navigate to Form Behavior
 
 While in the **Build Survey** view, look at the main settings menu on the left side of the screen. Click on the **Form Behavior** option.
 
 <figure><img src="./assets/activating-accessibility-modes/step-1-navigate-to-form-behaviour.png" alt="Navigate to Form Behavior"><figcaption>Click on Form Behavior in the Build Survey menu.</figcaption></figure>
 
-### Step 2: Enable Accessibility Modes
+## Step 2: Enable Accessibility Modes
 
 In the **Form Behavior** settings, look for the **Accessibility Modes** section. Here you will find a list of available modes that you can activate for this form. Check the boxes next to the modes you want to enable.
 
@@ -25,6 +25,8 @@ The available modes include:
 
 <figure><img src="./assets/activating-accessibility-modes/step-2-form-behaviour.png" alt="Enable Accessibility Modes"><figcaption>Check the boxes for the accessibility modes you wish to activate.</figcaption></figure>
 
-### Step 3: Toggle Between Accessibility Modes in Compose Mode
+## Step 3: Toggle Between Accessibility Modes in Compose Mode
 
 Once you have activated the desired accessibility modes, go back to the **Compose** mode in the left menu. You will now be able to toggle between the different accessibility modes you activated to adjust your survey's content and appearance for each specific mode.
+
+<figure><img src="./assets/shared/toolbar-er.png" alt="Toggle Accessibility Modes - Easy read activated"><figcaption>Use the accessibility toolbar to switch between different accessibility modes while composing your survey.</figcaption></figure>

@@ -16,3 +16,9 @@ As our documentation evolves into this structure, this section will house deeper
 - **Understanding Form Logic:** A deeper dive into how the platform's logic engine evaluates mathematical expressions and ternary operators to create dynamic surveys.
 - **Data Privacy and Security:** The conceptual framework behind how we handle anonymized datasets, verified accounts, and data export responsibilities.
 - **The Role of Batches:** Why temporal grouping is a fundamental architectural decision for longitudinal survey analysis.
+
+- [How to choose the right question type](./choosing-the-right-question-type.md) - *in progress*
+- [Respondent accounts](./survey-respondent-accounts.md) - *in progress*
+- [Using Markdown](./using-markdown.md) - *in progress*
+- [Using Survey Batches](./using-survey-batches.md) - *in progress*
+- [Logic](./advanced-logic.md) - *in progress*
