@@ -79,7 +79,7 @@ test.describe('How-To', async () => {
 
     test.step('How to edit a survey', async () => {
       // ## Edit the survey
-      context.setName('editing-a-new-survey')
+      context.setName('editing-a-survey')
 
       // ### Step 1: Click on the survey to edit
       await page.getByText('My New Survey').first().click()
@@ -125,7 +125,7 @@ test.describe('How-To', async () => {
 
 
     test.step('How to add content to a form', async () => {
-      context.setName('adding-content-to-a-survey')
+      context.setName('adding-content-to-a-form')
 
       // go back to the tree view / settings mode
       await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Page 1' }).click()
