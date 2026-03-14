@@ -88,7 +88,9 @@ export class Context implements ContextT {
    */
   async annotatedScreenshot(locator: Locator, name: string, padding: number = 100) {
     const { page, outlineStyle } = this
+    await locator.scrollIntoViewIfNeeded()
     const outputPath = `${this.path}/assets/${this.name ? this.name + '/' : ''}${name}.png`
+
     return await takeAnnotatedScreenshot({
       page,
       locator,

@@ -19,13 +19,13 @@ Fundamental tasks for building your survey and forms, including adding questions
 - [How to create a new survey](./creating-a-new-survey.md)
 - [How to edit a survey](./editing-a-survey.md)
 - [How to test a form](./testing-a-form.md)
-- [How to publish a survey](./publishing-a-survey.md) - *in progress*
+- [How to publish a survey](./publishing-a-survey.md)
 - [How to mark a survey as favorite](./marking-a-survey-as-favorite.md)
 - [How to delete a survey](./deleting-a-survey.md)
 
 ### Adding Content
 
-- [How to add content to a form](./adding-content-to-a-form.md)
+- [How to add content to a form](./adding-content-to-a-form.md) - *in progress*
 - [How to provide rich formatting](./providing-rich-formatting.md) - *in progress*
 - [How to use form logic](./logic-expression.md) - *in progress*
 

@@ -291,7 +291,62 @@ test.describe('How-To', async () => {
     await context.annotatedScreenshot(locator, 'step-5-display-test-link')
   })
 
-  test('How to publish a form', async ({ page }) => {
+  test('How to publish a survey', async ({ page }) => {
+    const context = new Context(mainPath, page)
+    context.setName('publishing-a-survey')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/share/status`)
+
+    // ## Step 1: Set the strategy for making the survey active (immediate, manual, scheduled)
+    locator = page.getByRole('radiogroup', { name: 'Choose the strategy for' })
+    await context.annotatedScreenshot(locator, 'step-1-choose-strategy-for-publishing')
+
+
+    // ## Step 2: Navigate to the share view / build - build a version of the form before sharing
+
+    locator = page.getByText('Publish', { exact: true })
+    await context.annotatedScreenshot(locator, 'step-2-click-publish-link')
+    await locator.click()
+
+
+    locator = page.getByRole('button', { name: 'Create a new Version of the' })
+    await context.annotatedScreenshot(locator, 'step-2-click-create-new-version')
+    await locator.click()
+
+    await page.locator('.input-wrapper').click()
+    await page.getByRole('textbox', { name: 'Versioning Message' }).fill('A new version to share')
+    locator = page.getByRole('dialog', { name: 'Build the Survey' })
+    await context.annotatedScreenshot(locator, 'step-2-click-build-the-survey-dialog')
+    // we need to close the dialog
+    page.getByRole('button', { name: 'Cancel' }).click()
+
+
+    // ## Step 3: Share the survey with other team members by generating a shareable link or by adding their email to share directly with them
+    locator = page.getByText('Distribute', { exact: true })
+    await context.annotatedScreenshot(locator, 'step-3-click-distribute')
+    await locator.click()
+    locator = page.getByRole('button', { name: 'Display Link for Production' })
+    await context.annotatedScreenshot(locator, 'step-3-click-display-link-for-production')
+    await locator.click()
+    locator = page.getByText('Displaying Production Link Use Production Link for the real survey data')
+    await context.annotatedScreenshot(locator, 'step-3-display-production-link')
+
+
+    // Step 4 (Optional): Preselect accessibility modes or language for the respondents when sharing the link
+    locator = page.getByRole('radiogroup', { name: 'Select a language for the' })
+    await context.annotatedScreenshot(locator, 'step-4-select-language-for-sharing')
+    await locator.click()
+    locator = page.getByRole('radiogroup', { name: 'Select a sign language for' })
+    await context.annotatedScreenshot(locator, 'step-4-select-sign-language-for-sharing')
+    await locator.click()
+    locator = page.getByRole('listbox', { name: 'Select accessibility modes to' })
+    await context.annotatedScreenshot(locator, 'step-4-select-accessibility-modes-for-sharing')
+    await locator.click()
+
+    // Step 5: copy the link to share
+    locator = page.getByRole('link', { name: 'http://localhost:7174/v2/3BBFzJneqakYoyDu02c2?' })
+    await context.annotatedScreenshot(locator, 'step-5-copy-link-to-share')
+    await locator.click()
+
   })
 
   test('How to provide rich formatting', async ({ page }) => {
@@ -356,10 +411,7 @@ test.describe('How-To', async () => {
 
   test('How to activate accessibility modes', async ({ page }) => {
 
-    const context = new Context(
-      'app/survey/how-to',
-      page
-    )
+    const context = new Context(mainPath, page)
     context.setName('activating-accessibility-modes')
     await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/behavior`)
 

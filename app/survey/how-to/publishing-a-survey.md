@@ -1,61 +1,60 @@
 ---
-description: This page covers everything you need to know about publishing a form
+description: This page covers everything you need to know about publishing a survey and generating shareable links for respondents.
 ---
 
-# Publishing a form
+# Publishing a survey
 
 {% hint style="info" %}
-A form must be 'Published' before it can be used in a survey.  If a form is changed, a new version must be 'Published' before the changes are seen by respondents.
+A survey must be 'Published' and active before it can collect responses. If your form has changed, a new version must be built and published before the changes are seen by respondents.
 {% endhint %}
 
-## Step 1
+## Step 1: Choose a Publishing Strategy
 
-To 'Publish' a form, go 'Deploy' in the top menu of the form builder and select 'Publish'
+Before distributing the survey, you can set the strategy for making the survey active (e.g., immediate, manual, or scheduled). This determines when the survey becomes available to respondents.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing Deploy in the top menu and the 'Publish' button on the right of the page</p></figcaption></figure>
+<figure><img src="./assets/publishing-a-survey/step-1-choose-strategy-for-publishing.png" alt="Choose the strategy for publishing"><figcaption>Select the strategy for making the survey active.</figcaption></figure>
 
-## Step 3
+## Step 2: Build a New Version
 
-Select 'Create and Publish a New Version'
+Before sharing, you must build a version of the form to ensure all recent changes are compiled and ready for production.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the 'Create and Publish' button</p></figcaption></figure>
+1. Navigate to the **Publish** tab.
+   <figure><img src="./assets/publishing-a-survey/step-2-click-publish-link.png" alt="Navigate to Publish"><figcaption>Click on the Publish link.</figcaption></figure>
 
-## Step 4
+2. Click on the **Create a new Version of the...** button.
+   <figure><img src="./assets/publishing-a-survey/step-2-click-create-new-version.png" alt="Create a new version"><figcaption>Click the Create a new Version button.</figcaption></figure>
 
-You will be prompted to give the version a label. This will help you to differentiate between different versions of the form
+3. You will be prompted to give the version a label (e.g., "A new version to share"). This helps you differentiate between different builds of the survey. Click to build the survey.
+   <figure><img src="./assets/publishing-a-survey/step-2-click-build-the-survey-dialog.png" alt="Build the survey dialog"><figcaption>Provide a versioning message and confirm the build.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Step 3: Generate the Production Link
 
-## Step 5
+Once the survey is built, you can generate a shareable link or distribute it directly to your team members or respondents.
 
-The grid shows summary information about the different versions of the form that have been Published
+1. Go to the **Distribute** section.
+   <figure><img src="./assets/publishing-a-survey/step-3-click-distribute.png" alt="Click Distribute"><figcaption>Navigate to the Distribute section.</figcaption></figure>
 
-The current version will be marked with a![](<../../../.gitbook/assets/image (15) (2).png>)
+2. Click on **Display Link for Production**. This link will collect real survey data.
+   <figure><img src="./assets/publishing-a-survey/step-3-click-display-link-for-production.png" alt="Display Link for Production"><figcaption>Click the Display Link for Production button.</figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot of a grid showing the different versions of the form that have been published</p></figcaption></figure>
+3. A dialog will display the production link.
+   <figure><img src="./assets/publishing-a-survey/step-3-display-production-link.png" alt="Displaying Production Link"><figcaption>The production link is generated and displayed.</figcaption></figure>
 
-## Step 6
+## Step 4: Preselect Options (Optional)
 
-Clicking on a row in the grid, shows some additional information about the version
+When generating the link, you have the option to preconfigure certain settings so the respondent gets a tailored experience immediately upon opening the link.
 
-When a form is 'published' the application runs a number of checks on the form to make sure there are no obvious errors.   &#x20;
+- **Select a language:**
+  <figure><img src="./assets/publishing-a-survey/step-4-select-language-for-sharing.png" alt="Select language"><figcaption>Preselect the default language for the survey link.</figcaption></figure>
 
-In this example the form has been sucessfully published and is available in English and French
+- **Select a sign language:**
+  <figure><img src="./assets/publishing-a-survey/step-4-select-sign-language-for-sharing.png" alt="Select sign language"><figcaption>Preselect the default sign language.</figcaption></figure>
 
-![Screenshot showing an example of a form that has been published sucessfully](<../../../.gitbook/assets/image (305) (1).png>)
+- **Select accessibility modes:**
+  <figure><img src="./assets/publishing-a-survey/step-4-select-accessibility-modes-for-sharing.png" alt="Select accessibility modes"><figcaption>Preselect specific accessibility modes like Read Aloud or Easy Read.</figcaption></figure>
 
-In this example the version build was not sucessful. The error is identified and an option is provided to edit the form so the error can be corrected
+## Step 5: Copy the Link to Share
 
-![Screenshot showing an example of a form that has been published with errors](<../../../.gitbook/assets/image (320).png>)
+Once you have configured the desired options, copy the generated link and distribute it to your audience.
 
-## Step 7
-
-Right clicking on a row on the Version grid provides a way of deleting or rolling back a version so it becomes the current version
-
-![Screenshot showing options to rollback or delete a version of a form](<../../../.gitbook/assets/image (322) (1).png>)
-
-## Step 8
-
-{% hint style="success" %}
-Congratulations!  You know how to 'Publish' a form so that it can be used in a survey
-{% endhint %}
+<figure><img src="./assets/publishing-a-survey/step-5-copy-link-to-share.png" alt="Copy link to share"><figcaption>Copy the final production link and share it.</figcaption></figure>
