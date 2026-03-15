@@ -16,26 +16,39 @@ Other parts of the survey, like the `Introduction` or the `Thank You` page provi
 
 Once added, you can format your text in two ways:
 
-1. **Using the Toolbar**: Use the icons at the top of the editor to quickly apply formatting like Bold (**B**), Italic (*I*), Links, and Lists.
-2. **Typing Markdown Directly**: You can type Markdown syntax directly into the editor for faster formatting.
+1. **Using the Toolbar**: Use the icons at the top of the editor to quickly apply formatting like Bold (**B**), Italic (*I*), Links, and Lists without needing to memorize syntax.
+2. **Typing Markdown Directly**: You can still type standard Markdown syntax directly into the editor for faster formatting.
 
 <figure><img src="./assets/shared/markdown-edit.png" alt="Rich text editor in Content mode"><figcaption>The rich text editor allows you to type Markdown or use the formatting toolbar.</figcaption></figure>
 
-### Common Formatting Options
+### Text Formatting & Shortcuts
 
-| Formatting | Markdown Syntax | Result |
-| :--- | :--- | :--- |
-| **Heading 1** | `# Your Title` | Large primary heading |
-| **Heading 2** | `## Your Subtitle` | Secondary heading with a divider |
-| **Bold** | `**Text**` | **Bold Text** |
-| **Italic** | `*Text*` | *Italic Text* |
-| **Lists** | `* Item` or `1. Item` | Bulleted or Numbered lists |
+You can select text and click the corresponding toolbar button, or use these keyboard shortcuts:
+
+| Formatting | Shortcut |
+| :--- | :--- |
+| **Headings (H1 - H6)** | `Ctrl` + `1` to `Ctrl` + `6` |
+| **Bold** | `Ctrl` + `B` |
+| **Italic** | `Ctrl` + `I` |
+| **Link** | `Ctrl` + `K` |
+| **Lists** | `Ctrl` + `U` or `Ctrl` + `O` |
+| **Quote** | `Ctrl` + `Q` |
+
+## Step 2: Add Advanced Components, Media, and Layouts
+
+The toolbar provides dedicated menus to insert advanced components without writing code:
+
+* **Interactive Content:** Add YouTube videos, tooltips, expandable summaries (details), and Material Design icons.
+* **Media:** Add images via the toolbar, pasting from the clipboard, or dragging and dropping files directly into the editor.
+* **Layouts:** Insert responsive 2- or 3-column layouts, fixed columns, and spacing elements.
+* **Styling:** Use the visual color picker to apply text and background colors that automatically adapt to your survey's active accessibility theme (e.g., dark mode or high contrast).
+* **Accessibility Controls:** When editing a survey, the toolbar includes an **Accessibility menu** to easily configure text or components to show or hide based on the user's active accessibility mode (e.g., Easy Read, Sign Language).
 
 {% hint style="info" %}
-Accessible surveys Markdown also supports writing HTML directly, embedding specialized widgets like the accessibility menu, or using more advanced formatting options, such as blockquotes, code snippets, and tables. For a complete reference on Markdown syntax, see our [Markdown Reference](../reference/content/markdown.md).
+Accessible Surveys Markdown also supports writing HTML directly. For a complete reference on available CSS classes, layout factors, and custom web components, see our [Markdown Reference](../reference/content/markdown/README.md).
 {% endhint %}
 
-## Step 2: Add Images and Files
+## Step 2 (Optional): Add Images and Files
 
 You can easily add images or other media to your content by:
 
