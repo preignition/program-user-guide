@@ -124,7 +124,7 @@ test.describe('How-To', async () => {
     })
 
 
-    test.step('How to add content to a form', async () => {
+    test.step.skip('How to add content to a form', async () => {
       context.setName('adding-content-to-a-form')
 
       // go back to the tree view / settings mode
@@ -346,6 +346,62 @@ test.describe('How-To', async () => {
     locator = page.getByRole('link', { name: 'http://localhost:7174/v2/3BBFzJneqakYoyDu02c2?' })
     await context.annotatedScreenshot(locator, 'step-5-copy-link-to-share')
     await locator.click()
+
+  })
+
+  test('How to add content to a form', async ({ page }) => {
+    const context = new Context(mainPath, page)
+    context.setName('adding-content-to-a-form')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/compose`)
+
+    // # Option A: dragging and dropping content in the `add content` mode
+    // ## Step 1: Activate Add Content Mode
+    locator = page.getByRole('button', { name: 'Add Content Mode' })
+    await context.annotatedScreenshot(locator, 'step-A-1-click-add-content-mode')
+    //await locator.click()
+
+    // ## Step 2: Drag and drop content from the left panel to the form
+    // image is a gif showing the drag and drop action,
+
+    // # Option B: using the + buttons in the tree view to add content in specific places of the form
+    // ## Step 1: right-Click on the + button in the tree view menu to add content in a specific place of the form
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Survey habits' }).click()
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Survey habits' }).click({
+      button: 'right'
+    })
+    locator = page.locator('md-list-item').filter({ hasText: 'Add new Section' }).getByRole('listitem')
+    // getByLabel('Add new Section').getByRole('listitem')
+    await context.annotatedScreenshot(locator, 'step-B-1-right-click-add-section')
+    // we do not clic to not add a new section , but we need to close the context menu
+    // await locator.click()
+    await page.locator('md-list-item').filter({ hasText: 'Survey habits' }).getByRole('listitem').press('Escape')
+
+    // ## Step 2: set the details of the content (e.g. question label, options, etc.) in the pop-up dialog
+
+    locator = page.locator('vaadin-grid-cell-content').filter({ hasText: 'Section 1' })
+    await context.annotatedScreenshot(locator, 'step-B-2-click-newly-added-section-in-tree-view')
+    await locator.click()
+    locator = page.locator('vaadin-split-layout div').filter({ hasText: 'Section 1 Section Name for' })
+    await context.annotatedScreenshot(locator, 'step-B-2-click-newly-added-section')
+    await locator.click()
+
+    // # Option C: using `add (page/section/question)` buttons in the content view to add content in a sequential way
+    // ## Step 1: Activate the parent element of the content you want to add (e.g. click on a page to add a section in this page, click on a section to add a question in this section)
+    locator = page.locator('vaadin-grid-cell-content').filter({ hasText: 'Form' })
+    await context.annotatedScreenshot(locator, 'step-C-1-click-form-in-tree-view')
+    locator.click()
+
+    // ## Step 2: Click on the `add (page/section/question)` button that appears in the content view
+    locator = page.getByRole('button', { name: 'Add a new Page' })
+    await context.annotatedScreenshot(locator, 'step-C-2-click-add-new-page')
+    // locator.click()
+
+    // ## Step 3: set the details of the content (e.g. question label, options, etc.) in detail view
+    locator = page.locator('vaadin-grid-cell-content').filter({ hasText: 'Survey habits' })
+    await context.annotatedScreenshot(locator, 'step-C-3-click-newly-added-page')
+    locator.click()
+    locator = page.locator('vaadin-split-layout div').filter({ hasText: 'Survey habits title used in the' })
+    await context.annotatedScreenshot(locator, 'step-C-3-click-newly-added-page-title')
 
   })
 

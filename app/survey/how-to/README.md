@@ -25,7 +25,7 @@ Fundamental tasks for building your survey and forms, including adding questions
 
 ### Adding Content
 
-- [How to add content to a form](./adding-content-to-a-form.md) - *in progress*
+- [How to add content to a form](./adding-content-to-a-form.md)
 - [How to provide rich formatting](./providing-rich-formatting.md) - *in progress*
 - [How to use form logic](./logic-expression.md) - *in progress*
 
