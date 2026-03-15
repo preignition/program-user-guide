@@ -14,3 +14,8 @@ It is structured around the natural lifecycle and main interfaces of managing a 
   Descriptions of the simulation tools, interface previews, and validation logic used to test a survey prior to deployment.
 - **[Share](./share/README.md)**
   Comprehensive configuration details for making your survey live. Covers publishing version control, generating distribution links, configuring respondent access rights, scheduling batches, integrating webhooks, and defining post-survey redirection.
+
+Other reference content includes:
+
+- **[Markdown](./content/markdown.md)** - A detailed reference on the Markdown syntax supported by Accessible Surveys, including examples and best practices for formatting your survey content.
+- **[Logic Expressions](./content/logic-expressions.md)** - A technical reference for writing logical expressions in form logic, including supported operators, functions, and syntax rules.

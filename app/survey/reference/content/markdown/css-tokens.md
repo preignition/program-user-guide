@@ -4,7 +4,6 @@ The following CSS tokens are available in Markdown Free Text:
 
 They can either be used in the `style` tag for a class or in inline css.
 
-
 ## Color
 
 Color system is inspired from [Material Design color system](https://m3.material.io/styles/color/the-color-system/key-colors-tones).
@@ -12,6 +11,7 @@ Color system is inspired from [Material Design color system](https://m3.material
 Using color tokens instead of hard-coded colors will ensure that the color is coherent with the current theme, or that it will also work in dark mode.
 
 ### Main colors
+
 | Token |  Description | Result |
 | ----- | ------------ | ------- |
 | `--color-primary` | Primary color of the theme | <div style="background: var(--color-primary); width: 20px; height: 20px;"> |
@@ -28,22 +28,24 @@ Using color tokens instead of hard-coded colors will ensure that the color is co
 | `--color-on-tertiary-container` | Color to apply on Tertiary Container color | <div style="background: var(--color-on-tertiary-container); width: 20px; height: 20px;"> |
 
 ### Status colors
+
 | Token |  Description | Result |
 | ----- | ------------ | ------- |
-| `--color-error` | Error color of the theme |  <div style="background: var(--color-error); width: 20px; height: 20px;"> | 
-| `--color-on-error` | Color to apply on Error color |  <div style="background: var(--color-on-error); width: 20px; height: 20px;"> | 
-| `--color-error-container` | Error Container color of the theme |  <div style="background: var(--color-error-container); width: 20px; height: 20px;"> | 
-| `--color-on-error-container` | Color to apply on Error Container color |  <div style="background: var(--color-on-error-container); width: 20px; height: 20px;"> | 
-| `--color-success` | Success color of the theme |  <div style="background: var(--color-success); width: 20px; height: 20px;"> | 
-| `--color-on-success` | Color to apply on Success color |  <div style="background: var(--color-on-success); width: 20px; height: 20px;"> | 
-| `--color-success-container` | Success Container color of the theme |  <div style="background: var(--color-success-container); width: 20px; height: 20px;"> | 
-| `--color-on-success-container` | Color to apply on Success Container color |  <div style="background: var(--color-on-success-container); width: 20px; height: 20px;"> | 
-| `--color-warning` | Warning color of the theme |  <div style="background: var(--color-warning); width: 20px; height: 20px;"> | 
-| `--color-on-warning` | Color to apply on Warning color |  <div style="background: var(--color-on-warning); width: 20px; height: 20px;"> | 
-| `--color-warning-container` | Warning Container color of the theme |  <div style="background: var(--color-warning-container); width: 20px; height: 20px;"> | 
-| `--color-on-warning-container` | Color to apply on Warning Container color |  <div style="background: var(--color-on-warning-container); width: 20px; height: 20px;"> | 
+| `--color-error` | Error color of the theme |  <div style="background: var(--color-error); width: 20px; height: 20px;"> |
+| `--color-on-error` | Color to apply on Error color |  <div style="background: var(--color-on-error); width: 20px; height: 20px;"> |
+| `--color-error-container` | Error Container color of the theme |  <div style="background: var(--color-error-container); width: 20px; height: 20px;"> |
+| `--color-on-error-container` | Color to apply on Error Container color |  <div style="background: var(--color-on-error-container); width: 20px; height: 20px;"> |
+| `--color-success` | Success color of the theme |  <div style="background: var(--color-success); width: 20px; height: 20px;"> |
+| `--color-on-success` | Color to apply on Success color |  <div style="background: var(--color-on-success); width: 20px; height: 20px;"> |
+| `--color-success-container` | Success Container color of the theme |  <div style="background: var(--color-success-container); width: 20px; height: 20px;"> |
+| `--color-on-success-container` | Color to apply on Success Container color |  <div style="background: var(--color-on-success-container); width: 20px; height: 20px;"> |
+| `--color-warning` | Warning color of the theme |  <div style="background: var(--color-warning); width: 20px; height: 20px;"> |
+| `--color-on-warning` | Color to apply on Warning color |  <div style="background: var(--color-on-warning); width: 20px; height: 20px;"> |
+| `--color-warning-container` | Warning Container color of the theme |  <div style="background: var(--color-warning-container); width: 20px; height: 20px;"> |
+| `--color-on-warning-container` | Color to apply on Warning Container color |  <div style="background: var(--color-on-warning-container); width: 20px; height: 20px;"> |
 
 ### Neutral colors
+
 | Token |  Description | Result |
 | ----- | ------------ | ------ |
 | `--color-outline` | Color to use for outlines |  <div style="background: var(--color-outline); width: 20px; height: 20px;"> |
@@ -82,7 +84,6 @@ Using color tokens instead of hard-coded colors will ensure that the color is co
 | `--font-size-xx-large` | Extra extra large font size | `2.25rem` |
 | `--font-size-xxx-large` | Extra extra extra large font size | `3rem` |
 
-
 ## Font-weight
 
 | Token |  Description | Default value |
@@ -92,6 +93,3 @@ Using color tokens instead of hard-coded colors will ensure that the color is co
 | `--font-weight-semi-bold` | Light font weight | `500` |
 | `--font-weight-bold` | Light font weight | `700` |
 | `--font-weight-extra-bold` | Light font weight | `800` |
-
-
-

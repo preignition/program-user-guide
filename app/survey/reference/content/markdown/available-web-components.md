@@ -16,15 +16,16 @@ This will not work:
 ```html
 <lapp-youtube videoid="videoid">
 ```
+
 {% endhint %}
 
-### Tooltips
+## Tooltips
 
-#### pwi-tooltip
+### pwi-tooltip
 
 An element for displaying tooltip. Tooltip provide additional content when focused or hovered.
 
-**Example**
+#### Example
 
 ```html
 Here is a tooltip example: <pwi-tooltip message="this is the tooltip" position="bottom">hover me</pwi-tooltip>
@@ -38,7 +39,7 @@ When a user over the tooltip with or activate it :
 
 > <img src="image/tooltip.png" alt="tooltip example" data-size="original">
 
-**Properties**
+#### Properties
 
 | Property      | Attribute     | Type      | Default | Description                                                                                                                             |
 | ------------- | ------------- | --------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -54,7 +55,7 @@ When a user over the tooltip with or activate it :
 
 ### pwi-form-tooltip
 
-Tooltips to be user in forms. It allows to display glossary definition for complex terms used in the form.
+Tooltips to be used in forms. It allows to display glossary definition for complex terms used in the form.
 
 #### Example
 
@@ -131,7 +132,7 @@ Produces:
 
 ## Video - `<lapp-youtube>` or `<lite-youtube>`
 
-The element for rendering youtube video is [lite-youtube ](https://github.com/paulirish/lite-youtube-embed). We deploy an alternative version of this element called `lapp-youtube` that adds default parameters for allowing to pause videos when necessary, and display videos from the same channel when the video is finished.
+The element for rendering youtube video is [lite-youtube](https://github.com/paulirish/lite-youtube-embed). We deploy an alternative version of this element called `lapp-youtube` that adds default parameters for allowing to pause videos when necessary, and display videos from the same channel when the video is finished.
 
 Prefer using `lapp-youtube` over `lite-youtube` as default parameters are added for you.
 

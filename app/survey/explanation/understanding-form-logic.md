@@ -12,7 +12,7 @@ Accessible Surveys achieves this through a powerful **Logic Engine** that evalua
 
 In a static survey, every respondent sees the same questions in the same order. This can lead to survey fatigue, especially if many questions are irrelevant to the person taking it.
 
-The primary goal of form logic is to create a **personalized, efficient pathway** through the survey. By dynamically showing or hiding questions, you respect the respondent's time and gather higher-quality, cleaner data.
+The primary goal of form logic is to create a **personalized, efficient pathway** through the survey. By dynamically showing or hiding questions (or sections, or pages), you respect the respondent's time and gather higher-quality, cleaner data.
 
 ## How the Logic Engine Works
 
