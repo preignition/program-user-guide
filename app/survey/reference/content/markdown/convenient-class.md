@@ -1,30 +1,47 @@
-# Convenient Class for Accessible Surveys Free Text Field
+---
+description: Reference for CSS layout classes available in the Markdown editor.
+---
 
-Convention class are a convenient way to style your content. They are especially useful for setting the layout of your text, for example, to create columns.
+# Convenience Classes
 
-## Layout
+Pre-defined CSS classes are available to style and layout content using [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) directly within the Markdown editor.
 
-The layout system is based on [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox).
+## Layout Containers
 
-CSS Flexbox is a layout system that allows you to arrange elements in a flexible way and adapt to different screen size. It is especially useful to create responsive layouts.
+Apply these classes to a parent container (e.g., `<div class="...">`) to define the layout direction and behavior of its children.
 
-The following classes are available:
+| Class | Description | Syntax Example |
+| :--- | :--- | :--- |
+| `layout` | Initializes a Flexbox container | `<div class="layout">...</div>` |
+| `horizontal` | Sets flex direction to row (default) | `<div class="layout horizontal">...</div>` |
+| `vertical` | Sets flex direction to column | `<div class="layout vertical">...</div>` |
+| `wrap` | Allows items to wrap onto multiple lines | `<div class="layout wrap">...</div>` |
+| `no-wrap` | Forces items to stay on a single line | `<div class="layout no-wrap">...</div>` |
+| `center-center` | Centers content both horizontally and vertically | `<div class="layout center-center">...</div>` |
+| `center-justify` | Centers content vertically and justifies it horizontally | `<div class="layout center-justify">...</div>` |
 
-| Class | Description | Example     |
-| ----- | ----------- | ----------- |
-| layout | Set Flex layout to a container | `<div class="layout"></div>` |
-| horizontal | Set row flex direction | `<div class="layout horizontal"></div>` |
-| vertical | Set column flex direction | `<div class="layout vertical"></div>` |
-| wrap | [Wrap content](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#multi-line_flex_containers_with_flex-wrap)  | `<div class="layout wrap"></div>` |
-| no-wrap | [Prevent Wrap content](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#multi-line_flex_containers_with_flex-wrap)  | `<div class="layout no-wrap"></div>` |
-| center-center | Center content | `<div class="layout center-center"></div>` |
-| center-justify | Center and justify content | `<div class="layout center-center"></div>` |
+## Layout Factors (Sizing)
 
-## Layout Factors
+Apply these classes to the children inside a `layout` container to control how much space they consume relative to each other.
 
-| Class | Description | Example     |
-| ----- | ----------- | ----------- |
-| flex | Set Flex factor 1 to the element | `<div class="layout"><div class="flex"></div></div>` |
-| flex-2 | Set Flex factor 2 to the element | `<div class="layout"><div class="flex-2"></div></div>` |
-| flex-3 | Set Flex factor 3 to the element | |
-| flex-4 | Set Flex factor 4 to the element | |
+| Class | Description | Syntax Example |
+| :--- | :--- | :--- |
+| `flex` | Sets flex factor to 1 (consumes available space) | `<div class="flex">...</div>` |
+| `flex-2` | Sets flex factor to 2 (consumes 2x available space) | `<div class="flex-2">...</div>` |
+| `flex-3` | Sets flex factor to 3 | `<div class="flex-3">...</div>` |
+| `flex-4` | Sets flex factor to 4 | `<div class="flex-4">...</div>` |
+
+## Example Usage
+
+**Creating a responsive two-column layout:**
+
+```html
+<div class="layout horizontal wrap">
+  <div class="flex">
+    Column 1 content...
+  </div>
+  <div class="flex-2">
+    Column 2 content (twice as wide as Column 1)...
+  </div>
+</div>
+```

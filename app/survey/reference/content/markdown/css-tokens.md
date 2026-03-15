@@ -1,95 +1,116 @@
-# CSS tokens available in Markdown Free Text
+---
+description: Reference documentation for CSS variables (tokens) that automatically adapt to the active theme.
+---
 
-The following CSS tokens are available in Markdown Free Text:
+# CSS Tokens
 
-They can either be used in the `style` tag for a class or in inline css.
+The Markdown editor environment exposes CSS variables (tokens) that map to the active theme (including Light and Dark modes). Using these tokens instead of hard-coded values ensures your content remains visually consistent and accessible across all modes.
 
-## Color
+Tokens can be used within a `<style>` block or directly in inline `style` attributes.
 
-Color system is inspired from [Material Design color system](https://m3.material.io/styles/color/the-color-system/key-colors-tones).
+## Colors
 
-Using color tokens instead of hard-coded colors will ensure that the color is coherent with the current theme, or that it will also work in dark mode.
+The color system uses standard roles (Primary, Secondary, Tertiary, Error, etc.). For each role, there is a base color, an "on-" color (for text/icons placed on top of the base color), and container variants.
 
-### Main colors
+### Primary, Secondary, & Tertiary
 
-| Token |  Description | Result |
-| ----- | ------------ | ------- |
-| `--color-primary` | Primary color of the theme | <div style="background: var(--color-primary); width: 20px; height: 20px;"> |
-| `--color-on-primary` | Color to apply on Primary color | <div style="background: var(--color-on-primary); width: 20px; height: 20px;"> |
-| `--color-primary-container` | Primary Container color of the theme | <div style="background: var(--color-primary-container); width: 20px; height: 20px;"> |
-| `--color-on-primary-container` | Color to apply on Primary Container color | <div style="background: var(--color-on-primary-container); width: 20px; height: 20px;"> |
-| `--color-secondary` | Secondary color of the theme | <div style="background: var(--color-secondary); width: 20px; height: 20px;"> |
-| `--color-on-secondary` | Color to apply on Secondary color | <div style="background: var(--color-on-secondary); width: 20px; height: 20px;"> |
-| `--color-secondary-container` | Secondary Container color of the theme | <div style="background: var(--color-secondary-container); width: 20px; height: 20px;"> |
-| `--color-on-secondary-container` | Color to apply on Secondary Container color | <div style="background: var(--color-on-secondary-container); width: 20px; height: 20px;"> |
-| `--color-tertiary` | Tertiary color of the theme | <div style="background: var(--color-tertiary); width: 20px; height: 20px;"> |
-| `--color-on-tertiary` | Color to apply on Tertiary color | <div style="background: var(--color-on-tertiary); width: 20px; height: 20px;"> |
-| `--color-tertiary-container` | Tertiary Container color of the theme | <div style="background: var(--color-tertiary-container); width: 20px; height: 20px;"> |
-| `--color-on-tertiary-container` | Color to apply on Tertiary Container color | <div style="background: var(--color-on-tertiary-container); width: 20px; height: 20px;"> |
+| Token | Description |
+| :--- | :--- |
+| `--color-primary` | The main brand color. |
+| `--color-on-primary` | Color for text/icons on a primary background. |
+| `--color-primary-container` | A lighter/softer variant of the primary color for containers. |
+| `--color-on-primary-container` | Color for text/icons on a primary container. |
+| `--color-secondary` | The secondary brand color. |
+| `--color-on-secondary` | Color for text/icons on a secondary background. |
+| `--color-secondary-container` | A lighter/softer variant of the secondary color. |
+| `--color-on-secondary-container` | Color for text/icons on a secondary container. |
+| `--color-tertiary` | The tertiary brand color. |
+| `--color-on-tertiary` | Color for text/icons on a tertiary background. |
+| `--color-tertiary-container` | A lighter/softer variant of the tertiary color. |
+| `--color-on-tertiary-container` | Color for text/icons on a tertiary container. |
 
-### Status colors
+### Status Colors
 
-| Token |  Description | Result |
-| ----- | ------------ | ------- |
-| `--color-error` | Error color of the theme |  <div style="background: var(--color-error); width: 20px; height: 20px;"> |
-| `--color-on-error` | Color to apply on Error color |  <div style="background: var(--color-on-error); width: 20px; height: 20px;"> |
-| `--color-error-container` | Error Container color of the theme |  <div style="background: var(--color-error-container); width: 20px; height: 20px;"> |
-| `--color-on-error-container` | Color to apply on Error Container color |  <div style="background: var(--color-on-error-container); width: 20px; height: 20px;"> |
-| `--color-success` | Success color of the theme |  <div style="background: var(--color-success); width: 20px; height: 20px;"> |
-| `--color-on-success` | Color to apply on Success color |  <div style="background: var(--color-on-success); width: 20px; height: 20px;"> |
-| `--color-success-container` | Success Container color of the theme |  <div style="background: var(--color-success-container); width: 20px; height: 20px;"> |
-| `--color-on-success-container` | Color to apply on Success Container color |  <div style="background: var(--color-on-success-container); width: 20px; height: 20px;"> |
-| `--color-warning` | Warning color of the theme |  <div style="background: var(--color-warning); width: 20px; height: 20px;"> |
-| `--color-on-warning` | Color to apply on Warning color |  <div style="background: var(--color-on-warning); width: 20px; height: 20px;"> |
-| `--color-warning-container` | Warning Container color of the theme |  <div style="background: var(--color-warning-container); width: 20px; height: 20px;"> |
-| `--color-on-warning-container` | Color to apply on Warning Container color |  <div style="background: var(--color-on-warning-container); width: 20px; height: 20px;"> |
+| Token | Description |
+| :--- | :--- |
+| `--color-success` | Color indicating a successful action. |
+| `--color-on-success` | Color for text/icons on a success background. |
+| `--color-success-container` | A lighter/softer variant of the success color. |
+| `--color-on-success-container` | Color for text/icons on a success container. |
+| `--color-warning` | Color indicating a warning or non-critical issue. |
+| `--color-on-warning` | Color for text/icons on a warning background. |
+| `--color-warning-container` | A lighter/softer variant of the warning color. |
+| `--color-on-warning-container` | Color for text/icons on a warning container. |
+| `--color-error` | Color indicating a critical error or destructive action. |
+| `--color-on-error` | Color for text/icons on an error background. |
+| `--color-error-container` | A lighter/softer variant of the error color. |
+| `--color-on-error-container` | Color for text/icons on an error container. |
 
-### Neutral colors
+### Neutral & Surface Colors
 
-| Token |  Description | Result |
-| ----- | ------------ | ------ |
-| `--color-outline` | Color to use for outlines |  <div style="background: var(--color-outline); width: 20px; height: 20px;"> |
-| `--color-surface` | Color to use for surface |  <div style="background: var(--color-surface); width: 20px; height: 20px;"> |
-| `--color-on-surface` | Color to apply on surface |  <div style="background: var(--color-on-surface); width: 20px; height: 20px;"> |
-| `--color-surface-variant` | Variant Color to use for surface |  <div style="background: var(--color-surface-variant); width: 20px; height: 20px;"> |
-| `--color-on-surface-variant` | Color to apply on surface variant |  <div style="background: var(--color-on-surface-variant); width: 20px; height: 20px;"> |
-| `--color-background` | Color to use for background |  <div style="background: var(--color-background); width: 20px; height: 20px;"> |
-| `--color-on-background` | Color to apply on background |  <div style="background: var(--color-on-background); width: 20px; height: 20px;"> |
-| `--color-surface-container` | Color to use for surface container |  <div style="background: var(--color-surface-container); width: 20px; height: 20px;"> |
-| `--color-on-surface-container` | Color to apply on surface container |  <div style="background: var(--color-on-surface-container); width: 20px; height: 20px;"> |
+| Token | Description |
+| :--- | :--- |
+| `--color-background` | The underlying background color of the page. |
+| `--color-on-background` | Color for text/icons on the background. |
+| `--color-surface` | Background color for components like cards, sheets, and menus. |
+| `--color-on-surface` | Color for text/icons on a surface background. |
+| `--color-surface-variant` | A subtle variant of the surface color. |
+| `--color-on-surface-variant` | Color for text/icons on a surface variant. |
+| `--color-surface-container` | Background color for grouping related surface elements. |
+| `--color-on-surface-container` | Color for text/icons on a surface container. |
+| `--color-outline` | Color used for borders, dividers, and outlines. |
 
-## Space
+## Spacing
 
-| Token |  Description | Default value |
-| ----- | ------------ | ------------- |
-| `--space-xxx-small` | Very Small space | `2px` |
-| `--space-xx-small` | Small space | `4px` |
-| `--space-x-small` | Small space | `8px` |
-| `--space-small` | Small space | `12px` |
-| `--space-medium` | Medium space | `16px` |
-| `--space-large` | Large space | `20px` |
-| `--space-x-large` | Extra large space | `28px` |
-| `--space-xx-large` | Extra extra large space | `36px` |
-| `--space-xxx-large` | Extra extra extra large space | `48px` |
+Use spacing tokens for `margin`, `padding`, and `gap` properties to ensure consistent rhythmic spacing.
 
-## Font-size
+| Token | Value |
+| :--- | :--- |
+| `--space-xxx-small` | 2px |
+| `--space-xx-small` | 4px |
+| `--space-x-small` | 8px |
+| `--space-small` | 12px |
+| `--space-medium` | 16px |
+| `--space-large` | 20px |
+| `--space-x-large` | 28px |
+| `--space-xx-large` | 36px |
+| `--space-xxx-large` | 48px |
 
-| Token |  Description | Default value |
-| ----- | ------------ | ------------- |
-| `--font-size-x-small` | Very Small font size | `0.75rem` |
-| `--font-size-small` | Small font size | `0.875rem` |
-| `--font-size-medium` | Medium font size | `1rem` |
-| `--font-size-large` | Large font size | `1.25rem` |
-| `--font-size-x-large` | Extra large font size | `1.5rem` |
-| `--font-size-xx-large` | Extra extra large font size | `2.25rem` |
-| `--font-size-xxx-large` | Extra extra extra large font size | `3rem` |
+## Typography
 
-## Font-weight
+Use typography tokens to maintain consistent font sizes and weights.
 
-| Token |  Description | Default value |
-| ----- | ------------ | ------------- |
-| `--font-weight-thin` | Light font weight | `200` |
-| `--font-weight-normal` | Light font weight | `400` |
-| `--font-weight-semi-bold` | Light font weight | `500` |
-| `--font-weight-bold` | Light font weight | `700` |
-| `--font-weight-extra-bold` | Light font weight | `800` |
+### Font Size
+
+| Token | Value |
+| :--- | :--- |
+| `--font-size-x-small` | 0.75rem |
+| `--font-size-small` | 0.875rem |
+| `--font-size-medium` | 1rem |
+| `--font-size-large` | 1.25rem |
+| `--font-size-x-large` | 1.5rem |
+| `--font-size-xx-large` | 2.25rem |
+| `--font-size-xxx-large` | 3rem |
+
+### Font Weight
+
+| Token | Value |
+| :--- | :--- |
+| `--font-weight-thin` | 200 |
+| `--font-weight-normal` | 400 |
+| `--font-weight-semi-bold` | 500 |
+| `--font-weight-bold` | 700 |
+| `--font-weight-extra-bold` | 800 |
+
+## Example Usage
+
+```html
+<div style="background-color: var(--color-primary-container); color: var(--color-on-primary-container); padding: var(--space-medium); border-radius: var(--space-x-small);">
+  <p style="font-size: var(--font-size-large); font-weight: var(--font-weight-bold); margin: 0 0 var(--space-small) 0;">
+    Important Notice
+  </p>
+  <p style="margin: 0;">
+    This box automatically adapts to dark and light mode themes.
+  </p>
+</div>
+```
