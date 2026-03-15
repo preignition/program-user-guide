@@ -1,41 +1,38 @@
 ---
-description: >-
-  This page shows you how to define the type of account you want your
-  respondents to have
+description: An explanation of how respondent accounts are managed and their role in the survey process.
 ---
 
-# Survey respondent accounts
+# Respondent Accounts
 
-## Context
+When designing a survey, one of the most critical decisions is determining who can access it and how their identity is managed. Accessible Surveys provides a flexible account management system that supports everything from completely open, anonymous data collection to highly controlled, authenticated participation.
 
-{% hint style="success" %}
-In order to complete a survey, respondents must have an account. The type of account that is required can be controlled by the person designing the survey.
-{% endhint %}
+This document explains the conceptual foundations of respondent accounts and why different approaches are necessary.
 
-To set the type of account you require respondents to have to complete a survey, go to 'Distribute' under the Survey Definition mene and go to 'Allowed Account Type'
+## The Spectrum of Authentication
 
-<figure><img src="../../../.gitbook/assets/image (2) (4) (1).png" alt=""><figcaption></figcaption></figure>
+Survey research requires different levels of identity verification depending on the context:
 
-## Anonymous Account
+1. **Anonymous (Open Link):** The survey is accessible to anyone with the URL. The system does not require login, and no personal identifying information (PII) is automatically captured. A randomized, temporary session ID is used behind the scenes to track the submission process, ensuring the respondent remains anonymous. This is crucial for collecting sensitive feedback where anonymity encourages honesty.
+2. **Verified (Authenticated):** The survey requires respondents to log in before they can participate. This ensures that every response is tied to a verified identity (e.g., an email address).
 
-* This is the default
-* The respondent doesn't need to do anything
-* Upon accepting the Terms of Service the application automatically creates an anonomous account on behalf of the respondent
-* The respondent is invited to upgrade their account to a Personal Account once the survey is submitted
-* This is best suited to public surveys where you do not need to control access or follow up with respondents
+## Why Require Respondent Accounts?
 
-## Personal Accounts
+Requiring a verified account is essential for several advanced survey methodologies:
 
-* Respondents are asked to open an account prior to commencing a survey
-* Accounts can be opened using an email and password or their google or facebook account if they have one
-* Best suited to surveys where you want to control access or follow up with respondents afterwards
+### 1. Preventing Duplicate Submissions
 
-![](<../../../.gitbook/assets/image (317) (1) (1) (1) (1) (1).png>)
+In high-stakes surveys (like voting, official feedback, or compliance tracking), you need to ensure that each individual only responds once. A verified account provides a concrete identity that the system can use to block multiple submissions.
 
-## Verified Accounts
+### 2. Longitudinal Tracking
 
-* Similar to a Personal Account
-* In addition, Respondents will receive an email for verification purposes
-* A link in the email needs to be clicked in order to complete the verification process.
-* The survey can be submitted without the verification process being complete
-* Allows survey creators to check that accounts are being created with verified email addresses
+If you are conducting a study that spans multiple time periods (using [Survey Batches](./the-role-of-batches.md)), you need a way to link a respondent's answers in Q1 to their answers in Q2. Respondent accounts provide the persistent identifier required to build these longitudinal data profiles.
+
+### 3. Invitation-Only Surveys
+
+Sometimes a survey is not meant for the public. By using respondent accounts, you can upload a list of authorized email addresses and send targeted invitations. The system will restrict access so that only invited accounts can view and complete the survey.
+
+## The Architecture of Identity
+
+In Accessible Surveys, a "Respondent Account" is treated as a distinct entity from the "Survey Response."
+
+When a user logs in and submits a survey, their identity data (such as their name and email) is stored securely and separately from their actual answers. The connection between the identity and the response is managed by the system. This architectural separation ensures that [Data Privacy and Security](./data-privacy-and-security.md) standards are maintained, allowing researchers to export anonymized datasets even when the survey was completed by authenticated users.

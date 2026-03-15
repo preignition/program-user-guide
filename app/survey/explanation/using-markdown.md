@@ -1,98 +1,37 @@
 ---
-description: >-
-  This page provides an introduction to using Markdown to format free text
-  feilds
+description: An explanation of why Accessible Surveys uses Markdown for rich text formatting and its benefits for accessibility.
 ---
 
 # Using Markdown
 
-## Introduction
+When designing a survey, the way text is formatted—headings, bold emphasis, lists, and links—plays a crucial role in how respondents understand and engage with your questions. Accessible Surveys utilizes **Markdown** as the standard language for formatting text across the platform.
 
-{% hint style="info" %}
-Markdown is a simple and easy-to-use markup language you can use to format virtually any document or webpage.
-{% endhint %}
+This document explains why we chose Markdown over traditional rich-text editors (like those found in word processors) and how it benefits the survey experience.
 
-Markdown is available in 'free text' feilds on the platform, giving you lots of control over how a free text feild is rendered. You can format text and images and include tables and links and much more besides.
+## What is Markdown?
 
-This page covers some basic ways you can use Markdown. If you want more information, [_The Markdown Guide_](https://www.markdownguide.org/) is a free and open-source reference guide that explains how to use Markdown in more detail.
+Markdown is a lightweight markup language with plain-text formatting syntax. Instead of clicking buttons to make text bold or create a list, you use simple keyboard symbols.
 
-## Step 1
+For example:
 
-When you are in a free text field you will be notified that 'Markdown is supported'.
+* Typing `**Bold Text**` results in **Bold Text**.
+* Typing `# Heading 1` creates a large primary heading.
+* Typing `* Item 1` creates a bulleted list.
 
-The link will take you to the Markdown page on Wikipedia where you will see some common examples of using markdown
+## Why We Use Markdown
 
-The 'preview' feature shows you how the feild will appear to respondents.
+### 1. Accessibility First
 
-<figure><img src="../../../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+Traditional "WYSIWYG" (What You See Is What You Get) editors often generate complex, messy background HTML that can confuse screen readers and other assistive technologies. Markdown, by design, translates into clean, semantic HTML. A Markdown heading is guaranteed to be a proper `<h1>` or `<h2>` tag, which is critical for users who navigate via screen readers. By using Markdown, we ensure that the underlying structure of your survey text remains inherently accessible.
 
-## Step 2
+### 2. Consistency Across Devices
 
-This example shows how to create a heading
+Surveys are taken on desktop monitors, tablets, and small mobile phones. Markdown ensures that text styling remains strictly structural. Instead of allowing authors to choose specific font sizes or custom colors (which might look great on a desktop but terrible on a phone), Markdown leaves the visual rendering to the platform's responsive theme engine. A `# Heading 1` will always look proportional and beautiful, regardless of the device.
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### 3. Portability and Future-Proofing
 
-Rendered as follows:
+Because Markdown is just plain text, it is highly portable. It can be easily exported, stored in databases, and tracked via version control without any risk of corruption. If you ever need to export your survey questions to another system or analyze them with external tools, the text formatting will be preserved perfectly.
 
-<figure><img src="../../../.gitbook/assets/image (10) (3).png" alt=""><figcaption></figcaption></figure>
+## The "Why" Behind the Design
 
-## Step 3
-
-This example shows how to include a link
-
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-Rendered as follows:
-
-<figure><img src="../../../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
-
-## Step 4
-
-This example shows you how to include an image
-
-<figure><img src="../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
-
-Images should be added in the following way:
-
-<mark style="background-color:blue;">\<img src=</mark><mark style="background-color:purple;">"https://firebasestorage.googleapis.com/v0/b/ida-ta.appspot.com/o/organisationData%2Fillustration%2F\_template%2F-NGHyehUbZduJNdSVzXF%2F-NGb1j8\_-hOcgZ6AdBm3.png?alt=media\&token=8cf02b92-ab35-41f2-9c5a-95a38d1b138c"</mark> <mark style="background-color:orange;">width="100" height="100"</mark><mark style="background-color:red;">></mark>
-
-| Section                                                                                                                                                                                                                                                                | Description                                                                                                                                                                                                                                                         |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <mark style="background-color:blue;">\<img src=</mark>                                                                                                                                                                                                                 | Opening parenthesis                                                                                                                                                                                                                                                 |
-| <mark style="background-color:purple;">"https://firebasestorage.googleapis.com/v0/b/ida-ta.appspot.com/o/organisationData%2Fillustration%2F\_template%2F-NGHyehUbZduJNdSVzXF%2F-NGb1j8\_-hOcgZ6AdBm3.png?alt=media\&token=8cf02b92-ab35-41f2-9c5a-95a38d1b138c"</mark> | The location on the web where the image is stored. A tip is to add the image to the "image library" (or the image library for ER, which opens when you choose a media from the ER menu), right click on the image once uploaded and then click "copy image address" |
-| <mark style="background-color:orange;">width="100" height="100"</mark>                                                                                                                                                                                                 | This allows you to adjust the size of your image                                                                                                                                                                                                                    |
-| <mark style="background-color:red;">></mark>                                                                                                                                                                                                                           | Closing parenthesis                                                                                                                                                                                                                                                 |
-
-The image is rendered like this
-
-<figure><img src="../../../.gitbook/assets/image (1) (1) (2) (2).png" alt=""><figcaption></figcaption></figure>
-
-## Step 5
-
-The following example shows how text can be put inside a coloured box
-
-\<div class="warning" style='padding:0.1em; background-color: #0073AE; color:#ffffff'>
-
-\<span>
-
-\<p style='margin-top:1em; text-align:center'>
-
-\<b>On the importance of sentence length\</b>\</p>
-
-\<p style='margin-left:1em;'>
-
-This sentence has five words. Here are five more words. Five-word sentences are fine. But several together bocome monotonous. Listen to what is happening. The writing is getting boring. The sound of it drones. It's like a stuck record. The ear demands some variety.
-
-\</p>
-
-\</div>
-
-The box is rendered like this:
-
-<figure><img src="../../../.gitbook/assets/image (7) (1) (4).png" alt=""><figcaption></figcaption></figure>
-
-## Step 6
-
-That is a brief introduction to Markdown. For more information, refer to [_The Markdown Guide._ ](https://www.markdownguide.org/)Their ['basic syntax](https://www.markdownguide.org/basic-syntax/)' page covers most of what you need to know and other pages cover advanced user cases.
-
-\\
+In a platform dedicated to accessibility and robust data collection, the structure of the content is just as important as the content itself. By adopting Markdown, Accessible Surveys enforces a separation of content from presentation. You focus on writing clear, semantic questions, and the platform guarantees they will be rendered accessibly and consistently for every respondent.

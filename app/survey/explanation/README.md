@@ -22,19 +22,19 @@ Topics that explain the underlying architecture of the platform, including:
 
 - **[Understanding Survey, Form, Page, Section and Question Hierarchy](./understanding-survey-form-page-section-question-hierarchy.md):** A detailed explanation of the hierarchical structure of surveys and how each level interacts with the others.
 - **[Building and Versioning](./survey-versionning.md):** An explanation of why it is necessary to compile a survey into a frozen snapshot before sharing it, and how strict version control protects data integrity during iterative design.
-- **Understanding Form Logic:** A deeper dive into how the platform's logic engine evaluates mathematical expressions and ternary operators to create dynamic surveys.
-- **Test and Production Survey Links:** Why we have separate links for testing and production surveys and what are the differences.
-- **The Role of Batches:** Why temporal grouping is a fundamental architectural decision for longitudinal survey analysis.
-- **[Respondent accounts](./survey-respondent-accounts.md)** - How respondent accounts are managed and their role in the survey process. *in progress*
-- [Using Survey Batches](./using-survey-batches.md) - *in progress*]
+- **[Understanding Form Logic](./understanding-form-logic.md):** A deeper dive into how the platform's logic engine evaluates mathematical expressions and ternary operators to create dynamic surveys. - *in progress (integrate advanced logic)*
+- **[Test and Production Survey Links](./test-and-production-survey-links.md):** Why we have separate links for testing and production surveys and what are the differences.
+- **[The Role of Batches](./the-role-of-batches.md):** Why temporal grouping is a fundamental architectural decision for longitudinal survey analysis.
+- **[Respondent accounts](./survey-respondent-accounts.md):** How respondent accounts are managed and their role in the survey process.
+- **[Using Survey Batches](./using-survey-batches.md):** The conceptual lifecycle of a survey batch and how it supports temporal data collection.
 
 ## Survey Quality
 
 Content that helps you understand how to create high-quality surveys, including:
 
 - **[How to choose the right question type](./choosing-the-right-question-type.md)**
-- [Using Markdown](./using-markdown.md) - *in progress*
+- **[Using Markdown](./using-markdown.md):** Why Accessible Surveys uses Markdown for rich text formatting and its benefits for accessibility.
 
 ## Data Privacy, security and Ethics
 
-- **Data Privacy and Security:** The conceptual framework behind how we handle anonymized datasets, verified accounts, and data export responsibilities.
+- **[Data Privacy and Security](./data-privacy-and-security.md):** The conceptual framework behind how we handle anonymized datasets, verified accounts, and data export responsibilities.
