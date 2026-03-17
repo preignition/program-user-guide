@@ -1,47 +1,44 @@
 ---
-description: This session covers testing and sharing your survey
+description: Learn how to activate, test, and distribute your survey to respondents.
 ---
 
-# Session 4- Testing and sharing your survey
+# Session 4: Testing and Sharing Your Survey
 
-## Session overview
+## Overview
 
-In previous sessions, you learned to build your survey, apply accessibility options, and translate it into additional languages.
+You have built your survey, applied accessibility options, and translated it. Now, you will learn how to test it and share it with your respondents.
 
-In this session, you will learn how to test and share your survey.
+*Estimated time: 15 minutes*
 
-## Learning outcomes
+## Learning Outcomes
 
-On completing this session, you should feel confident;
+By the end of this session, you will be able to:
 
-* [x] Activating your survey
-* [x] Publishing a new version of your survey
-* [x] Generating different types of survey links
-* [x] Choosing the type of account you want respondents to have to complete your survey
-* [x] Choosing where respondents will be redirected to when they have submitted your survey
-* [x] Giving members of your team access to your survey
+- Activate your survey.
+- Publish a new version of your survey.
+- Generate different types of survey links.
+- Configure respondent account requirements.
+- Set up redirect destinations for completed submissions.
+- Grant survey access to members of your team.
 
-## Learning Materials
+## Instructions
 
-There are no learning materials needed to complete this session.
-
-## Learning Content
-
-In this video, Jerry guides you through the process of testing and sharing your 'Training Survey'.
-
-The video is 10 mins long and we estimate that it will take you about 15 minutes to complete the session.
+Follow along with the video to test and share your 'Training Survey'.
 
 {% embed url="https://youtu.be/KHb_SrGdvz8" %}
 
-## Advanced features not covered in this session
+## Advanced Topics
 
-* [x] Generating emails to send to respondents with 'Personal' or 'Verified Accounts'
-* [x] Using Batches to group responses submitted in a specified time period
-* [x] Using webhooks to send notifications or data about a survey event to another system
-* [x] Adding your own Survey Terms, which respondents must accept before starting your survey
+For more advanced distribution features not covered in this session, refer to the following guides:
+
+- Generating emails to send to respondents with 'Personal' or 'Verified Accounts'.
+- Using Batches to group responses submitted in a specified time period.
+- Using webhooks to send notifications or data to external systems.
+- Adding custom Survey Terms that respondents must accept before starting.
 
 ## Next Steps
 
-::: tip
-You have completed the fourth Training Session!  You can now start the fifth and final Training Session.  This shows how to analyze your survey responses and export your survey data.
-:::
+> [!NOTE]
+> Congratulations on completing Session 4! You are now ready for the final session, where you will analyze your responses and export your data.
+
+[**Start Session 5: Analyzing your survey responses**](session-5-analyzing-survey-responses.md)

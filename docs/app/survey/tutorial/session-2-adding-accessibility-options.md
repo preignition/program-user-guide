@@ -1,77 +1,77 @@
 ---
-description: This training session shows you how to add accessibility options to your survey.
+description: Learn how to add accessibility features such as sign language, Easy Read, Read Aloud, and voice recording to your survey.
 ---
 
-# Session 2- Adding accessibility options
+# Session 2: Adding Accessibility Options
 
-## Session Overview
+## Overview
 
-In session 1, you created a new survey, added an 'Introduction Page', a 'Thank You Page' and some 'Questions' to your 'Form'.
+In Session 1, you created your 'Training Survey'. In this session, you will enhance it by adding essential accessibility features.
 
-In this session, you will learn how to add accessibility features including sign language, Easy Read, Read aloud and voice recording.
+*Estimated time: 15-20 minutes*
 
 ## Learning Outcomes
 
-On completing this session, you should feel confident;
+By the end of this session, you will be able to:
 
-* [x] Using the 'Form Behavior' menu to activate accessibility modes
-* [x] Creating an Easy Read version of your survey
-* [x] Adding a sign language to your survey
-* [x] Choosing a Read Aloud voice for your survey
-* [x] Understanding how the Voice Recording option works
-* [x] Testing the accessibility options
+- Use the 'Form Behavior' menu to activate accessibility modes.
+- Create an Easy Read version of your survey.
+- Add a sign language video to your survey.
+- Choose a Read Aloud voice.
+- Understand how the Voice Recording option works.
+- Test your accessibility options.
 
-::: info
-The 'Training Survey' supports British Sign Language (BSL). You can offer whichever sign language you choose and even offer multiple sign languages.
-:::
+> [!NOTE]
+> The 'Training Survey' uses British Sign Language (BSL), but you can offer any sign language—or even multiple sign languages—in your own surveys.
 
-## Learning Materials
+## Training Materials
 
-You will need the following learning materials for this session.
+### British Sign Language (BSL) Videos
 
-### Links for British Sign Language (BSL) videos
+Use the following YouTube IDs to add BSL videos to your 'Training Survey'.
 
-When you add BSL videos to your 'Training Survey', you will need these Youtube links.
+| Question | YouTube ID |
+| :--- | :--- |
+| 1.1 'Which survey tool does your organisation use the most?' | [dsL489ipJxM](https://youtu.be/dsL489ipJxM) |
+| 1.2 'I am satisfied with my current survey tool' | [6KxVTBEfcUQ](https://youtu.be/6KxVTBEfcUQ) |
+| 1.3 'What do you like about the survey tool you are using?' | [4LfklqWfq3A](https://youtu.be/4LfklqWfq3A) |
+| 1.4 'What frustrates you about the survey tool that you are using?' | [hK1L5y5iRds](https://youtu.be/hK1L5y5iRds) |
+| 2.1 'Do you like this survey?' | [Zne0RX2she4](https://youtu.be/Zne0RX2she4) |
 
-Simply copy the 11 digit Youtube ID into the appropriate place in your survey. The training video will show you how!
-
-<table><thead><tr><th width="442">Question</th><th>Youtube ID</th></tr></thead><tbody><tr><td>1.1 'Which survey tool does your organisation use the most?'</td><td><a href="https://youtu.be/dsL489ipJxM">dsL489ipJxM</a></td></tr><tr><td>1.2 'I am satisifed with my current survey tool'</td><td><a href="https://youtu.be/6KxVTBEfcUQ">6KxVTBEfcUQ</a></td></tr><tr><td>1.3 'What do you like about the survey tool you are using?'</td><td><a href="https://youtu.be/4LfklqWfq3A">4LfklqWfq3A</a></td></tr><tr><td>1.4 'What frustrates you about the survey tool that you are using?'</td><td><a href="https://youtu.be/hK1L5y5iRds">hK1L5y5iRds</a></td></tr><tr><td>2.1 'Do you like this survey?'</td><td><a href="https://youtu.be/Zne0RX2she4">Zne0RX2she4</a></td></tr></tbody></table>
-
-::: info
-Currently survey builders need to create their own sign language videos. If required, we can provide details of recommended sign language service providers.
-:::
+> [!TIP]
+> Survey builders currently need to provide their own sign language videos. We can provide details of recommended sign language service providers if required.
 
 ### Easy Read Images
 
-When you add Easy Read images to your survey, these images are the ones to use.
+Download the following images to a local folder before starting the video.
 
-| | | |
+| Image 1 | Image 2 | Image 3 |
 | :---: | :---: | :---: |
-| <img src="./assets/1 ER image for Survey.png" alt="Easy Read image for 'Which survey tool does your organisation use the most?'" width="100%"> | <img src="./assets/2 ER image for Satisfaction.png" alt="Easy Read image for 'I am satisifed with my current survey tool'" width="100%"> | <img src="./assets/3 ER image for what do you like.png" alt="Easy Read image for 'What do you like about the survey tool you are using?'" width="100%"> |
-| <img src="./assets/4 ER image for what frustrates you.png" alt="Easy Read image for 'What frustrates you about the survey tool that you are using?'" width="100%"> | <img src="./assets/5 ER image do you like this survey.png" alt="Easy Read image for 'Do you like this survey?'" width="100%"> | |
+| <figure><img src="./assets/1 ER image for Survey.png" alt="Easy Read image for 'Which survey tool does your organisation use the most?'" width="100%"></figure> | <figure><img src="./assets/2 ER image for Satisfaction.png" alt="Easy Read image for 'I am satisifed with my current survey tool'" width="100%"></figure> | <figure><img src="./assets/3 ER image for what do you like.png" alt="Easy Read image for 'What do you like about the survey tool you are using?'" width="100%"></figure> |
 
-I suggest you download these into a separate folder on your computer before you start the session. The video will show you how to add the images to your survey.
+| Image 4 | Image 5 |
+| :---: | :---: |
+| <figure><img src="./assets/4 ER image for what frustrates you.png" alt="Easy Read image for 'What frustrates you about the survey tool that you are using?'" width="100%"></figure> | <figure><img src="./assets/5 ER image do you like this survey.png" alt="Easy Read image for 'Do you like this survey?'" width="100%"></figure> |
 
-::: info
-These images are sourced from [Easy on the i](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/). This is a great library of free symbols, photos and graphics which can be used when creating Easy Read surveys.
-:::
+> [!NOTE]
+> These images are sourced from [Easy on the i](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/), a free library of symbols, photos, and graphics for Easy Read materials.
 
-## Learning Content
+## Instructions
 
-In this video, Jerry guides you through the process of adding accessibility options to your survey.
-
-The video is 12 minutes long and we estimate that it will take you about 15 to 20 minutes to complete the session.
+Follow along with the video to add accessibility options to your survey.
 
 {% embed url="https://youtu.be/JV31V7ONPgI" %}
 
-## Advanced features related to adding accessibility modes not covered in this session
+## Advanced Topics
 
-* [x] Adding Easy Read to your 'Introduction Page' and 'Thank You Page'
-* [x] Adding multiple sign languages to your survey
+For more advanced features related to accessibility, refer to the following guides:
+
+- Adding Easy Read to your 'Introduction Page' and 'Thank You Page'
+- Adding multiple sign languages to your survey
 
 ## Next Steps
 
-::: tip
-You have completed the second Training Session! You can now start the third Training Session.
-This shows you how to translate your survey into multiple languages.
-:::
+> [!NOTE]
+> Congratulations on completing Session 2! You are now ready to move on to Session 3 to learn how to translate your survey into multiple languages.
+
+[**Start Session 3: Translating your survey**](session-3-localization.md)

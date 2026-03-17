@@ -31,11 +31,11 @@ function getSidebar() {
       link: `index`,
       base: `${root}/tutorial/`,
       items: [
-        { text: 'Create a new survey', link: `session-1-create-a-new-survey.md` },
-        { text: 'Add accessibility options', link: `session-2-add-accessibility-options.md` },
+        { text: 'Create a new survey', link: `session-1-creating-a-new-survey.md` },
+        { text: 'Add accessibility options', link: `session-2-adding-accessibility-options.md` },
         { text: 'Translate a survey', link: `session-3-localization.md` },
         { text: 'Deploy a survey', link: `session-4-distribution.md` },
-        { text: 'Analyze survey responses', link: `session-5-analyze-survey-responses.md` },
+        { text: 'Analyze survey responses', link: `session-5-analyzing-survey-responses.md` },
 
       ]
     },

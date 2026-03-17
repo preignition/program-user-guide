@@ -1,62 +1,52 @@
 ---
-description: This session covers how to create a new survey and add 'Pages' and 'Questions'
+description: Learn how to create a new survey by adding pages, sections, and questions.
 ---
 
-# Session 1- Creating a new survey
+# Session 1: Creating a New Survey
 
-## Session Overview
+## Overview
 
-This training session will accompany you to create a new survey, including an 'Introductory Page' and a 'Thank You Page'.
+In this session, you will create a new survey complete with an 'Introductory Page' and a 'Thank You Page'. You will learn how to structure your survey using 'Pages', 'Sections', and 'Questions', and how to test your survey as you build it.
 
-It explains how a survey is structured using 'Pages', 'Sections' and 'Questions'. It also shows how you can test your survey as you build it.
-
-This first session is longer than the other sessions and will take approximately 25 mins to complete. I hope that you enjoy it!
+*Estimated time: 25 minutes*
 
 ## Learning Outcomes
 
-On completing this session, you should feel confident with the following.
+By the end of this session, you will be able to:
 
-* [x] Creating a new survey
-* [x] Understanding the main elements of a survey ('Introductory Page', ' Form' and 'Thank You Page')
-* [x] Understanding how a 'Form' is structured ('Pages', 'Sections' and 'Questions')
-* [x] Know how to add a variety of question types (text, radio group, and ratings)
-* [x] Know to add additional 'Pages'
-* [x] Know how to test a 'Form'
-* [x] Know how to add simple logic
+- Create a new survey.
+- Understand the main structural elements ('Introductory Page', 'Form', and 'Thank You Page').
+- Structure a 'Form' using 'Pages', 'Sections', and 'Questions'.
+- Add various question types (text, radio group, and ratings).
+- Add additional 'Pages'.
+- Test your 'Form'.
+- Apply simple logic to your survey.
 
-## Learning Materials
+## Training Materials
 
-You will need the following learning materials to complete this session.
+Download the PDF below. It contains the text for the 'Introductory Page' and 'Thank You Page', as well as the 'Questions' for your 'Form'.
 
-The PDF file below includes the text for the 'Introductory Page' and 'Thank You Page', as well as the 'Questions' to include in your 'Form'.
+[Text for Training Survey](./assets/1.%20%20Text%20for%20Training%20Survey.pdf)
 
-[\[Text for Training Survey\]](<assets/1.  Text for Training Survey.pdf>)
+> [!TIP]
+> Download the 'Text for Training Survey' to your device before starting. Copying and pasting the content directly into your survey will save you time.
 
-::: info
-Download the 'Text for Training Survey' on to your device before starting this training session. You can then copy and paste the content into your training survey, saving you time.
-:::
+## Instructions
 
-## Learning Content
-
-In this video, Jerry guides you through the process of creating a new survey.
-
-Follow the steps in the video precisely and create your own 'Training Survey'.
-
-The video is 18 minutes long.
+Follow along with the video to create your 'Training Survey'.
 
 {% embed url="https://youtu.be/zx7LD73pZGw" %}
 
-## Advanced features not covered in this session
+## Advanced Topics
 
-* [x] [Advanced form logic](../guidance-notes/survey-app/form-editor/advanced-form-logic.md)
-* [x] [Using tooltips](../guidance-notes/survey-app/form-editor/using-tooltips.md)
+For more advanced features not covered in this session, refer to the following guides:
+
+- [Advanced form logic](../../guidance-notes/survey-app/form-editor/advanced-form-logic.md)
+- [Using tooltips](../../guidance-notes/survey-app/form-editor/using-tooltips.md)
 
 ## Next Steps
 
-::: tip
-You have completed the first 'Training Session'! You can now move on to the second 'Training Session'. This shows you how to add accessibility options to your survey.
-:::
+> [!NOTE]
+> Congratulations on completing Session 1! You are now ready to move on to Session 2, where you will learn how to add accessibility options to your survey.
 
-::: tip
-text
-:::
+[**Start Session 2: Adding accessibility options**](session-2-adding-accessibility-options.md)
