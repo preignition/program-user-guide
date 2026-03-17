@@ -8,9 +8,9 @@ description: This page shows you how to generate links for your surveys
 
 Respondents will access your survey using links.  The 'Link builder' generates these links for you and gives you lots of control over the process.
 
-{% hint style="success" %}
+::: tip
 Links can be shared however you choose, including sharing via your website, email or social media
-{% endhint %}
+:::
 
 ## Step 1
 
@@ -60,9 +60,9 @@ In test mode you will have the option whether or not to display the landing page
 
 In production mode you have the option to force respondents to use the latest version of the survey even if they have started answering a previous version
 
-{% hint style="success" %}
+::: tip
 By default respondents will not be presented with a newer version of a survey if they have started answering a previous version.  &#x20;
-{% endhint %}
+:::
 
 ![](<../../../.gitbook/assets/image (302) (1) (1).png>)
 

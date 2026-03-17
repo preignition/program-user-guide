@@ -4,9 +4,9 @@ description: This page provides guidance for applying advanced form logic
 
 # Advanced form logic
 
-{% hint style="success" %}
+::: tip
 The logic feature is extremely powerful and there are almost limitless possibilities to what expressions can be written and applied to your form. This guidance note introduces some of the main logic options available and gives practical examples of how they can be applied.
-{% endhint %}
+:::
 
 ## Comparisons
 
@@ -70,9 +70,9 @@ It is true and therefore hidden when ('do you have children that go to school is
 
 The expression is then inverted using ! to display it for the same configuration.
 
-{% hint style="info" %}
+::: info
 if you want to hide something (result being true), it is important to use ||and not && because true || false = true (hidden), while true && false = false (displayed)\`.
-{% endhint %}
+:::
 
 ## in operator
 
@@ -110,9 +110,9 @@ If the first statement equates to **false** the alternative is returned. The alt
 
 If the first statement equates to true the consequent segment is evaluated. The consequent statement appears immediately after the ? symbol. In this instance the consequent returns false.
 
-{% hint style="info" %}
+::: info
 The consequent segment can include a series of logical expressions as shown in the example below. The alternative statement can be written as either true or false. This makes the ternary operator highly flexible and suitable for writing complex logical expressions
-{% endhint %}
+:::
 
 ### Additional example of the ternary operator
 
@@ -179,9 +179,9 @@ A custom validation message can be added under the settings option. This message
 
 If a respondents orders some but not all of the options, they will be able to continue to fill in the survey.  However they will not be able to submit the survey until either all or none of the options have been ordered.  Respondents will be redirected to the 'invalid' question so the issue can be resolved.
 
-{% hint style="info" %}
+::: info
 This logical expression has a limitation.  If the question is marked as 'required' the question will appear in red when the page loads even before the question has received focus.  The only way to resolve this currently is to accept this behaviour or not to mark the question as required&#x20;
-{% endhint %}
+:::
 
 This short video shows how the validity logic can be applied to customising the number of order question items to be ordered.
 

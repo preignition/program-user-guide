@@ -4,9 +4,9 @@ description: This page provides an introduction to form logic.
 
 # Introduction to form logic
 
-{% hint style="info" %}
+::: info
 Adding logic to a form enables you to customize how your form behaves when respondents are filling it in
-{% endhint %}
+:::
 
 ## What is a logical expression?
 
@@ -28,17 +28,17 @@ It doesn't make sense to ask the follow up question if the answer to the first q
 
 ## How to write a logical expression?
 
-{% hint style="info" %}
+::: info
 To access the logic function you must switch on the 'Advanced' toggle at the top of the screen.  A 'logic mode' icon will appear in the bottom right hand corner&#x20;
-{% endhint %}
+:::
 
 Below is an example of the logic feild for the question we outlined above about fruit
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the advanced toggle being activated.  The 'logic mode' icon appears in the bottom right of the screen.  The 'lock this question while editing logic' toggle has been activated.</p></figcaption></figure>
 
-{% hint style="success" %}
+::: tip
 Always select the option 'Lock this question while editing logic'.&#x20;
-{% endhint %}
+:::
 
 Logic has been added to the follow up question 'what sort of fruit do you like?' so that it is displayed or hidden depending on the answer to the previous question 'Do you like fruit?'
 
@@ -59,9 +59,9 @@ Short video showing how to test a logical expression
 
 Try answering the questions and check whether the expression result gives the desired outcome.
 
-{% hint style="info" %}
+::: info
 Form logic is extremely powerful and adds focus and dynamism to your forms. However it takes some pratice. We suggest starting with simple expressions and testing regularly
-{% endhint %}
+:::
 
 ## How to hide a question initially
 
@@ -73,9 +73,9 @@ With the logical expresssion written above, the follow up question is visible in
 
 It would be preferable if the question is hidden initially and is only displayed if a respondent answers 'Yes' to the question 'Do you like fruit?'
 
-{% hint style="info" %}
+::: info
 Use ! to invert the expression and hide a question initially
-{% endhint %}
+:::
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how to hide a question initially using !=</p></figcaption></figure>
 

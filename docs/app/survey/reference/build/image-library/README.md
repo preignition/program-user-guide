@@ -17,9 +17,9 @@ This folder contains assets for the image library section.
 
 # Image Library
 
-{% hint style="info" %}
+::: info
 An image must first be added to the Image Library before it can be used in a form
-{% endhint %}
+:::
 
 ## Step 1
 
@@ -35,9 +35,9 @@ Once in the Image Library, users have two ways to add images. Images can either 
 
 ## Step 3
 
-{% hint style="info" %}
+::: info
 Make sure your images are a consistent size before uploading them to your image library
-{% endhint %}
+:::
 
 In order for your images to good in your forms, it is important that they are a consistent ratio and appropriate size for the web. &#x20;
 

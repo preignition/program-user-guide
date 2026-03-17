@@ -4,11 +4,11 @@ description: This page provide an overview of survey analytics
 
 # Introduction to survey analytics
 
-{% hint style="info" %}
+::: info
 Survey analytics provides an visual overview of the response to a survey. It updates in real time and allows users to filter their dataset based on criteria they define, eg show responses by date, location or based on answers to a specific question.
 
 Data can be exported to a specialist platform for in-depth statistical analysis
-{% endhint %}
+:::
 
 ## Step 1
 

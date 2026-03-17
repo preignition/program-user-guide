@@ -21,9 +21,9 @@ On completing this session, you should feel confident;
 * [x] Understanding how the Voice Recording option works
 * [x] Testing the accessibility options
 
-{% hint style="info" %}
+::: info
 The 'Training Survey' supports British Sign Language (BSL). You can offer whichever sign language you choose and even offer multiple sign languages.
-{% endhint %}
+:::
 
 ## Learning Materials
 
@@ -37,9 +37,9 @@ Simply copy the 11 digit Youtube ID into the appropriate place in your survey. T
 
 <table><thead><tr><th width="442">Question</th><th>Youtube ID</th></tr></thead><tbody><tr><td>1.1 'Which survey tool does your organisation use the most?'</td><td><a href="https://youtu.be/dsL489ipJxM">dsL489ipJxM</a></td></tr><tr><td>1.2 'I am satisifed with my current survey tool'</td><td><a href="https://youtu.be/6KxVTBEfcUQ">6KxVTBEfcUQ</a></td></tr><tr><td>1.3 'What do you like about the survey tool you are using?'</td><td><a href="https://youtu.be/4LfklqWfq3A">4LfklqWfq3A</a></td></tr><tr><td>1.4 'What frustrates you about the survey tool that you are using?'</td><td><a href="https://youtu.be/hK1L5y5iRds">hK1L5y5iRds</a></td></tr><tr><td>2.1 'Do you like this survey?'</td><td><a href="https://youtu.be/Zne0RX2she4">Zne0RX2she4</a></td></tr></tbody></table>
 
-{% hint style="info" %}
+::: info
 Currently survey builders need to create their own sign language videos. If required, we can provide details of recommended sign language service providers.
-{% endhint %}
+:::
 
 ### Easy Read Images
 
@@ -52,9 +52,9 @@ When you add Easy Read images to your survey, these images are the ones to use.
 
 I suggest you download these into a separate folder on your computer before you start the session. The video will show you how to add the images to your survey.
 
-{% hint style="info" %}
+::: info
 These images are sourced from [Easy on the i](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/). This is a great library of free symbols, photos and graphics which can be used when creating Easy Read surveys.
-{% endhint %}
+:::
 
 ## Learning Content
 
@@ -71,7 +71,7 @@ The video is 12 minutes long and we estimate that it will take you about 15 to 2
 
 ## Next Steps
 
-{% hint style="success" %}
+::: tip
 You have completed the second Training Session! You can now start the third Training Session.
 This shows you how to translate your survey into multiple languages.
-{% endhint %}
+:::

@@ -6,9 +6,9 @@ description: >-
 
 # Survey terms- advanced
 
-{% hint style="success" %}
+::: tip
 Although this is an advanced feature, it is simple to add your own survey terms
-{% endhint %}
+:::
 
 ## Context
 

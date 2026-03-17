@@ -6,9 +6,9 @@ description: >-
 
 # Sharing options across multiple questions
 
-{% hint style="info" %}
+::: info
 Choice based questions such as 'checkbox group' and 'radio group' require response options to be defined.  Usually the options will be specific to the question.  However it can be helpful to share options across multiple questions.&#x20;
-{% endhint %}
+:::
 
 ## Step 1
 
@@ -60,9 +60,9 @@ The new options group appears on the grid with the number of option choices you 
 
 It is now available to be used in choice based questions throughout the section as shown in the video below. &#x20;
 
-{% hint style="info" %}
+::: info
 Remember to activate the 'advanced' toggle in order to share options between multiple questions in a section
-{% endhint %}
+:::
 
 {% embed url="https://youtu.be/dllRu6iJjhU" %}
 20 second video showing how to select the options group for a choice based question.

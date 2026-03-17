@@ -4,9 +4,9 @@ description: This page describes how you can create a new survey from scratch.
 
 # Creating a new survey
 
-{% hint style="info" %}
+::: info
 A step by step guide to creating a new survey
-{% endhint %}
+:::
 
 ## Step 1: Start the creation process
 
@@ -26,9 +26,9 @@ Give your survey a **Name** and a brief **Description**.
   <figcaption>Fill in name and description</figcaption>
 </figure>
 
-{% hint style="warning" %}
+::: warning
 You will not be able to move to the next step until the survey has a name and description.
-{% endhint %}
+:::
 
 Then, select **Next**.
 
@@ -80,6 +80,6 @@ Click **Confirm**.
   <figcaption>Press confirm button</figcaption>
 </figure>
 
-{% hint style="success" %}
+::: tip
 Congratulations, you have successfully created a new survey! You will now be redirected to the survey editor.
-{% endhint %}
+:::

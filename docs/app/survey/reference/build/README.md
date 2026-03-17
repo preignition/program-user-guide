@@ -44,8 +44,8 @@ We recommend always using the latest version of the form, unless you have specif
 
 The activation feild describes whether the survey is currently 'active'.   The survey must be active in order for responses to be saved to the database.
 
-{% hint style="info" %}
+::: info
 In order for a survey to be active, the batch settings must have a 'from date' which is in the past and a 'to date' which is in the future or left blank.  The survey must also be published
-{% endhint %}
+:::
 
 <figure><img src="../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>

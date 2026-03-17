@@ -4,9 +4,9 @@ description: This page tells you everything you need to know adding Sign Languag
 
 # Sign Language
 
-{% hint style="success" %}
+::: tip
 Forms adapt to the needs and preferences of respondents. Some Respondents may want questions to be presented in Sign Language
-{% endhint %}
+:::
 
 ## Step 1
 
@@ -46,9 +46,9 @@ In this example Section 1 will be visible in standard mode. It will be hidden wh
 
 ![](<../../../.gitbook/assets/image (333).png>)
 
-{% hint style="info" %}
+::: info
 If a Visibility Mode is applied high up in the tree grid structure, the Visibility Mode will automatically be applied to anything further down in the tree grid structure. For example changes applied at the Page level will impact everything below it
-{% endhint %}
+:::
 
 ## Step 7
 

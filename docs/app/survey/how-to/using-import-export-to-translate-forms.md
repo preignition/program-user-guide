@@ -1,8 +1,8 @@
 # Using import/ export to translate forms
 
-{% hint style="info" %}
+::: info
 The import/ export feature facilitates working with translators by making it possible for a form to be translated outside the platform and then imported back in.
-{% endhint %}
+:::
 
 ## Step 1
 
@@ -38,9 +38,9 @@ A new row appears on the Export/ Import grid, with a link to download the same e
 
 Exported file will now be available as a downloaded json file.
 
-{% hint style="success" %}
+::: tip
 Json files are the only file type supported for data import/export.  They provide greater control over the data structure than other files format such as csv or .xls.  Json files are widely for data interchange.
-{% endhint %}
+:::
 
 <figure><img src="../../../.gitbook/assets/image (8) (4).png" alt=""><figcaption></figcaption></figure>
 
@@ -50,9 +50,9 @@ The json file can be shared with translators.  The file contains all the fields 
 
 Take care not to change any of the metadata values contained within the file.  These are used to validate and guide the data import process.  If these are changed it will not be possible to import the file back into the platform.
 
-{% hint style="info" %}
+::: info
 The file must be editied in a json editor and imported back into the platform in the json file format.
-{% endhint %}
+:::
 
 ## Step 6
 

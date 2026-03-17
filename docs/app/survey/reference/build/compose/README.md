@@ -20,9 +20,9 @@ The compose view is where you build the structure of your survey by adding and o
 
 # Structuring a form
 
-{% hint style="info" %}
+::: info
 A step by step guide to structuring a form
-{% endhint %}
+:::
 
 ## Step 1
 
@@ -68,9 +68,9 @@ You can ammend the page name and provide a page sub title.  The page sub title i
 
 Pages are organised into sections and question are added to sections. &#x20;
 
-{% hint style="info" %}
+::: info
 Sections provide additional flexibility when editing forms.  Form logic can be applied to pages, sections and questions and sections can be shared across different forms.
-{% endhint %}
+:::
 
 The application automatically creates the first section for your first page. This appears on the tree struture under the first page.
 
@@ -94,17 +94,17 @@ The section 'title' will replace the section 'name' in the tree structure as sho
 
 ## Step 8
 
-{% hint style="success" %}
+::: tip
 Congratulations!  You can now add questions to the section you have created
-{% endhint %}
+:::
 
 The Guidance Note '[Adding questions to a form](how-to-add-a-question-to-a-form/)' will show you how to do this.
 
 # Adding questions to a form
 
-{% hint style="info" %}
+::: info
 All the steps you need to add a questions to a form. This page assumes you have already created a Form and added a Page and Section
-{% endhint %}
+:::
 
 ## Step 1
 
@@ -156,8 +156,8 @@ Selecting the red 'cog' icon beside a Question, enables you to edit the Question
 
 ## Step 8
 
-{% hint style="success" %}
+::: tip
 Congratulations, you can now add questions for your form
-{% endhint %}
+:::
 
 There are seperate Guidance Notes covering the main Question types that are available

@@ -4,9 +4,9 @@ description: This page covers how to test a form, preview accessibility modes, b
 
 # Testing a form
 
-{% hint style="info" %}
+::: info
 The 'Test' feature provides an easy way for you to see how your form will appear to respondents. You can try out any changes and make edits directly from the test page.
-{% endhint %}
+:::
 
 ## Step 1: Navigate to the Test View
 

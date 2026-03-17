@@ -13,9 +13,9 @@ The test section allows you to preview and interact with your survey as a respon
 
 # Testing a form
 
-{% hint style="info" %}
+::: info
 The 'Test' feature provides an easy way for you to see how your form will appear to respondents. You can try out any changes and make edits directly from the test page
-{% endhint %}
+:::
 
 ## Step 1
 
@@ -70,10 +70,10 @@ See the Guidance Note '[Access rights for forms](access-rights-for-forms.md)' fo
 
 Once you have checked that your form is working smoothly, you are ready to 'Publish' the Form.
 
-{% hint style="info" %}
+::: info
 Forms must be 'Published' before they can be used in surveys. If you have changed your form in any way, it must also be 'Published' before these changes become seen by survey respondents.
-{% endhint %}
+:::
 
-{% hint style="success" %}
+::: tip
 Congratulations!  You now know how to test your form.
-{% endhint %}
+:::

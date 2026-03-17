@@ -17,9 +17,9 @@ This folder contains assets for the survey behavior section.
 
 # Form Behaviour
 
-{% hint style="success" %}
+::: tip
 Form behaviour enables you to customise your Form so it adapts to the specific needs of Respondents
-{% endhint %}
+:::
 
 ## Step 1
 
@@ -65,9 +65,9 @@ Layout gives the option to illustate a question with an image or video.  It also
 
 <figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption><p>Screenshot showing how illustrations for questions can be enabled.</p></figcaption></figure>
 
-{% hint style="warning" %}
+::: warning
 We recommend you allow for the automatic positioning of illustrations as the best position for an illustration will depend on the screen size the repondent is using.
-{% endhint %}
+:::
 
 If you activate Easy Read for your form, 'enable illustrations for questions will be activated automatically as will the setting 'Only show illustrations when Easy Read is activated'
 
@@ -79,9 +79,9 @@ The Theme settings are not yet developed. This will enable Users to have greater
 
 # Introduction to form logic
 
-{% hint style="info" %}
+::: info
 Adding logic to a form enables you to customize how your form behaves when respondents are filling it in
-{% endhint %}
+:::
 
 ## What is a logical expression?
 
@@ -103,17 +103,17 @@ It doesn't make sense to ask the follow up question if the answer to the first q
 
 ## How to write a logical expression?
 
-{% hint style="info" %}
+::: info
 To access the logic function you must switch on the 'Advanced' toggle at the top of the screen.  A 'logic mode' icon will appear in the bottom right hand corner&#x20;
-{% endhint %}
+:::
 
 Below is an example of the logic feild for the question we outlined above about fruit
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the advanced toggle being activated.  The 'logic mode' icon appears in the bottom right of the screen.  The 'lock this question while editing logic' toggle has been activated.</p></figcaption></figure>
 
-{% hint style="success" %}
+::: tip
 Always select the option 'Lock this question while editing logic'.&#x20;
-{% endhint %}
+:::
 
 Logic has been added to the follow up question 'what sort of fruit do you like?' so that it is displayed or hidden depending on the answer to the previous question 'Do you like fruit?'
 
@@ -134,9 +134,9 @@ Short video showing how to test a logical expression
 
 Try answering the questions and check whether the expression result gives the desired outcome.
 
-{% hint style="info" %}
+::: info
 Form logic is extremely powerful and adds focus and dynamism to your forms. However it takes some pratice. We suggest starting with simple expressions and testing regularly
-{% endhint %}
+:::
 
 ## How to hide a question initially
 
@@ -148,9 +148,9 @@ With the logical expresssion written above, the follow up question is visible in
 
 It would be preferable if the question is hidden initially and is only displayed if a respondent answers 'Yes' to the question 'Do you like fruit?'
 
-{% hint style="info" %}
+::: info
 Use ! to invert the expression and hide a question initially
-{% endhint %}
+:::
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how to hide a question initially using !=</p></figcaption></figure>
 
@@ -188,9 +188,9 @@ A wide range of logic options are available. The most commonly used are as follo
 
 # Advanced form logic
 
-{% hint style="success" %}
+::: tip
 The logic feature is extremely powerful and there are almost limitless possibilities to what expressions can be written and applied to your form. This guidance note introduces some of the main logic options available and gives practical examples of how they can be applied.
-{% endhint %}
+:::
 
 ## Comparisons
 
@@ -254,9 +254,9 @@ It is true and therefore hidden when ('do you have children that go to school is
 
 The expression is then inverted using ! to display it for the same configuration.
 
-{% hint style="info" %}
+::: info
 if you want to hide something (result being true), it is important to use ||and not && because true || false = true (hidden), while true && false = false (displayed)\`.
-{% endhint %}
+:::
 
 ## in operator
 
@@ -294,9 +294,9 @@ If the first statement equates to **false** the alternative is returned. The alt
 
 If the first statement equates to true the consequent segment is evaluated. The consequent statement appears immediately after the ? symbol. In this instance the consequent returns false.
 
-{% hint style="info" %}
+::: info
 The consequent segment can include a series of logical expressions as shown in the example below. The alternative statement can be written as either true or false. This makes the ternary operator highly flexible and suitable for writing complex logical expressions
-{% endhint %}
+:::
 
 ### Additional example of the ternary operator
 
@@ -363,9 +363,9 @@ A custom validation message can be added under the settings option. This message
 
 If a respondents orders some but not all of the options, they will be able to continue to fill in the survey.  However they will not be able to submit the survey until either all or none of the options have been ordered.  Respondents will be redirected to the 'invalid' question so the issue can be resolved.
 
-{% hint style="info" %}
+::: info
 This logical expression has a limitation.  If the question is marked as 'required' the question will appear in red when the page loads even before the question has received focus.  The only way to resolve this currently is to accept this behaviour or not to mark the question as required&#x20;
-{% endhint %}
+:::
 
 This short video shows how the validity logic can be applied to customising the number of order question items to be ordered.
 

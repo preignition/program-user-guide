@@ -4,9 +4,9 @@ description: This guide shows you how to add an accessibility menu to your surve
 
 # Adding an accessibility menu
 
-{% hint style="success" %}
+::: tip
 Adding an accessibility menu at the start of your survey helps makes the accessibility options more prominent to survey respondents
-{% endhint %}
+:::
 
 ## Step 1
 

@@ -19,9 +19,9 @@ This folder contains assets for the survey prompt section.
 
 ## Introduction
 
-{% hint style="info" %}
+::: info
 Tooltips can be added to surveys to explain words which are complex or difficult to understand.&#x20;
-{% endhint %}
+:::
 
 ![An example of a tooltip being used to explain the meaning of the word 'complex'](<../../../.gitbook/assets/image (299) (1) (1) (1) (1) (1) (1) (1).png>)
 
@@ -35,9 +35,9 @@ Tooltips can be added anywhere you like in your survey by using this code;
 <lapp-tooltip text="tooltip message">label</lapp-tooltip>
 ```
 
-{% hint style="success" %}
+::: tip
 You can copy and paste the code above into your survey and then alter as explained below
-{% endhint %}
+:::
 
 Alter the following elements to customise your tooltip;
 
@@ -73,6 +73,6 @@ This short video shows a tooltip being added to the 'Introduction Page', a 'Ques
 Short video showing how to add tooltips to a survey&#x20;
 {% endembed %}
 
-{% hint style="success" %}
+::: tip
 Congratulations!  You now know how to add Tooltip to explain words that are difficult to understand
-{% endhint %}
+:::

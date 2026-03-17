@@ -44,9 +44,9 @@ The toolbar provides dedicated menus to insert advanced components without writi
 * **Styling:** Use the visual color picker to apply text and background colors that automatically adapt to your survey's active accessibility theme (e.g., dark mode or high contrast).
 * **Accessibility Controls:** When editing a survey, the toolbar includes an **Accessibility menu** to easily configure text or components to show or hide based on the user's active accessibility mode (e.g., Easy Read, Sign Language).
 
-{% hint style="info" %}
+::: info
 Accessible Surveys Markdown also supports writing HTML directly. For a complete reference on available CSS classes, layout factors, and custom web components, see our [Markdown Reference](../reference/content/markdown/README.md).
-{% endhint %}
+:::
 
 ## Step 2 (Optional): Add Images and Files
 
@@ -62,6 +62,6 @@ To see how your formatting will appear to respondents, click the **Preview** tab
 
 <figure><img src="./assets/shared/markdown-preview.png" alt="Previewing formatted content"><figcaption>Use the Preview tab to see how your content will look to respondents.</figcaption></figure>
 
-{% hint style="info" %}
+::: info
 For a deeper dive into why we use Markdown, see our [Explanation: Using Markdown](../explanation/using-markdown.md).
-{% endhint %}
+:::

@@ -4,9 +4,9 @@ description: This page describes how to delete an existing survey.
 
 # Deleting a survey
 
-{% hint style="danger" %}
+::: danger
   Deleting a survey marks it as deleted. The survey will no longer be visible in the survey workspace.
-{% endhint %}
+:::
 
 ## Step 1: Open the survey context menu
 

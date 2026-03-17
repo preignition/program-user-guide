@@ -4,9 +4,9 @@ description: Learn how to share your survey and manage responses.
 
 # Sharing a Survey
 
-{% hint style="info" %}
+::: info
 A survey must be 'Published' before it can be used in a survey.  If a survey is changed, a new version must be 'Published' before the changes are seen by respondents.
-{% endhint %}
+:::
 
 ## Step 1
 
@@ -56,6 +56,6 @@ Right clicking on a row on the Version grid provides a way of deleting or rollin
 
 ## Step 7
 
-{% hint style="success" %}
+::: tip
 Congratulations!  You know how to 'Share' a survey so that it can be used in a survey
-{% endhint %} 
+::: 

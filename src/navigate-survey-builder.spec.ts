@@ -16,7 +16,8 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
 
   test('survey', async ({ page }) => {
     const context = new Context(
-      'app/survey/reference',
+      'docs/
+      app / survey / reference',
     )
     context.setPage(page)
     await page.setViewportSize({ width: 1600, height: 1080 })

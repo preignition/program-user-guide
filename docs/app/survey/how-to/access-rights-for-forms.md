@@ -4,9 +4,9 @@ description: This page covers everything you need to know about setting access r
 
 # Access rights for forms
 
-{% hint style="info" %}
+::: info
 Only the forms 'Owner' can set user rights to the form. In order to be given rights, a user must have an account on the application and be associated with your program.
-{% endhint %}
+:::
 
 ## Step 1
 

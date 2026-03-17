@@ -5,9 +5,9 @@ description: Introduction.  A training course to help new users become familiar 
 
 This course accompanies new customers to create a short 'Training Survey'.  We have found this to be the best way to help new customers become familiar with the platform.
 
-{% hint style="info" %}
+::: info
 On completing this course, you will feel confident building, testing, sharing and analyzing surveys on Accessible Surveys.
-{% endhint %}
+:::
 
 You should complete this course *before* creating your first survey.  Creating the 'Training Survey' will not count as part of your survey quota.
 
@@ -46,9 +46,9 @@ We provide the following training materials to help you create your training sur
 
 Each training session includes links to any training materials needed to complete that session.
 
-{% hint style="info" %}
+::: info
 We suggest that you download training materials onto your computer before you start the session.
-{% endhint %}
+:::
 
 ## Learning Outcomes
 

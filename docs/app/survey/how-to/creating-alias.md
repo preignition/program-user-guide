@@ -4,9 +4,9 @@ description: It is possible to create aliases to customise your survey links
 
 # Creating alias survey links
 
-{% hint style="success" %}
+::: tip
 You can customise your survey links to make them easier for respondents to read
-{% endhint %}
+:::
 
 ## Step 1
 
@@ -15,9 +15,9 @@ You can customise your survey links to make them easier for respondents to read
 * You can add aliases as shown below. You can add as many aliases as you wish
 * Select 'enter' to confirm the alias
 
-{% hint style="info" %}
+::: info
 Only lowercase letter and numbers are allowed for aliases
-{% endhint %}
+:::
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (2) (4).png" alt=""><figcaption></figcaption></figure>
 

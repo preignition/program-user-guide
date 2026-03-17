@@ -42,6 +42,6 @@ The video is 10 mins long and we estimate that it will take you about 15 minutes
 
 ## Next Steps
 
-{% hint style="success" %}
+::: tip
 You have completed the fourth Training Session!  You can now start the fifth and final Training Session.  This shows how to analyze your survey responses and export your survey data.
-{% endhint %}
+:::

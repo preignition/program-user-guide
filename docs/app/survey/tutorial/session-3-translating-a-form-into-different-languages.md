@@ -26,9 +26,9 @@ On completing this session, you should feel confident;
 
 ## Activating Additional Languages
 
-{% hint style="info" %}
+::: info
 Only 'Account Holders' can activate additional languages for their 'Organization' as this related to the organization's subscription plan.
-{% endhint %}
+:::
 
 Additional languages are added for an 'Organization' from the 'Customer Portal'. Only 'Account Holders' have access to the 'Customer Portal'.
 
@@ -64,6 +64,6 @@ The video is 8 mins long and we estimate that it will take you about 15-20 minut
 
 ## Next Steps
 
-{% hint style="success" %}
+::: tip
 You have completed the third Training Session! You can now start the fourth Training Session. This shows you how to 'Test' and 'Share' your survey.
-{% endhint %}
+:::

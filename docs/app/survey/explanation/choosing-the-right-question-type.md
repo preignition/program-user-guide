@@ -49,6 +49,6 @@ Use these when you need the respondent to provide external files or recordings.
 * **Audio**: For uploading audio recordings.
 * **Video**: For uploading video files.
 
-{% hint style="info" %}
+::: info
 **Pro Tip**: When using selection inputs, consider the number of options. If you have more than 7-10 options for a single-choice question, a **Dropdown** is usually better for accessibility and readability than a long list of **Radio** buttons.
-{% endhint %}
+:::

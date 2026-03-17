@@ -4,9 +4,9 @@ description: This page covers everything you need to know about publishing a sur
 
 # Publishing a survey
 
-{% hint style="info" %}
+::: info
 A survey must be 'Published' and active before it can collect responses. If your form has changed, a new version must be built and published before the changes are seen by respondents.
-{% endhint %}
+:::
 
 ## Step 1: Choose a Publishing Strategy
 

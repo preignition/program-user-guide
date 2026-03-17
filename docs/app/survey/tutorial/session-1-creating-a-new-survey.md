@@ -32,9 +32,9 @@ The PDF file below includes the text for the 'Introductory Page' and 'Thank You 
 
 [\[Text for Training Survey\]](<assets/1.  Text for Training Survey.pdf>)
 
-{% hint style="info" %}
+::: info
 Download the 'Text for Training Survey' on to your device before starting this training session. You can then copy and paste the content into your training survey, saving you time.
-{% endhint %}
+:::
 
 ## Learning Content
 
@@ -53,6 +53,6 @@ The video is 18 minutes long.
 
 ## Next Steps
 
-{% hint style="success" %}
+::: tip
 You have completed the first 'Training Session'! You can now move on to the second 'Training Session'. This shows you how to add accessibility options to your survey.
-{% endhint %}
+:::

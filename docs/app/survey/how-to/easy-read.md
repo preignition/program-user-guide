@@ -8,9 +8,9 @@ description: This page covers how to create an 'Easy Read' version of a form
 
 Forms can adapt to the needs and preferences of respondents. Some respondents may want an 'Easy Read' version of a form.
 
-{% hint style="success" %}
+::: tip
 “Making information easier to understand for people ... is about more than making your text size bigger and putting some symbols or pictures in your document. It’s about working with the people your information is for, finding out together how you can make the information useful and accessible for them. There are no quick answers, and it isn’t easy... but it can be fun.” ([EasyInfo, ‘About making information easier’](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment\_data/file/215923/dh\_121927.pdf))
-{% endhint %}
+:::
 
 'Easy Read' forms offer the following advantages:
 
@@ -19,9 +19,9 @@ Forms can adapt to the needs and preferences of respondents. Some respondents ma
 3. Questions can be modified to make them easier to understand
 4. Images can be added to complement questions
 
-{% hint style="info" %}
+::: info
 The 'Easy Read' version renders the form and the interface differently, but answers to questions are stored in the same dataset as for other versions of the survey. In the analytics, it is possible to create a subset of the data, consisting of answers submitted using the Easy Read version of a form.
-{% endhint %}
+:::
 
 ## Step 1
 
@@ -35,9 +35,9 @@ An Easy Read option appears in the 'Form Definition' menu
 
 If you want to use images to complement questions in the 'Easy Read' mode you must first add them to your '[Image Library](image-library.md)'
 
-{% hint style="danger" %}
+::: danger
 It is your responsbility to make sure that you have the appropriate rights to use any images which you upload to your 'Image Libary'
-{% endhint %}
+:::
 
 ## Step 4
 
@@ -51,9 +51,9 @@ Initially the text in the Easy Read mode is the same as the text in the standard
 * The ![](<../../../.gitbook/assets/image (309) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)emoji shows the text as it appears in the Easy Read version of the Form. It can be edited here.
 * Any changes to the Easy Read text will be highlighted in the 'Easy Read Version' tree grid as shown above
 
-{% hint style="info" %}
+::: info
 Pages, sections, questions and even question options can all be edited for Easy Read
-{% endhint %}
+:::
 
 ## Step 5
 
