@@ -1,16 +1,18 @@
 ---
-description: This section explains how to add and manage pages in your survey.
+description: Reference documentation for Pages within the survey Compose tool.
 ---
 
-# Survey Pages
+# Page Reference
 
-Pages are used to structure your survey into logical sections, making it easier for respondents to navigate.
+A Page is a top-level structural element within the survey form, representing a single screen or logical division of the questionnaire. 
 
 <figure>
-  <img src="./assets/page-auto.png" alt="Survey page settings.">
-  <figcaption>Survey page settings.</figcaption>
+  <img src="./assets/page-auto.png" alt="A Page in the Compose tool.">
+  <figcaption>The standard view of a Page in the Compose tool.</figcaption>
 </figure>
 
-## Contents
+## Key Capabilities
 
-This folder contains assets for the survey page section.
+- **Pagination**: Breaking a survey into multiple pages prevents respondent fatigue and improves navigation.
+- **Section Grouping**: Pages serve as containers for one or more Sections.
+- **Logic Application**: Form logic can be applied at the Page level to show, hide, or skip entire sections of the survey based on previous answers.

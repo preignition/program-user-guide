@@ -1,16 +1,22 @@
 ---
-description: This section explains how to add text pages to your survey for introductions, instructions, or other informational content.
+description: Reference documentation for Text Pages within the survey Compose tool.
 ---
 
-# Survey Text Pages
+# Text Page Reference
 
-Text pages allow you to add informational content to your survey, such as welcome messages, instructions, or consent forms.
+A Text Page is a structural element used to present informational content to respondents rather than collecting data. Common use cases include Introduction pages, terms of service, or Thank You pages.
 
 <figure>
-  <img src="./assets/compose-text-page.png" alt="Survey text page settings.">-auto.png
-  <figcaption>Survey text page settings.</figcaption>
+  <img src="./assets/intro-auto.png" alt="A Text Page in the Compose tool.">
+  <figcaption>The standard view of a Text Page in the Compose tool.</figcaption>
 </figure>
 
-## Contents
+## Page Elements
 
-This folder contains assets for the survey text page section.
+Text Pages can contain individual informational items, often represented as rich text or markdown blocks.
+
+<figure>
+  <img src="./assets/intro-item-auto.png" alt="An individual item within a Text Page.">
+  <figcaption>Selecting a specific content block within a Text Page.</figcaption>
+</figure>
+

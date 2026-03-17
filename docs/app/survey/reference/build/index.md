@@ -1,51 +1,31 @@
 ---
-description: A guide to constructing and customizing your survey forms.
+description: Reference documentation for the Survey Builder module.
 ---
 
-# Building Your Survey
+# Survey Builder Reference
 
-This section covers all aspects of building and customizing your surveys, from adding questions to defining their behavior and appearance.
+The Survey Builder is the primary workspace for creating, structuring, and customizing survey forms. It provides tools for defining the content, logic, and accessibility features of a survey.
+
+## Overview
+
+The interface provides access to various tools required for survey creation:
+- **Compose**: Structure the survey by adding pages, sections, and questions.
+- **Behavior**: Define overall settings, such as accessibility modes and form logic.
+- **Image Library**: Manage image assets for the survey.
+- **Localize**: Manage translations and multilingual support.
+- **Prompt**: Manage additional instructions or context for questions.
+- **Restore**: Recover deleted items.
 
 <figure>
-  <img src="./assets/build-auto.png" alt="Survey Builder Interface">
-  <figcaption>The main interface for building and editing surveys.</figcaption>
+  <img src="./assets/build-auto.png" alt="Overview of the Survey Builder interface.">
+  <figcaption>The Survey Builder interface displaying the main editing workspace.</figcaption>
 </figure>
 
-## Contents
+<figure>
+  <img src="./assets/build-menu-auto.png" alt="Survey Builder navigation menu.">
+  <figcaption>The navigation menu for accessing different tools within the Builder.</figcaption>
+</figure>
 
-- [Compose](./compose/index.md)
-- [Behavior](./behavior/index.md)
-- [Image Library](./image-library/index.md)
-- [Localize](./localize/index.md)
-- [Prompt](./prompt/index.md)
-- [Restore](./restore/index.md)
+## Activating a Survey
 
-# Editing a survey
-
-## Step 1
-
-To create a new survey see the how to guide [Creating a new survey.](../creating-a-new-survey.md)
-
-This page shows you how to edit a survey. &#x20;
-
-Start by clicking on the 'Survey Editor' feild&#x20;
-
-<figure><img src="../../../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>
-
-## Step 2
-
-Under the 'settings' tab you can edit the survey name, give it a label and select the form you want to use to collect data.
-
-We recommend always using the latest version of the form, unless you have specific reason for selecting an earlier version.
-
-{% embed url="https://youtu.be/whgU6HSPsTo" %}
-
-## Step 3
-
-The activation feild describes whether the survey is currently 'active'.   The survey must be active in order for responses to be saved to the database.
-
-::: info
-In order for a survey to be active, the batch settings must have a 'from date' which is in the past and a 'to date' which is in the future or left blank.  The survey must also be published
-:::
-
-<figure><img src="../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
+A survey must be marked as active to collect responses. This requires configuring batch settings with valid date ranges (a "from date" in the past and a "to date" in the future or empty) and publishing the survey.

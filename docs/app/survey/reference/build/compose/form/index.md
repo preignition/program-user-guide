@@ -1,24 +1,19 @@
 ---
-description: This section explains how to configure the main settings for your survey form.
+description: Reference documentation for the Form root element within the survey Compose tool.
 ---
 
-# Form Settings
+# Form Reference
 
-The Form is the top-level container for your survey. Here you can define the global properties that apply to the entire questionnaire.
+The Form is the root container element for the entire survey. It encapsulates all Pages, Sections, and Questions, and defines the global identity of the questionnaire.
 
 <figure>
-  <img src="./assets/form-auto.png" alt="Survey form settings.">
-  <figcaption>Survey form settings.</figcaption>
+  <img src="./assets/form-auto.png" alt="The Form root element in the Compose tool.">
+  <figcaption>The standard view of the Form element at the top of the Compose tree.</figcaption>
 </figure>
 
-## Interface Overview
+## Form Identity
 
-The **Form Settings** panel allows you to define the identity of your survey.
-
-- **Name**: The internal name for your form. This is used for administrative purposes and is not visible to respondents.
-- **Title**: The public-facing title of the survey. This appears at the top of every page and is what respondents will see.
-- **Subtitle**: An optional description or welcome message displayed below the title.
-
-## Contents
-
-This folder contains assets for the survey form section.
+The Form configuration determines the public-facing identity of the survey:
+- **Name**: The internal identifier used for administrative and database purposes (not visible to respondents).
+- **Title**: The main public title displayed at the top of the survey.
+- **Subtitle**: An optional description or introductory text displayed below the title.

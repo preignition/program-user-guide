@@ -28,6 +28,7 @@ Fundamental tasks for building your survey and forms, including adding questions
 - [How to add content to a form](./adding-content-to-a-form.md)
 - [How to provide rich formatting](./providing-rich-formatting.md)
 - [How to use form logic](./logic-expression.md) - *in progress*
+- [How to add images to the image library](./adding-images-to-library.md) - *in progress*
 
 ### Collaboration & Organization
 
