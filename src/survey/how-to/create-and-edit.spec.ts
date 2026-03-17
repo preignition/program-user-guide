@@ -9,7 +9,7 @@ const a11yPort = '7174'
 const baseUrl = `http://localhost:${port}` // playwright team
 const a11yBaseUrl = `http://localhost:${a11yPort}` // accessible data team
 const satisfactionSurveyId = '3BBFzJneqakYoyDu02c2'
-const mainPath = 'app/survey/how-to'
+const mainPath = 'docs/app/survey/how-to'
 
 let locator: Locator
 const suffix = ``
