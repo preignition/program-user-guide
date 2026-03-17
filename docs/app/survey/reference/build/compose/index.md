@@ -13,10 +13,10 @@ The compose view is where you build the structure of your survey by adding and o
 
 ## Contents
 
-- [Text Page](./text-page/README.md)
-- [Section](./section/README.md)
-- [Question](./question/README.md)
-- [Page](./page/README.md)
+- [Text Page](./text-page/index.md)
+- [Section](./section/index.md)
+- [Question](./question/index.md)
+- [Page](./page/index.md)
 
 # Structuring a form
 

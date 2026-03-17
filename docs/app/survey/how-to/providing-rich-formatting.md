@@ -45,7 +45,7 @@ The toolbar provides dedicated menus to insert advanced components without writi
 * **Accessibility Controls:** When editing a survey, the toolbar includes an **Accessibility menu** to easily configure text or components to show or hide based on the user's active accessibility mode (e.g., Easy Read, Sign Language).
 
 ::: info
-Accessible Surveys Markdown also supports writing HTML directly. For a complete reference on available CSS classes, layout factors, and custom web components, see our [Markdown Reference](../reference/content/markdown/README.md).
+Accessible Surveys Markdown also supports writing HTML directly. For a complete reference on available CSS classes, layout factors, and custom web components, see our [Markdown Reference](../reference/content/markdown/index.md).
 :::
 
 ## Step 2 (Optional): Add Images and Files

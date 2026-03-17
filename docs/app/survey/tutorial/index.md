@@ -11,7 +11,7 @@ On completing this course, you will feel confident building, testing, sharing an
 
 You should complete this course *before* creating your first survey.  Creating the 'Training Survey' will not count as part of your survey quota.
 
-There is other help available. Please check our [Tutorials](../../tutorials/README.md), [Guidance Notes](../../guidance-notes/survey-app/README.md) and [FAQs](../../faq/introduction-to-faq/README.md).
+There is other help available. Please check our [Tutorials](../../tutorials/index.md), [Guidance Notes](../../guidance-notes/survey-app/index.md) and [FAQs](../../faq/introduction-to-faq/index.md).
 
 ## Structure of the Course
 

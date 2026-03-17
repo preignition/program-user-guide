@@ -13,12 +13,12 @@ This section covers all aspects of building and customizing your surveys, from a
 
 ## Contents
 
-- [Compose](./compose/README.md)
-- [Behavior](./behavior/README.md)
-- [Image Library](./image-library/README.md)
-- [Localize](./localize/README.md)
-- [Prompt](./prompt/README.md)
-- [Restore](./restore/README.md)
+- [Compose](./compose/index.md)
+- [Behavior](./behavior/index.md)
+- [Image Library](./image-library/index.md)
+- [Localize](./localize/index.md)
+- [Prompt](./prompt/index.md)
+- [Restore](./restore/index.md)
 
 # Editing a survey
 

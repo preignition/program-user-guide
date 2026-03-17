@@ -56,3 +56,7 @@ The video is 18 minutes long.
 ::: tip
 You have completed the first 'Training Session'! You can now move on to the second 'Training Session'. This shows you how to add accessibility options to your survey.
 :::
+
+::: tip
+text
+:::
