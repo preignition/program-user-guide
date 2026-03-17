@@ -113,7 +113,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     console.info(`Capturing page intro`)
     await context
       .setName('intro')
-      .setPath('text-page')
+      .setPath('.')
       .screenshot()
 
     await page.getByText('intro 1').first().click()
@@ -126,7 +126,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Form' }).first().click()
     console.info(`Capturing form`)
     await context
-      .setPath('../form')
+      .setPath('.')
       .setName('form')
       .screenshot()
 
@@ -134,7 +134,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await page.getByText('Content Page for documentation').click()
     console.info(`Capturing page intro`)
     await context
-      .setPath('../page')
+      .setPath('.')
       .setName('page')
       .screenshot()
 
@@ -142,7 +142,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await page.getByText('text-based fields').click()
     console.info(`Capturing section`)
     await context
-      .setPath('../section')
+      .setPath('.')
       .setName('section')
       .screenshot()
 
@@ -150,7 +150,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await page.getByText('Text field').click()
     console.info(`Capturing question`)
     await context
-      .setPath('../question')
+      .setPath('.')
       .setName('question')
       .screenshot()
     await takeScreenshotAllModes(context)
@@ -230,7 +230,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await page.getByText('Form Behavior').click()
     console.info(`Capturing behavior`)
     await context
-      .setPath('../../behavior')
+      .setPath('..')
       .setName('behavior')
       .screenshot(true)
 
@@ -239,7 +239,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await page.getByText('Localize').click()
     console.info(`Capturing localize`)
     await context
-      .setPath('../localize')
+      .setPath('.')
       .setName('localize')
       .screenshot(true)
 
@@ -247,7 +247,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await page.getByText('Image Library').click()
     console.info(`Capturing image library`)
     await context
-      .setPath('../image-library')
+      .setPath('.')
       .setName('image-library')
       .screenshot(true)
 
@@ -258,7 +258,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await page.getByText('Prompt').first().click()
     console.info(`Capturing prompt`)
     await context
-      .setPath('../prompt')
+      .setPath('.')
       .setName('prompt')
       .screenshot(true)
 
@@ -268,7 +268,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await page.locator('#list').getByText('Restore', { exact: true }).click()
     console.info(`Capturing restore`)
     await context
-      .setPath('../restore')
+      .setPath('.')
       .setName('restore')
       .screenshot(true)
 
@@ -280,7 +280,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await page.getByRole('link', { name: 'share' }).click()
     console.info(`Capturing share`)
     await context
-      .setPath('../../share')
+      .setPath('../share')
       .setName('share')
       .screenshot(true)
 
