@@ -6,23 +6,43 @@ export default defineConfig({
   description: "Documentation for Accessible Data documentation applications ",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/assets/a14y_logo_style.svg',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'accessilbe surveys', link: 'https://accessiblesurveys.com' },
+      { text: 'accessible data', link: 'https://a11ydata.com' }
     ],
+    editLink: {
+      pattern: 'https://github.com/preignition/program-user-guide/edit/main/docs/:path',
+      text: 'Edit this page on GitHub'
+    },
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Survey App', link: '/app/survey',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Tutorials', link: '/app/survey/tutorial' },
+          { text: 'How-to Guides', link: '/app/survey/how-to' },
+          { text: 'Reference', link: '/app/survey/reference' },
+          { text: 'Explanation', link: '/app/survey/explanation' }
+
         ]
-      }
-    ],
+      },
+      { text: 'Customer App', link: '/app/customer', items: [] },
+      { text: 'User App', link: '/app/user' },
+      //{ text: 'Discussion ', link: '/app/discussion' },
+
+
+      {
+        text: 'APIs',
+        items: [
+        ]
+      }],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'linkedin', link: 'https://www.linkedin.com/company/19765136' },
+      { icon: 'bluesky', link: 'https://bsky.app/profile/accessibledata.bsky.social' },
+      { icon: 'github', link: 'https://github.com/preignition/program-user-guide' }
     ]
   }
 })

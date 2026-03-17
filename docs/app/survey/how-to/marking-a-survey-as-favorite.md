@@ -13,7 +13,7 @@ Marking a survey as a favorite adds it at the top of the list of surveys in your
 From your survey workspace, locate the survey you wish to mark as a favorite. Right-click on the survey row to open the context menu.
 
 <figure>
-  <img src="assets/marking-a-survey-as-favorite/step-1-right-click-survey.png" alt="Right click survey and select star survey">
+  <img src="./assets/marking-a-survey-as-favorite/step-1-right-click-survey.png" alt="Right click survey and select star survey">
   <figcaption>Right click survey and select star survey</figcaption>
 </figure>
 

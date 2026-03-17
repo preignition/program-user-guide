@@ -7,7 +7,7 @@ description: Advanced configuration options for email invitations.
 Take full control over your email campaigns with advanced configuration options.
 
 <figure>
-  <img src="assets/email-advanced-auto.png" alt="Advanced email settings.">
+  <img src="./assets/email-advanced-auto.png" alt="Advanced email settings.">
   <figcaption>Advanced email settings.</figcaption>
 </figure>
 
@@ -16,6 +16,6 @@ Take full control over your email campaigns with advanced configuration options.
 Connect your own SMTP server to send emails directly from your infrastructure, ensuring better deliverability and brand consistency. You can also configure advanced retry logic and bounce handling.
 
 <figure>
-  <img src="assets/email-content-advanced-auto.png" alt="email advanced content">
+  <img src="./assets/email-content-advanced-auto.png" alt="email advanced content">
   <figcaption>email advanced content</figcaption>
 </figure>

@@ -7,7 +7,7 @@ description: This section explains how to add and manage pages in your survey.
 Pages are used to structure your survey into logical sections, making it easier for respondents to navigate.
 
 <figure>
-  <img src="assets/page-auto.png" alt="Survey page settings.">
+  <img src="./assets/page-auto.png" alt="Survey page settings.">
   <figcaption>Survey page settings.</figcaption>
 </figure>
 

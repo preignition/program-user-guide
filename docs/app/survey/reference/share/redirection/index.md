@@ -7,14 +7,14 @@ description: Reference documentation for defining where respondents are redirect
 The **Redirection** page determines where respondents are routed immediately after they submit their completed survey.
 
 <figure>
-  <img src="assets/redirection-auto.png" alt="The survey redirection interface">
+  <img src="./assets/redirection-auto.png" alt="The survey redirection interface">
   <figcaption>The survey redirection interface</figcaption>
 </figure>
 
 ## Interface Overview
 
 <figure>
-  <img src="assets/redirection-content-auto.png" alt="Redirection settings content">
+  <img src="./assets/redirection-content-auto.png" alt="Redirection settings content">
   <figcaption>Redirection settings content</figcaption>
 </figure>
 

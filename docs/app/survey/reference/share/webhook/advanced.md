@@ -7,7 +7,7 @@ description: Advanced configuration options for webhooks.
 Build robust integrations with advanced webhook controls.
 
 <figure>
-  <img src="assets/webhook-advanced-auto.png" alt="Advanced webhook settings.">
+  <img src="./assets/webhook-advanced-auto.png" alt="Advanced webhook settings.">
   <figcaption>Advanced webhook settings.</figcaption>
 </figure>
 
@@ -16,6 +16,6 @@ Build robust integrations with advanced webhook controls.
 Configure custom HTTP headers for authentication with your endpoint. You can also define specific retry policies for failed delivery attempts and view detailed logs of all webhook payloads for debugging.
 
 <figure>
-  <img src="assets/webhook-content-advanced-auto.png" alt="webhook advanced content">
+  <img src="./assets/webhook-content-advanced-auto.png" alt="webhook advanced content">
   <figcaption>webhook advanced content</figcaption>
 </figure>

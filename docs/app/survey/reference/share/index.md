@@ -7,7 +7,7 @@ description: Learn how to distribute your survey and manage responses.
 This section explains the different methods for sharing your survey and managing how respondents can access it.
 
 <figure>
-  <img src="assets/share-auto.png" alt="The survey sharing dashboard.">
+  <img src="./assets/share-auto.png" alt="The survey sharing dashboard.">
   <figcaption>The survey sharing dashboard.</figcaption>
 </figure>
 

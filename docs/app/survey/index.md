@@ -1,6 +1,44 @@
 ---
 description: Welcome to the Accessible Surveys App User Guide. This guide covers everything you need to know to create, manage, and analyze your surveys.
+layout: home
+
+hero:
+  name: "Accessible Surveys"
+  text: "Documentation for the Survey App"
+
+features:
+  - title: Tutorial
+    details: When you are new to Accessible Surveys
+    icon: 
+      light:  /assets/icons/tutorial.svg
+      dark: /assets/icons/tutorial-dark.svg
+    link: ./tutorial
+  - title: How-to Guides
+    details: When you need practical directions to complete a specific task
+    icon: 
+      light: /assets/icons/how-to.svg
+      dark: /assets/icons/how-to-dark.svg
+    link: ./how-to
+  - title: Reference
+    details: When you need technical descriptions, facts, or details while you work
+    icon: 
+      light: /assets/icons/contract.svg
+      dark: /assets/icons/contract-dark.svg
+      
+    link: ./reference
+  - title: Explanation
+    details: When you want to understand the bigger picture or the "why" behind a feature
+    icon: 
+      light: /assets/icons/explanation.svg
+      dark: /assets/icons/explanation-dark.svg
+    link: ./explanation
+
+  
 ---
+
+<!-- markdownlint-disable-next-line  -->
+<br>
+<br>
 
 # Accessible Surveys App User Guide
 

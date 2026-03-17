@@ -47,8 +47,8 @@ When you add Easy Read images to your survey, these images are the ones to use.
 
 | | | |
 | :---: | :---: | :---: |
-| <img src="assets/1 ER image for Survey.png" alt="Easy Read image for 'Which survey tool does your organisation use the most?'" width="100%"> | <img src="assets/2 ER image for Satisfaction.png" alt="Easy Read image for 'I am satisifed with my current survey tool'" width="100%"> | <img src="assets/3 ER image for what do you like.png" alt="Easy Read image for 'What do you like about the survey tool you are using?'" width="100%"> |
-| <img src="assets/4 ER image for what frustrates you.png" alt="Easy Read image for 'What frustrates you about the survey tool that you are using?'" width="100%"> | <img src="assets/5 ER image do you like this survey.png" alt="Easy Read image for 'Do you like this survey?'" width="100%"> | |
+| <img src="./assets/1 ER image for Survey.png" alt="Easy Read image for 'Which survey tool does your organisation use the most?'" width="100%"> | <img src="./assets/2 ER image for Satisfaction.png" alt="Easy Read image for 'I am satisifed with my current survey tool'" width="100%"> | <img src="./assets/3 ER image for what do you like.png" alt="Easy Read image for 'What do you like about the survey tool you are using?'" width="100%"> |
+| <img src="./assets/4 ER image for what frustrates you.png" alt="Easy Read image for 'What frustrates you about the survey tool that you are using?'" width="100%"> | <img src="./assets/5 ER image do you like this survey.png" alt="Easy Read image for 'Do you like this survey?'" width="100%"> | |
 
 I suggest you download these into a separate folder on your computer before you start the session. The video will show you how to add the images to your survey.
 

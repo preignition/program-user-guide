@@ -7,7 +7,7 @@ description: This section explains how to configure the main settings for your s
 The Form is the top-level container for your survey. Here you can define the global properties that apply to the entire questionnaire.
 
 <figure>
-  <img src="assets/form-auto.png" alt="Survey form settings.">
+  <img src="./assets/form-auto.png" alt="Survey form settings.">
   <figcaption>Survey form settings.</figcaption>
 </figure>
 

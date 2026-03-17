@@ -7,7 +7,7 @@ description: Advanced configuration options for survey status.
 Gain deeper insights into your survey's operational state.
 
 <figure>
-  <img src="assets/status-advanced-auto.png" alt="Advanced status settings.">
+  <img src="./assets/status-advanced-auto.png" alt="Advanced status settings.">
   <figcaption>Advanced status settings.</figcaption>
 </figure>
 

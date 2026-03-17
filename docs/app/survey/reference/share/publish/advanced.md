@@ -7,7 +7,7 @@ description: Advanced configuration options for publishing surveys.
 Manage the deployment of your survey with precision.
 
 <figure>
-  <img src="assets/publish-advanced-auto.png" alt="Advanced publishing settings.">
+  <img src="./assets/publish-advanced-auto.png" alt="Advanced publishing settings.">
   <figcaption>Advanced publishing settings.</figcaption>
 </figure>
 
@@ -16,6 +16,6 @@ Manage the deployment of your survey with precision.
 Access detailed version history, compare changes between versions, and perform safe rollbacks. You can also stage a version for testing in a sandbox environment before pushing it to production.
 
 <figure>
-  <img src="assets/publish-content-advanced-auto.png" alt="publish advanced content">
+  <img src="./assets/publish-content-advanced-auto.png" alt="publish advanced content">
   <figcaption>publish advanced content</figcaption>
 </figure>

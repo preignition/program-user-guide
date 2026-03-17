@@ -7,7 +7,7 @@ description: Advanced configuration options for survey distribution.
 Optimize how your survey reaches your audience with advanced distribution tools.
 
 <figure>
-  <img src="assets/distribute-advanced-auto.png" alt="Advanced distribution settings.">
+  <img src="./assets/distribute-advanced-auto.png" alt="Advanced distribution settings.">
   <figcaption>Advanced distribution settings.</figcaption>
 </figure>
 
@@ -16,6 +16,6 @@ Optimize how your survey reaches your audience with advanced distribution tools.
 Create custom tracking links to monitor the performance of different distribution channels (e.g., social media vs. newsletter). You can also configure domain masking to serve the survey from your own branded domain.
 
 <figure>
-  <img src="assets/distribute-content-advanced-auto.png" alt="distribute advanced content">
+  <img src="./assets/distribute-content-advanced-auto.png" alt="distribute advanced content">
   <figcaption>distribute advanced content</figcaption>
 </figure>

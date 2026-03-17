@@ -7,14 +7,14 @@ description: Reference documentation for defining respondent account types.
 The **Account Types** page details the authentication requirements for your respondents, dictating how they interact with and access the survey.
 
 <figure>
-  <img src="assets/account-type-auto.png" alt="The survey respondent account types interface">
+  <img src="./assets/account-type-auto.png" alt="The survey respondent account types interface">
   <figcaption>The survey respondent account types interface</figcaption>
 </figure>
 
 ## Interface Overview
 
 <figure>
-  <img src="assets/account-type-content-auto.png" alt="Account type settings content">
+  <img src="./assets/account-type-content-auto.png" alt="Account type settings content">
   <figcaption>Account type settings content</figcaption>
 </figure>
 

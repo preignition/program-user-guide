@@ -37,14 +37,14 @@ You will be an 'Account Holder' if you created the account for your 'Organizatio
 When signed into your account, you will be able to view and access the 'Customer' portal from the homepage.
 
 <figure>
-  <img src="assets/account-holder-homepage.png" alt="Homepage for an Account Holder with 'Customer' highlighted.">
+  <img src="./assets/account-holder-homepage.png" alt="Homepage for an Account Holder with 'Customer' highlighted.">
   <figcaption><p>Screenshot of a homepage for an 'Account Holder'.</p></figcaption>
 </figure>
 
 If you are a 'Team Member' but not an 'Account Holder', when signed in to your account you will not be able to view or access the 'Customer' portal from the homepage.
 
 <figure>
-  <img src="assets/team-member-homepage.png" alt="screenshot of a homepage for a 'Team Member'">
+  <img src="./assets/team-member-homepage.png" alt="screenshot of a homepage for a 'Team Member'">
   <figcaption><p>Screenshot of a homepage for a 'Team Member'.</p></figcaption>
 </figure>
 

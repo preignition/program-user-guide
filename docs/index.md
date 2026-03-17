@@ -3,26 +3,32 @@
 layout: home
 
 hero:
-  name: "Accessible Data Documentation"
-  text: "Documentation for Accessible Data documentation applications "
-  tagline: My great project tagline
+  name: "Accessible Data"
+  text: "Documentation "
+  tagline: A Survey Tool for Everyone
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Online Course
+      link: /app/survey/tutorial
     - theme: alt
       text: API Examples
       link: /api-examples
 
 features:
   - title: Survey App
-    details: Accessible Surveys application
+    details: Learn how to create and manage surveys
+    icon: 
+      src: 'https://accessiblesurveys.com/images/material-symbols/contract/materialsymbolsoutlined/contract_fill1_24px.svg'
     link: /app/survey
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Customer App
+    details: Learn how to manage customers
+    icon: 
+      src : 'https://accessiblesurveys.com/images/material-symbols/contract/materialsymbolsoutlined/contract_fill1_24px.svg'
+    link: /app/customer
+  - title: User App
+    details: How to handle you ruser account
+    icon: 
+      src: 'https://accessiblesurveys.com/images/material-symbols/contract/materialsymbolsoutlined/contract_fill1_24px.svg'
+    link: /app/user
+  
 ---
-

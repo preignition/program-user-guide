@@ -7,14 +7,14 @@ description: Reference documentation for controlling access to your survey setti
 The **Access** settings page allows you to govern internal team permissions, specifying who is authorized to view, edit, or manage the survey architecture.
 
 <figure>
-  <img src="assets/access-auto.png" alt="The survey access settings interface">
+  <img src="./assets/access-auto.png" alt="The survey access settings interface">
   <figcaption>The survey access settings interface</figcaption>
 </figure>
 
 ## Interface Overview
 
 <figure>
-  <img src="assets/access-content-auto.png" alt="Access settings content">
+  <img src="./assets/access-content-auto.png" alt="Access settings content">
   <figcaption>Access settings content</figcaption>
 </figure>
 

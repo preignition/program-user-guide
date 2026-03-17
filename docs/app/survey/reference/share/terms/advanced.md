@@ -7,7 +7,7 @@ description: Advanced configuration options for survey terms.
 Manage complex legal requirements and consent forms.
 
 <figure>
-  <img src="assets/terms-advanced-auto.png" alt="Advanced terms settings.">
+  <img src="./assets/terms-advanced-auto.png" alt="Advanced terms settings.">
   <figcaption>Advanced terms settings.</figcaption>
 </figure>
 
@@ -16,6 +16,6 @@ Manage complex legal requirements and consent forms.
 Upload specific terms and conditions for each language your survey supports. Advanced settings also allow for versioning of legal documents, ensuring you track exactly which version of the terms each respondent agreed to.
 
 <figure>
-  <img src="assets/terms-content-advanced-auto.png" alt="terms advanced content">
+  <img src="./assets/terms-content-advanced-auto.png" alt="terms advanced content">
   <figcaption>terms advanced content</figcaption>
 </figure>

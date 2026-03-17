@@ -7,7 +7,7 @@ description: Advanced configuration options for survey access rights.
 For complex organizations, the advanced access settings allow for more granular permission control.
 
 <figure>
-  <img src="assets/access-advanced-auto.png" alt="Advanced access settings.">
+  <img src="./assets/access-advanced-auto.png" alt="Advanced access settings.">
   <figcaption>Advanced access settings.</figcaption>
 </figure>
 
@@ -16,6 +16,6 @@ For complex organizations, the advanced access settings allow for more granular 
 In advanced mode, you can define custom roles or assign specific permissions to users, such as restricting access to sensitive data fields or limiting editing rights to specific survey sections.
 
 <figure>
-  <img src="assets/access-content-advanced-auto.png" alt="access advanced content">
+  <img src="./assets/access-content-advanced-auto.png" alt="access advanced content">
   <figcaption>access advanced content</figcaption>
 </figure>

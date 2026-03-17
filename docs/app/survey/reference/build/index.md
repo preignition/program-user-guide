@@ -7,7 +7,7 @@ description: A guide to constructing and customizing your survey forms.
 This section covers all aspects of building and customizing your surveys, from adding questions to defining their behavior and appearance.
 
 <figure>
-  <img src="assets/build-auto.png" alt="Survey Builder Interface">
+  <img src="./assets/build-auto.png" alt="Survey Builder Interface">
   <figcaption>The main interface for building and editing surveys.</figcaption>
 </figure>
 
