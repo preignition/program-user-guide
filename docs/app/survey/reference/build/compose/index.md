@@ -11,25 +11,25 @@ The Compose tool is the structural editor for a survey form. It enables the crea
 The Compose view consists of a navigation tree for structure management and an editing pane for configuring the selected element.
 
 <figure>
-  <img src="./compose/assets/compose-auto.png" alt="The Compose tool interface.">
+  <img src="./assets/compose-auto.png" alt="The Compose tool interface.">
   <figcaption>The main view of the Compose tool.</figcaption>
 </figure>
 
 <figure>
-  <img src="./compose/assets/compose-grid-auto.png" alt="The element tree grid in the Compose tool.">
+  <img src="./assets/compose-grid-auto.png" alt="The element tree grid in the Compose tool.">
   <figcaption>The structural tree grid used to navigate and arrange form elements.</figcaption>
 </figure>
 
 <figure>
-  <img src="./compose/assets/compose-modes-auto.png" alt="The modes toolbar in the Compose tool.">
+  <img src="./assets/compose-modes-auto.png" alt="The modes toolbar in the Compose tool.">
   <figcaption>The toolbar for switching between different editing modes or views.</figcaption>
 </figure>
 
 ## Supported Element Types
 
 The following elements can be added and configured within the Compose tool:
-- **[Form](./compose/form.md)**: The root container for the survey.
-- **[Text Page](./compose/text-page.md)**: Non-interactive pages for information, such as introductions or thank-you messages.
-- **[Page](./compose/page.md)**: A structural container representing a single screen or logical division of the survey.
-- **[Section](./compose/section.md)**: A subgrouping element within a page to organize related questions.
-- **[Question](./compose/question.md)**: Interactive data collection fields (e.g., text, multiple choice, rating).
+- **[Form](./form.md)**: The root container for the survey.
+- **[Text Page](./text-page.md)**: Non-interactive pages for information, such as introductions or thank-you messages.
+- **[Page](./page.md)**: A structural container representing a single screen or logical division of the survey.
+- **[Section](./section.md)**: A subgrouping element within a page to organize related questions.
+- **[Question](./question.md)**: Interactive data collection fields (e.g., text, multiple choice, rating).

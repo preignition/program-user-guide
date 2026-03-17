@@ -9,6 +9,7 @@ The Survey Builder is the primary workspace for creating, structuring, and custo
 ## Overview
 
 The interface provides access to various tools required for survey creation:
+
 - **Compose**: Structure the survey by adding pages, sections, and questions.
 - **Behavior**: Define overall settings, such as accessibility modes and form logic.
 - **Image Library**: Manage image assets for the survey.
