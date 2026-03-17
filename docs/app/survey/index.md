@@ -12,26 +12,26 @@ features:
     icon: 
       light:  /assets/icons/tutorial.svg
       dark: /assets/icons/tutorial-dark.svg
-    link: ./tutorial
+    link: ./tutorial/index
   - title: How-to Guides
     details: When you need practical directions to complete a specific task
     icon: 
       light: /assets/icons/how-to.svg
       dark: /assets/icons/how-to-dark.svg
-    link: ./how-to
+    link: ./how-to/index
   - title: Reference
     details: When you need technical descriptions, facts, or details while you work
     icon: 
       light: /assets/icons/contract.svg
       dark: /assets/icons/contract-dark.svg
       
-    link: ./reference
+    link: ./reference/index
   - title: Explanation
     details: When you want to understand the bigger picture or the "why" behind a feature
     icon: 
       light: /assets/icons/explanation.svg
       dark: /assets/icons/explanation-dark.svg
-    link: ./explanation
+    link: ./explanation/index
 
   
 ---

@@ -1,9 +1,39 @@
 import { defineConfig } from 'vitepress'
 
+function getSidebar() {
+  console.info('getSidebar')
+  return [
+    {
+      text: 'Survey App', link: '/app/survey/index',
+      items: [
+        { text: 'Tutorials', link: '/app/survey/tutorial/index' },
+        { text: 'How-to Guides', link: '/app/survey/how-to/index' },
+        { text: 'Reference', link: '/app/survey/reference/index' },
+        { text: 'Explanation', link: '/app/survey/explanatio/indexn' }
+
+      ]
+    },
+    { text: 'Customer App', link: '/app/customer/index', items: [] },
+    { text: 'User App', link: '/app/user/index' },
+    //{ text: 'Discussion ', link: '/app/discussion' },
+
+
+    {
+      text: 'APIs',
+      items: [
+      ]
+    }
+  ]
+}
+
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Accessible Data Documentation",
   description: "Documentation for Accessible Data documentation applications ",
+  cleanUrls: true,
+  lastUpdated: true,
+  metaChunk: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/assets/a14y_logo_style.svg',
@@ -17,32 +47,19 @@ export default defineConfig({
       text: 'Edit this page on GitHub'
     },
 
-    sidebar: [
-      {
-        text: 'Survey App', link: '/app/survey',
-        items: [
-          { text: 'Tutorials', link: '/app/survey/tutorial' },
-          { text: 'How-to Guides', link: '/app/survey/how-to' },
-          { text: 'Reference', link: '/app/survey/reference' },
-          { text: 'Explanation', link: '/app/survey/explanation' }
-
-        ]
-      },
-      { text: 'Customer App', link: '/app/customer', items: [] },
-      { text: 'User App', link: '/app/user' },
-      //{ text: 'Discussion ', link: '/app/discussion' },
-
-
-      {
-        text: 'APIs',
-        items: [
-        ]
-      }],
+    sidebar: getSidebar(),
 
     socialLinks: [
       { icon: 'linkedin', link: 'https://www.linkedin.com/company/19765136' },
       { icon: 'bluesky', link: 'https://bsky.app/profile/accessibledata.bsky.social' },
       { icon: 'github', link: 'https://github.com/preignition/program-user-guide' }
     ]
+  },
+
+  additionalConfig(path) {
+    return [{
+      title: `Hello from ${path}`,
+      // '/app/survey': surveyConfig
+    }]
   }
 })
