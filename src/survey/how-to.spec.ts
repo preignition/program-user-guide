@@ -1,7 +1,7 @@
 import { expect, Locator, test } from '@playwright/test'
-import { Context } from '../../Context.ts'
-import { initializeFirebaseApp } from '../../utils/initialize'
-import { initializePage } from '../../utils/initializePage.ts'
+import { Context } from '../Context.ts'
+import { initializeFirebaseApp } from '../utils/initialize'
+import { initializePage } from '../utils/initializePage.ts'
 const db = initializeFirebaseApp().db
 
 const port = '7173'

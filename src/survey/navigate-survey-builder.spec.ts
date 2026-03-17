@@ -1,7 +1,7 @@
 import { test } from '@playwright/test'
-import { Context } from './Context.ts'
-import { ClipT } from './types.ts'
-import { takeScreenshotAllModes } from './utils/takeScreenshotAllModes.ts'
+import { Context } from '../Context.ts'
+import { ClipT } from '../types.ts'
+import { takeScreenshotAllModes } from '../utils/takeScreenshotAllModes.ts'
 
 
 const port = process.env.PLAYWRIGHT_PORT || '7174'
@@ -15,10 +15,7 @@ const suffix = `s/edit/survey/${surveyId}/build/compose/survey/intro`
 test.describe('Survey Builder Navigation and Screenshots', () => {
 
   test('survey', async ({ page }) => {
-    const context = new Context(
-      'docs/
-      app / survey / reference',
-    )
+    const context = new Context('app/survey/reference', page)
     context.setPage(page)
     await page.setViewportSize({ width: 1600, height: 1080 })
     await page.goto(baseUrl)
