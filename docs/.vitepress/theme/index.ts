@@ -4,8 +4,21 @@ import './lite-youtube.css'
 import './styles.css'
 // import custom element used in markdown files
 
-// lapp-youtube
-import '@lit-app/cmp/youtube/youtube'
+import { Icon } from '@lit-app/cmp/icon/internal/icon'
+Icon.getURL = function (name, noFill) {
+  return `/images/material-symbols/${name}/materialsymbolsoutlined/${name}${noFill ? '' : '_fill1'}_${Icon.opticalSize}px.svg`
+}
 
+// lapp-youtube
+// import 'lite-youtube-embed'
+importYoutube()
+// import '@lit-app/cmp/youtube/youtube'
+// lapp-icon
+import '@lit-app/cmp/icon/icon'
 
 export default Theme
+
+function importYoutube() {
+  // We need to import the youtube component to make it available in markdown files
+  import('@lit-app/cmp/youtube/youtube')
+}
