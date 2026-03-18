@@ -9,6 +9,8 @@ import { getSocialLinks } from './getSocialLinks.ts'
 export default defineConfig({
   title: "Accessible Data Documentation",
   description: "Documentation for Accessible Data documentation applications ",
+  // assetsDir: 'assets',
+  srcExclude: ['**/README.md', '**/TODO.md'],
   cleanUrls: true,
   // lastUpdated: true,
   metaChunk: true,

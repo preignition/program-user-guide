@@ -18,17 +18,32 @@ features:
   - title: Survey App
     details: Learn how to create and manage surveys
     icon: 
-      src: 'https://accessiblesurveys.com/images/material-symbols/contract/materialsymbolsoutlined/contract_fill1_24px.svg'
-    link: /app/survey
-  - title: Customer App
+      light: /assets/app/analytics.svg
+      dark: /assets/app/analytics-dark.svg
+    link: /app/survey/index
+  - title: Customer App (in process)
     details: Learn how to manage customers
     icon: 
-      src : 'https://accessiblesurveys.com/images/material-symbols/contract/materialsymbolsoutlined/contract_fill1_24px.svg'
-    link: /app/customer
-  - title: User App
-    details: How to handle you ruser account
+      light: /assets/app/customer.svg
+      dark: /assets/app/customer-dark.svg
+    link: /app/customer/index
+  - title: User App (in process)
+    details: How to handle you user account
     icon: 
-      src: 'https://accessiblesurveys.com/images/material-symbols/contract/materialsymbolsoutlined/contract_fill1_24px.svg'
-    link: /app/user
+      light: /assets/app/user.svg
+      dark: /assets/app/user-dark.svg
+    link: /app/user/index
+  - title: Blog App (in process)
+    details: Documentation for the Blog application
+    icon: 
+      light: /assets/app/blog.svg
+      dark: /assets/app/blog-dark.svg
+    link: /app/blog/index
+  - title: Discussion App (in process)
+    details: Documentation for the Discussion application
+    icon: 
+      light: /assets/app/discussion.svg
+      dark: /assets/app/discussion-dark.svg
+    link: /app/discussion/index
   
 ---
