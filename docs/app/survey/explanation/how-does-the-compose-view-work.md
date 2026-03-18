@@ -46,11 +46,7 @@ Some modes are only available when they are activated at the survey level:
 * **Read Aloud Mode:** Enables you to add audio recordings of questions for respondents who prefer auditory input.
 * **Translation Mode:** Manage translations of your survey content for multilingual accessibility. Only available if the survey has been set to "Multilingual" in the survey settings.
 
-## The Concept of Modes
-
-The Compose view introduces "Modes" (like **Settings**, **Content**, and **Visibility**) to prevent interface clutter.
-
-Instead of showing every possible configuration option at once—which would be overwhelming—the view filters the right pane to show only what is relevant to your current task. For example, when in "Visibility Mode," the right pane highlights only the logic rules, allowing you to debug the survey's flow without getting distracted by text formatting.
+See [The Concept of Modes](./the-concept-of-modes.md) for a deeper explanation of why we use modes and how they help manage complexity.
 
 ## The "Why" Behind the Design
 
