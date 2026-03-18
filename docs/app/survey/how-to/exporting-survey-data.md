@@ -26,13 +26,9 @@ A privacy warning window will be activated, reminding you of your data protectio
 
 You will need to tick the box confirming that you understand these responsibilitis before you can export survey data
 
-![](<../../../.gitbook/assets/image (311).png>)
-
 ## Step 4
 
 There are various options for to chose from when exporting survey data
-
-![](<../../../.gitbook/assets/image (331).png>)
 
 ## Step 5
 
@@ -56,10 +52,6 @@ Next select the type of data that you would like to export. There are three choi
 
 Once you have decided how you want to export the survey data, select 'Export Now'
 
-![](<../../../.gitbook/assets/image (306).png>)
-
 ## Step 8
 
 The data will start downloading automatically
-
-![](<../../../.gitbook/assets/image (325).png>)

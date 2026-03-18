@@ -29,7 +29,4 @@ This issue can be resolved by editing the question's code so each question has a
 30 second video showing how to resolve a common issue with questions having the same code
 {% endembed %}
 
-
-
 ## &#x20;
-

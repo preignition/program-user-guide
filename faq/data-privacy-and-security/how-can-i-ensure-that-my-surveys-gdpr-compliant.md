@@ -12,7 +12,7 @@ This page provides some practical instructions to help our Users run surveys tha
 
 It is therefore your responsibility to make sure that your data processors operate in a GDPR-compliant way.
 
-So if you have a Data Protection Officer, ask them to check your supplier’s (processors’) privacy and security policies to ensure that they adhere to the GDPR.
+So if you have a Data Protection Officer, ask them to check your supplier's (processors') privacy and security policies to ensure that they adhere to the GDPR.
 
 We can assuree you that our survey took is GDPR compliant and you can read our [terms and privacy policy](https://accessiblesurveys.com/home/terms) here
 
@@ -25,17 +25,17 @@ We understand this to mean that either or both of the following is in place:
 1. **Consent.** When collecting personal data your respondents must deliberately and willfully tell you that it is OK that you collect data about them, for the purposes that you clearly explain to them.
 2. **Legitimate interest.** When collecting personal data you (your organization or company) should be able to convincingly prove that collecting personal data is in your \*\*\*\* legitimate interest. ie that it’s in your (and your customers’) interests to collect feedback, data and their personal info. For example to solve your customer's problems, or enhance your services.
 
-If you genuinely feel that your research and use of data has a legitimate interest and is respectful of your Respondents, then don’t feel that you also need to obtain consent. Just make sure you’re completely transparent about “how” and “why” you are collecting data and the part it plays in your research process. Also give people the chance contact you for further info or to opt-out. Otherwise, you must obtain consent.
+If you genuinely feel that your research and use of data has a legitimate interest and is respectful of your Respondents, then don’t feel that you also need to obtain consent. Just make sure you’re completely transparent about "how" and "why" you are collecting data and the part it plays in your research process. Also give people the chance contact you for further info or to opt-out. Otherwise, you must obtain consent.
 
 ## Don't cut corners when getting consent
 
-Consent basically means getting permissions for something you want to do. Consent must be “_unambiguous_”, and in the case of sensitive personal data, “_explicit_”.
+Consent basically means getting permissions for something you want to do. Consent must be "_unambiguous_", and in the case of sensitive personal data, "_explicit_".
 
 This means you cannot use tactics like pre-ticked checkboxes, or trick people somehow to agree with something that they don’t really understand or haven't properly read.
 
 ### For collecting non-sensitive data:
 
-According to the GDPR, for non-sensitive data, you need “unambiguous, affirmative” consent, not “explicit” consent. Therefore, you can rely on a clear notice at the start of your survey.
+According to the GDPR, for non-sensitive data, you need "unambiguous, affirmative" consent, not "explicit" consent. Therefore, you can rely on a clear notice at the start of your survey.
 
 for example:
 
@@ -43,7 +43,7 @@ for example:
 
 A good place to have this information in your questionnaires is the [Landing Page](../../guidance-notes/survey-app/surveys/presenting-surveys.md). This feature allows you to add a welcome page for your survey, which can include data, pictures, and a button to START the survey.
 
-<figure><img src="../../.gitbook/assets/image (4) (3).png" alt=""><figcaption><p>Example of a landing page gettig consent for non-senitive data in a survey</p></figcaption></figure>
+<figure><img  ><figcaption><p>Example of a landing page gettig consent for non-senitive data in a survey</p></figcaption></figure>
 
 The image above shows an example of a getting consent for non-sensitive data in a survey, using a landing page.
 
@@ -53,9 +53,9 @@ Remember that you must explain what personal data is being processed, purpose of
 
 ### For collecting sensitive data:
 
-According to the GDPR, to collect sensitive data, you need “explicit” consent.
+According to the `GDPR`, to collect sensitive data, you need "explicit" consent.
 
-Therefore in addition to the information you provide for collecting non-sensitive data, it is important that consent is given in the form of a clear affirmative action on the part of the data subject. In practical terms, this means asking for a positive “opt-in”.
+Therefore in addition to the information you provide for collecting non-sensitive data, it is important that consent is given in the form of a clear affirmative action on the part of the data subject. In practical terms, this means asking for a positive "opt-in".
 
 There are two main ways of doing this using our service.
 
@@ -65,7 +65,7 @@ Respondents are asked to agree to our own Terms of Service before they can start
 
 Users have the option to add their own terms which can be displayed either on the page itself or as a pop up box. This is an excellent way of getting explicit consent for collecting sensitive personal data as Respondents must give this consent before they can commence the survey. There is also a clear opt out option.
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img  ><figcaption></figcaption></figure>
 
 #### Ask Respondents to give explicit consent before answering a specific question
 
@@ -77,9 +77,9 @@ Our platform has a feature called 'helper text' . Helper text is announced by sc
 
 Here is a couple of examples of how it could look like:
 
-<figure><img src="../../.gitbook/assets/image (2) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img  ><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img  ><figcaption></figcaption></figure>
 
 This way, you are not only more transparent and more clear about your use of their data (which is in accordance with GDPR regulation), but also, it is easier for a human brain to process the information. It will be less scary and less intimidating to answer your questions.
 
@@ -117,14 +117,14 @@ What happens if you figure out that there has been some data breach and your col
 
 Reporting is only required for breaches which will result in:
 
-“risk to people’s rights or freedoms”
+"risk to people’s rights or freedoms"
 
-“discrimination, damage to reputation, financial loss, loss of confidentiality or any other significant economic or social disadvantage.”
+"discrimination, damage to reputation, financial loss, loss of confidentiality or any other significant economic or social disadvantage."
 
 In [Article 33](http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2016.119.01.0001.01.ENG#d1e3434-1-1) they mention that if your respondents’ personal information is exposed in a way that results in risking or damaging them, you (the data controller) not later than 72 hours after having become aware of it, must notify the personal data breach to the supervisory authority competent in accordance.
 
 ### Reporting to your respondents
 
-If you identify that there is a “high risk to their rights and freedoms”, then you must notify your respondents too.
+If you identify that there is a "high risk to their rights and freedoms", then you must notify your respondents too.
 
 For most types of feedback forms, it’s quite difficult to consider the data-breach as high-risk. Unless you’re processing sensitive data, for example if your business is in the health sector.

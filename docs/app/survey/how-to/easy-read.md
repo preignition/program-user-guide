@@ -9,7 +9,7 @@ description: This page covers how to create an 'Easy Read' version of a form
 Forms can adapt to the needs and preferences of respondents. Some respondents may want an 'Easy Read' version of a form.
 
 ::: tip
-“Making information easier to understand for people ... is about more than making your text size bigger and putting some symbols or pictures in your document. It’s about working with the people your information is for, finding out together how you can make the information useful and accessible for them. There are no quick answers, and it isn’t easy... but it can be fun.” ([EasyInfo, ‘About making information easier’](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment\_data/file/215923/dh\_121927.pdf))
+"Making information easier to understand for people ... is about more than making your text size bigger and putting some symbols or pictures in your document. It’s about working with the people your information is for, finding out together how you can make the information useful and accessible for them. There are no quick answers, and it isn’t easy... but it can be fun." ([EasyInfo, ‘About making information easier’](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment\_data/file/215923/dh\_121927.pdf))
 :::
 
 'Easy Read' forms offer the following advantages:
@@ -29,8 +29,6 @@ Activate the 'Easy Read' mode under '[Form Behaviour](form-behaviour.md)'
 
 An Easy Read option appears in the 'Form Definition' menu
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
-
 ## Step 3
 
 If you want to use images to complement questions in the 'Easy Read' mode you must first add them to your '[Image Library](image-library.md)'
@@ -45,12 +43,6 @@ Selecting 'Easy Read Version' in the Form Definition menu displays the form in t
 
 Initially the text in the Easy Read mode is the same as the text in the standard mode. However it can be edited here.
 
-![](<../../../.gitbook/assets/image (307) (1) (1) (1) (1).png>)
-
-* The![](<../../../.gitbook/assets/image (297) (1) (1) (1) (2).png>)emoji shows the text as it appears in the standard version of the form. It can't be edited here.
-* The ![](<../../../.gitbook/assets/image (309) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)emoji shows the text as it appears in the Easy Read version of the Form. It can be edited here.
-* Any changes to the Easy Read text will be highlighted in the 'Easy Read Version' tree grid as shown above
-
 ::: info
 Pages, sections, questions and even question options can all be edited for Easy Read
 :::
@@ -61,11 +53,7 @@ It is possible to upload pictures or youtube videos to complement questions in E
 
 These will appear to the left of the Question
 
-![](<../../../.gitbook/assets/image (313) (1) (1) (1) (1) (1).png>)
-
 For videos, simply add the video link or ID in the box entitled 'Youtube Settings'
-
-![](<../../../.gitbook/assets/image (303) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 6
 
@@ -73,17 +61,11 @@ Toggling on the 'Visibility Modes' button gives the option to make pages, sectio
 
 For instance, you may want to present a shorter version of a form in the Easy Read mode
 
-![](<../../../.gitbook/assets/image (307) (1) (1) (1) (1) (1).png>)
-
 In this example, the visibility settings make 'Section 1' visible in the standard mode but hidden in 'International Sign' and 'Easy Read' mode
-
-![](<../../../.gitbook/assets/image (308) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 7
 
 The Easy Read version of a form can be tested in the usual way. However the 'Easy Read' icon must be selected from the top menu
-
-![](<../../../.gitbook/assets/image (316) (1) (1) (1) (1) (1) (1).png>)
 
 ## Step 8
 

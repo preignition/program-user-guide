@@ -19,10 +19,6 @@ You can customise your survey links to make them easier for respondents to read
 Only lowercase letter and numbers are allowed for aliases
 :::
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (2) (4).png" alt=""><figcaption></figcaption></figure>
-
 ## Step 2
 
 * The aliases you have created will now be availble to be used in the link builder
-
-![](<../../../.gitbook/assets/image (308) (1) (1) (1) (1) (1).png>)

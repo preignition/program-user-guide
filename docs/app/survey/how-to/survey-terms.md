@@ -32,28 +32,18 @@ Markdown is supported and CSS Classes can be used to display or hide accessibili
 
 You can use the Preview tab to see how your terms will be presented to respondents
 
-![](<../../../.gitbook/assets/image (2) (2).png>)
-
 ## Step 3
 
 The terms can be translated into any of the languages which are active for the survey
-
-![](<../../../.gitbook/assets/image (299) (1) (1) (1).png>)
 
 ## Step 4
 
 Once your terms are written, you can customize how they will be presented to survey respondents
 
-![](<../../../.gitbook/assets/image (310) (1) (1) (1) (1) (1) (1).png>)
-
 ## Step 5
 
 By default, terms appear as a popup window when a user click on a terms link
 
-![](<../../../.gitbook/assets/image (314) (1) (1) (1).png>)
-
 ## Step 6
 
 This is how your terms will appear if you select the option 'under sign checkbox as plain text'
-
-![](<../../../.gitbook/assets/image (299) (1) (1).png>)

@@ -16,8 +16,6 @@ The 'Analytics' feild shows recent activity on the survey's active batch.
 
 Clicking on this feild takes you into survey analytics
 
-<figure><img src="../../../.gitbook/assets/image (6) (3).png" alt=""><figcaption></figcaption></figure>
-
 ## Step 2
 
 The main analytics page is divided into two sections:
@@ -25,8 +23,6 @@ The main analytics page is divided into two sections:
 **Meta feilds:** This contains survey information which is not related to the survey reponses themselves. This includes information such as when a response was received, the language it was submitted in or where the respondent was located. Fields in this section stay stable when a user navigates through different pages of the survey
 
 **Pages:** This contains the responses to the survey questions themselves. You will see the page structure of your survey on the left hand side under the heading 'Pages'. You can use the page structure to naviage through your survey.
-
-<figure><img src="../../../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3
 
@@ -44,8 +40,6 @@ In the example below we can look at responses from India, who submitted their su
 
 Filters can be cleared by clicking on the filter option on in the 'details' feild or under the feild where the filter has been applied
 
-<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
-
 ## Step 5
 
 Feilds from the 'Pages' section can be pinned to the top section of the page. This means that they remain visible as you scroll through the survey and are readily available to filter the dataset.
@@ -57,9 +51,6 @@ Feild can be unpinned at any time.
 ## Step 6
 
 Each feild can be viewed as a chart or as raw data
-
-| ![](<../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>) | ![](<../../../.gitbook/assets/image (3) (6).png>) |
-| ------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
 
 ## Step 7
 

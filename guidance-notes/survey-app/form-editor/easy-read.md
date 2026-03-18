@@ -9,7 +9,7 @@ description: This page covers how to create an 'Easy Read' version of a form
 Forms can adapt to the needs and preferences of respondents. Some respondents may want an 'Easy Read' version of a form.
 
 {% hint style="success" %}
-“Making information easier to understand for people ... is about more than making your text size bigger and putting some symbols or pictures in your document. It’s about working with the people your information is for, finding out together how you can make the information useful and accessible for them. There are no quick answers, and it isn’t easy... but it can be fun.” ([EasyInfo, ‘About making information easier’](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment\_data/file/215923/dh\_121927.pdf))
+"Making information easier to understand for people ... is about more than making your text size bigger and putting some symbols or pictures in your document. It’s about working with the people your information is for, finding out together how you can make the information useful and accessible for them. There are no quick answers, and it isn’t easy... but it can be fun." ([EasyInfo, ‘About making information easier’](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment\_data/file/215923/dh\_121927.pdf))
 {% endhint %}
 
 'Easy Read' forms offer the following advantages:

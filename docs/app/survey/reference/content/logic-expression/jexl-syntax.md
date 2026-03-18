@@ -33,6 +33,7 @@ Jexl supports standard data types:
 * **Membership (`in`):**
   * Checks for a substring: `"Cad" in "Ron Cadillac"` evaluates to `true`.
   * Checks for an array element: `"coarse" in ['fine', 'medium', 'coarse']` evaluates to `true`.
+  * **Crucial for Group Questions:** Since Checkbox Group questions store answers in an array, you must use `in` to verify if a specific option is selected.
   * *Note:* Uses `==` internally, so it won't match objects by value (e.g., `{a: 'b'} in [{a: 'b'}]` is `false`).
 
 ## Ternary Operator

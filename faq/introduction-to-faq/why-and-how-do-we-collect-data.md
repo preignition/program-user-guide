@@ -4,7 +4,7 @@
 
 We are a digital services company offering online survey solutions. Therefore our core business is built around collecting data, keeping it safe and putting it to work. We treat your data and your Respondent's data with great care.
 
-You can read our [Terms of Use](https://accessiblesurveys.com/home/terms) to get a detailed understanding on how we handle data privacy and security issues. Our [Privacy Policy ](https://accessiblesurveys.com/home/terms)explains in detail why and how we collect data from our Customers, Respondents, and Visitors, how we use it, and how long we keep it.
+You can read our [Terms of Use](https://accessiblesurveys.com/home/terms) to get a detailed understanding on how we handle data privacy and security issues. Our [Privacy Policy](https://accessiblesurveys.com/home/terms)explains in detail why and how we collect data from our Customers, Respondents, and Visitors, how we use it, and how long we keep it.
 
 In this page, we provide the same information as covered in our Privacy Policy, but written in a shorter and easier-to-understand way and focusing on data we collect from our Customers.
 
@@ -16,7 +16,7 @@ To use our platform as a Customer, you must create an account. Personal data and
 
 To register an account, you have two choices.
 
-* Either use our registration form and enter “your email address”, and a personal “password” and your "first name"
+* Either use our registration form and enter "your email address", and a personal "password" and your "first name"
 * Or use available Third Parties such as Google or Facebook to register and authenticate yourself.
 
 In any case, this is the personal information about you which we save in our system:
@@ -39,7 +39,7 @@ Google LLC, including its Firebase subsidiary, is certified under the EU-U.S. an
 
 Data transfers are therefore covered by a European adequacy decision as Firebase is a United States commercial organisation which is participating in the EU-US Data Privacy Framework.
 
-You can read more about Third Party services and data processors that Preignition uses[ here](https://accessiblesurveys.com/home/terms).
+You can read more about Third Party services and data processors that Preignition uses[here](https://accessiblesurveys.com/home/terms).
 
 ## Data that we automatically collect about you <a href="#data-that-we-automatically-collect-about-you" id="data-that-we-automatically-collect-about-you"></a>
 

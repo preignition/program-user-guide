@@ -4,7 +4,7 @@ description: An explanation of the Compose view's dual-pane architecture and how
 
 # How Does the Compose View Work?
 
-The **Compose View** is the primary workspace where you build and organize the content of your survey. Unlike simple list-based editors, the Compose view uses a dual-pane architecture designed to handle the multi-layered [hierarchy](./understanding-survey-form-page-section-question-hierarchy.md) of modern, accessible surveys.
+The **Compose View** is the primary workspace where you build and organize the content of your survey. Unlike simple list-based editors, the Compose view uses a dual-pane architecture designed to handle the multi-layered [hierarchy](./understanding-survey-hierarchy.md) of modern, accessible surveys.
 
 This document explains the conceptual model behind this interface and how it helps you manage complex questionnaires efficiently.
 
@@ -13,7 +13,7 @@ This document explains the conceptual model behind this interface and how it hel
 The Compose view is split into two functional areas that work in tandem: the **Tree View** (left) and the **Property/Content View** (right).
 
 <figure>
-  <img src="../reference/build/compose/page/assets/page-content-auto.png" alt="Screenshot of the Compose view showing the Tree View on the left and the Property/Content View on the right" />
+  <img src="../reference/build/compose/assets/page-content-auto.png" alt="Screenshot of the Compose view showing the Tree View on the left and the Property/Content View on the right" />
   <figcaption>Screenshot of the Compose view showing the Tree View on the left and the Property/Content View on the right</figcaption>
 </figure>
 
@@ -33,8 +33,18 @@ The left pane provides a visual representation of your survey's structural hiera
 
 The right pane is where the actual configuration happens. When you select an item in the Tree View, its details are loaded here. Depending on the selected "Mode," this pane serves two purposes:
 
+The right pane is context-sensitive and changes based on the "Mode" you are in. The main modes are:
+
 * **Settings Mode:** Used to configure technical properties, such as the question's unique code, validation rules (required, min/max), and [Logic Expressions](./understanding-form-logic.md).
-* **Content Mode:** Focuses on the respondent-facing text. Here you use [Markdown](./using-markdown.md) to write labels, supporting text, and provide translations for different [Accessibility Modes](./activating-accessibility-modes.md).
+* **Add Content Mode:** Add content to the form, such as the question text, help text, and options for multiple-choice questions.
+* **Visibility Mode:** Focuses on the logic rules that determine when a question or section is shown to respondents. This is where you can set up complex branching and conditional flows without being distracted by content editing.
+
+Some modes are only available when they are activated at the survey level:
+
+* **Easy Read Mode:** Provides a simplified interface for creating Easy Read content, which is essential for accessibility.
+* **Sign Language Mode:** Allows you to upload and manage sign language videos for questions, ensuring that your survey is accessible to Deaf respondents.
+* **Read Aloud Mode:** Enables you to add audio recordings of questions for respondents who prefer auditory input.
+* **Translation Mode:** Manage translations of your survey content for multilingual accessibility. Only available if the survey has been set to "Multilingual" in the survey settings.
 
 ## The Concept of Modes
 

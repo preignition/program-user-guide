@@ -2,7 +2,7 @@
 
 ## What is the GDPR?
 
-On 25 May 2018, the[ General Data Protection Regulation (GDPR)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02016R0679-20160504) became law across the European Union. Many other countries and jurisdictions are following suit with similar privacy laws such as the California Consumer Privacy Act (CCPA).
+On 25 May 2018, the[General Data Protection Regulation (GDPR)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02016R0679-20160504) became law across the European Union. Many other countries and jurisdictions are following suit with similar privacy laws such as the California Consumer Privacy Act (CCPA).
 
 We welcome GDPR as we believe that strong regulation is needed at a global level to ensure all businesses take the protection of people’s data seriously.
 
@@ -10,7 +10,7 @@ We like the 'principles based' approach to data protection which GDPR takes. It 
 
 ### What does the GDPR regulate?
 
-The GDPR regulates the “processing” of personal data for citizens of EU countries. Any organization that processes personal data of EU individuals is within the scope of the law.
+The GDPR regulates the "processing" of personal data for citizens of EU countries. Any organization that processes personal data of EU individuals is within the scope of the law.
 
 Preignition Limited is located in the UK which is no longer a member of the EU. However, according to GDPR law, it does not matter whether the organization has a physical presence in the EU or not.
 
@@ -30,7 +30,7 @@ GDPR concerns the 'processing' of 'personal data' of 'data subjects' by data 'co
 
 **Processing-** This includes collection, storage, transfer, or use of data.
 
-**Personal data-** GDPR defines the notion of “personal data” very broadly, which covers any information relating to an identified or identifiable individual
+**Personal data-** GDPR defines the notion of "personal data" very broadly, which covers any information relating to an identified or identifiable individual
 
 **Sensitive personal data-** essentially any personal data which relates to any of the following:
 
@@ -52,11 +52,11 @@ GDPR concerns the 'processing' of 'personal data' of 'data subjects' by data 'co
 
 #### What are the principles?
 
-[Article 5 of the GDPR ](https://gdpr-info.eu/chapter-2/)sets out seven key principles which lie at the heart of the General Data Protection Regulation .
+[Article 5 of the GDPR](https://gdpr-info.eu/chapter-2/)sets out seven key principles which lie at the heart of the General Data Protection Regulation .
 
 Article 5(1) requires that personal data shall be: \*\*\*\*
 
-> “(a) processed lawfully, fairly and in a transparent manner in relation to individuals (‘lawfulness, fairness and transparency’);
+> "(a) processed lawfully, fairly and in a transparent manner in relation to individuals (‘lawfulness, fairness and transparency’);
 >
 > (b) collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes shall not be considered to be incompatible with the initial purposes (‘purpose limitation’);
 >
@@ -66,11 +66,11 @@ Article 5(1) requires that personal data shall be: \*\*\*\*
 >
 > (e) kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed; personal data may be stored for longer periods insofar as the personal data will be processed solely for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes subject to implementation of the appropriate technical and organisational measures required by the GDPR in order to safeguard the rights and freedoms of individuals (‘storage limitation’);
 >
-> (f) processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures (‘integrity and confidentiality’).”
+> (f) processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures (‘integrity and confidentiality’)."
 
 Article 5(2) adds that:
 
-> “The controller shall be responsible for, and be able to demonstrate compliance with, paragraph 1 (‘accountability’).”
+> "The controller shall be responsible for, and be able to demonstrate compliance with, paragraph 1 (‘accountability’)."
 
 More detail on each principle is provided in the [regulation](https://gdpr-info.eu/chapter-2/).
 

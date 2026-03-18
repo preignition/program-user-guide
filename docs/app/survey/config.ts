@@ -150,7 +150,7 @@ function getSidebar() {
           text: 'Markdown Reference', link: 'content/markdown/index.md'
         },
         {
-          text: 'Logic Expression', link: 'content/logic-expression.md'
+          text: 'Logic Expression', link: 'content/logic-expression/index.md'
         },
       ]
     },

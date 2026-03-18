@@ -40,6 +40,6 @@ In other words, the entity or company that you pass the data to outside the EU m
 
 ## What is our legal basis for transfering EU personal data outside of the EU?
 
-We base our GDPR compliance on Google Cloud’s Approach to [European Standard Contractual Clauses (SCC)](https://services.google.com/fh/files/misc/gc\_new\_eu\_scc.pdf), issued on 4 June 2021 by the European Commission.  On 21 March 2022, the UK Information Commissioner’s international data transfer addendum (the “UK Addendum”) became effective, enabling the use of EU SCCs in amended form for transfers of personal data under the UK version of the EU GDPR (the “UK GDPR”). &#x20;
+We base our GDPR compliance on Google Cloud’s Approach to [European Standard Contractual Clauses (SCC)](https://services.google.com/fh/files/misc/gc\_new\_eu\_scc.pdf), issued on 4 June 2021 by the European Commission.  On 21 March 2022, the UK Information Commissioner’s international data transfer addendum (the "UK Addendum") became effective, enabling the use of EU SCCs in amended form for transfers of personal data under the UK version of the EU GDPR (the "UK GDPR"). &#x20;
 
 The modernized SCCs apply to us and legitimate the transfer of Customer Personal Data outside of the EU as we have certified that the European Protection Law applies to us and have signed Google's Coud Data Processing Addendum (CDPA).&#x20;

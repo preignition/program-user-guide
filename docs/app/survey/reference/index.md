@@ -18,4 +18,4 @@ It is structured around the natural lifecycle and main interfaces of managing a 
 Other reference content includes:
 
 - **[Markdown](./content/markdown/index.md)** - A detailed reference on the Markdown syntax supported by Accessible Surveys, including examples and best practices for formatting your survey content.
-- **[Logic Expressions](./content/logic-expressions.md)** - A technical reference for writing logical expressions in form logic, including supported operators, functions, and syntax rules.
+- **[Logic Expressions](./content/logic-expression/index.md)** - A technical reference for writing logical expressions in form logic, including supported operators, functions, and syntax rules.

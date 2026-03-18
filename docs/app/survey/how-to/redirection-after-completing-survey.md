@@ -12,8 +12,6 @@ Under the 'Distribute' heading in the 'Survey Definition' menu you will see the 
 
 This allows you to set where a respondent willl be redirected to after completing the survey.
 
-<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
-
 ## Step 2
 
 **User Space:** This is the default option for users who are signed in using Personal or Verified accounts. Upon completing the survey, repondents will be taken to a space in the app where they can get personalized content, such as thank you messages, links to reports coming out of the survey or invitations to participate in new surveys. Users completing the survey with an anonymous account will be invited to upgrade ther account to to Personal Account before reaching this space
