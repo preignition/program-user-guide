@@ -22,15 +22,13 @@ To prevent cognitive overload, the interface separates these concerns into conte
 
 ## 2. Accessibility Modes (Inclusive Experiences)
 
-The most powerful use of modes is found in the respondent experience. **Accessibility Modes** are toggleable states that instantly transform the survey interface to accommodate different cognitive, sensory, or physical needs.
+The most powerful use of modes is found in the respondent experience. **Accessibility Modes** are states that instantly transform the survey interface to accommodate different cognitive, sensory, or physical needs.
 
 Instead of building completely separate surveys for different audiences (which creates a data analysis nightmare), Accessible Surveys allows you to build *one* master survey that adapts dynamically.
 
 * **Easy Read Mode:** Simplifies the layout and swaps complex text for simplified language and supporting images.
 * **Sign Language Mode:** Reveals embedded sign language videos alongside the text.
 * **Read Aloud Mode:** Activates specific auditory feedback mechanisms.
-
-**How it works under the hood:** When you activate Accessibility Modes in the Form Behavior settings, the system uses dynamic CSS classes (like `show-when-easyread` or `hide-when-signlanguage`). As an author, you can tag specific paragraphs, images, or even entire sections to only appear when a specific mode is active. When the respondent toggles that mode, the browser instantly reflows the page to present their tailored experience.
 
 ## Summary
 

@@ -27,7 +27,39 @@ This is done by dragging and dropping items from the structure tree on the left 
 
 When the expression evaluates to `true`, the field is **visible**. When the expression evaluates to `false`, the field is **hidden**. This means that you should write the condition for hiding an item, not showing it.
 
-Example: If you want to show a question only when "Do you like fruit? (Yes/No)" is answered with "Yes", you would:
+## Examples
+
+### Show a question only when an answer is provided
+
+If you want to show a question only when the respondent has provided an answer to a previous question (e.g., `What is your name?`), you would:
+
+1. drag the question `What is your name?` into the expression field, then
+2. enter `!=` in the field, and finally
+3. type `""` (empty string) to check if the answer is not empty:  
+
+``` md
+  `What is your name?` != ""
+```
+
+Here, the expression `answer != ""` evaluates to `true` when the respondent has entered any text, which means the item will be visible. If the respondent leaves it blank, the expression evaluates to `false`, and the item will be hidden.
+
+###  Show a question only when a text answer contains a specific word
+
+If you want to show a question only when the answer to `What is your favorite fruit?` contains the word "apple", you would:
+
+1. drag the question `What is your favorite fruit?` into the expression field, then
+2. enter `in` in the field, and finally
+3. type `"apple"` to check if the answer contains that word:
+
+``` md
+  "apple" in `What is your favorite fruit?`
+```
+
+Here, the expression `"apple" in answer` evaluates to `true` when the respondent's answer includes the word "apple", which means the item will be visible. If the respondent's answer does not contain "apple", the expression evaluates to `false`, and the item will be hidden.
+
+###  Show a question only when a specific option is selected
+
+If you want to show a question only when "Do you like fruit? (Yes/No)" is answered with "Yes", you would:
 
 1. drag the question `Do you like fruit?` into the expression field, then
 2. enter `==` in the field, and finally
@@ -38,6 +70,17 @@ Example: If you want to show a question only when "Do you like fruit? (Yes/No)" 
 ```
 
 Here, the expression `answer == "Yes"` evaluates to `true` when the respondent selects `Yes`, which means the item will be visible. If the respondent selects `No` or leaves it unanswered, the expression evaluates to `false`, and the item will be hidden.
+
+>> [!TIP]
+>> You need to drag the option `Yes` into the expression field (instead of writing `"yes"`) as the system does not store the string `yes` when the respondent selects that option. Instead, it stores a specific value (e.g., `yes_option_id`) that represents that choice. By dragging the option into the expression field, you ensure that the expression is doing the correct comparison.
+
+### Question Types and Data Storage
+
+>> [!WARNING]
+>> The way an answer is stored depends on the question type, which determines the correct operator to use in your expression:
+>>
+>> * **Radio Groups and Dropdowns:** These store a single answer as a **String**. You can use standard equality operators like `==` or `!=` (e.g., `favorite_fruit == "apple"`).
+>> * **Group Questions (Checkboxes):** These store multiple selected answers in an **Array**. Because an array can contain several values, you **MUST** use the `in` operator to check if a specific option was selected (e.g., `"apple" in fruits_checked`).
 
 ## Comparison Operators
 
@@ -65,13 +108,6 @@ Use logical operators to combine multiple conditions:
 
 > [!TIP]
 > **Hiding with OR:** If you want to hide an item when either condition A or condition B is met, use `||`. Using `&&` would only hide the item if both conditions were met simultaneously.
-
-### Question Types and Data Storage
-
-The way an answer is stored depends on the question type, which determines the correct operator to use in your expression:
-
-* **Radio Groups and Dropdowns:** These store a single answer as a **String**. You can use standard equality operators like `==` or `!=` (e.g., `favorite_fruit == "apple"`).
-* **Group Questions (Checkboxes):** These store multiple selected answers in an **Array**. Because an array can contain several values, you **MUST** use the `in` operator to check if a specific option was selected (e.g., `"apple" in fruits_checked`).
 
 ## Testing the Expression
 
