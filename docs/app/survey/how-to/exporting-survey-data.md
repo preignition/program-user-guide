@@ -18,7 +18,7 @@ From the analytics page, click on the three lines beside the survey name in the 
 
 This will expand the view and display the 'download' symbol
 
-<lapp-youtube videoid="ICCaPpUXqp0"></lapp-youtube>
+<lite-youtube videoid="ICCaPpUXqp0"></lite-youtube>
 
 ## Step 2
 

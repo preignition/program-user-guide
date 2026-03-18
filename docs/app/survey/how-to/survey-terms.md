@@ -22,7 +22,7 @@ To add your own survey terms, first toggle on the 'Advanced' settings.
 
 You will see additional options appear in the Survey Definition menu, including 'Terms'
 
-<lapp-youtube videoid="B_fbSwGY3n4"></lapp-youtube>
+<lite-youtube videoid="B_fbSwGY3n4"></lite-youtube>
 
 ## Step 2
 

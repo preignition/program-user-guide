@@ -25,7 +25,7 @@ By the end of this session, you will be able to:
 
 Follow along with the video to test and share your 'Training Survey'.
 
-<lapp-youtube videoid="KHb_SrGdvz8"></lapp-youtube>
+<lite-youtube videoid="KHb_SrGdvz8"></lite-youtube>
 
 ## Advanced Topics
 

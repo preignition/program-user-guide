@@ -32,7 +32,7 @@ It is intelligent, in that it will only show the accessibility options that you 
 
 This short video show you how you can add an accessibility menu to a survey's 'Landing Page';
 
-<lapp-youtube videoid="jBdiUyD_dek"></lapp-youtube>
+<lite-youtube videoid="jBdiUyD_dek"></lite-youtube>
 
 ## Step 4&#x20;
 

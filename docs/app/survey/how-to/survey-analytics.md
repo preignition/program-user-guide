@@ -34,7 +34,7 @@ We used an advanced ordering algorithm for exploring large multivariate datasets
 
 In the example below we can look at responses from India, who submitted their survey in Hindi and answered 'Yes' to the question 'Do you consider yourself to be a person with a disability'
 
-<lapp-youtube videoid="YS2-1ryYvwE"></lapp-youtube>
+<lite-youtube videoid="YS2-1ryYvwE"></lite-youtube>
 
 ## Step 4
 
@@ -46,7 +46,7 @@ Feilds from the 'Pages' section can be pinned to the top section of the page. Th
 
 Feild can be unpinned at any time.
 
-<lapp-youtube videoid="MDL8EPb-vJk"></lapp-youtube>
+<lite-youtube videoid="MDL8EPb-vJk"></lite-youtube>
 
 ## Step 6
 

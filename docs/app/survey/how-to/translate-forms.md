@@ -16,7 +16,7 @@ Let us know if you would like an additional language which is not currently avai
 
 Back in the form editor, you will see the additional languages you have selected when you go to the 'Localize' heading in the left hand menu and select 'Make this form multilingual'
 
-<lapp-youtube videoid="ndZqVYYKsHk"></lapp-youtube>
+<lite-youtube videoid="ndZqVYYKsHk"></lite-youtube>
 
 ## Step 3
 
@@ -28,7 +28,7 @@ Option2- Override translation. This option overrides all previously translated f
 
 Once you have translated your form you will be able to see the translation in the tree structure in the left hand column. The translated text can be manually translated. Changes will be saved automatically.
 
-<lapp-youtube videoid="rL9ibgHMER4"></lapp-youtube>
+<lite-youtube videoid="rL9ibgHMER4"></lite-youtube>
 
 ## Step 4
 
@@ -40,7 +40,7 @@ You can edit questions directly from here.
 
 However to edit Pages or Sections you will need to go back into the 'Localize' option in the 'Build' menu
 
-<lapp-youtube videoid="9f2ACHz7axg"></lapp-youtube>
+<lite-youtube videoid="9f2ACHz7axg"></lite-youtube>
 
 ## Step 5
 

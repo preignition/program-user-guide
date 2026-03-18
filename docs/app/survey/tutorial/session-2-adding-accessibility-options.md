@@ -60,7 +60,7 @@ Download the following images to a local folder before starting the video.
 
 Follow along with the video to add accessibility options to your survey.
 
-<lapp-youtube videoid="JV31V7ONPgI"></lapp-youtube>
+<lite-youtube videoid="JV31V7ONPgI"></lite-youtube>
 
 ## Advanced Topics
 

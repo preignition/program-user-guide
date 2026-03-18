@@ -48,7 +48,7 @@ Standard Team Members will not see the 'Customer' portal on their homepage:
 
 Follow along with the video to translate your survey.
 
-<lapp-youtube videoid="JNZsL7pmPJQ"></lapp-youtube>
+<lite-youtube videoid="JNZsL7pmPJQ"></lite-youtube>
 
 ## Next Steps
 
