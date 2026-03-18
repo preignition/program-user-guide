@@ -16,7 +16,7 @@ export default defineConfig({
   metaChunk: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/assets/a14y_logo_style.svg',
+    logo: '/a14y_logo_style.svg',
     editLink: {
       pattern: 'https://github.com/preignition/program-user-guide/edit/main/docs/:path',
       text: 'Edit this page on GitHub'
