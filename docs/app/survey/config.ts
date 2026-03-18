@@ -56,8 +56,8 @@ function getSidebar() {
             { text: 'Delete a survey', link: `deleting-a-survey.md` },
             { text: 'Add content to a form', link: `adding-content-to-a-form.md` },
             { text: 'Provide rich formatting', link: `providing-rich-formatting.md` },
-            { text: 'Use form logic', link: `form-logic.md` },
-            { text: 'Set access rights for forms', link: `access-rights-for-forms.md` },
+            { text: 'Use form logic', link: `logic-expression.md` },
+            { text: 'Set access rights for forms', link: `access-rights.md` },
             { text: 'Share options across multiple questions', link: `sharing-options-across-multiple-questions.md` },
             { text: 'Share content across multiple forms and surveys', link: `sharing-content-across-multiple-forms-and-surveys.md` },
           ]

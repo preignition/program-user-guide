@@ -5,6 +5,8 @@ type ScreenShotType = {
   locator: Locator,
   outputPath: string,
   padding?: number,
+  paddingX?: number,
+  paddingY?: number,
   outlineStyle: {
     outline: string,
     outlineOffset: string,
@@ -17,12 +19,16 @@ type ScreenShotType = {
  * @param locator The Playwright locator for the element to highlight
  * @param outputPath Where to save the image
  * @param padding The amount of context (in pixels) to include around the element
+ * @param paddingX The amount of horizontal context (in pixels) to include around the element
+ * @param paddingY The amount of vertical context (in pixels) to include around the element
   */
 export async function takeAnnotatedScreenshot(
   { page,
     locator,
     outputPath,
     padding = 50,
+    paddingX,
+    paddingY = 30,
     outlineStyle = { outline: '4px solid #bc004b', outlineOffset: '4px' }
   }: ScreenShotType
 ) {
@@ -51,11 +57,14 @@ export async function takeAnnotatedScreenshot(
 
   const viewportSize = page.viewportSize() || { width: 1920, height: 1080 }
 
-  const startX = Math.max(0, box.x - padding)
-  const startY = Math.max(0, box.y - padding)
+  const pX = paddingX ?? padding
+  const pY = paddingY
 
-  const endX = Math.min(viewportSize.width, box.x + box.width + padding)
-  const endY = Math.min(viewportSize.height, box.y + box.height + padding)
+  const startX = Math.max(0, box.x - pX)
+  const startY = Math.max(0, box.y - pY)
+
+  const endX = Math.min(viewportSize.width, box.x + box.width + pX)
+  const endY = Math.min(viewportSize.height, box.y + box.height + pY)
 
   // 3. Take a screenshot cropped to the element + padding
   await page.screenshot({

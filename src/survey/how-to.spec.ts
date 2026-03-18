@@ -411,8 +411,6 @@ test.describe('How-To', async () => {
   test('How to use form logic', async ({ page }) => {
 
     const context = new Context(mainPath, page)
-
-    // TODO: use another survey than the new one here 
     context.setName('logic-expression')
     await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/compose`)
 
@@ -458,16 +456,59 @@ test.describe('How-To', async () => {
 
   test('How to add images to the image library', async ({ page }) => {
     const context = new Context(mainPath, page)
+    context.setName('adding-images-to-library')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/library`)
 
-    // TODO: use another survey than the new one here 
-    context.setName('logic-expression')
-    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/compose`)
+    // ## Step 1: Click on the "Image Library" button in the image library view
+    locator = page.getByTestId('page-drawer-menu').getByText('Image Library')
+    await context.annotatedScreenshot(locator, 'step-1-image-library')
+    await locator.click()
+
+    // ## Step 2: Click on the "Upload Image" button and fill the details of the image (e.g. name, description, etc.) in the pop-up dialog
+    locator = page.getByRole('button', { name: 'Upload Images' })
+    await context.annotatedScreenshot(locator, 'step-2-upload-image')
+
   })
 
   test('How to set access rights for forms', async ({ page }) => {
+    const context = new Context(mainPath, page)
+    context.setName('access-rights')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/share/access`)
+
+    // ## Step 1: Navigate to the access view
+    locator = page.getByTestId('page-drawer-menu').getByText('Access')
+    await context.annotatedScreenshot(locator, 'step-1-navigate-to-access-view')
+    await locator.click()
+
+    // ## Step 2: Set access rights for different team members by adding their email and selecting the right access level (e.g. read, write, admin)
+    locator = page.getByRole('button', { name: 'Add Members' })
+    await context.annotatedScreenshot(locator, 'step-2-add-members')
+    await locator.click()
+
+    locator = page.getByRole('combobox', { name: 'select user' }).locator('#label')
+    await context.annotatedScreenshot(locator, 'step-2-select-user')
+    await locator.click()
+    await page.locator('lapp-user-name').filter({ hasText: 'Jerry' }).click()
+
+    locator = page.getByRole('combobox', { name: 'Select Role' }).locator('#label')
+    await context.annotatedScreenshot(locator, 'step-2-select-role')
+    await locator.click()
+    await page.locator('lapp-access-add-role').getByText('admin').click()
+    // once details are set, 
+    locator = page.getByRole('button', { name: 'Add Access' })
+    await context.annotatedScreenshot(locator, 'step-2-add-access')
+    // await locator.click()
+
+    // ## Step 3 (Optional): Set Ownership of the survey to a specific team member
+    locator = page.getByRole('button', { name: 'Modify Ownership' })
+    await context.annotatedScreenshot(locator, 'step-3-modify-ownership')
+
   })
 
   test('How to share options across multiple questions', async ({ page }) => {
+    const context = new Context(mainPath, page)
+    context.setName('logic-expression')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/compose`)
   })
 
   test('How to share content across multiple forms and surveys', async ({ page }) => {

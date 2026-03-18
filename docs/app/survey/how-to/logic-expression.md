@@ -112,5 +112,6 @@ A wide range of logic options are available. The most commonly used are:
 
 ## Related Content
 
-- [Understanding Survey Hierarchy](../explanation/understanding-survey-hierarchy.md)
+- [Understanding Form Logic](../explanation/understanding-form-logic.md)
 - [Advanced Logic](../explanation/advanced-logic.md)
+- [Understanding Survey Hierarchy](../explanation/understanding-survey-hierarchy.md)
