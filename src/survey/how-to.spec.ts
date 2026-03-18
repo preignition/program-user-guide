@@ -242,7 +242,7 @@ test.describe('How-To', async () => {
       await context.annotatedScreenshot(button, btn.screenshot, 11)
     }
 
-    // Step 3: Edit the form while in test mode and see the changes applied in real time in the test view
+    // ## Step 3: Edit the form while in test mode and see the changes applied in real time in the test view
     locator = page.getByRole('button', { name: 'activate edit mode' })
     await context.annotatedScreenshot(locator, 'step-3-click-activate-edit-mode')
     await locator.click()
@@ -277,7 +277,7 @@ test.describe('How-To', async () => {
     // we need to close the dialog
     page.getByRole('button', { name: 'Cancel' }).click()
 
-    // Step 5: Generate links to share the form with other team members to get feedback
+    // ## Step 5: Generate links to share the form with other team members to get feedback
     // - share the test link with other team members
 
     locator = page.getByText('Distribute', { exact: true })
@@ -410,47 +410,58 @@ test.describe('How-To', async () => {
 
   test('How to use form logic', async ({ page }) => {
 
-    const context = new Context(
-      'app/survey/how-to',
-      page
-    )
+    const context = new Context(mainPath, page)
 
     // TODO: use another survey than the new one here 
-    context.setName('form-logic')
+    context.setName('logic-expression')
     await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/compose`)
 
-    // ### Step 1: Activate Visibility Mode
+    // ## Step 1: Activate Visibility Mode
     locator = page.getByRole('button', { name: 'Visibility Mode' })
     await context.annotatedScreenshot(locator, 'step-1-activate-visibility-mode')
     await locator.click()
 
-    // ### Step 2: Create Logic Expressions
-    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'What is your name' }).click()
+    // ## Step 2: activate the item you want to apply the logic to (by clicking on the grid cell of the item) 
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Survey habits' }).click()
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Section' }).click()
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'How many surveys do you run' }).click()
+
+    // ## Step 3: create the logical expression
     locator = page.getByRole('button', { name: 'Create hidden logic' })
     await context.annotatedScreenshot(locator, 'step-2-create-logic-expression')
     await locator.click()
 
-    locator = page.locator('#input')
-    await locator.click()
-    await locator.locator('#input').fill('1 ==0')
-    await context.annotatedScreenshot(locator, 'step-2-fill-logic-expression')
+    // ## Step 4 (optional): lock the grid to avoid accidentally clicking on other items while creating the logic expression
+    locator = page.getByRole('button', { name: 'Lock tree grid' })
+    await context.annotatedScreenshot(locator, 'step-4-lock-tree-grid')
 
+    // ## Step 5: Write the logic expression by dragging and dropping the different elements (e.g. question, answer options) and see the expression being built in real time
+    // image coming from shared folder
 
-    // ### Step 3: Test Logic Expressions
+    // ## Step 6 (optional): test the logic expression with the test tool to see if it works as expected
+
+    await page.locator('#input').click()
+    await page.locator('#input').fill('1 == 2')
     locator = page.getByRole('button', { name: 'Test the Current Expression' })
-    await context.annotatedScreenshot(locator, 'step-3-test-logic-expression')
+    await context.annotatedScreenshot(locator, 'step-6-test-logic-expression')
+
+    // ## Step 7 (optional): unlock the grid after creating the logic expression or remove the logic expression if you don't need it anymore
+
+    locator = page.getByRole('button', { name: 'Lock tree grid' })
+    await context.annotatedScreenshot(locator, 'step-7-unlock-tree-grid')
+    await locator.click()
+    locator = page.getByRole('button', { name: 'Remove this logic expression' })
+    await context.annotatedScreenshot(locator, 'step-7-remove-logic-expression')
     await locator.click()
 
-    locator = page.getByRole('table')
-    await context.annotatedScreenshot(locator, 'step-3-logic-expression-test-result')
+  })
 
-    // ## Advanced Logic
-    context.setName('advanced-logic')
+  test('How to add images to the image library', async ({ page }) => {
+    const context = new Context(mainPath, page)
 
-
-    await page.getByText('== "0"').click()
-    await page.getByText('== "0"').fill('\n')
-
+    // TODO: use another survey than the new one here 
+    context.setName('logic-expression')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/compose`)
   })
 
   test('How to set access rights for forms', async ({ page }) => {

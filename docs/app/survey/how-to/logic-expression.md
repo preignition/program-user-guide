@@ -1,111 +1,116 @@
 ---
-description: This page provides an introduction to form logic.
+description: Learn how to add logic to your form to customize its behavior based on respondent answers.
 ---
 
-# Introduction to form logic
+# How to use form logic
 
-::: info
-Adding logic to a form enables you to customize how your form behaves when respondents are filling it in
-:::
+Adding logic to a form enables you to customize how your form behaves when respondents are filling it in. This guide shows you how to write, apply, and test logical expressions.
 
 ## What is a logical expression?
 
-Logical expressions are mathematical expressions which return a result of either "True" or "False".&#x20;
+Logical expressions are mathematical expressions that return a result of either "True" or "False". A defined action is then applied depending on the result.
 
-A defined action is then applied depending upon the result. &#x20;
+- For **Pages and Sections**, form logic is used to control whether they are visible or hidden.
+- For **Questions**, 'required', 'invalid', and 'read-only' attributes can also be applied in addition to the 'hidden' attribute.
 
-For Pages and Sections, form logic is used to control whether a page or section is visible or hidden. &#x20;
+## Step-by-step: Writing a logical expression
 
-For Questions, 'required', 'invalid' and 'read-only' attributes can be also be applied in addition to the 'hidden' attribute'
+Follow these steps to add logic to your form (e.g., hiding a follow-up question if the answer to a previous question is 'No').
 
-## Worked example&#x20;
+### Step 1: Activate the visibility mode
 
-For example, you may be interested in whether your respondents like fruit or not. If they do, you would like to ask a follow up question to understand the sort of fruit they like.
+In the Compose view, activate the relevant logic mode for your needs. For this example, we will use Visibility Mode to hide a question.
 
-It doesn't make sense to ask the follow up question if the answer to the first question is 'no'. Logic allows you to hide the follow up question.
+<figure>
+  <img src="./assets/logic-expression/step-1-activate-visibility-mode.png" alt="Activate Visibility Mode button">
+  <figcaption>Click the 'Visibility Mode' button in the toolbar.</figcaption>
+</figure>
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Example of a question where logic can help</p></figcaption></figure>
+### Step 2: Select the item
 
-## How to write a logical expression?
+In the tree grid on the left, click on the specific item (Page, Section, or Question) that you want to apply the logic to.
 
-::: info
-To access the logic function you must switch on the 'Advanced' toggle at the top of the screen.  A 'logic mode' icon will appear in the bottom right hand corner&#x20;
-:::
+### Step 3: Create the logical expression
 
-Below is an example of the logic feild for the question we outlined above about fruit
+Click the button to create a new logic expression for the selected item.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing the advanced toggle being activated.  The 'logic mode' icon appears in the bottom right of the screen.  The 'lock this question while editing logic' toggle has been activated.</p></figcaption></figure>
+<figure>
+  <img src="./assets/logic-expression/step-2-create-logic-expression.png" alt="Create hidden logic button">
+  <figcaption>Click 'Create hidden logic' to begin writing your expression.</figcaption>
+</figure>
 
-::: tip
-Always select the option 'Lock this question while editing logic'.&#x20;
-:::
+### Step 4: Lock the tree grid
 
-Logic has been added to the follow up question 'what sort of fruit do you like?' so that it is displayed or hidden depending on the answer to the previous question 'Do you like fruit?'
+To avoid accidentally clicking on other items while dragging and dropping elements, lock the tree grid.
 
-* The question 'Do you like fruit?' has been dragged from the tree grid in the left hand column into the expression feild along with the answer 'No'
-* An equals sign (==) has been entered to set up a mathmatical expression. ie is the answer to the question 'Do you like fruit?' 'No'?
-* If the respondent then answers 'No', the expression result will be 'true' and the follow up question 'what sort of fruit do you like?' will be hidden.
-* In all other scenarios, such as respondent not answering the question 'Do you like fruit' or answering 'Yes', the expression result will be 'false' and the follow up question will be displayed
+<figure>
+  <img src="./assets/logic-expression/step-4-lock-tree-grid.png" alt="Lock tree grid button">
+  <figcaption>Click 'Lock tree grid' to secure your current selection.</figcaption>
+</figure>
 
-## Testing a logical expression
+> [!IMPORTANT]
+> Always select the option to lock the grid while editing logic to prevent losing your work.
 
-It is possible to test a logical expression by toggling on the button 'test expression' as shown in the example above.
+### Step 5: Write the expression
 
-This brings up all the questions that have been refered to in the expression.
+Write the logic expression by dragging and dropping the different elements (e.g., a previous question and its answer options) from the tree grid into the expression field. You will see the expression being built in real-time.
 
-{% embed url="https://youtu.be/9XU9M_0JoJM" %}
-Short video showing how to test a logical expression
-{% endembed %}
+- For example, drag the question 'Do you like fruit?' and the answer 'No'.
+- Enter an equals sign (`==`) to set up the mathematical expression (i.e., `Do you like fruit? == No`).
+- If the respondent answers 'No', the expression evaluates to 'True' and the item is hidden.
 
-Try answering the questions and check whether the expression result gives the desired outcome.
+<figure>
+  <img src="./assets/shared/logic-expression-dd.gif" alt="Writing the logic expression by dragging and dropping elements">
+  <figcaption>Drag and drop elements to build your logical expression.</figcaption>
+</figure>
 
-::: info
-Form logic is extremely powerful and adds focus and dynamism to your forms. However it takes some pratice. We suggest starting with simple expressions and testing regularly
-:::
+### Step 6: Test the logical expression
 
-## How to hide a question initially
+It is important to test your expression to ensure it gives the desired outcome. Click the 'Test the Current Expression' button. This will bring up a mock view of the questions referenced in your logic.
 
-Often you will want a question to be hidden initially and for it only to appear based on an answer to a previous question
+<figure>
+  <img src="./assets/logic-expression/step-6-test-logic-expression.png" alt="Test the Current Expression button">
+  <figcaption>Click 'Test the Current Expression' to verify your logic.</figcaption>
+</figure>
 
-The question 'what sort of fruit do you like?' is a good example.
+### Step 7: Finish and unlock
 
-With the logical expresssion written above, the follow up question is visible initially and is only hidden if a respondent answers 'No' to the the question 'Do you like fruit?'
+Once you are satisfied, unlock the grid so you can continue editing other parts of the form. If you made a mistake, you can remove the expression entirely.
 
-It would be preferable if the question is hidden initially and is only displayed if a respondent answers 'Yes' to the question 'Do you like fruit?'
+<figure>
+  <img src="./assets/logic-expression/step-7-unlock-tree-grid.png" alt="Unlock tree grid button">
+  <figcaption>Unlock the grid when finished.</figcaption>
+</figure>
 
-::: info
-Use ! to invert the expression and hide a question initially
-:::
+<figure>
+  <img src="./assets/logic-expression/step-7-remove-logic-expression.png" alt="Remove this logic expression button">
+  <figcaption>Use the 'Remove this logic expression' button to delete the logic if it is no longer needed.</figcaption>
+</figure>
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Screenshot showing how to hide a question initially using !=</p></figcaption></figure>
+## Available Logic Operators
 
-* Use != for Not Equal. &#x20;
-* In the example above, the expression now asks whether the question 'Do you like fruit?' does **Not** **equal** 'yes'
-* If the question 'Do you like fruit' is not answered or the answer is 'No' the expression result will be 'True' and the follow up question will be hidden
-* Only if the answer is 'Yes' will the expression result be 'False' and the follow up question will be displayed
+A wide range of logic options are available. The most commonly used are:
 
-## What logic options are available?
-
-A wide range of logic options are available. The most commonly used are as follows:
-
-| Operator                   | Symbol |
-| -------------------------- | ------ |
-| Equal                      | ==     |
-| Not equal                  | !=     |
-| Greater than               | >      |
-| Greater than or equal      | >=     |
-| Less than                  | <      |
-| Less than or equal         | <=     |
-| Element in array or string | in     |
-| Logical AND                | &&     |
-| logical OR                 | \|\|   |
-| Negate                     | !      |
+| Operator | Symbol |
+| :--- | :--- |
+| Equal | `==` |
+| Not equal | `!=` |
+| Greater than | `>` |
+| Greater than or equal | `>=` |
+| Less than | `<` |
+| Less than or equal | `<=` |
+| Element in array or string | `in` |
+| Logical AND | `&&` |
+| Logical OR | `\|\|` |
+| Negate | `!` |
 
 ## Tips for applying form logic
 
-* Apply the logic to the resource (Page, Section or question) which you want the action to be applied to
-* Apply the logic as high up in the form structure as possible.  If you have a number of Questions which you want to apply the same logic expression to, first add the questions to a Section, and apply the logic to the section.
-* When writting complex logic, it is easier to create an expression that is true and then invert it if necessary.  Create the true expesssion first and then invert the expression using (!(expression).
-* Always select the option 'Lock this question while editing logic' and unselect this option when you have finished writing the logical expression.
+- **Apply logic to the highest possible level:** If you have multiple questions that should follow the same logic, place them in a Section and apply the logic to the Section rather than each individual question.
+- **Invert complex expressions:** When writing complex logic, it is sometimes easier to create an expression that evaluates to 'True' and then invert it using `!(expression)`.
+- **Lock the grid:** Always lock the question while editing logic and unlock it when you are finished.
 
-&#x20;
+## Related Content
+
+- [Understanding Survey Hierarchy](../explanation/understanding-survey-hierarchy.md)
+- [Advanced Logic](../explanation/advanced-logic.md)

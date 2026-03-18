@@ -27,20 +27,21 @@ Fundamental tasks for building your survey and forms, including adding questions
 
 - [How to add content to a form](./adding-content-to-a-form.md)
 - [How to provide rich formatting](./providing-rich-formatting.md)
-- [How to use form logic](./logic-expression.md) - *in progress*
+- [How to use form logic](./logic-expression.md)
 - [How to add images to the image library](./adding-images-to-library.md) - *in progress*
 
 ### Collaboration & Organization
 
 - [How to set access rights for forms](./access-rights-for-forms.md) - *in progress*
 - [How to share options across multiple questions](./sharing-options-across-multiple-questions.md) - *in progress*
+- [How to share logical expressions across multiple items](./sharing-logical-expressions-across-items.md) - *in progress*
 - [How to share content across multiple forms and surveys](./sharing-content-across-multiple-forms-and-surveys.md) - *in progress*
 
 ---
 
 ## 2. Accessibility
 
-Implementing specialized features like Easy Read, Sign Language videos, and multi-language support.
+Implementing specialized features like Easy Read, Sign Language videos.
 
 - [How to add an accessibility menu](./adding-an-accessibility-menu.md) - *in progress*
 - [How to activate accessibility modes](./activating-accessibility-modes.md)
@@ -52,9 +53,11 @@ Implementing specialized features like Easy Read, Sign Language videos, and mult
 
 ## 3. Localization & Translation
 
+Adding multilingual support to your survey, translating forms, and using import/export features for translation.
+
 - [How to create a multilingual survey](./creating-a-multilingual-survey.md) - *in progress*
-- [Translate forms](./translate-forms.md) - *in progress*
-- [Using import/export to translate forms](./using-import-export-to-translate-forms.md) - *in progress*
+- [How to translate forms](./translate-forms.md) - *in progress*
+- [How to use import/export to translate forms](./using-import-export-to-translate-forms.md) - *in progress*
 
 ---
 
@@ -62,13 +65,13 @@ Implementing specialized features like Easy Read, Sign Language videos, and mult
 
 Generating links, managing survey batches, configuring respondent accounts, and analyzing or exporting survey data.
 
-- [Distributing your survey (Generating links)](./generating-survey-links.md) - *in progress*
-- [Creating alias survey links](./creating-alias.md) - *in progress*
+- [How to distribute your survey (Generating links)](./generating-survey-links.md) - *in progress*
+- [How to create alias survey links](./creating-alias.md) - *in progress*
 - [How to use survey batches](./using-batches.md) - *in progress*
-- [Redirection after completing survey](./redirection-after-completing-survey.md) - *in progress*
-- [Survey terms](./survey-terms.md) - *in progress*
+- [How to configure redirection after completing survey](./redirection-after-completing-survey.md) - *in progress*
+- [How to manage survey terms](./survey-terms.md) - *in progress*
 
 ## 5. Analytics & Export
 
-- [Introduction to survey analytics](./survey-analytics.md) - *in progress*
-- [Exporting survey data](./exporting-survey-data.md) - *in progress*
+- [How to analyze survey data](./survey-analytics.md) - *in progress*
+- [How to export survey data](./exporting-survey-data.md) - *in progress*
