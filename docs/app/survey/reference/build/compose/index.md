@@ -28,6 +28,7 @@ The Compose view consists of a navigation tree for structure management and an e
 ## Supported Element Types
 
 The following elements can be added and configured within the Compose tool:
+
 - **[Form](./form.md)**: The root container for the survey.
 - **[Text Page](./text-page.md)**: Non-interactive pages for information, such as introductions or thank-you messages.
 - **[Page](./page.md)**: A structural container representing a single screen or logical division of the survey.

@@ -109,7 +109,48 @@ function getSidebar() {
       link: `index.md`,
       base: `${root}/reference/`,
       items: [
+        { text: 'Survey Overview', link: `` },
+        {
+          text: 'Build Survey',
+          base: `${root}/reference/build/`,
+          link: `index.md`,
+          collapsed: true,
+          items: [
+            { text: 'Compose', link: `compose/index.md` },
+            { text: 'Localize', link: `localize.md` },
+            { text: 'Image Library', link: `image-library.md` },
+            { text: 'Prompts', link: `prompt.md` },
+            { text: 'Restore', link: `restore.md` },
 
+          ]
+        },
+        { text: 'Test Survey', link: `` },
+        {
+          text: 'Share Survey',
+          collapsed: true,
+          base: `${root}/reference/share/`,
+          link: `index.md`,
+          items: [
+
+            { text: "Status", link: `status/index.md` },
+            { text: "Publish", link: `publish/index.md` },
+            { text: "Distribute", link: `distribute/index.md` },
+            { text: "Account Type", link: `account/index.md` },
+            { text: "Redirection", link: `redirection/index.md` },
+            { text: "Access", link: `access/index.md` },
+            { text: "Email", link: `message/index.md` },
+            { text: "Batch", link: `batch/index.md` },
+            { text: "Webhooks", link: `webhooks/index.md` },
+            { text: "Terms", link: `terms/index.md` },
+            { text: 'Access Rights', link: `access/index.md` },
+          ]
+        },
+        {
+          text: 'Markdown Reference', link: 'content/markdown/index.md'
+        },
+        {
+          text: 'Logic Expression', link: 'content/logic-expression.md'
+        },
       ]
     },
     {
