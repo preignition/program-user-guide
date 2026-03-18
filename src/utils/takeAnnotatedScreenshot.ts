@@ -49,14 +49,22 @@ export async function takeAnnotatedScreenshot(
   const box = await locator.boundingBox()
   if (!box) throw new Error('Element not visible, cannot take screenshot')
 
+  const viewportSize = page.viewportSize() || { width: 1920, height: 1080 }
+
+  const startX = Math.max(0, box.x - padding)
+  const startY = Math.max(0, box.y - padding)
+
+  const endX = Math.min(viewportSize.width, box.x + box.width + padding)
+  const endY = Math.min(viewportSize.height, box.y + box.height + padding)
+
   // 3. Take a screenshot cropped to the element + padding
   await page.screenshot({
     path: outputPath,
     clip: {
-      x: Math.max(0, box.x - padding),
-      y: Math.max(0, box.y - padding),
-      width: box.width + (padding * 2),
-      height: box.height + (padding * 2)
+      x: startX,
+      y: startY,
+      width: endX - startX,
+      height: endY - startY
     }
   })
 
