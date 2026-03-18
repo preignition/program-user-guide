@@ -15,7 +15,7 @@ function getNav() {
   const nav = getRootNav()
   nav.push({ text: 'Survey App', link: `${root}/index` })
   nav.push({ text: 'Tutorials', link: `${root}/tutorial/index` })
-  nav.push({ text: 'How-to Guides', link: `${root}/how-to/index` })
+  nav.push({ text: 'How-to', link: `${root}/how-to/index` })
   nav.push({ text: 'Reference', link: `${root}/reference/index` })
   nav.push({ text: 'Explanation', link: `${root}/explanation/index` })
 

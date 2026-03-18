@@ -46,8 +46,6 @@ Welcome to the comprehensive user guide for the **Accessible Surveys App**.
 
 Whether you're building your first survey, managing advanced accessibility features (like Easy Read, Sign Language, or Read Aloud), distributing to respondents, or analyzing the data you've collected, this guide provides all the information you need.
 
-> **Note on Documentation Migration:** We are currently migrating our documentation from the old `guidance-notes` structure to a new, user-centric structure. The content remains the same, but it is now organized into four distinct types of documentation to better serve your needs based on what you are trying to achieve.
-
 ## How this documentation is organized
 
 To help you find exactly what you need when you need it, our documentation is divided into the following sections:
@@ -86,3 +84,5 @@ The Explanation section provides discursive background, context, and design conc
 If you are new to the platform, we strongly recommend starting with our [**Training Course**](./tutorial/index.md). It is the fastest way to become confident building, testing, sharing, and analyzing surveys on Accessible Surveys.
 
 If you are looking for specific instructions or reference material, simply choose the section above that matches what you are trying to do today!
+
+<!--@include: ../../parts/search.md-->
