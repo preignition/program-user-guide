@@ -35,7 +35,9 @@ Download the PDF below. It contains the text for the 'Introductory Page' and 'Th
 
 Follow along with the video to create your 'Training Survey'.
 
-{% embed url="https://youtu.be/zx7LD73pZGw" %}
+<lapp-youtube videoid="zx7LD73pZGw"></lapp-youtube>
+
+<lapp-youtube videoid="zx7LD73pZGw"></lapp-youtube>
 
 ## Advanced Topics
 

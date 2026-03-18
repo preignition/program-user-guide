@@ -37,7 +37,13 @@ export default defineConfig({
     sidebar: getSidebar(),
     socialLinks: getSocialLinks()
   },
-
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => tag.includes('-')
+      }
+    }
+  }
   // additionalConfig(path) {
   //   return [{
   //     title: `Hello from ${path}`,

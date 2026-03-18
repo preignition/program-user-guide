@@ -4,10 +4,9 @@
 <p>**Plain Language and Easy to Read makes information more accessible for everyone**</p>.
 {% endhint %}
 
-{% embed url="https://www.youtube.com/watch?v=ol5tZ2hnUgE" %}
-Introduction to Easy Read and Plain Language produced by [Open Canada](https://openaccessibility.ca/)
-{% endembed %}
+<lapp-youtube videoid="ol5tZ2hnUgE"></lapp-youtube>
 
+Introduction to Easy Read and Plain Language produced by [Open Canada](https://openaccessibility.ca/)
 ## Summary
 
 * Using Plain Language and Easy to Read makes information more accessible for everyone. It presents content in a way that is simple and easy to understand.&#x20;
@@ -40,8 +39,6 @@ Easy to Read is useful for everyone and is inclusive of:
 This is an [example of an Easy to Read report](https://www.ohchr.org/sites/default/files/2023-04/A-HRC-52-32-Transformation-of-services-for-persons-easy-to-read\_0.pdf):
 
 <figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption><p>This is an Easy Read version of the Special Rapporteur's report of 2023 (A/HRC/52/32) on services and support for persons with disabilities.</p></figcaption></figure>
-
-
 
 ## What are the benefits of Plain Language and Easy to Read?
 
@@ -117,9 +114,9 @@ An inclusive approach recommends involving the target audience throughout the pr
 ### Organisations providing services to convert documents into Plain Language and Easy to Read:&#x20;
 
 * [CHANGE](https://www.changepeople.org/) provide a range of services and resources and can help create bespoke accessible information in Easy Read and video formats for organisations all over the world
-* [People First](https://www.peoplefirst.org.nz/) is an Organization of People with Disabilities representing people with learning disabilities in New Zealand. Their [MakeItEasy team ](https://www.makeiteasy.org.nz/)provides services to produce documents in EasyRead formats. Contact email: [makeiteasy@peoplefirst.org.nz](mailto:makeiteasy@peoplefirst.org.nz)&#x20;
-* Many of[ Inclusion Europe](https://www.inclusion-europe.eu/)'s member organisations produce Easy to Read language in their respective languages. A [list with contacts is available here](https://www.inclusion-europe.eu/about-us/#members).
-* [‘Easy on the i’](https://www.learningdisabilityservice-leeds.nhs.uk/) is an information design service that produces easy to understand information, developed by Learning Disability Service. The website includes a[ checklist to produce Easy to Read content](https://www.learningdisabilityservice-leeds.nhs.uk/wp-content/uploads/2021/10/Easy-Read-Checklist.pdf), and an [image bank](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/image-bank/) which is a large library of free images.
+* [People First](https://www.peoplefirst.org.nz/) is an Organization of People with Disabilities representing people with learning disabilities in New Zealand. Their [MakeItEasy team](https://www.makeiteasy.org.nz/)provides services to produce documents in EasyRead formats. Contact email: [makeiteasy@peoplefirst.org.nz](mailto:makeiteasy@peoplefirst.org.nz)&#x20;
+* Many of[Inclusion Europe](https://www.inclusion-europe.eu/)'s member organisations produce Easy to Read language in their respective languages. A [list with contacts is available here](https://www.inclusion-europe.eu/about-us/#members).
+* [‘Easy on the i’](https://www.learningdisabilityservice-leeds.nhs.uk/) is an information design service that produces easy to understand information, developed by Learning Disability Service. The website includes a[checklist to produce Easy to Read content](https://www.learningdisabilityservice-leeds.nhs.uk/wp-content/uploads/2021/10/Easy-Read-Checklist.pdf), and an [image bank](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/image-bank/) which is a large library of free images.
 * [Open Collaboration for Cognitive Accessibility](https://openaccessibility.ca/services/) provides a range of accessibility testing services, including Easy Read adaptations  &#x20;
 * [Say It Easy](https://www.sayiteasy.eu/) provides Easy to Read and Graphic design services. Contact: [https://www.sayiteasy.eu/about-contact](https://www.sayiteasy.eu/about-contact)&#x20;
 * The [Plain English Campaign](https://www.plainenglish.co.uk/services.html) provides services for Plain Language in English
@@ -130,6 +127,5 @@ An inclusive approach recommends involving the target audience throughout the pr
 * Resolution by the United Nations on [Promoting and mainstreaming easy to understand communications for accessibility for persons with disabilities](https://s38312.pcdn.co/wp-content/uploads/easy-to-understand-draft-resolution.pdf)
 
 \
-
 
 \

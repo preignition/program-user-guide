@@ -14,7 +14,7 @@ Data is collected to be analyzed.  Survey analytics makes this easy
 
 With survey analytics, survey authors visualize survey data as it comes. The application displays one chart per question summarizing distribution of answers.&#x20;
 
-{% embed url="https://youtu.be/mrmI_mv0OUw?modestbranding=1&loop=1&autoplay=1" %}
+<lapp-youtube videoid="mrmI_mv0OUw?modestbranding=1&loop=1&autoplay=1"></lapp-youtube>
 Example of user interactive with dynamic analytics, filtering by type of answers and date of submssion
 {% endembed %}
 
@@ -34,7 +34,7 @@ To keep charts from one page to another, it is possible to mark charts as `favor
 
 Text field are displayed as raw data on a table. Answers in other languages than the survey original language are translated back and also displayed.&#x20;
 
-{% embed url="https://youtu.be/VL-nh2glGso?autoplay=1&modestbranding=1&loop=1" %}
+<lapp-youtube videoid="VL-nh2glGso?autoplay=1&modestbranding=1&loop=1"></lapp-youtube>
 See raw data for answers
 {% endembed %}
 
@@ -57,7 +57,7 @@ Analytics editors can modify the look of the dashboard. For instance, change the
 
 It is also possible to modify generic settings by type of charts (which will be inherited by all charts of the same type), or by type of data.&#x20;
 
-{% embed url="https://youtu.be/JGXc1aw2XGc?loop=1&modestbranding=1&autoplay=1" %}
+<lapp-youtube videoid="JGXc1aw2XGc?loop=1&modestbranding=1&autoplay=1"></lapp-youtube>
 Setting new color range for continuous data
 {% endembed %}
 

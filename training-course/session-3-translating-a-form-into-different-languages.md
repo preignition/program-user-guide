@@ -54,7 +54,7 @@ Follow along to translate your Training Survey into French and Spanish.
 
 The video is 8 mins long and we estimate that it will take you about 15-20 minutes to complete the session.
 
-{% embed url="https://youtu.be/JNZsL7pmPJQ" %}
+<lapp-youtube videoid="JNZsL7pmPJQ"></lapp-youtube>
 
 ## Next Steps
 

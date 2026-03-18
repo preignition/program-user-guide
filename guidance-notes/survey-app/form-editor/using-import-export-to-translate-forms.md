@@ -70,7 +70,7 @@ For an online tool, JSON Editor On-line is a popular choice.  [https://jsonedito
 
 The following video shows how a file can be exported from the platform, editied in JSON Editor On-line and imported back to the platform.
 
-{% embed url="https://youtu.be/HT57p5Ex20s" %}
+<lapp-youtube videoid="HT57p5Ex20s"></lapp-youtube>
 &#x20;3 minute video showing how a file can be edited in JSON Editor on-line
 {% endembed %}
 

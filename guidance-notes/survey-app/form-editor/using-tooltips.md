@@ -56,7 +56,7 @@ If your tooltip has been added to your Form, it can be tested from the 'Test' vi
 
 This short video shows a tooltip being added to the 'Introduction Page', a 'Question Label' and an 'Option Label'. &#x20;
 
-{% embed url="https://youtu.be/BjX1lQTfAS0" %}
+<lapp-youtube videoid="BjX1lQTfAS0"></lapp-youtube>
 Short video showing how to add tooltips to a survey&#x20;
 {% endembed %}
 

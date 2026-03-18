@@ -26,7 +26,7 @@ The 'Link Builder' provides some additional options.
 
 The Link Builder gives you a lot of control over how you share your survey.  For instance you can share a 'test' link or a 'production' link or a link with an accessibility mode already activated.
 
-{% embed url="https://youtu.be/6PJiKt2hE9Y" %}
+<lapp-youtube videoid="6PJiKt2hE9Y"></lapp-youtube>
 
 You will notice that the link changes whenever a new option is selected.   However the survey links stay the same when new verson of the survey are published so you don't need to worry about sharing new links.
 

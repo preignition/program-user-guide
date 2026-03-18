@@ -20,7 +20,7 @@ Under the 'settings' tab you can edit the survey name, give it a label and selec
 
 We recommend always using the latest version of the form, unless you have specific reason for selecting an earlier version.
 
-{% embed url="https://youtu.be/whgU6HSPsTo" %}
+<lapp-youtube videoid="whgU6HSPsTo"></lapp-youtube>
 
 ## Step 3
 

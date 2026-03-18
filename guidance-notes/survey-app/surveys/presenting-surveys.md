@@ -32,7 +32,7 @@ There are three different presentation feilds:
 * Markdown is supported and CSS Classes can be used to display or hide accessibility modes.
 * The preview tab shows you how the page will appear to Respondents. Currently accessibility modes need to be activated from the accessibility icon in the top menu
 
-{% embed url="https://youtu.be/L5ZGDSGAJ8s" %}
+<lapp-youtube videoid="L5ZGDSGAJ8s"></lapp-youtube>
 
 ## Step 3
 

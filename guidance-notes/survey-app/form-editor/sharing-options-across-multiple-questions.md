@@ -64,6 +64,6 @@ It is now available to be used in choice based questions throughout the section 
 Remember to activate the 'advanced' toggle in order to share options between multiple questions in a section
 {% endhint %}
 
-{% embed url="https://youtu.be/dllRu6iJjhU" %}
+<lapp-youtube videoid="dllRu6iJjhU"></lapp-youtube>
 20 second video showing how to select the options group for a choice based question.
 {% endembed %}

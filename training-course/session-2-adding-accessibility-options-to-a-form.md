@@ -59,7 +59,7 @@ In this video, Jerry guides you through the process of adding accessibility opti
 
 The video is 12 minutes long and we estimate that it will take you about 15 to 20 minutes to complete the session.
 
-{% embed url="https://youtu.be/JV31V7ONPgI" %}
+<lapp-youtube videoid="JV31V7ONPgI"></lapp-youtube>
 
 ## Advanced features related to adding accessibility modes not covered in this session
 

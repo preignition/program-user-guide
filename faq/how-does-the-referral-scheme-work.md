@@ -35,7 +35,7 @@ You will also see a list of all the organisations you have referred, on your ‘
 
 ![](./img/)
 
-{% embed url="https://youtu.be/?autoplay=1&modestbranding=1&loop=1" %}
+<lapp-youtube videoid="?autoplay=1&modestbranding=1&loop=1"></lapp-youtube>
 
 {% endembed %}
 

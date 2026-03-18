@@ -29,7 +29,7 @@ Use the text provided in the following document when submitting a test response 
 
 Follow along with the video to analyze your survey responses and export your dataset.
 
-{% embed url="https://youtu.be/AjSOgoiynmM" %}
+<lapp-youtube videoid="AjSOgoiynmM"></lapp-youtube>
 
 ## Next Steps
 

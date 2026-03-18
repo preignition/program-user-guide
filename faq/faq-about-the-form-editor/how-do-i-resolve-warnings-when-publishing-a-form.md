@@ -8,7 +8,7 @@ If the build has not been sucessful you will see the message 'Build completed wi
 
 Double clicking on the row provides details of what is causing the problem, along with a link to the item which is causing the problem.
 
-{% embed url="https://youtu.be/yMaxJI21er0" %}
+<lapp-youtube videoid="yMaxJI21er0"></lapp-youtube>
 20 second video showing a from being published with warnings
 {% endembed %}
 
@@ -25,7 +25,7 @@ This issue can be resolved by editing the question's code so each question has a
 3. Give the question a unique 'override code' up to a maximum of 20 characters
 4. Publish a new version of the form and check that the build has been completed successfully
 
-{% embed url="https://youtu.be/qGpWHyH0EVI" %}
+<lapp-youtube videoid="qGpWHyH0EVI"></lapp-youtube>
 30 second video showing how to resolve a common issue with questions having the same code
 {% endembed %}
 

@@ -4,7 +4,7 @@ description: Release Note for the new reporting feature
 
 # Reporting
 
-{% embed url="https://youtu.be/HXR0Cli2PoQ" %}
+<lapp-youtube videoid="HXR0Cli2PoQ"></lapp-youtube>
 Release note video
 {% endembed %}
 

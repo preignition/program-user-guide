@@ -35,7 +35,7 @@ In this video, Jerry guides you through the process of using the Analytics feild
 
 The video is 17 mins long and we estimate that it will take you about 30 minutes to complete the session.
 
-{% embed url="https://youtu.be/AjSOgoiynmM" %}
+<lapp-youtube videoid="AjSOgoiynmM"></lapp-youtube>
 Youtube video of training session 5
 {% endembed %}
 

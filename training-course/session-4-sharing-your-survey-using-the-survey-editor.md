@@ -31,7 +31,7 @@ In this video, Jerry guides you through the process of testing and sharing your 
 
 The video is 10 mins long and we estimate that it will take you about 15 minutes to complete the session.
 
-{% embed url="https://youtu.be/KHb_SrGdvz8" %}
+<lapp-youtube videoid="KHb_SrGdvz8"></lapp-youtube>
 
 ## Advanced features related to sharing your survey not covered in this session
 

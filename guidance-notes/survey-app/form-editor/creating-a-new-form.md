@@ -70,7 +70,7 @@ You can give the section a 'title' and 'sub-title' which will appear on your for
 
 The section 'title' will replace the section 'name' in the tree structure as shown in the short video below
 
-{% embed url="https://youtu.be/CNv0tnAM1AE" %}
+<lapp-youtube videoid="CNv0tnAM1AE"></lapp-youtube>
 
 ## Step 8
 

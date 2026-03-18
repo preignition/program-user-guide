@@ -95,10 +95,10 @@ Only lowercase letter and numbers are allowed for aliases
 <figure><img src="./assets/image.png" alt="Description of image"><figcaption>This is the caption for the image.</figcaption></figure>
 ```
 
-- **Videos**: Embed videos using the `{% embed %}` tag for better integration.
+- **Videos**: Embed videos using the `<lapp-youtube>` tag for better integration.
 
 ```md
-{% embed url="https://youtu.be/Vu9NUKzv_LQ" %}
+<lapp-youtube videoid="Vu9NUKzv_LQ"></lapp-youtube>
 ```
 
 ## Rule enforcement

@@ -88,6 +88,6 @@ The radio group question appears to respondents like this:
 
 It is easy to alter the type of options question used without recreating the question.  This short video shows you how this can be done.
 
-{% embed url="https://youtu.be/n1pvDEjxucY" %}
+<lapp-youtube videoid="n1pvDEjxucY"></lapp-youtube>
 Short video showing you how to alter the type of option question used
 {% endembed %}

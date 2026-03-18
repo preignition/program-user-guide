@@ -18,13 +18,13 @@ Choose the user you want to add and specify the role you would like them to have
 
 They will then appear in the 'User List' at the bottom of the page&#x20;
 
-{% embed url="https://youtu.be/Vu9NUKzv_LQ" %}
+<lapp-youtube videoid="Vu9NUKzv_LQ"></lapp-youtube>
 
 ## Step 2
 
 It is possible for a form 'Owner' to assign their ownership rights to another user.  This works in a similar way to adding a new user.
 
-{% embed url="https://youtu.be/PXA5xlpjBlM" %}
+<lapp-youtube videoid="PXA5xlpjBlM"></lapp-youtube>
 
 
 
