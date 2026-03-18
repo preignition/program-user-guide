@@ -15,33 +15,12 @@ This section explains the different methods for sharing your survey and managing
 
 The **Share** section is your hub for managing the lifecycle of your survey. From here, you can access all the tools needed to publish, distribute, and monitor your survey.
 
-- **Navigation Menu**: The sidebar or card grid allows you to navigate between different sharing modules:
-  - **Status**: Check if your survey is open or closed.
-  - **Publish**: Push updates to the live version.
-  - **Distribute**: Get links and QR codes.
-  - **Access**: Manage user permissions.
-  - **Batches**: Schedule availability.
-  - **Webhooks**: Configure integrations.
-
-## Contents
-
-### How tos
-
-- [How to share a survey](./sharing-a-survey.md)
-
-### Workflow
-
-- [Sharing Workflow](./sharing-workflow.md)
-
-### Modules
-
-- [Status](./status/index.md)
-- [Publish](./publish/index.md)
-- [Distribute](./distribute/index.md)
-- [Account Type](./account/index.md)
-- [Redirection](./redirection/index.md)
-- [Access](./access/index.md)
-- [Email](./message/index.md)
-- [Batch](./batch/index.md)
-- [Webhooks](./webhooks/index.md)
-- [Terms](./terms/index.md)
+- [Status](./status/index.md) - Check if your survey is open or closed.
+- [Publish](./publish/index.md) - Push updates to the live version.
+- [Distribute](./distribute/index.md) - Get links and QR codes.
+- [Account Type](./account-type/index.md) - Manage account settings.
+- [Redirection](./redirection/index.md) - Configure redirection settings.
+- [Access](./access/index.md) - Manage user permissions.
+- [Batch](./batch/index.md) - Group responses and schedule availability.
+- [Webhooks](./webhook/index.md) - Configure integrations.
+- [Terms](./terms/index.md) - Manage terms and conditions for respondents.

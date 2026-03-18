@@ -42,7 +42,7 @@ Production links are the links you share to get responses to your survey.  Answe
 
 The 'survey name' option allows you to use the default link name or a more readable 'alias' which you can customised.
 
-To create an alias link see the How to Guide '[Creating alias survey links](creating-alias-survey-links.md)'
+To create an alias link see the How to Guide Creating alias survey links
 
 ## Step 5
 

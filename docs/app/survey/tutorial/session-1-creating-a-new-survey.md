@@ -39,10 +39,10 @@ Follow along with the video to create your 'Training Survey'.
 
 ## Advanced Topics
 
-For more advanced features not covered in this session, refer to the following guides:
+For more advanced features not covered in this session, refer to the following documentation:
 
-- [Advanced form logic](../../guidance-notes/survey-app/form-editor/advanced-form-logic.md)
-- [Using tooltips](../../guidance-notes/survey-app/form-editor/using-tooltips.md)
+- [How to recipes](../how-to/index.md)
+- [Reference](../reference/index.md)
 
 ## Next Steps
 

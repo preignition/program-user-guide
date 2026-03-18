@@ -25,13 +25,11 @@ The 'Easy Read' version renders the form and the interface differently, but answ
 
 ## Step 1
 
-Activate the 'Easy Read' mode under '[Form Behaviour](form-behaviour.md)'
-
 An Easy Read option appears in the 'Form Definition' menu
 
 ## Step 3
 
-If you want to use images to complement questions in the 'Easy Read' mode you must first add them to your '[Image Library](image-library.md)'
+If you want to use images to complement questions in the 'Easy Read' mode you must first add them to your '
 
 ::: danger
 It is your responsbility to make sure that you have the appropriate rights to use any images which you upload to your 'Image Libary'
@@ -69,4 +67,4 @@ The Easy Read version of a form can be tested in the usual way. However the 'Eas
 
 ## Step 8
 
-A new version of the form must be [published](publishing-a-form.md) in order for any changes to the Easy Read version of the form to be effective.
+A new version of the form must be published in order for any changes to the Easy Read version of the form to be effective.

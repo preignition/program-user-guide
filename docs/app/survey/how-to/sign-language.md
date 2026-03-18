@@ -10,7 +10,7 @@ Forms adapt to the needs and preferences of respondents. Some Respondents may wa
 
 ## Step 1
 
-First activate the 'International Sign' accessibility mode in the [Form Behaviour](form-behaviour.md) page.
+First activate the 'International Sign' accessibility mode in the [Form page.
 
 ## Step 2
 

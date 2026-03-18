@@ -22,6 +22,7 @@ Topics that explain the underlying architecture of the platform, including:
 
 - **[Understanding Survey, Form, Page, Section and Question Hierarchy](./understanding-survey-hierarchy.md):** A detailed explanation of the hierarchical structure of surveys and how each level interacts with the others.
 - **[How does the compose view work](./how-does-the-compose-view-work.md):** An explanation of the compose view and how it allows users to build and organize survey content.
+- **[The concept of Modes](./the-concept-of-modes.md):** Why we use modes to manage the complexity of survey configuration and how it helps users focus on specific tasks.
 - **[Building and Versioning](./survey-versionning.md):** An explanation of why it is necessary to compile a survey into a frozen snapshot before sharing it, and how strict version control protects data integrity during iterative design.
 - **[Understanding Form Logic](./understanding-form-logic.md):** A deeper dive into how the platform's logic engine evaluates mathematical expressions and ternary operators to create dynamic surveys.
 - **[Test and Production Survey Links](./test-and-production-survey-links.md):** Why we have separate links for testing and production surveys and what are the differences.
