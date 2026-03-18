@@ -10,27 +10,27 @@ features:
   - title: Tutorial
     details: When you are new to Accessible Surveys
     icon: 
-      light:  /icons/tutorial.svg
-      dark: /icons/tutorial-dark.svg
+      light:  /images/icons/tutorial.svg
+      dark: /images/icons/tutorial-dark.svg
     link: ./tutorial/index
   - title: How-to Guides
     details: When you need practical directions to complete a specific task
     icon: 
-      light: /icons/how-to.svg
-      dark: /icons/how-to-dark.svg
+      light: /images/icons/how-to.svg
+      dark: /images/icons/how-to-dark.svg
     link: ./how-to/index
   - title: Reference
     details: When you need technical descriptions, facts, or details while you work
     icon: 
-      light: /icons/contract.svg
-      dark: /icons/contract-dark.svg
+      light: /images/icons/contract.svg
+      dark: /images/icons/contract-dark.svg
       
     link: ./reference/index
   - title: Explanation
     details: When you want to understand the bigger picture or the "why" behind a feature
     icon: 
-      light: /icons/explanation.svg
-      dark: /icons/explanation-dark.svg
+      light: /images/icons/explanation.svg
+      dark: /images/icons/explanation-dark.svg
     link: ./explanation/index
 
   
