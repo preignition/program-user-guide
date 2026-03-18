@@ -24,15 +24,16 @@ export default defineConfig({
     search: {
       provider: 'algolia',
       options: {
-        appId: '8J64VVRP8K',
-        apiKey: '52f578a92b88ad6abde815aae2b0ad7c',
-        indexName: 'vitepress',
+        appId: 'YHQBY741RD',
+        indexName: 'a11y-data-doc-crawler',
+        apiKey: '5cc71dd055506e2b975024ace4074cb7',
         askAi: {
-          assistantId: 'YaVSonfX5bS8',
+          assistantId: 'hMFvvrrSqi93',
           sidePanel: true
         }
       }
     },
+
     nav: getNav(),
     sidebar: getSidebar(),
     socialLinks: getSocialLinks()
