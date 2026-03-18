@@ -16,7 +16,7 @@ The primary goal of form logic is to create a **personalized, efficient pathway*
 
 ## How the Logic Engine Works
 
-At its core, the logic engine is an expression evaluator. Every question, section, and page in a form can have an associated "Visibility Expression."
+At its core, the logic engine is an expression evaluator. Every question, section, and page in a form can have an associated "Logical Expression."
 
 * **Expressions:** These are essentially mathematical or boolean statements, similar to what you might write in a spreadsheet formula (e.g., `age > 18` or `status == "completed"`).
 * **Variables:** The answers provided by the respondent act as variables. When a respondent answers a question, the logic engine updates the variable and re-evaluates all dependent expressions.
@@ -29,11 +29,17 @@ The engine supports standard programming and mathematical operators:
 * **Logical:** `&&` (AND), `||` (OR)
 * **Mathematical:** `+`, `-`, `*`, `/`
 
-If an expression evaluates to `true` (or a truthy value), the associated element becomes visible or active. If it evaluates to `false`, the element is hidden.
-
 ### Ternary Operators
 
 For more advanced scenarios, the engine supports ternary operators (`condition ? true_result : false_result`). This is particularly useful for calculating dynamic values or scores based on specific conditions, rather than just toggling visibility.
+
+### Applying Logic to Form Elements
+
+When you attach a logical expression to a form element (like a question or section), the engine evaluates that expression every time the respondent changes an answer that affects it.
+
+The result of the expression determines is usually applied to whether the element is shown or hidden (visibility). If an expression evaluates to `true` (or a truthy value), the associated element becomes visible or active. If it evaluates to `false`, the element is hidden.
+
+But the result of an expression can also be used to calculate values or determine the validity of a response.
 
 ## The "Why" Behind the Design
 

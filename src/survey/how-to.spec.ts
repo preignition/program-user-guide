@@ -9,6 +9,7 @@ const a11yPort = '7174'
 const baseUrl = `http://localhost:${port}` // playwright team
 const a11yBaseUrl = `http://localhost:${a11yPort}` // accessible data team
 const satisfactionSurveyId = '3BBFzJneqakYoyDu02c2'
+const testSurveyId = 'ufPnZmyEOqZIokmDYuT0' // import content
 const mainPath = 'docs/app/survey/how-to'
 
 let locator: Locator
@@ -507,11 +508,72 @@ test.describe('How-To', async () => {
 
   test('How to share options across multiple questions', async ({ page }) => {
     const context = new Context(mainPath, page)
-    context.setName('logic-expression')
-    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/compose`)
+    context.setName('sharing-options')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${testSurveyId}/build/compose`)
+
+    // ## Step 1: Create a question with options that you want to share across multiple questions
+    await page.getByText('Universal Health Coverage').click()
+    await page.getByText('Health Situation').click()
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'How often do you visit a' }).click()
+    locator = page.getByRole('textbox', { name: 'Make options shared' })
+    await context.annotatedScreenshot(locator, 'step-1-add-options-to-share')
+    locator.click()
+
+    // ## Step 2: Give a name to the shared options and save them in the library to make them available for other questions
+    await page.getByRole('textbox', { name: 'Make options shared' }).fill('shared frequency')
+    await context.annotatedScreenshot(locator, 'step-2-add-options-give-a-name')
+
+    // ## Step 3: Select another question where you want to reuse the options and select the shared options.
+    await page.getByText('Do you have any chronic').click()
+    locator = page.getByRole('combobox', { name: 'Use Shared' }).locator('#label')
+    await context.annotatedScreenshot(locator, 'step-3-select-shared-options')
+    await locator.click()
+    await page.getByRole('option').first().press('Escape')
+    await page.getByText('How often do you visit a').click()
+    await page.getByRole('textbox', { name: 'Make options shared' }).click()
+    await page.getByRole('textbox', { name: 'Make options shared' }).fill('')
+
+  })
+
+  test('How to share logical expressions accross multiple items', async ({ page }) => {
+    const context = new Context(mainPath, page)
+    context.setName('sharing-logical-expressions')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${testSurveyId}/build/compose`)
+
+    // ## Step 1: Navigate to a question with an exiting logical expression that you want to share across multiple questions
+    await page.getByText('Universal Health Coverage').click()
+    await page.getByText('Satisfaction Factors').click()
+    await page.getByText('Management & Leadership').click()
+    await page.getByText('Never visible').click()
+    await page.getByRole('button', { name: 'Visibility Mode' }).click()
+    await page.getByRole('textbox', { name: 'Name' }).click()
+    locator = page.getByRole('textbox', { name: 'Name' })
+    await locator.fill('share this')
+    await context.annotatedScreenshot(locator, 'step-1-logical-expression-to-share')
+    locator = page.getByRole('textbox', { name: 'Description' })
+    await context.annotatedScreenshot(locator, 'step-1-logical-expression-description')
+
+    // Step 2: Re-use the logical expression in other items 
+
+    await page.getByText('Senior leadership effectively').click()
+    locator = await page.getByRole('combobox', { name: 'Select an existing expression' })
+    await context.annotatedScreenshot(locator, 'step-2-reuse-logical-expression')
+
+    // cleanup
+
+    await page.getByText('Never visible').click()
+    await page.getByRole('textbox', { name: 'Name' }).click()
+    await page.getByRole('textbox', { name: 'Name' }).press('Enter')
+
   })
 
   test('How to share content across multiple forms and surveys', async ({ page }) => {
+    const context = new Context(mainPath, page)
+    context.setName('sharing-content')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${testSurveyId}/build/compose`)
+
+    // ## Step 1: Navigate to a question with an exiting logical expression that you want to share across multiple questions
+
   })
 
   test('How to add an accessibility menu', async ({ page }) => {

@@ -58,8 +58,9 @@ function getSidebar() {
             { text: 'Provide rich formatting', link: `providing-rich-formatting.md` },
             { text: 'Use form logic', link: `logic-expression.md` },
             { text: 'Set access rights for forms', link: `access-rights.md` },
-            { text: 'Share options across multiple questions', link: `sharing-options-across-multiple-questions.md` },
-            { text: 'Share content across multiple forms and surveys', link: `sharing-content-across-multiple-forms-and-surveys.md` },
+            { text: 'Share options across multiple questions', link: `sharing-options.md` },
+            { text: 'Share logical expressions', link: `sharing-logical-expressions.md` },
+            { text: 'Share content across multiple forms and surveys', link: `sharing-content.md` },
           ]
         },
         {

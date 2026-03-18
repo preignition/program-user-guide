@@ -32,9 +32,9 @@ Fundamental tasks for building your survey and forms, including adding questions
 
 ### Collaboration & Organization
 
-- [How to share options across multiple questions](./sharing-options-across-multiple-questions.md) - *in progress*
-- [How to share logical expressions across multiple items](./sharing-logical-expressions-across-items.md) - *in progress*
-- [How to share content across multiple forms and surveys](./sharing-content-across-multiple-forms-and-surveys.md) - *in progress*
+- [How to share options across multiple questions](./sharing-options.md)
+- [How to share logical expressions across multiple items](./sharing-logical-expressions.md)
+- [How to share content across multiple forms and surveys](./sharing-content.md) - *in progress*
 - [How to set access rights for forms](./access-rights.md)
 
 ---

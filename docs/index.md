@@ -8,11 +8,12 @@ hero:
   tagline: A Survey Tool for Everyone
   actions:
     - theme: brand
-      text: Online Course
+      text: Online Training Course
       link: /app/survey/tutorial
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Create a Free Account
+      link: https://accessiblesurveys.com/customer/onboarding
+      target: _blank
 
 features:
   - title: Survey App
@@ -21,6 +22,7 @@ features:
       light: /app/analytics.svg
       dark: /app/analytics-dark.svg
     link: /app/survey/index
+    linkText: 'Go to documentation'
   - title: Customer App (in process)
     details: Learn how to manage customers
     icon: 
