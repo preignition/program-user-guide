@@ -14,6 +14,8 @@ export default defineConfig({
   cleanUrls: true,
   // lastUpdated: true,
   metaChunk: true,
+  head: [['link', { rel: 'icon', href: '/a14y_logo_style.svg' }]],
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/a14y_logo_style.svg',
