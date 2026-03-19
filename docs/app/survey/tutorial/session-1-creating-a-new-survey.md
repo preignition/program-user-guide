@@ -26,7 +26,7 @@ By the end of this session, you will be able to:
 
 Download the PDF below. It contains the text for the 'Introductory Page' and 'Thank You Page', as well as the 'Questions' for your 'Form'.
 
-[📄 Download as PDF](/assets/training-survey.pdf){target="_blank"} | [📝 Download as Markdown](/assets/training-survey.md){target="_blank"}
+[📄 Download as PDF](/assets/download/training-survey.pdf){target="_blank"} | [📝 Download as Markdown](/assets/download/training-survey.md){target="_blank"}
 
 <details>
 <summary>Or copy and paste the content directly from the block below.</summary>

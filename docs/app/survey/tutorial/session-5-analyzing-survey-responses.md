@@ -23,7 +23,7 @@ By the end of this session, you will be able to:
 
 Use the text provided in the following document when submitting a test response in Spanish.
 
-[Text for answers to survey in Spanish](./assets/Text%20for%20answers%20to%20survey%20in%20Spanish.pdf)
+[📄 Download `training survey in Spanish` as PDF](/assets/download/training-survey-es.pdf){target="_blank"}
 
 ## Instructions
 
