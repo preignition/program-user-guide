@@ -49,7 +49,7 @@ Download the following images to a local folder before starting the video. You c
 
 | Image 1 | Image 2 | Image 3 |
 | :---: | :---: | :---: |
-| <figure><img src="/assets/1 ER image for Survey.png" alt="Easy Read image for 'Which survey tool does your organisation use the most?'" width="100%"></figure><br/>[Download](/assets/download/1%20ER%20image%20for%20Survey.png) | <figure><img src="/assets/download/2 ER image for Satisfaction.png" alt="Easy Read image for 'I am satisifed with my current survey tool'" width="100%"></figure><br/>[Download](/assets/download/2%20ER%20image%20for%20Satisfaction.png) | <figure><img src="/assets/download/3 ER image for what do you like.png" alt="Easy Read image for 'What do you like about the survey tool you are using?'" width="100%"></figure><br/>[Download](/assets/download/3%20ER%20image%20for%20what%20do%20you%20like.png) |
+| <figure><img src="/assets/download/1 ER image for Survey.png" alt="Easy Read image for 'Which survey tool does your organisation use the most?'" width="100%"></figure><br/>[Download](/assets/download/1%20ER%20image%20for%20Survey.png) | <figure><img src="/assets/download/2 ER image for Satisfaction.png" alt="Easy Read image for 'I am satisifed with my current survey tool'" width="100%"></figure><br/>[Download](/assets/download/2%20ER%20image%20for%20Satisfaction.png) | <figure><img src="/assets/download/3 ER image for what do you like.png" alt="Easy Read image for 'What do you like about the survey tool you are using?'" width="100%"></figure><br/>[Download](/assets/download/3%20ER%20image%20for%20what%20do%20you%20like.png) |
 
 | Image 4 | Image 5 |
 | :---: | :---: |
