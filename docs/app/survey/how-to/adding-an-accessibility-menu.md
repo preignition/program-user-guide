@@ -20,7 +20,7 @@ The accessibility menu can be added to any feild that supports Markdown.  This i
 
 Simply copy this code to make the menu appear&#x20;
 
-```markup
+```html
 <a11y-menu context="survey"></a11y-menu>
 ```
 
@@ -32,7 +32,9 @@ It is intelligent, in that it will only show the accessibility options that you 
 
 This short video show you how you can add an accessibility menu to a survey's 'Landing Page';
 
+```html
 <lite-youtube videoid="jBdiUyD_dek"></lite-youtube>
+```
 
 ## Step 4&#x20;
 
@@ -44,7 +46,7 @@ Drag and drop to add a new 'free text' question into the section that you have j
 
 Copy and paste the accessibility menu into the free text field.
 
-```markup
+```html
 <a11y-menu context="survey"></a11y-menu>
 ```
 

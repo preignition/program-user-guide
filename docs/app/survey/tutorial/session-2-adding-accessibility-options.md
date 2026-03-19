@@ -43,15 +43,17 @@ Use the following YouTube IDs to add BSL videos to your 'Training Survey'.
 
 ### Easy Read Images
 
-Download the following images to a local folder before starting the video.
+Download the following images to a local folder before starting the video. You can download them all at once or individually below.
+
+[📥 Download all Easy Read Images (ZIP)](./assets/easy-read-images.zip)
 
 | Image 1 | Image 2 | Image 3 |
 | :---: | :---: | :---: |
-| <figure><img src="./assets/1 ER image for Survey.png" alt="Easy Read image for 'Which survey tool does your organisation use the most?'" width="100%"></figure> | <figure><img src="./assets/2 ER image for Satisfaction.png" alt="Easy Read image for 'I am satisifed with my current survey tool'" width="100%"></figure> | <figure><img src="./assets/3 ER image for what do you like.png" alt="Easy Read image for 'What do you like about the survey tool you are using?'" width="100%"></figure> |
+| <figure><img src="./assets/1 ER image for Survey.png" alt="Easy Read image for 'Which survey tool does your organisation use the most?'" width="100%"></figure><br/>[Download](./assets/1%20ER%20image%20for%20Survey.png) | <figure><img src="./assets/2 ER image for Satisfaction.png" alt="Easy Read image for 'I am satisifed with my current survey tool'" width="100%"></figure><br/>[Download](./assets/2%20ER%20image%20for%20Satisfaction.png) | <figure><img src="./assets/3 ER image for what do you like.png" alt="Easy Read image for 'What do you like about the survey tool you are using?'" width="100%"></figure><br/>[Download](./assets/3%20ER%20image%20for%20what%20do%20you%20like.png) |
 
 | Image 4 | Image 5 |
 | :---: | :---: |
-| <figure><img src="./assets/4 ER image for what frustrates you.png" alt="Easy Read image for 'What frustrates you about the survey tool that you are using?'" width="100%"></figure> | <figure><img src="./assets/5 ER image do you like this survey.png" alt="Easy Read image for 'Do you like this survey?'" width="100%"></figure> |
+| <figure><img src="./assets/4 ER image for what frustrates you.png" alt="Easy Read image for 'What frustrates you about the survey tool that you are using?'" width="100%"></figure><br/>[Download](./assets/4%20ER%20image%20for%20what%20frustrates%20you.png) | <figure><img src="./assets/5 ER image do you like this survey.png" alt="Easy Read image for 'Do you like this survey?'" width="100%"></figure><br/>[Download](./assets/5%20ER%20image%20do%20you%20like%20this%20survey.png) |
 
 > [!NOTE]
 > These images are sourced from [Easy on the i](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/), a free library of symbols, photos, and graphics for Easy Read materials.
