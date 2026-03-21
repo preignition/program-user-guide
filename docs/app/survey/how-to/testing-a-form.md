@@ -25,7 +25,7 @@ While in Test mode, you will see a toolbar that provides several options to simu
 <figure><img src="./assets/shared/test-survey-toolbar.png" alt="Test toolbar"><figcaption>Test toolbar with various options to simulate different environments.</figcaption></figure>
 
 | Feature | Description | Screenshot |
-|---------|-------------|------------|
+| ------- | ----------- | ---------- |
 | Test the form in different languages | Preview your form in any language you have activated. | ![Test the form in different languages](./assets/testing-a-form/step-2-test-toolbar-language.png) |
 | Activate Read Aloud | Test the text-to-speech functionality. | ![Activate read aloud](./assets/testing-a-form/step-2-test-toolbar-read-aloud.png) |
 | Activate Sign Language | Test the sign language videos. | ![Activate sign language](./assets/testing-a-form/step-2-test-toolbar-sign-language.png) |
