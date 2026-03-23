@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="svg" part="svg">
+        <g transform="translate(40, 0)">
+          <g id="slot-background" part="background">
+          </g>
+          <g id="slot-chart-content">
+            <g id="slot-zoom">
+              <g id="slot-chart" part="chart">
+              <g id="drawable" slot-svg="slot-chart" class="drawable pie" transform="translate(97.5, 75)"><path class="pie selectable shape" d="M1.342,-74.988A75,75,0,0,1,65.612,36.332L42.874,23.204A48.75,48.75,0,0,0,1.342,-48.732Z" key="lMWTK6i6Zuk3x4d24xJa" fill="#4e79a7"></path><path class="pie selectable shape" d="M64.271,38.656A75,75,0,0,1,-64.271,38.656L-41.532,25.528A48.75,48.75,0,0,0,41.532,25.528Z" key="luWF9cH17XvYHwHcaMMV" fill="#f28e2c"></path><path class="pie selectable shape" d="M-65.612,36.332A75,75,0,0,1,-1.342,-74.988L-1.342,-48.732A48.75,48.75,0,0,0,-42.874,23.204Z" key="znSCbcfz2y4ppacwx3xQ" fill="#e15759"></path></g></g>
+              <g id="slot-top-chart" part="chart"></g>
+              <g id="slot-brush" part="brush"></g>
+            </g>
+            <g id="slot-axis" part="axis"></g>
+          </g>
+        </g>
+        <g id="slot-legend" part="legend"><rect id="legendRect" fill="white" slot-svg="slot-legend" class="legend-rect" opacity="1" transform="translate(139.7958984375, 10)" width="146.05706787109375" height="62.76945495605469"></rect><g id="legend" part="legend" slot-svg="slot-legend" class="legend" opacity="1" transform="translate(144.7958984375,15)scale(0.7)"><g class="legendCells"><g class="cell" transform="translate(0, 0)"><rect class="swatch" height="15" width="15" style="fill: rgb(78, 121, 167);"></rect><text class="label" transform="translate( 25, 12.5)"><tspan x="0" dy="0em">No</tspan></text></g><g class="cell" transform="translate(0, 20.823530197143555)"><rect class="swatch" height="15" width="15" style="fill: rgb(242, 142, 44);"></rect><text class="label" transform="translate( 25, 12.5)"><tspan x="0" dy="0em">Don't know or prefer not</tspan><tspan x="0" dy="1.2em">to say</tspan></text></g><g class="cell" transform="translate(0, 60.847063064575195)"><rect class="swatch" height="15" width="15" style="fill: rgb(225, 87, 89);"></rect><text class="label" transform="translate( 25, 12.5)"><tspan x="0" dy="0em">Yes</tspan></text></g></g></g></g>
+      </svg>
+
+    
+    
