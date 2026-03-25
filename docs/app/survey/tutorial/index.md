@@ -3,7 +3,7 @@ description: >-
   A step-by-step tutorial to help you learn Accessible Surveys by building a training survey.
 ---
 
-# Training Course Introduction
+# Training Course - Introduction
 
 This tutorial guides you through creating a 'Training Survey'. Building a survey from scratch is the best way to become familiar with the platform's core features.
 
