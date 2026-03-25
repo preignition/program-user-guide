@@ -2,7 +2,7 @@
 description: Learn how to translate your survey into French and Spanish.
 ---
 
-# Session 3: Translating Your Survey
+# Training Course Session 3: Translating Your Survey
 
 ## Overview
 
