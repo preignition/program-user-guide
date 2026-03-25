@@ -2,7 +2,7 @@
 description: Learn how to analyze survey data using the Analytics dashboard and export your results.
 ---
 
-# Session 5: Analyzing Responses and Exporting Data
+# Training Course Session 5: Analyzing Responses and Exporting Data
 
 ## Overview
 
