@@ -2,7 +2,7 @@
 description: Learn how to create a new survey by adding pages, sections, and questions.
 ---
 
-# Session 1: Creating a New Survey
+# Training Course Session 1: Creating a New Survey
 
 ## Overview
 
