@@ -2,7 +2,7 @@
 description: Learn how to add accessibility features such as sign language, Easy Read, Read Aloud, and voice recording to your survey.
 ---
 
-# Session 2: Adding Accessibility Options
+# Training Course Session 2: Adding Accessibility Options
 
 ## Overview
 
