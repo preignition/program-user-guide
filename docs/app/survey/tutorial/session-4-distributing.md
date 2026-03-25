@@ -2,7 +2,7 @@
 description: Learn how to activate, test, and distribute your survey to respondents.
 ---
 
-# Session 4: Testing and Sharing Your Survey
+# Training Course Session 4: Testing and Sharing Your Survey
 
 ## Overview
 
