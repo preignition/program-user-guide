@@ -34,7 +34,9 @@ The editor environment includes built-in classes and variables to integrate user
     This is displayed only in **easy read mode**.
   </div>
   <div class="flex-2 box">
-    This is displayed in all modes. It is twice the width of the above elements.
+    This is displayed in all modes. It is twice the width of the above elements. It is styled with the primary color of the active theme, using CSS tokens and the `.box` class.
+
+    It also has a video embedded using the `<lite-youtube>` web component:
     <lite-youtube videoid="xVytWVHX4N0"></lite-youtube>
   </div>
 </div>

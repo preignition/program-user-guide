@@ -147,10 +147,28 @@ function getSidebar() {
           ]
         },
         {
-          text: 'Markdown Reference', link: 'content/markdown/index.md'
+          text: 'Markdown Reference',
+          collapsed: true,
+          link: 'index.md',
+          base: `${root}/reference/content/markdown/`,
+          items: [
+            { text: 'Accessibility Modes', link: `accessibility-mode.md` },
+            { text: 'Convenient Class', link: `convenient-class.md` },
+            { text: 'CSS Tokens', link: `css-tokens.md` },
+            { text: 'Web Components', link: `available-web-components.md` },
+
+          ]
         },
         {
-          text: 'Logic Expression', link: 'content/logic-expression/index.md'
+          text: 'Logic Expression',
+          collapsed: true,
+          base: `${root}/reference/content/logic-expression/`,
+          link: `index.md`,
+          items: [
+            { text: 'Introduction', link: `introduction.md` },
+            { text: 'Advanced', link: `advanced.md` },
+            { text: 'Jexl Syntax', link: `jexl-syntax.md` },
+          ]
         },
       ]
     },
