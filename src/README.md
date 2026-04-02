@@ -7,7 +7,7 @@ This folder contains Playwright tests for the survey habits application. These t
 - in accessibledata root:
   - `pnpm survey:start:playwright-a11y:signed-in`
   - `pnpm survey:start:playwright:signed-in`
-- in program-user-guide root: `npm test`
+- in documentation root: `npm test`
 
 ### User type
 

@@ -1,5 +1,5 @@
 import { defineAdditionalConfig } from 'vitepress'
-import { getNav as getRootNav } from '../../.vitepress/getNav.js'
+import { getNav as getRootNav } from '../../../.vitepress/getNav.js'
 
 const root = '/app/survey'
 

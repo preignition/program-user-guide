@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
-    "docs:dev": "vitepress dev docs",
+    "docs:dev": "vitepress dev",
     "docs:check": "markdownlint-cli2 docs/**/*.md \"#node_modules\"",
     "docs:fix": "markdownlint-cli2 docs/**/*.md --fix \"#node_modules\"",
     "docs:build": "vitepress build docs",
@@ -30,6 +30,6 @@
     "@lit-app/cmp": "link:../accessibleData/lit-app/cmp",
     "lit": "^3.3.2",
     "lite-youtube-embed": "^0.3.4",
-    "vitepress": "2.0.0-alpha.16"
+    "vitepress": "2.0.0-alpha.17"
   }
 }

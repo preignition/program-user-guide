@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "a11y-docs",
-    "public": "docs/.vitepress/dist",
+    "public": ".vitepress/dist",
     "cleanUrls": true,
     "ignore": []
   }
