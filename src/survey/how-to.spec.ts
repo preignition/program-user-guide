@@ -535,7 +535,7 @@ test.describe('How-To', async () => {
 
   })
 
-  test('How to share logical expressions accross multiple items', async ({ page }) => {
+  test('How to share logical expressions across multiple items', async ({ page }) => {
     const context = new Context(mainPath, page)
     context.setName('sharing-logical-expressions')
     await initializePage(page, a11yBaseUrl, `/s/edit/survey/${testSurveyId}/build/compose`)
