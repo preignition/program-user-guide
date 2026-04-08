@@ -8,8 +8,8 @@
     "docs:dev": "vitepress dev",
     "docs:check": "markdownlint-cli2 docs/**/*.md \"#node_modules\"",
     "docs:fix": "markdownlint-cli2 docs/**/*.md --fix \"#node_modules\"",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
     "docs:deploy": "pnpm docs:build && firebase deploy --only hosting:a11y-docs"
   },
   "keywords": [],

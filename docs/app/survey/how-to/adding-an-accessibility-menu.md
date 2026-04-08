@@ -32,11 +32,9 @@ It is intelligent, in that it will only show the accessibility options that you 
 
 This short video show you how you can add an accessibility menu to a survey's 'Landing Page';
 
-```html
 <lite-youtube videoid="jBdiUyD_dek"></lite-youtube>
-```
 
-## Step 4&#x20;
+## Step 4
 
 Alternatively, you can add an accessibility menu as the first page of your survey by following these instructions.
 
@@ -49,11 +47,3 @@ Copy and paste the accessibility menu into the free text field.
 ```html
 <a11y-menu context="survey"></a11y-menu>
 ```
-
-## Step 4
-
-If you have included an accessibility menu in your form, be careful if you auto translate the form.
-
-The auto translate will translate the word "survey" in the code, and the menu will not render properly when that language is activated.
-
-You will need to manually correct the code in the translated version of the Form.&#x20;
