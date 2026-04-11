@@ -70,6 +70,7 @@ Generating links, managing survey batches, configuring respondent accounts, and 
 - [How to use survey batches](./using-batches.md) - *in progress*
 - [How to configure redirection after completing survey](./redirection-after-completing-survey.md) - *in progress*
 - [How to manage survey terms](./survey-terms.md) - *in progress*
+- [How to fill-in surveys on behalf of other respondents](./filling-in-surveys-on-behalf-of-others.md) - *in progress*
 
 ## 5. Analytics & Export
 

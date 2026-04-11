@@ -93,6 +93,7 @@ function getSidebar() {
             { text: 'Use survey batches', link: `using-batches.md` },
             { text: 'Redirect respondents after completing a survey', link: `redirection-after-completing-survey.md` },
             { text: 'Set survey terms', link: `survey-terms.md` },
+            { text: 'Fill in surveys on behalf of other respondents', link: `filling-in-surveys-on-behalf-of-others.md` },
           ]
         },
         {
