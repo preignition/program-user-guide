@@ -107,11 +107,11 @@ Once translation is complete, you can import the file back into Accessible Surve
       <figcaption>Select language for import</figcaption>
     </figure>
 
-1. Review the details in the import dialogue and confirm the action to update your survey with the translated text.
+1. Review the details in the import dialog and confirm the action to update your survey with the translated text.
 
     <figure>
       <img src="./assets/import-export-translate-forms/step-3-import-survey-dialog.png" alt="Confirm the import survey dialog">
-      <figcaption>Confirm the import survey dialogue</figcaption>
+      <figcaption>Confirm the import survey dialog</figcaption>
     </figure>
 
 Your survey form is now updated with the translated content.
