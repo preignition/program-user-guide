@@ -103,7 +103,7 @@ export class Context implements ContextT {
 
 
   async screenshot(advanced?: boolean) {
-    const name = this.name
+    const name = this.name ? this.name + '-' : ''
     const advancedModeSwitch = (await this.page.getByRole('switch', { name: 'toggle advanced mode' }).isVisible())
       ? this.page.getByRole('switch', { name: 'toggle advanced mode' })
       : undefined
@@ -118,15 +118,15 @@ export class Context implements ContextT {
     await Promise.all(
 
       [this.page.screenshot({
-        path: `${this.path}/assets/${name}-auto.png`,
+        path: `${this.path}/assets/${name}auto.png`,
       }),
       pageIsLargerThanViewport &&
       this.page.screenshot({
-        path: `${this.path}/assets/${name}-full-auto.png`,
+        path: `${this.path}/assets/${name}full-auto.png`,
         fullPage: true,
       }),
       this.area.map(a => this.page.screenshot({
-        path: `${this.path}/assets/${name}-${a.name}-auto.png`,
+        path: `${this.path}/assets/${name}${a.name}-auto.png`,
         clip: a.clip,
       }))
       ]
@@ -142,17 +142,17 @@ export class Context implements ContextT {
       await Promise.all(
 
         [this.page.screenshot({
-          path: `${this.path}/assets/${name}-advanced-auto.png`,
+          path: `${this.path}/assets/${name}advanced-auto.png`,
         }),
         pageIsLargerThanViewport &&
         this.page.screenshot({
-          path: `${this.path}/assets/${name}-advanced-full-auto.png`,
+          path: `${this.path}/assets/${name}advanced-full-auto.png`,
           fullPage: true,
         }),
         this.area
           .filter(a => a.advanced === true)
           .map(a => this.page.screenshot({
-            path: `${this.path}/assets/${name}-${a.name}-advanced-auto.png`,
+            path: `${this.path}/assets/${name}${a.name}-advanced-auto.png`,
             clip: a.clip,
           }))
         ]

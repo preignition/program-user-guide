@@ -1,4 +1,4 @@
-import { test } from '@playwright/test'
+import { Locator, test } from '@playwright/test'
 import { Context } from '../Context.ts'
 import { ClipT } from '../types.ts'
 import { initializePage } from '../utils/initializePage.ts'
@@ -10,7 +10,7 @@ const surveyId = '3BBFzJneqakYoyDu02c2'
 
 const suffix = `s/edit/survey/${surveyId}/build/compose/survey/intro`
 const referenceRoot = 'docs/app/survey/reference'
-
+let locator: Locator
 
 test.describe('Survey Builder Navigation and Screenshots', () => {
 
@@ -274,8 +274,9 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
   test('Share', async ({ page }) => {
     const context = new Context(referenceRoot, page)
     await initializePage(page, baseUrl, suffix)
-
+    await page.waitForTimeout(2000)
     // SHARE
+
     await page.getByRole('link', { name: 'share' }).click()
     console.info(`Capturing share`)
     await context
@@ -360,9 +361,18 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     console.info(`Capturing import/export`)
     await context
       .setPath('../import-export')
-      .setName('import-export')
+      .setName('')
       .screenshot(true)
 
+    await page.getByRole('button', { name: 'Export Survey Definition' }).click()
+    locator = page.getByRole('dialog', { name: 'Export the Survey' })
+    await context.annotatedScreenshot(locator, 'export-survey')
+    await page.getByRole('button', { name: 'Cancel' }).click()
+
+    await page.getByRole('button', { name: 'Import Survey Definition' }).click()
+    locator = page.getByRole('dialog', { name: 'Import the Survey' })
+    await context.annotatedScreenshot(locator, 'import-survey')
+    await page.getByRole('button', { name: 'Cancel' }).click()
 
     // TERMS
     await page.locator('#list').getByText('Terms', { exact: true, }).click()
