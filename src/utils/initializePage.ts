@@ -1,4 +1,5 @@
 import { Page } from "@playwright/test"
+import { pushState } from "./historyState.ts"
 
 /**
  * Initializes the page by setting the viewport, navigating to the root URL, and then to the specified path.
@@ -8,7 +9,7 @@ export async function initializePage(page: Page, root: string, path?: string) {
   await page.setViewportSize({ width: 1600, height: 1080 })
   await page.goto(`${root}`)
   await page.waitForTimeout(1000)
-  await page.goto(`${root}/${path || ''}`)
+  await pushState(page, path || '')
   await page.waitForTimeout(1000)
 
 } 

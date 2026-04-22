@@ -1,22 +1,21 @@
 import { test } from '@playwright/test'
 import { Context } from '../Context.ts'
 import { ClipT } from '../types.ts'
+import { initializePage } from '../utils/initializePage.ts'
 import { takeScreenshotAllModes } from '../utils/takeScreenshotAllModes.ts'
-
 
 const port = process.env.PLAYWRIGHT_PORT || '7174'
 const baseUrl = `http://localhost:${port}`
 const surveyId = '3BBFzJneqakYoyDu02c2'
 
 const suffix = `s/edit/survey/${surveyId}/build/compose/survey/intro`
-
+const referenceRoot = 'app/survey/reference'
 
 
 test.describe('Survey Builder Navigation and Screenshots', () => {
 
-  test('survey', async ({ page }) => {
-    const context = new Context('app/survey/reference', page)
-    context.setPage(page)
+  test('Create Survey', async ({ page }) => {
+    const context = new Context(referenceRoot, page)
     await page.setViewportSize({ width: 1600, height: 1080 })
     await page.goto(baseUrl)
     await page.waitForTimeout(2000)
@@ -60,17 +59,10 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
 
     context.removeArea('dialog')
     await page.getByRole('button', { name: 'Summary' }).press('Escape')
-
-
-    await page.getByText('Survey Habits and Experience').first().click()
-    await page.waitForTimeout(500)
-    await page.getByRole('button', { name: 'Edit' }).click()
-    await page.waitForTimeout(500)
-    await page.getByText('Compose').click()
-    // we need some time here let authentication settle
-    // another wait to ensure everything is loaded
-    await page.waitForTimeout(100)
-
+  })
+  test('Build', async ({ page }) => {
+    const context = new Context(referenceRoot, page)
+    await initializePage(page, baseUrl, suffix)
 
     // APP
     await context
@@ -276,11 +268,17 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
     await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck()
     await page.waitForTimeout(50)
 
+  })
+
+  test('Share', async ({ page }) => {
+    const context = new Context(referenceRoot, page)
+    await initializePage(page, baseUrl, suffix)
+
     // SHARE
     await page.getByRole('link', { name: 'share' }).click()
     console.info(`Capturing share`)
     await context
-      .setPath('../share')
+      .setPath('share')
       .setName('share')
       .screenshot(true)
 
@@ -356,6 +354,14 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
       .setName('webhook')
       .screenshot(true)
 
+    // IMPORT/EXPORT
+    await page.getByText('Import/Export').first().click()
+    console.info(`Capturing import/export`)
+    await context
+      .setPath('../import-export')
+      .setName('import-export')
+      .screenshot(true)
+
 
     // TERMS
     await page.locator('#list').getByText('Terms', { exact: true, }).click()
@@ -369,8 +375,6 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
 
     await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck()
     await page.waitForTimeout(50)
-
-
 
 
   })
