@@ -57,7 +57,7 @@ Adding multilingual support to your survey, translating forms, and using import/
 
 - [How to create a multilingual survey](./creating-a-multilingual-survey.md) - *in progress*
 - [How to translate forms](./translate-forms.md) - *in progress*
-- [How to use import/export to translate forms](./using-import-export-to-translate-forms.md) - *in progress*
+- [How to use import/export to translate forms](./using-import-export-to-translate-forms.md)
 
 ---
 

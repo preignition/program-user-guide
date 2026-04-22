@@ -648,9 +648,55 @@ test.describe('How-To', async () => {
 
     // ### Step 4: Review Sign Language Videos
 
+
+
     return
   })
 
+  test('How to use import/export to translate forms', async ({ page }) => {
+    const context = new Context(mainPath, page)
+    context.setName('import-export-translate-forms')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/share/import-export`)
+
+    // ## Step 1: Export the form in a format that can be translated (e.g. Excel, CSV, etc.)
+    locator = page.getByRole('button', { name: 'Export Survey Definition' })
+    await context.annotatedScreenshot(locator, 'step-1-export-survey-definition')
+    await locator.click()
+
+    locator = page.getByText('arabic', { exact: true })
+    await context.annotatedScreenshot(locator, 'step-1-select-language-for-export')
+    await locator.click()
+
+    locator = page.getByRole('button', { name: 'Create the Export' })
+    await context.annotatedScreenshot(locator, 'step-1-create-export')
+    // await locator.click() // we do not create the export but close the dialog instead
+    await page.getByRole('button', { name: 'Cancel' }).click()
+
+    // ## Step 2: Translate the form in the exported file
+    locator = page.getByTestId('grid for export')
+    await context.annotatedScreenshot(locator, 'step-2-translated-file')
+
+    // ## Step 3: Import the translated file back to the platform and map the translated fields with the original fields to update the form with the translated text
+
+    locator = page.getByRole('button', { name: 'Import Survey Definition' })
+    await context.annotatedScreenshot(locator, 'step-3-import-translated-form')
+    await locator.click()
+
+    locator = page.getByRole('button', { name: 'Upload File...' })
+    await context.annotatedScreenshot(locator, 'step-3-upload-translated-file')
+
+    locator = page.getByText('arabic', { exact: true })
+    await context.annotatedScreenshot(locator, 'step-3-select-language-for-import')
+    await locator.click()
+
+    locator = page.getByRole('dialog', { name: 'Import the Survey' })
+    await context.annotatedScreenshot(locator, 'step-3-import-survey-dialog')
+
+    // we do not click on the button to avoid importing a file in the test, but in a real test, we would click and then upload a translated file
+    // await locator.click()
+    return
+
+  })
 
 
 
