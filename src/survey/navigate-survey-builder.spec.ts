@@ -9,7 +9,7 @@ const baseUrl = `http://localhost:${port}`
 const surveyId = '3BBFzJneqakYoyDu02c2'
 
 const suffix = `s/edit/survey/${surveyId}/build/compose/survey/intro`
-const referenceRoot = 'app/survey/reference'
+const referenceRoot = 'docs/app/survey/reference'
 
 
 test.describe('Survey Builder Navigation and Screenshots', () => {
@@ -63,6 +63,7 @@ test.describe('Survey Builder Navigation and Screenshots', () => {
   test('Build', async ({ page }) => {
     const context = new Context(referenceRoot, page)
     await initializePage(page, baseUrl, suffix)
+    await page.waitForTimeout(2000)
 
     // APP
     await context

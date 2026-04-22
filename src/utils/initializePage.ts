@@ -8,8 +8,7 @@ import { pushState } from "./historyState.ts"
 export async function initializePage(page: Page, root: string, path?: string) {
   await page.setViewportSize({ width: 1600, height: 1080 })
   await page.goto(`${root}`)
-  await page.waitForTimeout(1000)
+  await page.waitForTimeout(2000) // we need some time to sign in
   await pushState(page, path || '')
-  await page.waitForTimeout(1000)
 
 } 
