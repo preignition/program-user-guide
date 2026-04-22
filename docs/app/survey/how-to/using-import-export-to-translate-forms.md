@@ -34,16 +34,53 @@ First, export your existing survey form to generate a file containing all transl
 
 ## Step 2: Translate the content
 
-Open the exported JSON file and translate the form's text (such as titles, questions, and option labels) into the chosen target language.
+The exported file is in JSON format. You can edit this file to provide translations using either a plain text editor or an online JSON editor.
 
 <figure>
   <img src="./assets/import-export-translate-forms/step-2-translated-file.png" alt="Translating the exported file">
   <figcaption>Example of a translated file</figcaption>
 </figure>
 
-::: info
-Ensure you preserve the file structure and only edit the translatable text strings, or the import might fail.
+### Editing with a Text Editor
+
+You can use standard code or text editors (like VS Code, Notepad++, or Sublime Text). When editing, locate the translatable fields and update the target text string.
+
+**Example Snippet:**
+
+```json
+{
+  "type": "question",
+  "label": {
+    "source": "What is your primary language?",
+    "target": "ما هي لغتك الأم؟"
+  }
+}
+```
+
+::: warning
+Only edit the translated text (e.g., the `target` value). Do not alter the `id`, `type`, `source` text, or the JSON formatting (quotes, commas, brackets). Modifying the structure will cause the import to fail.
 :::
+
+### Editing with an Online Editor
+
+If you prefer a visual interface, you can use tools like [JSON Editor Online](https://jsoneditoronline.org/) or dedicated localization platforms that support JSON. These tools format the code into a readable tree structure, reducing the risk of accidental syntax errors (like deleting a necessary comma).
+
+### Structure of the Exported File
+
+To help you navigate and translate the file effectively, here is an overview of the exported JSON structure.
+
+The root of the file is divided into two main parts:
+
+- **`survey`**: Contains global survey translations, such as the overall survey `heading` and global `text` elements.
+- **`form`**: Contains the hierarchical structure of your questionnaire.
+
+The **`form`** structure strictly follows the builder layout:
+
+1. **Pages** (`"type": "page"`): The highest level. Contains fields like `heading`, `subHeading`, and `shortHeading`.
+2. **Sections** (`"type": "section"`): Found within pages. Contains a `heading`.
+3. **Questions** (`"type": "question"`): Found within sections. Contains detailed fields like `label`, `supportingText`, `placeholder`, `prefixText`, `suffixText`, `errorMessage`, and `alt` text.
+4. **Options** (`"type": "option"`): Found within multiple-choice questions. Contains a `label` and `specifyLabel` (if an "Other" text input is allowed).
+5. **Texts** (`"type": "text"`): Standalone descriptive text blocks found within pages or sections. Contains a `content` field.
 
 ## Step 3: Import the translated form
 
