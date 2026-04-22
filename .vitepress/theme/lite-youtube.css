@@ -17,7 +17,7 @@ lapp-youtube::before {
   display: block;
   position: absolute;
   top: 0;
-  background-image: linear-gradient(rgba(var(--color-primary-rgb), 0.25), transparent);
+  background-image: linear-gradient(lch(from var(--color-primary) l c h / 0.55), transparent);
   background-repeat: repeat-x;
   background-position: top;
   height: 99px;
