@@ -27,6 +27,7 @@ Topics that explain the underlying architecture of the platform, including:
 - **[Understanding Form Logic](./understanding-form-logic.md):** A deeper dive into how the platform's logic engine evaluates mathematical expressions and ternary operators to create dynamic surveys.
 - **[Test and Production Survey Links](./test-and-production-survey-links.md):** Why we have separate links for testing and production surveys and what are the differences.
 - **[The Role of Batches](./the-role-of-batches.md):** Why temporal grouping is a fundamental architectural decision for longitudinal survey analysis.
+- **[What is JSON?](./what-is-json.md):** Why we use the JSON data format for structural exports and localization, instead of tabular formats like CSV.
 - **[Respondent accounts](./survey-respondent-accounts.md):** How respondent accounts are managed and their role in the survey process.
 - **[Using Survey Batches](./using-survey-batches.md):** The conceptual lifecycle of a survey batch and how it supports temporal data collection.
 
