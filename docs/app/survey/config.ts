@@ -205,6 +205,8 @@ function getSidebar() {
           ]
         }, {
           text: 'Data Privacy, security and Ethics', collapsed: true, items: [
+            { text: 'Authentication and Identity', link: `authentication.md` },
+            { text: 'Authorization and Security Rules', link: `authorization.md` },
             { text: 'Data Privacy and Security', link: `data-privacy-and-security.md` },
           ]
         }

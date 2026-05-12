@@ -38,6 +38,8 @@ Content that helps you understand how to create high-quality surveys, including:
 - **[How to choose the right question type](./choosing-the-right-question-type.md)**
 - **[Using Markdown](./using-markdown.md):** Why Accessible Surveys uses Markdown for rich text formatting and its benefits for accessibility.
 
-## Data Privacy, security and Ethics
+## Data Privacy, Security and Ethics
 
+- **[Authentication and Identity](./authentication.md):** An explanation of how authentication is implemented and managed across the platform.
+- **[Authorization and Security Rules](./authorization.md):** An explanation of how Firebase Security Rules protect survey configurations and respondent data.
 - **[Data Privacy and Security](./data-privacy-and-security.md):** The conceptual framework behind how we handle anonymized datasets, verified accounts, and data export responsibilities.
