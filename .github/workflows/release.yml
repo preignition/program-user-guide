@@ -33,73 +33,88 @@ jobs:
             echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
           fi
 
-      - name: Generate Changelog
-        id: generate_changelog
-        uses: mikepenz/release-changelog-builder-action@v4
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          configuration: |
-            {
-              "template": "#{{CHANGELOG}}\n\n## Uncategorized\n#{{UNCATEGORIZED}}",
-              "pr_template": "- #{{TITLE}} (#{{NUMBER}})",
-              "categories": [
-                { "title": "## 🚀 Features", "labels": ["enhancement", "feature"] },
-                { "title": "## 🐛 Fixes", "labels": ["bug", "fix"] },
-                { "title": "## 📝 Documentation", "labels": ["documentation", "docs"] }
-              ]
-            }
+      - name: Get Commits Since Last Tag
+        id: get_commits
+        run: |
+          # Use Python to safely get commit messages and write multiline env vars
+          python3 -c "
+          import subprocess, os, secrets
+          try:
+              prev = subprocess.check_output(['git', 'describe', '--tags', '--abbrev=0', 'HEAD^'], stderr=subprocess.DEVNULL).decode('utf-8').strip()
+              commits = subprocess.check_output(['git', 'log', prev + '..HEAD', '--pretty=format:- %s (%h)']).decode('utf-8')
+          except:
+              commits = subprocess.check_output(['git', 'log', '--pretty=format:- %s (%h)']).decode('utf-8')
+          
+          eof = secrets.token_hex(16)
+          with open(os.environ['GITHUB_ENV'], 'a') as f:
+              f.write(f'RAW_COMMITS<<{eof}\n{commits}\n{eof}\n')
+          "
 
-      - name: Summarize Changes with Gemini
+      - name: Generate Release Notes with Gemini
         id: ai_summary
-        if: success()
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          CHANGELOG: ${{ steps.generate_changelog.outputs.changelog }}
         run: |
           if [ -z "$GEMINI_API_KEY" ]; then
-            echo "summary=" >> $GITHUB_OUTPUT
+            python3 -c "
+            import os, secrets
+            eof = secrets.token_hex(16)
+            commits = os.environ.get('RAW_COMMITS', '')
+            with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                f.write(f'release_notes<<{eof}\n{commits}\n{eof}\n')
+            "
             exit 0
           fi
           
-          # Prepare the prompt and send to Gemini
-          # We use python here for robust JSON handling
-          python3 - <<'PY_EOF'
-          import os, json, http.client
+          python3 -c "
+          import os, json, http.client, secrets
           
           api_key = os.environ.get('GEMINI_API_KEY')
-          changelog = os.environ.get('CHANGELOG', '')
+          commits = os.environ.get('RAW_COMMITS', '')
           
-          prompt = f"Please provide a concise, high-level summary of the following documentation changes for a release. Focus on what is new or improved for the user. Output in Markdown format.\n\n{changelog}"
+          prompt = f'''You are a technical writer generating release notes. 
+          Below are the raw git commit messages since the last release.
+          Please generate a well-formatted Markdown release note.
           
-          conn = http.client.HTTPSConnection("generativelanguage.googleapis.com")
-          payload = json.dumps({"contents": [{"parts": [{"text": prompt}]}]})
+          Requirements:
+          1. Start with a brief, exciting high-level summary of what is new.
+          2. Provide a categorized list of the changes (e.g., 🚀 Features, 🐛 Fixes, 📝 Documentation) based on the commit messages.
+          3. Output ONLY the raw markdown content. Do not wrap it in markdown code blocks.
+
+          Commits:
+          {commits}'''
+          
+          conn = http.client.HTTPSConnection('generativelanguage.googleapis.com')
+          payload = json.dumps({'contents': [{'parts': [{'text': prompt}]}]})
           headers = {'Content-Type': 'application/json'}
           
-          conn.request("POST", f"/v1beta/models/gemini-3-flash:generateContent?key={api_key}", payload, headers)
+          conn.request('POST', f'/v1beta/models/gemini-3-flash:generateContent?key={api_key}', payload, headers)
           res = conn.getresponse()
-          data = res.read().decode("utf-8")
+          data = res.read().decode('utf-8')
+          
+          output_file = os.environ['GITHUB_OUTPUT']
+          eof = secrets.token_hex(16)
           
           try:
               result = json.loads(data)
-              summary = result['candidates'][0]['content']['parts'][0]['text']
-              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
-                  f.write('summary<<EOF\n### 🪄 AI Summary\n' + summary + '\nEOF\n')
+              notes = result['candidates'][0]['content']['parts'][0]['text']
+              if notes.startswith('```markdown'): notes = notes[11:]
+              elif notes.startswith('```'): notes = notes[3:]
+              if notes.endswith('```'): notes = notes[:-3]
+              notes = notes.strip()
+              with open(output_file, 'a') as f:
+                  f.write(f'release_notes<<{eof}\n{notes}\n{eof}\n')
           except Exception as e:
-              print(f"Error: {e}")
-              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
-                  f.write('summary=\n')
-          PY_EOF
+              with open(output_file, 'a') as f:
+                  f.write(f'release_notes<<{eof}\n{commits}\n{eof}\n')
+          "
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.VERSION }}
           name: Release ${{ env.VERSION }}
-          body: |
-            ${{ steps.ai_summary.outputs.summary }}
-            
-            ${{ steps.generate_changelog.outputs.changelog }}
+          body: ${{ steps.ai_summary.outputs.release_notes }}
           draft: false
           prerelease: false
         env:
