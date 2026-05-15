@@ -212,7 +212,7 @@ function getSidebar() {
         }, {
           text: 'Useful web-related or technical concepts', collapsed: true, items: [
             { text: 'What is JSON?', link: `what-is-json.md` },
-            { text: 'Understanding CSS Units', link: `understanding-css-units.md` },
+            { text: 'Understanding CSS Units', link: `understanding-css-units.md` }]
         }
 
       ]
