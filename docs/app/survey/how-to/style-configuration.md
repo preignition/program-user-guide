@@ -31,6 +31,8 @@ Tokens for Page, Section, and Field spacing (such as Padding Inline or Margin Bl
 * rem or em (Relative to font size - e.g., 1.5rem)
 * % (Percentages - e.g., 100%)
 
+For a deeper understanding of how these units work and which to choose, read our [Explanation of CSS Units](../explanation/understanding-css-units.md).
+
 ### Typography Tokens
 Font size tokens (such as Input Font Size or Label Font Size) are strictly used to adjust the scale of text elements. 
 

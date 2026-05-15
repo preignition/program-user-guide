@@ -27,7 +27,6 @@ Topics that explain the underlying architecture of the platform, including:
 - **[Understanding Form Logic](./understanding-form-logic.md):** A deeper dive into how the platform's logic engine evaluates mathematical expressions and ternary operators to create dynamic surveys.
 - **[Test and Production Survey Links](./test-and-production-survey-links.md):** Why we have separate links for testing and production surveys and what are the differences.
 - **[The Role of Batches](./the-role-of-batches.md):** Why temporal grouping is a fundamental architectural decision for longitudinal survey analysis.
-- **[What is JSON?](./what-is-json.md):** Why we use the JSON data format for structural exports and localization, instead of tabular formats like CSV.
 - **[Respondent accounts](./survey-respondent-accounts.md):** How respondent accounts are managed and their role in the survey process.
 - **[Using Survey Batches](./using-survey-batches.md):** The conceptual lifecycle of a survey batch and how it supports temporal data collection.
 
@@ -43,3 +42,8 @@ Content that helps you understand how to create high-quality surveys, including:
 - **[Authentication and Identity](./authentication.md):** An explanation of how authentication is implemented and managed across the platform.
 - **[Authorization and Security Rules](./authorization.md):** An explanation of how Firebase Security Rules protect survey configurations and respondent data.
 - **[Data Privacy and Security](./data-privacy-and-security.md):** The conceptual framework behind how we handle anonymized datasets, verified accounts, and data export responsibilities.
+
+## Useful web-related or technical concepts
+
+- **[What is JSON?](./what-is-json.md):** Why we use the JSON data format for structural exports and localization, instead of tabular formats like CSV.
+- **[Understanding CSS Units](./understanding-css-units.md):** An explanation of the different CSS units available for styling tokens and how they affect responsive design and accessibility.

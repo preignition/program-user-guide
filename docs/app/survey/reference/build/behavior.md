@@ -56,7 +56,7 @@ The Style tab provides a token-based design system to fine-tune the survey's lay
 
 ### Available Style Tokens
 
-The following layout and typography tokens can be configured. Size tokens accept standard CSS units (px, em, rem, %). Typography (font size) tokens strictly require the rem unit.
+The following layout and typography tokens can be configured. Size tokens accept standard CSS units (px, em, rem, %). For an in-depth look at how these behave, see [Understanding CSS Units](../../explanation/understanding-css-units.md). Typography (font size) tokens strictly require the rem unit.
 
 #### Form Tokens
 

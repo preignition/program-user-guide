@@ -209,7 +209,12 @@ function getSidebar() {
             { text: 'Authorization and Security Rules', link: `authorization.md` },
             { text: 'Data Privacy and Security', link: `data-privacy-and-security.md` },
           ]
+        }, {
+          text: 'Useful web-related or technical concepts', collapsed: true, items: [
+            { text: 'What is JSON?', link: `what-is-json.md` },
+            { text: 'Understanding CSS Units', link: `understanding-css-units.md` },
         }
+
       ]
     }
   ]
