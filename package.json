@@ -10,7 +10,7 @@
     "docs:fix": "markdownlint-cli2 docs/**/*.md --fix \"#node_modules\"",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "docs:deploy": "pnpm docs:build && firebase deploy --only hosting:a11y-docs"
+    "docs:deploy": "pnpm docs:build && firebase deploy --only hosting:a11y-docs && git tag deploy-$(date +%Y%m%d%H%M%S) && git push origin --tags"
   },
   "keywords": [],
   "author": "",
