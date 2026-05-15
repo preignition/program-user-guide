@@ -3,12 +3,12 @@ name: Create GitHub Release
 on:
   push:
     tags:
-      - 'v*'
-      - 'deploy-*'
+      - "v*"
+      - "deploy-*"
   workflow_dispatch:
     inputs:
       version:
-        description: 'Version number (e.g. v1.0.0)'
+        description: "Version number (e.g. v1.0.0)"
         required: true
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -36,78 +36,87 @@ jobs:
       - name: Get Commits Since Last Tag
         id: get_commits
         run: |
-          # Use Python to safely get commit messages and write multiline env vars
-          python3 -c "
+          cat <<'PY_SCRIPT' > get_commits.py
           import subprocess, os, secrets
           try:
               prev = subprocess.check_output(['git', 'describe', '--tags', '--abbrev=0', 'HEAD^'], stderr=subprocess.DEVNULL).decode('utf-8').strip()
               commits = subprocess.check_output(['git', 'log', prev + '..HEAD', '--pretty=format:- %s (%h)']).decode('utf-8')
           except:
               commits = subprocess.check_output(['git', 'log', '--pretty=format:- %s (%h)']).decode('utf-8')
-          
+
           eof = secrets.token_hex(16)
           with open(os.environ['GITHUB_ENV'], 'a') as f:
               f.write(f'RAW_COMMITS<<{eof}\n{commits}\n{eof}\n')
-          "
+          PY_SCRIPT
+          python3 get_commits.py
 
       - name: Generate Release Notes with Gemini
         id: ai_summary
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          if [ -z "$GEMINI_API_KEY" ]; then
-            python3 -c "
-            import os, secrets
-            eof = secrets.token_hex(16)
-            commits = os.environ.get('RAW_COMMITS', '')
-            with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
-                f.write(f'release_notes<<{eof}\n{commits}\n{eof}\n')
-            "
-            exit 0
-          fi
-          
-          python3 -c "
-          import os, json, http.client, secrets
-          
+          cat <<'PY_SCRIPT' > generate_notes.py
+          import os, json, http.client, secrets, sys
+
           api_key = os.environ.get('GEMINI_API_KEY')
           commits = os.environ.get('RAW_COMMITS', '')
-          
-          prompt = f'''You are a technical writer generating release notes. 
+          output_file = os.environ['GITHUB_OUTPUT']
+          eof = secrets.token_hex(16)
+
+          if not api_key:
+              with open(output_file, 'a') as f:
+                  f.write(f'release_notes<<{eof}\n{commits}\n{eof}\n')
+              sys.exit(0)
+
+          prompt = f"""You are a technical writer generating release notes. 
           Below are the raw git commit messages since the last release.
           Please generate a well-formatted Markdown release note.
-          
+
           Requirements:
           1. Start with a brief, exciting high-level summary of what is new.
           2. Provide a categorized list of the changes (e.g., 🚀 Features, 🐛 Fixes, 📝 Documentation) based on the commit messages.
           3. Output ONLY the raw markdown content. Do not wrap it in markdown code blocks.
 
           Commits:
-          {commits}'''
-          
-          conn = http.client.HTTPSConnection('generativelanguage.googleapis.com')
-          payload = json.dumps({'contents': [{'parts': [{'text': prompt}]}]})
-          headers = {'Content-Type': 'application/json'}
-          
-          conn.request('POST', f'/v1beta/models/gemini-3-flash:generateContent?key={api_key}', payload, headers)
-          res = conn.getresponse()
-          data = res.read().decode('utf-8')
-          
-          output_file = os.environ['GITHUB_OUTPUT']
-          eof = secrets.token_hex(16)
-          
+          {commits}"""
+
           try:
+              conn = http.client.HTTPSConnection('generativelanguage.googleapis.com')
+              payload = json.dumps({'contents': [{'parts': [{'text': prompt}]}]})
+              headers = {'Content-Type': 'application/json'}
+              
+              # Log attempt
+              print(f"Calling Gemini API for model: gemini-3-flash-preview")
+              
+              conn.request('POST', f'/v1beta/models/gemini-3-flash-preview:generateContent?key={api_key}', payload, headers)
+              res = conn.getresponse()
+              data = res.read().decode('utf-8')
+              
               result = json.loads(data)
-              notes = result['candidates'][0]['content']['parts'][0]['text']
-              if notes.startswith('```markdown'): notes = notes[11:]
-              elif notes.startswith('```'): notes = notes[3:]
-              if notes.endswith('```'): notes = notes[:-3]
-              notes = notes.strip()
-              with open(output_file, 'a') as f:
-                  f.write(f'release_notes<<{eof}\n{notes}\n{eof}\n')
+              
+              if 'candidates' in result and result['candidates']:
+                  notes = result['candidates'][0]['content']['parts'][0]['text']
+                  
+                  if notes.startswith('```markdown'):
+                      notes = notes[11:]
+                  elif notes.startswith('```'):
+                      notes = notes[3:]
+                  if notes.endswith('```'):
+                      notes = notes[:-3]
+                  notes = notes.strip()
+                  
+                  with open(output_file, 'a') as f:
+                      f.write(f'release_notes<<{eof}\n{notes}\n{eof}\n')
+              else:
+                  print("Full API Response:", json.dumps(result, indent=2))
+                  raise KeyError("'candidates' key missing or empty in API response")
+                  
           except Exception as e:
+              print(f'Error generating release notes: {e}')
               with open(output_file, 'a') as f:
                   f.write(f'release_notes<<{eof}\n{commits}\n{eof}\n')
-          "
+          PY_SCRIPT
+          python3 generate_notes.py
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
