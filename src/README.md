@@ -9,6 +9,8 @@ This folder contains Playwright tests for the survey habits application. These t
   - `pnpm survey:start:playwright:signed-in`
 - in documentation root: `npm test`
 
+**shortcut**: `pnpm survey:start:playwright-a11y:signed-in && pnpm survey:start:playwright:signed-in`
+
 ### User type
 
 We authenticate users while running playwright tests. There are 3 different user types:
