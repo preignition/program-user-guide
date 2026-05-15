@@ -1,3 +1,4 @@
+import { saveScreenshotIfChanged } from "./conditionalScreenshot.ts"
 import { Locator, Page } from '@playwright/test'
 
 type ScreenShotType = {
@@ -66,9 +67,8 @@ export async function takeAnnotatedScreenshot(
   const endX = Math.min(viewportSize.width, box.x + box.width + pX)
   const endY = Math.min(viewportSize.height, box.y + box.height + pY)
 
-  // 3. Take a screenshot cropped to the element + padding
-  await page.screenshot({
-    path: outputPath,
+  // 3. Take a screenshot cropped to the element + padding into a buffer
+  const buffer = await page.screenshot({
     clip: {
       x: startX,
       y: startY,
@@ -76,6 +76,9 @@ export async function takeAnnotatedScreenshot(
       height: endY - startY
     }
   })
+
+  // 4. Save conditionally
+  saveScreenshotIfChanged(outputPath, buffer)
 
   // 4. (Optional) Revert the styling so the test can continue cleanly
   await locator.evaluate((node) => {

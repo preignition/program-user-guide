@@ -1,3 +1,4 @@
+import { saveScreenshotIfChanged } from "./utils/conditionalScreenshot.ts"
 import { Locator, Page } from "@playwright/test"
 import path from "path"
 import { AreaT, ClipT, ContextT, OutlineStyleT } from "./types.ts"
@@ -115,22 +116,12 @@ export class Context implements ContextT {
     await advancedModeSwitch?.uncheck()
     await this.page.waitForTimeout(50)
 
-    await Promise.all(
-
-      [this.page.screenshot({
-        path: `${this.path}/assets/${name}auto.png`,
-      }),
+    await Promise.all([
+      this.page.screenshot().then(b => saveScreenshotIfChanged(`${this.path}/assets/${name}auto.png`, b)),
       pageIsLargerThanViewport &&
-      this.page.screenshot({
-        path: `${this.path}/assets/${name}full-auto.png`,
-        fullPage: true,
-      }),
-      this.area.map(a => this.page.screenshot({
-        path: `${this.path}/assets/${name}${a.name}-auto.png`,
-        clip: a.clip,
-      }))
-      ]
-    )
+      this.page.screenshot({ fullPage: true }).then(b => saveScreenshotIfChanged(`${this.path}/assets/${name}full-auto.png`, b)),
+      ...this.area.map(a => this.page.screenshot({ clip: a.clip }).then(b => saveScreenshotIfChanged(`${this.path}/assets/${name}${a.name}-auto.png`, b)))
+    ])
 
     if (advanced) {
       // click advanced
@@ -139,24 +130,14 @@ export class Context implements ContextT {
       pageIsLargerThanViewport = await this.page.evaluate(() => {
         return document.body.scrollHeight > window.innerHeight || document.body.scrollWidth > window.innerWidth
       })
-      await Promise.all(
-
-        [this.page.screenshot({
-          path: `${this.path}/assets/${name}advanced-auto.png`,
-        }),
+      await Promise.all([
+        this.page.screenshot().then(b => saveScreenshotIfChanged(`${this.path}/assets/${name}advanced-auto.png`, b)),
         pageIsLargerThanViewport &&
-        this.page.screenshot({
-          path: `${this.path}/assets/${name}advanced-full-auto.png`,
-          fullPage: true,
-        }),
-        this.area
+        this.page.screenshot({ fullPage: true }).then(b => saveScreenshotIfChanged(`${this.path}/assets/${name}advanced-full-auto.png`, b)),
+        ...this.area
           .filter(a => a.advanced === true)
-          .map(a => this.page.screenshot({
-            path: `${this.path}/assets/${name}${a.name}-advanced-auto.png`,
-            clip: a.clip,
-          }))
-        ]
-      )
+          .map(a => this.page.screenshot({ clip: a.clip }).then(b => saveScreenshotIfChanged(`${this.path}/assets/${name}${a.name}-advanced-auto.png`, b)))
+      ])
 
     }
     if (isAdvancedMode) {
