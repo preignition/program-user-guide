@@ -50,12 +50,56 @@ jobs:
               ]
             }
 
+      - name: Summarize Changes with Gemini
+        id: ai_summary
+        if: success()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CHANGELOG: ${{ steps.generate_changelog.outputs.changelog }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "summary=" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          # Prepare the prompt and send to Gemini
+          # We use python here for robust JSON handling
+          python3 - <<'PY_EOF'
+          import os, json, http.client
+          
+          api_key = os.environ.get('GEMINI_API_KEY')
+          changelog = os.environ.get('CHANGELOG', '')
+          
+          prompt = f"Please provide a concise, high-level summary of the following documentation changes for a release. Focus on what is new or improved for the user. Output in Markdown format.\n\n{changelog}"
+          
+          conn = http.client.HTTPSConnection("generativelanguage.googleapis.com")
+          payload = json.dumps({"contents": [{"parts": [{"text": prompt}]}]})
+          headers = {'Content-Type': 'application/json'}
+          
+          conn.request("POST", f"/v1beta/models/gemini-3-flash:generateContent?key={api_key}", payload, headers)
+          res = conn.getresponse()
+          data = res.read().decode("utf-8")
+          
+          try:
+              result = json.loads(data)
+              summary = result['candidates'][0]['content']['parts'][0]['text']
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                  f.write('summary<<EOF\n### 🪄 AI Summary\n' + summary + '\nEOF\n')
+          except Exception as e:
+              print(f"Error: {e}")
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+                  f.write('summary=\n')
+          PY_EOF
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ env.VERSION }}
           name: Release ${{ env.VERSION }}
-          body: ${{ steps.generate_changelog.outputs.changelog }}
+          body: |
+            ${{ steps.ai_summary.outputs.summary }}
+            
+            ${{ steps.generate_changelog.outputs.changelog }}
           draft: false
           prerelease: false
         env:
