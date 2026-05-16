@@ -72,7 +72,8 @@ test.describe('Customer App Reference', () => {
     await context.setName('theme-color').screenshot()
     locator = page.locator('.menu.open > .items > .item-padding')
     await page.waitForTimeout(50)
-    await context.annotatedScreenshot(locator, 'theme-color-picker', 30)
+    context.setName('') // do not store under its own folder
+    await context.annotatedScreenshot(locator, 'theme-color-picker', 2)
 
     // storagelocation 
     await pushState(page, 'storage-location')
