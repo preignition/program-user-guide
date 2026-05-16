@@ -8,13 +8,13 @@ const port = process.env.PLAYWRIGHT_PORT || '7174'
 const baseUrl = `http://localhost:${port}`
 const customerId = 'admin'
 const teamId = 'KKofRlUU2yQwyvhCJmPU'
-const referenceRoot = 'docs/app/customer/reference'
+const root = 'docs/app/customer/reference'
 let locator: Locator
 
 test.describe('Customer App Reference', () => {
 
   test('Customer', async ({ page }) => {
-    const context = new Context(referenceRoot, page)
+    const context = new Context(root, page)
     context
       .setPath('customer')
     await initializePage(page, baseUrl, `customer/${customerId}/portal/profile`)
@@ -107,7 +107,7 @@ test.describe('Customer App Reference', () => {
   })
 
   test('Team', async ({ page }) => {
-    const context = new Context(referenceRoot, page)
+    const context = new Context(root, page)
     context
       .setPath('team')
     await initializePage(page, baseUrl, `customer/${teamId}/team/profile`)

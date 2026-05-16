@@ -19,7 +19,7 @@ let surveyId: string = ''
 let formId: string = ''
 let surveyName = 'My New Survey'
 
-test.describe('How-To', async () => {
+test.describe('Survey How-To', async () => {
   // try {
   test('Survey and Form Management', async ({ page }) => {
     const context = new Context(mainPath, page)
