@@ -44,6 +44,19 @@ function getSidebar() {
             { text: 'Apps & Referrals', link: `apps-referrals.md` },
             { text: 'Danger Zone', link: `danger-zone.md` }
           ]
+        },
+        {
+          text: 'Team Settings',
+          collapsed: false,
+          base: `${root}/reference/team/`,
+          items: [
+            { text: 'Profile', link: `profile.md` },
+            { text: 'Presentation', link: `presentation.md` },
+            { text: 'Members', link: `members.md` },
+            { text: 'Communication', link: `communication.md` },
+            { text: 'Channels', link: `channels.md` },
+            { text: 'Danger Zone', link: `danger-zone.md` }
+          ]
         }
       ]
     }
