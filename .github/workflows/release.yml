@@ -73,10 +73,10 @@ jobs:
           Please generate a well-formatted Markdown release note.
 
           Requirements:
-          1. Start with a brief, exciting high-level summary of what is new.
+          1. Start with a brief, high-level summary of what is new.
           2. Provide a categorized list of the changes (e.g., 📝 Documentation, 🚀 Features, 🐛 Fixes ) based on the commit messages. Documentation comes first.
           3. Output ONLY the raw markdown content. Do not wrap it in markdown code blocks.
-          4. Add a link to the full diff of the commits at the end, using the format: [Full Changelog](<URL>)
+          4. Add a link to the full diff of the commits at the end, using the format: [Diff](<URL>), where <URL> is the URL to the GitHub diff view for the commits.
 
           Commits:
           {commits}"""
