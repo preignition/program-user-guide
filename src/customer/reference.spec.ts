@@ -7,7 +7,7 @@ import { initializePage } from '../utils/initializePage.ts'
 const port = process.env.PLAYWRIGHT_PORT || '7174'
 const baseUrl = `http://localhost:${port}`
 const customerId = 'admin'
-const suffix = `customer/${customerId}/portal/profile`
+const teamId = 'KKofRlUU2yQwyvhCJmPU'
 const referenceRoot = 'docs/app/customer/reference'
 let locator: Locator
 
@@ -17,7 +17,7 @@ test.describe('Customer App Reference', () => {
     const context = new Context(referenceRoot, page)
     context
       .setPath('customer')
-    await initializePage(page, baseUrl, suffix)
+    await initializePage(page, baseUrl, `customer/${customerId}/portal/profile`)
     await page.waitForTimeout(1000);
 
     // menu
@@ -103,6 +103,68 @@ test.describe('Customer App Reference', () => {
     //   .setName('danger')
     //   .screenshot()
 
+
+  })
+
+  test('Team', async ({ page }) => {
+    const context = new Context(referenceRoot, page)
+    context
+      .setPath('team')
+    await initializePage(page, baseUrl, `customer/${teamId}/team/profile`)
+    await page.waitForTimeout(1000);
+
+    // menu
+    (await context.addArea('menu', menu)
+      .setName('menu')
+      .screenshot()
+    ).removeArea('menu')
+
+    // add page content
+    context.addArea('content', pageContent)
+
+    //profile
+    await pushState(page, 'profile')
+    await context
+      .setName('profile')
+      .screenshot()
+
+    //presentation
+    await pushState(page, 'presentation')
+    await page.waitForTimeout(1000)
+    await context
+      .setName('presentation')
+      .screenshot()
+
+    //members
+    await pushState(page, 'members')
+    await page.waitForTimeout(2000)
+    await context
+      .setName('members')
+      .screenshot()
+
+    //communication
+    await pushState(page, 'communication')
+    await page.waitForTimeout(1000)
+    await context
+      .setName('communication')
+      .screenshot()
+
+    //channel
+    await pushState(page, 'channel')
+    await page.waitForTimeout(1000)
+    await context
+      .setName('channel')
+      .screenshot()
+
+    //app-settings
+
+
+    //danger
+    await pushState(page, 'danger')
+    await page.waitForTimeout(1000)
+    await context
+      .setName('danger')
+      .screenshot()
 
   })
 
