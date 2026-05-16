@@ -8,7 +8,7 @@ When creating and customizing themes for your surveys, the platform leverages th
 
 ## The HCT Color Space
 
-HCT stands for Hue, Chroma, and Tone. It is a color space designed by Google that combines the perceptually accurate color representation of the CAM16 color appearance model with the lightness mapping of the CIELAB color space.
+HCT stands for Hue, Chroma, and Tone. It is a color space that provides a more accurate representation of colors compared to other color spaces (CAM16 or CIELAB).
 
 - **Hue:** The type of color (e.g., red, blue, green).
 - **Chroma:** The colorfulness or intensity of the color (how neutral or vibrant it is).
