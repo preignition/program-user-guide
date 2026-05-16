@@ -26,6 +26,22 @@ function getSidebar() {
   console.info('getSidebar')
   return [
     {
+      text: 'Explanation',
+      collapsed: false,
+      base: `${root}/explanation/`,
+      items: [
+        { text: 'Color System', link: `color-system.md` }
+      ]
+    },
+    {
+      text: 'How-to',
+      collapsed: false,
+      base: `${root}/how-to/`,
+      items: [
+        { text: 'Create a theme', link: `create-a-theme.md` }
+      ]
+    },
+    {
       text: 'Reference',
       link: `index`,
       base: `${root}/reference/`,
