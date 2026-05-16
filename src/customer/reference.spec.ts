@@ -13,7 +13,7 @@ let locator: Locator
 
 test.describe('Customer App Reference', () => {
 
-  test('customer', async ({ page }) => {
+  test('Customer', async ({ page }) => {
     const context = new Context(referenceRoot, page)
     context
       .setPath('customer')
