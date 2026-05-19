@@ -1,5 +1,6 @@
 import { expect, Locator, test } from '@playwright/test'
 import { Context } from '../Context.ts'
+import { pushState } from '../utils/historyState.ts'
 import { initializeFirebaseApp } from '../utils/initialize'
 import { initializePage } from '../utils/initializePage.ts'
 const db = initializeFirebaseApp().db
@@ -636,6 +637,64 @@ test.describe('Survey How-To', async () => {
   })
 
   test('How to use Easy Read', async ({ page }) => {
+
+    const context = new Context(mainPath, page)
+    context.setName('use-easy-read')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/behavior`)
+
+    // ### Step 1: easyread must be enabled in the survey
+    context.setName('use-easy-read')
+    locator = page.getByRole('listbox', { name: 'Modes Activated' })
+    await context.annotatedScreenshot(locator, 'step-1-easyread-mode-not-activated')
+
+
+    // ### Step 2: Activate easyread mode
+    await pushState(page, 'compose')
+    await page.waitForTimeout(1000)
+    locator = page.getByRole('button', { name: 'Easy Read Mode' })
+    await context.annotatedScreenshot(locator, 'step-2-activate-easyread-mode')
+    await locator.click()
+
+    // ### Step 3: Navigate through the form and add easyread content (e.g. images)  when relevant
+
+    await page.getByText('Survey habits', { exact: true }).click()
+    await page.getByText('Section 1').click()
+    await page.getByText('How many surveys do you run').click()
+    await page.waitForTimeout(2000)
+
+    locator = page.locator('vaadin-split-layout div').filter({ hasText: 'How many surveys do you run in a typical year? Add Media for Easyread Mode' })
+
+    await context.annotatedScreenshot(locator, 'step-3-add-media-for-easyread-mode')
+
+    // items with easyread content have a specific icon in the tree view to easily identify them
+    locator = page.locator('vaadin-split-layout div').filter({ hasText: 'Overall Structure Introduction Page Form Survey habits Section 1 Page 1 intro' })
+    await context.annotatedScreenshot(locator, 'step-3-easyread-content-icon')
+
+    // ### Step 4 (Optional): amend / simplify the text of the questions and answer options to make them easier to understand for people with cognitive disabilities
+    // best practices is to use plain language for all content. 
+
+    locator = page.getByText('sentiment_neutral sentiment_satisfied label label easyread version for "label"')
+    await context.annotatedScreenshot(locator, 'step-4-easyread-version-for-label')
+
+    // ### Step 5 (Optional): make some part of the content visible od hidden only for the easy read mode 
+    // activate the visibility mode
+    locator = page.getByRole('button', { name: 'Visibility Mode' })
+    await context.annotatedScreenshot(locator, 'step-5-activate-visibility-mode')
+    await locator.click()
+
+    // activate the advanced mode
+    locator = page.getByText('toggle advanced mode Advanced')
+    await context.annotatedScreenshot(locator, 'step-5-toggle-advanced-mode')
+    await locator.click()
+
+    // activate the easyread-only visibility for a specific field
+    locator = page.getByText('Make this field visible for')
+    await context.annotatedScreenshot(locator, 'step-5-easyread-only-visibility')
+    await locator.click()
+
+    // mark visible or hidden depending on the mode
+
+
   })
 
   test('How to use Sign Language', async ({ page }) => {

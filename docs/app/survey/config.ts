@@ -70,7 +70,7 @@ function getSidebar() {
           items: [
             { text: 'Add an accessibility menu', link: `adding-an-accessibility-menu.md` },
             { text: 'Activate accessibility modes', link: `activating-accessibility-modes.md` },
-            { text: 'Use Easy Read', link: `easy-read.md` },
+            { text: 'Use Easy Read', link: `use-easy-read.md` },
             { text: 'Use Sign Language', link: `sign-language.md` },
             { text: 'Use tooltips', link: `using-tooltips.md` },
           ]
