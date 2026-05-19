@@ -63,7 +63,7 @@ Sometimes you may want to show or hide specific fields or sections only when the
 
 <figure><img src="./assets/use-easy-read/step-5-toggle-advanced-mode.png" alt="Toggling Advanced Mode"><figcaption>Advanced mode provides granular control over visibility settings.</figcaption></figure>
 
-4. Select **Easy Read** in the "Make this field visible for" list to ensure it only shows in that mode (or unselect it to hide it).
+1. Select **Easy Read** in the "Make this field visible for" list to ensure it only shows in that mode (or unselect it to hide it).
 
 <figure><img src="./assets/use-easy-read/step-5-easyread-only-visibility.png" alt="Easy Read only visibility setting"><figcaption>Configuring a field to be visible only in Easy Read mode.</figcaption></figure>
 

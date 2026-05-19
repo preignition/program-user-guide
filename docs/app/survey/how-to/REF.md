@@ -10,3 +10,13 @@
 
 - [app/app-survey/renderer/mixin/easyread-mixin.ts](../../../../../accessibleData/app/app-survey/renderer/mixin/easyread-mixin.ts): Core logic for handling Easy Read mode in the survey renderer.
 - [packages/pwi-resource/src/edit/question/render-util-mixin-easy.ts](../../../../../accessibleData/packages/pwi-resource/src/edit/question/render-util-mixin-easy.ts): Mixin for rendering Easy Read specific UI elements in the question editor.
+
+## Using Sign Language - use-sign-language
+
+- [app/app-survey/renderer/mixin/signlanguage-mixin.ts](../../../../../accessibleData/app/app-survey/renderer/mixin/signlanguage-mixin.ts): Core logic for rendering sign language videos in the survey.
+- [app/app-survey/src/entity/holder/signlanguage.ts](../../../../../accessibleData/app/app-survey/src/entity/holder/signlanguage.ts): Editor UI for adding sign language videos and managing visibility.
+
+## Using tooltips - use-tooltips
+
+- [lit-app/cmp/tooltip/tooltip.ts](../../../../../accessibleData/lit-app/cmp/tooltip/tooltip.ts): Implementation of the `lapp-tooltip` custom element.
+- [lit-app/cmp/field/md/md-editor.ts](../../../../../accessibleData/lit-app/cmp/field/md/md-editor.ts): Markdown editor configuration where the tooltip formatting is defined.

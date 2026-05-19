@@ -43,11 +43,11 @@ Fundamental tasks for building your survey and forms, including adding questions
 
 Implementing specialized features like Easy Read, Sign Language videos.
 
-- [How to add an accessibility menu](./adding-an-accessibility-menu.md) - *in progress*
+- [How to add an accessibility menu](./adding-an-accessibility-menu.md)
 - [How to activate accessibility modes](./activating-accessibility-modes.md)
-- [How to use Easy Read](./easy-read.md) - *in progress*
-- [How to use Sign Language](./sign-language.md) - *in progress*
-- [How to explain complex terms](./using-tooltips.md) - *in progress*
+- [How to use Easy Read](./use-easy-read.md)
+- [How to use Sign Language](./use-sign-language.md)
+- [How to explain complex terms](./use-tooltips.md)
 
 ---
 
