@@ -576,8 +576,45 @@ test.describe('Survey How-To', async () => {
 
   })
 
-  test('How to add an accessibility menu', async ({ page }) => {
+
+
+
+  test('How to explain complex terms', async ({ page }) => {
   })
+
+
+  /**
+   * Accessibility:
+   */
+  test('How to add an accessibility menu', async ({ page }) => {
+
+    const context = new Context(mainPath, page)
+    context.setName('adding-accessibility-menu')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/compose`)
+
+    // ## Adding accessibility menu
+    context.setName('adding-an-accessibility-menu')
+
+    await page.locator('vaadin-grid-tree-toggle > span:nth-child(2)').first().click()
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'intro 3' }).click()
+
+    // ### Step 1: Focus on mardown editor, for instance in the survey introduction 
+    // add a `<a11y-menu></a11y-menu>` tag in the markdown content to activate the accessibility menu for this item
+
+    await page.waitForTimeout(1000)
+    locator = page.locator('textarea')
+    await context.annotatedScreenshot(locator, 'step-1-focus-on-mardown-editor')
+    await locator.click()
+
+
+    // ### Step 2: Preview how the accessibility menu will look like for the respondents by clicking on the field "Preview" tab
+
+    await page.locator('md-secondary-tab:nth-child(2) > .button > .content').click()
+    locator = page.locator('#markdown')
+    await context.annotatedScreenshot(locator, 'step-2-preview-accessibility-menu')
+
+  })
+
 
   test('How to activate accessibility modes', async ({ page }) => {
 
@@ -604,29 +641,9 @@ test.describe('Survey How-To', async () => {
   test('How to use Sign Language', async ({ page }) => {
   })
 
-  test('How to explain complex terms', async ({ page }) => {
-  })
 
-  test('Accessibility', async ({ page }) => {
-
-    const context = new Context(
-      'app/survey/how-to',
-      page
-    )
-    await page.setViewportSize({ width: 1600, height: 1080 })
-    await page.goto(baseUrl)
-
-    // ## Adding accessibility menu
-    context.setName('adding-an-accessibility-menu')
-
-    // ### Step 1: Click on the accessibility menu button
-
-    // ### Step 2: Click on the "Add Accessibility Menu" option
-
-
-
-    return
-  })
+  //   return
+  // })
 
   test('Localization', async ({ page }) => {
 

@@ -1,49 +1,49 @@
 ---
-description: This guide shows you how to add an accessibility menu to your survey
+description: This guide shows you how to add an accessibility menu to your survey to make accessibility options more prominent for respondents.
 ---
 
 # Adding an accessibility menu
 
-::: tip
-Adding an accessibility menu at the start of your survey helps makes the accessibility options more prominent to survey respondents
-:::
+Adding an accessibility menu at the start of your survey or within specific sections helps make the accessibility options more prominent to survey respondents. While accessibility settings are always available in the top right corner of the screen, a dedicated menu ensures respondents are aware of the available assistance modes (like Easy Read, Sign Language, or Screen Reader optimizations) right from the start.
 
-## Step 1
+## Prerequisites
 
-Accessibility settings can be activitated by survey respondents from the accessibility settings icon which is always available in the top right hand corner of the screen.
+- You must have a survey created and be in the **Compose** mode of the survey builder.
+- You should have already activated the desired accessibility modes in the **Behavior** settings of your survey.
 
-However adding an accessibility menu to your survey can make these options more prominent.&#x20;
+## Steps
 
-## Step 2
+### 1. Focus on a Markdown Editor
 
-The accessibility menu can be added to any feild that supports Markdown.  This includes the 'landing page' or a 'free text' feild within your form.
+In the **Compose** tab, navigate to the field where you want to add the accessibility menu. This is typically done in the **Survey Introduction** or a **Free Text** field.
 
-Simply copy this code to make the menu appear&#x20;
+Click on the text area to focus the markdown editor.
+
+<figure><img src="./assets/adding-an-accessibility-menu/step-1-focus-on-mardown-editor.png" alt="Focusing on the markdown editor in the survey introduction"><figcaption>Focus on the markdown editor to insert the accessibility menu tag.</figcaption></figure>
+
+### 2. Insert the Accessibility Menu Tag
+
+Add the following tag into the markdown content where you want the menu to appear:
 
 ```html
 <a11y-menu context="survey"></a11y-menu>
 ```
 
-The menu allows respondents to activate, deactivate or change accessibility settings directly from the menu.
+> [!TIP]
+> The menu is intelligent: it will only display the accessibility options that you have enabled for your survey in the Behavior settings.
 
-It is intelligent, in that it will only show the accessibility options that you have activated for your survey.
+### 3. Preview the Accessibility Menu
 
-## Step 3
+To verify how the menu will look for your respondents, click on the **Preview** tab of the field.
+
+<figure><img src="./assets/adding-an-accessibility-menu/step-2-preview-accessibility-menu.png" alt="Previewing the accessibility menu"><figcaption>The preview shows how the menu will be displayed to respondents, allowing them to toggle accessibility modes directly.</figcaption></figure>
+
+## Alternative: Adding to the Landing Page
 
 This short video show you how you can add an accessibility menu to a survey's 'Landing Page';
 
 <lite-youtube videoid="jBdiUyD_dek"></lite-youtube>
 
-## Step 4
+## Next Steps
 
-Alternatively, you can add an accessibility menu as the first page of your survey by following these instructions.
-
-Add a new page and section at the beginning of your form.  Give the page a title like 'Accessibility'.  The section should have a name but not a title or sub title&#x20;
-
-Drag and drop to add a new 'free text' question into the section that you have just created.
-
-Copy and paste the accessibility menu into the free text field.
-
-```html
-<a11y-menu context="survey"></a11y-menu>
-```
+Once the menu is added, you can continue to customize your survey. Respondents will now see a clear set of options to tailor the survey experience to their needs.
