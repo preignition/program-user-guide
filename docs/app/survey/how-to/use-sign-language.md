@@ -57,6 +57,15 @@ You can easily identify which items already have sign language content by lookin
   <figcaption>Sign language icon in the survey tree</figcaption>
 </figure>
 
+## Bulk Uploading Sign Language Videos (Import/Export)
+
+If you have many sign language videos to add, you can bulk-edit them using the Survey Definition export/import feature. 
+
+1. Go to the **Distribute** tab and select **Import/Export**.
+2. Click **Export Survey Definition** and select the language you want to export. Click **Create the Export** to download the survey structure in JSON format.
+3. Open the downloaded file and add or update the `videoId` properties for your questions with their corresponding YouTube Video IDs.
+4. Return to the **Import/Export** section, click **Import Survey Definition**, and upload your modified file. The new Video IDs will be mapped back to your questions automatically.
+
 ## Advanced Visibility for Sign Language
 
 In some cases, you might want to show or hide specific content only when the respondent is using the sign language mode.
@@ -79,3 +88,4 @@ In some cases, you might want to show or hide specific content only when the res
   <img src="./assets/use-sign-language/step-4-sign-language-only-visibility.png" alt="Setting Sign Language specific visibility">
   <figcaption>Setting Sign Language specific visibility</figcaption>
 </figure>
+

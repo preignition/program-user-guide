@@ -80,7 +80,7 @@ function getSidebar() {
           items: [
             { text: 'Create a multilingual survey', link: `creating-a-multilingual-survey.md` },
             { text: 'Translate forms', link: `translate-forms.md` },
-            { text: 'Use import/export to translate forms', link: `using-import-export-to-translate-forms.md` },
+            { text: 'Use import/export to translate forms', link: `import-export.md` },
           ]
         },
         {
