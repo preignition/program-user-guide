@@ -6,7 +6,7 @@ export function initializeFirebaseApp() {
   if (!initializeAppCalled) {
     initializeAppCalled = true
 
-    let credential = applicationDefault()
+    const credential = applicationDefault()
     // const serviceAccountKey = process.env.SERVICE_ACCOUNT_KEY;
 
     // if (serviceAccountKey) {

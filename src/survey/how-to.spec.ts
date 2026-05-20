@@ -18,7 +18,7 @@ const suffix = ``
 let surveyId: string = ''
 
 let formId: string = ''
-let surveyName = 'My New Survey'
+const surveyName = 'My New Survey'
 
 test.describe('Survey How-To', async () => {
   // try {

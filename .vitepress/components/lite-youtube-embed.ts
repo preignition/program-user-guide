@@ -158,7 +158,7 @@ export class LiteYTEmbed extends ReactiveElement {
     const paramsObj = Object.fromEntries(this.getParams().entries())
 
     this.playerPromise = new Promise(resolve => {
-      let player = new YT.Player(videoPlaceholderEl, {
+      const player = new YT.Player(videoPlaceholderEl, {
         width: '100%',
         videoId: this.videoId,
         playerVars: paramsObj,
