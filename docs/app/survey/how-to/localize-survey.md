@@ -4,7 +4,7 @@ description: Learn how to make your survey multilingual and leverage holistic AI
 
 # Localizing a Survey
 
-Accessible Surveys makes it easy to offer your survey in multiple languages. You can manually translate content, use bulk import/export for external translation, or leverage our AI-powered translation tool. 
+Accessible Surveys makes it easy to offer your survey in multiple languages. You can manually translate content, use bulk import/export for external translation, or leverage our AI-powered translation tool.
 
 Unlike basic translation features that process questions individually and often lose context, our AI translator evaluates the survey holistically. By seeing the form in its entirety, it ensures consistency in tone and accurate contextual translation across all pages, questions, and options.
 
@@ -36,7 +36,7 @@ To begin translating your survey, you must first enable localization and select 
 Once languages are activated, return to the **Build, organize Content** view.
 
 1. Click the **Localize Mode** button in the top toolbar to switch the editor into translation mode.
-2. Select your target active language (e.g., Arabic) from the dropdown. 
+2. Select your target active language (e.g., Arabic) from the dropdown.
 
 <figure>
   <img src="./assets/localize-survey/step-2-activate-localize-mode.png" alt="Activate Localize Mode">

@@ -59,7 +59,7 @@ You can easily identify which items already have sign language content by lookin
 
 ## Bulk Uploading Sign Language Videos (Import/Export)
 
-If you have many sign language videos to add, you can bulk-edit them using the Survey Definition export/import feature. 
+If you have many sign language videos to add, you can bulk-edit them using the Survey Definition export/import feature.
 
 1. Go to the **Distribute** tab and select **Import/Export**.
 2. Click **Export Survey Definition** and select the language you want to export. Click **Create the Export** to download the survey structure in JSON format.
@@ -88,4 +88,3 @@ In some cases, you might want to show or hide specific content only when the res
   <img src="./assets/use-sign-language/step-4-sign-language-only-visibility.png" alt="Setting Sign Language specific visibility">
   <figcaption>Setting Sign Language specific visibility</figcaption>
 </figure>
-

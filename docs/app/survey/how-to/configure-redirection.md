@@ -39,4 +39,3 @@ This option redirects respondents to a dedicated page outside of the survey itse
 *Note: This feature is currently in development.*
 
 When released, this option will direct signed-in respondents to a personalized workspace where they can view follow-up actions, reports, or invitations to other surveys. Anonymous respondents will be invited to create an account before being directed to this space.
-
