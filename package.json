@@ -19,11 +19,15 @@
   "devDependencies": {
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.5.0",
+    "@types/pixelmatch": "^5.2.6",
+    "@types/pngjs": "^6.0.5",
     "dotenv": "^17.3.1",
     "firebase-admin": "^13.7.0",
     "markdownlint": "^0.40.0",
     "markdownlint-cli2": "^0.22.1",
+    "pixelmatch": "^7.2.0",
     "playwright": "^1.60.0",
+    "pngjs": "^7.0.0",
     "typescript": "^5.9.3"
   },
   "dependencies": {

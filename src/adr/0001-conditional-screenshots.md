@@ -1,10 +1,10 @@
 # 1. Conditional Screenshots
 
-Date: 2026-05-15
+Date: 2026-05-15 (Updated 2026-05-20)
 
 ## Status
 
-Accepted
+Accepted (Updated with visual comparison)
 
 ## Context
 
@@ -14,28 +14,34 @@ We use Playwright to take screenshots of the application for our documentation. 
 2. Constant churn in Git (even if the images were visually identical, small metadata changes or timestamps might cause git to see them as modified).
 3. Harder to review actual visual changes in pull requests.
 
-We needed a way to only save screenshots when their content actually changed.
+We initially implemented an exact bit-by-bit comparison using `Buffer.equals()`. However, this proved too sensitive, capturing many "false positive" changes due to minor rendering differences (anti-aliasing, layout shifts, etc.) across different runs or environments.
 
 ## Decision
 
-We introduced a custom saveScreenshotIfChanged utility function. This function uses Node's native Buffer.equals() to perform a fast, bit-by-bit comparison between the newly captured screenshot buffer in memory and the existing file on disk.
+We updated the `saveScreenshotIfChanged` utility function to perform a visual comparison using `pixelmatch`. 
 
-We modified our takeAnnotatedScreenshot utility and the Context.screenshot() method to capture screenshots into buffers first, and then pass them through saveScreenshotIfChanged.
+If an existing screenshot exists:
+1. Both the existing file and the new buffer are decoded using `pngjs`.
+2. If dimensions differ, the new screenshot is saved.
+3. If dimensions match, `pixelmatch` compares the two images.
+4. If the ratio of different pixels is below a threshold (default 0.05%), the new screenshot is discarded.
+5. Otherwise, the new screenshot is saved.
 
-### Why Buffer.equals()?
+### Why pixelmatch?
 
-- Zero dependencies: We don't need to add a heavyweight image comparison library like pixelmatch or looks-same just to check for exact equality.
-- Speed: Bitwise comparison of buffers in memory is extremely fast.
-- Simplicity: It's a straightforward check that doesn't require configuring tolerance thresholds.
+- **Tolerance**: It allows for sub-pixel differences and minor rendering variations that are invisible to the human eye.
+- **Industry Standard**: Widely used for visual regression testing (including internally by Playwright's own assertion engine).
+- **Control**: Allows us to tune the `threshold` (per-pixel sensitivity) and `pixelThreshold` (ratio of allowed different pixels).
 
 ## Consequences
 
 ### Positive
 
-- Faster test runs when documentation hasn't changed.
-- Reduced noise in Git commits.
-- Cleaner pull requests (only actual visual changes show up).
+- Significantly reduced number of redundant screenshots saved to disk and Git.
+- More stable documentation generation across different environments.
+- Only meaningful visual changes trigger a Git update.
 
 ### Negative
 
-- Buffer.equals() is strict. It does not tolerate minor rendering differences (e.g., slight anti-aliasing variations across different OS platforms). If the tests are run on different operating systems, it might result in false positives (saving screenshots that look identical to the human eye). If this becomes a significant issue, we will need to re-evaluate and introduce a visual comparison library like pixelmatch.
+- Slightly more overhead during documentation generation (decoding PNGs and running pixelmatch).
+- Introduced two new devDependencies: `pixelmatch` and `pngjs`.
