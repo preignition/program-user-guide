@@ -11,7 +11,7 @@ The **Behavior** configuration manages the global settings that dictate how a su
 The Accessibility tab governs the specialized interaction modes available to respondents.
 
 <figure>
-  <img src="./assets/behavior-accessibility-auto.png" alt="Accessibility tab within the Behavior settings.">
+  <img src="./assets/behavior-accessibility-content-auto.png" alt="Accessibility tab within the Behavior settings.">
   <figcaption>The Accessibility configuration tab.</figcaption>
 </figure>
 
@@ -25,6 +25,7 @@ Defines which optional accessibility adaptations are available for respondents t
 
 ### Global Form Settings
 
+- **Scroll Page Before Next**: When enabled, requires respondents to scroll to the bottom of the current page before the "Next" button becomes active. This is only enforced on their first visit to the page.
 - **Accessible Label**: Toggles a high-visibility, accessible variant for all form labels. Activating this increases the label font size and disables related animations to improve readability.
 
 ## Layout

@@ -11,6 +11,7 @@ We are introducing a new setting to ensure respondents fully view content before
 In the **Global Form Settings** of the survey builder, you can now toggle the **Scroll Page Before Next** option.
 
 When this feature is enabled:
+
 - If a page has a scrollbar and the respondent hasn't reached the bottom, the standard "Next" button is replaced with a "Move Down" button.
 - Clicking the "Move Down" button automatically scrolls the page downwards smoothly.
 - Once the end of the page is reached, the "Next" button appears, allowing the respondent to proceed.
