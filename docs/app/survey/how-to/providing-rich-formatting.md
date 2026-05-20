@@ -34,6 +34,10 @@ You can select text and click the corresponding toolbar button, or use these key
 | **Lists** | `Ctrl` + `U` or `Ctrl` + `O` |
 | **Quote** | `Ctrl` + `Q` |
 
+::: info
+The editor used in Accessible Surveys is a shared component used across our platform. For a detailed technical breakdown of every toolbar button, keyboard shortcut, and advanced layout option, see the [Rich Text Editor Reference](../../../components/md-editor.md).
+:::
+
 ## Step 2: Add Advanced Components, Media, and Layouts
 
 The toolbar provides dedicated menus to insert advanced components without writing code:

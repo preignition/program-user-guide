@@ -35,3 +35,9 @@ Because Markdown is just plain text, it is highly portable. It can be easily exp
 ## The "Why" Behind the Design
 
 In a platform dedicated to accessibility and robust data collection, the structure of the content is just as important as the content itself. By adopting Markdown, Accessible Surveys enforces a separation of content from presentation. You focus on writing clear, semantic questions, and the platform guarantees they will be rendered accessibly and consistently for every respondent.
+
+---
+
+**See also:**
+* [How-to: Providing Rich Formatting](../how-to/providing-rich-formatting.md)
+* [Reference: Rich Text Editor Component](../../../components/md-editor.md)

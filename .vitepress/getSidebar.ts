@@ -12,6 +12,13 @@ export function getSidebar() {
     },
     { text: 'Customer App', link: '/app/customer/index', items: [] },
     { text: 'User App', link: '/app/user/index' },
+    {
+      text: 'Shared Components',
+      link: '/components/index',
+      items: [
+        { text: 'Rich Text Editor', link: '/components/md-editor' }
+      ]
+    },
 
 
     {

@@ -47,5 +47,12 @@ features:
       light: /app/discussion.svg
       dark: /app/discussion-dark.svg
     link: /app/discussion/index
+  - title: Shared Components
+    details: Documentation for components used across apps
+    icon: 
+      light: /app/widgets.svg
+      dark: /app/widgets-dark.svg
+    link: /components/index
+    linkText: 'Browse components'
   
 ---

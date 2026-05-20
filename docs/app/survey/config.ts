@@ -61,7 +61,7 @@ function getSidebar() {
             { text: 'Share logical expressions', link: `sharing-logical-expressions.md` },
             { text: 'Style a survey', link: 'styling-a-survey.md' },
             { text: 'Share content across multiple forms and surveys', link: `sharing-content.md` },
-            { text: 'Set access rights for forms', link: `access-rights.md` },
+            { text: 'Set access rights for forms', link: `access-rights.md` }
           ]
         },
         {
