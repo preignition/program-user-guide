@@ -733,27 +733,67 @@ test.describe('Survey How-To', async () => {
 
   })
 
-  test('Localization', async ({ page }) => {
+  test('how to localize a survey', async ({ page }) => {
+    const context = new Context(mainPath, page)
+    context.setName('localize-survey')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/compose`)
 
-    const context = new Context(
-      'app/survey/how-to',
-      page
-    )
-    await page.setViewportSize({ width: 1600, height: 1080 })
-    await page.goto(baseUrl)
 
     // ## Translate Forms
-    context.setName('translate-forms')
+    context.setName('localize-survey')
 
     // ### Step 1: Activate Languages
+    // navigate to localizationlocator.click()
+    locator = page.locator('md-list-item').filter({ hasText: 'Make Form Multilingual' }).getByRole('listitem')
+    await context.annotatedScreenshot(locator, 'step-1-navigate-to-localization')
+    await locator.click()
 
-    // ### Step 2: Run Automatic Translation
+
+    locator = page.getByText('Activate Localization')
+    await context.annotatedScreenshot(locator, 'step-1-activate-localization')
+
+    locator = page.getByText('spanish french activated.')
+    await context.annotatedScreenshot(locator, 'step-1-select-languages')
+
+    // ### Step 2: Go back to the form
+    await page.locator('md-list-item').filter({ hasText: 'Build, organize Content' }).getByRole('listitem').click()
+    await page.locator('vaadin-grid-cell-content').filter({ hasText: 'Form' }).click()
+
+    // activate the localization mode and the active translated language
+    locator = page.getByRole('button', { name: 'Localize Mode' })
+    await context.annotatedScreenshot(locator, 'step-2-activate-localize-mode')
+    await locator.click()
+
+    locator = page.getByRole('button', { name: 'arabic' })
+    await context.annotatedScreenshot(locator, 'step-2-select-active-language')
+    await locator.click()
+
+    // Option 1: manual translation: edit each field and add the translation for each language in the localization section of the field properties
+
+    await page.getByText('Survey habits', { exact: true }).click()
+    locator = page.locator('lapp-field-translate').filter({ hasText: 'page title page title' })
+    await context.annotatedScreenshot(locator, 'step-2-click-translate-field')
+    await locator.click()
+
+    // the tree grid displays the original text and the translation for each activated language to easily compare them and edit the translation if needed.
+    locator = page.locator('vaadin-split-layout div').filter({ hasText: 'Overall Structure Introduction Page Form Survey habits Section 1 Experience' })
+    await context.annotatedScreenshot(locator, 'step-2-click-overall-structure', undefined, 400)
+
+    // Option 2: run an automatic translation (either only for empty fields, or override all fields) and then review and edit the translated text as the automatic translation might not be accurate
+
+    locator = page.getByRole('button', { name: 'Translate' })
+    await context.annotatedScreenshot(locator, 'step-2-click-translate-button')
+    await locator.click()
+
+    // write `override` to confirm that this is the intent
+    locator = page.locator('#confirmDialog')
+    await context.annotatedScreenshot(locator, 'step-2-confirm-dialog')
+
+    locator = page.getByRole('button', { name: 'start translation' })
+    await context.annotatedScreenshot(locator, 'step-2-start-translation')
 
     // ### Step 3: Review and Edit translated Text
-
-    // ### Step 4: Review Sign Language Videos
-
-
+    // browse the survey to check, or render the survey in test mode
 
     return
   })

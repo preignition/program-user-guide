@@ -54,8 +54,7 @@ Implementing specialized features like Easy Read, Sign Language videos.
 
 Adding multilingual support to your survey, translating forms, and using import/export features for translation.
 
-- [How to create a multilingual survey](./creating-a-multilingual-survey.md) - *in progress*
-- [How to translate forms](./translate-forms.md) - *in progress*
+- [How to create a multilingual survey](./localize-survey.md)
 - [How to use import/export to translate forms](./import-export.md)
 
 ---

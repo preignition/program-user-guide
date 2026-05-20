@@ -68,6 +68,7 @@ function getSidebar() {
           collapsed: true,
           items: [
             { text: 'Activate accessibility modes', link: `activating-accessibility-modes.md` },
+            { text: 'Localize a survey', link: 'localize-survey.md' },
             { text: 'Add an accessibility menu', link: `adding-an-accessibility-menu.md` },
             { text: 'Use Easy Read', link: `use-easy-read.md` },
             { text: 'Use Sign Language', link: `use-sign-language.md` },
@@ -78,8 +79,7 @@ function getSidebar() {
           text: 'Localization',
           collapsed: true,
           items: [
-            { text: 'Create a multilingual survey', link: `creating-a-multilingual-survey.md` },
-            { text: 'Translate forms', link: `translate-forms.md` },
+            { text: 'Create a multilingual survey', link: `localize-survey.md` },
             { text: 'Use import/export to translate forms', link: `import-export.md` },
           ]
         },

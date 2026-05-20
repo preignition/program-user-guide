@@ -1,7 +1,7 @@
-import { saveScreenshotIfChanged } from "./utils/conditionalScreenshot.ts"
 import { Locator, Page } from "@playwright/test"
 import path from "path"
 import { AreaT, ClipT, ContextT, OutlineStyleT } from "./types.ts"
+import { saveScreenshotIfChanged } from "./utils/conditionalScreenshot.ts"
 import { takeAnnotatedScreenshot } from "./utils/takeAnnotatedScreenshot.ts"
 
 /**
@@ -86,8 +86,9 @@ export class Context implements ContextT {
    * @param locator The Playwright locator for the element to screenshot
    * @param name A name for the screenshot file (without extension)
    * @param padding Optional padding in pixels to include around the element (default: 100)
+   * @param maxHeight Optional maximum height for the screenshot (default: Infinity)
    */
-  async annotatedScreenshot(locator: Locator, name: string, padding: number = 100) {
+  async annotatedScreenshot(locator: Locator, name: string, padding: number = 100, maxHeight: number = Infinity) {
     const { page, outlineStyle } = this
     await locator.scrollIntoViewIfNeeded()
     const outputPath = `${this.path}/assets/${this.name ? this.name + '/' : ''}${name}.png`
@@ -97,7 +98,8 @@ export class Context implements ContextT {
       locator,
       outputPath,
       padding,
-      outlineStyle
+      outlineStyle,
+      maxHeight
     })
   }
 

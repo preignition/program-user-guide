@@ -1,5 +1,5 @@
-import { saveScreenshotIfChanged } from "./conditionalScreenshot.ts"
 import { Locator, Page } from '@playwright/test'
+import { saveScreenshotIfChanged } from "./conditionalScreenshot.ts"
 
 type ScreenShotType = {
   page: Page,
@@ -11,7 +11,8 @@ type ScreenShotType = {
   outlineStyle: {
     outline: string,
     outlineOffset: string,
-  }
+  },
+  maxHeight?: number
 }
 /**
  * Highlights an element and takes a cropped screenshot with surrounding context.
@@ -30,7 +31,8 @@ export async function takeAnnotatedScreenshot(
     padding = 50,
     paddingX,
     paddingY = 30,
-    outlineStyle = { outline: '4px solid #bc004b', outlineOffset: '4px' }
+    outlineStyle = { outline: '4px solid #bc004b', outlineOffset: '4px' },
+    maxHeight = Infinity
   }: ScreenShotType
 ) {
   // 1. Inject CSS to highlight the element (e.g., a thick red border)
@@ -63,9 +65,9 @@ export async function takeAnnotatedScreenshot(
 
   const startX = Math.max(0, box.x - pX)
   const startY = Math.max(0, box.y - pY)
-
+  const height = Math.min(box.height, maxHeight)
   const endX = Math.min(viewportSize.width, box.x + box.width + pX)
-  const endY = Math.min(viewportSize.height, box.y + box.height + pY)
+  const endY = Math.min(viewportSize.height, box.y + height + pY)
 
   // 3. Take a screenshot cropped to the element + padding into a buffer
   const buffer = await page.screenshot({
