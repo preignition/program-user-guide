@@ -71,6 +71,19 @@ Sometimes you may want to show or hide specific fields or sections only when the
 Using conditional visibility allows you to create a shorter or more streamlined version of your survey for Easy Read users without affecting the standard experience.
 :::
 
+## Step 6: Show/Hide Text in Markdown Sections
+
+In addition to conditionally showing or hiding entire fields, you can also conditionally show or hide specific sections of text within a freetext (Markdown) editor. 
+
+1. Open a Markdown text field.
+2. Click the **Accessibility Menu** within the Markdown editor toolbar.
+3. Select **Show When Easy Read** to insert a block of text that will only be visible in Easy Read mode.
+4. Select **Hide When Easy Read** to insert a block of text that will be hidden when Easy Read mode is active.
+
+::: tip
+The editor helper inserts HTML wrappers (such as `<div class="show-when-easyread">` and `<div class="hide-when-easyread">`) to seamlessly control text visibility based on the active accessibility mode. For more information, refer to the [Accessibility Mode Reference](../reference/content/markdown/accessibility-mode.md).
+:::
+
 ## Best Practices for Easy Read
 
 - **Use Plain Language:** Avoid jargon, metaphors, and complex sentence structures.
