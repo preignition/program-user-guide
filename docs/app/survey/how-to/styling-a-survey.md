@@ -61,6 +61,7 @@ Always switch to the **Test** view to see how your styles look in a real environ
 ## References
 
 For more detailed technical information on how styling properties are managed and applied behind the scenes, please refer to:
+
 * [Reference: Behavior Settings](../reference/build/behavior.md)
 * [Reference: Customer Theme](../../customer/reference/customer/theme.md)
 * [Explanation: Understanding CSS Variables](../explanation/understanding-css-variables.md)
