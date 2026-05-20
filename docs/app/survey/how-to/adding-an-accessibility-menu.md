@@ -26,7 +26,7 @@ Click on the text area to focus the markdown editor.
 Add the following tag into the markdown content where you want the menu to appear:
 
 ```html
-<a11y-menu context="survey"></a11y-menu>
+<a11y-menu ></a11y-menu>
 ```
 
 > [!TIP]
