@@ -71,6 +71,7 @@ Generating links, managing survey batches, configuring respondent accounts, and 
 ### Advanced
 
 - [How to manage survey terms](./survey-terms.md) - *in progress*
+- [How to use survey batches](./importing-exporting.md) - *in progress*
 - [How to use survey batches](./using-batches.md) - *in progress*
 - [How to create alias survey links](./creating-alias.md) - *in progress*
 

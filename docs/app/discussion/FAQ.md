@@ -53,6 +53,7 @@ We take the privacy and security of your personal information seriously. We have
 This depends on the channel privacy settings. Channels are either `public` or `private`.
 
 Channels have 3 levels of privacy settings:
+
 - `Public` channels are visible to everyone. Users belonging to a `team` (for `generic` channels) or respondents of a survey (for `survey` channels) can create discussion. Anyone with a verified email-address can join and participate in the discussions. Anyone signed-in can react and vote on content. Channels are `public` by default.
 - `Private` channels are not visible to everyone. Only members can join and participate in the discussions. Members are invited by the channel owner or editors. For `survey` channels, respondents would be  automatically added as members.  Anyone can react and vote on content.
 <!-- - `Secret` channels are not visible to everyone. Only members can join and participate in the discussions. Members are invited by the channel owner or editors. 
@@ -67,4 +68,3 @@ If you have any questions, issues, or feedback regarding the app, you can reach 
 ### Can I suggest new features or improvements?
 
 Absolutely! We value your feedback and suggestions. If you have any ideas for new features or improvements, please feel free to share them with us. You can submit your suggestions through the "Feedback" category of the main discussion app.
-

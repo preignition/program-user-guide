@@ -12,17 +12,17 @@ The logic engine supports basic mathematical operations, which are useful for ca
 
 | Operation        | Symbol |
 | ---------------- | ------ |
-| Add, Concat      | `+`      |
-| Subtract         | `-`      |
-| Multiply         | `*`      |
-| Divide           | `/`      |
-| Divide and floor | `//`     |
-| Modulus          | `%`      |
-| Power of         | `^`      |
+| Add, Concat      | `+`    |
+| Subtract         | `-`    |
+| Multiply         | `*`    |
+| Divide           | `/`    |
+| Divide and floor | `//`   |
+| Modulus          | `%`    |
+| Power of         | `^`    |
 
 ## The Ternary Operator
 
-The ternary operator (or conditional operator) functions like an "if-else" statement within your expression. 
+The ternary operator (or conditional operator) functions like an "if-else" statement within your expression.
 
 **Syntax:** `condition ? consequent : alternate`
 

@@ -38,6 +38,7 @@ Questions can be enhanced with various accessibility and logic configurations:
 ## Question Types
 
 The application supports various question field types, including:
+
 - **Text-based fields**: Short text, text area.
 - **Choice-based fields**: Radio groups, checkbox groups, dropdowns.
 - **Boolean fields**: Checkboxes, switches.

@@ -7,5 +7,3 @@ Documentation for the discussion app.
 - [Discussion App Release Notes](./RELEASE_NOTES.md)
 - [Discussion App FAQ](./FAQ.md)
 - [Discussion App Features](./codeOfConduct.md)
-
-

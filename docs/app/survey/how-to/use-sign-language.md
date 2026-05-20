@@ -10,8 +10,8 @@ Accessible Surveys allows you to include sign language videos for every question
 
 Before you can add sign language videos to your questions, you must enable the sign language mode in your survey's behavior settings.
 
-1.  Navigate to the **Behavior** tab of your survey.
-2.  In the **Modes Activated** section, ensure that **Sign Language** is selected.
+1. Navigate to the **Behavior** tab of your survey.
+2. In the **Modes Activated** section, ensure that **Sign Language** is selected.
 
 <figure>
   <img src="./assets/use-sign-language/step-1-sign-language-mode-not-activated.png" alt="Enabling Sign Language mode in Behavior settings">
@@ -22,7 +22,7 @@ Before you can add sign language videos to your questions, you must enable the s
 
 Once enabled, you can switch the editor to Sign Language mode to start adding content.
 
-1.  In the **Compose** view, click the **Sign Language Mode** button in the accessibility toolbar.
+1. In the **Compose** view, click the **Sign Language Mode** button in the accessibility toolbar.
 
 <figure>
   <img src="./assets/use-sign-language/step-2-activate-sign-language-mode.png" alt="Activating Sign Language Mode in the editor">
@@ -33,10 +33,10 @@ Once enabled, you can switch the editor to Sign Language mode to start adding co
 
 With Sign Language mode active, you can now associate a video with each question or content element.
 
-1.  Select a question or content element from the survey tree.
-2.  In the content editor, click **Add a Sign Language Video**.
-3.  Select the sign language you want to provide (if multiple languages are activated).
-4.  Enter the **YouTube Video ID** for the sign language translation.
+1. Select a question or content element from the survey tree.
+2. In the content editor, click **Add a Sign Language Video**.
+3. Select the sign language you want to provide (if multiple languages are activated).
+4. Enter the **YouTube Video ID** for the sign language translation.
 
 <figure>
   <img src="./assets/use-sign-language/step-3-add-media-for-sign-language-mode.png" alt="Adding a sign language video">
@@ -61,9 +61,9 @@ You can easily identify which items already have sign language content by lookin
 
 In some cases, you might want to show or hide specific content only when the respondent is using the sign language mode.
 
-1.  Click the **Visibility Mode** button.
-2.  Toggle **Advanced Mode**.
-3.  In the visibility settings for a field, you can now specify that it should only be visible for the **Sign Language** mode.
+1. Click the **Visibility Mode** button.
+2. Toggle **Advanced Mode**.
+3. In the visibility settings for a field, you can now specify that it should only be visible for the **Sign Language** mode.
 
 <figure>
   <img src="./assets/use-sign-language/step-4-activate-visibility-mode.png" alt="Activating Visibility Mode">

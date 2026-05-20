@@ -42,10 +42,12 @@ Once the survey is built, navigate to the **Distribute** section to access the L
 <lite-youtube videoid="6PJiKt2hE9Y"></lite-youtube>
 
 ### Test vs. Production Modes
+
 - **Test Mode**: Generates a link used to preview the survey. Respondents' answers are **not** saved to the database. You can optionally skip the landing page while testing.
-- **Production Mode**: Generates the link you share to collect real responses. Answers are saved to the database automatically. 
+- **Production Mode**: Generates the link you share to collect real responses. Answers are saved to the database automatically.
 
 ### Advanced Survey Options
+
 - **Survey Name**: You can use the default system ID in your link or opt for a readable "alias" (see the guide on *Creating alias survey links* for more details).
 - **Force Latest Version**: Available in Production mode, this option forces respondents to use the newly published version of the survey, even if they have already started answering a previous version. By default, respondents stay on the version they started with.
 

@@ -62,7 +62,7 @@ How-to guides help you solve real-world problems. Whether you need to know *"How
 **Do you need technical descriptions, facts, or details?**  
 The Reference section provides descriptive information about the platform's settings, schemas, and UI elements.
 
-- Start with: 
+- Start with:
   - [Customer Settings Reference](./reference/customer/index.md)
   - [Team Settings Reference](./reference/team/index.md)
 

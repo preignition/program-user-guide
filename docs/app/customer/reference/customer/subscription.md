@@ -24,6 +24,7 @@ Displays the active plan card (e.g., Enterprise Plan).
 ## Views
 
 The interface is divided into four sub-tabs:
+
 - **Subscription**: Overview of the current plan.
 - **Invoice**: History of past invoices and downloadable receipts.
 - **Payment**: Payment method configuration.

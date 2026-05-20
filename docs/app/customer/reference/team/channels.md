@@ -4,7 +4,7 @@ description: Reference for Team Channels and App Activations.
 
 # Channels
 
-The Channels section manages application-specific communication streams and URLs for the team. 
+The Channels section manages application-specific communication streams and URLs for the team.
 
 Channels are used to group messages or discussions and are assigned specific URLs to make them addressable. Certain active applications require channels to function correctly.
 

@@ -20,13 +20,14 @@ This guide explains how to use the Style Configuration tab to set base styles an
 
 ## Understanding Tokens and Units
 
-The styling engine uses "tokens"—standardized variables that apply consistently across your survey. 
+The styling engine uses "tokens"—standardized variables that apply consistently across your survey.
 
 > [!NOTE]
 > If you leave a token field empty, the system will automatically fall back to its default value (which is displayed faintly in the placeholder text of the input field).
 
 ### Layout & Spacing Tokens
 Tokens for Page, Section, and Field spacing (such as Padding Inline or Margin Block) accept standard CSS units. You can use:
+
 * px (Pixels - e.g., 24px)
 * rem or em (Relative to font size - e.g., 1.5rem)
 * % (Percentages - e.g., 100%)
@@ -34,7 +35,7 @@ Tokens for Page, Section, and Field spacing (such as Padding Inline or Margin Bl
 For a deeper understanding of how these units work and which to choose, read our [Explanation of CSS Units](../explanation/understanding-css-units.md).
 
 ### Typography Tokens
-Font size tokens (such as Input Font Size or Label Font Size) are strictly used to adjust the scale of text elements. 
+Font size tokens (such as Input Font Size or Label Font Size) are strictly used to adjust the scale of text elements.
 
 > [!IMPORTANT]
 > To ensure consistent accessibility and reliable zooming for visually impaired respondents, **font size tokens must use rem units** (e.g., 1.2rem, 0.875rem). Pixels are not permitted for these fields.
@@ -49,14 +50,14 @@ The Style Configuration is divided into three collapsible panels, allowing you t
 </figure>
 
 ### 1. Base Tokens
-Start by configuring your **Base Tokens**. These values form the foundational layout for your survey. 
+Start by configuring your **Base Tokens**. These values form the foundational layout for your survey.
 
 Settings defined here apply universally across all screen sizes and all presentation modes, unless you specifically override them in the panels below.
 
 ### 2. Mobile Overrides (Max 599px)
 Surveys are frequently taken on mobile phones. What looks like good padding on a desktop monitor might feel cramped on a small screen.
 
-Open this panel to provide mobile-specific values. Any value entered here will automatically override the Base Token whenever the respondent's screen is 599px wide or smaller. 
+Open this panel to provide mobile-specific values. Any value entered here will automatically override the Base Token whenever the respondent's screen is 599px wide or smaller.
 
 > [!TIP]
 > You only need to define the tokens you want to change. For example, if you only want to reduce the Page Padding Inline for mobile phones, fill in that specific field and leave the rest blank.

@@ -4,7 +4,7 @@ description: Reference documentation for Pages within the survey Compose tool.
 
 # Page Reference
 
-A Page is a top-level structural element within the survey form, representing a single screen or logical division of the questionnaire. 
+A Page is a top-level structural element within the survey form, representing a single screen or logical division of the questionnaire.
 
 <figure>
   <img src="./assets/page-auto.png" alt="A Page in the Compose tool.">

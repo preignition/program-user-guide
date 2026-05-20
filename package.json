@@ -5,25 +5,25 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
-    "docs:dev": "vitepress dev",
-    "docs:check": "markdownlint-cli2 docs/**/*.md \"#node_modules\"",
-    "docs:fix": "markdownlint-cli2 docs/**/*.md --fix \"#node_modules\"",
+    "docs:start": "vitepress dev",
+    "docs:check": "markdownlint-cli2 \"docs/**/*.md\" \"#node_modules\"",
+    "docs:fix": "markdownlint-cli2 \"docs/**/*.md\" --fix \"#node_modules\"",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "docs:deploy": "pnpm docs:build && firebase deploy --only hosting:a11y-docs && git tag deploy-$(date +%Y%m%d%H%M%S) && git push origin --tags"
+    "docs:deploy": "pnpm docs:fix && pnpm docs:check && pnpm docs:build && firebase deploy --only hosting:a11y-docs && git tag deploy-$(date +%Y%m%d%H%M%S) && git push origin --tags"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.18.3",
   "devDependencies": {
-    "@playwright/test": "^1.58.2",
+    "@playwright/test": "^1.60.0",
     "@types/node": "^25.5.0",
     "dotenv": "^17.3.1",
     "firebase-admin": "^13.7.0",
     "markdownlint": "^0.40.0",
-    "markdownlint-cli2": "^0.21.0",
-    "playwright": "^1.58.2",
+    "markdownlint-cli2": "^0.22.1",
+    "playwright": "^1.60.0",
     "typescript": "^5.9.3"
   },
   "dependencies": {

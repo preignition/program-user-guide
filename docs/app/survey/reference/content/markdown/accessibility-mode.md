@@ -14,8 +14,8 @@ The class name follows the pattern:
 
 ### Parameters
 
-*   **`state`:** `show` or `hide`
-*   **`accessibilityOption`:** `signlanguage`, `readaloud`, or `easyread`
+* **`state`:** `show` or `hide`
+* **`accessibilityOption`:** `signlanguage`, `readaloud`, or `easyread`
 
 ## Available Classes
 
@@ -31,11 +31,13 @@ The class name follows the pattern:
 ## Examples
 
 **Display a paragraph only in Easy Read mode:**
+
 ```html
 <p class="show-when-easyread">This paragraph is visible in Easy Read mode only.</p>
 ```
 
 **Hide an element when Sign Language mode is active:**
+
 ```html
 <div class="hide-when-signlanguage">This content will be hidden if the user turns on Sign Language.</div>
 ```

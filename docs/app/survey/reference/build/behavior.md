@@ -17,12 +17,14 @@ The Accessibility tab governs the specialized interaction modes available to res
 
 ### Modes Activated
 Defines which optional accessibility adaptations are available for respondents to toggle:
+
 - **Read Aloud**: Enables text-to-speech functionality for survey questions and responses.
 - **Easy Read**: Activates a simplified interface designed to reduce cognitive load, supporting simpler text and illustrations.
 - **Sign Language**: Enables the display of embedded sign language video interpretations for each question.
 - **Voice Recording**: Replaces standard text inputs with an audio recorder, allowing respondents to reply verbally.
 
 ### Global Form Settings
+
 - **Accessible Label**: Toggles a high-visibility, accessible variant for all form labels. Activating this increases the label font size and disables related animations to improve readability.
 
 ## Layout
@@ -35,12 +37,14 @@ The Layout tab determines the structural flow and media presentation of the surv
 </figure>
 
 ### Form Layout
-- **Presentation Mode**: 
+
+- **Presentation Mode**:
   - *Multiple questions in a page (default)*: Presents standard, scrolling page layouts. Best for longer forms.
   - *One question at a time*: Displays a single question per screen to minimize distraction.
 - **Transition Type**: Defines the animation used when navigating between questions or pages (Slide, Fade, or None).
 
 ### Page Flow & Illustration
+
 - **Page Layout**: Determines the automatic or explicit positioning (Horizontal or Vertical flow) of illustrative media relative to the question text.
 - **Allow media Illustration**: Enables the capability to attach images or videos to individual questions.
 - **Preserve Media Space**: When enabled, the layout reserves empty space for media even on questions without illustrations, ensuring consistent vertical alignment across the form.

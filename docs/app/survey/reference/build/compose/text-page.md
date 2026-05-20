@@ -19,4 +19,3 @@ Text Pages can contain individual informational items, often represented as rich
   <img src="./assets/intro-item-auto.png" alt="An individual item within a Text Page.">
   <figcaption>Selecting a specific content block within a Text Page.</figcaption>
 </figure>
-

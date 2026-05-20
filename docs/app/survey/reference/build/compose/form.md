@@ -14,6 +14,7 @@ The Form is the root container element for the entire survey. It encapsulates al
 ## Form Identity
 
 The Form configuration determines the public-facing identity of the survey:
+
 - **Name**: The internal identifier used for administrative and database purposes (not visible to respondents).
 - **Title**: The main public title displayed at the top of the survey.
 - **Subtitle**: An optional description or introductory text displayed below the title.

@@ -19,4 +19,3 @@ Advanced mode provides additional technical details and filtering capabilities f
   <img src="./assets/restore-advanced-auto.png" alt="Advanced view of the restore interface.">
   <figcaption>The advanced view of the Restore tool.</figcaption>
 </figure>
-

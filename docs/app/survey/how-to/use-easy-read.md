@@ -73,7 +73,7 @@ Using conditional visibility allows you to create a shorter or more streamlined 
 
 ## Step 6: Show/Hide Text in Markdown Sections
 
-In addition to conditionally showing or hiding entire fields, you can also conditionally show or hide specific sections of text within a freetext (Markdown) editor. 
+In addition to conditionally showing or hiding entire fields, you can also conditionally show or hide specific sections of text within a freetext (Markdown) editor.
 
 1. Open a Markdown text field.
 2. Click the **Accessibility Menu** within the Markdown editor toolbar.

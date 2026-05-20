@@ -86,24 +86,24 @@ Here, the expression `answer == "Yes"` evaluates to `true` when the respondent s
 
 Use these operators to compare values in your form data:
 
-| Operator                   | Symbol | Description |
-| -------------------------- | ------ | ----------- |
-| Equal                      | `==`     | True if the left and right values are exactly the same. |
-| Not equal                  | `!=`     | True if the values are different. |
-| Greater than               | `>`      | True if the left value is strictly larger. |
-| Greater than or equal      | `>=`     | True if the left value is larger or equal. |
-| Less than                  | `<`      | True if the left value is strictly smaller. |
-| Less than or equal         | `<=`     | True if the left value is smaller or equal. |
-| Element in array or string | `in`     | True if the left value is found within the right value (e.g., in a string or list of checkbox answers). |
+| Operator                   | Symbol | Description                                                                                             |
+| -------------------------- | ------ | -----------                                                                                             |
+| Equal                      | `==`   | True if the left and right values are exactly the same.                                                 |
+| Not equal                  | `!=`   | True if the values are different.                                                                       |
+| Greater than               | `>`    | True if the left value is strictly larger.                                                              |
+| Greater than or equal      | `>=`   | True if the left value is larger or equal.                                                              |
+| Less than                  | `<`    | True if the left value is strictly smaller.                                                             |
+| Less than or equal         | `<=`   | True if the left value is smaller or equal.                                                             |
+| Element in array or string | `in`   | True if the left value is found within the right value (e.g., in a string or list of checkbox answers). |
 
 ## Logical Operators
 
 Use logical operators to combine multiple conditions:
 
-| Operation   | Symbol | Description |
-| ----------- | ------ | ----------- |
-| Logical AND | `&&`   | True only if **both** sides are true. |
-| Logical OR  | `\|\|` | True if **at least one** side is true. |
+| Operation   | Symbol | Description                                      |
+| ----------- | ------ | -----------                                      |
+| Logical AND | `&&`   | True only if **both** sides are true.            |
+| Logical OR  | `\|\|` | True if **at least one** side is true.           |
 | Negate      | `!`    | Inverts a boolean value (e.g., `!(expression)`). |
 
 > [!TIP]
