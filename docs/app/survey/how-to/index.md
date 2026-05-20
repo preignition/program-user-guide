@@ -65,7 +65,7 @@ Adding multilingual support to your survey, translating forms, and using import/
 Generating links, managing survey batches, configuring respondent accounts, and analyzing or exporting survey data.
 
 - [How to publish and distribute a survey](./publishing-a-survey.md)
-- [How to configure redirection after completing survey](./configure-redirection.md) - *in progress*
+- [How to configure redirection after completing survey](./configure-redirection.md)
 - [How to fill-in surveys on behalf of other respondents](./filling-in-surveys-on-behalf-of-others.md) - *in progress*
 
 ### Advanced

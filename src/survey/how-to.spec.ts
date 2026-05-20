@@ -684,8 +684,7 @@ test.describe('Survey How-To', async () => {
 
   })
 
-
-  test('How to use tooltips and hints to explain complex terms', async ({ page }) => {
+  test('How to use tooltips', async ({ page }) => {
     const context = new Context(mainPath, page)
     context.setName('use-tooltips')
     await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/compose`)
@@ -695,7 +694,7 @@ test.describe('Survey How-To', async () => {
     await page.locator('vaadin-grid-tree-toggle > span:nth-child(2)').first().click()
     await page.locator('vaadin-grid-cell-content').filter({ hasText: 'intro 3' }).click()
 
-    // ### Step 1: Focus on mardown editor, for instance in the survey introduction 
+    // ### Step 1: Focus on markdown editor, for instance in the survey introduction 
     // add a `<a11y-menu></a11y-menu>` tag in the markdown content to activate the accessibility menu for this item
     await page.waitForTimeout(1000)
 
@@ -815,7 +814,44 @@ test.describe('Survey How-To', async () => {
 
   })
 
+  test('How to configure redirection', async ({ page }) => {
+    const context = new Context(mainPath, page)
+    context.setName('configure-redirection')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/share/redirection`)
 
+    // ## Explore different redirection options (e.g. redirect to a specific URL, redirect to a specific page in the form, etc.)
+    // 1. Application home page (accessiblesurveys.com)
+    locator = page.getByText('homeApplication\'s home page (')
+    await locator.click()
+    await context.annotatedScreenshot(locator, 'click-home-page-link')
+
+    await page.waitForTimeout(500)
+    locator = page.locator('app-survey-deploy-redirection')
+    await context.annotatedScreenshot(locator, 'home-page-redirection-option')
+
+    // 2. No Redirection
+    locator = page.getByText('No redirection.Respondents')
+    await locator.click()
+    await context.annotatedScreenshot(locator, 'no-redirection-option')
+
+    await page.waitForTimeout(500)
+    locator = page.locator('app-survey-deploy-redirection')
+    await context.annotatedScreenshot(locator, 'no-redirection-option-selected')
+
+    // 3. A page dedicated to the survey
+    locator = page.getByText('A page dedicated to this survey. Respondents are re-directed out of the survey')
+    await locator.click()
+    await context.annotatedScreenshot(locator, 'page-dedicated-to-survey-option')
+    await page.waitForTimeout(500)
+
+    locator = page.locator('app-survey-deploy-redirection')
+    await context.annotatedScreenshot(locator, 'page-dedicated-to-survey-option-selected')
+    await page.getByText('A page dedicated to this survey. Respondents are re-directed out of the survey').click()
+    // 4. user space - no yet available
+
+    // reset initial config
+    await page.getByText('A page dedicated to this survey. Respondents are re-directed out of the survey').click()
+  })
 
   test('How to import/export', async ({ page }) => {
     const context = new Context(mainPath, page)
@@ -874,9 +910,6 @@ test.describe('Survey How-To', async () => {
     await page.setViewportSize({ width: 1600, height: 1080 })
     await page.goto(baseUrl)
 
-    // ## Distributing the survey
-    context.setName('generating-survey-link')
-
 
     // ## Alias
     context.setName('creating-alias')
@@ -890,8 +923,7 @@ test.describe('Survey How-To', async () => {
     // ## Respondent accounts
     context.setName('survey-respondent-accounts')
 
-    // ## Redirection after completing survey
-    context.setName('redirection-after-completing-survey')
+
 
     // Terms and Conditions
     context.setName('survey-terms')
