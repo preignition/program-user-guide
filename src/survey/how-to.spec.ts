@@ -659,7 +659,8 @@ test.describe('Survey How-To', async () => {
     await context.annotatedScreenshot(locator, 'step-3-add-media-for-sign-language-mode')
 
     // set videoId - which is the youtube videoId
-    locator = page.locator('.input-wrapper')
+
+    locator = page.getByRole('textbox', { name: 'Enter a youtube video ID' })
     await context.annotatedScreenshot(locator, 'step-3-set-video-id')
 
     // items with sign language content have a specific icon in the tree view to easily identify them
@@ -706,10 +707,11 @@ test.describe('Survey How-To', async () => {
     locator = page.locator('textarea')
     await locator.press('Home')
     await locator.press('Shift+ArrowDown')
-    await locator.fill('This survey supports a number of accessibility options which can be turned on and off from the menu below.\n\n<a11y-menu ></a11y-menu>\n')
+    await locator.fill('This would be a tooltip: \n\n <lapp-tooltip term="tootipId" >Tooltip Content</lapp-tooltip>\n')
 
     locator = page.locator('textarea')
     await context.annotatedScreenshot(locator, 'step-1-tooltip-in-markdown-editor')
+    await locator.fill('This survey supports a number of accessibility options which can be turned on and off from the menu below.\n\n<a11y-menu ></a11y-menu>\n')
 
     // ### Step 2: create a new term definition
     locator = page.locator('vaadin-grid-cell-content').filter({ hasText: 'Glossary' })

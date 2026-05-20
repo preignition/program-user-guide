@@ -67,8 +67,8 @@ function getSidebar() {
           text: 'Accessibility',
           collapsed: true,
           items: [
-            { text: 'Add an accessibility menu', link: `adding-an-accessibility-menu.md` },
             { text: 'Activate accessibility modes', link: `activating-accessibility-modes.md` },
+            { text: 'Add an accessibility menu', link: `adding-an-accessibility-menu.md` },
             { text: 'Use Easy Read', link: `use-easy-read.md` },
             { text: 'Use Sign Language', link: `use-sign-language.md` },
             { text: 'Use tooltips', link: `use-tooltips.md` },

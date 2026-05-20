@@ -42,8 +42,8 @@ Fundamental tasks for building your survey and forms, including adding questions
 
 Implementing specialized features like Easy Read, Sign Language videos.
 
-- [How to add an accessibility menu](./adding-an-accessibility-menu.md)
 - [How to activate accessibility modes](./activating-accessibility-modes.md)
+- [How to add an accessibility menu](./adding-an-accessibility-menu.md)
 - [How to use Easy Read](./use-easy-read.md)
 - [How to use Sign Language](./use-sign-language.md)
 - [How to explain complex terms (tooltips)](./use-tooltips.md)
@@ -71,7 +71,6 @@ Generating links, managing survey batches, configuring respondent accounts, and 
 ### Advanced
 
 - [How to manage survey terms](./survey-terms.md) - *in progress*
-- [How to use survey batches](./importing-exporting.md) - *in progress*
 - [How to use survey batches](./using-batches.md) - *in progress*
 - [How to create alias survey links](./creating-alias.md) - *in progress*
 
