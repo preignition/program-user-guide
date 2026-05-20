@@ -49,6 +49,10 @@ You can also provide specific styling overrides based on how the respondent inte
 
 For example, you can adjust padding or layout styles specifically for **small screens** (mobile devices), or define how the layout behaves when the survey is set to display **one question per page**. These overrides ensure the user experience is optimized for every context.
 
+## How Theming Works
+
+By default, the styles applied to a survey inherit their baseline properties from your overarching **Customer Theme**. When you adjust styling options here in the survey builder, you are defining survey-specific overrides that take precedence over the customer-wide settings. This hierarchical approach ensures brand consistency by default, while still giving you the flexibility to customize individual surveys as needed.
+
 ## Previewing Your Styles
 
 Always switch to the **Test** view to see how your styles look in a real environment. We strongly recommend using the Test view's accessibility menu to preview your survey in Dark Mode and High Contrast Mode to ensure your styling choices work well across all themes.
@@ -57,4 +61,5 @@ Always switch to the **Test** view to see how your styles look in a real environ
 
 For more detailed technical information on how styling properties are managed and applied behind the scenes, please refer to:
 - [Reference: Behavior Settings](../reference/build/behavior.md)
+- [Reference: Customer Theme](../../customer/reference/customer/theme.md)
 - [Explanation: Understanding CSS Variables](../explanation/understanding-css-variables.md)
