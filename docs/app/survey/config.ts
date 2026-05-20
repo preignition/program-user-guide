@@ -51,7 +51,6 @@ function getSidebar() {
             { text: 'Create a new survey', link: `creating-a-new-survey.md` },
             { text: 'Edit a survey', link: `editing-a-survey.md` },
             { text: 'Test a form', link: `testing-a-form.md` },
-            { text: 'Publish a survey', link: `publishing-a-survey.md` },
             { text: 'Mark a survey as favorite', link: `marking-a-survey-as-favorite.md` },
             { text: 'Delete a survey', link: `deleting-a-survey.md` },
             { text: 'Add content to a form', link: `adding-content-to-a-form.md` },
@@ -88,7 +87,7 @@ function getSidebar() {
           text: 'Distribution',
           collapsed: true,
           items: [
-            { text: 'Distribute your survey', link: `generating-survey-links.md` },
+            { text: 'Publish a survey', link: `publishing-a-survey.md` },
             { text: 'Create alias survey links', link: `creating-alias.md` },
             { text: 'Use survey batches', link: `using-batches.md` },
             { text: 'Redirect respondents after completing a survey', link: `redirection-after-completing-survey.md` },

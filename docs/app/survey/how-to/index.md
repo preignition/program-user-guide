@@ -19,7 +19,6 @@ Fundamental tasks for building your survey and forms, including adding questions
 - [How to create a new survey](./creating-a-new-survey.md)
 - [How to edit a survey](./editing-a-survey.md)
 - [How to test a form](./testing-a-form.md)
-- [How to publish a survey](./publishing-a-survey.md)
 - [How to mark a survey as favorite](./marking-a-survey-as-favorite.md)
 - [How to delete a survey](./deleting-a-survey.md)
 
@@ -47,7 +46,7 @@ Implementing specialized features like Easy Read, Sign Language videos.
 - [How to activate accessibility modes](./activating-accessibility-modes.md)
 - [How to use Easy Read](./use-easy-read.md)
 - [How to use Sign Language](./use-sign-language.md)
-- [How to explain complex terms](./use-tooltips.md)
+- [How to explain complex terms (tooltips)](./use-tooltips.md)
 
 ---
 
@@ -65,12 +64,15 @@ Adding multilingual support to your survey, translating forms, and using import/
 
 Generating links, managing survey batches, configuring respondent accounts, and analyzing or exporting survey data.
 
-- [How to distribute your survey (Generating links)](./generating-survey-links.md) - *in progress*
-- [How to create alias survey links](./creating-alias.md) - *in progress*
-- [How to use survey batches](./using-batches.md) - *in progress*
+- [How to publish and distribute a survey](./publishing-a-survey.md)
 - [How to configure redirection after completing survey](./redirection-after-completing-survey.md) - *in progress*
-- [How to manage survey terms](./survey-terms.md) - *in progress*
 - [How to fill-in surveys on behalf of other respondents](./filling-in-surveys-on-behalf-of-others.md) - *in progress*
+
+### Advanced
+
+- [How to manage survey terms](./survey-terms.md) - *in progress*
+- [How to use survey batches](./using-batches.md) - *in progress*
+- [How to create alias survey links](./creating-alias.md) - *in progress*
 
 ## 5. Analytics & Export
 
