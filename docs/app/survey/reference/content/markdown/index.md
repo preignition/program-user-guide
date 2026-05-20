@@ -2,9 +2,13 @@
 description: Reference documentation for the Markdown editor and supported syntax extensions.
 ---
 
-# Markdown Editor
+# Markdown Editor Reference
 
 The Markdown Free Text field in Accessible Surveys supports standard Markdown syntax along with custom HTML, CSS tokens, convenience classes, and embedded web components.
+
+::: info
+This reference focuses on the technical syntax and advanced styling available when writing Markdown and HTML manually. If you are looking for documentation on the visual editor toolbar, formatting shortcuts, and interactive widgets, please see the [Shared Components: Rich Text Editor](../../../../../components/md-editor.md) documentation.
+:::
 
 ## Supported Syntax
 
@@ -51,3 +55,32 @@ The editor environment includes built-in classes and variables to integrate user
   }
 </style>
 ```
+
+### Understanding the Example
+
+The code snippet above demonstrates how standard Markdown, raw HTML, convenience classes, accessibility modifiers, web components, and CSS tokens can all be combined into a single, cohesive block of text. Here is a breakdown of how it works:
+
+#### 1. Layout and Spacing (Convenience Classes)
+The outer container uses `<div class="layout horizontal wrap gap">`.
+
+* `layout horizontal` and `wrap` are built-in **Convenience Classes** that turn the container into a flexbox layout. Items will sit side-by-side (horizontally) and wrap to the next line if the screen is too small.
+* The child elements use the `flex` and `flex-2` classes. This means the third column (`flex-2`) will automatically take up twice as much horizontal space as the other columns (`flex`).
+
+#### 2. Conditional Display (Accessibility Modes)
+The first two child `<div>` elements include the `show-when-signlanguage` and `show-when-easyread` classes.
+
+* These are **Accessibility Mode** modifiers. The platform's rendering engine listens to the user's active settings. The first block of text will *only* be visible if the respondent has enabled Sign Language mode, while the second is exclusively for Easy Read mode.
+
+#### 3. Mixing HTML and Markdown
+Notice that inside the HTML `<div>` tags, standard Markdown syntax like `**sign language mode**` is used freely to create bold text.
+
+#### 4. Web Components
+Instead of pasting a messy iframe from YouTube, the editor supports custom **Web Components**.
+
+* The `<lite-youtube videoid="xVytWVHX4N0"></lite-youtube>` tag creates a highly optimized, accessible video player simply by providing the video ID.
+
+#### 5. Theming (CSS Tokens)
+Finally, a `<style>` block is included to define the custom `.box` and `.gap` classes.
+
+* Instead of hardcoding colors (e.g., `background-color: blue`), it uses **CSS Tokens** like `var(--color-primary)` and `var(--color-on-primary)`.
+* If the survey is viewed in Dark Mode, or if the Customer Theme defines a different primary brand color, these variables update automatically. This ensures the custom styling remains accessible and visually consistent without requiring manual media queries.

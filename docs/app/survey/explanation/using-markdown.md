@@ -39,5 +39,7 @@ In a platform dedicated to accessibility and robust data collection, the structu
 ---
 
 **See also:**
+
 * [How-to: Providing Rich Formatting](../how-to/providing-rich-formatting.md)
+* [Reference: Markdown Syntax & Extensions](../reference/content/markdown/index.md)
 * [Reference: Rich Text Editor Component](../../../components/md-editor.md)

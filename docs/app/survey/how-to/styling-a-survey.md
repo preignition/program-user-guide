@@ -4,7 +4,7 @@ description: Learn how to customize the visual appearance of your survey, includ
 
 # Styling a Survey
 
-Accessible Surveys provides a robust styling engine that allows you to customize the look and feel of your survey to match your brand while maintaining strict accessibility standards. 
+Accessible Surveys provides a robust styling engine that allows you to customize the look and feel of your survey to match your brand while maintaining strict accessibility standards.
 
 Because respondents can switch between high-contrast, dark, and light modes via the accessibility menu, the styling tools are designed to adapt automatically. This ensures your survey remains beautiful and legible regardless of the active accessibility mode.
 
@@ -22,7 +22,7 @@ To access the styling options, you need to open the survey builder's **Behavior*
 
 ## Step 2: Configure Styling Options
 
-The styling panel gives you access to various customization parameters. 
+The styling panel gives you access to various customization parameters.
 
 1. Expand the styling sections to access the configuration tools.
 2. Adjust the settings to match your desired aesthetic.
@@ -34,9 +34,10 @@ The styling panel gives you access to various customization parameters.
 
 ### Available Styling Controls
 While exact options may vary based on your plan, you typically have control over:
-*   **Primary Colors**: Set the main brand color used for buttons, active states, and highlights.
-*   **Typography**: Choose a base font family that is legible and web-safe.
-*   **Layout Elements**: Control spacing, borders, and general alignment.
+
+* **Primary Colors**: Set the main brand color used for buttons, active states, and highlights.
+* **Typography**: Choose a base font family that is legible and web-safe.
+* **Layout Elements**: Control spacing, borders, and general alignment.
 
 ::: tip
 **Accessibility First**
@@ -45,7 +46,7 @@ When you select a primary color, the platform automatically calculates appropria
 
 ## Step 3: Responsive Overrides (Optional)
 
-You can also provide specific styling overrides based on how the respondent interacts with the survey. 
+You can also provide specific styling overrides based on how the respondent interacts with the survey.
 
 For example, you can adjust padding or layout styles specifically for **small screens** (mobile devices), or define how the layout behaves when the survey is set to display **one question per page**. These overrides ensure the user experience is optimized for every context.
 
@@ -60,6 +61,6 @@ Always switch to the **Test** view to see how your styles look in a real environ
 ## References
 
 For more detailed technical information on how styling properties are managed and applied behind the scenes, please refer to:
-- [Reference: Behavior Settings](../reference/build/behavior.md)
-- [Reference: Customer Theme](../../customer/reference/customer/theme.md)
-- [Explanation: Understanding CSS Variables](../explanation/understanding-css-variables.md)
+* [Reference: Behavior Settings](../reference/build/behavior.md)
+* [Reference: Customer Theme](../../customer/reference/customer/theme.md)
+* [Explanation: Understanding CSS Variables](../explanation/understanding-css-variables.md)

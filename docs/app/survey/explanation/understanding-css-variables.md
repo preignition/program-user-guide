@@ -20,14 +20,14 @@ If you change the value of `--primary-color` in one place, every element using t
 
 ## How Accessible Surveys Uses CSS Variables
 
-Accessible Surveys relies heavily on CSS variables to drive its styling and accessibility features. 
+Accessible Surveys relies heavily on CSS variables to drive its styling and accessibility features.
 
 ### 1. Dynamic Theming
 When you configure the primary color or font of your survey in the styling editor, you aren't writing new CSS rules from scratch. Instead, you are updating the underlying CSS variables for the survey. The entire application layout references these variables, meaning your changes cascade instantly and consistently across buttons, headers, borders, and backgrounds.
 
 ### 2. Accessibility Modes (Dark, High Contrast)
-Our commitment to accessibility requires the interface to adapt to the user's needs on the fly. 
-When a respondent switches to **Dark Mode** or **High Contrast Mode**, the platform simply swaps out the color palette assigned to the CSS variables. 
+Our commitment to accessibility requires the interface to adapt to the user's needs on the fly.
+When a respondent switches to **Dark Mode** or **High Contrast Mode**, the platform simply swaps out the color palette assigned to the CSS variables.
 
 Because the underlying CSS structure uses variables like `--text-color` and `--background-color` instead of hardcoded values (like `black` or `white`), the survey can instantly invert or heighten contrast without needing a completely separate stylesheet for every theme.
 

@@ -1,6 +1,15 @@
 # Markdown Extension Examples
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+This page demonstrates some of the built-in markdown extensions provided by the VitePress documentation engine itself (this is used for writing *these* docs, rather than the Markdown used in the actual Survey App).
+
+::: info
+If you are looking for documentation on how Markdown is used within the Accessible Surveys application, please see:
+
+* [Explanation: Using Markdown](./app/survey/explanation/using-markdown.md)
+* [How-to: Providing Rich Formatting](./app/survey/how-to/providing-rich-formatting.md)
+* [Reference: Markdown Syntax & Extensions](./app/survey/reference/content/markdown/index.md)
+* [Shared Component: Rich Text Editor](./components/md-editor.md)
+:::
 
 ## Syntax Highlighting
 
