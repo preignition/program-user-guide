@@ -815,9 +815,11 @@ test.describe('Survey How-To', async () => {
 
   })
 
-  test('How to use import/export to translate forms', async ({ page }) => {
+
+
+  test('How to import/export', async ({ page }) => {
     const context = new Context(mainPath, page)
-    context.setName('import-export-translate-forms')
+    context.setName('import-export')
     await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/share/import-export`)
 
     // ## Step 1: Export the form in a format that can be translated (e.g. Excel, CSV, etc.)
@@ -859,6 +861,7 @@ test.describe('Survey How-To', async () => {
     return
 
   })
+
 
 
 
