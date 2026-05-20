@@ -414,6 +414,25 @@ test.describe('Survey How-To', async () => {
 
   })
 
+  test('How to style a survey', async ({ page }) => {
+    const context = new Context(mainPath, page)
+    context.setName('styling-a-survey')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/behavior`)
+
+    // ## Step 1: Navigate to the styling view by clicking on the "Style" tab in the build view
+    locator = page.locator('#style-tab > .button > .content')
+    await context.annotatedScreenshot(locator, 'step-1-navigate-to-style-tab')
+    await locator.click()
+
+    // ## Step 2: arrange the different styling options
+    locator = page.locator('#content-vaadin-details-0')
+    await context.annotatedScreenshot(locator, 'step-2-arrange-styling-options')
+    await locator.click()
+
+    // ## Step 3 ()optional): override for small screens or one question per page (when active)
+
+  })
+
   test('How to set access rights for forms', async ({ page }) => {
     const context = new Context(mainPath, page)
     context.setName('access-rights')

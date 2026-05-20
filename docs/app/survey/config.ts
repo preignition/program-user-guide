@@ -59,6 +59,7 @@ function getSidebar() {
             { text: 'Add images to the image library', link: `adding-images-to-library.md` },
             { text: 'Share options across multiple questions', link: `sharing-options.md` },
             { text: 'Share logical expressions', link: `sharing-logical-expressions.md` },
+            { text: 'Style a survey', link: 'styling-a-survey.md' },
             { text: 'Share content across multiple forms and surveys', link: `sharing-content.md` },
             { text: 'Set access rights for forms', link: `access-rights.md` },
           ]
@@ -211,7 +212,9 @@ function getSidebar() {
         }, {
           text: 'Useful web-related or technical concepts', collapsed: true, items: [
             { text: 'What is JSON?', link: `what-is-json.md` },
-            { text: 'Understanding CSS Units', link: `understanding-css-units.md` }]
+            { text: 'Understanding CSS Units', link: `understanding-css-units.md` },
+            { text: 'Understanding CSS Variables', link: `understanding-css-variables.md` }
+          ]
         }
 
       ]

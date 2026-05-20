@@ -29,6 +29,10 @@ Fundamental tasks for building your survey and forms, including adding questions
 - [How to use form logic](./logic-expression.md)
 - [How to add images to the image library](./adding-images-to-library.md)
 
+### Look and Feel
+
+- [How to style a survey](./styling-a-survey.md)
+
 ### Collaboration & Organization
 
 - [How to share options across multiple questions](./sharing-options.md)
