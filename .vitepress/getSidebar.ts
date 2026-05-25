@@ -19,8 +19,25 @@ export function getSidebar() {
         { text: 'Rich Text Editor', link: '/components/md-editor' }
       ]
     },
-
-
+    {
+      text: 'Release Notes',
+      base: '/release-notes/',
+      items: [
+        { text: 'Overview', link: 'index' },
+        {
+          text: 'Survey App',
+          items: [
+            { text: 'Confidence Index', link: 'survey/confidence-index' }
+          ]
+        },
+        {
+          text: 'Form Builder',
+          items: [
+            { text: 'Scroll Page Before Next', link: 'form-builder/scroll-page-before-next' }
+          ]
+        }
+      ]
+    },
     {
       text: 'APIs',
       items: [
