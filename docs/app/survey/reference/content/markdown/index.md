@@ -14,9 +14,12 @@ This reference focuses on the technical syntax and advanced styling available wh
 
 * **Standard Markdown:** Basic formatting (bold `**text**`, italic `*text*`), headings (`#`, `##`), lists, and tables. See the [Markdown Guide](https://www.markdownguide.org/basic-syntax/).
 * **HTML:** Raw HTML tags (`<strong>`, `<em>`, `<div>`, `<span>`) are supported for advanced layout control.
-  * *Note: When mixing HTML and Markdown, ensure an empty line precedes the Markdown content, and do not use leading spaces on the Markdown lines.*
 * **CSS:** Inline styles (`style="..."`) and `<style>` blocks are permitted.
 * **Custom Web Components:** Custom elements (e.g., `<pwi-tooltip>`) can be embedded directly. See [Available Web Components](./available-web-components.md).
+
+::: warning
+When mixing HTML and Markdown, ensure an empty line precedes the Markdown content, and do not use leading spaces on the Markdown lines.
+:::
 
 ## Extensions and Theming
 

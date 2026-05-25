@@ -28,6 +28,13 @@ Defines which optional accessibility adaptations are available for respondents t
 - **Scroll Page Before Next**: When enabled, requires respondents to scroll to the bottom of the current page before the "Next" button becomes active. This is only enforced on their first visit to the page.
 - **Accessible Label**: Toggles a high-visibility, accessible variant for all form labels. Activating this increases the label font size and disables related animations to improve readability.
 
+### Research & Integrity
+
+- **Behavioral Tracking**: Enables the collection of anonymized behavioral signals (e.g., time spent on questions, focus events, interaction frequency). This data is used to calculate the [Confidence Index](../../explanation/confidence-index.md) and perform interaction analysis.
+- **Monitor Drop-off**: When enabled, the system automatically analyzes stale sessions to identify where respondents abandon the survey.
+  - **Summary Generation**: A summary of progress and behavioral patterns is generated when a respondent is inactive for more than 2 hours.
+  - **Auto-Integration**: After 3 days, "dropped off" surveys are automatically integrated into the main survey dataset (similar to a "forced submit"). These entries are marked with a `isDropOff` flag for researchers to identify them.
+
 ## Layout
 
 The Layout tab determines the structural flow and media presentation of the survey.
