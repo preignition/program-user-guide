@@ -36,3 +36,7 @@ Sometimes a survey is not meant for the public. By using respondent accounts, yo
 In Accessible Surveys, a "Respondent Account" is treated as a distinct entity from the "Survey Response."
 
 When a user logs in and submits a survey, their identity data (such as their name and email) is stored securely and separately from their actual answers. The connection between the identity and the response is managed by the system. This architectural separation ensures that [Data Privacy and Security](./data-privacy-and-security.md) standards are maintained, allowing researchers to export anonymized datasets even when the survey was completed by authenticated users.
+
+### Capturing Identity during Survey
+
+For surveys that allow anonymous access but wish to capture a verified identity, the **Account Email** question type can be used. When a respondent enters their email in this field, the system automatically updates their platform account and sends a verification link. This allows an anonymous session to be "promoted" to a verified identity without forcing a login before starting the survey.

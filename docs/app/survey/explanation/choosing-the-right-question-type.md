@@ -22,6 +22,7 @@ These specialized text fields include built-in validation to ensure the data is 
 * **Telephone (Tel)**: Designed for phone numbers.
 * **Date**: Provides a date picker for selecting specific calendar dates.
 * **URL**: Validates that the input is a correctly formatted website address.
+* **Account Email**: A specialized field that synchronizes the respondent's input directly with their platform account. It includes automatic verification tracking and is ideal for capturing a primary identity during the survey process.
 
 ## Selection Inputs
 

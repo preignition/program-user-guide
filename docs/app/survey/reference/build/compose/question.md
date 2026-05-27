@@ -44,3 +44,4 @@ The application supports various question field types, including:
 - **Boolean fields**: Checkboxes, switches.
 - **Media fields**: File upload capabilities.
 - **Scale fields**: Ratings, rankings.
+- **[Account Email](./account-email.md)**: Specialized field for identity synchronization.
