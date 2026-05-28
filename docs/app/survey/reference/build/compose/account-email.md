@@ -14,8 +14,8 @@ The Account Email field implements a unique synchronization and verification flo
 - **Verification Email**: Upon a successful update, the system automatically triggers a native Firebase verification email to the new address.
 - **Dynamic Pre-filling**: If the respondent already has an email associated with their account, the field is automatically pre-filled with that address when the survey page loads.
 - **Read-only State**: To ensure data integrity, the field automatically becomes **read-only** in the following conditions:
-    - The current email address is already verified.
-    - The respondent is logged in with a permanent (non-anonymous) account.
+  - The current email address is already verified.
+  - The respondent is logged in with a permanent (non-anonymous) account.
 
 ## Verification Tracking
 

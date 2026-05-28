@@ -28,11 +28,26 @@ The class name follows the pattern:
 | `show-when-readaloud` | Element is visible **only** when Read Aloud mode is active. |
 | `hide-when-readaloud` | Element is hidden when Read Aloud mode is active. |
 
+::: tip
+
+[Prefer conditional visibility for the entire field when possible](../../../how-to/use-easy-read#step-5-conditional-visibility-advanced), especially when these classes are used to hide the entire content like:
+
+```html
+<div class="hide-when-easyread">
+  Content to be hidden 
+</div>
+```
+
+Conditional visibility is more efficient and avoids displaying space for hidden content. However, these classes are useful when you want to show or hide specific sections of text within a longer text.
+
+:::
+
 ## Examples
 
 **Display a paragraph only in Easy Read mode:**
 
 ```html
+<p>this is visible always<p>
 <p class="show-when-easyread">This paragraph is visible in Easy Read mode only.</p>
 ```
 
