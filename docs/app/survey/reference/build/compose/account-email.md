@@ -13,6 +13,9 @@ The Account Email field implements a unique synchronization and verification flo
 - **Automatic Update**: When the respondent enters an email and moves focus away from the field (the `blur` event), the system automatically attempts to update their platform account email.
 - **Verification Email**: Upon a successful update, the system automatically triggers a native Firebase verification email to the new address.
 - **Dynamic Pre-filling**: If the respondent already has an email associated with their account, the field is automatically pre-filled with that address when the survey page loads.
+- **Read-only State**: To ensure data integrity, the field automatically becomes **read-only** in the following conditions:
+    - The current email address is already verified.
+    - The respondent is logged in with a permanent (non-anonymous) account.
 
 ## Verification Tracking
 
@@ -24,6 +27,7 @@ The field provides real-time visual feedback regarding the verification status o
 ## When to Use
 
 Use the Account Email field when:
+
 - You want to capture a verified primary identity from anonymous respondents.
 - You need to ensure that the email provided is correctly linked to the respondent's platform session for longitudinal tracking.
 - You want to provide immediate feedback to the user that their identity has been successfully verified.

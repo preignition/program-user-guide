@@ -58,6 +58,8 @@ export default defineConfig({
 
 function getNav() {
   const nav = getRootNav()
+  nav.push({ text: 'Components', link: '/components/index' })
+  nav.push({ text: 'Release Notes', link: '/release-notes/index' })
   nav.push({ text: 'Accessible Surveys', link: 'https://accessiblesurveys.com' })
   return nav
 } 

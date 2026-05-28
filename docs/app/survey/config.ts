@@ -18,7 +18,6 @@ function getNav() {
   nav.push({ text: 'How-to', link: `${root}/how-to/index` })
   nav.push({ text: 'Reference', link: `${root}/reference/index` })
   nav.push({ text: 'Explanation', link: `${root}/explanation/index` })
-  nav.push({ text: 'Release Notes', link: '/release-notes/index' })
 
   return nav
 }
