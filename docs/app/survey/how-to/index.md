@@ -25,6 +25,7 @@ Fundamental tasks for building your survey and forms, including adding questions
 ### Adding Content
 
 - [How to add content to a form](./adding-content-to-a-form.md)
+- [How to control content visibility](./controlling-visibility.md)
 - [How to provide rich formatting](./providing-rich-formatting.md)
 - [How to use form logic](./logic-expression.md)
 - [How to add images to the image library](./adding-images-to-library.md)

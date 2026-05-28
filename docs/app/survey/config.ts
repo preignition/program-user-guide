@@ -54,6 +54,7 @@ function getSidebar() {
             { text: 'Mark a survey as favorite', link: `marking-a-survey-as-favorite.md` },
             { text: 'Delete a survey', link: `deleting-a-survey.md` },
             { text: 'Add content to a form', link: `adding-content-to-a-form.md` },
+            { text: 'Control content visibility', link: `controlling-visibility.md` },
             { text: 'Provide rich formatting', link: `providing-rich-formatting.md` },
             { text: 'Use form logic', link: `logic-expression.md` },
             { text: 'Add images to the image library', link: `adding-images-to-library.md` },
