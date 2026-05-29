@@ -20,3 +20,16 @@
 
 - [lit-app/cmp/tooltip/tooltip.ts](../../../../../accessibleData/lit-app/cmp/tooltip/tooltip.ts): Implementation of the `lapp-tooltip` custom element.
 - [lit-app/cmp/field/md/md-editor.ts](../../../../../accessibleData/lit-app/cmp/field/md/md-editor.ts): Markdown editor configuration where the tooltip formatting is defined.
+
+## Randomizing items - randomizing-items
+
+- [app/app-survey/schema/survey.ts](../../../../../accessibleData/app/app-survey/schema/survey.ts): Schema definition for the `randomize` property at the survey level.
+- [app/app-survey/schema/page.ts](../../../../../accessibleData/app/app-survey/schema/page.ts): Schema definition for randomization and fixed properties at the page level.
+- [app/app-survey/schema/section.ts](../../../../../accessibleData/app/app-survey/schema/section.ts): Schema definition for randomization and fixed properties at the section level.
+- [app/app-survey/schema/question.ts](../../../../../accessibleData/app/app-survey/schema/question.ts): Schema definition for randomization and fixed properties at the question level.
+- [lit-app/shared/dataUtils/random.ts](../../../../../accessibleData/lit-app/shared/dataUtils/random.ts): Core logic for stable, seeded shuffling of items.
+- [app/app-respondent/src/randomizeBuild.ts](../../../../../accessibleData/app/app-respondent/src/randomizeBuild.ts): Application logic that applies randomization to the survey build for respondents.
+
+## Understanding Randomization - understanding-randomization
+
+- [lit-app/shared/dataUtils/random.ts](../../../../../accessibleData/lit-app/shared/dataUtils/random.ts): Implementation of the Mulberry32 PRNG and seeded Fisher-Yates shuffle.

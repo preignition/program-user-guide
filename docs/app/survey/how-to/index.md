@@ -29,6 +29,7 @@ Fundamental tasks for building your survey and forms, including adding questions
 - [How to provide rich formatting](./providing-rich-formatting.md)
 - [How to use form logic](./logic-expression.md)
 - [How to add images to the image library](./adding-images-to-library.md)
+- [How to randomize survey items](./randomizing-items.md)
 
 ### Look and Feel
 

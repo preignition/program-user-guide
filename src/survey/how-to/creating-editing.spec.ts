@@ -449,4 +449,31 @@ test.describe('Survey Creating & Editing', async () => {
     await context.annotatedScreenshot(locator, 'step-3-modify-ownership')
 
   })
+
+  test('How to set randomize for items', async ({ page }) => {
+    const context = new Context(mainPath, page)
+    context.setName('randomize-items')
+    await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/compose/question/N8ux3u8mgki5GBzPKjxc.EBAwoyMLkkgOLPMQbtbX`)
+
+    // ## Step 1: Activate advanced mode
+    locator = page.getByRole('switch', { name: 'toggle advanced mode' })
+    await context.annotatedScreenshot(locator, 'step-1-activate-advanced-mode')
+    await locator.check()
+
+
+
+    // ## Step 2: mark the randomize switch to true - note: it only appears for specific item types (e.g. question with options, section with sub-items, etc.)
+    // Warning: randomization is only applied to build forms - not when testing in design mode
+
+    locator = page.locator('label').filter({ hasText: 'Randomize Options (off -' })
+    await context.annotatedScreenshot(locator, 'step-2-randomize-options')
+
+
+    // Step 3 (Optional): set the `Fixed Position` to true if you want to fix the position of specific options/items while randomizing the others (e.g. "None of the above" option, etc.)
+    locator = page.locator('label').filter({ hasText: 'Fixed Position (off - this' })
+    await context.annotatedScreenshot(locator, 'step-3-fixed-position')
+
+
+
+  })
 })

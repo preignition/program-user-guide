@@ -7,6 +7,7 @@ description: Latest updates and new features in Accessible Data.
 Stay up to date with the latest improvements and features across the Accessible Data platform.
 
 ## Survey App
+* **[Survey Item Randomization](./2026-05-28-survey-randomization.md)**: Reduce order bias by shuffling options, questions, and sections.
 
 * **[Confidence Index & Behavioral Tracking](./survey/confidence-index.md)**: Detect bots and analyze respondent interaction patterns.
 

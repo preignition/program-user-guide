@@ -10,7 +10,7 @@ import { PNG } from 'pngjs'
  * @param threshold The threshold for pixel comparison (0 to 1). Default is 0.1.
  * @param pixelThreshold The ratio of allowed different pixels. Default is 0.01 (1%).
  */
-export function saveScreenshotIfChanged(outputPath: string, buffer: Buffer, threshold = 0.15, pixelThreshold = 0.05) {
+export function saveScreenshotIfChanged(outputPath: string, buffer: Buffer, threshold = 0.15, pixelThreshold = 0.04) {
   let shouldSave = true
 
   if (fs.existsSync(outputPath)) {
