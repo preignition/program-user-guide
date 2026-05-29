@@ -31,6 +31,7 @@ Topics that explain the underlying architecture of the platform, including:
 - **[Using Survey Batches](./using-survey-batches.md):** The conceptual lifecycle of a survey batch and how it supports temporal data collection.
 
 ## Survey Quality
+
 - **[Understanding Randomization](./understanding-randomization.md)**: How stable, seeded shuffling works to reduce order bias.
 
 Content that helps you understand how to create high-quality surveys, including:
