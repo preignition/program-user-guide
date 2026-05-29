@@ -2,12 +2,12 @@ import { test } from '@playwright/test'
 import { Context } from '../../../Context.ts'
 import { initializePage } from '../../../utils/initializePage.ts'
 import { takeScreenshotAllModes } from '../../../utils/takeScreenshotAllModes.ts'
-import { baseUrl, referenceRoot, fabBar, treeGrid, pageContent, treeView, suffix } from '../constants.ts'
+import { baseUrl, fabBar, pageContent, referenceRoot, suffix, treeGrid, treeView } from '../constants.ts'
 
 test.describe('Survey Reference - Compose', () => {
 
   test('Compose and Items', async ({ page }) => {
-    const context = new Context(referenceRoot, page)
+    const context = new Context(referenceRoot + '/build', page)
     await initializePage(page, baseUrl, suffix)
     await page.waitForTimeout(2000)
 

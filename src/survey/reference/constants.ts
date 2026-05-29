@@ -1,4 +1,4 @@
-import { ClipT } from '../types.ts'
+import { ClipT } from '../../types.ts'
 
 export const port = process.env.PLAYWRIGHT_PORT || '7174'
 export const baseUrl = `http://localhost:${port}`
