@@ -54,6 +54,7 @@ For terms that appear multiple times or when your survey requires translation, u
 </figure>
 
 1. A dialog will appear. Provide a short **Name** for the term (which you will use to reference it later) and the full **Definition**.
+2. The **Name** must be unique for a form and only include letter and numbers.  Spaces and special characters will not be accepted.
 
 <figure>
   <img src="./assets/use-tooltips/step-2-add-new-glossary-item-dialog.png" alt="Dialog for adding a new Glossary item">
