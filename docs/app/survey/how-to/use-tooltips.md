@@ -75,6 +75,25 @@ When respondents encounter this tooltip, the survey will automatically look up t
 The `term` attribute can only contain alphanumeric/text characters. It **cannot** contain spaces, special characters, Markdown formatting, or HTML tags.
 :::
 
+## Tooltip Accessibility
+
+Accessible Surveys is designed with accessibility as a core feature. The tooltip component (`<lapp-tooltip>`) is built to be fully accessible out-of-the-box, but you should keep the following guidelines in mind to ensure a great experience for all respondents:
+
+### Keyboard Navigation & Screen Readers
+
+* **Focusable by default:** Every tooltip is automatically keyboard-focusable. Keyboard and screen reader users can navigate to the term using the `Tab` key to trigger the tooltip overlay and hear the definition.
+* **Avoid bypassing focus:** Unless you have a specific, advanced layout requirement, do not use the `skipFocus` attribute. Bypassing focus makes the tooltip completely inaccessible to keyboard-only and screen reader users.
+
+### Visual Indicators
+
+* **Clear visual cues:** By default, tooltips display with a dotted underline and a small "info" icon (`i`). These cues help users with cognitive or learning disabilities recognize that a term is interactive and has an explanation.
+* **Use discrete mode carefully:** The `discrete` attribute removes the dotted underline and icon, rendering the term as plain text. Only use this when it is highly obvious from the context that a term is interactive, as removing these cues makes the tooltip much harder to discover.
+
+### Keep Explanations Clear & Concise
+
+* **Keep definitions short:** Since screen readers read the full definition when the tooltip is focused, keep your descriptions short and written in plain, easy-to-understand language.
+* **Avoid overloading:** If an explanation requires multiple paragraphs or detailed formatting, do not use a tooltip. Instead, add the explanation directly in the main text of the survey or use an expandable section.
+
 ## Testing Your Tooltips
 
 You can verify that your tooltips work as expected in both the **Preview** and **Test** views.
@@ -85,3 +104,10 @@ You can verify that your tooltips work as expected in both the **Preview** and *
 ::: tip
 Use tooltips sparingly. If a word is so complex that most respondents won't understand it, consider using simpler language instead.
 :::
+
+## Related Content
+
+* [Training Course Session 2: Adding Accessibility Options](../tutorial/session-2-adding-accessibility-options.md)
+* [How-to: Use Easy Read](use-easy-read.md)
+* [How-to: Use Sign Language](use-sign-language.md)
+* [How-to: Activating Accessibility Modes](activating-accessibility-modes.md)
