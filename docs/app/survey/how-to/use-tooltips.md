@@ -65,10 +65,14 @@ For terms that appear multiple times or when your survey requires translation, u
 Once a term is defined in the Glossary, you can reference it anywhere in your survey's Markdown content (such as in introduction pages or question labels) using the `term` attribute instead of the `text` attribute.
 
 ```html
-<lapp-tooltip term="digital accessibility">digital accessibility</lapp-tooltip>
+<lapp-tooltip term="accessibility">digital accessibility</lapp-tooltip>
 ```
 
-When respondents encounter this tooltip, the survey will automatically look up the definition for "digital accessibility" in the Glossary and display it. If the survey is translated, it will automatically show the localized definition.
+When respondents encounter this tooltip, the survey will automatically look up the definition for "accessibility" in the Glossary and display it. If the survey is translated, it will automatically show the localized definition.
+
+::: warning
+The `term` attribute can only contain alphanumeric/text characters. It **cannot** contain spaces, special characters, Markdown formatting, or HTML tags.
+:::
 
 ## Testing Your Tooltips
 
