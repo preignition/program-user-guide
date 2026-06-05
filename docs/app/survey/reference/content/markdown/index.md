@@ -13,6 +13,8 @@ This reference focuses on the technical syntax and advanced styling available wh
 ## Supported Syntax
 
 * **Standard Markdown:** Basic formatting (bold `**text**`, italic `*text*`), headings (`#`, `##`), lists, and tables. See the [Markdown Guide](https://www.markdownguide.org/basic-syntax/).
+* **Triple-Colon Directives:** Custom containers for theme-aware visibility (e.g., `::: dark-only ... :::`). These provide a clean alternative to HTML `<div>` tags for wrapping blocks of content.
+
 * **HTML:** Raw HTML tags (`<strong>`, `<em>`, `<div>`, `<span>`) are supported for advanced layout control.
 * **CSS:** Inline styles (`style="..."`) and `<style>` blocks are permitted.
 * **Custom Web Components:** Custom elements (e.g., `<pwi-tooltip>`) can be embedded directly. See [Available Web Components](./available-web-components.md).
@@ -57,6 +59,12 @@ The editor environment includes built-in classes and variables to integrate user
     margin: var(--space-medium);
   }
 </style>
+
+::: dark-only
+### Dark Mode Special
+This section is rendered only when **Dark Mode** is active, using the custom `::: dark-only` directive extension. It is cleaner than using raw HTML for block visibility.
+:::
+
 ```
 
 ### Understanding the Example
@@ -87,3 +95,9 @@ Finally, a `<style>` block is included to define the custom `.box` and `.gap` cl
 
 * Instead of hardcoding colors (e.g., `background-color: blue`), it uses **CSS Tokens** like `var(--color-primary)` and `var(--color-on-primary)`.
 * If the survey is viewed in Dark Mode, or if the Customer Theme defines a different primary brand color, these variables update automatically. This ensures the custom styling remains accessible and visually consistent without requiring manual media queries.
+
+#### 6. Block Directives
+The `::: dark-only` block at the end of the example uses a **Triple-Colon Directive**. This is a custom extension of our Markdown parser that allows you to easily wrap multiple lines of content in a visibility container without needing to write raw HTML `<div>` tags.
+
+* `::: dark-only`: Wraps content in a `.dark-only` container.
+* `::: light-only`: Wraps content in a `.light-only` container.

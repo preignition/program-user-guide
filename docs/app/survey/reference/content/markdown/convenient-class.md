@@ -6,6 +6,15 @@ description: Reference for CSS layout classes available in the Markdown editor.
 
 Pre-defined CSS classes are available to style and layout content using [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) directly within the Markdown editor.
 
+## Visibility Classes
+
+These classes control the visibility of elements based on the active theme or accessibility mode.
+
+| Class | Description | Syntax Example |
+| :--- | :--- | :--- |
+| `dark-only` | Visible only in Dark Mode | `<div class="dark-only">...</div>` |
+| `light-only` | Visible only in Light Mode | `<div class="light-only">...</div>` |
+
 ## Layout Containers
 
 Apply these classes to a parent container (e.g., `<div class="...">`) to define the layout direction and behavior of its children.

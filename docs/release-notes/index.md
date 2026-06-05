@@ -15,3 +15,7 @@ Stay up to date with the latest improvements and features across the Accessible 
 ## Form Builder
 
 * **[Scroll Page Before Next](./form-builder/scroll-page-before-next.md)**: Force respondents to scroll to the bottom before moving to the next page.
+
+## Markdown Editor
+
+* **[Theme-Aware Markdown Content](./2026-06-05-theme-aware-markdown.md)**: Create content and logos that automatically adapt to Light and Dark modes using new visibility classes and simplified block directives.
