@@ -45,6 +45,8 @@ The toolbar provides dedicated menus to insert advanced components without writi
 * **Interactive Content:** Add YouTube videos, tooltips, expandable summaries (details), and Material Design icons.
 * **Media:** Add images via the toolbar, pasting from the clipboard, or dragging and dropping files directly into the editor.
 * **Layouts:** Insert responsive 2- or 3-column layouts, fixed columns, and spacing elements.
+* **Theme-Aware Content:** Use the **Theme menu** to define content that is only visible in Light or Dark mode (e.g., different logo versions).
+
 * **Styling:** Use the visual color picker to apply text and background colors that automatically adapt to your survey's active accessibility theme (e.g., dark mode or high contrast).
 * **Accessibility Controls:** When editing a survey, the toolbar includes an **Accessibility menu** to easily configure text or components to show or hide based on the user's active accessibility mode (e.g., Easy Read, Sign Language).
 

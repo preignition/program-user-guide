@@ -17,6 +17,45 @@ The class name follows the pattern:
 * **`state`:** `show` or `hide`
 * **`accessibilityOption`:** `signlanguage`, `readaloud`, or `easyread`
 
+## Theme-Aware Visibility
+
+In addition to accessibility modes, you can control visibility based on the active color theme (light or dark mode). These are especially useful for logos or theme-specific graphics.
+
+| Class Name | Description |
+| :--- | :--- |
+| `dark-only` | Element is visible **only** when Dark Mode is active. |
+| `light-only` | Element is visible **only** when Light Mode is active. |
+
+### Block Directives
+
+For large blocks of content, you can use the **Triple-Colon Directive** syntax. This is a matter of user preference and can be used with any visibility class, including theme-aware classes or accessibility modes.
+
+**Dark Mode Example:**
+
+```markdown
+::: dark-only
+This content is only visible in dark mode.
+:::
+```
+
+**Easy Read Example:**
+
+```markdown
+::: show-when-easyread
+This content is only visible when Easy Read mode is active.
+:::
+```
+
+### Image Attributes
+
+You can apply theme or accessibility classes directly to images using the attribute syntax:
+
+```markdown
+![Logo](logo-dark.png){.dark-only}
+![Logo](logo-light.png){.light-only}
+![Sign Language Video](poster.png){.show-when-signlanguage}
+```
+
 ## Available Classes
 
 | Class Name | Description |

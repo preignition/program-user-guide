@@ -58,6 +58,17 @@ Ensuring your colors remain accessible across different themes (like dark mode o
   <figcaption>The integrated color picker.</figcaption>
 </figure>
 
+## Theme-Aware Content
+
+You can create content that is only visible in either light or dark mode. This is particularly useful for logos or images that need different versions depending on the background theme.
+
+The "Theme" menu in the toolbar provides quick actions to wrap your content in theme-aware containers.
+
+<figure>
+  <img src="./assets/md-editor/mdEditorDarkLight.png" alt="The theme menu in the toolbar">
+  <figcaption>The theme menu for conditionally displaying content based on the active theme.</figcaption>
+</figure>
+
 ## Accessibility Features
 
 The editor is built with accessibility as a core priority:
