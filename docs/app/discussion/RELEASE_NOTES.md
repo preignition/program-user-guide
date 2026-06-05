@@ -154,7 +154,7 @@ Channels have 2 levels of access:
 
 The discussion app strives to follow accessibility best practice and standards. At the time of this early release, accessibility testing is done in-house.
 
-Discussion items, comments and replies are aware of which accessibility settings are being activated on the platform. For instance, [is is possible to use specific class to show or hide content depending on activation of accessibility settings](https://accessiblesurveys.com/s/help/documentation/faq/md/accessibility-mode.md).
+Discussion items, comments and replies are aware of which accessibility settings are being activated on the platform. For instance, [is is possible to use specific class to show or hide content depending on activation of accessibility settings](https://accessiblesurveys.com/s/help/documentation/faq/md/visibility-control.md).
 
 We are interested to hear from you if you have any further accessibility requirements or feedback. There might be use cases we have not yet considered or thought of. For instance, would read-aloud be useful, or should we allow voice-based posts, or shall the `easyread` mode further simplify the current interface ?
 

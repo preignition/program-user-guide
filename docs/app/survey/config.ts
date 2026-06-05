@@ -154,7 +154,7 @@ function getSidebar() {
           link: 'index.md',
           base: `${root}/reference/content/markdown/`,
           items: [
-            { text: 'Accessibility Modes', link: `accessibility-mode.md` },
+            { text: 'Visibility Control', link: `visibility-control.md` },
             { text: 'Convenient Class', link: `convenient-class.md` },
             { text: 'CSS Tokens', link: `css-tokens.md` },
             { text: 'Web Components', link: `available-web-components.md` },

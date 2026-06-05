@@ -14,7 +14,7 @@ We've introduced a new suite of tools to create Markdown content that automatica
 * **What it is:** New `.dark-only` and `.light-only` CSS classes that automatically show or hide content based on the active color theme.
 * **Why it matters:** Allows survey creators to provide different versions of logos or images that are optimized for either light or dark backgrounds, ensuring perfect legibility at all times.
 * **How to use:** Apply the classes to images or wrap text in the new visibility containers.
-* **Read more:** [Accessibility Modes Reference](../app/survey/reference/content/markdown/accessibility-mode.md)
+* **Read more:** [Accessibility Modes Reference](../app/survey/reference/content/markdown/visibility-control.md)
 
 ### Triple-Colon Directives
 

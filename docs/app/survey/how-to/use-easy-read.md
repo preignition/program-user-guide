@@ -81,7 +81,7 @@ In addition to conditionally showing or hiding entire fields, you can also condi
 4. Select **Hide When Easy Read** to insert a block of text that will be hidden when Easy Read mode is active.
 
 ::: tip
-The editor helper inserts HTML wrappers (such as `<div class="show-when-easyread">` and `<div class="hide-when-easyread">`) to seamlessly control text visibility based on the active accessibility mode. For more information, refer to the [Accessibility Mode Reference](../reference/content/markdown/accessibility-mode.md).
+The editor helper inserts HTML wrappers (such as `<div class="show-when-easyread">` and `<div class="hide-when-easyread">`) to seamlessly control text visibility based on the active accessibility mode. For more information, refer to the [Accessibility Mode Reference](../reference/content/markdown/visibility-control.md).
 :::
 
 ## Best Practices for Easy Read

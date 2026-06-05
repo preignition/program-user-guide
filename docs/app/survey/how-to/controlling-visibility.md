@@ -29,6 +29,9 @@ By default, all modes are selected, meaning the content is always visible.
 
 ## Method 2: CSS Show/Hide Classes
 
+Alternatively, you can use **Markdown Block Directives** (like `::: dark-only`) for a cleaner, non-HTML way to achieve the same result.
+
+
 If you need to show or hide specific words, paragraphs, or components **within a single field** (like a text page or a question label), use CSS classes in the Markdown editor.
 
 ### When to use it
@@ -49,7 +52,7 @@ Wrap your content in an HTML tag (like `<div>` or `<span>`) and apply the releva
 <p class="show-when-easyread">This version uses simpler words for Easy Read.</p>
 ```
 
-Refer to the [Accessibility Mode Reference](../reference/content/markdown/accessibility-mode.md) for the full list of available classes.
+Refer to the [Visibility Control Reference](../reference/content/markdown/visibility-control.md) for the full list of available classes.
 
 ## Method 3: Logical Expressions
 
@@ -87,6 +90,6 @@ For detailed steps, see [How to use form logic](./logic-expression.md).
 
 * [How to activate accessibility modes](./activating-accessibility-modes.md)
 * [How to use form logic](./logic-expression.md)
-* [Accessibility Mode Reference](../reference/content/markdown/accessibility-mode.md)
+* [Visibility Control Reference](../reference/content/markdown/visibility-control.md)
 * [The Concept of Modes](../explanation/the-concept-of-modes.md)
 * [Understanding Form Logic](../explanation/understanding-form-logic.md)
