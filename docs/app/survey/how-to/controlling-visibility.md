@@ -31,7 +31,6 @@ By default, all modes are selected, meaning the content is always visible.
 
 Alternatively, you can use **Markdown Block Directives** (like `::: dark-only`) for a cleaner, non-HTML way to achieve the same result.
 
-
 If you need to show or hide specific words, paragraphs, or components **within a single field** (like a text page or a question label), use CSS classes in the Markdown editor.
 
 ### When to use it

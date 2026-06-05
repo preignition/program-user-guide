@@ -39,6 +39,7 @@ This section is rendered only when **Dark Mode** is active.
 ```
 
 ### Why use Directives?
+
 * **Readability**: Content remains easy to read in the editor.
 * **Markdown Support**: You can use standard Markdown (like bold, lists, and headings) inside the block without worrying about HTML nesting rules.
 
