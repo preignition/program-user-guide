@@ -12,7 +12,7 @@ If you already understand the basics of the platform and find yourself asking *"
 
 ## 1. Creating & Editing
 
-Fundamental tasks for building your survey and forms, including adding questions, using tooltips, and Markdown formatting.
+Fundamental tasks for building your survey, including adding questions, applying logic, and Markdown formatting.
 
 ### Survey & Form Management
 

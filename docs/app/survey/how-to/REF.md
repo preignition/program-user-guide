@@ -39,3 +39,8 @@
 - [lit-app/cmp/field/md/md-editor.ts](../../../../../accessibleData/lit-app/cmp/field/md/md-editor.ts): Implementation of the theme-aware actions in the Markdown editor.
 - [lit-app/shared/md/marked.ts](../../../../../accessibleData/lit-app/shared/md/marked.ts): Extension for parsing triple-colon directives and image attributes.
 - [lit-app/shared/styles/class/show-when-accessibility.ts](../../../../../accessibleData/lit-app/shared/styles/class/show-when-accessibility.ts): CSS classes for conditional visibility.
+
+## Creating a new survey - creating-a-new-survey
+
+- [app/app-survey/src/dialog/dialog-survey-create.ts](../../../../../accessibleData/app/app-survey/src/dialog/dialog-survey-create.ts): Implementation of the wizard dialog for creating a new survey, including selecting the form type.
+- [app/app-survey/src/dialog/dialog-form-create.ts](../../../../../accessibleData/app/app-survey/src/dialog/dialog-form-create.ts): Sub-dialog containing the form creation fields (e.g., empty form details, prompt field, file uploader).
