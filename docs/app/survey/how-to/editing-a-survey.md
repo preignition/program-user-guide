@@ -4,7 +4,7 @@ description: This page describes how you can enter the survey editor to modify a
 
 # Editing a survey
 
-Once a survey has been created, you can edit its structure, logic, and settings at any time.
+Once a survey has been created, you can edit its content, structure, logic, and settings at any time.
 
 ## Step 1: Open the Survey Editor
 
@@ -45,9 +45,21 @@ The right panel will update to show the settings and content for the selected pa
   <figcaption>Edit the page title</figcaption>
 </figure>
 
+## Providing a Short Title
+
+When you edit a page title, the editor checks its length. If the title exceeds **30 characters**, a **Short Title** field appears below the main title field.
+
+The short title is used in the **form navigation menu** — the sidebar that respondents use to move between pages. Long titles can overflow or become difficult to read in this compact space, so the short title provides a concise alternative.
+
+::: info
+The Short Title field is **required** once it appears. Enter a brief, meaningful label (up to 30 characters) that clearly identifies the page.
+:::
+
+If you later shorten the main page title to 30 characters or fewer, the Short Title field remains visible as long as a short title value has been entered. To remove it, clear the short title text and then shorten the main title.
+
 ## Step 3: Add Content Mode
 
-To add actual questions to your page, you need to switch to **Add Content Mode**. Click the "Add Content Mode" button (typically located at the bottom right or in the view toolbar).
+To add actual questions to your page, you need to switch to **Add Content Mode**. Click the "Add Content Mode" button (located at the bottom right of the page).
 
 <figure>
   <img src="./assets/editing-a-survey/step-3-click-add-content-mode.png" alt="Click Add Content Mode">

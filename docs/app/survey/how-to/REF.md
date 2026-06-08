@@ -44,3 +44,9 @@
 
 - [app/app-survey/src/dialog/dialog-survey-create.ts](../../../../../accessibleData/app/app-survey/src/dialog/dialog-survey-create.ts): Implementation of the wizard dialog for creating a new survey, including selecting the form type.
 - [app/app-survey/src/dialog/dialog-form-create.ts](../../../../../accessibleData/app/app-survey/src/dialog/dialog-form-create.ts): Sub-dialog containing the form creation fields (e.g., empty form details, prompt field, file uploader).
+
+## Editing a Survey - Short Title
+
+- [packages/pwi-resource/src/edit/page/resource-edit-page.ts](../../../../../accessibleData/packages/pwi-resource/src/edit/page/resource-edit-page.ts): Renders the page editor UI; conditionally shows the short title field when the main title exceeds the character threshold or a short title already exists.
+- [app/app-survey/src/entity/PageE.ts](../../../../../accessibleData/app/app-survey/src/entity/PageE.ts): Page entity definition; defines the `shortHeading` locale model with a `maxLength` of 30.
+- [packages/preignition-form/src/data-entry.js](../../../../../accessibleData/packages/preignition-form/src/data-entry.js): Form data entry component; uses `shortTitle || title` for the navigation drawer menu labels.
