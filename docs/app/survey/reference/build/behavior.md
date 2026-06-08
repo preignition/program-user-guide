@@ -62,21 +62,45 @@ The Layout tab determines the structural flow and media presentation of the surv
 The Style tab provides a token-based design system to fine-tune the survey's layout and typography. Styling is organized into three hierarchical levels: **Base Tokens**, **Mobile Overrides** (applied below 600px viewport width), and **One Question At A Time Overrides** (applied only when that specific presentation mode is active).
 
 <figure>
-  <img src="./assets/behavior-style-full-auto.png" alt="Style tab showing expanded token groups.">
-  <figcaption>The Style configuration tab with expanded token panels.</figcaption>
+  <img src="./assets/behavior-style-auto.png" alt="Style tab showing Scaling Factors.">
+  <figcaption>The Style configuration tab. Scaling Factors are always visible at the top of each section.</figcaption>
+</figure>
+
+::: info
+**Advanced Mode**
+While Scaling Factors are always visible, more granular controls for specific spacing and typography tokens are only accessible when **Advanced Mode** is enabled in the application settings.
+:::
+
+<figure>
+  <img src="./assets/behavior-style-advanced-full-auto.png" alt="Advanced Style settings.">
+  <figcaption>The expanded Style configuration view in Advanced Mode, showing granular spacing and typography tokens.</figcaption>
 </figure>
 
 ### Available Style Tokens
 
 The following layout and typography tokens can be configured. Size tokens accept standard CSS units (px, em, rem, %). For an in-depth look at how these behave, see [Understanding CSS Units](../../explanation/understanding-css-units.md). Typography (font size) tokens strictly require the rem unit.
 
-#### Form Tokens
+::: tip
+**Design Standards**
+Default tokens are calibrated to respect **Material Design 3** specifications. While you can adjust these, we recommend testing your survey on various screen sizes (mobile, tablet, and desktop) to ensure the layout remains functional and legible.
+:::
+
+#### Scaling Factors
+Scaling factors are global multipliers that affect all related tokens simultaneously. They are the most efficient way to adjust the overall density and readability of your survey.
+
+| Token | Default | Description |
+| :--- | :--- | :--- |
+| **Font Scale** | `1` | A multiplier applied to all font sizes (e.g., `1.2` increases text size by 20%). |
+| **Spacing Scale** | `1` | A multiplier applied to all margins, paddings, and gaps (e.g., `0.8` makes the layout 20% more compact). |
+| **Small Font Scale** | `1` | A multiplier applied specifically to smaller text elements (e.g., `1.2` increases the size of supporting text and labels while keeping main labels at the default size). |
+
+#### Form Tokens (Advanced Mode)
 
 | Token | Description |
 | :--- | :--- |
 | **Form Margin Inline** | The horizontal (left and right) margin applied to the entire form container. |
 
-#### Page Tokens
+#### Page Tokens (Advanced Mode)
 
 | Token | Description |
 | :--- | :--- |
@@ -85,7 +109,7 @@ The following layout and typography tokens can be configured. Size tokens accept
 | **Page Padding Inline** | The horizontal (left and right) padding inside the page container. |
 | **Page Elevation** | The depth/shadow level of the page container. Accepts integer values from 0 to 5. |
 
-#### Section Tokens
+#### Section Tokens (Advanced Mode)
 
 | Token | Description |
 | :--- | :--- |
@@ -93,7 +117,7 @@ The following layout and typography tokens can be configured. Size tokens accept
 | **Section Margin Inline** | The horizontal margin applied to sections. |
 | **Section Gap** | The spacing between elements within a section. |
 
-#### Field Spacing Tokens
+#### Field Spacing Tokens (Advanced Mode)
 
 | Token | Description |
 | :--- | :--- |
@@ -104,12 +128,13 @@ The following layout and typography tokens can be configured. Size tokens accept
 | **Field Gap** | The internal spacing between distinct elements inside a field (e.g., between the label and the input). |
 | **Field Margin Block End** | The explicit bottom margin applied below fields to separate them from the next element. |
 
-#### Field Typography Tokens
+#### Field Typography Tokens (Advanced Mode)
 
 | Token | Description |
 | :--- | :--- |
 | **Label Font Size** | The size of the primary question label text. |
-| **Populated Label Font Size** | The size of the label text when the field is populated or actively focused (typically smaller than the base label). |
-| **Input Font Size** | The size of the text typed into input fields or displayed as answer options. |
+| **Populated Label Font Size** | The size of the label text when the field is populated or actively focused. |
+| **Input Font Size** | The size of the text typed into input fields. |
+| **Option Font Size** | The size of the text for choice options (checkboxes, radio buttons). |
 | **Supporting Text Font Size** | The size of helper text or error messages displayed below the field. |
-| **Supporting Text Line Height** | The line height applied to multi-line supporting text to ensure readability. |
+| **Supporting Text Line Height** | The line height applied to multi-line supporting text. |

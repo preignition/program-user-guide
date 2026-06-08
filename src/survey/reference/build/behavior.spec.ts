@@ -1,7 +1,7 @@
 import { test } from '@playwright/test'
 import { Context } from '../../../Context.ts'
 import { initializePage } from '../../../utils/initializePage.ts'
-import { baseUrl, referenceRoot, pageContent, suffix } from '../constants.ts'
+import { baseUrl, pageContent, referenceRoot, suffix } from '../constants.ts'
 
 test.describe('Survey Reference - Form Behavior', () => {
 
@@ -31,6 +31,6 @@ test.describe('Survey Reference - Form Behavior', () => {
     await page.locator('#style-tab > .button').click()
     await context
       .setName('behavior-style')
-      .screenshot()
+      .screenshot(true)
   })
 })

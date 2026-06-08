@@ -20,35 +20,44 @@ To access the styling options, you need to open the survey builder's **Behavior*
   <figcaption>Click the Style tab to access the visual customization tools.</figcaption>
 </figure>
 
-## Step 2: Configure Styling Options
+## Step 2: Configure Scaling Factors
 
-The styling panel gives you access to various customization parameters.
+::: tip
+**Design Standards**
+Default styling tokens respect **Material Design 3** specifications. If you choose to deviate from these defaults, ensure you test your design across multiple screen sizes (mobile, tablet, desktop) to maintain a high-quality respondent experience.
+:::
 
-1. Expand the styling sections to access the configuration tools.
-2. Adjust the settings to match your desired aesthetic.
+The most efficient way to adjust your survey's density and readability is through **Scaling Factors**. These act as global multipliers for all spacing and typography tokens.
+
+1. **Font Scale** (Default: `1`): Increase or decrease the size of all text across the survey.
+2. **Spacing Scale** (Default: `1`): Adjust the "breathability" of the layout. Lower values (e.g., `0.8`) create a more compact design, while higher values (e.g., `1.2`) add more white space.
+3. **Small Font Scale** (Default: `1`): Fine-tune the size of secondary text elements (like helper text and populated labels) independently of the main font scale (e.g., use `1.2` to increase the size of secondary text).
 
 <figure>
   <img src="./assets/styling-a-survey/step-2-arrange-styling-options.png" alt="Arrange styling options">
-  <figcaption>Expand the styling sections to customize colors, fonts, and layout.</figcaption>
+  <figcaption>Use Scaling Factors for quick, global adjustments to look and feel.</figcaption>
 </figure>
 
-### Available Styling Controls
-While exact options may vary based on your plan, you typically have control over:
+## Step 3: Advanced Styling (Optional)
 
-* **Primary Colors**: Set the main brand color used for buttons, active states, and highlights.
-* **Typography**: Choose a base font family that is legible and web-safe.
-* **Layout Elements**: Control spacing, borders, and general alignment.
+For more granular control, you can enable **Advanced Mode** in the application settings. This reveals individual tokens for:
+
+* **Margins and Paddings**: Fine-tune spacing at the page, section, and field levels.
+* **Typography Details**: Set specific font sizes for labels, inputs, and options.
+
+Size tokens accept values in `px`, `em`, `rem`, or `%`. However, typography tokens **must use `rem` units** to ensure they scale correctly with accessibility settings.
 
 ::: tip
 **Accessibility First**
 When you select a primary color, the platform automatically calculates appropriate contrast ratios for text and backgrounds to ensure compliance with WCAG standards. This means your survey will remain accessible even if respondents switch to dark or high-contrast themes.
 :::
 
-## Step 3: Responsive Overrides (Optional)
+## Responsive Overrides
 
-You can also provide specific styling overrides based on how the respondent interacts with the survey.
+You can also provide specific styling overrides for different contexts:
 
-For example, you can adjust padding or layout styles specifically for **small screens** (mobile devices), or define how the layout behaves when the survey is set to display **one question per page**. These overrides ensure the user experience is optimized for every context.
+* **Mobile Overrides**: Adjust the layout specifically for screens smaller than 600px.
+* **One Question At A Time**: Customize the appearance when using the focused presentation mode.
 
 ## How Theming Works
 

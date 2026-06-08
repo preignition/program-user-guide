@@ -39,3 +39,9 @@
 - [lit-app/cmp/field/md/md-editor.ts](../../../../../accessibleData/lit-app/cmp/field/md/md-editor.ts): Implementation of the theme-aware actions in the Markdown editor.
 - [lit-app/shared/md/marked.ts](../../../../../accessibleData/lit-app/shared/md/marked.ts): Extension for parsing triple-colon directives and image attributes.
 - [lit-app/shared/styles/class/show-when-accessibility.ts](../../../../../accessibleData/lit-app/shared/styles/class/show-when-accessibility.ts): CSS classes for conditional visibility.
+
+## Styling a Survey - styling-a-survey
+
+- [app/app-survey/schema/theme.ts](../../../../../accessibleData/app/app-survey/schema/theme.ts): Schema definition for font and spacing scaling factors and individual style tokens.
+- [app/app-survey/renderer/style.ts](../../../../../accessibleData/app/app-survey/renderer/style.ts): CSS implementation of the scaling logic using global multipliers.
+- [app/app-survey/src/page/edit/design/behavior.ts](../../../../../accessibleData/app/app-survey/src/page/edit/design/behavior.ts): Editor UI for configuring style tokens and scaling factors.

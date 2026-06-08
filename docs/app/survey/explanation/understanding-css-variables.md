@@ -33,3 +33,11 @@ Because the underlying CSS structure uses variables like `--text-color` and `--b
 
 ### 3. Responsive Overrides
 Variables also make it easy to adjust sizing based on the screen size (responsive design). We use variables to control padding and margins, which shrink automatically on mobile devices to ensure a comfortable reading experience.
+
+### 4. Scaling and Density
+We use CSS variables as global multipliers to control the overall "density" and "readability" of the survey layout.
+
+- **--a11y-form-spacing-scale**: This variable acts as a multiplier for all spacing-related tokens (margins, paddings, gaps). If set to `0.8`, every spacing unit in the survey becomes 20% smaller, resulting in a more compact layout.
+- **--a11y-form-font-scale**: Similarly, this variable scales all typography. It ensures that when a respondent or a designer wants larger text, the entire typographic hierarchy scales proportionally, preserving the relationship between labels, inputs, and supporting text.
+
+By using multipliers instead of hardcoded overrides, we ensure that the survey remains structurally sound and accessible regardless of the density chosen by the designer.
