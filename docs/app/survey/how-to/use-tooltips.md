@@ -84,6 +84,10 @@ Accessible Surveys is designed with accessibility as a core feature. The tooltip
 * **Focusable by default:** Every tooltip is automatically keyboard-focusable. Keyboard and screen reader users can navigate to the term using the `Tab` key to trigger the tooltip overlay and hear the definition.
 * **Avoid bypassing focus:** Unless you have a specific, advanced layout requirement, do not use the `skipFocus` attribute. Bypassing focus makes the tooltip completely inaccessible to keyboard-only and screen reader users.
 
+### Touch-Screen Devices
+
+* **Longpress to activate:** On touch-screen devices, tooltips are activated by a longpress (pressing and holding the term). This interaction model ensures that scrolling and other touch gestures are not accidentally interrupted by tooltips appearing unexpectedly, providing a better accessible experience for touch users.
+
 ### Visual Indicators
 
 * **Clear visual cues:** By default, tooltips display with a dotted underline and a small "info" icon (`i`). These cues help users with cognitive or learning disabilities recognize that a term is interactive and has an explanation.

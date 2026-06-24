@@ -14,6 +14,10 @@ Tooltips can be added to surveys to explain words which are complex or difficult
 
 It is best practice to use Tooltips sparingly and keep the descriptions short so they render well on smaller devices such as tablets and phones
 
+### Accessibility and Touch-Screen Devices
+
+On touch-screen devices, tooltips are activated by a longpress (pressing and holding the word). This interaction is linked to accessibility, ensuring that scrolling and other touch interactions are not accidentally interrupted.
+
 ## Step 1
 
 Tooltips can be added anywhere you like in your survey by using this code;
