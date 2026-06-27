@@ -2,7 +2,7 @@ import { Locator, test } from '@playwright/test'
 import { Context } from '../Context.ts'
 import { initializeFirebaseApp } from '../utils/initialize'
 import { initializePage } from '../utils/initializePage.ts'
-const db = initializeFirebaseApp().db
+initializeFirebaseApp()
 
 const port = '7174'
 const baseUrl = `http://localhost:${port}` // playwright team
@@ -87,10 +87,10 @@ test.describe('Customer How-To', async () => {
     locator = page.getByRole('button', { name: 'Save' })
     await context.annotatedScreenshot(locator, 'step-5-save-theme')
   })
-  test('Manage Channels', async ({ page }) => {
+  test('Manage Channels', async ({ }) => {
   })
-  test('Create a new Team', async ({ page }) => {
+  test('Create a new Team', async ({ }) => {
   })
-  test('Manage Team Members', async ({ page }) => {
+  test('Manage Team Members', async ({ }) => {
   })
 })

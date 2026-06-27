@@ -31,7 +31,6 @@ const clipBuildContent: PageScreenshotOptions['clip'] = {
   height: 800,
 }
 
-const hasRunFirst = false
 
 test.describe('Survey Builder Screenshots', () => {
   test.beforeEach(async ({ page }) => {

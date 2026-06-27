@@ -2,7 +2,7 @@ import { expect, Locator, test } from '@playwright/test'
 import { Context } from '../../Context.ts'
 import { initializeFirebaseApp } from '../../utils/initialize'
 import { initializePage } from '../../utils/initializePage.ts'
-const db = initializeFirebaseApp().db
+initializeFirebaseApp()
 
 const port = '7173'
 const a11yPort = '7174'
@@ -261,7 +261,7 @@ test.describe('Survey Creating & Editing', async () => {
 
   })
 
-  test('How to provide rich formatting', async ({ page }) => {
+  test('How to provide rich formatting', async ({ }) => {
   })
 
   test('How to use form logic', async ({ page }) => {
