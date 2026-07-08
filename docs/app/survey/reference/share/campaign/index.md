@@ -32,7 +32,7 @@ When a campaign is selected in the **Link Builder**, the generated survey URL is
 The following tracking parameters can be appended to survey links:
 
 | Parameter | Description | How it's set |
-|-----------|-------------|-------------|
+| --------- | ----------- | ------------ |
 | `utm_campaign` | The campaign name | Set automatically from the selected campaign |
 | `utm_medium` | The channel type driving traffic | Selected per link from a predefined list |
 | `utm_content` | Identifies the specific link element clicked | Chosen per link: Logo Link, Text Link, or Image Link |
@@ -40,25 +40,12 @@ The following tracking parameters can be appended to survey links:
 
 The `utm_source` parameter is added automatically by the distribution platform and does not need to be configured manually.
 
-<!-- ### Medium Options
-
-The following predefined channel types are available for `utm_medium`:
-
-| Value | Label | Use case |
-|-------|-------|----------|
-| `none` | None | Direct traffic or unspecified |
-| `email` | Email | Email marketing campaigns |
-| `organic` | Organic | Unpaid search results |
-| `cpc` | Cost per Click | Paid advertising |
-| `social` | Social | Social media platforms |
-| `video` | Video | Video content platforms | -->
-
 ### Content Type Options
 
 The following predefined values are available for `utm_content`:
 
 | Value | Label | Description |
-|-------|-------|-------------|
+| ----- | ----- | ----------- |
 | *(empty)* | No Pre-Selection | No content parameter added |
 | `logolink` | Logo Link | The survey logo was clicked |
 | `textlink` | Text Link | A text hyperlink was clicked |
