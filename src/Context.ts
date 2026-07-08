@@ -105,7 +105,7 @@ export class Context implements ContextT {
 
 
 
-  async screenshot(advanced?: boolean) {
+  async screenshot(advanced?: boolean, delay: number = 50) {
     const name = this.name ? this.name + '-' : ''
     const advancedModeSwitch = (await this.page.getByRole('switch', { name: 'toggle advanced mode' }).isVisible())
       ? this.page.getByRole('switch', { name: 'toggle advanced mode' })
@@ -114,9 +114,8 @@ export class Context implements ContextT {
     let pageIsLargerThanViewport = await this.page.evaluate(() => {
       return document.body.scrollHeight > window.innerHeight || document.body.scrollWidth > window.innerWidth
     })
-    // await this.page.waitForTimeout(50);
     await advancedModeSwitch?.uncheck()
-    await this.page.waitForTimeout(50)
+    await this.page.waitForTimeout(delay)
 
     await Promise.all([
       this.page.screenshot().then(b => saveScreenshotIfChanged(`${this.path}/assets/${name}auto.png`, b)),

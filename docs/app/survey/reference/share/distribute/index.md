@@ -1,33 +1,51 @@
 ---
-description: Reference documentation for distributing your survey to respondents.
+description: Reference documentation for distributing your survey and using the Link Builder.
 ---
 
 # Distribute Your Survey
 
-The **Distribute** page provides the tools and settings necessary to generate and manage access links for your survey.
+The **Distribute** page provides the tools and settings necessary to generate, customize, and copy access links for your survey.
 
 <figure>
   <img src="./assets/distribute-auto.png" alt="The survey distribution interface">
   <figcaption>The survey distribution interface</figcaption>
 </figure>
 
-## Interface Overview
+## Distribution Links
+
+The core of the Distribute page lets you generate access links for different phases of your survey lifecycle:
+
+- **Display Link for Test**: Generates a test URL (using `SURVEY_TEST_URL`). Test links are intended for previewing, testing, and gathered feedback from early respondents. Answers submitted via test links are **not** saved to the production database.
+- **Display Link for Production**: Generates the live production URL (using `SURVEY_PROD_URL`). This button is only enabled once at least one survey build has been published. Submissions via this link are recorded as official production dataset responses.
 
 <figure>
-  <img src="./assets/distribute-content-auto.png" alt="Distribution settings content">
-  <figcaption>Distribution settings content</figcaption>
+  <img src="./assets/distribute-test-link-full-auto.png" alt="The Link Builder interface with generated test link details">
+  <figcaption>The Link Builder interface with generated test link details</figcaption>
 </figure>
 
-The **Distribute** page allows you to generate custom links to share via email, chat, social media, or your own website.
+## The Link Builder
 
-- **Survey Mode**: Select the operational mode for the generated link.
-  - **Production**: Links intended for real respondents. Answers submitted via these links are automatically saved to the database.
-  - **Test**: Links intended for previewing and testing the survey before it goes live. Answers submitted via test links are **not** saved to the database.
-- **Survey Name / Alias**: Choose the base path for your URL. You can use the default cryptic survey identifier or an "alias" (a more readable, customized link text).
-- **Survey Options**: Configuration toggles that vary depending on whether the survey is in test or production mode (e.g., forcing respondents to use the latest version of the survey, displaying a landing page).
-- **Accessibility Modes**: Generate a link that automatically activates a specific accessibility mode (e.g., Read Aloud, Easy Read, Sign Language) when a respondent clicks on it.
-- **Survey Link & QR Code**: View and copy the generated link or download a QR code corresponding to the link configuration.
+Once you click to display either a test or production link, the **Link Builder** is displayed below. The Link Builder dynamically appends query parameters to your survey URL based on the presets you select:
 
-## Advanced Settings
+### 1. Language Presets
+If your survey is multilingual and has translations configured, you can pre-select a language for the generated link.
+- **No Pre-Selection**: The survey will default to the respondent's preferred browser language.
+- **Selected Language**: Appends `?lang=<code>` to force the survey to render in the selected language.
 
-For custom tracking, domain masking, and creating alias survey links, see the [Advanced Distribution Settings](./advanced.md).
+### 2. Sign Language Presets
+If sign language modes are active for the survey, you can pre-select a specific sign language dialect.
+- Appends `?signlanguage=<code>` to automatically activate the sign language video overlay upon landing.
+
+### 3. Accessibility Modes Presets
+Pre-select accessibility modes to be automatically enabled when a respondent opens the link:
+- **Easy Read**: Appends `?easyread=true` to render the simplified language version.
+- **Read Aloud**: Appends `?readaloud=true` to automatically activate text-to-speech reading.
+- **Voice Recording**: Appends `?voice=true` to enable voice response recording features.
+
+Multiple accessibility modes can be combined in the same link.
+
+## Related Content
+
+- [Campaigns & UTM Tracking](../campaign/index.md) — Creating and managing marketing campaigns
+- [Advanced Distribution Settings](./advanced.md) — Custom tracking links and campaign selector in Advanced Mode
+- [Publishing a Survey](../../how-to/publishing-a-survey.md) — Step-by-step guide to building and sharing versions

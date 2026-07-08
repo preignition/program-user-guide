@@ -43,6 +43,14 @@ test.describe('Survey Reference - Share', () => {
       .setName('distribute')
       .screenshot(true)
 
+
+    // clicking on the `test link` button opens a new tab, so we need to handle that
+    await page.getByRole('button', { name: 'Display link for Test' }).click()
+    console.info(`Capturing distribute test link`)
+    await context
+      .setName('distribute-test-link')
+      .screenshot(true)
+
     // SETTINGS
     await page.getByText('Account type').click()
     console.info(`Capturing account type`)
@@ -84,13 +92,22 @@ test.describe('Survey Reference - Share', () => {
       .setName('batch')
       .screenshot(true)
 
+    // CAMPAIGN  
+    await page.getByText('Campaign').first().click()
+    console.info(`Capturing campaign`)
+    await context
+      .setPath('../campaign')
+      .setName('campaign')
+      .screenshot(true, 1500)
+
+
     // WEBHOOK
     await page.getByText('Webhook').first().click()
     console.info(`Capturing webhook`)
     await context
       .setPath('../webhook')
       .setName('webhook')
-      .screenshot(true)
+      .screenshot(true, 1500)
 
     // IMPORT/EXPORT
     await page.getByText('Import/Export').first().click()

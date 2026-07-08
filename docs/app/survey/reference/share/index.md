@@ -22,5 +22,6 @@ The **Share** section is your hub for managing the lifecycle of your survey. Fro
 - [Redirection](./redirection/index.md) - Configure redirection settings.
 - [Access](./access/index.md) - Manage user permissions.
 - [Batch](./batch/index.md) - Group responses and schedule availability.
+- [Campaign](./campaign/index.md) - Track how respondents are referred to your survey.
 - [Webhooks](./webhook/index.md) - Configure integrations.
 - [Terms](./terms/index.md) - Manage terms and conditions for respondents.
