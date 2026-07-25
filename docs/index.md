@@ -23,6 +23,13 @@ features:
       dark: /app/analytics-dark.svg
     link: /app/survey/index
     linkText: 'Go to documentation'
+  - title: Listserv App
+    details: Moderated multilingual announcement and broadcast platform
+    icon: 
+      light: /app/listserv.svg
+      dark: /app/listserv-dark.svg
+    link: /app/listserv/index
+    linkText: 'Go to documentation'
   - title: Customer App (in progress)
     details: Learn how to manage customers
     icon: 
