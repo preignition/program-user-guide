@@ -3,21 +3,26 @@ import { Context } from '../../Context.ts'
 import { initializePage } from '../../utils/initializePage.ts'
 import { baseUrl, listservAppPath, pageContent, referenceRoot } from './constants.ts'
 
+function navigate(page: import('@playwright/test').Page, path: string) {
+  return page.evaluate((p) => {
+    window.history.pushState({}, '', `/${p}`)
+    window.dispatchEvent(new PopStateEvent('popstate'))
+  }, path)
+}
+
 test.describe('Listserv Reference', () => {
 
   test('Public Pages', async ({ page }) => {
     const context = new Context(referenceRoot, page)
     await initializePage(page, baseUrl, `${listservAppPath}/broadcast`)
-    await page.waitForTimeout(2500)
+    await page.waitForTimeout(500)
 
     // BROADCAST (public archive)
     console.info('Capturing broadcast-archive')
     await context
       .setPath('public')
       .setName('broadcast-archive')
-      .setArea([{ name: 'content', clip: pageContent }])
       .screenshot()
-    context.removeArea('content')
 
     // SUBSCRIBE
     await page.getByRole('link', { name: 'Subscribe' }).click()
@@ -25,9 +30,7 @@ test.describe('Listserv Reference', () => {
     console.info('Capturing subscribe')
     await context
       .setName('subscribe')
-      .setArea([{ name: 'content', clip: pageContent }])
       .screenshot()
-    context.removeArea('content')
   })
 
   test('Admin Pages', async ({ page }) => {
@@ -45,7 +48,7 @@ test.describe('Listserv Reference', () => {
     context.removeArea('content')
 
     // MODERATION QUEUE
-    await page.getByText('Moderation').first().click()
+    await navigate(page, `${listservAppPath}/admin/moderation`)
     await page.waitForTimeout(500)
     console.info('Capturing admin-moderation')
     await context
@@ -55,7 +58,7 @@ test.describe('Listserv Reference', () => {
     context.removeArea('content')
 
     // BROADCASTS LIST
-    await page.getByText('Broadcasts').first().click()
+    await navigate(page, `${listservAppPath}/admin/broadcast`)
     await page.waitForTimeout(500)
     console.info('Capturing admin-broadcasts')
     await context
@@ -65,7 +68,7 @@ test.describe('Listserv Reference', () => {
     context.removeArea('content')
 
     // SUBSCRIBERS LIST
-    await page.getByText('Subscribers').first().click()
+    await navigate(page, `${listservAppPath}/admin/subscriber`)
     await page.waitForTimeout(500)
     console.info('Capturing admin-subscribers')
     await context
@@ -90,7 +93,7 @@ test.describe('Listserv Reference', () => {
     context.removeArea('content')
 
     // USER MANAGEMENT
-    await page.getByText('User Management').first().click()
+    await navigate(page, `${listservAppPath}/settings/user`)
     await page.waitForTimeout(500)
     console.info('Capturing settings-user')
     await context
@@ -100,7 +103,7 @@ test.describe('Listserv Reference', () => {
     context.removeArea('content')
 
     // CHANNEL CONFIGURATION
-    await page.getByText('Channel Configuration').first().click()
+    await navigate(page, `${listservAppPath}/settings/channel`)
     await page.waitForTimeout(500)
     console.info('Capturing settings-channel')
     await context
@@ -110,7 +113,7 @@ test.describe('Listserv Reference', () => {
     context.removeArea('content')
 
     // ACTIVE LANGUAGES
-    await page.getByText('Active Languages').first().click()
+    await navigate(page, `${listservAppPath}/settings/language`)
     await page.waitForTimeout(500)
     console.info('Capturing settings-language')
     await context
@@ -120,7 +123,7 @@ test.describe('Listserv Reference', () => {
     context.removeArea('content')
 
     // BOUNCE HANDLING
-    await page.getByText('Bounce Handling').first().click()
+    await navigate(page, `${listservAppPath}/settings/bounce`)
     await page.waitForTimeout(500)
     console.info('Capturing settings-bounce')
     await context
