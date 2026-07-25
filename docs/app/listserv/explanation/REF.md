@@ -23,3 +23,9 @@
 - [`app/app-listserv/actionApi/src/send.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/actionApi/src/send.ts): Broadcast dispatch program sending single payloads to channel Mailgun mailing lists.
 - [`app/app-listserv/functions/src/jobs/handlers/digestDelivery.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/functions/src/jobs/handlers/digestDelivery.ts): ScheduledJob handler compiling weekly digests with AI summaries and excerpts.
 - [`app/app-listserv/functions/src/service/MailServiceLive.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/functions/src/service/MailServiceLive.ts): Effect HTTP client communicating with Mailgun v3 API for mailing lists and member management.
+
+## Broadcast Responses & Threading - broadcast-responses-threading.md
+
+- [`app/app-listserv/src/page/admin/broadcast.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/page/admin/broadcast.ts): Admin grid component rendering response counts and expandable flat response thread rows.
+- [`app/app-listserv/schema/broadcastResponse.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/schema/broadcastResponse.ts): Effect Schema for broadcast-response documents discriminated by `metaData.type` and linked via `ref.rootBroadcastId`.
+- [`app/app-listserv/functions/src/service/MailgunServiceLive.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/functions/src/service/MailgunServiceLive.ts): Inbound handler parsing Reply-To subaddress (`{channelId}+{broadcastId}`) for response correlation and Mailgun spam header extraction.

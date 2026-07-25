@@ -30,6 +30,7 @@ The performance dashboard reports real-time metrics updated via Mailgun webhooks
 - **Open Rate (%)**: Percentage of delivered messages opened by recipients
 - **Click-Through Rate (%)**: Percentage of opened emails where links were clicked
 - **Bounces / Failures**: Total permanently or temporarily rejected email addresses
+- **Response Count**: Number of threaded subscriber replies attached to this broadcast. Expanding the grid row reveals the full flat response thread.
 
 ---
 
@@ -47,3 +48,4 @@ To compare engagement across different language communities:
 
 - [Creating & Sending Broadcasts](./creating-and-sending-broadcasts.md)
 - [Mailing List & Digest Engine Explanation](../explanation/mailing-list-and-digest-architecture.md)
+- [Broadcast Responses & Threading Explanation](../explanation/broadcast-responses-threading.md)

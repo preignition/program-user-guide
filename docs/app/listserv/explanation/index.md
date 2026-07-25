@@ -28,6 +28,10 @@ An architectural breakdown of Mailgun main and digest mailing lists (`{channelId
 **Why must bounced subscriber addresses be cleaned from mailing lists?**  
 An explanation of the bounce webhook pipeline, sender domain reputation management, automatic vs. manual subscriber deactivation, and how list hygiene prevents degraded deliverability.
 
+### 6. [Broadcast Responses & Threaded Discussions](./broadcast-responses-threading.md)
+**How do subscriber email replies get threaded and redistributed?**  
+An overview of Reply-To subaddress correlation, flat threading in the admin broadcast grid, lightweight Mailgun-spam-header auto-moderation, and the digest mode discussion restriction.
+
 ---
 
 ## Technical Source Code References

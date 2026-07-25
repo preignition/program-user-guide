@@ -64,7 +64,7 @@ Unconfirmed subscriptions remain in `pending` status. Unverified accounts cannot
 ### Real-Time vs. Weekly Digest Mode
 
 - **Individual Emails (Real-Time)**: Each broadcast arrives as a separate email immediately after approval. You can reply directly to any broadcast email to contribute to threaded discussions.
-- **Weekly Digest Mode**: Broadcasts are held and compiled into a single consolidated summary email dispatched once a week by the automated scheduler.
+- **Weekly Digest Mode**: Broadcasts are held and compiled into a single consolidated summary email dispatched once a week by the automated scheduler. Digest emails are read-only; you cannot reply to start a threaded discussion.
 
 <figure>
   <img src="../reference/public/assets/subscribe-full-auto.png" alt="Delivery Mode Selection in Subscribe Form">

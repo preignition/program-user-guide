@@ -106,3 +106,4 @@ Provides high-level descriptions and navigation links to the main administrative
 - [Public Pages Specification](../public/index.md)
 - [Channel Settings Specification](../settings/index.md)
 - [Broadcast Lifecycle Explanation](../../explanation/broadcast-lifecycle-and-moderation.md)
+- [Broadcast Responses & Threading Explanation](../../explanation/broadcast-responses-threading.md)
