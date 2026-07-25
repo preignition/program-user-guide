@@ -63,7 +63,8 @@ function getSidebar() {
         { text: 'Dual-Route Architecture', link: 'dual-route-architecture.md' },
         { text: 'Broadcast Lifecycle & AI Moderation', link: 'broadcast-lifecycle-and-moderation.md' },
         { text: 'Subscriber Auth & Custom Claims', link: 'subscriber-identity-and-auth.md' },
-        { text: 'Mailing Lists & Digest Engine', link: 'mailing-list-and-digest-architecture.md' }
+        { text: 'Mailing Lists & Digest Engine', link: 'mailing-list-and-digest-architecture.md' },
+        { text: 'Bounce Handling & List Cleaning', link: 'bounce-handling-list-cleaning.md' }
       ]
     }
   ]

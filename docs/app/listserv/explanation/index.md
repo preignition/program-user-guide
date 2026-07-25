@@ -24,6 +24,10 @@ An explanation of why subscriber IDs match Firebase Auth UIDs, how double opt-in
 **How are real-time broadcasts and weekly digests delivered efficiently?**  
 An architectural breakdown of Mailgun main and digest mailing lists (`{channelId}@mg.a11ydata.com` and `{channelId}-digest@mg.a11ydata.com`), `ScheduledJob` recurring compilation, and webhook event tracking.
 
+### 5. [Bounce Handling & Subscriber List Cleaning](./bounce-handling-list-cleaning.md)
+**Why must bounced subscriber addresses be cleaned from mailing lists?**  
+An explanation of the bounce webhook pipeline, sender domain reputation management, automatic vs. manual subscriber deactivation, and how list hygiene prevents degraded deliverability.
+
 ---
 
 ## Technical Source Code References
