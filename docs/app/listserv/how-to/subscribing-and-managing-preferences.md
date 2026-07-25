@@ -1,39 +1,14 @@
 ---
-description: How to subscribe to a listserv channel via web forms or email commands, manage preferred languages, toggle digest mode, and pause delivery.
+description: How to subscribe to a listserv channel via email commands or web forms, manage preferred languages, toggle digest mode, and pause delivery.
 ---
 
 # Subscribing & Managing Delivery Preferences
 
-This guide explains how users subscribe to a channel using either the web application or email commands, select language preferences, toggle weekly digest mode, and pause delivery via vacation mode.
+This guide explains how users subscribe to a channel using either email commands or the web application, select language preferences, toggle weekly digest mode, and pause delivery via vacation mode.
 
 ---
 
-## Method 1: Web Subscription (With Double Opt-In)
-
-The web subscription form allows users to select preferred languages and delivery modes directly.
-
-<figure>
-  <img src="../reference/public/assets/subscribe-auto.png" alt="Listserv Public Subscription Form">
-  <figcaption>Public Subscription Form in the Listserv Web Application</figcaption>
-</figure>
-
-### Steps to Subscribe on the Web
-
-1. Open the Listserv web application and click **Subscribe** in the top navigation.
-2. Enter your email address in the **Email address** text field.
-3. Under **Preferred Language**, choose your primary language (e.g. English, French, Portuguese, Arabic).
-4. *(Optional)* Select **Send me a weekly digest instead of individual emails** if you prefer a single summary email per week.
-5. Click **Subscribe**.
-6. Check your inbox for a confirmation email containing a double opt-in link.
-7. Click the confirmation link to activate your subscription.
-
-::: info Double Opt-In Security
-Unconfirmed subscriptions remain in `pending` status. Unverified accounts cannot receive broadcasts, preventing unauthorized spam signups.
-:::
-
----
-
-## Method 2: Email Commands (Low-Connectivity Route)
+## Method 1: Email Commands (Low-Connectivity Route)
 
 Users in low-bandwidth or offline environments can manage subscriptions by sending simple email commands to the channel address (e.g. `channel-1@mg.a11ydata.com`). No web browser or password required.
 
@@ -55,6 +30,31 @@ Subject: SUBSCRIBE
 
 ::: tip Immediate Email Activation
 Email commands originating directly from the user's mail address serve as proof of email ownership. Therefore, email command subscriptions are activated immediately without requiring a double opt-in click.
+:::
+
+---
+
+## Method 2: Web Subscription (With Double Opt-In)
+
+The web subscription form allows users to select preferred languages and delivery modes directly.
+
+<figure>
+  <img src="../reference/public/assets/subscribe-auto.png" alt="Listserv Public Subscription Form">
+  <figcaption>Public Subscription Form in the Listserv Web Application</figcaption>
+</figure>
+
+### Steps to Subscribe on the Web
+
+1. Open the Listserv web application and click **Subscribe** in the top navigation.
+2. Enter your email address in the **Email address** text field.
+3. Under **Preferred Language**, choose your primary language (e.g. English, French, Portuguese, Arabic).
+4. *(Optional)* Select **Send me a weekly digest instead of individual emails** if you prefer a single summary email per week.
+5. Click **Subscribe**.
+6. Check your inbox for a confirmation email containing a double opt-in link.
+7. Click the confirmation link to activate your subscription.
+
+::: info Double Opt-In Security
+Unconfirmed subscriptions remain in `pending` status. Unverified accounts cannot receive broadcasts, preventing unauthorized spam signups.
 :::
 
 ---
