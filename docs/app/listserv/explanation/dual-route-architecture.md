@@ -30,9 +30,9 @@ The Accessible Listserv application is built on a **Dual-Route Architecture**: a
 
 ## Why Dual Route? Context & Problem Statement
 
-The African Disability Forum (ADF) coordinates communications across **49 national member organizations across Africa**. The stakeholder ecosystem operates under highly disparate technological and infrastructural constraints:
+Organizations using the Listserv platform often coordinate communications across geographically dispersed member networks and diverse user communities operating under highly disparate technological and infrastructural constraints:
 
-1. **Bandwidth & Connectivity Barriers**: Member representatives in rural or low-connectivity regions frequently experience intermittent internet access, high mobile data tariffs, or operate on feature phones with legacy email clients that cannot run modern JavaScript web applications.
+1. **Bandwidth & Connectivity Barriers**: Users in low-connectivity regions frequently experience intermittent internet access, high mobile data tariffs, or operate on feature phones with legacy email clients that cannot run modern JavaScript web applications.
 2. **Accessibility Barriers**: Web forms—even when accessible—require active browser sessions, network navigation, and form validation. Standard email interfaces are already deeply integrated into assistive technology workflows (screen readers, braille displays) used daily by blind and visually impaired advocates.
 3. **Administrative Complexity**: Channel administrators require rich text composition, accessible email templates, automated virus scanning for attachments, AI moderation tools, translation management, and detailed delivery analytics.
 

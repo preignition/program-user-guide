@@ -10,7 +10,7 @@ The Explanation section provides **understanding-oriented** discursive backgroun
 
 ### 1. [Dual-Route Architecture](./dual-route-architecture.md)
 **Why co-locate Email Commands and Web Application Routes?**  
-An explanation of how email-based commands (`SUBSCRIBE`, `UNSUBSCRIBE`, `HELP`, email submissions) and web application forms co-exist to guarantee maximum accessibility across 49 national member organizations in Africa—especially in low-connectivity, bandwidth-constrained settings.
+An explanation of how email-based commands (`SUBSCRIBE`, `UNSUBSCRIBE`, `HELP`, email submissions) and web application forms co-exist to guarantee maximum accessibility across diverse member networks—especially in low-connectivity, bandwidth-constrained settings.
 
 ### 2. [Broadcast Lifecycle & AI Moderation](./broadcast-lifecycle-and-moderation.md)
 **How are community submissions safely reviewed and dispatched?**  
