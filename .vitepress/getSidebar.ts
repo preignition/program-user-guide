@@ -10,6 +10,15 @@ export function getSidebar() {
 
       ]
     },
+    {
+      text: 'Listserv App', link: '/app/listserv/index',
+      items: [
+        { text: 'Tutorials', link: '/app/listserv/tutorial/index' },
+        { text: 'How-to Guides', link: '/app/listserv/how-to/index' },
+        { text: 'Reference', link: '/app/listserv/reference/index' },
+        { text: 'Explanation', link: '/app/listserv/explanation/index' }
+      ]
+    },
     { text: 'Customer App', link: '/app/customer/index', items: [] },
     { text: 'User App', link: '/app/user/index' },
     {
