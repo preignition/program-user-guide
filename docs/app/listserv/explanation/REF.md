@@ -29,3 +29,10 @@
 - [`app/app-listserv/src/page/admin/broadcast.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/page/admin/broadcast.ts): Admin grid component rendering response counts and expandable flat response thread rows.
 - [`app/app-listserv/schema/broadcastResponse.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/schema/broadcastResponse.ts): Effect Schema for broadcast-response documents discriminated by `metaData.type` and linked via `ref.rootBroadcastId`.
 - [`app/app-listserv/functions/src/service/MailgunServiceLive.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/functions/src/service/MailgunServiceLive.ts): Inbound handler parsing Reply-To subaddress (`{channelId}+{broadcastId}`) for response correlation and Mailgun spam header extraction.
+
+## Multilingual Support - multilingual-support.md
+
+- [`app/app-listserv/src/page/subscribe.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/page/subscribe.ts): Public subscription form with language-native radio group rendering from `activeLanguages` and `languageNative` lookup.
+- [`app/app-listserv/src/page/settings/language.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/page/settings/language.ts): Channel-level active language toggle component sourcing from Customer Settings.
+- [`app/app-listserv/functions/src/service/emailCommandHandlers.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/functions/src/service/emailCommandHandlers.ts): Multilingual command parser matching `SUBSCRIBE`, `UNSUBSCRIBE`, `HELP` in EN, FR, PT, and AR.
+- [`app/app-listserv/actionApi/src/send.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/actionApi/src/send.ts): Send engine selecting per-subscriber locale versions from `broadcast.content` and dispatching via Mailgun per-language mailing lists.

@@ -40,6 +40,7 @@ function getSidebar() {
         { text: 'Subscribing & Preferences', link: 'subscribing-and-managing-preferences.md' },
         { text: 'Browsing Archives', link: 'browsing-and-searching-archives.md' },
         { text: 'Creating & Sending Broadcasts', link: 'creating-and-sending-broadcasts.md' },
+        { text: 'Composing Multilingual Broadcasts', link: 'composing-multilingual-broadcasts.md' },
         { text: 'Moderating Submissions', link: 'moderating-community-submissions.md' },
         { text: 'Analyzing Performance', link: 'analyzing-broadcast-performance.md' },
         { text: 'Configuring Settings', link: 'configuring-channel-settings.md' }
@@ -65,7 +66,8 @@ function getSidebar() {
         { text: 'Subscriber Auth & Custom Claims', link: 'subscriber-identity-and-auth.md' },
         { text: 'Mailing Lists & Digest Engine', link: 'mailing-list-and-digest-architecture.md' },
         { text: 'Bounce Handling & List Cleaning', link: 'bounce-handling-list-cleaning.md' },
-        { text: 'Broadcast Responses & Threading', link: 'broadcast-responses-threading.md' }
+        { text: 'Broadcast Responses & Threading', link: 'broadcast-responses-threading.md' },
+        { text: 'Multilingual Support', link: 'multilingual-support.md' }
       ]
     }
   ]

@@ -22,6 +22,8 @@ How-to guides are **goal-oriented recipes** that provide clear, step-by-step dir
 
 - **[Creating & Sending Broadcasts](./creating-and-sending-broadcasts.md)** (US 9, 10, 12)
   Draft multilingual email broadcasts, select layout templates (Newsletter, Data Alert), attach files with WCAG alt-text, and trigger dispatch.
+- **[Composing Multilingual Broadcasts](./composing-multilingual-broadcasts.md)** (US 9)
+  Write broadcast content in multiple languages, manage locale versions, and use the translation pipeline.
 
 ### Content Moderation
 

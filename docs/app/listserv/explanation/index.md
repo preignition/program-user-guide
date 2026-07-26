@@ -32,6 +32,10 @@ An explanation of the bounce webhook pipeline, sender domain reputation manageme
 **How do subscriber email replies get threaded and redistributed?**  
 An overview of Reply-To subaddress correlation, flat threading in the admin broadcast grid, lightweight Mailgun-spam-header auto-moderation, and the digest mode discussion restriction.
 
+### 7. [Multilingual Broadcast Support](./multilingual-support.md)
+**How does the Listserv handle four languages across every touchpoint?**  
+An end-to-end walkthrough of the multilingual pipeline: channel-level language activation, broadcast locale composition, subscriber language preferences, multilingual email commands, and language-segmented analytics.
+
 ---
 
 ## Technical Source Code References
