@@ -36,6 +36,10 @@ An overview of Reply-To subaddress correlation, flat threading in the admin broa
 **How does the Listserv handle four languages across every touchpoint?**  
 An end-to-end walkthrough of the multilingual pipeline: channel-level language activation, broadcast locale composition, subscriber language preferences, multilingual email commands, and language-segmented analytics.
 
+### 8. [Markdown Content Format](./markdown-content-format.md)
+**Why is broadcast content composed, stored, and rendered as Markdown?**  
+An explanation of the Markdown content lifecycle — from admin composition through Firestore storage, web preview (`parse()`), email HTML conversion (`marked.parse()`), and AI translation preservation.
+
 ---
 
 ## Technical Source Code References

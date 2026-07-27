@@ -36,3 +36,9 @@
 - [`app/app-listserv/src/page/settings/language.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/page/settings/language.ts): Channel-level active language toggle component sourcing from Customer Settings.
 - [`app/app-listserv/functions/src/service/emailCommandHandlers.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/functions/src/service/emailCommandHandlers.ts): Multilingual command parser matching `SUBSCRIBE`, `UNSUBSCRIBE`, `HELP` in EN, FR, PT, and AR.
 - [`app/app-listserv/actionApi/src/send.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/actionApi/src/send.ts): Send engine selecting per-subscriber locale versions from `broadcast.content` and dispatching via Mailgun per-language mailing lists.
+
+## Markdown Content Format - markdown-content-format.md
+
+- [`app/app-listserv/functions/src/machine/renderBroadcastBody.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/functions/src/machine/renderBroadcastBody.ts): Server-side `marked.parse()` conversion of Markdown to HTML for email template injection.
+- [`app/app-listserv/src/renderer/broadcast-email-view.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/renderer/broadcast-email-view.ts): Client-side broadcast preview using `parse()` from `@lit-app/shared/md` for live WYSIWYG rendering.
+- [`app/app-listserv/functions/src/service/htmlToMarkdown.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/functions/src/service/htmlToMarkdown.ts): Conversion utility stripping HTML tags and converting rich-text HTML emails to Markdown on inbound ingestion.

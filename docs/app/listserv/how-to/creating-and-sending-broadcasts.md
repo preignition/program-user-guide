@@ -34,7 +34,7 @@ Channel administrators and editors can compose accessible, multilingual email br
    - **Newsletter**: Layout suited for long-form updates, multiple sections, and reports.
    - **Data Alert**: High-priority alert format with callout banners for findings and statistics.
 2. Enter the **Title / Subject** line.
-3. Use the rich text editor to compose the broadcast message body.
+3. Compose the broadcast message body using **Markdown** formatting. Standard syntax is supported: headings (`# Title`), bold (`**text**`), links (`[label](url)`), lists, and blockquotes. The preview panel renders content in real-time, showing how it will appear in subscriber email clients.
 4. Select the **Primary Language** (e.g. English).
 
 ::: tip WCAG 2.1 AA Accessibility Defaults
@@ -69,3 +69,4 @@ All uploaded attachments undergo automatic virus and malware scanning. Files mar
 - [Moderating Community Submissions](./moderating-community-submissions.md)
 - [Analyzing Broadcast Performance](./analyzing-broadcast-performance.md)
 - [Broadcast Lifecycle & AI Moderation Explanation](../explanation/broadcast-lifecycle-and-moderation.md)
+- [Markdown Content Format Explanation](../explanation/markdown-content-format.md)

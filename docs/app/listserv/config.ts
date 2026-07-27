@@ -67,7 +67,8 @@ function getSidebar() {
         { text: 'Mailing Lists & Digest Engine', link: 'mailing-list-and-digest-architecture.md' },
         { text: 'Bounce Handling & List Cleaning', link: 'bounce-handling-list-cleaning.md' },
         { text: 'Broadcast Responses & Threading', link: 'broadcast-responses-threading.md' },
-        { text: 'Multilingual Support', link: 'multilingual-support.md' }
+        { text: 'Multilingual Support', link: 'multilingual-support.md' },
+        { text: 'Markdown Content Format', link: 'markdown-content-format.md' }
       ]
     }
   ]
