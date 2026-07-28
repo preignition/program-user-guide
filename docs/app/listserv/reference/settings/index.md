@@ -89,6 +89,22 @@ Channel Settings allow channel owners and editors to configure metadata, transla
   <figcaption>User Access Management interface displaying team roles</figcaption>
 </figure>
 
+<figure>
+  <img src="./assets/settings-user-full-auto.png" alt="Full User Management Interface">
+  <figcaption>Full User Access View showing channel ownership, team member list, and role assignments</figcaption>
+</figure>
+
+### Section Controls & Fields
+
+| Control / Field | Type | Description |
+| --- | --- | --- |
+| **Listserv Admin Members** | Header | Overview describing role permissions and secretariat team linkage |
+| **Ownership Section** | Profile Card | Identifies primary channel owner (`playwright-a11y@preignition.org`) |
+| **Modify Ownership** | Button | Dialogue trigger to transfer channel ownership |
+| **Add Members** | Button | Action to invite new team members or assign access roles |
+| **Member List / Pending Invite** | Tabs | Toggle between active team members and outstanding invitations |
+| **Member Table** | Data Table | Grid listing user names, emails, and assigned role chips (`owner`, `admin`, `editor`) |
+
 ### Access Roles
 
 | Role | Permissions |

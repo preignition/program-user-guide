@@ -15,7 +15,7 @@ test.describe('Listserv Reference', () => {
   test('Public Pages', async ({ page }) => {
     const context = new Context(referenceRoot, page)
     await initializePage(page, baseUrl, `${listservAppPath}/broadcast`)
-    await page.waitForTimeout(500)
+    await page.waitForTimeout(1500)
 
     // BROADCAST (public archive)
     console.info('Capturing broadcast-archive')
