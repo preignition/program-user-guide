@@ -10,34 +10,34 @@ How-to guides are **goal-oriented recipes** that provide clear, step-by-step dir
 
 ### Subscription & Preferences
 
-- **[Subscribing & Managing Preferences](./subscribing-and-managing-preferences.md)** (US 1, 3, 5, 6)
+- **[Subscribing & Managing Preferences](./subscribing-and-managing-preferences.md)**  
   Subscribe via web or email commands (`SUBSCRIBE`/`UNSUBSCRIBE`), set preferred languages, toggle weekly digest mode, or enable vacation pause.
 
 ### Browsing & Search
 
-- **[Browsing & Searching Archives](./browsing-and-searching-archives.md)** (US 7)
+- **[Browsing & Searching Archives](./browsing-and-searching-archives.md)**  
   Explore past broadcast archives, filter announcements by keyword or language, and understand public privacy disclosures.
 
 ### Broadcast Management
 
-- **[Creating & Sending Broadcasts](./creating-and-sending-broadcasts.md)** (US 9, 10, 12)
+- **[Creating & Sending Broadcasts](./creating-and-sending-broadcasts.md)**  
   Draft multilingual email broadcasts, select layout templates (Newsletter, Data Alert), attach files with WCAG alt-text, and trigger dispatch.
-- **[Composing Multilingual Broadcasts](./composing-multilingual-broadcasts.md)** (US 9)
+- **[Composing Multilingual Broadcasts](./composing-multilingual-broadcasts.md)**  
   Write broadcast content in multiple languages, manage locale versions, and use the translation pipeline.
 
 ### Content Moderation
 
-- **[Moderating Community Submissions](./moderating-community-submissions.md)** (US 11)
+- **[Moderating Community Submissions](./moderating-community-submissions.md)**  
   Review pending community posts in the Moderation Queue, inspect AI moderation categories and spam scores, and Approve, Edit & Approve, or Reject.
 
 ### Analytics & Reporting
 
-- **[Analyzing Broadcast Performance](./analyzing-broadcast-performance.md)** (US 13)
+- **[Analyzing Broadcast Performance](./analyzing-broadcast-performance.md)**  
   Track delivery, open, and click-through rates, and filter engagement statistics by language segment.
 
 ### Administration & Settings
 
-- **[Configuring Channel Settings](./configuring-channel-settings.md)** (US 14, 15, 16, 18)
+- **[Configuring Channel Settings](./configuring-channel-settings.md)**  
   Configure channel metadata, active translation languages, automatic bounce cleaning thresholds, rate limits, and team access roles.
 
 ---
