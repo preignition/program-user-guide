@@ -19,7 +19,7 @@ Channel settings allow channel owners and editors to configure metadata, active 
    - **Rate Limits**: Maximum community submissions allowed per subscriber per hour (default: 5/hour)
 
 <figure>
-  <img src="../reference/settings/assets/settings-channel-auto.png" alt="Channel Configuration Page">
+  <img src="./assets/configuring-channel/step-1-channel-configuration-form.png" alt="Channel Configuration Page">
   <figcaption>Channel Configuration panel for title, description, and admin contact settings</figcaption>
 </figure>
 
@@ -31,12 +31,18 @@ The listserv automatically translates approved broadcasts into active languages 
 
 1. Click **Active Languages** in the Channel Settings drawer.
 2. Toggle the switch for each language you wish to activate for this channel (e.g. `English`, `French`, `Portuguese`, `Arabic`).
-3. Click **Save**.
 
-<figure>
-  <img src="../reference/settings/assets/settings-language-auto.png" alt="Active Languages Configuration">
-  <figcaption>Managing Active Languages for automated broadcast translation</figcaption>
-</figure>
+   <figure>
+     <img src="./assets/configuring-languages/step-1-active-languages-overview.png" alt="Active Languages Configuration Overview">
+     <figcaption>Managing Active Languages for automated broadcast translation</figcaption>
+   </figure>
+
+   <figure>
+     <img src="./assets/configuring-languages/step-2-toggle-language.png" alt="Toggling Active Language">
+     <figcaption>Enabling or disabling specific translation languages</figcaption>
+   </figure>
+
+3. Click **Save**.
 
 ---
 
@@ -44,13 +50,19 @@ The listserv automatically translates approved broadcasts into active languages 
 
 1. Click **Bounce Handling** in the Channel Settings drawer.
 2. Enable **Automatic Bounce Cleaning**.
+
+   <figure>
+     <img src="./assets/configuring-bounce-handling/step-1-bounce-handling-overview.png" alt="Bounce Handling Overview">
+     <figcaption>Bounce handling settings overview and automatic cleaning controls</figcaption>
+   </figure>
+
+   <figure>
+     <img src="./assets/configuring-bounce-handling/step-2-toggle-automatic-bounce-cleaning.png" alt="Toggling Automatic Bounce Cleaning">
+     <figcaption>Configuring bounce thresholds and automatic list maintenance</figcaption>
+   </figure>
+
 3. Set the **Bounce Threshold** (e.g. `3` permanent bounce failures).
 4. Click **Clean List** to immediately run a manual list cleanup and deactivate bouncing subscriber accounts.
-
-<figure>
-  <img src="../reference/settings/assets/settings-bounce-auto.png" alt="Bounce Handling Settings">
-  <figcaption>Configuring automatic bounce thresholds and list cleaning</figcaption>
-</figure>
 
 ---
 
@@ -64,7 +76,7 @@ The listserv automatically translates approved broadcasts into active languages 
 3. Click **Add Members** to grant listserv access to new team users.
 
 <figure>
-  <img src="../reference/settings/assets/settings-user-auto.png" alt="User Management Interface">
+  <img src="./assets/managing-user-access/step-1-user-management-overview.png" alt="User Management Interface">
   <figcaption>User access management for channel owners, editors, and guests</figcaption>
 </figure>
 

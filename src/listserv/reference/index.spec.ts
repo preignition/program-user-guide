@@ -67,6 +67,16 @@ test.describe('Listserv Reference', () => {
       .screenshot()
     context.removeArea('content')
 
+    // ANALYTICS DASHBOARD
+    await navigate(page, `${listservAppPath}/admin/analytics`)
+    await page.waitForTimeout(500)
+    console.info('Capturing admin-analytics')
+    await context
+      .setName('admin-analytics')
+      .setArea([{ name: 'content', clip: pageContent }])
+      .screenshot()
+    context.removeArea('content')
+
     // SUBSCRIBERS LIST
     await navigate(page, `${listservAppPath}/admin/subscriber`)
     await page.waitForTimeout(500)

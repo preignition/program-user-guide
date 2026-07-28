@@ -37,7 +37,7 @@ The app must be running at `http://localhost:7173/listserv-playwright/listserv`.
 | `browsing-archives.spec.ts` | US 7 — Browse and search past broadcasts |
 | `creating-sending.spec.ts` | US 9 — Create & send email broadcasts<br>US 10 — Use predefined email templates<br>US 12 — Manage attachments |
 | `moderating-content.spec.ts` | US 11 — Review community submissions |
-| `analyzing-performance.spec.ts` | US 13 — View per-broadcast analytics |
+| `analyzing-performance.spec.ts` | US 13 — View per-broadcast analytics<br>View analytics dashboard with aggregate metrics |
 | `configuring-settings.spec.ts` | US 14 — Configure welcome email<br>US 15 — Configure bounce handling<br>US 16 — Display admin contact info<br>US 18 — Enforce attachment limits |
 
 ## Excluded Stories
@@ -63,6 +63,7 @@ These user stories have no direct UI (email/backend flows):
 | Admin Welcome | `/admin/welcome` | Yes |
 | Moderation Queue | `/admin/moderation` | Yes |
 | Admin Broadcasts | `/admin/broadcast` | Yes |
+| Admin Analytics | `/admin/analytics` | Yes |
 | Admin Subscribers | `/admin/subscriber` | Yes |
 | Settings Welcome | `/settings/welcome` | Yes |
 | User Management | `/settings/user` | Yes |

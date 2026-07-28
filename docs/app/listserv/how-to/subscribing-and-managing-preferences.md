@@ -39,7 +39,7 @@ Email commands originating directly from the user's mail address serve as proof 
 The web subscription form allows users to select preferred languages and delivery modes directly.
 
 <figure>
-  <img src="../reference/public/assets/subscribe-auto.png" alt="Listserv Public Subscription Form">
+  <img src="./assets/subscribing-to-a-channel/step-1-click-subscribe-link.png" alt="Listserv Public Subscription Form">
   <figcaption>Public Subscription Form in the Listserv Web Application</figcaption>
 </figure>
 
@@ -47,9 +47,33 @@ The web subscription form allows users to select preferred languages and deliver
 
 1. Open the Listserv web application and click **Subscribe** in the top navigation.
 2. Enter your email address in the **Email address** text field.
+
+   <figure>
+     <img src="./assets/subscribing-to-a-channel/step-2-enter-email.png" alt="Entering Email Address">
+     <figcaption>Entering the subscriber's email address</figcaption>
+   </figure>
+
 3. Under **Preferred Language**, choose your primary language (e.g. English, French, Portuguese, Arabic).
+
+   <figure>
+     <img src="./assets/subscribing-to-a-channel/step-3-select-preferred-language.png" alt="Selecting Preferred Language">
+     <figcaption>Choosing preferred delivery language</figcaption>
+   </figure>
+
 4. *(Optional)* Select **Send me a weekly digest instead of individual emails** if you prefer a single summary email per week.
+
+   <figure>
+     <img src="./assets/subscribing-to-a-channel/step-4-choose-delivery-mode.png" alt="Selecting Weekly Digest Mode">
+     <figcaption>Toggling weekly digest mode option</figcaption>
+   </figure>
+
 5. Click **Subscribe**.
+
+   <figure>
+     <img src="./assets/subscribing-to-a-channel/step-5-click-subscribe-button.png" alt="Clicking Subscribe Button">
+     <figcaption>Submitting the web subscription form</figcaption>
+   </figure>
+
 6. Check your inbox for a confirmation email containing a double opt-in link.
 7. Click the confirmation link to activate your subscription.
 
@@ -67,7 +91,7 @@ Unconfirmed subscriptions remain in `pending` status. Unverified accounts cannot
 - **Weekly Digest Mode**: Broadcasts are held and compiled into a single consolidated summary email dispatched once a week by the automated scheduler. Digest emails are read-only; you cannot reply to start a threaded discussion.
 
 <figure>
-  <img src="../reference/public/assets/subscribe-full-auto.png" alt="Delivery Mode Selection in Subscribe Form">
+  <img src="./assets/managing-delivery-preferences/step-1-toggle-digest-mode.png" alt="Delivery Mode Selection in Subscribe Form">
   <figcaption>Choosing between Individual Real-Time Emails and Weekly Digest Summaries</figcaption>
 </figure>
 

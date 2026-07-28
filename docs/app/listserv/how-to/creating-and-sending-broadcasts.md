@@ -15,7 +15,7 @@ Channel administrators and editors can compose accessible, multilingual email br
 3. Select **Broadcasts** from the left drawer menu to view the broadcast table.
 
 <figure>
-  <img src="../reference/admin/assets/admin-broadcasts-auto.png" alt="Admin Broadcasts Dashboard">
+  <img src="./assets/creating-a-broadcast/step-1-broadcasts-list.png" alt="Admin Broadcasts Dashboard">
   <figcaption>Admin Broadcasts List View showing draft and sent messages</figcaption>
 </figure>
 

@@ -1,5 +1,5 @@
 ---
-description: Technical reference specification for Admin Welcome, Moderation Queue, Broadcast Management, and Subscriber Audit pages.
+description: Technical reference specification for Admin Welcome, Moderation Queue, Broadcast Management, Subscriber Audit, and Analytics pages.
 ---
 
 # Admin Pages Specification
@@ -98,6 +98,34 @@ Provides high-level descriptions and navigation links to the main administrative
 | **Delivery Mode** | Boolean | `digestMode: false` (Real-time list) vs `digestMode: true` (Digest list) |
 | **Vacation Mode** | Boolean | Delivery pause flag |
 | **Languages** | Array | ISO 639-1 language choices for translation dispatch |
+
+---
+
+## 5. Admin Analytics Dashboard (`/admin/analytics`)
+
+- **Component Tag**: `<listserv-admin-analytics>`
+- **Route Path**: `/admin/analytics`
+- **Access Level**: Owner or Editor
+
+<figure>
+  <img src="./assets/admin-analytics-auto.png" alt="Admin Analytics Dashboard Screen">
+  <figcaption>Channel Analytics Dashboard displaying aggregate broadcast engagement</figcaption>
+</figure>
+
+<figure>
+  <img src="./assets/admin-analytics-content-auto.png" alt="Admin Analytics Detailed View">
+  <figcaption>Detailed performance overview with delivery rates, open rates, and language breakdown</figcaption>
+</figure>
+
+### Dashboard Metrics & Performance Controls
+
+| KPI / Control | Type | Description |
+| --- | --- | --- |
+| **Total Sent** | Metric Card | Cumulative count of broadcasts dispatched across the channel |
+| **Delivery Rate** | Percentage Metric | Proportion of dispatched messages successfully delivered |
+| **Open Rate** | Percentage Metric | Percentage of delivered broadcasts opened by subscribers |
+| **Click Rate** | Percentage Metric | Proportion of opened broadcasts resulting in link engagement |
+| **Language Breakdown** | Segment Tab | Filter engagement metrics and subscriber reach by language locale |
 
 ---
 

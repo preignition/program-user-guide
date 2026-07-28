@@ -15,7 +15,7 @@ Per-broadcast analytics enable channel administrators to track subscriber engage
 3. Click the broadcast row to expand its details and analytics panel.
 
 <figure>
-  <img src="../reference/admin/assets/admin-broadcasts-content-auto.png" alt="Broadcast Analytics Grid">
+  <img src="./assets/viewing-broadcast-list-stats/step-1-broadcasts-grid-with-stats.png" alt="Broadcast Analytics Grid">
   <figcaption>Broadcast Grid showing sent status and response metrics</figcaption>
 </figure>
 
@@ -24,6 +24,11 @@ Per-broadcast analytics enable channel administrators to track subscriber engage
 ## Step 2: Key Performance Indicators (KPIs)
 
 The performance dashboard reports real-time metrics updated via Mailgun webhooks:
+
+<figure>
+  <img src="./assets/viewing-aggregate-metrics/step-1-analytics-dashboard.png" alt="Channel Analytics Summary Dashboard">
+  <figcaption>Aggregate channel analytics dashboard displaying delivery rates and campaign performance metrics</figcaption>
+</figure>
 
 - **Total Recipients**: Total subscriber accounts included in the send list
 - **Delivery Rate (%)**: Percentage of emails successfully delivered to subscriber mailboxes

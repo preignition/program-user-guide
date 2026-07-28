@@ -14,13 +14,18 @@ The public broadcast archive allows subscribers, community members, and public s
 2. The page displays a feed of all sent broadcasts for the active channel.
 
 <figure>
-  <img src="../reference/public/assets/broadcast-archive-auto.png" alt="Listserv Public Broadcast Archive View">
+  <img src="./assets/browsing-archives/step-1-broadcast-archive-listing.png" alt="Listserv Public Broadcast Archive View">
   <figcaption>Public Broadcast Archive Page showing published announcements</figcaption>
 </figure>
 
 ---
 
 ## Searching and Filtering Announcements
+
+<figure>
+  <img src="./assets/searching-broadcasts/step-1-archive-overview.png" alt="Searching Public Broadcast Archive">
+  <figcaption>Filtering and searching broadcast archives by title and keywords</figcaption>
+</figure>
 
 ### By Keyword
 
