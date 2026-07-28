@@ -6,16 +6,6 @@ description: A complete beginner tutorial covering subscription, email submissio
 
 This tutorial will guide you through the fundamental workflows of the Accessible Listserv application: subscribing to a channel, submitting a message by email, moderating the post as an administrator, and tracking broadcast delivery.
 
-## Prerequisites
-
-Before starting, ensure you have:
-
-- Access to the Listserv application URL (e.g. `http://localhost:7173/listserv-playwright/listserv`)
-- A valid email address to receive confirmation messages
-- Administrator access to a test channel (e.g. `channel-1`)
-
----
-
 ## Step 1: Subscribe to a Channel
 
 1. Navigate to the Listserv application home page.
