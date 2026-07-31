@@ -28,6 +28,7 @@ Topics that explain the underlying architecture of the platform, including:
 - **[Test and Production Survey Links](./test-and-production-survey-links.md):** Why we have separate links for testing and production surveys and what are the differences.
 - **[The Role of Batches](./the-role-of-batches.md):** Why temporal grouping is a fundamental architectural decision for longitudinal survey analysis.
 - **[Respondent accounts](./survey-respondent-accounts.md):** How respondent accounts are managed and their role in the survey process.
+- **[Resuming Incomplete Surveys](./resuming-incomplete-surveys.md):** How state machine snapshots and browser-based authentication allow respondents to resume incomplete surveys across browser restarts and network changes.
 - **[Using Survey Batches](./using-survey-batches.md):** The conceptual lifecycle of a survey batch and how it supports temporal data collection.
 
 ## Survey Quality
