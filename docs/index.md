@@ -61,5 +61,12 @@ features:
       dark: /app/widgets-dark.svg
     link: /components/index
     linkText: 'Browse components'
+  - title: API
+    details: Explore the API documentation, including endpoints, parameters, and response formats
+    icon: 
+      light: /images/icons/api.svg
+      dark: /images/icons/api-dark.svg
+    link: /api
+    linkText: 'Go to API documentation'
   
 ---

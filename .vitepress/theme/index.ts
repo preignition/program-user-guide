@@ -13,8 +13,15 @@ Icon.getURL = function (name, noFill) {
 import '../components/lite-youtube-embed.ts'
 // lapp-icon
 import '@lit-app/cmp/icon/icon'
+// scalar api reference
+import { ScalarApiReference } from '../components/api-reference'
 
-export default Theme
+export default {
+  ...Theme,
+  enhanceApp({ app }) {
+    app.component('ScalarApiReference', ScalarApiReference)
+  }
+}
 
 // function importYoutube() {
 //   // We need to import the youtube component to make it available in markdown files

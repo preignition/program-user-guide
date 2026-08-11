@@ -32,6 +32,10 @@ img[src='/search.png'] {
   aspect-ratio: 1 / 1;
 }
 
+/* widen the API reference page (docs/api.md) */
+.vp-doc._api .content-container {
+  max-width: none;
+}
 /* figure and figcaption styling */
 figure {
   margin: 1.5rem 0;

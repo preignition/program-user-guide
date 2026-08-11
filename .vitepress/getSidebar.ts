@@ -50,6 +50,7 @@ export function getSidebar() {
     {
       text: 'APIs',
       items: [
+        { text: 'OpenAPI Specifications', link: '/api' }
       ]
     }
   ]
