@@ -198,7 +198,6 @@ function getSidebar() {
             { text: 'The Role of Batches', link: `the-role-of-batches.md` },
             { text: 'Respondent accounts', link: `survey-respondent-accounts.md` },
             { text: 'Resuming Incomplete Surveys', link: `resuming-incomplete-surveys.md` },
-            { text: 'Using Survey Batches', link: `using-survey-batches.md` },
           ]
         }, {
           text: 'Survey Quality', collapsed: true, items: [
