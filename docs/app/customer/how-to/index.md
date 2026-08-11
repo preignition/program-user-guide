@@ -3,3 +3,4 @@
 Here, we will add how-to guides for the customer app
 
 - [How to create a theme](create-a-theme.md)
+- [How to manage API keys](manage-api-keys.md)

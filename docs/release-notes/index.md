@@ -6,6 +6,10 @@ description: Latest updates and new features in Accessible Data.
 
 Stay up to date with the latest improvements and features across the Accessible Data platform.
 
+## Customer Portal & Platform API
+
+* **[Team API Keys & Data Definition Endpoints](./2026-08-11-api-keys-and-definition-endpoints.md)**: Manage team API keys in Team Settings and query typed data schemas via definition endpoints and OpenAPI reference.
+
 ## Survey App
 
 * **[Marketing Campaigns & UTM Link Building](./2026-07-08-campaigns-and-utm-tracking.md)**: Track acquisition channels and easily configure UTM queries in advanced mode.

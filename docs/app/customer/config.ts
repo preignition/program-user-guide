@@ -38,7 +38,8 @@ function getSidebar() {
       collapsed: false,
       base: `${root}/how-to/`,
       items: [
-        { text: 'Create a theme', link: `create-a-theme.md` }
+        { text: 'Create a theme', link: `create-a-theme.md` },
+        { text: 'Manage API keys', link: `manage-api-keys.md` }
       ]
     },
     {
@@ -71,6 +72,7 @@ function getSidebar() {
             { text: 'Members', link: `members.md` },
             { text: 'Communication', link: `communication.md` },
             { text: 'Channels', link: `channels.md` },
+            { text: 'API Keys', link: `api-keys.md` },
             { text: 'Danger Zone', link: `danger-zone.md` }
           ]
         }

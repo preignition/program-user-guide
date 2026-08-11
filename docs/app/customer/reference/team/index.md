@@ -13,4 +13,5 @@ This section provides technical and descriptive information about the configurat
 - [Team Members](./members.md)
 - [Communication Settings](./communication.md)
 - [Channels](./channels.md)
+- [API Keys](./api-keys.md)
 - [Danger Zone](./danger-zone.md)
