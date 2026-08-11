@@ -39,7 +39,8 @@ function getSidebar() {
       base: `${root}/how-to/`,
       items: [
         { text: 'Create a theme', link: `create-a-theme.md` },
-        { text: 'Manage API keys', link: `manage-api-keys.md` }
+        { text: 'Manage API keys', link: `manage-api-keys.md` },
+        { text: 'Using API docs', link: `using-api-docs.md` }
       ]
     },
     {
