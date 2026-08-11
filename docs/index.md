@@ -66,7 +66,7 @@ features:
     icon: 
       light: /images/icons/api.svg
       dark: /images/icons/api-dark.svg
-    link: /api
+    link: https://a11y-docs.web.app/api.html
     linkText: 'Go to API documentation'
   
 ---
