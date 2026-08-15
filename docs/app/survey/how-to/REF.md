@@ -45,3 +45,21 @@
 - [app/app-survey/schema/theme.ts](../../../../../accessibleData/app/app-survey/schema/theme.ts): Schema definition for font and spacing scaling factors and individual style tokens.
 - [app/app-survey/renderer/style.ts](../../../../../accessibleData/app/app-survey/renderer/style.ts): CSS implementation of the scaling logic using global multipliers.
 - [app/app-survey/src/page/edit/design/behavior.ts](../../../../../accessibleData/app/app-survey/src/page/edit/design/behavior.ts): Editor UI for configuring style tokens and scaling factors.
+
+## Sharing a Section - how-to-share-section
+
+- [app/app-survey/schema/section.ts](../../../../../accessibleData/app/app-survey/schema/section.ts): Schema definition for section scopes (`team`, `customer`, `global`), publish metadata, response keying, prefill modes, and freeze settings.
+- [app/app-survey/src/entity/SectionE.ts](../../../../../accessibleData/app/app-survey/src/entity/SectionE.ts): Section entity model definition and action bindings.
+- [app/app-survey/src/entity/settings/BuildSection.ts](../../../../../accessibleData/app/app-survey/src/entity/settings/BuildSection.ts): Settings panel UI for sharing controls, response keying, prefill modes, and freeze toggles in Advanced Mode.
+- [app/app-survey/src/cmp/section-library.ts](../../../../../accessibleData/app/app-survey/src/cmp/section-library.ts): Tabbed Section Library component for browsing and dragging sections across scopes.
+- [app/app-survey/src/helper/sectionLibrary.ts](../../../../../accessibleData/app/app-survey/src/helper/sectionLibrary.ts): Collection-group queries and live-reference parent tracking helpers.
+- [app/app-survey/src/entity/action/publish.ts](../../../../../accessibleData/app/app-survey/src/entity/action/publish.ts): Action and confirmation dialog flow for publishing sections to customer or global scopes.
+- [app/app-survey/src/entity/action/unpublish.ts](../../../../../accessibleData/app/app-survey/src/entity/action/unpublish.ts): Action and confirmation dialog flow for unpublishing sections while keeping existing live embeds intact.
+- [app/app-survey/src/entity/action/embedSection.ts](../../../../../accessibleData/app/app-survey/src/entity/action/embedSection.ts): Context-menu embed action and library selection dialog for form pages.
+- [app/app-survey/src/entity/action/embedDialog.ts](../../../../../accessibleData/app/app-survey/src/entity/action/embedDialog.ts): Reusable dialog for choosing between Live Reference and Copy embedding.
+- [app/app-survey/renderer/dd-wrapper.ts](../../../../../accessibleData/app/app-survey/renderer/dd-wrapper.ts): Canvas drag-and-drop handler supporting section library drops.
+- [app/app-survey/renderer/section-wrapper.ts](../../../../../accessibleData/app/app-survey/renderer/section-wrapper.ts): Respondent section wrapper handling quiet, review, and interstitial prefill modes with response keying.
+- [app/app-survey/actionApi/src/services/sectionCopyService.ts](../../../../../accessibleData/app/app-survey/actionApi/src/services/sectionCopyService.ts): Server-side deep-copy service replicating section subtrees and accessibility subdocuments.
+- [app/app-survey/actionApi/src/services/sectionDeleteService.ts](../../../../../accessibleData/app/app-survey/actionApi/src/services/sectionDeleteService.ts): Server-side reference tracking and automatic live-reference conversion upon section deletion.
+- [app/app-survey/actionApi/src/services/buildFetcher.ts](../../../../../accessibleData/app/app-survey/actionApi/src/services/buildFetcher.ts): Build pipeline resolving out-of-form accessibility and locale assets for live-referenced sections.
+- [app/app-survey/firestore.rules](../../../../../accessibleData/app/app-survey/firestore.rules): Security rules enforcing scope read gates, global template protection, and collection-group queries.

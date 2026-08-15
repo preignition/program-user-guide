@@ -37,9 +37,10 @@ Fundamental tasks for building your survey and forms, including adding questions
 
 ### Collaboration & Organization
 
+- [How to share a section with other teams](./how-to-share-section.md)
 - [How to share options across multiple questions](./sharing-options.md)
 - [How to share logical expressions across multiple items](./sharing-logical-expressions.md)
-- [How to share content across multiple forms and surveys](./sharing-content.md) - *in progress*
+- [How to share content across multiple forms and surveys](./sharing-content.md)
 - [How to set access rights for forms](./access-rights.md)
 
 ---

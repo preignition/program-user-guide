@@ -12,6 +12,8 @@ Stay up to date with the latest improvements and features across the Accessible 
 
 ## Survey App
 
+* **[Section Library, Cross-Survey Sharing & Smart Pre-Fill](./2026-08-15-section-library-and-sharing.md)**: Share standardized sections, embed live references or copies, and eliminate respondent fatigue with cross-survey pre-fill.
+
 * **[Marketing Campaigns & UTM Link Building](./2026-07-08-campaigns-and-utm-tracking.md)**: Track acquisition channels and easily configure UTM queries in advanced mode.
 
 * **[Survey Item Randomization](./2026-05-28-survey-randomization.md)**: Reduce order bias by shuffling options, questions, and sections.
