@@ -62,4 +62,3 @@
 - [app/app-survey/actionApi/src/services/sectionCopyService.ts](../../../../../accessibleData/app/app-survey/actionApi/src/services/sectionCopyService.ts): Server-side deep-copy service replicating section subtrees and accessibility subdocuments.
 - [app/app-survey/actionApi/src/services/sectionDeleteService.ts](../../../../../accessibleData/app/app-survey/actionApi/src/services/sectionDeleteService.ts): Server-side reference tracking and automatic live-reference conversion upon section deletion.
 - [app/app-survey/actionApi/src/services/buildFetcher.ts](../../../../../accessibleData/app/app-survey/actionApi/src/services/buildFetcher.ts): Build pipeline resolving out-of-form accessibility and locale assets for live-referenced sections.
-- [app/app-survey/firestore.rules](../../../../../accessibleData/app/app-survey/firestore.rules): Security rules enforcing scope read gates, global template protection, and collection-group queries.

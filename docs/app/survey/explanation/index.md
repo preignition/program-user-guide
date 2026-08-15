@@ -32,6 +32,7 @@ Topics that explain the underlying architecture of the platform, including:
 
 ## Survey Quality
 
+- **[Understanding Section Sharing & Reusability](./understanding-section-sharing.md):** How shared sections enable reusable accessibility assets (Sign Language, Easy Read, translations), longitudinal data comparability, and reduced survey fatigue via smart pre-fill.
 - **[Understanding Randomization](./understanding-randomization.md)**: How stable, seeded shuffling works to reduce order bias.
 
 Content that helps you understand how to create high-quality surveys, including:

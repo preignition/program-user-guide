@@ -30,9 +30,9 @@ Sharing sections is an **Advanced Mode** feature. Enable the **Advanced Mode** t
 <figure><img src="./assets/sharing-a-section/step-2-publish-dialog.png" alt="Publish section confirmation dialog"><figcaption>Review the publishing scope and click 'Publish'.</figcaption></figure>
 
 1. Once published, select the section and enable **Advanced Mode** to view the **Sharing** section in the settings panel. Here you can configure:
-   * **Response Keying:** Choose `Per respondent` (answers store once and pre-fill across surveys) or `Per survey attempt (default)` (answers store per attempt).
-   * **Prefill Mode:** Select how respondents meet pre-filled answers: `Quiet (default)` (filled in place with a banner), `Review` (collapsed summary card), or `Interstitial` (keep or update step).
-   * **Freeze:** Toggle on to lock the section against accidental changes across your team and translations.
+   - **Response Keying:** Choose `Per respondent` (answers store once and pre-fill across surveys) or `Per survey attempt (default)` (answers store per attempt).
+   - **Prefill Mode:** Select how respondents meet pre-filled answers: `Quiet (default)` (filled in place with a banner), `Review` (collapsed summary card), or `Interstitial` (keep or update step).
+   - **Freeze:** Toggle on to lock the section against accidental changes across your team and translations.
 
 <figure><img src="./assets/sharing-a-section/step-3-section-published-settings.png" alt="Sharing settings panel in Advanced Mode"><figcaption>The Sharing settings panel displaying the published status, response keying, prefill mode, and freeze controls.</figcaption></figure>
 
@@ -46,9 +46,9 @@ To use a shared section in another survey or form:
 
 1. In the survey editor toolbar, click **Add Content Mode**.
 2. In the right-hand panel, browse the **Section Library** using the tabs:
-   * **My team:** Sections created within your team.
-   * **Customer:** Sections published by any team in your organization.
-   * **Templates:** Standardized platform-wide templates.
+   - **My team:** Sections created within your team.
+   - **Customer:** Sections published by any team in your organization.
+   - **Templates:** Standardized platform-wide templates.
 3. Drag the desired section directly onto your form page canvas.
 
 <figure><img src="./assets/embedding-a-section/step-1-section-library-panel.png" alt="Section Library panel in Add Content view"><figcaption>Browse available sections across Team, Customer, and Template scopes in the Section Library.</figcaption></figure>
@@ -70,8 +70,8 @@ To use a shared section in another survey or form:
 
 When embedding a section, you can select how you want it to behave:
 
-* **Live reference:** Creates a read-only link to the source section. Any updates made by the source team (such as improved wording, added language translations, or updated Sign Language videos) automatically flow into your survey.
-* **Copy:** Creates an independent duplicate in your form with its own questions and translations. You can edit and modify it freely without affecting the original section.
+- **Live reference:** Creates a read-only link to the source section. Any updates made by the source team (such as improved wording, added language translations, or updated Sign Language videos) automatically flow into your survey.
+- **Copy:** Creates an independent duplicate in your form with its own questions and translations. You can edit and modify it freely without affecting the original section.
 
 <figure><img src="./assets/embedding-a-section/step-4-embed-kind-choice.png" alt="Choose between Live reference and Copy in the embed dialog"><figcaption>Select whether to embed as a synchronized Live reference or an independent Copy.</figcaption></figure>
 
@@ -87,11 +87,9 @@ Click **Embed section** to add the section to your form.
 
 When a section is embedded as a **Live reference**:
 
-* It is displayed with a `link` icon in the grid tree view to indicate it is linked to an external source.
-* It is read-only in the design canvas—the source team maintains the content.
-* If you no longer need the live reference, right-click the section and select **Remove embed**. Removing an embed disconnects it from your form without affecting the original section.
-
-<figure><img src="./assets/embedding-a-section/step-6-live-reference-context-menu.png" alt="Context menu on a live reference showing remove embed"><figcaption>Live-referenced sections show a live reference indicator and can be safely removed with 'remove embed'.</figcaption></figure>
+- It is displayed with a `link` icon in the grid tree view to indicate it is linked to an external source.
+- It is read-only in the design canvas—the source team maintains the content.
+- If you no longer need the live reference, right-click the section and select **Remove embed**. Removing an embed disconnects it from your form without affecting the original section.
 
 ::: info Safe Deletion
 If the source team ever deletes a published section that your survey references, Accessible Surveys automatically converts your live reference into an independent copy beforehand so your survey never breaks.
@@ -119,9 +117,10 @@ The section is now private to your team again. You can re-publish it at any time
 
 ## Related Content
 
-* [How to add content to a form](./adding-content-to-a-form.md)
-* [How to share options across multiple questions](./sharing-options.md)
-* [How to share logical expressions across multiple items](./sharing-logical-expressions.md)
-* [How to publish and distribute a survey](./publishing-a-survey.md)
-* [How to use Sign Language](./use-sign-language.md)
-* [How to use Easy Read](./use-easy-read.md)
+- [Understanding Section Sharing & Reusability](../explanation/understanding-section-sharing.md)
+- [How to add content to a form](./adding-content-to-a-form.md)
+- [How to share options across multiple questions](./sharing-options.md)
+- [How to share logical expressions across multiple items](./sharing-logical-expressions.md)
+- [How to publish and distribute a survey](./publishing-a-survey.md)
+- [How to use Sign Language](./use-sign-language.md)
+- [How to use Easy Read](./use-easy-read.md)
