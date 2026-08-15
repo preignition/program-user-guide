@@ -4,7 +4,19 @@ export function getSidebar() {
       text: 'Survey App', link: '/app/survey/index',
       items: [
         { text: 'Tutorials', link: '/app/survey/tutorial/index' },
-        { text: 'How-to Guides', link: '/app/survey/how-to/index' },
+        {
+          text: 'How-to Guides', link: '/app/survey/how-to/index',
+          items: [
+            {
+              text: 'Share content across multiple forms and surveys', link: '/app/survey/how-to/sharing-content',
+              items: [
+                { text: 'Share a section with other teams', link: '/app/survey/how-to/how-to-share-section' },
+                { text: 'Share options across multiple questions', link: '/app/survey/how-to/sharing-options' },
+                { text: 'Share logical expressions across multiple items', link: '/app/survey/how-to/sharing-logical-expressions' }
+              ]
+            }
+          ]
+        },
         { text: 'Reference', link: '/app/survey/reference/index' },
         { text: 'Explanation', link: '/app/survey/explanation/index' }
 

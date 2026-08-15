@@ -58,11 +58,17 @@ function getSidebar() {
             { text: 'Provide rich formatting', link: `providing-rich-formatting.md` },
             { text: 'Use form logic', link: `logic-expression.md` },
             { text: 'Add images to the image library', link: `adding-images-to-library.md` },
-            { text: 'Share options across multiple questions', link: `sharing-options.md` },
-            { text: 'Share logical expressions', link: `sharing-logical-expressions.md` },
             { text: 'Style a survey', link: 'styling-a-survey.md' },
-            { text: 'Share content across multiple forms and surveys', link: `sharing-content.md` },
-            { text: 'Set access rights for forms', link: `access-rights.md` }
+            { text: 'Set access rights for forms', link: `access-rights.md` },
+            {
+              text: 'Share content across multiple forms and surveys',
+              link: `sharing-content.md`,
+              items: [
+                { text: 'Share a section with other teams', link: `how-to-share-section.md` },
+                { text: 'Share options across multiple questions', link: `sharing-options.md` },
+                { text: 'Share logical expressions across multiple items', link: `sharing-logical-expressions.md` }
+              ]
+            }
           ]
         },
         {
