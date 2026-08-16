@@ -209,7 +209,9 @@ function getSidebar() {
           text: 'Survey Quality', collapsed: true, items: [
             { text: 'How to choose the right question type', link: `choosing-the-right-question-type.md` },
             { text: 'Using Markdown', link: `using-markdown.md` },
-            { text: 'Confidence Index', link: `confidence-index.md` }
+            { text: 'Confidence Index', link: `confidence-index.md` },
+            { text: 'Understanding Section Sharing & Reusability', link: `understanding-section-sharing.md` },
+            { text: 'Understanding Randomization', link: `understanding-randomization.md` }
           ]
         }, {
           text: 'Data Privacy, security and Ethics', collapsed: true, items: [

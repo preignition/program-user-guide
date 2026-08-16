@@ -5,11 +5,11 @@ This folder contains Playwright tests for the survey habits application. These t
 ## How to run the test
 
 - in accessibledata root:
-  - `pnpm survey:start:playwright-a11y:signed-in`
-  - `pnpm survey:start:playwright:signed-in`
+  - `pnpm survey:start:a11y-signed-in`
+  - `pnpm survey:start:signed-in`
 - in documentation root: `npm test`
 
-**shortcut**: `pnpm survey:start:playwright-a11y:signed-in && pnpm survey:start:playwright:signed-in`
+**shortcut**: `pnpm survey:start:a11y-signed-in && pnpm survey:start:signed-in`
 
 ### User type
 
@@ -22,5 +22,5 @@ Some tests are run with `playwright-a11y@preignition.org` and some with `playwri
 
 ### Run type
 
-- `pnpm survey:start:playwright:signed-in` loads on **localhost:7173**   and loads `playwright@preignition.org`
-- `pnpm survey:start:playwright-a11y:signed-in` loads on **localhost:7174** and loads `playwright-a11y@preignition.org`
+- `pnpm survey:start:signed-in` loads on **localhost:7173** and loads `playwright@preignition.org`
+- `pnpm survey:start:a11y-signed-in` loads on **localhost:7174** and loads `playwright-a11y@preignition.org`

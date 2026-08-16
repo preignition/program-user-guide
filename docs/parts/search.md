@@ -6,10 +6,10 @@ The search functionality in our documentation is designed to help you quickly fi
 
 To use the search feature, simply click on the search icon (usually represented by a magnifying glass) located in the top of the documentation page. This will open a search bar where you can type in your query. The shortcut to open the search bar is typically `Ctrl + K` (or `Cmd + K` on Mac).
 
-## Ask IA
+## Ask AI
 
 If you can't find what you're looking for, or if you have specific questions about how to use the Accessible Surveys App, you can ask our AI assistant for help. The AI assistant is designed to provide quick and accurate answers based on the content of our documentation.
 
 ### How to Ask the AI Assistant
 
-To ask the AI assistant a question, simply click on the "Ask IA" button located in the search bar. This will open a chat interface where you can type your question. The AI will then provide you with an answer based on the information available in our documentation.
+To ask the AI assistant a question, simply click on the "Ask AI" button located in the search bar. This will open a chat interface where you can type your question. The AI will then provide you with an answer based on the information available in our documentation.
