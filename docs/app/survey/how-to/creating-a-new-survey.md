@@ -59,6 +59,17 @@ Fill in the necessary form details.
 
 Then, select **Next**.
 
+## Step 3b: Choose the layout
+
+When creating a new form, you are asked which **layout** your questions use:
+
+- **One question per page** — each question gets its own page. Best for short, simple surveys — and ideal on phones.
+- **Multiple questions per page** — questions share pages. Best for longer, more complex surveys with lots of logic.
+
+::: tip
+You can change this later in **Design → Style**.
+:::
+
 <figure>
   <img src="./assets/creating-a-new-survey/step-3-press-next.png" alt="Press next button">
   <figcaption>Press next button</figcaption>
