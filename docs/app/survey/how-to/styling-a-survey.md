@@ -20,22 +20,23 @@ To access the styling options, you need to open the survey builder's **Behavior*
   <figcaption>Click the Style tab to access the visual customization tools.</figcaption>
 </figure>
 
-## Step 2: Configure Scaling Factors
+## Step 2: Configure the Master Scale Settings
 
 ::: tip
 **Design Standards**
 Default styling tokens respect **Material Design 3** specifications. If you choose to deviate from these defaults, ensure you test your design across multiple screen sizes (mobile, tablet, desktop) to maintain a high-quality respondent experience.
 :::
 
-The most efficient way to adjust your survey's density and readability is through **Scaling Factors**. These act as global multipliers for all spacing and typography tokens.
+The most efficient way to adjust your survey's density and readability is through the two **master scale settings**, shown as cards at the top of the Style tab:
 
-1. **Font Scale** (Default: `1`): Increase or decrease the size of all text across the survey.
-2. **Spacing Scale** (Default: `1`): Adjust the "breathability" of the layout. Lower values (e.g., `0.8`) create a more compact design, while higher values (e.g., `1.2`) add more white space.
-3. **Small Font Scale** (Default: `1`): Fine-tune the size of secondary text elements (like helper text and populated labels) independently of the main font scale (e.g., use `1.2` to increase the size of secondary text).
+1. **Base Font Size** (Default: `1rem`): Controls all typography — headings, question labels, input text, and supporting text all scale from this single value. Use the slider or the Small/Normal/Large/X-Large presets.
+2. **Spacing Scale** (Default: `1`): A multiplier for all spacing (margins, paddings, gaps). Lower values (e.g., `0.75`) create a more compact design, while higher values (e.g., `1.25`) add more white space. Use the slider or the Compact/Default/Roomy presets.
+
+Both cards show a live preview of the effect. Leave a master at its default to inherit the value from your **Customer Theme**; values you set here apply to this survey only.
 
 <figure>
   <img src="./assets/styling-a-survey/step-2-arrange-styling-options.png" alt="Arrange styling options">
-  <figcaption>Use Scaling Factors for quick, global adjustments to look and feel.</figcaption>
+  <figcaption>Use the master scale settings for quick, global adjustments to look and feel.</figcaption>
 </figure>
 
 ## Step 3: Advanced Styling (Optional)
@@ -56,8 +57,9 @@ When you select a primary color, the platform automatically calculates appropria
 
 You can also provide specific styling overrides for different contexts:
 
-* **Mobile Overrides**: Adjust the layout specifically for screens smaller than 600px.
-* **One Question At A Time**: Customize the appearance when using the focused presentation mode.
+* **Mobile Overrides**: Adjust the layout specifically for narrow screens.
+* **One Question At A Time**: Customize the appearance when using the focused presentation mode. When both apply, these win over Mobile Overrides.
+* **Easy Read**: Customize the appearance when Easy Read mode is active (highest priority).
 
 ## How Theming Works
 

@@ -42,9 +42,21 @@
 
 ## Styling a Survey - styling-a-survey
 
-- [app/app-survey/schema/theme.ts](../../../../../accessibleData/app/app-survey/schema/theme.ts): Schema definition for font and spacing scaling factors and individual style tokens.
-- [app/app-survey/renderer/style.ts](../../../../../accessibleData/app/app-survey/renderer/style.ts): CSS implementation of the scaling logic using global multipliers.
-- [app/app-survey/src/page/edit/design/behavior.ts](../../../../../accessibleData/app/app-survey/src/page/edit/design/behavior.ts): Editor UI for configuring style tokens and scaling factors.
+- [app/app-survey/schema/theme.ts](../../../../../accessibleData/app/app-survey/schema/theme.ts): Schema definition for the Base Font Size and Spacing Scale master tokens, per-group style tokens, and their CSS-var encoding.
+- [app/app-survey/renderer/style.ts](../../../../../accessibleData/app/app-survey/renderer/style.ts): Renderer default variables — the typography ladder driven by the Base Font Size master and the Spacing Scale multipliers on spacing tokens.
+- [app/app-survey/src/page/edit/design/behavior.ts](../../../../../accessibleData/app/app-survey/src/page/edit/design/behavior.ts): Editor UI for the Style tab — master cards, Advanced Mode gating, and the per-group fine-tune tokens.
+- [app/app-survey/src/page/edit/design/scale-card.ts](../../../../../accessibleData/app/app-survey/src/page/edit/design/scale-card.ts): The master-token card component (slider + presets + live preview).
+
+## How to configure survey styles - style-configuration
+
+- [app/app-survey/schema/theme.ts](../../../../../accessibleData/app/app-survey/schema/theme.ts): `FormStyleTokens` (masters + fine-tune tokens), `FormStyle`/`CssFormStyle` groups including the Easy Read group, and the CSS-var encodeKeys mapping.
+- [lit-app/effect-model/primitive/Size.ts](../../../../../accessibleData/lit-app/effect-model/primitive/Size.ts): Shared `OptionalFontSize`, `OptionalSize`, and `OptionalScale` primitives (rem-only font validation, empty = inherit).
+- [app/app-survey/renderer/style-merge.ts](../../../../../accessibleData/app/app-survey/renderer/style-merge.ts): Pure merge of the style groups into CSS vars (base → mobile → oneQuestionAtATime → easyread).
+- [app/app-survey/renderer/form-abstract.ts](../../../../../accessibleData/app/app-survey/renderer/form-abstract.ts): Applies the merged style vars to the renderer, mirrors the masters onto the form host.
+- [app/app-survey/renderer/field-wrapper.ts](../../../../../accessibleData/app/app-survey/renderer/field-wrapper.ts): Maps the master-derived field text sizes onto Material field tokens.
+- [lit-app/effect-model/schema/theme.ts](../../../../../accessibleData/lit-app/effect-model/schema/theme.ts): Customer theme schema — `ThemeTypography.fontSizeBase` and `ThemeLayout.spacingScale`.
+- [app/app-base/src/init/theme-masters.ts](../../../../../accessibleData/app/app-base/src/init/theme-masters.ts): Builds the `:root` CSS block carrying the theme-level master tokens.
+- [app/app-base/state/accessibilityState.ts](../../../../../accessibleData/app/app-base/state/accessibilityState.ts): Easy Read activation state (no longer force-sets the global text size — scaling flows through the Easy Read style group).
 
 ## Sharing a Section - how-to-share-section
 

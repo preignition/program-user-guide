@@ -19,3 +19,8 @@ The Theme section controls global branding elements across activated apps.
 - **Seed Color**: The base hex color code (e.g., `#000000`) used to automatically generate a cohesive color palette.
 - **Contrast Level**: Slider to adjust the contrast of derived colors for accessibility.
 - **Primary Colors**: Explicit color definitions for `light` and `dark` modes.
+
+## Scale
+
+- **Base Font Size**: Default font size for surveys. Surveys inherit this value unless they override it with their own Base Font Size in the [Style Configuration](../../../survey/reference/build/behavior.md).
+- **Spacing Scale**: Multiplier applied to all spacing in surveys. Surveys inherit this value unless they override it with their own Spacing Scale.
