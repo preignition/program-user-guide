@@ -6,10 +6,13 @@ description: Learn how to create and revoke team API keys in the Customer Portal
 
 Team API keys allow external services, scripts, and data pipelines to authenticate with Accessible Data on behalf of your team without exposing personal user credentials.
 
-This guide walks you through creating a new API key and revoking an existing key when it is no longer needed.
-
 > [!IMPORTANT]
 > API key secrets are displayed **exactly once** upon creation. Make sure to copy and securely store your key secret immediately.
+
+This guide walks you through creating a new API key and revoking an existing key when it is no longer needed.
+
+> [!NOTE]
+> The API Keys panel is only visible to team owners.
 
 ---
 
