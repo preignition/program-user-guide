@@ -4,7 +4,7 @@ description: Technical reference for Team API Keys management in the Customer Po
 
 # Team API Keys
 
-The **API Keys** panel under Team Settings allows team administrators to generate, list, and revoke credentials used for programmatic integration with Accessible Data APIs.
+The **API Keys** panel under Team Settings allows team administrators to generate, list, and revoke credentials used for programmatic integration with Accessible Data APIs. The panel is only visible to team owners and admins.
 
 <figure><img src="./assets/api-keys-content-auto.png" alt="API Keys Panel"><figcaption>The API Keys management panel in Team Settings.</figcaption></figure>
 
