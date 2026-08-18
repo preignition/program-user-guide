@@ -62,13 +62,11 @@ Open this group to provide mobile-specific values. Any value entered here will a
 > [!TIP]
 > You only need to define the tokens you want to change. For example, if you only want to reduce the Page Padding Inline for mobile phones, fill in that specific field and leave the rest blank.
 
-### 3. One Question At A Time Overrides
-If your survey's Presentation Mode is set to "One question at a time" (configured in the Layout tab), you might want a specialized, distraction-free design.
-
-Tokens defined in this group apply *only* when this presentation mode is active. When both apply, One Question At A Time overrides win over Mobile overrides.
-
-### 4. Easy Read Overrides
+### 3. Easy Read Overrides
 If Easy Read mode is activated for the form (see [How to use Easy Read](./use-easy-read.md)), this group applies only when Easy Read is active, and it is the highest-priority group. Its Base Font Size defaults to a larger, easy-read-friendly value.
+
+> [!NOTE]
+> **One Question At A Time** has no override group of its own: the Base Tokens apply in that presentation mode, with a larger default Base Font Size (`1.5rem`). Set a Base Font Size master to override it.
 
 ## Understanding Tokens and Units
 

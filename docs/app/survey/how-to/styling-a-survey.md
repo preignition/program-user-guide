@@ -58,8 +58,9 @@ When you select a primary color, the platform automatically calculates appropria
 You can also provide specific styling overrides for different contexts:
 
 * **Mobile Overrides**: Adjust the layout specifically for narrow screens.
-* **One Question At A Time**: Customize the appearance when using the focused presentation mode. When both apply, these win over Mobile Overrides.
 * **Easy Read**: Customize the appearance when Easy Read mode is active (highest priority).
+
+One Question At A Time has no override group of its own — the Base Tokens apply in that presentation mode, with a larger default Base Font Size (`1.5rem`).
 
 ## How Theming Works
 

@@ -61,12 +61,13 @@ The Layout tab determines the structural flow and media presentation of the surv
 
 The Style tab provides a token-based design system to fine-tune the survey's layout and typography. Two **master scale settings** — Base Font Size and Spacing Scale — are always visible at the top of the tab; they inherit their defaults from the [Customer Theme](../../../customer/reference/customer/theme.md) and can be overridden per survey.
 
-Granular tokens are organized into four hierarchical groups, applied in this order (highest wins):
+Granular tokens are organized into three hierarchical groups, applied in this order (highest wins):
 
 1. **Base Tokens** — apply everywhere.
 2. **Mobile Overrides** — applied on narrow screens.
-3. **One Question At A Time Overrides** — applied only when that presentation mode is active; win over Mobile Overrides when both apply.
-4. **Easy Read Overrides** — applied only when Easy Read mode is active; highest priority. Base Font Size defaults to a larger, easy-read-friendly value.
+3. **Easy Read Overrides** — applied only when Easy Read mode is active; highest priority. Base Font Size defaults to a larger, easy-read-friendly value.
+
+One Question At A Time has no override group of its own: the Base Tokens apply in that presentation mode, with a larger default Base Font Size (`1.5rem`) when no master is set.
 
 <figure>
   <img src="./assets/behavior-style-auto.png" alt="Style tab showing the master scale settings.">
