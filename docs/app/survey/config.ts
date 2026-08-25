@@ -128,7 +128,19 @@ function getSidebar() {
           link: `index.md`,
           collapsed: true,
           items: [
-            { text: 'Compose', link: `compose/index.md` },
+            {
+              text: 'Compose',
+              base: `${root}/reference/build/compose/`,
+              link: `index.md`,
+              collapsed: true,
+              items: [
+                { text: 'Form', link: `form.md` },
+                { text: 'Text Page', link: `text-page.md` },
+                { text: 'Page', link: `page.md` },
+                { text: 'Section', link: `section.md` },
+                { text: 'Question', link: `question.md` },
+              ]
+            },
             { text: 'Localize', link: `localize.md` },
             { text: 'Image Library', link: `image-library.md` },
             { text: 'Prompts', link: `prompt.md` },
