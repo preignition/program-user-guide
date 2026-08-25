@@ -1,144 +1,162 @@
-import { defineAdditionalConfig } from 'vitepress'
-import { getNav as getRootNav } from '../../../.vitepress/getNav.js'
+import { defineAdditionalConfig } from "vitepress";
+import { getNav as getRootNav } from "../../../.vitepress/getNav.js";
 
-const root = '/app/survey'
+const root = "/app/survey";
 
 export default defineAdditionalConfig({
-  title: 'Accessible Surveys',
+  title: "Accessible Surveys",
   themeConfig: {
     sidebar: getSidebar(),
-    nav: getNav()
-  }
-})
+    nav: getNav(),
+  },
+});
 
 function getNav() {
-  const nav = getRootNav()
-  nav.push({ text: 'Survey App', link: `${root}/index` })
-  nav.push({ text: 'Tutorials', link: `${root}/tutorial/index` })
-  nav.push({ text: 'How-to', link: `${root}/how-to/index` })
-  nav.push({ text: 'Reference', link: `${root}/reference/index` })
-  nav.push({ text: 'Explanation', link: `${root}/explanation/index` })
+  const nav = getRootNav();
+  nav.push({ text: "Survey App", link: `${root}/index` });
+  nav.push({ text: "Tutorials", link: `${root}/tutorial/index` });
+  nav.push({ text: "How-to", link: `${root}/how-to/index` });
+  nav.push({ text: "Reference", link: `${root}/reference/index` });
+  nav.push({ text: "Explanation", link: `${root}/explanation/index` });
 
-  return nav
+  return nav;
 }
 
 function getSidebar() {
-  console.info('getSidebar')
+  console.info("getSidebar");
   return [
-
     {
-      text: 'Tutorials',
+      text: "Tutorials",
       link: `index`,
       base: `${root}/tutorial/`,
       items: [
-        { text: 'Create a new survey', link: `session-1-creating-a-new-survey.md` },
-        { text: 'Add accessibility options', link: `session-2-adding-accessibility-options.md` },
-        { text: 'Translate a survey', link: `session-3-localization.md` },
-        { text: 'Deploy a survey', link: `session-4-distributing.md` },
-        { text: 'Analyze survey responses', link: `session-5-analyzing-survey-responses.md` },
-
-      ]
+        { text: "Create a new survey", link: `session-1-creating-a-new-survey.md` },
+        { text: "Add accessibility options", link: `session-2-adding-accessibility-options.md` },
+        { text: "Translate a survey", link: `session-3-localization.md` },
+        { text: "Deploy a survey", link: `session-4-distributing.md` },
+        { text: "Analyze survey responses", link: `session-5-analyzing-survey-responses.md` },
+      ],
     },
     {
-      text: 'How-to',
+      text: "How-to",
       link: `index`,
       base: `${root}/how-to/`,
       items: [
         {
-          text: 'Creating and editing',
+          text: "Creating and editing",
           collapsed: true,
           items: [
-            { text: 'Create a new survey', link: `creating-a-new-survey.md` },
-            { text: 'Edit a survey', link: `editing-a-survey.md` },
-            { text: 'Test a form', link: `testing-a-form.md` },
-            { text: 'Mark a survey as favorite', link: `marking-a-survey-as-favorite.md` },
-            { text: 'Delete a survey', link: `deleting-a-survey.md` },
-            { text: 'Add content to a form', link: `adding-content-to-a-form.md` },
-            { text: 'Put text above a question', link: `text-above-a-question.md` },
-            { text: 'Control content visibility', link: `controlling-visibility.md` },
-            { text: 'Provide rich formatting', link: `providing-rich-formatting.md` },
-            { text: 'Use form logic', link: `logic-expression.md` },
-            { text: 'Add images to the image library', link: `adding-images-to-library.md` },
-            { text: 'Style a survey', link: 'styling-a-survey.md' },
-            { text: 'Set access rights for forms', link: `access-rights.md` },
+            { text: "Create a new survey", link: `creating-a-new-survey.md` },
+            { text: "Edit a survey", link: `editing-a-survey.md` },
+            { text: "Test a form", link: `testing-a-form.md` },
+            { text: "Mark a survey as favorite", link: `marking-a-survey-as-favorite.md` },
+            { text: "Delete a survey", link: `deleting-a-survey.md` },
+            { text: "Add content to a form", link: `adding-content-to-a-form.md` },
+            { text: "Put text above a question", link: `text-above-a-question.md` },
+            { text: "Control content visibility", link: `controlling-visibility.md` },
+            { text: "Provide rich formatting", link: `providing-rich-formatting.md` },
+            { text: "Use form logic", link: `logic-expression.md` },
+            { text: "Add images to the image library", link: `adding-images-to-library.md` },
+            { text: "Style a survey", link: "styling-a-survey.md" },
+            { text: "Set access rights for forms", link: `access-rights.md` },
             {
-              text: 'Share content across multiple forms and surveys',
+              text: "Share content across multiple forms and surveys",
               link: `sharing-content.md`,
               items: [
-                { text: 'Share a section with other teams', link: `how-to-share-section.md` },
-                { text: 'Share options across multiple questions', link: `sharing-options.md` },
-                { text: 'Share logical expressions across multiple items', link: `sharing-logical-expressions.md` }
-              ]
-            }
-          ]
+                { text: "Share a section with other teams", link: `how-to-share-section.md` },
+                { text: "Share options across multiple questions", link: `sharing-options.md` },
+                {
+                  text: "Share logical expressions across multiple items",
+                  link: `sharing-logical-expressions.md`,
+                },
+              ],
+            },
+          ],
         },
         {
-          text: 'Accessibility',
+          text: "Accessibility",
           collapsed: true,
           items: [
-            { text: 'Activate accessibility modes', link: `activating-accessibility-modes.md` },
-            { text: 'Localize a survey', link: 'localize-survey.md' },
-            { text: 'Add an accessibility menu', link: `adding-an-accessibility-menu.md` },
-            { text: 'Use Easy Read', link: `use-easy-read.md` },
-            { text: 'Use Sign Language', link: `use-sign-language.md` },
-            { text: 'Use tooltips', link: `use-tooltips.md` },
-          ]
+            { text: "Activate accessibility modes", link: `activating-accessibility-modes.md` },
+            { text: "Localize a survey", link: "localize-survey.md" },
+            { text: "Add an accessibility menu", link: `adding-an-accessibility-menu.md` },
+            { text: "Use Easy Read", link: `use-easy-read.md` },
+            { text: "Use Sign Language", link: `use-sign-language.md` },
+            { text: "Use tooltips", link: `use-tooltips.md` },
+          ],
         },
         {
-          text: 'Localization',
+          text: "Localization",
           collapsed: true,
           items: [
-            { text: 'Create a multilingual survey', link: `localize-survey.md` },
-            { text: 'Use import/export to translate forms', link: `import-export.md` },
-          ]
+            { text: "Create a multilingual survey", link: `localize-survey.md` },
+            { text: "Use import/export to translate forms", link: `import-export.md` },
+          ],
         },
         {
-          text: 'Distribution',
+          text: "Distribution",
           collapsed: true,
           items: [
-            { text: 'Publish a survey', link: `publishing-a-survey.md` },
-            { text: 'Create alias survey links', link: `creating-alias.md` },
-            { text: 'Use survey batches', link: `using-batches.md` },
-            { text: 'Redirect respondents after completing a survey', link: `configure-redirection.md` },
-            { text: 'Set survey terms', link: `survey-terms.md` },
-            { text: 'Fill in surveys on behalf of other respondents', link: `filling-in-surveys-on-behalf-of-others.md` },
-          ]
+            { text: "Publish a survey", link: `publishing-a-survey.md` },
+            { text: "Create alias survey links", link: `creating-alias.md` },
+            { text: "Use survey batches", link: `using-batches.md` },
+            {
+              text: "Redirect respondents after completing a survey",
+              link: `configure-redirection.md`,
+            },
+            { text: "Set survey terms", link: `survey-terms.md` },
+            {
+              text: "Fill in surveys on behalf of other respondents",
+              link: `filling-in-surveys-on-behalf-of-others.md`,
+            },
+          ],
         },
         {
-          text: 'Analytics and Export',
+          text: "Analytics and Export",
           collapsed: true,
           items: [
-            { text: 'Analyze survey data', link: `survey-analytics.md` },
-            { text: 'Export survey data', link: `exporting-survey-data.md` },
-            { text: 'Export analytics charts', link: `exporting-analytics-charts.md` },
-          ]
+            { text: "Analyze survey data", link: `survey-analytics.md` },
+            { text: "Export survey data", link: `exporting-survey-data.md` },
+            { text: "Export analytics charts", link: `exporting-analytics-charts.md` },
+          ],
         },
-      ]
+      ],
     },
     {
-      text: 'Reference',
+      text: "Reference",
       collapsed: true,
       link: `index.md`,
       base: `${root}/reference/`,
       items: [
-        { text: 'Survey Overview', link: `` },
+        { text: "Survey Overview", link: `` },
         {
-          text: 'Build Survey',
+          text: "Build Survey",
           base: `${root}/reference/build/`,
           link: `index.md`,
           collapsed: true,
           items: [
-            { text: 'Compose', link: `compose/index.md` },
-            { text: 'Localize', link: `localize.md` },
-            { text: 'Image Library', link: `image-library.md` },
-            { text: 'Prompts', link: `prompt.md` },
-            { text: 'Behavior', link: `behavior.md` },
-            { text: 'Restore', link: `restore.md` },
-          ]
+            {
+              text: "Compose",
+              base: `${root}/reference/build/compose/`,
+              link: `index.md`,
+              items: [
+                { text: "Form", link: `form.md` },
+                { text: "Text Page", link: `text-page.md` },
+                { text: "Page", link: `page.md` },
+                { text: "Section", link: `section.md` },
+                { text: "Question", link: `question.md` },
+              ],
+            },
+            { text: "Localize", link: `localize.md` },
+            { text: "Image Library", link: `image-library.md` },
+            { text: "Prompts", link: `prompt.md` },
+            { text: "Behavior", link: `behavior.md` },
+            { text: "Restore", link: `restore.md` },
+          ],
         },
-        { text: 'Test Survey', link: `test/index.md` },
+        { text: "Test Survey", link: `test/index.md` },
         {
-          text: 'Share Survey',
+          text: "Share Survey",
           collapsed: true,
           base: `${root}/reference/share/`,
           link: `index.md`,
@@ -153,82 +171,105 @@ function getSidebar() {
             { text: "Batch", link: `batch/index.md` },
             { text: "Webhooks", link: `webhook/index.md` },
             { text: "Terms", link: `terms/index.md` },
-          ]
+          ],
         },
         {
-          text: 'Markdown Reference',
+          text: "Markdown Reference",
           collapsed: true,
-          link: 'index.md',
+          link: "index.md",
           base: `${root}/reference/content/markdown/`,
           items: [
-            { text: 'Visibility Control', link: `visibility-control.md` },
-            { text: 'Convenient Class', link: `convenient-class.md` },
-            { text: 'CSS Tokens', link: `css-tokens.md` },
-            { text: 'Web Components', link: `available-web-components.md` },
-
-          ]
+            { text: "Visibility Control", link: `visibility-control.md` },
+            { text: "Convenient Class", link: `convenient-class.md` },
+            { text: "CSS Tokens", link: `css-tokens.md` },
+            { text: "Web Components", link: `available-web-components.md` },
+          ],
         },
         {
-          text: 'Logic Expression',
+          text: "Logic Expression",
           collapsed: true,
           base: `${root}/reference/content/logic-expression/`,
           link: `index.md`,
           items: [
-            { text: 'Introduction', link: `introduction.md` },
-            { text: 'Advanced', link: `advanced.md` },
-            { text: 'Jexl Syntax', link: `jexl-syntax.md` },
-          ]
+            { text: "Introduction", link: `introduction.md` },
+            { text: "Advanced", link: `advanced.md` },
+            { text: "Jexl Syntax", link: `jexl-syntax.md` },
+          ],
         },
-      ]
+      ],
     },
     {
-      text: 'Explanation',
+      text: "Explanation",
       // collapsed: true,
       base: `${root}/explanation/`,
       link: `index.md`,
       items: [
         {
-          text: 'Principles', collapsed: true, items: [
-            { text: 'We have different needs', link: `` },
-            { text: 'Accessibility First', link: `` },
-            { text: 'Rooted in the disability movement', link: `` },
-          ]
+          text: "Principles",
+          collapsed: true,
+          items: [
+            { text: "We have different needs", link: `` },
+            { text: "Accessibility First", link: `` },
+            { text: "Rooted in the disability movement", link: `` },
+          ],
         },
         {
-          text: 'Architecture and Key Concepts', collapsed: true, items: [
-            { text: 'Understanding Survey, Form, Page, Section and Question Hierarchy', link: `understanding-survey-hierarchy.md` },
-            { text: 'How does the compose view work', link: `how-does-the-compose-view-work.md` },
-            { text: 'The concept of Modes', link: `the-concept-of-modes.md` },
-            { text: 'Building and Versioning', link: `survey-versionning.md` },
-            { text: 'Understanding Form Logic', link: `understanding-form-logic.md` },
-            { text: 'Test and Production Survey Links', link: `test-and-production-survey-links.md` },
-            { text: 'The Role of Batches', link: `the-role-of-batches.md` },
-            { text: 'Respondent accounts', link: `survey-respondent-accounts.md` },
-            { text: 'Resuming Incomplete Surveys', link: `resuming-incomplete-surveys.md` },
-          ]
-        }, {
-          text: 'Survey Quality', collapsed: true, items: [
-            { text: 'How to choose the right question type', link: `choosing-the-right-question-type.md` },
-            { text: 'Using Markdown', link: `using-markdown.md` },
-            { text: 'Confidence Index', link: `confidence-index.md` },
-            { text: 'Understanding Section Sharing & Reusability', link: `understanding-section-sharing.md` },
-            { text: 'Understanding Randomization', link: `understanding-randomization.md` }
-          ]
-        }, {
-          text: 'Data Privacy, security and Ethics', collapsed: true, items: [
-            { text: 'Authentication and Identity', link: `authentication.md` },
-            { text: 'Authorization and Security Rules', link: `authorization.md` },
-            { text: 'Data Privacy and Security', link: `data-privacy-and-security.md` },
-          ]
-        }, {
-          text: 'Useful web-related or technical concepts', collapsed: true, items: [
-            { text: 'What is JSON?', link: `what-is-json.md` },
-            { text: 'Understanding CSS Units', link: `understanding-css-units.md` },
-            { text: 'Understanding CSS Variables', link: `understanding-css-variables.md` }
-          ]
-        }
-
-      ]
-    }
-  ]
+          text: "Architecture and Key Concepts",
+          collapsed: true,
+          items: [
+            {
+              text: "Understanding Survey, Form, Page, Section and Question Hierarchy",
+              link: `understanding-survey-hierarchy.md`,
+            },
+            { text: "How does the compose view work", link: `how-does-the-compose-view-work.md` },
+            { text: "The concept of Modes", link: `the-concept-of-modes.md` },
+            { text: "Building and Versioning", link: `survey-versionning.md` },
+            { text: "Understanding Form Logic", link: `understanding-form-logic.md` },
+            {
+              text: "Test and Production Survey Links",
+              link: `test-and-production-survey-links.md`,
+            },
+            { text: "The Role of Batches", link: `the-role-of-batches.md` },
+            { text: "Respondent accounts", link: `survey-respondent-accounts.md` },
+            { text: "Resuming Incomplete Surveys", link: `resuming-incomplete-surveys.md` },
+          ],
+        },
+        {
+          text: "Survey Quality",
+          collapsed: true,
+          items: [
+            {
+              text: "How to choose the right question type",
+              link: `choosing-the-right-question-type.md`,
+            },
+            { text: "Using Markdown", link: `using-markdown.md` },
+            { text: "Confidence Index", link: `confidence-index.md` },
+            {
+              text: "Understanding Section Sharing & Reusability",
+              link: `understanding-section-sharing.md`,
+            },
+            { text: "Understanding Randomization", link: `understanding-randomization.md` },
+          ],
+        },
+        {
+          text: "Data Privacy, security and Ethics",
+          collapsed: true,
+          items: [
+            { text: "Authentication and Identity", link: `authentication.md` },
+            { text: "Authorization and Security Rules", link: `authorization.md` },
+            { text: "Data Privacy and Security", link: `data-privacy-and-security.md` },
+          ],
+        },
+        {
+          text: "Useful web-related or technical concepts",
+          collapsed: true,
+          items: [
+            { text: "What is JSON?", link: `what-is-json.md` },
+            { text: "Understanding CSS Units", link: `understanding-css-units.md` },
+            { text: "Understanding CSS Variables", link: `understanding-css-variables.md` },
+          ],
+        },
+      ],
+    },
+  ];
 }
