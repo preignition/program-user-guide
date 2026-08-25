@@ -39,6 +39,10 @@ Global settings apply across all questions and pages in the survey:
 - **Scroll Page Before Next**: When enabled, respondents must scroll to the bottom of the current page before the "Next" button becomes active.
 - **Accessible Label**: Toggles a high-visibility accessible variant for all question labels. Enabling this increases label font size and disables floating label animations to improve legibility.
 
+::: warning
+When **Accessible Label** is off, question labels are limited to **80 characters** — the field stops accepting more input without showing a counter. Toggle **Accessible Label** on to remove the limit and allow labels of any length.
+:::
+
 ## Layout
 
 The Layout tab controls pagination, navigation transitions, and the positioning of media illustrations relative to question content.

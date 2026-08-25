@@ -12,3 +12,10 @@
 - [pattern-text-field.ts](../../../../../lit-app/cmp/field/textfield/pattern-text-field.ts): Web component extending `LappFilledTextField` to perform strict regex validation on the pattern input field, using the browser's native `v` flag.
 - [QuestionE.ts](../../../../../app/app-survey/src/entity/QuestionE.ts): Base question entity schema defining the standard question settings, including the `pattern` attribute and its custom renderer using `pattern-text-field.ts`.
 - [BuildTel.ts](../../../../../app/app-survey/src/entity/question/settings/BuildTel.ts): Settings override for Telephone questions, customizing the placeholder pattern.
+
+## Label Length - Question Settings
+
+- [BuildQuestion.ts](../../../../../app/app-survey/src/entity/settings/BuildQuestion.ts): Question builder settings that apply a `maxLength` of `defaultMaxLength` (80) to the question label when the form-level Accessible Label setting is off.
+- [config.ts](../../../../../app/app-survey/src/config.ts): Defines `defaultMaxLength = 80`.
+- [FormE.ts](../../../../../app/app-survey/src/entity/FormE.ts): Form entity defining the `questionSettings.accessibleLabel` global setting.
+- [behavior.ts](../../../../../app/app-survey/src/page/edit/design/behavior.ts): Renders the Accessible Label toggle under Form Behavior → Accessibility → Global Form Settings.

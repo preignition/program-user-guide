@@ -58,6 +58,11 @@ Field attributes define the validation and input behavior of questions when pres
 ### General Settings
 
 - **Required**: When toggled on, respondents must answer this question before they can proceed or submit the survey.
+- **Label**: The text shown to respondents requesting the information. It is limited to **80 characters** when the form-level [Accessible Label](../behavior.md) setting is off; enabling Accessible Label removes the limit. The limit is applied silently (no character counter is shown).
+
+::: tip
+**Best practice — keep labels short.** Write the label as a single, clear phrase asking for exactly one piece of information — ideally under 80 characters. This keeps labels readable on small screens and safely within the 80-character limit while **Accessible Label** is off. Put longer context, examples, or formatting instructions in the **helper text** rather than the label.
+:::
 
 ### Character & Number Constraints
 
