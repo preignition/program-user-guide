@@ -12,37 +12,22 @@ The Markdown editor supports embedding specific custom HTML web components to pr
 
 Tooltips provide contextual information when hovered or focused.
 
-### `<pwi-tooltip>`
+### `<lapp-tooltip>`
 
 A standard text tooltip.
 
 **Example:**
 
 ```html
-<pwi-tooltip message="This is the tooltip text" position="bottom">Hover over me</pwi-tooltip>
+<lapp-tooltip message="This is the tooltip text" position="bottom">Hover over me</lapp-tooltip>
 ```
 
 **Key Properties:**
 
-* `message` (string): The text to display inside the tooltip.
-* `position` (string): Preferred placement (`top`, `bottom`, `left`, `right`).
-* `fireonclick` (boolean): If `true`, activates the tooltip on click rather than hover.
-* `noIcon` (boolean): If `true`, hides the default info icon next to the slotted text.
-
-### `<pwi-form-tooltip>`
-
-A specialized tooltip designed to fetch and display glossary definitions for complex terms.
-
-**Example:**
-
-```html
-<pwi-form-tooltip term="complex_term_id">Complex Term</pwi-form-tooltip>
-```
-
-**Key Properties:**
-
-* `term` (string): The unique ID of the glossary term to fetch.
-* `loadingMessage` (string): Text shown while the remote content is loading.
+- `message` (string): The text to display inside the tooltip.
+- `position` (string): Preferred placement (`top`, `bottom`, `left`, `right`).
+- `fireonclick` (boolean): If `true`, activates the tooltip on click rather than hover.
+- `noIcon` (boolean): If `true`, hides the default info icon next to the slotted text.
 
 ## Media & Icons
 
@@ -58,9 +43,9 @@ Embeds a YouTube video efficiently. This is a wrapper around `lite-youtube` that
 
 **Key Properties:**
 
-* `videoid` (string): The unique YouTube video ID.
-* `playlabel` (string): Accessible label for the play button (default: "Play").
-* `params` (string): Additional YouTube player parameters (e.g., `start=10`).
+- `videoid` (string): The unique YouTube video ID.
+- `playlabel` (string): Accessible label for the play button (default: "Play").
+- `params` (string): Additional YouTube player parameters (e.g., `start=10`).
 
 ### `<lapp-icon>`
 
@@ -88,7 +73,7 @@ Displays the full accessibility settings menu (theme, contrast, text size, easy 
 
 **Key Properties:**
 
-* `context` (string): Setting this to `survey` or `form` ensures that survey-specific options (like Read Aloud and Sign Language) are visible.
+- `context` (string): Setting this to `survey` or `form` ensures that survey-specific options (like Read Aloud and Sign Language) are visible.
 
 ### `<a11y-dialog-button>`
 
@@ -102,22 +87,22 @@ A button that opens the global accessibility settings dialog.
 
 **Key Properties:**
 
-* `outlined` (boolean): Renders the button with an outline style.
-* `unelevated` (boolean): Renders the button with a flat, contained style.
+- `outlined` (boolean): Renders the button with an outline style.
+- `unelevated` (boolean): Renders the button with a flat, contained style.
 
 ### Individual Controls
 
 For fine-grained layouts, individual accessibility toggles can be embedded separately:
 
-* `<a11y-easyread></a11y-easyread>`: Toggle Easy Read mode.
-* `<a11y-readaloud></a11y-readaloud>`: Toggle Read Aloud mode.
-* `<a11y-signlanguage></a11y-signlanguage>`: Toggle Sign Language mode.
-* `<a11y-theme></a11y-theme>`: Select from available color themes.
-* `<a11y-font></a11y-font>`: Adjust font size settings.
+- `<a11y-easyread></a11y-easyread>`: Toggle Easy Read mode.
+- `<a11y-readaloud></a11y-readaloud>`: Toggle Read Aloud mode.
+- `<a11y-signlanguage></a11y-signlanguage>`: Toggle Sign Language mode.
+- `<a11y-theme></a11y-theme>`: Select from available color themes.
+- `<a11y-font></a11y-font>`: Adjust font size settings.
 
 ## System Guidance
 
 Components that provide platform-level guidance on how to use the survey interface. These automatically adapt to the active language.
 
-* `<pfo-guidance></pfo-guidance>`: Displays text instructions on how to fill out forms.
-* `<pfo-guidance-video></pfo-guidance-video>`: Displays an instructional video on how to fill out forms.
+- `<pfo-guidance></pfo-guidance>`: Displays text instructions on how to fill out forms.
+- `<pfo-guidance-video></pfo-guidance-video>`: Displays an instructional video on how to fill out forms.
