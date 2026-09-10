@@ -77,13 +77,12 @@ test.describe("Customer Monitoring Dashboard", () => {
     locator = page.locator("monitoring-errors-grid");
     await context.annotatedScreenshot(locator, "step-10-error-records", 50, 700);
 
-    // Step 11: click a row to open the record details drawer. Uses the jobs
-    // grid because scheduled jobs exist in every environment; swap the grid if
-    // the run has no jobs.
-    await page.locator("monitoring-jobs-grid").getByRole("gridcell").first().click();
-    locator = page.getByRole("dialog", { name: "Record details" });
-    await locator.waitFor();
-    await context.annotatedScreenshot(locator, "step-11-record-details", 50);
-    await page.getByRole("button", { name: "Close details" }).click();
+    // Step 11: click a row to expand its record inline (click again to
+    // collapse). Uses the jobs grid because scheduled jobs exist in every
+    // environment; swap the grid if the run has no jobs.
+    const jobsGrid = page.locator("monitoring-jobs-grid");
+    await jobsGrid.getByRole("gridcell").first().click();
+    locator = jobsGrid.locator("vaadin-grid");
+    await context.annotatedScreenshot(locator, "step-11-row-details", 50, 700);
   });
 });
