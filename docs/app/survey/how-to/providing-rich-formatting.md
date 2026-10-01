@@ -43,6 +43,7 @@ The editor used in Accessible Surveys is a shared component used across our plat
 The toolbar provides dedicated menus to insert advanced components without writing code:
 
 * **Interactive Content:** Add YouTube videos, tooltips, expandable summaries (details), and Material Design icons.
+* **Info Boxes:** Add colored callouts to highlight information, confirmations, or warnings (info, success, and warning hints).
 * **Media:** Add images via the toolbar, pasting from the clipboard, or dragging and dropping files directly into the editor.
 * **Layouts:** Insert responsive 2- or 3-column layouts, fixed columns, and spacing elements.
 * **Theme-Aware Content:** Use the **Theme menu** to define content that is only visible in Light or Dark mode (e.g., different logo versions).

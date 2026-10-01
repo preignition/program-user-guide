@@ -17,6 +17,7 @@ You can choose between a native Markdown approach for simplicity or an HTML-hybr
 ### 1. Native Markdown (Recommended)
 
 * **Standard Markdown:** Basic formatting (bold `**text**`, italic `*text*`), headings (`#`, `##`), lists, and tables.
+* **[Info Boxes](./info-boxes.md):** Colored callouts for notes, confirmations, cautions, and errors (e.g., `::: info`).
 * **[Block Directives](./visibility-control.md#method-1-block-directives-recommended):** Custom containers for theme and accessibility visibility (e.g., `::: dark-only`).
 * **[Attribute Syntax](./visibility-control.md#method-2-attribute-syntax):** Assign classes directly to images and links (e.g., `![alt](src){.dark-only}`).
 
@@ -94,5 +95,6 @@ The `<lite-youtube>` tag is a custom **Web Component**. It embeds a video effici
 
 * [How-to: Providing Rich Formatting](../../../how-to/providing-rich-formatting.md)
 * [Explanation: Using Markdown](../../../explanation/using-markdown.md)
+* [Reference: Info Boxes](./info-boxes.md)
 * [Reference: Visibility Control](./visibility-control.md)
 * [Reference: Rich Text Editor Component](../../../../../components/md-editor.md)

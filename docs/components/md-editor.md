@@ -34,7 +34,7 @@ Beyond basic text, the editor supports inserting interactive components and adva
 * Tables
 * Icons (using the full range of [Material Design Icons](https://fonts.google.com/icons?icon.set=Material+Symbols))
 * Summaries (expandable/collapsible text blocks)
-* Hint widgets (Information, Warning, or Success callouts)
+* Info boxes — colored callouts inserted as `:::` block directives (Information, Success, and Warning). See the [Info Boxes reference](../app/survey/reference/content/markdown/info-boxes.md) for the syntax and the available types.
 
 <figure>
   <img src="./assets/md-editor/mdEditorContent.png" alt="The new content menu">
