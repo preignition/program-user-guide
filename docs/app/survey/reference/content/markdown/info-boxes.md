@@ -49,7 +49,7 @@ You can safely close this page — your answers were submitted.
 
 ## Deprecated: `<gitbook-hint>` Widgets
 
-Content created with earlier versions of the editor may contain `<gitbook-hint>` tags, for instance `<gitbook-hint type="info">…</gitbook-hint>`. They are still rendered, but the widget is deprecated and the editor no longer inserts it. Use the `:::` directive for new content.
+Content created with earlier versions of the editor may contain `<gitbook-hint>` tags, for instance `<gitbook-hint type="info">…</gitbook-hint>`. The widget is deprecated and the editor no longer inserts it. The editor preview still renders it, but deployed surveys treat it as an unknown element, so the box styling is lost there. Replace it with the `:::` directive.
 
 | Deprecated tag | Replacement |
 | :--- | :--- |
