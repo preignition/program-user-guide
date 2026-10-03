@@ -17,3 +17,8 @@ From the repo root:
 - `pnpm docs:check` / `pnpm docs:fix` — markdownlint.
 - `pnpm docs:build` — VitePress build; the only check that parses YAML frontmatter, so run it after adding or renaming pages.
 - `pnpm test` — Playwright screenshots; requires the app dev servers (see `src/README.md`).
+
+## Gotchas
+
+- A screenshot is written **only when it changed** (`saveScreenshotIfChanged`, ~4% pixel tolerance). A re-run that writes nothing is success, not a failure.
+- When a create-flow spec is flaky (it creates its own survey and later steps abort), capture a new step in a **self-contained test** that `initializePage`s straight to a known survey's URL — do not bolt the step onto the flaky test's sequence. See `src/survey/how-to/creating-editing.spec.ts`, test "How to expand or collapse the structure".
