@@ -4,7 +4,7 @@ on:
   push:
     tags:
       - "v*"
-      - "deploy-*"
+      - "deploy/*"
   workflow_dispatch:
     inputs:
       version:
