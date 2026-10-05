@@ -23,7 +23,7 @@
     "dotenv": "^17.4.2",
     "firebase-admin": "^14.2.0",
     "markdownlint": "^0.41.1",
-    "markdownlint-cli2": "^0.23.2",
+    "markdownlint-cli2": "^0.23.3",
     "pixelmatch": "^7.2.0",
     "playwright": "^1.62.1",
     "pngjs": "^7.0.0",
@@ -33,6 +33,6 @@
     "@lit-app/cmp": "link:../lit-app/cmp",
     "lit": "^3.3.3",
     "lite-youtube-embed": "^0.3.4",
-    "vitepress": "2.0.0-alpha.19"
+    "vitepress": "2.0.0-alpha.20"
   }
 }
