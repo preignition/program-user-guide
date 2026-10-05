@@ -13,6 +13,7 @@ let locator: Locator
 
 test.describe('Survey Sharing & Distribution How-To', async () => {
   test('How to publish a survey', async ({ page }) => {
+    test.setTimeout(120_000)
     const context = new Context(mainPath, page)
     context.setName('publishing-a-survey')
     await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/share/status`)
@@ -41,15 +42,45 @@ test.describe('Survey Sharing & Distribution How-To', async () => {
     page.getByRole('button', { name: 'Cancel' }).click()
 
 
-    // ## Step 3: Share the survey with other team members by generating a shareable link or by adding their email to share directly with them
+    // ## Step 3: Take the survey to production and share the production link
     locator = page.getByText('Distribute', { exact: true })
     await context.annotatedScreenshot(locator, 'step-3-click-distribute')
     await locator.click()
-    locator = page.getByRole('button', { name: 'Display Link for Production' })
-    await context.annotatedScreenshot(locator, 'step-3-click-display-link-for-production')
-    await locator.click()
-    locator = page.getByText('Displaying Production Link Use Production Link for the real survey data')
-    await context.annotatedScreenshot(locator, 'step-3-display-production-link')
+
+    // The production link stays hidden until the survey is taken to
+    // production; the first press redeems one survey quota unit. The dialog
+    // is captured and cancelled here — the confirmation itself is exercised
+    // by the survey e2e suite, and confirming would charge live quota.
+    locator = page.locator('app-survey-quota-status')
+    await page.getByText(/surveys left on your plan|No survey quota/).waitFor()
+    // Let the startup error toasts expire before capturing: legacy quota
+    // documents fail the model decode until the rollout migration, and the
+    // toast (10s) would otherwise overlay the screenshots.
+    await page.waitForTimeout(11_000)
+    await context.annotatedScreenshot(locator, 'step-3-survey-quota-status')
+    locator = page.getByRole('button', { name: 'Go to Production' })
+    if (await locator.isVisible().catch(() => false)) {
+      await context.annotatedScreenshot(locator, 'step-3-click-go-to-production')
+      await locator.click()
+
+      locator = page.getByRole('dialog', { name: 'Go to Production' })
+      await context.annotatedScreenshot(locator, 'step-3-go-to-production-dialog')
+      await page.getByRole('button', { name: 'Cancel' }).click()
+    }
+
+    // Once the survey is in production, the production link is revealed.
+    const productionLink = page.getByRole('button', { name: 'Display Link for Production' })
+    const inProduction = await productionLink.isVisible().catch(() => false)
+    if (inProduction) {
+      await context.annotatedScreenshot(productionLink, 'step-3-click-display-link-for-production')
+      await productionLink.click()
+      locator = page.getByText('Displaying Production Link Use Production Link for the real survey data')
+      await context.annotatedScreenshot(locator, 'step-3-display-production-link')
+    } else {
+      // Not in production yet: use the test link so the Link Builder renders
+      // for the preselect-options steps below.
+      await page.getByRole('button', { name: 'Display link for Test' }).click()
+    }
 
 
     // Step 4 (Optional): Preselect accessibility modes or language for the respondents when sharing the link
@@ -64,9 +95,11 @@ test.describe('Survey Sharing & Distribution How-To', async () => {
     await locator.click()
 
     // Step 5: copy the link to share
-    locator = page.getByRole('link', { name: 'http://localhost:7174/v2/3BBFzJneqakYoyDu02c2?' })
-    await context.annotatedScreenshot(locator, 'step-5-copy-link-to-share')
-    await locator.click()
+    if (inProduction) {
+      locator = page.getByRole('link', { name: 'http://localhost:7174/v2/3BBFzJneqakYoyDu02c2?' })
+      await context.annotatedScreenshot(locator, 'step-5-copy-link-to-share')
+      await locator.click()
+    }
 
   })
 

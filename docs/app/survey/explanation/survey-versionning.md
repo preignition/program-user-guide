@@ -43,6 +43,6 @@ By versioning the survey:
 Because builds are immutable snapshots, you can safely deploy them to different environments:
 
 * **Test Link:** You can build a version and share it via a test link to get feedback from your team. Test responses are kept separate from real data.
-* **Production Link:** Once a test version is approved, you can publish that exact same build to the production link for real respondents.
+* **Production:** Building a version does not put it live by itself. You explicitly **take the survey to production** from the Distribute page; that step reveals the production link, marks the survey as in production, and redeems one survey from your plan's quota. Once a survey is in production, later builds and re-presses do not charge quota again — the production link always serves the latest build.
 
 By separating the drafting process from the live environment through **Building and Versioning**, Accessible Surveys ensures that your respondents have a reliable experience and that your resulting data is structurally sound and historically accurate.

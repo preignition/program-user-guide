@@ -16,6 +16,7 @@ By the end of this session, you will be able to:
 
 - Activate your survey.
 - Publish a new version of your survey.
+- Take a survey to production so its production link goes live.
 - Generate different types of survey links.
 - Configure respondent account requirements.
 - Set up redirect destinations for completed submissions.
@@ -26,6 +27,10 @@ By the end of this session, you will be able to:
 Follow along with the video to test and share your 'Training Survey'.
 
 <lite-youtube videoid="KHb_SrGdvz8"></lite-youtube>
+
+::: info
+Building a version no longer makes the production link available by itself: take the survey to production from the **Distribute** page to reveal it. See [How to publish and distribute a survey](../how-to/publishing-a-survey.md) for the current flow.
+:::
 
 ## Advanced Topics
 

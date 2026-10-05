@@ -74,3 +74,11 @@
 - [app/app-survey/actionApi/src/services/sectionCopyService.ts](../../../../../accessibleData/app/app-survey/actionApi/src/services/sectionCopyService.ts): Server-side deep-copy service replicating section subtrees and accessibility subdocuments.
 - [app/app-survey/actionApi/src/services/sectionDeleteService.ts](../../../../../accessibleData/app/app-survey/actionApi/src/services/sectionDeleteService.ts): Server-side reference tracking and automatic live-reference conversion upon section deletion.
 - [app/app-survey/actionApi/src/services/buildFetcher.ts](../../../../../accessibleData/app/app-survey/actionApi/src/services/buildFetcher.ts): Build pipeline resolving out-of-form accessibility and locale assets for live-referenced sections.
+
+## Publishing a Survey - publishing-a-survey
+
+- [app/app-survey/src/page/edit/deploy/distribute.ts](../../../../../accessibleData/app/app-survey/src/page/edit/deploy/distribute.ts): The Distribute tab — hides the production link until the survey is in production and renders the Go to Production button.
+- [app/app-survey/src/entity/action/goToProduction.ts](../../../../../accessibleData/app/app-survey/src/entity/action/goToProduction.ts): The Go to Production action and its confirmation dialog.
+- [app/app-survey/src/page/edit/deploy/quota-status.ts](../../../../../accessibleData/app/app-survey/src/page/edit/deploy/quota-status.ts): Live survey quota status (remaining, grace, expired, missing) shown next to the button.
+- [app/app-survey/actionApi/src/services/productionService.ts](../../../../../accessibleData/app/app-survey/actionApi/src/services/productionService.ts): Server action — stamps the production marker and redeems one quota unit in a transaction, with the grace window and superadmin bypass.
+- [app/app-respondent/src/machine/actor/productionGate.ts](../../../../../accessibleData/app/app-respondent/src/machine/actor/productionGate.ts): Respondent gate — the production route only serves surveys taken to production and before the grace deadline.

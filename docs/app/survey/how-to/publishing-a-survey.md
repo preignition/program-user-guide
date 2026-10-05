@@ -1,5 +1,5 @@
 ---
-description: This page covers everything you need to know about publishing a survey and generating shareable links for respondents.
+description: This page covers everything you need to know about publishing a survey, taking it to production, and generating shareable links for respondents.
 ---
 
 # Publishing a survey
@@ -35,9 +35,36 @@ Before sharing, you must build a version of the form to ensure all recent change
 3. You will be prompted to give the version a label (e.g., "A new version to share"). This helps you differentiate between different builds of the survey. Click to build the survey.
    <figure><img src="./assets/publishing-a-survey/step-2-click-build-the-survey-dialog.png" alt="Build the survey dialog"><figcaption>Provide a versioning message and confirm the build.</figcaption></figure>
 
-## Step 3: Use the Link Builder
+## Step 3: Take the Survey to Production
 
-Once the survey is built, navigate to the **Distribute** section to access the Link Builder. This tool gives you granular control over the type of link you generate.
+Building a version prepares the survey, but it does not make it live yet. The **production link** stays hidden until you explicitly take the survey to production. Taking a survey to production:
+
+- reveals the production link you share with respondents, and
+- redeems **one survey** from your plan's quota.
+
+1. Navigate to the **Distribute** section.
+   <figure><img src="./assets/publishing-a-survey/step-3-click-distribute.png" alt="Navigate to Distribute"><figcaption>Open the Distribute section.</figcaption></figure>
+
+2. The number of surveys left on your plan is shown next to the **Go to Production** button.
+   <figure><img src="./assets/publishing-a-survey/step-3-survey-quota-status.png" alt="Survey quota left on the plan"><figcaption>The remaining survey quota is displayed next to the button.</figcaption></figure>
+
+3. Click **Go to Production**.
+   <figure><img src="./assets/publishing-a-survey/step-3-click-go-to-production.png" alt="Go to Production button"><figcaption>Take the survey to production.</figcaption></figure>
+
+4. Confirm the action. This cannot be undone, and one survey is redeemed from your plan's quota.
+   <figure><img src="./assets/publishing-a-survey/step-3-go-to-production-dialog.png" alt="Go to Production confirmation dialog"><figcaption>Confirm that you want to take the survey to production.</figcaption></figure>
+
+Once the survey is in production, the **Display Link for Production** button is revealed next to the test link:
+
+<figure><img src="./assets/publishing-a-survey/step-3-click-display-link-for-production.png" alt="Display Link for Production"><figcaption>The production link becomes available once the survey is in production.</figcaption></figure>
+
+::: warning
+Taking a survey to production cannot be undone and redeems one survey from your plan's quota. When your plan has no surveys left, buy more quota before taking another survey to production.
+:::
+
+## Step 4: Use the Link Builder
+
+Once the survey is in production, the **Distribute** section gives you access to the Link Builder. This tool gives you granular control over the type of link you generate.
 
 <lite-youtube videoid="6PJiKt2hE9Y"></lite-youtube>
 
@@ -51,9 +78,9 @@ Once the survey is built, navigate to the **Distribute** section to access the L
 - **Survey Name**: You can use the default system ID in your link or opt for a readable "alias" (see the guide on *Creating alias survey links* for more details).
 - **Force Latest Version**: Available in Production mode, this option forces respondents to use the newly published version of the survey, even if they have already started answering a previous version. By default, respondents stay on the version they started with.
 
-<figure><img src="./assets/publishing-a-survey/step-3-click-display-link-for-production.png" alt="Display Link for Production"><figcaption>Click the Display Link for Production button to get the real URL.</figcaption></figure>
+<figure><img src="./assets/publishing-a-survey/step-3-display-production-link.png" alt="Displayed production link"><figcaption>Click the Display Link for Production button to get the real URL.</figcaption></figure>
 
-## Step 4: Preselect Options (Optional)
+## Step 5: Preselect Options (Optional)
 
 When generating the link, you have the option to preconfigure certain settings so the respondent gets a tailored experience immediately upon opening the link. These options include:
 
@@ -66,7 +93,7 @@ When generating the link, you have the option to preconfigure certain settings s
 - **Select accessibility modes:**
   <figure><img src="./assets/publishing-a-survey/step-4-select-accessibility-modes-for-sharing.png" alt="Select accessibility modes"><figcaption>Preselect specific accessibility modes like Read Aloud or Easy Read.</figcaption></figure>
 
-## Step 5: Copy the Link to Share
+## Step 6: Copy the Link to Share
 
 Once you have configured the desired options (Test/Production, options, and accessibility pre-selections), copy the generated link and distribute it to your audience. You can share it via your website, email, or social media.
 

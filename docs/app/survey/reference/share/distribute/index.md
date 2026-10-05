@@ -16,12 +16,22 @@ The **Distribute** page provides the tools and settings necessary to generate, c
 The core of the Distribute page lets you generate access links for different phases of your survey lifecycle:
 
 - **Display Link for Test**: Generates a test URL (using `SURVEY_TEST_URL`). Test links are intended for previewing, testing, and gathered feedback from early respondents. Answers submitted via test links are **not** saved to the production database.
-- **Display Link for Production**: Generates the live production URL (using `SURVEY_PROD_URL`). This button is only enabled once at least one survey build has been published. Submissions via this link are recorded as official production dataset responses.
+- **Go to Production**: Reveals the production link, marks the survey as in production, and redeems one survey from your plan's quota. The button is only enabled once at least one build has been published, and it disappears once the survey is in production.
+- **Display Link for Production**: Generates the live production URL (using `SURVEY_PROD_URL`). This button appears once the survey has been taken to production. Submissions via this link are recorded as official production dataset responses.
 
 <figure>
   <img src="./assets/distribute-test-link-full-auto.png" alt="The Link Builder interface with generated test link details">
   <figcaption>The Link Builder interface with generated test link details</figcaption>
 </figure>
+
+## Go to Production and Survey Quota
+
+Building a survey does not make it live. The production link stays hidden until you press **Go to Production** and confirm the dialog. That single action:
+
+- stamps the survey as in production (it cannot be undone), and
+- redeems **one survey** from the customer's plan quota.
+
+Next to the button, the page shows the survey quota left on the plan (for example, *"25 surveys left on your plan."*). When the quota reaches zero, a grace notice explains how long you can still take surveys to production while you arrange more quota; after the grace period, the production link stops accepting new respondents until quota is added. If no survey quota is configured for the customer, the page asks you to contact support.
 
 ## The Link Builder
 
