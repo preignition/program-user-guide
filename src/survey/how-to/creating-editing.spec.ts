@@ -476,4 +476,36 @@ test.describe('Survey Creating & Editing', async () => {
 
 
   })
+
+  test('How to expand or collapse the structure', async ({ page }) => {
+    // Self-contained: the flow above creates a survey that may not have nested
+    // sections, so this captures against the documentation survey which does.
+    const context = new Context(mainPath, page)
+    context.setName('editing-a-survey')
+    await initializePage(
+      page,
+      a11yBaseUrl,
+      `s/edit/survey/${satisfactionSurveyId}/build/compose/survey/intro`,
+    )
+    await page.waitForTimeout(3000)
+
+    const grid = page.locator('vaadin-grid[accessibleName="Overall Structure in a grid tree view"]')
+    const rows = grid.locator('vaadin-grid-cell-content')
+
+    // ### Step 1: Right-click a node to reveal Expand all / Collapse all
+    locator = rows.filter({ hasText: 'Content Page for documentation' }).first()
+    await locator.click({ button: 'right' })
+    await page.waitForTimeout(500)
+    locator = page.locator('md-list-item').filter({ hasText: 'Expand all' })
+    await context.annotatedScreenshot(locator, 'step-3-right-click-expand-collapse')
+
+    // ### Step 2: Expand all opens the branch down to the questions; options stay collapsed
+    await locator.click()
+    await page.waitForTimeout(2000)
+    locator = page
+      .locator('vaadin-split-layout div')
+      .filter({ hasText: 'Overall Structure' })
+      .first()
+    await context.annotatedScreenshot(locator, 'step-3-expanded-structure')
+  })
 })

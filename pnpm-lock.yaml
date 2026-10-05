@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@lit-app/cmp':
-        specifier: link:../accessibleData/lit-app/cmp
-        version: link:../accessibleData/lit-app/cmp
+        specifier: link:../lit-app/cmp
+        version: link:../lit-app/cmp
       lit:
         specifier: ^3.3.3
         version: 3.3.3
