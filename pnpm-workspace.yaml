@@ -1,0 +1,11 @@
+# Settings for the documentation project. It is a self-contained pnpm project
+# living inside the accessibleData monorepo, so it declares its own workspace
+# root here; `packages: ['.']` keeps pnpm from treating the parent monorepo as
+# the workspace root. Build scripts the docs toolchain needs are allowlisted.
+packages:
+  - '.'
+
+allowBuilds:
+  '@firebase/util': true
+  esbuild: true
+  protobufjs: false
