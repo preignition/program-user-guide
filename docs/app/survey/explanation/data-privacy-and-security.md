@@ -25,6 +25,18 @@ The platform supports different levels of respondent authentication, allowing yo
 
 When a respondent logs in (Verified Account mode), the architecture maintains a strict boundary between their *identity* data (email, name) and their *survey responses*. Researchers must explicitly choose to export identifying information; otherwise, the dataset remains fundamentally anonymized, referencing only abstract User IDs.
 
+## Anonymized Exports
+
+Marking a question — or a whole section — as **anonymous** in the builder decides what the anonymized export contains. The decisive detail is *when* that decision is applied: anonymization is baked into the stored response at **submission time**, using the build the respondent actually answered. Downloading the anonymized dataset does not re-read your form; it serializes the responses that were anonymized when they were submitted.
+
+Plan around three consequences:
+
+* **Mark fields anonymous before collecting responses.** Marking a field anonymous later only affects responses submitted under a build that includes the change; responses collected earlier keep their values in the anonymized dataset.
+* **Changing the setting does not rewrite history.** Removing values already collected requires a backfill of the stored anonymized dataset.
+* **Anonymous fields still appear in the export.** The column exists for every question, but its cells are empty for responses that were anonymized.
+
+To mark a question or section anonymous, open it with **Advanced Mode** enabled and switch on **Anonymous** under *Anonymous Settings*. See [Exporting Survey Data](../how-to/exporting-survey-data.md) for the download steps.
+
 ## Security Architecture
 
 Accessible Surveys is built on enterprise-grade infrastructure designed to protect data at rest and in transit.

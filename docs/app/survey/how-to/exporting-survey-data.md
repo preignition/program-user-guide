@@ -42,7 +42,11 @@ First select the data form that you want to export your data in. There are two c
 
 Next select the type of data that you would like to export. There are three choices:
 
-**Anonymized**- Provides the option of exporting an anonymized data set. MetaData and all feilds marked as 'private' on your form will not be exported. This is a great option for protecting personal data as long as you have marked all questions which ask for personal data as private
+**Anonymized**- Provides the option of exporting an anonymized data set. MetaData and all fields marked as anonymous ('private') on your form will not be exported. This is a great option for protecting personal data as long as you have marked all questions which ask for personal data as private
+
+::: warning
+Anonymization is applied at submission, not at download: each response is anonymized when the respondent submits, using the build they actually answered. A question marked anonymous later will not be removed from responses collected before the change. Mark personal-data questions as anonymous **before** you start collecting responses, and see [Anonymized exports](../explanation/data-privacy-and-security.md#anonymized-exports) for what this means for data you have already collected.
+:::
 
 **Raw-** Provides the option of exporting all the data that has been collected against a survey, including MetaData and all response feilds. Great care should be taken with this sort of data.
 
