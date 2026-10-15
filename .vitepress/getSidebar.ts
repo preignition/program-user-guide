@@ -25,7 +25,10 @@ export function getSidebar() {
     {
       text: "Shared Components",
       link: "/components/index",
-      items: [{ text: "Rich Text Editor", link: "/components/md-editor" }],
+      items: [
+        { text: "Rich Text Editor", link: "/components/md-editor" },
+        { text: "Survey Quota Card", link: "/components/quota-card" },
+      ],
     },
     {
       text: "Release Notes",

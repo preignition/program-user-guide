@@ -45,13 +45,13 @@ Building a version prepares the survey, but it does not make it live yet. The **
 1. Navigate to the **Distribute** section.
    <figure><img src="./assets/publishing-a-survey/step-3-click-distribute.png" alt="Navigate to Distribute"><figcaption>Open the Distribute section.</figcaption></figure>
 
-2. The number of surveys left on your plan is shown next to the **Go to Production** button.
-   <figure><img src="./assets/publishing-a-survey/step-3-survey-quota-status.png" alt="Survey quota left on the plan"><figcaption>The remaining survey quota is displayed next to the button.</figcaption></figure>
+2. A **Survey quota** card below the button shows how many surveys are left on your plan and how much of the plan has been used. It is shown until the survey is in production; after that, the quota is on the **Status** page.
+   <figure><img src="./assets/publishing-a-survey/step-3-survey-quota-status.png" alt="Survey quota left on the plan"><figcaption>The remaining survey quota and the used share of the plan are shown in the quota card.</figcaption></figure>
 
 3. Click **Go to Production**.
    <figure><img src="./assets/publishing-a-survey/step-3-click-go-to-production.png" alt="Go to Production button"><figcaption>Take the survey to production.</figcaption></figure>
 
-4. Confirm the action. This cannot be undone, and one survey is redeemed from your plan's quota.
+4. Confirm the action. The dialog states what the press costs (for example, *"redeems one of the 5 surveys left on your plan"*); it cannot be undone.
    <figure><img src="./assets/publishing-a-survey/step-3-go-to-production-dialog.png" alt="Go to Production confirmation dialog"><figcaption>Confirm that you want to take the survey to production.</figcaption></figure>
 
 Once the survey is in production, the **Display Link for Production** button is revealed next to the test link:

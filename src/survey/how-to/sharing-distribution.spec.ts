@@ -18,6 +18,12 @@ test.describe('Survey Sharing & Distribution How-To', async () => {
     context.setName('publishing-a-survey')
     await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/share/status`)
 
+    // The quota card reads the customer's quota document on this page; let the
+    // startup error toast expire before capturing: legacy quota documents fail
+    // the model decode until the rollout migration, and the toast (10s) would
+    // otherwise overlay the screenshots.
+    await page.waitForTimeout(11_000)
+
     // ## Step 1: Set the strategy for making the survey active (immediate, manual, scheduled)
     locator = page.getByRole('radiogroup', { name: 'Choose the strategy for' })
     await context.annotatedScreenshot(locator, 'step-1-choose-strategy-for-publishing')
@@ -50,16 +56,14 @@ test.describe('Survey Sharing & Distribution How-To', async () => {
     // The production link stays hidden until the survey is taken to
     // production; the first press redeems one survey quota unit. The dialog
     // is captured and cancelled here — the confirmation itself is exercised
-    // by the survey e2e suite, and confirming would charge live quota.
-    locator = page.locator('app-survey-quota-status')
-    await page.getByText(/surveys left on your plan|No survey quota/).waitFor()
-    // Let the startup error toasts expire before capturing: legacy quota
-    // documents fail the model decode until the rollout migration, and the
-    // toast (10s) would otherwise overlay the screenshots.
-    await page.waitForTimeout(11_000)
-    await context.annotatedScreenshot(locator, 'step-3-survey-quota-status')
+    // by the survey e2e suite, and confirming would charge live quota. The
+    // quota card is shown on this page only while the survey is not in
+    // production (once it is, the card lives on the Status page).
     locator = page.getByRole('button', { name: 'Go to Production' })
     if (await locator.isVisible().catch(() => false)) {
+      const quota = page.locator('app-survey-quota-status')
+      await page.getByText(/surveys used|surveys left on your plan|No survey quota/).waitFor()
+      await context.annotatedScreenshot(quota, 'step-3-survey-quota-status')
       await context.annotatedScreenshot(locator, 'step-3-click-go-to-production')
       await locator.click()
 

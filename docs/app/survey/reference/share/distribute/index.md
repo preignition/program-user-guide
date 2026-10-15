@@ -26,12 +26,12 @@ The core of the Distribute page lets you generate access links for different pha
 
 ## Go to Production and Survey Quota
 
-Building a survey does not make it live. The production link stays hidden until you press **Go to Production** and confirm the dialog. That single action:
+Building a survey does not make it live. The production link stays hidden until you press **Go to Production** and confirm the dialog, which states what the press costs (for example, *"redeems one of the 5 surveys left on your plan"*). That single action:
 
 - stamps the survey as in production (it cannot be undone), and
 - redeems **one survey** from the customer's plan quota.
 
-Next to the button, the page shows the survey quota left on the plan (for example, *"25 surveys left on your plan."*). When the quota reaches zero, a grace notice explains how long you can still take surveys to production while you arrange more quota; after the grace period, the production link stops accepting new respondents until quota is added. If no survey quota is configured for the customer, the page asks you to contact support.
+Below the button, a **Survey quota** card shows the surveys left on the plan (for example, *"25 left"*) and how much of the plan has been used (for example, *"5 of 30 surveys used."*). The card is shown while the survey is not yet in production; once it is, the quota is shown on the **Status** page instead. When the quota reaches zero, the card explains how long you can still take surveys to production while you arrange more quota; after the grace period, the production link stops accepting new respondents until quota is added. If no survey quota is configured for the customer, the card asks you to contact support.
 
 ## The Link Builder
 

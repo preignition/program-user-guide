@@ -85,6 +85,6 @@
 
 - [app/app-survey/src/page/edit/deploy/distribute.ts](../../../../../app/app-survey/src/page/edit/deploy/distribute.ts): The Distribute tab — hides the production link until the survey is in production and renders the Go to Production button.
 - [app/app-survey/src/entity/action/goToProduction.ts](../../../../../app/app-survey/src/entity/action/goToProduction.ts): The Go to Production action and its confirmation dialog.
-- [app/app-survey/src/page/edit/deploy/quota-status.ts](../../../../../app/app-survey/src/page/edit/deploy/quota-status.ts): Live survey quota status (remaining, grace, expired, missing) shown next to the button.
+- [app/app-survey/src/page/edit/deploy/quota-status.ts](../../../../../app/app-survey/src/page/edit/deploy/quota-status.ts): The survey app's live quota read (remaining, grace, expired, missing) rendered through the shared `lapp-quota-card`, shown on the Status page and on the Distribute page until the survey is in production.
 - [app/app-survey/actionApi/src/services/productionService.ts](../../../../../app/app-survey/actionApi/src/services/productionService.ts): Server action — stamps the production marker and redeems one quota unit in a transaction, with the grace window and superadmin bypass.
 - [app/app-respondent/src/machine/actor/productionGate.ts](../../../../../app/app-respondent/src/machine/actor/productionGate.ts): Respondent gate — the production route only serves surveys taken to production and before the grace deadline.

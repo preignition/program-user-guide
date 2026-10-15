@@ -20,6 +20,7 @@ The **Status** page provides information on the current operational state of you
 
 The **Status** page allows you to set how and when your survey is open for collecting responses.
 
+- **Survey quota**: The card below the intro shows the surveys left on your plan and how much of the plan has been used (for example, *"3 left"* and *"2 of 5 surveys used."*). When the quota reaches zero, it explains how long you can still take surveys to production while you arrange more quota. If no survey quota is configured for the customer, the card asks you to contact support.
 - **Deployed Status**: Displays the current status of the survey (e.g., "Active"). It indicates whether the survey is currently open for responses.
 - **Strategy**: Defines the mechanism used to make the survey active. The available strategies are:
 - **Immediate (default)**: The survey is active immediately for responses once a first version is published.
