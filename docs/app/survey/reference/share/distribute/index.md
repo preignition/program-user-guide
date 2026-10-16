@@ -15,9 +15,13 @@ The **Distribute** page provides the tools and settings necessary to generate, c
 
 The core of the Distribute page lets you generate access links for different phases of your survey lifecycle:
 
-- **Display Link for Test**: Generates a test URL (using `SURVEY_TEST_URL`). Test links are intended for previewing, testing, and gathered feedback from early respondents. Answers submitted via test links are **not** saved to the production database.
+- **Display Link for Test**: Generates a test URL (using `SURVEY_TEST_URL`). This button stays inactive until the survey has at least one build. Test links are intended for previewing, testing, and gathering feedback from early respondents. Answers submitted via test links are **not** saved to the production database.
 - **Go to Production**: Reveals the production link, marks the survey as in production, and redeems one survey from your plan's quota. The button is only enabled once at least one build has been published, and it disappears once the survey is in production.
 - **Display Link for Production**: Generates the live production URL (using `SURVEY_PROD_URL`). This button appears once the survey has been taken to production. Submissions via this link are recorded as official production dataset responses.
+
+::: tip
+Build the survey first. Until a build exists, the test link is inactive and **Go to Production** is disabled; the page links you to [Publish](../publish/index.md) so you can create one. See [Publishing a Survey](../../../how-to/publishing-a-survey.md) for the full flow.
+:::
 
 <figure>
   <img src="./assets/distribute-test-link-full-auto.png" alt="The Link Builder interface with generated test link details">
