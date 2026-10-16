@@ -30,6 +30,7 @@ function getSidebar() {
       collapsed: false,
       base: `${root}/explanation/`,
       items: [
+        { text: 'Access and Permissions', link: `understanding-access-and-permissions.md` },
         { text: 'Color System', link: `color-system.md` }
       ]
     },

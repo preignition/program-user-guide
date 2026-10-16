@@ -9,6 +9,11 @@ As the creator (Owner) of a survey, you control who has access to view, edit, or
 > [!NOTE]
 > Only the 'Owner' of a form can manage access rights. To be granted access, a user must already have an account on the application and be associated with your organization or program.
 
+Adding a user to your organization or team is only the first step — it does not by itself give them access to any survey.
+
+> [!IMPORTANT]
+> Being a member of your team is a **prerequisite** for granting survey access — it is not the grant itself. A colleague added to your team still has no survey access until you add them to a specific survey here. For the full picture of how account, team and survey permissions relate, see [Understanding Access and Permissions](../../customer/explanation/understanding-access-and-permissions.md).
+
 ## Step 1: Navigate to the Access view
 
 From the survey editor, navigate to the **Share** section in the top menu, then click on the **Access** option in the left-hand navigation menu.
