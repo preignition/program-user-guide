@@ -4,20 +4,20 @@ description: Understand the difference between Account Holders and Team Members,
 
 # Understanding Access and Permissions
 
-Most confusion about "why can't my colleague do X?" comes from treating access as a single on/off switch. It is not. Accessible Surveys has **three independent layers**, and a user can hold a different role at each one.
+Most confusion about "why can't my colleague do X?" comes from treating access as a single on/off switch. It is not. Accessible Surveys has **three independent access layers**, and a user can hold a different role at each one.
 
 ::: warning The single most common misunderstanding
-Adding someone as an **Account Holder does not let them work on surveys.** Account Holders manage the account — subscription, billing, themes, languages. To build or edit surveys, a user must also be added as a **Team Member**, and then granted access to each survey individually.
+Adding someone as an **Account Holder does not automatically let them work on surveys.** Account Holders manage the account — subscription, billing, themes, languages. To build or edit surveys, a user must also be added as a **Team Member**, and then granted access to each survey individually.
 
-If a new colleague "has access" but cannot see or open any survey, they were almost certainly added as an Account Holder only.
+If a new colleague "has access" but cannot see or open any survey, they were most likely added as an Account Holder only.
 :::
 
-## The three layers
+## The three access layers
 
 | Layer | What it controls | Where to manage it |
 | --- | --- | --- |
 | **Account** (the Customer) | Subscription, invoices, themes, languages, apps, storage location | Customer Portal, under **Account Holders** |
-| **Team** | Membership of a workspace, access to its resources | Customer Portal, under **Team Members** |
+| **Team** | Membership of a survey workspace, access to its resources | Customer Portal, under **Team Members** |
 | **Survey** | Who can view, edit, translate or administer one specific survey | Survey app, **Share → Access** |
 
 A role granted at one layer never leaks into another. Being an Account Owner does not make you a survey owner; being a survey owner does not give you access to billing.
@@ -47,15 +47,15 @@ Ownership can be transferred from the Account Holders screen, but the account al
 
 ## Team Members
 
-A **Team Member** is someone who works on the organisation's surveys. This is the role you grant to anyone who needs to build, edit, translate or review forms.
+A **Team Member** is someone who works on the organisation's surveys. This is the role you grant to anyone who needs to build, edit, translate or review surveys.
 
-Being a Team Member is a **prerequisite** for receiving survey access, not the grant itself. Adding someone to a team makes them *eligible* to be given access to that team's surveys — it does not hand them access to all of them.
+Adding someone to a team makes them *eligible* to be given access to that team's surveys — it does not automatically give them access to all of them.
 
 ::: warning Being a Team Member does not unlock every survey
 Survey access is granted **one survey at a time.** A new Team Member starts with no survey access until a survey Owner adds them to a specific survey.
 :::
 
-The person who creates the account is automatically the Owner of both the account and the first team. Within a team, roles are:
+The person who creates the customer account is automatically the Owner of both the account and the first team. Within a team, roles are:
 
 - **Owner**: Full control of the team, including membership and ownership transfer.
 - **Admin**: Can manage team members and resources.
@@ -75,7 +75,7 @@ This is deliberate: a translator might have edit rights on one survey and no acc
 Only a survey **Owner** can manage a survey's access rights.
 :::
 
-For the step-by-step process, see [How to set access rights for forms](../../survey/how-to/access-rights.md) in the Survey app guide.
+For the step-by-step process, see [How to set access rights for surveys](../../survey/how-to/access-rights.md) in the Survey app guide.
 
 ## A user can hold roles at more than one layer
 
@@ -108,4 +108,4 @@ Adding only the Account Holder entry is the usual cause of "I added them but the
 
 - [Account Holders (Members) reference](../reference/customer/members.md)
 - [Team Members reference](../reference/team/members.md)
-- [How to set access rights for forms](../../survey/how-to/access-rights.md)
+- [How to set access rights for surveys](../../survey/how-to/access-rights.md)
