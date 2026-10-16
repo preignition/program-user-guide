@@ -28,4 +28,4 @@ The interface is divided into four sub-tabs:
 - **Subscription**: Overview of the current plan.
 - **Invoice**: History of past invoices and downloadable receipts.
 - **Payment**: Payment method configuration.
-- **Quota**: Detailed usage metrics against plan limits. The **Survey quota** card states the surveys left on the plan and the used share of the plan, or asks you to contact support when no survey quota is configured.
+- **Quota**: Detailed usage metrics against plan limits. Expanding a quota row — survey, team — shows that quota's card: the units left, the used share of the plan, and the call to action once it is exhausted.

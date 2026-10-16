@@ -1,10 +1,11 @@
 # Reference
 
-## Survey Quota Card - quota-card.md
+## Quota Card - quota-card.md
 
 - [lit-app/cmp/quota-card/quota-card.ts](../../../lit-app/cmp/quota-card/quota-card.ts): The shared quota card (`lapp-quota-card`) — remaining count badge, used-share progress bar, grace and out-of-quota copy, built on `vaadin-card`/`vaadin-badge`/`vaadin-progress-bar`.
 - [app/app-survey/src/page/edit/deploy/quota-status.ts](../../../app/app-survey/src/page/edit/deploy/quota-status.ts): The survey app's live read of the active customer's quota, feeding the card and dispatching `data-changed` for the Go to Production confirmation.
-- [app/app-customer/src/page/portal/customer-portal-subscription.ts](../../../app/app-customer/src/page/portal/customer-portal-subscription.ts): The customer portal's Quota tab, feeding the card from `customerState`.
+- [app/app-customer/src/entity/QuotaItemE.ts](../../../app/app-customer/src/entity/QuotaItemE.ts): The customer portal's quota rows, each row's grid details feeding the card from that row's own document.
+- [app/app-customer/src/page/portal/customer-portal-subscription.ts](../../../app/app-customer/src/page/portal/customer-portal-subscription.ts): The customer portal's Quota tab, rendering the quota rows.
 
 ## Markdown Rich Text Editor - md-editor.md
 

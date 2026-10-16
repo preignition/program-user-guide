@@ -22,7 +22,7 @@ test.describe('Survey Reference - Distribute without a build', () => {
     // The quota card reads the customer's quota document on this page; wait
     // for it to resolve before capturing (same wait as
     // sharing-distribution.spec.ts).
-    await page.getByText(/surveys used|surveys left on your plan|No survey quota/).waitFor()
+    await page.getByText(/surveys? used|surveys? left on your plan|No survey quota/).waitFor()
 
     await expect(page.getByText('Build the survey first')).toBeVisible()
     await expect(page.getByRole('button', { name: 'Display link for Test' })).toBeDisabled()

@@ -62,7 +62,7 @@ test.describe('Survey Sharing & Distribution How-To', async () => {
     locator = page.getByRole('button', { name: 'Go to Production' })
     if (await locator.isVisible().catch(() => false)) {
       const quota = page.locator('app-survey-quota-status')
-      await page.getByText(/surveys used|surveys left on your plan|No survey quota/).waitFor()
+      await page.getByText(/surveys? used|surveys? left on your plan|No survey quota/).waitFor()
       await context.annotatedScreenshot(quota, 'step-3-survey-quota-status')
       await context.annotatedScreenshot(locator, 'step-3-click-go-to-production')
       await locator.click()

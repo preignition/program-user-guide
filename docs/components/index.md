@@ -9,4 +9,4 @@ Many features within the Accessible Data platform are built using shared, reusab
 Browse the documentation for our shared components below:
 
 * [**Rich Text Editor**](./md-editor.md) - The powerful, Markdown-based text editor used for rich content authoring, supporting accessibility themes, responsive layouts, and interactive widgets.
-* [**Survey Quota Card**](./quota-card.md) - The quota card shared by the survey app and the customer portal: remaining surveys, used share of the plan, and the grace / buy-more-quota call to action.
+* [**Quota Card**](./quota-card.md) - The quota card shared by the survey app and the customer portal's quota rows: remaining units, used share of the plan, and the grace / buy-more-quota call to action.

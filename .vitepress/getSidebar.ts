@@ -27,7 +27,7 @@ export function getSidebar() {
       link: "/components/index",
       items: [
         { text: "Rich Text Editor", link: "/components/md-editor" },
-        { text: "Survey Quota Card", link: "/components/quota-card" },
+        { text: "Quota Card", link: "/components/quota-card" },
       ],
     },
     {
