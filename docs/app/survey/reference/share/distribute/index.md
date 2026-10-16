@@ -24,6 +24,11 @@ Build the survey first. Until a build exists, the test link is inactive and **Go
 :::
 
 <figure>
+  <img src="./assets/distribute-no-build-auto.png" alt="The Distribute page of a survey that has not been built">
+  <figcaption>The test link stays inactive and Go to Production is disabled until the survey is built.</figcaption>
+</figure>
+
+<figure>
   <img src="./assets/distribute-test-link-full-auto.png" alt="The Link Builder interface with generated test link details">
   <figcaption>The Link Builder interface with generated test link details</figcaption>
 </figure>
