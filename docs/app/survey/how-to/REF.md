@@ -56,7 +56,8 @@
 - [app/app-survey/renderer/field-wrapper.ts](../../../../../app/app-survey/renderer/field-wrapper.ts): Maps the master-derived field text sizes onto Material field tokens.
 - [lit-app/effect-model/schema/theme.ts](../../../../../lit-app/effect-model/schema/theme.ts): Customer theme schema — `ThemeTypography.fontSizeBase` and `ThemeLayout.spacingScale`.
 - [app/app-base/src/init/theme-masters.ts](../../../../../app/app-base/src/init/theme-masters.ts): Builds the `:root` CSS block carrying the theme-level master tokens.
-- [app/app-base/state/accessibilityState.ts](../../../../../app/app-base/state/accessibilityState.ts): Easy Read activation state (no longer force-sets the global text size — scaling flows through the Easy Read style group).
+- [lit-app/a11y/src/state/accessibility-state.ts](../../../../../lit-app/a11y/src/state/accessibility-state.ts): Easy Read activation state (no `appState.textSize` force-set — the mode floors the document font size through `app-respondent`).
+- [app/app-respondent/src/init/easyread-font-size.ts](../../../../../app/app-respondent/src/init/easyread-font-size.ts): Binds Easy Read to the document root font floor (`--a11y-easyread-font-size`), composed with the text-size setting by `max()` in `variables.css`.
 
 ## Sharing a Section - how-to-share-section
 
