@@ -76,8 +76,13 @@ Email fields — the **Email** type and the [Account Email](./account-email.md) 
 
 - **Dataset**: the answer is part of the survey data — it appears in the `raw`, `humanized` and `anonymized` exports.
 - **Submission confirmation**: the address serves the survey's email workflow — a confirmation sent when the respondent submits, configured on the survey's Email page.
+- **Reminders**: the address serves the survey's email workflow — the respondent opts in on the field and the platform may email them while the form is unsubmitted, configured on the survey's Email page.
 
 A field without the **Dataset** purpose is *operational only*: its value is kept out of every export and serves the survey's email workflow instead. Email fields that do not choose their own purposes follow the survey-level default; the Account Email field is always used for account verification and stays out of the dataset unless you add **Dataset** to it explicitly.
+
+::: info
+A respondent has **one** reminder consent per survey, so a survey with more than one reminder field builds with a warning: every reminder field offers the same consent and shares the same record.
+:::
 
 ::: info
 Every other question type is always part of the dataset. Anonymous questions and sections keep working as before — they are already excluded from the `anonymized` export.

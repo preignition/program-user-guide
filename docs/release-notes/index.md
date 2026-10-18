@@ -12,6 +12,8 @@ Stay up to date with the latest improvements and features across the Accessible 
 
 ## Survey App
 
+* **[Respondent Reminder Consent](./2026-10-18-respondent-reminder-consent.md)**: Ask respondents to opt in to reminders on the field that collects their address, with the consent recorded and kept out of the survey data.
+
 * **[Submission Confirmation Emails](./2026-10-18-submission-confirmation-emails.md)**: Send respondents a confirmation when they submit, in their language, from the survey's Email page configuration.
 
 * **[Improved One-Question-Per-Page Layout](./2026-08-16-one-question-per-page-layout.md)**: Choose the layout at survey creation, put free text above questions, and enjoy a sticky navigation bar and larger text by default.
