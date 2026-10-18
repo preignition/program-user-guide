@@ -81,7 +81,7 @@ Email fields — the **Email** type and the [Account Email](./account-email.md) 
 A field without the **Dataset** purpose is *operational only*: its value is kept out of every export and serves the survey's email workflow instead. Email fields that do not choose their own purposes follow the survey-level default; the Account Email field is always used for account verification and stays out of the dataset unless you add **Dataset** to it explicitly.
 
 ::: info
-A respondent has **one** reminder consent per survey, so a survey with more than one reminder field builds with a warning: every reminder field offers the same consent and shares the same record.
+A respondent has **one** reminder consent per survey, so a survey with more than one reminder field builds with a warning: every reminder field offers the same consent and shares the same record. The reminders themselves — how many, how long after the last contact, and until when — are configured on the survey's [Email page](../../share/email/index.md#reminder-schedule).
 :::
 
 ::: info

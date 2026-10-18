@@ -21,3 +21,6 @@
 - [respondentEmailUnsubscribe.ts](../../../../../../../app/app-survey/functions/src/respondentEmailUnsubscribe.ts): The `survey-respondentEmailUnsubscribe` callable the public page calls.
 - [unsubscribe.ts](../../../../../../../app/app-respondent/src/page/unsubscribe.ts): The public unsubscribe page (no sign-in), rendered in the survey's language.
 - [routes.ts](../../../../../../../app/app-respondent/src/routes.ts): The respondent app's routes; the unsubscribe route sits ahead of the survey id route.
+- [respondentReminders.ts](../../../../../../../app/app-survey/functions/src/service/respondentReminders.ts): The reminder job: the schedule, the sends, the send state and the expiry sweep.
+- [reminderJob.ts](../../../../../../../app/app-survey/functions/src/reminderJob.ts): The hourly scheduled function that runs the reminder job.
+- [sendPlatformMail.ts](../../../../../../../app/app-survey/functions/src/service/sendPlatformMail.ts): The mail plumbing the confirmation and the reminders share.

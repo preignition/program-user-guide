@@ -12,6 +12,8 @@ Stay up to date with the latest improvements and features across the Accessible 
 
 ## Survey App
 
+* **[Reminder Emails and Retention](./2026-10-18-reminder-emails.md)**: Send the reminders a respondent asked for on a schedule, and delete the address when the consent expires.
+
 * **[Respondent Reminder Consent](./2026-10-18-respondent-reminder-consent.md)**: Ask respondents to opt in to reminders on the field that collects their address, with the consent recorded and kept out of the survey data.
 
 * **[Submission Confirmation Emails](./2026-10-18-submission-confirmation-emails.md)**: Send respondents a confirmation when they submit, in their language, from the survey's Email page configuration.
