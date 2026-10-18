@@ -1,21 +1,20 @@
 ---
-description: Advanced configuration options for email invitations.
+description: The notice wording, consent versioning and sender identity of the survey's emails.
 ---
 
 # Advanced Email Settings
 
-Take full control over your email campaigns with advanced configuration options.
+Advanced mode reveals the wording of the notices and the sender identity. Both belong to the survey and apply to every email field that carries the matching purpose.
 
-<figure>
-  <img src="./assets/email-advanced-auto.png" alt="Advanced email settings.">
-  <figcaption>Advanced email settings.</figcaption>
-</figure>
+## Notice and Opt-in Wording
 
-## SMTP and Deliverability
+The notice is the wording a respondent reads next to a field that carries a notification purpose.
 
-Connect your own SMTP server to send emails directly from your infrastructure, ensuring better deliverability and brand consistency. You can also configure advanced retry logic and bounce handling.
+- The **submission confirmation** notice is transactional: it tells the respondent a confirmation will be sent, and needs no consent.
+- The **reminder** notice and its **opt-in label** accompany the checkbox a respondent ticks to receive reminders.
 
-<figure>
-  <img src="./assets/email-content-advanced-auto.png" alt="email advanced content">
-  <figcaption>email advanced content</figcaption>
-</figure>
+Leave a notice empty to use the platform's default wording. Every change to the wording increases the notice **version**, which is recorded with a consent when one is captured — so it is always clear which wording a respondent agreed to.
+
+## Sender Identity
+
+Emails are sent from the platform's address. By default the sender shows the survey title as its display name, and replies go to the team admin's address. Both can be overridden per survey; custom domains and SMTP are out of scope.
