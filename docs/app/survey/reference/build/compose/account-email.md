@@ -4,25 +4,22 @@ description: Reference documentation for the Account Email question type.
 
 # Account Email
 
-The **Account Email** question type is a specialized input field designed to synchronize respondent input directly with their underlying Firebase platform account. Unlike a standard email field that simply records a value, the Account Email field actively manages the respondent's identity.
+The **Account Email** question type shows the respondent's platform account email and lets a signed-in respondent change it **verification-first**: the platform emails a verification link to the new address, and the account email changes only once the respondent confirms it.
 
-## Behavior and Synchronization
+## Behavior
 
-The Account Email field implements a unique synchronization and verification flow:
+- **Dynamic Pre-filling**: If the respondent already has an email associated with their account, the field is pre-filled with that address when the survey loads. The pre-filled value is recorded as the answer; it does not write the account.
+- **Explicit Action**: A signed-in respondent changes the account email only through the field's **Send verification link** action — nothing is written on blur, on pre-fill or on navigation. The action sends the link to the typed address, or resends it when the address is unchanged and still unverified.
+- **Verification-Before-Update**: The account email changes only after the respondent follows the link. Until then the account keeps its current address.
+- **Read-only State**: The field becomes read-only once the shown email is verified.
+- **Anonymous Sessions**: An anonymous respondent records the value as an answer only — their session cannot change an account email here, so no action is offered.
 
-- **Automatic Update**: When the respondent enters an email and moves focus away from the field (the `blur` event), the system automatically attempts to update their platform account email.
-- **Verification Email**: Upon a successful update, the system automatically triggers a native Firebase verification email to the new address.
-- **Dynamic Pre-filling**: If the respondent already has an email associated with their account, the field is automatically pre-filled with that address when the survey page loads.
-- **Read-only State**: To ensure data integrity, the field automatically becomes **read-only** in the following conditions:
-  - The current email address is already verified.
-  - The respondent is logged in with a permanent (non-anonymous) account.
+Feedback is shown under the field (and as a notification on failure), in the survey's interface language; the raw provider error is logged for support rather than shown.
 
 ## Verification Tracking
 
-The field provides real-time visual feedback regarding the verification status of the email:
-
-- **Verified Indicator**: A green checkmark icon (`check_circle`) is displayed within the field if the current value matches the verified email of the respondent's account.
-- **Automatic Tracking**: The component actively polls for the verification status. As soon as the respondent clicks the link in the verification email, the indicator will appear without requiring a page refresh.
+- **Verified Indicator**: A green checkmark icon (`check_circle`) is displayed within the field if the current value matches the verified email of the respondent's account. Its label is translated.
+- **Automatic Tracking**: The component actively polls for the verification status. As soon as the respondent follows the link in the verification email, the indicator appears without requiring a page refresh, and the platform confirms it with a notification.
 
 ## Purposes and Data Exports
 
@@ -32,10 +29,9 @@ The Account Email field is always modelled with the `account-verification` purpo
 
 Use the Account Email field when:
 
-- You want to capture a verified primary identity from anonymous respondents.
-- You need to ensure that the email provided is correctly linked to the respondent's platform session for longitudinal tracking.
-- You want to provide immediate feedback to the user that their identity has been successfully verified.
+- The respondent is signed in and you want the address on their account to be verified.
+- You need the email linked to the respondent's platform session for longitudinal tracking.
 
 ::: warning
-**Account Security**: This field is intended for identity capture and verification. It does not currently handle account linking or complex authentication "upgrades" (e.g., merging an anonymous account with an existing password-protected account).
+**Account Security**: This field verifies an address on the respondent's existing account. It does not link credentials or convert an anonymous session into a signed-in account — anonymous sessions record the value as an answer only.
 :::

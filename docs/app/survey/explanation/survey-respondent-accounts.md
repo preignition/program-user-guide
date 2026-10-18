@@ -39,4 +39,4 @@ When a user logs in and submits a survey, their identity data (such as their nam
 
 ### Capturing Identity during Survey
 
-For surveys that allow anonymous access but wish to capture a verified identity, the **Account Email** question type can be used. When a respondent enters their email in this field, the system automatically updates their platform account and sends a verification link. This allows an anonymous session to be "promoted" to a verified identity without forcing a login before starting the survey.
+For surveys where respondents are signed in and should confirm the address on their account, the **Account Email** question type can be used. A signed-in respondent changes the account email only through the field's explicit **Send verification link** action: the platform emails a confirmation link to the new address, and the account email changes only once the respondent follows it. Anonymous sessions record the value as an answer only — they are not promoted to a verified identity from this field.

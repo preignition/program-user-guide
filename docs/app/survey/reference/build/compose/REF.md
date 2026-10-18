@@ -2,7 +2,10 @@
 
 ## Account Email - reference documentation
 
-- [account-email.ts](../../../../../app/app-survey/renderer/field/account-email.ts): The implementation of the Account Email component, handling Firebase Auth synchronization and verification loops.
+- [account-email.ts](../../../../../app/app-survey/renderer/field/account-email.ts): The Account Email component — the verification-first account email change behind its explicit action, its inline feedback and the verified indicator.
+- [account-email.ts (i18n)](../../../../../app/app-survey/src/i18n/account-email.ts): The field's strings and the Auth error messages they map to.
+- [verifyController.ts](../../../../../app/app-base/login/verifyController.ts): The controller that watches for the email verification and fires `email-verified`.
+- [app-auth.ts](../../../../../lit-app/shared/event/app-auth.ts): The shared auth events, including `requestEmailVerification`.
 - [fieldSettings.ts](../../../../../app/app-survey/src/entity/question/fieldSettings.ts): Configuration of UI settings and icons for the account email field.
 - [question-config.ts](../../../../../app/app-survey/src/entity/question/question-config.ts): Registration of the accountEmail question type.
 - [field-abstract.ts](../../../../../app/app-survey/renderer/field-abstract.ts): Base logic for pre-filling field values from the user account.
