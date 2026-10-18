@@ -1,6 +1,7 @@
 import { Locator, test } from "@playwright/test";
 import { Context } from "../Context.ts";
 import { initializeFirebaseApp } from "../utils/initialize";
+import { pushState } from "../utils/historyState.ts";
 import { initializePage } from "../utils/initializePage.ts";
 initializeFirebaseApp();
 
@@ -170,5 +171,54 @@ test.describe("Customer How-To", async () => {
     await context.annotatedScreenshot(locator, "step-3-confirm-revoke");
     await locator.click();
     await page.waitForTimeout(100);
+  });
+  test("Buy Additional Quota", async ({ page }) => {
+    const context = new Context(root, page);
+    context.setName("buy-additional-quota");
+
+    // Step 1: the portal's Quota tab — quota types on the left, the selected
+    // type's remaining units and history on the right. The survey-side and
+    // add-team call to actions deep-link here with `?tab=quota`.
+    await initializePage(
+      page,
+      baseUrl,
+      `customer/${customerId}/portal/subscription?tab=quota`,
+    );
+    await page.waitForTimeout(2000);
+    locator = page.locator("customer-quota-history");
+    await context.annotatedScreenshot(locator, "step-1-open-the-quota-tab");
+
+    // Step 2: the quota types — each row shows its units left.
+    locator = page.locator('nav[aria-label="Quota types"]');
+    await context.annotatedScreenshot(locator, "step-2-pick-the-quota-type");
+    await page
+      .locator('nav[aria-label="Quota types"] button.row')
+      .filter({ hasText: "survey" })
+      .click();
+    await page.waitForTimeout(1000);
+
+    // Step 3: the Buy control in the selected type's detail pane. It renders
+    // for owners and editors only, and only while a pack is on sale for the
+    // type — the capture needs a sellable top-up product (#946).
+    locator = page
+      .locator("customer-buy-quota")
+      .getByRole("button", { name: /Buy survey quota/ });
+    await context.annotatedScreenshot(locator, "step-3-buy-additional-quota");
+    await locator.click();
+
+    // Step 4: the dialog that hands over to Stripe — the pack, its price and
+    // the note that the quantity (1–99) is chosen on Stripe's payment page.
+    locator = page.getByRole("dialog", { name: "Buy additional survey quota" });
+    await context.annotatedScreenshot(locator, "step-4-stripe-dialog");
+    await page.getByRole("button", { name: "Cancel" }).click();
+
+    // Step 5: the notice the Stripe round-trip shows until the invoice settles.
+    await pushState(
+      page,
+      `customer/${customerId}/portal/subscription?tab=quota&checkout=success`,
+    );
+    await page.waitForTimeout(1500);
+    locator = page.locator('p[role="status"]');
+    await context.annotatedScreenshot(locator, "step-5-purchase-notice");
   });
 });

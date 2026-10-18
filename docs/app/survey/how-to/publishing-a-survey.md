@@ -59,7 +59,7 @@ Once the survey is in production, the **Display Link for Production** button is 
 <figure><img src="./assets/publishing-a-survey/step-3-click-display-link-for-production.png" alt="Display Link for Production"><figcaption>The production link becomes available once the survey is in production.</figcaption></figure>
 
 ::: warning
-Taking a survey to production cannot be undone and redeems one survey from your plan's quota. When your plan has no surveys left, buy more quota before taking another survey to production.
+Taking a survey to production cannot be undone and redeems one survey from your plan's quota. When your plan has no surveys left, [buy more quota](../../customer/how-to/buy-additional-quota.md) before taking another survey to production.
 :::
 
 ## Step 4: Use the Link Builder
