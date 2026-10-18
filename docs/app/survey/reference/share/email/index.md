@@ -22,11 +22,11 @@ A purpose other than **Dataset** keeps the address out of every export; it is us
 
 ## Submission Confirmation
 
-The confirmation email is sent when a respondent submits the survey. Each survey language has its own **subject** and **body**, and the respondent receives it in the language they answered in.
+The confirmation email is sent when a respondent submits the survey. Each survey language has its own **subject** and **body**, and the respondent receives it in the language they answered in. The platform adds a line explaining why the email was sent; it is a transactional one-off, so it carries no unsubscribe link. Test submissions never send email.
 
 ## Preview
 
-The preview shows the notices respondents will read and the confirmation email of the primary language. Placeholders (such as the survey link and the respondent's address) and, on reminders, the unsubscribe line are added when an email is sent.
+The preview shows the notices respondents will read and the confirmation email of the primary language. The platform adds the reason line to a confirmation, and the unsubscribe line to a reminder, when an email is sent.
 
 ## Advanced Settings
 
