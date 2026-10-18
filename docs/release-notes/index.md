@@ -12,6 +12,8 @@ Stay up to date with the latest improvements and features across the Accessible 
 
 ## Survey App
 
+* **[Purge Survey Data](./2026-10-18-purge-survey-data.md)**: Remove the data a survey collected — responses, sessions and reminder records — while the survey itself survives.
+
 * **[Reminder Emails and Retention](./2026-10-18-reminder-emails.md)**: Send the reminders a respondent asked for on a schedule, and delete the address when the consent expires.
 
 * **[Respondent Reminder Consent](./2026-10-18-respondent-reminder-consent.md)**: Ask respondents to opt in to reminders on the field that collects their address, with the consent recorded and kept out of the survey data.
