@@ -31,8 +31,10 @@ A field that carries the **Reminders** purpose shows the respondent a notice and
 
 Consent is per respondent: one record per session, which a later opt-in in the same session updates, and which the field's checkbox reflects when the respondent comes back. The record is held for a bounded period (180 days), after which the address is deleted. Editors never see the addresses — the contact records are not part of the survey data and are never exported.
 
+Every reminder carries an unsubscribe link. It opens a public page in the respondent app — no sign-in — that validates the link's token on the server, withdraws the consent, and confirms in the survey's language. An invalid link, or one that was already used, shows a safe message and changes nothing.
+
 ::: info
-The job that sends the reminders — and the unsubscribe link every reminder carries — ships with the reminder feature.
+The job that sends the reminders ships with the reminder feature.
 :::
 
 ## Preview
