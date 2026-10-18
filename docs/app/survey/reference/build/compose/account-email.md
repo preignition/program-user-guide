@@ -24,6 +24,10 @@ The field provides real-time visual feedback regarding the verification status o
 - **Verified Indicator**: A green checkmark icon (`check_circle`) is displayed within the field if the current value matches the verified email of the respondent's account.
 - **Automatic Tracking**: The component actively polls for the verification status. As soon as the respondent clicks the link in the verification email, the indicator will appear without requiring a page refresh.
 
+## Purposes and Data Exports
+
+The Account Email field is always modelled with the `account-verification` purpose. Its value — typed by the respondent or pre-filled from their account — is **not** part of the survey data (`raw`, `humanized`, `anonymized`) unless you explicitly add the **Dataset** purpose to the field in the builder's advanced settings (see [Email Purposes](./question.md#email-purposes)). This keeps the identity value out of exports by default while still letting a survey collect the account email as data when it genuinely needs to.
+
 ## When to Use
 
 Use the Account Email field when:

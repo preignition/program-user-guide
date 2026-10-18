@@ -70,6 +70,19 @@ Field attributes define the validation and input behavior of questions when pres
 - **Min / Max**: Applied to numeric fields. Sets the acceptable range for numeric inputs.
 - **Step**: Applied to numeric fields. Defines the allowed granularity (e.g., a step of `1` allows integers only, while `0.1` allows decimal points up to one digit).
 
+### Email Purposes
+
+Email fields — the **Email** type and the [Account Email](./account-email.md) type — carry an **Email Purposes** setting in the question's advanced settings. It decides what the address is used for:
+
+- **Dataset**: the answer is part of the survey data — it appears in the `raw`, `humanized` and `anonymized` exports.
+- **Submission confirmation**: the address serves the survey's email workflow — a confirmation sent when the respondent submits, configured on the survey's Email page.
+
+A field without the **Dataset** purpose is *operational only*: its value is kept out of every export and serves the survey's email workflow instead. Email fields that do not choose their own purposes follow the survey-level default; the Account Email field is always used for account verification and stays out of the dataset unless you add **Dataset** to it explicitly.
+
+::: info
+Every other question type is always part of the dataset. Anonymous questions and sections keep working as before — they are already excluded from the `anonymized` export.
+:::
+
 ### Pattern Validation
 
 The **Pattern** field allows you to define a regular expression (regex) to validate respondent answers for short text, text area, and telephone fields.
