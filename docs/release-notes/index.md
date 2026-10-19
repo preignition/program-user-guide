@@ -12,17 +12,7 @@ Stay up to date with the latest improvements and features across the Accessible 
 
 ## Survey App
 
-* **[Follow-up Emails](./2026-10-19-follow-up-emails.md)**: Respondents who opted in can be emailed the survey's results and reports, or invited to a later survey; consent records cover every purpose.
-
-* **[Privacy: Survey Emails and Reminder Records](./2026-10-19-privacy-survey-emails.md)**: The privacy policy names survey emails, reminder retention and unsubscribing, and the purge action; respondents consent again.
-
-* **[Purge Survey Data](./2026-10-18-purge-survey-data.md)**: Remove the data a survey collected — responses, sessions and reminder records — while the survey itself survives.
-
-* **[Reminder Emails and Retention](./2026-10-18-reminder-emails.md)**: Send the reminders a respondent asked for on a schedule, and delete the address when the consent expires.
-
-* **[Respondent Reminder Consent](./2026-10-18-respondent-reminder-consent.md)**: Ask respondents to opt in to reminders on the field that collects their address, with the consent recorded and kept out of the survey data.
-
-* **[Submission Confirmation Emails](./2026-10-18-submission-confirmation-emails.md)**: Send respondents a confirmation when they submit, in their language, from the survey's Email page configuration.
+* **[Survey Emails, Consent and Data Control](./2026-10-19-survey-emails.md)**: Confirmation, reminder and follow-up emails behind the respondent's own opt-in, the consent records and their retention, the **Purge data** action, and the privacy policy that names them all.
 
 * **[Improved One-Question-Per-Page Layout](./2026-08-16-one-question-per-page-layout.md)**: Choose the layout at survey creation, put free text above questions, and enjoy a sticky navigation bar and larger text by default.
 
