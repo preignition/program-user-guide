@@ -17,7 +17,7 @@ A survey can now email its respondents at the moments that matter — a confirma
 
 * **What it is:** When a submitted survey holds an address in a field whose purposes include **Submission confirmation**, the platform sends exactly one confirmation email from the survey's email configuration, in the respondent's language.
 * **Why it matters:** Respondents get a record of their submission, and the address stays out of the survey data unless the editor also gives the field the **Dataset** purpose.
-* **How to use:** On the **Email** page (Share → Email), set the email purposes and write the confirmation subject and body per survey language; in the builder, tick **Submission confirmation** among an email field's purposes.
+* **How to use:** On the **Confirmation** tab of the **Email** page (Share → Email), write the subject and body per survey language; in the builder, tick **Submission confirmation** among an email field's purposes.
 * **Read more:** [Email Reference](../app/survey/reference/share/email/index.md)
 
 ### Reminder Opt-In and Unsubscribe
@@ -31,12 +31,12 @@ A survey can now email its respondents at the moments that matter — a confirma
 
 * **What it is:** An hourly job sends up to two reminders per consent, each a number of days after the last contact, with a deadline after which nothing is sent. A consent is kept for 180 days by default (1 to 365, editor-adjustable); when it passes, the job deletes the record and the address it holds.
 * **Why it matters:** A respondent who does not finish can be brought back without collecting an address the survey does not need, and an address never outlives the purpose it was collected for. The sweep never touches the answers.
-* **How to use:** On the **Email** page, write the reminder subject and body per language; in advanced mode, set how many reminders, the delays, the deadline and the retention.
+* **How to use:** On the **Reminders** tab of the **Email** page, write the subject and body per language; in advanced mode, set how many reminders, the delays, the deadline and the retention.
 * **Read more:** [Reminder Schedule](../app/survey/reference/share/email/index.md#reminder-schedule)
 
 ### Follow-Up Emails
 
-* **What it is:** **Results and reports** and **Follow-up survey** are purposes of their own, beside **Reminders**; a field that carries one asks the respondent to opt in, and a field may carry both. The **Email** page has a **Follow-up Emails** section with a subject and body per survey language for each, and a **Send** action that states how many respondents will receive the email before you confirm.
+* **What it is:** **Results and reports** and **Follow-up survey** are purposes of their own, beside **Reminders**; a field that carries one asks the respondent to opt in, and a field may carry both. The **Results and reports** and **Follow-up survey** tabs of the **Email** page hold a subject and body per survey language, and a **Send** action that states how many respondents will receive the email before you confirm.
 * **Why it matters:** After the data has been analysed you can share the results or a report, or invite respondents to a later survey, without promoting anyone to an account and without an address entering the datasets.
 * **How to use:** Write the email — a purpose with no content is not offered to respondents, so no consent is collected for an email the survey cannot send — and put any link (to a report, or to the follow-up survey) in the body. Send again to reach the same respondents again.
 * **Read more:** [Follow-up Emails](../app/survey/reference/share/email/index.md#follow-up-emails)

@@ -11,6 +11,8 @@ The **Email** page configures the emails a survey sends to its respondents: the 
   <figcaption>The Email page, in advanced mode.</figcaption>
 </figure>
 
+The page is organised in tabs: **Purposes** (the survey-wide default), one tab per purpose the survey's email fields carry — a purpose no field uses has nothing to configure, so it has no tab — **Account email** when the form has an Account Email field, and **Advanced** (consent retention, sender and preview). The content editors show one translation at a time; the language selector above them switches it, and every language has its own subject and body.
+
 ## Email Purposes
 
 Email fields carry **purposes** that decide how the collected address is used. The page sets the survey-wide default; every email field can choose its own purposes in its advanced settings in the builder.
@@ -41,7 +43,7 @@ Each survey language has its own reminder **subject** and **body**. A reminder i
 
 After the survey's data has been analysed you may want to write to the respondents again: to share the results or a report, or to invite them to a later survey. Both are follow-ups, and both need a purpose of their own — **Results and reports** and **Follow-up survey**. A field that carries one asks the respondent to opt in, exactly as a reminder field does; a field may carry both, and then shows a checkbox for each.
 
-Writing the email here is what makes the opt-in possible: a purpose with no subject and body is not offered to respondents, so a consent is never collected for an email the survey cannot send. Write the **subject** and **body** per survey language — the email is sent in the survey's language.
+Writing the email on the purpose's tab is what makes the opt-in possible: a purpose with no subject and body is not offered to respondents, so a consent is never collected for an email the survey cannot send. Write the **subject** and **body** per survey language — the email is sent in the survey's language.
 
 Each follow-up has its own **Send** action. It reads the respondents who opted in for that purpose, tells you how many will receive the email before you confirm, and sends once you do. A follow-up is not scheduled and not repeated: pressing Send again emails the same respondents again, so use it for a new message rather than a correction. The platform adds a line explaining why the respondent received it, and the public unsubscribe link; a send that the mail service did not accept is left for the next press of Send, and the dialog reports what went out.
 
