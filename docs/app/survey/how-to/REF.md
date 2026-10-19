@@ -2,14 +2,12 @@
 
 ## Adding an accessibility menu - adding-an-accessibility-menu
 
-- [app/a11y/src/a11y-menu.ts](../../../../../app/a11y/src/a11y-menu.ts): Implementation of the `a11y-menu` custom element.
+- [lit-app/a11y/src/a11y-menu.ts](../../../../../lit-app/a11y/src/a11y-menu.ts): Implementation of the `a11y-menu` custom element.
 - [lit-app/cmp/field/md/md-editor.ts](../../../../../lit-app/cmp/field/md/md-editor.ts): Markdown editor where the `a11y-menu` tag can be inserted.
-- [app/a11y/docs/custom-elements.json](../../../../../app/a11y/docs/custom-elements.json): Documentation metadata for the `a11y-menu` component.
 
 ## Using Easy Read - use-easy-read
 
 - [app/app-survey/renderer/mixin/easyread-mixin.ts](../../../../../app/app-survey/renderer/mixin/easyread-mixin.ts): Core logic for handling Easy Read mode in the survey renderer.
-- [packages/pwi-resource/src/edit/question/render-util-mixin-easy.ts](../../../../../packages/pwi-resource/src/edit/question/render-util-mixin-easy.ts): Mixin for rendering Easy Read specific UI elements in the question editor.
 
 ## Using Sign Language - use-sign-language
 
@@ -23,10 +21,10 @@
 
 ## Randomizing items - randomizing-items
 
-- [app/app-survey/schema/survey.ts](../../../../../app/app-survey/schema/survey.ts): Schema definition for the `randomize` property at the survey level.
-- [app/app-survey/schema/page.ts](../../../../../app/app-survey/schema/page.ts): Schema definition for randomization and fixed properties at the page level.
-- [app/app-survey/schema/section.ts](../../../../../app/app-survey/schema/section.ts): Schema definition for randomization and fixed properties at the section level.
-- [app/app-survey/schema/question.ts](../../../../../app/app-survey/schema/question.ts): Schema definition for randomization and fixed properties at the question level.
+- [lit-app/schema/survey/survey.ts](../../../../../lit-app/schema/survey/survey.ts): Schema definition for the `randomize` property at the survey level.
+- [lit-app/schema/survey/page.ts](../../../../../lit-app/schema/survey/page.ts): Schema definition for randomization and fixed properties at the page level.
+- [lit-app/schema/survey/section.ts](../../../../../lit-app/schema/survey/section.ts): Schema definition for randomization and fixed properties at the section level.
+- [lit-app/schema/survey/question.ts](../../../../../lit-app/schema/survey/question.ts): Schema definition for randomization and fixed properties at the question level.
 - [lit-app/shared/dataUtils/random.ts](../../../../../lit-app/shared/dataUtils/random.ts): Core logic for stable, seeded shuffling of items.
 - [app/app-respondent/src/randomizeBuild.ts](../../../../../app/app-respondent/src/randomizeBuild.ts): Application logic that applies randomization to the survey build for respondents.
 
@@ -42,26 +40,26 @@
 
 ## Styling a Survey - styling-a-survey
 
-- [app/app-survey/schema/theme.ts](../../../../../app/app-survey/schema/theme.ts): Schema definition for the Base Font Size and Spacing Scale master tokens, per-group style tokens, and their CSS-var encoding.
+- [lit-app/schema/survey/theme.ts](../../../../../lit-app/schema/survey/theme.ts): Schema definition for the Base Font Size and Spacing Scale master tokens, per-group style tokens, and their CSS-var encoding.
 - [app/app-survey/renderer/style.ts](../../../../../app/app-survey/renderer/style.ts): Renderer default variables — the typography ladder driven by the Base Font Size master and the Spacing Scale multipliers on spacing tokens.
 - [app/app-survey/src/page/edit/design/behavior.ts](../../../../../app/app-survey/src/page/edit/design/behavior.ts): Editor UI for the Style tab — master cards, Advanced Mode gating, and the per-group fine-tune tokens.
 - [app/app-survey/src/page/edit/design/scale-card.ts](../../../../../app/app-survey/src/page/edit/design/scale-card.ts): The master-token card component (slider + presets + live preview).
 
 ## How to configure survey styles - style-configuration
 
-- [app/app-survey/schema/theme.ts](../../../../../app/app-survey/schema/theme.ts): `FormStyleTokens` (masters + fine-tune tokens), `FormStyle`/`CssFormStyle` groups including the Easy Read group, and the CSS-var encodeKeys mapping.
+- [lit-app/schema/survey/theme.ts](../../../../../lit-app/schema/survey/theme.ts): `FormStyleTokens` (masters + fine-tune tokens), `FormStyle`/`CssFormStyle` groups including the Easy Read group, and the CSS-var encodeKeys mapping.
 - [lit-app/effect-model/primitive/Size.ts](../../../../../lit-app/effect-model/primitive/Size.ts): Shared `OptionalFontSize`, `OptionalSize`, and `OptionalScale` primitives (rem-only font validation, empty = inherit).
 - [app/app-survey/renderer/style-merge.ts](../../../../../app/app-survey/renderer/style-merge.ts): Pure merge of the style groups into CSS vars (base → mobile → oneQuestionAtATime → easyread).
 - [app/app-survey/renderer/form-abstract.ts](../../../../../app/app-survey/renderer/form-abstract.ts): Applies the merged style vars to the renderer, mirrors the masters onto the form host.
 - [app/app-survey/renderer/field-wrapper.ts](../../../../../app/app-survey/renderer/field-wrapper.ts): Maps the master-derived field text sizes onto Material field tokens.
-- [lit-app/effect-model/schema/theme.ts](../../../../../lit-app/effect-model/schema/theme.ts): Customer theme schema — `ThemeTypography.fontSizeBase` and `ThemeLayout.spacingScale`.
-- [app/app-base/src/init/theme-masters.ts](../../../../../app/app-base/src/init/theme-masters.ts): Builds the `:root` CSS block carrying the theme-level master tokens.
+- [lit-app/shared/styles/themes/schema.ts](../../../../../lit-app/shared/styles/themes/schema.ts): Customer theme schema — `ThemeTypography.fontSizeBase` and `ThemeLayout.spacingScale`.
+- [lit-app/app-state/init/theme-masters.ts](../../../../../lit-app/app-state/init/theme-masters.ts): Builds the `:root` CSS block carrying the theme-level master tokens.
 - [lit-app/a11y/src/state/accessibility-state.ts](../../../../../lit-app/a11y/src/state/accessibility-state.ts): Easy Read activation state (no `appState.textSize` force-set — the mode floors the document font size through `app-respondent`).
 - [app/app-respondent/src/init/easyread-font-size.ts](../../../../../app/app-respondent/src/init/easyread-font-size.ts): Binds Easy Read to the document root font floor (`--a11y-easyread-font-size`), composed with the text-size setting by `max()` in `variables.css`.
 
 ## Sharing a Section - how-to-share-section
 
-- [app/app-survey/schema/section.ts](../../../../../app/app-survey/schema/section.ts): Schema definition for section scopes (`team`, `customer`, `global`), publish metadata, response keying, prefill modes, and freeze settings.
+- [lit-app/schema/survey/section.ts](../../../../../lit-app/schema/survey/section.ts): Schema definition for section scopes (`team`, `customer`, `global`), publish metadata, response keying, prefill modes, and freeze settings.
 - [app/app-survey/src/entity/SectionE.ts](../../../../../app/app-survey/src/entity/SectionE.ts): Section entity model definition and action bindings.
 - [app/app-survey/src/entity/settings/BuildSection.ts](../../../../../app/app-survey/src/entity/settings/BuildSection.ts): Settings panel UI for sharing controls, response keying, prefill modes, and freeze toggles in Advanced Mode.
 - [app/app-survey/src/cmp/section-library.ts](../../../../../app/app-survey/src/cmp/section-library.ts): Tabbed Section Library component for browsing and dragging sections across scopes.

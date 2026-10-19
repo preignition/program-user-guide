@@ -15,6 +15,7 @@ VitePress documentation for the Accessible Surveys platform, published to docs.a
 From the repo root:
 
 - `pnpm docs:check` / `pnpm docs:fix` — markdownlint.
+- `pnpm check:docs-links` — every relative link and image under `docs/` must resolve (part of `pnpm check`; `--update` refreshes the baseline).
 - `pnpm docs:build` — VitePress build; the only check that parses YAML frontmatter, so run it after adding or renaming pages.
 - `pnpm test` — Playwright screenshots; requires the app dev servers (see `src/README.md`).
 
