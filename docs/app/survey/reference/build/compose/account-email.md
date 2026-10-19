@@ -25,6 +25,12 @@ Feedback is shown under the field (and as a notification on failure), in the sur
 
 The Account Email field is always modelled with the `account-verification` purpose. Its value — typed by the respondent or pre-filled from their account — is **not** part of the survey data (`raw`, `humanized`, `anonymized`) unless you explicitly add the **Dataset** purpose to the field in the builder's advanced settings (see [Email Purposes](./question.md#email-purposes)). This keeps the identity value out of exports by default while still letting a survey collect the account email as data when it genuinely needs to.
 
+## Privacy
+
+The field shows the address held by the respondent's **account**, which lives in the platform's authentication service, not in the survey. A signed-in respondent changes it only verification-first (see above); an anonymous session records the value as an answer and cannot change an account here.
+
+What a survey stores is the answer — the value as typed or pre-filled — and it is kept out of the `raw`, `humanized` and `anonymized` datasets unless you add the **Dataset** purpose to the field. The account itself keeps the address as part of its identity whether or not the survey exports it. Removing the answer from a dataset after collection does not change the account, and changing the account does not rewrite answers already collected.
+
 ## When to Use
 
 Use the Account Email field when:

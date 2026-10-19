@@ -14,6 +14,10 @@ Our core philosophy regarding privacy is simple: **We only collect what is stric
 
 By default, Accessible Surveys does not collect PII (Personally Identifiable Information) unless you explicitly design your form to ask for it. We do not track respondent IP addresses, browser fingerprints, or geographic locations in the background.
 
+Operational email addresses are the exception worth naming. A survey can ask a respondent to be emailed — a submission confirmation, or reminders while the form is unsubmitted — without that address becoming part of the dataset. The address serves the survey's emails only: it is stored apart from the answers, excluded from every export unless the editor explicitly makes it an answer, and never used to identify a respondent or link them to their answers (see [Email Purposes](../reference/share/email/index.md#email-purposes)).
+
+A reminder consent is a record with a lifetime: the address, the session, the notice version agreed to and the sends, held for 180 days by default (1–365, editor-adjustable) and deleted when it ends. Editors see whether a reminder went out, never the address. The survey's owner can [purge the collected data](../how-to/purging-collected-data.md) at any time, which removes the reminder records with the responses; the survey itself survives.
+
 ## Account Types and Anonymity
 
 The platform supports different levels of respondent authentication, allowing you to choose the right balance between data validation and respondent privacy.

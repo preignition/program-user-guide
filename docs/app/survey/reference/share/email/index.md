@@ -21,6 +21,8 @@ Email fields carry **purposes** that decide how the collected address is used. T
 
 A purpose other than **Dataset** keeps the address out of every export; it is used for the survey's emails only.
 
+The addresses these emails use stay out of the survey's datasets and exports unless a field also carries **Dataset** — see [Data Privacy and Security](../../../explanation/data-privacy-and-security.md).
+
 ## Submission Confirmation
 
 The confirmation email is sent when a respondent submits the survey. Each survey language has its own **subject** and **body**, and the respondent receives it in the language they answered in. The platform adds a line explaining why the email was sent; it is a transactional one-off, so it carries no unsubscribe link. Test submissions never send email.
