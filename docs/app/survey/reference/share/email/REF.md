@@ -23,4 +23,7 @@
 - [routes.ts](../../../../../../../app/app-respondent/src/routes.ts): The respondent app's routes; the unsubscribe route sits ahead of the survey id route.
 - [respondentReminders.ts](../../../../../../../app/app-survey/functions/src/service/respondentReminders.ts): The reminder job: the schedule, the sends, the send state and the expiry sweep.
 - [reminderJob.ts](../../../../../../../app/app-survey/functions/src/reminderJob.ts): The hourly scheduled function that runs the reminder job.
-- [sendPlatformMail.ts](../../../../../../../app/app-survey/functions/src/service/sendPlatformMail.ts): The mail plumbing the confirmation and the reminders share.
+- [sendPlatformMail.ts](../../../../../../../lit-app/effect-model/service/mail/platformMail.ts): The mail plumbing the confirmation, the reminders and the follow-ups share.
+- [followUp.ts](../../../../../../../app/app-survey/actionApi/src/services/followUp.ts): The editor-triggered follow-up: the dry-run recipient count, the sends, and the expiry sweep.
+- [sendFollowUp.ts](../../../../../../../lit-app/schema/survey/followUp.ts): The follow-up action's payload and result.
+- [sendFollowUp.ts](../../../../../../../app/app-survey/src/entity/action/sendFollowUp.ts): The Email page's Send actions and their confirmation dialog.

@@ -12,6 +12,8 @@ Stay up to date with the latest improvements and features across the Accessible 
 
 ## Survey App
 
+* **[Follow-up Emails](./2026-10-19-follow-up-emails.md)**: Respondents who opted in can be emailed the survey's results and reports, or invited to a later survey; consent records cover every purpose.
+
 * **[Privacy: Survey Emails and Reminder Records](./2026-10-19-privacy-survey-emails.md)**: The privacy policy names survey emails, reminder retention and unsubscribing, and the purge action; respondents consent again.
 
 * **[Purge Survey Data](./2026-10-18-purge-survey-data.md)**: Remove the data a survey collected — responses, sessions and reminder records — while the survey itself survives.

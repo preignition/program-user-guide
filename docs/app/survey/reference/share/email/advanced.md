@@ -12,6 +12,7 @@ The notice is the wording a respondent reads next to a field that carries a noti
 
 - The **submission confirmation** notice is transactional: it tells the respondent a confirmation will be sent, and needs no consent.
 - The **reminder** notice and its **opt-in label** accompany the checkbox a respondent ticks to receive reminders.
+- The **results and reports** and **follow-up survey** notices and their **opt-in labels** accompany the checkbox each purpose shows.
 
 Leave a notice empty to use the platform's default wording. Every change to the wording increases the notice **version**, which is recorded with a consent when one is captured — so it is always clear which wording a respondent agreed to.
 
