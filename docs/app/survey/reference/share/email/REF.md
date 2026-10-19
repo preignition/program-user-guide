@@ -2,8 +2,7 @@
 
 ## Email Configuration - The Email Page
 
-- [message.ts](../../../../../../../app/app-survey/src/page/edit/deploy/message.ts): The Email deploy page — one tab per purpose the form's email fields select, the content editors, the notices, the reminder schedule, the follow-up sends and the shared settings.
-- [emailRenderer.ts](../../../../../../../lit-app/cmp/email/emailRenderer.ts): The shared email composer (subject and body) the content editors use.
+- [message.ts](../../../../../../../app/app-survey/src/page/edit/deploy/message.ts): The Email deploy page — default purposes, confirmation content per survey language, notice wording, sender identity and the preview.
 - [email.ts](../../../../../../../lit-app/schema/survey/email.ts): The `email` configuration schema (`defaultPurposes`, `notices`, `confirmation`, `sender`), the purpose vocabulary and the notice defaults.
 - [survey.ts](../../../../../../../lit-app/schema/survey/survey.ts): The survey document's `email` field.
 - [SurveyE.ts](../../../../../../../app/app-survey/src/entity/SurveyE.ts): The survey entity whose `update`/`onInput` verbs the page writes with.

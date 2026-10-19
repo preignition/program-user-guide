@@ -11,11 +11,11 @@ The **Email** page configures the emails a survey sends to its respondents: the 
   <figcaption>The Email page, in advanced mode.</figcaption>
 </figure>
 
-The page is organised in tabs, one per purpose the survey's email fields select — a purpose no field carries has no tab, because there is no email to write for it. An **Account email** tab appears when the form has an Account Email field, and **Advanced** holds the consent retention, the sender and the preview. The content editors show one translation at a time; the language selector above them switches it, and every language has its own subject and body.
+The page is organised in tabs: **Purposes** (the survey-wide default), one tab per purpose the survey's email fields carry — a purpose no field uses has nothing to configure, so it has no tab — **Account email** when the form has an Account Email field, and **Advanced** (consent retention, sender and preview). The content editors show one translation at a time; the language selector above them switches it, and every language has its own subject and body.
 
 ## Email Purposes
 
-Email fields carry **purposes** that decide how the collected address is used. They are chosen on the field itself, in its advanced settings in the builder, and the Email page's tabs follow them: one tab per purpose the survey's email fields select.
+Email fields carry **purposes** that decide how the collected address is used. The page sets the survey-wide default; every email field can choose its own purposes in its advanced settings in the builder.
 
 - **Dataset** — the answer is part of the survey data: it appears in the `raw`, `humanized` and `anonymized` exports.
 - **Submission confirmation** — the address serves the confirmation email.
