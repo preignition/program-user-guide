@@ -12,9 +12,7 @@ Stay up to date with the latest improvements and features across the Accessible 
 
 ## Survey App
 
-* **[Survey Review: Catch Quality Issues Before You Publish](./2026-10-20-survey-review.md)**: One Review workspace for structure, logic, translation and model-assisted content findings, with filters, editor markers and in-place fixes.
-
-* **[Survey Emails, Consent and Data Control](./2026-10-19-survey-emails.md)**: Confirmation, reminder and follow-up emails behind the respondent's own opt-in, the consent records and their retention, the **Purge data** action, and the privacy policy that names them all.
+* **[Better Surveys, From First Draft to Final Send](./2026-10-20-survey-emails-and-review.md)**: New email tools for confirmations, reminders and follow-ups, plus a Review workspace that catches quality issues before you publish.
 
 * **[Improved One-Question-Per-Page Layout](./2026-08-16-one-question-per-page-layout.md)**: Choose the layout at survey creation, put free text above questions, and enjoy a sticky navigation bar and larger text by default.
 
