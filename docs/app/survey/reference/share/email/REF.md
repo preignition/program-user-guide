@@ -16,7 +16,7 @@
 - [respondentEmail.ts](../../../../../../../app/app-survey/actionApi/src/services/respondentEmail.ts): The opt-in service: normalises the address and upserts one record per actor in the survey's customer database.
 - [respondentEmail.ts](../../../../../../../app/app-survey/functions/src/respondentEmail.ts): The `survey-respondentEmailOptIn` callable the field calls.
 - [respondent-email-optin.ts](../../../../../../../app/app-survey/renderer/field/respondent-email-optin.ts): The field's notice, consent checkbox, state read and inline feedback.
-- [firestore.rules](../../../../../../../app/app-respondent/firestore.rules): The respondent-database rules for `survey/{surveyId}/respondentEmail` — server-written, read-own.
+- `app/app-respondent/firestore.rules`: The respondent-database rules for `survey/{surveyId}/respondentEmail` — server-written, read-own.
 - [respondentEmailUnsubscribe.ts](../../../../../../../app/app-survey/actionApi/src/services/respondentEmailUnsubscribe.ts): The public unsubscribe service: validates the link's token inside the survey's own records and flips only the status.
 - [respondentEmailUnsubscribe.ts](../../../../../../../app/app-survey/functions/src/respondentEmailUnsubscribe.ts): The `survey-respondentEmailUnsubscribe` callable the public page calls.
 - [unsubscribe.ts](../../../../../../../app/app-respondent/src/page/unsubscribe.ts): The public unsubscribe page (no sign-in), rendered in the survey's language.

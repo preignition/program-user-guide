@@ -10,12 +10,13 @@ The Survey Builder is the primary workspace for creating, structuring, and custo
 
 The interface provides access to various tools required for survey creation:
 
-- **Compose**: Structure the survey by adding pages, sections, and questions.
-- **Behavior**: Define overall settings, such as accessibility modes and form logic.
-- **Image Library**: Manage image assets for the survey.
-- **Localize**: Manage translations and multilingual support.
-- **Prompt**: Manage additional instructions or context for questions.
-- **Restore**: Recover deleted items.
+- **[Compose](./compose/index.md)**: Structure the survey by adding pages, sections, and questions.
+- **[Review](./review.md)**: Collect rule and model findings, filter them, and apply mechanical fixes.
+- **[Behavior](./behavior.md)**: Define overall settings, such as accessibility modes and form logic.
+- **[Image Library](./image-library.md)**: Manage image assets for the survey.
+- **[Localize](./localize.md)**: Manage translations and multilingual support.
+- **[Prompt](./prompt.md)**: Manage additional instructions or context for questions.
+- **[Restore](./restore.md)**: Recover deleted items.
 
 <figure>
   <img src="./assets/build-auto.png" alt="Overview of the Survey Builder interface.">
