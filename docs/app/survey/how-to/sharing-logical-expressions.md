@@ -1,5 +1,5 @@
 ---
-description: This page shows you how to share logical expressions across multiple items within your survey.
+description: This page shows you how to share logical expressions across multiple items and manage them from the Expressions page.
 ---
 
 # Sharing Logical Expressions
@@ -31,5 +31,21 @@ Now that your logic is shared, you can apply it to any other item.
 
 <figure><img src="./assets/sharing-logical-expressions/step-2-reuse-logical-expression.png" alt="Selecting an existing logical expression from the dropdown menu"><figcaption>Select the shared expression from the dropdown to apply it to the new item.</figcaption></figure>
 
-> [!TIP]
-> Changes made to a shared expression will affect all items that use it. This makes it very efficient to update your survey logic from a single place.
+::: tip
+Changes made to a shared expression affect all items that use it, so you can update your survey logic from a single place.
+:::
+
+## Manage Expressions from the Expressions Page
+
+The **Expressions** page is the form-level index of every expression, whether or not it has a name. Enable **Advanced Mode** in the builder toolbar, then open **Build → Expressions**.
+
+The grid shows the expression's **Name** (or **Unnamed**), a preview of the expression, the number of items that use it under **Used by**, and a **Status** of **Used** or **Unused**. Named expressions also carry a **Shared** badge. An expression that is used and also referenced by a deleted item shows **Used · deleted ref**.
+
+1. Use the **Show** filter to list **All expressions**, the **Used** ones, or the **Unused** ones. The number of unused expressions is shown next to the filter.
+2. Expand a row to see every item that uses the expression, which logic setting it controls (for example, **Hidden**), and an **Open** link to the item in Compose.
+3. Edit **Name** or **Description** in the expanded row. Naming an expression shares it; clearing the name stops offering it in the **Select an existing expression** dropdown, while the expression and the items that already use it keep working.
+4. To delete an expression, expand its row and choose **Delete expression**. Deleted expressions can be restored from **Build → Restore**.
+
+::: warning
+You can delete an expression only when no item uses it and no deleted item references it. An expression referenced by a deleted item is marked **Deleted ref**; restore that item before deleting the expression, so the restored item does not lose its logic.
+:::
