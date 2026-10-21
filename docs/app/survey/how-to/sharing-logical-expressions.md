@@ -54,10 +54,17 @@ As your survey grows, you can inspect, rename, and clean up every logical expres
 Click any row in the **Expressions** grid to expand its details panel:
 
 1. **Inspect usage and jump to items:** Under **Used by**, view every question, section, page, or survey text that references the expression, along with the logic slot it controls (**Hidden**, **Required**, **Read-only**, or **Invalid**). Click **Open in compose** to jump straight to that item in the Compose view.
-2. **Rename or unshare:** Update the **Name** or **Description** fields directly. Giving an unnamed expression a name shares it; clearing the **Name** field unshares it so it no longer appears in the **Select an existing expression** dropdown, while keeping the logic intact on items that already use it.
+2. **Rename, share, or unshare:** Edit **Name** or **Description** in the expanded row. Naming an expression shares it; clearing the name stops offering it in the **Select an existing expression** dropdown, while the expression and the items that already use it keep working.
 3. **Delete unused expressions:** Click **Delete expression** and confirm to remove an unused expression. If you need it back later, recover it from **Build → Restore**.
 
 <figure><img src="./assets/sharing-logical-expressions/step-4-expression-details.png" alt="Expanded expression row showing Name, Description, read-only expression preview, Used by list with Open in compose button, and Delete expression button"><figcaption>Expand an expression to edit its name or description, jump to items that use it, or delete it when unused.</figcaption></figure>
+
+::: info Sharing and unsharing an expression
+Whether an expression is shared depends solely on whether it has a **Name**:
+
+- **Naming an unnamed expression** marks it **Shared** and makes it selectable in the **Select an existing expression** dropdown across the form.
+- **Clearing the Name** unshares it so it is no longer offered in the **Select an existing expression** dropdown, while the expression itself and every item that already uses it continue to work without change.
+:::
 
 ::: warning
 You can delete an expression only when no active item uses it and no soft-deleted item references it. If a deleted item still points to the expression, its status shows **Deleted ref** and deletion is blocked—restore or permanently adjust that item first so restoring it later does not leave broken logic.
