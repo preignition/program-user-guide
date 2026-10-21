@@ -24,7 +24,7 @@ You no longer have to click through every branch or wait for a build error to fi
 
 ### Two kinds of checks, working together
 
-* **Instant automatic checks** run as you edit — catching empty sections, broken logic references, unpublished shared sections, and missing translations right away (no AI credits required).
+* **Structure, logic and translation checks** run when you click **Run review** — catching empty sections, broken logic references, unpublished shared sections, and missing translations. These rules are free; the model review runs alongside them. The design page no longer scans the whole survey in the background.
 * **On-demand AI review** looks at your survey the way a thoughtful colleague would — flagging confusing wording, repetitive questions, and topics you might have missed.
 
 ### Fix issues on the spot
