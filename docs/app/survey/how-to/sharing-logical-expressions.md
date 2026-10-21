@@ -41,7 +41,7 @@ The **Expressions** page is the form-level index of every expression, whether or
 
 The grid shows the expression's **Name** (or **Unnamed**), a preview of the expression, the number of items that use it under **Used by**, and a **Status**: **Used**, **Unused**, **Deleted ref**, or **Used · deleted ref**. Named expressions also carry a **Shared** badge.
 
-1. Use the **Show** filter to list **All expressions**, the **Used** ones, or the **Unused** ones. The number of unused expressions is shown next to the filter.
+1. Use the column filters in the grid header: type in **Name** or **Expression**, or choose a **Status** (**Used**, **Unused**, **Deleted ref**, or **Used · deleted ref**). The number of unused expressions is shown next to the heading.
 2. Expand a row to see every item that uses the expression, which logic setting it controls (for example, **Hidden**), and an **Open** link to the item in Compose.
 3. Edit **Name** or **Description** in the expanded row. Naming an expression shares it; clearing the name stops offering it in the **Select an existing expression** dropdown, while the expression and the items that already use it keep working.
 4. To delete an expression, expand its row and choose **Delete expression**. Deleted expressions can be restored from **Build → Restore**.
