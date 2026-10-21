@@ -87,3 +87,14 @@
 - [app/app-survey/src/page/edit/deploy/quota-status.ts](../../../../../app/app-survey/src/page/edit/deploy/quota-status.ts): The survey app's live quota read (remaining, grace, expired, missing) rendered through the shared `lapp-quota-card`, shown on the Status page and on the Distribute page until the survey is in production.
 - [app/app-survey/actionApi/src/services/productionService.ts](../../../../../app/app-survey/actionApi/src/services/productionService.ts): Server action — stamps the production marker and redeems one quota unit in a transaction, with the grace window and superadmin bypass.
 - [app/app-respondent/src/machine/actor/productionGate.ts](../../../../../app/app-respondent/src/machine/actor/productionGate.ts): Respondent gate — the production route only serves surveys taken to production and before the grace deadline.
+
+## Sharing Logical Expressions - sharing-logical-expressions
+
+- [app/app-survey/src/page/edit/design/expressions.ts](../../../../../app/app-survey/src/page/edit/design/expressions.ts): The `Build → Expressions` page in Advanced Mode — grid, header filters, unused counter, and row details expansion.
+- [app/app-survey/src/page/edit/design/expression-rows.ts](../../../../../app/app-survey/src/page/edit/design/expression-rows.ts): Row projection, status derivation (`used`, `unused`, `deleted-ref`, `used-deleted-ref`), and readable filter text.
+- [app/app-survey/src/page/edit/design/expression-labels.ts](../../../../../app/app-survey/src/page/edit/design/expression-labels.ts): Decoded locale-label resolution for items referenced in expression previews and filters.
+- [app/app-survey/src/entity/holder/expression-details.ts](../../../../../app/app-survey/src/entity/holder/expression-details.ts): Expanded row details component for editing name/description, inspecting usage with `Open in compose`, and triggering deletion.
+- [app/app-survey/logic/expression-usage.ts](../../../../../app/app-survey/logic/expression-usage.ts): Derivation of expression usage across reachable form items and survey texts, plus soft-deleted item reference detection.
+- [app/app-survey/logic/expression-readonly.ts](../../../../../app/app-survey/logic/expression-readonly.ts): Read-only `a11y-logic-expression` renderer displaying expression tokens with `a11y-logic-identifier` chips.
+- [app/app-survey/src/page/edit/design/expression-delete.ts](../../../../../app/app-survey/src/page/edit/design/expression-delete.ts): Confirmation dialog and soft-delete flow for unused expressions.
+- [app/app-survey/src/page/edit/design/restore.ts](../../../../../app/app-survey/src/page/edit/design/restore.ts): Restore page integration allowing soft-deleted expressions to be recovered.

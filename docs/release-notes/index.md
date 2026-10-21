@@ -12,7 +12,7 @@ Stay up to date with the latest improvements and features across the Accessible 
 
 ## Survey App
 
-* **[Catch Issues Early, Stay in Touch Effortlessly](./2026-10-20-survey-emails-and-review.md)**: Review your survey for broken logic, missing translations, and wording issues before you publish — then reach respondents with privacy-first confirmations, reminders, and follow-ups.
+* **[Catch Issues Early, Stay in Touch Effortlessly](./2026-10-20-survey-emails-and-review.md)**: Review your survey for broken logic, missing translations, and wording issues before you publish, audit and manage all logical expressions in one place, and reach respondents with privacy-first confirmations, reminders, and follow-ups.
 
 * **[Improved One-Question-Per-Page Layout](./2026-08-16-one-question-per-page-layout.md)**: Choose the layout at survey creation, put free text above questions, and enjoy a sticky navigation bar and larger text by default.
 

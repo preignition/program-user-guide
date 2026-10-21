@@ -35,17 +35,39 @@ Now that your logic is shared, you can apply it to any other item.
 Changes made to a shared expression affect all items that use it, so you can update your survey logic from a single place.
 :::
 
-## Manage Expressions from the Expressions Page
+## Step 3: Manage Expressions from the Expressions Page
 
-The **Expressions** page is the form-level index of every expression, whether or not it has a name. Enable **Advanced Mode** in the builder toolbar, then open **Build → Expressions**.
+As your survey grows, you can inspect, rename, and clean up every logical expression—whether shared or unnamed—from a single place.
 
-The grid shows the expression's **Name** (or **Unnamed**), a preview of the expression, the number of items that use it under **Used by**, and a **Status**: **Used**, **Unused**, **Deleted ref**, or **Used · deleted ref**. Named expressions also carry a **Shared** badge.
+1. Enable **Advanced Mode** using the toggle in the top toolbar.
+2. In the **Build** navigation drawer, select **Expressions**.
 
-1. Use the column filters in the grid header: type in **Name** or **Expression**, or choose a **Status** (**Used**, **Unused**, **Deleted ref**, or **Used · deleted ref**). The number of unused expressions is shown next to the heading.
-2. Expand a row to see every item that uses the expression, which logic setting it controls (for example, **Hidden**), and an **Open in compose** link to the item.
-3. Edit **Name** or **Description** in the expanded row. Naming an expression shares it; clearing the name stops offering it in the **Select an existing expression** dropdown, while the expression and the items that already use it keep working.
-4. To delete an expression, expand its row and choose **Delete expression**. Deleted expressions can be restored from **Build → Restore**.
+   <figure><img src="./assets/sharing-logical-expressions/step-3-expressions-menu.png" alt="Selecting Expressions in the Build navigation drawer with Advanced Mode enabled"><figcaption>Open the Expressions page from the Build menu in Advanced Mode.</figcaption></figure>
+
+3. Review the list of expressions for the form. The grid displays each expression's **Name** (or **Unnamed**, with a **Shared** badge on named expressions), a readable preview of the **Expression** using question and choice labels, the number of items under **Used by**, and its **Status** (**Used**, **Unused**, **Deleted ref**, or **Used · deleted ref**). The badge next to the heading shows how many expressions are currently unused.
+4. Use the header filters to narrow the list by **Name**, **Expression** text or item label, or **Status**.
+
+   <figure><img src="./assets/sharing-logical-expressions/step-3-expressions-page.png" alt="The Expressions page showing all form expressions, their usage counts, status badges, and column filters"><figcaption>Filter and audit all named and unnamed expressions across your form.</figcaption></figure>
+
+## Step 4: Inspect Usage, Rename, or Delete an Expression
+
+Click any row in the **Expressions** grid to expand its details panel:
+
+1. **Inspect usage and jump to items:** Under **Used by**, view every question, section, page, or survey text that references the expression, along with the logic slot it controls (**Hidden**, **Required**, **Read-only**, or **Invalid**). Click **Open in compose** to jump straight to that item in the Compose view.
+2. **Rename or unshare:** Update the **Name** or **Description** fields directly. Giving an unnamed expression a name shares it; clearing the **Name** field unshares it so it no longer appears in the **Select an existing expression** dropdown, while keeping the logic intact on items that already use it.
+3. **Delete unused expressions:** Click **Delete expression** and confirm to remove an unused expression. If you need it back later, recover it from **Build → Restore**.
+
+<figure><img src="./assets/sharing-logical-expressions/step-4-expression-details.png" alt="Expanded expression row showing Name, Description, read-only expression preview, Used by list with Open in compose button, and Delete expression button"><figcaption>Expand an expression to edit its name or description, jump to items that use it, or delete it when unused.</figcaption></figure>
 
 ::: warning
-You can delete an expression only when no item uses it and no deleted item references it. An expression referenced by a deleted item is marked **Deleted ref**; restore that item before deleting the expression, so the restored item does not lose its logic.
+You can delete an expression only when no active item uses it and no soft-deleted item references it. If a deleted item still points to the expression, its status shows **Deleted ref** and deletion is blocked—restore or permanently adjust that item first so restoring it later does not leave broken logic.
 :::
+
+## Related Content
+
+- [How to use form logic](./logic-expression.md)
+- [How to control content visibility](./controlling-visibility.md)
+- [How to share content across multiple forms and surveys](./sharing-content.md)
+- [Understanding Form Logic](../explanation/understanding-form-logic.md)
+- [Logic Expressions Reference](../reference/content/logic-expression/index.md)
+- [Restore Reference](../reference/build/restore.md)

@@ -1,5 +1,5 @@
 ---
-description: Catch broken logic, missing translations, and unclear wording before you publish — then stay in touch with respondents through privacy-first confirmations, reminders, and follow-ups.
+description: Catch broken logic, missing translations, and unclear wording before you publish, manage every logical expression from one place, and stay in touch with respondents through privacy-first confirmations, reminders, and follow-ups.
 ---
 
 # Catch Issues Early, Stay in Touch Effortlessly
@@ -9,7 +9,7 @@ description: Catch broken logic, missing translations, and unclear wording befor
 
 Publishing a survey usually comes with two nagging questions: *Did I miss a broken condition or an untranslated question?* and *How do I follow up with respondents without collecting a spreadsheet of email addresses?*
 
-This release answers both. A new **Review** workspace checks your survey from top to bottom and lets you fix issues with a click, while the new **Email** tab under **Share** handles confirmations, gentle reminders, and follow-ups — with respondent consent and automatic data expiry built right in.
+This release answers both — and makes complex survey logic much easier to maintain. A new **Review** workspace checks your survey from top to bottom and lets you fix issues with a click, the new **Expressions** page gives you a single place to inspect and clean up every logical rule in your form, and the new **Email** tab under **Share** handles confirmations, gentle reminders, and follow-ups with respondent consent and automatic data expiry built right in.
 
 ---
 
@@ -78,6 +78,26 @@ Every message is sent in the respondent's chosen language and includes a one-cli
 
 ---
 
+## 3. Audit and Manage Logical Expressions in One Place
+
+When a survey has dozens of visibility rules and validation conditions, keeping track of which expressions are shared, where they are used, and which ones are left over from earlier drafts can be tedious. In **Advanced Mode**, the new **Build → Expressions** page lists every logical expression in your form — whether named (shared) or unnamed.
+
+<figure>
+  <img src="../app/survey/how-to/assets/sharing-logical-expressions/step-3-expressions-page.png" alt="The Expressions page listing named and unnamed expressions with readable previews, usage counts, and status badges.">
+  <figcaption>The Expressions page: filter by name, expression content, or usage status, and see how many expressions are unused at a glance.</figcaption>
+</figure>
+
+### What you can do on the Expressions page
+
+* **See every rule in readable form:** Expressions are rendered with human-readable question and option labels rather than internal IDs, and you can filter the grid by **Name**, **Expression** text, or **Status** (*Used*, *Unused*, *Deleted ref*, or *Used · deleted ref*).
+* **Trace where each expression is used:** Expand any row to see every question, section, page, or survey text that uses it, which logic slot it controls (*Hidden*, *Required*, *Read-only*, or *Invalid*), and click **Open in compose** to jump straight to that item.
+* **Share, rename, or unshare in place:** Give an unnamed expression a **Name** and **Description** to make it reusable across your form, or clear its name to remove it from the shared picker without breaking items that already use it.
+* **Clean up unused logic safely:** Delete unused expressions with confidence — deletion is automatically blocked if an active or soft-deleted item still references the expression, and any deleted expression can be recovered from **Build → Restore**.
+
+* **Learn more:** [Sharing Logical Expressions](../app/survey/how-to/sharing-logical-expressions.md)
+
+---
+
 ## Good to Know
 
 * **You stay in control of AI:** AI review only runs when you click **Run review**, and it never edits your survey behind your back. Where AI credits are enabled, the panel shows the cost (1 credit per run) before you start.
@@ -89,6 +109,7 @@ Every message is sent in the respondent's chosen language and includes a one-cli
 
 * [Email Reference](../app/survey/reference/share/email/index.md)
 * [Review Reference](../app/survey/reference/build/review.md)
+* [Sharing Logical Expressions](../app/survey/how-to/sharing-logical-expressions.md)
 * [Compose Reference](../app/survey/reference/build/compose/index.md)
 * [Localize Reference](../app/survey/reference/build/localize.md)
 * [Share Reference](../app/survey/reference/share/index.md)
