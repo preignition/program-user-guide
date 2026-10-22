@@ -113,9 +113,7 @@ test.describe('Survey Reference - Review', () => {
 
       // Seed one real rule finding: a hidden slot pointing at no expression.
       await db.doc(fixture.questionPath).update({ logic: { hidden: 'missing-expression' } })
-      await page.getByRole('navigation').getByText('Compose', { exact: true }).click()
-      await page.waitForTimeout(300)
-      await page.getByRole('navigation').getByText('Review', { exact: true }).click()
+      await page.getByRole('button', { name: 'Run review' }).first().click()
 
       await expect(page.getByText('Logic points at a missing expression').first()).toBeVisible({
         timeout: 30_000,

@@ -1,5 +1,5 @@
 ---
-description: Catch broken logic, missing translations, and unclear wording before you publish, manage every logical expression from one place, and stay in touch with respondents through privacy-first confirmations, reminders, and follow-ups.
+description: Catch broken logic, missing translations, accessibility issues, and unclear wording before you publish, manage every logical expression from one place, and stay in touch with respondents through privacy-first confirmations, reminders, and follow-ups.
 ---
 
 # Catch Issues Early, Stay in Touch Effortlessly
@@ -7,33 +7,38 @@ description: Catch broken logic, missing translations, and unclear wording befor
 **Date:** 2026-10-20
 **Version:** 2.2.0
 
-Publishing a survey usually comes with two nagging questions: *Did I miss a broken condition or an untranslated question?* and *How do I follow up with respondents without collecting a spreadsheet of email addresses?*
+Publishing a survey usually comes with two nagging questions: *Did I miss a broken condition, an accessibility barrier, or an untranslated question?* and *How do I follow up with respondents without collecting a spreadsheet of email addresses?*
 
-This release answers both — and makes complex survey logic much easier to maintain. A new **Review** workspace checks your survey from top to bottom and lets you fix issues with a click, the new **Expressions** page gives you a single place to inspect and clean up every logical rule in your form, and the new **Email** tab under **Share** handles confirmations, gentle reminders, and follow-ups with respondent consent and automatic data expiry built right in.
+This release answers both — and makes complex survey logic much easier to maintain. A new **Review** workspace checks your survey from top to bottom across structure, logic, translation, accessibility, and content quality and lets you fix issues with a click, the new **Expressions** page gives you a single place to inspect and clean up every logical rule in your form, and the new **Email** tab under **Share** handles confirmations, gentle reminders, and follow-ups with respondent consent and automatic data expiry built right in.
 
 ---
 
 ## 1. Review Your Survey Before You Publish
 
-You no longer have to click through every branch or wait for a build error to find out something is off. The new **Review** step sits right in the Survey Builder (between **Compose** and **Form Behavior**) and brings all quality checks into one place.
+You no longer have to click through every branch or wait for a build error to find out something is off. The new **Review** step sits right in the Survey Builder (between **Compose** and **Form Behavior**) and brings all quality and accessibility checks into one place.
 
 <figure>
   <img src="../app/survey/reference/build/assets/review-auto.png" alt="The Review panel showing a selected logic finding, its evidence and the available actions.">
   <figcaption>The Review workspace: browse findings on the left, inspect the evidence and apply a one-click fix on the right.</figcaption>
 </figure>
 
-### Two kinds of checks, working together
+### Five check families, combining instant rules with AI review
 
-* **Structure, logic and translation checks** run when you click **Run review** — catching empty sections, broken logic references, unpublished shared sections, and missing translations. These rules are free; the model review runs alongside them. The editor keeps the survey structure live, but does not build the review findings until you ask.
-* **On-demand AI review** looks at your survey the way a thoughtful colleague would — flagging confusing wording, repetitive questions, and topics you might have missed.
+* **Structure, logic and translation rules** run when you click **Run review** — catching empty sections, broken logic references, unused expression dependencies, unpublished shared sections, and missing translations. These rules are free; the model review runs alongside them. The editor keeps the survey structure live, but does not build the review findings until you ask.
+* **Accessibility checks (rules + AI)** combine four deterministic checks with model-assisted plain-language review:
+  * **Plain language (measured + AI):** Flags overly long sentences (over 25 words) and clusters of complex words (12+ characters), while the AI review (`accessibility.clarity`) spots jargon, unexplained acronyms, bureaucratic phrasing, and convoluted sentences that length rules alone cannot judge — offering a plain-language rewrite you can apply in one click.
+  * **Descriptive link text:** Catches vague links like *click here* or *read more* so screen-reader users know where a link leads.
+  * **Question control fit:** Warns when a question's input control doesn't match what its label asks for — such as an open text field asking for a date, email, phone number, URL, or number, a radio/dropdown asking to *select all that apply*, or checkboxes asking to *select one*.
+  * **Theme colour contrast:** Checks your active light and dark themes against the WCAG AA 4.5:1 contrast standard so every text/background pair stays readable.
+* **On-demand AI content review** looks at your survey the way a thoughtful colleague would — flagging leading or double-barrelled questions, repetitive items, and topics you might have missed.
 
 ### Fix issues on the spot
 
 Most findings come with a direct action right inside the review panel, so you don't have to hunt through the form tree:
 
-* **Wording suggestions:** Click **Apply** to accept a clearer phrasing (with **Undo** if you change your mind).
+* **Plain-language and wording suggestions:** Click **Apply** to accept a clearer phrasing (with **Undo** if you change your mind).
 * **Missing translations:** Translate a single item or every missing item in a language at once.
-* **Broken logic:** **Clear slot** on a dead reference, or jump straight to the rule.
+* **Broken or stale logic:** **Clear slot** on a dead reference, **Remove dependency** when an expression lists a binding it no longer uses, or jump straight to the rule.
 * **Missing coverage:** **Insert** a suggested question or **Activate** an unpublished shared section.
 * **Not relevant?** **Dismiss** any suggestion (you can always **Restore** it later).
 
@@ -41,7 +46,7 @@ Most findings come with a direct action right inside the review panel, so you do
 Open any survey and go to **Build → Review**. You'll also see small review markers right in the **Compose** tree and a final review summary in **Share → Build** just before you publish.
 :::
 
-* **Learn more:** [Review Reference](../app/survey/reference/build/review.md) · [Review Actions](../app/survey/reference/build/review.md#actions) · [Editor Markers](../app/survey/reference/build/review.md#editor-markers)
+* **Learn more:** [Review Reference](../app/survey/reference/build/review.md) · [Accessibility Checks](../app/survey/reference/build/review.md#accessibility-checks) · [Review Actions](../app/survey/reference/build/review.md#actions) · [Editor Markers](../app/survey/reference/build/review.md#editor-markers)
 
 ---
 

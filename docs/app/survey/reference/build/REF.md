@@ -18,7 +18,10 @@
 - [app/app-survey/src/page/edit/design/review-navigation.ts](../../../../../../app/app-survey/src/page/edit/design/review-navigation.ts): Marker-to-panel navigation, Compose deep links and run staleness.
 - [app/app-survey/src/page/edit/design/review-availability.ts](../../../../../../app/app-survey/src/page/edit/design/review-availability.ts): Run availability and the AI-credit price text.
 - [app/app-survey/src/i18n/review.ts](../../../../../../app/app-survey/src/i18n/review.ts): Review copy, including finding titles and actions.
-- [app/app-survey/review/checks/index.ts](../../../../../../app/app-survey/review/checks/index.ts): The rule check registry behind structure, logic and translation findings.
+- [app/app-survey/review/catalog.ts](../../../../../../app/app-survey/review/catalog.ts): Closed catalog of the five check families (structure, logic, translation, accessibility and content) and their payload schemas.
+- [app/app-survey/review/checks/index.ts](../../../../../../app/app-survey/review/checks/index.ts): The rule check registry behind structure, logic, translation and accessibility findings.
+- [app/app-survey/review/checks/accessibility.ts](../../../../../../app/app-survey/review/checks/accessibility.ts): Deterministic accessibility checks for plain-language readability, link text, question-control fit and WCAG AA theme contrast.
+- [lit-app/shared/color/contrastRatio.ts](../../../../../../lit-app/shared/color/contrastRatio.ts): Shared WCAG 2.x relative-luminance contrast ratio helper used by the theme contrast check.
 - [app/app-survey/actionApi/src/services/reviewService.ts](../../../../../../app/app-survey/actionApi/src/services/reviewService.ts): The review run lifecycle and model-finding mapping.
-- [app/app-survey/actionApi/src/ai/review.ts](../../../../../../app/app-survey/actionApi/src/ai/review.ts): The model review prompt, input serializer and output schema.
-- `specs/survey-review.md`: The survey review design and behaviour specification.
+- [app/app-survey/actionApi/src/ai/review.ts](../../../../../../app/app-survey/actionApi/src/ai/review.ts): The model review prompt, input serializer and output schema (including `accessibility.clarity`).
+- [specs/survey-review.md](../../../../../../specs/survey-review.md): The survey review design and behaviour specification.
