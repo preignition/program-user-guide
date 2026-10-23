@@ -115,6 +115,7 @@ function getSidebar() {
           text: "Analytics and Export",
           collapsed: true,
           items: [
+            { text: "Send invitations to a team audience", link: `send-invitations.md` },
             { text: "Analyze survey data", link: `survey-analytics.md` },
             { text: "Export survey data", link: `exporting-survey-data.md` },
             { text: "Export analytics charts", link: `exporting-analytics-charts.md` },
