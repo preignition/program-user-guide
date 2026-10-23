@@ -24,4 +24,3 @@
 - [lit-app/shared/color/contrastRatio.ts](../../../../../../lit-app/shared/color/contrastRatio.ts): Shared WCAG 2.x relative-luminance contrast ratio helper used by the theme contrast check.
 - [app/app-survey/actionApi/src/services/reviewService.ts](../../../../../../app/app-survey/actionApi/src/services/reviewService.ts): The review run lifecycle and model-finding mapping.
 - [app/app-survey/actionApi/src/ai/review.ts](../../../../../../app/app-survey/actionApi/src/ai/review.ts): The model review prompt, input serializer and output schema (including `accessibility.clarity`).
-- [specs/survey-review.md](../../../../../../specs/survey-review.md): The survey review design and behaviour specification.
