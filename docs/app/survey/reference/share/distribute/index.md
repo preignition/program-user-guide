@@ -40,7 +40,14 @@ Building a survey does not make it live. The production link stays hidden until 
 - stamps the survey as in production (it cannot be undone), and
 - redeems **one survey** from the customer's plan quota.
 
-Below the button, a **Survey quota** card shows the surveys left on the plan (for example, *"25 left"*) and how much of the plan has been used (for example, *"5 of 30 surveys used."*). The card is shown while the survey is not yet in production; once it is, the quota is shown on the **Status** page instead. When the quota reaches zero, the card explains how long you can still take surveys to production while you arrange more quota; after the grace period, the production link stops accepting new respondents until quota is added. If no survey quota is configured for the customer, the card asks you to contact support.
+Below the button, a **Survey quota** card shows the surveys left on the plan (for example, *"25 left"*) and how much of the plan has been used (for example, *"5 of 30 surveys used."*). The card is shown while the survey is not yet in production; once it is, the quota is shown on the **Status** page instead. If no survey quota is configured for the customer, the card asks you to contact support.
+
+Quota gates publishing, not the surveys already live:
+
+- Publishing the last survey on the plan (one unit left) is normal: the plan covers it, no grace window opens.
+- Publishing when no unit is left takes the plan to one survey over quota and starts a **10-day grace window**. The confirmation dialog says so before you confirm. Only **this** survey is affected — the other production surveys keep serving respondents.
+- The grace deadline is shown on this survey's **Distribute** page. Pay for the additional survey or upgrade the plan before the deadline; afterwards this survey stops accepting responses until quota is added. Buying quota (or the plan renewing) reopens it.
+- While the plan is over quota, no further survey can be taken to production.
 
 ## The Link Builder
 

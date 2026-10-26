@@ -45,7 +45,7 @@ After payment you return to the quota tab. Until Stripe confirms the payment it 
 
 The two quota types differ after purchase:
 
-- A **survey** pack applies to your current quota period: it does not roll over to the next renewal. Buying survey quota also clears a grace window, so publishing resumes immediately.
+- A **survey** pack applies to your current quota period: it does not roll over to the next renewal. Buying survey quota also clears a grace window: publishing resumes immediately and the one over-quota survey accepts respondents again.
 - A **team** pack is permanent: it never lapses at renewal.
 
 ## Related Content

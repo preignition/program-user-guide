@@ -12,7 +12,7 @@ The card is presentational: the caller owns the quota data (a live document read
 
 - **Remaining count** — a `vaadin-badge` states how many units are left: green while units remain, orange during the grace window, red once the quota is exhausted.
 - **Used share** — a `vaadin-progress-bar` with *"X of Y surveys used."* (`noun` names the unit) when the quota document's `added` ledger knows the plan's total.
-- **Call to action** — once the quota is exhausted the card explains how long you can still publish surveys to production (the grace window) or asks you to buy more quota. Without a quota document it asks you to contact support.
+- **Call to action** — once the quota is exhausted the card explains that one survey is waiting to be paid for and how long is left to settle it (the grace window), or asks you to buy more quota. Without a quota document it asks you to contact support.
 - **Loading** — an indeterminate bar with *"Checking survey quota…"* while the survey app's live read is in flight.
 
 ## Properties
@@ -21,7 +21,7 @@ The card is presentational: the caller owns the quota data (a live document read
 | --- | --- |
 | `remaining` | The units left on the plan; `undefined` when no quota document is configured |
 | `added` | The quota document's purchase ledger, used to compute the used share |
-| `graceUntil` | The grace deadline the redemption opened, when the quota was exhausted |
+| `graceUntil` | The grace deadline the redemption opened when the quota crossed below zero |
 | `loaded` | `false` while the caller's read is still in flight (shows the loading state) |
 | `heading` | The card title (default: *"Survey quota"*) |
 | `noun` | The metered unit's singular used in the copy (default: *"survey"*) |
