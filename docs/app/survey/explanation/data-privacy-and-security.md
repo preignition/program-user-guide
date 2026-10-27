@@ -41,6 +41,16 @@ Plan around three consequences:
 
 To mark a question or section anonymous, open it with **Advanced Mode** enabled and switch on **Anonymous** under *Anonymous Settings*. See [Exporting Survey Data](../how-to/exporting-survey-data.md) for the download steps.
 
+## Invitation Records
+
+Sending a survey to a list changes what the organiser can see, so it is worth stating exactly what an invitation records.
+
+A team's **audience** is a reusable address book: one recipient per person per team, with the address, an optional name, language and external id. The team is the controller of that list and confirms a lawful basis and permission for it before importing (the import warranty). The platform processes the list only to send the survey and its reminders; it never uses audience addresses for its own marketing or profiling.
+
+An **invitation** records status, not answers. For each recipient it stores a masked address, a language, status timestamps (sent, delivered, opened, started, submitted, bounced, unsubscribed, complained, failed) and reminder counts. The full address and the unique link live in a separate server-only record. No invitation id, token, address, audience id or actor id is written into a response document, an export or a dataset: the organiser sees *that* someone submitted, never *which answers* are theirs. The Progress table and its status CSV show masked addresses only.
+
+An unsubscribe, a complaint or a hard bounce adds the address's keyed hash to a customer-wide **suppression list**, so a later survey cannot re-contact someone who opted out. The list holds no plaintext address, survives the survey's or audience's deletion, and only a superadmin can remove an entry (with an audit record). Invitations are survey data: purging a survey deletes its runs, invitations and links, while the audience and the suppression list remain until the team or customer removes them.
+
 ## Security Architecture
 
 Accessible Surveys is built on enterprise-grade infrastructure designed to protect data at rest and in transit.
