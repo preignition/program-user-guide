@@ -1,5 +1,5 @@
 ---
-description: What you can see and do on the Subscription page of the Customer Portal.
+description: What you can do on the Subscription page of the Customer Portal.
 ---
 
 # Subscription
@@ -29,7 +29,7 @@ The Subscription, Invoice and Payment tabs have an **Access Billing Portal** but
 
 ## Status banner
 
-A banner above the tabs appears only when something needs attention. It is hidden while every subscription is active or trialing.
+A banner above the tabs appears only when something needs attention. It is hidden while a subscription is active or trialing.
 
 - **Trial ending**: the banner says when the trial ends — in days when more than three days remain, otherwise in hours. If there is no payment method on file, use **Setup Payment (bank)** or **Setup Payment (card)** to add one in Stripe. If a payment method is already on file, billing starts when the trial ends.
 - **Payment problem**: when a subscription is not active or trialing, the banner says payment could not be processed. Open the **Billing Portal** to update the payment method.
