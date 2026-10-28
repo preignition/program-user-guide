@@ -83,7 +83,6 @@ Generating links, managing survey batches, configuring respondent accounts, and 
 
 ## 5. Analytics & Export
 
-- [How to send invitations to a team audience](./send-invitations.md)
 - [How to analyze survey data](./survey-analytics.md) - *in progress*
 - [How to export survey data](./exporting-survey-data.md) - *in progress*
 - [How to export analytics charts](./exporting-analytics-charts.md)
