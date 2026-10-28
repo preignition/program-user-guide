@@ -71,6 +71,7 @@ Adding multilingual support to your survey, translating forms, and using import/
 Generating links, managing survey batches, configuring respondent accounts, and analyzing or exporting survey data.
 
 - [How to publish and distribute a survey](./publishing-a-survey.md)
+- [How to send invitations to a team audience](./send-invitations.md)
 - [How to configure redirection after completing survey](./configure-redirection.md)
 - [How to fill-in surveys on behalf of other respondents](./filling-in-surveys-on-behalf-of-others.md) - *in progress*
 
@@ -82,6 +83,7 @@ Generating links, managing survey batches, configuring respondent accounts, and 
 
 ## 5. Analytics & Export
 
+- [How to send invitations to a team audience](./send-invitations.md)
 - [How to analyze survey data](./survey-analytics.md) - *in progress*
 - [How to export survey data](./exporting-survey-data.md) - *in progress*
 - [How to export analytics charts](./exporting-analytics-charts.md)

@@ -4,14 +4,76 @@ description: Reference documentation for the survey's email configuration.
 
 # Email
 
-The **Email** page configures the emails a survey sends to its respondents: the submission confirmation, the reminders, and the follow-up emails you send by hand once the data has been analysed — their content, the schedule reminders follow, and how long a consent is kept. It is a configuration page: no recipient list is imported or managed here, and no invitations are sent from it.
+The **Email** page configures the emails a survey sends to its respondents: the **invitation** and **reminder** emails sent to a team audience, the submission confirmation, the opt-in reminders for unsubmitted forms, and the follow-up emails you send by hand once the data has been analysed — their content, the schedule reminders follow, and how long a consent is kept. It is a configuration page: no recipient list is imported or managed here, and no invitation run is launched from it (only a single preview test email to the signed-in editor).
 
 <figure>
   <img src="./assets/email-auto.png" alt="The survey email configuration page">
   <figcaption>The Email page, in advanced mode.</figcaption>
 </figure>
 
-The page is organised in tabs: **Purposes** (the survey-wide default), one tab per purpose the survey's email fields carry — a purpose no field uses has nothing to configure, so it has no tab — **Account email** when the form has an Account Email field, and **Advanced** (consent retention, sender and preview). The content editors show one translation at a time; the language selector above them switches it, and every language has its own subject and body.
+The page is organised in tabs: **Purposes** (the survey-wide default for email fields), **Invitation** (the email and reminder templates sent when inviting a team audience), one tab per purpose the survey's email fields carry — a purpose no field uses has nothing to configure, so it has no tab — **Account email** when the form has an Account Email field, and **Advanced** (consent retention, sender and preview). The content editors show one translation at a time; the language selector above them switches it, and every language has its own subject and body.
+
+## Invitation and Reminder Emails
+
+The **Invitation** tab configures the messages sent when you distribute the survey to a [team audience](../../../../customer/reference/team/audiences.md) from [Share → Distribute](../distribute/index.md#invitations).
+
+<figure>
+  <img src="../../../how-to/assets/send-invitations/email-invitation-full-auto.png" alt="The Invitation tab on the Email page">
+  <figcaption>The Invitation tab showing the language selector, invitation email editor, reminder email editor, and Send test action.</figcaption>
+</figure>
+
+### Invitation Email
+
+What each invited recipient receives with their unique survey link (`/v2/{surveyId}/i/{token}`):
+
+- **Language:** Selected via the **Language** dropdown when the survey has multiple languages enabled. Each language stores its own subject (`email.invitation.<lang>.subject`) and body (`email.invitation.<lang>.body`). A recipient whose preferred language has no invitation content receives the survey's primary language; the send dialog reports how many recipients fall back.
+- **Subject:** Plain-text subject line (up to 200 characters).
+- **Body:** Markdown-formatted message body with a live **Preview** tab.
+
+### Merge Fields and Validation
+
+Both the subject and body support the following placeholders:
+
+| Merge Field | Required | Resolved Value |
+| :--- | :--- | :--- |
+| `{{link}}` | **Yes** | The recipient's unique invitation URL (`/v2/{surveyId}/i/{token}`). |
+| `{{name}}` | No | The recipient's display name from the team audience record. |
+| `{{survey_title}}` | No | The survey's title. |
+| `{{organiser}}` | No | The team's display name. |
+
+Validation runs continuously on both the invitation and reminder templates:
+
+- Missing `{{link}}` in the invitation email displays an error (`The body needs {{link}}.`) and blocks sending an invitation run from **Distribute**.
+- Any unrecognised `{{placeholder}}` displays an error (`Unknown placeholder(s): ...`) and blocks sending.
+
+### Reminder Email (for Invitations)
+
+Below the invitation editor, **Reminder email** (`email.invitationReminder.<lang>`) defines the message sent to invited recipients who have not yet submitted:
+
+- If you provide a custom **Subject** and **Body**, scheduled and manual invitation reminders use that template.
+- If you leave **Reminder email** empty, the platform automatically reuses the invitation email with a `Reminder N of M:` prefix on the subject line and a `This is reminder N of M from <organiser>.` reason line.
+
+### Mandatory Platform Footer and Sender
+
+Every invitation and reminder email automatically appends a mandatory platform footer that cannot be removed:
+
+- **Reason line:** Identifies which team invited the recipient (`<organiser> invited you to take part in this survey.`).
+- **Privacy policy link:** Links to the platform privacy notice explaining how invitation records are handled.
+- **One-click unsubscribe:** A unique link that records an organization-wide suppression for that address and immediately stops all future invitations and reminders from the customer.
+
+Emails are sent from the platform's domain using the team name as the display name and a team admin's address as the default `Reply-To`. Both can be overridden on the **Advanced** tab.
+
+### Send Test
+
+Clicking **Send test** (`sendInvitationTest`) at the bottom of the **Invitation** tab sends a rendered preview of the currently selected language's invitation email to the email address of the signed-in editor.
+
+<figure>
+  <img src="../../../how-to/assets/send-invitations/email-test-sent-auto.png" alt="Send test button and Test invitation sent notification">
+  <figcaption>Sending a test invitation to the signed-in editor's address.</figcaption>
+</figure>
+
+- The recipient address is resolved on the server from the caller's authenticated account.
+- It creates no invitation run, generates no live respondent token, and does not alter any audience or progress counters.
 
 ## Email Purposes
 

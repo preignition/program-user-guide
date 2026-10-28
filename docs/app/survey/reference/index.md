@@ -13,7 +13,9 @@ It is structured around the natural lifecycle and main interfaces of managing a 
 - **[Test](./test/index.md)**
   Descriptions of the simulation tools, interface previews, and validation logic used to test a survey prior to deployment.
 - **[Share](./share/index.md)**
-  Comprehensive configuration details for making your survey live. Covers publishing version control, generating distribution links, configuring respondent access rights, scheduling batches, integrating webhooks, and defining post-survey redirection.
+  Comprehensive configuration details for making your survey live. Covers publishing version control, generating distribution links, sending audience invitations, configuring respondent emails and access rights, scheduling batches, integrating webhooks, and defining post-survey redirection.
+- **[Analyze — Progress](./analyze/progress.md)**
+  Technical reference for the invitation Progress tab: run selector cards, funnel and rate counters, masked recipient table, status CSV download, and reminder actions.
 
 Other reference content includes:
 

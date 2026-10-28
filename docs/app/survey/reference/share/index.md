@@ -17,10 +17,11 @@ The **Share** section is your hub for managing the lifecycle of your survey. Fro
 
 - [Status](./status/index.md) - Check if your survey is open or closed.
 - [Publish](./publish/index.md) - Push updates to the live version.
-- [Distribute](./distribute/index.md) - Get links and QR codes.
+- [Distribute](./distribute/index.md) - Get links, QR codes, and send invitations to a team audience.
 - [Account Type](./account-type/index.md) - Manage account settings.
 - [Redirection](./redirection/index.md) - Configure redirection settings.
 - [Access](./access/index.md) - Manage user permissions.
+- [Email](./email/index.md) - Configure invitation emails, confirmations, reminders, and follow-ups.
 - [Batch](./batch/index.md) - Group responses and schedule availability.
 - [Campaign](./campaign/index.md) - Track how respondents are referred to your survey.
 - [Webhooks](./webhook/index.md) - Configure integrations.

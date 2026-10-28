@@ -98,3 +98,13 @@
 - [app/app-survey/logic/expression-readonly.ts](../../../../../app/app-survey/logic/expression-readonly.ts): Read-only `a11y-logic-expression` renderer displaying expression tokens with `a11y-logic-identifier` chips.
 - [app/app-survey/src/page/edit/design/expression-delete.ts](../../../../../app/app-survey/src/page/edit/design/expression-delete.ts): Confirmation dialog and soft-delete flow for unused expressions.
 - [app/app-survey/src/page/edit/design/restore.ts](../../../../../app/app-survey/src/page/edit/design/restore.ts): Restore page integration allowing soft-deleted expressions to be recovered.
+
+## Sending Invitations to a Team Audience - send-invitations
+
+- [app/app-customer/src/page/team/customer-team-audiences.ts](../../../../../app/app-customer/src/page/team/customer-team-audiences.ts): Team Settings → Audiences page (`customer-team-audiences`) — audience cards, CSV upload zone, and recipient grid.
+- [app/app-customer/src/entity/audience/audience-import-dialog.ts](../../../../../app/app-customer/src/entity/audience/audience-import-dialog.ts): CSV import dialog (`customer-audience-import-dialog`) — dry-run preview counts, column mapping, error CSV export, and warranty acceptance.
+- [app/app-survey/src/page/edit/deploy/message.ts](../../../../../app/app-survey/src/page/edit/deploy/message.ts): Survey Email page (`app-survey-deploy-message`) — the Invitation tab, merge field validation, reminder email editor, and `Send test` action.
+- [app/app-survey/src/page/edit/deploy/invitation-composer.ts](../../../../../app/app-survey/src/page/edit/deploy/invitation-composer.ts): Share → Distribute Invitations section (`app-survey-invitation-composer`) — audience selector, survey access mode, reminder schedule, and `Review and send` confirmation dialog.
+- [app/app-survey/src/page/analyze/progress.ts](../../../../../app/app-survey/src/page/analyze/progress.ts): Analytics → Progress tab (`app-survey-progress`) — run selector cards, funnel and rate `lapp-stat` tiles, `Load details` masked recipient table, status CSV download, and reminder/resend/reissue actions.
+- [lit-app/schema/customer/audience.ts](../../../../../lit-app/schema/customer/audience.ts): Audience and recipient schemas, canonical CSV headers, email masking, import warranty, and `AUDIENCE_LIMITS`.
+- [lit-app/schema/survey/invitation.ts](../../../../../lit-app/schema/survey/invitation.ts): Invitation run and event schemas, merge fields (`INVITATION_MERGE_FIELDS`), funnel counters, and rate formulas.

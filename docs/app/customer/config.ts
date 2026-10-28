@@ -74,6 +74,7 @@ function getSidebar() {
             { text: 'Presentation', link: `presentation.md` },
             { text: 'Members', link: `members.md` },
             { text: 'Communication', link: `communication.md` },
+            { text: 'Audiences', link: `audiences.md` },
             { text: 'Channels', link: `channels.md` },
             { text: 'API Keys', link: `api-keys.md` },
             { text: 'Danger Zone', link: `danger-zone.md` }

@@ -73,8 +73,67 @@ Pre-select accessibility modes to be automatically enabled when a respondent ope
 
 Multiple accessibility modes can be combined in the same link.
 
+## Invitations
+
+The **Invitations** section (`app-survey-invitation-composer`) at the bottom of the **Distribute** page distributes the survey by email to a reusable [team audience](../../../../customer/reference/team/audiences.md), generating a unique link (`/v2/{surveyId}/i/{token}`) for each recipient.
+
+<figure>
+  <img src="../../../how-to/assets/send-invitations/distribute-invitations-auto.png" alt="The Invitations composer on the Distribute page">
+  <figcaption>The Invitations composer showing the Audience selector, Survey access radio group, Reminders schedule, and the Ready to send summary panel.</figcaption>
+</figure>
+
+### Prerequisites
+
+Before the composer becomes active:
+
+1. **Invitation email content:** The survey's [Email → Invitation](../email/index.md#invitation-and-reminder-emails) tab must have a non-empty subject, body, and the `{{link}}` placeholder in the survey's primary language. Otherwise, the section displays a warning linking to the Email page.
+2. **Team audience:** The survey's team must have at least one active audience in **Team Settings → Audiences**.
+
+### Configuration Controls
+
+| Control | Options / Default | Behavior |
+| :--- | :--- | :--- |
+| **Audience** | Active team audiences | Selects which audience to invite and displays its description and recipient count. Changing the selection triggers a server preview (`previewInvitationRun`). |
+| **Refresh counts** | Button | Re-runs the server preview against the currently selected audience. |
+| **Survey access** | **Open** *(default)* / **Invitation only** | **Open:** Both invitation links and the public survey link accept submissions. **Invitation only:** Requires a valid invitation token (`/v2/{surveyId}/i/{token}`) to submit. |
+| **Reminders** | `No reminders`, `1 reminder`, `2 reminders` *(default)*, `3 reminders` | Number of automated reminders to send to recipients who have not yet submitted. |
+| **Reminder N after (days)** | Default `3` and `7` days | Calendar days after the previous send (initial invitation for Reminder 1; previous reminder for Reminder 2 and 3), dispatched at the same UTC time of day. |
+
+::: info Participation Gate vs. Content Secrecy
+**Invitation only** gates survey submission to holders of a valid invitation link, but the published survey build itself remains public. Opening the public URL on an invitation-only survey informs the visitor that an invitation is required.
+:::
+
+### Ready to Send Summary and Exclusions
+
+The **Ready to send** panel displays the server-computed dry-run breakdown for the selected audience:
+
+- **Invited (`eligible`):** Active recipients in the audience who will receive an invitation in this run.
+- **Suppressed (`suppressed`):** Recipients on the customer-wide suppression list (prior unsubscribe, spam complaint, or hard bounce) — automatically excluded.
+- **Already invited (`alreadyInvited`):** Recipients who have already been invited to this survey in an active (non-cancelled) run — automatically excluded so re-sending to an updated audience only invites new members.
+- **Deselected (`excluded`):** Recipients excluded from the run.
+
+If any eligible recipients have a preferred language for which no translation exists on the **Email → Invitation** tab, a warning banner notes how many recipients will fall back to the survey's primary language.
+
+### Review and Send Dialog
+
+Clicking **Review and send** opens the **Send invitations?** confirmation dialog summarizing the exact number of recipients to be emailed, the audience name, the excluded suppressed and already-invited counts, and the mandatory platform footer notice.
+
+<figure>
+  <img src="../../../how-to/assets/send-invitations/distribute-review-auto.png" alt="The Send invitations confirmation dialog">
+  <figcaption>The confirmation dialog shown before creating and sending an invitation run.</figcaption>
+</figure>
+
+Confirming with **Send** executes two server actions in sequence:
+
+1. `createInvitationRun`: Freezes the eligible recipient set into a new run document (`app/data/survey/{surveyId}/invitationRun/{runId}`), generates unique tokens, and sets the access mode and reminder schedule. Later edits to the team audience do not affect the frozen run.
+2. `sendInvitationRun`: Dispatches the initial batch of emails (up to the 20,000 emails/day team limit; any remainder is deferred and can be sent from Progress) and redirects to [Analytics → Progress](../../analyze/progress.md).
+
 ## Related Content
 
+- [How to Send Invitations to a Team Audience](../../../how-to/send-invitations.md) — End-to-end guide from audience import to progress tracking
+- [Email Configuration](../email/index.md) — Writing invitation and reminder emails and sending test previews
+- [Invitation Progress](../../analyze/progress.md) — Monitoring the invitation funnel, recipient statuses, and reminders
+- [Team Audiences](../../../../customer/reference/team/audiences.md) — Managing reusable team recipient lists
 - [Campaigns & UTM Tracking](../campaign/index.md) — Creating and managing marketing campaigns
 - [Advanced Distribution Settings](./advanced.md) — Custom tracking links and campaign selector in Advanced Mode
 - [Publishing a Survey](../../../how-to/publishing-a-survey.md) — Step-by-step guide to building and sharing versions

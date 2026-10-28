@@ -98,6 +98,7 @@ function getSidebar() {
           collapsed: true,
           items: [
             { text: "Publish a survey", link: `publishing-a-survey.md` },
+            { text: "Send invitations to a team audience", link: `send-invitations.md` },
             { text: "Create alias survey links", link: `creating-alias.md` },
             { text: "Use survey batches", link: `using-batches.md` },
             {
@@ -173,6 +174,12 @@ function getSidebar() {
             { text: "Webhooks", link: `webhook/index.md` },
             { text: "Terms", link: `terms/index.md` },
           ],
+        },
+        {
+          text: "Analyze Survey",
+          collapsed: true,
+          base: `${root}/reference/analyze/`,
+          items: [{ text: "Progress", link: `progress.md` }],
         },
         {
           text: "Markdown Reference",

@@ -12,6 +12,7 @@ This section provides technical and descriptive information about the configurat
 - [Presentation Settings](./presentation.md)
 - [Team Members](./members.md)
 - [Communication Settings](./communication.md)
+- [Team Audiences](./audiences.md)
 - [Channels](./channels.md)
 - [API Keys](./api-keys.md)
 - [Danger Zone](./danger-zone.md)
