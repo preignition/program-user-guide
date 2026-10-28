@@ -1,5 +1,5 @@
 ---
-description: Catch broken logic, missing translations, accessibility issues, and unclear wording before you publish, manage every logical expression from one place, and stay in touch with respondents through privacy-first confirmations, reminders, and follow-ups.
+description: Catch broken logic, missing translations, accessibility issues, and unclear wording before you publish, manage every logical expression from one place, invite reusable team audiences with unique links and live progress tracking, and stay in touch with respondents through privacy-first confirmations, reminders, and follow-ups.
 ---
 
 # Catch Issues Early, Stay in Touch Effortlessly
@@ -7,9 +7,14 @@ description: Catch broken logic, missing translations, accessibility issues, and
 **Date:** 2026-10-20
 **Version:** 2.2.0
 
-Publishing a survey usually comes with two nagging questions: *Did I miss a broken condition, an accessibility barrier, or an untranslated question?* and *How do I follow up with respondents without collecting a spreadsheet of email addresses?*
+Publishing a survey usually comes with two nagging questions: *Did I miss a broken condition, an accessibility barrier, or an untranslated question?* and *How do I invite a contact list or follow up with respondents without linking their answers to their email addresses?*
 
-This release answers both — and makes complex survey logic much easier to maintain. A new **Review** workspace checks your survey from top to bottom across structure, logic, translation, accessibility, and content quality and lets you fix issues with a click, the new **Expressions** page gives you a single place to inspect and clean up every logical rule in your form, and the new **Email** tab under **Share** handles confirmations, gentle reminders, and follow-ups with respondent consent and automatic data expiry built right in.
+This release answers both — and makes complex survey logic much easier to maintain:
+
+* A new **Review** workspace checks your survey from top to bottom across structure, logic, translation, accessibility, and content quality and lets you fix issues with a click.
+* New **Team Audiences & Survey Invitations** let you import a reusable contact list in **Team Settings → Audiences**, compose and test multilingual invitation emails on **Share → Email**, distribute unique links (`/v2/{surveyId}/i/{token}`) from **Share → Distribute**, and track delivery, completion rates, and reminders in **Analytics → Progress** — without ever linking a respondent's answers to their address.
+* The new **Email** tab under **Share** also handles submission confirmations, opt-in reminders, and follow-ups with respondent consent and automatic data expiry built right in.
+* The new **Expressions** page gives you a single place to inspect and clean up every logical rule in your form.
 
 ---
 
@@ -103,16 +108,69 @@ When a survey has dozens of visibility rules and validation conditions, keeping 
 
 ---
 
+## 4. Team Audiences, Survey Invitations & Live Progress Tracking
+
+When you already hold a list of people you have permission to contact — such as a research panel, a member directory, or workshop participants — you can now manage that list once at the team level, send each person a unique survey link, and track who has responded without compromising the anonymity of their answers.
+
+### Build reusable lists in Team Settings → Audiences
+
+Create named audiences in the Customer Portal and import recipients from a CSV file (`email`, plus optional `name`, `language`, and `external_id` columns, up to 10,000 rows and 5 MB). Each person is stored once per team even when they belong to several audiences, and the import preview shows created, updated, unchanged, suppressed, and invalid counts before you commit.
+
+<figure>
+  <img src="../app/survey/how-to/assets/send-invitations/audience-auto.png" alt="Team Audiences page showing audience cards, CSV upload drop zone, and the recipient grid.">
+  <figcaption>Manage reusable recipient lists in Team Settings → Audiences, with CSV import previews and column filters.</figcaption>
+</figure>
+
+### Write and test your invitation on Share → Email
+
+The new **Invitation** tab on **Share → Email** lets you write a plain-text subject and Markdown body for each language in your survey, using `{{link}}` (required), `{{name}}`, `{{survey_title}}`, and `{{organiser}}` merge fields, plus an optional custom **Reminder email**. Click **Send test** at any time to preview the rendered email in your own inbox without creating an invitation record.
+
+<figure>
+  <img src="../app/survey/how-to/assets/send-invitations/email-invitation-full-auto.png" alt="The Invitation tab on the Email page with invitation and reminder editors and the Send test button.">
+  <figcaption>Write multilingual invitation and reminder emails and send yourself a test preview from Share → Email.</figcaption>
+</figure>
+
+### Distribute to an audience and choose your access mode
+
+In **Share → Distribute**, the new **Invitations** section lets you pick an audience, choose between **Open** (the public link also accepts responses) and **Invitation only** (a valid `/v2/{surveyId}/i/{token}` link is required to submit), schedule up to three automated reminders, and review the exact eligible, suppressed, and already-invited counts before sending.
+
+<figure>
+  <img src="../app/survey/how-to/assets/send-invitations/distribute-invitations-auto.png" alt="The Invitations composer on Share → Distribute.">
+  <figcaption>Choose an audience, access mode, and reminder schedule, then review the recipient breakdown before sending.</figcaption>
+</figure>
+
+### Follow delivery and participation in Analytics → Progress
+
+Once sent, the new **Analytics → Progress** tab tracks every invitation wave in real time:
+
+* **Funnel and rates:** See `Invited`, `Sent`, `Delivered`, `Link opened`, `Started`, and `Submitted` counts alongside `Response rate`, `Completion rate`, `Drop-off`, `Bounced`, `Unsubscribed`, `Complained`, and `Failed` tiles.
+* **Masked recipient details:** Click **Load details** to filter recipients by status or language, download a masked status CSV, send a manual reminder (`Remind`), re-send an invitation (`Resend`), or replace a compromised link (`Reissue link`).
+* **Strict anonymity boundary:** Organizers see *whether* an invited person responded, never *which answers* are theirs — no invitation ID, token, or email address ever enters a response document or dataset export.
+
+<figure>
+  <img src="../app/survey/how-to/assets/send-invitations/progress-details-full-auto.png" alt="The Analytics Progress tab showing the run funnel, rates, and masked recipient details table.">
+  <figcaption>Monitor the invitation funnel, completion rates, and masked per-recipient statuses in Analytics → Progress.</figcaption>
+</figure>
+
+* **Learn more:** [How to Send Invitations to a Team Audience](../app/survey/how-to/send-invitations.md) · [Team Audiences Reference](../app/customer/reference/team/audiences.md) · [Distribute Invitations Reference](../app/survey/reference/share/distribute/index.md#invitations) · [Invitation Progress Reference](../app/survey/reference/analyze/progress.md)
+
+---
+
 ## Good to Know
 
 * **You stay in control of AI:** AI review only runs when you click **Run review**, and it never edits your survey behind your back. Where AI credits are enabled, the panel shows the cost (1 credit per run) before you start.
 * **Always up to date:** If you edit your survey after running a review, the panel lets you know your findings are from an earlier draft.
-* **Safe testing:** Test submissions never trigger emails or create consent records.
-* **Updated privacy policy:** Because the platform privacy policy now covers survey emails, consent retention, and data purging, returning respondents may be prompted to re-confirm consent on their next visit.
+* **Safe testing:** Test submissions never trigger emails or create consent records, and **Send test** on the Invitation tab sends a preview only to the signed-in editor without creating an invitation.
+* **Organization-wide suppression:** An unsubscribe, spam complaint, or hard bounce on an invitation adds a keyed hash of the address to a customer-wide suppression list that survives survey or audience deletion, ensuring people who opt out are never re-contacted.
+* **Updated privacy policy:** Because the platform privacy policy now covers survey emails, invitation records, consent retention, and data purging, returning respondents may be prompted to re-confirm consent on their next visit.
 
 ## Related Documentation
 
+* [How to Send Invitations to a Team Audience](../app/survey/how-to/send-invitations.md)
+* [Team Audiences Reference](../app/customer/reference/team/audiences.md)
 * [Email Reference](../app/survey/reference/share/email/index.md)
+* [Distribute Reference](../app/survey/reference/share/distribute/index.md)
+* [Invitation Progress Reference](../app/survey/reference/analyze/progress.md)
 * [Review Reference](../app/survey/reference/build/review.md)
 * [Sharing Logical Expressions](../app/survey/how-to/sharing-logical-expressions.md)
 * [Compose Reference](../app/survey/reference/build/compose/index.md)
