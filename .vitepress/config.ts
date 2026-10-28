@@ -47,6 +47,15 @@ export default defineConfig({
         isCustomElement: (tag) => tag.includes('-')
       }
     }
+  },
+  markdown: {
+    config(md) {
+      const defaultCodeInline = md.renderer.rules.code_inline!
+      md.renderer.rules.code_inline = (tokens, idx, options, env, self) => {
+        tokens[idx].attrSet('v-pre', '')
+        return defaultCodeInline(tokens, idx, options, env, self)
+      }
+    }
   }
   // additionalConfig(path) {
   //   return [{
