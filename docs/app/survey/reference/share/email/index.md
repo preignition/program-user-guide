@@ -29,6 +29,7 @@ What each invited recipient receives with their unique survey link (`/v2/{survey
 - **Language:** Selected via the **Language** dropdown when the survey has multiple languages enabled. Each language stores its own subject (`email.invitation.<lang>.subject`) and body (`email.invitation.<lang>.body`). A recipient whose preferred language has no invitation content receives the survey's primary language; the send dialog reports how many recipients fall back.
 - **Subject:** Plain-text subject line (up to 200 characters).
 - **Body:** Markdown-formatted message body with a live **Preview** tab.
+- **Links:** A link is delivered exactly as written. The platform disables the mail provider's click tracking, so the recipient receives the invitation URL (`/v2/{surveyId}/i/{token}`) — in the HTML and the plain-text part — instead of a tracking redirect.
 
 ### Merge Fields and Validation
 
