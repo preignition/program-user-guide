@@ -108,21 +108,22 @@ Once your invitation email is ready, launch the invitation run from the **Distri
 
 1. In the **Share** navigation drawer, click **Distribute** and scroll to the **Invitations** section.
 2. Select your target list from the **Audience** dropdown (for example, `Policy Impact Lab panel`). Click **Refresh counts** at any time to re-evaluate the audience.
-3. Choose the **Survey access** mode:
+3. Under **Reply-to**, choose the team member who should receive replies to the invitation, or leave it blank to use the team owner's email address. Choosing a member stores that address with the invitation run, so later changes to the team membership do not rewrite it.
+4. Choose the **Survey access** mode:
    - **Open:** Both unique invitation links and the public survey link accept responses.
    - **Invitation only:** Only respondents opening a valid invitation link can submit the survey.
-4. Under **Reminders**, choose how many automated reminders to send (`No reminders`, `1 reminder`, `2 reminders`, or `3 reminders`) and set the delay in days after the previous send (for example, `3` days for Reminder 1 and `7` days for Reminder 2).
-5. Check the **Ready to send** summary panel on the right, which breaks down the audience into:
+5. Under **Reminders**, choose how many automated reminders to send (`No reminders`, `1 reminder`, `2 reminders`, or `3 reminders`) and set the delay in days after the previous send (for example, `3` days for Reminder 1 and `7` days for Reminder 2).
+6. Check the **Ready to send** summary panel on the right, which breaks down the audience into:
    - **Invited:** Eligible active recipients who have not yet been invited to this survey.
    - **Suppressed:** Recipients on the organization-wide suppression list (excluded).
    - **Already invited:** Recipients who already received an invitation in an earlier active run of this survey (excluded).
    - **Deselected:** Excluded memberships.
-6. Click **Review and send**.
-7. In the **Send invitations?** confirmation dialog, review the final recipient count, exclusion summary, and language fallback notice, then click **Send**.
+7. Click **Review and send**.
+8. In the **Send invitations?** confirmation dialog, review the final recipient count, exclusion summary, and language fallback notice, then click **Send**.
 
 <figure>
   <img src="./assets/send-invitations/distribute-invitations-auto.png" alt="The Invitations composer on the Share Distribute page">
-  <figcaption>Select the audience, access mode, and reminder schedule, then check the Ready to send counts.</figcaption>
+  <figcaption>Select the audience, reply-to member, access mode, and reminder schedule, then check the Ready to send counts.</figcaption>
 </figure>
 
 <figure>

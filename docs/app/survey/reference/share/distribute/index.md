@@ -79,7 +79,7 @@ The **Invitations** section (`app-survey-invitation-composer`) at the bottom of 
 
 <figure>
   <img src="../../../how-to/assets/send-invitations/distribute-invitations-auto.png" alt="The Invitations composer on the Distribute page">
-  <figcaption>The Invitations composer showing the Audience selector, Survey access radio group, Reminders schedule, and the Ready to send summary panel.</figcaption>
+  <figcaption>The Invitations composer showing the Audience selector, Reply-to selector, Survey access radio group, Reminders schedule, and the Ready to send summary panel.</figcaption>
 </figure>
 
 ### Prerequisites
@@ -95,6 +95,7 @@ Before the composer becomes active:
 | :--- | :--- | :--- |
 | **Audience** | Active team audiences | Selects which audience to invite and displays its description and recipient count. Changing the selection triggers a server preview (`previewInvitationRun`). |
 | **Refresh counts** | Button | Re-runs the server preview against the currently selected audience. |
+| **Reply-to** | **Team owner** *(blank)* or a member of the survey team | The address replies to the invitation go to. Leaving it blank uses the team owner's email address. Choosing a member freezes that member's address with the run, so a later team change does not rewrite it. |
 | **Survey access** | **Open** *(default)* / **Invitation only** | **Open:** Both invitation links and the public survey link accept submissions. **Invitation only:** Requires a valid invitation token (`/v2/{surveyId}/i/{token}`) to submit. |
 | **Reminders** | `No reminders`, `1 reminder`, `2 reminders` *(default)*, `3 reminders` | Number of automated reminders to send to recipients who have not yet submitted. |
 | **Reminder N after (days)** | Default `3` and `7` days | Calendar days after the previous send (initial invitation for Reminder 1; previous reminder for Reminder 2 and 3), dispatched at the same UTC time of day. |

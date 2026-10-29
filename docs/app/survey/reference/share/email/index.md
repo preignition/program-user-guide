@@ -61,7 +61,7 @@ Every invitation and reminder email automatically appends a mandatory platform f
 - **Privacy policy link:** Links to the platform privacy notice explaining how invitation records are handled.
 - **One-click unsubscribe:** A unique link that records an organization-wide suppression for that address and immediately stops all future invitations and reminders from the customer.
 
-Emails are sent from the platform's domain using the team name as the display name and a team admin's address as the default `Reply-To`. Both can be overridden on the **Advanced** tab.
+Emails are sent from the platform's domain using the team name as the display name and a team admin's address as the default `Reply-To`. The display name and the survey-level reply-to can be overridden on the **Advanced** tab. For an invitation run, the **Reply-to** selector in the [Distribute composer](../distribute/index.md#configuration-controls) chooses a member of the survey team; leaving it blank uses the team owner's email address.
 
 ### Send Test
 

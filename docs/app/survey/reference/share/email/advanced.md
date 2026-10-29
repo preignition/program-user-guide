@@ -19,3 +19,5 @@ Leave a notice empty to use the platform's default wording. Every change to the 
 ## Sender Identity
 
 Emails are sent from the platform's address. By default the sender shows the survey title as its display name, and replies go to the team admin's address. Both can be overridden per survey; custom domains and SMTP are out of scope.
+
+For invitations, the **Reply-to** selector in the **Invitations** composer on the Distribute page chooses any member of the survey team, and that choice is frozen with the run. Leaving it blank uses the team owner's email address. The survey-level reply-to on this page applies to the other survey emails.
