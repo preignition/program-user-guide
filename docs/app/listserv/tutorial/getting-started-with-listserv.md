@@ -23,18 +23,21 @@ Check your email inbox for a verification email. Click the link provided in the 
 
 ## Step 2: Submit a Message via Email
 
-Subscribers can contribute announcements to the channel directly from their standard email client:
+Subscribers can contribute announcements to the channel directly from their standard email client. You must be an **active subscriber** of the channel (channel owners, editors and moderators may also submit):
 
-1. Open your email client (e.g., Outlook, Gmail, Apple Mail).
-2. Compose a new message addressed to the channel email address:
+1. Subscribe first if you have not already: send a message with `SUBSCRIBE` in the subject to the channel address, or use the public subscription form.
+2. Open your email client (e.g., Outlook, Gmail, Apple Mail).
+3. Compose a new message addressed to the channel email address:
    `channel-1@mg.a11ydata.com`
-3. Enter a clear subject line:
+4. Enter a clear subject line:
    `[Announcement] Upcoming Regional Accessibility Workshop`
-4. Type your announcement body and attach relevant documents if needed.
-5. Click **Send**.
+5. Type your announcement body and attach relevant documents if needed.
+6. Click **Send**.
 
 ::: info
 Your submission is automatically received by the Listserv engine, parsed into a draft broadcast, and forwarded to the admin moderation queue. You will receive an automated acknowledgment email confirming receipt.
+
+A message from an address that is not subscribed to the channel is not turned into a draft; the sender receives a reply explaining how to subscribe.
 :::
 
 ---
