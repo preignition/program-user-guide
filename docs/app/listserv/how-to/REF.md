@@ -26,6 +26,12 @@
 - [`app/app-listserv/src/page/admin/broadcast.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/page/admin/broadcast.ts): Admin broadcast list component rendering delivery stats, response counts, and grid row details.
 - [`app/app-listserv/api/src/mailgunLive.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/api/src/mailgunLive.ts): Mailgun webhook handler processing delivery, open, click, and bounce events.
 
+## Importing a Team Audience - importing-a-team-audience.md
+
+- [`app/app-listserv/src/page/admin/subscriber.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/page/admin/subscriber.ts): Admin → Subscribers host for the inline import workspace, preview, warranty, progress/result, transient error report and Import history grid row details.
+- [`app/app-listserv/actionApi/src/audience-import.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/actionApi/src/audience-import.ts): `previewAudienceImport`, `startAudienceImport`, `runAudienceImport`, the decision table, chunk/lease/cursor and the bulk `importUsers` path.
+- [`lit-app/schema/listserv/model/Subscriber.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/lit-app/schema/listserv/model/Subscriber.ts): subscriber identity, the per-channel email guard, the import record and the listserv warranty text/version.
+
 ## Configuring Channel Settings - configuring-channel-settings.md
 
 - [`app/app-listserv/src/page/settings/channel.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/page/settings/channel.ts): Channel Configuration page for setting title, description, admin contact, and rate limits.

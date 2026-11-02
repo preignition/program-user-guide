@@ -39,6 +39,8 @@ How-to guides are **goal-oriented recipes** that provide clear, step-by-step dir
 
 - **[Configuring Channel Settings](./configuring-channel-settings.md)**  
   Configure channel metadata, active translation languages, automatic bounce cleaning thresholds, rate limits, and team access roles.
+- **[Importing a Team Audience](./importing-a-team-audience.md)**  
+  Seed a channel from a team Audience, review the preview, accept the consent warranty, resume a long run, and read the import history.
 
 ---
 

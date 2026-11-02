@@ -43,7 +43,8 @@ function getSidebar() {
         { text: 'Composing Multilingual Broadcasts', link: 'composing-multilingual-broadcasts.md' },
         { text: 'Moderating Submissions', link: 'moderating-community-submissions.md' },
         { text: 'Analyzing Performance', link: 'analyzing-broadcast-performance.md' },
-        { text: 'Configuring Settings', link: 'configuring-channel-settings.md' }
+        { text: 'Configuring Settings', link: 'configuring-channel-settings.md' },
+        { text: 'Importing a Team Audience', link: 'importing-a-team-audience.md' }
       ]
     },
     {
