@@ -17,10 +17,10 @@ The **Audience Import** page lives under **Channel Settings**, which is availabl
 - One import handles at most **10,000 unique recipients**. The picker shows the limit before you start.
 - The import does not send an email to the audience.
 
-## Open the import workspace
+## Open the import dialog
 
 1. Open the channel's **Channel Settings** and choose **Audience Import**.
-2. The import workspace is at the top of the page; the **Import history** sits below it.
+2. Choose **Import a team audience**. The import dialog opens; the **Import history** stays on the page below it.
 
 ## Pick an audience
 
@@ -45,19 +45,19 @@ The preview shows counts only; it does not list addresses.
 2. Tick the checkbox. The **Import** button stays disabled until it is ticked.
 3. Choose **Import N recipients**.
 
-Progress is shown inline. You can leave the page and come back: the import record keeps the progress, and a stale or failed run offers **Resume**.
+Progress is shown in the dialog. You can close it and come back: the import record keeps the progress, and a stale or failed run offers **Resume** when you reopen the dialog.
 
 ## Read the result
 
 The result repeats the counts and adds a skipped breakdown. If any rows failed, download the transient `row,email,reason` error report and fix those rows in the audience. The report is not stored.
 
-The **Import another** button starts again with a clean preview. Finishing an import re-reads the history and opens the newest record's details.
+The **Import another** button starts again with a clean preview; **Done** closes the dialog and returns to the history page.
 
 ## Read the import history
 
 Scroll to **Import history** on the same page. The newest import is first. The columns are When, Audience, Actor, Outcome, Warranty and Status; the Audience and Status columns carry a column filter.
 
-Select a row to expand its details inside the grid: the actor, audience snapshot, warranty version and time, full counts, any failure, and whether it is the latest import. The error report is not kept; it is only available from the workspace that ran the import.
+Select a row to expand its details inside the grid: the actor, audience snapshot, warranty version and time, the full counts and any failure. The error report is not kept; it is only available from the dialog that ran the import.
 
 ## What the import does not do
 
