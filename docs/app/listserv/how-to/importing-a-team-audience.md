@@ -1,5 +1,5 @@
 ---
-description: Import a team Audience into a listserv Channel from Admin → Subscribers, preview the outcome, accept the warranty, and read the import history.
+description: Import a team Audience into a listserv Channel from Channel Settings → Audience Import, preview the outcome, accept the warranty, and read the import history.
 ---
 
 # Import a team audience
@@ -7,7 +7,7 @@ description: Import a team Audience into a listserv Channel from Admin → Subsc
 Use this guide to seed a listserv channel from an existing team **Audience** — the reusable address book in the customer app. The import creates active subscribers in one channel, without re-collecting consent person by person.
 
 ::: info Who can do this
-A channel **owner** or **editor** can run an import. A channel **moderator** can read the import history but cannot start an import.
+The **Audience Import** page lives under **Channel Settings**, which is available to a channel **owner** or **editor**. The import history on the same page honours the channel's owner/editor/moderator read access.
 :::
 
 ## Before you start
@@ -19,9 +19,8 @@ A channel **owner** or **editor** can run an import. A channel **moderator** can
 
 ## Open the import workspace
 
-1. Open the channel's **Admin → Subscribers** page.
-2. Choose **Import audience**.
-3. The import workspace opens in place, above the subscriber table. The **Subscribers** and **Import history** tabs stay visible.
+1. Open the channel's **Channel Settings** and choose **Audience Import**.
+2. The import workspace is at the top of the page; the **Import history** sits below it.
 
 ## Pick an audience
 
@@ -46,20 +45,17 @@ The preview shows counts only; it does not list addresses.
 2. Tick the checkbox. The **Import** button stays disabled until it is ticked.
 3. Choose **Import N recipients**.
 
-Progress is shown inline. You can leave the tab and come back: the import record keeps the progress, and a stale or failed run offers **Resume**.
+Progress is shown inline. You can leave the page and come back: the import record keeps the progress, and a stale or failed run offers **Resume**.
 
 ## Read the result
 
 The result repeats the counts and adds a skipped breakdown. If any rows failed, download the transient `row,email,reason` error report and fix those rows in the audience. The report is not stored.
 
-The buttons are:
-
-- **Import another** — start again with a clean preview.
-- **Done** — return to the subscriber table.
+The **Import another** button starts again with a clean preview. Finishing an import re-reads the history and opens the newest record's details.
 
 ## Read the import history
 
-Open the **Import history** tab. The newest import is first. The columns are When, Audience, Actor, Outcome, Warranty and Status.
+Scroll to **Import history** on the same page. The newest import is first. The columns are When, Audience, Actor, Outcome, Warranty and Status; the Audience and Status columns carry a column filter.
 
 Select a row to expand its details inside the grid: the actor, audience snapshot, warranty version and time, full counts, any failure, and whether it is the latest import. The error report is not kept; it is only available from the workspace that ran the import.
 

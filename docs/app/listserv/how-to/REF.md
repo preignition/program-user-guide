@@ -28,7 +28,7 @@
 
 ## Importing a Team Audience - importing-a-team-audience.md
 
-- [`app/app-listserv/src/page/admin/subscriber.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/page/admin/subscriber.ts): Admin → Subscribers host for the inline import workspace, preview, warranty, progress/result, transient error report and Import history grid row details.
+- [`app/app-listserv/src/page/settings/import.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/page/settings/import.ts): Channel Settings → Audience Import host for the inline import workspace, preview, warranty, progress/result, transient error report and Import history grid row details.
 - [`app/app-listserv/actionApi/src/audience-import.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/actionApi/src/audience-import.ts): `previewAudienceImport`, `startAudienceImport`, `runAudienceImport`, the decision table, chunk/lease/cursor and the bulk `importUsers` path.
 - [`lit-app/schema/listserv/model/Subscriber.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/lit-app/schema/listserv/model/Subscriber.ts): subscriber identity, the per-channel email guard, the import record and the listserv warranty text/version.
 
