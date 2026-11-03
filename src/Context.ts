@@ -1,6 +1,6 @@
 import { Locator, Page } from "@playwright/test"
 import path from "path"
-import { AreaT, ClipT, ContextT, OutlineStyleT } from "./types.ts"
+import { AreaT, ClipT, ContextT, OutlineStyleT, ScreenshotOptionsT } from "./types.ts"
 import { saveScreenshotIfChanged } from "./utils/conditionalScreenshot.ts"
 import { takeAnnotatedScreenshot } from "./utils/takeAnnotatedScreenshot.ts"
 
@@ -87,9 +87,16 @@ export class Context implements ContextT {
    * @param name A name for the screenshot file (without extension)
    * @param padding Optional padding in pixels to include around the element (default: 100)
    * @param maxHeight Optional maximum height for the screenshot (default: Infinity)
+   * @param options Optional outline override or ancestor to highlight
    */
-  async annotatedScreenshot(locator: Locator, name: string, padding: number = 100, maxHeight: number = Infinity) {
-    const { page, outlineStyle } = this
+  async annotatedScreenshot(
+    locator: Locator,
+    name: string,
+    padding: number = 100,
+    maxHeight: number = Infinity,
+    { outlineStyle = this.outlineStyle, highlightAncestor }: ScreenshotOptionsT = {}
+  ) {
+    const { page } = this
     await locator.scrollIntoViewIfNeeded()
     const outputPath = `${this.path}/assets/${this.name ? this.name + '/' : ''}${name}.png`
 
@@ -99,7 +106,29 @@ export class Context implements ContextT {
       outputPath,
       padding,
       outlineStyle,
-      maxHeight
+      maxHeight,
+      highlightAncestor
+    })
+  }
+
+  /**
+   * Takes a screenshot of a drawer menu item or context-menu entry, highlighting
+   * the whole row.
+   *
+   * A `getByText` (or `getByRole('listitem')`) locator resolves inside the row,
+   * so highlighting it directly only outlines the text (and the menu clips the
+   * edges, leaving a stray line). Highlight the enclosing `md-list-item` instead
+   * so the outline rings the whole row. The menu clips anything drawn outside
+   * the row, so the outline is inset.
+   *
+   * @param locator The Playwright locator for the menu label (or its row)
+   * @param name A name for the screenshot file (without extension)
+   * @param padding Optional padding in pixels to include around the row (default: 20)
+   */
+  async annotatedMenuItemScreenshot(locator: Locator, name: string, padding: number = 20) {
+    return this.annotatedScreenshot(locator, name, padding, Infinity, {
+      outlineStyle: { ...this.outlineStyle, outlineOffset: '-4px' },
+      highlightAncestor: 'md-list-item',
     })
   }
 

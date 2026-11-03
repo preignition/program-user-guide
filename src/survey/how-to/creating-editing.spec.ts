@@ -178,7 +178,7 @@ test.describe('Survey Creating & Editing', async () => {
       })
       locator = page.locator('md-list-item')
         .filter({ hasText: 'star' }).getByRole('listitem')
-      await context.annotatedScreenshot(locator, 'step-1-right-click-survey')
+      await context.annotatedMenuItemScreenshot(locator, 'step-1-right-click-survey')
 
     })
 
@@ -193,7 +193,7 @@ test.describe('Survey Creating & Editing', async () => {
       })
       locator = page.locator('md-list-item')
         .filter({ hasText: 'delete survey' }).getByRole('listitem')
-      await context.annotatedScreenshot(locator, 'step-1-right-click-survey')
+      await context.annotatedMenuItemScreenshot(locator, 'step-1-right-click-survey')
       await locator.click()
 
       // ### Step 2: Confirm deletion
@@ -227,7 +227,7 @@ test.describe('Survey Creating & Editing', async () => {
     })
     locator = page.locator('md-list-item').filter({ hasText: 'Add new Section' }).getByRole('listitem')
     // getByLabel('Add new Section').getByRole('listitem')
-    await context.annotatedScreenshot(locator, 'step-B-1-right-click-add-section')
+    await context.annotatedMenuItemScreenshot(locator, 'step-B-1-right-click-add-section')
     // we do not clic to not add a new section , but we need to close the context menu
     // await locator.click()
     await page.locator('md-list-item').filter({ hasText: 'Survey habits' }).getByRole('listitem').press('Escape')
@@ -317,7 +317,7 @@ test.describe('Survey Creating & Editing', async () => {
 
     // ## Step 1: Click on the "Image Library" button in the image library view
     locator = page.getByTestId('page-drawer-menu').getByText('Image Library')
-    await context.annotatedScreenshot(locator, 'step-1-image-library')
+    await context.annotatedMenuItemScreenshot(locator, 'step-1-image-library')
     await locator.click()
 
     // ## Step 2: Click on the "Upload Image" button and fill the details of the image (e.g. name, description, etc.) in the pop-up dialog
@@ -422,7 +422,7 @@ test.describe('Survey Creating & Editing', async () => {
 
     // ## Step 1: Navigate to the access view
     locator = page.getByTestId('page-drawer-menu').getByText('Access')
-    await context.annotatedScreenshot(locator, 'step-1-navigate-to-access-view')
+    await context.annotatedMenuItemScreenshot(locator, 'step-1-navigate-to-access-view')
     await locator.click()
 
     // ## Step 2: Set access rights for different team members by adding their email and selecting the right access level (e.g. read, write, admin)
@@ -497,7 +497,7 @@ test.describe('Survey Creating & Editing', async () => {
     await locator.click({ button: 'right' })
     await page.waitForTimeout(500)
     locator = page.locator('md-list-item').filter({ hasText: 'Expand all' })
-    await context.annotatedScreenshot(locator, 'step-3-right-click-expand-collapse')
+    await context.annotatedMenuItemScreenshot(locator, 'step-3-right-click-expand-collapse')
 
     // ### Step 2: Expand all opens the branch down to the questions; options stay collapsed
     await locator.click()

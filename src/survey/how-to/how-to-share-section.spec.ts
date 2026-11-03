@@ -28,7 +28,7 @@ test.describe("Survey Sharing Section How-To", async () => {
       button: "right",
     });
     locator = page.locator("md-list-item").filter({ hasText: "publish" }).getByRole("listitem");
-    await context.annotatedScreenshot(locator, "step-1-publish-in-context-menu");
+    await context.annotatedMenuItemScreenshot(locator, "step-1-publish-in-context-menu");
     await locator.click();
 
     // ### Step 2: open the dialog and click "Publish" to share the section with other teams in the customer
@@ -76,7 +76,7 @@ test.describe("Survey Sharing Section How-To", async () => {
       .locator("md-list-item")
       .filter({ hasText: "embed shared section" })
       .getByRole("listitem");
-    await context.annotatedScreenshot(locator, "step-2-embed-shared-section-in-context-menu");
+    await context.annotatedMenuItemScreenshot(locator, "step-2-embed-shared-section-in-context-menu");
     await locator.click();
 
     // ### Step 3: Pick the shared section from the library
@@ -116,7 +116,7 @@ test.describe("Survey Sharing Section How-To", async () => {
       button: "right",
     });
     locator = page.locator("md-list-item").filter({ hasText: "unpublish" }).getByRole("listitem");
-    await context.annotatedScreenshot(locator, "step-1-unpublish-in-context-menu");
+    await context.annotatedMenuItemScreenshot(locator, "step-1-unpublish-in-context-menu");
     await locator.click();
 
     // ### Step 2: The confirm dialog explains what unpublishing does — the section
@@ -138,6 +138,6 @@ test.describe("Survey Sharing Section How-To", async () => {
       .locator("md-list-item")
       .filter({ hasText: "publish to customer" })
       .getByRole("listitem");
-    await context.annotatedScreenshot(locator, "step-3-section-team-private-again");
+    await context.annotatedMenuItemScreenshot(locator, "step-3-section-team-private-again");
   });
 });

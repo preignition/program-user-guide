@@ -25,7 +25,7 @@ test.describe("Customer How-To", async () => {
       .locator("md-list-item")
       .filter({ hasText: "Customize the Look and Feel" })
       .getByRole("listitem");
-    await context.annotatedScreenshot(locator, "step-1-open-theme-settings");
+    await context.annotatedMenuItemScreenshot(locator, "step-1-open-theme-settings");
 
     // Step 1: Open the theme gallery and click edit
     locator = page.getByRole("button", { name: "Edit" });

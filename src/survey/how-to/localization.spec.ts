@@ -22,7 +22,7 @@ test.describe('Survey Localization How-To', async () => {
     // ### Step 1: Activate Languages
     // navigate to localizationlocator.click()
     locator = page.locator('md-list-item').filter({ hasText: 'Make Form Multilingual' }).getByRole('listitem')
-    await context.annotatedScreenshot(locator, 'step-1-navigate-to-localization')
+    await context.annotatedMenuItemScreenshot(locator, 'step-1-navigate-to-localization')
     await locator.click()
 
 

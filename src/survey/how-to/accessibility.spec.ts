@@ -46,8 +46,8 @@ test.describe('Survey Accessibility How-To', async () => {
     await initializePage(page, a11yBaseUrl, `/s/edit/survey/${satisfactionSurveyId}/build/behavior`)
 
     // ### Step 1: Navigate to Behavior
-    locator = page.getByTestId('page-drawer-menu')
-    await context.annotatedScreenshot(locator, 'step-1-navigate-to-form-behaviour')
+    locator = page.getByTestId('page-drawer-menu').getByText('Form Behavior')
+    await context.annotatedMenuItemScreenshot(locator, 'step-1-navigate-to-form-behaviour')
 
     // Step 2: Enable different accessibility modes
     locator = page.getByRole('listbox', { name: 'Modes Activated' })

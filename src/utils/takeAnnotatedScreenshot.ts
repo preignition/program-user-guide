@@ -1,4 +1,4 @@
-import { Locator, Page } from '@playwright/test'
+import { ElementHandle, Locator, Page } from '@playwright/test'
 import { saveScreenshotIfChanged } from "./conditionalScreenshot.ts"
 
 type ScreenShotType = {
@@ -12,7 +12,14 @@ type ScreenShotType = {
     outline: string,
     outlineOffset: string,
   },
-  maxHeight?: number
+  maxHeight?: number,
+  /**
+   * CSS selector for an ancestor (or the element itself) to highlight instead
+   * of the locator element, e.g. `'md-list-item'` for a drawer menu row. The
+   * search climbs across shadow roots, so a locator pointing inside a
+   * component's shadow DOM still finds the surrounding row.
+   */
+  highlightAncestor?: string
 }
 /**
  * Highlights an element and takes a cropped screenshot with surrounding context.
@@ -32,30 +39,61 @@ export async function takeAnnotatedScreenshot(
     paddingX,
     paddingY = 30,
     outlineStyle = { outline: '4px solid #bc004b', outlineOffset: '4px' },
-    maxHeight = Infinity
+    maxHeight = Infinity,
+    highlightAncestor
   }: ScreenShotType
 ) {
-  // 1. Inject CSS to highlight the element (e.g., a thick red border)
-  await locator.evaluate((node, outlineStyle) => {
-    // Save original styles if you need to revert them later
-    const host = (node.parentNode as ShadowRoot)?.host as HTMLElement
-    let targetNode = node
-    if (node && node instanceof HTMLButtonElement && host) {
-      targetNode = host
+  // 1. Resolve the element to highlight (and crop around) and inject CSS to
+  // highlight it (e.g., a thick red border)
+  const target = await locator.evaluateHandle((node, { outlineStyle, highlightAncestor }) => {
+    const findTarget = (element: Element): HTMLElement => {
+      // Keep the legacy behaviour of highlighting the host of a slotted button.
+      const host = (element.parentNode as ShadowRoot)?.host as HTMLElement
+      if (!highlightAncestor) {
+        return element instanceof HTMLButtonElement && host
+          ? host
+          : element as HTMLElement
+      }
+
+      let current: Element | null = element
+      while (current) {
+        if (current.matches(highlightAncestor)) {
+          return current as HTMLElement
+        }
+        if (current.parentElement) {
+          current = current.parentElement
+        } else {
+          const root = current.getRootNode()
+          current = root instanceof ShadowRoot ? root.host : null
+        }
+      }
+
+      return element instanceof HTMLButtonElement && host
+        ? host
+        : element as HTMLElement
     }
 
+    const targetNode = findTarget(node)
+
+    // Save original styles if you need to revert them later
     targetNode.dataset.originalOutline = targetNode.style.outline
     targetNode.dataset.originalOutlineOffset = targetNode.style.outlineOffset
     // Apply the highlight
     targetNode.style.outline = outlineStyle.outline
     targetNode.style.outlineOffset = outlineStyle.outlineOffset
-  }, outlineStyle)
+
+    return targetNode
+  }, { outlineStyle, highlightAncestor }) as ElementHandle<HTMLElement>
 
   // Wait a brief moment for styles to paint
   await page.waitForTimeout(100)
 
-  // 2. Get the exact bounding box of the element
-  const box = await locator.boundingBox()
+  // 2. Get the exact bounding box of the element. When highlighting an
+  // ancestor (e.g. a menu row), crop around that ancestor; otherwise keep
+  // cropping around the locator element itself.
+  const box = highlightAncestor
+    ? await target.boundingBox()
+    : await locator.boundingBox()
   if (!box) throw new Error('Element not visible, cannot take screenshot')
 
   const viewportSize = page.viewportSize() || { width: 1920, height: 1080 }
@@ -83,14 +121,8 @@ export async function takeAnnotatedScreenshot(
   saveScreenshotIfChanged(outputPath, buffer)
 
   // 4. (Optional) Revert the styling so the test can continue cleanly
-  await locator.evaluate((node) => {
-    const host = (node.parentNode as ShadowRoot)?.host as HTMLElement
-    let targetNode = node
-    if (node && node instanceof HTMLButtonElement && host) {
-      targetNode = host
-    }
+  await target.evaluate((targetNode) => {
     targetNode.style.outline = targetNode.dataset.originalOutline || ''
     targetNode.style.outlineOffset = targetNode.dataset.originalOutlineOffset || ''
   })
 }
-

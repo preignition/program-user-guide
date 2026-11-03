@@ -24,3 +24,7 @@ Some tests are run with `playwright-a11y@preignition.org` and some with `playwri
 
 - `pnpm survey:start:signed-in` loads on **localhost:7173** and loads `playwright@preignition.org`
 - `pnpm survey:start:a11y-signed-in` loads on **localhost:7174** and loads `playwright-a11y@preignition.org`
+
+## Highlighting menu items
+
+Use `context.annotatedMenuItemScreenshot(locator, name)` for drawer and context-menu entries. A `getByText`/`getByRole('listitem')` locator there resolves inside the row, so the helper highlights the enclosing `md-list-item` instead — a ring around the whole row, like the other annotated screenshots. Use `context.annotatedScreenshot` for everything else.

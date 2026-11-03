@@ -19,3 +19,9 @@ export type OutlineStyleT = {
   outline: string,
   outlineOffset: string,
 }
+
+export type ScreenshotOptionsT = {
+  outlineStyle?: OutlineStyleT,
+  /** CSS selector for an ancestor to highlight instead of the locator element. */
+  highlightAncestor?: string,
+}

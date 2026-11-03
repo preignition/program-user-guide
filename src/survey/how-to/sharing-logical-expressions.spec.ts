@@ -26,7 +26,7 @@ test.describe('Survey Expressions Page', () => {
     // Step 3: open Build -> Expressions from the advanced drawer.
     const menuItem = page.locator('#list md-list-item').filter({ hasText: 'Expressions' })
     await expect(menuItem).toBeVisible()
-    await context.annotatedScreenshot(menuItem, 'step-3-expressions-menu', 20)
+    await context.annotatedMenuItemScreenshot(menuItem, 'step-3-expressions-menu', 20)
     await menuItem.click()
 
     const grid = page.locator('app-survey-build-expressions vaadin-grid')
