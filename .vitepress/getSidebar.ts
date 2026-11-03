@@ -40,6 +40,10 @@ export function getSidebar() {
           items: [{ text: "Confidence Index", link: "survey/confidence-index" }],
         },
         {
+          text: "Listserv App",
+          items: [{ text: "Import an Audience", link: "listserv/audience-import" }],
+        },
+        {
           text: "Form Builder",
           items: [
             { text: "Scroll Page Before Next", link: "form-builder/scroll-page-before-next" },

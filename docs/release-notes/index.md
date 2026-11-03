@@ -24,6 +24,10 @@ Stay up to date with the latest improvements and features across the Accessible 
 
 * **[Confidence Index & Behavioral Tracking](./survey/confidence-index.md)**: Detect bots and analyze respondent interaction patterns.
 
+## Listserv App
+
+* **[Import an audience into your listserv channel](./listserv/audience-import.md)**: Seed a channel from a reusable team Audience, preview the outcome, accept a consent warranty, and track every import in a read-only history.
+
 ## Form Builder
 
 * **[Scroll Page Before Next](./form-builder/scroll-page-before-next.md)**: Force respondents to scroll to the bottom before moving to the next page.
