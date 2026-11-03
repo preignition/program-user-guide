@@ -15,19 +15,25 @@ src/listserv/
     ├── creating-sending.spec.ts         US 9,10,12 — Create broadcasts, templates, attachments
     ├── moderating-content.spec.ts       US 11 — Review community submissions
     ├── analyzing-performance.spec.ts    US 13 — View broadcast analytics
-    └── configuring-settings.spec.ts     US 14,15,16,18 — Channel config, languages, bounce, access
+    ├── configuring-settings.spec.ts     US 14,15,16,18 — Channel config, languages, bounce, access
+    └── importing-audience.spec.ts       Channel Settings → Audience Import (picker, preview, warranty, result, history)
 ```
 
 ## Usage
 
-Start the listserv app, then run the scripts from the documentation root:
+Start the datafrica app, which hosts the listserv app and signs the test user in, then run
+the scripts from the documentation root:
 
 ```sh
-pnpm playwright test src/listserv/reference
-pnpm playwright test src/listserv/how-to
+pnpm --filter @lit-app/datafrica start:playwright:signed-in   # port 7173
+pnpm exec playwright test src/listserv/reference
+pnpm exec playwright test src/listserv/how-to
 ```
 
-The app must be running at `http://localhost:7173/listserv-playwright/listserv`.
+The listserv app is served at `http://localhost:7173/listserv-playwright/listserv`.
+
+The audience import spec seeds and resets its own audience, recipients and demo subscribers
+with the admin SDK (application-default credentials), and performs one import per run.
 
 ## How-To User Story Coverage
 
