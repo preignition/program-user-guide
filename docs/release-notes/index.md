@@ -26,7 +26,7 @@ Stay up to date with the latest improvements and features across the Accessible 
 
 ## Listserv App
 
-* **[Import an audience into your listserv channel](./listserv/audience-import.md)**: Seed a channel from a reusable team Audience, preview the outcome, accept a consent warranty, and track every import in a read-only history.
+* **[Audience Import for Listserv Channels](./listserv/audience-import.md)**: Seed a channel from a reusable team Audience in Channel Settings → Audience Import, preview every recipient outcome before committing, record an explicit consent warranty, and audit every run in a privacy-first import history.
 
 ## Form Builder
 

@@ -1,130 +1,138 @@
 ---
-description: Import a team Audience into a listserv Channel from Channel Settings → Audience Import, preview the outcome, accept the warranty, resume a long run, and read the import history.
+description: Step-by-step guide to importing a reusable team Audience into a listserv channel, reviewing the recipient outcome preview, accepting the consent warranty, downloading the error report, and inspecting the import history.
 ---
 
-# Import a team audience
+# Importing a Team Audience
 
-Use this guide to seed a listserv channel from an existing team **Audience** — the reusable address book in the customer app. The import creates active subscribers in one channel, without re-collecting consent person by person.
+Use **Audience Import** to populate a listserv channel from an existing team **Audience** — the reusable contact list managed in the Customer Portal (**Team Settings → Audiences**). Importing adds eligible contacts as active channel subscribers in one pass, without sending confirmation emails or asking people to subscribe again.
 
-::: info Who can do this
-The **Audience Import** page lives under **Channel Settings**, which is available to a channel **owner** or **editor**. The import history on the same page honours the channel's owner/editor/moderator read access.
+::: info Permissions and Data Controller Responsibility
+Only a channel **owner** or **editor** can run an import from **Channel Settings → Audience Import** (channel **moderators** also have read access to the import history). Because imported subscribers bypass individual double opt-in, you must confirm before each import that your organization has a lawful basis and permission to send broadcasts from this channel. Purchased or scraped lists are not permitted.
 :::
 
-## Before you start
+## Before You Start
 
-- The audience must belong to the channel's team.
-- The audience can be active or archived. An archived audience is read-only; importing it does not change it.
-- One import handles at most **10,000 unique recipients**. The picker shows the limit before you start.
-- The import does not send an email to the audience.
+- **Team audience ready:** The audience must belong to the same team as the listserv channel (up to **10,000 unique recipients** per import). Both **active** and **archived** audiences can be imported; importing never modifies the source audience.
+- **No emails sent at import time:** Importing creates or links subscriber records silently. Mailing-list delivery is synced automatically when you send your next broadcast.
 
-## Open the import page
+---
 
-1. Open the channel's **Channel Settings** and choose **Audience Import**.
-2. The page shows the **Import history** below the import button. Choose **Import a team audience**.
+## Step 1: Open the Audience Import Dialog
 
-<figure>
-  <img src="./assets/importing-a-team-audience/step-1-open-audience-import-auto.png" alt="Audience Import page in Channel Settings, with the import button and the Import history grid">
-  <figcaption>The Audience Import page under Channel Settings, with the import button and the read-only Import history</figcaption>
-</figure>
-
-## Pick an audience
-
-1. Search the team's audiences by name.
-2. Each row shows the audience name, recipient count, last-updated date and whether it is active or archived.
-3. Select the audience. The preview appears on the right.
+1. Sign in to the Listserv application as a channel **owner** or **editor**.
+2. Click **Channel Settings** in the top navigation bar, then select **Audience Import** in the left drawer.
+3. Click **Import a team audience** to open the import dialog.
 
 <figure>
-  <img src="./assets/importing-a-team-audience/step-2-pick-an-audience-auto.png" alt="Import dialog listing the team's audiences with their recipient count, date and status">
-  <figcaption>Pick a team audience in the import dialog</figcaption>
+  <img src="./assets/importing-a-team-audience/step-1-open-audience-import-auto.png" alt="Audience Import page in Channel Settings showing the Import a team audience button and the Import history table">
+  <figcaption>Open Channel Settings → Audience Import and click Import a team audience.</figcaption>
 </figure>
 
-An archived audience stays selectable so you can seed a channel from a retired list, but the import never edits it. An audience over the 10,000-recipient limit is shown as over the limit and cannot start.
+---
 
-## Read the preview
+## Step 2: Select a Team Audience
 
-The preview shows:
-
-- **New** — addresses that will get a new subscriber record.
-- **Linked** — addresses that already have an account; the subscriber uses that account.
-- **Already subscribed** — active subscribers that will not be overwritten. The breakdown adds the sub-count of records whose blank name or empty language list will be filled.
-- **Relinked** — active subscribers whose account link was missing and will be repaired.
-- **Skipped** — pending, unsubscribed, bounced or suppressed recipients. These are never resurrected.
-- **Invalid** — rows with a missing or malformed address.
+1. In the **Import a team audience** dialog, use **Search audiences** to filter your team's audiences by name.
+2. Review each audience's recipient count, last-updated date, and status (`active` or `archived`). Audiences exceeding the 10,000-recipient limit are marked `over the 10,000 limit` and disabled.
+3. Click an audience to generate a read-only preview on the right.
 
 <figure>
-  <img src="./assets/importing-a-team-audience/step-3-preview-the-outcome-auto.png" alt="Import preview showing New, Linked, Already subscribed, Relinked, Skipped and Invalid counts">
-  <figcaption>The preview reports counts only; it never lists addresses</figcaption>
+  <img src="./assets/importing-a-team-audience/step-2-pick-an-audience-auto.png" alt="Import a team audience dialog listing the team's audiences with recipient count, date, and status">
+  <figcaption>Select a team audience on the left to load its import preview.</figcaption>
 </figure>
 
-The preview is a snapshot: it writes nothing, and the import re-reads the audience when it runs. The preview shows counts only; it does not list addresses. Invalid rows appear as a count and are listed only in the transient error report.
+---
 
-## Accept the warranty and import
+## Step 3: Review the Outcome Preview
 
-1. Read the warranty: the team has a lawful basis to contact these people and their permission to send broadcasts from this channel.
-2. Tick the checkbox. The **Import** button stays disabled until it is ticked.
-3. Choose **Import N recipients**.
+Before anything is written, the preview classifies every unique email address in the selected audience:
+
+| Metric | What Happens During Import |
+| --- | --- |
+| **New** | A new active subscriber record and user account will be created. |
+| **Linked** | The email address already has a platform account; a new subscriber record will be linked to that existing account. |
+| **Already subscribed** | The person is already an active subscriber in this channel. Existing delivery preferences are never overwritten; if their subscriber record was missing a display name or language, the audience's values are filled in and counted under **Updated existing records**. |
+| **Relinked** | An active subscriber whose account link was missing will be reconnected to their user account. |
+| **Skipped** | Recipients who are `pending`, `unsubscribed`, `bounced`, or organization-wide `suppressed` are left untouched and never re-subscribed. A breakdown below the tiles lists the exact count for each skipped reason. |
+| **Invalid** | Rows with a missing or malformed email address (reported in the downloadable error CSV after the run). |
 
 <figure>
-  <img src="./assets/importing-a-team-audience/step-4-accept-the-warranty.png" alt="The listserv import warranty checkbox and its text">
-  <figcaption>The warranty records who asserted the lawful basis, its version and the acceptance time</figcaption>
+  <img src="./assets/importing-a-team-audience/step-3-preview-the-outcome-auto.png" alt="Import preview showing New, Linked, Already subscribed, Relinked, Skipped, and Invalid counts">
+  <figcaption>Review the recipient breakdown before starting the import. Only aggregate counts are shown.</figcaption>
 </figure>
 
-The warranty is required because the import creates subscribers the team did not collect one by one. The record keeps the warranty version and the acceptance time, but no recipient addresses.
+::: tip Privacy-First Preview
+The preview writes nothing to the channel and displays aggregate counts only — never individual email addresses. Duplicate email addresses within the same audience are automatically collapsed to a single subscriber.
+:::
 
-Progress is shown in the dialog. You can close it and come back: the import record keeps the progress, and a stale or failed run offers **Resume** when you reopen the dialog. Resuming continues from the last processed recipient; the subscriber and account writes are idempotent, so a replayed chunk is safe.
+---
 
-## Read the result
+## Step 4: Accept the Consent Warranty and Start the Import
 
-The result repeats the counts and adds a skipped breakdown and a **Failed** count. If any rows failed or were invalid, download the transient `row,email,reason` error report and fix those rows in the audience. The report is not stored.
+1. Read the consent warranty statement below the preview counts.
+2. Tick the confirmation checkbox to warrant that your team has a lawful basis and permission to send broadcasts from this channel, that the list is not purchased or scraped, and that every recipient can unsubscribe at any time.
+3. Click **Import N recipients** (the button remains disabled until the checkbox is ticked).
 
 <figure>
-  <img src="./assets/importing-a-team-audience/step-5-import-result-auto.png" alt="Import result with the final counts, the error report download and the Done action">
-  <figcaption>The result keeps the counts; the error report is available only from the dialog that ran the import</figcaption>
+  <img src="./assets/importing-a-team-audience/step-4-accept-the-warranty.png" alt="Consent warranty checkbox in the audience import dialog">
+  <figcaption>Tick the warranty checkbox to enable the Import button.</figcaption>
 </figure>
 
-The **Import another** button starts again with a clean preview; **Done** closes the dialog and returns to the history page.
+The dialog displays a live progress bar (`X of Y processed`) as recipients are imported.
 
-## Read the import history
+::: info Resuming a Long or Interrupted Import
+You can safely close the dialog or leave the page while a large import is running. Progress is saved continuously, and all subscriber writes are idempotent. If a run is interrupted or encounters a temporary error, reopen **Import a team audience** and click **Resume** to continue from the last processed recipient without creating duplicates.
+:::
 
-Scroll to **Import history** on the same page. The newest import is first. The columns are When, Audience, Actor, Outcome, Warranty and Status; the Audience and Status columns carry a column filter. The **Outcome** cell is a compact `New` / `Already` / `Skipped` summary.
+---
+
+## Step 5: Inspect the Result and Download Any Error Report
+
+When the run finishes, the dialog displays **Import completed** (or **Import failed**) with the final counts across **New**, **Linked**, **Already subscribed**, **Relinked**, **Skipped**, **Invalid**, and **Failed**.
 
 <figure>
-  <img src="./assets/importing-a-team-audience/step-6-import-history.png" alt="Import history grid with the When, Audience, Actor, Outcome, Warranty and Status columns">
-  <figcaption>One read-only record per import, newest first</figcaption>
+  <img src="./assets/importing-a-team-audience/step-5-import-result-auto.png" alt="Import completed view with final counts, Download error report, Import another, and Done buttons">
+  <figcaption>Review the final import counts and download the transient error report if any rows were invalid or failed.</figcaption>
 </figure>
 
-Select a row to expand its details inside the grid: the actor, audience snapshot, warranty version and time, the full counts and any failure.
+- **Download error report:** Appears whenever one or more rows were **Invalid** or **Failed**. Click it right away to download `listserv-import-errors.csv` (`row,email,reason`) so you can fix those entries in **Team Settings → Audiences** and re-import. For privacy reasons, per-row errors and email addresses are never stored in the database — once you close the dialog, the error report is no longer available.
+- **Import another:** Resets the dialog so you can select and import another audience.
+- **Done:** Closes the dialog and returns to the **Audience Import** page.
+
+---
+
+## Step 6: Review the Import History
+
+Every import is logged in the read-only **Import history** table on **Channel Settings → Audience Import**, ordered newest first.
+
+1. Use the **Audience** text filter or the **Status** dropdown (`Running`, `Completed`, `Failed`) in the table header to narrow the list, or sort by **When**.
+2. Read the compact **Outcome** summary (`New · Already · Skipped`) and the recorded **Warranty** version (`v1`) for each run.
+3. Click any row to expand its audit details in place: the **Audience** name snapshot, the **Actor** who ran the import, the **Warranty** version and acceptance timestamp, all seven outcome counters, and any failure message.
 
 <figure>
-  <img src="./assets/importing-a-team-audience/step-7-import-history-details.png" alt="Expanded import history row showing the actor, audience, warranty and full counts">
-  <figcaption>The row details expand inside the grid; no addresses and no per-row errors are kept</figcaption>
+  <img src="./assets/importing-a-team-audience/step-6-import-history.png" alt="Import history table showing When, Audience, Actor, Outcome, Warranty, and Status columns">
+  <figcaption>The Import history table lists every run with its actor, compact outcome summary, warranty version, and status.</figcaption>
 </figure>
 
-The error report is not kept; it is only available from the dialog that ran the import.
+<figure>
+  <img src="./assets/importing-a-team-audience/step-7-import-history-details.png" alt="Expanded row in the Import history table showing actor, warranty timestamp, and all seven outcome counts">
+  <figcaption>Click a row to inspect the full count breakdown and warranty timestamp. No email addresses are stored in the history.</figcaption>
+</figure>
 
-## What the import does not do
+---
 
-- It does not send an email to the imported addresses.
-- It does not add Mailgun list membership or set a `deliveryList`; the send engine reconciles membership when a broadcast is sent.
-- It does not set `subscribedChannels`, `accountIncomplete`, an unsubscribe token or a completion token.
-- It does not write a preference mirror. Imported subscribers receive broadcasts; the account-link flow that would make private broadcasts and the preference page available is a future feature. Until then, password reset is their account path.
-- It does not change the audience or its recipients.
+## What Happens After an Import
 
-## Privacy and limits
-
-The import record keeps counts and the actor/audience/warranty snapshots. It stores no recipient addresses and no per-row errors. The only address-bearing artefact is the transient error report.
-
-An audience over 10,000 unique recipients is rejected before the import starts. Invalid and duplicate rows are counted, and duplicate addresses in the audience collapse to one subscriber per address per channel.
-
-Imported accounts are created without a password and without `accountIncomplete`; they can use the account path (password reset) when they need to sign in.
+- **Immediate broadcast eligibility:** Newly created and linked subscribers are set to `active` right away and receive the channel's next email broadcast in their preferred language (falling back to the channel's primary language when needed).
+- **Safe re-imports:** Re-importing an updated audience is completely idempotent — already-active subscribers keep their existing preferences, and only newly added contacts or missing names/languages are updated.
+- **Subscriber sign-in:** Imported subscribers receive broadcasts by email without needing to sign in. If they later wish to sign in on the web, they can set a password using **Forgot password** on the sign-in page.
 
 ---
 
 ## Related Content
 
-- [Listserv audience import spec](https://gitlab.com/christophe-g/lit-app/-/blob/main/specs/listserv-audience-import.md) — the full decision record for placement, preview, warranty, execution and privacy.
-- [ADR 0001: Subscriber backed by Firebase Auth identity](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/docs/adr/0001-subscriber-firebase-auth-identity.md) — why `ref.user` carries the Auth identity and the subscriber id is opaque.
-- [Listserv glossary](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/GLOSSARY.md) — subscriber, guard, import record and account terminology.
-- [Team Audiences reference](../../customer/reference/team/audiences.md) — how the team's reusable address book stores recipients.
-- [Creating & sending broadcasts](./creating-and-sending-broadcasts.md) — what happens on the first send after an import.
-- [Configuring channel settings](./configuring-channel-settings.md) — the Channel Settings menu that hosts the import.
+- [Team Audiences Reference](../../customer/reference/team/audiences.md) — How to create and manage reusable recipient lists in Team Settings
+- [How to Send Invitations to a Team Audience](../../survey/how-to/send-invitations.md) — Step-by-step guide to uploading a CSV into a Team Audience
+- [Configuring Channel Settings](./configuring-channel-settings.md) — Managing channel metadata, active languages, bounce rules, and user access
+- [Creating & Sending Email Broadcasts](./creating-and-sending-broadcasts.md) — Composing and dispatching broadcasts to channel subscribers
+- [Subscribing & Managing Preferences](./subscribing-and-managing-preferences.md) — How subscribers join a channel and manage delivery settings

@@ -28,11 +28,13 @@
 
 ## Importing a Team Audience - importing-a-team-audience.md
 
-- [`app/app-listserv/src/page/settings/import.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/page/settings/import.ts): Channel Settings → Audience Import host for the import button and the read-only Import history grid.
-- [`app/app-listserv/src/page/settings/audience-import-dialog.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/page/settings/audience-import-dialog.ts): the import dialog — audience picker, preview vocabulary, warranty gate, progress/resume, result and the transient `row,email,reason` error report.
-- [`app/app-listserv/src/entity/SubscriberImportE.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/entity/SubscriberImportE.ts): the Import history entity — columns, outcome summary and expanded row details.
-- [`app/app-listserv/actionApi/src/audience-import.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/actionApi/src/audience-import.ts): `previewAudienceImport`, `startAudienceImport`, `runAudienceImport`, the decision table, chunk/lease/cursor and the bulk `importUsers` path.
-- [`lit-app/schema/listserv/model/Subscriber.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/lit-app/schema/listserv/model/Subscriber.ts): subscriber identity, the per-channel email guard, the import record and the listserv warranty text/version.
+- [`app/app-listserv/src/page/settings/import.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/page/settings/import.ts): Channel Settings → Audience Import page hosting the import trigger and the read-only Import history grid.
+- [`app/app-listserv/src/page/settings/audience-import-dialog.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/page/settings/audience-import-dialog.ts): Audience import dialog component with searchable audience picker, outcome preview, consent warranty gate, live progress/resume, and transient `row,email,reason` CSV error report.
+- [`app/app-listserv/src/entity/SubscriberImportE.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/src/entity/SubscriberImportE.ts): Read-only Lit UI entity for the Import history grid, outcome summary, column filters, and expandable audit row details.
+- [`app/app-listserv/actionApi/src/audience-import.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/actionApi/src/audience-import.ts): Server-side `previewAudienceImport`, `startAudienceImport`, and `runAudienceImport` handlers implementing the recipient classification table, chunked cursor/lease execution, and bulk `importUsers` reconciliation.
+- [`lit-app/schema/listserv/model/Subscriber.ts`](https://gitlab.com/christophe-g/lit-app/-/blob/main/lit-app/schema/listserv/model/Subscriber.ts): Effect Schema definitions for subscriber identity, the per-channel email uniqueness guard, the import audit record, and the consent warranty text/version.
+- [`specs/listserv-audience-import.md`](https://gitlab.com/christophe-g/lit-app/-/blob/main/specs/listserv-audience-import.md): Full product and architecture specification for listserv audience import.
+- [`app/app-listserv/docs/adr/0001-subscriber-firebase-auth-identity.md`](https://gitlab.com/christophe-g/lit-app/-/blob/main/app/app-listserv/docs/adr/0001-subscriber-firebase-auth-identity.md): Architectural Decision Record decoupling opaque subscriber IDs from Firebase Auth UIDs (`ref.user`) with a per-channel email guard.
 
 ## Configuring Channel Settings - configuring-channel-settings.md
 

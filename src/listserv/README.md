@@ -45,6 +45,7 @@ with the admin SDK (application-default credentials), and performs one import pe
 | `moderating-content.spec.ts` | US 11 — Review community submissions |
 | `analyzing-performance.spec.ts` | US 13 — View per-broadcast analytics<br>View analytics dashboard with aggregate metrics |
 | `configuring-settings.spec.ts` | US 14 — Configure welcome email<br>US 15 — Configure bounce handling<br>US 16 — Display admin contact info<br>US 18 — Enforce attachment limits |
+| `importing-audience.spec.ts` | Import a team audience into a channel (picker, preview, warranty, result, and import history) |
 
 ## Excluded Stories
 
