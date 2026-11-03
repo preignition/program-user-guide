@@ -19,6 +19,7 @@ const surveyName = 'My New Survey'
 
 test.describe('Survey Creating & Editing', async () => {
   test('Survey and Form Management', async ({ page }) => {
+    test.setTimeout(180_000)
     const context = new Context(mainPath, page)
     await page.setViewportSize({ width: 1600, height: 1080 })
     await page.goto(baseUrl)
@@ -27,7 +28,7 @@ test.describe('Survey Creating & Editing', async () => {
     await page.getByRole('link', { name: 'Survey', exact: true }).click()
     await page.waitForTimeout(1000)
 
-    test.step('How to create a new survey', async () => {
+    await test.step('How to create a new survey', async () => {
       context.setName('creating-a-new-survey')
       // ### Step 1: Click on Create Survey button
       locator = page.getByRole('button', { name: 'New Survey' })
@@ -48,7 +49,7 @@ test.describe('Survey Creating & Editing', async () => {
       await locator.click()
 
       // ### Step 3: Click Next and decide the type of Form (new form, import or create content)
-      locator = page.getByRole('radiogroup')
+      locator = page.locator('lapp-choice-radio[name="formType"]')
       await context.annotatedScreenshot(locator, 'step-3-choose-type-of-form')
       await page.getByRole('textbox', { name: 'name' }).click()
       await page.getByRole('textbox', { name: 'name' }).fill('my new form')
@@ -75,7 +76,7 @@ test.describe('Survey Creating & Editing', async () => {
 
     })
 
-    test.step('How to edit a survey', async () => {
+    await test.step('How to edit a survey', async () => {
       // ## Edit the survey
       context.setName('editing-a-survey')
 
@@ -88,7 +89,13 @@ test.describe('Survey Creating & Editing', async () => {
       await locator.click()
 
       // ### Step 2: Navigate to Build and the tree view
-      locator = page.locator('vaadin-split-layout div').filter({ hasText: 'Overall Structure Introduction Page Form Page 1 Submit Message Thank You Page' })
+      // wait for the tree's form pages to render before capturing the panel
+      await page
+        .locator('vaadin-grid-cell-content')
+        .filter({ hasText: 'Page 1' })
+        .first()
+        .waitFor()
+      locator = page.locator('vaadin-split-layout > div').first()
       await context.annotatedScreenshot(locator, 'step-2-grid-structure')
 
       locator = page.locator('vaadin-grid-cell-content').filter({ hasText: 'Form' })
@@ -121,7 +128,7 @@ test.describe('Survey Creating & Editing', async () => {
       await locator.click()
     })
 
-    test.step('How to test a form', async () => {
+    await test.step('How to test a form', async () => {
       context.setName('testing-a-form')
       await initializePage(page, a11yBaseUrl, `s/edit/survey/${satisfactionSurveyId}/build/test`)
 
@@ -168,7 +175,7 @@ test.describe('Survey Creating & Editing', async () => {
       await page.getByRole('dialog').press('Escape')
     })
 
-    test.step('How to mark a survey as favorite', async () => {
+    await test.step('How to mark a survey as favorite', async () => {
       // ## Mark as favorite
       context.setName('marking-a-survey-as-favorite')
       await page.goto(`${baseUrl}/s/workspace`)
@@ -182,7 +189,7 @@ test.describe('Survey Creating & Editing', async () => {
 
     })
 
-    test.step('How to delete a survey', async () => {
+    await test.step('How to delete a survey', async () => {
 
       // ## Delete the survey
       context.setName('deleting-a-survey')
@@ -197,7 +204,8 @@ test.describe('Survey Creating & Editing', async () => {
       await locator.click()
 
       // ### Step 2: Confirm deletion
-      locator = page.getByText('Confirm Action')
+      await page.waitForTimeout(300)
+      locator = page.getByRole('dialog')
       await context.annotatedScreenshot(locator, 'step-2-confirm-deletion')
 
       locator = page.getByRole('button', { name: 'Confirm Action' })
