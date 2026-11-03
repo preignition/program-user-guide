@@ -85,9 +85,11 @@ test.describe('Survey Localization How-To', async () => {
     await context.annotatedScreenshot(locator, 'step-1-export-survey-definition')
     await locator.click()
 
-    locator = page.getByText('arabic', { exact: true })
+    // let the dialog finish opening before capturing it
+    await page.waitForTimeout(500)
+    locator = page.locator('lapp-choice-radio').filter({ hasText: 'Target Language' })
     await context.annotatedScreenshot(locator, 'step-1-select-language-for-export')
-    await locator.click()
+    await page.getByText('arabic', { exact: true }).click()
 
     locator = page.getByRole('button', { name: 'Create the Export' })
     await context.annotatedScreenshot(locator, 'step-1-create-export')
@@ -104,12 +106,14 @@ test.describe('Survey Localization How-To', async () => {
     await context.annotatedScreenshot(locator, 'step-3-import-translated-form')
     await locator.click()
 
+    // let the dialog finish opening before capturing it
+    await page.waitForTimeout(500)
     locator = page.getByRole('button', { name: 'Upload File...' })
     await context.annotatedScreenshot(locator, 'step-3-upload-translated-file')
 
-    locator = page.getByText('arabic', { exact: true })
+    locator = page.locator('lapp-choice-radio').filter({ hasText: 'Confirm the language' })
     await context.annotatedScreenshot(locator, 'step-3-select-language-for-import')
-    await locator.click()
+    await page.getByText('arabic', { exact: true }).click()
 
     locator = page.getByRole('dialog', { name: 'Import the Survey' })
     await context.annotatedScreenshot(locator, 'step-3-import-survey-dialog')
