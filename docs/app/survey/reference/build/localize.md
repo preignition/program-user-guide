@@ -23,3 +23,7 @@ In advanced mode, administrators have access to deeper technical controls, inclu
 ## Translation Process
 
 The tool supports automatic base translation for empty fields and manual overrides. Content can also be securely exported to a structured JSON format, handed off to professional translation services, and safely re-imported.
+
+## Email Messages
+
+In advanced mode the tree includes an **Email** row and the survey's activated email messages. Each message edits its subject and markdown body in the active language, with the primary language shown read-only above the editor. The **Translation** column shows the translated subject, with the primary subject muted underneath when the translation is empty. The **Translate** action includes every email message, subject and body; the override choice applies to them as it does to the rest of the survey.

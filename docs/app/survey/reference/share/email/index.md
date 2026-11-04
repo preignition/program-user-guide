@@ -11,7 +11,7 @@ The **Email** page configures the emails a survey sends to its respondents: the 
   <figcaption>The Email page, in advanced mode.</figcaption>
 </figure>
 
-The page is organised in tabs: **Purposes** (the survey-wide default for email fields), **Invitation** (the email and reminder templates sent when inviting a team audience), one tab per purpose the survey's email fields carry — a purpose no field uses has nothing to configure, so it has no tab — **Account email** when the form has an Account Email field, and **Advanced** (consent retention, sender and preview). The content editors show one translation at a time; the language selector above them switches it, and every language has its own subject and body.
+The page is organised in tabs: **Purposes** (the survey-wide default for email fields), **Invitation** (the email and reminder templates sent when inviting a team audience), one tab per purpose the survey's email fields carry — a purpose no field uses has nothing to configure, so it has no tab — **Account email** when the form has an Account Email field, and **Advanced** (consent retention, sender and preview). Each language of the survey has its own subject and body: the **Translations** buttons switch the editor, the active translation is filled, and **Edit primary** returns to the source language. When a translation is active, the primary language is shown read-only above the editor so you can translate from it. The server **Translate** action covers every email message, subject and body.
 
 ## Invitation and Reminder Emails
 
@@ -26,7 +26,7 @@ The **Invitation** tab configures the messages sent when you distribute the surv
 
 What each invited recipient receives with their unique survey link (`/v2/{surveyId}/i/{token}`):
 
-- **Language:** Selected via the **Language** dropdown when the survey has multiple languages enabled. Each language stores its own subject (`email.invitation.<lang>.subject`) and body (`email.invitation.<lang>.body`). A recipient whose preferred language has no invitation content receives the survey's primary language; the send dialog reports how many recipients fall back.
+- **Language:** Each language has its own subject and body, stored in that language's locale document. Use the **Translations** buttons above the editor; **Edit primary** returns to the source language, shown read-only above the translation. A complete recipient-language invitation is used as-is; a missing or half-written one falls back to the complete primary invitation, and the send dialog reports how many recipients fall back.
 - **Subject:** Plain-text subject line (up to 200 characters).
 - **Body:** Markdown-formatted message body with a live **Preview** tab.
 - **Links:** A link is delivered exactly as written. The platform disables the mail provider's click tracking, so the recipient receives the invitation URL (`/v2/{surveyId}/i/{token}`) — in the HTML and the plain-text part — instead of a tracking redirect.
@@ -49,10 +49,11 @@ Validation runs continuously on both the invitation and reminder templates:
 
 ### Reminder Email (for Invitations)
 
-Below the invitation editor, **Reminder email** (`email.invitationReminder.<lang>`) defines the message sent to invited recipients who have not yet submitted:
+Below the invitation editor, **Reminder email** defines the message sent to invited recipients who have not yet submitted:
 
 - If you provide a custom **Subject** and **Body**, scheduled and manual invitation reminders use that template.
 - If you leave **Reminder email** empty, the platform automatically reuses the invitation email with a `Reminder N of M:` prefix on the subject line and a `This is reminder N of M from <organiser>.` reason line.
+- The reminder is picked from the complete recipient-language reminder, then the complete recipient-language invitation, then the complete primary reminder, then the complete primary invitation — never mixing languages.
 
 ### Mandatory Platform Footer and Sender
 
@@ -92,7 +93,7 @@ The addresses these emails use stay out of the survey's datasets and exports unl
 
 ## Submission Confirmation
 
-The confirmation email is sent when a respondent submits the survey. Each survey language has its own **subject** and **body**, and the respondent receives it in the language they answered in. The platform adds a line explaining why the email was sent; it is a transactional one-off, so it carries no unsubscribe link. Test submissions never send email.
+The confirmation email is sent when a respondent submits the survey. Each survey language has its own **subject** and **body**, edited with the same **Translations** buttons; the respondent receives it in the language they answered in, falling back to the complete primary confirmation. The platform adds a line explaining why the email was sent; it is a transactional one-off, so it carries no unsubscribe link. Test submissions never send email.
 
 ## Reminders
 
@@ -100,15 +101,15 @@ A field that carries the **Reminders** purpose shows the respondent a notice and
 
 Consent is per respondent: one record per session, which a later opt-in in the same session updates, and which the field's checkbox reflects when the respondent comes back. Editors never see the addresses — the contact records are not part of the survey data and are never exported.
 
-Each survey language has its own reminder **subject** and **body**. A reminder is sent sober: the platform adds a line explaining why the respondent received it, and the public unsubscribe link.
+Each survey language has its own reminder **subject** and **body**. A reminder is sent in the language recorded on the respondent's session — the language they answered in — falling back to the complete primary reminder when that language has none or is half-written. The platform adds a line explaining why the respondent received it, and the public unsubscribe link.
 
 ## Follow-up Emails
 
 After the survey's data has been analysed you may want to write to the respondents again: to share the results or a report, or to invite them to a later survey. Both are follow-ups, and both need a purpose of their own — **Results and reports** and **Follow-up survey**. A field that carries one asks the respondent to opt in, exactly as a reminder field does; a field may carry both, and then shows a checkbox for each.
 
-Writing the email on the purpose's tab is what makes the opt-in possible: a purpose with no subject and body is not offered to respondents, so a consent is never collected for an email the survey cannot send. Write the **subject** and **body** per survey language — the email is sent in the survey's language.
+Writing the email on the purpose's tab is what makes the opt-in possible: a purpose with no complete subject and body in the primary language is not offered to respondents, so a consent is never collected for an email the survey cannot send. Write the **subject** and **body** per survey language — the email is sent in the language the respondent answered in, falling back to the complete primary message.
 
-Each follow-up has its own **Send** action. It reads the respondents who opted in for that purpose, tells you how many will receive the email before you confirm, and sends once you do. A follow-up is not scheduled and not repeated: pressing Send again emails the same respondents again, so use it for a new message rather than a correction. The platform adds a line explaining why the respondent received it, and the public unsubscribe link; a send that the mail service did not accept is left for the next press of Send, and the dialog reports what went out.
+Each follow-up has its own **Send** action. It reads the respondents who opted in for that purpose, tells you how many will receive the email before you confirm, and sends once you do. The Send button stays disabled until the complete primary subject and body exist. A follow-up is not scheduled and not repeated: pressing Send again emails the same respondents again, so use it for a new message rather than a correction. The platform adds a line explaining why the respondent received it, and the public unsubscribe link; a send that the mail service did not accept is left for the next press of Send, and the dialog reports what went out.
 
 The email is free text you write — the page does not publish a report or a survey for you. If the message is to carry a link (to a report page, or to the follow-up survey), write it in the body.
 
