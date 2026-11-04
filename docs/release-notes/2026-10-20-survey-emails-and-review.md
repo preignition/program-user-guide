@@ -15,6 +15,7 @@ This release answers both — and makes complex survey logic much easier to main
 * New **Team Audiences & Survey Invitations** let you import a reusable contact list in **Team Settings → Audiences**, compose and test multilingual invitation emails on **Share → Email**, distribute unique links (`/v2/{surveyId}/i/{token}`) from **Share → Distribute**, and track delivery, completion rates, and reminders in **Analytics → Progress** — without ever linking a respondent's answers to their address.
 * The new **Email** tab under **Share** also handles submission confirmations, opt-in reminders, and follow-ups with respondent consent and automatic data expiry built right in.
 * The new **Expressions** page gives you a single place to inspect and clean up every logical rule in your form.
+* **Faster respondent pages:** Public survey links now load only the respondent experience, with a leaner style sheet and no realtime database client for surveys that do not use behavioral tracking.
 
 ---
 
@@ -153,6 +154,18 @@ Once sent, the new **Analytics → Progress** tab tracks every invitation wave i
 </figure>
 
 * **Learn more:** [How to Send Invitations to a Team Audience](../app/survey/how-to/send-invitations.md) · [Team Audiences Reference](../app/customer/reference/team/audiences.md) · [Distribute Invitations Reference](../app/survey/reference/share/distribute/index.md#invitations) · [Invitation Progress Reference](../app/survey/reference/analyze/progress.md)
+
+---
+
+## 5. Faster Respondent Surveys
+
+Respondents now download less before they can start answering:
+
+* **A focused respondent app:** Public survey links (`/v2/...`) load only the experience a respondent needs, not the full survey-authoring application.
+* **Only the styles in use:** The page ships the component styles the respondent actually renders instead of the complete authoring theme.
+* **No realtime database for tracking-free surveys:** Surveys that do not use behavioral tracking no longer download the realtime database client.
+
+The result is fewer requests and less JavaScript and CSS to parse, so the first question appears sooner — especially on mobile devices and slower connections. The same lighter entry now also serves the iData and Datafrica portals.
 
 ---
 
