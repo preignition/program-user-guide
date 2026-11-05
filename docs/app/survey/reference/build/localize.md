@@ -26,4 +26,4 @@ The tool supports automatic base translation for empty fields and manual overrid
 
 ## Email Messages
 
-In advanced mode the tree includes an **Email** row and the survey's activated email messages. Each message edits its subject and markdown body in the active language, with the primary language shown read-only above the editor. The **Translation** column shows the translated subject, with the primary subject muted underneath when the translation is empty. The **Translate** action includes every email message, subject and body; the override choice applies to them as it does to the rest of the survey.
+Email messages are not shown in the Compose tree. Edit their per-language subject and body on the survey's [Email page](../share/email/index.md). The **Translate** action still includes every email message, subject and body; the override choice applies to them as it does to the rest of the survey.

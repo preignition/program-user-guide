@@ -25,8 +25,6 @@ The left pane provides a visual representation of your survey's structural hiera
 * **Organization:** You can expand or collapse branches to focus on specific sections, and drag-and-drop items to reorganize the survey's flow.
 * **Context:** It always tells you exactly where the item you are currently editing sits within the broader questionnaire.
 
-In advanced mode the tree also shows an **Email** row below Glossary. It is not part of the form hierarchy: it gathers the survey's **activated email messages**. The invitation channel lists Invitation and Confirmation when invitations are on; the form channel lists the purpose messages the survey selects when it collects an Email or Account Email address. Selecting a message opens its editor in the right pane; selecting Email opens the Purposes overview. The row only lists messages a channel can actually send.
-
 **Clicking** on any item in the Tree View loads its details into the right pane, allowing you to edit its properties or content.
 
 **Right-clicking** on an item in the Tree View opens a context menu with options to add new items (e.g., add a new question under a section) or perform actions like duplication and deletion.
