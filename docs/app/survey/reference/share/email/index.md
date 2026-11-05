@@ -68,18 +68,6 @@ Every invitation and reminder email automatically appends a mandatory platform f
 
 Emails are sent from the platform's domain using the team name as the display name and a team admin's address as the default `Reply-To`. The display name and the survey-level reply-to can be overridden on the **Advanced** tab. For an invitation run, the **Reply-to** selector in the [Distribute composer](../distribute/index.md#configuration-controls) chooses a member of the survey team; leaving it blank uses the team owner's email address.
 
-### Send Test
-
-Clicking **Send test** (`sendInvitationTest`) at the bottom of the **Invitation** tab sends a rendered preview of the currently selected language's invitation email to the email address of the signed-in editor.
-
-<figure>
-  <img src="../../../how-to/assets/send-invitations/email-test-sent-auto.png" alt="Send test button and Test invitation sent notification">
-  <figcaption>Sending a test invitation to the signed-in editor's address.</figcaption>
-</figure>
-
-- The recipient address is resolved on the server from the caller's authenticated account.
-- It creates no invitation run, generates no live respondent token, and does not alter any audience or progress counters.
-
 ## Merge Fields
 
 Every message's subject and body support the same placeholders. The invitation is the only message that requires the link; the confirmation, the form reminders and the follow-ups treat it as optional.
@@ -92,6 +80,20 @@ Every message's subject and body support the same placeholders. The invitation i
 | `{{organiser}}` | No | The team's display name; the survey's title when the team has none. |
 
 An invitation or invitation reminder with a missing `{{link}}` or an unknown placeholder is not sent. The confirmation, the form reminders and the follow-ups send without `{{link}}`; an unknown placeholder is left as written.
+
+## Send Test
+
+Every email editor has a **Send test** action. The **Invitation** tab has **Send test invitation** (`sendInvitationTest`) and **Send test reminder** (`sendEmailTest`); each purpose tab — **Confirmation**, **Reminders**, **Results and reports** and **Follow-up survey** — has its own **Send test** (`sendEmailTest`).
+
+<figure>
+  <img src="../../../how-to/assets/send-invitations/email-test-sent-auto.png" alt="Send test button and Test invitation sent notification">
+  <figcaption>Sending a test invitation to the signed-in editor's address.</figcaption>
+</figure>
+
+- The recipient address is resolved on the server from the caller's authenticated account, never from the page.
+- The preview uses the active language's content and test merge values: `{{name}}` is `Test` and `{{link}}` is `/v2test/{surveyId}`.
+- A test creates no invitation run, consent record, respondent actor or Sent-history row, and does not alter any audience or progress counters.
+- A test send reports when the mail service accepted it; a message without complete content is not sent.
 
 ## Email Purposes
 

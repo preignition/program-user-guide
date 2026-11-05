@@ -13,6 +13,7 @@
 - [designState.ts](../../../../../../../app/app-survey/src/page/edit/design/state.ts): Supplies the survey's languages (`allLanguages`) and the survey document (`survey`) the page reads.
 - [storeRespondentData.ts](../../../../../../../app/app-survey/functions/src/service/storeRespondentData.ts): The submission pipeline that reads `email.defaultPurposes` for its dataset filter and sends the confirmation to the form address and, for an invited submission, the invitation address.
 - [sendConfirmation.ts](../../../../../../../app/app-survey/functions/src/service/sendConfirmation.ts): Sends one confirmation through the platform `MailService`; without a configured mail key it sends nothing.
+- [sendEmailTest.ts](../../../../../../../app/app-survey/actionApi/src/services/sendEmailTest.ts): The per-message test send: resolves the caller's own address, builds the selected message with test merge values, and sends it without creating a consent, invitation or Sent-history row.
 - [server-config.ts](../../../../../../../app/app-survey/functions/src/server-config.ts): Declares the deployable's Mailgun keys; `MailService` is provided only when the key resolves.
 - [BuildQuestion.ts](../../../../../../../app/app-survey/src/entity/settings/BuildQuestion.ts): The question settings picker that edits the same survey-level purposes and shows the notice they generate.
 - [emailPurposes.ts](../../../../../../../app/app-survey/src/entity/question/emailPurposes.ts): The purposes an editor can choose for the survey's email addresses.
@@ -32,4 +33,4 @@
 - [sendFollowUp.ts](../../../../../../../lit-app/schema/survey/followUp.ts): The follow-up action's payload and result.
 - [sendFollowUp.ts](../../../../../../../app/app-survey/src/entity/action/sendFollowUp.ts): The Email page's Send actions and their confirmation dialog.
 - [invitation.ts](../../../../../../../lit-app/schema/survey/invitation.ts): `INVITATION_MERGE_FIELDS`, `validateInvitationContent`, mandatory footer helpers (`invitationFooter`, `invitationReasonLine`, `reminderSubject`), and invitation schemas.
-- [actions.ts](../../../../../../../app/app-survey/src/entity/action/actions.ts): Survey action bindings including `sendInvitationTestAction` for the Invitation tab's **Send test** button.
+- [actions.ts](../../../../../../../app/app-survey/src/entity/action/actions.ts): Survey action bindings including `sendInvitationTestAction` and `sendEmailTestAction` for the Email page's **Send test** buttons.
