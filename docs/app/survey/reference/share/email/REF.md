@@ -2,7 +2,7 @@
 
 ## Email Configuration - The Email Page
 
-- [message.ts](../../../../../../../app/app-survey/src/page/edit/deploy/message.ts): The Email deploy page — default purposes, confirmation content per survey language, notice wording, sender identity, the preview and the Sent history.
+- [email-editor.ts](../../../../../../../app/app-survey/src/page/edit/deploy/email-editor.ts): The Email deploy page (`app-survey-email-editor`) — default purposes, confirmation content per survey language, notice wording, sender identity, the preview and the Sent history. It is itself the active language's locale read.
 - [email.ts](../../../../../../../lit-app/schema/survey/email.ts): The `email` configuration schema (`invitationEnabled`, `defaultPurposes`, `notices`, `confirmation`, `sender`), the purpose vocabulary, `invitationsEnabled`, the notice defaults, and the confirmation/reminder/follow-up builders.
 - [emailMerge.ts](../../../../../../../lit-app/schema/survey/emailMerge.ts): The merge fields every survey email supports (`name`, `link`, `survey_title`, `organiser`), their fallbacks, and the placeholder substitution the builders share with invitations.
 - [email-sent.ts](../../../../../../../app/app-survey/src/page/edit/deploy/email-sent.ts): The Sent tab: a parent `db-ref` list read of the survey's `emailSend` collection, rendered through `EmailSendE`.

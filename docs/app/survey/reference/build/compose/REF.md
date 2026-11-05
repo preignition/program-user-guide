@@ -22,7 +22,7 @@
 - [BuildQuestion.ts](../../../../../../../app/app-survey/src/entity/settings/BuildQuestion.ts): Renders the Email Purposes picker for email fields (in standard and advanced mode); the picker writes the survey-level purposes and shows the respondent notice they generate.
 - [survey.ts](../../../../../../../lit-app/schema/survey/survey.ts): The survey's `email.defaultPurposes` — the purposes every email field follows.
 - [QuestionE.ts](../../../../../../../app/app-survey/src/entity/QuestionE.ts): The question entity schema; `build.purposes` is retained as legacy data and is no longer read.
-- [message.ts](../../../../../../../app/app-survey/src/page/edit/deploy/message.ts): The Email deploy page that edits the survey's email configuration.
+- [email-editor.ts](../../../../../../../app/app-survey/src/page/edit/deploy/email-editor.ts): The Email deploy page (`app-survey-email-editor`) that edits the survey's email configuration.
 - [storeRespondentData.ts](../../../../../../../app/app-survey/functions/src/service/storeRespondentData.ts): The submission pipeline's dataset filter — operational-only email values stay out of `raw`, `humanized` and `anonymized`.
 
 ## Label Length - Question Settings
