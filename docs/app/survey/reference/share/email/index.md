@@ -43,18 +43,9 @@ What each invited recipient receives with their unique survey link (`/v2/{survey
 - **Body:** Markdown-formatted message body with a live **Preview** tab.
 - **Links:** A link is delivered exactly as written. The platform disables the mail provider's click tracking, so the recipient receives the invitation URL (`/v2/{surveyId}/i/{token}`) — in the HTML and the plain-text part — instead of a tracking redirect.
 
-### Merge Fields and Validation
+### Invitation Merge Fields and Validation
 
-Both the subject and body support the following placeholders:
-
-| Merge Field | Required | Resolved Value |
-| :--- | :--- | :--- |
-| `{{link}}` | **Yes** | The recipient's unique invitation URL (`/v2/{surveyId}/i/{token}`). |
-| `{{name}}` | No | The recipient's display name from the team audience record. |
-| `{{survey_title}}` | No | The survey's title. |
-| `{{organiser}}` | No | The team's display name. |
-
-Validation runs continuously on both the invitation and reminder templates:
+Both the subject and body support the [merge fields](#merge-fields). Validation runs continuously on both the invitation and reminder templates:
 
 - Missing `{{link}}` in the invitation email displays an error (`The body needs {{link}}.`) and blocks sending an invitation run from **Distribute**.
 - Any unrecognised `{{placeholder}}` displays an error (`Unknown placeholder(s): ...`) and blocks sending.
@@ -89,6 +80,19 @@ Clicking **Send test** (`sendInvitationTest`) at the bottom of the **Invitation*
 - The recipient address is resolved on the server from the caller's authenticated account.
 - It creates no invitation run, generates no live respondent token, and does not alter any audience or progress counters.
 
+## Merge Fields
+
+Every message's subject and body support the same placeholders. The invitation is the only message that requires the link; the confirmation, the form reminders and the follow-ups treat it as optional.
+
+| Merge Field | Required | Resolved Value |
+| :--- | :--- | :--- |
+| `{{link}}` | Invitations only | The recipient's unique invitation URL (`/v2/{surveyId}/i/{token}`) in an invitation or invitation reminder; the survey's public link (`/v2/{surveyId}`) in the confirmation, the form reminders and the follow-ups. |
+| `{{name}}` | No | The recipient's name when the platform knows it — the audience record for an invitation, the account name for a submission confirmation; `there` otherwise. |
+| `{{survey_title}}` | No | The survey's title. |
+| `{{organiser}}` | No | The team's display name; the survey's title when the team has none. |
+
+An invitation or invitation reminder with a missing `{{link}}` or an unknown placeholder is not sent. The confirmation, the form reminders and the follow-ups send without `{{link}}`; an unknown placeholder is left as written.
+
 ## Email Purposes
 
 The page sets the survey's **purposes**, which decide how collected addresses are used and which message tabs appear. They belong to the survey, not to an individual field — the picker in an email field's settings edits the same setting — and the address itself is collected by an **Email** or **Account Email** field.
@@ -107,7 +111,7 @@ The addresses these emails use stay out of the survey's datasets and exports unl
 
 ## Submission Confirmation
 
-The confirmation email is sent when a respondent submits and the survey has somewhere to send it: the form selects the **Submission confirmation** purpose and collects an address, or invitations are on and the submission came through an invitation. Each survey language has its own **subject** and **body**, edited with the same **Translations** buttons; the respondent receives it in the language they answered in, falling back to the complete primary confirmation. The platform adds a line explaining why the email was sent; it is a transactional one-off, so it carries no unsubscribe link. Test submissions never send email.
+The confirmation email is sent when a respondent submits and the survey has somewhere to send it: the form selects the **Submission confirmation** purpose and collects an address, or invitations are on and the submission came through an invitation. Each survey language has its own **subject** and **body**, edited with the same **Translations** buttons; the respondent receives it in the language they answered in, falling back to the complete primary confirmation. The platform adds a line explaining why the email was sent; it is a transactional one-off, so it carries no unsubscribe link. Test submissions never send email. Both fields support the [merge fields](#merge-fields); unlike an invitation, the confirmation does not require `{{link}}`.
 
 With invitations on, a submission made through an invitation link is confirmed at the invitation address as well: one confirmation goes to the form's confirmation address and one to the invited address, deduplicated when they are the same. This works even when the form has no confirmation-purpose field, because the invitation established the address.
 
@@ -117,19 +121,19 @@ A field that carries the **Reminders** purpose shows the respondent a notice and
 
 Consent is per respondent: one record per session, which a later opt-in in the same session updates, and which the field's checkbox reflects when the respondent comes back. Editors never see the addresses — the contact records are not part of the survey data and are never exported.
 
-Each survey language has its own reminder **subject** and **body**. A reminder is sent in the language recorded on the respondent's session — the language they answered in — falling back to the complete primary reminder when that language has none or is half-written. The platform adds a line explaining why the respondent received it, and the public unsubscribe link.
+Each survey language has its own reminder **subject** and **body**. A reminder is sent in the language recorded on the respondent's session — the language they answered in — falling back to the complete primary reminder when that language has none or is half-written. The platform adds a line explaining why the respondent received it, and the public unsubscribe link. The subject and body support the [merge fields](#merge-fields); `{{link}}` is optional.
 
 ## Follow-up Emails
 
 After the survey's data has been analysed you may want to write to the respondents again: to share the results or a report, or to invite them to a later survey. Both are follow-ups, and both need a purpose of their own — **Results and reports** and **Follow-up survey**. A field that carries one asks the respondent to opt in, exactly as a reminder field does; a field may carry both, and then shows a checkbox for each.
 
-Writing the email on the purpose's tab is what makes the opt-in possible: a purpose with no complete subject and body in the primary language is not offered to respondents, so a consent is never collected for an email the survey cannot send. Write the **subject** and **body** per survey language — the email is sent in the language the respondent answered in, falling back to the complete primary message.
+Writing the email on the purpose's tab is what makes the opt-in possible: a purpose with no complete subject and body in the primary language is not offered to respondents, so a consent is never collected for an email the survey cannot send. Write the **subject** and **body** per survey language — the email is sent in the language the respondent answered in, falling back to the complete primary message. The subject and body support the [merge fields](#merge-fields); `{{link}}` is optional.
 
 Each follow-up has its own **Send** action. It reads the respondents who opted in for that purpose and, when invitations are on, the survey's invited audience; tells you how many will receive the email before you confirm; and sends once you do. The Send button stays disabled until the complete primary subject and body exist. A follow-up is not scheduled and not repeated: pressing Send again emails the same recipients again, so use it for a new message rather than a correction. The platform adds a line explaining why the recipient received it, and the public unsubscribe link; a send that the mail service did not accept is left for the next press of Send, and the dialog reports what went out.
 
 An audience recipient did not opt in through a form field, so their reason line names the invitation instead of the consent, and their unsubscribe link is the invitation's organisation-wide one. An audience member who unsubscribed, bounced, complained or is on the customer-wide suppression list is not emailed.
 
-The email is free text you write — the page does not publish a report or a survey for you. If the message is to carry a link (to a report page, or to the follow-up survey), write it in the body.
+The email is free text you write — the page does not publish a report or a survey for you. `{{link}}` resolves to the survey's public link; a link to a report page or a later survey is written in the body.
 
 ## Reminder Schedule
 
