@@ -38,7 +38,7 @@ The **Invitation** tab configures the messages sent when you distribute the surv
 
 What each invited recipient receives with their unique survey link (`/v2/{surveyId}/i/{token}`):
 
-- **Language:** Each language has its own subject and body, stored in that language's locale document. Use the **Translations** buttons above the editor; **Edit primary** returns to the source language, shown read-only above the translation. A complete recipient-language invitation is used as-is; a missing or half-written one falls back to the complete primary invitation, and the send dialog reports how many recipients fall back.
+- **Language:** Each language has its own subject and body, stored in that language's locale document. Use the **Translations** buttons above the editor; **Edit primary** returns to the source language, shown read-only above the translation. A complete, valid recipient-language invitation is used as-is; a missing, half-written or invalid one falls back to the complete primary invitation, and the send dialog reports how many recipients fall back.
 - **Subject:** Plain-text subject line (up to 200 characters).
 - **Body:** Markdown-formatted message body with a live **Preview** tab.
 - **Links:** A link is delivered exactly as written. The platform disables the mail provider's click tracking, so the recipient receives the invitation URL (`/v2/{surveyId}/i/{token}`) — in the HTML and the plain-text part — instead of a tracking redirect.
@@ -123,7 +123,7 @@ A field that carries the **Reminders** purpose shows the respondent a notice and
 
 Consent is per respondent: one record per session, which a later opt-in in the same session updates, and which the field's checkbox reflects when the respondent comes back. Editors never see the addresses — the contact records are not part of the survey data and are never exported.
 
-Each survey language has its own reminder **subject** and **body**. A reminder is sent in the language recorded on the respondent's session — the language they answered in — falling back to the complete primary reminder when that language has none or is half-written. The platform adds a line explaining why the respondent received it, and the public unsubscribe link. The subject and body support the [merge fields](#merge-fields); `{{link}}` is optional.
+Each survey language has its own reminder **subject** and **body**. A reminder is sent in the language recorded on the respondent's session — the language they answered in — falling back to the complete primary reminder when that language has none, is half-written or is invalid. The platform adds a line explaining why the respondent received it, and the public unsubscribe link. The subject and body support the [merge fields](#merge-fields); `{{link}}` is optional.
 
 ## Follow-up Emails
 
