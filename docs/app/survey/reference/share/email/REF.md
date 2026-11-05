@@ -5,8 +5,8 @@
 - [message.ts](../../../../../../../app/app-survey/src/page/edit/deploy/message.ts): The Email deploy page — default purposes, confirmation content per survey language, notice wording, sender identity, the preview and the Sent history.
 - [email.ts](../../../../../../../lit-app/schema/survey/email.ts): The `email` configuration schema (`invitationEnabled`, `defaultPurposes`, `notices`, `confirmation`, `sender`), the purpose vocabulary, `invitationsEnabled`, and the notice defaults.
 - [email-sent.ts](../../../../../../../app/app-survey/src/page/edit/deploy/email-sent.ts): The Sent tab: a parent `db-ref` list read of the survey's `emailSend` collection, rendered through `EmailSendE`.
-- [EmailSendE.ts](../../../../../../../app/app-survey/src/entity/EmailSendE.ts): The Sent-history Entity: the grid columns (when, message, masked recipient, status) and the detail form.
-- [EmailSend.ts](../../../../../../../lit-app/schema/survey/model/EmailSend.ts): The `emailSend` model (kind, masked recipient, server-stamped `at`, status and purpose), its repository and the best-effort `recordEmailSend` every send calls. The model is the type; there is no separate row struct.
+- [EmailSendE.ts](../../../../../../../app/app-survey/src/entity/EmailSendE.ts): The Sent-history Entity: the grid columns (when, message, recipients, sent, failed) and the detail form, with the Progress link for an invitation row's live funnel.
+- [EmailSend.ts](../../../../../../../lit-app/schema/survey/model/EmailSend.ts): The `emailSend` model (kind, total/sent/failed counts, server-stamped `at`, run id and purpose), its repository and the best-effort `recordEmailSend` each send action calls once. The model is the type; there is no separate row struct.
 - [survey.ts](../../../../../../../lit-app/schema/survey/survey.ts): The survey document's `email` field.
 - [SurveyE.ts](../../../../../../../app/app-survey/src/entity/SurveyE.ts): The survey entity whose `update`/`onInput` verbs the page writes with.
 - [designState.ts](../../../../../../../app/app-survey/src/page/edit/design/state.ts): Supplies the survey's languages (`allLanguages`) and the survey document (`survey`) the page reads.

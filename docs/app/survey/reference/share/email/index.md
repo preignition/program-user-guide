@@ -149,7 +149,7 @@ Every reminder carries an unsubscribe link. It opens a public page in the respon
 
 ## Sent History
 
-The **Sent** tab lists what the survey has mailed, newest first: the message kind (invitation, invitation reminder, confirmation, reminder, results or follow-up), the masked recipient (`a***@example.com`), when it went out, and whether the mail service accepted it. Click a column header to sort by that column. The history is a delivery trace, not an address book: full addresses never appear, and a failed history write never changes whether a mail was sent. The table is a live read of the survey's sends, so a new send appears as it is recorded.
+The **Sent** tab lists the survey's send actions, newest first: the message kind (invitation, invitation reminder, reminder, results or follow-up), when it ran, how many recipients it targeted, and how many the mail service accepted or refused. One row is one action, not one recipient: a 10,000-person invitation run is a single row. Click a column header to sort by that column. Invitation rows link to the run's **Progress** tab for live delivery and open counts. Submission confirmations are transactional and are not listed. The history is a trace, not an address book: it never carries addresses, and a failed history write never changes whether a mail was sent. The table is a live read, so a finished action appears as it is recorded.
 
 ## Preview
 

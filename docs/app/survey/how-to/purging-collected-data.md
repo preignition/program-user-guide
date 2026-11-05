@@ -30,5 +30,5 @@ A purge cannot be undone. Take an export first if you may need the responses.
 | The `raw`, `humanized` and `anonymized` responses | The survey definition and its configuration |
 | The session documents of this survey and their answers | The form definition |
 | The reminder contact records (addresses) | The published build |
-| The Sent email history (masked addresses and delivery outcomes) | — |
+| The Sent email history (send-action counts, no addresses) | — |
 | The survey's form-session documents | The shared answer stores and the test answers |
