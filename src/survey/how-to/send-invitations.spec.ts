@@ -111,6 +111,7 @@ const cloneInvitationSurvey = async (): Promise<{
     ref: { ...demoSurvey.ref, form: formRef },
     metaData: { ...demoSurvey.metaData, timestamp },
     email: {
+      invitationEnabled: true,
       defaultPurposes: ['dataset'],
       invitation: {
         en: {

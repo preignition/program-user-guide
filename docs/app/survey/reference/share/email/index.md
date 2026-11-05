@@ -6,12 +6,24 @@ description: Reference documentation for the survey's email configuration.
 
 The **Email** page configures the emails a survey sends to its respondents: the **invitation** and **reminder** emails sent to a team audience, the submission confirmation, the opt-in reminders for unsubmitted forms, and the follow-up emails you send by hand once the data has been analysed — their content, the schedule reminders follow, and how long a consent is kept. It is a configuration page: no recipient list is imported or managed here, and no invitation run is launched from it (only a single preview test email to the signed-in editor).
 
+The page has two independent channels. The **form channel** is an **Email** or **Account Email** field in the builder; the **invitation channel** is the editor's opt-in on [Share → Distribute](../distribute/index.md#invitations). The form channel's purposes are available without invitations. The **Invitation** tab needs the opt-in, and the **Confirmation** tab is always offered with it because an invited submission can be confirmed at the invitation address.
+
 <figure>
   <img src="./assets/email-auto.png" alt="The survey email configuration page">
   <figcaption>The Email page, in advanced mode.</figcaption>
 </figure>
 
-The page is organised in tabs: **Purposes** (the survey's email purposes, which also decide which message tabs appear), **Invitation** (the email and reminder templates sent when inviting a team audience, available even when the survey collects no address), one tab per purpose the survey selects — a purpose the survey does not select has nothing to send, so it has no tab — **Account email** when the form has an Account Email field, and **Advanced** (consent retention, sender and preview). When the form has no **Email** or **Account Email** field, the respondent messages are withheld and the **Purposes** tab explains how to add one; the invitation stays available. Each language of the survey has its own subject and body: the **Translations** buttons switch the editor, the active translation is filled, and **Edit primary** returns to the source language. When a translation is active, the primary language is shown read-only above the editor so you can translate from it. The server **Translate** action covers every email message, subject and body.
+The page is organised in tabs: **Purposes** (the survey's email purposes and the two delivery channels), **Invitation** when invitations are on (the email and reminder templates sent when inviting a team audience), **Confirmation** when invitations are on or the form selects it, one tab per remaining form purpose the survey selects — a purpose the survey does not select has nothing to send, so it has no tab — **Advanced** (consent retention, sender and preview), and **Sent** (the delivery history). Each language of the survey has its own subject and body: the **Translations** buttons switch the editor, the active translation is filled, and **Edit primary** returns to the source language. When a translation is active, the primary language is shown read-only above the editor so you can translate from it. The server **Translate** action covers every email message, subject and body.
+
+## Invitation Opt-In
+
+Email is opt-in per survey. The **Invitations** section of [Share → Distribute](../distribute/index.md#invitations) shows a **Send email invitations** switch once the survey's team has at least one audience. The switch writes the survey's `email.invitationEnabled` setting; it is the survey's email master switch.
+
+- **Off:** the **Invitation** tab is hidden and no audience email is sent. The form channel still works: when the form collects an address, the **Purposes** picker and the purpose tabs it selects remain available, and confirmations, reminders and follow-ups reach form recipients.
+- **On, without an Email or Account Email field:** the **Invitation**, **Confirmation**, **Advanced** and **Sent** tabs are available. The invitation and its confirmation reach the invited audience.
+- **On, with a field:** the **Invitation**, **Confirmation**, the selected form purpose tabs, **Advanced** and **Sent** are available. Results and follow-ups reach both the form opt-ins and the invited audience.
+
+Turning the switch off stops invitation traffic and audience sends. It does not delete content already written, does not stop the form channel, and the **Sent** history stays readable.
 
 ## Invitation and Reminder Emails
 
@@ -79,7 +91,9 @@ Clicking **Send test** (`sendInvitationTest`) at the bottom of the **Invitation*
 
 ## Email Purposes
 
-The page sets the survey's **purposes**, which decide how collected addresses are used and which message tabs appear. They belong to the survey, not to an individual field — the picker in an email field's advanced settings edits the same setting — and the address itself is collected by an **Email** or **Account Email** field.
+The page sets the survey's **purposes**, which decide how collected addresses are used and which message tabs appear. They belong to the survey, not to an individual field — the picker in an email field's settings edits the same setting — and the address itself is collected by an **Email** or **Account Email** field.
+
+The **Purposes** tab states the two delivery channels the purposes serve: **Invitations** (a team audience, managed on Distribute) and **form email fields** (the address a respondent gives). Results and follow-ups use both when invitations are on; confirmations add the invitation address for invited submissions, and reminders remain form-only.
 
 - **Dataset** — the answer is part of the survey data: it appears in the `raw`, `humanized` and `anonymized` exports.
 - **Submission confirmation** — the address serves the confirmation email.
@@ -93,7 +107,9 @@ The addresses these emails use stay out of the survey's datasets and exports unl
 
 ## Submission Confirmation
 
-The confirmation email is sent when a respondent submits the survey. Each survey language has its own **subject** and **body**, edited with the same **Translations** buttons; the respondent receives it in the language they answered in, falling back to the complete primary confirmation. The platform adds a line explaining why the email was sent; it is a transactional one-off, so it carries no unsubscribe link. Test submissions never send email.
+The confirmation email is sent when a respondent submits and the survey has somewhere to send it: the form selects the **Submission confirmation** purpose and collects an address, or invitations are on and the submission came through an invitation. Each survey language has its own **subject** and **body**, edited with the same **Translations** buttons; the respondent receives it in the language they answered in, falling back to the complete primary confirmation. The platform adds a line explaining why the email was sent; it is a transactional one-off, so it carries no unsubscribe link. Test submissions never send email.
+
+With invitations on, a submission made through an invitation link is confirmed at the invitation address as well: one confirmation goes to the form's confirmation address and one to the invited address, deduplicated when they are the same. This works even when the form has no confirmation-purpose field, because the invitation established the address.
 
 ## Reminders
 
@@ -109,7 +125,9 @@ After the survey's data has been analysed you may want to write to the responden
 
 Writing the email on the purpose's tab is what makes the opt-in possible: a purpose with no complete subject and body in the primary language is not offered to respondents, so a consent is never collected for an email the survey cannot send. Write the **subject** and **body** per survey language — the email is sent in the language the respondent answered in, falling back to the complete primary message.
 
-Each follow-up has its own **Send** action. It reads the respondents who opted in for that purpose, tells you how many will receive the email before you confirm, and sends once you do. The Send button stays disabled until the complete primary subject and body exist. A follow-up is not scheduled and not repeated: pressing Send again emails the same respondents again, so use it for a new message rather than a correction. The platform adds a line explaining why the respondent received it, and the public unsubscribe link; a send that the mail service did not accept is left for the next press of Send, and the dialog reports what went out.
+Each follow-up has its own **Send** action. It reads the respondents who opted in for that purpose and, when invitations are on, the survey's invited audience; tells you how many will receive the email before you confirm; and sends once you do. The Send button stays disabled until the complete primary subject and body exist. A follow-up is not scheduled and not repeated: pressing Send again emails the same recipients again, so use it for a new message rather than a correction. The platform adds a line explaining why the recipient received it, and the public unsubscribe link; a send that the mail service did not accept is left for the next press of Send, and the dialog reports what went out.
+
+An audience recipient did not opt in through a form field, so their reason line names the invitation instead of the consent, and their unsubscribe link is the invitation's organisation-wide one. An audience member who unsubscribed, bounced, complained or is on the customer-wide suppression list is not emailed.
 
 The email is free text you write — the page does not publish a report or a survey for you. If the message is to carry a link (to a report page, or to the follow-up survey), write it in the body.
 
@@ -128,6 +146,10 @@ The job only ever emails a session that has not submitted, whose consent is stil
 A consent is kept for a bounded period — **180 days** by default, adjustable between 1 and 365. When it passes, the platform deletes the record, and with it the address. The respondent's responses and every dataset are untouched: purging the collected data ends the reminders and the follow-ups too.
 
 Every reminder carries an unsubscribe link. It opens a public page in the respondent app — no sign-in — that validates the link's token on the server, withdraws the consent, and confirms in the survey's language. An invalid link, or one that was already used, shows a safe message and changes nothing.
+
+## Sent History
+
+The **Sent** tab lists what the survey has mailed, newest first: the message kind (invitation, invitation reminder, confirmation, reminder, results or follow-up), the masked recipient (`a***@example.com`), when it went out, and whether the mail service accepted it. Click a column header to sort by that column. The history is a delivery trace, not an address book: full addresses never appear, and a failed history write never changes whether a mail was sent. The table is a live read of the survey's sends, so a new send appears as it is recorded.
 
 ## Preview
 

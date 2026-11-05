@@ -46,6 +46,7 @@ const cloneEmailSurvey = async (): Promise<string> => {
     ref: { ...demoSurvey.ref, form: formRef },
     metaData: { ...demoSurvey.metaData, timestamp },
     email: {
+      invitationEnabled: true,
       defaultPurposes: ['dataset', 'confirmation'],
       confirmation: {
         en: {

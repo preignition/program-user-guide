@@ -72,7 +72,7 @@ Field attributes define the validation and input behavior of questions when pres
 
 ### Email Purposes
 
-Email fields — the **Email** type and the [Account Email](./account-email.md) type — collect an address. The survey's **Email Purposes** decide what those addresses are used for. The picker in the question's advanced settings and the one on the survey's [Email page](../../share/email/index.md#email-purposes) edit the same survey-level setting, so the choice applies to every email field.
+Email fields — the **Email** type and the [Account Email](./account-email.md) type — collect an address. The survey's **Email Purposes** decide what those addresses are used for. The picker in the question's settings and the one on the survey's [Email page](../../share/email/index.md#email-purposes) edit the same survey-level setting, so the choice applies to every email field. It is visible in both standard and advanced mode.
 
 - **Dataset**: the addresses are part of the survey data — they appear in the `raw`, `humanized` and `anonymized` exports.
 - **Submission confirmation**: the addresses serve the survey's confirmation sent when a respondent submits.

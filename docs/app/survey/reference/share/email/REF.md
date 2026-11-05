@@ -2,12 +2,15 @@
 
 ## Email Configuration - The Email Page
 
-- [message.ts](../../../../../../../app/app-survey/src/page/edit/deploy/message.ts): The Email deploy page — default purposes, confirmation content per survey language, notice wording, sender identity and the preview.
-- [email.ts](../../../../../../../lit-app/schema/survey/email.ts): The `email` configuration schema (`defaultPurposes`, `notices`, `confirmation`, `sender`), the purpose vocabulary and the notice defaults.
+- [message.ts](../../../../../../../app/app-survey/src/page/edit/deploy/message.ts): The Email deploy page — default purposes, confirmation content per survey language, notice wording, sender identity, the preview and the Sent history.
+- [email.ts](../../../../../../../lit-app/schema/survey/email.ts): The `email` configuration schema (`invitationEnabled`, `defaultPurposes`, `notices`, `confirmation`, `sender`), the purpose vocabulary, `invitationsEnabled`, and the notice defaults.
+- [email-sent.ts](../../../../../../../app/app-survey/src/page/edit/deploy/email-sent.ts): The Sent tab: a parent `db-ref` list read of the survey's `emailSend` collection, rendered through `EmailSendE`.
+- [EmailSendE.ts](../../../../../../../app/app-survey/src/entity/EmailSendE.ts): The Sent-history Entity: the grid columns (when, message, masked recipient, status) and the detail form.
+- [EmailSend.ts](../../../../../../../lit-app/schema/survey/model/EmailSend.ts): The `emailSend` model (kind, masked recipient, server-stamped `at`, status and purpose), its repository and the best-effort `recordEmailSend` every send calls. The model is the type; there is no separate row struct.
 - [survey.ts](../../../../../../../lit-app/schema/survey/survey.ts): The survey document's `email` field.
 - [SurveyE.ts](../../../../../../../app/app-survey/src/entity/SurveyE.ts): The survey entity whose `update`/`onInput` verbs the page writes with.
 - [designState.ts](../../../../../../../app/app-survey/src/page/edit/design/state.ts): Supplies the survey's languages (`allLanguages`) and the survey document (`survey`) the page reads.
-- [storeRespondentData.ts](../../../../../../../app/app-survey/functions/src/service/storeRespondentData.ts): The submission pipeline that reads `email.defaultPurposes` for its dataset filter and sends the confirmation.
+- [storeRespondentData.ts](../../../../../../../app/app-survey/functions/src/service/storeRespondentData.ts): The submission pipeline that reads `email.defaultPurposes` for its dataset filter and sends the confirmation to the form address and, for an invited submission, the invitation address.
 - [sendConfirmation.ts](../../../../../../../app/app-survey/functions/src/service/sendConfirmation.ts): Sends one confirmation through the platform `MailService`; without a configured mail key it sends nothing.
 - [server-config.ts](../../../../../../../app/app-survey/functions/src/server-config.ts): Declares the deployable's Mailgun keys; `MailService` is provided only when the key resolves.
 - [BuildQuestion.ts](../../../../../../../app/app-survey/src/entity/settings/BuildQuestion.ts): The question settings picker that edits the same survey-level purposes and shows the notice they generate.
@@ -24,7 +27,7 @@
 - [respondentReminders.ts](../../../../../../../app/app-survey/functions/src/service/respondentReminders.ts): The reminder job: the schedule, the sends, the send state and the expiry sweep.
 - [reminderJob.ts](../../../../../../../app/app-survey/functions/src/reminderJob.ts): The hourly scheduled function that runs the reminder job.
 - [sendPlatformMail.ts](../../../../../../../lit-app/effect-model/service/mail/platformMail.ts): The mail plumbing the confirmation, the reminders and the follow-ups share.
-- [followUp.ts](../../../../../../../app/app-survey/actionApi/src/services/followUp.ts): The editor-triggered follow-up: the dry-run recipient count, the sends, and the expiry sweep.
+- [followUp.ts](../../../../../../../app/app-survey/actionApi/src/services/followUp.ts): The editor-triggered follow-up: the dry-run recipient count, the form opt-ins, the invited audience when invitations are on, the sends, and the expiry sweep.
 - [sendFollowUp.ts](../../../../../../../lit-app/schema/survey/followUp.ts): The follow-up action's payload and result.
 - [sendFollowUp.ts](../../../../../../../app/app-survey/src/entity/action/sendFollowUp.ts): The Email page's Send actions and their confirmation dialog.
 - [invitation.ts](../../../../../../../lit-app/schema/survey/invitation.ts): `INVITATION_MERGE_FIELDS`, `validateInvitationContent`, mandatory footer helpers (`invitationFooter`, `invitationReasonLine`, `reminderSubject`), and invitation schemas.
