@@ -4,7 +4,7 @@ description: Remove the data a survey collected while keeping the survey itself.
 
 # Purge the data a survey collected
 
-**Purge data** removes what a survey collected — the responses and their derived trees, the survey's sessions and their answers, and the reminder contact records — and keeps the survey, its form and its configuration usable. It is not the same as deleting the survey, which removes everything.
+**Purge data** removes what a survey collected — the responses and their derived trees, the survey's sessions and their answers, the reminder contact records, and the Sent email history — and keeps the survey, its form and its configuration usable. It is not the same as deleting the survey, which removes everything.
 
 ::: warning
 A purge cannot be undone. Take an export first if you may need the responses.
@@ -19,7 +19,7 @@ A purge cannot be undone. Take an export first if you may need the responses.
 ## Purge the data
 
 1. Open the survey and choose **Purge data**.
-2. The dialog reads the survey's inventory and lists what will be deleted (sessions, form sessions, responses, reminder contact records) and what is kept (the survey, the form, the published build, the shared stores).
+2. The dialog reads the survey's inventory and lists what will be deleted (sessions, form sessions, responses, reminder contact records, Sent email history) and what is kept (the survey, the form, the published build, the shared stores).
 3. Type the survey's name to confirm, then choose **Purge data**.
 4. The action reports its progress and records an activity entry naming who purged what and when.
 
@@ -30,4 +30,5 @@ A purge cannot be undone. Take an export first if you may need the responses.
 | The `raw`, `humanized` and `anonymized` responses | The survey definition and its configuration |
 | The session documents of this survey and their answers | The form definition |
 | The reminder contact records (addresses) | The published build |
+| The Sent email history (masked addresses and delivery outcomes) | — |
 | The survey's form-session documents | The shared answer stores and the test answers |
