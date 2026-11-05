@@ -19,9 +19,9 @@
 ## Email Purposes - Question Settings
 
 - [email.ts](../../../../../../../lit-app/schema/survey/email.ts): The purpose vocabulary (`dataset`, `confirmation`, `reminder`, `account-verification`), the resolver that decides whether an email value belongs in the datasets, and the survey's `email` configuration schema (notices, confirmation content, sender).
-- [QuestionE.ts](../../../../../../../app/app-survey/src/entity/QuestionE.ts): The question entity's `build.purposes` setting and its multi-select picker.
-- [BuildQuestion.ts](../../../../../../../app/app-survey/src/entity/settings/BuildQuestion.ts): Renders the Email Purposes section for email fields in advanced mode, with the respondent notice the purposes generate.
-- [survey.ts](../../../../../../../lit-app/schema/survey/survey.ts): The survey's `email.defaultPurposes` — what an email field without its own purposes follows.
+- [BuildQuestion.ts](../../../../../../../app/app-survey/src/entity/settings/BuildQuestion.ts): Renders the Email Purposes picker for email fields in advanced mode; the picker writes the survey-level purposes and shows the respondent notice they generate.
+- [survey.ts](../../../../../../../lit-app/schema/survey/survey.ts): The survey's `email.defaultPurposes` — the purposes every email field follows.
+- [QuestionE.ts](../../../../../../../app/app-survey/src/entity/QuestionE.ts): The question entity schema; `build.purposes` is retained as legacy data and is no longer read.
 - [message.ts](../../../../../../../app/app-survey/src/page/edit/deploy/message.ts): The Email deploy page that edits the survey's email configuration.
 - [storeRespondentData.ts](../../../../../../../app/app-survey/functions/src/service/storeRespondentData.ts): The submission pipeline's dataset filter — operational-only email values stay out of `raw`, `humanized` and `anonymized`.
 

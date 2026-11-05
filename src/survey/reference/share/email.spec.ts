@@ -8,8 +8,9 @@ import { baseUrl, referenceRoot } from '../constants.ts'
 const db = initializeFirebaseApp().db
 
 /**
- * The demo survey has no email field, so its Email page is empty. Clone its
- * form skeleton into a small public survey with one email field and sample
+ * The demo survey has no email field, so its Email page only offers the
+ * invitation and the instruction to add one. Clone its form skeleton into a
+ * small public survey with one email field and sample
  * confirmation/reminder/follow-up content, and delete it after the screenshots.
  */
 const cloneEmailSurvey = async (): Promise<string> => {

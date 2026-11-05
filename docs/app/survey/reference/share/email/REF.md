@@ -10,8 +10,8 @@
 - [storeRespondentData.ts](../../../../../../../app/app-survey/functions/src/service/storeRespondentData.ts): The submission pipeline that reads `email.defaultPurposes` for its dataset filter and sends the confirmation.
 - [sendConfirmation.ts](../../../../../../../app/app-survey/functions/src/service/sendConfirmation.ts): Sends one confirmation through the platform `MailService`; without a configured mail key it sends nothing.
 - [server-config.ts](../../../../../../../app/app-survey/functions/src/server-config.ts): Declares the deployable's Mailgun keys; `MailService` is provided only when the key resolves.
-- [BuildQuestion.ts](../../../../../../../app/app-survey/src/entity/settings/BuildQuestion.ts): The question settings that show the notice a field's purposes generate.
-- [emailPurposes.ts](../../../../../../../app/app-survey/src/entity/question/emailPurposes.ts): The purposes an editor can choose for an email field.
+- [BuildQuestion.ts](../../../../../../../app/app-survey/src/entity/settings/BuildQuestion.ts): The question settings picker that edits the same survey-level purposes and shows the notice they generate.
+- [emailPurposes.ts](../../../../../../../app/app-survey/src/entity/question/emailPurposes.ts): The purposes an editor can choose for the survey's email addresses.
 - [respondentEmail.ts](../../../../../../../lit-app/schema/survey/respondentEmail.ts): The reminder consent records (`RespondentEmail`), their retention window and the opt-in callable's input/output schemas.
 - [respondentEmail.ts](../../../../../../../app/app-survey/actionApi/src/services/respondentEmail.ts): The opt-in service: normalises the address and upserts one record per actor in the survey's customer database.
 - [respondentEmail.ts](../../../../../../../app/app-survey/functions/src/respondentEmail.ts): The `survey-respondentEmailOptIn` callable the field calls.

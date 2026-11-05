@@ -72,13 +72,14 @@ Field attributes define the validation and input behavior of questions when pres
 
 ### Email Purposes
 
-Email fields — the **Email** type and the [Account Email](./account-email.md) type — carry an **Email Purposes** setting in the question's advanced settings. It decides what the address is used for:
+Email fields — the **Email** type and the [Account Email](./account-email.md) type — collect an address. The survey's **Email Purposes** decide what those addresses are used for. The picker in the question's advanced settings and the one on the survey's [Email page](../../share/email/index.md#email-purposes) edit the same survey-level setting, so the choice applies to every email field.
 
-- **Dataset**: the answer is part of the survey data — it appears in the `raw`, `humanized` and `anonymized` exports.
-- **Submission confirmation**: the address serves the survey's email workflow — a confirmation sent when the respondent submits, configured on the survey's Email page.
-- **Reminders**: the address serves the survey's email workflow — the respondent opts in on the field and the platform may email them while the form is unsubmitted, configured on the survey's Email page.
+- **Dataset**: the addresses are part of the survey data — they appear in the `raw`, `humanized` and `anonymized` exports.
+- **Submission confirmation**: the addresses serve the survey's confirmation sent when a respondent submits.
+- **Reminders**: the respondent opts in on the field and the platform may email them while the form is unsubmitted.
+- **Results and reports** and **Follow-up survey**: the respondent opts in on the field and you can send the follow-up from the Email page.
 
-A field without the **Dataset** purpose is *operational only*: its value is kept out of every export and serves the survey's email workflow instead. Email fields that do not choose their own purposes follow the survey-level default; the Account Email field is always used for account verification and stays out of the dataset unless you add **Dataset** to it explicitly.
+Without **Dataset** an address is *operational only*: it is kept out of every export and serves the survey's email workflow. The Account Email field always carries account verification; it joins the dataset when the survey selects **Dataset**.
 
 ::: info
 A respondent has **one** reminder consent per survey, so a survey with more than one reminder field builds with a warning: every reminder field offers the same consent and shares the same record. The reminders themselves — how many, how long after the last contact, and until when — are configured on the survey's [Email page](../../share/email/index.md#reminder-schedule).

@@ -11,7 +11,7 @@ The **Email** page configures the emails a survey sends to its respondents: the 
   <figcaption>The Email page, in advanced mode.</figcaption>
 </figure>
 
-The page is organised in tabs: **Purposes** (the survey-wide default for email fields), **Invitation** (the email and reminder templates sent when inviting a team audience), one tab per purpose the survey's email fields carry — a purpose no field uses has nothing to configure, so it has no tab — **Account email** when the form has an Account Email field, and **Advanced** (consent retention, sender and preview). Each language of the survey has its own subject and body: the **Translations** buttons switch the editor, the active translation is filled, and **Edit primary** returns to the source language. When a translation is active, the primary language is shown read-only above the editor so you can translate from it. The server **Translate** action covers every email message, subject and body.
+The page is organised in tabs: **Purposes** (the survey's email purposes, which also decide which message tabs appear), **Invitation** (the email and reminder templates sent when inviting a team audience, available even when the survey collects no address), one tab per purpose the survey selects — a purpose the survey does not select has nothing to send, so it has no tab — **Account email** when the form has an Account Email field, and **Advanced** (consent retention, sender and preview). When the form has no **Email** or **Account Email** field, the respondent messages are withheld and the **Purposes** tab explains how to add one; the invitation stays available. Each language of the survey has its own subject and body: the **Translations** buttons switch the editor, the active translation is filled, and **Edit primary** returns to the source language. When a translation is active, the primary language is shown read-only above the editor so you can translate from it. The server **Translate** action covers every email message, subject and body.
 
 ## Invitation and Reminder Emails
 
@@ -79,7 +79,7 @@ Clicking **Send test** (`sendInvitationTest`) at the bottom of the **Invitation*
 
 ## Email Purposes
 
-Email fields carry **purposes** that decide how the collected address is used. The page sets the survey-wide default; every email field can choose its own purposes in its advanced settings in the builder.
+The page sets the survey's **purposes**, which decide how collected addresses are used and which message tabs appear. They belong to the survey, not to an individual field — the picker in an email field's advanced settings edits the same setting — and the address itself is collected by an **Email** or **Account Email** field.
 
 - **Dataset** — the answer is part of the survey data: it appears in the `raw`, `humanized` and `anonymized` exports.
 - **Submission confirmation** — the address serves the confirmation email.
@@ -89,7 +89,7 @@ Email fields carry **purposes** that decide how the collected address is used. T
 
 A purpose other than **Dataset** keeps the address out of every export; it is used for the survey's emails only.
 
-The addresses these emails use stay out of the survey's datasets and exports unless a field also carries **Dataset** — see [Data Privacy and Security](../../../explanation/data-privacy-and-security.md).
+The addresses these emails use stay out of the survey's datasets and exports unless the survey also selects **Dataset** — see [Data Privacy and Security](../../../explanation/data-privacy-and-security.md).
 
 ## Submission Confirmation
 

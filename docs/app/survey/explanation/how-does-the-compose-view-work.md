@@ -25,7 +25,7 @@ The left pane provides a visual representation of your survey's structural hiera
 * **Organization:** You can expand or collapse branches to focus on specific sections, and drag-and-drop items to reorganize the survey's flow.
 * **Context:** It always tells you exactly where the item you are currently editing sits within the broader questionnaire.
 
-In advanced mode the tree also shows an **Email** row below Glossary. It is not part of the form hierarchy: it gathers the survey's **activated email messages** — Invitation always, and the purpose messages the email fields use. Selecting a message opens its editor in the right pane; selecting Email opens the Purposes overview. The row follows the field purposes and the survey's default purposes, so it only lists messages the survey can actually send.
+In advanced mode the tree also shows an **Email** row below Glossary. It is not part of the form hierarchy: it gathers the survey's **activated email messages** — Invitation always, and the purpose messages the email fields use. Selecting a message opens its editor in the right pane; selecting Email opens the Purposes overview. The row follows the survey's purposes, so it only lists messages the survey can actually send; the respondent messages also need an Email or Account Email field, while the invitation does not.
 
 **Clicking** on any item in the Tree View loads its details into the right pane, allowing you to edit its properties or content.
 
