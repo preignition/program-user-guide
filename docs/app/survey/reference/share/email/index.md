@@ -91,6 +91,7 @@ Every email editor has a **Send test** action. The **Invitation** tab has **Send
 </figure>
 
 - The recipient address is resolved on the server from the caller's authenticated account, never from the page.
+- A **Send test** action is disabled until the message has both a subject and a body. The invitation reminder test also becomes available when it would reuse the invitation content; an invitation with a missing `{{link}}` or an unknown placeholder is not testable.
 - The preview uses the active language's content and test merge values: `{{name}}` is `Test` and `{{link}}` is `/v2test/{surveyId}`.
 - A test creates no invitation run, consent record, respondent actor or Sent-history row, and does not alter any audience or progress counters.
 - A test send reports when the mail service accepted it; a message without complete content is not sent.
