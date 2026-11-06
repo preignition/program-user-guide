@@ -2,15 +2,18 @@
 
 ## Email Configuration - The Email Page
 
-- [email-editor.ts](../../../../../../../app/app-survey/src/page/edit/deploy/email-editor.ts): The Email deploy page (`app-survey-email-editor`) — default purposes, confirmation content per survey language, notice wording, sender identity, the preview and the Sent history. It is itself the active language's locale read.
-- [email.ts](../../../../../../../lit-app/schema/survey/email.ts): The `email` configuration schema (`invitationEnabled`, `defaultPurposes`, `notices`, `confirmation`, `sender`), the purpose vocabulary, `invitationsEnabled`, the notice defaults, and the confirmation/reminder/follow-up builders.
+- [email-editor.ts](../../../../../../../app/app-survey/src/page/edit/deploy/email-editor.ts): The Email deploy page (`app-survey-email-editor`) — the purpose picker, one tab per active email item, and the Sent history tab. A purpose tick creates its `email-{subtype}` item and an untick removes it; each message tab reads and writes that item's locale document. Translation is not shown here yet.
+- [email-items.ts](../../../../../../../app/app-survey/src/page/edit/deploy/email-items.ts): The page's item vocabulary and sync seam: purpose→message mapping, item labels/icons/descriptions, and `ensure`/`remove`/`syncEmailItems` through `SurveyE.add`/`remove`.
+- [email-message.ts](../../../../../../../app/app-survey/src/page/edit/deploy/email-message.ts): One email item's subject and body editor; it writes through `EmailE.update` inside the item-locale `db-ref-data` read.
+- [email.ts](../../../../../../../lit-app/schema/survey/email.ts): The `email` configuration schema (`invitationEnabled`, `defaultPurposes`, `notices`, `schedule`, `sender`), the purpose vocabulary, `invitationsEnabled`, the notice defaults, and the confirmation/reminder/follow-up builders.
 - [emailMerge.ts](../../../../../../../lit-app/schema/survey/emailMerge.ts): The merge fields every survey email supports (`name`, `link`, `survey_title`, `organiser`), their fallbacks, and the placeholder substitution the builders share with invitations.
-- [email-sent.ts](../../../../../../../app/app-survey/src/page/edit/deploy/email-sent.ts): The Sent tab: a parent `db-ref` list read of the survey's `emailSend` collection, rendered through `EmailSendE`.
+- [email-sent.ts](../../../../../../../app/app-survey/src/page/edit/deploy/email-sent.ts): The Sent tab: an absolute `db-ref` list read of the survey's `emailSend` collection, rendered through `EmailSendE`.
 - [EmailSendE.ts](../../../../../../../app/app-survey/src/entity/EmailSendE.ts): The Sent-history Entity: the grid columns (when, message, recipients, sent, delivered, opened, failed) and the detail form, with the Progress link for started/submitted.
 - [EmailSend.ts](../../../../../../../lit-app/schema/survey/model/EmailSend.ts): The `emailSend` model (kind, total/sent/failed counts, the provider's delivered/opened/bounced/complained/unsubscribed counters, server-stamped `at`, run id and purpose), its repository, the best-effort `recordEmailSend` each send action calls, and `recordInvitationFunnelDelta`, which the Mailgun webhook uses to mirror a run's funnel onto its row. The model is the type; there is no separate row struct.
-- [survey.ts](../../../../../../../lit-app/schema/survey/survey.ts): The survey document's `email` field.
-- [SurveyE.ts](../../../../../../../app/app-survey/src/entity/SurveyE.ts): The survey entity whose `update`/`onInput` verbs the page writes with.
-- [designState.ts](../../../../../../../app/app-survey/src/page/edit/design/state.ts): Supplies the survey's languages (`allLanguages`) and the survey document (`survey`) the page reads.
+- [Email.ts](../../../../../../../lit-app/schema/survey/model/Email.ts): The email item model and survey-item path/repository helpers.
+- [EmailE.ts](../../../../../../../app/app-survey/src/entity/EmailE.ts): The Email item Entity: deterministic `email-{subtype}` create, locale subject/body, and the Compose tree row.
+- [survey.ts](../../../../../../../lit-app/schema/survey/survey.ts): The survey document's `email` field and its item references.
+- [SurveyE.ts](../../../../../../../app/app-survey/src/entity/SurveyE.ts): The survey entity whose `update`/`add`/`remove` verbs the page and the item sync use.
 - [storeRespondentData.ts](../../../../../../../app/app-survey/functions/src/service/storeRespondentData.ts): The submission pipeline that reads `email.defaultPurposes` for its dataset filter and sends the confirmation to the form address and, for an invited submission, the invitation address.
 - [sendConfirmation.ts](../../../../../../../app/app-survey/functions/src/service/sendConfirmation.ts): Sends one confirmation through the platform `MailService`; without a configured mail key it sends nothing.
 - [sendEmailTest.ts](../../../../../../../app/app-survey/actionApi/src/services/sendEmailTest.ts): The per-message test send: resolves the caller's own address, builds the selected message with test merge values, and sends it without creating a consent, invitation or Sent-history row.
@@ -31,6 +34,6 @@
 - [sendPlatformMail.ts](../../../../../../../lit-app/effect-model/service/mail/platformMail.ts): The mail plumbing the confirmation, the reminders and the follow-ups share.
 - [followUp.ts](../../../../../../../app/app-survey/actionApi/src/services/followUp.ts): The editor-triggered follow-up: the dry-run recipient count, the form opt-ins, the invited audience when invitations are on, the sends, and the expiry sweep.
 - [sendFollowUp.ts](../../../../../../../lit-app/schema/survey/followUp.ts): The follow-up action's payload and result.
-- [sendFollowUp.ts](../../../../../../../app/app-survey/src/entity/action/sendFollowUp.ts): The Email page's Send actions and their confirmation dialog.
+- [sendFollowUp.ts](../../../../../../../app/app-survey/src/entity/action/sendFollowUp.ts): The `sendResults`/`sendFollowUpSurvey` actions and their confirmation dialog.
 - [invitation.ts](../../../../../../../lit-app/schema/survey/invitation.ts): `INVITATION_MERGE_FIELDS`, `validateInvitationContent`, mandatory footer helpers (`invitationFooter`, `invitationReasonLine`, `reminderSubject`), and invitation schemas.
-- [actions.ts](../../../../../../../app/app-survey/src/entity/action/actions.ts): Survey action bindings including `sendInvitationTestAction` and `sendEmailTestAction` for the Email page's **Send test** buttons.
+- [actions.ts](../../../../../../../app/app-survey/src/entity/action/actions.ts): Survey action bindings including `sendInvitationTestAction` and `sendEmailTestAction` for invitation and message test sends.
