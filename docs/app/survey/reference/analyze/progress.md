@@ -28,7 +28,7 @@ Each run card displays:
   - `sending` — batches are actively being dispatched.
   - `active` — initial send completed; links are live and scheduled reminders are active.
   - `paused` — automatically paused by the deliverability/reputation guard (high bounce or complaint rate after 1,000 sends) or a mail provider failure.
-  - `cancelled` — stopped by an editor; unopened links are deactivated and no further batches or reminders are sent.
+  - `cancelled` — stopped by an editor; links that have not landed are deactivated and no further batches or reminders are sent.
 
 ---
 
@@ -43,7 +43,7 @@ The header toolbar provides run-level controls for the currently selected run:
 | **Send reminder now** | Active / Sending runs | Runs a dry-run check (`remindInvitationRun` with `dryRun: true`) to count eligible recipients, prompts for confirmation with the exact count, and dispatches a manual reminder pass. |
 | **Send remaining** | When `sentCount < invitedCount` (and not paused/cancelled) | Sends the next batch of invitations when a large run was partially deferred by the 20,000/day team email cap. |
 | **Resume run** | Paused runs only | Clears the pause state on a run so remaining invitations and reminders can resume. |
-| **Cancel run** | Non-cancelled runs | Prompts for confirmation, marks the run `cancelled`, invalidates all unopened invitation links, and stops any remaining batches or scheduled reminders. |
+| **Cancel run** | Non-cancelled runs | Prompts for confirmation, marks the run `cancelled`, invalidates invitation links that have not landed, and stops any remaining batches or scheduled reminders. |
 
 ---
 
@@ -65,7 +65,7 @@ Each stage tile includes a progress bar showing its ratio against `Invited`. Dow
 | **Started answering** | `startedCount` | Recipients whose survey app loaded and whose respondent actor was created (stage `>= 4`). |
 | **Submitted** | `submittedCount` | Recipients who completed and submitted the survey (stage `5` / `submittedAt` present). |
 
-An email open is not a survey landing: Mailgun's tracking pixel can fire without the recipient visiting the survey. `landedCount` is the direct evidence; an invitation that started or submitted also counts as landed, which keeps runs recorded before the split readable. The legacy `openedAt` value mixed both events, so `openedCount` on those runs is an upper bound for email reads.
+An email open is not a survey landing: Mailgun's tracking pixel can fire without the recipient visiting the survey. `landedCount` is the direct evidence; an invitation that started or submitted also counts as landed, which keeps runs recorded before the split readable.
 
 ### Row 2: Rates and Negative Outcomes
 

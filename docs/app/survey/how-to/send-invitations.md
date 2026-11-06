@@ -148,7 +148,7 @@ As soon as the run starts sending, the app opens **Analytics → Progress** (`/s
    - **Refresh:** Reloads the latest funnel counts and recipient statuses.
    - **Download status CSV:** Exports the run's delivery and participation statuses with masked email addresses.
    - **Send reminder now:** Checks how many recipients are currently eligible for a manual reminder and prompts for confirmation before sending.
-   - **Cancel run:** Immediately deactivates all unopened invitation links and stops any remaining batches or scheduled reminders.
+   - **Cancel run:** Immediately deactivates invitation links that have not landed and stops any remaining batches or scheduled reminders.
 4. Check the **Reminders** card at the bottom of the page for a log of every scheduled and manual reminder pass (`Pass`, `When`, `Who`, `Sent`, and `Failed`).
 
 <figure>

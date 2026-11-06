@@ -149,7 +149,7 @@ In **Share → Distribute**, the new **Invitations** section lets you pick an au
 
 Once sent, the new **Analytics → Progress** tab tracks every invitation wave in real time:
 
-* **Funnel and rates:** See `Invited`, `Sent`, `Delivered`, `Link opened`, `Started`, and `Submitted` counts alongside `Response rate`, `Completion rate`, `Drop-off`, `Bounced`, `Unsubscribed`, `Complained`, and `Failed` tiles.
+* **Funnel and rates:** See `Invited`, `Sent`, `Delivered`, `Email opened`, `Survey started`, `Started answering`, and `Submitted` counts alongside `Response rate`, `Completion rate`, `Drop-off`, `Bounced`, `Unsubscribed`, `Complained`, and `Failed` tiles.
 * **Masked recipient details:** Click **Load details** to filter recipients by status or language, download a masked status CSV, send a manual reminder (`Remind`), re-send an invitation (`Resend`), or replace a compromised link (`Reissue link`).
 * **Strict anonymity boundary:** Organizers see *whether* an invited person responded, never *which answers* are theirs — no invitation ID, token, or email address ever enters a response document or dataset export.
 
