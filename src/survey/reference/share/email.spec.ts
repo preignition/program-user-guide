@@ -54,6 +54,10 @@ const cloneEmailSurvey = async (): Promise<string> => {
       name: 'Submission confirmation',
       subject: 'Thank you for completing our survey',
       body: 'Hello,\n\nThank you for taking the time to share your experience. Your answers help us improve accessibility for everyone.',
+      fr: {
+        subject: 'Merci d’avoir répondu à notre enquête',
+        body: 'Bonjour,\n\nMerci d’avoir pris le temps de partager votre expérience. Vos réponses nous aident à améliorer l’accessibilité pour tous.',
+      },
     },
     {
       subType: 'reminder',
@@ -117,6 +121,9 @@ const cloneEmailSurvey = async (): Promise<string> => {
       subject: item.subject,
       body: item.body,
     })
+    if ('fr' in item) {
+      await item.ref.collection('locale').doc('fr').set(item.fr)
+    }
   }
 
   await formRef.set({
@@ -166,12 +173,6 @@ const cloneEmailSurvey = async (): Promise<string> => {
 test.describe('Survey Reference - Email', () => {
   test('Email page', async ({ page }) => {
     test.setTimeout(90_000)
-    page.on('console', (msg) => {
-      if (msg.type() === 'error' || msg.type() === 'warning') {
-        console.log('PAGE CONSOLE:', msg.type(), msg.text())
-      }
-    })
-    page.on('pageerror', (err) => console.log('PAGE ERROR:', err))
     let surveyId: string | undefined
 
     try {
@@ -184,7 +185,7 @@ test.describe('Survey Reference - Email', () => {
 
       await initializePage(page, baseUrl, `/s/edit/survey/${surveyId}/share/message`)
       await expect(page.getByRole('heading', { name: 'Email', exact: true })).toBeVisible()
-      await page.getByRole('tab', { name: 'Submission confirmation' }).click()
+      await page.locator('[data-tab="confirmation"]').click()
       await expect(page.getByRole('textbox', { name: 'Subject' })).toHaveValue(
         'Thank you for completing our survey',
       )
@@ -195,6 +196,33 @@ test.describe('Survey Reference - Email', () => {
         true,
       )
       await context.setName('email').screenshot(true)
+      context.removeArea('content')
+
+      await page.locator('[data-tab="invitationReminder"]').click()
+      await expect(page.getByRole('textbox', { name: 'Subject' })).toHaveValue(
+        'A reminder: {{survey_title}} is still open',
+      )
+      await context.setName('email-invitation-reminder').screenshot()
+
+      await page.locator('[data-tab="results"]').click()
+      await expect(page.getByRole('textbox', { name: 'Subject' })).toHaveValue(
+        'The survey results are ready',
+      )
+      await context.setName('email-results').screenshot()
+
+      await initializePage(
+        page,
+        baseUrl,
+        `/s/edit/survey/${surveyId}/build/compose/email/${surveyId}.email-confirmation`,
+      )
+      await expect(page.getByRole('textbox', { name: 'Subject' })).toHaveValue(
+        'Thank you for completing our survey',
+      )
+      await context.setName('email-compose').screenshot()
+
+      await page.getByRole('button', { name: 'Localize Mode' }).click()
+      await page.waitForTimeout(350)
+      await context.setName('email-localize').screenshot()
     } finally {
       if (surveyId !== undefined) {
         const survey = await db.collection('app/data/survey').doc(surveyId).get()

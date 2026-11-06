@@ -61,28 +61,33 @@ Open any survey and go to **Build → Review**. You'll also see small review mar
 Want to send respondents a copy of their submission, nudge people who stopped halfway through, or share your findings once the report is ready? The new **Share → Email** page lets you do all three while keeping email addresses out of your survey dataset by default.
 
 <figure>
-  <img src="../app/survey/reference/share/email/assets/email-auto.png" alt="The Email page showing the Confirmation tab, with a subject and body written in English.">
-  <figcaption>Each email type gets its own tab, with a subject and body for every language in your survey.</figcaption>
+  <img src="../app/survey/reference/share/email/assets/email-auto.png" alt="The Email page showing the Purposes checkboxes at the top and the Submission confirmation tab selected below.">
+  <figcaption>Tick the purposes your survey needs at the top of Share → Email; each active message gets its own tab below.</figcaption>
 </figure>
 
 ### Three ways to reach respondents
 
-1. **Confirmation:** Sent automatically as soon as someone submits their response.
-2. **Reminders:** If a respondent opts in and leaves before finishing, the survey sends up to two gentle nudges. Switch on **Advanced** mode to customize how many reminders go out, how many days apart, and the cutoff date.
-3. **Follow-ups (*Results and reports* & *Follow-up survey*):** Ready to share what you learned or invite people to phase two? Write your message, preview exactly how many opted-in respondents will receive it, and hit **Send**.
+1. **Submission confirmation:** Sent automatically as soon as someone submits their response.
+2. **Reminders:** If a respondent opts in and leaves before finishing, the survey sends up to two gentle nudges. Switch on **Advanced** mode and open the **Advanced** tab to customize how many reminders go out, how many days apart, and the cutoff date.
+3. **Follow-ups (*Results and reports* & *Follow-up survey*):** Ready to share what you learned or invite people to phase two? Write your message on its tab, preview how many opted-in respondents (and invited audience members) will receive it, and click **Send results and reports** or **Send follow-up survey** right beside **Send test email**.
 
-Every message is sent in the respondent's chosen language and includes a one-click unsubscribe link (no login required).
+Every message is sent in the respondent's chosen language, supports merge fields (`{{name}}`, `{{link}}`, `{{survey_title}}`, `{{organiser}}`), and includes a one-click unsubscribe link (no login required) on every opt-in email.
 
 ### How to set it up in 3 steps
 
-1. In **Build → Compose**, add an **Email** question and check the purposes you need (*Confirmation*, *Reminders*, *Results and reports*, or *Follow-up survey*).
-2. Go to **Share → Email** — you'll see a tab for each purpose you enabled.
-3. Write your subject and message for each survey language.
+1. Under **Purposes** on **Share → Email** (or in an **Email** question's settings in **Build → Compose**), check the purposes you need (*Submission confirmation*, *Reminders*, *Results and reports*, or *Follow-up survey*). Checking a purpose creates its email item and tab.
+2. On **Share → Email**, write your subject and Markdown body for each active message tab and click **Send test email** to preview it in your own inbox.
+3. For multilingual surveys, expand the **Email** group in **Build → Compose** and switch on **Localize Mode** to translate each message's subject and body side by side — or run the AI **Translate** action to translate them alongside the rest of your survey.
+
+<figure>
+  <img src="../app/survey/reference/share/email/assets/email-localize-auto.png" alt="The Compose view in Localize Mode showing the Email group expanded in the tree and the French translation of the Submission confirmation email item.">
+  <figcaption>Active email items appear under the Email group in Build → Compose, where Localize Mode translates their subject and body alongside your questions.</figcaption>
+</figure>
 
 ### Privacy by design (and easy data cleanup)
 
-* **Kept separate from answers:** Unless you explicitly check the **Dataset** purpose on the email question, email addresses stay out of your response data and exports.
-* **Automatic expiry:** Consent records and the email addresses attached to them are automatically deleted after **180 days** (configurable in Advanced mode).
+* **Kept separate from answers:** Unless you explicitly check the **Dataset** purpose, email addresses stay out of your response data and exports.
+* **Automatic expiry:** Consent records and the email addresses attached to them are automatically deleted after **180 days** (configurable on the **Advanced** tab in Advanced mode).
 * **One-click Purge:** Need a clean slate after a study wraps up? Survey owners can now use **Purge data** to wipe collected responses, sessions, and consent records while keeping the survey structure intact. You'll get a clear preview of what will be removed before you confirm.
 
 * **Learn more:** [Email Reference](../app/survey/reference/share/email/index.md) · [Reminders](../app/survey/reference/share/email/index.md#reminders) · [Follow-up Emails](../app/survey/reference/share/email/index.md#follow-up-emails) · [Purge Collected Data](../app/survey/how-to/purging-collected-data.md) · [Data Privacy and Security](../app/survey/explanation/data-privacy-and-security.md)
@@ -124,11 +129,11 @@ Create named audiences in the Customer Portal and import recipients from a CSV f
 
 ### Write and test your invitation on Share → Email
 
-The new **Invitation** tab on **Share → Email** lets you write a plain-text subject and Markdown body for each language in your survey, using `{{link}}` (required), `{{name}}`, `{{survey_title}}`, and `{{organiser}}` merge fields, plus an optional custom **Reminder email**. Click **Send test** at any time to preview the rendered email in your own inbox without creating an invitation record.
+Turning on **Send email invitations** in **Share → Distribute** creates the **Invitation** and **Invitation reminder** tabs on **Share → Email** (and under **Email** in **Build → Compose**). Write a plain-text subject and Markdown body using `{{link}}` (required), `{{name}}`, `{{survey_title}}`, and `{{organiser}}` merge fields, customize the optional **Invitation reminder** message and default reminder schedule (`0`–`3` reminders and their delays), and translate them in **Localize Mode** or with the **Translate** action. Click **Send test email** on any message tab to preview the rendered email in your own inbox without creating an invitation record.
 
 <figure>
-  <img src="../app/survey/how-to/assets/send-invitations/email-invitation-full-auto.png" alt="The Invitation tab on the Email page with invitation and reminder editors and the Send test button.">
-  <figcaption>Write multilingual invitation and reminder emails and send yourself a test preview from Share → Email.</figcaption>
+  <img src="../app/survey/how-to/assets/send-invitations/email-invitation-full-auto.png" alt="The Invitation tab on the Email page showing the Purposes picker, the Invitation message editor, and the Send test email button.">
+  <figcaption>Write invitation and reminder emails and send yourself a test preview from Share → Email.</figcaption>
 </figure>
 
 ### Distribute to an audience and choose your access mode
@@ -167,7 +172,7 @@ Public survey links now open faster. Respondents download only what they need to
 
 * **You stay in control of AI:** AI review only runs when you click **Run review**, and it never edits your survey behind your back. Where AI credits are enabled, the panel shows the cost (1 credit per run) before you start.
 * **Always up to date:** If you edit your survey after running a review, the panel lets you know your findings are from an earlier draft.
-* **Safe testing:** Test submissions never trigger emails or create consent records, and **Send test** on the Invitation tab sends a preview only to the signed-in editor without creating an invitation.
+* **Safe testing:** Test submissions never trigger emails or create consent records, and **Send test email** on any message tab of the Email page sends a preview only to the signed-in editor without creating an invitation or consent record.
 * **Organization-wide suppression:** An unsubscribe, spam complaint, or hard bounce on an invitation adds a keyed hash of the address to a customer-wide suppression list that survives survey or audience deletion, ensuring people who opt out are never re-contacted.
 * **Updated privacy policy:** Because the platform privacy policy now covers survey emails, invitation records, consent retention, and data purging, returning respondents may be prompted to re-confirm consent on their next visit.
 

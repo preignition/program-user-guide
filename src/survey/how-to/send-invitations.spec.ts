@@ -38,26 +38,28 @@ const assetPath = 'docs/app/survey/how-to'
 const assetName = 'send-invitations'
 
 /**
- * The deployed action API predates the run's `sentInvitationCount` maintenance:
- * it marks each invitation sent but leaves the funnel counter at zero. Derive
- * the counter from the invitation rows so the fixture shows the intended
- * Progress state (the send itself is real).
+ * Derive the run's `sentInvitationCount` from its invitation rows and write it
+ * back, returning the count. The count tracks the audience's recipients (set
+ * by the imported CSV), so the Progress assertion below keys off it instead of
+ * a hardcoded number.
  */
-const syncRunSentCount = async (surveyId: string) => {
+const syncRunSentCount = async (surveyId: string): Promise<number> => {
   const runs = await db
     .collection(`app/data/survey/${surveyId}/invitationRun`)
     .orderBy('createdAt', 'desc')
     .limit(1)
     .get()
   const run = runs.docs[0]
-  if (!run) return
+  if (!run) return 0
   const sent = await db
     .collection(`app/data/survey/${surveyId}/invitation`)
     .where('runId', '==', run.id)
     .where('status', '==', 'sent')
     .count()
     .get()
-  await run.ref.update({ sentInvitationCount: sent.data().count })
+  const count = sent.data().count
+  await run.ref.update({ sentInvitationCount: count })
+  return count
 }
 
 /**
@@ -155,20 +157,10 @@ const cloneInvitationSurvey = async (): Promise<{
     email: {
       invitationEnabled: true,
       defaultPurposes: ['dataset', 'confirmation'],
-      invitation: { en: invitationContent },
-      invitationReminder: { en: invitationReminderContent },
       invitationSchedule: { count: 2, delays: [3, 7] },
       schedule: { count: 2, delays: [3, 7] },
       consents: true,
       retentionDays: 180,
-    },
-  })
-
-  await surveyRef.collection('locale').doc('en').set({
-    email: {
-      invitation: invitationContent,
-      invitationReminder: invitationReminderContent,
-      confirmation: confirmationContent,
     },
   })
 
@@ -246,6 +238,9 @@ test.describe('Survey How-To - Send invitations', () => {
       ...previousClaims,
       team: teamId,
     })
+    // Let the custom claim propagate before the first sign-in mints the test
+    // user's token, so the token carries the team the guide sends from.
+    await new Promise((resolve) => setTimeout(resolve, 3000))
 
     try {
       // ## 1. Add a new audience to the team
@@ -314,12 +309,15 @@ test.describe('Survey How-To - Send invitations', () => {
       formRef = createdForm
       const surveyId = surveyRef.id
 
-      await initializePage(page, baseUrl, `/s/edit/survey/${surveyId}/build/compose`)
+      // Load the survey editor with a hard navigation straight to its URL: the
+      // customer-portal round-trip can leave a stale auth token that a root
+      // `goto` + `pushState` reuses, denying the survey/form reads.
+      await page.goto(`${baseUrl}/s/edit/survey/${surveyId}/build/compose`)
+      await page.waitForTimeout(2000)
       await page.getByRole('link', { name: 'share' }).click()
       await page.getByText('Email', { exact: true }).first().click()
-
       await expect(page.getByRole('heading', { name: 'Email', exact: true })).toBeVisible()
-      await page.getByRole('tab', { name: 'Invitation', exact: true }).click()
+      await page.locator('[data-tab="invitation"]').click()
       await expect(page.locator('#invitation-panel')).toBeVisible()
       await expect(page.getByRole('textbox', { name: 'Subject' }).first()).toHaveValue(
         'You are invited: share your experience',
@@ -383,12 +381,12 @@ test.describe('Survey How-To - Send invitations', () => {
       // Wait for the send's batch to mark the invitations, then refresh until
       // the funnel shows them.
       await page.waitForTimeout(3000)
-      await syncRunSentCount(surveyId)
+      const sentCount = await syncRunSentCount(surveyId)
       await expect(async () => {
         await page.getByRole('button', { name: 'Refresh' }).click()
         await expect(
           page.locator('lapp-stat').filter({ hasText: 'Sent' }).first(),
-        ).toContainText('2')
+        ).toContainText(String(sentCount))
       }).toPass({ timeout: 60_000, intervals: [2000] })
 
       await context

@@ -25,6 +25,8 @@ The left pane provides a visual representation of your survey's structural hiera
 * **Organization:** You can expand or collapse branches to focus on specific sections, and drag-and-drop items to reorganize the survey's flow.
 * **Context:** It always tells you exactly where the item you are currently editing sits within the broader questionnaire.
 
+When the survey has active email messages (created by enabling invitations on **Share → Distribute** or selecting email purposes on **Share → Email**), the tree also shows an **Email** group row below **Terms and Conditions** that expands to the individual email items (`Invitation`, `Invitation reminder`, `Submission confirmation`, `Reminder`, `Results and reports`, `Follow-up survey`).
+
 **Clicking** on any item in the Tree View loads its details into the right pane, allowing you to edit its properties or content.
 
 **Right-clicking** on an item in the Tree View opens a context menu with options to add new items (e.g., add a new question under a section) or perform actions like duplication and deletion.

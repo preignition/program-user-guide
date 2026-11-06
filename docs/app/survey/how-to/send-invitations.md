@@ -59,25 +59,24 @@ Invalid rows never block valid rows from being imported, and re-importing the sa
 
 ## Step 2: Write the Invitation Email
 
-Before you can send an invitation run, configure the email subject and body on the survey's **Email** page.
+Before you can send an invitation run, enable invitations on **Share → Distribute** (under **Invitations**, turn on **Send email invitations**) and configure the email subject and body on the survey's **Email** page.
 
-1. Open your survey in the Survey Editor and go to **Share**.
-2. Enable the **Advanced** mode toggle in the top toolbar so the **Email** section appears in the left navigation drawer, then click **Email**.
-3. Select the **Invitation** tab.
-4. If your survey is multilingual, choose the target language from the **Language** dropdown. Write a translation for each language your audience uses (recipients whose language has no translation automatically fall back to the survey's primary language).
-5. Under **Invitation email**, enter:
+1. Open your survey in the Survey Editor and go to **Share → Email** in the left navigation drawer.
+2. Select the **Invitation** tab (created when **Send email invitations** is turned on in **Share → Distribute**).
+3. Enter the invitation message in the survey's primary language:
    - **Subject:** Plain-text subject line (up to 200 characters), for example `You are invited: share your experience`.
-   - **Email body:** Markdown message body. Use the **Preview** tab above the editor to inspect the rendered formatting.
-6. Include the required `{{link}}` merge field in the body, along with any optional merge fields:
+   - **Body:** Markdown message body. Use the **Preview** tab above the editor to inspect the rendered formatting.
+4. Include the required `{{link}}` merge field in the message, along with any optional merge fields:
    - `{{link}}` *(required)* — the recipient's unique survey URL (`/v2/{surveyId}/i/{token}`).
    - `{{name}}` — the recipient's name from the audience record.
    - `{{survey_title}}` — the title of the survey.
    - `{{organiser}}` — your team's display name.
-7. Under **Reminder email**, optionally write a dedicated **Subject** and **Email body** for scheduled or manual reminders. If you leave the reminder email empty, reminders reuse the invitation email with a `Reminder N of M:` prefix.
+5. On the **Invitation reminder** tab, optionally write a dedicated **Subject** and **Body** for scheduled or manual reminders, and set the default **Reminder schedule** (`No reminders` to `3 reminders` and the days between them). If you leave the reminder message empty, reminders reuse the invitation email with a `Reminder N of M:` prefix.
+6. If your survey is multilingual, open **Build → Compose**, switch on **Localize Mode**, expand the **Email** group in the tree, and translate the **Invitation** (and **Invitation reminder**) item into each language your audience uses — or run the **Translate** action. Recipients whose language has no valid translation automatically fall back to the survey's primary language.
 
 <figure>
-  <img src="./assets/send-invitations/email-invitation-full-auto.png" alt="The Invitation tab on the survey Email page showing the invitation and reminder editors">
-  <figcaption>Compose the invitation email and optional reminder email on the Email page's Invitation tab.</figcaption>
+  <img src="./assets/send-invitations/email-invitation-full-auto.png" alt="The Invitation tab on the survey Email page showing the Purposes picker, the Invitation message editor, and the Send test email button">
+  <figcaption>Compose the invitation email on the Email page's Invitation tab.</figcaption>
 </figure>
 
 ::: info Mandatory Footer and Validation
@@ -90,12 +89,12 @@ The platform automatically appends the organiser attribution, a link to the priv
 
 Before inviting your audience, verify how the email looks in an inbox.
 
-1. At the bottom of the **Invitation** tab on the **Email** page, click **Send test**.
-2. The platform sends a rendered preview of the active language's invitation email to the email address of your signed-in account and displays a **Test invitation sent.** notification.
+1. Below the editor on the **Invitation** tab (or any other message tab) on the **Email** page, click **Send test email**.
+2. The platform sends a rendered preview of the email to the address of your signed-in account and displays a **Test email sent.** notification.
 
 <figure>
-  <img src="./assets/send-invitations/email-test-sent-auto.png" alt="Send test button and Test invitation sent notification toast">
-  <figcaption>Click Send test to receive a preview in your own inbox without creating an invitation record.</figcaption>
+  <img src="./assets/send-invitations/email-test-sent-auto.png" alt="Send test email button and Test email sent notification toast">
+  <figcaption>Click Send test email to receive a preview in your own inbox without creating an invitation record.</figcaption>
 </figure>
 
 Sending a test email does not create an invitation run, does not generate a live respondent token, and does not count toward recipient statistics.

@@ -26,4 +26,4 @@ The tool supports automatic base translation for empty fields and manual overrid
 
 ## Email Messages
 
-Email messages are not shown in the Compose tree. Edit their per-language subject and body on the survey's [Email page](../share/email/index.md). The **Translate** action still includes every email message, subject and body; the override choice applies to them as it does to the rest of the survey.
+When a survey has active email messages (created by turning on invitations on **Share → Distribute** or ticking a purpose on **Share → Email**), the Compose tree includes an **Email** group row below **Terms and Conditions**. Expand **Email** in **Localize Mode** to translate each message item's **Subject** and **Body** in the active language side by side with the primary language; the **Translation** column in the tree shows the translated subject. The **Translate** action and JSON translation **Import/Export** include every active email item automatically; the override choice applies to them as it does to the rest of the survey. See the [Email Reference](../share/email/index.md#email-items-in-compose-and-localize) for details.

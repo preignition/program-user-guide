@@ -50,6 +50,8 @@ Once languages are activated, return to the **Build, organize Content** view.
 
 When Localize Mode is active, the survey tree grid will display the original text alongside the translation for each activated language. This allows you to easily compare and edit translations inline.
 
+When the survey has active email messages (invitations, reminders, confirmation, or follow-ups), the tree also includes an **Email** group row below **Terms and Conditions**. Expand **Email** to translate each message's **Subject** and Markdown **Body** alongside the primary language; the **Translate** action covers every active email item too.
+
 <figure>
   <img src="./assets/localize-survey/step-2-click-overall-structure.png" alt="Survey tree showing original and translated text">
   <figcaption>The tree grid displays side-by-side text for easy comparison.</figcaption>

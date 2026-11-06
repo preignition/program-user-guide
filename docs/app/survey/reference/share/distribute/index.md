@@ -84,9 +84,9 @@ The **Invitations** section (`app-survey-invitation-composer`) at the bottom of 
 
 ### Email Invitation Opt-In
 
-When the survey's team has at least one audience, the Invitations section shows a **Send email invitations** switch. Turning it on writes the survey's `email.invitationEnabled` setting and is the survey's email master switch:
+When the survey's team has at least one audience, the Invitations section shows a **Send email invitations** switch. Turning it on writes the survey's `email.invitationEnabled` setting and creates the **Invitation** and **Invitation reminder** email items:
 
-- It unlocks the [Email page](../email/index.md)'s invitation and purpose messages (together with an Email or Account Email field in the form).
+- It unlocks the [Email page](../email/index.md)'s **Invitation** and **Invitation reminder** tabs (and lists those items under **Email** in **Build → Compose**).
 - It lets the survey's results and follow-up emails reach the invited audience, not only the form's opt-ins.
 - It does not itself send anything.
 
@@ -98,7 +98,7 @@ Before the composer becomes active:
 
 1. **Invitation opt-in:** **Send email invitations** must be on.
 2. **Team audience:** The survey's team must have at least one active audience in **Team Settings → Audiences**.
-3. **Invitation email content:** The survey's [Email → Invitation](../email/index.md#invitation-and-reminder-emails) tab must have a non-empty subject, body, and the `{{link}}` placeholder in the survey's primary language. Otherwise, the section displays a warning linking to the Email page.
+3. **Invitation email content:** The survey's [Email → Invitation](../email/index.md#invitation-and-invitation-reminder-emails) tab must have a non-empty subject, body, and the `{{link}}` placeholder in the survey's primary language. Otherwise, the section displays a warning linking to the Email page.
 
 ### Configuration Controls
 
