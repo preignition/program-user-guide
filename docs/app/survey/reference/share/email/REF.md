@@ -37,4 +37,4 @@
 - [sendFollowUp.ts](../../../../../../../lit-app/schema/survey/followUp.ts): The follow-up action's payload and result.
 - [sendFollowUp.ts](../../../../../../../app/app-survey/src/entity/action/sendFollowUp.ts): The `sendResults`/`sendFollowUpSurvey` actions and their confirmation dialog; the Email page renders them on their message tabs.
 - [invitation.ts](../../../../../../../lit-app/schema/survey/invitation.ts): `INVITATION_MERGE_FIELDS`, `validateInvitationContent`, mandatory footer helpers (`invitationFooter`, `invitationReasonLine`, `reminderSubject`), and invitation schemas.
-- [actions.ts](../../../../../../../app/app-survey/src/entity/action/actions.ts): Survey action bindings including `sendInvitationTestAction` and `sendEmailTestAction` for invitation and message test sends.
+- [actions.ts](../../../../../../../app/app-survey/src/entity/action/actions.ts): Survey action bindings including `sendEmailTestAction` for the per-message test send.
