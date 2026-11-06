@@ -98,6 +98,48 @@ const cloneInvitationSurvey = async (): Promise<{
   const questionRef: DocumentReference = formRef.collection('items').doc()
   const timestamp = FieldValue.serverTimestamp()
 
+  const invitationContent = {
+    subject: 'You are invited: share your experience',
+    body: [
+      'Dear {{name}},',
+      '',
+      'We would like to hear about your experience. The survey takes about 10 minutes, and your answers are anonymous.',
+      '',
+      '**Take the survey:** {{link}}',
+      '',
+      'Thank you,',
+      'The {{organiser}} team',
+    ].join('\n'),
+  }
+  const invitationReminderContent = {
+    subject: 'A reminder: {{survey_title}} is still open',
+    body: 'Dear {{name}},\n\nThere is still time to share your experience.\n\n**Take the survey:** {{link}}',
+  }
+  const confirmationContent = {
+    subject: 'Thank you for completing our survey',
+    body: 'Hello,\n\nThank you for taking the time to share your experience.',
+  }
+  const emailItems = [
+    {
+      subType: 'invitation',
+      name: 'Invitation',
+      content: invitationContent,
+      ref: surveyRef.collection('items').doc('email-invitation'),
+    },
+    {
+      subType: 'invitationReminder',
+      name: 'Invitation reminder',
+      content: invitationReminderContent,
+      ref: surveyRef.collection('items').doc('email-invitationReminder'),
+    },
+    {
+      subType: 'confirmation',
+      name: 'Submission confirmation',
+      content: confirmationContent,
+      ref: surveyRef.collection('items').doc('email-confirmation'),
+    },
+  ] as const
+
   const survey = { ...demoSurvey }
   delete survey.latestBuild
   delete survey.latestBuildVersion
@@ -107,38 +149,42 @@ const cloneInvitationSurvey = async (): Promise<{
     name: 'Invitation reference',
     shortDesc: 'Invitation reference',
     language: 'en',
-    items: [],
+    items: emailItems.map((item) => ({ type: 'email', ref: item.ref })),
     ref: { ...demoSurvey.ref, form: formRef },
     metaData: { ...demoSurvey.metaData, timestamp },
     email: {
       invitationEnabled: true,
-      defaultPurposes: ['dataset'],
-      invitation: {
-        en: {
-          subject: 'You are invited: share your experience',
-          body: [
-            'Dear {{name}},',
-            '',
-            'We would like to hear about your experience. The survey takes about 10 minutes, and your answers are anonymous.',
-            '',
-            '**Take the survey:** {{link}}',
-            '',
-            'Thank you,',
-            'The {{organiser}} team',
-          ].join('\n'),
-        },
-      },
-      invitationReminder: {
-        en: {
-          subject: 'A reminder: {{survey_title}} is still open',
-          body: 'Dear {{name}},\n\nThere is still time to share your experience.\n\n**Take the survey:** {{link}}',
-        },
-      },
+      defaultPurposes: ['dataset', 'confirmation'],
+      invitation: { en: invitationContent },
+      invitationReminder: { en: invitationReminderContent },
+      invitationSchedule: { count: 2, delays: [3, 7] },
       schedule: { count: 2, delays: [3, 7] },
       consents: true,
       retentionDays: 180,
     },
   })
+
+  await surveyRef.collection('locale').doc('en').set({
+    email: {
+      invitation: invitationContent,
+      invitationReminder: invitationReminderContent,
+      confirmation: confirmationContent,
+    },
+  })
+
+  for (const item of emailItems) {
+    await item.ref.set({
+      name: item.name,
+      subType: item.subType,
+      metaData: {
+        ...demoSurvey.metaData,
+        type: 'email',
+        deleted: false,
+        timestamp,
+      },
+    })
+    await item.ref.collection('locale').doc('en').set(item.content)
+  }
 
   await formRef.set({
     ...demoForm,
@@ -270,13 +316,12 @@ test.describe('Survey How-To - Send invitations', () => {
 
       await initializePage(page, baseUrl, `/s/edit/survey/${surveyId}/build/compose`)
       await page.getByRole('link', { name: 'share' }).click()
-      await page.getByRole('switch', { name: 'toggle advanced mode' }).check()
       await page.getByText('Email', { exact: true }).first().click()
 
       await expect(page.getByRole('heading', { name: 'Email', exact: true })).toBeVisible()
-      await page.getByText('Invitation', { exact: true }).click()
+      await page.getByRole('tab', { name: 'Invitation', exact: true }).click()
       await expect(page.locator('#invitation-panel')).toBeVisible()
-      await expect(page.getByRole('textbox', { name: 'subject' }).first()).toHaveValue(
+      await expect(page.getByRole('textbox', { name: 'Subject' }).first()).toHaveValue(
         'You are invited: share your experience',
       )
 
@@ -285,14 +330,16 @@ test.describe('Survey How-To - Send invitations', () => {
         .screenshot()
 
       // The test mail goes to the signed-in editor and creates no invitation.
-      await page.getByRole('button', { name: 'Send test' }).click()
-      await expect(page.getByText('Test invitation sent.')).toBeVisible({ timeout: 60_000 })
+      await page.getByRole('button', { name: 'Send test email' }).click()
+      await expect(page.getByText(/Test (email|invitation) sent\./)).toBeVisible({
+        timeout: 60_000,
+      })
       await context
         .setName(`${assetName}/email-test-sent`)
         .screenshot()
 
       // ## 4. Send the invitations from Share / Distribute
-      // Let the "test invitation sent" toast expire so it does not sit in the
+      // Let the "test email sent" toast expire so it does not sit in the
       // screenshots that follow. Notifications live for ~5 s; waiting on the
       // text is not enough because a hidden copy of it stays in the DOM.
       await page.waitForTimeout(6000)
@@ -324,12 +371,9 @@ test.describe('Survey How-To - Send invitations', () => {
         .click({ timeout: 30_000 })
 
       // ## 5. Follow the run in Analytics / Progress
-      // The send redirects to the analytics root; the Progress tab itself is
-      // one segment further, so open it directly.
-      await page.waitForURL(`**/s/analyze/survey/${surveyId}/progress**`, { timeout: 180_000 })
-      // A hard navigation straight after the redirect can fire the survey reads
-      // before the auth session is restored; the page's own bootstrap does the
-      // sign-in handshake first.
+      await expect(page.getByRole('dialog', { name: 'Send invitations?' })).toBeHidden({
+        timeout: 180_000,
+      })
       await initializePage(page, baseUrl, `/s/analyze/survey/${surveyId}/progress/progress`)
       await expect(page.getByRole('heading', { name: 'Progress' })).toBeVisible({
         timeout: 60_000,

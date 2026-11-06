@@ -1,17 +1,19 @@
 import { expect, test } from '@playwright/test'
+import { getAuth } from 'firebase-admin/auth'
 import { FieldValue, type DocumentReference } from 'firebase-admin/firestore'
 import { Context } from '../../../Context.ts'
 import { initializeFirebaseApp } from '../../../utils/initialize.ts'
 import { initializePage } from '../../../utils/initializePage.ts'
-import { baseUrl, referenceRoot } from '../constants.ts'
+import { baseUrl, pageContent, referenceRoot } from '../constants.ts'
 
 const db = initializeFirebaseApp().db
+const screenshotUserEmail = process.env.PLAYWRIGHT_A11Y_EMAIL ?? 'playwright-a11y@preignition.org'
 
 /**
- * The demo survey has no email field, so its Email page only offers the
- * invitation and the instruction to add one. Clone its form skeleton into a
- * small public survey with one email field and sample
- * confirmation/reminder/follow-up content, and delete it after the screenshots.
+ * The demo survey has no email field, so its Email page has no purpose items by
+ * default. Clone its form skeleton into a small public survey with one email
+ * field and sample email items (invitation, invitation reminder, confirmation,
+ * reminder, results and follow-up survey), and delete it after the screenshots.
  */
 const cloneEmailSurvey = async (): Promise<string> => {
   const demoSurvey = (await db.doc('app/data/survey/3BBFzJneqakYoyDu02c2').get()).data()!
@@ -34,6 +36,50 @@ const cloneEmailSurvey = async (): Promise<string> => {
   const questionRef: DocumentReference = formRef.collection('items').doc()
   const timestamp = FieldValue.serverTimestamp()
 
+  const messages = [
+    {
+      subType: 'invitation',
+      name: 'Invitation',
+      subject: 'You are invited: share your experience',
+      body: 'Dear {{name}},\n\nWe would like to hear about your experience. The survey takes about 10 minutes, and your answers are anonymous.\n\n**Take the survey:** {{link}}\n\nThank you,\nThe {{organiser}} team',
+    },
+    {
+      subType: 'invitationReminder',
+      name: 'Invitation reminder',
+      subject: 'A reminder: {{survey_title}} is still open',
+      body: 'Dear {{name}},\n\nThere is still time to share your experience.\n\n**Take the survey:** {{link}}',
+    },
+    {
+      subType: 'confirmation',
+      name: 'Submission confirmation',
+      subject: 'Thank you for completing our survey',
+      body: 'Hello,\n\nThank you for taking the time to share your experience. Your answers help us improve accessibility for everyone.',
+    },
+    {
+      subType: 'reminder',
+      name: 'Reminder',
+      subject: 'Your survey is still waiting',
+      body: 'Hello,\n\nWe noticed you have not finished the survey yet. Your answers are saved, and you can pick up where you left off.',
+    },
+    {
+      subType: 'results',
+      name: 'Results and reports',
+      subject: 'The survey results are ready',
+      body: 'Hello,\n\nThank you for your interest. The results and recommendations are now available.',
+    },
+    {
+      subType: 'followUpSurvey',
+      name: 'Follow-up survey',
+      subject: 'A follow-up survey for you',
+      body: 'Hello,\n\nWe would value your views again in a short follow-up survey.',
+    },
+  ] as const
+
+  const emailItems = messages.map((message) => ({
+    ...message,
+    ref: surveyRef.collection('items').doc(`email-${message.subType}`),
+  }))
+
   const survey = { ...demoSurvey }
   delete survey.latestBuild
   delete survey.latestBuildVersion
@@ -42,43 +88,36 @@ const cloneEmailSurvey = async (): Promise<string> => {
     ...survey,
     name: 'Email reference',
     shortDesc: 'Email reference',
-    items: [],
+    language: 'en',
+    items: emailItems.map((item) => ({ type: 'email', ref: item.ref })),
     ref: { ...demoSurvey.ref, form: formRef },
     metaData: { ...demoSurvey.metaData, timestamp },
     email: {
       invitationEnabled: true,
-      defaultPurposes: ['dataset', 'confirmation'],
-      confirmation: {
-        en: {
-          subject: 'Thank you for completing our survey',
-          body: 'Hello,\n\nThank you for taking the time to share your experience. Your answers help us improve accessibility for everyone.',
-        },
-      },
-      reminder: {
-        en: {
-          subject: 'Your survey is still waiting',
-          body: 'Hello,\n\nWe noticed you have not finished the survey yet. Your answers are saved, and you can pick up where you left off.',
-        },
-      },
-      followUp: {
-        results: {
-          en: {
-            subject: 'The survey results are ready',
-            body: 'Hello,\n\nThank you for your interest. The results and recommendations are now available.',
-          },
-        },
-        followUpSurvey: {
-          en: {
-            subject: 'A follow-up survey for you',
-            body: 'Hello,\n\nWe would value your views again in a short follow-up survey.',
-          },
-        },
-      },
+      defaultPurposes: ['dataset', 'confirmation', 'reminder', 'results', 'follow-up-survey'],
+      invitationSchedule: { count: 2, delays: [3, 7] },
       schedule: { count: 2, delays: [3, 7] },
       consents: true,
       retentionDays: 180,
     },
   })
+
+  for (const item of emailItems) {
+    await item.ref.set({
+      name: item.name,
+      subType: item.subType,
+      metaData: {
+        ...demoSurvey.metaData,
+        type: 'email',
+        deleted: false,
+        timestamp,
+      },
+    })
+    await item.ref.collection('locale').doc('en').set({
+      subject: item.subject,
+      body: item.body,
+    })
+  }
 
   await formRef.set({
     ...demoForm,
@@ -127,36 +166,35 @@ const cloneEmailSurvey = async (): Promise<string> => {
 test.describe('Survey Reference - Email', () => {
   test('Email page', async ({ page }) => {
     test.setTimeout(90_000)
+    page.on('console', (msg) => {
+      if (msg.type() === 'error' || msg.type() === 'warning') {
+        console.log('PAGE CONSOLE:', msg.type(), msg.text())
+      }
+    })
+    page.on('pageerror', (err) => console.log('PAGE ERROR:', err))
     let surveyId: string | undefined
 
     try {
+      const screenshotUser = await getAuth().getUserByEmail(screenshotUserEmail)
+      await getAuth().setCustomUserClaims(screenshotUser.uid, {
+        ...(screenshotUser.customClaims ?? {}),
+        team: '_template',
+      })
       surveyId = await cloneEmailSurvey()
 
-      await initializePage(page, baseUrl, `/s/edit/survey/${surveyId}/build/compose`)
-      await page.waitForTimeout(1000)
-      await page.getByRole('link', { name: 'share' }).click()
-      await page.waitForTimeout(1000)
-      await page.getByRole('switch', { name: 'toggle advanced mode' }).check()
-      await page.waitForTimeout(100)
-      await page.getByText('Email', { exact: true }).first().click()
-
+      await initializePage(page, baseUrl, `/s/edit/survey/${surveyId}/share/message`)
       await expect(page.getByRole('heading', { name: 'Email', exact: true })).toBeVisible()
-      await page.getByText('Confirmation', { exact: true }).click()
-      await page.getByRole('combobox', { name: 'Language' }).click()
-      await page.getByRole('option', { name: /English/ }).click()
-      await expect(page.getByRole('textbox', { name: 'subject' })).toHaveValue(
+      await page.getByRole('tab', { name: 'Submission confirmation' }).click()
+      await expect(page.getByRole('textbox', { name: 'Subject' })).toHaveValue(
         'Thank you for completing our survey',
       )
 
-      const context = new Context(referenceRoot + '/share/email', page)
+      const context = new Context(referenceRoot + '/share/email', page).addArea(
+        'content',
+        pageContent,
+        true,
+      )
       await context.setName('email').screenshot(true)
-
-      // The page is only reachable in advanced mode; the context's basic pass
-      // hides it. Save the advanced viewport under both names used by the docs.
-      await page.screenshot({ path: `${referenceRoot}/share/email/assets/email-auto.png` })
-      await page.screenshot({
-        path: `${referenceRoot}/share/email/assets/email-advanced-auto.png`,
-      })
     } finally {
       if (surveyId !== undefined) {
         const survey = await db.collection('app/data/survey').doc(surveyId).get()
