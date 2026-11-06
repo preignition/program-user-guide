@@ -60,17 +60,20 @@ Each stage tile includes a progress bar showing its ratio against `Invited`. Dow
 | **Invited** | `invitedCount` | Total eligible recipients frozen into the run at creation time. |
 | **Sent** | `sentInvitationCount` | Invitations accepted by the mail service (stage `>= 1`). |
 | **Delivered** | `deliveredCount` | Invitations confirmed delivered by the mail provider webhook (stage `>= 2`). |
-| **Link opened** | `openedCount` | Recipients who opened their unique `/v2/{surveyId}/i/{token}` link (stage `>= 3`). |
-| **Started** | `startedCount` | Recipients who began answering the survey (stage `>= 4`). |
+| **Email opened** | `openedCount` | Recipients whose mail client loaded the Mailgun open-tracking pixel. This is a read, not a survey visit (stage `>= 3`). |
+| **Survey started** | `landedCount` | Recipients whose unique `/v2/{surveyId}/i/{token}` link was validated and who therefore landed on the survey. |
+| **Started answering** | `startedCount` | Recipients whose survey app loaded and whose respondent actor was created (stage `>= 4`). |
 | **Submitted** | `submittedCount` | Recipients who completed and submitted the survey (stage `5` / `submittedAt` present). |
+
+An email open is not a survey landing: Mailgun's tracking pixel can fire without the recipient visiting the survey. `landedCount` is the direct evidence; an invitation that started or submitted also counts as landed, which keeps runs recorded before the split readable. The legacy `openedAt` value mixed both events, so `openedCount` on those runs is an upper bound for email reads.
 
 ### Row 2: Rates and Negative Outcomes
 
 | Tile | Formula / Field | Definition |
 | :--- | :--- | :--- |
 | **Response rate** | `Submitted ÷ Invited` | Percentage of invited recipients who submitted the survey (formatted to 1 decimal place). |
-| **Completion rate** | `Submitted ÷ Started` | Percentage of respondents who submitted after starting the survey. |
-| **Drop-off** | `max(Started − Submitted, 0)` | Number of recipients who started the survey but have not submitted yet. |
+| **Completion rate** | `Submitted ÷ Started answering` | Percentage of recipients who submitted after starting to answer the survey. |
+| **Drop-off** | `max(Started answering − Submitted, 0)` | Number of recipients who started answering the survey but have not submitted yet. |
 | **Bounced** | `bouncedCount` | Invitations that hard-bounced (or reached three consecutive soft bounces). Added to the customer-wide suppression list. |
 | **Unsubscribed** | `unsubscribedCount` | Recipients who used the one-click unsubscribe link. Added to the customer-wide suppression list. |
 | **Complained** | `complainedCount` | Recipients who reported the email as spam. Added to the customer-wide suppression list. |

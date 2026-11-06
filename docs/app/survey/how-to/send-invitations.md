@@ -142,8 +142,8 @@ As soon as the run starts sending, the app opens **Analytics → Progress** (`/s
 
 1. At the top of the **Progress** page, select the run card (for example, `Policy Impact Lab panel`) if your survey has multiple invitation waves.
 2. Review the **Run detail** metric tiles:
-   - **Funnel stages:** `Invited`, `Sent`, `Delivered`, `Link opened`, `Started`, and `Submitted`.
-   - **Rates and delivery outcomes:** `Response rate` (`Submitted ÷ Invited`), `Completion rate` (`Submitted ÷ Started`), `Drop-off` (`Started − Submitted`), `Bounced`, `Unsubscribed`, `Complained`, and `Failed`.
+   - **Funnel stages:** `Invited`, `Sent`, `Delivered`, `Email opened`, `Survey started`, `Started answering`, and `Submitted`.
+   - **Rates and delivery outcomes:** `Response rate` (`Submitted ÷ Invited`), `Completion rate` (`Submitted ÷ Started answering`), `Drop-off` (`Started answering − Submitted`), `Bounced`, `Unsubscribed`, `Complained`, and `Failed`.
 3. Use the top toolbar actions to manage the run:
    - **Refresh:** Reloads the latest funnel counts and recipient statuses.
    - **Download status CSV:** Exports the run's delivery and participation statuses with masked email addresses.
