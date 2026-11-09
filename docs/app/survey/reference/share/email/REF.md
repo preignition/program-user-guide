@@ -21,11 +21,10 @@
 - [server-config.ts](../../../../../../../app/app-survey/functions/src/server-config.ts): Declares the deployable's Mailgun keys; `MailService` is provided only when the key resolves.
 - [BuildQuestion.ts](../../../../../../../app/app-survey/src/entity/settings/BuildQuestion.ts): The question settings picker that edits the same survey-level purposes and shows the notice they generate.
 - [emailPurposes.ts](../../../../../../../app/app-survey/src/entity/question/emailPurposes.ts): The purposes an editor can choose for the survey's email addresses.
-- [respondentEmail.ts](../../../../../../../lit-app/schema/survey/respondentEmail.ts): The reminder consent records (`RespondentEmail`), their retention window and the opt-in callable's input/output schemas.
-- [respondentEmail.ts](../../../../../../../app/app-survey/actionApi/src/services/respondentEmail.ts): The opt-in service: normalises the address and upserts one record per actor in the survey's customer database.
-- [respondentEmail.ts](../../../../../../../app/app-survey/functions/src/respondentEmail.ts): The `survey-respondentEmailOptIn` callable the field calls.
-- [respondent-email-optin.ts](../../../../../../../app/app-survey/renderer/field/respondent-email-optin.ts): The field's notice, consent checkbox, state read and inline feedback.
-- `app/app-respondent/firestore.rules`: The respondent-database rules for `survey/{surveyId}/respondentEmail` — server-written, read-own.
+- [respondentEmail.ts](../../../../../../../lit-app/schema/survey/respondentEmail.ts): The reminder consent records (`RespondentEmail`), their retention window and the `ConsentNotice` wording the build carries.
+- [respondent-email-optin-wrapper.ts](../../../../../../../app/app-survey/renderer/field/respondent-email-optin-wrapper.ts): The field's data side: subscribes to the respondent's own record through a document controller and writes a toggle directly; a test session toggles locally without reading or writing.
+- [respondent-email-optin.ts](../../../../../../../app/app-survey/renderer/field/respondent-email-optin.ts): The field's notice, consent checkboxes, state and inline feedback (presentation only).
+- `app/app-respondent/firestore.rules`: The respondent-database rules for `survey/{surveyId}/respondentEmail` — read-own and owner-write, with the send jobs verifying the session.
 - [respondentEmailUnsubscribe.ts](../../../../../../../app/app-survey/actionApi/src/services/respondentEmailUnsubscribe.ts): The public unsubscribe service: validates the link's token inside the survey's own records and flips only the status.
 - [respondentEmailUnsubscribe.ts](../../../../../../../app/app-survey/functions/src/respondentEmailUnsubscribe.ts): The `survey-respondentEmailUnsubscribe` callable the public page calls.
 - [unsubscribe.ts](../../../../../../../app/app-respondent/src/page/unsubscribe.ts): The public unsubscribe page (no sign-in), rendered in the survey's language.
