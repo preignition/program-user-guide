@@ -106,7 +106,7 @@ Actions are disabled with a reason when the item is frozen, cannot be read, no l
 
 In the Compose tree's **settings mode**, a `review-field` column marks items with open findings. The marker uses the highest severity's colour and shows a numeric badge when an item has more than one open finding. Selecting the marker opens the Review panel filtered to that item. Dismissed and applied findings do not produce markers.
 
-The Compose tree header also shows a **findings count chip** while the author is working. It opens the unfiltered Review panel.
+The `review-field` column header button acts as a filter to show only items with open review findings in the structural tree. Additionally, whenever open findings exist, a **Review** action button appears directly in the Compose bottom toolbar beside the prompt FAB, providing one-click navigation to the unfiltered Review panel.
 
 ## Publish
 

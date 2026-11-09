@@ -24,6 +24,7 @@ The left pane provides a visual representation of your survey's structural hiera
 * **Navigation:** It allows you to quickly jump between different parts of a large survey without scrolling through the entire form.
 * **Organization:** You can expand or collapse branches to focus on specific sections, and drag-and-drop items to reorganize the survey's flow.
 * **Context:** It always tells you exactly where the item you are currently editing sits within the broader questionnaire.
+* **Filtering:** Header column icons allow you to filter the tree down to items that require attention — such as AI-generated items awaiting validation, questions with open quality findings, items with conditional visibility logic, or content lacking Easy Read illustrations, audio voiceovers, or sign-language videos. The filtered view auto-expands ancestors to preserve hierarchy and disables drag-and-drop to protect survey structure.
 
 When the survey has active email messages (created by enabling invitations on **Share → Distribute** or selecting email purposes on **Share → Email**), the tree also shows an **Email** group row below **Terms and Conditions** that expands to the individual email items (`Invitation`, `Invitation reminder`, `Submission confirmation`, `Reminder`, `Results and reports`, `Follow-up survey`).
 

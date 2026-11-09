@@ -139,4 +139,25 @@ test.describe('Survey Reference - Compose', () => {
       .setName('media')
       .screenshot(true)
   })
+
+  test('Tree Filters', async ({ page }) => {
+    const context = new Context(referenceRoot + '/build/compose', page)
+    await initializePage(page, baseUrl, suffix)
+    await page.waitForTimeout(2000)
+
+    // Switch to Easy Read Mode
+    await page.getByRole('button', { name: 'Easy Read Mode' }).click()
+    await page.waitForTimeout(500)
+
+    // Click the Easy Read filter button in the grid header
+    const erFilterBtn = page.locator('md-icon-button.tree-filter-button').first()
+    await erFilterBtn.waitFor({ state: 'visible', timeout: 5000 })
+    await erFilterBtn.click()
+    await page.waitForTimeout(1000)
+    console.info('Capturing filtered tree grid')
+    await context
+      .setName('compose-grid-filtered')
+      .addArea('grid', treeGrid)
+      .screenshot()
+  })
 })

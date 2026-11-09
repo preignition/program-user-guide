@@ -31,3 +31,11 @@
 - [config.ts](../../../../../../../app/app-survey/src/config.ts): Defines `defaultMaxLength = 80`.
 - [FormE.ts](../../../../../../../app/app-survey/src/entity/FormE.ts): Form entity defining the `questionSettings.accessibleLabel` global setting.
 - [behavior.ts](../../../../../../../app/app-survey/src/page/edit/design/behavior.ts): Renders the Accessible Label toggle under Form Behavior → Accessibility → Global Form Settings.
+
+## Tree Filtering & Toolbar Review Navigation
+
+- [tree-filter.ts](../../../../../../../app/app-survey/src/page/edit/design/tree-filter.ts): Tree filter types (`TreeFilterKindT`), media presence resolution (`treeFilterMedia`, `canCarryMedia`, `hasFilterMedia`), candidate evaluation, and tree filter resolution (`resolveTreeFilter`, `applyTreeFilter`).
+- [compose-grid-mixin.ts](../../../../../../../app/app-survey/src/page/edit/design/compose-grid-mixin.ts): Tree grid mixin applying active tree filters (`treeFilterView`), ancestor auto-expansion (`refreshTreeFilter`), active filter chip rendering (`treeFilterChipText`), and drag-and-drop gating while filtered.
+- [modesConfig.ts](../../../../../../../app/app-survey/src/page/edit/design/modesConfig.ts): Grid column header filter buttons (`filterHeader`, `mediaFilterHeader`), tri-state media cycling (with media / without media / off), and sign-language language scoping.
+- [state.ts](../../../../../../../app/app-survey/src/page/edit/design/state.ts): Reactive `treeFilter`, `treeFilterSignLanguage`, media loading state (`treeFilterMediaLoaded`), and candidate media subscriptions.
+- [compose.ts](../../../../../../../app/app-survey/src/page/edit/design/compose.ts): Compose layout and bottom toolbar rendering including the Review FAB when open findings exist (`goToReview()`).

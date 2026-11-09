@@ -1,5 +1,5 @@
 ---
-description: Catch broken logic, missing translations, accessibility issues, and unclear wording before you publish, manage every logical expression from one place, invite reusable team audiences with unique links and live progress tracking, and stay in touch with respondents through privacy-first confirmations, reminders, and follow-ups.
+description: Catch broken logic, missing translations, accessibility issues, and unclear wording before you publish, manage every logical expression from one place, navigate and filter your survey structure effortlessly, invite reusable team audiences with unique links and live progress tracking, and stay in touch with respondents through privacy-first confirmations, reminders, and follow-ups.
 ---
 
 # Catch Issues Early, Stay in Touch Effortlessly
@@ -12,6 +12,8 @@ Publishing a survey usually comes with two nagging questions: *Did I miss a brok
 This release answers both — and makes complex survey logic much easier to maintain:
 
 * A new **Review** workspace checks your survey from top to bottom across structure, logic, translation, accessibility, and content quality and lets you fix issues with a click.
+* **Focused structure tree filters:** Filter the Compose tree by generated content, open review findings, conditional visibility, or missing Easy Read, audio, and sign-language media — with automatic ancestor expansion and drag-and-drop protection.
+* **One-click Review access:** When open review findings exist, a dedicated Review button in the Compose toolbar lets you jump straight to findings and back.
 * New **Team Audiences & Survey Invitations** let you import a reusable contact list in **Team Settings → Audiences**, compose and test multilingual invitation emails on **Share → Email**, distribute unique links (`/v2/{surveyId}/i/{token}`) from **Share → Distribute**, and track delivery, completion rates, and reminders in **Analytics → Progress** — without ever linking a respondent's answers to their address.
 * The new **Email** tab under **Share** also handles submission confirmations, opt-in reminders, and follow-ups with respondent consent and automatic data expiry built right in.
 * The new **Expressions** page gives you a single place to inspect and clean up every logical rule in your form.
@@ -165,6 +167,39 @@ Once sent, the new **Analytics → Progress** tab tracks every invitation wave i
 ## 5. Faster Respondent Surveys
 
 Public survey links now open faster. Respondents download only what they need to answer, so the first question appears sooner — especially on mobile devices and slower connections. Surveys that do not use behavioral tracking get an even lighter page.
+
+---
+
+## 6. Focused Survey Design with Tree Grid Filters & Quick Review Access
+
+As questionnaires grow to dozens or hundreds of items, finding which questions lack an Easy Read image, which sections carry complex visibility logic, or which fields have open quality findings can feel like finding a needle in a haystack.
+
+The structural tree in **Build → Compose** now features column-header filters and a direct Review mode shortcut:
+
+<figure>
+  <img src="../app/survey/reference/build/compose/assets/compose-grid-filtered-auto.png" alt="Filtered tree grid in Easy Read mode showing items with Easy Read images and the active filter chip.">
+  <figcaption>Filter the Compose tree to inspect items with or without media, review findings, or conditional logic.</figcaption>
+</figure>
+
+### Instant column filters
+
+* **Review findings (`rate_review`):** Click the review column header to isolate items with unresolved structure, logic, translation, accessibility, or content findings.
+* **Generated content (`auto_awesome`):** Filter to AI-generated fields awaiting validation.
+* **Visibility settings (`visibility`):** Show only questions and sections governed by conditional display rules (`logic.hidden` or `visibilityModes`).
+* **Tri-state media filters:** In accessibility modes (**Easy Read**, **Read Aloud**, **Sign Language**), click the media column header to cycle between:
+  1. *Items with media:* see questions with an image, voice recording/generation, or sign-language video.
+  2. *Items without media:* quickly spot questions and options that still need accessibility assets.
+  3. *Filter off:* restore the full tree.
+  For sign language, each active language column filters independently for its specific videos.
+
+### Built for safe editing
+
+* **Hierarchy in context:** Matching items preserve their parent pages and sections, which auto-expand so you never lose structural context.
+* **Drag-and-drop protection:** Reordering via drag-and-drop is temporarily locked while a filter is active to prevent accidental layout mistakes.
+* **Clear status indicator:** An active filter chip (e.g. `Easyread images only (6)` or `Needs review only (3)`) appears in the tree header with a one-click remove button.
+* **Jump to Review from Compose:** Whenever open review findings exist, a **Review** action button appears directly in the bottom modes toolbar next to the prompt action FAB, saving you from navigating through menus to resolve issues.
+
+* **Learn more:** [Compose Reference](../app/survey/reference/build/compose/index.md#tree-grid-filtering) · [Review Reference](../app/survey/reference/build/review.md)
 
 ---
 
