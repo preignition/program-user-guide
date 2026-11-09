@@ -13,6 +13,7 @@ The notice is the wording a respondent reads next to an **Email** or **Account E
 - The **Reminder** notice and its **Opt-in label** accompany the checkbox a respondent ticks to receive reminders while the form is unsubmitted.
 - The **Results and reports** and **Follow-up survey** notices and their **Opt-in labels** accompany the checkbox each purpose shows.
 - The **Submission confirmation** notice is transactional: it tells the respondent a confirmation will be sent, and needs no opt-in checkbox.
+- An **Account Email** field offers the opt-in only when the respondent has no account email. Once an account email exists, the field shows that address without the consent checkboxes.
 
 Leave a field empty to use the platform's default wording. Every change to the wording increases the notice **Version**, which is recorded with a consent when one is captured — so it is always clear which wording a respondent agreed to.
 
