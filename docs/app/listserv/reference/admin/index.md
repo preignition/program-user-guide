@@ -123,7 +123,7 @@ Provides high-level descriptions and navigation links to the main administrative
 | --- | --- | --- |
 | **Total Sent** | Metric Card | Cumulative count of broadcasts dispatched across the channel |
 | **Delivery Rate** | Percentage Metric | Proportion of dispatched messages successfully delivered |
-| **Open Rate** | Percentage Metric | Percentage of delivered broadcasts opened by subscribers |
+| **Open Rate** | Percentage Metric | Percentage of delivered broadcasts opened by subscribers; each recipient counts once per broadcast |
 | **Click Rate** | Percentage Metric | Proportion of opened broadcasts resulting in link engagement |
 | **Language Breakdown** | Segment Tab | Filter engagement metrics and subscriber reach by language locale |
 

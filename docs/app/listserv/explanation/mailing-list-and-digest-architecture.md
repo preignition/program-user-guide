@@ -93,7 +93,7 @@ Weekly digests are compiled and dispatched automatically using the platform's na
 Real-time delivery events and bounces are received asynchronously via the Mailgun webhook endpoint (`POST /app/listserv/mailgun/webhook`):
 
 - **Event Handlers**: Processes `delivered`, `opened`, `clicked`, `permanent_fail`, and `unsubscribed`.
-- **Stat Counters**: Atomically increments counters on `broadcast.stats` (`accepted`, `delivered`, `opened`, `clicked`, `failed`).
+- **Stat Counters**: Increments counters on `broadcast.stats` in a transaction (`accepted`, `delivered`, `opened`, `clicked`, `failed`). A redelivered event is deduped by Mailgun event id, and `opened` counts a recipient once per broadcast; repeat opens are logged but not counted again.
 - **Bounce Cleaning**: On permanent failure, increments `subscriber.bounceCount`. If the count meets or exceeds `channel.bounceHandling.threshold` (default: 3), the account is automatically deactivated (`status: 'unsubscribed'`) and removed from Mailgun lists.
 
 ---

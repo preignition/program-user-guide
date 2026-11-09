@@ -32,7 +32,7 @@ The performance dashboard reports real-time metrics updated via Mailgun webhooks
 
 - **Total Recipients**: Total subscriber accounts included in the send list
 - **Delivery Rate (%)**: Percentage of emails successfully delivered to subscriber mailboxes
-- **Open Rate (%)**: Percentage of delivered messages opened by recipients
+- **Open Rate (%)**: Percentage of delivered messages opened by recipients, counted once per recipient regardless of how many times they reopen the email
 - **Click-Through Rate (%)**: Percentage of opened emails where links were clicked
 - **Bounces / Failures**: Total permanently or temporarily rejected email addresses
 - **Response Count**: Number of threaded subscriber replies attached to this broadcast. Expanding the grid row reveals the full flat response thread.
