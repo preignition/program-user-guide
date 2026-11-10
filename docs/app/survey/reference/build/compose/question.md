@@ -44,7 +44,7 @@ The application supports various question field types, including:
 - **Boolean fields**: Checkboxes, switches.
 - **Media fields**: File upload capabilities.
 - **Scale fields**: Ratings, rankings.
-- **[Account Email](./account-email.md)**: Specialized field for identity synchronization.
+- **[Account Email](./account-email.md)**: Specialized respondent email field for account verification and opt-in survey communications (reminders, results and reports, follow-up surveys) — use **Email** for a plain format-validated email input.
 
 ## Field Attributes & Validation Rules
 
@@ -72,7 +72,14 @@ Field attributes define the validation and input behavior of questions when pres
 
 ### Email Purposes
 
-Email fields — the **Email** type and the [Account Email](./account-email.md) type — collect an address. The survey's **Email Purposes** decide what those addresses are used for. The picker in the question's settings and the one on the survey's [Email page](../../share/email/index.md#email-purposes) edit the same survey-level setting, so the choice applies to every email field. It is visible in both standard and advanced mode.
+Email fields — the **Email** type (`a11y-text-field` with `type="email"`) and the [Account Email](./account-email.md) type (`a11y-account-email`) — both collect an address, but they serve different jobs:
+
+- **[Account Email](./account-email.md)** (`a11y-account-email`) is the respondent email field: for signed-in respondents it pre-fills and verifies their account email, and for respondents without an account email (or in test preview) it renders the consent notices and opt-in checkboxes for **Reminders**, **Results and reports**, and **Follow-up survey**.
+- **Email** (`a11y-text-field` with `type="email"`) is a standard format-validated email input for collecting an address as a regular form answer, without account verification or consent opt-in checkboxes.
+
+See [Email or Account Email](./account-email.md#email-or-account-email) for the full comparison.
+
+The survey's **Email Purposes** decide what collected addresses are used for. The picker in the question's settings and the one on the survey's [Email page](../../share/email/index.md#email-purposes) edit the same survey-level setting, so the choice applies to every email field. It is visible in both standard and advanced mode.
 
 - **Dataset**: the addresses are part of the survey data — they appear in the `raw`, `humanized` and `anonymized` exports.
 - **Submission confirmation**: the addresses serve the survey's confirmation sent when a respondent submits.

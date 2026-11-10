@@ -37,6 +37,11 @@ In Accessible Surveys, a "Respondent Account" is treated as a distinct entity fr
 
 When a user logs in and submits a survey, their identity data (such as their name and email) is stored securely and separately from their actual answers. The connection between the identity and the response is managed by the system. This architectural separation ensures that [Data Privacy and Security](./data-privacy-and-security.md) standards are maintained, allowing researchers to export anonymized datasets even when the survey was completed by authenticated users.
 
-### Capturing Identity during Survey
+### Capturing Identity and Email Consents during a Survey
 
-For surveys where respondents are signed in and should confirm the address on their account, the **Account Email** question type can be used. A signed-in respondent changes the account email only through the field's explicit **Send verification link** action: the platform emails a confirmation link to the new address, and the account email changes only once the respondent follows it. Anonymous sessions record the value as an answer only — they are not promoted to a verified identity from this field.
+For surveys where respondents are signed in and should confirm the address on their account — or where respondents should opt in to survey emails — the **Account Email** (`a11y-account-email`) question type is used:
+
+- **Signed-in respondents:** A signed-in respondent changes their account email only through the field's explicit **Send verification link** action; the platform emails a confirmation link to the new address, and the account email changes only once the respondent follows it.
+- **Anonymous respondents & email opt-ins:** Anonymous sessions are not promoted to a verified account from this field. Instead, when the survey enables **Reminders**, **Results and reports**, or **Follow-up survey** under [Email Purposes](../reference/build/compose/question.md#email-purposes), the field displays the consent notices and opt-in checkboxes so the respondent can agree to receive reminders for an unsubmitted form, receive the survey's report, or be invited to a follow-up survey. By default, the address stays out of the exported datasets unless **Dataset** is selected.
+
+When you only need a standard format-validated email input as a questionnaire answer (without account verification or consent opt-in checkboxes), use the plain **Email** (`a11y-text-field` with `type="email"`) question type instead. See [Account Email](../reference/build/compose/account-email.md#email-or-account-email) for the comparison.

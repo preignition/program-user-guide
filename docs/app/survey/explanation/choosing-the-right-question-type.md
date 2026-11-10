@@ -18,11 +18,15 @@ These types are used when you need the respondent to provide information in thei
 These specialized text fields include built-in validation to ensure the data is entered in the correct format.
 
 * **Number**: Restricts input to numeric values. Use this for ages, quantities, or counts.
-* **Email**: Ensures the respondent enters a valid email address format.
+* **Email**: A standard text field (`a11y-text-field` with `type="email"`) that validates email format. Use it when you simply need an email address as a questionnaire answer (such as an organization, referral, or third-party contact address) without account verification or consent opt-in checkboxes.
 * **Telephone (Tel)**: Designed for phone numbers.
 * **Date**: Provides a date picker for selecting specific calendar dates.
 * **URL**: Validates that the input is a correctly formatted website address.
-* **Account Email**: A specialized field that shows the respondent's platform account email and changes it verification-first. Only a signed-in respondent can act on it, and the account email changes only once the verification link is confirmed. It includes automatic verification tracking and is ideal for confirming the identity of a signed-in respondent.
+* **Account Email**: A specialized respondent email field (`a11y-account-email`) with two roles: for signed-in respondents, it shows their platform account email and changes it verification-first with automatic verification tracking; for respondents without an account email (and in test previews), it renders the consent notices and opt-in checkboxes to receive **reminders** while the form is unsubmitted, **results and reports**, or a **follow-up survey** (and keeps the address out of dataset exports unless **Dataset** is selected).
+
+::: info
+**Email or Account Email?** Choose **Email** for a simple format-validated email answer in your form. Choose **Account Email** when you want respondents to opt in to survey **reminders**, **results and reports**, or a **follow-up survey**, or when a signed-in respondent's account address must be verified or updated. See [Account Email](../reference/build/compose/account-email.md#email-or-account-email) for the full comparison.
+:::
 
 ## Selection Inputs
 
