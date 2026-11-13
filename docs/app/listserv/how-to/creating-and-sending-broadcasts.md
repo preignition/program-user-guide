@@ -1,66 +1,64 @@
 ---
-description: How administrators draft rich-text email broadcasts, select layout templates, manage attachments, and dispatch emails to subscribers.
+description: How channel staff and subscribers draft a broadcast, compose its accessible content, and send it for moderation.
 ---
 
 # Creating & Sending Email Broadcasts
 
-Channel administrators and editors can compose accessible, multilingual email broadcasts using pre-defined accessible templates, rich text editing, and file attachment scanning.
+Channel staff (`owner`, `editor`, `moderator`) and the channel's signed-in subscribers can draft a broadcast. A draft is private to its author and the channel staff until it is submitted for moderation; only `sent` broadcasts appear in the public archive.
 
 ---
 
-## Step 1: Open the Broadcast Manager
+## Step 1: Open the Broadcasts Page
 
-1. Sign into the Listserv application with channel `owner` or `editor` permissions.
-2. Click **Admin** in the top navigation.
-3. Select **Broadcasts** from the left drawer menu to view the broadcast table.
+1. Sign in to the Listserv application.
+2. Open the channel's **Broadcasts** page from the top navigation.
 
 <figure>
-  <img src="./assets/creating-a-broadcast/step-1-broadcasts-list.png" alt="Admin Broadcasts Dashboard">
-  <figcaption>Admin Broadcasts List View showing draft and sent messages</figcaption>
+  <img src="./assets/creating-a-broadcast/step-1-broadcasts-list.png" alt="Channel broadcast archive">
+  <figcaption>The channel's broadcast archive with the New Broadcast action</figcaption>
 </figure>
 
 ---
 
-## Step 2: Create a New Draft
+## Step 2: Start a New Draft
 
-1. Click the **New Broadcast** floating action button or header button.
-2. The broadcast detail editor opens in `draft` state.
+1. Click **New Broadcast**.
+2. The compose form opens. Nothing is written until you click **Create broadcast**, so leaving the form creates no draft.
 
 ---
 
-## Step 3: Select Template and Compose Content
+## Step 3: Compose the Broadcast
 
-1. Choose a layout template from the **Template** drop-down:
-   - **Newsletter**: Layout suited for long-form updates, multiple sections, and reports.
-   - **Data Alert**: High-priority alert format with callout banners for findings and statistics.
-2. Enter the **Title / Subject** line.
-3. Compose the broadcast message body using **Markdown** formatting. Standard syntax is supported: headings (`# Title`), bold (`**text**`), links (`[label](url)`), lists, and blockquotes. The preview panel renders content in real-time, showing how it will appear in subscriber email clients.
-4. Select the **Primary Language** (e.g. English).
+1. Enter the **Title** — the name the broadcast carries in the admin list.
+2. Enter the **Subject** — the email subject line subscribers receive.
+3. Compose the body using **Markdown**. Headings (`# Title`), bold (`**text**`), links (`[label](url)`), lists and blockquotes are supported.
 
 ::: tip WCAG 2.1 AA Accessibility Defaults
-All email templates generate semantic HTML with contrast ratios meeting WCAG 2.1 AA requirements and fallback text styles for legacy email clients.
+Broadcast emails are generated as semantic HTML with contrast ratios meeting WCAG 2.1 AA and fallback text styles for legacy email clients. Write descriptive link labels and use headings in order.
 :::
 
 ---
 
-## Step 4: Manage File Attachments
+## Step 4: Create the Draft
 
-1. In the **Attachments** section, click **Attach File**.
-2. Select files from your system (e.g. PDF reports, image charts).
-3. For image attachments, provide descriptive **Alt-Text** for screen reader users.
-
-::: info Security Scanning
-All uploaded attachments undergo automatic virus and malware scanning. Files marked `infected` are automatically rejected and cannot be dispatched to subscribers.
-:::
+1. Click **Create broadcast** (disabled until every required field is filled).
+2. The broadcast is saved as a `draft` and its editor opens. Channel staff continue in the Admin broadcast editor; subscribers continue in their submission editor.
+3. The draft's status is `draft`: it is not visible to subscribers and does not count against the submission rate limit until it is submitted.
 
 ---
 
-## Step 5: Send or Submit for Moderation
+## Step 5: Submit or Send
 
-1. Once composition is complete, click **Send Broadcast** (or **Submit** if channel rules require moderation).
-2. The broadcast lifecycle state updates:
-   - `draft` → `submitted` → `approved` → `sending` → `sent`
-3. During `sending`, the background engine dispatches localized versions to channel subscribers via Mailgun mailing lists.
+1. Review the draft in the editor, then click **Save** to keep your changes.
+2. Click **Submit** to send the broadcast for moderation. Submitting is rate-limited per channel (`rateLimit.maxPerHour`).
+3. The broadcast lifecycle state updates:
+   - `draft` → `submitted` → `detectingLanguage` → `translating` → `moderated`
+   - A channel moderator **approves** (→ `sending` → `sent`) or **rejects** (→ `rejected`, returned to the author for editing).
+4. During `sending`, the background engine dispatches localized versions to channel subscribers via Mailgun mailing lists.
+
+::: info Not yet available in the editor
+The broadcast model supports layout templates, a primary language and file attachments, but the compose and edit forms currently expose only title, subject and body.
+:::
 
 ---
 
