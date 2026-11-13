@@ -11,7 +11,7 @@ The card is presentational: the caller owns the quota data (a live document read
 ## What the card shows
 
 - **Remaining count** — a `vaadin-badge` states how many units are left: green while units remain, orange during the grace window, red once the quota is exhausted.
-- **Used share** — a `vaadin-progress-bar` with *"X of Y surveys used."* (`noun` names the unit) when the quota document's `added` ledger knows the plan's total.
+- **Used share** — a `md-linear-progress` with *"X of Y surveys used."* (`noun` names the unit) when the quota document's `added` ledger knows the plan's total.
 - **Call to action** — once the quota is exhausted the card explains that one survey is waiting to be paid for and how long is left to settle it (the grace window), or asks you to buy more quota. Without a quota document it asks you to contact support.
 - **Loading** — an indeterminate bar with *"Checking survey quota…"* while the survey app's live read is in flight.
 
