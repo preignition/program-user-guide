@@ -43,14 +43,14 @@ Broadcast emails are generated as semantic HTML with contrast ratios meeting WCA
 
 1. Click **Create broadcast** (disabled until every required field is filled).
 2. The broadcast is saved as a `draft` and its editor opens. Channel staff continue in the Admin broadcast editor; subscribers continue in their submission editor.
-3. The draft's status is `draft`: it is not visible to subscribers and does not count against the submission rate limit until it is submitted.
+3. The draft's status is `draft`: it is not visible to subscribers. Each broadcast you create counts toward the channel's hourly cap (`rateLimit.maxPerHour`), drafts included.
 
 ---
 
 ## Step 5: Submit or Send
 
 1. Review the draft in the editor, then click **Save** to keep your changes.
-2. Click **Submit** to send the broadcast for moderation. Submitting is rate-limited per channel (`rateLimit.maxPerHour`).
+2. Click **Submit** to send the broadcast for moderation.
 3. The broadcast lifecycle state updates:
    - `draft` → `submitted` → `detectingLanguage` → `translating` → `moderated`
    - A channel moderator **approves** (→ `sending` → `sent`) or **rejects** (→ `rejected`, returned to the author for editing).
