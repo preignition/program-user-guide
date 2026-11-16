@@ -208,7 +208,7 @@ test.describe('Survey Creating & Editing', async () => {
       locator = page.getByRole('dialog')
       await context.annotatedScreenshot(locator, 'step-2-confirm-deletion')
 
-      locator = page.getByRole('button', { name: 'Confirm Action' })
+      locator = page.getByRole('button', { name: 'OK' })
       await context.annotatedScreenshot(locator, 'step-2-click-confirm-deletion')
     })
   })
