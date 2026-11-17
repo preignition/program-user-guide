@@ -46,13 +46,18 @@ export async function takeAnnotatedScreenshot(
   // 1. Resolve the element to highlight (and crop around) and inject CSS to
   // highlight it (e.g., a thick red border)
   const target = await locator.evaluateHandle((node, { outlineStyle, highlightAncestor }) => {
+    // Playwright role locators pierce shadow roots and resolve to the inner
+    // <button>/<a> of a button component. Highlight the host instead, so the
+    // ring follows the whole control rather than its inner label box.
+    const controlHost = (element: Element): HTMLElement | undefined => {
+      const host = (element.parentNode as ShadowRoot)?.host as HTMLElement | undefined
+      return host && (element instanceof HTMLButtonElement || element instanceof HTMLAnchorElement)
+        ? host
+        : undefined
+    }
     const findTarget = (element: Element): HTMLElement => {
-      // Keep the legacy behaviour of highlighting the host of a slotted button.
-      const host = (element.parentNode as ShadowRoot)?.host as HTMLElement
       if (!highlightAncestor) {
-        return element instanceof HTMLButtonElement && host
-          ? host
-          : element as HTMLElement
+        return controlHost(element) ?? (element as HTMLElement)
       }
 
       let current: Element | null = element
@@ -68,9 +73,7 @@ export async function takeAnnotatedScreenshot(
         }
       }
 
-      return element instanceof HTMLButtonElement && host
-        ? host
-        : element as HTMLElement
+      return controlHost(element) ?? (element as HTMLElement)
     }
 
     const targetNode = findTarget(node)

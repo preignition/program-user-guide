@@ -33,7 +33,10 @@ test.describe('Behavioral analytics', async () => {
 
     await test.step('Open the Behavior tab', async () => {
       const behaviorTab = page.getByRole('link', { name: 'Behavior', exact: true })
-      await context.annotatedScreenshot(behaviorTab, 'step-1-open-behavior', 60)
+      // The tab bar clips an outer ring on the last tab; ring the tab inside it.
+      await context.annotatedScreenshot(behaviorTab, 'step-1-open-behavior', 60, Infinity, {
+        outlineStyle: { ...context.outlineStyle, outlineOffset: '-4px' },
+      })
       await behaviorTab.click()
       await page.getByTestId('behavioral-kpi-strip').waitFor()
     })
