@@ -112,6 +112,8 @@ test.describe('Survey analytics', async () => {
 
     await test.step('Pin a chart to the top band', async () => {
       const pin = languageCard.getByRole('button', { name: 'Pin Language to top band' })
+      await languageCard.hover()
+      await page.waitForTimeout(250)
       await context.annotatedScreenshot(pin, 'step-8-pin-chart', 60)
       await pin.click()
       await page.waitForTimeout(500)
