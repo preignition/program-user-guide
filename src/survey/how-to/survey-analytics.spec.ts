@@ -1,5 +1,6 @@
 import { test, type Page } from '@playwright/test'
 import { Context } from '../../Context.ts'
+import { saveScreenshotIfChanged } from '../../utils/conditionalScreenshot.ts'
 import { initializeSignedInPage } from '../../utils/initializeSignedInPage.ts'
 
 const port = process.env.PLAYWRIGHT_PORT || '7174'
@@ -14,8 +15,9 @@ const cardByLabel = (page: Page, label: string) =>
   page.locator('lapp-analytics-card').filter({ has: page.getByRole('heading', { name: label }) })
 
 const takeViewportScreenshot = async (page: Page, name: string) => {
-  const context = new Context(mainPath, page).setName(`survey-analytics/${name}`)
-  await context.screenshot()
+  const prefix = `${mainPath}/assets/survey-analytics/${name}`
+  saveScreenshotIfChanged(`${prefix}-auto.png`, await page.screenshot())
+  saveScreenshotIfChanged(`${prefix}-full-auto.png`, await page.screenshot({ fullPage: true }))
 }
 
 test.describe('Survey analytics', async () => {
@@ -111,19 +113,35 @@ test.describe('Survey analytics', async () => {
     const languageCard = page.locator('lapp-analytics-card[data-field-id="language"]')
 
     await test.step('Pin a chart to the top band', async () => {
-      const pin = languageCard.getByRole('button', { name: 'Pin Language to top band' })
-      await languageCard.hover()
-      await page.waitForTimeout(250)
-      await context.annotatedScreenshot(pin, 'step-8-pin-chart', 60)
+      const questionCard = cardByLabel(page, surveyHabitsLabel)
+      await questionCard.evaluate((element) => element.scrollIntoView({ block: 'center' }))
+      await questionCard.hover()
+      await page.waitForTimeout(300)
+
+      const pin = questionCard.getByRole('button', {
+        name: `Pin ${surveyHabitsLabel} to top band`,
+      })
+      await context.annotatedScreenshot(pin, 'step-8-pin-chart', 120, 160)
       await pin.click()
       await page.waitForTimeout(500)
-      await context.annotatedScreenshot(page.getByTestId('analytics-pinned-grid'), 'step-8-pinned-chart', 20)
-      await page.getByRole('button', { name: 'Unpin Language from top band' }).click()
+
+      const pinnedGrid = page.getByTestId('analytics-pinned-grid')
+      await context.annotatedScreenshot(pinnedGrid, 'step-8-pinned-chart', 20)
+
+      const pinnedCard = pinnedGrid.locator('lapp-analytics-card').first()
+      await pinnedCard.hover()
+      await page.waitForTimeout(300)
+      await pinnedCard
+        .getByRole('button', { name: `Unpin ${surveyHabitsLabel} from top band` })
+        .click()
       await page.waitForTimeout(300)
     })
 
     await test.step('Change a chart through its options menu', async () => {
       const menuButton = languageCard.getByRole('button', { name: 'Chart options for Language' })
+      await languageCard.evaluate((element) => element.scrollIntoView({ block: 'center' }))
+      await languageCard.hover()
+      await page.waitForTimeout(300)
       await menuButton.click()
       await page.waitForTimeout(300)
       await takeViewportScreenshot(page, 'step-9-chart-options')
