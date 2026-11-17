@@ -128,7 +128,9 @@ test.describe('Survey analytics', async () => {
       await page.waitForTimeout(300)
       await takeViewportScreenshot(page, 'step-9-chart-options')
 
-      await page.locator('md-menu[open]').getByText('Horizontal bar', { exact: true }).click()
+      await page.getByRole('menuitem', { name: /Chart type/ }).click()
+      await page.waitForTimeout(300)
+      await page.getByRole('option', { name: 'Horizontal bar' }).click()
       await page.waitForTimeout(500)
       await context.annotatedScreenshot(languageCard, 'step-9-bar-chart', 20)
     })
