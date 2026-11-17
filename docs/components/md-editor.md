@@ -73,7 +73,7 @@ The "Theme" menu in the toolbar provides quick actions to wrap your content in t
 
 The editor is built with accessibility as a core priority:
 
-1. **Keyboard Navigation:** The toolbar is fully navigable via keyboard, strictly following the WAI-ARIA Authoring Practices for toolbars.
+1. **Keyboard Navigation:** The toolbar is fully navigable via keyboard, strictly following the [WAI-ARIA Authoring Practices for toolbars](https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/).
 2. **Contextual Accessibility Menu:** When used in contexts like a Survey or Form, an additional accessibility menu appears. This menu helps you control which elements are displayed or hidden based on the respondent's active accessibility mode (e.g., showing a specific video only when Sign Language mode is active).
 
 <figure>

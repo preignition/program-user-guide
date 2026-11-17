@@ -34,7 +34,7 @@ The easiest way to start is by selecting a base "seed color" for your brand. Thi
   <figcaption>Select your primary brand color to generate a palette.</figcaption>
 </figure>
 
-You can use the color picker to select the exact hue you need. The system will automatically ensure that the generated colors meet WCAG AA contrast requirements.
+You can use the color picker to select the exact hue you need. The system will automatically ensure that the generated colors meet [WCAG AA contrast requirements](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).
 
 <figure>
   <img src="./assets/create-theme/step-2-seed-color-picker.png" alt="Color picker">

@@ -45,7 +45,7 @@ The Listserv app provides a fully WCAG 2.1 AA compliant, channel-scoped announce
 
 ## How this documentation is organized
 
-Organized according to the **Diátaxis framework**, our documentation is structured around four distinct user needs:
+Organized according to the [Diátaxis framework](https://diataxis.fr/), our documentation is structured around four distinct user needs:
 
 ### 1. [Tutorials](./tutorial/index.md) (Learning-oriented)
 **New to Listserv?**  
