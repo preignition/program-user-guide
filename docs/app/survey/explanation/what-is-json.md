@@ -6,7 +6,7 @@ description: An explanation of the JSON format, what it is, and why it is the pr
 
 When exporting a survey definition from Accessible Surveys for translation, the platform generates a file in **JSON** format.
 
-JSON, which stands for **JavaScript Object Notation**, is a lightweight format for storing and transporting data. While it originated from JavaScript, it is now a universal standard used across almost all programming languages and modern web applications.
+JSON, which stands for **JavaScript Object Notation**, is a lightweight format for storing and transporting data. While it originated from JavaScript, it is now a [universal standard](https://www.rfc-editor.org/rfc/rfc8259) used across almost all programming languages and modern web applications.
 
 ## Why use JSON instead of Excel or CSV?
 

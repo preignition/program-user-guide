@@ -16,7 +16,7 @@ HCT stands for Hue, Chroma, and Tone. It is a color space that provides a more a
 
 The major advantage of the HCT color space is that the "Tone" value directly corresponds to human perception of lightness. This allows the system to guarantee contrast ratios for accessibility just by measuring the mathematical difference between the Tone values of two colors, regardless of their Hue or Chroma.
 
-In our platform, we utilize a custom component for selecting colors in the `HCT` color space, which provides a specialized HCT color picker. This allows you to fine-tune the Hue and Chroma of your brand colors while the system automatically calculates and checks Tone values to maintain WCAG AA contrast requirements.
+In our platform, we utilize a custom component for selecting colors in the `HCT` color space, which provides a specialized HCT color picker. This allows you to fine-tune the Hue and Chroma of your brand colors while the system automatically calculates and checks Tone values to maintain [WCAG AA contrast requirements](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).
 
 <figure>
   <img src="../how-to/assets/create-theme/step-2-seed-color-picker.png" alt="Color picker">

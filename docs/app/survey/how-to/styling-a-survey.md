@@ -24,7 +24,7 @@ To access the styling options, you need to open the survey builder's **Behavior*
 
 ::: tip
 **Design Standards**
-Default styling tokens respect **Material Design 3** specifications. If you choose to deviate from these defaults, ensure you test your design across multiple screen sizes (mobile, tablet, desktop) to maintain a high-quality respondent experience.
+Default styling tokens respect [Material Design 3](https://m3.material.io/) specifications. If you choose to deviate from these defaults, ensure you test your design across multiple screen sizes (mobile, tablet, desktop) to maintain a high-quality respondent experience.
 :::
 
 The most efficient way to adjust your survey's density and readability is through the two **master scale settings**, shown as cards at the top of the Style tab:
@@ -50,7 +50,7 @@ Size tokens accept values in `px`, `em`, `rem`, or `%`. However, typography toke
 
 ::: tip
 **Accessibility First**
-When you select a primary color, the platform automatically calculates appropriate contrast ratios for text and backgrounds to ensure compliance with WCAG standards. This means your survey will remain accessible even if respondents switch to dark or high-contrast themes.
+When you select a primary color, the platform automatically calculates appropriate contrast ratios for text and backgrounds to ensure compliance with [WCAG standards](https://www.w3.org/WAI/standards-guidelines/wcag/). This means your survey will remain accessible even if respondents switch to dark or high-contrast themes.
 :::
 
 ## Responsive Overrides

@@ -8,7 +8,7 @@ Randomization is a critical technique in survey design used to mitigate **order 
 
 ## The Challenge of Order Bias
 
-In many surveys, respondents are more likely to select the first few options in a list (primacy effect) or the last few (recency effect). By shuffling the order of these items for different respondents, these biases average out across your total sample, leading to more accurate and scientifically rigorous data.
+In many surveys, respondents are more likely to select the first few options in a list (primacy effect) or the last few (recency effect).[^order] By shuffling the order of these items for different respondents, these biases average out across your total sample, leading to more accurate and scientifically rigorous data.
 
 ## How it Works: Stable Seeded Shuffling
 
@@ -51,3 +51,5 @@ Randomization is calculated **on-the-fly** in the respondent's browser when the 
 ::: info
 Randomization only takes effect in **Built Forms**. When you are designing your survey in the builder, you will always see items in their original, authored order to make editing easier.
 :::
+
+[^order]: Tourangeau, R., Rips, L. J., & Rasinski, K. (2000). [*The Psychology of Survey Response*](https://doi.org/10.1017/CBO9780511819322). Cambridge University Press.

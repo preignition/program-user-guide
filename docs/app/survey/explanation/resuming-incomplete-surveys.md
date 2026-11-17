@@ -100,7 +100,7 @@ To clarify how different environmental factors affect resumption, consider the m
 
 ## Privacy & Security Benefits
 
-* **No Privacy-Invasive Tracking:** By avoiding IP address matching or network fingerprinting, Accessible Surveys respects user privacy and complies with strict GDPR guidelines.
+* **No Privacy-Invasive Tracking:** By avoiding IP address matching or network fingerprinting, Accessible Surveys respects user privacy and complies with strict [GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj) guidelines.
 * **Data Security:** Response snapshots in Firestore are protected by Firebase Security Rules, ensuring only the authenticated `UID` (or authorized survey administrators) can access or write to the active session.
 
 ## Related Content

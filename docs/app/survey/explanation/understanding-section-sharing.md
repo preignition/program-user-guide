@@ -45,7 +45,7 @@ When individual survey authors recreate these questions independently, accessibi
 
 By allowing sections to be **Published** to an organization-wide **Section Library**, a single well-crafted section becomes a reusable asset for all teams.
 
-A prime example is the **Washington Group Short Set on Functioning** (the international standard for identifying disability in censuses and surveys). Implementing these six questions with complete Sign Language video interpretations and Easy Read illustrations is a significant undertaking. When published once by an accessibility specialist, any researcher in the organization can embed the fully accessible module in seconds with zero marginal production cost.
+A prime example is the [Washington Group Short Set on Functioning](https://www.washingtongroup-disability.com/question-sets/wg-short-set-on-functioning-wg-ss/) (the international standard for identifying disability in censuses and surveys). Implementing these six questions with complete Sign Language video interpretations and Easy Read illustrations is a significant undertaking. When published once by an accessibility specialist, any researcher in the organization can embed the fully accessible module in seconds with zero marginal production cost.
 
 ---
 
@@ -75,7 +75,7 @@ Shared sections solve this at the root:
 
 ## Eliminating Survey Fatigue with Smart Pre-Fill
 
-**Survey fatigue** is a primary cause of high abandonment rates, rushed responses, and declining data quality. Respondents are routinely asked to re-enter the same information—such as contact details, demographics, or assistive technology preferences—every time they fill in a survey from the same organization.
+**Survey fatigue** is a primary cause of high abandonment rates, rushed responses, and declining data quality.[^fatigue] Respondents are routinely asked to re-enter the same information—such as contact details, demographics, or assistive technology preferences—every time they fill in a survey from the same organization.
 
 ```text
    Survey 1: Onboarding Survey          Survey 2: Annual Feedback
@@ -159,3 +159,5 @@ Section Sharing bridges the gap between specialized accessibility engineering an
 * [Understanding Survey, Form, Page, Section and Question Hierarchy](./understanding-survey-hierarchy.md)
 * [The Role of Survey Batches](./the-role-of-batches.md)
 * [Survey Building & Versioning](./survey-versionning.md)
+
+[^fatigue]: Galesic, M. (2006). [*Dropouts on the web: Effects of interest and burden experienced during an online survey*](https://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/dropouts-on-the-web-effects-of-interest-and-burden-experienced-during-an-online-survey.pdf). Journal of Official Statistics, 22(2), 313–328; Peytchev, A. (2009). [*Survey breakoff*](https://doi.org/10.1093/poq/nfp014). Public Opinion Quarterly, 73(1), 74–97.

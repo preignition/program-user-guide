@@ -4,7 +4,7 @@ description: Learn how to publish standardized survey sections across your organ
 
 # How to share a section with other teams
 
-When conducting research, you often need to ask the same standardized questions across different surveys—such as demographic details, consent forms, or standardized accessibility and health assessments like the **Washington Group Questions on Disability**.
+When conducting research, you often need to ask the same standardized questions across different surveys—such as demographic details, consent forms, or standardized accessibility and health assessments like the [Washington Group Questions on Disability](https://www.washingtongroup-disability.com/question-sets/).
 
 Instead of rebuilding these sections from scratch—and re-recording Sign Language videos, creating Easy Read illustrations, and managing multiple translations each time—you can publish a section to your organization's **Section Library**. Other teams can then embed the section directly into their own surveys.
 

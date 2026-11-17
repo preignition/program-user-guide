@@ -5,7 +5,7 @@ description: How to export survey responses and behavioral paradata in CSV or JS
 # How to Export Survey Data
 
 ::: warning Data Privacy and Compliance
-When exporting survey data from the platform, you are responsible for maintaining respondent privacy. Exported datasets must be handled in compliance with relevant data protection regulations such as GDPR and CCPA. Never share raw survey files containing identifiable personal information outside authorized teams.
+When exporting survey data from the platform, you are responsible for maintaining respondent privacy. Exported datasets must be handled in compliance with relevant data protection regulations such as the [GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj) and the [CCPA](https://oag.ca.gov/privacy/ccpa). Never share raw survey files containing identifiable personal information outside authorized teams.
 :::
 
 ::: info Permissions Required
