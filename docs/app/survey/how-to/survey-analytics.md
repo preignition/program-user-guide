@@ -29,8 +29,8 @@ To access survey analytics:
 The header summary bar indicates the currently selected distribution batch, the total number of submitted responses, and the active filter count.
 
 <figure>
-  <img src="./assets/survey-analytics/step-2-active-batch.png" alt="Active batch chip showing batch name and respondent count">
-  <figcaption>The active batch indicator displays the current distribution batch and total submitted responses.</figcaption>
+  <img src="./assets/survey-analytics/step-2-selection-summary.png" alt="Selection summary toolbar showing total responses and toolbar actions">
+  <figcaption>The selection summary toolbar displays total responses, filter reset, layout density, and export controls.</figcaption>
 </figure>
 
 ::: tip
@@ -69,12 +69,18 @@ To change which metadata cards appear in the top band:
 
 Survey questions are organized under the **Pages** tab bar beneath the metadata band:
 
-1. Select any page tab (e.g. *Survey habits*, *Demographics*, *Feedback*) to view the question cards belonging to that page.
-2. Within a page, questions are grouped into collapsible sections matching your survey composition. Click any section header to collapse or expand its question cards.
-3. Each question card displays the question text, response distribution chart, and sample size ($n$).
+1. Select any page tab (e.g. *Survey habits*, *Experience*, *About you*, *Content Page*) to view the question cards belonging to that page.
 
 <figure>
-  <img src="./assets/survey-analytics/step-4-survey-page.png" alt="Survey page view with question cards and response distributions">
+  <img src="./assets/survey-analytics/step-4-page-tabs.png" alt="Survey page navigation tabs">
+  <figcaption>The page tabs bar organizes questions by survey pages.</figcaption>
+</figure>
+
+1. Within a page, questions are grouped into collapsible sections matching your survey composition. Click any section header to collapse or expand its question cards.
+2. Each question card displays the question text, response distribution chart, and sample size ($n$).
+
+<figure>
+  <img src="./assets/survey-analytics/step-4-experience-charts.png" alt="Question cards displaying response distributions">
   <figcaption>Survey questions displayed as cards grouped under their respective survey page tab.</figcaption>
 </figure>
 
@@ -89,19 +95,25 @@ Question cards automatically select the optimal chart representation based on th
 Every chart element functions as a live filter. You can isolate any cohort across the entire survey with a single click:
 
 1. Click any chart mark (a slice of a donut chart, a bar, or a histogram bin).
-2. The selected mark highlights, and every other chart across all pages immediately recalculates to display only responses matching that criterion.
-3. The summary toolbar updates instantly, displaying the count and percentage of matching respondents (e.g. `12 / 103 (12%)`).
 
 <figure>
-  <img src="./assets/survey-analytics/step-5-filter-by-chart.png" alt="Filtering responses by clicking a chart slice or bar">
+  <img src="./assets/survey-analytics/step-5-click-chart-bar.png" alt="Filtering responses by clicking a chart slice or bar">
   <figcaption>Clicking a chart mark instantly cross-filters all other charts across the entire survey.</figcaption>
 </figure>
 
-1. An active filter chip appears in the top toolbar showing the filter dimension and selected value (e.g. `Language: English`).
+1. The selected mark highlights, and every other chart across all pages immediately recalculates to display only responses matching that criterion.
+2. The summary toolbar updates instantly, displaying the count and percentage of matching respondents (e.g. `10 / 103 (10%)`), accompanied by an active filter chip.
 
 <figure>
-  <img src="./assets/survey-analytics/step-5-filter-summary.png" alt="Active filter chip in the summary toolbar">
+  <img src="./assets/survey-analytics/step-5-active-filter.png" alt="Active filter chip in the summary toolbar">
   <figcaption>The active filter chip shows the current criteria and updates the matching respondent count.</figcaption>
+</figure>
+
+1. All other charts in the workbench reflect the filtered distribution:
+
+<figure>
+  <img src="./assets/survey-analytics/step-5-filtered-chart.png" alt="Question card reflecting filtered distribution">
+  <figcaption>Question cards update their distributions and sample sizes to reflect the filtered cohort.</figcaption>
 </figure>
 
 ### Combining Multiple Filters
@@ -114,21 +126,22 @@ To reset filters:
 
 - Click the **×** (remove) icon on any individual filter chip to drop that specific filter.
 - Click the highlighted slice or bar on the originating chart to toggle the filter off.
-- Click **Clear all filters** in the toolbar to restore the entire dataset.
-
-<figure>
-  <img src="./assets/survey-analytics/step-6-clear-filter.png" alt="Clearing an active filter chip">
-  <figcaption>Click the clear button on an active filter chip to restore the full dataset.</figcaption>
-</figure>
+- Click **Reset all filters** in the toolbar to restore the entire dataset.
 
 ## 5. Inspecting Individual Responses
 
-To drill down into individual respondent submissions matching your current view:
+Below the question cards, the Responses table lists all individual submissions matching the active filters:
 
-1. Hover over any question card to reveal the card action icons.
-2. Click the **Info** (details) icon in the card header.
-3. The Response Inspector dialog opens, displaying the individual answers submitted for that question.
-4. Use the pagination controls to step through matching respondent submissions one by one.
+<figure>
+  <img src="./assets/survey-analytics/step-6-response-grid.png" alt="Responses table listing individual submissions">
+  <figcaption>The responses table lists individual records matching the active filter criteria.</figcaption>
+</figure>
+
+To drill down into full answers:
+
+1. Click any row in the responses table, or hover over a question card and click the **Info** action.
+2. The Response Inspector dialog opens, displaying the complete answers submitted by that respondent.
+3. Use the pagination controls to step through matching respondent submissions one by one.
 
 <figure>
   <img src="./assets/survey-analytics/step-7-response-details.png" alt="Individual response details inspector dialog">
@@ -221,7 +234,7 @@ Analytics Views allow you to preserve distinct analytical perspectives (e.g. "Ac
 </figure>
 
 <figure>
-  <img src="./assets/survey-analytics/step-12-saved-view.png" alt="Saved views dropdown selector">
+  <img src="./assets/survey-analytics/step-12-view-selector.png" alt="Saved views dropdown selector">
   <figcaption>Switch between saved analytics views to immediately restore custom layouts and filter sets.</figcaption>
 </figure>
 
