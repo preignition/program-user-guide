@@ -162,26 +162,21 @@ Every behavioral chart mark serves as a dynamic cross-filter. Clicking any eleme
   <figcaption>Active behavioral filter chips isolate subsets (e.g. low-confidence or high-friction respondents).</figcaption>
 </figure>
 
-1. The entire KPI strip and respondent log immediately recalculate to reflect only that cohort.
+1. The entire KPI strip and respondent log immediately recalculate to reflect only that cohort:
 
 <figure>
   <img src="./assets/behavior-analytics/step-6-filtered-kpis.png" alt="Dynamically updated KPI strip reflecting filtered respondent subset">
   <figcaption>All KPI metrics update instantly to reflect the characteristics of the filtered cohort.</figcaption>
 </figure>
 
-1. To reset, click the **×** on the filter chip or click **Clear all filters**.
-
-<figure>
-  <img src="./assets/behavior-analytics/step-7-clear-filters.png" alt="Clearing behavioral filter chips">
-  <figcaption>Click the clear button on any behavioral chip to return to the aggregate dataset.</figcaption>
-</figure>
+1. To reset filters, click the **×** on the filter chip or click **Reset all filters** in the toolbar.
 
 ## 7. Auditing Responses in the Behavioral Respondent Log
 
 The tabular **Behavioral Respondent Log** below the charts provides an auditable row-by-row breakdown of each session:
 
 <figure>
-  <img src="./assets/behavior-analytics/step-8-respondent-log.png" alt="Behavioral respondent log grid with per-respondent behavioral metrics">
+  <img src="./assets/behavior-analytics/step-7-respondent-log.png" alt="Behavioral respondent log grid with per-respondent behavioral metrics">
   <figcaption>The Respondent Log provides an auditable breakdown of timing, edits, and quality signals per response.</figcaption>
 </figure>
 
@@ -210,7 +205,7 @@ To analyze a specific respondent's trajectory through the survey:
    - Distinct highlight for the respondent's slowest question and drop-off point.
 
 <figure>
-  <img src="./assets/behavior-analytics/step-8-respondent-inspector.png" alt="Respondent inspector dialog showing question-by-question timing breakdown">
+  <img src="./assets/behavior-analytics/step-8-respondent-details.png" alt="Respondent inspector dialog showing question-by-question timing breakdown">
   <figcaption>The respondent inspector details question-level attention and identifies individual slowest questions.</figcaption>
 </figure>
 

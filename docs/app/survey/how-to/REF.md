@@ -123,3 +123,8 @@
 - [app/app-survey/src/analytics/behavioral-adapter.ts](../../../../../app/app-survey/src/analytics/behavioral-adapter.ts): Pure behavioral projections — KPI aggregations, Confidence Index scoring, QualityFlag schema, friction summary (median, IQR, hesitation hotspots), and tabular respondent log rows.
 - [app/app-survey/src/page/analyze/responseExclusionAction.ts](../../../../../app/app-survey/src/page/analyze/responseExclusionAction.ts): Client action invoking the server-side response exclusion and restoration pipelines.
 - [lit-app/schema/survey/exclusion.ts](../../../../../lit-app/schema/survey/exclusion.ts): Schema definition for response exclusions, reason codes (`test`, `bot`, `speeder`, `duplicate`, `quality`, `inappropriate`), and audit trail metadata.
+
+## Exporting survey data - exporting-survey-data
+
+- [lit-app/analytics/src/export-dialog.ts](../../../../../lit-app/analytics/src/export-dialog.ts): Dataset export dialog (`lapp-analytics-export-dialog`) — export filename formatting, format radio selection (CSV/JSON), column selection, and download dispatch.
+- [lit-app/analytics/src/export-dataset.ts](../../../../../lit-app/analytics/src/export-dataset.ts): Dataset serialization routines converting loaded or filtered cube rows into CSV or JSON strings.

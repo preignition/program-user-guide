@@ -1,61 +1,79 @@
 ---
-description: This page describes how you can export survey data for further analysis
+description: How to export survey responses and behavioral paradata in CSV or JSON formats for spreadsheet or statistical analysis.
 ---
 
-# Exporting Survey Data
+# How to Export Survey Data
 
-::: warning
-If you export data from the platform, you are responsible for the privacy of the exported data. Exported data must be treated in line with relevant data protection regulations such as GDPR
+::: warning Data Privacy and Compliance
+When exporting survey data from the platform, you are responsible for maintaining respondent privacy. Exported datasets must be handled in compliance with relevant data protection regulations such as GDPR and CCPA. Never share raw survey files containing identifiable personal information outside authorized teams.
 :::
 
-::: info
-Exporting your data from the platform is a sensitive action.  You need to have the necessary user rights and have signed into your account recently in order to export survey data.  If you get an error message it means that you don't have the necessary rights or you need to sign out of your account and sign in again and try again.
+::: info Permissions Required
+Exporting survey datasets is a restricted administrative action. You must have Editor, Admin, or Owner permissions on the survey to export data.
 :::
 
-## Step 1
+## 1. Locating the Export Action
 
-From the analytics page, click on the three lines beside the survey name in the top menu
+Survey data is exported directly from the **Analyze** workspace:
 
-This will expand the view and display the 'download' symbol
+1. Open your survey and navigate to the **Analyze** tab.
+2. In the top toolbar, click the **Export** button.
 
-<lite-youtube videoid="ICCaPpUXqp0"></lite-youtube>
+<figure>
+  <img src="./assets/exporting-survey-data/step-1-export-button.png" alt="Export button in the analytics top toolbar">
+  <figcaption>Click the <strong>Export</strong> button in the analytics toolbar to open the dataset export dialog.</figcaption>
+</figure>
 
-## Step 2
+## 2. Configuring the Export Options
 
-A privacy warning window will be activated, reminding you of your data protection and data privacy responsibilities.
+The **Export dataset** dialog opens over the workbench:
 
-You will need to tick the box confirming that you understand these responsibilitis before you can export survey data
+<figure>
+  <img src="./assets/exporting-survey-data/step-2-export-dialog.png" alt="Export dataset modal dialog with format selection and download controls">
+  <figcaption>Configure the export filename, file format, and column selection.</figcaption>
+</figure>
 
-## Step 4
+1. **Export file name**: The default filename follows the pattern `{survey-name}-all-pages-{date}.csv`. You can rename the file before downloading.
+2. **Select file format**:
+   - **CSV (spreadsheet)**: Comma-separated tabular data. Opens directly in spreadsheet applications (Microsoft Excel, Google Sheets) and statistical environments (R, SPSS, Stata, Python/pandas).
+   - **JSON**: Hierarchical structured data. Ideal for automated data pipelines, custom web integrations, and database ingest.
+3. **Select columns**:
+   - **All**: Exports all standard metadata fields, submission timestamps, and decoded question answers.
 
-There are various options for to chose from when exporting survey data
+## 3. Exporting Filtered Subsets
 
-## Step 5
+The export engine is linked to the analytics cross-filtering system:
 
-First select the data form that you want to export your data in. There are two choices:
+- **Full batch export**: When no chart filters are applied, the dialog indicates *Exporting all loaded responses* and downloads the entire dataset.
+- **Filtered cohort export**: If you have filtered the dataset by clicking chart marks or metadata chips (e.g., respondents from a specific country or who answered a particular question), the dialog automatically scopes the export to that cohort.
 
-**json**- JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa)
+<figure>
+  <img src="./assets/exporting-survey-data/step-3-filtered-export.png" alt="Export dialog indicating a filtered subset of responses will be downloaded">
+  <figcaption>When cross-filters are active, the export dialog automatically restricts the download to the filtered cohort.</figcaption>
+</figure>
 
-**CSV**- A CSV is a comma-separated values file, which allows data to be saved in a tabular format. CSVs look like a spreadsheet but with a . csv extension. CSV files can be used with most any spreadsheet program, such as Microsoft Excel or Google Spreadsheets
+1. Click **Download** to save the file to your computer.
 
-## Step 6
+## 4. Exporting Behavioral Paradata
 
-Next select the type of data that you would like to export. There are three choices:
+To export enriched behavioral paradata (including Confidence Index scores, quality flags, active interaction duration, idle time, focus ratios, and question-level dwell times):
 
-**Anonymized**- Provides the option of exporting an anonymized data set. MetaData and all fields marked as anonymous ('private') on your form will not be exported. This is a great option for protecting personal data as long as you have marked all questions which ask for personal data as private
+1. Navigate to the **Behavior** tab in the survey Analyze navigation.
+2. Apply any desired behavioral filters (e.g. filtering to respondents with high confidence or specific quality signals).
+3. Click the **Export** button in the behavioral toolbar.
+4. The downloaded file contains all survey responses enriched with behavioral paradata columns for statistical regression and data hygiene reporting.
 
-::: warning
-Anonymization is applied at submission, not at download: each response is anonymized when the respondent submits, using the build they actually answered. A question marked anonymous later will not be removed from responses collected before the change. Mark personal-data questions as anonymous **before** you start collecting responses, and see [Anonymized exports](../explanation/data-privacy-and-security.md#anonymized-exports) for what this means for data you have already collected.
-:::
+## 5. Handling Anonymous and Sensitive Data
 
-**Raw-** Provides the option of exporting all the data that has been collected against a survey, including MetaData and all response feilds. Great care should be taken with this sort of data.
+The platform enforces data protection rules at export time:
 
-**Humanized**- Similar to raw data, but with transalated responses and question lookups added
+- **Private & Anonymous Fields**: Questions configured with the *Anonymous* setting in Advanced Mode have their personal data excluded from exports.
+- **Excluded Responses**: Any response excluded using the *Remove from dataset* action in the Behavioral Respondent Log is omitted from analytical exports, ensuring clean downstream reporting.
 
-## Step 7
+---
 
-Once you have decided how you want to export the survey data, select 'Export Now'
+## Related Content
 
-## Step 8
-
-The data will start downloading automatically
+- [How to Analyze Survey Responses](./survey-analytics.md): Interactive cross-filtering and cohort analysis.
+- [How to Analyze Respondent Behavior and Data Quality](./behavior-analytics.md): Inspecting timing paradata, quality signals, and excluding low-effort submissions.
+- [Data Privacy and Security](../explanation/data-privacy-and-security.md): Architectural principles behind respondent anonymization and account separation.
