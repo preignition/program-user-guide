@@ -117,9 +117,9 @@ function getSidebar() {
           collapsed: true,
           items: [
             { text: "Send invitations to a team audience", link: `send-invitations.md` },
-            { text: "Analyze survey data", link: `survey-analytics.md` },
+            { text: "Analyze survey responses", link: `survey-analytics.md` },
+            { text: "Analyze respondent behavior", link: `behavior-analytics.md` },
             { text: "Export survey data", link: `exporting-survey-data.md` },
-            { text: "Export analytics charts", link: `exporting-analytics-charts.md` },
           ],
         },
       ],
@@ -179,7 +179,11 @@ function getSidebar() {
           text: "Analyze Survey",
           collapsed: true,
           base: `${root}/reference/analyze/`,
-          items: [{ text: "Progress", link: `progress.md` }],
+          items: [
+            { text: "Survey Analytics", link: `survey.md` },
+            { text: "Behavioral Analytics", link: `behavior.md` },
+            { text: "Progress", link: `progress.md` },
+          ],
         },
         {
           text: "Markdown Reference",

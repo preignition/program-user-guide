@@ -37,7 +37,7 @@ Topics that explain the underlying architecture of the platform, including:
 
 Content that helps you understand how to create high-quality surveys, including:
 
-- **[Confidence Index](./confidence-index.md):** Understand how the platform identifies potential bot activity and low-effort submissions through behavioral analysis.
+- **[Respondent Behavior & Data Quality](./confidence-index.md):** Conceptual background on satisficing theory, client-side paradata, response latency, and detecting low-effort or automated submissions.
 - **[How to choose the right question type](./choosing-the-right-question-type.md)**
 - **[Using Markdown](./using-markdown.md):** Why Accessible Surveys uses Markdown for rich text formatting and its benefits for accessibility.
 
