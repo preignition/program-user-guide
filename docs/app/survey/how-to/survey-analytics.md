@@ -22,6 +22,8 @@ The main analytics page is divided into two sections:
 
 **Meta feilds:** This contains survey information which is not related to the survey reponses themselves. This includes information such as when a response was received, the language it was submitted in or where the respondent was located. Fields in this section stay stable when a user navigates through different pages of the survey
 
+Use the settings button in the **Record Context & Metadata** header to choose which metadata charts are shown and to reorder them. The choice is saved with the Analytics View.
+
 **Pages:** This contains the responses to the survey questions themselves. You will see the page structure of your survey on the left hand side under the heading 'Pages'. You can use the page structure to naviage through your survey.
 
 ## Step 3
