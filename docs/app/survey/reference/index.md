@@ -14,8 +14,11 @@ It is structured around the natural lifecycle and main interfaces of managing a 
   Descriptions of the simulation tools, interface previews, and validation logic used to test a survey prior to deployment.
 - **[Share](./share/index.md)**
   Comprehensive configuration details for making your survey live. Covers publishing version control, generating distribution links, sending audience invitations, configuring respondent emails and access rights, scheduling batches, integrating webhooks, and defining post-survey redirection.
-- **[Analyze — Progress](./analyze/progress.md)**
-  Technical reference for the invitation Progress tab: run selector cards, funnel and rate counters, masked recipient table, status CSV download, and reminder actions.
+- **[Analyze](./analyze/survey.md)**
+  Technical reference for survey analytics, respondent paradata, and invitation monitoring:
+  - **[Survey Analytics](./analyze/survey.md)**: Workbench UI parameters, metadata cards, card layout options, AnalyticsModel schema, and statistical formulas.
+  - **[Behavioral Analytics](./analyze/behavior.md)**: Paradata schema, session timing formulas, Confidence Index scoring rubric, quality flag predicates, and exclusion taxonomy.
+  - **[Progress](./analyze/progress.md)**: Invitation run selector cards, funnel and rate counters, masked recipient table, and reminder actions.
 
 Other reference content includes:
 

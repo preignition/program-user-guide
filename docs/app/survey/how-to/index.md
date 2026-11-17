@@ -83,6 +83,6 @@ Generating links, managing survey batches, configuring respondent accounts, and 
 
 ## 5. Analytics & Export
 
-- [How to analyze survey data](./survey-analytics.md) - *in progress*
+- [How to analyze survey responses](./survey-analytics.md)
+- [How to analyze respondent behavior and data quality](./behavior-analytics.md)
 - [How to export survey data](./exporting-survey-data.md) - *in progress*
-- [How to export analytics charts](./exporting-analytics-charts.md)

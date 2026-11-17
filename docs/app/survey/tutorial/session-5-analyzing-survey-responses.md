@@ -36,4 +36,6 @@ Follow along with the video to analyze your survey responses and export your dat
 > [!NOTE]
 > Congratulations! You have completed the training course. You should now be confident in building, testing, sharing, and analyzing surveys on the platform.
 
+For in-depth recipes on using interactive cross-filtering, customizing chart cards, and managing analytics views, see [How to Analyze Survey Responses](../how-to/survey-analytics.md).
+
 If you need further assistance, please consult the online help or contact us at contact@accessiblesurveys.com.

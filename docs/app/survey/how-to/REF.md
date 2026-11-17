@@ -108,3 +108,18 @@
 - [app/app-survey/src/page/analyze/progress.ts](../../../../../app/app-survey/src/page/analyze/progress.ts): Analytics → Progress tab (`app-survey-progress`) — run selector cards, funnel and rate `lapp-stat` tiles, `Load details` masked recipient table, status CSV download, and reminder/resend/reissue actions.
 - [lit-app/schema/customer/audience.ts](../../../../../lit-app/schema/customer/audience.ts): Audience and recipient schemas, canonical CSV headers, email masking, import warranty, and `AUDIENCE_LIMITS`.
 - [lit-app/schema/survey/invitation.ts](../../../../../lit-app/schema/survey/invitation.ts): Invitation run and event schemas, merge fields (`INVITATION_MERGE_FIELDS`), funnel counters, and rate formulas.
+
+## Analyzing survey responses - survey-analytics
+
+- [lit-app/analytics/src/workbench.ts](../../../../../lit-app/analytics/src/workbench.ts): Main analytics workbench host element — coordinates page tabs, sections, card grid density, metadata chooser modal, and persistent top band.
+- [lit-app/analytics/src/card.ts](../../../../../lit-app/analytics/src/card.ts): Analytics card component (`lapp-analytics-card`) — hover actions, pin button, chart options menu (PNG/SVG export, chart type, width span, card ordering).
+- [app/app-survey/src/page/analyze/view-manager.ts](../../../../../app/app-survey/src/page/analyze/view-manager.ts): Analytics Views manager component (`app-survey-view-manager`) — view selector, save/rename/duplicate actions, and Sort all charts sub-menu.
+- [app/app-survey/src/page/analyze/metaFields.ts](../../../../../app/app-survey/src/page/analyze/metaFields.ts): Field descriptors and label resolvers for survey metadata cards (language, submission date, country, UTM parameters).
+- [lit-app/analytics/src/stats.ts](../../../../../lit-app/analytics/src/stats.ts): Parametric statistics calculations (mean, standard error, skewness, kurtosis, variance, 95% CI) for the Advanced Statistics modal.
+
+## Analyzing respondent behavior - behavior-analytics
+
+- [app/app-survey/src/page/analyze/behavior.ts](../../../../../app/app-survey/src/page/analyze/behavior.ts): Behavioral analytics page component (`app-survey-behavior`) — KPI strip, drop-off segmented selector, per-question friction card, respondent log grid, and exclusion dialog.
+- [app/app-survey/src/analytics/behavioral-adapter.ts](../../../../../app/app-survey/src/analytics/behavioral-adapter.ts): Pure behavioral projections — KPI aggregations, Confidence Index scoring, QualityFlag schema, friction summary (median, IQR, hesitation hotspots), and tabular respondent log rows.
+- [app/app-survey/src/page/analyze/responseExclusionAction.ts](../../../../../app/app-survey/src/page/analyze/responseExclusionAction.ts): Client action invoking the server-side response exclusion and restoration pipelines.
+- [lit-app/schema/survey/exclusion.ts](../../../../../lit-app/schema/survey/exclusion.ts): Schema definition for response exclusions, reason codes (`test`, `bot`, `speeder`, `duplicate`, `quality`, `inappropriate`), and audit trail metadata.
