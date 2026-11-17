@@ -6,6 +6,11 @@ description: Technical reference for Behavioral Analytics metrics, Confidence In
 
 The **Behavioral Analytics** reference documents the session paradata indicators, Confidence Index scoring rubrics, quality flag definitions, cognitive friction metrics, and response exclusion mechanisms available in the Behavioral view.
 
+<figure>
+  <img src="../../how-to/assets/behavior-analytics-auto.png" alt="The Behavioral Analytics dashboard showing KPI strip, quality charts, and friction analysis">
+  <figcaption>The Behavioral Analytics workspace displaying respondent KPIs, quality signals, and attention metrics.</figcaption>
+</figure>
+
 ---
 
 ## 1. Session Timing and Paradata Indicators
@@ -16,7 +21,7 @@ When behavioral tracking is enabled for a survey, the platform collects client-s
 | :--- | :--- | :--- |
 | **Active Time** | Seconds | The cumulative time the respondent actively interacted with the survey page (scrolling, clicking options, or typing). Periods where no interaction occurs for more than 15 seconds are classified as idle time and excluded. |
 | **Idle Time** | Seconds | Accumulated pauses where the survey tab was left open without interaction or when the browser tab lost focus. |
-| **Focus Percentage** | Percentage ($0\%\text{--}100\%$) | The proportion of total session duration during which the respondent was actively focused on the survey tab rather than multitasking in other browser tabs or windows. |
+| **Focus Percentage** | Percentage (0–100%) | The proportion of total session duration during which the respondent was actively focused on the survey tab rather than multitasking in other browser tabs or windows. |
 | **Choice Edits** | Event count | The total number of times a respondent altered an existing answer selection across choice questions (e.g., selecting option A, then changing their mind to option B). |
 | **Paste Bursts** | Event count | Instances where a significant volume of text was entered instantaneously into a text field in a single burst rather than typed key by key. |
 | **Question Dwell Time** | Seconds | The active interaction duration spent answering each individual question, measured between question focus and progression. |
@@ -76,16 +81,16 @@ The survey median represents the typical active time respondents spend on a stan
 
 ### Hesitation Hotspots
 
-A question is classified as a **Hesitation Hotspot** when its median dwell time equals or exceeds **twice the survey median** ($\ge 2\times$). Hesitation hotspots indicate questions that impose high cognitive burden, suffer from ambiguous phrasing, require extensive reading, or present complex interaction requirements.
+A question is classified as a **Hesitation Hotspot** when its median dwell time equals or exceeds **twice the survey median**. Hesitation hotspots indicate questions that impose high cognitive burden, suffer from ambiguous phrasing, require extensive reading, or present complex interaction requirements.
 
 ### Boxplot Dispersion Metrics
 
 When viewing friction in Boxplot mode, the distribution of respondent times for each question is described using standard five-number dispersion metrics:
 
 - **Median**: The middle value of all respondent durations for that question (50th percentile). Half of the respondents answered faster than this time, and half answered slower.
-- **First Quartile ($Q_1$)**: The 25th percentile. One-quarter of respondents answered faster than this time.
-- **Third Quartile ($Q_3$)**: The 75th percentile. Three-quarters of respondents answered faster than this time.
-- **Interquartile Range (IQR)**: The difference between the third and first quartiles ($Q_3 - Q_1$). Measures the spread of the middle 50% of respondents. A wide IQR indicates wide variance in how long different respondents take to understand the question.
+- **First Quartile (Q1)**: The 25th percentile. One-quarter of respondents answered faster than this time.
+- **Third Quartile (Q3)**: The 75th percentile. Three-quarters of respondents answered faster than this time.
+- **Interquartile Range (IQR)**: The difference between the third and first quartiles (Q3 minus Q1). Measures the spread of the middle 50% of respondents. A wide IQR indicates wide variance in how long different respondents take to understand the question.
 - **Whiskers and Outliers**: Upper and lower boundaries derived using standard Tukey fences (1.5 times the IQR beyond the quartiles). Values falling outside the whiskers highlight individual respondents who experienced extreme hesitation or finished unusually quickly.
 
 ---

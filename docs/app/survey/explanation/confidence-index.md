@@ -48,28 +48,30 @@ By measuring these non-content signals, researchers can objectively differentiat
 
 Response latency — the time elapsed between displaying a question and the respondent's submission — is a well-established psychological indicator of cognitive processing difficulty (**Bassili & Fletcher, 1991**; **Yan & Tourangeau, 2008**).
 
-As demonstrated by **Lenzner, Kaczmirek, and Galesic (2011)**, when a question's response time significantly exceeds the baseline reading duration, it signals cognitive friction: ambiguous phrasing, double-barreled questions, visually cluttered response options, or accessibility barriers. Our Behavioral Analytics dashboard operationalizes this by flagging **Hesitation Hotspots** ($\ge 2\times$ survey median attention) to direct researchers toward survey UX bottlenecks.
+As demonstrated by **Lenzner, Kaczmirek, and Galesic (2011)**, when a question's response time significantly exceeds the baseline reading duration, it signals cognitive friction: ambiguous phrasing, double-barreled questions, visually cluttered response options, or accessibility barriers. Our Behavioral Analytics dashboard operationalizes this by flagging **Hesitation Hotspots** (questions taking at least twice the survey median attention) to direct researchers toward survey UX bottlenecks.
 
 ## 3. How the Confidence Index Works
 
-The **Confidence Index** synthesizes client-side paradata into an interpretable metric from $0$ to $100$. Rather than a black-box machine learning classifier, it employs a deterministic, auditable heuristic scoring model designed around established survey methodology thresholds:
+The **Confidence Index** synthesizes client-side paradata into an interpretable metric from 0 to 100. Rather than a black-box machine learning classifier, it employs a deterministic, auditable heuristic scoring model designed around established survey methodology thresholds:
 
-$$\text{Confidence Score} = 100 - (\text{Speed Penalty} + \text{Interaction Penalty})$$
+```text
+Confidence Score = 100 − (Speed Penalty + Interaction Penalty)
+```
 
 ### Speed Penalties and Minimum Reading Thresholds
 
-Research on reading speeds and comprehension in online surveys (**Yan & Tourangeau, 2008**) indicates that a human reader requires a baseline threshold of approximately $3$ seconds per question to read, comprehend, and select a response.
+Research on reading speeds and comprehension in online surveys (**Yan & Tourangeau, 2008**) indicates that a human reader requires a baseline threshold of approximately 3 seconds per question to read, comprehend, and select a response.
 
-- If a respondent's total active duration is significantly below this threshold ($T_{active} < 3\text{s} \times N_{questions}$), a proportional speed penalty is applied.
+- If a respondent's total active duration falls significantly below this threshold — fewer than 3 seconds multiplied by the number of questions — a proportional speed penalty is applied.
 - Submissions executed in mere seconds across dozens of questions receive a severe speed penalty, identifying automated bot scripts or extreme speeders.
 
 ### Interaction Heuristics and Intentionality
 
 Unlike bots that inject values directly into the DOM or click submit linearly, humans frequently exhibit deliberate, non-linear interaction patterns:
 
-- **Choice Modifications (The Intentionality Reward)**: Changing a selected radio button, checkbox, or dropdown option represents a strong indicator of human deliberation, reconsidered judgment, and conscientious reading (**Heerwegh, 2003**). Submissions with choice revisions receive a positive interaction adjustment ($-20$ penalty deduction).
-- **Text Entry Cadence (Burst Penalty)**: Genuine respondents type answers incrementally. In contrast, bot scripts and copy-paste operations dump large blocks of text instantaneously. When a large volume of text arrives in a single burst without prior focus or typing events, an interaction penalty ($+30$) is applied.
-- **Zero Modifications**: Submissions completed with zero answer edits across the entire session receive a baseline scrutiny penalty ($100$ or $50$ depending on total interactions), distinguishing them from iterative human responses.
+- **Choice Modifications (The Intentionality Reward)**: Changing a selected radio button, checkbox, or dropdown option represents a strong indicator of human deliberation, reconsidered judgment, and conscientious reading (**Heerwegh, 2003**). Submissions with choice revisions receive a positive interaction adjustment of 20 points against the penalty.
+- **Text Entry Cadence (Burst Penalty)**: Genuine respondents type answers incrementally. In contrast, bot scripts and copy-paste operations dump large blocks of text instantaneously. When a large volume of text arrives in a single burst without prior focus or typing events, an additional 30-point interaction penalty is applied.
+- **Zero Modifications**: Submissions completed with zero answer edits across the entire session receive a baseline scrutiny penalty of 100 points, or 50 points when some interactions occurred, distinguishing them from iterative human responses.
 
 ## 4. Diagnosing Survey Breakoffs and Drop-Offs
 
