@@ -6,6 +6,11 @@ description: Technical reference for Survey Analytics workbench interface elemen
 
 The **Survey Analytics** reference documents the interface elements, metadata classifications, display options, saved view mechanisms, and statistical indicators available in the analytics workbench.
 
+<figure>
+  <img src="../../how-to/assets/survey-analytics-auto.png" alt="The Survey Analytics workbench showing metadata charts, summary toolbar, and question cards">
+  <figcaption>The Survey Analytics workbench interface and analytical controls.</figcaption>
+</figure>
+
 ---
 
 ## 1. Workbench Interface Elements
@@ -103,7 +108,7 @@ The **Sort all charts** submenu in the View Actions menu applies a consistent so
 
 Continuous, numeric, and rating question cards feature an Advanced Statistics dialog that calculates standard parametric and distribution metrics:
 
-- **Sample Size ($n$)**: The total count of respondents who answered the question within the currently filtered cohort.
+- **Sample Size (n)**: The total count of respondents who answered the question within the currently filtered cohort.
 - **Sample Mean**: The arithmetic average of all submitted values.
 - **Sample Variance and Standard Deviation**: Measures of response dispersion around the mean. A larger standard deviation indicates wide divergence in opinion, while a small value indicates consensus.
 - **Standard Error**: The estimated variability of the sample mean relative to the true population mean.

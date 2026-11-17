@@ -77,7 +77,7 @@ Survey questions are organized under the **Pages** tab bar beneath the metadata 
 </figure>
 
 1. Within a page, questions are grouped into collapsible sections matching your survey composition. Click any section header to collapse or expand its question cards.
-2. Each question card displays the question text, response distribution chart, and sample size ($n$).
+2. Each question card displays the question text, response distribution chart, and sample size (n).
 
 <figure>
   <img src="./assets/survey-analytics/step-4-experience-charts.png" alt="Question cards displaying response distributions">
@@ -255,8 +255,8 @@ For numerical, scale, Likert, and continuous rating questions, you can inspect p
 
 1. Hover over the question card and click the statistical information action.
 2. The Advanced Statistics dialog displays key distribution metrics:
-   - **Sample Mean ($\bar{x}$)** and **Standard Error ($SE$)**.
-   - **Sample Variance ($s^2$)** and **Standard Deviation ($s$)**.
+   - **Sample Mean** and **Standard Error**.
+   - **Sample Variance** and **Standard Deviation**.
    - **Skewness** (distribution asymmetry) and **Kurtosis** (tail heaviness).
    - **95% Confidence Interval** for the population mean.
 

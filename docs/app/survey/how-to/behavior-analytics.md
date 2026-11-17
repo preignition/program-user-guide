@@ -117,7 +117,7 @@ The **Per-Question Attention & Friction** card analyzes response latency across 
 
 Displays the median dwell time per question against the overall survey median:
 
-- Questions with dwell times $\ge 2\times$ the survey median are automatically flagged as **Hesitation Hotspots**.
+- Questions with dwell times at least twice the survey median are automatically flagged as **Hesitation Hotspots**.
 - Hotspots indicate questions requiring disproportionate cognitive effort, complex phrasing, or confusing layout.
 
 <figure>
@@ -129,7 +129,7 @@ Displays the median dwell time per question against the overall survey median:
 
 Click the card options menu (three dots) and select **Boxplot mode** to visualize dispersion:
 
-- Displays the median, the interquartile range (IQR from $Q_1$ to $Q_3$), and minimum/maximum whiskers.
+- Displays the median, the interquartile range (IQR, from the first quartile to the third quartile), and minimum/maximum whiskers.
 - Reveals answer latency spread and distribution skewness, helping distinguish questions that trouble all respondents from questions that only confuse a subset.
 
 <figure>
@@ -185,14 +185,14 @@ Columns include:
 - **Checkbox**: Selection control for bulk exclusion.
 - **Submitted**: Submission date and time.
 - **Status**: Completed (`Submitted`) or partial (`Drop-off`).
-- **Confidence**: Color-coded Confidence score badge (green for $\ge 70$, amber for $40\text{--}69$, red for $< 40$).
+- **Confidence**: Color-coded Confidence score badge (green for scores of 70 or more, amber for 40 to 69, red below 40).
 - **Quality Signals**: Active flags assigned to the respondent.
 - **Active Time & Idle Time**: Clean separation of active interaction versus idle wait time.
 - **Focus %**: Proportion of session time spent inside the survey tab.
 - **Choice edits & Paste bursts**: Raw event counts.
 - **Slowest question**: The specific question where this respondent spent the most time.
 
-You can sort by any column header or use the column filter inputs to isolate specific patterns (e.g. confidence $< 50$ or active time $< 10\text{s}$).
+You can sort by any column header or use the column filter inputs to isolate specific patterns (for example a confidence score below 50, or an active time below 10 seconds).
 
 ## 8. Inspecting Individual Respondent Timelines
 
