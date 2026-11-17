@@ -84,7 +84,7 @@ Our platform automatically saves partial sessions when a respondent discontinues
 
 ## 5. Ethical Principles and Privacy Preservation
 
-The Confidence Index is built strictly as an **assistive diagnostic tool** for researchers, adhering to the **AAPOR Code of Professional Ethics and Practices** and **ESOMAR** guidelines:
+The Confidence Index is built strictly as an **assistive diagnostic tool** for researchers, adhering to the [AAPOR Code of Professional Ethics and Practices](https://aapor.org/standards-and-ethics/) and the [ICC/ESOMAR Code of Conduct](https://esomar.org/code-and-guidelines/icc-esomar-code):
 
 1. **No In-Flight Blocking**: The platform never blocks, interrupts, or terminates a respondent's session based on behavioral scores. Every participant is permitted to complete the survey. The researcher retains full discretion over whether to include or exclude responses during analysis.
 2. **Non-Invasive Tracking**: The platform explicitly rejects invasive spyware techniques:
@@ -97,18 +97,17 @@ The Confidence Index is built strictly as an **assistive diagnostic tool** for r
 
 ## 6. Authoritative References
 
-1. **American Association for Public Opinion Research (AAPOR) Data Quality Task Force (2022)**. *Data Quality Metrics for Online Samples*. AAPOR Report.
-2. **Bassili, J. N., & Fletcher, J. F. (1991)**. *Response-time measurement in survey research: A new look at an old technique*. Public Opinion Quarterly, 55(3), 407–418.
-3. **Couper, M. P. (1998)**. *Measuring survey quality in a CASIC environment*. Proceedings of the Survey Research Methods Section, American Statistical Association, 41–49.
-4. **Couper, M. P. (2000)**. *Web surveys: A review of issues and approaches*. The Public Opinion Quarterly, 64(4), 464–494.
-5. **Curran, P. G. (2016)**. *Methods for the detection of carelessly invalid responses in survey data*. Journal of Experimental Social Psychology, 66, 4–19.
-6. **Galesic, M. (2006)**. *Dropouts on the web: Effects of interest and length of the questionnaire*. Public Opinion Quarterly, 70(3), 313–328.
-7. **Heerwegh, D. (2003)**. *Explaining response latencies and changing answers using client-side paradata from a web survey*. Social Science Computer Review, 21(3), 360–373.
-8. **Kennedy, C., Hatley, N., Lau, A., Mercer, A., Keeter, S., Ferno, J., & Asare-Marfo, D. (2020)**. *Assessing the Risks to Online Polls From Bogus Respondents*. Pew Research Center Report.
-9. **Krosnick, J. A. (1991)**. *Response strategies for coping with the cognitive demands of attitude measures in surveys*. Applied Cognitive Psychology, 5(3), 213–236.
-10. **Lenzner, T., Kaczmirek, L., & Galesic, M. (2011)**. *Seeing through the eyes of the respondent: An eye-tracking study on survey questions*. Survey Research Methods, 5(3), 119–139.
-11. **Meade, A. W., & Craig, S. B. (2012)**. *Identifying careless responses in survey data*. Psychological Methods, 17(3), 437–455.
-12. **Peytchev, A. (2009)**. *Survey breakoff*. Public Opinion Quarterly, 73(1), 74–97.
-13. **Stieger, S., & Reips, U.-D. (2010)**. *What are participants doing while filling in an online questionnaire: A paradata collection tool and an empirical study*. Computers in Human Behavior, 26(6), 1488–1495.
-14. **Tukey, J. W. (1977)**. *Exploratory Data Analysis*. Addison-Wesley.
-15. **Yan, T., & Tourangeau, R. (2008)**. *Fast times and easy questions: The effects of age, experience and cognitive speed on web survey response times*. Journal of Official Statistics, 24(4), 517–541.
+The works cited above, each linked to the publisher or an open copy:
+
+1. **American Association for Public Opinion Research (AAPOR) Data Quality Task Force (2022)**. *[Data Quality Metrics for Online Samples: Considerations for Study Design and Analysis](https://aapor.org/reports/data-quality-metrics-for-online-samples-considerations-for-study-design-analysis/)*. AAPOR Report.
+2. **Bassili, J. N., & Fletcher, J. F. (1991)**. *[Response-time measurement in survey research: A method for CATI and a new look at nonattitudes](https://doi.org/10.1086/269265)*. Public Opinion Quarterly, 55(3), 331–346.
+3. **Couper, M. P. (1998)**. *[Measuring survey quality in a CASIC environment](http://www.asasrms.org/Proceedings/papers/1998_006.pdf)*. Proceedings of the Survey Research Methods Section, American Statistical Association, 41–49.
+4. **Couper, M. P. (2000)**. *[Web surveys: A review of issues and approaches](https://doi.org/10.1086/318641)*. Public Opinion Quarterly, 64(4), 464–494.
+5. **Galesic, M. (2006)**. *[Dropouts on the web: Effects of interest and burden experienced during an online survey](https://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/dropouts-on-the-web-effects-of-interest-and-burden-experienced-during-an-online-survey.pdf)*. Journal of Official Statistics, 22(2), 313–328.
+6. **Heerwegh, D. (2003)**. *[Explaining response latencies and changing answers using client-side paradata from a web survey](https://doi.org/10.1177/0894439303253985)*. Social Science Computer Review, 21(3), 360–373.
+7. **Kennedy, C., Hatley, N., Lau, A., Mercer, A., Keeter, S., Ferno, J., & Asare-Marfo, D. (2020)**. *[Assessing the risks to online polls from bogus respondents](https://www.pewresearch.org/methods/2020/02/18/assessing-the-risks-to-online-polls-from-bogus-respondents/)*. Pew Research Center Report.
+8. **Krosnick, J. A. (1991)**. *[Response strategies for coping with the cognitive demands of attitude measures in surveys](https://doi.org/10.1002/acp.2350050305)*. Applied Cognitive Psychology, 5(3), 213–236.
+9. **Lenzner, T., Kaczmirek, L., & Galesic, M. (2011)**. *[Seeing through the eyes of the respondent: An eye-tracking study on survey question comprehension](https://doi.org/10.1093/ijpor/edq053)*. International Journal of Public Opinion Research, 23(3), 361–373.
+10. **Peytchev, A. (2009)**. *[Survey breakoff](https://doi.org/10.1093/poq/nfp014)*. Public Opinion Quarterly, 73(1), 74–97.
+11. **Stieger, S., & Reips, U.-D. (2010)**. *[What are participants doing while filling in an online questionnaire: A paradata collection tool and an empirical study](https://doi.org/10.1016/j.chb.2010.05.013)*. Computers in Human Behavior, 26(6), 1488–1495.
+12. **Yan, T., & Tourangeau, R. (2008)**. *[Fast times and easy questions: The effects of age, experience and question complexity on web survey response times](https://deepblue.lib.umich.edu/items/e84ab427-c0b2-4f16-b1e4-31366939a4c0)*. Journal of Official Statistics, 24(4), 517–541.
