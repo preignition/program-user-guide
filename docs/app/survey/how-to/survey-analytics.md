@@ -269,15 +269,19 @@ For numerical, scale, Likert, and continuous rating questions, you can inspect p
 
 You can export the survey dataset at any time, reflecting all active filter criteria:
 
-1. Click the **Export** button in the top toolbar.
-2. Select your desired format:
+1. Click the **Export** button in the analytics toolbar.
+2. Read the privacy warning and tick **I understand my responsibilities**.
+3. Choose the download method:
+   - **Download from this browser**: builds the file locally from the responses currently loaded in the workbench and honors the active filters.
+   - **Server compliance archive**: generates a complete archive on the server from all stored responses, ignoring the active filters. Choose anonymized, humanized, or raw content for compliance or privacy requests.
+4. Select your desired format:
    - **CSV**: Standard comma-separated tabular data for Excel, Google Sheets, R, or SPSS.
    - **JSON**: Hierarchical structured data for automated pipelines or web applications.
-3. Choose whether to export the complete survey dataset or only the currently filtered subset.
-4. Click **Download**.
+5. Choose whether to export the complete survey dataset or only the currently filtered subset.
+6. Click **Download** (or **Generate archive** for a server export).
 
 <figure>
-  <img src="./assets/survey-analytics/step-11-export-dataset.png" alt="Export dataset dialog with format and download options">
+  <img src="./assets/survey-analytics/step-11-export-dataset.png" alt="Export dataset dialog with privacy warning, download method, format and download options">
   <figcaption>Export the active dataset (or filtered subset) directly to CSV or JSON formats.</figcaption>
 </figure>
 

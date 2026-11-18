@@ -17,10 +17,10 @@ Exporting survey datasets is a restricted administrative action. You must have E
 Survey data is exported directly from the **Analyze** workspace:
 
 1. Open your survey and navigate to the **Analyze** tab.
-2. In the top toolbar, click the **Export** button.
+2. In the analytics toolbar, click the **Export** button.
 
 <figure>
-  <img src="./assets/exporting-survey-data/step-1-export-button.png" alt="Export button in the analytics top toolbar">
+  <img src="./assets/exporting-survey-data/step-1-export-button.png" alt="Export button in the analytics toolbar">
   <figcaption>Click the <strong>Export</strong> button in the analytics toolbar to open the dataset export dialog.</figcaption>
 </figure>
 
@@ -29,16 +29,19 @@ Survey data is exported directly from the **Analyze** workspace:
 The **Export dataset** dialog opens over the workbench:
 
 <figure>
-  <img src="./assets/exporting-survey-data/step-2-export-dialog.png" alt="Export dataset modal dialog with format selection and download controls">
-  <figcaption>Configure the export filename, file format, and column selection.</figcaption>
+  <img src="./assets/exporting-survey-data/step-2-export-dialog.png" alt="Export dataset modal dialog with privacy warning, download method, format selection and download controls">
+  <figcaption>Configure the download method, filename, file format, and column selection.</figcaption>
 </figure>
 
-1. **Export file name**: The default filename follows the pattern `{survey-name}-all-pages-{date}.csv`. You can rename the file before downloading.
-2. **Select file format**:
+1. **Privacy warning**: Read the notice at the top and tick **I understand my responsibilities** before exporting.
+2. **Download method**:
+   - **Download from this browser**: Builds the file in your browser from the responses currently loaded in the workbench. This method honors the active filters and is limited to the rows shown.
+   - **Server compliance archive**: Generates a complete archive on the server from all stored responses. It ignores the active filters and offers anonymized, humanized, or raw content with translated labels. Use it for compliance, privacy requests, or exports that must cover the full dataset.
+3. **Export file name**: The default filename follows the pattern `{survey-name}-all-pages-{date}.csv`. You can rename the file before downloading.
+4. **Select file format**:
    - **CSV (spreadsheet)**: Comma-separated tabular data. Opens directly in spreadsheet applications (Microsoft Excel, Google Sheets) and statistical environments (R, SPSS, Stata, Python/pandas).
    - **JSON**: Hierarchical structured data. Ideal for automated data pipelines, custom web integrations, and database ingest.
-3. **Select columns**:
-   - **All**: Exports all standard metadata fields, submission timestamps, and decoded question answers.
+5. **Select columns** (browser download only): Choose **All pages** for the whole dataset or **Active page** to export only the questions on the page shown in the workbench.
 
 ## 3. Exporting Filtered Subsets
 
@@ -52,7 +55,7 @@ The export engine is linked to the analytics cross-filtering system:
   <figcaption>When cross-filters are active, the export dialog automatically restricts the download to the filtered cohort.</figcaption>
 </figure>
 
-1. Click **Download** to save the file to your computer.
+1. Click **Download** to save the browser-generated file, or **Generate archive** to start the server archive download.
 
 ## 4. Exporting Behavioral Paradata
 
@@ -61,7 +64,8 @@ To export enriched behavioral paradata (including Confidence Index scores, quali
 1. Navigate to the **Behavior** tab in the survey Analyze navigation.
 2. Apply any desired behavioral filters (e.g. filtering to respondents with high confidence or specific quality signals).
 3. Click the **Export** button in the behavioral toolbar.
-4. The downloaded file contains all survey responses enriched with behavioral paradata columns for statistical regression and data hygiene reporting.
+4. Tick the privacy acknowledgement and choose **Download from this browser**. The server compliance archive contains survey answers, not behavioral columns.
+5. The downloaded file contains all survey responses enriched with behavioral paradata columns for statistical regression and data hygiene reporting.
 
 ## 5. Handling Anonymous and Sensitive Data
 
