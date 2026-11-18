@@ -2,7 +2,9 @@
 
 ## Survey Analytics Workbench - survey
 
-- [lit-app/analytics/src/workbench.ts](../../../../../../lit-app/analytics/src/workbench.ts): Analytics workbench element (`lapp-analytics-workbench`) — layout modes, multi-cube indexing, metadata card chooser, and pinned grid.
+- [lit-app/analytics/src/workbench.ts](../../../../../../lit-app/analytics/src/workbench.ts): Analytics workbench element (`lapp-analytics-workbench`) — layout modes, multi-cube indexing, metadata card chooser, pinned grid, and the advanced-mode response selection and exclusion request plumbing.
+- [lit-app/analytics/src/response-grid.ts](../../../../../../lit-app/analytics/src/response-grid.ts): Responses table element (`lapp-analytics-response-grid`) — row inspector, header filters, the advanced-mode Response ID column and multi-select for dataset removal.
+- [app/app-survey/src/page/analyze/analyze.ts](../../../../../../app/app-survey/src/page/analyze/analyze.ts): The `Analytics → Analyze` tab (`app-survey-analyze-survey`) — view persistence, page tabs, Include test switch, and the selection-driven exclusion dialog.
 - [lit-app/analytics/src/card.ts](../../../../../../lit-app/analytics/src/card.ts): Analytics card element (`lapp-analytics-card`) — chart rendering, span tokens, chart options menu, and SVG/PNG canvas export.
 - [lit-app/analytics/src/stats.ts](../../../../../../lit-app/analytics/src/stats.ts): Sample distribution moments and statistical formulas (mean, standard deviation, skewness, kurtosis, standard error, 95% CI).
 - [app/app-survey/src/page/analyze/view-manager.ts](../../../../../../app/app-survey/src/page/analyze/view-manager.ts): Analytics View manager component and Sort all charts action.

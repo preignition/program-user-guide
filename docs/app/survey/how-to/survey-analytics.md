@@ -148,6 +148,19 @@ To drill down into full answers:
   <figcaption>The response inspector displays individual submissions matching the current filter criteria.</figcaption>
 </figure>
 
+### Response IDs and removing responses (advanced mode)
+
+Turn on **Advanced** in the top toolbar to audit individual records in the responses table:
+
+- A **Response ID** column appears (filterable and sortable), showing the stored record identifier used by the Progress tab and the compliance archive.
+- Select rows with the checkboxes; the header checkbox selects every row visible under the current filters. Then click **Remove from dataset…**.
+
+In the removal dialog, choose a reason — **Test data** or **Other** — and add a note when you pick **Other**. Removed responses disappear from every Analyze and Behavior chart, count, grid and filtered browser export, but they are not deleted: the stored response, the Progress tab and the compliance archive keep it (the archive marks it as excluded). The **Include test** switch does not bring an excluded response back; restore it from the **Excluded (N)** list on the Behavior tab.
+
+::: warning
+Removal affects the whole analytics dataset, not just the page or the rows currently on screen.
+:::
+
 ## 6. Pinning Key Charts to the Top Band
 
 When comparing question responses against key demographic or outcome variables across different pages, pin the primary charts to the top band:
