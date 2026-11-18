@@ -37,7 +37,13 @@ export function getSidebar() {
         { text: "Overview", link: "index" },
         {
           text: "Survey App",
-          items: [{ text: "Confidence Index", link: "survey/confidence-index" }],
+          items: [
+            {
+              text: "Analytics & Behavior (2.4.0)",
+              link: "2026-11-18-analytics-and-behavior",
+            },
+            { text: "Confidence Index", link: "survey/confidence-index" },
+          ],
         },
         {
           text: "Listserv App",
