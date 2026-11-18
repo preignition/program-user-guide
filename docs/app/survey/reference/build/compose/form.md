@@ -13,8 +13,12 @@ The Form is the root container element for the entire survey. It encapsulates al
 
 ## Form Identity
 
-The Form configuration determines the public-facing identity of the survey:
+These fields identify the form itself; they are not the survey's name or title:
 
-- **Name**: The internal identifier used for administrative and database purposes (not visible to respondents).
-- **Title**: The main public title displayed at the top of the survey.
-- **Subtitle**: An optional description or introductory text displayed below the title.
+- **Title** (User Facing Title): The heading of the form, translated for each language.
+- **Name** (Internal Settings): The form's internal name used in the editor. It is not visible to respondents.
+- **Form Description** (Internal Settings, Advanced): Internal documentation for the form.
+
+::: info
+To rename the survey, use its **Introduction Page** — see [Rename a survey](../../../how-to/editing-a-survey.md#rename-a-survey).
+:::

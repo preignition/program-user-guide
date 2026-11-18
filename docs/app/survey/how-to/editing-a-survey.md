@@ -65,6 +65,25 @@ When you use **Expand all**, the pages and sections open and their questions app
 The two actions are available on the **Form**, **Survey**, **Page**, and **Section** items — the levels that contain other items. They do not appear on a question, a text item, or an option.
 :::
 
+## Rename a survey
+
+The survey has two names:
+
+- **Survey Name** is the internal name shown in the workspace, in the editor header, and on the **Overview** card. Respondents never see it, and it is not translated.
+- **Survey Title** is what respondents see on the introduction page. It is translated for each language of a localized survey.
+
+To rename a survey:
+
+1. Open the survey editor and go to **Build → Compose**.
+2. In the **Overall Structure** tree, select **Introduction Page**.
+3. In the right panel, edit **Survey Name** and, if needed, **Survey Title**. Changes are saved automatically.
+
+::: warning
+The **Name** under **Form → Internal Settings** is the form's name, not the survey's. Editing it does not rename the survey — use **Introduction Page → Survey Name** instead.
+:::
+
+The new name appears in the workspace and at the top of the survey editor. The **Overview** card only displays the name; edit it from the **Introduction Page**.
+
 ## Step 3: Add Content Mode
 
 To add actual questions to your page, you need to switch to **Add Content Mode**. Click the "Add Content Mode" button (typically located at the bottom right or in the view toolbar).
