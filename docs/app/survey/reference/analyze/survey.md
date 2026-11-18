@@ -125,8 +125,10 @@ Continuous, numeric, and rating question cards feature an Advanced Statistics di
 
 ## 6. Dataset Export Formats
 
-The workbench allows organizers to export the collected survey data at any time:
+The workbench allows organizers to export the collected survey data at any time. A privacy warning requires explicit acknowledgement before exporting:
 
+- **Browser export**: Builds the file locally from the responses loaded in the workbench.
+- **Server compliance archive**: Generates the file on the server from all stored responses, ignoring the active filters. Choose anonymized, humanized, or raw content.
 - **CSV Format**: Standard comma-separated tabular text file. Suitable for spreadsheets (Excel, Google Sheets) and statistical software packages (R, SPSS, Stata). Contains one row per respondent, with columns for metadata, submission timestamps, and decoded answers. Multiple-choice answers are formatted as separated values.
 - **JSON Format**: Hierarchical, structured text format suitable for programmatic import, custom dashboards, and web application pipelines.
-- **Export Scope**: Organizers can choose to export either the **Full dataset** (all submitted records for the batch) or the **Filtered cohort** (only respondents satisfying the currently active filter chips).
+- **Export Scope**: Browser exports can cover either the **Full dataset** or the **Filtered cohort** (only respondents satisfying the currently active filter chips). Server archives always cover all stored responses.

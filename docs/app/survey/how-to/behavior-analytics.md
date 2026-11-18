@@ -258,12 +258,13 @@ For formal research reporting, access parametric statistics for behavioral metri
 To perform multivariate regression modeling or methodology reporting in external tools:
 
 1. Click the **Export** button in the behavioral toolbar.
-2. Select **CSV** or **JSON**.
-3. The export always covers the current filtered cohort; clear all filters to export every loaded response. Survey metadata (origin, language, submission time…) is included unless you clear the metadata columns box.
-4. The file lists one row per response with the Behavioral Respondent Log columns (status, confidence index, quality signals, active and idle time, focus ratio, choice edits, paste bursts, slowest question, last page, and last question) plus one **active seconds** column per survey question.
+2. Read the privacy warning and tick **I understand my responsibilities**.
+3. Choose **Download from this browser** to export the behavioral dataset. This export always covers the current filtered cohort; clear all filters to export every loaded response. Survey metadata (origin, language, submission time…) is included unless you clear the metadata columns box.
+4. Select **CSV** or **JSON**.
+5. The file lists one row per response with the Behavioral Respondent Log columns (status, confidence index, quality signals, active and idle time, focus ratio, choice edits, paste bursts, slowest question, last page, and last question) plus one **active seconds** column per survey question.
 
 ::: info
-The Behavior export contains behavioral data only. To download survey answers, use the **Export** button on the Analyze tab or the server compliance archive.
+The behavioral dataset is only available through **Download from this browser**, because the server compliance archive contains survey answers rather than behavioral columns. To download survey answers, choose **Server compliance archive** in the same dialog or use the **Export** button on the Analyze tab.
 :::
 
 <figure>
