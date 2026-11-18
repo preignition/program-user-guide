@@ -97,16 +97,14 @@ When viewing friction in Boxplot mode, the distribution of respondent times for 
 
 ## 5. Response Exclusion Taxonomy
 
-When managing data quality, administrators can exclude low-quality, automated, or test responses from the analytical dataset. Excluded responses are immediately omitted from all charts, behavioral KPIs, and dataset exports, but are **never permanently deleted**. They remain preserved in the underlying response archive and can be restored at any time.
+When managing data quality, administrators can exclude low-quality, automated, or test responses from the analytical dataset. Excluded responses are immediately omitted from all charts, behavioral KPIs, analytics counts, and the filtered client-side export, but are **never permanently deleted**. They remain preserved in the underlying response archive and can be restored at any time. The marker is written to the raw, humanized and anonymized copies, so server compliance archive exports keep every stored response and mark the excluded ones with an `excluded` column and their exclusion reason.
 
 | Reason | Label | Explanatory Note | Typical Use Case |
 | :--- | :--- | :--- | :--- |
-| **`test`** | Test submission | Optional | Pre-launch authoring checks, internal team trials, and QA submissions. |
-| **`bot`** | Bot or script | Optional | Automated submissions flagged by instantaneous burst text entry and impossible completion speeds. |
-| **`speeder`** | Speeder / low effort | Optional | Human respondents who clicked through questions indiscriminately without reading. |
-| **`duplicate`** | Duplicate submission | Optional | Multiple entries submitted by the same respondent or device. |
-| **`quality`** | Data quality issue | **Required** | Incoherent, self-contradictory, or corrupted answers that compromise analytical reliability. |
-| **`inappropriate`** | Inappropriate content | **Required** | Responses containing abusive language, harassment, or violations of survey terms. |
+| **`test`** | Test data | Optional | Pre-launch authoring checks, internal team trials, and QA submissions. |
+| **`bot`** | Likely bot | Optional | Automated submissions flagged by instantaneous burst text entry and impossible completion speeds. |
+| **`duplicate`** | Duplicate | Optional | Multiple entries submitted by the same respondent or device. |
+| **`other`** | Other | **Required** | Any other reason; the note explains what it was. |
 
 ### Audit Metadata
 
@@ -114,6 +112,6 @@ Every exclusion action records an immutable audit entry containing:
 
 - The exclusion reason and optional explanatory note.
 - The ISO timestamp when the exclusion was performed.
-- The email address or identifier of the administrator who executed the action.
+- The user identifier of the administrator who executed the action.
 
 The **Excluded responses** button in the toolbar displays the current count of excluded records, opens the audit history list, and allows administrators to restore any record with a single click.
