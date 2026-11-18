@@ -112,10 +112,14 @@
 ## Analyzing survey responses - survey-analytics
 
 - [lit-app/analytics/src/workbench.ts](../../../../../lit-app/analytics/src/workbench.ts): Main analytics workbench host element — coordinates page tabs, sections, card grid density, metadata chooser modal, and persistent top band.
-- [lit-app/analytics/src/card.ts](../../../../../lit-app/analytics/src/card.ts): Analytics card component (`lapp-analytics-card`) — hover actions, pin button, chart options menu (PNG/SVG export, chart type, width span, card ordering).
+- [lit-app/analytics/src/card.ts](../../../../../lit-app/analytics/src/card.ts): Analytics card component (`lapp-analytics-card`) — question-type icon, hover actions, pin button, chart options menu (PNG/SVG export, chart type, width span, card ordering, hide), and the Advanced-mode statistical summary strip.
+- [lit-app/analytics/src/response-grid.ts](../../../../../lit-app/analytics/src/response-grid.ts): Responses table (`lapp-analytics-response-grid`) — advanced Response ID column, row checkboxes, bulk selection, removal request, and the response inspector dialog.
+- [lit-app/analytics/src/summary-bar.ts](../../../../../lit-app/analytics/src/summary-bar.ts): Selection summary toolbar (`lapp-analytics-summary-bar`) — filter chips, column density, pending refresh, and the dataset export entry point.
+- [app/app-survey/src/page/analyze/analyze.ts](../../../../../app/app-survey/src/page/analyze/analyze.ts): Analyze tab page — view state, advanced-mode gating, grid selection to the exclusion dialog, and the server archive export request.
 - [app/app-survey/src/page/analyze/view-manager.ts](../../../../../app/app-survey/src/page/analyze/view-manager.ts): Analytics Views manager component (`app-survey-view-manager`) — view selector, save/rename/duplicate actions, and Sort all charts sub-menu.
 - [app/app-survey/src/page/analyze/metaFields.ts](../../../../../app/app-survey/src/page/analyze/metaFields.ts): Field descriptors and label resolvers for survey metadata cards (language, submission date, country, UTM parameters).
-- [lit-app/analytics/src/stats.ts](../../../../../lit-app/analytics/src/stats.ts): Parametric statistics calculations (mean, standard error, skewness, kurtosis, variance, 95% CI) for the Advanced Statistics modal.
+- [lit-app/analytics/src/stats.ts](../../../../../lit-app/analytics/src/stats.ts): Per-question descriptive statistics (n, missing, mean, SD, median, IQR, range, top, categories) behind the Advanced-mode summary strip.
+- [lit-app/analytics/src/stats-strip.ts](../../../../../lit-app/analytics/src/stats-strip.ts): `lapp-analytics-stats-strip` — renders the Advanced-mode statistics chips below a card chart.
 
 ## Analyzing respondent behavior - behavior-analytics
 
@@ -126,5 +130,7 @@
 
 ## Exporting survey data - exporting-survey-data
 
-- [lit-app/analytics/src/export-dialog.ts](../../../../../lit-app/analytics/src/export-dialog.ts): Dataset export dialog (`lapp-analytics-export-dialog`) — export filename formatting, format radio selection (CSV/JSON), column selection, and download dispatch.
-- [lit-app/analytics/src/export-dataset.ts](../../../../../lit-app/analytics/src/export-dataset.ts): Dataset serialization routines converting loaded or filtered cube rows into CSV or JSON strings.
+- [lit-app/analytics/src/export-dialog.ts](../../../../../lit-app/analytics/src/export-dialog.ts): Dataset export dialog — privacy acknowledgement, browser/server download method, filename, column scope, metadata, value labels, format, multi-value separator, archive content and CSV header style.
+- [lit-app/analytics/src/export-dataset.ts](../../../../../lit-app/analytics/src/export-dataset.ts): Dataset serialization routines converting loaded or filtered cube rows into CSV or JSON strings, plus the default filename pattern.
+- [app/app-survey/src/page/analyze/analyze-session-mixin.ts](../../../../../app/app-survey/src/page/analyze/analyze-session-mixin.ts): Shared Analyze/Behavior session — server export option descriptor and the `DownloadAction` dispatch for the compliance archive.
+- [app/app-survey/src/entity/action/download.ts](../../../../../app/app-survey/src/entity/action/download.ts): Client action calling the survey download API with the chosen content, label type, format and separator.

@@ -26,7 +26,7 @@ To access survey analytics:
   <figcaption>Select <strong>Analyze</strong> in the top navigation to enter the analytics workbench.</figcaption>
 </figure>
 
-The header summary bar indicates the currently selected distribution batch, the total number of submitted responses, and the active filter count.
+The header summary bar indicates how many records are loaded for the current batch, how many match the active filters (for example `Showing 103 of 103 records (100%)`), and adds an active filter badge when filters are applied. Use **Reset all filters** to restore the full dataset and the refresh icon to reload it.
 
 <figure>
   <img src="./assets/survey-analytics/step-2-selection-summary.png" alt="Selection summary toolbar showing total responses and toolbar actions">
@@ -90,6 +90,8 @@ Question cards automatically select the optimal chart representation based on th
 - **Multiple-choice questions**: Horizontal bar charts displaying multi-select frequency.
 - **Numeric, rating, and Likert scales**: Histograms displaying continuous distributions and bin counts.
 
+A question-type icon sits before each card title (single-choice, multiple-choice, rating, ranking, numeric, date, yes/no, map, or text). Hover the icon to read its label, or the info icon beside the card menu to read the question description.
+
 ## 4. Interactive Cross-Filtering
 
 Every chart element functions as a live filter. You can isolate any cohort across the entire survey with a single click:
@@ -139,7 +141,7 @@ Below the question cards, the Responses table lists all individual submissions m
 
 To drill down into full answers:
 
-1. Click any row in the responses table, or hover over a question card and click the **Info** action.
+1. Click any row in the responses table.
 2. The Response Inspector dialog opens, displaying the complete answers submitted by that respondent.
 3. Use the pagination controls to step through matching respondent submissions one by one.
 
@@ -153,9 +155,27 @@ To drill down into full answers:
 Turn on **Advanced** in the top toolbar to audit individual records in the responses table:
 
 - A **Response ID** column appears (filterable and sortable), showing the stored record identifier used by the Progress tab and the compliance archive.
-- Select rows with the checkboxes; the header checkbox selects every row visible under the current filters. Then click **Remove from dataset…**.
+- Each row gains a checkbox for editors with edit rights. Select one or more responses, or use the header checkbox to select every row visible under the current filters. The header then shows **N selected** and a **Remove from dataset…** button:
 
-In the removal dialog, choose a reason — **Test data** or **Other** — and add a note when you pick **Other**. Removed responses disappear from every Analyze and Behavior chart, count, grid and filtered browser export, but they are not deleted: the stored response, the Progress tab and the compliance archive keep it (the archive marks it as excluded). The **Include test** switch does not bring an excluded response back; restore it from the **Excluded (N)** list on the Behavior tab.
+<figure>
+  <img src="./assets/survey-analytics/step-14-response-ids.png" alt="Responses table in advanced mode showing the Response ID column and row checkboxes">
+  <figcaption>Advanced mode adds the filterable Response ID column and a checkbox on every row.</figcaption>
+</figure>
+
+<figure>
+  <img src="./assets/survey-analytics/step-14-grid-selection.png" alt="Selected response with the selection bar showing the Remove from dataset button">
+  <figcaption>Selected rows are counted in the grid header, next to the <strong>Remove from dataset…</strong> action.</figcaption>
+</figure>
+
+1. Click **Remove from dataset…** to open the removal dialog.
+2. Choose a reason — **Test data** or **Other** — and add a note when you pick **Other** (the note is required for that reason).
+
+<figure>
+  <img src="./assets/survey-analytics/step-15-remove-dialog.png" alt="Remove responses dialog with the reason selector and note field">
+  <figcaption>Removal is auditable: choose a reason and, for <strong>Other</strong>, explain it in the note.</figcaption>
+</figure>
+
+Click **Remove**. Removed responses disappear from every Analyze and Behavior chart, count, grid and filtered browser export, but they are not deleted: the stored response, the Progress tab and the compliance archive keep it (the archive marks it as excluded). The **Include test** switch does not bring an excluded response back; restore it from the **Excluded (N)** list on the Behavior tab.
 
 ::: warning
 Removal affects the whole analytics dataset, not just the page or the rows currently on screen.
@@ -200,6 +220,7 @@ Every card features a context menu for visual customization and presentation exp
    - **Chart type**: Toggle between **Donut** and **Horizontal bar** for choice questions. Bar charts are especially helpful for questions with longer label text.
    - **Card width**: Adjust the card's column span between **1 column**, **2 columns**, or **Full width** to emphasize complex questions.
    - **Position**: Move the card earlier or later in the section sequence.
+   - **Hide chart**: Remove the card from the current page. Restore hidden cards from the **Hidden (N)** button in the toolbar.
    - **Reset card defaults**: Revert the card's width and chart representation to system defaults.
 
 <figure>
@@ -264,18 +285,25 @@ To reorganize chart categories consistently across the entire survey:
 
 ## 10. Advanced Statistical Indicators
 
-For numerical, scale, Likert, and continuous rating questions, you can inspect parametric statistics and distribution moments:
+Turn on **Advanced** in the top toolbar to add a live statistical summary strip below every chart. The strip recalculates with the active filters, and its chips depend on the question type:
 
-1. Hover over the question card and click the statistical information action.
-2. The Advanced Statistics dialog displays key distribution metrics:
-   - **Sample Mean** and **Standard Error**.
-   - **Sample Variance** and **Standard Deviation**.
-   - **Skewness** (distribution asymmetry) and **Kurtosis** (tail heaviness).
-   - **95% Confidence Interval** for the population mean.
+- **All questions**: **n** (valid answers) and, when answers are missing, **Missing** with its count and share.
+- **Numeric questions**: **Mean**, **SD** (standard deviation), **Median**, **IQR** (the interquartile range, from Q1 to Q3), and **Range** (minimum–maximum).
+- **Rating/Likert scales**: **Median** and **Mode** (the most frequent answer and its share), plus **Mean** and **SD** when the scale is numeric.
+- **Single-choice and multiple-choice questions**: **Top** answer with its share, and **Categories** (the number of distinct answers observed).
+- **Date questions**: **Span** from the earliest to the latest answer.
+- **Ranking questions**: **Top #1** (the item most often ranked first) and **Mean rank**.
 
 <figure>
-  <img src="./assets/survey-analytics/step-13-advanced-statistics.png" alt="Advanced statistics dialog showing mean, standard error, skewness, and confidence interval">
-  <figcaption>The advanced statistics modal displays parametric summary statistics and distribution moments.</figcaption>
+  <img src="./assets/survey-analytics/step-13-advanced-statistics.png" alt="Advanced mode statistical summary strip below a chart showing n, Top and Categories">
+  <figcaption>In Advanced mode, every card ends with a statistical summary strip computed on the filtered cohort.</figcaption>
+</figure>
+
+Cards that were hidden with **Hide chart** can be restored from the **Hidden (N)** menu in the toolbar:
+
+<figure>
+  <img src="./assets/survey-analytics/step-13-hidden-charts.png" alt="Hidden charts menu in the analytics toolbar">
+  <figcaption>The <strong>Hidden (N)</strong> menu restores cards hidden from the current page.</figcaption>
 </figure>
 
 ## 11. Exporting the Filtered Dataset
@@ -287,22 +315,33 @@ You can export the survey dataset at any time, reflecting all active filter crit
 3. Choose the download method:
    - **Download from this browser**: builds the file locally from the responses currently loaded in the workbench and honors the active filters.
    - **Server compliance archive**: generates a complete archive on the server from all stored responses, ignoring the active filters. Choose anonymized, humanized, or raw content for compliance or privacy requests.
-4. Select your desired format:
-   - **CSV**: Standard comma-separated tabular data for Excel, Google Sheets, R, or SPSS.
-   - **JSON**: Hierarchical structured data for automated pipelines or web applications.
-5. Choose whether to export the complete survey dataset or only the currently filtered subset.
-6. Click **Download** (or **Generate archive** for a server export).
+4. Set the **export file name** (the default follows `{survey-name}-all-pages-{date}.csv`).
+5. For a browser download, choose the columns (**All pages** or **Active page**), whether to **include metadata columns**, the value labels (**Humanized labels** or **Raw codes**), and the **file format** (**CSV** or **JSON**). For CSV, also pick the **multi-value separator** (comma, semicolon, or pipe).
+6. For a server archive, choose the **archive content**, the **file format**, and, for CSV, the **header style** (**Labels** or **Codes**) and **multi-value separator**.
+7. Click **Download** (or **Generate archive** for a server export).
 
 <figure>
-  <img src="./assets/survey-analytics/step-11-export-dataset.png" alt="Export dataset dialog with privacy warning, download method, format and download options">
-  <figcaption>Export the active dataset (or filtered subset) directly to CSV or JSON formats.</figcaption>
+  <img src="./assets/survey-analytics/step-11-export-dataset.png" alt="Top of the export dataset dialog with privacy warning, download method and filename">
+  <figcaption>The export dialog asks for explicit privacy acknowledgement and a download method.</figcaption>
 </figure>
+
+<figure>
+  <img src="./assets/survey-analytics/step-11-export-dataset-options.png" alt="Complete export dataset dialog with columns, metadata, values, format and separator options">
+  <figcaption>Browser exports can keep all pages or the active page, include metadata, and use humanized labels or raw codes.</figcaption>
+</figure>
+
+::: tip
+The browser export always covers the currently filtered cohort; clear the filters first to export every loaded response. The server archive always covers all stored responses and marks excluded ones with an `excluded` column.
+:::
+
+See [How to Export Survey Data](./exporting-survey-data.md) for the full option reference.
 
 ---
 
 ## Related Content
 
 - [How to Analyze Respondent Behavior and Data Quality](./behavior-analytics.md): Inspect timing paradata, quality signals, drop-offs, and exclude low-effort responses.
+- [How to Export Survey Data](./exporting-survey-data.md): Export the filtered dataset or the full server compliance archive in CSV or JSON.
 - [Survey Analytics Workbench Reference](../reference/analyze/survey.md): Complete specifications for UI controls, card parameters, view schemas, and statistical formulas.
 - [Behavioral Analytics Reference](../reference/analyze/behavior.md): Algorithmic rules, scoring rubrics, and formulas for behavioral metrics.
 - [Understanding Respondent Behavior and Data Quality](../explanation/confidence-index.md): Conceptual background on satisficing, paradata, response latency, and survey methodology literature.

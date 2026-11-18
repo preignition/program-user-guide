@@ -28,3 +28,7 @@ Some tests are run with `playwright-a11y@preignition.org` and some with `playwri
 ## Highlighting menu items
 
 Use `context.annotatedMenuItemScreenshot(locator, name)` for drawer and context-menu entries. A `getByText`/`getByRole('listitem')` locator there resolves inside the row, so the helper highlights the enclosing `md-list-item` instead — a ring around the whole row, like the other annotated screenshots. Use `context.annotatedScreenshot` for everything else.
+
+## Screenshotting tall dialogs
+
+Material caps `md-dialog` at 560px tall, so a dialog with many fields scrolls and a plain annotated screenshot only shows its top. To document every field in one image, call `growDialogForScreenshot(page, dialog)` from `utils/dialogScreenshot.ts` before `context.annotatedScreenshot`, then `restoreDialogAfterScreenshot(page, dialog)` before continuing. The helpers raise the viewport and the dialog's max-height, then restore both for the following steps.
