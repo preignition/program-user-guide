@@ -259,12 +259,16 @@ To perform multivariate regression modeling or methodology reporting in external
 
 1. Click the **Export** button in the behavioral toolbar.
 2. Select **CSV** or **JSON**.
-3. Choose whether to export the full dataset or only the currently filtered cohort.
-4. The exported file includes all raw survey answers enriched with behavioral paradata columns (`activeTimeSec`, `idleTimeSec`, `focusRatio`, `confidenceScore`, `qualityFlags`, and per-question dwell times).
+3. The export always covers the current filtered cohort; clear all filters to export every loaded response. Survey metadata (origin, language, submission time…) is included unless you clear the metadata columns box.
+4. The file lists one row per response with the Behavioral Respondent Log columns (status, confidence index, quality signals, active and idle time, focus ratio, choice edits, paste bursts, slowest question, last page, and last question) plus one **active seconds** column per survey question.
+
+::: info
+The Behavior export contains behavioral data only. To download survey answers, use the **Export** button on the Analyze tab or the server compliance archive.
+:::
 
 <figure>
   <img src="./assets/behavior-analytics/step-10-export-dataset.png" alt="Export dialog for downloading behavioral paradata dataset">
-  <figcaption>Export enriched paradata and behavioral metrics alongside survey responses.</figcaption>
+  <figcaption>Export behavioral metrics and per-question dwell times for the current cohort.</figcaption>
 </figure>
 
 ---
