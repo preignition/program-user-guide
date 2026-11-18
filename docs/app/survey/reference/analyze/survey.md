@@ -17,8 +17,10 @@ The **Survey Analytics** reference documents the interface elements, metadata cl
 
 ### Toolbar and Navigation
 
-- **Batch Indicator**: Displays the name of the currently active distribution batch and the total number of submitted responses in that batch. If a survey uses multiple batches, selecting a different batch in Share settings directs the analytics workbench to that batch's dataset.
-- **Filter Summary Bar**: Displays active filter chips representing selected cohorts. Each chip displays the filter dimension and chosen value. The counter next to the chips indicates the number and percentage of respondents matching all active criteria.
+- **Response Counter**: Displays `Showing X of Y records (Z%)`, where *Y* is the number of responses loaded for the current batch and *X* the number matching all active filters.
+- **Refresh**: Reloads the dataset. When new responses arrive, a **+N new — Refresh** button appears next to the counter.
+- **Reset All Filters**: Clears every active cross-filter and restores the full dataset.
+- **Filter Summary Bar**: Displays active filter chips representing selected cohorts. Each chip displays the filter dimension and chosen value, with a **×** to remove it.
 - **View Selector**: Dropdown menu allowing organizers to switch between the default view and custom saved views.
 - **View Actions Menu**: Provides administrative controls for the active view:
   - *Save*: Updates the current view with active filters, card widths, chart representations, and metadata choices.
@@ -29,6 +31,8 @@ The **Survey Analytics** reference documents the interface elements, metadata cl
   - *Copy view link*: Copies a persistent URL to the clipboard that loads the survey directly into this view configuration.
   - *Delete view…*: Permanently deletes a custom view (the default view cannot be deleted).
 - **Column Density Switcher**: Adjusts the workbench grid between one, two, three, and four columns to accommodate different screen widths and visual densities.
+- **Hidden (N)**: Appears when cards are hidden and opens the list of hidden fields so they can be restored.
+- **Advanced Mode**: Adds the statistical summary strip to every card, the Response ID column and row checkboxes to the responses table, and the **Include test** switch; metadata fields hidden from the top band also appear in the **Hidden (N)** restore menu.
 - **Export Action**: Opens the export dialog to download the active dataset in tabular or structured file formats.
 
 ---
@@ -56,7 +60,7 @@ Click the gear icon in the **Record Context & Metadata** header to open the conf
 
 ## 3. Question Card Display and Options
 
-Each question card displays the question text, sample size, and response distribution. Organizers can customize each card using the options menu (three vertical dots) revealed on hover:
+Each question card displays the question text, sample size, and response distribution. A question-type icon precedes the title (single-choice, multiple-choice, rating, ranking, numeric, date, yes/no, map, or text) with its label in a tooltip; when the question has a description, an info icon beside the card menu shows it. Organizers can customize each card using the options menu (three vertical dots) revealed on hover:
 
 ### Chart Representations
 
@@ -73,7 +77,7 @@ Each question card displays the question text, sample size, and response distrib
 ### Card Ordering and Visibility
 
 - **Position**: Move a card earlier or later in the section flow to highlight critical questions.
-- **Hide Chart**: Removes the card from the active view. Hidden cards can be restored at any time.
+- **Hide Chart**: Removes the card from the active view. Restore it from the **Hidden (N)** menu in the toolbar.
 - **Pin / Unpin**: The star button in the card header pins a question card to the persistent top band, keeping it visible when switching page tabs.
 - **Reset Card Defaults**: Restores the card's original representation, width, and position.
 
@@ -106,20 +110,28 @@ The **Sort all charts** submenu in the View Actions menu applies a consistent so
 
 ## 5. Advanced Statistical Indicators
 
-Continuous, numeric, and rating question cards feature an Advanced Statistics dialog that calculates standard parametric and distribution metrics:
+In Advanced Mode, every card gains a live statistical summary strip below its chart. The strip recalculates on the filtered cohort, and the available chips depend on the question type:
 
-- **Sample Size (n)**: The total count of respondents who answered the question within the currently filtered cohort.
-- **Sample Mean**: The arithmetic average of all submitted values.
-- **Sample Variance and Standard Deviation**: Measures of response dispersion around the mean. A larger standard deviation indicates wide divergence in opinion, while a small value indicates consensus.
-- **Standard Error**: The estimated variability of the sample mean relative to the true population mean.
-- **Skewness**: The degree of asymmetry in the response distribution:
-  - *Near zero*: Symmetrical, balanced responses.
-  - *Positive skew*: Tail extends toward higher values (most answers clustered on the lower end).
-  - *Negative skew*: Tail extends toward lower values (most answers clustered on the higher end).
-- **Kurtosis**: The heaviness of the distribution's tails compared to a normal distribution:
-  - *Positive kurtosis*: Sharply peaked distribution with heavy tails (indicating extreme responses or outliers).
-  - *Negative kurtosis*: Flatter distribution with lighter tails (indicating evenly dispersed responses).
-- **95% Confidence Interval**: The range within which the true population average is expected to fall with 95% statistical confidence.
+- **n**: The number of responses with a valid (non-missing) value.
+- **Missing**: The count and share of responses without a value; shown only when non-zero.
+- **Numeric questions**:
+  - **Mean**: The arithmetic average of the valid values.
+  - **SD**: The sample standard deviation, measuring dispersion around the mean.
+  - **Median**: The middle value, robust to extreme answers.
+  - **IQR**: The interquartile range, with the first (Q1) and third (Q3) quartiles in parentheses.
+  - **Range**: The minimum and maximum observed values.
+- **Rating/Likert scales**:
+  - **Median**: The middle answer label.
+  - **Mode**: The most frequent answer label and its share of valid responses.
+  - **Mean** and **SD**: Shown when the scale is numeric.
+- **Single-choice and multiple-choice questions**:
+  - **Top**: The most frequent answer label and its share.
+  - **Categories**: The number of distinct answers observed.
+- **Date questions**:
+  - **Span**: The earliest and latest observed dates.
+- **Ranking questions**:
+  - **Top #1**: The item most often ranked first, with its first-choice count.
+  - **Mean rank**: The average rank of that item.
 
 ---
 
@@ -127,8 +139,11 @@ Continuous, numeric, and rating question cards feature an Advanced Statistics di
 
 The workbench allows organizers to export the collected survey data at any time. A privacy warning requires explicit acknowledgement before exporting:
 
-- **Browser export**: Builds the file locally from the responses loaded in the workbench.
-- **Server compliance archive**: Generates the file on the server from all stored responses, ignoring the active filters. Choose anonymized, humanized, or raw content.
-- **CSV Format**: Standard comma-separated tabular text file. Suitable for spreadsheets (Excel, Google Sheets) and statistical software packages (R, SPSS, Stata). Contains one row per respondent, with columns for metadata, submission timestamps, and decoded answers. Multiple-choice answers are formatted as separated values.
-- **JSON Format**: Hierarchical, structured text format suitable for programmatic import, custom dashboards, and web application pipelines.
-- **Export Scope**: Browser exports can cover either the **Full dataset** or the **Filtered cohort** (only respondents satisfying the currently active filter chips). Server archives always cover all stored responses.
+- **Browser export**: Builds the file locally from the responses loaded in the workbench, honoring the active filters.
+  - **Select columns**: **All pages** or **Active page** (only the questions on the page shown).
+  - **Include metadata columns**: Adds record metadata such as origin, language, and submission time.
+  - **Select values**: **Humanized labels** (translated option labels and question labels) or **Raw codes** (stored option codes and question identifiers).
+- **Server compliance archive**: Generates the file on the server from all stored responses, ignoring the active filters. Choose **Anonymized**, **Humanized**, or **Raw** content, and for CSV a **Labels** or **Codes** header style.
+- **CSV Format**: Standard comma-separated tabular text file. Suitable for spreadsheets (Excel, Google Sheets) and statistical software packages (R, SPSS, Stata). Contains one row per respondent, with columns for metadata, submission timestamps, and decoded answers. Multiple-choice answers share one cell, separated by the selected **multi-value separator** (comma, semicolon, or pipe). Files start with a UTF-8 BOM so Excel opens non-Latin text correctly.
+- **JSON Format**: Hierarchical, structured text format suitable for programmatic import, custom dashboards, and web application pipelines. Multi-value answers stay arrays and numeric answers stay numbers.
+- **Export Scope**: Browser exports always cover the currently filtered cohort; clear the filters to include every loaded response. Server archives always cover all stored responses and mark excluded responses with an `excluded` column and their exclusion reason.

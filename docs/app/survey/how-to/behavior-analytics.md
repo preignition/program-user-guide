@@ -39,16 +39,17 @@ The top KPI strip provides a high-level summary of survey engagement and data in
   <figcaption>The KPI strip summarizes session duration, cognitive attention, data quality, and attrition at a glance.</figcaption>
 </figure>
 
-- **Tracked Respondents**: The count of responses with recorded behavioral paradata compared to total submissions.
-- **Median Active Time**: The typical time respondents spend actively interacting with questions (excluding idle time when the browser is inactive).
-- **Mean Focus %**: The average ratio of active in-tab time to total session duration.
-- **High Confidence**: The percentage of responses achieving a Confidence Index score of 70 or higher without dropping off.
-- **Drop-off Rate**: The percentage of started sessions that were discontinued before completion.
-- **Paste / Burst Rate**: The proportion of responses where long text answers were pasted or entered in single high-velocity bursts.
+- **Median active time**: The typical time respondents spend actively interacting with questions (excluding idle time when the browser is inactive).
+- **Mean focus ratio**: The average share of session time respondents were actively focused on the survey tab.
+- **High confidence (≥ 70)**: The percentage of scored responses whose Confidence Index is 70 or higher.
+- **Drop-off rate**: The percentage of started sessions that were discontinued before completion.
+- **Paste / burst rate**: The proportion of tracked responses where long text answers were pasted or entered in single high-velocity bursts.
+
+Hover, focus, or tap the info icon in the corner of each tile to read what the metric measures.
 
 <figure>
-  <img src="./assets/behavior-analytics/step-2-selection-summary.png" alt="Selection summary displaying total and tracked respondent count">
-  <figcaption>The dataset summary indicates total submissions and the number of behaviorally tracked records.</figcaption>
+  <img src="./assets/behavior-analytics/step-2-selection-summary.png" alt="Selection summary displaying total and filtered respondent count">
+  <figcaption>The dataset summary indicates total submissions and how many records match the active filters.</figcaption>
 </figure>
 
 ## 3. Assessing Data Quality: Confidence Index and Quality Signals
@@ -127,27 +128,29 @@ Displays the median dwell time per question against the overall survey median:
 
 ### Boxplot Mode
 
-Click the card options menu (three dots) and select **Boxplot mode** to visualize dispersion:
+Use the **Median + IQR** / **Box plot** toggle in the card header and select **Box plot** to visualize dispersion:
 
 - Displays the median, the interquartile range (IQR, from the first quartile to the third quartile), and minimum/maximum whiskers.
 - Reveals answer latency spread and distribution skewness, helping distinguish questions that trouble all respondents from questions that only confuse a subset.
+- Dots beyond the whiskers are outliers.
 
 <figure>
   <img src="./assets/behavior-analytics/step-5-friction-boxplot.png" alt="Per-question friction chart in boxplot mode showing IQR and whiskers">
-  <figcaption>Boxplot mode displays response time dispersion, interquartile ranges (IQR), and skewness per question.</figcaption>
+  <figcaption>Box plot mode displays response time dispersion, interquartile ranges (IQR), and outliers per question.</figcaption>
 </figure>
 
 ### Chart Options and Export
 
-Using the card menu, you can:
+The card header also holds the sort toggle. You can:
 
-- Toggle between **Median duration** and **Boxplot** representations.
-- Switch sort order between **Slowest questions first** (prioritizing friction) and **Survey sequence** (following question order).
-- Export the friction visualization directly as high-resolution **PNG** or **SVG**.
+- Switch between **Median + IQR** and **Box plot** representations.
+- Switch sort order between **Slowest first** (prioritizing friction) and **Survey order** (following question order).
+- Hover or focus a toggle to read a tooltip explaining what its representation shows.
+- Export the friction visualization as high-resolution **PNG** or **SVG** from the card menu (three dots).
 
 <figure>
-  <img src="./assets/behavior-analytics/step-5-friction-options-auto.png" alt="Friction chart options menu showing display modes, sort order, and export options">
-  <figcaption>Toggle display modes (Median vs Boxplot), sort order, or export high-resolution chart images.</figcaption>
+  <img src="./assets/behavior-analytics/step-5-friction-options-auto.png" alt="Friction chart options menu showing PNG and SVG export options">
+  <figcaption>The card menu exports the friction chart; the representation and sort toggles sit in the card header.</figcaption>
 </figure>
 
 ## 6. Interactive Behavioral Cross-Filtering
@@ -215,13 +218,27 @@ When suspicious, automated, or invalid responses are identified, researchers can
 
 ### Excluding Responses
 
-1. In the Behavioral Respondent Log, select the checkboxes next to the responses you want to remove.
-2. Click **Remove from dataset…** in the table header.
-3. In the exclusion dialog:
-   - Select an auditable **Reason** from the dropdown (*Test submission*, *Bot or script*, *Speeder / low effort*, *Duplicate*, *Data quality issue*, or *Inappropriate content*).
-   - Add an optional **Note** explaining the decision.
-4. Click **Remove**.
-5. Excluded responses are immediately omitted from all Analyze charts, behavioral KPIs, and filtered exports.
+1. In the Behavioral Respondent Log, select the checkboxes next to the responses you want to remove (this requires edit rights on the survey). The header checkbox selects every visible row.
+2. The table header shows **N selected**; click **Remove from dataset…**:
+
+<figure>
+  <img src="./assets/behavior-analytics/step-9-select-responses.png" alt="Respondent log selection bar showing one selected respondent and the Remove from dataset button">
+  <figcaption>Selected rows are counted above the log, next to the <strong>Remove from dataset…</strong> action.</figcaption>
+</figure>
+
+1. In the exclusion dialog, select an auditable **Reason**:
+   - **Test data**: pre-launch checks, internal trials, and QA submissions.
+   - **Likely bot**: automated submissions flagged by instantaneous text entry or impossible completion speeds.
+   - **Duplicate**: multiple entries from the same respondent or device.
+   - **Other**: any other reason; a **Note** is required and explains what it was.
+2. Add a **Note** when needed and click **Remove**.
+
+<figure>
+  <img src="./assets/behavior-analytics/step-9-exclusion-dialog.png" alt="Remove responses dialog with the reason selector and note field">
+  <figcaption>The removal dialog records a reason and, for <strong>Other</strong>, a required explanatory note.</figcaption>
+</figure>
+
+Excluded responses are immediately omitted from all Analyze charts, behavioral KPIs, and filtered browser exports. The same removal tool is available on the Analyze tab: turn on **Advanced** and use the response grid.
 
 ::: info Archival and Audit Preservation
 Exclusion never permanently deletes survey data. The original submission remains safely stored in the response database, the raw Progress tab, and the compliance archive.
@@ -229,28 +246,26 @@ Exclusion never permanently deletes survey data. The original submission remains
 
 ### Reviewing and Restoring Excluded Responses
 
-1. When excluded responses exist, an **Excluded responses** button appears in the toolbar showing the count.
-2. Click the button to view the list of excluded records along with the exclusion reason, timestamp, and operator username.
+1. When excluded responses exist, an **Excluded (N)** button appears in the toolbar showing the count.
+2. Click the button to open the list of excluded records. Each entry shows the exclusion reason, note, submission date, and the operator and timestamp of the exclusion.
 3. Click **Restore** next to any record to reinstate it into the analytical dataset.
 
 ## 10. Advanced Behavioral Statistics
 
-For formal research reporting, access parametric statistics for behavioral metrics:
+Turn on **Advanced** in the top toolbar to add a live statistical summary strip below every behavioral chart. The strip recalculates with the active filters:
 
-1. Hover over the Confidence Index or Quality Signals card and click the statistical information icon.
-2. The modal displays parametric distribution indicators:
-   - Mean, sample variance, standard deviation, and standard error.
-   - Skewness and kurtosis metrics illustrating distribution shape.
-   - 95% Confidence Intervals.
+- **n** is the number of responses with a recorded value, and **Missing** reports how many lack one (with its share).
+- **Numeric metrics** such as the Confidence Index show **Mean**, **SD** (standard deviation), **Median**, **IQR** (the interquartile range, from Q1 to Q3), and **Range** (minimum–maximum).
+- **Categorical metrics** such as Quality Signals show the **Top** signal with its share and the number of **Categories** observed.
 
 <figure>
-  <img src="./assets/behavior-analytics/step-9-advanced-confidence.png" alt="Advanced statistics dialog for Confidence Index score">
-  <figcaption>Statistical analysis of the Confidence Index distribution across all respondents.</figcaption>
+  <img src="./assets/behavior-analytics/step-9-advanced-confidence.png" alt="Advanced mode statistical summary strip below the Confidence Index chart">
+  <figcaption>Advanced mode adds mean, standard deviation, median, IQR, and range to the Confidence Index card.</figcaption>
 </figure>
 
 <figure>
-  <img src="./assets/behavior-analytics/step-9-advanced-quality.png" alt="Advanced statistics dialog for quality signals distribution">
-  <figcaption>Distribution moments and frequencies for behavioral quality signals.</figcaption>
+  <img src="./assets/behavior-analytics/step-9-advanced-quality.png" alt="Advanced mode statistical summary strip below the quality signals chart">
+  <figcaption>Quality Signals gains a top-signal share and category count below its chart.</figcaption>
 </figure>
 
 ## 11. Exporting Behavioral Datasets
@@ -259,24 +274,31 @@ To perform multivariate regression modeling or methodology reporting in external
 
 1. Click the **Export** button in the behavioral toolbar.
 2. Read the privacy warning and tick **I understand my responsibilities**.
-3. Choose **Download from this browser** to export the behavioral dataset. This export always covers the current filtered cohort; clear all filters to export every loaded response. Survey metadata (origin, language, submission time…) is included unless you clear the metadata columns box.
-4. Select **CSV** or **JSON**.
-5. The file lists one row per response with the Behavioral Respondent Log columns (status, confidence index, quality signals, active and idle time, focus ratio, choice edits, paste bursts, slowest question, last page, and last question) plus one **active seconds** column per survey question.
-
-::: info
-The behavioral dataset is only available through **Download from this browser**, because the server compliance archive contains survey answers rather than behavioral columns. To download survey answers, choose **Server compliance archive** in the same dialog or use the **Export** button on the Analyze tab.
-:::
+3. Choose **Download from this browser** to export the behavioral dataset. This export always covers the current filtered cohort; clear all filters to export every loaded response.
+4. The browser export offers the same options as the Analyze tab: keep survey metadata (origin, language, submission time…) or clear the box, use **Humanized labels** or **Raw codes**, choose **CSV** or **JSON**, and pick the CSV multi-value separator. The only column scope is **All behavioral columns**.
 
 <figure>
-  <img src="./assets/behavior-analytics/step-10-export-dataset.png" alt="Export dialog for downloading behavioral paradata dataset">
-  <figcaption>Export behavioral metrics and per-question dwell times for the current cohort.</figcaption>
+  <img src="./assets/behavior-analytics/step-10-export-dataset.png" alt="Top of the export dialog on the Behavior tab with privacy warning and download method">
+  <figcaption>The Behavior tab uses the shared export dialog; browser downloads honor the behavioral filters.</figcaption>
 </figure>
+
+<figure>
+  <img src="./assets/behavior-analytics/step-10-export-dataset-options.png" alt="Behavior export dialog showing all behavioral columns, metadata, values, format and separator options">
+  <figcaption>Browser exports offer all behavioral columns, optional metadata, value labels, format, and separator.</figcaption>
+</figure>
+
+The file lists one row per response with the Behavioral Respondent Log columns (status, confidence index, quality signals, active and idle time, focus ratio, choice edits, paste bursts, slowest question, last page, and last question) plus one **active seconds** column per survey question.
+
+::: info
+The **Server compliance archive** is also available from the Behavior toolbar, but it contains survey answers rather than behavioral columns. To download the behavioral dataset, choose **Download from this browser**.
+:::
 
 ---
 
 ## Related Content
 
 - [How to Analyze Survey Responses](./survey-analytics.md): Explore question distributions, cross-filter demographic cohorts, and customize chart views.
+- [How to Export Survey Data](./exporting-survey-data.md): Export behavioral paradata or the full server compliance archive.
 - [Behavioral Analytics Reference](../reference/analyze/behavior.md): Mathematical formulas, scoring algorithms, quality signal predicates, and exclusion taxonomy.
 - [Survey Analytics Workbench Reference](../reference/analyze/survey.md): Specifications for UI controls, card parameters, and statistical formulas.
 - [Understanding Respondent Behavior and Data Quality](../explanation/confidence-index.md): Conceptual background on satisficing theory, paradata history, cognitive latency, and survey methodology literature.

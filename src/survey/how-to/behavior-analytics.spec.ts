@@ -1,5 +1,6 @@
 import { test, type Page } from '@playwright/test'
 import { Context } from '../../Context.ts'
+import { growDialogForScreenshot, restoreDialogAfterScreenshot } from '../../utils/dialogScreenshot.ts'
 import { initializeSignedInPage } from '../../utils/initializeSignedInPage.ts'
 
 const port = process.env.PLAYWRIGHT_PORT || '7174'
@@ -120,6 +121,26 @@ test.describe('Behavioral analytics', async () => {
       await context.annotatedScreenshot(inspector, 'step-8-respondent-details', 20)
       await page.getByTestId('behavioral-inspector-dialog').getByRole('button', { name: 'Close' }).click()
     })
+
+    await test.step('Select a respondent for removal', async () => {
+      const grid = page.getByRole('region', { name: 'Behavioral respondent breakdown' })
+      const firstCheckbox = grid.locator('md-checkbox[data-response-id]').first()
+      await firstCheckbox.click()
+
+      const selectionBar = page.getByTestId('behavioral-selection-bar')
+      await selectionBar.waitFor()
+      await context.annotatedScreenshot(selectionBar, 'step-9-select-responses', 30)
+
+      await page.getByTestId('behavioral-remove-selected').click()
+      const dialog = page.getByRole('dialog', {
+        name: /Remove responses from the analytics dataset/,
+      })
+      await dialog.waitFor({ state: 'visible' })
+      await context.annotatedScreenshot(dialog, 'step-9-exclusion-dialog', 20)
+      await page.getByRole('button', { name: 'Cancel' }).click()
+      await page.waitForTimeout(300)
+      await firstCheckbox.click()
+    })
   })
 
   test('Explore advanced behavioral metrics', async ({ page }) => {
@@ -141,6 +162,9 @@ test.describe('Behavioral analytics', async () => {
       const dialog = page.getByRole('dialog', { name: 'Export dataset' })
       await dialog.waitFor()
       await context.annotatedScreenshot(dialog, 'step-10-export-dataset', 20)
+      await growDialogForScreenshot(page, dialog)
+      await context.annotatedScreenshot(dialog, 'step-10-export-dataset-options', 30)
+      await restoreDialogAfterScreenshot(page, dialog)
       await page.getByRole('button', { name: 'Cancel' }).click()
       await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck()
     })

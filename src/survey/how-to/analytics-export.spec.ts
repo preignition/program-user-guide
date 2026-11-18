@@ -1,5 +1,6 @@
 import { test } from '@playwright/test'
 import { Context } from '../../Context.ts'
+import { growDialogForScreenshot, restoreDialogAfterScreenshot } from '../../utils/dialogScreenshot.ts'
 import { initializeSignedInPage } from '../../utils/initializeSignedInPage.ts'
 
 const port = process.env.PLAYWRIGHT_PORT || '7174'
@@ -17,6 +18,8 @@ test.describe('Exporting survey data', async () => {
 
     await initializeSignedInPage(page, baseUrl, analyticsPath)
     await page.getByTestId('analytics-row-counter').waitFor()
+    await page.getByRole('switch', { name: 'toggle advanced mode' }).check()
+    await page.waitForTimeout(700)
 
     await test.step('Locate the export button in the toolbar', async () => {
       const exportButton = page.getByTestId('analytics-export-button')
@@ -28,6 +31,10 @@ test.describe('Exporting survey data', async () => {
       const dialog = page.getByRole('dialog', { name: 'Export dataset' })
       await dialog.waitFor()
       await context.annotatedScreenshot(dialog, 'step-2-export-dialog', 20)
+
+      await growDialogForScreenshot(page, dialog)
+      await context.annotatedScreenshot(dialog, 'step-2-export-options', 30)
+      await restoreDialogAfterScreenshot(page, dialog)
       await page.getByRole('button', { name: 'Cancel' }).click()
       await page.waitForTimeout(300)
     })
@@ -51,6 +58,20 @@ test.describe('Exporting survey data', async () => {
       await context.annotatedScreenshot(dialog, 'step-3-filtered-export', 20)
       await page.getByRole('button', { name: 'Cancel' }).click()
       await page.getByTestId('analytics-reset-filters').click()
+    })
+
+    await test.step('Choose the server compliance archive', async () => {
+      await page.getByTestId('analytics-export-button').click()
+      const dialog = page.getByRole('dialog', { name: 'Export dataset' })
+      await dialog.waitFor()
+      await page.getByText('Server compliance archive', { exact: true }).click()
+      await page.waitForTimeout(300)
+      await context.annotatedScreenshot(dialog, 'step-2-server-archive', 20)
+
+      await growDialogForScreenshot(page, dialog)
+      await context.annotatedScreenshot(dialog, 'step-2-server-archive-options', 30)
+      await restoreDialogAfterScreenshot(page, dialog)
+      await page.getByRole('button', { name: 'Cancel' }).click()
     })
   })
 })

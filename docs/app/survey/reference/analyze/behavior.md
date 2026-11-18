@@ -114,4 +114,4 @@ Every exclusion action records an immutable audit entry containing:
 - The ISO timestamp when the exclusion was performed.
 - The user identifier of the administrator who executed the action.
 
-The **Excluded responses** button in the toolbar displays the current count of excluded records, opens the audit history list, and allows administrators to restore any record with a single click.
+The **Excluded (N)** button in the toolbar displays the current count of excluded records, opens the audit history list, and allows administrators to restore any record with a single click. The same removal flow is available on the Analyze tab in Advanced Mode, from the response grid.

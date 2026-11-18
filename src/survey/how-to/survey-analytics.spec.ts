@@ -1,6 +1,7 @@
 import { test, type Page } from '@playwright/test'
 import { Context } from '../../Context.ts'
 import { saveScreenshotIfChanged } from '../../utils/conditionalScreenshot.ts'
+import { growDialogForScreenshot, restoreDialogAfterScreenshot } from '../../utils/dialogScreenshot.ts'
 import { initializeSignedInPage } from '../../utils/initializeSignedInPage.ts'
 
 const port = process.env.PLAYWRIGHT_PORT || '7174'
@@ -175,11 +176,18 @@ test.describe('Survey analytics', async () => {
     })
 
     await test.step('Export the filtered dataset', async () => {
+      await page.getByRole('switch', { name: 'toggle advanced mode' }).check()
+      await page.waitForTimeout(500)
       await page.getByTestId('analytics-export-button').click()
       const dialog = page.getByRole('dialog', { name: 'Export dataset' })
       await dialog.waitFor()
       await context.annotatedScreenshot(dialog, 'step-11-export-dataset', 20)
+      await growDialogForScreenshot(page, dialog)
+      await context.annotatedScreenshot(dialog, 'step-11-export-dataset-options', 30)
+      await restoreDialogAfterScreenshot(page, dialog)
       await page.getByRole('button', { name: 'Cancel' }).click()
+      await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck()
+      await page.waitForTimeout(300)
     })
 
     await test.step('Manage saved views', async () => {
@@ -202,6 +210,36 @@ test.describe('Survey analytics', async () => {
       )
       await context.annotatedScreenshot(page.getByTestId('analytics-hidden-fields'), 'step-13-hidden-charts', 50)
       await page.getByRole('switch', { name: 'toggle advanced mode' }).uncheck()
+    })
+  })
+
+  test('Remove responses from the analytics grid', async ({ page }) => {
+    test.setTimeout(120_000)
+    const context = new Context(mainPath, page)
+    context.setName('survey-analytics')
+    await initializeSignedInPage(page, baseUrl, analyticsPath)
+    await page.getByTestId('analytics-row-counter').waitFor()
+    await page.getByRole('switch', { name: 'toggle advanced mode' }).check()
+    await page.waitForTimeout(700)
+
+    await test.step('Select a response with the advanced grid', async () => {
+      const grid = page.getByTestId('analytics-response-grid')
+      await grid.scrollIntoViewIfNeeded()
+      await context.annotatedScreenshot(grid, 'step-14-response-ids', 20)
+
+      await grid.locator('md-checkbox[data-response-id]').first().click()
+      await page.getByTestId('analytics-grid-selection-bar').waitFor()
+      await context.annotatedScreenshot(grid, 'step-14-grid-selection', 20)
+    })
+
+    await test.step('Open the removal dialog', async () => {
+      await page.getByTestId('analytics-remove-selected').click()
+      const dialog = page.getByRole('dialog', {
+        name: /Remove responses from the analytics dataset/,
+      })
+      await dialog.waitFor({ state: 'visible' })
+      await context.annotatedScreenshot(dialog, 'step-15-remove-dialog', 20)
+      await page.getByRole('button', { name: 'Cancel' }).click()
     })
   })
 })
