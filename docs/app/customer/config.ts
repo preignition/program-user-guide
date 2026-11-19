@@ -44,7 +44,8 @@ function getSidebar() {
             {
               text: 'Manage account holders and team members',
               link: 'manage-account-holders-and-team-members.md'
-            }
+            },
+            { text: 'Manage team audiences', link: 'manage-team-audiences.md' }
           ]
         },
         {
@@ -125,7 +126,39 @@ function getSidebar() {
       collapsed: false,
       base: `${root}/explanation/`,
       items: [
-        { text: 'Access and Permissions', link: 'understanding-access-and-permissions.md' },
+        {
+          text: 'Organization and access',
+          collapsed: true,
+          items: [
+            {
+              text: 'Customers, teams and the active team',
+              link: 'customers-teams-and-active-team.md'
+            },
+            {
+              text: 'Access and permissions',
+              link: 'understanding-access-and-permissions.md'
+            }
+          ]
+        },
+        {
+          text: 'Infrastructure and billing',
+          collapsed: true,
+          items: [
+            {
+              text: 'Data sovereignty and storage locations',
+              link: 'data-sovereignty-and-storage-locations.md'
+            },
+            {
+              text: 'Plans, subscriptions and quota',
+              link: 'plans-subscriptions-and-quota.md'
+            }
+          ]
+        },
+        {
+          text: 'Integration',
+          collapsed: true,
+          items: [{ text: 'Understanding the platform API', link: 'understanding-the-platform-api.md' }]
+        },
         { text: 'Color System', link: 'color-system.md' }
       ]
     }

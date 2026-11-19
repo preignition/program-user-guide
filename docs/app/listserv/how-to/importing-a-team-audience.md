@@ -12,7 +12,7 @@ Only a channel **owner** or **editor** can run an import from **Channel Settings
 
 ## Before You Start
 
-- **Team audience ready:** The audience must belong to the same team as the listserv channel (up to **10,000 unique recipients** per import). Both **active** and **archived** audiences can be imported; importing never modifies the source audience.
+- **Team audience ready:** The audience must belong to the same team as the listserv channel (up to **10,000 unique recipients** per import). Both **active** and **archived** audiences can be imported; importing never modifies the source audience. To create an audience or add recipients from a CSV, follow [How to Manage Team Audiences](../../customer/how-to/manage-team-audiences.md) first; this guide starts from an audience that already exists.
 - **No emails sent at import time:** Importing creates or links subscriber records silently. Mailing-list delivery is synced automatically when you send your next broadcast.
 
 ---

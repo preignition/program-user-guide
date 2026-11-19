@@ -80,6 +80,7 @@ New to the Customer Portal? Start with the onboarding tutorial, then use the gui
 - [Set up your organization](./tutorial/onboarding.md) — create the account and finish the first team.
 - [Manage teams](./how-to/manage-teams.md) — create, switch, delete and restore workspaces.
 - [Manage account holders and team members](./how-to/manage-account-holders-and-team-members.md) — invite people and assign roles.
+- [Manage team audiences](./how-to/manage-team-audiences.md) — reusable recipient lists for surveys and Listserv channels.
 - [Manage subscription and billing](./how-to/manage-subscription-and-billing.md) — trials, invoices and plan changes.
 - [Configure team presentation and communication](./how-to/configure-team-presentation-and-communication.md) — branding and email identity.
 - [Create a theme](./how-to/create-a-theme.md) — the colors respondents see.

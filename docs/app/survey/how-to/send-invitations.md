@@ -1,5 +1,5 @@
 ---
-description: Step-by-step guide to creating a team audience, importing recipients from a CSV, composing and testing invitation emails, sending a survey invitation run, and tracking progress in analytics.
+description: "Step-by-step guide to inviting a team audience: composing and testing the invitation email, launching the run, and tracking progress in analytics."
 ---
 
 # How to Send Invitations to a Team Audience
@@ -12,50 +12,13 @@ Your organization is the data controller of the recipient list; Accessible Surve
 
 ---
 
-## Step 1: Add a New Audience to the Team
+## Step 1: Prepare a Team Audience
 
-Team audiences are reusable recipient lists stored in **Team Settings**. A person is stored once per team even if they belong to multiple audiences.
+Invitations go to a reusable **team audience**. Create the audience and populate it with recipients in the Customer Portal, then return here to send.
 
-### 1. Create the audience
+- [How to Manage Team Audiences](../../customer/how-to/manage-team-audiences.md) covers creating an audience, importing a CSV, mapping columns, reviewing the preview, accepting the warranty, and maintaining recipients.
 
-1. Open the Customer Portal and navigate to **Team Settings → Audiences** (`/customer/{teamId}/team/audiences`).
-2. Click **New audience** in the top-right corner.
-3. In the **New audience** dialog, enter a **Name** (for example, `Policy Impact Lab panel`) and an optional **Description** (for example, `Panel members who agreed to take part in research`).
-4. Click **Create**.
-
-<figure>
-  <img src="./assets/send-invitations/audience-new-auto.png" alt="New audience dialog in Team Settings">
-  <figcaption>Create a named audience in Team Settings → Audiences.</figcaption>
-</figure>
-
-### 2. Import recipients from a CSV file
-
-1. Select the newly created audience card.
-2. Click **Choose a CSV file** (or drag and drop a `.csv` file onto the upload zone). The file must contain an **email** column and may optionally include **name**, **language**, and **external_id** columns (up to 10,000 rows and 5 MB).
-3. In the **Import recipients** dialog, review the parsed preview:
-   - **Summary counts:** `Created`, `Updated`, `Unchanged`, `Suppressed`, and `Invalid` rows.
-   - **Column mapping:** Verify how each CSV header maps to `Email`, `Name`, `Language`, `External id`, or `Ignore`.
-   - **Errors and warnings:** Inspect any invalid rows or download the error report with **Download error CSV**.
-4. Tick the confirmation checkbox to warrant that your team has a lawful basis and permission to contact these people.
-5. Click **Import**.
-
-<figure>
-  <img src="./assets/send-invitations/audience-import-preview-auto.png" alt="Import recipients dialog showing row counts, column mapping, and warranty checkbox">
-  <figcaption>Review the row counts, verify the column mappings, and accept the warranty before importing.</figcaption>
-</figure>
-
-Once the import completes, the audience card updates its recipient count and the **Recipient grid** lists every member with their **Name**, **Email**, **Language**, **Status** (`Active` or `Suppressed`), and row actions.
-
-<figure>
-  <img src="./assets/send-invitations/audience-auto.png" alt="Audiences page showing the imported recipients in the recipient grid">
-  <figcaption>The imported recipients appear in the audience table with header filters for Name, Email, Language, and Status.</figcaption>
-</figure>
-
-::: tip Safe Re-imports and Suppression
-Invalid rows never block valid rows from being imported, and re-importing the same CSV file is idempotent. If an address has previously unsubscribed, complained, or hard-bounced across your organization, it is added to the audience with a **Suppressed** badge and automatically excluded from every invitation send.
-:::
-
----
+The audience must belong to the same team as the survey. Importing does not send anything; it only builds the list you select below.
 
 ## Step 2: Write the Invitation Email
 
@@ -184,6 +147,7 @@ The **Progress** view tells you **whether** a recipient has opened, started, or 
 
 ## Related Content
 
+- [How to Manage Team Audiences](../../customer/how-to/manage-team-audiences.md) — Creating and populating the audience this guide sends to
 - [Team Audiences Reference](../../customer/reference/team/audiences.md) — Specifications for team audiences, CSV import rules, and recipient management
 - [Email Configuration Reference](../reference/share/email/index.md) — Reference for the Invitation tab, merge fields, and respondent email purposes
 - [Distribute Your Survey Reference](../reference/share/distribute/index.md) — Reference for the Invitations composer, access modes, and Link Builder

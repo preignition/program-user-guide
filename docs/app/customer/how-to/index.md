@@ -10,6 +10,7 @@ How-to guides are goal-oriented: each one solves a specific task in the Customer
 
 - [How to manage teams](./manage-teams.md): Create a team, switch the active team, pin shortcuts, and soft-delete or restore a team.
 - [How to manage account holders and team members](./manage-account-holders-and-team-members.md): Invite people at both layers, assign roles, and follow up on pending invitations.
+- [How to manage team audiences](./manage-team-audiences.md): Create reusable recipient lists, import a CSV, and maintain, export or archive them.
 
 ## Billing and quota
 

@@ -1,48 +1,20 @@
 ---
-description: Learn what APIs and endpoints are, and how to test live endpoints using your team API key in the interactive API documentation.
+description: How to authenticate with your team API key and test live endpoints in the interactive API reference.
 ---
 
 # How to Use the Interactive API Documentation
 
 Whether you are a developer integrating custom software or a team member exploring available services, our **Interactive API Reference** lets you inspect and test live endpoints directly from your browser.
 
-This guide explains fundamental API concepts in plain language and provides step-by-step instructions for authenticating and testing endpoints using your Team API Key.
+This guide assumes you know what an API and an API key are; if you do not, read [Understanding the Platform API](../explanation/understanding-the-platform-api.md) first. It then shows how to authenticate and test endpoints with your team API key.
 
 ---
 
-## Understanding the Basics: What is an API?
+## Before you start
 
-If you are new to web services, technical terms can sound overwhelming. Here is a simple explanation of the core concepts:
-
-### What is an API?
-
-**API** stands for **Application Programming Interface**.
-
-Think of an API like a **waiter in a restaurant**:
-
-- You (the client application) look at the **menu** (the API documentation).
-- You place an order with the **waiter** (the API).
-- The waiter carries your request to the **kitchen** (our database and servers), retrieves the prepared information, and delivers it back to you.
-
-An API allows external software programs to securely exchange data automatically without requiring manual human interaction.
-
-### What is an Endpoint?
-
-An **endpoint** is a specific web address on a server designated for a specific task or resource.
-
-Using the restaurant analogy, an endpoint is like a specific item on the menu. For example:
-
-- `GET /definition/survey`: Fetches the formal data schema for surveys.
-- `GET /customer/{teamId}/team`: Fetches information about a specific team.
-
-### What is an API Key?
-
-An **API key** is a unique, secure secret token assigned to your team. It functions like a digital **VIP pass** or **security keycard**: it identifies your team to our servers and verifies that you have permission to access or modify your data.
-
-> [!TIP]
-> If you do not have an API key yet, see our guide on [How to Manage Team API Keys](./manage-api-keys.md) to generate one in the Customer Portal.
-
----
+- You have a **team API key**. If not, see [How to Manage Team API Keys](./manage-api-keys.md).
+- You know which team the key belongs to; the reference acts as that team.
+- For the concepts behind endpoints, keys and OpenAPI, read [Understanding the Platform API](../explanation/understanding-the-platform-api.md).
 
 ## Step-by-Step: Testing Endpoints in the Interactive API Reference
 
@@ -96,5 +68,6 @@ The response area will display the server's output:
 ## Related Content
 
 - [How to Manage Team API Keys](./manage-api-keys.md)
+- [Understanding the Platform API](../explanation/understanding-the-platform-api.md)
 - [Team Settings Reference](../reference/team/api-keys.md)
 - [Interactive API Reference (a11y-docs.web.app/api)](https://a11y-docs.web.app/api)

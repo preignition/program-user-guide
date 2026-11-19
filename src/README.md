@@ -32,3 +32,7 @@ Use `context.annotatedMenuItemScreenshot(locator, name)` for drawer and context-
 ## Screenshotting tall dialogs
 
 Material caps `md-dialog` at 560px tall, so a dialog with many fields scrolls and a plain annotated screenshot only shows its top. To document every field in one image, call `growDialogForScreenshot(page, dialog)` from `utils/dialogScreenshot.ts` before `context.annotatedScreenshot`, then `restoreDialogAfterScreenshot(page, dialog)` before continuing. The helpers raise the viewport and the dialog's max-height, then restore both for the following steps.
+
+## Internal-only screenshots
+
+`src/admin/` holds specs for internal, super-admin screens that are not part of the published user documentation. Their captures are written under `documentation/screenshots/admin/`, outside the docs tree, so they are not published or pruned with page assets. The monitoring dashboard spec needs a super admin (`admin.__all__.master/owner`) and `VITE_API_SERVER` pointing at the v3 api, as described in the spec.

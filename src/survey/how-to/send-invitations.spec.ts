@@ -36,6 +36,8 @@ const csvPath = process.env.AUDIENCE_CSV ?? '/home/christophe/Downloads/contact.
 /** Assets live beside the guide under `assets/send-invitations`. */
 const assetPath = 'docs/app/survey/how-to'
 const assetName = 'send-invitations'
+/** Audience screenshots belong to the Customer how-to that now documents them. */
+const audienceAssetPath = 'docs/app/customer/how-to/assets/manage-team-audiences'
 
 /**
  * Derive the run's `sentInvitationCount` from its invitation rows and write it
@@ -259,9 +261,7 @@ test.describe('Survey How-To - Send invitations', () => {
       await expect(descriptionField).toHaveValue(audienceDescription)
       // Let the dialog finish its open animation before capturing it.
       await page.waitForTimeout(500)
-      await context
-        .setName(`${assetName}/audience-new`)
-        .screenshot()
+      await new Context(audienceAssetPath, page).setName('audience-new').screenshot()
       // A re-run keeps the audience the first run created; the dialog is only
       // captured again so the guide's create step stays reproducible.
       if ((await audienceCard.count()) === 0) {
@@ -282,9 +282,7 @@ test.describe('Survey How-To - Send invitations', () => {
 
       const importDialog = page.locator('customer-audience-import-dialog')
       await expect(importDialog.getByText(/rows read/)).toBeVisible({ timeout: 60_000 })
-      await context
-        .setName(`${assetName}/audience-import-preview`)
-        .screenshot()
+      await new Context(audienceAssetPath, page).setName('audience-import-preview').screenshot()
 
       // The warranty is part of the flow: tick it and commit the import. A
       // re-import is idempotent — the recipients already exist in the team.
@@ -301,7 +299,7 @@ test.describe('Survey How-To - Send invitations', () => {
       await page.waitForTimeout(6500)
       await page.evaluate(() => window.scrollTo({ top: 0 }))
 
-      await context.setName(`${assetName}/audience`).screenshot()
+      await new Context(audienceAssetPath, page).setName('audience').screenshot()
 
       // ## 3. Write the invitation email on the Email page's Invitation tab
       const { surveyRef: createdSurvey, formRef: createdForm } = await cloneInvitationSurvey()

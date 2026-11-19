@@ -5,13 +5,15 @@ import { initializePage } from "../utils/initializePage.ts";
 const port = process.env.PLAYWRIGHT_PORT || "7174";
 const baseUrl = `http://localhost:${port}`;
 
-// Screenshots for the super-admin monitoring dashboard, served by the customer
-// app under the a11y-survey shell at `customer/_admin/health`.
+// Internal screenshots for the super-admin monitoring dashboard, served by the
+// customer app under the a11y-survey shell at `customer/_admin/health`.
+// This screen is internal-only (super-admin), so the captures live outside the
+// published docs tree in `documentation/screenshots/admin/monitoring`.
 // The page reads `GET /admin/health` through the shared api client, so the app
 // under test must run with `VITE_API_SERVER` pointing at the v3 api
 // (see app/a11y-survey/.env.playwright) and the signed-in user must be a
 // super admin (admin.__all__.master/owner claims).
-const root = "docs/app/customer/how-to";
+const root = "screenshots/admin/monitoring";
 
 let locator: Locator;
 

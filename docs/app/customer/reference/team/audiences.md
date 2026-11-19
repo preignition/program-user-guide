@@ -8,8 +8,10 @@ The **Audiences** page in **Team Settings** (`/customer/{teamId}/team/audiences`
 
 A team stores one **Recipient** record per normalized email address, while **Audiences** act as named membership lists (`audienceIds`). A single person can belong to several audiences within the same team without duplicating their recipient record.
 
+Audiences are shared across apps: the Survey app uses them for invitation runs, and the Listserv app imports them to seed channel subscribers. Suppression applies to both.
+
 <figure>
-  <img src="../../../survey/how-to/assets/send-invitations/audience-auto.png" alt="Team Audiences page showing audience cards, CSV upload drop zone, and the recipient grid">
+  <img src="../../how-to/assets/manage-team-audiences/audience-auto.png" alt="Team Audiences page showing audience cards, CSV upload drop zone, and the recipient grid">
   <figcaption>The Team Audiences interface with audience selector cards, CSV import zone, and the filterable recipient grid.</figcaption>
 </figure>
 
@@ -33,7 +35,7 @@ Clicking **New audience** opens a modal dialog with two fields:
 | **Description (optional)** | No | Free-text note describing the recipient group. |
 
 <figure>
-  <img src="../../../survey/how-to/assets/send-invitations/audience-new-auto.png" alt="New audience dialog">
+  <img src="../../how-to/assets/manage-team-audiences/audience-new-auto.png" alt="New audience dialog">
   <figcaption>The New audience modal dialog.</figcaption>
 </figure>
 
@@ -69,7 +71,7 @@ Recipients can be bulk-imported into any active audience by clicking **Choose a 
 | `email` | **Yes** | `email`, `e-mail`, `mail`, `emailaddress` | Trimmed, lowercased, max 254 chars, must contain one `@` and a dotted domain with no whitespace. |
 | `name` | No | `name`, `fullname`, `firstname`, `lastname` | Optional display name used for the `{{name}}` merge field and Progress search tokens. |
 | `language` | No | `language`, `lang`, `locale` | Platform language code (e.g., `en`, `fr`). Region tags like `fr-CA` fall back to their base language (`fr`) if the region is not separately configured. |
-| `external_id` | No | `externalid`, `id`, `externalf` | Optional identifier from an external CRM or panel database. |
+| `external_id` | No | `externalid`, `id` | Optional identifier from an external CRM or panel database. |
 
 Unrecognized columns default to **Ignore** and can be remapped interactively in the preview dialog. Reserved prototype property names (`__proto__`, `constructor`, `prototype`) are rejected.
 
@@ -78,7 +80,7 @@ Unrecognized columns default to **Ignore** and can be remapped interactively in 
 After uploading a CSV, `customer-audience-import-dialog` parses the file on the server and displays a live preview before any changes are committed:
 
 <figure>
-  <img src="../../../survey/how-to/assets/send-invitations/audience-import-preview-auto.png" alt="Import recipients preview dialog">
+  <img src="../../how-to/assets/manage-team-audiences/audience-import-preview-auto.png" alt="Import recipients preview dialog">
   <figcaption>The CSV import dialog showing dry-run outcome counters, column mapping selectors, and the mandatory warranty checkbox.</figcaption>
 </figure>
 
@@ -135,6 +137,8 @@ The recipient table (`#recipient-grid`) displays all recipients belonging to the
 
 ## Related Content
 
+- [How to Manage Team Audiences](../../how-to/manage-team-audiences.md)
 - [How to Send Invitations to a Team Audience](../../../survey/how-to/send-invitations.md)
+- [Importing a Team Audience](../../../listserv/how-to/importing-a-team-audience.md)
 - [Communication Settings](./communication.md)
 - [Data Privacy and Security — Invitation Records](../../../survey/explanation/data-privacy-and-security.md#invitation-records)

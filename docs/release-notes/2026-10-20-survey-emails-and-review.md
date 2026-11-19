@@ -125,7 +125,7 @@ When you already hold a list of people you have permission to contact — such a
 Create named audiences in the Customer Portal and import recipients from a CSV file (`email`, plus optional `name`, `language`, and `external_id` columns, up to 10,000 rows and 5 MB). Each person is stored once per team even when they belong to several audiences, and the import preview shows created, updated, unchanged, suppressed, and invalid counts before you commit.
 
 <figure>
-  <img src="../app/survey/how-to/assets/send-invitations/audience-auto.png" alt="Team Audiences page showing audience cards, CSV upload drop zone, and the recipient grid.">
+  <img src="../app/customer/how-to/assets/manage-team-audiences/audience-auto.png" alt="Team Audiences page showing audience cards, CSV upload drop zone, and the recipient grid.">
   <figcaption>Manage reusable recipient lists in Team Settings → Audiences, with CSV import previews and column filters.</figcaption>
 </figure>
 

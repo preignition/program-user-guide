@@ -41,3 +41,9 @@
 - `app/app-customer/src/entity/Team/Presentation.ts`: Title, description, logo and presentation translation fields.
 - `app/app-customer/src/entity/Team/Communication.ts`: Sender address, reply-to, signature and footer.
 - `app/app-customer/src/page/team/customer-team-channel.ts`: Channel list and controls.
+
+## Managing team audiences - manage-team-audiences
+
+- `app/app-customer/src/page/team/customer-team-audiences.ts`: Audience cards, import dialog, recipient grid, export and archive controls.
+- `app/app-customer/src/entity/audience/`: Audience and recipient models, CSV mapping and import outcomes.
+- `documentation/src/survey/how-to/send-invitations.spec.ts`: Captures the audience screenshots under the Customer how-to assets.
