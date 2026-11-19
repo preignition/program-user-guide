@@ -28,7 +28,7 @@ Select **survey** or **team** in the type list. Buy units for the type you are a
 
 ## Step 3: Buy additional quota
 
-In the detail pane, click **Buy survey quota** (or **Buy team quota**). The control is shown to owners and editors only.
+In the detail pane, click **Buy survey quota** (or **Buy team quota**). The control is shown to account holders with edit access (Owners, Admins, and Editors).
 
 ::: info
 A buy control appears only when a pack is on sale for that quota type. If it is not shown, contact support to arrange additional quota.

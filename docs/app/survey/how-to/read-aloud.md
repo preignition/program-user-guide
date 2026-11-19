@@ -39,7 +39,7 @@ A voice is a language-level choice: generated voices are produced by the selecte
 
 ## Step 4: Choose the voice for an item
 
-Select an item in the tree. Under **Voice Settings**, four tabs set how that item is spoken. The tab marked with a check is the active one.
+Select an item in the tree. Under the item's **Voice Settings (`<language>`)** heading, four tabs set how that item is spoken. The tab marked with a check is the active one.
 
 | Tab | What it does | When to use it |
 | --- | --- | --- |

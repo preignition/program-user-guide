@@ -25,7 +25,7 @@ The survey creation dialog can build a form from a **prompt** or extract one fro
 ## Step 2: Generate with a prompt
 
 1. Select the prompt option.
-2. Write the prompt. Say what the survey is for, who answers it, and the shape you want — for example: *"Create 3 pages with 2 sections each. Page 1 covers the respondent's neighbourhood; page 2 covers transport; page 3 covers accessibility of local services. Use plain language."*
+2. Write the prompt. Say what the survey is for, who answers it, and the shape you want — for example: *"Create 3 pages with 2 sections each. Page 1 covers the respondent's neighborhood; page 2 covers transport; page 3 covers accessibility of local services. Use plain language."*
 3. Confirm.
 
 Generation uses a language model and may take a little time. The result is a draft structure: pages, sections, questions and text.
@@ -57,7 +57,7 @@ Generated content is a starting point, not a finished instrument. Before publish
 
 1. Read every generated question aloud; awkward phrasing is common.
 2. Replace invented answer options with ones that match your population.
-3. Check the question type against what the label asks for — Review flags mismatches.
+3. Check the question type against what the label asks for — the **Review** panel flags mismatches.
 4. Add logic, translations and accessibility modes deliberately; the model does not know your respondents.
 5. Run **Review** to catch plain-language, link-text and question-type problems.
 6. Test the form as a respondent.

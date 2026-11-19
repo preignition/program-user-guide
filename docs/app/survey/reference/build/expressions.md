@@ -59,7 +59,7 @@ If a deleted item still points at it, the status shows **Deleted ref** and delet
 
 A deleted expression is recoverable from **Build → Restore**.
 
-## When the page is useful
+## When to use this page
 
 - Auditing logic before a build, when a form has grown over time.
 - Finding expressions left behind after restructuring.

@@ -43,7 +43,7 @@ Before you can send an invitation run, enable invitations on **Share → Distrib
 </figure>
 
 ::: info Mandatory Footer and Validation
-The platform automatically appends the organiser attribution, a link to the privacy policy, and a one-click unsubscribe link to every invitation and reminder. Missing `{{link}}` or using an unknown `{{placeholder}}` blocks sending.
+The platform automatically appends the organizer attribution, a link to the privacy policy, and a one-click unsubscribe link to every invitation and reminder. Missing `{{link}}` or using an unknown `{{placeholder}}` blocks sending.
 :::
 
 ---

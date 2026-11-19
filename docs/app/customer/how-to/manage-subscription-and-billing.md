@@ -4,11 +4,11 @@ description: How to open the Stripe Billing Portal, add a payment method during 
 
 # How to Manage Your Subscription and Billing
 
-Billing is handled by Stripe. The Customer Portal **Subscription** page shows what Stripe reports and hands billing changes to the Stripe Billing Portal. This guide covers the common tasks an account Owner or Admin needs.
+Billing is handled by Stripe. The Customer Portal **Subscription** page displays what Stripe reports and hands billing changes off to the Stripe Billing Portal. This guide covers the common tasks an account **Owner**, **Admin**, or **Editor** needs.
 
 ## Before you start
 
-- You need an account role that can reach **Customer Portal → Subscription**; billing details and plan changes are Owner or Admin tasks.
+- You need an account role with edit access (**Owner**, **Admin**, or **Editor**; **Guests** have read-only access) to manage billing details, plans, and quota purchases in **Customer Portal → Subscription**.
 - Have a card or bank details ready if you are adding a payment method.
 - Trials start without payment details. Billing only begins when the trial ends **and** a payment method is on file.
 
@@ -22,7 +22,7 @@ A status banner appears above the tabs only when something needs attention. If i
 
 ## Add a payment method during a trial
 
-1. Read the **Trial ending** banner to see how long remains.
+1. Read the **Trial ending** banner to see how much time remains.
 2. Select **Setup Payment (card)** or **Setup Payment (bank)**.
 3. Complete the method in Stripe, then return to the portal.
 

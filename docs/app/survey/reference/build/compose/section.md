@@ -54,7 +54,7 @@ Response keying determines where and how respondent answers to this section are 
 | :--- | :--- | :--- |
 | **Per survey attempt (default)** | `survey` | Answers are stored per survey attempt. Standard isolated survey data. Choose this to opt a shared section out of cross-survey prefilling (e.g. consent agreements). |
 | **Per respondent** | `user` | Answers are stored once against the respondent's identity. Any other survey in the customer organization embedding this section automatically pre-fills with their previous answers. |
-| **Per organization** | `organization` | Answers are keyed to the respondent's organization or business unit. |
+| **Per organization** | `organisation` | Answers are keyed to the respondent's organization or business unit. |
 
 ### Prefill Modes (`props.prefill`)
 

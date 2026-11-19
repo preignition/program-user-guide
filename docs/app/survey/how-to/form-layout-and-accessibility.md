@@ -88,7 +88,7 @@ Under **Illustration**:
 ## Related Content
 
 - [Form Behavior Reference](../reference/build/behavior.md): Every Accessibility, Layout and Style setting and its tokens.
-- [How to Choose a Form Layout for Cognitive Accessibility](../explanation/choosing-a-form-layout.md): When one question at a time helps, and when it does not.
+- [Choosing a Form Layout for Cognitive Accessibility](../explanation/choosing-a-form-layout.md): When one question at a time helps, and when it does not.
 - [How to Use Read Aloud](./read-aloud.md): Audio support that pairs with either presentation mode.
 - [How to Style a Survey](./styling-a-survey.md): Typography and spacing beyond the master scale.
 - [How to Test a Form](./testing-a-form.md): Checking the layout before publishing.

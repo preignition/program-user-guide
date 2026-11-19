@@ -18,13 +18,13 @@ Webhooks are an **Advanced Mode** tool: open **Share → Webhook** with Advanced
    - **Secret Token**: an optional shared secret (see Step 3).
 4. Choose at least one **Trigger**:
 
-| Trigger | Fires when |
-| --- | --- |
-| `survey.start` | A respondent begins a survey session. |
-| `survey.submit` | A respondent submits their responses. |
-| `survey.terms.refused` | A respondent declines the required survey terms. |
+   | Trigger | Fires when |
+   | --- | --- |
+   | `survey.start` | A respondent begins a survey session. |
+   | `survey.submit` | A respondent submits their responses. |
+   | `survey.terms.refused` | A respondent declines the required survey terms. |
 
-1. Leave **Active** on, or turn it off to keep the configuration without dispatching.
+5. Leave **Active** on, or turn it off to keep the configuration without dispatching.
 
 ## Step 2: Understand the request
 

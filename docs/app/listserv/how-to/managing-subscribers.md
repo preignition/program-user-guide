@@ -28,13 +28,13 @@ For a bulk change, filter first and work through the visible rows; do not change
 2. Edit the subscriber.
 3. Adjust:
 
-| Setting | Effect |
-| --- | --- |
-| **Status** | `active` receives broadcasts; `unsubscribed` and `bounced` do not; `pending` has not confirmed. |
-| **Digest mode** | Off sends each broadcast in real time; on sends the weekly digest. |
-| **Vacation mode** | Pauses delivery while leaving the subscription active. |
+   | Setting | Effect |
+   | --- | --- |
+   | **Status** | `active` receives broadcasts; `unsubscribed` and `bounced` do not; `pending` has not confirmed. |
+   | **Digest mode** | Off sends each broadcast in real time; on sends the weekly digest. |
+   | **Vacation mode** | Pauses delivery while leaving the subscription active. |
 
-1. Save.
+4. Save.
 
 Changes apply to subsequent sends. A broadcast already dispatched is not re-sent or recalled.
 

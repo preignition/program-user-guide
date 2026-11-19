@@ -122,13 +122,13 @@ You can unsubscribe at any time using either option:
 1. Click the **1-Click Unsubscribe** link in the footer of any broadcast email.
 2. Reply to a broadcast email with `UNSUBSCRIBE` in the subject line.
 
-Unsubscribing takes effect immediately for future sends. Ask the channel administrator if you need help, and note that a digest subscriber may need to wait for the next digest before seeing the unsubscribe link.
+Unsubscribing takes effect immediately for future sends. If you receive the weekly digest and do not have a recent email with the **1-Click Unsubscribe** link, reply with `UNSUBSCRIBE` in the subject line or ask the channel administrator to remove your address.
 
 ---
 
 ## Related Content
 
-- [Subscribing and Managing Delivery Preferences](./subscribing-and-managing-preferences.md)
+- [Browsing & Searching Archives](./browsing-and-searching-archives.md)
 - [Email & Web Routes Explanation](../explanation/dual-route-architecture.md)
 - [Subscriber Accounts and Sign-In](../explanation/subscriber-identity-and-auth.md)
 - [Real-Time Broadcasts and Weekly Digests](../explanation/mailing-list-and-digest-architecture.md)

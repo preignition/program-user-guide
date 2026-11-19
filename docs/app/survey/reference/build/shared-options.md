@@ -4,7 +4,7 @@ description: Reference for shared answer options, the Shared Options page, and h
 
 # Shared Options Reference
 
-**Shared options** are one named answer-option list that several choice questions reuse. Edit the list once and every question linked to it sees the change.
+**Shared options** are a named answer-option group that several choice questions reuse. Edit the group once and every question linked to it sees the change.
 
 Open the form's **Shared Options** page from the Build drawer.
 
@@ -12,10 +12,10 @@ Open the form's **Shared Options** page from the Build drawer.
 
 A question owns its options. Giving a name to those options marks them **shared** and publishes them to the form's library.
 
-- A question with a shared name is the **owner** of that list.
-- Another choice question links to the list instead of holding its own copy.
+- A question with a shared name is the **owner** of that option group.
+- Another choice question links to the group instead of holding its own copy.
 - Editing the owner's options updates every linked question.
-- Clearing the name stops offering the list to new questions; linked questions keep working with their existing options.
+- Clearing the name stops offering the group to new questions; linked questions keep working with their existing options.
 
 Sharing options is not the same as sharing a section or a logical expression. Options are values a respondent picks; sections are reusable structure; expressions are reusable conditions.
 
@@ -26,34 +26,34 @@ Sharing options is not the same as sharing a section or a logical expression. Op
 3. Give the group a descriptive **name**, for example `Frequency (daily to yearly)`.
 4. Save.
 
-The options are now in the library.
+The option group is now in the library.
 
 ## Reuse shared options
 
 1. Open another choice question.
 2. In its settings, open **Use Shared**.
-3. Select the named group.
+3. Select the shared option group.
 
-The question stops carrying its own options and follows the owner's list. Any later change to the owner's options appears here too.
+The question stops carrying its own options and follows the owner's group. Any later change to the owner's options appears here too.
 
-Only compatible choice questions should share a list: a radio group and a checkbox group that ask the same thing can share values, but a ranking question or a different scale should not.
+Only compatible choice questions should share an option group: a radio group and a checkbox group that ask the same thing can share values, but a ranking question or a different scale should not.
 
 ## The Shared Options page
 
-The grid lists every shared list for the current form:
+The grid lists every shared option group for the current form:
 
 | Column | What it shows |
 | --- | --- |
 | **Shared Option Name** | The name given in the question settings. |
 | **Question Label** | The label of the owning question, in the form's primary language. |
 | **Question Type / id** | The question subtype and, in Advanced Mode, its id. |
-| **Nb. of Option Items** | How many options the list contains. |
+| **Nb. of Option Items** | How many options the group contains. |
 
-Expand a row to see the questions that use the list. The page is an index: the options themselves are edited in the owning question, not here.
+Expand a row to see the questions that use the group. The page is an index: the options themselves are edited in the owning question, not here.
 
 If no shared options exist, the empty state explains that they appear once a question's options are named.
 
-## What changes when the list changes
+## What changes when the option group changes
 
 | Change to the owner | Effect |
 | --- | --- |
@@ -63,7 +63,7 @@ If no shared options exist, the empty state explains that they appear once a que
 | Rename the shared group | The new name appears in **Use Shared**; existing links stay. |
 | Clear the shared name | No new question can link to it; linked questions keep their current options. |
 
-Because the change is immediate across the form, review linked questions after editing a shared list, especially if a question depends on option codes in logic.
+Because the change is immediate across the form, review linked questions after editing a shared option group, especially if a question depends on option codes in logic.
 
 ## Choosing between shared and copied options
 

@@ -8,7 +8,7 @@ Channel owners and editors configure the channel from **Channel Settings**: its 
 
 ## Where channels come from
 
-A Listserv channel belongs to a team and is provisioned in the **Customer Portal**. The Customer Portal team owns the channel's channels list; trial and plan quota, team membership and the team's language set are managed there. Channel Settings then governs how this channel behaves within that team.
+A Listserv channel belongs to a team and is provisioned in the **Customer Portal**. The Customer Portal team owns the team's channels list; trial and plan quota, team membership and the team's language set are managed there. Channel Settings then governs how this channel behaves within that team.
 
 If a channel is missing, or an owner needs to be changed at the organization level, start in the Customer Portal rather than in Listserv.
 

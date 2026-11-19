@@ -4,7 +4,14 @@ description: Reference documentation for the survey's email configuration.
 
 # Email
 
-The **Email** page configures the emails a survey sends to its respondents: the **invitation** and **invitation reminder** emails sent to a team audience, the **submission confirmation**, the opt-in **reminders** for unsubmitted forms, and the **follow-up** emails (**results and reports** and **follow-up survey**) you send by hand once the data has been analyzed — their content, the schedules reminders follow, and how long a consent is kept. It is a configuration page: no recipient list is imported or managed here, and no invitation run is launched from it (only a single preview test email to the signed-in editor, or a hand-triggered follow-up send).
+The **Email** page configures the messages a survey sends to respondents: their wording, reminder schedules, and consent retention. It covers:
+
+- **Invitation** and **invitation reminder** emails sent to a team audience;
+- **Submission confirmation** receipts;
+- Opt-in **reminders** for unsubmitted forms;
+- Hand-sent **follow-up** emails (**results and reports** and **follow-up survey**) after data is analyzed.
+
+This is a configuration page only. No recipient list is managed here, and no invitation run is launched from it — you can only send a preview test email to yourself or trigger a follow-up send.
 
 The page has two independent channels. The **form channel** is an **Email** or **Account Email** field in the builder; the **invitation channel** is the editor's opt-in on [Share → Distribute](../distribute/index.md#invitations). The form channel's purposes are available without invitations. Turning on invitations creates the **Invitation** and **Invitation reminder** messages; ticking a purpose with a message under **Purposes** creates that purpose's message item.
 

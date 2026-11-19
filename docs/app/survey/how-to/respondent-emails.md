@@ -55,8 +55,8 @@ The button is disabled until the message has both a subject and a body. A test c
 Form reminders for respondents who opt in are configured in **Advanced Mode → Share → Email → Advanced**:
 
 - **Reminders**: `None`, `One reminder` or `Two reminders` (default: one).
-- **First reminder (days)**: delay after opt-in (default 3).
-- **Second reminder (days)**: delay after the first reminder (default 3).
+- **First reminder (days)**: delay after opt-in (default 2).
+- **Second reminder (days)**: delay after the first reminder (default 2).
 - **Deadline**: an absolute date after which no reminders are sent.
 
 An hourly job sends due reminders only to unsubmitted sessions with an active, unexpired consent in the survey's active batch. Switching the active batch stops reminders for the previous wave, and a respondent who submits is never reminded.

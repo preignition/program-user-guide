@@ -26,14 +26,14 @@ A campaign does not store a source or medium. Those are chosen per link, so the 
 2. In the **Link Builder**, choose the test or production link and any language or accessibility presets you want pre-selected.
 3. In **UTM Parameters**, fill in the values:
 
-| Parameter | How to set it | Typical use |
-| --- | --- | --- |
-| **Term** | Free text; lowercase letters, digits, `_`, `-` and `+`. | The keyword or audience segment that clicked, for example `students`. |
-| **Medium** | One of None, Email, Organic, Cost per Click, Social or Video. | The channel type. |
-| **Content** | No pre-selection, Logo Link, Text Link or Image Link. | Which element in the same message was clicked. |
-| **Campaign** | Pick an active campaign. | The named initiative the link belongs to. |
+   | Parameter | How to set it | Typical use |
+   | --- | --- | --- |
+   | **Term** | Free text; lowercase letters, digits, `_`, `-` and `+`. | The keyword or audience segment that clicked, for example `students`. |
+   | **Medium** | One of None, Email, Organic, Cost per Click, Social or Video. | The channel type. |
+   | **Content** | No pre-selection, Logo Link, Text Link or Image Link. | Which element in the same message was clicked. |
+   | **Campaign** | Pick an active campaign. | The named initiative the link belongs to. |
 
-1. Copy the generated link.
+4. Copy the generated link.
 
 The link carries your language and accessibility presets plus `utm_medium`, `utm_term`, `utm_content` and `utm_campaign`. Add `utm_source` yourself (for example `&utm_source=newsletter`) if your reporting needs a source value; the link builder does not add one.
 
@@ -63,9 +63,9 @@ When a campaign ends:
 
 ## Tips
 
-- Agree a naming convention before the first campaign (`newsletter_2026_11`, `social_linkedin_launch`) so values sort and group sensibly.
+- Agree on a naming convention before the first campaign (`newsletter_2026_11`, `social_linkedin_launch`) so values sort and group sensibly.
 - Keep medium values to the six offered options; a free-text medium fragments your report.
-- Use **Term** for audience segments and **Content** for the placement inside a message, not the other way round.
+- Use **Term** for audience segments and **Content** for the placement inside a message, not the other way around.
 - Test the generated link before sending it: open it and complete a test submission, then confirm the values appear in Analyze.
 
 ## Related Content

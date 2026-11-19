@@ -61,7 +61,7 @@ Edits are real draft edits: they are saved to the form, not to the test session.
 
 ### Live data
 
-Shows the session context the form is using — the code view of the run's state. Use it to understand why a logic branch was taken; it is a diagnostic, not a respondent-facing feature.
+Shows the session context the form is using — the raw JSON state of the current test session. Use it to understand why a logic branch was taken; it is a diagnostic, not a respondent-facing feature.
 
 ### Start over
 

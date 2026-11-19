@@ -6,7 +6,7 @@ description: How to create a team, switch the active team, pin team shortcuts, a
 
 A **team** is the workspace that owns surveys, forms, audiences, channels and API keys. Most organizations have several, one per department, research program or client. This guide covers creating and organizing them.
 
-You need to be an account **Owner** or **Admin** to create a team, and an Owner or platform Super Admin to delete or restore one.
+You need to be an account **Owner** or **Admin** to create a team, and the team **Owner** or a platform **Super Admin** to delete or restore one.
 
 ## View your teams
 

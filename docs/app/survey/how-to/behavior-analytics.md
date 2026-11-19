@@ -178,19 +178,19 @@ Every behavioral chart mark serves as a dynamic cross-filter. Clicking any eleme
 1. Click any quality signal bar (e.g. `Paste / burst` or `Too fast`) or a Confidence Index score bucket.
 2. The active filter chip appears in the summary bar.
 
-<figure>
-  <img src="./assets/behavior-analytics/step-6-filtered-summary.png" alt="Active filter chip reflecting behavioral criteria">
-  <figcaption>Active behavioral filter chips isolate subsets (e.g. low-confidence or high-friction respondents).</figcaption>
-</figure>
+   <figure>
+     <img src="./assets/behavior-analytics/step-6-filtered-summary.png" alt="Active filter chip reflecting behavioral criteria">
+     <figcaption>Active behavioral filter chips isolate subsets (e.g. low-confidence or high-friction respondents).</figcaption>
+   </figure>
 
-1. The entire KPI strip and respondent log immediately recalculate to reflect only that cohort:
+3. The entire KPI strip and respondent log immediately recalculate to reflect only that cohort:
 
-<figure>
-  <img src="./assets/behavior-analytics/step-6-filtered-kpis.png" alt="Dynamically updated KPI strip reflecting filtered respondent subset">
-  <figcaption>All KPI metrics update instantly to reflect the characteristics of the filtered cohort.</figcaption>
-</figure>
+   <figure>
+     <img src="./assets/behavior-analytics/step-6-filtered-kpis.png" alt="Dynamically updated KPI strip reflecting filtered respondent subset">
+     <figcaption>All KPI metrics update instantly to reflect the characteristics of the filtered cohort.</figcaption>
+   </figure>
 
-1. To reset filters, click the **×** on the filter chip or click **Reset all filters** in the toolbar.
+4. To reset filters, click the **×** on the filter chip or click **Reset all filters** in the toolbar.
 
 ## 7. Auditing Responses in the Behavioral Respondent Log
 
@@ -239,22 +239,22 @@ When suspicious, automated, or invalid responses are identified, researchers can
 1. In the Behavioral Respondent Log, select the checkboxes next to the responses you want to remove (this requires edit rights on the survey). The header checkbox selects every row in the current filter.
 2. The table header shows **N selected**; click **Remove from dataset…**:
 
-<figure>
-  <img src="./assets/behavior-analytics/step-9-select-responses.png" alt="Respondent log selection bar showing one selected respondent and the Remove from dataset button">
-  <figcaption>Selected rows are counted above the log, next to the <strong>Remove from dataset…</strong> action.</figcaption>
-</figure>
+   <figure>
+     <img src="./assets/behavior-analytics/step-9-select-responses.png" alt="Respondent log selection bar showing one selected respondent and the Remove from dataset button">
+     <figcaption>Selected rows are counted above the log, next to the <strong>Remove from dataset…</strong> action.</figcaption>
+   </figure>
 
-1. In the exclusion dialog, select an auditable **Reason**:
+3. In the exclusion dialog, select an auditable **Reason**:
    - **Test data**: pre-launch checks, internal trials, and QA submissions.
    - **Likely bot**: automated submissions flagged by instantaneous text entry or impossible completion speeds.
    - **Duplicate**: multiple entries from the same respondent or device.
    - **Other**: any other reason; a **Note** is required and explains what it was.
-2. Add a **Note** when needed and click **Remove**.
+4. Add a **Note** when needed and click **Remove**.
 
-<figure>
-  <img src="./assets/behavior-analytics/step-9-exclusion-dialog.png" alt="Remove responses dialog with the reason selector and note field">
-  <figcaption>The removal dialog records a reason and, for <strong>Other</strong>, a required explanatory note.</figcaption>
-</figure>
+   <figure>
+     <img src="./assets/behavior-analytics/step-9-exclusion-dialog.png" alt="Remove responses dialog with the reason selector and note field">
+     <figcaption>The removal dialog records a reason and, for <strong>Other</strong>, a required explanatory note.</figcaption>
+   </figure>
 
 Excluded responses are immediately omitted from all Analyze charts, behavioral KPIs, and filtered browser exports. The same removal tool is available on the Analyze tab: turn on **Advanced** and use the response grid.
 

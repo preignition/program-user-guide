@@ -37,13 +37,13 @@ Use these steps with the video or on their own.
 
 ## Instructions
 
-Follow along with the video to test and share your 'Training Survey'.
-
-<lite-youtube videoid="KHb_SrGdvz8"></lite-youtube>
-
 ::: info
 Building a version no longer makes the production link available by itself: take the survey to production from the **Distribute** page to reveal it. See [How to publish and distribute a survey](../how-to/publishing-a-survey.md) for the current flow.
 :::
+
+Follow along with the video to test and share your 'Training Survey'.
+
+<lite-youtube videoid="KHb_SrGdvz8"></lite-youtube>
 
 ## Further Reading
 

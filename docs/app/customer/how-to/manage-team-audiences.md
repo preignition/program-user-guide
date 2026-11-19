@@ -33,18 +33,18 @@ A team can hold up to **50 audiences**. If the team has no audiences yet, upload
 2. Select **Choose a CSV file**, or drop a `.csv` file on the upload zone.
 3. In the **Import recipients** dialog, review the dry run:
 
-| Tile | What it means |
-| --- | --- |
-| **Created** | New recipients that will be added to the team and the audience. |
-| **Updated** | Existing recipients whose details or membership will change. |
-| **Unchanged** | Already in the audience with identical values. |
-| **Suppressed** | On the organization-wide suppression list; added to the audience but never emailed. |
-| **Invalid** | Missing or malformed addresses; they do not block the valid rows. |
+   | Tile | What it means |
+   | --- | --- |
+   | **Created** | New recipients that will be added to the team and the audience. |
+   | **Updated** | Existing recipients whose details or membership will change. |
+   | **Unchanged** | Already in the audience with identical values. |
+   | **Suppressed** | On the organization-wide suppression list; added to the audience but never emailed. |
+   | **Invalid** | Missing or malformed addresses; they do not block the valid rows. |
 
-1. Check the **Column mapping**: each CSV column maps to **Email**, **Name**, **Language**, **External id** or **Ignore**. Change a mapping to recompute the preview.
-2. If invalid rows exist, select **Download error CSV** (`row,email,reason`) and fix them.
-3. Tick the warranty confirming lawful basis and permission.
-4. Select **Import**.
+4. Check the **Column mapping**: each CSV column maps to **Email**, **Name**, **Language**, **External id** or **Ignore**. Change a mapping to recompute the preview.
+5. If invalid rows exist, select **Download error CSV** (`row,email,reason`) and fix them.
+6. Tick the warranty confirming lawful basis and permission.
+7. Select **Import**.
 
 <figure>
   <img src="./assets/manage-team-audiences/audience-import-preview-auto.png" alt="Import recipients dialog with outcome counts, column mapping and warranty">

@@ -37,7 +37,7 @@ The channel's privacy notice, when configured, appears above the archive.
 | --- | --- | --- |
 | **Email address** | Yes | The address that will receive broadcasts; must be valid. Web subscriptions require confirmation. |
 | **Preferred language** | Yes | A language the channel has activated; shown in its own language name. |
-| **Weekly digest** | No | Off by default (real-time delivery). On receives one summary email a week instead. |
+| **Weekly digest** | No | Off by default (real-time delivery). When enabled, sends one summary email a week instead. |
 
 Selecting **Subscribe** starts the confirmation flow for web subscriptions. The page also shows the channel's privacy notice, covering archiving, indexing and how to unsubscribe.
 

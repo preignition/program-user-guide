@@ -34,9 +34,9 @@ The currency is fixed at this point. Choose carefully; support cannot change it 
 1. Select a **Storage Location**.
 2. Multi-region options replicate data across a continent and suit respondents spread across the globe.
 3. Regional options keep data in a single country and suit data-residency requirements.
-4. Read the confirmation text and continue.
+4. Review the permanence confirmation and continue.
 
-This choice is permanent. It also provisions the organization's database, so it cannot be revisited after the account is created. The [Storage Locations reference](../reference/customer/storage-locations.md) explains the options in detail.
+This choice provisions the organization's database and cannot be changed later. The [Storage Locations reference](../reference/customer/storage-locations.md) explains the options in detail.
 
 ## Step 4: Verify your email
 
@@ -57,7 +57,7 @@ The plan sets the survey and team quota. You can change it later through the Str
 1. Read the Terms of Service.
 2. Accept them to create the organization.
 
-If you decline, the portal explains that the application cannot be used without accepting the terms and returns you out of the flow.
+If you decline, the portal explains that the application cannot be used without accepting the terms and exits the onboarding flow.
 
 ## Step 7: Start your first survey
 
@@ -99,13 +99,13 @@ See [How to Manage Account Holders and Team Members](../how-to/manage-account-ho
 
 See [How to Configure Team Presentation, Communication and Channels](../how-to/configure-team-presentation-and-communication.md).
 
-### Create more teams
-
-Open **Customer Portal → Teams** and select **Add Team**. Each team redeems one team unit from your quota. See [How to Manage Teams](../how-to/manage-teams.md).
-
 ### Set up your theme
 
 Open **Theme** to define the colors respondents see. See [How to Create a Theme](../how-to/create-a-theme.md).
+
+### Create additional teams (optional)
+
+If your organization separates work by department, program, or client, open **Customer Portal → Teams** and select **Add Team**. Each team redeems one team unit from your quota. See [How to Manage Teams](../how-to/manage-teams.md).
 
 ## What you have now
 
@@ -116,7 +116,7 @@ Open **Theme** to define the colors respondents see. See [How to Create a Theme]
 
 ## Related Content
 
-- [How to Manage Teams](../how-to/manage-teams.md): Creating, switching, shortcutting, deleting and restoring teams.
+- [How to Manage Teams](../how-to/manage-teams.md): Creating, switching, pinning shortcuts, deleting and restoring teams.
 - [How to Manage Account Holders and Team Members](../how-to/manage-account-holders-and-team-members.md): Inviting people and assigning roles.
 - [How to Manage Your Subscription and Billing](../how-to/manage-subscription-and-billing.md): Trials, payment methods, invoices and plan changes.
 - [Storage Locations Reference](../reference/customer/storage-locations.md): Multi-region and regional hosting.

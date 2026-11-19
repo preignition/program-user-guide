@@ -27,8 +27,8 @@ The **Respondent reminders** section sets the automated reminder cadence for res
 | Setting | Allowed Values | Default | Behavior |
 | :--- | :--- | :--- | :--- |
 | **Reminders** | `None`, `One reminder`, `Two reminders` | `One reminder` | Maximum number of reminder emails a respondent may receive. |
-| **First reminder (days)** | Integer (≥ 1) | `3` days | Delay in days after the respondent's initial opt-in before sending reminder 1. |
-| **Second reminder (days)** | Integer (≥ 1) | `3` days | Delay in days after the first reminder before sending reminder 2. |
+| **First reminder (days)** | Integer (≥ 1) | `2` days | Delay in days after the respondent's initial opt-in before sending reminder 1. |
+| **Second reminder (days)** | Integer (≥ 1) | `2` days | Delay in days after the first reminder before sending reminder 2. |
 | **Deadline** | Date picker | None | Absolute calendar cut-off date after which no reminders are dispatched. |
 
 ::: info Hourly Dispatch & Batch Scoping

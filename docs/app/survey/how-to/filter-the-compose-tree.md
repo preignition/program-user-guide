@@ -14,7 +14,7 @@ Filters keep each match's ancestors visible, so a matching item still appears in
 2. Make sure the tree shows the columns you need. Some columns appear only in **Advanced Mode**, and the media columns appear only when the corresponding accessibility mode or illustration setting is active.
 3. Select a **column header icon** to turn its filter on. Select it again to change or clear it.
 
-A pressed header means its filter is on. The aria-label describes the current state — for example "showing items with an easyread image — click to clear the filter".
+A pressed header means its filter is on. The header's accessible label announces the current state — for example, "showing items with an Easy Read image — click to clear the filter".
 
 ## Filter by review findings
 

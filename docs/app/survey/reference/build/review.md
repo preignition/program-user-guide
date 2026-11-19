@@ -20,7 +20,7 @@ The list combines two sources across five check families (**Structure**, **Logic
 | Source | Produced by | Scope |
 | :--- | :--- | :--- |
 | **Rule findings** | The structure, logic, translation and accessibility checks, computed when the author starts a review or applies a fix. | Missing references, invalid logic, empty items, incomplete translations, unpublished shared sections, survey-level build conditions, measurable plain-language readability, vague link text, question-control fit and theme color contrast. |
-| **Model findings** | The newest review run, tagged **Model**. | Plain-language clarity (`accessibility.clarity`), content quality (`content.quality`), repetition (`content.repetition`) and coverage (`content.coverage`): jargon or convoluted phrasing, leading or double-barrelled wording, near-duplicate questions, and topics the survey intent implies but never asks about. |
+| **Model findings** | The newest review run, tagged **Model**. | Plain-language clarity (`accessibility.clarity`), content quality (`content.quality`), repetition (`content.repetition`) and coverage (`content.coverage`): jargon or convoluted phrasing, leading or double-barreled wording, near-duplicate questions, and topics the survey intent implies but never asks about. |
 
 Model findings are `suggestion` in v1. Rule findings carry `error`, `warning` or `suggestion` according to their check. The header counts every open finding by severity.
 
