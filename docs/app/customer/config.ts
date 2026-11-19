@@ -28,7 +28,7 @@ function getSidebar() {
       text: 'Tutorials',
       link: 'index',
       base: `${root}/tutorial/`,
-      items: []
+      items: [{ text: 'Set up your organization', link: 'onboarding.md' }]
     },
     {
       text: 'How-to Guides',
@@ -36,10 +36,47 @@ function getSidebar() {
       collapsed: false,
       base: `${root}/how-to/`,
       items: [
-        { text: 'Create a theme', link: 'create-a-theme.md' },
-        { text: 'Manage API keys', link: 'manage-api-keys.md' },
-        { text: 'Using API docs', link: 'using-api-docs.md' },
-        { text: 'Buy additional quota', link: 'buy-additional-quota.md' }
+        {
+          text: 'Teams and people',
+          collapsed: true,
+          items: [
+            { text: 'Manage teams', link: 'manage-teams.md' },
+            {
+              text: 'Manage account holders and team members',
+              link: 'manage-account-holders-and-team-members.md'
+            }
+          ]
+        },
+        {
+          text: 'Billing and quota',
+          collapsed: true,
+          items: [
+            {
+              text: 'Manage subscription and billing',
+              link: 'manage-subscription-and-billing.md'
+            },
+            { text: 'Buy additional quota', link: 'buy-additional-quota.md' }
+          ]
+        },
+        {
+          text: 'Branding and configuration',
+          collapsed: true,
+          items: [
+            {
+              text: 'Configure team presentation and communication',
+              link: 'configure-team-presentation-and-communication.md'
+            },
+            { text: 'Create a theme', link: 'create-a-theme.md' }
+          ]
+        },
+        {
+          text: 'Developer access',
+          collapsed: true,
+          items: [
+            { text: 'Manage API keys', link: 'manage-api-keys.md' },
+            { text: 'Using API docs', link: 'using-api-docs.md' }
+          ]
+        }
       ]
     },
     {

@@ -14,3 +14,30 @@
 - [customer-team-api-keys.ts](../../../../../app/app-customer/src/page/team/customer-team-api-keys.ts): Web component rendering the API key management panel, create modal dialog, auto-copy behavior, and revoke user actions.
 - [api.html](/api.html): Interactive Scalar API Reference page loading the OpenAPI definition for testing endpoints.
 - [how-to.spec.ts](../../../../src/customer/how-to.spec.ts): Playwright test suite capturing screenshots and verifying the step-by-step user interactions for adding and revoking API keys.
+
+## Managing teams - manage-teams
+
+- `app/app-customer/src/page/customer-portal.ts`: Teams route, card list and team settings menu.
+- `app/app-customer/src/entity/Team/TeamE.ts`: Team actions, including Set as Active Team and shortcuts.
+- `app/app-customer/src/entity/action/addTeam.ts`: Add Team dialog, quota redemption and error handling.
+- `app/app-customer/src/page/team/customer-team-danger.ts`: Soft-delete and restore team.
+
+## Managing account holders and team members - manage-account-holders-and-team-members
+
+- `app/app-customer/src/page/customer-settings.ts`: Account holder settings route.
+- `app/app-customer/src/page/customer-team.ts`: Team members route.
+- `lit-app/access/internal/invite.ts`: Invitation flow shared by account and team membership.
+- `lit-app/access/internal/set-role.ts`: Role changes and revocations.
+
+## Managing subscription and billing - manage-subscription-and-billing
+
+- `app/app-customer/src/page/portal/customer-portal-subscription.ts`: Subscription, Invoice, Payment and Quota tabs.
+- `app/app-customer/functions/src/payment/`: Stripe webhook and billing integration.
+- `app/app-customer/src/entity/action/setupPayment.ts`: Card setup during a trial.
+- `app/app-customer/src/entity/action/updateSubscription.ts`: Plan change hand-off to Stripe.
+
+## Configuring team presentation and communication - configure-team-presentation-and-communication
+
+- `app/app-customer/src/entity/Team/Presentation.ts`: Title, description, logo and presentation translation fields.
+- `app/app-customer/src/entity/Team/Communication.ts`: Sender address, reply-to, signature and footer.
+- `app/app-customer/src/page/team/customer-team-channel.ts`: Channel list and controls.

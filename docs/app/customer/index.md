@@ -75,6 +75,14 @@ The Explanation section provides background on concepts like the difference betw
 
 ## Getting Started
 
-If you are looking for specific instructions or reference material, simply choose the section above that matches what you are trying to do today!
+New to the Customer Portal? Start with the onboarding tutorial, then use the guides for the task in front of you:
+
+- [Set up your organization](./tutorial/onboarding.md) — create the account and finish the first team.
+- [Manage teams](./how-to/manage-teams.md) — create, switch, delete and restore workspaces.
+- [Manage account holders and team members](./how-to/manage-account-holders-and-team-members.md) — invite people and assign roles.
+- [Manage subscription and billing](./how-to/manage-subscription-and-billing.md) — trials, invoices and plan changes.
+- [Configure team presentation and communication](./how-to/configure-team-presentation-and-communication.md) — branding and email identity.
+- [Create a theme](./how-to/create-a-theme.md) — the colors respondents see.
+- [Buy additional quota](./how-to/buy-additional-quota.md) — survey and team top-up packs.
 
 <!--@include: ../../parts/search.md-->
