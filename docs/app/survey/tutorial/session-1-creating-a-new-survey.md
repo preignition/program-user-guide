@@ -44,7 +44,7 @@ Training Form
 Survey Title: Training Survey
 
 Content:
-Welcome to this training survey. It is designed to help new users feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
+Welcome to this training survey. It is designed to help new users feel confident building, testing, sharing and analyzing surveys on Accessible Surveys.
 It supports a number of accessibility options which can be activated from the menu below.
 Once you have chosen your accessibility options, you can start the survey.
 
@@ -56,7 +56,7 @@ Thank you for completing this survey.
 
 **Page 1 - Surveys**
 
-* **1.1** Which survey tool does your organisation use the most? (optional)
+* **1.1** Which survey tool does your organization use the most? (optional)
 * **1.2** I am satisfied with my current survey tool
   * *Helper text: Indicate whether you agree with this statement by selecting one option below.*
   * Strongly agree
@@ -75,8 +75,25 @@ Thank you for completing this survey.
 
 </details>
 
-> [!TIP]
-> Download the 'Text for Training Survey' to your device before starting. Copying and pasting the content directly into your survey will save you time.
+::: tip
+Download the 'Text for Training Survey' to your device before starting. Copying and pasting the content directly into your survey will save you time.
+:::
+
+## Written Steps
+
+Use these steps with the video or on their own.
+
+1. Select **New Survey**. Enter **Training Survey** as the name and a short description.
+2. Create a new empty form named **Training Form**, choose the default presentation mode, and confirm.
+3. Open the **Introduction** page. Set the survey title and paste the introduction text from the training materials.
+4. Open the **Thank You** page and paste the closing text.
+5. Rename the first form page to **Surveys**.
+6. Add question **1.1** as an optional text field, "Which survey tool does your organization use the most?".
+7. Add **1.2** as a radio group: "I am satisfied with my current survey tool", with the five options and the helper text from the materials.
+8. Add **1.3** and **1.4** as longer text questions.
+9. Add a new page named **Feedback**, and add **2.1** as a rating question with a 1–5 scale and its helper text.
+10. Select **Test** and answer the form as a respondent, checking each page and the thank-you page.
+11. Optional: in **Visibility Mode**, hide **1.4** unless **1.3** has an answer, then test both paths.
 
 ## Instructions
 
@@ -84,16 +101,18 @@ Follow along with the video to create your 'Training Survey'.
 
 <lite-youtube videoid="zx7LD73pZGw"></lite-youtube>
 
-## Advanced Topics
+## Further Reading
 
-For more advanced features not covered in this session, refer to the following documentation:
-
-- [How to recipes](../how-to/index.md)
-- [Reference](../reference/index.md)
+- [How to Create a New Survey](../how-to/creating-a-new-survey.md)
+- [How to Add Content to a Form](../how-to/adding-content-to-a-form.md)
+- [How to Put Text Above a Question](../how-to/text-above-a-question.md)
+- [How to Use Form Logic](../how-to/logic-expression.md)
+- [How to Test a Form](../how-to/testing-a-form.md)
 
 ## Next Steps
 
-> [!NOTE]
-> Congratulations on completing Session 1! You are now ready to move on to Session 2, where you will learn how to add accessibility options to your survey.
+::: info
+Congratulations on completing Session 1! You are now ready to move on to Session 2, where you will learn how to add accessibility options to your survey.
+:::
 
 [**Start Session 2: Adding accessibility options**](session-2-adding-accessibility-options.md)

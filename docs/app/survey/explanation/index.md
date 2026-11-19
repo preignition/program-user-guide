@@ -10,11 +10,9 @@ These articles are designed for study. They offer context, historical background
 
 ## Principles
 
-As our documentation evolves into this structure, this section will house deeper discussions on topics such as:
-
-- **We are all different:** The philosophy of designing for a wide range of abilities and preferences, and how this shapes our approach to survey design.
-- **The Philosophy of Accessibility First:** Why we prioritize formats like Easy Read and Sign Language directly in the data collection layer, rather than as an afterthought.
-- **Rooted in the Disability Movement:** The historical and ethical foundations of our work, and how the principles of the disability rights movement inform our design choices.
+- **[We Have Different Needs](./we-have-different-needs.md):** Disability as an interaction between impairment and barriers, and why one survey needs several routes.
+- **[Accessibility First](./accessibility-first.md):** Why accessibility belongs in the data layer rather than in a final pass, and what that changes for respondents and analysis.
+- **[Rooted in the Disability Movement](./rooted-in-the-disability-movement.md):** The history, the CRPD principles, participation, and the language the platform uses.
 
 ## Application Architecture and Key Concepts
 

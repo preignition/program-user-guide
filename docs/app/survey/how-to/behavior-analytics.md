@@ -125,7 +125,7 @@ Pinpoints the exact question where respondents halted their participation:
 </figure>
 
 ::: tip Remediation Strategy
-If a specific question exhibits a drop-off spike, consider whether it asks for sensitive information, contains confusing instructions, or suffers from excessive length.
+If a specific question exhibits a drop-off spike, consider whether it asks for sensitive information, contains confusing instructions, or is excessively long.
 :::
 
 ## 5. Per-Question Attention and Cognitive Friction

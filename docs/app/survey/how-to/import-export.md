@@ -115,3 +115,10 @@ Once translation is complete, you can import the file back into Accessible Surve
     </figure>
 
 Your survey form is now updated with the translated content.
+
+## Related Content
+
+- [How to Create a Multilingual Survey](./localize-survey.md)
+- [Localize Reference](../reference/build/localize.md)
+- [Markdown Reference](../reference/content/markdown/index.md)
+- [Tutorial: Session 3 — Translating Your Survey](../tutorial/session-3-localization.md)

@@ -96,7 +96,7 @@ Accessible Surveys decouples section response storage using the **Response Keyin
 | :--- | :--- | :--- | :--- |
 | `user` (Respondent) | `data/{uid}/section/{sectionId}` | Stored once per respondent; pre-fills across all organization surveys. | Standard demographics, accessibility accommodations, baseline profiles. |
 | `survey` (Attempt) | `data/{uid}/actor/{actorId}/section/{sectionId}` | Stored per survey submission; answers remain completely isolated. | Time-sensitive feedback, one-off ratings, survey-specific consent. |
-| `organisation` (Unit) | `data/{buid}/section/{sectionId}` | Stored per business unit / team context. | Organization-level assessments and collective audits. |
+| `organization` (Unit) | `data/{buid}/section/{sectionId}` | Stored per business unit / team context. | Organization-level assessments and collective audits. |
 
 ### Balancing Convenience and Accuracy: Prefill Modes
 

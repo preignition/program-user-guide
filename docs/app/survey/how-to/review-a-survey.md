@@ -71,7 +71,7 @@ Translation applies have no undo in v1; inserted items are undone by rejecting t
 
 In Compose's **Settings Mode**, the review column marks items with open findings:
 
-- the marker uses the highest severity's colour;
+- the marker uses the highest severity's color;
 - a badge shows the number of open findings on that item;
 - selecting the marker opens Review filtered to that item;
 - the column header filters the tree to items with open findings only.

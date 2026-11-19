@@ -39,8 +39,9 @@ Select another choice-based question where you want to reuse the options. In the
   <figcaption>Select your named option group from the 'Use Shared' dropdown to instantly apply the options to the new question.</figcaption>
 </figure>
 
-> [!NOTE]
-> When you link a question to a shared option group, any future changes made to the shared options will automatically update across all questions using that group.
+::: info
+When you link a question to a shared option group, any future changes made to the shared options will automatically update across all questions using that group.
+:::
 
 ## Related Content
 

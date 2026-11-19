@@ -21,8 +21,9 @@ By the end of this session, you will be able to:
 - Understand how the Voice Recording option works.
 - Test your accessibility options.
 
-> [!NOTE]
-> The 'Training Survey' uses British Sign Language (BSL), but you can offer any sign language—or even multiple sign languages—in your own surveys.
+::: info
+The 'Training Survey' uses British Sign Language (BSL), but you can offer any sign language—or even multiple sign languages—in your own surveys.
+:::
 
 ## Training Materials
 
@@ -32,14 +33,15 @@ Use the following YouTube IDs to add BSL videos to your 'Training Survey'.
 
 | Question | YouTube ID |
 | :--- | :--- |
-| 1.1 'Which survey tool does your organisation use the most?' | [dsL489ipJxM](https://youtu.be/dsL489ipJxM) |
+| 1.1 'Which survey tool does your organization use the most?' | [dsL489ipJxM](https://youtu.be/dsL489ipJxM) |
 | 1.2 'I am satisfied with my current survey tool' | [6KxVTBEfcUQ](https://youtu.be/6KxVTBEfcUQ) |
 | 1.3 'What do you like about the survey tool you are using?' | [4LfklqWfq3A](https://youtu.be/4LfklqWfq3A) |
 | 1.4 'What frustrates you about the survey tool that you are using?' | [hK1L5y5iRds](https://youtu.be/hK1L5y5iRds) |
 | 2.1 'Do you like this survey?' | [Zne0RX2she4](https://youtu.be/Zne0RX2she4) |
 
-> [!TIP]
-> Survey builders currently need to provide their own sign language videos. We can provide details of recommended sign language service providers if required.
+::: tip
+Survey builders currently need to provide their own sign language videos. We can provide details of recommended sign language service providers if required.
+:::
 
 ### Easy Read Images
 
@@ -49,14 +51,27 @@ Download the following images to a local folder before starting the video. You c
 
 | Image 1 | Image 2 | Image 3 |
 | :---: | :---: | :---: |
-| <figure><img src="/assets/download/1 ER image for Survey.png" alt="Easy Read image for 'Which survey tool does your organisation use the most?'" width="100%"></figure><br/>[Download](/assets/download/1%20ER%20image%20for%20Survey.png) | <figure><img src="/assets/download/2 ER image for Satisfaction.png" alt="Easy Read image for 'I am satisifed with my current survey tool'" width="100%"></figure><br/>[Download](/assets/download/2%20ER%20image%20for%20Satisfaction.png) | <figure><img src="/assets/download/3 ER image for what do you like.png" alt="Easy Read image for 'What do you like about the survey tool you are using?'" width="100%"></figure><br/>[Download](/assets/download/3%20ER%20image%20for%20what%20do%20you%20like.png) |
+| <figure><img src="/assets/download/1 ER image for Survey.png" alt="Easy Read image for 'Which survey tool does your organization use the most?'" width="100%"></figure><br/>[Download](/assets/download/1%20ER%20image%20for%20Survey.png) | <figure><img src="/assets/download/2 ER image for Satisfaction.png" alt="Easy Read image for 'I am satisifed with my current survey tool'" width="100%"></figure><br/>[Download](/assets/download/2%20ER%20image%20for%20Satisfaction.png) | <figure><img src="/assets/download/3 ER image for what do you like.png" alt="Easy Read image for 'What do you like about the survey tool you are using?'" width="100%"></figure><br/>[Download](/assets/download/3%20ER%20image%20for%20what%20do%20you%20like.png) |
 
 | Image 4 | Image 5 |
 | :---: | :---: |
 | <figure><img src="/assets/download/4 ER image for what frustrates you.png" alt="Easy Read image for 'What frustrates you about the survey tool that you are using?'" width="100%"></figure><br/>[Download](/assets/download/4%20ER%20image%20for%20what%20frustrates%20you.png) | <figure><img src="/assets/download/5 ER image do you like this survey.png" alt="Easy Read image for 'Do you like this survey?'" width="100%"></figure><br/>[Download](/assets/download/5%20ER%20image%20do%20you%20like%20this%20survey.png) |
 
-> [!NOTE]
-> These images are sourced from [Easy on the i](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/), a free library of symbols, photos, and graphics for Easy Read materials.
+::: info
+These images are sourced from [Easy on the i](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/), a free library of symbols, photos, and graphics for Easy Read materials.
+:::
+
+## Written Steps
+
+Use these steps with the video or on their own.
+
+1. Open **Build → Form Behavior → Accessibility** and activate **Read Aloud**, **Easy Read**, **Sign Language** and **Voice Recording**.
+2. For Read Aloud, set a voice for the survey language (or accept the browser default), then return to Compose.
+3. Switch to **Read aloud** mode and check the voice column; generate, record or upload a voice where you want one.
+4. Switch to **Easy Read** mode. Simplify each question's text and add its Easy Read image from the training materials.
+5. Switch to **Sign Language** mode, activate British Sign Language, and attach the listed YouTube video to each question.
+6. Switch to **Voice Recording** and confirm how the text fields would appear as recorders.
+7. Select **Test** and use the toolbar toggles to try each mode: Read Aloud, Sign Language, Easy Read and Voice Recording.
 
 ## Instructions
 
@@ -64,16 +79,18 @@ Follow along with the video to add accessibility options to your survey.
 
 <lite-youtube videoid="JV31V7ONPgI"></lite-youtube>
 
-## Advanced Topics
+## Further Reading
 
-For more advanced features related to accessibility, refer to the following guides:
-
-- Adding Easy Read to your 'Introduction Page' and 'Thank You Page'
-- Adding multiple sign languages to your survey
+- [How to Activate Accessibility Modes](../how-to/activating-accessibility-modes.md)
+- [How to Use Easy Read](../how-to/use-easy-read.md) — including the introduction and thank-you pages
+- [How to Use Sign Language](../how-to/use-sign-language.md) — including more than one sign language
+- [How to Use Read Aloud](../how-to/read-aloud.md)
+- [Producing Surveys in Plain Language or Easy Read](../explanation/producing-plain-language-easy-read.md)
 
 ## Next Steps
 
-> [!NOTE]
-> Congratulations on completing Session 2! You are now ready to move on to Session 3 to learn how to translate your survey into multiple languages.
+::: info
+Congratulations on completing Session 2! You are now ready to move on to Session 3 to learn how to translate your survey into multiple languages.
+:::
 
 [**Start Session 3: Translating your survey**](session-3-localization.md)

@@ -48,3 +48,10 @@ This short video show you how you can add an accessibility menu to a survey's 'L
 ## Next Steps
 
 Once the menu is added, you can continue to customize your survey. Respondents will now see a clear set of options to tailor the survey experience to their needs.
+
+## Related Content
+
+- [How to Activate Accessibility Modes](./activating-accessibility-modes.md)
+- [How to Add Content to a Form](./adding-content-to-a-form.md)
+- [Markdown Reference: Web Components](../reference/content/markdown/available-web-components.md)
+- [How to Provide Rich Formatting](./providing-rich-formatting.md)

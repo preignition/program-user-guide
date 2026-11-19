@@ -121,7 +121,7 @@ The following organizations provide expertise, adaptation services, and testing 
 
 - **[CHANGE](https://www.changepeople.org/):** Human rights organization offering bespoke Easy Read and accessible media production.
 - **[Inclusion Europe](https://www.inclusion-europe.eu/):** European association of persons with intellectual disabilities and their families, with member organizations across Europe providing Easy Read translations.
-- **[People First New Zealand / Make It Easy](https://www.makeiteasy.org.nz/):** Disabled Persons Organisation offering translation into Easy Read formats.
+- **[People First New Zealand / Make It Easy](https://www.makeiteasy.org.nz/):** Disabled Persons Organization offering translation into Easy Read formats.
 - **[Easy on the i](https://www.learningdisabilityservice-leeds.nhs.uk/easy-on-the-i/):** Information design service by the Leeds and York NHS Trust with a large library of public image assets.
 - **[Open Collaboration for Cognitive Accessibility](https://openaccessibility.ca/):** Offers accessibility review and cognitive accessibility testing services.
 - **[Plain English Campaign](https://www.plainenglish.co.uk/):** Professional editing and accreditation for plain English texts.

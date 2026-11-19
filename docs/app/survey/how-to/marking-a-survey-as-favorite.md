@@ -20,3 +20,9 @@ From your survey workspace, locate the survey you wish to mark as a favorite. Ri
 Select **star survey**.
 
 Once marked as a favorite, a star icon will appear next to the survey name, and you can easily filter your workspace to show only your starred surveys.
+
+## Related Content
+
+- [Survey Workspace Reference](../reference/workspace.md)
+- [How to Create a New Survey](./creating-a-new-survey.md)
+- [How to Duplicate a Survey](./duplicate-a-survey.md)

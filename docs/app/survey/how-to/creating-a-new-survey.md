@@ -85,3 +85,11 @@ Click **Confirm**.
 ::: tip
 Congratulations, you have successfully created a new survey! You will now be redirected to the survey editor.
 :::
+
+## Related Content
+
+- [Tutorial: Session 1 — Creating a New Survey](../tutorial/session-1-creating-a-new-survey.md)
+- [How to Edit a Survey](./editing-a-survey.md)
+- [How to Generate a Survey with AI or a Document](./generate-a-survey.md)
+- [How to Test a Form](./testing-a-form.md)
+- [Survey Workspace Reference](../reference/workspace.md)

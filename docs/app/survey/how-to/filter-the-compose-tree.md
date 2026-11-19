@@ -21,7 +21,7 @@ A pressed header means its filter is on. The aria-label describes the current st
 The review column marks items with open findings.
 
 - Select the header to keep only items that have an open finding.
-- The marker's colour is the highest severity on the item; a badge counts multiple findings.
+- The marker's color is the highest severity on the item; a badge counts multiple findings.
 - Select a marker to open Review filtered to that item.
 - Dismissed and applied findings do not appear.
 

@@ -22,7 +22,7 @@ Pixels are the most common absolute unit. One pixel (1px) typically translates t
 
 * **How it works:** Setting Page Padding Block to 24px guarantees exactly 24 pixels of vertical space.
 * **When to use it:** Use px for strict structural spacing where you need exact control, such as fixed gaps or minor layout adjustments that shouldn't scale drastically.
-* **The Accessibility Catch:** Pixels do not scale if a visually impaired user increases their browser's default font size. Therefore, they should generally be avoided for typography.
+* **The Accessibility Catch:** Pixels do not scale if a respondent with low vision increases their browser's default font size. Therefore, they should generally be avoided for typography.
 
 ### Root Em (`rem`)
 `rem` is a relative unit that stands for "Root Em." It is relative to the *root* font size of the web page (which is usually determined by the user's operating system or browser settings, typically defaulting to 16px).

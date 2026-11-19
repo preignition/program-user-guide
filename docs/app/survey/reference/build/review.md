@@ -19,7 +19,7 @@ The list combines two sources across five check families (**Structure**, **Logic
 
 | Source | Produced by | Scope |
 | :--- | :--- | :--- |
-| **Rule findings** | The structure, logic, translation and accessibility checks, computed when the author starts a review or applies a fix. | Missing references, invalid logic, empty items, incomplete translations, unpublished shared sections, survey-level build conditions, measurable plain-language readability, vague link text, question-control fit and theme colour contrast. |
+| **Rule findings** | The structure, logic, translation and accessibility checks, computed when the author starts a review or applies a fix. | Missing references, invalid logic, empty items, incomplete translations, unpublished shared sections, survey-level build conditions, measurable plain-language readability, vague link text, question-control fit and theme color contrast. |
 | **Model findings** | The newest review run, tagged **Model**. | Plain-language clarity (`accessibility.clarity`), content quality (`content.quality`), repetition (`content.repetition`) and coverage (`content.coverage`): jargon or convoluted phrasing, leading or double-barrelled wording, near-duplicate questions, and topics the survey intent implies but never asks about. |
 
 Model findings are `suggestion` in v1. Rule findings carry `error`, `warning` or `suggestion` according to their check. The header counts every open finding by severity.
@@ -34,9 +34,9 @@ The **Accessibility** family combines four deterministic rules with one model-ow
 | `accessibility.clarity` | Model | `suggestion` | Plain-language problems the length rules cannot measure — jargon, unexplained acronyms, abstract or bureaucratic wording, convoluted phrasing and ambiguous references — with an optional **Apply** rewrite. |
 | `accessibility.link-text` | Rule | `suggestion` | Markdown or HTML links that use vague text (*click here*, *read more*, *here*, *this link*) instead of naming the destination. |
 | `accessibility.question-type` | Rule | `suggestion` | Question controls that do not fit the answer their label asks for: an open text field asking for a date, email, phone number, web address or number; a single-choice control asking for *all that apply*; or a multiple-choice control asking to *select one*. |
-| `accessibility.theme-contrast` | Rule | `warning` | Text/background colour pairs in the active light or dark theme that fall below the WCAG AA 4.5:1 contrast ratio. |
+| `accessibility.theme-contrast` | Rule | `warning` | Text/background color pairs in the active light or dark theme that fall below the WCAG AA 4.5:1 contrast ratio. |
 
-The accessibility checks are review-only (the build does not resolve customer themes). Theme colour changes do not mark a stored model run as stale because the model does not inspect theme colours.
+The accessibility checks are review-only (the build does not resolve customer themes). Theme color changes do not mark a stored model run as stale because the model does not inspect theme colors.
 
 <figure>
   <img src="./assets/review-auto.png" alt="The Review panel showing a selected logic error and its evidence.">
@@ -104,7 +104,7 @@ Actions are disabled with a reason when the item is frozen, cannot be read, no l
 
 ## Editor markers
 
-In the Compose tree's **settings mode**, a `review-field` column marks items with open findings. The marker uses the highest severity's colour and shows a numeric badge when an item has more than one open finding. Selecting the marker opens the Review panel filtered to that item. Dismissed and applied findings do not produce markers.
+In the Compose tree's **settings mode**, a `review-field` column marks items with open findings. The marker uses the highest severity's color and shows a numeric badge when an item has more than one open finding. Selecting the marker opens the Review panel filtered to that item. Dismissed and applied findings do not produce markers.
 
 The `review-field` column header button acts as a filter to show only items with open review findings in the structural tree. Additionally, whenever open findings exist, a **Review** action button appears directly in the Compose bottom toolbar beside the prompt FAB, providing one-click navigation to the unfiltered Review panel.
 

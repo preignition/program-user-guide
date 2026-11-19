@@ -45,7 +45,7 @@ Team quota limits how many team workspaces exist.
 - A team unit is returned only when the organization no longer needs that team; soft-deleting a team keeps its allocation, so it can be restored.
 - A team top-up pack is a permanent addition.
 
-This is why team quota is bought differently from survey quota: it is closer to a licence seat than to a monthly allowance.
+This is why team quota is bought differently from survey quota: it is closer to a license seat than to a monthly allowance.
 
 ## Top-up packs
 

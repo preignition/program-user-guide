@@ -6,8 +6,9 @@ description: Learn how to create and customize a standalone theme for your surve
 
 Creating a custom theme allows you to define specific colors, typography, and layout settings that can be reused across all your surveys. This ensures brand consistency and provides an easy way to customize the user interface.
 
-> [!TIP]
-> If you want to learn more about the science behind our color engine and the semantic roles of each color (Primary, Secondary, Surface, etc.), please read our [Explanation of the Color System](../explanation/color-system.md).
+::: tip
+If you want to learn more about the science behind our color engine and the semantic roles of each color (Primary, Secondary, Surface, etc.), please read our [Explanation of the Color System](../explanation/color-system.md).
+:::
 
 ## Step 1: Edit Theme Settings
 
@@ -85,8 +86,9 @@ Accessibility is a key part of custom themes. The editor provides built-in contr
   <figcaption>Review contrast settings to ensure accessibility compliance.</figcaption>
 </figure>
 
-> [!WARNING]
-> The editor will display warnings if your chosen color combinations fall below the minimum 3:1 contrast ratio required for WCAG AA compliance.
+::: warning
+The editor will display warnings if your chosen color combinations fall below the minimum 3:1 contrast ratio required for WCAG AA compliance.
+:::
 
 ## Step 5: Save and Activate
 
@@ -108,3 +110,10 @@ Finally, click the **Save** button to store your new theme. It will now be avail
   <img src="./assets/create-theme/step-5-save-theme.png" alt="Save the new theme">
   <figcaption>Save your theme so it can be applied to surveys.</figcaption>
 </figure>
+
+## Related Content
+
+- [Color System](../explanation/color-system.md): How a seed color becomes an accessible palette.
+- [Theme Reference](../reference/customer/theme.md): The theme fields and activation.
+- [Team Presentation Reference](../reference/team/presentation.md): Team branding that uses the theme.
+- [How to Configure Team Presentation and Communication](./configure-team-presentation-and-communication.md): Applying branding to a team.

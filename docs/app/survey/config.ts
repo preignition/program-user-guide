@@ -232,6 +232,15 @@ function getSidebar() {
       link: `index.md`,
       items: [
         {
+          text: "Principles",
+          collapsed: true,
+          items: [
+            { text: "We have different needs", link: `we-have-different-needs.md` },
+            { text: "Accessibility first", link: `accessibility-first.md` },
+            { text: "Rooted in the disability movement", link: `rooted-in-the-disability-movement.md` },
+          ],
+        },
+        {
           text: "Architecture and Key Concepts",
           collapsed: true,
           items: [

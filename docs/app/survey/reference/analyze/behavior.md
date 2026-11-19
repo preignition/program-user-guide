@@ -81,7 +81,7 @@ The survey median represents the typical active time respondents spend on a stan
 
 ### Hesitation Hotspots
 
-A question is classified as a **Hesitation Hotspot** when its median active dwell time is strictly greater than twice the survey-wide median (`> 2 * median`). Hesitation hotspots highlight questions that impose disproportionate cognitive burden, suffer from ambiguous wording, require excessive reading, or present inaccessible input controls.
+A question is classified as a **Hesitation Hotspot** when its median active dwell time is strictly greater than twice the survey-wide median (`> 2 * median`). Hesitation hotspots highlight questions that impose disproportionate cognitive burden, have ambiguous wording, require excessive reading, or present inaccessible input controls.
 
 ### Boxplot Dispersion Metrics
 

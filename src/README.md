@@ -1,15 +1,19 @@
-# Playwright tests for survey habits
+# Playwright screenshot specs
 
-This folder contains Playwright tests for the survey habits application. These tests are designed to take automated screenshots of the application in various states, which can be used for visual regression testing and accessibility audits.
+This folder contains the Playwright specs that capture the screenshots used by the user documentation. They run the applications in known states and save annotated images beside the pages that use them, so a documentation change can be reviewed against a current interface.
 
-## How to run the test
+Specs under `src/admin/` cover internal screens and write outside the published docs tree; see [Internal-only screenshots](#internal-only-screenshots).
 
-- in accessibledata root:
+## How to run the tests
+
+Start the applications under test, then run Playwright from the documentation workspace:
+
+- in the accessibledata repository root:
   - `pnpm survey:start:a11y-signed-in`
   - `pnpm survey:start:signed-in`
-- in documentation root: `npm test`
+- in `documentation/`: `pnpm test`
 
-**shortcut**: `pnpm survey:start:a11y-signed-in && pnpm survey:start:signed-in`
+**Shortcut**: `pnpm survey:start:a11y-signed-in && pnpm survey:start:signed-in`
 
 ### User type
 

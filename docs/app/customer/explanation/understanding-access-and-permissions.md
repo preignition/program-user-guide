@@ -47,7 +47,7 @@ Ownership can be transferred from the Account Holders screen, but the account al
 
 ## Team Members
 
-A **Team Member** is someone who works on the organisation's surveys. This is the role you grant to anyone who needs to build, edit, translate or review surveys.
+A **Team Member** is someone who works on the organization's surveys. This is the role you grant to anyone who needs to build, edit, translate or review surveys.
 
 Adding someone to a team makes them *eligible* to be given access to that team's surveys — it does not automatically give them access to all of them.
 

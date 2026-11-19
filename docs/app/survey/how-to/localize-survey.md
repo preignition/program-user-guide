@@ -96,3 +96,10 @@ After running the AI translation, it is important to review the results. While t
 1. Browse the survey tree to verify the translated text.
 2. If necessary, edit specific fields directly in the tree grid.
 3. You can also render the survey in **Test mode** and switch the active language to review the translation exactly as respondents will see it.
+
+## Related Content
+
+- [How to Use Import/Export to Translate Forms](./import-export.md)
+- [Localize Reference](../reference/build/localize.md)
+- [Tutorial: Session 3 — Translating Your Survey](../tutorial/session-3-localization.md)
+- [Multilingual Support (Listserv)](../../listserv/explanation/multilingual-support.md)

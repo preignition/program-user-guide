@@ -40,3 +40,10 @@ A text block with **End Page** switched on ends the current page — it does not
 - Grouping only happens within a **section** — a text block never joins a question in another section.
 - The question determines the page's title in the menu and its visibility logic. A text block with its own visibility logic still hides or shows on its own.
 - The **End Page** flag has no effect in the **multiple questions per page** layout.
+
+## Related Content
+
+- [How to Add Content to a Form](./adding-content-to-a-form.md)
+- [How to Choose a Form Layout](./form-layout-and-accessibility.md)
+- [Text Page Reference](../reference/build/compose/text-page.md)
+- [How to Provide Rich Formatting](./providing-rich-formatting.md)

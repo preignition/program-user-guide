@@ -10,7 +10,7 @@ Training Form
 Survey Title: Training Survey
 
 Content:
-Welcome to this training survey. It is designed to help new users feel confident building, testing, sharing and analysing surveys on Accessible Surveys.
+Welcome to this training survey. It is designed to help new users feel confident building, testing, sharing and analyzing surveys on Accessible Surveys.
 It supports a number of accessibility options which can be activated from the menu below.
 Once you have chosen your accessibility options, you can start the survey.
 
@@ -22,7 +22,7 @@ Thank you for completing this survey.
 
 **Page 1 - Surveys**
 
-* **1.1** Which survey tool does your organisation use the most? (optional)
+* **1.1** Which survey tool does your organization use the most? (optional)
 * **1.2** I am satisfied with my current survey tool
   * *Helper text: Indicate whether you agree with this statement by selecting one option below.*
   * ○ Strongly agree

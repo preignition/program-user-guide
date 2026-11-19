@@ -37,7 +37,7 @@ You no longer have to click through every branch or wait for a build error to fi
   * **Plain language (measured + AI):** Flags overly long sentences (over 25 words) and clusters of complex words (12+ characters), while the AI review (`accessibility.clarity`) spots jargon, unexplained acronyms, bureaucratic phrasing, and convoluted sentences that length rules alone cannot judge — offering a plain-language rewrite you can apply in one click.
   * **Descriptive link text:** Catches vague links like *click here* or *read more* so screen-reader users know where a link leads.
   * **Question control fit:** Warns when a question's input control doesn't match what its label asks for — such as an open text field asking for a date, email, phone number, URL, or number, a radio/dropdown asking to *select all that apply*, or checkboxes asking to *select one*.
-  * **Theme colour contrast:** Checks your active light and dark themes against the WCAG AA 4.5:1 contrast standard so every text/background pair stays readable.
+  * **Theme color contrast:** Checks your active light and dark themes against the WCAG AA 4.5:1 contrast standard so every text/background pair stays readable.
 * **On-demand AI content review** looks at your survey the way a thoughtful colleague would — flagging leading or double-barrelled questions, repetitive items, and topics you might have missed.
 
 ### Fix issues on the spot

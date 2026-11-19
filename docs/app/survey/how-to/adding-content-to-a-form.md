@@ -61,3 +61,11 @@ The new element is created and selected automatically. You can immediately begin
 
 <figure><img src="./assets/adding-content-to-a-form/step-C-3-click-newly-added-page.png" alt="Select the new page"><figcaption>The newly added item is ready to be configured.</figcaption></figure>
 <figure><img src="./assets/adding-content-to-a-form/step-C-3-click-newly-added-page-title.png" alt="Set the page title"><figcaption>Set the content details in the right pane.</figcaption></figure>
+
+## Related Content
+
+- [How to Edit a Survey](./editing-a-survey.md)
+- [Questions Reference](../reference/build/compose/question.md)
+- [How to Put Text Above a Question](./text-above-a-question.md)
+- [How to Control Content Visibility](./controlling-visibility.md)
+- [Markdown Reference](../reference/content/markdown/index.md)

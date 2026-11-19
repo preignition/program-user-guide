@@ -5,7 +5,7 @@
 - `app/app-respondent/src/init/respondent-presence.ts`: Core logic for streaming respondent presence and behavioral events to RTDB.
 - `app/app-survey/renderer/machine/form.ts`: Instrumentation of the form state machine to emit page and value change events.
 - `app/app-survey/functions/src/service/storeRespondentData.ts`: Submission pipeline: stores the responses, aggregates the behavioral logs and computes the Confidence Index.
-- [functions/src/jobs/handlers/respondentDropOff.ts](../../../../../functions/src/jobs/handlers/respondentDropOff.ts): Scheduled job handler for processing abandoned sessions and storing drop-off metrics.
+- `functions/src/jobs/handlers/respondentDropOff.ts`: Scheduled job handler for processing abandoned sessions and storing drop-off metrics.
 
 ## Resuming Incomplete Surveys - Explanation
 

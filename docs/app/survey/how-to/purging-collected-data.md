@@ -14,7 +14,7 @@ A purge cannot be undone. Take an export first if you may need the responses.
 
 - You must be the survey's owner, or the owner or admin of its team.
 - The survey can stay published; a purge does not unpublish it, and respondents keep answering into a clean dataset.
-- Shared answer stores (`user` and `organisation` sections) and test answers are **not** part of the purge — answers stored against an account or an organisation belong to more than one survey. The preview names them.
+- Shared answer stores (`user` and `organization` sections) and test answers are **not** part of the purge — answers stored against an account or an organization belong to more than one survey. The preview names them.
 
 ## Purge the data
 
@@ -32,3 +32,10 @@ A purge cannot be undone. Take an export first if you may need the responses.
 | The reminder contact records (addresses) | The published build |
 | The Sent email history (send-action counts, no addresses) | — |
 | The survey's form-session documents | The shared answer stores and the test answers |
+
+## Related Content
+
+- [How to Export Survey Data](./exporting-survey-data.md)
+- [Data Privacy and Security](../explanation/data-privacy-and-security.md)
+- [Analyze Overview](../reference/analyze/index.md)
+- [GDPR Compliance and Survey Privacy](../explanation/gdpr-compliance.md)
