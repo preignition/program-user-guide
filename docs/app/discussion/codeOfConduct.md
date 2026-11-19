@@ -1,3 +1,7 @@
+---
+description: Contributor Covenant Code of Conduct and community participation standards for Accessible Data discussion channels.
+---
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
