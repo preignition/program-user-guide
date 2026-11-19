@@ -21,6 +21,7 @@ The **Share** section is your hub for managing the operational lifecycle of your
 - [Account Type](./account-type/index.md) — Configure anonymous, personal, or verified respondent account requirements, authentication methods, and domain restrictions.
 - [Redirection](./redirection/index.md) — Configure post-submission routing (application homepage, no redirection, or custom URL) and redirect timeouts.
 - [Access](./access/index.md) — Manage collaborator roles (Owner, Admin, Editor, Guest, Translator) for this survey.
+- [Transfer](./transfer/index.md) — Move a survey to another team and reset its access.
 - [Import/Export](./import-export/index.md) — Export translatable text and sign-language video IDs, and import completed localization packages.
 - [Email](./email/index.md) — Configure invitation emails, submission confirmations, opt-in reminders, and follow-up communications.
 - [Batch](./batch/index.md) — Group responses into longitudinal collection waves and designate the active batch.

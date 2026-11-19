@@ -21,6 +21,7 @@ Fundamental tasks for building your survey and forms, including adding questions
 - [How to test a form](./testing-a-form.md)
 - [How to mark a survey as favorite](./marking-a-survey-as-favorite.md)
 - [How to delete a survey](./deleting-a-survey.md)
+- [How to restore deleted survey items](./restore-deleted-items.md)
 
 ### Adding Content
 
@@ -75,6 +76,10 @@ Publishing surveys, inviting contact lists, configuring respondent accounts, and
 
 - [How to publish and distribute a survey](./publishing-a-survey.md)
 - [How to send invitations to a team audience](./send-invitations.md)
+- [How to configure respondent emails](./respondent-emails.md)
+- [How to track campaigns and UTM links](./campaigns-and-utm.md)
+- [How to configure respondent account types](./respondent-account-types.md)
+- [How to set up webhooks](./webhooks.md)
 - [How to configure redirection after completing survey](./configure-redirection.md)
 - [How to manage survey terms](./survey-terms.md)
 - [How to use survey batches](./using-batches.md)

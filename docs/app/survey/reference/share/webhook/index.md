@@ -54,5 +54,5 @@ The **Events** tab displays an audit history of the latest webhook dispatch atte
 
 ## Related Content
 
-- [Using Webhooks How-to Guide](../../../how-to/index.md) — Step-by-step instructions for webhook setup
+- [How to Set Up Webhooks](../../../how-to/webhooks.md) — Step-by-step configuration, secret verification and testing.
 - [Platform API Reference](/api.html) — OpenAPI specifications for programmatic survey data operations

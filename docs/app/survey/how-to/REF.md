@@ -148,3 +148,33 @@
 - `app/app-survey/renderer/form-abstract.ts`: One-question-at-a-time page grouping, sticky action bar and per-step validation.
 - `app/app-survey/renderer/page-single-question.ts`: Single-question page rendering and larger default typography.
 - `app/app-survey/src/entity/FormE.ts`: Accessible Label switch and its label-length behavior.
+
+## Configuring form-channel respondent emails - respondent-emails
+
+- `app/app-survey/src/entity/EmailE.ts`: Share Email page, purposes and message tabs.
+- `app/app-survey/src/entity/email-items.ts`: Email item definitions and merge fields.
+- `app/app-survey/functions/src/`: Reminder dispatch and invitation email functions.
+- `documentation/docs/app/survey/reference/share/email/advanced.md`: Reminder cadence and consent retention.
+
+## Tracking campaigns and UTM links - campaigns-and-utm
+
+- `app/app-survey/src/entity/CampaignE.ts`: Campaign creation and management.
+- `app/app-survey/src/page/edit/deploy/link-builder.ts`: UTM controls and generated survey links.
+- `lit-app/app-state/utmState.ts`: UTM parameters read from the survey URL.
+- `app/app-survey/src/page/analyze/metaFields.ts`: UTM metadata fields in Analyze.
+
+## Configuring respondent account types - respondent-account-types
+
+- `app/app-survey/src/page/edit/deploy/account.ts`: Account type, authentication method and allowed-domain controls.
+- `lit-app/schema/survey/survey.ts`: Account type, auth method and allowed-domain schema.
+
+## Setting up webhooks - webhooks
+
+- `app/app-survey/functions/src/webhook.ts`: Trigger mapping and payload construction.
+- `app/app-survey/functions/src/utils/webhookUtils.ts`: Request headers, secret token, timeout and result storage.
+- `app/app-survey/src/page/edit/deploy/webhook.ts`: Webhook settings, test and events UI.
+
+## Restoring deleted survey items - restore-deleted-items
+
+- `app/app-survey/src/page/edit/design/restore.ts`: Restore workspace and restore action.
+- `app/app-base/entity/RestoreE.ts`: Restore entity, deleted-items query and restore action.

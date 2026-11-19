@@ -50,6 +50,7 @@ function getSidebar() {
             { text: "Test a form", link: `testing-a-form.md` },
             { text: "Mark a survey as favorite", link: `marking-a-survey-as-favorite.md` },
             { text: "Delete a survey", link: `deleting-a-survey.md` },
+            { text: "Restore deleted survey items", link: `restore-deleted-items.md` },
             { text: "Add content to a form", link: `adding-content-to-a-form.md` },
             { text: "Put text above a question", link: `text-above-a-question.md` },
             { text: "Control content visibility", link: `controlling-visibility.md` },
@@ -100,6 +101,10 @@ function getSidebar() {
           items: [
             { text: "Publish a survey", link: `publishing-a-survey.md` },
             { text: "Send invitations to a team audience", link: `send-invitations.md` },
+            { text: "Configure respondent emails", link: `respondent-emails.md` },
+            { text: "Track campaigns and UTM links", link: `campaigns-and-utm.md` },
+            { text: "Configure respondent account types", link: `respondent-account-types.md` },
+            { text: "Set up webhooks", link: `webhooks.md` },
             { text: "Use survey batches", link: `using-batches.md` },
             {
               text: "Redirect respondents after completing a survey",
@@ -166,6 +171,7 @@ function getSidebar() {
             { text: "Account Type", link: `account-type/index.md` },
             { text: "Redirection", link: `redirection/index.md` },
             { text: "Access", link: `access/index.md` },
+            { text: "Transfer", link: `transfer/index.md` },
             { text: "Import/Export", link: `import-export/index.md` },
             { text: "Email", link: `email/index.md` },
             { text: "Batch", link: `batch/index.md` },

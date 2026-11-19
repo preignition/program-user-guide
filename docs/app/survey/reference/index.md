@@ -24,3 +24,4 @@ Other reference content includes:
 
 - **[Markdown](./content/markdown/index.md)** - A detailed reference on the Markdown syntax supported by Accessible Surveys, including examples and best practices for formatting your survey content.
 - **[Logic Expressions](./content/logic-expression/index.md)** - A technical reference for writing logical expressions in form logic, including supported operators, functions, and syntax rules.
+- **[Platform API](/api.html)** - The interactive OpenAPI reference for the Survey Definition and survey data endpoints, with authentication through a team API key.

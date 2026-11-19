@@ -33,12 +33,12 @@ The following tracking parameters can be appended to survey links:
 
 | Parameter | Description | How it's set |
 | --------- | ----------- | ------------ |
-| `utm_campaign` | The campaign name | Set automatically from the selected campaign |
+| `utm_campaign` | Identifies the selected campaign | Set automatically from the campaign chosen in the link builder |
 | `utm_medium` | The channel type driving traffic | Selected per link from a predefined list |
 | `utm_content` | Identifies the specific link element clicked | Chosen per link: Logo Link, Text Link, or Image Link |
 | `utm_term` | Keyword or audience identifier | Free text entered per link |
 
-The `utm_source` parameter is added automatically by the distribution platform and does not need to be configured manually.
+The `utm_source` parameter is read from the survey URL when the link includes one. The link builder does not add it, so append `utm_source=…` yourself when your reporting needs it.
 
 ### Content Type Options
 
