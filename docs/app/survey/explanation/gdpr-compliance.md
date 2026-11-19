@@ -4,10 +4,6 @@ description: Practical guidance for survey creators on GDPR compliance, lawful b
 
 # GDPR Compliance and Survey Privacy
 
-::: warning Maintainer Legal Review
-This page contains informational guidance on data protection regulations and platform mechanisms. It must undergo maintainer legal review prior to production deployment and does not constitute formal legal advice.
-:::
-
 ## Introduction
 
 When conducting surveys, collecting feedback, or running consultations, survey creators frequently gather personal data from respondents. Under data privacy laws such as the **General Data Protection Regulation (GDPR)** in the European Union and the **UK GDPR**, organizations collecting personal data bear specific legal obligations.

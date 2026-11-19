@@ -4,10 +4,6 @@ description: Practical guidance on writing a clear, plain-language, GDPR-complia
 
 # Writing a Survey Privacy Policy
 
-::: warning Maintainer Legal Review
-This page contains practical guidance on drafting survey privacy notices. It must undergo maintainer legal review prior to production deployment and does not constitute formal legal advice.
-:::
-
 ## Introduction
 
 Under data protection laws like the GDPR and UK GDPR, transparency is fundamental. When you ask individuals to share their opinions, experiences, or demographic information, they have a legal right to understand who is collecting their data, why it is needed, and how it will be protected.
