@@ -1,55 +1,51 @@
 ---
-description: Explanation articles providing discursive background, architecture concepts, and design decisions for the Listserv application.
+description: Background articles for subscribers and channel administrators on how the Listserv works and why.
 ---
 
 # Listserv Explanation Articles
 
-The Explanation section provides **understanding-oriented** discursive background, architecture details, and rationale behind key engineering decisions in the Accessible Listserv application.
+The Explanation section gives the background behind the Listserv: how subscriptions, broadcasts, delivery modes and languages fit together. The articles are written for subscribers and channel administrators, not for developers.
 
-## Conceptual Deep Dives
+## Getting Oriented
 
-### 1. [Dual-Route Architecture](./dual-route-architecture.md)
-**Why co-locate Email Commands and Web Application Routes?**  
-An explanation of how email-based commands (`SUBSCRIBE`, `UNSUBSCRIBE`, `HELP`, email submissions) and web application forms co-exist to guarantee maximum accessibility across diverse member networks—especially in low-connectivity, bandwidth-constrained settings.
+### [Email Commands and the Web Application](./dual-route-architecture.md)
 
-### 2. [Broadcast Lifecycle & AI Moderation](./broadcast-lifecycle-and-moderation.md)
-**How are community submissions safely reviewed and dispatched?**  
-An overview of the XState 5 state machine transitions (`draft` → `submitted` → `moderated` → `approved`/`rejected` → `sending` → `sent`) and the automated `effect/unstable/ai` moderation engine (`gpt-4o-mini`).
+Why every subscription task works from both an email account and the web application, what each route is best at, and how the two stay in sync.
 
-### 3. [Subscriber Identity & Auth Integration](./subscriber-identity-and-auth.md)
-**How are subscribers mapped to Firebase Auth without forcing passwords?**  
-An explanation of why subscriber IDs match Firebase Auth UIDs, how double opt-in operates, and how the `accountIncomplete` custom token claim gates Firestore rules until password completion.
+### [Subscriber Accounts and Sign-In](./subscriber-identity-and-auth.md)
 
-### 4. [Mailing List & Digest Engine Architecture](./mailing-list-and-digest-architecture.md)
-**How are real-time broadcasts and weekly digests delivered efficiently?**  
-An architectural breakdown of Mailgun main and digest mailing lists (`{channelId}@mg.a11ydata.com` and `{channelId}-digest@mg.a11ydata.com`), `ScheduledJob` recurring compilation, and webhook event tracking.
+How a subscription becomes an account, why web subscriptions need confirmation, what completing an account adds, and what the subscriber states mean.
 
-### 5. [Bounce Handling & Subscriber List Cleaning](./bounce-handling-list-cleaning.md)
-**Why must bounced subscriber addresses be cleaned from mailing lists?**  
-An explanation of the bounce webhook pipeline, sender domain reputation management, automatic vs. manual subscriber deactivation, and how list hygiene prevents degraded deliverability.
+## Receiving Broadcasts
 
-### 6. [Broadcast Responses & Threaded Discussions](./broadcast-responses-threading.md)
-**How do subscriber email replies get threaded and redistributed?**  
-An overview of Reply-To subaddress correlation, flat threading in the admin broadcast grid, lightweight Mailgun-spam-header auto-moderation, and the digest mode discussion restriction.
+### [Real-Time Broadcasts and Weekly Digests](./mailing-list-and-digest-architecture.md)
 
-### 7. [Multilingual Broadcast Support](./multilingual-support.md)
-**How does the Listserv handle four languages across every touchpoint?**  
-An end-to-end walkthrough of the multilingual pipeline: channel-level language activation, broadcast locale composition, subscriber language preferences, multilingual email commands, and language-segmented analytics.
+The difference between one email per broadcast and one summary a week, what each mode allows a subscriber to do, and how vacation mode pauses delivery.
 
-### 8. [Markdown Content Format](./markdown-content-format.md)
-**Why is broadcast content composed, stored, and rendered as Markdown?**  
-An explanation of the Markdown content lifecycle — from admin composition through Firestore storage, web preview (`parse()`), email HTML conversion (`marked.parse()`), and AI translation preservation.
+### [Bounce Handling and List Cleaning](./bounce-handling-list-cleaning.md)
 
----
+What a hard bounce means, why dead addresses are removed, how automatic and manual cleaning work, and when to reactivate a subscriber.
 
-## Technical Source Code References
+### [Multilingual Support](./multilingual-support.md)
 
-For links to the backend functions, XState machines, AI moderation layers, and service definitions, see **[Explanation Code Links (REF.md)](./REF.md)**.
+How the channel activates languages, translates approved broadcasts, delivers each subscriber their preferred language, and understands email commands in several languages.
 
----
+## Sending and Discussing
+
+### [Broadcast Lifecycle and Moderation](./broadcast-lifecycle-and-moderation.md)
+
+The path from draft to sent, where human moderation fits, how community posts enter the queue, and what can still change after sending.
+
+### [Broadcast Responses and Threaded Discussions](./broadcast-responses-threading.md)
+
+How replies find their broadcast, who can take part, why digest subscribers cannot reply, and how responses are moderated.
+
+### [Markdown Content Format](./markdown-content-format.md)
+
+Why broadcasts are written in Markdown, how they become email HTML, and what translation preserves.
 
 ## Related Content
 
-- [Listserv Tutorials](../tutorial/index.md)
-- [Listserv How-To Guides](../how-to/index.md)
-- [Listserv Reference Manual](../reference/index.md)
+- [Tutorials](../tutorial/index.md): Guided walkthroughs for subscribers and administrators.
+- [How-to Guides](../how-to/index.md): Task-focused directions.
+- [Reference](../reference/index.md): The public pages, admin workspace and settings.

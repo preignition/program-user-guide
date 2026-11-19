@@ -6,6 +6,10 @@ description: How to configure listserv channel details, active languages, automa
 
 Channel settings allow channel owners and editors to configure metadata, active translation languages, automated bounce handling, submission rate limits, and user access permissions.
 
+::: info Channels are provisioned in the Customer Portal
+A Listserv channel belongs to a team. The team owns the channel, its plan quota and its organization languages, all managed in the **Customer Portal**. Configure the team and create the channel there first; Channel Settings then controls how this channel behaves.
+:::
+
 ---
 
 ## 1. Channel Configuration

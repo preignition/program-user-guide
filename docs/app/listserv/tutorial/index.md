@@ -1,25 +1,29 @@
 ---
-description: Learning-oriented tutorials for getting started with the Accessible Listserv application.
+description: Learning-oriented tutorials for subscribers and channel administrators of the Accessible Listserv application.
 ---
 
 # Listserv Tutorials
 
-Tutorials are **learning-oriented** guided lessons designed to take a beginner by the hand and build confidence using the Listserv application through practical, end-to-end execution.
+Tutorials take a beginner through a complete task. They are split by persona so each one starts from the right prerequisites.
 
-## Available Lessons
+## For subscribers
 
-### [Getting Started with Listserv](./getting-started-with-listserv.md)
-A complete hands-on tutorial covering:
+### [Take Part as a Subscriber](./for-subscribers.md)
 
-1. Subscribing to a listserv channel with double opt-in verification
-2. Sending a community post via email
-3. Moderating the submission in the administrator queue
-4. Dispatching a broadcast to active subscribers
+Subscribe by email or on the web, confirm the subscription, complete your account, read broadcasts, reply in a thread, and manage your preferences.
 
----
+**Prerequisites:** the channel address or web link, and access to your mailbox. No password is needed to receive broadcasts.
+
+## For channel administrators
+
+### [Take Charge as an Administrator](./for-administrators.md)
+
+Confirm the channel exists and is provisioned in the Customer Portal, configure its languages and roles, compose and send a first broadcast, moderate community posts, read the results, and keep the subscriber list healthy.
+
+**Prerequisites:** a channel role, a channel provisioned for the team, organization languages enabled, and at least one subscriber or team audience.
 
 ## Related Content
 
-- [How-to Guides](../how-to/index.md)
-- [Reference Section](../reference/index.md)
-- [Explanation Articles](../explanation/index.md)
+- [How-to Guides](../how-to/index.md): Task-focused directions.
+- [Reference](../reference/index.md): Public pages, admin workspace and settings.
+- [Explanation](../explanation/index.md): How subscriptions, broadcasts and delivery fit together.

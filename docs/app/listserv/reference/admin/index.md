@@ -1,135 +1,95 @@
 ---
-description: Technical reference specification for Admin Welcome, Moderation Queue, Broadcast Management, Subscriber Audit, and Analytics pages.
+description: "Reference for the admin workspace: welcome, moderation queue, broadcasts, subscribers and analytics."
 ---
 
-# Admin Pages Specification
+# Admin Pages
 
-Admin pages are drawer-based interfaces guarded by authentication and channel team access roles (`owner`, `editor`, or `moderator`).
+The admin workspace is available to channel owners, editors and moderators, depending on the section. It is reached from **Admin** in the top navigation.
 
----
-
-## 1. Admin Welcome Page (`/admin/welcome`)
-
-- **Component Tag**: `<listserv-admin-welcome>`
-- **Route Path**: `/admin/welcome`
-- **Access Level**: Signed-in channel Team Member
+## Welcome
 
 <figure>
-  <img src="./assets/admin-welcome-auto.png" alt="Admin Welcome Dashboard Screen">
-  <figcaption>Admin Welcome Screen introducing admin sections</figcaption>
+  <img src="./assets/admin-welcome-auto.png" alt="Admin welcome screen">
+  <figcaption>The admin welcome screen with links to each section.</figcaption>
 </figure>
 
-### Section Overview
+The welcome page introduces the three working areas and links to them:
 
-Provides high-level descriptions and navigation links to the main administrative tools:
+- **Broadcasts** — drafting, editing, sending and reviewing performance.
+- **Moderation** — reviewing community submissions.
+- **Subscribers** — the membership directory and delivery preferences.
 
-- **Broadcasts**: Campaign drafting, editing, and analytics
-- **Moderation**: Community post review interface
-- **Subscribers**: Subscriber membership directory
-
----
-
-## 2. Moderation Queue (`/admin/moderation`)
-
-- **Component Tag**: `<listserv-admin-moderation>`
-- **Route Path**: `/admin/moderation`
-- **Access Level**: Owner, Editor, or Moderator
+## Moderation queue
 
 <figure>
-  <img src="./assets/admin-moderation-auto.png" alt="Admin Moderation Queue Screen">
-  <figcaption>Moderation Queue displaying pending community submissions</figcaption>
+  <img src="./assets/admin-moderation-auto.png" alt="Moderation queue">
+  <figcaption>Pending community submissions awaiting review.</figcaption>
 </figure>
 
-### Grid Columns & Controls
+| Column | What it shows |
+| --- | --- |
+| **Sender** | The address the submission came from. |
+| **Subject** | The submitted title. |
+| **Submitted at** | When the post arrived, by email or web form. |
+| **Category** | The automated classification: news, event, announcement, question or spam. |
+| **Spam score** | A value from 0 to 1; higher means more likely spam. Advisory, not decisive. |
+| **Actions** | **Approve**, **Edit & Approve**, **Reject**. |
 
-| Column / Control | Data Field | Description |
-| --- | --- | --- |
-| **Sender** | `sender` / `From` | Email address of the submission author |
-| **Subject** | `content.en.subject` | Title / Subject line of the submitted post |
-| **Submitted At** | `metaData.createdAt` | Timestamp of receipt via email or web API |
-| **AI Category** | `moderation.aiCategory` | Classification tag (`news`, `event`, `announcement`, `question`, `spam`) |
-| **AI Spam Score** | `moderation.aiSpamScore` | Numerical indicator from `0.0` to `1.0` |
-| **Actions** | `<actor-actions>` | Interactive buttons: `Approve`, `Edit & Approve`, `Reject` |
+Open a row to read the full post before deciding. The category and score help triage; they do not replace reading the submission.
 
----
-
-## 3. Broadcasts Management (`/admin/broadcast`)
-
-- **Component Tag**: `<listserv-admin-broadcast>`
-- **Route Path**: `/admin/broadcast`
-- **Access Level**: Owner or Editor
+## Broadcasts
 
 <figure>
-  <img src="./assets/admin-broadcasts-auto.png" alt="Admin Broadcasts Screen">
-  <figcaption>Admin Broadcasts List with status chips and response threading</figcaption>
+  <img src="./assets/admin-broadcasts-auto.png" alt="Broadcast list">
+  <figcaption>The broadcast list with lifecycle status and response counts.</figcaption>
 </figure>
 
-### Grid Columns & Detail Views
+| Column | What it shows |
+| --- | --- |
+| **Title** | The broadcast subject. |
+| **Status** | Draft, submitted, approved, sending, sent or rejected. |
+| **Origin** | Whether an administrator wrote it or a community member submitted it. |
+| **Sent date** | When dispatch completed. |
+| **Responses** | The number of subscriber replies in the thread. |
 
-| Field / Column | Type | Description |
-| --- | --- | --- |
-| **Title / Subject** | String | Main subject line of the broadcast |
-| **Status Chip** | State Tag | Lifecycle state: `draft`, `submitted`, `approved`, `sending`, `sent`, `rejected` |
-| **Origin** | String | Source: `admin` (manual broadcast) or `user` (community submission) |
-| **Sent Date** | Timestamp | Date and time email dispatch was executed |
-| **Response Count** | Number | Number of threaded subscriber email replies attached |
-| **Row Details** | Expanded View | Renders detail editor (`<listserv-broadcast-detail>`) and performance KPIs |
+Expand a row for the broadcast editor, the language versions and the delivery and open metrics.
 
----
-
-## 4. Subscribers Management (`/admin/subscriber`)
-
-- **Component Tag**: `<listserv-admin-subscriber>`
-- **Route Path**: `/admin/subscriber`
-- **Access Level**: Owner or Editor
+## Subscribers
 
 <figure>
-  <img src="./assets/admin-subscribers-auto.png" alt="Admin Subscribers Directory Screen">
-  <figcaption>Subscriber Directory showing active subscribers and delivery lists</figcaption>
+  <img src="./assets/admin-subscribers-auto.png" alt="Subscriber directory">
+  <figcaption>The subscriber directory with status and delivery preferences.</figcaption>
 </figure>
 
-### Grid Fields
+| Column | What it shows |
+| --- | --- |
+| **Email address** | The subscribed address. |
+| **Status** | Pending, active, unsubscribed or bounced. |
+| **Delivery mode** | Real-time or weekly digest. |
+| **Vacation mode** | Whether delivery is paused without unsubscribing. |
+| **Bounce count** | Consecutive hard failures recorded for the address. |
 
-| Field | Type | Description |
-| --- | --- | --- |
-| **Subscriber UID** | Branded String | Firebase Auth UID backing the subscriber identity |
-| **Email Address** | String | Recipient mail address |
-| **Status** | Enum | Membership status: `pending`, `active`, `unsubscribed`, `bounced` |
-| **Delivery Mode** | Boolean | `digestMode: false` (Real-time list) vs `digestMode: true` (Digest list) |
-| **Vacation Mode** | Boolean | Delivery pause flag |
-| **Languages** | Array | ISO 639-1 language choices for translation dispatch |
+Administrators can change status, delivery mode and vacation mode for an individual subscriber, and can filter the list by any column. See [Managing Subscribers](../../how-to/managing-subscribers.md).
 
----
-
-## 5. Admin Analytics Dashboard (`/admin/analytics`)
-
-- **Component Tag**: `<listserv-admin-analytics>`
-- **Route Path**: `/admin/analytics`
-- **Access Level**: Owner or Editor
+## Analytics
 
 <figure>
-  <img src="./assets/admin-analytics-auto.png" alt="Admin Analytics Dashboard Screen">
-  <figcaption>Channel Analytics Dashboard displaying aggregate broadcast engagement</figcaption>
+  <img src="./assets/admin-analytics-auto.png" alt="Channel analytics overview">
+  <figcaption>Channel-level delivery and engagement metrics.</figcaption>
 </figure>
 
-<figure>
-  <img src="./assets/admin-analytics-content-auto.png" alt="Admin Analytics Detailed View">
-  <figcaption>Detailed performance overview with delivery rates, open rates, and response metrics</figcaption>
-</figure>
+| Metric | What it measures |
+| --- | --- |
+| **Total sent** | Broadcasts dispatched across the channel. |
+| **Delivery rate** | Share of dispatched messages accepted by recipient servers. |
+| **Open rate** | Share of delivered broadcasts opened, counting each recipient once per broadcast. |
+| **Responses** | Replies received across broadcasts. |
 
-### Dashboard Metrics & Performance Controls
-
-| KPI / Control | Type | Description |
-| --- | --- | --- |
-| **Total Sent** | Metric Card | Cumulative count of broadcasts dispatched across the channel |
-| **Delivery Rate** | Percentage Metric | Proportion of dispatched messages successfully delivered |
-| **Open Rate** | Percentage Metric | Percentage of delivered broadcasts opened by subscribers; each recipient counts once per broadcast |
-
----
+Metrics can be filtered by language to compare engagement between language communities. Click tracking is not collected, so there is no click or click-through figure.
 
 ## Related Content
 
-- [Public Pages Specification](../public/index.md)
-- [Channel Settings Specification](../settings/index.md)
-- [Broadcast Lifecycle Explanation](../../explanation/broadcast-lifecycle-and-moderation.md)
-- [Broadcast Responses & Threading Explanation](../../explanation/broadcast-responses-threading.md)
+- [Public Pages](../public/index.md): What subscribers see.
+- [Channel Settings](../settings/index.md): Configuration and access roles.
+- [Moderating Community Submissions](../../how-to/moderating-community-submissions.md): Reviewing a submission.
+- [Analyzing Broadcast Performance](../../how-to/analyzing-broadcast-performance.md): Reading the metrics.

@@ -1,89 +1,55 @@
 ---
-description: An architectural explanation of broadcast response threading, Reply-To subaddress correlation, and why digest subscribers cannot participate in discussions.
+description: How replies to a broadcast become a discussion thread, who can take part, and how responses are moderated.
 ---
 
-# Broadcast Responses & Threaded Discussions
+# Broadcast Responses and Threaded Discussions
 
-When a subscriber replies to a broadcast email, the Listserv application captures the response, threads it under the original broadcast, and can automatically re-distribute it to the channel. This enables **flat threaded discussions** where subscribers engage directly with announcements from their email client.
+A broadcast does not have to be a one-way announcement. Subscribers on real-time delivery can reply to the email, and the reply becomes part of a discussion attached to that broadcast.
 
----
+## How a reply finds its broadcast
 
-## 1. How Responses Are Correlated
+Every broadcast email is sent so that a reply comes back to the channel rather than to the sender's personal inbox. The platform recognizes which broadcast the reply belongs to and files it under that broadcast, even when the subject line is changed or the reply arrives days later.
 
-Every broadcast email is dispatched with two identifiers that tie replies back to the originating broadcast:
+This is why subscribers should use **Reply** on the broadcast email rather than starting a new message to the channel address. A new message is a fresh community submission, not a response to the existing announcement.
 
-- **`Reply-To` header**: `{channelId}+{broadcastId}@mg.a11ydata.com` — ensures subscriber replies are routed back through the Mailgun inbound pipeline.
-- **`Message-ID` header**: `<{broadcastId}@mg.a11ydata.com>` — provides email threading across multiple responses.
+## The thread
 
-```text
-From: "Channel Admin" <listserv@domain>
-To: channel-1@mg.a11ydata.com
-Reply-To: channel-1+abc123@mg.a11ydata.com
-Message-ID: <abc123@mg.a11ydata.com>
-Subject: [Announcement] Upcoming Regional Workshop
-```
+Responses form a **flat thread**: every reply is attached to the original broadcast, in the order received. A reply to a reply still belongs to the same thread, so the discussion stays together instead of fragmenting into sub-threads.
 
-When a subscriber hits **Reply** in their email client, the reply is forwarded to `channel-1+abc123@mg.a11ydata.com`. The Mailgun inbound route extracts `channelId` and `rootBroadcastId` from the subaddress, and the response is stored as a new document in `app/listserv/broadcast` with `ref.rootBroadcastId` pointing to the parent.
+The broadcast list shows the number of responses for each broadcast; opening its details shows the thread.
 
----
+## Who can reply
 
-## 2. Response Document Model
+- **Real-time subscribers** can reply into the thread.
+- **Digest subscribers** cannot: digest emails are read-only summaries. A digest subscriber who wants to contribute should switch to real-time delivery or use the web submission form.
+- **Channel staff** can read and take part from the admin workspace.
 
-Responses share the same Firestore collection as broadcasts, discriminated by `metaData.type`:
+## How responses are moderated
 
-| Field | Broadcast | Response |
+A response skips the full moderation queue. The platform relies on the mail provider's spam assessment because the sender is already a confirmed subscriber, and a response with a clean assessment is redistributed to the channel without a manual review.
+
+This keeps conversations quick, but it is not the same as editorial review. Channel staff should watch the response list, and can remove abusive or off-topic replies.
+
+A response is stored with the quoted text and signature stripped, so the thread shows what the person wrote rather than the whole email history. Attachments are not part of the discussion record.
+
+## Responses versus community submissions
+
+| | Broadcast response | Community submission |
 | --- | --- | --- |
-| `metaData.type` | `'broadcast'` | `'broadcast-response'` |
-| `ref.rootBroadcastId` | *(absent)* | ID of the parent broadcast |
-| `origin` | `'admin'` or `'user'` | `'subscriber'` |
-| `content` | Full multilingual body | Stripped plain-text body (quoted content and signatures removed via Mailgun `stripped-text`) |
+| **How it starts** | Reply to a broadcast email. | Email to the channel address, or the web submission form. |
+| **Where it goes** | Attached to the broadcast's thread. | The moderation queue, as a new broadcast draft. |
+| **Review** | Mail-provider spam assessment; no manual queue. | Automated assessment plus an administrator decision. |
+| **Audience** | The broadcast's thread and, when redistributed, channel subscribers. | Depends on the moderation decision. |
 
----
+If a reply is really a new announcement, ask the author to submit it as a community post instead.
 
-## 3. Lightweight Auto-Moderation
+## What subscribers should expect
 
-Unlike community submissions (which go through full AI moderation via `gpt-4o-mini`), broadcast responses follow a **lightweight spam check**:
-
-1. Mailgun attaches spam assessment headers (`X-Mailgun-Spam-Score`) to each inbound email.
-2. The response handler reads these headers directly — **no AI model invocation**.
-3. If the spam score is low (`recommendedAction === 'approve'`), the lifecycle auto-transitions from `moderated` to `sending` and the response is **re-broadcast to the channel without manual review**.
-4. If the score is ambiguous or high, the response is held in `moderated` for admin review.
-
----
-
-## 4. Flat Threading in the Admin UI
-
-Responses are displayed **threaded under their root broadcast** in the admin broadcast list grid:
-
-<figure>
-  <img src="../reference/admin/assets/admin-broadcasts-content-auto.png" alt="Broadcast Grid with Response Threads">
-  <figcaption>Admin Broadcasts grid showing response count and expandable thread details</figcaption>
-</figure>
-
-- The root broadcast row carries a denormalized **`responseCount`** column.
-- Expanding a row reveals the flat thread: all subscriber responses attached to that broadcast.
-- Replies to responses also thread back to the root (flat thread — no nested sub-threads).
-
-The admin can view, moderate, or delete individual responses from the grid row details panel.
-
----
-
-## 5. Digest Subscribers Cannot Respond
-
-Subscribers who have enabled **Weekly Digest Mode** receive a single compiled summary email once a week. Digest emails are assembled by the `ScheduledJob` digest handler and sent to the digest mailing list (`{channelId}-digest@mg.a11ydata.com`).
-
-::: warning Digest Mode Restriction
-Digest emails are **read-only summaries**. They do not carry a per-broadcast `Reply-To` subaddress and cannot be used to start or participate in a threaded discussion. Replying to a digest email does not create a broadcast response or re-distribute the message to the channel.
-:::
-
-**Rationale**: Each digest email contains multiple compiled broadcasts. Tracking which specific broadcast a subscriber is replying to from an aggregated message is technically ambiguous. Real-time subscribers receive individual emails with precise `Reply-To` addresses, enabling accurate response threading.
-
-To participate in discussions, subscribers can switch from digest to real-time delivery mode at any time.
-
----
+Replying to a broadcast shares the reply with the channel, not only with the person who sent the broadcast. The admin workspace and the broadcast page both make that clear; subscribers should be told when they join.
 
 ## Related Content
 
-- [Mailing List & Digest Engine Architecture](./mailing-list-and-digest-architecture.md)
-- [Broadcast Lifecycle & AI Moderation](./broadcast-lifecycle-and-moderation.md)
-- [Analyzing Broadcast Performance How-To](../how-to/analyzing-broadcast-performance.md)
+- [Browsing and Searching Archives](../how-to/browsing-and-searching-archives.md): Reading a broadcast and its responses.
+- [Moderating Community Submissions](../how-to/moderating-community-submissions.md): Reviewing new posts rather than replies.
+- [Real-Time Broadcasts and Weekly Digests](./mailing-list-and-digest-architecture.md): Why digest subscribers cannot reply.
+- [Broadcast Lifecycle and Moderation](./broadcast-lifecycle-and-moderation.md): Where responses sit in the broadcast flow.

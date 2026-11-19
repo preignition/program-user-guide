@@ -1,104 +1,57 @@
 ---
-description: An architectural explanation of how Markdown is used as the broadcast content format for composition, storage, rendering, and translation.
+description: Why broadcast bodies are written in Markdown, how they become email HTML, and how translations keep their formatting.
 ---
 
 # Markdown Content Format
 
-The Listserv application uses **Markdown** as the canonical format for broadcast body content — from composition through storage, preview, email rendering, and translation.
+Broadcast bodies are written in **Markdown** — the same lightweight formatting used across the platform. An administrator writes plain text with simple markers, and the platform renders it as styled HTML in the email.
 
----
+This article covers what is specific to the Listserv. For the syntax itself, see the [Markdown Reference](../../survey/reference/content/markdown/index.md) and [How to Provide Rich Formatting](../../survey/how-to/providing-rich-formatting.md).
 
-## 1. Why Markdown
+## Why Markdown
 
-Markdown was chosen as the content format because it:
+- **Content stays separate from design.** Authors write the message; the email template supplies the layout, colors and responsive structure.
+- **It survives email clients.** The rendered HTML is embedded in a template designed for Outlook, Gmail, Apple Mail and older clients.
+- **It translates cleanly.** Translations are instructed to preserve formatting, links and structure.
+- **It is portable.** A message can be drafted in any text editor and pasted into the broadcast editor.
 
-- **Separates content from presentation** — Administrators focus on writing; the template engine handles styling, WCAG colors, and responsive layout.
-- **Survives email client quirks** — Markdown is converted to semantic HTML (`marked.parse()`) at send time. The resulting HTML is embedded in Mailgun email templates designed to render consistently across Outlook, Gmail, Apple Mail, and legacy clients.
-- **Works with AI translation** — The AI translation prompt explicitly instructs the model to "preserve markdown formatting, links and tone," ensuring translated versions maintain structure.
-- **Enables offline drafting** — Administrators can compose broadcast content in any external markdown editor and paste it directly into the broadcast editor.
+## From composition to inbox
 
----
+1. **Compose.** The author enters Markdown in the broadcast editor, in the primary language and, optionally, other active languages.
+2. **Preview.** The web preview renders the Markdown the way the email will look, so formatting mistakes are visible before sending.
+3. **Translate.** When the broadcast is approved, translations preserve headings, lists, links and emphasis.
+4. **Send.** The body is converted to email-ready HTML and placed in the selected template.
 
-## 2. Content Lifecycle
+Attachments and images follow the channel's media guidance; always supply alternative text for images, because an image without it is unreadable to a screen reader.
 
-```text
-Composition          Storage              Preview                 Email Dispatch
-   (Web UI)          (Firestore)           (Web + Email)           (Mailgun)
-      │                  │                    │                        │
-      ▼                  ▼                    ▼                        ▼
-  Markdown text   ──▶  broadcast.content   ──▶  parse(body)  ──▶  marked.parse(body)
-  entered by           .body (string)         renders HTML         renders HTML
-  admin                                       in preview card      in email template
-```
+## Inbound email is converted too
 
-### Composition
+Community posts can arrive as rich HTML from a mail client. The platform converts that HTML to Markdown before storing it, so a post written in Gmail and a post written in the web editor end up in the same format and render consistently.
 
-Administrators enter the broadcast body as **plain Markdown text** in the broadcast editor. Standard Markdown syntax is supported:
+The conversion strips most of the sender's styling. That is intentional: the channel's template, not the sender's mail client, decides how the broadcast looks.
 
-```markdown
-# Heading level 1
-## Heading level 2
+## What translation preserves
 
-This is a **bold** statement and this is *italic*.
+Automatic translation keeps:
 
-- Bullet point one
-- Bullet point two
+- headings and their levels;
+- bold, italic and inline code markers;
+- links and their targets;
+- bulleted and numbered lists;
+- block quotes.
 
-[Visit our website](https://example.com)
+It does not guarantee that a translated link is appropriate for the audience, or that an idiom survives. Review translations of anything consequential.
 
-> Blockquote for important callouts
-```
+## Listserv-specific formatting notes
 
-### Storage
-
-The raw markdown string is stored directly in Firestore at `broadcast.content.{locale}.body`. No pre-processing or HTML conversion happens at write time — the markdown source is the authoritative version.
-
-### Web Preview
-
-On the client side, the broadcast email preview view imports `parse()` from `@lit-app/shared/md` to render markdown into styled HTML inside a `<vaadin-card>` with the `markdown-body` CSS class:
-
-```text
-<div class="markdown-body">
-  <!-- parse(body) converts markdown → HTML -->
-</div>
-```
-
-This gives administrators a **live WYSIWYG preview** before sending — they see exactly how the content will render in subscriber email clients.
-
-### Email Dispatch
-
-At send time, the server-side `renderBroadcastBody()` function passes the raw markdown body through `marked.parse()` to generate semantic HTML. This HTML is then injected into the selected email template (Newsletter, Data Alert, or Community) via `{{body}}` placeholder substitution.
-
----
-
-## 3. Email Ingestion (HTML → Markdown)
-
-When subscribers submit community posts via email, the inbound Mailgun pipeline may receive messages in **HTML format** (e.g., from Gmail's rich text composer). These are converted to Markdown via `htmlToMarkdown()` before storage:
-
-```text
-Inbound HTML email   ──▶  htmlToMarkdown()   ──▶  broadcast.content.en.body (Markdown)
-```
-
-This ensures that all broadcast content — whether composed in the web app or submitted via email — uses the same Markdown storage format, enabling consistent rendering and translation.
-
----
-
-## 4. Translation Preservation
-
-The AI translation prompt instructs the model to preserve markdown structure:
-
-```text
-You are a professional translator. Translate faithfully,
-preserving markdown formatting, links and tone.
-Return only the translation.
-```
-
-This means translated versions retain bold markers (`**text**`), links (`[label](url)`), headings (`# Title`), and lists — ensuring consistent rendering across all active channel languages.
-
----
+- Broadcast emails use the channel's template; Markdown decides structure, not brand colors.
+- A community post's quoted history and signature are removed before storage, so the thread shows the new content.
+- Long messages should use headings and short paragraphs; email clients render long unbroken text poorly and screen-reader users navigate by structure.
+- Tables are supported but collapse awkwardly on narrow screens. Prefer lists for short comparisons.
 
 ## Related Content
 
-- [Creating & Sending Broadcasts How-To](../how-to/creating-and-sending-broadcasts.md)
-- [Multilingual Support Explanation](./multilingual-support.md)
-- [Broadcast Lifecycle & AI Moderation](./broadcast-lifecycle-and-moderation.md)
+- [Markdown Reference](../../survey/reference/content/markdown/index.md): Supported syntax and examples.
+- [How to Provide Rich Formatting](../../survey/how-to/providing-rich-formatting.md): Formatting a message step by step.
+- [Creating and Sending Broadcasts](../how-to/creating-and-sending-broadcasts.md): Composing a broadcast.
+- [Multilingual Support](./multilingual-support.md): How translated versions are produced.

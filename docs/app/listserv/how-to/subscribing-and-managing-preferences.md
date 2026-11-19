@@ -1,5 +1,5 @@
 ---
-description: How to subscribe to a listserv channel via email commands or web forms, manage preferred languages, toggle digest mode, and pause delivery.
+description: How to subscribe to a listserv channel by email or web form, choose a language and delivery mode, complete your account, and pause delivery.
 ---
 
 # Subscribing & Managing Delivery Preferences
@@ -76,10 +76,22 @@ The web subscription form allows users to select preferred languages and deliver
 
 6. Check your inbox for a confirmation email containing a double opt-in link.
 7. Click the confirmation link to activate your subscription.
+8. Use the **complete your account** link in the same email to set a password, if you want to manage preferences in the app.
 
 ::: info Double Opt-In Security
-Unconfirmed subscriptions remain in `pending` status. Unverified accounts cannot receive broadcasts, preventing unauthorized spam signups.
+Unconfirmed subscriptions remain pending. Unverified addresses do not receive broadcasts, which prevents unauthorized signups and protects the channel's sender reputation.
 :::
+
+### Complete your subscriber account
+
+A confirmed subscription already receives broadcasts. Completing the account adds a password so you can sign in to manage it.
+
+1. Open the completion link in the confirmation email (or in the reply to an email subscription).
+2. Enter a password of at least six characters and confirm it.
+3. Select **Set Password**.
+4. Sign in with your email address and the new password.
+
+If the link fails, it may have been used already or expired. Ask the channel administrator to resend it, or subscribe again with the same address.
 
 ---
 
@@ -95,18 +107,29 @@ Unconfirmed subscriptions remain in `pending` status. Unverified accounts cannot
   <figcaption>Choosing between Individual Real-Time Emails and Weekly Digest Summaries</figcaption>
 </figure>
 
+### Pausing delivery with vacation mode
+
+Vacation mode pauses delivery without ending the subscription. You keep your preferences and your place in the channel, but receive nothing until the pause is lifted.
+
+Ask the channel administrator to set vacation mode for your address. There is no self-service switch on the subscription form, because an active subscriber record is still required for your account.
+
+Do not unsubscribe for a temporary absence: unsubscribing removes you from the channel and you must subscribe again afterwards.
+
 ### Unsubscribing
 
-You can unsubscribe at any time using any of these 3 options:
+You can unsubscribe at any time using either option:
 
-1. Click the **1-Click Unsubscribe** link located in the footer of any broadcast email.
-2. Reply to any broadcast email with `UNSUBSCRIBE` in the subject line.
-3. Access your subscriber profile in the web app and set status to `unsubscribed`.
+1. Click the **1-Click Unsubscribe** link in the footer of any broadcast email.
+2. Reply to a broadcast email with `UNSUBSCRIBE` in the subject line.
+
+Unsubscribing takes effect immediately for future sends. Ask the channel administrator if you need help, and note that a digest subscriber may need to wait for the next digest before seeing the unsubscribe link.
 
 ---
 
 ## Related Content
 
-- [Browsing & Searching Archives](./browsing-and-searching-archives.md)
-- [Dual-Route Architecture Explanation](../explanation/dual-route-architecture.md)
-- [Subscriber Identity & Auth Explanation](../explanation/subscriber-identity-and-auth.md)
+- [Subscribing and Managing Delivery Preferences](./subscribing-and-managing-preferences.md)
+- [Email & Web Routes Explanation](../explanation/dual-route-architecture.md)
+- [Subscriber Accounts and Sign-In](../explanation/subscriber-identity-and-auth.md)
+- [Real-Time Broadcasts and Weekly Digests](../explanation/mailing-list-and-digest-architecture.md)
+- [Managing Subscribers](./managing-subscribers.md)

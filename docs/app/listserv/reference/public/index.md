@@ -1,77 +1,66 @@
 ---
-description: Technical reference specification for the public Broadcast Archive and Subscription pages.
+description: Reference for the public broadcast archive, subscription form and subscriber submission pages.
 ---
 
-# Public Pages Specification
+# Public Pages
 
-Public pages are accessible without authentication to allow stakeholders to view sent announcements and subscribe to channel updates.
+Public pages are available without signing in, so anyone with the channel link can read sent announcements and subscribe. Some actions require an account or a channel role.
 
----
+## Broadcast archive
 
-## 1. Broadcast Archive Page (`/broadcast`)
-
-- **Component Tag**: `<a11y-listserv-broadcast>`
-- **Route Path**: `/broadcast` (Default fallback route)
-- **Access Level**: Public (unauthenticated)
+The archive lists the channel's sent broadcasts, newest first, with a title, date, short summary, category and response count.
 
 <figure>
-  <img src="./assets/broadcast-archive-auto.png" alt="Public Broadcast Archive Screen">
-  <figcaption>Public Broadcast Archive Page showing sent announcements feed</figcaption>
+  <img src="./assets/broadcast-archive-auto.png" alt="Public broadcast archive">
+  <figcaption>The public broadcast archive with sent announcements.</figcaption>
 </figure>
 
-### UI Elements & Fields
+- Select a row to read the full broadcast and its discussion thread.
+- Sort by title, date or category, and search within the list.
+- **New Broadcast** appears only for channel staff and signed-in subscribers of the channel.
+- A **Subscribe** link is always available in the top navigation.
 
-| Element / Field | Type | Description |
+### Public and private channels
+
+A **public** channel's archive is readable by anyone. A **private** channel shows a notice instead: signed-out visitors are asked to log in, and signed-in visitors who are not subscribers are asked to subscribe.
+
+The channel's privacy notice, when configured, appears above the archive.
+
+## Subscription form
+
+<figure>
+  <img src="./assets/subscribe-auto.png" alt="Public subscription form">
+  <figcaption>The public subscription form.</figcaption>
+</figure>
+
+| Field | Required | What it does |
 | --- | --- | --- |
-| **Header Title** | Heading | Display title for the channel (e.g. "Broadcasts for Community Forum") |
-| **Channel Subtitle** | Paragraph | Instructions explaining row clicks to view full broadcasts and threaded responses |
-| **New Broadcast Action** | Button | `+ New Broadcast` button triggering broadcast composition for authorized users |
-| **Broadcast Table** | Data Table | Interactive list of sent channel broadcasts with column sorting and search |
-| **Title Column** | String | Subject/title line of the broadcast |
-| **Created Column** | Date | Formatted creation date (e.g. `Jul 28, 2026`) |
-| **Summary Column** | Text | 1-2 sentence overview/excerpt of the broadcast content |
-| **Category Column** | Badge | Categorization tag (`news`, `other`, `event`, `announcement`, `question`) |
-| **Responses Column** | Counter | Number of threaded subscriber replies attached to the broadcast |
-| **Subscribe Link** | Navigation | Top-bar prominent navigation link to `/subscribe` |
+| **Email address** | Yes | The address that will receive broadcasts; must be valid. Web subscriptions require confirmation. |
+| **Preferred language** | Yes | A language the channel has activated; shown in its own language name. |
+| **Weekly digest** | No | Off by default (real-time delivery). On receives one summary email a week instead. |
 
-::: info Channel Visibility: Public vs. Private
+Selecting **Subscribe** starts the confirmation flow for web subscriptions. The page also shows the channel's privacy notice, covering archiving, indexing and how to unsubscribe.
 
-- **Public Channels:** The broadcast archive is accessible to unauthenticated visitors. Sent announcements can be browsed and searched publicly.
-- **Private Channels:** Archive access is restricted to registered channel subscribers and team members. Unauthenticated visitors are prompted to subscribe or sign in before viewing archive content.
-:::
+The form shows an error when the address is malformed, the language is not active, or the channel cannot accept the subscription. Confirmation emails can take a few minutes; check spam before retrying.
 
----
+## Subscriber web submissions
 
-## 2. Public Subscription Page (`/subscribe`)
+A signed-in subscriber of the channel can contribute a post from the web application instead of by email.
 
-- **Component Tag**: `<a11y-listserv-subscribe>`
-- **Route Path**: `/subscribe`
-- **Access Level**: Public (unauthenticated)
+1. Sign in and open the channel.
+2. Select **New Broadcast** in the archive, or open the submission form directly.
+3. Write a subject and body in Markdown and choose the primary language.
+4. Submit.
 
-<figure>
-  <img src="./assets/subscribe-auto.png" alt="Public Subscription Form">
-  <figcaption>Public Subscription Page with email and language controls</figcaption>
-</figure>
+The submission becomes a draft in the channel's moderation queue, exactly like an email submission. The subscriber sees its progress in the app, and receives the same acknowledgment and moderation outcome as an email author.
 
-<figure>
-  <img src="./assets/subscribe-full-auto.png" alt="Full Public Subscription Form View">
-  <figcaption>Full Subscription Page showing delivery mode options and privacy disclaimer</figcaption>
-</figure>
+Submissions are rate-limited per subscriber. A signed-out visitor, or a signed-in person who is not subscribed to this channel, cannot submit; the server checks the same condition as the interface.
 
-### UI Form Fields
-
-| Field Name | Component | Required | Validation / Description |
-| --- | --- | --- | --- |
-| **Email Address** | `<lapp-text-field>` | Yes | Valid email string; triggers double opt-in confirmation message |
-| **Preferred Language** | `<lapp-choice-radio>` | Yes | ISO 639-1 code selection from channel's `activeLanguages` list |
-| **Weekly Digest Toggle** | `<lapp-checkbox-field>` | No | Boolean flag (`digestMode`). Default: `false` (real-time delivery) |
-| **Subscribe Button** | `<md-filled-button>` | — | Invokes `SubscriptionService.subscribe` cloud endpoint |
-| **Privacy Warning** | Static Text | — | Legal notice on archiving, indexing, and unsubscription options |
-
----
+Unlike an email submission, a web submission does not depend on the subscriber's mail client preserving formatting: the body is stored as written.
 
 ## Related Content
 
-- [Admin Pages Specification](../admin/index.md)
-- [Channel Settings Specification](../settings/index.md)
-- [Subscribing & Preferences How-To](../../how-to/subscribing-and-managing-preferences.md)
+- [Subscribing and Managing Delivery Preferences](../../how-to/subscribing-and-managing-preferences.md): The subscription steps in detail.
+- [Browsing and Searching Archives](../../how-to/browsing-and-searching-archives.md): Reading and searching sent broadcasts.
+- [Admin Pages](../admin/index.md): What channel staff see after a submission.
+- [Channel Settings](../settings/index.md): Public/private visibility and privacy notice.

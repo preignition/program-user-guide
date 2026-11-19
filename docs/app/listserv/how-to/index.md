@@ -1,57 +1,50 @@
 ---
-description: Goal-oriented how-to guides for completing specific tasks in the Accessible Listserv application.
+description: Goal-oriented how-to guides for subscribers and channel administrators of the Accessible Listserv application.
 ---
 
 # Listserv How-to Guides
 
-How-to guides are **goal-oriented recipes** that provide clear, step-by-step directions to solve specific real-world tasks in the Listserv platform.
+How-to guides are recipes: each one solves a specific task for a subscriber or a channel administrator.
 
-## Task Recipes
+## For subscribers
 
 ### Subscription & Preferences
 
-- **[Subscribing & Managing Preferences](./subscribing-and-managing-preferences.md)**  
-  Subscribe via web or email commands (`SUBSCRIBE`/`UNSUBSCRIBE`), set preferred languages, toggle weekly digest mode, or enable vacation pause.
+- **[Subscribing & Managing Preferences](./subscribing-and-managing-preferences.md)**
+  Subscribe by email command or web form, choose a language and delivery mode, complete your account, pause delivery, or unsubscribe.
 
-### Browsing & Search
+### Reading & Taking Part
 
-- **[Browsing & Searching Archives](./browsing-and-searching-archives.md)**  
-  Explore past broadcast archives, filter announcements by keyword or language, and understand public privacy disclosures.
+- **[Browsing & Searching Archives](./browsing-and-searching-archives.md)**
+  Find past broadcasts, read a thread, and understand what public and private channels show.
 
-### Broadcast Management
+## For channel administrators
 
-- **[Creating & Sending Broadcasts](./creating-and-sending-broadcasts.md)**  
-  Draft multilingual email broadcasts, select layout templates (Newsletter, Data Alert), attach files with WCAG alt-text, and trigger dispatch.
-- **[Composing Multilingual Broadcasts](./composing-multilingual-broadcasts.md)**  
-  Write broadcast content in multiple languages, manage locale versions, and use the translation pipeline.
+### Subscribers
 
-### Content Moderation
+- **[Managing Subscribers](./managing-subscribers.md)**
+  Find and filter subscribers, change delivery or vacation mode, and reactivate a bounced or unsubscribed address safely.
+- **[Importing a Team Audience](./importing-a-team-audience.md)**
+  Seed a channel from a team audience, review the preview, accept the warranty, and read the import history.
 
-- **[Moderating Community Submissions](./moderating-community-submissions.md)**  
-  Review pending community posts in the Moderation Queue, inspect AI moderation categories and spam scores, and Approve, Edit & Approve, or Reject.
+### Broadcasts
 
-### Analytics & Reporting
+- **[Creating & Sending Broadcasts](./creating-and-sending-broadcasts.md)**
+  Compose, preview, approve and send an announcement.
+- **[Composing Multilingual Broadcasts](./composing-multilingual-broadcasts.md)**
+  Write and review language versions, and understand fallback behavior.
+- **[Moderating Community Submissions](./moderating-community-submissions.md)**
+  Review the queue, read the automated assessment, and approve, edit or reject.
 
-- **[Analyzing Broadcast Performance](./analyzing-broadcast-performance.md)**  
-  Track delivery rates, open metrics, and subscriber responses.
+### Analytics & Settings
 
-### Administration & Settings
-
-- **[Configuring Channel Settings](./configuring-channel-settings.md)**  
-  Configure channel metadata, active translation languages, automatic bounce cleaning thresholds, rate limits, and team access roles.
-- **[Importing a Team Audience](./importing-a-team-audience.md)**  
-  Seed a channel from a team Audience, review the preview, accept the consent warranty, resume a long run, and read the import history.
-
----
-
-## Technical Source Code References
-
-For links to the underlying lit components, Effect services, and schemas supporting these features, see **[How-To Source References (REF.md)](./REF.md)**.
-
----
+- **[Analyzing Broadcast Performance](./analyzing-broadcast-performance.md)**
+  Read delivery and open rates, response counts, and language-segmented metrics.
+- **[Configuring Channel Settings](./configuring-channel-settings.md)**
+  Configure identity, active languages, bounce cleaning, rate limits and access roles.
 
 ## Related Content
 
-- [Listserv Tutorials](../tutorial/index.md)
-- [Listserv Reference Specifications](../reference/index.md)
-- [Listserv Explanations](../explanation/index.md)
+- [Listserv Tutorials](../tutorial/index.md): Complete walkthroughs by persona.
+- [Listserv Reference](../reference/index.md): Public pages, admin workspace and settings.
+- [Listserv Explanations](../explanation/index.md): The concepts behind the tasks.

@@ -1,120 +1,61 @@
 ---
-description: An architectural explanation of the multilingual broadcast pipeline, subscriber language preferences, email command localization, and language-segmented analytics.
+description: How a channel serves subscribers in several languages, from active language settings to translated broadcasts and email commands.
 ---
 
-# Multilingual Broadcast Support
+# Multilingual Support
 
-The Listserv application is designed for **multilingual member networks**, supporting English, French, Portuguese, and Arabic across every interaction surface — from subscriber onboarding through email dispatch to analytics.
+A channel can serve members who read different languages. The Listserv translates approved broadcasts into the languages the channel has activated, delivers each subscriber the version in their preferred language, and understands subscription commands in several languages.
 
----
+## Active languages
 
-## 1. End-to-End Language Flow
+Channel administrators choose which languages the channel uses in **Channel Settings → Active Languages**. The list comes from the languages the organization has enabled in the Customer Portal, so a language must be enabled at the organization level before a channel can activate it.
 
-```text
-Subscriber selects       ───▶   Preferences stored in       ───▶   Broadcast dispatched
-preferred language              standard UserPreference             in subscriber's language
-(on subscribe form)             (`user/{uid}/private/preference`)
-```
+Only activated languages are offered on the subscription form and translated at send time. Activating a language is a commitment: approved broadcasts are expected to reach subscribers in it.
 
-Language flows through four distinct layers:
+## Primary language and translations
 
-1. **Configuration** — Channel owner enables active languages (`/settings/language`)
-2. **Composition** — Admin selects a `primaryLanguage` for each broadcast and composes multilingual body content
-3. **Translation** — When a broadcast enters `approved` state, translations are generated or verified for each active channel language
-4. **Delivery** — The send engine selects the correct language version per subscriber by matching the subscriber's preferred language against available translations
+Every broadcast has a **primary language** — the language its author wrote it in. From there:
 
----
+- an author can write versions in other active languages by hand;
+- the platform translates the broadcast into the remaining active languages when it is approved;
+- if a translation fails, the broadcast is sent in the primary language rather than held back.
 
-## 2. Per-Channel Active Languages
+Review automatic translations before relying on them for consequential announcements. Names, dates, numbers and legal wording are where machine translation most often needs a human edit.
 
-Channel owners control which languages are active via **Channel Settings > Active Languages** (`/settings/language`). Languages available for activation are sourced from the customer's global language configuration in **Customer Settings**.
+## Subscriber language preference
 
-<figure>
-  <img src="../reference/settings/assets/settings-language-auto.png" alt="Active Languages Configuration">
-  <figcaption>Managing active languages for automated broadcast translation</figcaption>
-</figure>
+Subscribers choose a preferred language when they subscribe, from the channel's active languages. The form shows each language in its own name — "Français", not "French" — so people recognize their language without translating the interface.
 
-When a language is enabled:
+At send time the platform picks the broadcast version matching the subscriber's preference. If that version is missing, the primary language is used.
 
-- Approved broadcasts entering the `approved` state trigger translation into that target language
-- A dedicated **Mailgun mailing list** is maintained per-language: `{channelId}-{lang}@mg.a11ydata.com`
-- Subscribers with that preferred language are automatically added to the corresponding language list
+A subscriber can change their preference by completing their account and updating settings, or by asking the channel administrator.
 
----
+## Email commands in each language
 
-## 3. Broadcast Composition & Primary Language
+The email route works in the channel's languages too. Subscribe, unsubscribe and help are recognized in English, French, Portuguese and Arabic; the exact words are in [Subscribing and Managing Delivery Preferences](../how-to/subscribing-and-managing-preferences.md).
 
-When creating a broadcast, the administrator selects a **Primary Language** — the language the content is originally composed in. Additional language versions are provided either:
+Automated replies — confirmation, acknowledgment, error — are written in the language the command was sent in, falling back to the channel's primary language.
 
-- **Manually**: The admin writes content in multiple languages directly in the broadcast editor (`locale/{lang}` fields)
-- **Automatically**: The translation pipeline generates versions for each active channel language
+## Language and delivery
 
-```text
-broadcast.content = {
-  "en": { subject: "Upcoming Workshop", body: "Join us for..." },
-  "fr": { subject: "Atelier à venir",  body: "Rejoignez-nous pour..." },
-  "pt": { subject: "Workshop próximo", body: "Junte-se a nós para..." },
-  "ar": { subject: "ورشة عمل قادمة",    body: "انضموا إلينا..." },
-}
-```
+Language and delivery mode are independent choices. A French-speaking digest subscriber receives the French version in the weekly digest; an Arabic-speaking real-time subscriber receives the Arabic version as each broadcast is sent.
 
-If automatic translation fails for a specific language, the system falls back to the `primaryLanguage` version so delivery proceeds without interruption.
+Vacation mode pauses both.
 
----
+## Reading performance by language
 
-## 4. Subscriber Language Preferences
+Broadcast analytics can be filtered by language, so a channel can see whether delivery and opening differ between its language communities. That is often the first sign that a translation is not reaching people well, or that a language was activated without anyone available to review it.
 
-### Language Selector on Subscribe
+## Practical guidance
 
-Subscribers select their preferred language during signup:
-
-<figure>
-  <img src="../reference/public/assets/subscribe-full-auto.png" alt="Language Selector in Subscribe Form">
-  <figcaption>Language selection radio group on the public subscription form</figcaption>
-</figure>
-
-Available languages are filtered to the channel's `activeLanguages`. Each option displays the **language-native name** (e.g., "Français" instead of "French") via the `languageNative` lookup table.
-
-The selection is stored as an ISO 639-1 code (`en`, `fr`, `pt`, `ar`) in a standardized **UserPreference** document (`user/{uid}/private/preference`) — decoupled from listserv-specific data to enable reuse across the platform.
-
-### Language Matching at Send Time
-
-During dispatch, the send engine:
-
-1. Reads each subscriber's preferred language from **UserPreference**
-2. Selects the matching locale version from `broadcast.content`
-3. Falls back to `broadcast.primaryLanguage` if the subscriber's language is unavailable
-4. Sends via the appropriate per-language Mailgun mailing list
-
----
-
-## 5. Multilingual Email Commands
-
-Email-based subscription commands (`SUBSCRIBE`, `UNSUBSCRIBE`, `HELP`) are recognized in all four supported languages, with case-insensitive matching on the subject line or first line of the body:
-
-| Command | English | French | Portuguese | Arabic |
-| --- | --- | --- | --- | --- |
-| **Subscribe** | `SUBSCRIBE` | `INSCRIRE` | `INSCREVER` | `اشتراك` |
-| **Unsubscribe** | `UNSUBSCRIBE` / `SIGNOFF` | `DESINSCRIRE` | `DESCADASTRAR` | `إلغاء الاشتراك` |
-| **Help** | `HELP` | `AIDE` | `AJUDA` | `مساعدة` |
-
-Automated reply emails (confirmation, acknowledgment, error) are also composed in the matched language or fall back to the channel's primary language.
-
----
-
-## 6. Language-Segmented Analytics
-
-Per-broadcast performance metrics are filterable by language:
-
-- **Delivery Rate** per language list (sent × delivered for `{channelId}-fr@mg.a11ydata.com` vs. `{channelId}-ar@mg.a11ydata.com`)
-- **Open Rate** and **Click Rate** segmented by subscriber language preference
-- Enables comparison of engagement across language communities
-
----
+- Activate only languages the channel can actually maintain; an unreviewed machine translation is worse than an honest primary-language broadcast.
+- Keep the primary language consistent across broadcasts so translation memory and reviewer expectations stay stable.
+- Tell subscribers which languages are available before they join.
+- Test one broadcast in every active language before a wide send.
 
 ## Related Content
 
-- [Dual-Route Architecture Explanation](./dual-route-architecture.md)
-- [Mailing List & Digest Engine Explanation](./mailing-list-and-digest-architecture.md)
-- [Subscribing & Preferences How-To](../how-to/subscribing-and-managing-preferences.md)
-- [Configuring Channel Settings How-To](../how-to/configuring-channel-settings.md)
+- [Composing Multilingual Broadcasts](../how-to/composing-multilingual-broadcasts.md): Writing and reviewing the language versions.
+- [Configuring Channel Settings](../how-to/configuring-channel-settings.md): Activating languages for the channel.
+- [Subscribing and Managing Delivery Preferences](../how-to/subscribing-and-managing-preferences.md): Choosing a language as a subscriber.
+- [Analyzing Broadcast Performance](../how-to/analyzing-broadcast-performance.md): Language-segmented metrics.

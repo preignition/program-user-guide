@@ -1,24 +1,24 @@
 # Reference
 
-## Dual-Route Architecture - dual-route-architecture.md
+## Email & Web Routes - dual-route-architecture.md
 
 - [MailgunServiceLive.ts](../../../../../app/app-listserv/functions/src/service/MailgunServiceLive.ts): Inbound mail processor detecting email command keywords and converting community messages into draft broadcasts.
 - [emailCommands.ts](../../../../../app/app-listserv/functions/src/service/emailCommands.ts): Multilingual command parser detecting keywords (`SUBSCRIBE`, `UNSUBSCRIBE`, `HELP`) across English, French, Portuguese, and Arabic.
 - [emailCommandHandlers.ts](../../../../../app/app-listserv/functions/src/service/emailCommandHandlers.ts): Parser mapping multilingual keywords across English, French, Portuguese, and Arabic.
 
-## Broadcast Lifecycle & AI Moderation - broadcast-lifecycle-and-moderation.md
+## Broadcast Lifecycle & Moderation - broadcast-lifecycle-and-moderation.md
 
 - [broadcast-lifecycle.ts](../../../../../app/app-listserv/functions/src/machine/broadcast-lifecycle.ts): State machine defining lifecycle states (`draft`, `submitted`, `moderated`, `approved`, `sending`, `sent`, `rejected`, `error`).
 - [moderate.ts](../../../../../app/app-listserv/functions/src/machine/moderate.ts): AI content moderation actor for classification and spam scoring.
 - [handlers.ts](../../../../../app/app-listserv/actionApi/src/handlers.ts): Action API handlers registering rate limiting and lifecycle transitions.
 
-## Subscriber Identity & Auth Integration - subscriber-identity-and-auth.md
+## Subscriber Accounts & Sign-In - subscriber-identity-and-auth.md
 
 - `app/app-listserv/docs/adr/0001-subscriber-firebase-auth-identity.md`: Architectural Decision Record coupling subscriber IDs with Firebase Auth UIDs.
 - [SubscriptionServiceLive.ts](../../../../../app/app-listserv/functions/src/service/SubscriptionServiceLive.ts): Double opt-in verification service creating Firebase Auth users with `accountIncomplete` claims.
 - `app/app-listserv/firestore.rules`: Firestore security rules gating write permissions.
 
-## Mailing List & Digest Engine Architecture - mailing-list-and-digest-architecture.md
+## Real-Time Broadcasts & Digests - mailing-list-and-digest-architecture.md
 
 - [send.ts](../../../../../app/app-listserv/functions/src/machine/send.ts): Broadcast dispatch program sending payloads to channel Mailgun mailing lists.
 - [MailServiceLive.ts](../../../../../app/app-listserv/functions/src/service/MailgunServiceLive.ts): HTTP client communicating with Mailgun API for mailing lists and member management.
@@ -40,3 +40,17 @@
 - [renderBroadcastBody.ts](../../../../../app/app-listserv/functions/src/machine/renderBroadcastBody.ts): Server-side conversion of Markdown to HTML for email template injection.
 - [broadcast-email-view.ts](../../../../../app/app-listserv/src/renderer/broadcast-email-view.ts): Client-side broadcast preview for live rendering.
 - [htmlToMarkdown.ts](../../../../../app/app-listserv/functions/src/service/htmlToMarkdown.ts): Conversion utility stripping HTML tags and converting rich-text HTML emails to Markdown.
+
+## User-facing internals moved out of Explanation
+
+- `app/app-listserv/notes/explanation-internals.md`: The implementation detail (storage, lifecycle machine, mail transport, claims, headers) that the Explanation pages no longer expose.
+
+## Managing Subscribers - ../how-to/managing-subscribers
+
+- `app/app-listserv/src/entity/SubscriberE.ts`: Subscriber grid, status/digest/vacation fields and edit actions.
+- `app/app-listserv/src/page/admin/subscriber.ts`: Admin subscriber directory.
+
+## Subscriber web submissions - ../reference/public
+
+- `app/app-listserv/src/page/broadcast.ts`: Public archive, New Broadcast gate and public/private visibility.
+- `app/app-listserv/src/page/admin/broadcast-detail.ts`: Broadcast composition shared by staff and the subscriber submission route.

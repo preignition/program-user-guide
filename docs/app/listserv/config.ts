@@ -29,7 +29,8 @@ function getSidebar() {
       link: 'index',
       base: `${root}/tutorial/`,
       items: [
-        { text: 'Getting Started with Listserv', link: 'getting-started-with-listserv.md' }
+        { text: 'For subscribers', link: 'for-subscribers.md' },
+        { text: 'For administrators', link: 'for-administrators.md' }
       ]
     },
     {
@@ -38,6 +39,7 @@ function getSidebar() {
       base: `${root}/how-to/`,
       items: [
         { text: 'Subscribing & Preferences', link: 'subscribing-and-managing-preferences.md' },
+        { text: 'Managing Subscribers', link: 'managing-subscribers.md' },
         { text: 'Browsing Archives', link: 'browsing-and-searching-archives.md' },
         { text: 'Creating & Sending Broadcasts', link: 'creating-and-sending-broadcasts.md' },
         { text: 'Composing Multilingual Broadcasts', link: 'composing-multilingual-broadcasts.md' },
@@ -62,10 +64,10 @@ function getSidebar() {
       link: 'index',
       base: `${root}/explanation/`,
       items: [
-        { text: 'Dual-Route Architecture', link: 'dual-route-architecture.md' },
-        { text: 'Broadcast Lifecycle & AI Moderation', link: 'broadcast-lifecycle-and-moderation.md' },
-        { text: 'Subscriber Auth & Custom Claims', link: 'subscriber-identity-and-auth.md' },
-        { text: 'Mailing Lists & Digest Engine', link: 'mailing-list-and-digest-architecture.md' },
+        { text: 'Email & Web Routes', link: 'dual-route-architecture.md' },
+        { text: 'Broadcast Lifecycle & Moderation', link: 'broadcast-lifecycle-and-moderation.md' },
+        { text: 'Subscriber Accounts & Sign-In', link: 'subscriber-identity-and-auth.md' },
+        { text: 'Real-Time Broadcasts & Digests', link: 'mailing-list-and-digest-architecture.md' },
         { text: 'Bounce Handling & List Cleaning', link: 'bounce-handling-list-cleaning.md' },
         { text: 'Broadcast Responses & Threading', link: 'broadcast-responses-threading.md' },
         { text: 'Multilingual Support', link: 'multilingual-support.md' },

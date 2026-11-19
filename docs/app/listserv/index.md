@@ -55,7 +55,8 @@ Follow our guided hands-on walkthrough to learn how to subscribe to a channel, s
 **Need to complete a specific task?**  
 Step-by-step recipes covering:
 
-- [Subscribing & Preferences](./how-to/subscribing-and-managing-preferences.md) — Web forms, email commands, and delivery settings
+- [Subscribing & Preferences](./how-to/subscribing-and-managing-preferences.md) — Web forms, email commands, account completion, and delivery settings
+- [Managing Subscribers](./how-to/managing-subscribers.md) — Filtering, delivery and vacation mode, and reactivating addresses
 - [Browsing Archives](./how-to/browsing-and-searching-archives.md) — Public broadcast search and viewing
 - [Creating & Sending Broadcasts](./how-to/creating-and-sending-broadcasts.md) — Composing, formatting, and dispatching announcements
 - [Composing Multilingual Broadcasts](./how-to/composing-multilingual-broadcasts.md) — Automatic language detection and translation
@@ -76,14 +77,14 @@ Factual descriptions of all application interfaces and data models:
 **Want to understand the architectural design decisions?**  
 Discursive background on core engineering choices:
 
-- **[Dual-Route Architecture](./explanation/dual-route-architecture.md):** Why both Email commands and Web app routes coexist
-- **[Broadcast Lifecycle & AI Moderation](./explanation/broadcast-lifecycle-and-moderation.md):** State machines, automated classification, and dispatch workflows
-- **[Subscriber Identity & Auth](./explanation/subscriber-identity-and-auth.md):** Firebase Auth UID integration and `accountIncomplete` claims
-- **[Mailing Lists & Digest Engine](./explanation/mailing-list-and-digest-architecture.md):** Mailgun mailing list infrastructure & digest dispatch
-- **[Bounce Handling & List Cleaning](./explanation/bounce-handling-list-cleaning.md):** Handling delivery failures and deactivating stale subscribers
-- **[Broadcast Responses & Threading](./explanation/broadcast-responses-threading.md):** Managing community reply threads
-- **[Multilingual Support](./explanation/multilingual-support.md):** Language detection and automatic translation pipeline
-- **[Markdown Content Format](./explanation/markdown-content-format.md):** Inbound and outbound Markdown processing for email templates
+- **[Email & Web Routes](./explanation/dual-route-architecture.md):** Why both email commands and the web app exist, and how they stay in sync
+- **[Broadcast Lifecycle & Moderation](./explanation/broadcast-lifecycle-and-moderation.md):** From draft to sent, and where human review fits
+- **[Subscriber Accounts & Sign-In](./explanation/subscriber-identity-and-auth.md):** Confirmation, account completion, and what each subscriber state means
+- **[Real-Time Broadcasts & Digests](./explanation/mailing-list-and-digest-architecture.md):** The two delivery modes, weekly summaries, and vacation pauses
+- **[Bounce Handling & List Cleaning](./explanation/bounce-handling-list-cleaning.md):** Delivery failures, automatic cleaning and reactivation
+- **[Broadcast Responses & Threading](./explanation/broadcast-responses-threading.md):** How replies form a discussion thread
+- **[Multilingual Support](./explanation/multilingual-support.md):** Active languages, translation and per-subscriber language delivery
+- **[Markdown Content Format](./explanation/markdown-content-format.md):** Why broadcasts are Markdown and how they become email HTML
 
 ---
 

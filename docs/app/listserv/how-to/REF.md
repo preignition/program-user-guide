@@ -41,3 +41,8 @@
 - [language.ts](../../../../../app/app-listserv/src/page/settings/language.ts): Web component managing active language selection switches.
 - [bounce.ts](../../../../../app/app-listserv/src/page/settings/bounce.ts): Web component managing bounce thresholds and manual list cleaning triggers.
 - [user.ts](../../../../../app/app-listserv/src/page/settings/user.ts): Web component managing channel team roles and membership permissions.
+
+## Managing subscribers - managing-subscribers
+
+- `app/app-listserv/src/entity/SubscriberE.ts`: Subscriber status, digest mode and vacation mode editing.
+- `app/app-listserv/src/page/admin/subscriber.ts`: Subscriber directory, filters and grid.

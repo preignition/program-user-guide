@@ -1,94 +1,64 @@
 ---
-description: An architectural explanation of why the Listserv application provides both email-based command routes and a web application interface.
+description: Why every Listserv task works from both an email account and an accessible web application, and what each route is best at.
 ---
 
-# Dual-Route Architecture: Email Commands & Web Application
+# Email Commands and the Web Application
 
-The Accessible Listserv application is built on a **Dual-Route Architecture**: a co-equal design where every core subscription and submission feature is accessible either through standard **Email Commands** or through an accessible **Web Application**.
+The Listserv gives every core task two routes: **email** and the **web application**. You can subscribe, unsubscribe, get help, and contribute a post from either one. The routes are equal by design, not one as a fallback for the other.
 
-```text
-                           ┌────────────────────────┐
-                           │   Inbound Mailgun      │
-                           │   Forwarding Route     │
-                           └───────────┬────────────┘
-                                       │
-                        ┌──────────────┴──────────────┐
-                        │                             │
-               [Email Commands]              [Email Submissions]
-               SUBSCRIBE/UNSUB               Create Draft Broadcast
-                        │                             │
-                        └──────────────┬──────────────┘
-                                       │
-                                       ▼
-┌────────────────────────┐  Unified Firestore Data Tier   ┌────────────────────────┐
-│  Web Application Route │ ─────────────────────────────▶ │   App/Listserv Data    │
-│  Lit / Vaadin / WCAG   │                                │  Broadcasts & Subs     │
-└────────────────────────┘                                └────────────────────────┘
-```
+## Why two routes
 
----
+A listserv is often the only channel that reaches everyone in a network. Members may work from low-bandwidth regions, use feature phones with basic mail clients, or rely on assistive technology that is already well integrated with their email program. A web form — however accessible — still requires a browser session, a stable connection and JavaScript.
 
-## Why Dual Route? Context & Problem Statement
+Email also meets people where they already are. A blind advocate who reads mail in a screen reader does not need to learn a new web interface to join a channel. An administrator who needs rich composition, translation review and delivery analytics gets a full workspace in the browser.
 
-Organizations using the Listserv platform often coordinate communications across geographically dispersed member networks and diverse user communities operating under highly disparate technological and infrastructural constraints:
+Having both means a subscriber is never forced onto a route that does not work for them, and an administrator is never forced to do administrative work by email.
 
-1. **Bandwidth & Connectivity Barriers**: Users in low-connectivity regions frequently experience intermittent internet access, high mobile data tariffs, or operate on feature phones with legacy email clients that cannot run modern JavaScript web applications.
-2. **Accessibility Barriers**: Web forms—even when accessible—require active browser sessions, network navigation, and form validation. Standard email interfaces are already deeply integrated into assistive technology workflows (screen readers, braille displays) used daily by blind and visually impaired advocates.
-3. **Administrative Complexity**: Channel administrators require rich text composition, accessible email templates, automated virus scanning for attachments, AI moderation tools, translation management, and detailed delivery analytics.
+## What the email route does
 
----
+Send a message to the channel address. The command goes in the subject line or the first line of the body, in any of the channel's active languages.
 
-## The Dual Routes Explained
+| Task | What you send |
+| --- | --- |
+| Join | the subscribe command |
+| Leave | the unsubscribe command |
+| Get help | the help command |
+| Contribute a post | an ordinary message to the channel address |
 
-### Route 1: Email Command Route (Low-Bandwidth / Zero-JS)
+Because the message comes from your own address, it proves you control that mailbox. Email subscriptions are therefore activated immediately; there is no second confirmation click. A contribution is received as a draft and enters the channel's moderation flow like any other submission.
 
-The Email Command route processes incoming emails sent to channel addresses (e.g., `channel-1@mg.a11ydata.com`).
+The exact commands in each language are listed in [Subscribing and Managing Delivery Preferences](../how-to/subscribing-and-managing-preferences.md).
 
-#### How Inbound Email Commands Work:
+## What the web application does
 
-1. **Mailgun Forwarding**: An inbound webhook forwards raw email payloads to `POST /app/listserv/mail`.
-2. **Command Parsing**: The parser inspects the **subject line** (or first line of the body) for command keywords matching English, French, Portuguese, or Arabic:
+The web application offers the same subscription tasks with more control:
 
-| Command | Recognized Keywords (Case-Insensitive) | System Action |
-| --- | --- | --- |
-| **SUBSCRIBE** | `SUBSCRIBE`, `INSCRIRE`, `INSCREVER`, `اشتراك` | Registers subscriber in Firestore as `active` and adds them to the channel's Mailgun list. |
-| **UNSUBSCRIBE** | `UNSUBSCRIBE`, `SIGNOFF`, `DESINSCRIRE`, `DESCADASTRAR`, `إلغاء الاشتراك` | Sets status to `unsubscribed` and removes user from all Mailgun lists. |
-| **HELP** | `HELP`, `AIDE`, `AJUDA`, `مساعدة` | Sends an automated reply email with command usage instructions. |
+- choose a preferred language from the channel's active languages;
+- switch between real-time email and a weekly digest;
+- read the public archive and search past broadcasts;
+- sign in to complete your account and manage preferences;
+- contribute a post through the submission form.
 
-1. **Email Submissions**: If no command keyword is detected, the inbound email is ingested as a community post submission, creating a `Broadcast` document in `draft` status (`origin: 'user'`, `template: 'community'`) and forwarding it to the admin Moderation Queue.
-2. **Immediate Activation**: Email commands sent directly from a user's address are self-authenticating. Unlike web signups, no double opt-in confirmation click is required.
+For administrators it adds the workspace: composing and translating broadcasts, reviewing the moderation queue, managing subscribers, checking delivery performance, and configuring the channel.
 
----
+## Where the routes meet
 
-### Route 2: Web Application Route (Rich UI & Administration)
+Both routes write to the same channel and the same subscriber record. A person who subscribes by email appears in the admin subscriber list; a person who subscribes on the web receives the same broadcasts. Replying to a broadcast by email works whether the broadcast was composed in the app or submitted by email.
 
-The Web Application route provides a client-side Lit single-page application built with Vaadin and Material components.
+The two routes differ in what they can prove and what they can show:
 
-#### Capabilities:
+- **Email** proves control of the sending address and needs no account.
+- **Web** can show the archive, previews and settings, and lets a subscriber complete an account.
 
-- **WCAG 2.1 AA Web Forms**: Public subscription page with explicit language selection radio buttons and weekly digest toggles.
-- **Double Opt-In Flow**: Web signups send a cryptographically signed verification link to ensure email validity before activation.
-- **Admin Dashboards**: Drawer-routed management panels for broadcast drafting, template assignment (Newsletter, Data Alert), file attachment scanning, and subscriber auditing.
-- **AI-Powered Moderation Queue**: Real-time evaluation of community posts using `gpt-4o-mini` via `effect/unstable/ai`.
-- **Settings Governance**: Active language toggles, bounce thresholds, and team role management (`Owner`, `Editor`, `Guest`).
+## Choosing a route
 
----
-
-## Unified Data Tier & Convergence
-
-Despite operating through two distinct interaction channels, both routes converge seamlessly onto a single, unified backend architecture:
-
-- **Single Firestore Schema**: Both web forms and email commands write to `app/listserv/subscriber` and `app/listserv/broadcast`.
-- **Shared Firebase Auth Identity**: Every subscriber—whether registered via web double opt-in or email command—is backed by a Firebase Auth user account (`SubscriberId == Auth UID`).
-- **Synchronized Mailgun Lists**: Both routes automatically sync subscriber membership across Mailgun real-time (`{channelId}@mg.a11ydata.com`) and digest (`{channelId}-digest@mg.a11ydata.com`) mailing lists.
-
-This dual-route convergence guarantees that no community member is excluded due to connectivity constraints, while administrative teams retain complete control over moderation, security, and quality.
-
----
+- **Subscribers**: use email if it is what you have; use the web app to read the archive, choose a digest, or manage your account.
+- **Administrators**: use the web app for all channel work. Email is for reading and replying, not for administration.
+- **Organizations**: publish both. The channel address belongs in every printed notice and email signature; the web link belongs wherever a browser is available.
 
 ## Related Content
 
-- [Broadcast Lifecycle & AI Moderation Explanation](./broadcast-lifecycle-and-moderation.md)
-- [Subscriber Identity & Auth Explanation](./subscriber-identity-and-auth.md)
-- [Mailing List & Digest Engine Explanation](./mailing-list-and-digest-architecture.md)
-- [Subscribing & Preferences How-To](../how-to/subscribing-and-managing-preferences.md)
+- [Subscribing and Managing Delivery Preferences](../how-to/subscribing-and-managing-preferences.md): The commands and the web form, step by step.
+- [Real-Time Broadcasts and Weekly Digests](./mailing-list-and-digest-architecture.md): How the two delivery modes differ.
+- [Subscriber Accounts and Sign-In](./subscriber-identity-and-auth.md): What an account adds to an email subscription.
+- [Accessible Listserv Overview](../index.md): Where each route is documented.

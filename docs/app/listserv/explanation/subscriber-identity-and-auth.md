@@ -1,73 +1,66 @@
 ---
-description: An architectural explanation of subscriber identity management, Firebase Auth UID coupling, custom claim security gating, and account completion.
+description: How a subscription becomes an account, why confirmation is required on the web, and what completion adds.
 ---
 
-# Subscriber Identity & Auth Integration
+# Subscriber Accounts and Sign-In
 
-This document details how the Listserv application integrates subscriber records with **Firebase Auth UIDs**, manages double opt-in verification, and enforces security through the `accountIncomplete` custom token claim (per ADR 0001: `app/app-listserv/docs/adr/0001-subscriber-firebase-auth-identity.md`).
+A subscription is more than an address on a mailing list: it is a small account that lets a person choose how they receive a channel, pause it, or complete their sign-in. This article explains how that account works from a subscriber's point of view.
 
----
+## One subscription per address per channel
 
-## 1. Subscriber Identity Model (`ref.user == Auth UID`)
+Each email address can subscribe to a channel once. If the same person subscribes again, the existing subscription is reused rather than duplicated. An address can still belong to several different channels, each with its own preferences.
 
-Every listserv subscriber is backed by a **Firebase Auth user account**:
+This matters when a person changes jobs or forwards mail: the channel sends to the address that subscribed, so a new address is a new subscription.
 
-- **Opaque Subscriber IDs:** The subscriber document ID in Firestore is an auto-assigned, opaque identifier (`app/listserv/subscriber/{subscriberId}`).
-- **Auth UID Link:** The `ref.user` property holds the subscriber's Firebase Auth UID. Queries for a user's subscriptions use `where('ref.user', '==', uid)`.
-- **Per-Channel Email Uniqueness Guard:** A dedicated collection (`app/listserv/subscriberEmail/{channelId}_{HMAC(normalisedEmail)}`) enforces exactly one subscriber record per email address per channel. This guard is written in the same transaction as the subscriber and covers both `pending` and `active` states.
+## Confirming a web subscription
 
-### Architectural Benefits
+Subscribing through the web form starts a confirmation step:
 
-- **Self-Service Preference Management:** Because subscribers have an underlying Auth identity, they can sign in to the user portal to update delivery preferences, toggle digest mode, or manage multi-channel subscriptions.
-- **Cross-App Integration:** Links seamlessly with customer organization accounts, team memberships, and survey respondent identities.
-- **Safe Pre-Verification State:** Because subscriber IDs are opaque and uniqueness is handled by the HMAC email guard, a `pending` record can exist before a Firebase Auth user is created, without risk of document ID migrations.
+1. You enter your address and preferences.
+2. The channel sends a confirmation email.
+3. You open its link to activate the subscription.
 
----
+Until you confirm, the subscription is **pending** and no broadcasts are sent to it. This protects both sides: nobody can subscribe you without access to your inbox, and the channel does not accumulate unverified addresses.
 
-## 2. Web Double Opt-In State Machine
+Email subscriptions work differently. Sending a subscribe command from your own address already proves you control it, so those subscriptions activate immediately.
 
-For registrations initiated through the public web form, subscription follows a clean, orphan-free double opt-in lifecycle:
+## Completing your account
 
-```text
-   Web Registration
-          │
-          ▼
-    ┌───────────┐      Email Verification Link Click
-    │  pending  │ ───────────────────────────────────────▶ ┌───────────┐
-    └───────────┘  (Creates/links Auth User + clears token) │  active   │
-                                                            └───────────┘
-```
+A confirmed subscriber has an account, but it may not have a password yet. The confirmation email and the reply to an email subscription both include a link to **complete your account**.
 
-1. **`pending` State:** A subscriber document is created with the subscriber's email address, language preferences, delivery mode, and a secure verification `token`. No Firebase Auth account is created at this point, preventing abandoned signups from cluttering user directories.
-2. **`verify()` Action:** When the user clicks the verification link in their email:
-   - If an Auth account already exists for that email, the subscriber is linked to the existing UID (`ref.user = existingUid`).
-   - If no Auth account exists, a new Firebase Auth user is created (`createUser({ email })`) with custom claim `accountIncomplete: true`.
-   - The pending subscriber document is updated **in place**: status flips directly to `active`, `ref.user` is stamped, and the verification `token` is cleared.
+1. Open the completion link.
+2. Set a password (at least six characters) and confirm it.
+3. Select **Set Password**.
+4. Sign in with your email address and the new password.
 
----
+Completing the account is what lets you manage preferences in the web application instead of changing them by email. It is optional for simply receiving broadcasts.
 
-## 3. Email Command Path & Immediate Linking
+If the completion link fails, it may have been used already or expired; start again from the confirmation email, or ask the channel administrator to resend it.
 
-Subscribers registering via email commands (e.g., sending `SUBSCRIBE` to `channel-1@mg.a11ydata.com`) bypass the web verification state machine because sending from the mailbox is inherently self-authenticating:
+## Subscriber states
 
-1. The inbound handler checks for an existing user account with `getUserByEmail(email)`.
-2. **If Existing User Found:** Links the new subscriber record to the existing Auth UID.
-3. **If New User:** Automatically creates a Firebase Auth user account (`createUser({ email })`) and assigns the custom claim `accountIncomplete: true`.
-4. The subscriber document is created directly with `status: 'active'`.
+| State | What it means for the subscriber |
+| --- | --- |
+| **Pending** | The web form was submitted but the confirmation link has not been opened. No broadcasts. |
+| **Active** | Confirmed and receiving broadcasts according to the chosen delivery mode. |
+| **Unsubscribed** | Left the channel, or was removed after repeated delivery failures. No broadcasts. |
+| **Bounced** | The address hard-bounced and is no longer deliverable. |
 
----
+A **suppressed** address is one the organization has asked the platform never to contact again; it stays suppressed across channels and cannot be re-subscribed by an import.
 
-## 4. Security Enforcement via `accountIncomplete` Custom Claim
+## Imported subscribers
 
-Subscribers created without a web password carry the custom token claim `accountIncomplete: true`:
+A channel administrator can import a team audience, adding many people at once. Imported subscribers are active immediately and receive broadcasts, but they did not go through the opt-in flow, so their account may not be linked to a sign-in yet.
 
-- **Firestore Security Rules:** Gated so that accounts with `accountIncomplete: true` are restricted to reading their own subscriber profile and cannot perform elevated actions.
-- **Account Completion Flow:** When an incomplete user visits the web portal, they are prompted to set a secure password, which clears the `accountIncomplete` claim upon completion.
+That is why imports require the administrator to confirm a lawful basis and permission. It also means an imported subscriber who wants to manage preferences may need to complete an account first; the channel administrator can explain how.
 
----
+## What an account does not change
+
+Completing an account does not resubscribe someone who unsubscribed, restore a bounced address, or change the delivery mode. Those remain explicit choices — by the subscriber, or by an administrator acting on a request.
 
 ## Related Content
 
-- **ADR 0001: Subscriber Firebase Auth Identity** (`app/app-listserv/docs/adr/0001-subscriber-firebase-auth-identity.md`) — Authoritative decision record
-- [Subscribing & Preferences How-to Guide](../how-to/subscribing-and-managing-preferences.md) — End-user subscription walkthrough
-- [Dual-Route Architecture Explanation](./dual-route-architecture.md) — Web and email command integration
+- [Subscribing and Managing Delivery Preferences](../how-to/subscribing-and-managing-preferences.md): The web form, email commands and account completion steps.
+- [Managing Subscribers](../how-to/managing-subscribers.md): How administrators view and change subscriber states.
+- [Bounce Handling and List Cleaning](./bounce-handling-list-cleaning.md): Why an address can become unsubscribed without the person leaving.
+- [Email Commands and the Web Application](./dual-route-architecture.md): The two routes into a subscription.

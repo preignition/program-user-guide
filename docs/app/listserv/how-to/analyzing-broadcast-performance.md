@@ -1,5 +1,5 @@
 ---
-description: How administrators view per-broadcast analytics including delivery rates, open rates, click rates, and language segmentation.
+description: How administrators view per-broadcast analytics including delivery rates, open rates, response counts, and language segmentation.
 ---
 
 # Analyzing Broadcast Performance

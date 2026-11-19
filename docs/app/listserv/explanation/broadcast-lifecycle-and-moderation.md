@@ -1,107 +1,75 @@
 ---
-description: An architectural explanation of the consolidated Broadcast domain entity, XState 5 lifecycle machine, and AI moderation engine.
+description: How a broadcast moves from draft to sent, where moderation fits, and what administrators can change at each stage.
 ---
 
-# Broadcast Lifecycle & AI Moderation Architecture
+# Broadcast Lifecycle and Moderation
 
-This document explains how the Listserv application unifies administrative announcements and user community posts into a single **Broadcast** entity, governed by an **XState 5 lifecycle state machine** and evaluated by an **AI Moderation Agent**.
+A broadcast is a single announcement or community post that the channel sends to its subscribers. Every broadcast — whether an administrator writes it or a community member submits it — follows the same review path before it is sent.
 
----
+## The stages
 
-## 1. The Consolidated Broadcast Entity
+| Stage | What it means |
+| --- | --- |
+| **Draft** | The message exists but is not submitted for review. Authors can still edit it. |
+| **Submitted** | A community author has sent the post for review. Administrators see it in the moderation queue. |
+| **Moderated** | The platform has assessed the post and attached a category and a spam assessment. A person still decides. |
+| **Approved** | An administrator has accepted the post; it becomes ready to send. |
+| **Rejected** | An administrator has declined the post. It is not sent. |
+| **Translating** | The approved message is being translated into the channel's active languages. |
+| **Sending** | Delivery to the subscriber lists is in progress. |
+| **Sent** | Delivery has completed. The broadcast is in the archive and its performance can be reviewed. |
+| **Error** | A delivery problem interrupted the send; the error is recorded for the administrator. |
 
-Earlier listserv implementations maintained separate data models for administrative `Campaigns` and user `Submissions`. The current architecture unifies both under a single Firestore collection (`app/listserv/broadcast`) and schema (`BroadcastS`).
+Administrator-authored broadcasts start as drafts and skip the community moderation queue, but they still pass through approval, translation and sending.
 
-### Discriminators
+## What moderation does
 
-- **`origin`**: `'admin'` (created manually in the admin dashboard) vs. `'user'` (submitted via web or email command).
-- **`template`**: `'newsletter'`, `'alert'`, or `'community'`.
-- **`state.lifecycle`**: Persisted XState machine context tracking lifecycle progress.
+Moderation has two parts: an automated assessment and a human decision.
 
----
+The automated assessment classifies the post (for example news, event, announcement, question or spam) and gives it a spam score. It is advisory. A high score flags a post for attention; it does not silently discard it.
 
-## 2. XState 5 Lifecycle Machine
+An administrator then:
 
-The broadcast pipeline is governed by a strict state machine implemented in XState v5 on the client and mirrored on the server:
+- **approves** the post as written,
+- **edits and approves** it, for example to fix formatting or remove quoted text, or
+- **rejects** it.
 
-```text
-┌───────┐      SUBMIT      ┌───────────┐   AI Evaluation   ┌───────────┐
-│ draft │ ───────────────▶ │ submitted │ ────────────────▶ │ moderated │
-└───────┘                  └───────────┘                   └─────┬─────┘
-                                                                 │
-                                                   ┌─────────────┴─────────────┐
-                                                   │                           │
-                                           APPROVE │                           │ REJECT
-                                                   ▼                           ▼
-                                             ┌──────────┐                ┌──────────┐
-                                             │ approved │                │ rejected │
-                                             └────┬─────┘                └──────────┘
-                                                  │
-                                             SEND │
-                                                  ▼
-                                             ┌─────────┐   SEND_SUCCESS  ┌──────┐
-                                             │ sending │ ───────────────▶│ sent │
-                                             └─────────┘                 └──────┘
-```
+Rejections should be explainable. A community member who submits by email receives an acknowledgment; a rejection that arrives without a reason reads as silence.
 
-### Lifecycle States
+## How community posts enter the queue
 
-| State | Role Tag | Description |
-| --- | --- | --- |
-| **`draft`** | `editor` | Broadcast under composition or initial ingestion. |
-| **`submitted`** | `admin` | Post submitted by a community user; triggers language detection and AI moderation. |
-| **`moderated`** | `admin` | AI evaluation complete (`moderation` metadata attached); placed in Moderation Queue. |
-| **`approved`** | `admin` | Approved by moderator; triggers automatic translation into active channel languages. |
-| **`rejected`** | `admin` | Submission rejected by moderator; records `rejectionReason`. |
-| **`sending`** | `admin` | Background send actor executing Mailgun list dispatch. |
-| **`sent`** | `admin` | Dispatched to subscribers, archived, and tracked for webhooks. |
-| **`error`** | `admin` | Terminal failure state if dispatch fails during Mailgun delivery. |
+A community post can arrive:
 
-::: info Auto-Send and Response Threads
-Automatic dispatch without manual moderator approval is supported exclusively for **Broadcast Responses** (when a subscriber replies to an existing thread and the response passes automated content checks). Regular, top-level community broadcast submissions always require manual review in the Moderation Queue.
-:::
+- **by email**, from an active subscriber of the channel or a member of channel staff;
+- **through the web application**, when a signed-in subscriber uses the submission form.
 
----
+A message from an address that is not subscribed is not turned into a draft; the sender receives a reply explaining how to subscribe. This prevents the queue from being filled by strangers who found the address.
 
-## 3. AI Moderation Engine (`effect/unstable/ai`)
+Submissions are rate-limited per sender, so one person cannot flood the queue.
 
-When a submission enters the `submitted` state, the server invokes the `moderateBroadcast` actor powered by `effect/unstable/ai` using `gpt-4o-mini`.
+## Responses are handled differently
 
-### AI Moderation Schema (`ModerationResult`)
+A reply to a sent broadcast is a **broadcast response**, not a new submission. It is attached to the broadcast it answers and can be redistributed to the channel without the full moderation queue. Because a response comes from a subscriber who already receives the channel, the platform relies on the mail provider's spam assessment rather than a fresh content review.
 
-```typescript
-const ModerationResult = Schema.Struct({
-  category: Schema.String,          // 'news' | 'event' | 'announcement' | 'question' | 'discussion' | 'spam'
-  summary: Schema.String,           // Concise 1-2 sentence overview
-  spamScore: Schema.Number,         // Floating point score from 0.0 to 1.0
-  recommendedAction: Schema.String, // 'approve' | 'flag' | 'reject'
-})
-```
+That is a deliberate trade-off: it keeps conversations responsive, and it means channel administrators should still watch the response list and remove abusive replies.
 
-### Auto-Moderation Decision Matrix
+## Approval, translation and sending
 
-After `LanguageModel.generateObject` completes:
+Approval is the point of no return for content. Once approved:
 
-- **`recommendedAction === 'approve'`** (Spam Score < 0.3):
-  The lifecycle automatically transitions to `approved` (`moderatedBy: '__ai__'`) and advances to dispatch without requiring manual human review.
-- **`recommendedAction === 'reject'`** (Spam Score > 0.8):
-  The lifecycle automatically transitions to `rejected` with an automated rejection reason.
-- **`recommendedAction === 'flag'`**:
-  The broadcast pauses in the `moderated` state in the Admin Moderation Queue for human inspection.
+1. The message is translated into each active language, unless the author supplied those versions.
+2. Delivery selects each subscriber's preferred language and falls back to the broadcast's primary language when a translation is unavailable.
+3. Subscribers on real-time delivery receive the broadcast; digest subscribers receive it in the next digest.
 
----
+If translation fails for one language, the send proceeds in the primary language rather than blocking the whole broadcast.
 
-## 4. Rate Limiting Safeguards
+## What administrators can still change after sending
 
-To prevent spam attacks or accidental flooding, user-origin submissions (`origin: 'user'`) are rate-limited per sender email:
-
-- **Enforcement**: Max 5 submissions per sender per hour.
-- **Verification**: Checked inside the `submit` action handler prior to writing the `submitted` state. Exceeding the threshold returns a typed rate-limit error.
-
----
+Sent broadcasts are part of the record. You can read them in the archive, review their delivery and open counts, and read the responses. You cannot edit the sent message or recall it from subscribers' inboxes. Correct a mistake with a follow-up broadcast, not by editing history.
 
 ## Related Content
 
-- [Dual-Route Architecture Explanation](./dual-route-architecture.md)
-- [Mailing List & Digest Engine Explanation](./mailing-list-and-digest-architecture.md)
-- [Moderating Community Submissions How-To](../how-to/moderating-community-submissions.md)
+- [Moderating Community Submissions](../how-to/moderating-community-submissions.md): The review steps.
+- [Creating and Sending Broadcasts](../how-to/creating-and-sending-broadcasts.md): Composing an administrator broadcast.
+- [Broadcast Responses and Threaded Discussions](./broadcast-responses-threading.md): What happens after sending.
+- [Analyzing Broadcast Performance](../how-to/analyzing-broadcast-performance.md): Reading delivery and open metrics.
