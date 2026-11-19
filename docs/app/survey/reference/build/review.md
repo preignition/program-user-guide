@@ -4,7 +4,7 @@ description: Reference documentation for the Review panel, including rule and mo
 
 # Review Reference
 
-The **Review** workspace collects the quality findings for a form in one master–detail panel. It combines the deterministic rule checks with the newest model review run. The panel is the `review` route in the Survey Builder, between **Compose** and **Form Behavior**.
+The **Review** workspace collects the quality findings for a form in one master–detail panel. It combines deterministic rule checks with the newest model review run. The panel is the `review` route in the Survey Builder drawer (located after **Image Library**), and can also be opened directly via the **Review** action button in the Compose toolbar whenever open findings exist.
 
 The page is advisory: findings describe a problem and, where a mechanical fix exists, offer the action that applies it. Nothing is changed until the author acts.
 

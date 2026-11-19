@@ -1,22 +1,27 @@
 ---
-description: Reference documentation for the Survey Builder module.
+description: Reference documentation for the Survey Builder module and drawer tools.
 ---
 
 # Survey Builder Reference
 
-The Survey Builder is the primary workspace for creating, structuring, and customizing survey forms. It provides tools for defining the content, logic, and accessibility features of a survey.
+The Survey Builder is the primary authoring workspace for creating, structuring, translating, and refining survey questionnaires. It provides tools for defining content, visual presentation, accessibility features, and quality checks.
 
-## Overview
+## Interface Overview
 
-The interface provides access to various tools required for survey creation:
+The Survey Builder drawer provides access to the following tools:
 
-- **[Compose](./compose/index.md)**: Structure the survey by adding pages, sections, and questions.
-- **[Review](./review.md)**: Collect rule and model findings, filter them, and apply mechanical fixes.
-- **[Behavior](./behavior.md)**: Define overall settings, such as accessibility modes and form logic.
-- **[Image Library](./image-library.md)**: Manage image assets for the survey.
-- **[Localize](./localize.md)**: Manage translations and multilingual support.
-- **[Prompt](./prompt.md)**: Manage additional instructions or context for questions.
-- **[Restore](./restore.md)**: Recover deleted items.
+- **[Compose](./compose/index.md)**: Structure the questionnaire by adding pages, sections, and questions, and authoring text content.
+- **[Form Behavior](./behavior.md)**: Configure questionnaire layout (e.g. one question per page), accessibility modes (Read Aloud, Easy Read, Sign Language), and visual styling tokens.
+- **[Localize](./localize.md)**: Enable multilingual support and activate supported survey languages.
+- **[Image Library](./image-library.md)**: Upload and manage image and video assets (up to 5 MB per file) used as question illustrations or Easy Read graphics.
+- **[Review](./review.md)**: Audit questionnaire quality with automated rule checks and AI reviews, applying one-click fixes for logic, translation, and accessibility issues.
+
+### Advanced Mode Tools
+
+Enabling **Advanced Mode** in the toolbar reveals additional engineering and recovery tools:
+
+- **[Prompt](./prompt.md)**: Audit the history of AI drafting prompts and parameters used to generate survey content.
+- **[Restore](./restore.md)**: Recover soft-deleted questions, pages, sections, or shared logical expressions.
 
 <figure>
   <img src="./assets/build-auto.png" alt="Overview of the Survey Builder interface.">
@@ -25,9 +30,13 @@ The interface provides access to various tools required for survey creation:
 
 <figure>
   <img src="./assets/build-menu-auto.png" alt="Survey Builder navigation menu.">
-  <figcaption>The navigation menu for accessing different tools within the Builder.</figcaption>
+  <figcaption>The navigation drawer for accessing Builder tools.</figcaption>
 </figure>
 
-## Activating a Survey
+## Publishing and Survey Lifecycle
 
-A survey must be marked as active to collect responses. This requires configuring batch settings with valid date ranges (a "from date" in the past and a "to date" in the future or empty) and publishing the survey.
+Drafting changes in the Survey Builder does not immediately affect respondents in the field. When your questionnaire is ready:
+
+1. **Review**: Check for broken logic, missing translations, or accessibility barriers in [Review](./review.md).
+2. **Build**: Compile an immutable version of your questionnaire in [Share → Publish](../share/publish/index.md).
+3. **Status & Distribution**: Set your opening schedule in [Share → Status](../share/status/index.md) and generate live links or invite audiences in [Share → Distribute](../share/distribute/index.md).
