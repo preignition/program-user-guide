@@ -1,10 +1,10 @@
 ---
-description: Reference documentation for defining where respondents are redirected after survey completion.
+description: Reference documentation for defining post-submission redirection behavior.
 ---
 
 # Survey Redirection
 
-The **Redirection** page determines where respondents are routed immediately after they submit their completed survey.
+The **Redirection** page determines where respondents are routed immediately after submitting their completed survey.
 
 <figure>
   <img src="./assets/redirection-auto.png" alt="The survey redirection interface">
@@ -18,13 +18,21 @@ The **Redirection** page determines where respondents are routed immediately aft
   <figcaption>Redirection settings content</figcaption>
 </figure>
 
-The **Redirection** settings control the post-submission journey. The following destinations can be configured:
+The **Redirection** configuration governs the post-submission journey:
 
-- **User Space (Default)**: Respondents are taken to a personalized space within the app. For Personal or Verified accounts, they can see customized thank you messages, links to resulting reports, or invitations for new surveys. Anonymous users are invited to upgrade their account before reaching this space.
-- **Application's Home Page**: Respondents are redirected back to the main portal (either `accessiblesurveys.com` or your organization's custom enterprise homepage).
-- **Custom URL**: Redirect respondents to an external, customized web page, such as your company's main website.
-- **Thank You Page**: Display a standard, customizable "Thank You" message directly within the survey environment.
+- **Application's Home Page (`home`, default)**: Respondents are redirected back to the platform's home page (`accessiblesurveys.com`). Anonymous users are automatically signed out.
+- **No Redirection (`none`)**: Respondents are not redirected away. They remain on the survey completion screen and see a "Thank You" message. Anonymous users are not signed out.
+- **A Page Dedicated to this Survey (`external`)**: Redirects respondents out of the survey application to a custom external web address (e.g., your organization's website or study landing page). When selected, you must enter a valid **Redirect Location** URL (`https://...`).
+- **User Space (`userspace`)**: A planned space within the application for personalized respondent summaries. *Note: User Space is currently disabled.*
 
-## Advanced Settings
+### Redirect Timeout
 
-For conditional redirection logic based on user behavior or answers, refer to the [Advanced Redirection Settings](./advanced.md).
+When a destination with redirection is selected (**Application's home page** or **A page dedicated to this survey**), you can configure the **Redirect Timeout**:
+
+- **Default:** `8` seconds
+- **Behavior:** Specifies how many seconds the confirmation message is displayed before the browser automatically redirects the respondent to the destination URL.
+
+## Related Content
+
+- [Survey Status](../status/index.md) — Open, schedule, or close your survey
+- [Distribute Your Survey](../distribute/index.md) — Share links and manage invitations

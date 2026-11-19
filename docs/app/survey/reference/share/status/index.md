@@ -18,15 +18,25 @@ The **Status** page provides information on the current operational state of you
   <figcaption>Status settings content.</figcaption>
 </figure>
 
-The **Status** page allows you to set how and when your survey is open for collecting responses.
+The **Status** page allows you to set how and when your survey is open for collecting responses:
 
-- **Survey quota**: The card below the intro shows the surveys left on your plan and how much of the plan has been used (for example, *"3 left"* and *"2 of 5 surveys used."*). When the quota reaches zero, it explains how long you can still take surveys to production while you arrange more quota. If no survey quota is configured for the customer, the card asks you to contact support.
-- **Deployed Status**: Displays the current status of the survey (e.g., "Active"). It indicates whether the survey is currently open for responses.
-- **Strategy**: Defines the mechanism used to make the survey active. The available strategies are:
-- **Immediate (default)**: The survey is active immediately for responses once a first version is published.
-- **Manual**: The survey is activated manually by toggling its status.
-- **Scheduled**: The survey is active based on a schedule. You can set specific open and/or close dates.
+- **Deployed Status**: Displays the operational status of the live survey that respondents are accessing right now (e.g., whether it is currently open or closed).
+- **Strategy**: Defines the mechanism used to make the survey open for responses:
+  - **Immediate (default)**: The survey is open immediately for collecting responses once published.
+  - **Manual**: Control availability with an explicit open/close switch.
+  - **Scheduled**: Specify an **Open Date** and/or **Close Date** with explicit timezone handling. The survey automatically opens and closes at the designated times.
 
-## Advanced Settings
+### Undeployed Changes Notice
 
-For detailed status metrics and advanced configurations, refer to the [Advanced Status Settings](./advanced.md).
+Changes to status and availability are saved as you edit. If your new settings differ from the live deployed survey, a warning banner appears:
+
+::: warning Not deployed yet
+The new status differs from the status of the deployed survey. Your changes will automatically apply to respondents when you build the survey again.
+
+To apply changes to live respondents immediately without rebuilding the whole survey, click **Apply now to the deployed survey**.
+:::
+
+## Related Content
+
+- [Publishing Your Survey](../publish/index.md) — Compile and deploy survey updates
+- [Distribute Your Survey](../distribute/index.md) — Access links, QR codes, and survey quota status

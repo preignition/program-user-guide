@@ -1,10 +1,10 @@
 ---
-description: Reference documentation for controlling access to your survey settings.
+description: Reference documentation for controlling access roles and permissions for your survey.
 ---
 
 # Survey Access
 
-The **Access** settings page allows you to govern internal team permissions, specifying who is authorized to view, edit, or manage the survey architecture.
+The **Access** page allows you to govern survey-level permissions, specifying which users are authorized to view, edit, or manage the survey.
 
 <figure>
   <img src="./assets/access-auto.png" alt="The survey access settings interface">
@@ -18,17 +18,20 @@ The **Access** settings page allows you to govern internal team permissions, spe
   <figcaption>Access settings content</figcaption>
 </figure>
 
-The **Access** configuration defines which internal users from your organization have rights over this specific survey. The user who creates the survey is automatically designated as the default "Survey Owner."
+Access rights control which users can manage this specific survey. The user who creates the survey is automatically designated as the **Owner**.
 
-Users can be assigned one of the following four roles:
+Users can be assigned one of the following roles:
 
-- **Owner**: Possesses full administrative rights over the survey. The Owner can modify the survey's ownership, delete the survey entirely, and grant or revoke access for all other users.
-- **Editor**: Possesses comprehensive rights to build and configure the survey content and its settings, but cannot alter the survey's ownership or manage user roles.
-- **Viewer**: Granted read-only access to view the survey structure and its analytic results. Viewers cannot edit content or manage users.
-- **Translator**: Granted access to view the survey and permission specifically to edit translations for a designated language. Translators cannot alter the core structure, manage users, or change settings.
+- **Owner**: Full administrative control over the survey, including changing ownership, granting or revoking roles, and deleting the survey.
+- **Admin**: Full configuration, publishing, and editing permissions, with ability to manage collaborators.
+- **Editor**: Comprehensive editing and configuration rights to build questions, configure settings, and deploy updates, but cannot delete the survey.
+- **Guest / Viewer**: Read-only access to inspect the survey structure and view response analytics without editing privileges.
+- **Translator**: Targeted permission to translate survey content for a designated language without altering the core questionnaire structure.
 
-To add or transfer rights, the target user must already possess an active account affiliated with your organization.
+To assign rights to a user, they must belong to your organization or team.
 
-## Advanced Settings
+## Related Content
 
-For detailed permission scopes, creating custom roles, and segmenting data access, refer to the [Advanced Access Settings](./advanced.md).
+- [Access Rights How-to Guide](../../../how-to/access-rights.md) — Step-by-step instructions for adding and updating user roles
+- [Authorization and Security Rules](../../../explanation/authorization.md) — Detailed explanation of access policies and client capabilities
+- [Customer Portal Members Reference](../../../../customer/reference/customer/members.md) — Managing organization account holders and team members

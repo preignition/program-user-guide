@@ -40,7 +40,7 @@ Building a survey does not make it live. The production link stays hidden until 
 - stamps the survey as in production (it cannot be undone), and
 - redeems **one survey** from the customer's plan quota.
 
-Below the button, a **Survey quota** card shows the surveys left on the plan (for example, *"25 left"*) and how much of the plan has been used (for example, *"5 of 30 surveys used."*). The card is shown while the survey is not yet in production; once it is, the quota is shown on the **Status** page instead. If no survey quota is configured for the customer, the card asks you to contact support.
+Below the button, a **Survey quota** card shows the surveys left on the plan (for example, *"25 left"*) and how much of the plan has been used (for example, *"5 of 30 surveys used."*). If no survey quota is configured for the customer, the card asks you to contact support.
 
 Quota gates publishing, not the surveys already live:
 

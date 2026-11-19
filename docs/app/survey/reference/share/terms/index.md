@@ -1,10 +1,10 @@
 ---
-description: Reference documentation for implementing custom terms and conditions for your respondents.
+description: Reference documentation for enabling and configuring survey terms and conditions.
 ---
 
 # Survey Terms
 
-The **Terms** page enables you to impose custom legal agreements, consent protocols, or conditions that respondents must explicitly or implicitly accept prior to initiating the survey.
+The **Terms** page enables you to require respondents to review and accept custom legal terms, consent disclosures, or participant agreements prior to taking your survey.
 
 <figure>
   <img src="./assets/terms-auto.png" alt="The survey terms and conditions interface">
@@ -18,17 +18,28 @@ The **Terms** page enables you to impose custom legal agreements, consent protoc
   <figcaption>Terms settings content</figcaption>
 </figure>
 
-By default, all respondents must agree to the platform's overarching terms of service. The **Terms** configuration allows you to inject your organization's specific requirements into this flow.
+By default, surveys do not require bespoke terms. Activating the **Terms** feature ensures respondents cannot submit data without explicitly agreeing to your terms.
 
-- **Custom Survey Terms Toggle**: A switch that activates the presentation of your bespoke terms and conditions before the respondent begins the survey.
-- **Terms Editor**: A rich text field supporting Markdown syntax. It allows you to format your legal text, embed hyperlinks to external privacy policies, and apply CSS classes specifically designed to respect various accessibility modes (e.g., hiding/showing content for Easy Read mode).
-- **Agreement Presentation**: Dictates how the terms are displayed to the respondent.
-  - **Popup Window (Default)**: The terms are hidden behind a hyperlink and rendered in a modal window upon interaction.
-  - **Plain Text**: The terms are displayed fully inline immediately above the "I agree" sign checkbox.
-- **Preview Tab**: Allows you to simulate how your formatted terms and conditions will visually render to respondents before pushing changes live.
+### Activating Terms
 
-*Note: Custom terms can be translated natively into any localized language activated for your survey.*
+- **Activate Terms and Service Switch (`hasTerms`)**: Toggles terms enforcement on or off. When active, respondents must accept terms before proceeding to survey questions.
 
-## Advanced Settings
+### Terms Appearance
 
-For configuring specific multi-language terms mappings and tracking explicit document versioning for legal compliance, view the [Advanced Terms Settings](./advanced.md).
+Choose how terms are presented to the respondent:
+
+- **In a Dialog (`dialog`, default)**: A hyperlink opens a modal dialog displaying the full agreement text. The respondent must review and accept the dialog to proceed.
+- **On the page (`embed`)**: The agreement text is displayed directly on the introductory page above the consent checkbox.
+
+### Authoring Terms Content
+
+The actual terms wording is authored and localized in **Build → Compose**:
+
+- When terms are activated, navigate to **Build → Compose** and select the **Terms** item in the survey tree (`build/compose/survey/terms`).
+- You can format terms with rich text headings, lists, links to external privacy notices, and localize them across all survey languages in **Localize Mode**.
+
+## Related Content
+
+- [Setting Survey Terms How-to Guide](../../../how-to/survey-terms.md) — Step-by-step instructions for activating and writing terms
+- [Data Privacy and Security Explanation](../../../explanation/data-privacy-and-security.md) — Privacy policies, consent records, and data protection
+- [Compose Reference](../../build/compose/index.md) — Formatting and translating survey content items
