@@ -1,6 +1,10 @@
+---
+description: Reduce order bias and improve research data quality by shuffling questions, sections, and options.
+---
+
 # Introducing Survey Item Randomization
 
-**Date:** 2026-05-28
+**Date:** 2026-05-28  
 **Version:** 1.0.2
 
 ## Overview

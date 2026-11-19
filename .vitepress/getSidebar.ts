@@ -48,22 +48,74 @@ export function getSidebar() {
         { text: "Overview", link: "index" },
         {
           text: "Survey App",
+          collapsed: false,
           items: [
             {
               text: "Analytics & Behavior (2.4.0)",
               link: "2026-11-18-analytics-and-behavior",
             },
-            { text: "Confidence Index", link: "survey/confidence-index" },
+            {
+              text: "Survey Emails & Review (2.2.0)",
+              link: "2026-10-20-survey-emails-and-review",
+            },
+            {
+              text: "One Question Per Page (1.3.1)",
+              link: "2026-08-16-one-question-per-page-layout",
+            },
+            {
+              text: "Section Library & Sharing (1.3.0)",
+              link: "2026-08-15-section-library-and-sharing",
+            },
+            {
+              text: "Campaigns & UTM Tracking (1.1.0)",
+              link: "2026-07-08-campaigns-and-utm-tracking",
+            },
+            {
+              text: "Item Randomization (1.0.2)",
+              link: "2026-05-28-survey-randomization",
+            },
+            {
+              text: "Account Email Sync (1.0.0)",
+              link: "2026-05-27-account-email-synchronization",
+            },
+            {
+              text: "Confidence Index (1.0.1)",
+              link: "2026-05-25-confidence-index",
+            },
+            {
+              text: "Scroll Page Before Next (1.0.0)",
+              link: "2026-05-20-scroll-page-before-next",
+            },
           ],
         },
         {
           text: "Listserv App",
-          items: [{ text: "Import an Audience", link: "listserv/audience-import" }],
+          collapsed: false,
+          items: [
+            {
+              text: "Audience Import (1.1.0)",
+              link: "2026-11-03-listserv-audience-import",
+            },
+          ],
         },
         {
-          text: "Form Builder",
+          text: "Customer Portal & API",
+          collapsed: false,
           items: [
-            { text: "Scroll Page Before Next", link: "form-builder/scroll-page-before-next" },
+            {
+              text: "Team API Keys & Endpoints (1.2.0)",
+              link: "2026-08-11-api-keys-and-definition-endpoints",
+            },
+          ],
+        },
+        {
+          text: "Shared Components",
+          collapsed: false,
+          items: [
+            {
+              text: "Theme-Aware Markdown (1.1.6)",
+              link: "2026-06-05-theme-aware-markdown",
+            },
           ],
         },
       ],

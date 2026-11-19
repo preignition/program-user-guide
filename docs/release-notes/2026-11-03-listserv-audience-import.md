@@ -4,7 +4,7 @@ description: Seed a listserv channel from a reusable team Audience in Channel Se
 
 # Audience Import for Listserv Channels
 
-**Date:** 2026-11-03
+**Date:** 2026-11-03  
 **Version:** 1.1.0
 
 Launching a new listserv channel — or bringing an established partner or member list onto an existing one — shouldn't require asking every contact to complete a double opt-in form again or adding subscribers one by one.
@@ -20,7 +20,7 @@ With **Audience Import**, channel owners and editors can now seed a listserv cha
 * **What it is:** A dedicated **Audience Import** page under **Channel Settings** that turns a team **Audience** into active channel subscribers in a single pass.
 * **Why it matters:** Teams already curate and maintain their contacts in **Team Settings → Audiences** for survey invitations and outreach. Reusing those lists lets a channel reach the right people immediately while keeping a single source of truth for team contacts.
 * **How to use:** Go to **Channel Settings → Audience Import**, click **Import a team audience**, select an active or archived audience, review the preview, accept the consent warranty, and click **Import**.
-* **Read more:** [Importing a Team Audience](../../app/listserv/how-to/importing-a-team-audience.md)
+* **Read more:** [Importing a Team Audience](../app/listserv/how-to/importing-a-team-audience.md)
 
 ---
 
@@ -38,7 +38,7 @@ Selecting an audience generates an instant, read-only breakdown of how each uniq
 | **Invalid** | Flags rows with a missing or malformed email address so you can download and fix them after the run. |
 
 <figure>
-  <img src="../../app/listserv/how-to/assets/importing-a-team-audience/step-3-preview-the-outcome-auto.png" alt="Import preview showing New, Linked, Already subscribed, Relinked, Skipped, and Invalid counts">
+  <img src="../app/listserv/how-to/assets/importing-a-team-audience/step-3-preview-the-outcome-auto.png" alt="Import preview showing New, Linked, Already subscribed, Relinked, Skipped, and Invalid counts">
   <figcaption>The preview classifies every recipient and reports aggregate counts only — never individual email addresses.</figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ Selecting an audience generates an instant, read-only breakdown of how each uniq
 Because importing adds active subscribers without individual double opt-in emails, the importer must confirm that the team holds a lawful basis and permission to send broadcasts from the channel, that the list is not purchased or scraped, and that every recipient can unsubscribe at any time.
 
 <figure>
-  <img src="../../app/listserv/how-to/assets/importing-a-team-audience/step-4-accept-the-warranty.png" alt="The listserv import warranty checkbox and consent confirmation text">
+  <img src="../app/listserv/how-to/assets/importing-a-team-audience/step-4-accept-the-warranty.png" alt="The listserv import warranty checkbox and consent confirmation text">
   <figcaption>The Import button remains disabled until the consent warranty is accepted.</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ Each import supports up to **10,000 unique recipients** with live progress track
 * **On-demand error CSV:** When an audience contains invalid rows or per-row failures, click **Download error report** on the result screen to save `listserv-import-errors.csv` (`row,email,reason`), fix those entries in **Team Settings → Audiences**, and re-import.
 
 <figure>
-  <img src="../../app/listserv/how-to/assets/importing-a-team-audience/step-5-import-result-auto.png" alt="Import completed view with final counts and the Download error report button">
+  <img src="../app/listserv/how-to/assets/importing-a-team-audience/step-5-import-result-auto.png" alt="Import completed view with final counts and the Download error report button">
   <figcaption>When the import finishes, review the final counts and download the transient error CSV if any rows were invalid or failed.</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ Every import run is logged on **Channel Settings → Audience Import**, ordered 
 * **Expandable row details:** Click any row to inspect the actor, audience name snapshot, warranty version and acceptance timestamp, all seven outcome counters, and any failure details.
 
 <figure>
-  <img src="../../app/listserv/how-to/assets/importing-a-team-audience/step-7-import-history-details.png" alt="Expanded import history row showing actor, audience, warranty timestamp, and full outcome counts">
+  <img src="../app/listserv/how-to/assets/importing-a-team-audience/step-7-import-history-details.png" alt="Expanded import history row showing actor, audience, warranty timestamp, and full outcome counts">
   <figcaption>Expand any row in Import history to inspect the full audit record.</figcaption>
 </figure>
 
@@ -96,8 +96,8 @@ Every import run is logged on **Channel Settings → Audience Import**, ordered 
 
 ## Related Documentation
 
-* [Importing a Team Audience](../../app/listserv/how-to/importing-a-team-audience.md) — Step-by-step guide to running and auditing an audience import
-* [Team Audiences Reference](../../app/customer/reference/team/audiences.md) — Managing reusable recipient lists in Team Settings
-* [How to Send Invitations to a Team Audience](../../app/survey/how-to/send-invitations.md) — Uploading CSV contact lists into a Team Audience
-* [Creating & Sending Email Broadcasts](../../app/listserv/how-to/creating-and-sending-broadcasts.md) — Composing and sending multilingual broadcasts
-* [Configuring Channel Settings](../../app/listserv/how-to/configuring-channel-settings.md) — Configuring channel metadata, languages, bounce handling, and roles
+* [Importing a Team Audience](../app/listserv/how-to/importing-a-team-audience.md) — Step-by-step guide to running and auditing an audience import
+* [Team Audiences Reference](../app/customer/reference/team/audiences.md) — Managing reusable recipient lists in Team Settings
+* [How to Send Invitations to a Team Audience](../app/survey/how-to/send-invitations.md) — Uploading CSV contact lists into a Team Audience
+* [Creating & Sending Email Broadcasts](../app/listserv/how-to/creating-and-sending-broadcasts.md) — Composing and sending multilingual broadcasts
+* [Configuring Channel Settings](../app/listserv/how-to/configuring-channel-settings.md) — Configuring channel metadata, languages, bounce handling, and roles

@@ -4,7 +4,7 @@ description: Catch broken logic, missing translations, accessibility issues, and
 
 # Catch Issues Early, Stay in Touch Effortlessly
 
-**Date:** 2026-10-20
+**Date:** 2026-10-20  
 **Version:** 2.2.0
 
 Publishing a survey usually comes with two nagging questions: *Did I miss a broken condition, an accessibility barrier, or an untranslated question?* and *How do I invite a contact list or follow up with respondents without linking their answers to their email addresses?*

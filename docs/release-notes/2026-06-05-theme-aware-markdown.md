@@ -1,6 +1,10 @@
+---
+description: Create Markdown content and logos that automatically adapt to light and dark themes.
+---
+
 # Theme-Aware Markdown Content
 
-**Date:** 2026-06-05
+**Date:** 2026-06-05  
 **Version:** 1.1.6
 
 ## Overview
@@ -26,7 +30,7 @@ We've introduced a new suite of tools to create Markdown content that automatica
 ### Markdown Editor Theme Menu
 
 <figure>
-  <img src="./mdEditor/images/mdEditorDarkLight.png" alt="Theme Menu in the Markdown Editor">
+  <img src="../components/assets/md-editor/mdEditorDarkLight.png" alt="Theme Menu in the Markdown Editor">
   <figcaption>The new Theme menu allows you to quickly insert theme-aware content containers.</figcaption>
 </figure>
 

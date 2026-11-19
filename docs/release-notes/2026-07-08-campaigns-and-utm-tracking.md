@@ -4,8 +4,8 @@ description: Seamlessly track survey referral channels and build marketing attri
 
 # Marketing Campaigns & Advanced UTM Link Building
 
-**Date:** 2026-07-08
-**Version:** v1.1.0
+**Date:** 2026-07-08  
+**Version:** 1.1.0
 
 ## Overview
 

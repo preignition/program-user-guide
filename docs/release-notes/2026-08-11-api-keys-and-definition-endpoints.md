@@ -4,8 +4,8 @@ description: Securely manage team API keys in the Customer Portal and query type
 
 # Team API Keys & Data Definition Endpoints
 
-**Date:** 2026-08-11
-**Version:** v1.2.0
+**Date:** 2026-08-11  
+**Version:** 1.2.0
 
 ## Overview
 

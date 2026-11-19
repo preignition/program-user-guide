@@ -4,8 +4,8 @@ description: Share high-quality survey sections across teams, embed standardized
 
 # Section Library, Cross-Survey Sharing & Smart Pre-Fill
 
-**Date:** 2026-08-15
-**Version:** v1.3.0
+**Date:** 2026-08-15  
+**Version:** 1.3.0
 
 ## Overview
 

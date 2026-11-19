@@ -4,7 +4,8 @@ description: A redesigned one-question-per-page layout — layout choice at crea
 
 # Improved One-Question-Per-Page Layout
 
-**Date:** 2026-08-16
+**Date:** 2026-08-16  
+**Version:** 1.3.1
 
 ## Overview
 

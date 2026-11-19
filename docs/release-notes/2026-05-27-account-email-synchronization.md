@@ -1,6 +1,10 @@
+---
+description: Seamless identity verification in surveys with the Account Email question type.
+---
+
 # Seamless Identity Verification with Account Email
 
-**Date:** 2026-05-27
+**Date:** 2026-05-27  
 **Version:** 1.0.0
 
 ## Overview

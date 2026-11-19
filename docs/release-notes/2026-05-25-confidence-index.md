@@ -4,6 +4,9 @@ description: Introducing the Confidence Index and advanced behavioral tracking f
 
 # Confidence Index & Behavioral Tracking
 
+**Date:** 2026-05-25  
+**Version:** 1.0.1
+
 We are excited to introduce a suite of features designed to enhance data integrity and provide researchers with deeper insights into respondent behavior.
 
 ## What is the Confidence Index?

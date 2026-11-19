@@ -1,8 +1,11 @@
 ---
-description: Release note for the "Scroll Page Before Next" feature in form builder
+description: Ensure respondents view full page content by requiring scrolling to the bottom before advancing.
 ---
 
 # Scroll Page Before Next
+
+**Date:** 2026-05-20  
+**Version:** 1.0.0
 
 We are introducing a new setting to ensure respondents fully view content before proceeding to the next page. This is particularly useful for surveys that include mandatory reading material, terms of service, or long instructions.
 
