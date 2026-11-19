@@ -218,7 +218,7 @@ When suspicious, automated, or invalid responses are identified, researchers can
 
 ### Excluding Responses
 
-1. In the Behavioral Respondent Log, select the checkboxes next to the responses you want to remove (this requires edit rights on the survey). The header checkbox selects every visible row.
+1. In the Behavioral Respondent Log, select the checkboxes next to the responses you want to remove (this requires edit rights on the survey). The header checkbox selects every row in the current filter.
 2. The table header shows **N selected**; click **Remove from dataset…**:
 
 <figure>

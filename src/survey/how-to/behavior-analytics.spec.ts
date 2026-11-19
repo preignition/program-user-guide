@@ -124,7 +124,7 @@ test.describe('Behavioral analytics', async () => {
 
     await test.step('Select a respondent for removal', async () => {
       const grid = page.getByRole('region', { name: 'Behavioral respondent breakdown' })
-      const firstCheckbox = grid.locator('md-checkbox[data-response-id]').first()
+      const firstCheckbox = grid.getByRole('checkbox', { name: /Select Row/ }).first()
       await firstCheckbox.click()
 
       const selectionBar = page.getByTestId('behavioral-selection-bar')
