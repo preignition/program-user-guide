@@ -27,28 +27,32 @@ Use this when you want to provide a completely different version of a question o
 By default, all modes are selected, meaning the content is always visible.
 :::
 
-## Method 2: CSS Show/Hide Classes
+## Method 2: Markdown Block Directives & CSS Classes
 
-Alternatively, you can use **Markdown Block Directives** (like `::: dark-only`) for a cleaner, non-HTML way to achieve the same result.
-
-If you need to show or hide specific words, paragraphs, or components **within a single field** (like a text page or a question label), use CSS classes in the Markdown editor.
+If you need to show or hide specific paragraphs, components, or sentences **within a single field** (like an introduction page or a question label), use **triple-colon block directives** in the rich text editor.
 
 ### When to use it
 
-Use this for "inline" changes where you don't want to create separate fields for different modes, but just want to swap a specific piece of text or an image.
+Use this for inline content variations where you want to swap a specific explanation or image depending on the respondent's active mode, without duplicating the entire question.
 
 ### How to apply it
 
-Wrap your content in an HTML tag (like `<div>` or `<span>`) and apply the relevant class:
+Wrap your content in a block directive:
 
-* `show-when-[mode]`: Visible **only** in that mode.
-* `hide-when-[mode]`: Hidden in that mode.
+```md
+::: show-when-easyread
+This simplified explanation is visible only in Easy Read mode.
+:::
 
-**Example:**
+::: hide-when-easyread
+This standard text is hidden when Easy Read mode is active.
+:::
+```
 
-```html
-<p>Please answer the following question.</p>
-<p class="show-when-easyread">This version uses simpler words for Easy Read.</p>
+You can also apply class attributes to inline images or phrases using the `{.class-name}` syntax:
+
+```md
+![Sign Language Banner](https://example.org/banner.png){.show-when-signlanguage}
 ```
 
 Refer to the [Visibility Control Reference](../reference/content/markdown/visibility-control.md) for the full list of available classes.

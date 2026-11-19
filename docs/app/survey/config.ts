@@ -56,6 +56,7 @@ function getSidebar() {
             { text: "Provide rich formatting", link: `providing-rich-formatting.md` },
             { text: "Use form logic", link: `logic-expression.md` },
             { text: "Add images to the image library", link: `adding-images-to-library.md` },
+            { text: "Randomize survey items", link: `randomizing-items.md` },
             { text: "Style a survey", link: "styling-a-survey.md" },
             { text: "Set access rights for forms", link: `access-rights.md` },
             {
@@ -77,7 +78,6 @@ function getSidebar() {
           collapsed: true,
           items: [
             { text: "Activate accessibility modes", link: `activating-accessibility-modes.md` },
-            { text: "Localize a survey", link: "localize-survey.md" },
             { text: "Add an accessibility menu", link: `adding-an-accessibility-menu.md` },
             { text: "Use Easy Read", link: `use-easy-read.md` },
             { text: "Use Sign Language", link: `use-sign-language.md` },
@@ -98,27 +98,22 @@ function getSidebar() {
           items: [
             { text: "Publish a survey", link: `publishing-a-survey.md` },
             { text: "Send invitations to a team audience", link: `send-invitations.md` },
-            { text: "Create alias survey links", link: `creating-alias.md` },
             { text: "Use survey batches", link: `using-batches.md` },
             {
               text: "Redirect respondents after completing a survey",
               link: `configure-redirection.md`,
             },
             { text: "Set survey terms", link: `survey-terms.md` },
-            {
-              text: "Fill in surveys on behalf of other respondents",
-              link: `filling-in-surveys-on-behalf-of-others.md`,
-            },
           ],
         },
         {
           text: "Analytics and Export",
           collapsed: true,
           items: [
-            { text: "Send invitations to a team audience", link: `send-invitations.md` },
             { text: "Analyze survey responses", link: `survey-analytics.md` },
             { text: "Analyze respondent behavior", link: `behavior-analytics.md` },
             { text: "Export survey data", link: `exporting-survey-data.md` },
+            { text: "Purge collected data", link: `purging-collected-data.md` },
           ],
         },
       ],

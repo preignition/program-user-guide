@@ -39,16 +39,7 @@ Then, select **Next**.
 
 ## Step 3: Choose or create a form
 
-Surveys use 'Forms' to collect data.
-
-You can create a new form right away by providing a name, description, and first page title.
-
-<figure>
-  <img src="./assets/creating-a-new-survey/step-3-choose-type-of-form.png" alt="Choose type of form">
-  <figcaption>Choose type of form</figcaption>
-</figure>
-
-If you already have a form that you want to use in your survey, you can choose to select an existing form instead.
+Surveys use 'Forms' to collect data. Each survey creates its own form to store question definitions. If you want to reuse existing questions or sections from other surveys, you can embed them later using the [Section Library](./how-to-share-section.md).
 
 Fill in the necessary form details.
 
@@ -67,7 +58,7 @@ When creating a new form, you are asked which **layout** your questions use:
 - **Multiple questions per page** — questions share pages. Best for longer, more complex surveys with lots of logic.
 
 ::: tip
-You can change this later in **Design → Style**.
+You can change your layout selection later under **Build → Form Behavior → Layout**.
 :::
 
 <figure>

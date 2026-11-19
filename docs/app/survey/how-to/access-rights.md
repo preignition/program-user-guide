@@ -1,64 +1,59 @@
 ---
-description: Learn how to manage access rights and permissions for your survey forms.
+description: Learn how to manage access rights and collaborator roles for your survey.
 ---
 
 # How to set access rights for forms
 
-As the creator (Owner) of a survey, you control who has access to view, edit, or translate your forms. By adding team members and assigning specific roles, you can collaborate securely.
+As the creator (**Owner**) of a survey, you control who has access to view, edit, configure, or translate your questionnaire. By adding collaborators and assigning specific roles, your team can build and review surveys securely.
 
-> [!NOTE]
-> Only the 'Owner' of a form can manage access rights. To be granted access, a user must already have an account on the application and be associated with your organization or program.
+::: info Prerequisite: Team Membership
+All members of your active team automatically have read-level visibility into surveys within the team workspace. To grant editing, publishing, or translation rights, you must explicitly assign a role to that user on this survey.
 
-Adding a user to your organization or team is only the first step — it does not by itself give them access to any survey.
-
-> [!IMPORTANT]
-> Being a member of your team is a **prerequisite** for granting survey access — it is not the grant itself. A colleague added to your team still has no survey access until you add them to a specific survey here. For the full picture of how account, team and survey permissions relate, see [Understanding Access and Permissions](../../customer/explanation/understanding-access-and-permissions.md).
+To collaborate, the colleague must already be an accepted [Team Member](../../customer/reference/team/members.md). For how account, team, and survey permissions relate, see [Understanding Access and Permissions](../../customer/explanation/understanding-access-and-permissions.md).
+:::
 
 ## Step 1: Navigate to the Access view
 
-From the survey editor, navigate to the **Share** section in the top menu, then click on the **Access** option in the left-hand navigation menu.
+1. Open your survey in the editor.
+2. In the top bar, click the **Share** tab.
+3. In the left drawer, select **Access**.
 
 <figure>
   <img src="./assets/access-rights/step-1-navigate-to-access-view.png" alt="Access menu button">
-  <figcaption>Click the 'Access' button in the navigation menu.</figcaption>
+  <figcaption>Click the 'Access' button in the Share drawer.</figcaption>
 </figure>
 
-## Step 2: Set access rights for team members
+## Step 2: Assign roles to team members
 
-In the Access view, you can assign permissions to different team members.
+In the Access view, you can grant specific permissions to team members:
 
-- Enter the email address of the user you want to add.
+1. Select or enter the email address of the team member you wish to add.
+2. Choose their role from the role selector:
+   - **Admin**: Full configuration, publishing, and editing permissions, with the ability to manage other collaborators.
+   - **Editor**: Comprehensive editing and configuration rights to build questions and update settings. Cannot delete the survey.
+   - **Guest / Viewer**: Read-only access to inspect the survey structure and view response analytics.
+   - **Translator**: Targeted permissions to translate questions and options for an assigned language without altering questionnaire structure.
+3. Click **Add Access**.
 
+<div style="display: flex; flex-direction: row; gap: 20px;">
 <figure>
-  <img src="./assets/access-rights/step-2-add-members.png" alt="Add team member and select role">
-  <figcaption>Add a team member.</figcaption>
-</figure>
-
-- Select the appropriate access level (e.g., read, write, or admin).
-
-<div style="display: flex; flex-direction: row; gap: 20px; ">
-<figure>
-  <img src="./assets/access-rights/step-2-select-user.png" alt="Select user ">
-  <figcaption>Select the user - All users from active Team appear here.</figcaption>
+  <img src="./assets/access-rights/step-2-select-user.png" alt="Select user">
+  <figcaption>Select a collaborator from your active team.</figcaption>
 </figure>
 <figure>
   <img src="./assets/access-rights/step-2-select-role.png" alt="Select role">
-  <figcaption>Select the appropriate access level for the team member.</figcaption>
+  <figcaption>Select the appropriate role level.</figcaption>
 </figure>
 </div>
 
-- Click the **Add Access** button.
+Once added, the collaborator appears in the **User List** at the bottom of the page with their assigned permissions.
 
-<figure>
-  <img src="./assets/access-rights/step-2-add-access.png" alt="Add Access button and role selection">
-  <figcaption>Add a team member's email, select their role, and click 'Add Access'.</figcaption>
-</figure>
+::: tip Ownership Transfer
+A survey **Owner** can also transfer complete ownership of the survey to another team member from the actions menu on this page.
+:::
 
-Once added, the user will appear in the 'User List' at the bottom of the page, and they will immediately be granted the specified permissions for the survey.
+## Related Content
 
-> [!TIP]
-> A form 'Owner' can also assign their ownership rights entirely to another user using a similar process from this screen.
-
-<!--  -->
-> [!TIP]
-> Refer to the **Customer App** reference to see how to add members to your team and manage their roles at the organization or program level, which is a prerequisite for granting them access to your survey forms.
+- [Survey Access Reference](../reference/share/access/index.md) — Role definitions and permissions overview
+- [Team Members Reference](../../customer/reference/team/members.md) — Managing workspace members in Customer Portal
+- [Authorization Explanation](../explanation/authorization.md) — Access control rules and security architecture

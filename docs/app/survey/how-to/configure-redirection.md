@@ -4,38 +4,54 @@ description: Learn how to configure where a respondent is redirected after compl
 
 # Configuring Survey Redirection
 
-By default, when a respondent finishes a survey, they must be directed somewhere. You can control this destination from the **Redirection** settings located in the **Distribute** section of the survey builder.
+When respondents submit a completed survey, you can control where they are routed next. Redirection settings are configured under **Share → Redirection**.
 
 ## Available Redirection Options
 
-Navigate to the **Distribute** > **Redirection** menu to explore the following options:
+Navigate to **Share → Redirection** in the survey editor to choose your post-submission behavior:
 
-### 1. Application's Home Page
+### 1. Application's Home Page (Default)
 
-This option redirects the respondent to the platform's main landing page (e.g., accessiblesurveys.com or your enterprise homepage). This is a good general option to conclude the survey process and introduce respondents to the platform.
+Redirects respondents to the platform's main landing page (`accessiblesurveys.com`). Anonymous sessions are automatically signed out upon redirection.
 
-<figure><img src="./assets/configure-redirection/click-home-page-link.png" alt="Select the Application Home Page option"><figcaption>Click on Application's home page.</figcaption></figure>
-
-<figure><img src="./assets/configure-redirection/home-page-redirection-option.png" alt="Home Page option selected"><figcaption>The Application home page option is now active.</figcaption></figure>
+<figure>
+  <img src="./assets/configure-redirection/click-home-page-link.png" alt="Select the Application Home Page option">
+  <figcaption>Click on Application's home page.</figcaption>
+</figure>
 
 ### 2. No Redirection
 
-If you choose **No redirection**, respondents will simply stay on the final page of the survey after submitting their responses. This is useful if your final survey page contains a customized thank you message or important follow-up instructions.
+Respondents remain on the final survey screen after submission and see a standard "Thank You" message. Anonymous sessions are kept active, allowing respondents to review confirmation details.
 
-<figure><img src="./assets/configure-redirection/no-redirection-option.png" alt="Select the No Redirection option"><figcaption>Select the No redirection option.</figcaption></figure>
+<figure>
+  <img src="./assets/configure-redirection/no-redirection-option.png" alt="Select the No Redirection option">
+  <figcaption>Select the No redirection option.</figcaption>
+</figure>
 
-<figure><img src="./assets/configure-redirection/no-redirection-option-selected.png" alt="No Redirection option selected"><figcaption>Respondents will remain on the survey's final page upon completion.</figcaption></figure>
+### 3. A Page Dedicated to the Survey (External URL)
 
-### 3. A Page Dedicated to the Survey
+Redirects respondents out of the survey to an external web page you specify (e.g., your organization's website, a debriefing page, or a study resource portal):
 
-This option redirects respondents to a dedicated page outside of the survey itself. In the future, this page can be configured to provide respondents with useful information about the survey, such as aggregate response statistics, next steps, or details on how their data will be used.
+1. Select **A page dedicated to this survey**.
+2. In the **Redirect Location** field, enter the full destination URL (e.g., `https://example.org/thank-you`).
 
-<figure><img src="./assets/configure-redirection/page-dedicated-to-survey-option.png" alt="Select a page dedicated to the survey"><figcaption>Click on A page dedicated to this survey.</figcaption></figure>
-
-<figure><img src="./assets/configure-redirection/page-dedicated-to-survey-option-selected.png" alt="Page dedicated to survey option selected"><figcaption>Respondents will be directed to a dedicated survey dashboard or info page.</figcaption></figure>
+<figure>
+  <img src="./assets/configure-redirection/page-dedicated-to-survey-option.png" alt="Select a page dedicated to the survey">
+  <figcaption>Select A page dedicated to this survey and provide an external URL.</figcaption>
+</figure>
 
 ### 4. User Space (Upcoming)
 
-*Note: This feature is currently in development.*
+*Note: User Space is currently disabled.* When released, this option will direct registered respondents to a personalized dashboard to track participation across surveys.
 
-When released, this option will direct signed-in respondents to a personalized workspace where they can view follow-up actions, reports, or invitations to other surveys. Anonymous respondents will be invited to create an account before being directed to this space.
+## Configuring Redirect Timeout
+
+When redirecting to the **Application's home page** or an **External URL**, you can adjust the **Redirect Timeout**:
+
+- **Default:** `8` seconds
+- Enter the desired delay in seconds. This ensures respondents have sufficient time to read the completion confirmation message before the browser navigates to the destination URL.
+
+## Related Content
+
+- [Redirection Reference](../reference/share/redirection/index.md) — Technical details of post-submission routing
+- [Publishing a Survey](./publishing-a-survey.md) — Deploying your survey to production

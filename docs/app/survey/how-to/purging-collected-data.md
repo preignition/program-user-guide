@@ -18,7 +18,7 @@ A purge cannot be undone. Take an export first if you may need the responses.
 
 ## Purge the data
 
-1. Open the survey and choose **Purge data**.
+1. From the **Survey Workspace**, open the context menu (three dots or right-click) on the survey row, or click the actions menu in the survey editor top bar, and choose **Purge data**.
 2. The dialog reads the survey's inventory and lists what will be deleted (sessions, form sessions, responses, reminder contact records, Sent email history) and what is kept (the survey, the form, the published build, the shared stores).
 3. Type the survey's name to confirm, then choose **Purge data**.
 4. The action reports its progress and records an activity entry naming who purged what and when.

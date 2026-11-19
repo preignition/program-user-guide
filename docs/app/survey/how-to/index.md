@@ -4,7 +4,7 @@ description: Practical, step-by-step directions for completing specific tasks in
 
 # How-to Guides
 
-The **How-to Guides** section is goal-oriented. These guides are essentially recipes that provide practical, step-by-step directions to help you solve specific, real-world problems.
+The **How-to Guides** section is goal-oriented. These guides are recipes that provide practical, step-by-step directions to help you solve specific, real-world problems.
 
 If you already understand the basics of the platform and find yourself asking *"How do I...?"*, this is where you will find your answer.
 
@@ -25,6 +25,7 @@ Fundamental tasks for building your survey and forms, including adding questions
 ### Adding Content
 
 - [How to add content to a form](./adding-content-to-a-form.md)
+- [How to put text above a question](./text-above-a-question.md)
 - [How to control content visibility](./controlling-visibility.md)
 - [How to provide rich formatting](./providing-rich-formatting.md)
 - [How to use form logic](./logic-expression.md)
@@ -47,7 +48,7 @@ Fundamental tasks for building your survey and forms, including adding questions
 
 ## 2. Accessibility
 
-Implementing specialized features like Easy Read, Sign Language videos.
+Implementing specialized accessibility features like Easy Read, Sign Language videos, and plain-language tooltips.
 
 - [How to activate accessibility modes](./activating-accessibility-modes.md)
 - [How to add an accessibility menu](./adding-an-accessibility-menu.md)
@@ -59,7 +60,7 @@ Implementing specialized features like Easy Read, Sign Language videos.
 
 ## 3. Localization & Translation
 
-Adding multilingual support to your survey, translating forms, and using import/export features for translation.
+Adding multilingual support to your survey, translating forms, and using import/export features for offline translation.
 
 - [How to create a multilingual survey](./localize-survey.md)
 - [How to use import/export to translate forms](./import-export.md)
@@ -68,21 +69,21 @@ Adding multilingual support to your survey, translating forms, and using import/
 
 ## 4. Sharing & Distribution
 
-Generating links, managing survey batches, configuring respondent accounts, and analyzing or exporting survey data.
+Publishing surveys, inviting contact lists, configuring respondent accounts, and managing batches.
 
 - [How to publish and distribute a survey](./publishing-a-survey.md)
 - [How to send invitations to a team audience](./send-invitations.md)
 - [How to configure redirection after completing survey](./configure-redirection.md)
-- [How to fill-in surveys on behalf of other respondents](./filling-in-surveys-on-behalf-of-others.md) - *in progress*
+- [How to manage survey terms](./survey-terms.md)
+- [How to use survey batches](./using-batches.md)
 
-### Advanced
-
-- [How to manage survey terms](./survey-terms.md) - *in progress*
-- [How to use survey batches](./using-batches.md) - *in progress*
-- [How to create alias survey links](./creating-alias.md) - *in progress*
+---
 
 ## 5. Analytics & Export
+
+Exploring responses, analyzing respondent behavior, exporting data, and managing data lifecycles.
 
 - [How to analyze survey responses](./survey-analytics.md)
 - [How to analyze respondent behavior and data quality](./behavior-analytics.md)
 - [How to export survey data](./exporting-survey-data.md)
+- [How to purge collected survey data](./purging-collected-data.md)

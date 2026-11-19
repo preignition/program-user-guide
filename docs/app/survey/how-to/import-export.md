@@ -11,14 +11,14 @@ This guide explains how to translate a survey form by exporting its content, tra
 
 First, export your existing survey form to generate a file containing all translatable content.
 
-1. In the survey's **Import/Export** settings page, click the **Export Survey Definition** button.
+1. Under the **Share** tab, navigate to the **Import/Export** drawer page and click the **Export Survey** button.
 
     <figure>
-      <img src="./assets/import-export/step-1-export-survey-definition.png" alt="Click the Export Survey Definition button">
-      <figcaption>Export Survey Definition button</figcaption>
+      <img src="./assets/import-export/step-1-export-survey-definition.png" alt="Click the Export Survey button">
+      <figcaption>Export Survey button in Share → Import/Export</figcaption>
     </figure>
 
-1. Select the target language for the translation (e.g., Arabic).
+1. Select the target language for the export. You can choose any supported written language (e.g., Arabic, Spanish) or sign language dialect (e.g., American Sign Language `ase`, French Sign Language `fsl`) to bulk-edit video IDs.
 
     <figure>
       <img src="./assets/import-export/step-1-select-language-for-export.png" alt="Select the target language">
@@ -86,11 +86,11 @@ The **`form`** structure strictly follows the builder layout:
 
 Once translation is complete, you can import the file back into Accessible Surveys to apply the new languages.
 
-1. Navigate back to the **Import/Export** settings and click the **Import Survey Definition** button.
+1. Navigate back to **Share → Import/Export** and click the **Import Survey** button.
 
     <figure>
-      <img src="./assets/import-export/step-3-import-translated-form.png" alt="Click Import Survey Definition">
-      <figcaption>Import Survey Definition button</figcaption>
+      <img src="./assets/import-export/step-3-import-translated-form.png" alt="Click Import Survey">
+      <figcaption>Import Survey button in Share → Import/Export</figcaption>
     </figure>
 
 1. Click **Upload File...** to select your translated JSON file.

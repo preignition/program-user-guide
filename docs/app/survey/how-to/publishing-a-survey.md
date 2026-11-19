@@ -73,10 +73,9 @@ Once the survey is in production, the **Distribute** section gives you access to
 - **Test Mode**: Generates a link used to preview the survey. Respondents' answers are **not** saved to the database. You can optionally skip the landing page while testing.
 - **Production Mode**: Generates the link you share to collect real responses. Answers are saved to the database automatically.
 
-### Advanced Survey Options
+### Production Deployment
 
-- **Survey Name**: You can use the default system ID in your link or opt for a readable "alias" (see the guide on *Creating alias survey links* for more details).
-- **Force Latest Version**: Available in Production mode, this option forces respondents to use the newly published version of the survey, even if they have already started answering a previous version. By default, respondents stay on the version they started with.
+Clicking **Go to Production** redeems one survey from your plan's active survey quota and marks the survey as in production. Once confirmed, the **Display Link for Production** button becomes available to generate and copy your live survey link.
 
 <figure><img src="./assets/publishing-a-survey/step-3-display-production-link.png" alt="Displayed production link"><figcaption>Click the Display Link for Production button to get the real URL.</figcaption></figure>
 

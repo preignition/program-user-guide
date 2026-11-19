@@ -61,7 +61,6 @@ Our tutorials take you by the hand and guide you through a complete learning exp
 
 **Do you need practical directions to complete a specific task?**  
 How-to guides are recipes that help you solve real-world problems. If you already know the basics and just need to know *"How do I add a tooltip?"* or *"How do I export my data?"*, you'll find step-by-step instructions here.
-*(Note: Our older step-by-step guides from the legacy `guidance.notes` section are being integrated here).*
 
 ### 3. [Reference](./reference/index.md) (Information-oriented)
 
@@ -71,6 +70,9 @@ The Reference section provides austere, descriptive information about the platfo
 - **[Build](./reference/build/index.md):** Information on composing your survey, structuring pages and questions, setting up form behavior, localizing, and managing the image library.
 - **[Test](./reference/test/index.md):** Details on the testing interface, preview modes, and simulation tools.
 - **[Share](./reference/share/index.md):** Details on publishing, distributing links, configuring respondent access rights, batches, webhooks, and redirection.
+- **[Analyze](./reference/analyze/survey.md):** Details on survey response analytics, behavioral paradata, and invitation progress tracking.
+- **[Markdown Reference](./reference/content/markdown/index.md):** Reference on custom classes, CSS tokens, info boxes, and web components.
+- **[Logic Expressions](./reference/content/logic-expression/index.md):** Jexl syntax, operators, and conditional visibility expressions.
 
 ### 4. [Explanation](./explanation/index.md) (Understanding-oriented)
 

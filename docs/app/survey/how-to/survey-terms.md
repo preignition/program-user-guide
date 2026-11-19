@@ -1,49 +1,44 @@
 ---
-description: >-
-  This page describes how you can add your own survey terms which respondents
-  have to agree to before starting your survey
+description: Learn how to add custom survey terms and conditions that respondents must accept before participating.
 ---
 
-# Survey terms- advanced
+# How to set survey terms
 
-::: tip
-Although this is an advanced feature, it is simple to add your own survey terms
-:::
+While respondents implicitly accept the platform's general terms of service, you can also require respondents to review and accept your organization's custom terms, participant agreements, or consent disclaimers before beginning a survey.
 
-## Context
+## Step 1: Open the Terms settings
 
-In order to respond to a survey on the application, respondents must agree to the software providers terms of service.
+1. In the survey editor toolbar, enable **Advanced Mode**.
+2. Navigate to the **Share** tab.
+3. In the left drawer, select **Terms**.
 
-You have the option to ask respondents to agree to your own terms of service if you would like
+## Step 2: Activate survey terms
 
-## Step 1
+1. Toggle the **Activate Terms and Service** switch on.
+2. Select your preferred **Terms Appearance**:
+   - **In a Dialog (default):** A hyperlink opens a modal dialog containing the full agreement text. Respondents must click **I agree** in the dialog to proceed.
+   - **On the page:** The agreement text is displayed directly on the survey's introductory page above the agreement checkbox.
 
-To add your own survey terms, first toggle on the 'Advanced' settings.
+## Step 3: Author and format terms content
 
-You will see additional options appear in the Survey Definition menu, including 'Terms'
+1. Navigate to **Build → Compose** in the survey editor.
+2. In the survey structure tree, select the **Terms** item (`build/compose/survey/terms`).
+3. Use the rich text editor to write your terms. You can add headings, bulleted lists, links to external privacy notices, and format text with Markdown.
 
-<lite-youtube videoid="B_fbSwGY3n4"></lite-youtube>
+## Step 4: Translate terms for multilingual surveys
 
-## Step 2
+1. In **Build → Compose**, toggle on **Localize Mode** in the bottom toolbar.
+2. Select the **Terms** item to view the source text alongside the target language.
+3. Enter the localized terms for each active survey language, or click **Translate** to auto-generate draft translations with AI.
 
-To add your your own terms, toggle on 'Add Survey Terms'
+## Step 5: Test your terms
 
-Markdown is supported and CSS Classes can be used to display or hide accessibility modes.
+1. Navigate to the **Test** tab in the top navigation.
+2. Verify that the survey prompts for terms acceptance before revealing questions.
+3. If using dialog mode, click the terms link to confirm that the dialog opens and closes as expected.
 
-You can use the Preview tab to see how your terms will be presented to respondents
+## Related Content
 
-## Step 3
-
-The terms can be translated into any of the languages which are active for the survey
-
-## Step 4
-
-Once your terms are written, you can customize how they will be presented to survey respondents
-
-## Step 5
-
-By default, terms appear as a popup window when a user click on a terms link
-
-## Step 6
-
-This is how your terms will appear if you select the option 'under sign checkbox as plain text'
+- [Terms Reference](../reference/share/terms/index.md) — Technical details of the terms feature
+- [Data Privacy and Security Explanation](../explanation/data-privacy-and-security.md) — Privacy policies and consent compliance
+- [Compose Reference](../reference/build/compose/index.md) — Authoring content items in the survey tree
