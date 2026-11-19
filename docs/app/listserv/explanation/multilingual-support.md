@@ -94,8 +94,8 @@ Email-based subscription commands (`SUBSCRIBE`, `UNSUBSCRIBE`, `HELP`) are recog
 
 | Command | English | French | Portuguese | Arabic |
 | --- | --- | --- | --- | --- |
-| **Subscribe** | `SUBSCRIBE` / `SUB` | `ABONNE` / `ABONNER` | `INSCREVER` | `اشتراك` |
-| **Unsubscribe** | `UNSUBSCRIBE` / `UNSUB` | `DESABONNE` | `CANCELAR` | `إلغاء الاشتراك` |
+| **Subscribe** | `SUBSCRIBE` | `INSCRIRE` | `INSCREVER` | `اشتراك` |
+| **Unsubscribe** | `UNSUBSCRIBE` / `SIGNOFF` | `DESINSCRIRE` | `DESCADASTRAR` | `إلغاء الاشتراك` |
 | **Help** | `HELP` | `AIDE` | `AJUDA` | `مساعدة` |
 
 Automated reply emails (confirmation, acknowledgment, error) are also composed in the matched language or fall back to the channel's primary language.

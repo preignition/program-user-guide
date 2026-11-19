@@ -94,7 +94,7 @@ Provides high-level descriptions and navigation links to the main administrative
 | --- | --- | --- |
 | **Subscriber UID** | Branded String | Firebase Auth UID backing the subscriber identity |
 | **Email Address** | String | Recipient mail address |
-| **Status** | Enum | Membership status: `pending`, `confirmed`, `active`, `unsubscribed` |
+| **Status** | Enum | Membership status: `pending`, `active`, `unsubscribed`, `bounced` |
 | **Delivery Mode** | Boolean | `digestMode: false` (Real-time list) vs `digestMode: true` (Digest list) |
 | **Vacation Mode** | Boolean | Delivery pause flag |
 | **Languages** | Array | ISO 639-1 language choices for translation dispatch |
@@ -114,7 +114,7 @@ Provides high-level descriptions and navigation links to the main administrative
 
 <figure>
   <img src="./assets/admin-analytics-content-auto.png" alt="Admin Analytics Detailed View">
-  <figcaption>Detailed performance overview with delivery rates, open rates, and language breakdown</figcaption>
+  <figcaption>Detailed performance overview with delivery rates, open rates, and response metrics</figcaption>
 </figure>
 
 ### Dashboard Metrics & Performance Controls
@@ -124,8 +124,6 @@ Provides high-level descriptions and navigation links to the main administrative
 | **Total Sent** | Metric Card | Cumulative count of broadcasts dispatched across the channel |
 | **Delivery Rate** | Percentage Metric | Proportion of dispatched messages successfully delivered |
 | **Open Rate** | Percentage Metric | Percentage of delivered broadcasts opened by subscribers; each recipient counts once per broadcast |
-| **Click Rate** | Percentage Metric | Proportion of opened broadcasts resulting in link engagement |
-| **Language Breakdown** | Segment Tab | Filter engagement metrics and subscriber reach by language locale |
 
 ---
 

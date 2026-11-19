@@ -23,16 +23,22 @@ Public pages are accessible without authentication to allow stakeholders to view
 
 | Element / Field | Type | Description |
 | --- | --- | --- |
-| **Header Title** | Heading | Display title for the channel (e.g. "Broadcasts for Playwright Channel") |
+| **Header Title** | Heading | Display title for the channel (e.g. "Broadcasts for Community Forum") |
 | **Channel Subtitle** | Paragraph | Instructions explaining row clicks to view full broadcasts and threaded responses |
-| **New Broadcast Action** | Button | `+ New Broadcast` button triggering admin broadcast composition |
-| **Broadcast Table** | Data Table | Interactive list of recent channel broadcasts |
+| **New Broadcast Action** | Button | `+ New Broadcast` button triggering broadcast composition for authorized users |
+| **Broadcast Table** | Data Table | Interactive list of sent channel broadcasts with column sorting and search |
 | **Title Column** | String | Subject/title line of the broadcast |
 | **Created Column** | Date | Formatted creation date (e.g. `Jul 28, 2026`) |
 | **Summary Column** | Text | 1-2 sentence overview/excerpt of the broadcast content |
 | **Category Column** | Badge | Categorization tag (`news`, `other`, `event`, `announcement`, `question`) |
 | **Responses Column** | Counter | Number of threaded subscriber replies attached to the broadcast |
 | **Subscribe Link** | Navigation | Top-bar prominent navigation link to `/subscribe` |
+
+::: info Channel Visibility: Public vs. Private
+
+- **Public Channels:** The broadcast archive is accessible to unauthenticated visitors. Sent announcements can be browsed and searched publicly.
+- **Private Channels:** Archive access is restricted to registered channel subscribers and team members. Unauthenticated visitors are prompted to subscribe or sign in before viewing archive content.
+:::
 
 ---
 

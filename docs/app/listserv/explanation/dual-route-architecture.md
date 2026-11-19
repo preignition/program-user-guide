@@ -51,8 +51,8 @@ The Email Command route processes incoming emails sent to channel addresses (e.g
 
 | Command | Recognized Keywords (Case-Insensitive) | System Action |
 | --- | --- | --- |
-| **SUBSCRIBE** | `SUBSCRIBE`, `SUB`, `ABONNE`, `INSCREVER`, `اشتراك` | Registers subscriber in Firestore as `active` and adds them to the channel's Mailgun list. |
-| **UNSUBSCRIBE** | `UNSUBSCRIBE`, `UNSUB`, `SIGNOFF`, `DESABONNE`, `CANCELAR`, `إلغاء الاشتراك` | Sets status to `unsubscribed` and removes user from all Mailgun lists. |
+| **SUBSCRIBE** | `SUBSCRIBE`, `INSCRIRE`, `INSCREVER`, `اشتراك` | Registers subscriber in Firestore as `active` and adds them to the channel's Mailgun list. |
+| **UNSUBSCRIBE** | `UNSUBSCRIBE`, `SIGNOFF`, `DESINSCRIRE`, `DESCADASTRAR`, `إلغاء الاشتراك` | Sets status to `unsubscribed` and removes user from all Mailgun lists. |
 | **HELP** | `HELP`, `AIDE`, `AJUDA`, `مساعدة` | Sends an automated reply email with command usage instructions. |
 
 1. **Email Submissions**: If no command keyword is detected, the inbound email is ingested as a community post submission, creating a `Broadcast` document in `draft` status (`origin: 'user'`, `template: 'community'`) and forwarding it to the admin Moderation Queue.

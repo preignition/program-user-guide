@@ -33,19 +33,12 @@ The performance dashboard reports real-time metrics updated via Mailgun webhooks
 - **Total Recipients**: Total subscriber accounts included in the send list
 - **Delivery Rate (%)**: Percentage of emails successfully delivered to subscriber mailboxes
 - **Open Rate (%)**: Percentage of delivered messages opened by recipients, counted once per recipient regardless of how many times they reopen the email
-- **Click-Through Rate (%)**: Percentage of opened emails where links were clicked
 - **Bounces / Failures**: Total permanently or temporarily rejected email addresses
 - **Response Count**: Number of threaded subscriber replies attached to this broadcast. Expanding the grid row reveals the full flat response thread.
 
----
-
-## Step 3: Segment Analytics by Language
-
-To compare engagement across different language communities:
-
-1. In the broadcast analytics view, locate the **Language Breakdown** tab.
-2. Select a target language (e.g. `English`, `French`, `Portuguese`, `Arabic`).
-3. View the specific delivery and open rates calculated for subscribers who received that translation version.
+::: info Click Tracking Disabled
+In accordance with our privacy-first principles and [ADR 0002](../explanation/REF.md), link click tracking is disabled. Broadcast links are delivered directly as authored without intermediate tracking redirects.
+:::
 
 ---
 

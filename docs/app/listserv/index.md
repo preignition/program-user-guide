@@ -55,29 +55,35 @@ Follow our guided hands-on walkthrough to learn how to subscribe to a channel, s
 **Need to complete a specific task?**  
 Step-by-step recipes covering:
 
-- [Subscribing & Preferences](./how-to/subscribing-and-managing-preferences.md) (Web forms & email commands)
-- [Browsing Archives](./how-to/browsing-and-searching-archives.md) (Public broadcast search)
-- [Creating & Sending Broadcasts](./how-to/creating-and-sending-broadcasts.md) (Rich text, templates & attachments)
-- [Moderating Submissions](./how-to/moderating-community-submissions.md) (Reviewing community submissions)
-- [Analyzing Performance](./how-to/analyzing-broadcast-performance.md) (Delivery, open, and click tracking)
-- [Configuring Settings](./how-to/configuring-channel-settings.md) (Channel defaults, languages, bounces & roles)
+- [Subscribing & Preferences](./how-to/subscribing-and-managing-preferences.md) — Web forms, email commands, and delivery settings
+- [Browsing Archives](./how-to/browsing-and-searching-archives.md) — Public broadcast search and viewing
+- [Creating & Sending Broadcasts](./how-to/creating-and-sending-broadcasts.md) — Composing, formatting, and dispatching announcements
+- [Composing Multilingual Broadcasts](./how-to/composing-multilingual-broadcasts.md) — Automatic language detection and translation
+- [Moderating Submissions](./how-to/moderating-community-submissions.md) — Reviewing, approving, and rejecting community submissions
+- [Analyzing Performance](./how-to/analyzing-broadcast-performance.md) — Delivery rates, open tracking, and engagement metrics
+- [Configuring Settings](./how-to/configuring-channel-settings.md) — Channel metadata, active languages, bounce handling, and roles
+- [Importing a Team Audience](./how-to/importing-a-team-audience.md) — Seeding subscribers from reusable team audiences
 
 ### 3. [Reference](./reference/index.md) (Information-oriented)
 **Looking for facts, field descriptions, or UI element specifications?**  
 Factual descriptions of all application interfaces and data models:
 
 - **[Public Pages](./reference/public/index.md):** Archives & Subscription interface
-- **[Admin Pages](./reference/admin/index.md):** Moderation queue, Broadcast list, Subscriber management
-- **[Settings Pages](./reference/settings/index.md):** Channel configuration, active languages, bounce handling, and access roles
+- **[Admin Pages](./reference/admin/index.md):** Moderation queue, Broadcast list, Subscriber management, Analytics
+- **[Settings Pages](./reference/settings/index.md):** Channel configuration, active languages, bounce handling, user roles, and audience import
 
 ### 4. [Explanation](./explanation/index.md) (Understanding-oriented)
 **Want to understand the architectural design decisions?**  
 Discursive background on core engineering choices:
 
 - **[Dual-Route Architecture](./explanation/dual-route-architecture.md):** Why both Email commands and Web app routes coexist
-- **[Broadcast Lifecycle & AI Moderation](./explanation/broadcast-lifecycle-and-moderation.md):** XState 5 state machines & automated content classification
+- **[Broadcast Lifecycle & AI Moderation](./explanation/broadcast-lifecycle-and-moderation.md):** State machines, automated classification, and dispatch workflows
 - **[Subscriber Identity & Auth](./explanation/subscriber-identity-and-auth.md):** Firebase Auth UID integration and `accountIncomplete` claims
-- **[Mailing Lists & Digest Engine](./explanation/mailing-list-and-digest-architecture.md):** Mailgun mailing list infrastructure & `ScheduledJob` digest dispatch
+- **[Mailing Lists & Digest Engine](./explanation/mailing-list-and-digest-architecture.md):** Mailgun mailing list infrastructure & digest dispatch
+- **[Bounce Handling & List Cleaning](./explanation/bounce-handling-list-cleaning.md):** Handling delivery failures and deactivating stale subscribers
+- **[Broadcast Responses & Threading](./explanation/broadcast-responses-threading.md):** Managing community reply threads
+- **[Multilingual Support](./explanation/multilingual-support.md):** Language detection and automatic translation pipeline
+- **[Markdown Content Format](./explanation/markdown-content-format.md):** Inbound and outbound Markdown processing for email templates
 
 ---
 

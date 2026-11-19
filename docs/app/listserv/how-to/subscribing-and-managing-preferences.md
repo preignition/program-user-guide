@@ -18,8 +18,8 @@ Send an email to `{channel-id}@mg.a11ydata.com` with one of the following comman
 
 | Desired Action | English | French | Portuguese | Arabic |
 | --- | --- | --- | --- | --- |
-| **Subscribe** | `SUBSCRIBE` / `SUB` | `ABONNE` / `ABONNER` | `INSCREVER` | `اشتراك` |
-| **Unsubscribe** | `UNSUBSCRIBE` / `UNSUB` / `SIGNOFF` | `DESABONNE` | `CANCELAR` | `إلغاء الاشتراك` |
+| **Subscribe** | `SUBSCRIBE` | `INSCRIRE` | `INSCREVER` | `اشتراك` |
+| **Unsubscribe** | `UNSUBSCRIBE` / `SIGNOFF` | `DESINSCRIRE` | `DESCADASTRAR` | `إلغاء الاشتراك` |
 | **Help & Guidelines** | `HELP` | `AIDE` | `AJUDA` | `مساعدة` |
 
 ```text

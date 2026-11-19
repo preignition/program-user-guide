@@ -4,29 +4,29 @@ description: An architectural explanation of subscriber identity management, Fir
 
 # Subscriber Identity & Auth Integration
 
-This document details how the Listserv application integrates subscriber records with **Firebase Auth UIDs**, manages double opt-in verification, and enforces security through the `accountIncomplete` custom token claim.
+This document details how the Listserv application integrates subscriber records with **Firebase Auth UIDs**, manages double opt-in verification, and enforces security through the `accountIncomplete` custom token claim (per ADR 0001: `app/app-listserv/docs/adr/0001-subscriber-firebase-auth-identity.md`).
 
 ---
 
-## 1. Firebase Auth UID Coupling (`SubscriberId == Auth UID`)
+## 1. Subscriber Identity Model (`ref.user == Auth UID`)
 
-Every listserv subscriber is directly backed by a **Firebase Auth user account**. Instead of using arbitrary subscriber strings (e.g. `sub-12345`), the subscriber document ID in Firestore is the nominal brand `uid` matching the Firebase Auth UID:
+Every listserv subscriber is backed by a **Firebase Auth user account**:
 
-```text
-app-listserv/data/subscriber/{uid}
-```
+- **Opaque Subscriber IDs:** The subscriber document ID in Firestore is an auto-assigned, opaque identifier (`app/listserv/subscriber/{subscriberId}`).
+- **Auth UID Link:** The `ref.user` property holds the subscriber's Firebase Auth UID. Queries for a user's subscriptions use `where('ref.user', '==', uid)`.
+- **Per-Channel Email Uniqueness Guard:** A dedicated collection (`app/listserv/subscriberEmail/{channelId}_{HMAC(normalisedEmail)}`) enforces exactly one subscriber record per email address per channel. This guard is written in the same transaction as the subscriber and covers both `pending` and `active` states.
 
-### Architectural Benefits:
+### Architectural Benefits
 
-- **Zero Identity Duplication**: Email addresses and authentication credentials reside in Firebase Auth Core.
-- **Self-Service Dashboard**: Allows subscribers to sign into the platform at any point to update delivery preferences, toggle digest mode, or view personal subscription status.
-- **Ecosystem Portability**: Integrates seamlessly with other Accessible Data Framework applications (`app-survey`, `app-discussion`, `app-customer`).
+- **Self-Service Preference Management:** Because subscribers have an underlying Auth identity, they can sign in to the user portal to update delivery preferences, toggle digest mode, or manage multi-channel subscriptions.
+- **Cross-App Integration:** Links seamlessly with customer organization accounts, team memberships, and survey respondent identities.
+- **Safe Pre-Verification State:** Because subscriber IDs are opaque and uniqueness is handled by the HMAC email guard, a `pending` record can exist before a Firebase Auth user is created, without risk of document ID migrations.
 
 ---
 
 ## 2. Web Double Opt-In State Machine
 
-For registrations initiated through the public web form, subscription follows a double opt-in state machine:
+For registrations initiated through the public web form, subscription follows a clean, orphan-free double opt-in lifecycle:
 
 ```text
    Web Registration
@@ -34,78 +34,40 @@ For registrations initiated through the public web form, subscription follows a 
           ▼
     ┌───────────┐      Email Verification Link Click
     │  pending  │ ───────────────────────────────────────▶ ┌───────────┐
-    └───────────┘  (Creates Firebase User + completionToken) │ confirmed │
-                                                           └─────┬─────┘
-                                                                 │
-                                                                 ▼
-                                                           ┌───────────┐
-                                                           │  active   │
-                                                           └───────────┘
+    └───────────┘  (Creates/links Auth User + clears token) │  active   │
+                                                            └───────────┘
 ```
 
-1. **`pending` State**: Temporary record created with email, chosen languages, and a secure verification `token`. No Firebase Auth account exists yet.
-2. **`verify()` Action**: Validates token, creates the Firebase Auth user account (`createUser({ email })`), assigns custom token claims, sets `SubscriberId = Auth UID`, and upgrades status to `confirmed` / `active`.
+1. **`pending` State:** A subscriber document is created with the subscriber's email address, language preferences, delivery mode, and a secure verification `token`. No Firebase Auth account is created at this point, preventing abandoned signups from cluttering user directories.
+2. **`verify()` Action:** When the user clicks the verification link in their email:
+   - If an Auth account already exists for that email, the subscriber is linked to the existing UID (`ref.user = existingUid`).
+   - If no Auth account exists, a new Firebase Auth user is created (`createUser({ email })`) with custom claim `accountIncomplete: true`.
+   - The pending subscriber document is updated **in place**: status flips directly to `active`, `ref.user` is stamped, and the verification `token` is cleared.
 
 ---
 
 ## 3. Email Command Path & Immediate Linking
 
-Subscribers registering via email commands (e.g., sending `SUBSCRIBE` to `channel-1@mg.a11ydata.com`) bypass the web verification state machine:
+Subscribers registering via email commands (e.g., sending `SUBSCRIBE` to `channel-1@mg.a11ydata.com`) bypass the web verification state machine because sending from the mailbox is inherently self-authenticating:
 
-1. The inbound handler executes `getUserByEmail(email)`.
-2. **If Existing User Found**: Reuses the existing Auth UID (Account Linking).
-3. **If New User**: Automatically creates a Firebase Auth user account (`createUser({ email })`) and assigns the custom claim `accountIncomplete: true`.
-4. The subscriber is immediately set to `status: 'active'`.
-
----
-
-## 4. Security Gating via `accountIncomplete` Custom Claim
-
-When an account is created without a password (such as via double opt-in or email commands), Firebase Auth attaches a custom token claim:
-
-```json
-{
-  "accountIncomplete": true
-}
-```
-
-### Firestore Security Rule Enforcement:
-
-Firestore security rules in `app-listserv/firestore.rules` inspect this custom claim to gate client write access:
-
-```javascript
-allow write: if (
-  isAuthenticated() && (
-    isSuperAdmin() ||
-    isUserTeamEditor(getListservTeamId()) ||
-    (
-      isUser(subscriberId) &&
-      request.auth.token.accountIncomplete != true
-    )
-  )
-);
-```
-
-::: warning Security Guarantee
-Subscribers whose accounts lack a password cannot write to or mutate their Firestore records. They can only modify their settings after completing the password setup flow.
-:::
+1. The inbound handler checks for an existing user account with `getUserByEmail(email)`.
+2. **If Existing User Found:** Links the new subscriber record to the existing Auth UID.
+3. **If New User:** Automatically creates a Firebase Auth user account (`createUser({ email })`) and assigns the custom claim `accountIncomplete: true`.
+4. The subscriber document is created directly with `status: 'active'`.
 
 ---
 
-## 5. Account Completion Flow
+## 4. Security Enforcement via `accountIncomplete` Custom Claim
 
-Subscribers with `accountIncomplete: true` receive an account completion link:
+Subscribers created without a web password carry the custom token claim `accountIncomplete: true`:
 
-1. **Token Generation**: A unique `completionToken` is written to the subscriber's document.
-2. **Notification Link**: An email is sent containing the URL:
-   `https://listserv.a11ydata.com/account/complete?token=<completionToken>`
-3. **Password Creation**: The user opens the page, sets a secure password, and submits the form.
-4. **Claim Clearing**: The `completeAccount` cloud endpoint verifies the token, calls `auth.updateUser(uid, { password })`, removes the `accountIncomplete` claim, and clears the `completionToken` from Firestore.
+- **Firestore Security Rules:** Gated so that accounts with `accountIncomplete: true` are restricted to reading their own subscriber profile and cannot perform elevated actions.
+- **Account Completion Flow:** When an incomplete user visits the web portal, they are prompted to set a secure password, which clears the `accountIncomplete` claim upon completion.
 
 ---
 
 ## Related Content
 
-- [Dual-Route Architecture Explanation](./dual-route-architecture.md)
-- [Subscribing & Preferences How-To](../how-to/subscribing-and-managing-preferences.md)
-- [Public Pages Specification](../reference/public/index.md)
+- **ADR 0001: Subscriber Firebase Auth Identity** (`app/app-listserv/docs/adr/0001-subscriber-firebase-auth-identity.md`) — Authoritative decision record
+- [Subscribing & Preferences How-to Guide](../how-to/subscribing-and-managing-preferences.md) — End-user subscription walkthrough
+- [Dual-Route Architecture Explanation](./dual-route-architecture.md) — Web and email command integration

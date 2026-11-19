@@ -33,7 +33,7 @@ How-to guides are **goal-oriented recipes** that provide clear, step-by-step dir
 ### Analytics & Reporting
 
 - **[Analyzing Broadcast Performance](./analyzing-broadcast-performance.md)**  
-  Track delivery, open, and click-through rates, and filter engagement statistics by language segment.
+  Track delivery rates, open metrics, and subscriber responses.
 
 ### Administration & Settings
 

@@ -75,7 +75,7 @@ Channel Settings allow channel owners and editors to configure metadata, transla
 | --- | --- | --- |
 | **Automatic Cleaning** | `<md-switch>` | Toggles automatic subscriber deactivation on bounce webhooks |
 | **Bounce Threshold** | Number | Number of permanent failures before account deactivation (default: 3) |
-| **Clean List Button** | Button | Triggers on-demand list reconciliation against Mailgun bounce logs |
+| **Clean List Now** | Button | Triggers on-demand list reconciliation against Mailgun bounce logs |
 
 ---
 
@@ -99,7 +99,7 @@ Channel Settings allow channel owners and editors to configure metadata, transla
 | Control / Field | Type | Description |
 | --- | --- | --- |
 | **Listserv Admin Members** | Header | Overview describing role permissions and secretariat team linkage |
-| **Ownership Section** | Profile Card | Identifies primary channel owner (`playwright-a11y@preignition.org`) |
+| **Ownership Section** | Profile Card | Identifies primary channel owner and contact details |
 | **Modify Ownership** | Button | Dialogue trigger to transfer channel ownership |
 | **Add Members** | Button | Action to invite new team members or assign access roles |
 | **Member List / Pending Invite** | Tabs | Toggle between active team members and outstanding invitations |
@@ -112,6 +112,22 @@ Channel Settings allow channel owners and editors to configure metadata, transla
 | **Owner** | Full channel administration, settings management, and user access delegation |
 | **Editor** | Draft broadcasts, moderate community posts, manage subscribers, dispatch emails |
 | **Guest** | Read-only access to broadcast archives and analytics |
+
+---
+
+## 6. Audience Import (`/settings/import`)
+
+- **Component Tag**: `<listserv-settings-import>` / `<customer-audience-import-dialog>`
+- **Route Path**: `/settings/import`
+- **Access Level**: Owner or Editor
+
+The **Audience Import** page allows administrators to seed channel subscribers directly from a reusable team **Audience** managed in the Customer Portal:
+
+- **Audience Selector**: Choose an active or archived team audience.
+- **Outcome Preview**: Generates an instant dry-run breakdown of New, Linked, Updated, Skipped, and Invalid records before writing changes.
+- **Consent Warranty**: Requires explicit confirmation of lawful sending basis and subscriber permission.
+- **Resumable Execution**: Supports batches up to 10,000 unique recipients with live progress tracking and transient error CSV export.
+- **Import History**: Read-only audit log tracking previous import runs, actors, and outcome metrics.
 
 ---
 

@@ -57,7 +57,17 @@ If the submission requires grammar corrections, styling, or attachment formattin
 
 ### Option C: Reject
 
-Click **Reject**. A dialog prompts you for a **Rejection Reason**. Enter the explanation (which is emailed back to the original author) and confirm rejection.
+Click **Reject**. A dialog prompts you to select a **Reason for rejection** from the dropdown:
+
+- **Spam**: Commercial solicitation or automated bot submission.
+- **Not appropriate for this audience**: Content outside the community scope.
+- **Off-topic for this channel**: Content unrelated to the channel's designated subjects.
+- **Duplicate content**: Identical or repeated submission.
+- **Unclear or poorly written**: Submission that cannot be clearly understood.
+- **Violates channel policy**: Breach of the channel's conduct guidelines.
+- **Other**: Custom rejection reason.
+
+The rejection reason is permanently recorded with the broadcast record and emailed to the author. Rejected submissions are returned to draft status if the author wishes to revise and resubmit.
 
 ---
 

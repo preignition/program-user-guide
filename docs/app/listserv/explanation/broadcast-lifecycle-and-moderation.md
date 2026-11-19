@@ -49,12 +49,17 @@ The broadcast pipeline is governed by a strict state machine implemented in XSta
 | State | Role Tag | Description |
 | --- | --- | --- |
 | **`draft`** | `editor` | Broadcast under composition or initial ingestion. |
-| **`submitted`** | `admin` | Post submitted by a community user; triggers AI moderation evaluation. |
+| **`submitted`** | `admin` | Post submitted by a community user; triggers language detection and AI moderation. |
 | **`moderated`** | `admin` | AI evaluation complete (`moderation` metadata attached); placed in Moderation Queue. |
-| **`approved`** | `admin` | Approved by AI or moderator; triggers translation into active languages. |
-| **`rejected`** | `admin` | Submission rejected by moderator or AI; stores `rejectionReason`. |
+| **`approved`** | `admin` | Approved by moderator; triggers automatic translation into active channel languages. |
+| **`rejected`** | `admin` | Submission rejected by moderator; records `rejectionReason`. |
 | **`sending`** | `admin` | Background send actor executing Mailgun list dispatch. |
 | **`sent`** | `admin` | Dispatched to subscribers, archived, and tracked for webhooks. |
+| **`error`** | `admin` | Terminal failure state if dispatch fails during Mailgun delivery. |
+
+::: info Auto-Send and Response Threads
+Automatic dispatch without manual moderator approval is supported exclusively for **Broadcast Responses** (when a subscriber replies to an existing thread and the response passes automated content checks). Regular, top-level community broadcast submissions always require manual review in the Moderation Queue.
+:::
 
 ---
 
