@@ -17,6 +17,7 @@ Click **Upload Images ...** to upload files from your device. The upload compone
 
 - **Supported Media Types:** Images and videos (`accept="image/*, video/*"`), including PNG, JPEG, SVG, WebP, GIF, and MP4.
 - **Maximum File Size:** Up to **5 MB** per file (`5,000,000` bytes). Files exceeding 5 MB will be rejected by the uploader.
+- **Recommended File Size:** We recommend keeping Easy Read images under **400 KB** to optimize load times for mobile respondents, ideally using square (1:1) aspect ratios for layout consistency.
 - **Form Capacity:** Up to **10,000** media files can be attached to a single survey form.
 
 ## Gallery Management

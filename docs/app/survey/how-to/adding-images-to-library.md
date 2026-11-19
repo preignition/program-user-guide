@@ -24,11 +24,20 @@ Click **Upload Images ...** to select media from your device.
   <figcaption>Click the 'Upload Images' button to add files from your computer.</figcaption>
 </figure>
 
-::: tip Media Format & Size Guidelines
+### Image Format and Sizing Best Practices
 
-- **Supported Formats:** Images (PNG, JPG, SVG, WebP, GIF) and videos (MP4, WebM).
-- **Maximum File Size:** Up to **5 MB** per file (`5,000,000` bytes).
-- **Aspect Ratio:** Square images (1:1 ratio) or 4:3 ratios work best alongside questions and Easy Read cards.
+To ensure an optimal respondent experience, follow these guidelines when preparing images:
+
+- **Recommended File Size:** While the platform accepts files up to **5 MB**, we strongly recommend keeping Easy Read images to **400 KB or less**. Keeping files lightweight ensures fast loading times for respondents on mobile devices and slower cellular networks.
+- **Aspect Ratio & Consistency:** Square images (**1:1 ratio**) work best alongside question labels and Easy Read cards. Above all, maintain a consistent aspect ratio across all questions in your survey to prevent distracting layout shifts.
+- **Format Choices:**
+  - **PNG:** Ideal for illustrations, icons, and logos requiring sharp edges or transparent backgrounds.
+  - **JPEG/JPG:** Best for photographs and real-world images with complex gradients.
+  - **SVG & WebP:** Supported for modern, scalable vectors and high-efficiency compressed web images.
+- **Resizing Images Before Upload:** Use free image editing tools (such as [Squoosh](https://squoosh.app/) or [Adobe Express](https://new.express.adobe.com/)) to crop images to a square ratio and scale dimensions (e.g. 500×500 px to 600×600 px) before uploading.
+
+::: tip Media Upload Limits
+The upload component enforces a hard limit of **5 MB** (`5,000,000` bytes) per file and accepts standard web image and video formats (`PNG`, `JPG`, `SVG`, `WebP`, `GIF`, `MP4`, `WebM`).
 :::
 
 ## Step 3: Manage your uploaded images

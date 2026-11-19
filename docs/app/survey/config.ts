@@ -263,12 +263,28 @@ function getSidebar() {
           ],
         },
         {
+          text: "Accessible Formats and Production",
+          collapsed: true,
+          items: [
+            {
+              text: "Producing Surveys in Plain Language or Easy Read",
+              link: "producing-plain-language-easy-read.md",
+            },
+            {
+              text: "Producing Surveys in Sign Languages",
+              link: "producing-sign-language.md",
+            },
+          ],
+        },
+        {
           text: "Data Privacy, security and Ethics",
           collapsed: true,
           items: [
             { text: "Authentication and Identity", link: `authentication.md` },
             { text: "Authorization and Security Rules", link: `authorization.md` },
             { text: "Data Privacy and Security", link: `data-privacy-and-security.md` },
+            { text: "GDPR Compliance and Survey Privacy", link: `gdpr-compliance.md` },
+            { text: "Writing a Survey Privacy Policy", link: `writing-a-privacy-policy.md` },
           ],
         },
         {

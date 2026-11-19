@@ -112,6 +112,10 @@ The `review-field` column header button acts as a filter to show only items with
 
 The share flow renders the same Review panel with the same actions. It also folds in the build's stored warnings, so the author sees the current rule and model findings together with the last build report at the moment they publish.
 
+### Stored Build Warnings
+
+In addition to live rule and model checks, the Review panel and publish workflow surface warnings generated during survey compilation. A common build finding is duplicate question codes: by default, codes are derived in camelCase from question labels, which can lead to collisions when multiple questions share similar opening text. When a collision occurs, the build warning identifies the duplicate code. To resolve it, open the affected question in the Compose view with **Advanced Mode** active and supply a unique identifier in the **Question Code** (`build.code`) field before compiling a new build.
+
 ## Related Content
 
 - [Compose](./compose/index.md) — structure the pages, sections and questions a finding refers to.

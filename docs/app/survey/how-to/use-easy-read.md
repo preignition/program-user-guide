@@ -89,4 +89,10 @@ The editor helper inserts HTML wrappers (such as `<div class="show-when-easyread
 - **Use Plain Language:** Avoid jargon, metaphors, and complex sentence structures.
 - **One Idea per Sentence:** Keep it simple and direct.
 - **Consistent Visuals:** Use images that clearly illustrate the concept being discussed.
-- **Test with Users:** If possible, test your Easy Read version with people who have cognitive disabilities to ensure it is effective.
+- **Test with Users:** If possible, test your Easy Read version with persons with intellectual or cognitive disabilities to ensure it is effective.
+
+## Related Content
+
+- [Producing Surveys in Plain Language or Easy Read](../explanation/producing-plain-language-easy-read.md) — Comprehensive guidance on Plain Language principles, Easy Read production standards, and partnering with expert organizations.
+- [Adding Images to the Library](./adding-images-to-library.md) — Uploading, sizing, and formatting Easy Read illustrations.
+- [The Concept of Modes](../explanation/the-concept-of-modes.md) — How the platform serves diverse respondent needs from a single underlying form.

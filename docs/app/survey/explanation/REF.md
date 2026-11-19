@@ -24,3 +24,21 @@
 - [app/app-survey/actionApi/src/services/sectionCopyService.ts](../../../../../app/app-survey/actionApi/src/services/sectionCopyService.ts): Deep copy service replicating complete section subtrees, question items, and localized/accessibility subdocuments.
 - [app/app-survey/actionApi/src/services/sectionDeleteService.ts](../../../../../app/app-survey/actionApi/src/services/sectionDeleteService.ts): Implementation of the zero-dangle safety invariant, automatically converting live references into independent copies upon section deletion.
 - [app/app-survey/actionApi/src/services/buildFetcher.ts](../../../../../app/app-survey/actionApi/src/services/buildFetcher.ts): Build pipeline discovering live-referenced sections across forms and resolving their out-of-form Sign Language, Easy Read, audio, and translation maps.
+
+## Producing Surveys in Plain Language or Easy Read - producing-plain-language-easy-read
+
+- [app/app-survey/src/entity/settings/BuildQuestion.ts](../../../../../app/app-survey/src/entity/settings/BuildQuestion.ts): UI controls for configuring Easy Read media and simplified text labels.
+- [app/app-survey/renderer/mixin/easyread-mixin.ts](../../../../../app/app-survey/renderer/mixin/easyread-mixin.ts): Renderer mixin managing the presentation of Easy Read cards and visual aids.
+
+## Producing Surveys in Sign Languages - producing-sign-language
+
+- [app/app-survey/src/page/edit/deploy/link-builder.ts](../../../../../app/app-survey/src/page/edit/deploy/link-builder.ts): Sign language dialect options and link pre-selection.
+- [app/app-survey/renderer/mixin/signlanguage-mixin.ts](../../../../../app/app-survey/renderer/mixin/signlanguage-mixin.ts): Renderer mixin managing the playback and positioning of sign language video components.
+
+## GDPR Compliance and Survey Privacy - gdpr-compliance
+
+- [app/app-survey/src/page/analyze/analyze-session-mixin.ts](../../../../../app/app-survey/src/page/analyze/analyze-session-mixin.ts): Export dataset compliance controls, anonymization switches, and data protection warnings.
+
+## Writing a Survey Privacy Policy - writing-a-privacy-policy
+
+- [app/app-survey/src/page/edit/deploy/terms.ts](../../../../../app/app-survey/src/page/edit/deploy/terms.ts): Setting up survey terms, consent prompts, and privacy policy links.

@@ -41,11 +41,18 @@ Content that helps you understand how to create high-quality surveys, including:
 - **[How to choose the right question type](./choosing-the-right-question-type.md)**
 - **[Using Markdown](./using-markdown.md):** Why Accessible Surveys uses Markdown for rich text formatting and its benefits for accessibility.
 
+## Accessible Formats and Production
+
+- **[Producing Surveys in Plain Language or Easy Read](./producing-plain-language-easy-read.md):** Best practices, standards, and production guidance for writing in Plain Language and producing Easy Read surveys in collaboration with persons with intellectual disabilities.
+- **[Producing Surveys in Sign Languages](./producing-sign-language.md):** Studio recording standards, interpreter accreditation, dialect selection, and Deaf community review for sign language survey videos.
+
 ## Data Privacy, Security and Ethics
 
 - **[Authentication and Identity](./authentication.md):** An explanation of how authentication is implemented and managed across the platform.
 - **[Authorization and Security Rules](./authorization.md):** An explanation of how Firebase Security Rules protect survey configurations and respondent data.
 - **[Data Privacy and Security](./data-privacy-and-security.md):** The conceptual framework behind how we handle anonymized datasets, verified accounts, and data export responsibilities.
+- **[GDPR Compliance and Survey Privacy](./gdpr-compliance.md):** Practical guidance for survey creators on controller/processor roles, lawful basis, sensitive data, data subject rights, and international data transfers.
+- **[Writing a Survey Privacy Policy](./writing-a-privacy-policy.md):** How to draft a clear, plain-language, GDPR-compliant privacy notice for your surveys.
 
 ## Useful web-related or technical concepts
 

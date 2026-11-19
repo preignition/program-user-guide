@@ -35,6 +35,20 @@ Before sharing, you must build a version of the form to ensure all recent change
 3. You will be prompted to give the version a label (e.g., "A new version to share"). This helps you differentiate between different builds of the survey. Click to build the survey.
    <figure><img src="./assets/publishing-a-survey/step-2-click-build-the-survey-dialog.png" alt="Build the survey dialog"><figcaption>Provide a versioning message and confirm the build.</figcaption></figure>
 
+### Resolving Build Warnings (Duplicate Question Codes)
+
+During the build process, the system validates form integrity. If any issues are detected, the build report displays warnings describing the problem and identifying the affected items.
+
+The most common build warning is a **duplicate question code**. Question codes determine how responses are keyed in the database and exported in CSV and JSON datasets. By default, a question's code is automatically derived in camelCase from its label. If two or more questions share similar starting phrasing, their generated codes can collide.
+
+To resolve a duplicate question code:
+
+1. Navigate to **Build → Compose**.
+2. Switch on **Advanced Mode** using the toggle in the builder toolbar.
+3. Select the question identified in the build warning from the survey tree to open its settings drawer.
+4. In the **Question Code** (`build.code`) field, enter a unique, descriptive camelCase identifier (for example, `feedbackService` instead of an auto-generated duplicate).
+5. Return to **Publish** and build a new version. The warning will clear once all codes are unique.
+
 ## Step 3: Take the Survey to Production
 
 Building a version prepares the survey, but it does not make it live yet. The **production link** stays hidden until you explicitly take the survey to production. Taking a survey to production:
