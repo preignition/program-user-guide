@@ -115,3 +115,9 @@ Every exclusion action records an immutable audit entry containing:
 - The user identifier of the administrator who executed the action.
 
 The **Excluded (N)** button in the toolbar displays the current count of excluded records, opens the audit history list, and allows administrators to restore any record with a single click. The same removal flow is available on the Analyze tab in Advanced Mode, from the response grid.
+
+## Related Content
+
+- [How to Analyze Respondent Behavior and Data Quality](../../how-to/behavior-analytics.md): Reading the dashboard and removing low-quality responses.
+- [Behavioral Tracking](../share/behavioral-tracking.md): Enabling the tracking and drop-off settings the dashboard depends on.
+- [Survey Analytics Reference](./survey.md): The companion Analyze workbench.

@@ -26,4 +26,5 @@ The **Share** section is your hub for managing the operational lifecycle of your
 - [Batch](./batch/index.md) — Group responses into longitudinal collection waves and designate the active batch.
 - [Campaign](./campaign/index.md) — Track marketing campaigns and build UTM-tagged distribution links.
 - [Webhooks](./webhook/index.md) — Configure real-time HTTP event webhooks with live testing and delivery audit logs.
+- [Behavioral Tracking](./behavioral-tracking.md) — Enable client-side paradata for Behavioral Analytics and drop-off monitoring.
 - [Terms](./terms/index.md) — Require explicit agreement to custom terms and conditions before respondents begin.

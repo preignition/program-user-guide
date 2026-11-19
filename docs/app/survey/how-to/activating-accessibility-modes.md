@@ -33,6 +33,8 @@ Once you have activated the desired accessibility modes, go back to the **Compos
 
 ## Related Content
 
+- [How to Use Read Aloud](./read-aloud.md): Choose a voice per language, record, generate or upload audio, and verify coverage.
+- [How to Choose a Form Layout and Accessible Presentation](./form-layout-and-accessibility.md): Presentation mode, label legibility, scrolling and page flow.
 - [Using Easy Read](./use-easy-read.md): Create simplified wording and attach visual illustrations for cognitive accessibility.
 - [Use Sign Language](./use-sign-language.md): Attach YouTube sign language videos to survey questions.
 - [Adding an Accessibility Menu](./adding-an-accessibility-menu.md): Place an in-survey accessibility menu on your introduction or text pages.

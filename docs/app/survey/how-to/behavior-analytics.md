@@ -13,6 +13,18 @@ Behavioral Analytics uses client-side paradata (interaction timing, answer revis
   <figcaption>The Behavioral Analytics dashboard provides holistic visibility into respondent effort, friction, and submission integrity.</figcaption>
 </figure>
 
+## Before you begin: enable behavioral tracking
+
+The Behavior tab only has data for surveys that enabled tracking **before** respondents took them. Turn it on once per survey:
+
+1. Open the survey and switch on **Advanced Mode**.
+2. Open **Share → Behavioral Tracking**.
+3. Turn on **Activate Behavioral Tracking**.
+4. To analyze abandonment as well as completed sessions, turn on **Monitor Drop Off**. This also turns tracking on; turning tracking off turns drop-off monitoring off.
+5. Publish the survey.
+
+Tracking applies to sessions that start after it is enabled. If the Behavior tab is empty, check this setting first — and note that behavioral tracking is available on some plans only. See [Behavioral Tracking Reference](../reference/share/behavioral-tracking.md) for what is recorded and the plan limitation.
+
 ## 1. Opening the Behavioral Analytics View
 
 To access behavioral analytics:

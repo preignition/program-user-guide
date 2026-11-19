@@ -178,3 +178,4 @@ Available in the **Mobile Overrides** and **Easy Read Overrides** groups to over
 - [Using Easy Read Mode](../../how-to/use-easy-read.md): How to structure content and illustrations for Easy Read mode.
 - [Customer Theme Reference](../../../customer/reference/customer/theme.md): Configuring customer-wide color palettes and typography defaults.
 - [Survey Distribution & Deploy](../share/index.md): Setting up survey links, campaigns, and behavioral tracking.
+- [Behavioral Tracking Reference](../share/behavioral-tracking.md): Enabling tracking and drop-off monitoring that Behavioral Analytics depends on.

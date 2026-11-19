@@ -51,6 +51,8 @@ Fundamental tasks for building your survey and forms, including adding questions
 Implementing specialized accessibility features like Easy Read, Sign Language videos, and plain-language tooltips.
 
 - [How to activate accessibility modes](./activating-accessibility-modes.md)
+- [How to use Read Aloud](./read-aloud.md)
+- [How to choose a form layout](./form-layout-and-accessibility.md)
 - [How to add an accessibility menu](./adding-an-accessibility-menu.md)
 - [How to use Easy Read](./use-easy-read.md)
 - [How to use Sign Language](./use-sign-language.md)

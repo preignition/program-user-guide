@@ -78,6 +78,8 @@ function getSidebar() {
           collapsed: true,
           items: [
             { text: "Activate accessibility modes", link: `activating-accessibility-modes.md` },
+            { text: "Use Read Aloud", link: `read-aloud.md` },
+            { text: "Choose a form layout", link: `form-layout-and-accessibility.md` },
             { text: "Add an accessibility menu", link: `adding-an-accessibility-menu.md` },
             { text: "Use Easy Read", link: `use-easy-read.md` },
             { text: "Use Sign Language", link: `use-sign-language.md` },
@@ -169,6 +171,7 @@ function getSidebar() {
             { text: "Batch", link: `batch/index.md` },
             { text: "Campaign", link: `campaign/index.md` },
             { text: "Webhooks", link: `webhook/index.md` },
+            { text: "Behavioral Tracking", link: `behavioral-tracking.md` },
             { text: "Terms", link: `terms/index.md` },
           ],
         },
@@ -250,6 +253,10 @@ function getSidebar() {
               link: `understanding-section-sharing.md`,
             },
             { text: "Understanding Randomization", link: `understanding-randomization.md` },
+            {
+              text: "Choosing a form layout for cognitive accessibility",
+              link: `choosing-a-form-layout.md`,
+            },
           ],
         },
         {
