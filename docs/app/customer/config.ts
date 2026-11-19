@@ -25,60 +25,71 @@ function getNav() {
 function getSidebar() {
   return [
     {
-      text: 'Explanation',
-      collapsed: false,
-      base: `${root}/explanation/`,
-      items: [
-        { text: 'Access and Permissions', link: `understanding-access-and-permissions.md` },
-        { text: 'Color System', link: `color-system.md` }
-      ]
+      text: 'Tutorials',
+      link: 'index',
+      base: `${root}/tutorial/`,
+      items: []
     },
     {
-      text: 'How-to',
+      text: 'How-to Guides',
+      link: 'index',
       collapsed: false,
       base: `${root}/how-to/`,
       items: [
-        { text: 'Create a theme', link: `create-a-theme.md` },
-        { text: 'Manage API keys', link: `manage-api-keys.md` },
-        { text: 'Using API docs', link: `using-api-docs.md` },
-        { text: 'Buy additional quota', link: `buy-additional-quota.md` }
+        { text: 'Create a theme', link: 'create-a-theme.md' },
+        { text: 'Manage API keys', link: 'manage-api-keys.md' },
+        { text: 'Using API docs', link: 'using-api-docs.md' },
+        { text: 'Buy additional quota', link: 'buy-additional-quota.md' }
       ]
     },
     {
       text: 'Reference',
-      link: `index`,
+      link: 'index',
       base: `${root}/reference/`,
       items: [
         {
           text: 'Customer Settings',
+          link: 'index',
           collapsed: false,
           base: `${root}/reference/customer/`,
           items: [
-            { text: 'Profile', link: `profile.md` },
-            { text: 'Subscription', link: `subscription.md` },
-            { text: 'Members', link: `members.md` },
-            { text: 'Teams', link: `teams.md` },
-            { text: 'Theme', link: `theme.md` },
-            { text: 'Storage Locations', link: `storage-locations.md` },
-            { text: 'Apps & Referrals', link: `apps-referrals.md` },
-            { text: 'Danger Zone', link: `danger-zone.md` }
+            { text: 'Profile', link: 'profile.md' },
+            { text: 'Subscription', link: 'subscription.md' },
+            { text: 'Members', link: 'members.md' },
+            { text: 'Teams', link: 'teams.md' },
+            { text: 'Theme', link: 'theme.md' },
+            { text: 'Storage Locations', link: 'storage-locations.md' },
+            { text: 'Apps & Referrals', link: 'apps-referrals.md' },
+            { text: 'Danger Zone', link: 'danger-zone.md' }
           ]
         },
         {
           text: 'Team Settings',
+          link: 'index',
           collapsed: false,
           base: `${root}/reference/team/`,
           items: [
-            { text: 'Profile', link: `profile.md` },
-            { text: 'Presentation', link: `presentation.md` },
-            { text: 'Members', link: `members.md` },
-            { text: 'Communication', link: `communication.md` },
-            { text: 'Audiences', link: `audiences.md` },
-            { text: 'Channels', link: `channels.md` },
-            { text: 'API Keys', link: `api-keys.md` },
-            { text: 'Danger Zone', link: `danger-zone.md` }
+            { text: 'Profile', link: 'profile.md' },
+            { text: 'Presentation', link: 'presentation.md' },
+            { text: 'Members', link: 'members.md' },
+            { text: 'Communication', link: 'communication.md' },
+            { text: 'Audiences', link: 'audiences.md' },
+            { text: 'Channels', link: 'channels.md' },
+            { text: 'App User Settings', link: 'app-user-settings.md' },
+            { text: 'API Keys', link: 'api-keys.md' },
+            { text: 'Danger Zone', link: 'danger-zone.md' }
           ]
         }
+      ]
+    },
+    {
+      text: 'Explanation',
+      link: 'index',
+      collapsed: false,
+      base: `${root}/explanation/`,
+      items: [
+        { text: 'Access and Permissions', link: 'understanding-access-and-permissions.md' },
+        { text: 'Color System', link: 'color-system.md' }
       ]
     }
   ]

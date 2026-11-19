@@ -8,7 +8,10 @@ The Subscription page shows the plan for the current app, together with the acco
 
 Open it from **Customer Portal → Subscription** in the left menu.
 
-<figure><img src="./assets/subscription-content-auto.png" alt="Customer Subscription Management"><figcaption>The Subscription page and its four tabs.</figcaption></figure>
+<figure>
+  <img src="./assets/subscription-content-auto.png" alt="Customer Subscription Management">
+  <figcaption>The Subscription page and its four tabs.</figcaption>
+</figure>
 
 ## What you can do
 
@@ -16,14 +19,14 @@ Open it from **Customer Portal → Subscription** in the left menu.
 - See when a free trial ends, and add a payment method.
 - Open the Stripe Billing Portal to manage billing.
 - Review past invoices and payments.
-- Check how much quota is left and how much the account has used.
+- Inspect remaining quota, view balance charts and event timelines, and purchase additional quota top-up packs.
 
 ## Tabs
 
 - **Subscription**: the plans attached to the current app.
 - **Invoice**: past invoices, with links to the full invoice in Stripe.
 - **Payment**: past payment attempts.
-- **Quota**: what the plan includes and how much is left.
+- **Quota**: split-view quota manager displaying remaining units, history timelines, and top-up purchasing.
 
 The Subscription, Invoice and Payment tabs have an **Access Billing Portal** button. The Quota tab has **Buy Additional Quota** instead.
 
@@ -59,10 +62,6 @@ A banner above the tabs appears only when something needs attention. It is hidde
 
 Use **Access Billing Portal** (see below). Plan changes and cancellations are handled by Stripe.
 
-::: info
-**Upgrade Or Change Plan** and **Cancel Plan** on the card are not active yet. Use the Billing Portal instead.
-:::
-
 ## Billing Portal
 
 **Access Billing Portal** opens the Stripe-hosted portal for the account. Use it to:
@@ -83,29 +82,23 @@ When you finish, Stripe returns you to the page you started from.
 
 ## Quota tab
 
-The Quota tab lists what the plan includes — typically surveys that can be published and teams that can be created. Each row shows the quota's name, type and units left.
+The **Quota** tab features a split-view management workbench:
 
-Expand a **survey** or **team** row for a short summary:
+- **Quota Type Selector (left)**: Lists all metered quota categories for your account—typically **surveys** (how many surveys can be in production simultaneously) and **teams** (how many workspaces can be provisioned). Each entry displays the quota name and remaining units.
+- **Quota Detail Pane (right)**:
+  - **Remaining Balance**: Displays current remaining units and progress towards your plan allowance.
+  - **Grace Period Alert**: If survey publishing exceeded plan quota, a warning displays the 10-day grace deadline to settle the balance.
+  - **Balance Chart & Event Timeline**: Interactive timeline tracking all quota events—initial plan allocation, subscription renewals, usage redemptions, top-up pack purchases, and administrative adjustments.
+  - **Buy Additional Quota**: Organization Owners and Admins can click **Buy survey quota** or **Buy team quota** to purchase one-off unit packs via Stripe Checkout without modifying their recurring subscription tier.
 
-- The units left.
-- A progress bar showing how much of the quota is used, with a line such as "3 of 10 surveys used".
-- If the quota runs out, a message saying whether publishing or adding teams is still allowed for a short time while more quota is arranged.
-- What to do once nothing is left.
+::: info Quota Lifecycle Differences
 
-If no quota is configured for the account, the card says so and asks you to contact support.
-
-::: info
-**Buy Additional Quota** is not available yet. Contact support to arrange more quota.
+- **Survey quota packs** apply to your current quota period to cover immediate research needs or clear an active grace window.
+- **Team quota packs** are permanent additions that never lapse upon subscription renewal.
 :::
 
-## Who can do what
+## Related Content
 
-Everyone with access to the Customer Portal can view subscriptions, invoices, payments and quotas. Actions that change billing or quota — **Access Billing Portal** and **Buy Additional Quota** — are disabled for read-only users, such as **Guest** account holders.
-
-See [Understanding Access and Permissions](../../explanation/understanding-access-and-permissions.md) for how account roles work.
-
-## Related pages
-
-- [Account Holders (Members)](./members.md)
-- [Teams](./teams.md)
-- [Apps and Referrals](./apps-referrals.md)
+- [How to Buy Additional Quota](../../how-to/buy-additional-quota.md) — Step-by-step top-up purchase guide
+- [Quota Card Component Reference](../../../../components/quota-card.md) — Shared quota presentation component
+- [Customer Teams Reference](./teams.md) — Managing workspaces within team quota limits

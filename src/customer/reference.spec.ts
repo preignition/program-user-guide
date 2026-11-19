@@ -66,7 +66,7 @@ test.describe("Customer App Reference", () => {
     await context.annotatedScreenshot(locator, "theme-color-picker", 2);
 
     // storagelocation
-    await pushState(page, "storage-location");
+    await pushState(page, "storagelocation");
     await page.waitForTimeout(1000);
     await context.setName("storage-location").screenshot();
 

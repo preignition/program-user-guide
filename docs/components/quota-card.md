@@ -4,7 +4,7 @@ description: Reference for the shared quota card (lapp-quota-card) used by the s
 
 # Quota Card
 
-The `lapp-quota-card` element presents a customer's quota of a plan: how many units are left, how much of the plan has been used, and what happens once the quota runs out. The survey app renders it on the **Status** page and — until the survey is in production — on the **Distribute** page; the customer portal renders it in each quota grid row's details (the survey row shows the survey quota, the team row the team quota).
+The `lapp-quota-card` element presents a customer's quota allowance: how many units are left on the plan, how much of the allowance has been used, and what happens once the quota runs out. The survey app renders it on the [Distribute](../app/survey/reference/share/distribute/index.md) page to display remaining survey quota and any active grace deadline; the customer portal renders it within the [Subscription → Quota](../app/customer/reference/customer/subscription.md#quota-tab) workbench.
 
 The card is presentational: the caller owns the quota data (a live document read in the survey app, the row's own document in the customer portal) and passes the fields.
 
@@ -29,6 +29,6 @@ The card is presentational: the caller owns the quota data (a live document read
 
 ## Related Content
 
-- [Survey Status](../app/survey/reference/share/status/index.md) — where the survey app shows the card
-- [Distribute Your Survey](../app/survey/reference/share/distribute/index.md) — the card before the survey is in production
-- [Subscription Settings](../app/customer/reference/customer/subscription.md) — the customer portal's quota rows
+- [Distribute Your Survey](../app/survey/reference/share/distribute/index.md) — survey quota display and Go to Production flow
+- [Customer Subscription Settings](../app/customer/reference/customer/subscription.md) — customer portal quota history and top-ups
+- [How to Buy Additional Quota](../app/customer/how-to/buy-additional-quota.md) — purchasing additional survey and team quota packs

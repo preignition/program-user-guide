@@ -1,10 +1,16 @@
 # Reference
 
-## Team Audiences - audiences
+## Team Settings - Reference
 
-- [customer-team-audiences.ts](../../../../../../app/app-customer/src/page/team/customer-team-audiences.ts): The `Team Settings → Audiences` page component (`customer-team-audiences`) — audience cards, CSV drop zone, recipient grid with header filters, and live Firestore collection subscriptions.
-- [AudienceE.ts](../../../../../../app/app-customer/src/entity/audience/AudienceE.ts): The `AudienceE` entity definition binding the audience model fields and team-scoped actions (`newAudience`, `editAudience`, `archiveAudience`, `deleteAudience`, `exportAudience`, `importAudience`, `addRecipient`).
-- [actions.ts](../../../../../../app/app-customer/src/entity/audience/actions.ts): Client action definitions and modal dialogs for creating, renaming, archiving/restoring, deleting, exporting, importing audiences, and adding single recipients.
-- [audience-import-dialog.ts](../../../../../../app/app-customer/src/entity/audience/audience-import-dialog.ts): The CSV import wizard (`customer-audience-import-dialog`) handling Storage upload, server preview (`previewAudienceImport`), interactive header mapping, error CSV download, warranty acceptance, and commit (`commitAudienceImport`).
-- [audience.ts](../../../../../../lit-app/schema/customer/audience.ts): Audience and recipient schemas, canonical import columns (`email`, `name`, `language`, `external_id`), header aliases, email normalization/masking, import warranty text, and `AUDIENCE_LIMITS`.
-- [Audience.ts](../../../../../../lit-app/schema/customer/model/Audience.ts): `AudienceModel` and `RecipientModel` Firestore document models.
+- [customer-team-profile.ts](../../../../../../app/app-customer/src/page/team/customer-team-profile.ts) — Team profile page with metadata header and name/presentation fields.
+- [customer-team-presentation.ts](../../../../../../app/app-customer/src/page/team/customer-team-presentation.ts) — Team presentation page with language tabs, title, short description, description, and logo uploader.
+- [Presentation.ts](../../../../../../app/app-customer/src/entity/Team/Presentation.ts) — Team presentation entity definition and logo upload handler.
+- [Communication.ts](../../../../../../app/app-customer/src/entity/Team/Communication.ts) — Team communication entity model for sender address, reply-to, signature, and footer.
+- [customer-team-audiences.ts](../../../../../../app/app-customer/src/page/team/customer-team-audiences.ts) — Team audiences page, CSV drop zone, recipient grid, and live Firestore subscriptions.
+- [AudienceE.ts](../../../../../../app/app-customer/src/entity/audience/AudienceE.ts) — Audience entity binding audience model fields and actions.
+- [audience-import-dialog.ts](../../../../../../app/app-customer/src/entity/audience/audience-import-dialog.ts) — Audience CSV import wizard with dry-run preview, column mapping, and warranty confirmation.
+- [customer-team-channel.ts](../../../../../../app/app-customer/src/page/team/customer-team-channel.ts) — Channels manager for active applications (blog, discussion, survey).
+- [AppUserSettings.ts](../../../../../../app/app-customer/src/entity/Team/AppUserSettings.ts) — App user settings entity for default respondent language and theme tokens.
+- [customer-team-api-keys.ts](../../../../../../app/app-customer/src/page/team/customer-team-api-keys.ts) — Team API keys panel, create modal with one-time secret reveal, and in-place revocation action.
+- [customer-team-danger.ts](../../../../../../app/app-customer/src/page/team/customer-team-danger.ts) — Team danger zone implementing reversible soft delete with optional audit reason and restore team action.
+- [customer-team.ts](../../../../../../app/app-customer/src/page/customer-team.ts) — Team settings drawer route configuration and permissions.

@@ -14,5 +14,6 @@ This section provides technical and descriptive information about the configurat
 - [Communication Settings](./communication.md)
 - [Team Audiences](./audiences.md)
 - [Channels](./channels.md)
+- [App User Settings](./app-user-settings.md)
 - [API Keys](./api-keys.md)
 - [Danger Zone](./danger-zone.md)
