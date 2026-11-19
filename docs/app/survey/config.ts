@@ -234,7 +234,7 @@ function getSidebar() {
             },
             { text: "How does the compose view work", link: `how-does-the-compose-view-work.md` },
             { text: "The concept of Modes", link: `the-concept-of-modes.md` },
-            { text: "Building and Versioning", link: `survey-versionning.md` },
+            { text: "Building and Versioning", link: `survey-versioning.md` },
             { text: "Understanding Form Logic", link: `understanding-form-logic.md` },
             {
               text: "Test and Production Survey Links",

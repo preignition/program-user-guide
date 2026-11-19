@@ -158,6 +158,6 @@ Section Sharing bridges the gap between specialized accessibility engineering an
 * [How to share logical expressions across multiple items](../how-to/sharing-logical-expressions.md)
 * [Understanding Survey, Form, Page, Section and Question Hierarchy](./understanding-survey-hierarchy.md)
 * [The Role of Survey Batches](./the-role-of-batches.md)
-* [Survey Building & Versioning](./survey-versionning.md)
+* [Survey Building & Versioning](./survey-versioning.md)
 
 [^fatigue]: Galesic, M. (2006). [*Dropouts on the web: Effects of interest and burden experienced during an online survey*](https://www.scb.se/contentassets/ca21efb41fee47d293bbee5bf7be7fb3/dropouts-on-the-web-effects-of-interest-and-burden-experienced-during-an-online-survey.pdf). Journal of Official Statistics, 22(2), 313–328; Peytchev, A. (2009). [*Survey breakoff*](https://doi.org/10.1093/poq/nfp014). Public Opinion Quarterly, 73(1), 74–97.

@@ -48,8 +48,9 @@ To avoid accidentally clicking on other items while dragging and dropping elemen
   <figcaption>Click 'Lock tree grid' to secure your current selection.</figcaption>
 </figure>
 
-> [!IMPORTANT]
-> Always select the option to lock the grid while editing logic to prevent losing your work.
+::: info Lock Tree Grid While Editing
+Always lock the grid while writing expressions to prevent accidental selection changes while dragging and dropping items.
+:::
 
 ### Step 5: Write the expression
 

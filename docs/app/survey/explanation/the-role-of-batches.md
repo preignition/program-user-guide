@@ -10,9 +10,9 @@ Accessible Surveys uses **Batches** as a core architectural concept to manage th
 
 ## What is a Batch?
 
-A **Batch** is a designated "bucket" or temporal container for survey responses. Instead of creating a brand-new copy of your survey for "Q1", "Q2", and "Q3", you use a single, unified survey entity and simply open a new Batch for each time period.
+A **Batch** is a designated container for survey responses collected during a specific time wave. Instead of duplicating the entire survey for "Q1", "Q2", and "Q3", you maintain a single unified survey and activate a new batch for each collection period.
 
-When a respondent completes the survey, their response is automatically tagged with the currently active Batch.
+When a respondent submits their answers, their response document is automatically tagged with the currently active batch identifier.
 
 ## Why Batches Matter
 
@@ -22,52 +22,42 @@ The most significant advantage of using Batches is the ability to track data acr
 
 Because Batches tag responses within the *same* survey structure, the platform's analytics engine can easily generate comparison reports, trend lines, and longitudinal studies right out of the box.
 
-### 2. Structural Consistency and Versioning
+### 2. Structural Consistency Across Waves
 
-When conducting recurring research, questions usually remain largely the same, perhaps with minor tweaks. By using Batches, you maintain a single source of truth for your form design.
+When conducting recurring research, questions usually remain largely the same, perhaps with minor refinements over time. By using Batches, you maintain a single source of truth for your form design and accessibility assets.
 
-Coupled with our [Survey Versioning](./survey-versionning.md) system, you can safely iterate on your questions between batches. The system knows exactly which version of the form was used for the "2025 Batch" versus the "2026 Batch," ensuring data integrity while keeping everything organized under one roof.
+Coupled with our [Survey Versioning](./survey-versioning.md) system, you can safely update and build new versions of your form between waves. Responses always record the build version they answered under, ensuring complete historical integrity.
 
-### 3. Simplified Campaign Management
+### 3. Simplified Distribution URLs
 
-Batches make campaign management simpler. You don't need to generate new QR codes or update the link on your website every month. The URL remains the same; you simply close the old batch and open a new one in the administrative dashboard. The system automatically routes incoming data to the active batch.
+Batches eliminate the need to generate new QR codes or update web links for every new study period. Your distribution URL remains identical; you simply designate the new batch as **Current** in the administrative dashboard. Incoming responses are immediately tagged with the new batch.
 
 ---
 
-## The Conceptual Lifecycle of a Batch
-
-Understanding how a batch moves through different states will help you effectively manage your recurring data collection campaigns:
+## The Lifecycle of a Batch
 
 ### 1. Creation and Configuration
 
-When you are ready to start a new round of data collection, you create a new batch. During creation, you assign it a meaningful name (e.g., "Q1 2026 Employee Feedback") and link it to the current [Published Version](./survey-versionning.md) of your survey. This ensures that the system knows exactly which questions respondents will be answering for this specific batch.
+When preparing for a new collection wave, you create a new batch by providing a descriptive name (e.g., "Q1 2026 Assessment") and an optional description detailing the cohort or wave goals.
 
-### 2. The "Active" State
+### 2. The Active ("Current") State
 
-Once a batch is marked as **Active**, the survey's production link begins routing all new incoming responses into this specific container.
+Once a batch is designated as **Current**, all new incoming submissions from the live survey are tagged with this batch ID.
 
-* **Only one batch can be actively collecting data at a time.** This strict rule prevents data from accidentally spilling into the wrong temporal bucket.
+* **Only one batch can be actively receiving responses at a time.** This ensures clean partitioning of response waves.
+* If the batch feature is turned off, incoming responses are grouped under the `default` batch.
 
-### 3. The "Closed" State
+### 3. Managing Collection Waves
 
-When your data collection period ends, you close the active batch.
+When a collection period ends:
 
-* Closing a batch freezes its dataset.
-* If a respondent tries to access the production link while no batch is active, the system will inform them that the survey is currently closed.
-
----
-
-## The Workflow of Recurring Surveys
-
-Using batches changes the workflow of running a recurring survey from a scattered, file-based process to a streamlined, centralized one:
-
-1. **Year 1:** You build Version 1 of your survey, create the "2025" Batch, make it active, and collect responses. You then close the "2025" Batch.
-2. **Year 2:** You realize a question needs tweaking. You edit the form, build Version 2, and publish it. You then create the "2026" Batch, link it to Version 2, make it active, and collect responses.
-
-At the end of this process, you have a single survey entity containing two distinct datasets ("2025" and "2026"). The platform's analytics engine can now automatically compare these two batches, completely aware that they used slightly different versions of the form.
+* Designate a newly created batch as Current to begin the next collection wave.
+* To pause or close data collection entirely across all respondents, configure your availability schedule in [Share → Status](../reference/share/status/index.md).
 
 ---
 
-## The "Why" Behind the Design
+## Related Content
 
-We introduced Batches because longitudinal data is incredibly valuable, but historically difficult to manage without advanced statistical software. By building temporal grouping directly into the data architecture of Accessible Surveys, we lower the barrier to entry for conducting high-quality, recurring research.
+* [How to Use Survey Batches](../how-to/using-batches.md) — Step-by-step instructions for managing batches
+* [Survey Building and Versioning](./survey-versioning.md) — How compiled builds protect questionnaire snapshots
+* [Survey Status Reference](../reference/share/status/index.md) — Scheduling survey opening and closing dates

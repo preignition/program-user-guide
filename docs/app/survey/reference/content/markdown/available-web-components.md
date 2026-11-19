@@ -1,39 +1,60 @@
 ---
-description: Reference for custom web components available within the Markdown Free Text editor.
+description: Reference for custom web components and HTML tags permitted in the Markdown editor.
 ---
 
 # Available Web Components
 
-The Markdown editor supports embedding specific custom HTML web components to provide advanced functionality, such as tooltips, videos, icons, and accessibility controls.
+The Markdown editor allows embedding specific custom web components to provide interactive functionality, including tooltips, embedded videos, icons, action buttons, and accessibility controls.
 
-> **Note:** Web component tags **MUST** be explicitly closed (e.g., `<lite-youtube videoid="..."></lite-youtube>`). Self-closing tags or unclosed tags will not render correctly.
+::: warning Explicitly Closed Tags
+Web component tags **MUST** be explicitly closed (e.g., `<lite-youtube videoid="..."></lite-youtube>`). Self-closing syntax (`<lite-youtube />`) is not supported by standard HTML parsers and will break layout rendering.
+:::
 
 ## Tooltips
 
-Tooltips provide contextual information when hovered or focused.
+Tooltips explain complex words, jargon, or acronyms to respondents inline. Content is sanitized using an allow-list; only the following attributes are supported:
 
 ### `<lapp-tooltip>`
 
-A standard text tooltip.
+Wraps a term or phrase to display an explanatory popover when clicked or hovered:
+
+- **`term` (string):** References an existing glossary item configured in the survey. The popover displays the definition associated with that glossary key.
+- **`text` (string):** Directly provides an inline explanation string for the tooltip popover.
+
+**Examples:**
+
+```html
+<!-- Tooltip referencing a survey glossary definition -->
+<lapp-tooltip term="reasonable-accommodation">Reasonable accommodation</lapp-tooltip>
+
+<!-- Tooltip with inline definition text -->
+<lapp-tooltip text="A structured questionnaire component that groups related questions.">Section</lapp-tooltip>
+```
+
+## Action Buttons
+
+Standard Material Design action buttons can be embedded inside introduction pages or custom Markdown text blocks:
+
+- **`<md-filled-button>`**: High-emphasis filled action button.
+- **`<md-outlined-button>`**: Medium-emphasis outlined action button.
+- **`<md-text-button>`**: Low-emphasis text action button.
 
 **Example:**
 
 ```html
-<lapp-tooltip message="This is the tooltip text" position="bottom">Hover over me</lapp-tooltip>
+<md-filled-button href="https://example.org">Start Assessment</md-filled-button>
+<md-outlined-button href="https://example.org/guide">Read Guidelines</md-outlined-button>
 ```
-
-**Key Properties:**
-
-- `message` (string): The text to display inside the tooltip.
-- `position` (string): Preferred placement (`top`, `bottom`, `left`, `right`).
-- `fireonclick` (boolean): If `true`, activates the tooltip on click rather than hover.
-- `noIcon` (boolean): If `true`, hides the default info icon next to the slotted text.
 
 ## Media & Icons
 
 ### `<lite-youtube>`
 
-Embeds a YouTube video efficiently. This is a wrapper around `lite-youtube` that automatically adds optimal default parameters (like preventing unrelated videos from playing afterwards).
+Embeds a YouTube video using a lightweight facade for optimal performance:
+
+- **`videoid` (string, required):** The unique YouTube video ID.
+- **`playlabel` (string):** Accessible label for screen readers (default: "Play").
+- **`params` (string):** Optional YouTube player query parameters (e.g., `start=15`).
 
 **Example:**
 
@@ -41,43 +62,29 @@ Embeds a YouTube video efficiently. This is a wrapper around `lite-youtube` that
 <lite-youtube videoid="xVytWVHX4N0"></lite-youtube>
 ```
 
-**Key Properties:**
-
-- `videoid` (string): The unique YouTube video ID.
-- `playlabel` (string): Accessible label for the play button (default: "Play").
-- `params` (string): Additional YouTube player parameters (e.g., `start=10`).
-
 ### `<lapp-icon>`
 
-Renders a standard Material Design icon. The text content inside the tag should be the name of the [Material Icon](https://fonts.google.com/icons).
+Renders a standard Material Symbols icon. Place the icon identifier as the text content:
+
+- **`no-fill` (boolean):** Renders the outlined glyph variant instead of the filled variant.
 
 **Example:**
 
 ```html
 <lapp-icon>info</lapp-icon>
+<lapp-icon no-fill>visibility</lapp-icon>
 ```
 
 ## Accessibility Controls
 
-You can embed accessibility controls directly into the content flow.
-
-### `<a11y-menu>`
-
-Displays the full accessibility settings menu (theme, contrast, text size, easy read, read aloud, sign language).
-
-**Example:**
-
-```html
-<a11y-menu context="survey"></a11y-menu>
-```
-
-**Key Properties:**
-
-- `context` (string): Setting this to `survey` or `form` ensures that survey-specific options (like Read Aloud and Sign Language) are visible.
+Embed interactive accessibility controls directly into survey instructions or introduction pages:
 
 ### `<a11y-dialog-button>`
 
-A button that opens the global accessibility settings dialog.
+A button that opens the comprehensive accessibility settings dialog (theme, text size, Easy Read, Read Aloud, Sign Language):
+
+- **`outlined` (boolean):** Renders as an outlined button.
+- **`filled` (boolean):** Renders as a filled button.
 
 **Example:**
 
@@ -85,24 +92,35 @@ A button that opens the global accessibility settings dialog.
 <a11y-dialog-button outlined></a11y-dialog-button>
 ```
 
-**Key Properties:**
+### `<a11y-menu>`
 
-- `outlined` (boolean): Renders the button with an outline style.
-- `unelevated` (boolean): Renders the button with a flat, contained style.
+Renders an inline accessibility configuration toolbar:
 
-### Individual Controls
+- **`context` (string):** Set to `survey` to include survey-specific options (Read Aloud and Sign Language).
 
-For fine-grained layouts, individual accessibility toggles can be embedded separately:
+**Example:**
 
-- `<a11y-easyread></a11y-easyread>`: Toggle Easy Read mode.
-- `<a11y-readaloud></a11y-readaloud>`: Toggle Read Aloud mode.
-- `<a11y-signlanguage></a11y-signlanguage>`: Toggle Sign Language mode.
-- `<a11y-theme></a11y-theme>`: Select from available color themes.
-- `<a11y-font></a11y-font>`: Adjust font size settings.
+```html
+<a11y-menu context="survey"></a11y-menu>
+```
+
+### Individual Accessibility Toggles
+
+- `<a11y-easyread></a11y-easyread>`: Toggle Easy Read mode on or off.
+- `<a11y-readaloud></a11y-readaloud>`: Toggle Read Aloud text-to-speech.
+- `<a11y-signlanguage></a11y-signlanguage>`: Toggle Sign Language video display.
+- `<a11y-theme></a11y-theme>`: Select from available light, dark, and high-contrast color themes.
+- `<a11y-font></a11y-font>`: Adjust typographic scale and zoom levels.
 
 ## System Guidance
 
-Components that provide platform-level guidance on how to use the survey interface. These automatically adapt to the active language.
+Platform-level instructional widgets that automatically adapt to the respondent's active language:
 
-- `<pfo-guidance></pfo-guidance>`: Displays text instructions on how to fill out forms.
-- `<pfo-guidance-video></pfo-guidance-video>`: Displays an instructional video on how to fill out forms.
+- `<pfo-guidance></pfo-guidance>`: Displays accessible text instructions on navigating and submitting forms.
+- `<pfo-guidance-video></pfo-guidance-video>`: Displays an instructional video on completing survey forms.
+
+## Related Content
+
+- [Using Tooltips How-to Guide](../../../how-to/use-tooltips.md) — Step-by-step glossary and tooltip authoring
+- [Markdown Reference Index](./index.md) — Rich text syntax and class directives
+- [Visibility Control Reference](./visibility-control.md) — Mode-based display classes

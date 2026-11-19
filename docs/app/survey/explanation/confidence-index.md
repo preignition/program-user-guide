@@ -48,7 +48,7 @@ By measuring these non-content signals, researchers can objectively differentiat
 
 Response latency — the time elapsed between displaying a question and the respondent's submission — is a well-established psychological indicator of cognitive processing difficulty (Bassili & Fletcher, 1991[^bassili]; Yan & Tourangeau, 2008[^yan]).
 
-As demonstrated by Lenzner, Kaczmirek, and Galesic (2011)[^lenzner], when a question's response time significantly exceeds the baseline reading duration, it signals cognitive friction: ambiguous phrasing, double-barreled questions, visually cluttered response options, or accessibility barriers. Our Behavioral Analytics dashboard operationalizes this by flagging **Hesitation Hotspots** (questions taking at least twice the survey median attention) to direct researchers toward survey UX bottlenecks.
+As demonstrated by Lenzner, Kaczmirek, and Galesic (2011)[^lenzner], when a question's response time significantly exceeds the baseline reading duration, it signals cognitive friction: ambiguous phrasing, double-barreled questions, visually cluttered response options, or accessibility barriers. Our Behavioral Analytics dashboard operationalizes this by flagging **Hesitation Hotspots** (questions whose median dwell time strictly exceeds twice the survey-wide median, `> 2 * median`) to direct researchers toward survey UX bottlenecks.
 
 ## 3. How the Confidence Index Works
 

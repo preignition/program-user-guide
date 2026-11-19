@@ -8,41 +8,62 @@ When building and managing surveys, it is helpful to understand the conceptual a
 
 ## The Logical Hierarchy
 
-The data model is structured as a nested tree, allowing you to organize complex questionnaires into a clear, navigable structure.
+The data model is structured as a clear tree, allowing you to organize complex questionnaires into a navigable structure.
 
-1. **Survey**
-   At the very top is the **Survey** object. It defines the "when, who, and how" of your data collection. It holds configuration such as when the survey opens and closes (`openStrategy`), who can answer (`accountType`), theme styling, and localization properties.
-   - A Survey acts as a wrapper around the actual content and links to exactly one **Form** via a direct reference.
+1. **Survey**  
+   At the very top is the **Survey** object. It defines the operational envelope of your data collection: when the survey opens and closes (`openStrategy`), who can answer (`accountType`), theme styling, and localization properties.
+   - A Survey acts as a management wrapper around the questionnaire content and links to its underlying **Form** via a direct reference.
 
-2. **Form**
+2. **Form**  
    The **Form** contains the core settings for the data collection experience, such as layout (`presentationMode`, `layout`), logic expressions, and accessibility configurations (Read Aloud, Easy Read, Sign Language).
-   - A Form serves as the root container for the questionnaire content. It organizes its content by holding a list of references to **Pages**.
-   - The Form itself does not directly contain Sections or Questions; instead, it delegates content organization to the Pages it references.
-   - A Form can be used in multiple Surveys, allowing you to reuse the same questionnaire structure with different distribution settings or audiences.
+   - A Form serves as the root container for the questionnaire content, maintaining an ordered list of references to its top-level **Pages**.
 
-3. **Page**
+3. **Page**  
    A **Page** represents a single screen of content presented to the respondent.
    - Pages contain an ordered list of items, which can be either **Sections** or standalone **Texts**.
 
-4. **Section**
-   A **Section** allows you to logically group related questions together on a page. Sections can also hold overarching build rules and visibility settings.
-   - Sections contain an ordered list of items, which can be **Questions** or **Texts**.
-   - Sections can be re-used in multiple forms. This not only makes the building process more efficient but also ensures consistency across different surveys that require the same set of questions. It also **reduces respondent fatigue** by allowing them to respond to the same questions only once.
+4. **Section**  
+   A **Section** logically groups related questions together on a page. Sections can also hold overarching build rules, visibility logic, and sharing configurations.
+   - Sections contain an ordered list of child items, which can be **Questions** or **Texts**.
+   - Sections can be published to the organization library and shared across multiple forms as live references or independent copies, reducing respondent fatigue via smart pre-fill.
 
-5. **Question**
-   The **Question** is the most granular level of the main hierarchy. It defines the specific data point you want to collect (e.g., text, rating, multiple-choice).
-   - Questions define their type (`subType`), specific properties (like `required`, `maxLength`, `min`), and contain an ordered list of **Options** (for multiple-choice questions).
+5. **Question**  
+   The **Question** is the most granular level of the hierarchy, defining a specific input data point (e.g., open text, numeric, rating scale, multiple-choice).
+   - Choice questions contain an ordered list of **Options** defining the selectable choices.
 
-## How It Works Under the Hood
+---
 
-To optimize performance and make querying efficient, the database structure slightly differs from the strict visual hierarchy.
+## How It Works Under the Hood (Flat Item Storage)
 
-While visually a Page contains Sections which contain Questions, in the database, all **Pages**, **Sections**, and **Questions** are stored flatly as sub-collections directly underneath their parent **Form**.
+To optimize performance and eliminate nested subcollection queries, the database structure employs a **flat item storage model**:
 
-- `app/data/survey/{surveyId}`
-- `app/data/form/{formId}`
-  - `page/{pageId}` (Sub-collection)
-  - `section/{sectionId}` (Sub-collection)
-  - `question/{questionId}` (Sub-collection)
+Rather than creating separate nested subcollections for pages, sections, and questions, all descendants of a form are stored flatly in a single subcollection under the parent Form:
 
-The logical tree is maintained using an `items` array on each parent object. For example, a Page document contains an `items` property that explicitly lists the IDs of the Sections it contains. This approach ensures that we can quickly load the entire form structure when needed while keeping the database flat and highly performant.
+```text
+app/data/survey/{surveyId}
+app/data/form/{formId}
+  └── items/{itemId} (Single flat subcollection for all descendants)
+```
+
+Every document in the `items` subcollection represents an element of the questionnaire:
+
+- A **Page** document (`type: "page"`)
+- A **Section** document (`type: "section"`)
+- A **Question** document (`type: "question"`)
+- A **Text** document (`type: "text"`)
+
+### Tree Traversal via Child Arrays
+
+The structural hierarchy and presentation order are maintained using an `items` array on each parent document:
+
+- The **Form** document contains an `items: string[]` array listing the ordered IDs of its Pages.
+- Each **Page** document contains an `items: string[]` array listing the IDs of its Sections and Texts.
+- Each **Section** document contains an `items: string[]` array listing the IDs of its Questions and Texts.
+
+This flat storage design enables atomic reads of the entire questionnaire structure in a single Firestore query, ensures lightning-fast rendering, and avoids deep nested Firestore document limits.
+
+## Related Content
+
+- [Compose Reference](../reference/build/compose/index.md) — Technical details of form items and properties
+- [How Does the Compose View Work](./how-does-the-compose-view-work.md) — Visual organization in the Survey Builder
+- [Understanding Section Sharing & Reusability](./understanding-section-sharing.md) — Sharing standardized questionnaire modules across forms

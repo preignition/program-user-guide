@@ -36,7 +36,7 @@ By versioning the survey:
 
 * **Traceability:** Every respondent's answer is permanently linked to the exact version of the survey they saw.
 * **Iterative Design:** You can safely iterate on a survey year after year (or week after week) without losing the historical context of previous datasets.
-* **Rollbacks:** If you publish a version and realize there is a mistake, you can quickly switch the active survey back to a previous, known-good version.
+* **Immutable History:** All previously compiled builds remain recorded in the build history. To correct an issue in production, authors simply update the survey draft in the builder and publish an updated build.
 
 ## Connecting Builds to Test and Production
 

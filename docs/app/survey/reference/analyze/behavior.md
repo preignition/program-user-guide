@@ -33,9 +33,9 @@ When behavioral tracking is enabled for a survey, the platform collects client-s
 
 The **Confidence Index** evaluates the authenticity and effort of each submission on a scale from **0 to 100**:
 
-- **A score of 100** indicates strong confidence in human engagement, characterized by steady reading cadence, focused interaction, and answer deliberation.
-- **Scores between 50 and 69** reflect moderate confidence, indicating fast completion or minor distraction.
-- **Scores below 50** warrant closer inspection for automated bot patterns, rapid click-through speeding, or disengaged completion.
+- **High confidence (`≥ 70`, badge `success`)**: Strong confidence in human engagement, characterized by steady reading cadence, deliberate interactions, and focused attention.
+- **Moderate confidence (`40–69`, badge `warning`)**: Reflects moderate engagement, minor distraction, or faster-than-average completion.
+- **Low confidence (`< 40`, badge `error`)**: Warrants scrutiny for automated bot scripts, rapid click-through speeding, or disengaged completion.
 
 The score starts at a baseline of **100 points**, with deductions applied based on two distinct penalty components:
 
@@ -81,7 +81,7 @@ The survey median represents the typical active time respondents spend on a stan
 
 ### Hesitation Hotspots
 
-A question is classified as a **Hesitation Hotspot** when its median dwell time equals or exceeds **twice the survey median**. Hesitation hotspots indicate questions that impose high cognitive burden, suffer from ambiguous phrasing, require extensive reading, or present complex interaction requirements.
+A question is classified as a **Hesitation Hotspot** when its median active dwell time is strictly greater than twice the survey-wide median (`> 2 * median`). Hesitation hotspots highlight questions that impose disproportionate cognitive burden, suffer from ambiguous wording, require excessive reading, or present inaccessible input controls.
 
 ### Boxplot Dispersion Metrics
 

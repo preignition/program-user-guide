@@ -12,13 +12,13 @@ This document explains the conceptual framework and architectural decisions Acce
 
 Our core philosophy regarding privacy is simple: **We only collect what is strictly necessary.**
 
-By default, Accessible Surveys does not collect PII (Personally Identifiable Information) unless you explicitly design your form to ask for it. We do not track respondent IP addresses, browser fingerprints, or geographic locations in the background.
+By default, Accessible Surveys does not collect PII (Personally Identifiable Information) unless you explicitly design your form to ask for it. We do not track respondent GPS coordinates, fine-grained location, browser fingerprints, or persistent advertising trackers. At the network edge, the platform infers coarse country-level location for regional aggregate reporting (via standard CDN headers), but raw IP addresses and granular location data are never written into response records.
 
 Operational email addresses are the exception worth naming. A survey can ask a respondent to be emailed — a submission confirmation, reminders while the form is unsubmitted, or a follow-up after the data has been analysed (the survey's results and reports, or an invitation to a later survey) — without that address becoming part of the dataset. The address serves the survey's emails only: it is stored apart from the answers, excluded from every export unless the survey's **Dataset** email purpose makes it an answer, and never used to identify a respondent or link them to their answers (see [Email Purposes](../reference/share/email/index.md#email-purposes)).
 
 When the editor opts in to invitations, a team audience's addresses serve the invitation, its reminders and — while the survey is invitation-enabled — the results and follow-up emails as well. Those addresses stay in the invitation records, where the editor sees a masked form only; they never enter a response, a dataset or an export.
 
-A consent is a record with a lifetime: the address, the session, the notice version agreed to, the purposes it covers and the sends, held for 180 days by default (1–365, editor-adjustable) and deleted when it ends. Editors see whether an email went out and the masked address in the Email page's Sent history, never the full address; a follow-up is sent by hand from the Email page, to the respondents who opted in for that purpose and, when invitations are on, to the invited audience that has not unsubscribed. The survey's owner can [purge the collected data](../how-to/purging-collected-data.md) at any time, which removes the consent records with the responses; the survey itself survives.
+A consent is a record with a lifetime: the address, the session, the notice version agreed to, the purposes it covers and the sends, held for 180 days by default (1–365, editor-adjustable) and deleted when it ends. The Email page's Sent history displays aggregate counts for each send event (total, delivered, opened, failed); individual masked recipient addresses are not exposed there, but can be monitored during active invitation runs in **Analytics → Progress**. A follow-up is sent by hand from the Email page, to the respondents who opted in for that purpose and, when invitations are on, to the invited audience that has not unsubscribed. The survey's owner can [purge the collected data](../how-to/purging-collected-data.md) at any time, which removes the consent records with the responses; the survey itself survives.
 
 ## Account Types and Anonymity
 
@@ -59,7 +59,7 @@ Accessible Surveys is built on enterprise-grade infrastructure designed to prote
 
 * **Data at Rest:** All survey configurations, logic rules, and respondent data are encrypted while stored in our databases.
 * **Data in Transit:** All communications between the respondent's browser and our servers are encrypted using TLS/SSL, ensuring that data cannot be intercepted during submission.
-* **Role-Based Access Control (RBAC):** Access to survey data is strictly governed by user roles. Only team members with the 'Owner' or 'Admin' roles can access raw data exports. 'Editors' can modify the form but may be restricted from viewing sensitive PII, while 'Guests' can only review the form structure.
+* **Role-Based Access Control (RBAC):** Access to survey data is strictly governed by user roles. Only team members with **Owner** or **Admin** roles can purge data or manage collaborators. **Editors** can build questions, configure settings, and deploy updates, while **Guests** are limited to read-only review, and **Translators** hold permissions restricted to localized text. All members of the active team share read access to team surveys.
 
 ## The "Why" Behind the Design
 

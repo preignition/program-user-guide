@@ -4,49 +4,62 @@ description: An explanation of how Accessible Surveys evaluates rules and mathem
 
 # Understanding Form Logic
 
-When building complex surveys, you often need the form to react dynamically to the respondent's answers. You might want to skip irrelevant sections, show tailored follow-up questions, or calculate a total score based on selected options.
+When building complex surveys, you often need the form to react dynamically to respondent answers: skipping irrelevant sections, showing tailored follow-up questions, or calculating a total score.
 
-Accessible Surveys achieves this through a powerful **Logic Engine** that evaluates mathematical expressions and logical conditions in real-time.
+Accessible Surveys achieves this through an expression evaluator based on **Jexl** (JavaScript Expression Language) that computes conditions and calculations in real time.
 
 ## The Purpose of Form Logic
 
 In a static survey, every respondent sees the same questions in the same order. This can lead to survey fatigue, especially if many questions are irrelevant to the person taking it.
 
-The primary goal of form logic is to create a **personalized, efficient pathway** through the survey. By dynamically showing or hiding questions (or sections, or pages), you respect the respondent's time and gather higher-quality, cleaner data.
+The primary goal of form logic is to create a **personalized, efficient pathway** through the survey. By dynamically showing or hiding questions, sections, or entire pages, you respect the respondent's time and gather cleaner, higher-quality data.
 
-## How the Logic Engine Works
+## How the Logic Engine Evaluates Visibility (Hidden When True)
 
-At its core, the logic engine is an expression evaluator. Every question, section, and page in a form can have an associated "Logical Expression."
+At its core, the logic engine evaluates boolean expressions.
 
-* **Expressions:** These are essentially mathematical or boolean statements, similar to what you might write in a spreadsheet formula (e.g., `age > 18` or `status == "completed"`).
-* **Variables:** The answers provided by the respondent act as variables. When a respondent answers a question, the logic engine updates the variable and re-evaluates all dependent expressions.
+::: warning Hidden-When-True Evaluation
+In Accessible Surveys, visibility rules are defined in the **`logic.hidden`** slot:
 
-### Mathematical and Logical Operators
+- When an expression evaluates to **`true`**, the item is **HIDDEN**.
+- When an expression evaluates to **`false`** (or is empty), the item is **VISIBLE**.
 
-The engine supports standard programming and mathematical operators:
+This means visibility rules define the condition under which an item should disappear from the respondent's view.
+:::
 
-* **Comparison:** `==` (equals), `!=` (not equals), `>`, `<`, `>=`, `<=`
-* **Logical:** `&&` (AND), `||` (OR)
-* **Mathematical:** `+`, `-`, `*`, `/`
+### Example: Showing a Follow-Up Question
 
-### Ternary Operators
+Suppose you want to show a follow-up question (*"What kind of fruit do you like?"*) only if the respondent answers *"Yes"* to *"Do you like fruit?"*:
 
-For more advanced scenarios, the engine supports ternary operators (`condition ? true_result : false_result`). This is particularly useful for calculating dynamic values or scores based on specific conditions, rather than just toggling visibility.
+Because the rule defines when the item is **hidden**, you hide the follow-up question whenever the answer is **NOT** *"Yes"*:
 
-### Applying Logic to Form Elements
+```text
+`Do you like fruit?` != "Yes"
+```
 
-When you attach a logical expression to a form element (like a question or section), the engine evaluates that expression every time the respondent changes an answer that affects it.
+- If the respondent answers *"No"* (or leaves it blank), `answer != "Yes"` evaluates to `true` → the follow-up question is **hidden**.
+- As soon as the respondent selects *"Yes"*, `answer != "Yes"` evaluates to `false` → the follow-up question becomes **visible**.
 
-The result of the expression determines is usually applied to whether the element is shown or hidden (visibility). If an expression evaluates to `true` (or a truthy value), the associated element becomes visible or active. If it evaluates to `false`, the element is hidden.
+## Expression Syntax and Operators
 
-But the result of an expression can also be used to calculate values or determine the validity of a response.
+The engine supports full Jexl syntax, including comparisons, logical operators (`&&`, `||`), mathematical arithmetic, string operations (`in`), transforms, and ternary expressions (`condition ? value_if_true : value_if_false`).
 
-## The "Why" Behind the Design
+For the comprehensive, canonical operator reference and syntax rules, see:
 
-We chose an expression-based logic engine over a simple "If A then B" branch builder for a few key reasons:
+- [Jexl Syntax Reference](../reference/content/logic-expression/jexl-syntax.md) — Complete operator tables, data types, and functions
+- [Introduction to Logic Expressions](../reference/content/logic-expression/introduction.md) — Drag-and-drop field binding and basic examples
+- [Advanced Logic Expressions](../reference/content/logic-expression/advanced.md) — Complex multi-field rules and transforms
 
-1. **Flexibility:** It allows for highly complex, nested conditions that would be visually overwhelming in a traditional drag-and-drop rule builder.
-2. **Calculations:** It enables real-time scoring and mathematical operations directly within the form, which is essential for assessments and research surveys.
-3. **Performance:** Evaluating expressions in the browser is incredibly fast, ensuring the form feels responsive even with hundreds of rules.
+## Why Expression-Based Logic?
 
-By understanding that form logic is simply a series of mathematical and boolean expressions evaluating the respondent's current data state, you can begin to construct highly sophisticated, adaptable survey experiences.
+We chose an expression-based logic engine over a rigid visual branching wizard for three reasons:
+
+1. **Expressive Power:** Handles complex multi-field conditions (e.g. `age >= 18 && (country == 'FR' || country == 'BE')`) that would be cumbersome in visual branch trees.
+2. **Deterministic & Testable:** Rules can be audited at build time and simulated in the interactive Test workbench.
+3. **Client-Side Speed:** Evaluating expressions locally in the respondent's browser takes fractions of a millisecond, keeping questionnaire navigation instantaneous.
+
+## Related Content
+
+- [Form Logic How-to Guide](../how-to/logic-expression.md) — Step-by-step instructions for adding visibility rules
+- [Sharing Logical Expressions](../how-to/sharing-logical-expressions.md) — Reusing named expressions across multiple items
+- [Compose Reference](../reference/build/compose/index.md) — Structure and item properties

@@ -6,9 +6,9 @@ description: Learn what CSS variables are and how Accessible Surveys uses them t
 
 ## What are CSS Variables?
 
-CSS Variables (officially known as Custom Properties) are entities defined by CSS authors that contain specific values to be reused throughout a document. They allow you to store a value—like a color, font size, or spacing unit—in one place and apply it anywhere in your stylesheets.
+CSS Variables (officially known as Custom Properties) are author-defined entities containing specific values that can be reused throughout a stylesheet. They allow you to define design tokens—such as color palettes, base font sizes, or spacing multipliers—in a single place and apply them across an entire application.
 
-They are set using a double hyphen prefix (e.g., `--primary-color: #3498db;`) and accessed using the `var()` function:
+They are set using a double-hyphen prefix (e.g., `--primary-color: #3498db;`) and accessed via the `var()` function:
 
 ```css
 .button {
@@ -16,28 +16,40 @@ They are set using a double hyphen prefix (e.g., `--primary-color: #3498db;`) an
 }
 ```
 
-If you change the value of `--primary-color` in one place, every element using that variable updates automatically.
+Updating the value of `--primary-color` instantly propagates to every component referencing that variable without re-evaluating layout rules.
 
 ## How Accessible Surveys Uses CSS Variables
 
-Accessible Surveys relies heavily on CSS variables to drive its styling and accessibility features.
+Accessible Surveys relies on CSS variables and CSS `@layer` rules to drive styling, responsive overrides, and real-time accessibility modes:
 
 ### 1. Dynamic Theming
-When you configure the primary color or font of your survey in the styling editor, you aren't writing new CSS rules from scratch. Instead, you are updating the underlying CSS variables for the survey. The entire application layout references these variables, meaning your changes cascade instantly and consistently across buttons, headers, borders, and backgrounds.
+
+When you customize brand colors in the Customer Portal Theme editor or set survey-specific styles, the platform updates underlying CSS custom properties. The entire questionnaire layout references these tokens, ensuring changes cascade consistently across buttons, headings, question borders, and backgrounds.
 
 ### 2. Accessibility Modes (Dark, High Contrast)
-Our commitment to accessibility requires the interface to adapt to the user's needs on the fly.
-When a respondent switches to **Dark Mode** or **High Contrast Mode**, the platform simply swaps out the color palette assigned to the CSS variables.
 
-Because the underlying CSS structure uses variables like `--text-color` and `--background-color` instead of hardcoded values (like `black` or `white`), the survey can instantly invert or heighten contrast without needing a completely separate stylesheet for every theme.
+When a respondent switches between Light, Dark, or High-Contrast themes in the accessibility menu, the platform swaps the token values assigned to surface and text variables (e.g., `--md-sys-color-surface`, `--md-sys-color-on-surface`). Because components reference semantic color variables rather than hardcoded hex colors, themes switch instantly without reloading stylesheets.
 
 ### 3. Responsive Overrides
-Variables also make it easy to adjust sizing based on the screen size (responsive design). We use variables to control padding and margins, which shrink automatically on mobile devices to ensure a comfortable reading experience.
 
-### 4. Scaling and Density
-We use CSS variables as global multipliers to control the overall "density" and "readability" of the survey layout.
+Variables make it straightforward to adapt spacing across devices. The survey renderer adjusts padding and margin tokens on mobile viewports (`max-width: 599px`) to maintain comfortable reading proportions on smaller touchscreens.
 
-- **--a11y-form-spacing-scale**: This variable acts as a multiplier for all spacing-related tokens (margins, paddings, gaps). If set to `0.8`, every spacing unit in the survey becomes 20% smaller, resulting in a more compact layout.
-- **--a11y-form-font-scale**: Similarly, this variable scales all typography. It ensures that when a respondent or a designer wants larger text, the entire typographic hierarchy scales proportionally, preserving the relationship between labels, inputs, and supporting text.
+### 4. Master Scaling and Density Tokens
 
-By using multipliers instead of hardcoded overrides, we ensure that the survey remains structurally sound and accessible regardless of the density chosen by the designer.
+The survey layout engine uses two primary tokens to govern overall questionnaire density:
+
+- **`--a11y-form-font-size-base`**: The master token controlling survey typography ladder calculations. Headings, question labels, option text, and input controls all scale proportionally from this base value (default `1rem`). In **One Question Per Page** mode, the default base font size automatically increases to `1.5rem` for enhanced cognitive focus.
+- **`--a11y-form-spacing-scale`**: Acts as a global multiplier for all spacing-related tokens (margins, paddings, and component gaps). For example, a scale of `0.8` tightens layout spacing by 20%, while `1.2` creates a roomier layout.
+
+### 5. Mode-Specific Accommodations
+
+When specialized accessibility modes are active, CSS layers apply dedicated accommodations:
+
+- **Easy Read (`:host([easyread])`)**: Expands the maximum column width (`--a11y-page-max-width: 950px`) to provide ample room for side-by-side text and visual illustrations, while maintaining readable typographic proportions.
+- **Read Aloud (`:host([readaloud])`)**: On mobile devices, adjusts margin inlines to leave a dedicated gutter for audio playback controls.
+
+## Related Content
+
+- [Understanding CSS Units](./understanding-css-units.md) — Comparing rem, em, px, and percentages
+- [Styling a Survey How-to Guide](../how-to/styling-a-survey.md) — Step-by-step styling configuration
+- [Color System Explanation](../../customer/explanation/color-system.md) — Theme generation and contrast compliance

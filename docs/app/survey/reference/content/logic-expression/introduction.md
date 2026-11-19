@@ -1,122 +1,83 @@
 ---
-description: Reference guide to the syntax and operators available for building basic logic expressions.
+description: Reference guide to the syntax, field binding, and hidden-when-true logic expressions.
 ---
 
 # Introduction to Logic Expressions
 
-Logical expressions are mathematical expressions which return a result of either `true` or `false`. In Accessible Surveys, these expressions are primarily used to dynamically show or hide pages, sections, or questions.
+Logical expressions evaluate respondent answers to return a boolean result (`true` or `false`). In Accessible Surveys, these expressions are primarily used to dynamically show or hide pages, sections, or questions.
 
-This reference provides the basic syntax and operators you need to build logic into your forms.
+## Basic Syntax & Hidden-When-True Rule
 
-## Basic Syntax
+Expressions evaluate respondent answers in real time against defined conditions:
 
-Expressions evaluate the user's answers against specific conditions. The engine evaluates the value of a logical expression and assigns it to its bound attribute (e.g., `visible`).
+::: warning Hidden-When-True Rule
+In Accessible Surveys, visibility conditions are evaluated in the **`logic.hidden`** slot:
 
-### Binding Survey Fields
+- When an expression evaluates to **`true`**, the element is **HIDDEN**.
+- When an expression evaluates to **`false`** (or is empty), the element is **VISIBLE**.
 
-To evaluate a respondent's answer within your logical expression, you must bind the relevant survey field (or answer) to the expression as a variable.
+Always write the condition that should cause the item to disappear.
+:::
 
-This is done by dragging and dropping items from the structure tree on the left directly into the logic editor field:
+## Binding Survey Fields
 
-* **For free text or numeric questions:** Drag and drop the question item itself into the expression field.
-* **For choice questions (e.g., dropdowns, checkboxes):** Expand the question in the tree and drag and drop the specific **option** into the expression field.
+To evaluate a respondent's answer within your logical expression, you must bind the question or choice option as a variable.
 
-<figure><img src="../../../how-to/assets/shared/logic-expression-dd.gif" alt="Dragging and dropping a question into the logic editor"><figcaption>Drag and drop items from the tree view to bind them as variables in your expression.</figcaption></figure>
+In the survey builder, drag and drop items from the structure tree directly into the expression editor:
 
-### Hiding Items
+- **For text, numeric, date, or scale questions:** Drag and drop the question item itself into the expression field.
+- **For choice questions (radio, checkbox, dropdown):** Expand the question in the tree and drag and drop the specific **Option** to the right of the comparison operator.
 
-When the expression evaluates to `true`, the field is **visible**. When the expression evaluates to `false`, the field is **hidden**. This means that you should write the condition for hiding an item, not showing it.
+<figure>
+  <img src="../../../how-to/assets/shared/logic-expression-dd.gif" alt="Dragging and dropping a question into the logic editor">
+  <figcaption>Drag and drop items from the tree view to bind them as variables in your expression.</figcaption>
+</figure>
 
 ## Examples
 
-### Show a question only when an answer is provided
+### 1. Show a question only when an answer is provided
 
-If you want to show a question only when the respondent has provided an answer to a previous question (e.g., `What is your name?`), you would:
+To show a follow-up question only after the respondent answers *"What is your name?"*, configure the follow-up question to be hidden when the name field is empty:
 
-1. drag the question `What is your name?` into the expression field, then
-2. enter `!=` in the field, and finally
-3. type `""` (empty string) to check if the answer is not empty:  
-
-``` md
-  `What is your name?` != ""
+```text
+`What is your name?` == ""
 ```
 
-Here, the expression `answer != ""` evaluates to `true` when the respondent has entered any text, which means the item will be visible. If the respondent leaves it blank, the expression evaluates to `false`, and the item will be hidden.
+- When empty, `"" == ""` evaluates to `true` → the follow-up question is **hidden**.
+- As soon as the respondent types a name, `name == ""` evaluates to `false` → the question becomes **visible**.
 
-###  Show a question only when a text answer contains a specific word
+### 2. Show a question only when an answer contains a specific word
 
-If you want to show a question only when the answer to `What is your favorite fruit?` contains the word "apple", you would:
+To show a question only when the response to *"What is your favorite fruit?"* contains the word "apple", hide it when "apple" is absent:
 
-1. drag the question `What is your favorite fruit?` into the expression field, then
-2. enter `in` in the field, and finally
-3. type `"apple"` to check if the answer contains that word:
-
-``` md
-  "apple" in `What is your favorite fruit?`
+```text
+!("apple" in `What is your favorite fruit?`)
 ```
 
-Here, the expression `"apple" in answer` evaluates to `true` when the respondent's answer includes the word "apple", which means the item will be visible. If the respondent's answer does not contain "apple", the expression evaluates to `false`, and the item will be hidden.
+- If the respondent enters "orange", the condition evaluates to `true` → the question is **hidden**.
+- If the respondent enters "green apples", the condition evaluates to `false` → the question becomes **visible**.
 
-###  Show a question only when a specific option is selected
+### 3. Show a question only when a specific option is selected
 
-If you want to show a question only when "Do you like fruit? (Yes/No)" is answered with "Yes", you would:
+To show a follow-up question only when *"Do you like fruit?"* is answered with *"Yes"*, hide it when the selection is anything other than *"Yes"*:
 
-1. drag the question `Do you like fruit?` into the expression field, then
-2. enter `==` in the field, and finally
-3. drag the option `Yes` to the left of the expression:
+1. Drag the question `Do you like fruit?` into the expression field.
+2. Enter the inequality operator `!=`.
+3. Drag the choice option `Yes` to the right of the operator:
 
-``` md
-  `Do you like fruit?` == `Yes`
+```text
+`Do you like fruit?` != `Yes`
 ```
 
-Here, the expression `answer == "Yes"` evaluates to `true` when the respondent selects `Yes`, which means the item will be visible. If the respondent selects `No` or leaves it unanswered, the expression evaluates to `false`, and the item will be hidden.
+- While unanswered or answered with *"No"*, the expression is `true` → the question is **hidden**.
+- When the respondent selects *"Yes"*, the expression evaluates to `false` → the question becomes **visible**.
 
->> [!TIP]
->> You need to drag the option `Yes` into the expression field (instead of writing `"yes"`) as the system does not store the string `yes` when the respondent selects that option. Instead, it stores a specific value (e.g., `yes_option_id`) that represents that choice. By dragging the option into the expression field, you ensure that the expression is doing the correct comparison.
+## Operators and Canonical Syntax
 
-### Question Types and Data Storage
+Accessible Surveys uses **Jexl** syntax. For the complete, canonical reference of all comparison operators, logical operators, math functions, and transforms, see the [Jexl Syntax Reference](./jexl-syntax.md).
 
->> [!WARNING]
->> The way an answer is stored depends on the question type, which determines the correct operator to use in your expression:
->>
->> * **Radio Groups and Dropdowns:** These store a single answer as a **String**. You can use standard equality operators like `==` or `!=` (e.g., `favorite_fruit == "apple"`).
->> * **Group Questions (Checkboxes):** These store multiple selected answers in an **Array**. Because an array can contain several values, you **MUST** use the `in` operator to check if a specific option was selected (e.g., `"apple" in fruits_checked`).
+## Related Content
 
-## Comparison Operators
-
-Use these operators to compare values in your form data:
-
-| Operator                   | Symbol | Description                                                                                             |
-| -------------------------- | ------ | -----------                                                                                             |
-| Equal                      | `==`   | True if the left and right values are exactly the same.                                                 |
-| Not equal                  | `!=`   | True if the values are different.                                                                       |
-| Greater than               | `>`    | True if the left value is strictly larger.                                                              |
-| Greater than or equal      | `>=`   | True if the left value is larger or equal.                                                              |
-| Less than                  | `<`    | True if the left value is strictly smaller.                                                             |
-| Less than or equal         | `<=`   | True if the left value is smaller or equal.                                                             |
-| Element in array or string | `in`   | True if the left value is found within the right value (e.g., in a string or list of checkbox answers). |
-
-## Logical Operators
-
-Use logical operators to combine multiple conditions:
-
-| Operation   | Symbol | Description                                      |
-| ----------- | ------ | -----------                                      |
-| Logical AND | `&&`   | True only if **both** sides are true.            |
-| Logical OR  | `\|\|` | True if **at least one** side is true.           |
-| Negate      | `!`    | Inverts a boolean value (e.g., `!(expression)`). |
-
-> [!TIP]
-> **Hiding with OR:** If you want to hide an item when either condition A or condition B is met, use `||`. Using `&&` would only hide the item if both conditions were met simultaneously.
-
-## Testing the Expression
-
-The logic editor provides a "Test Expression" feature that allows you to simulate how the expression evaluates based on different answers. This is a crucial step to ensure your logic behaves as expected before deploying the survey. You can input various values for the bound variables and see the resulting evaluation of the expression in real-time. This helps you identify any logical errors or misunderstandings about how the operators work with different data types.
-
-For example the following expression checks whether respondent `Strongly agrees` or `Agrees` to the question `I am satisfied with my survey tool`:
-
-<figure><img src="../../../how-to/assets/shared/logic-expression-field.png" alt="Logic Expression Field"><figcaption>Logic Expression Field checking respondent's satisfaction</figcaption></figure>
-
-Clicking on "Test Expression" allows you to simulate different responses and see how the expression evaluates, ensuring that your logic is correctly set up to show or hide items based on the respondent's answers:
-
-<figure><img src="../../../how-to/assets/shared/logic-expression-test.png" alt="Logic Expression Test"><figcaption>Logic Expression Test simulating different responses</figcaption></figure>
+- [Jexl Syntax Reference](./jexl-syntax.md) — Comprehensive operator reference
+- [Advanced Logic Expressions](./advanced.md) — Multi-condition formulas and transforms
+- [Understanding Form Logic Explanation](../../../explanation/understanding-form-logic.md) — Conceptual background on expression evaluation

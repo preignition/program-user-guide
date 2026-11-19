@@ -27,12 +27,13 @@ Our platform applies a comprehensive Role-Based Access Control (RBAC) system. Th
 These rules govern the creation, configuration, and management of the surveys. They protect the intellectual property and structural integrity of the questionnaires.
 
 **Role-Based Actions:**
-Users are granted roles on a per-survey basis (stored within the document's data). The rules explicitly map these roles to allowed actions:
+Users are granted roles on a per-survey basis (stored within the document's access data), complemented by team-scoped read visibility for all active team members:
 
-* **Owner:** Full control. Can `setAccess`, `build`, `export`, `markDeleted`, etc.
-* **Editor:** Can modify content (`generateContent`, `translate`, `build`) but cannot alter ownership or access rights.
-* **Translator:** A specialized role restricted specifically to the `translate` action.
-* **Guest:** Read-only access to view the survey structure.
+* **Owner:** Full administrative authority. Can transfer ownership, delete the survey, assign access roles, configure settings, and deploy builds.
+* **Admin:** Full configuration, building, and publishing permissions, and can manage collaborator roles; cannot delete the survey.
+* **Editor:** Can modify questionnaire content, add questions, and build updates; cannot manage access roles or delete the survey.
+* **Guest / Viewer:** Read-only access to view survey structure and response analytics.
+* **Translator:** A specialized capability restricted specifically to editing translated text for an assigned language.
 
 **Hierarchical Inheritance:**
 Because a Survey contains a Form, and a Form contains Pages, Sections, and Questions, the security rules use inheritance. For instance, a Form document looks up its parent Survey to determine if the user has edit rights. This ensures that a user granted 'Editor' access on a survey automatically gains edit rights to all the underlying questions and localized text associated with it.

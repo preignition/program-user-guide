@@ -28,7 +28,7 @@ The **Production Link** is the official URL for your active data collection camp
 
 * **Purpose:** This link should only be shared with your actual target audience.
 * **Data Handling:** Responses submitted via the Production Link are treated as official, live data. They populate your analytics dashboards and are included in all data exports.
-* **Stability:** Because the Production Link is tied to a specific, immutable [Build Version](./survey-versionning.md), the experience remains stable for all respondents, ensuring that the data collected is structurally consistent from the first respondent to the last.
+* **Stability:** Because the Production Link is tied to a specific, immutable [Build Version](./survey-versioning.md), the experience remains stable for all respondents, ensuring that the data collected is structurally consistent from the first respondent to the last.
 
 ## The "Why" Behind the Design
 
