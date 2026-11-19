@@ -1,15 +1,16 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
+description: Documentation for Accessible Data applications, shared components, and APIs.
 layout: home
 
 hero:
   name: "Accessible Data"
-  text: "Documentation "
+  text: "Documentation"
   tagline: A Survey Tool for Everyone
   actions:
     - theme: brand
       text: Online Training Course
-      link: /app/survey/tutorial
+      link: /app/survey/tutorial/index
     - theme: alt
       text: Create a Free Account
       link: https://accessiblesurveys.com/customer/onboarding
@@ -18,55 +19,57 @@ hero:
 features:
   - title: Survey App
     details: Learn how to create and manage surveys
-    icon: 
+    icon:
       light: /app/analytics.svg
       dark: /app/analytics-dark.svg
     link: /app/survey/index
     linkText: 'Go to documentation'
   - title: Listserv App
     details: Moderated multilingual announcement and broadcast platform
-    icon: 
+    icon:
       light: /app/listserv.svg
       dark: /app/listserv-dark.svg
     link: /app/listserv/index
     linkText: 'Go to documentation'
-  - title: Customer App (in progress)
-    details: Learn how to manage customers
-    icon: 
+  - title: Customer Portal
+    details: Manage your organization profile, subscriptions, teams, and branding
+    icon:
       light: /app/customer.svg
       dark: /app/customer-dark.svg
     link: /app/customer/index
+    linkText: 'Go to documentation'
   - title: User App (in progress)
-    details: How to handle you user account
-    icon: 
+    details: Manage your user profile, preferences, and account settings
+    icon:
       light: /app/user.svg
       dark: /app/user-dark.svg
     link: /app/user/index
   - title: Blog App (in progress)
     details: Documentation for the Blog application
-    icon: 
+    icon:
       light: /app/blog.svg
       dark: /app/blog-dark.svg
     link: /app/blog/index
   - title: Discussion App (in progress)
     details: Documentation for the Discussion application
-    icon: 
+    icon:
       light: /app/discussion.svg
       dark: /app/discussion-dark.svg
     link: /app/discussion/index
   - title: Shared Components
     details: Documentation for components used across apps
-    icon: 
+    icon:
       light: /app/widgets.svg
       dark: /app/widgets-dark.svg
     link: /components/index
     linkText: 'Browse components'
   - title: API
     details: Explore the API documentation, including endpoints, parameters, and response formats
-    icon: 
+    icon:
       light: /images/icons/api.svg
       dark: /images/icons/api-dark.svg
-    link: https://a11y-docs.web.app/api.html
+    link: /api.html
+    target: _blank
     linkText: 'Go to API documentation'
-  
+
 ---

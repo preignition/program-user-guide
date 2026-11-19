@@ -20,8 +20,19 @@ export function getSidebar() {
         { text: "Explanation", link: "/app/listserv/explanation/index" },
       ],
     },
-    { text: "Customer App", link: "/app/customer/index", items: [] },
+    {
+      text: "Customer Portal",
+      link: "/app/customer/index",
+      items: [
+        { text: "Tutorials", link: "/app/customer/tutorial/index" },
+        { text: "How-to Guides", link: "/app/customer/how-to/index" },
+        { text: "Reference", link: "/app/customer/reference/index" },
+        { text: "Explanation", link: "/app/customer/explanation/index" },
+      ],
+    },
     { text: "User App", link: "/app/user/index" },
+    { text: "Blog App", link: "/app/blog/index" },
+    { text: "Discussion App", link: "/app/discussion/index" },
     {
       text: "Shared Components",
       link: "/components/index",
@@ -59,7 +70,7 @@ export function getSidebar() {
     },
     {
       text: "APIs",
-      items: [{ text: "OpenAPI Specifications", link: "https://a11y-docs.web.app/api.html" }],
+      items: [{ text: "OpenAPI Specifications", link: "/api.html", target: "_blank" }],
     },
   ];
 }

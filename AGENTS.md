@@ -1,6 +1,6 @@
 # AGENTS
 
-VitePress documentation for the Accessible Surveys platform, published to docs.accessiblesurveys.org. Content lives in `docs/`, screenshot specs in `src/`. Follow `markdown-good-practices.md` (GitBook-style `::: info` hints, a frontmatter description per page, assets beside the page).
+VitePress documentation for the Accessible Surveys platform, published to docs.accessiblesurveys.org. Content lives in `docs/`, screenshot specs in `src/`. Follow `markdown-good-practices.md` (VitePress `::: info` containers, a frontmatter `description` per page, `index.md` section indexes, `<lite-youtube>` for video, US English and UN CRPD terminology, assets beside the page).
 
 ## Layout
 

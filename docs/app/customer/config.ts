@@ -23,7 +23,6 @@ function getNav() {
 }
 
 function getSidebar() {
-  console.info('getSidebar')
   return [
     {
       text: 'Explanation',

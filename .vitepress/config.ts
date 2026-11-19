@@ -8,7 +8,7 @@ import { getSocialLinks } from './getSocialLinks.ts'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Accessible Data Documentation",
-  description: "Documentation for Accessible Data documentation applications ",
+  description: "Documentation for Accessible Data applications",
   // assetsDir: 'assets',
   srcExclude: ['**/README.md', '**/TODO.md'],
   cleanUrls: true,
@@ -67,8 +67,21 @@ export default defineConfig({
 
 function getNav() {
   const nav = getRootNav()
+  nav.push({
+    text: 'Apps',
+    items: [
+      { text: 'All Applications', link: '/app/index' },
+      { text: 'Survey App', link: '/app/survey/index' },
+      { text: 'Listserv App', link: '/app/listserv/index' },
+      { text: 'Customer Portal', link: '/app/customer/index' },
+      { text: 'User App', link: '/app/user/index' },
+      { text: 'Blog App', link: '/app/blog/index' },
+      { text: 'Discussion App', link: '/app/discussion/index' },
+    ],
+  })
   nav.push({ text: 'Components', link: '/components/index' })
   nav.push({ text: 'Release Notes', link: '/release-notes/index' })
+  nav.push({ text: 'API', link: '/api.html', target: '_blank' })
   nav.push({ text: 'Accessible Surveys', link: 'https://accessiblesurveys.com' })
   return nav
-} 
+}
