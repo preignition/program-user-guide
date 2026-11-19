@@ -39,13 +39,15 @@ While in Test mode, you will see a toolbar that provides several options to simu
 
 ## Step 3: Edit the form directly from the Test view
 
-If you notice any issues or want to make changes while testing, you can click on the **edit** icon in the test toolbar. This will take you directly to the form builder where you can make edits.
+If you notice an issue while testing, turn on the **edit** control in the test toolbar. Each item then shows a pencil button that opens a modal for editing that item in place.
+
+Edits from the dialog are saved to the current draft, not to the test session, so the form changes as soon as you save. Use **Compose** for structural changes such as moving or adding items.
 
 <figure><img src="./assets/testing-a-form/step-3-click-activate-edit-mode.png" alt="Activate Edit mode"><figcaption>Activate Edit mode in the test toolbar to make changes directly from the test view.</figcaption></figure>
 
 <figure><img src="./assets/shared/test-edit-question-button.png" alt="Edit Edit"><figcaption>Edit a question directly from the test view.</figcaption></figure>
 
-A modal dialog opens to allow you to edit the question:
+The modal dialog edits the selected question:
 
 <figure><img src="./assets/testing-a-form/step-3-edit-question-dialog.png" alt="Edit question dialog"><figcaption>Edit question dialog opened directly from the test view.</figcaption></figure>
 
@@ -62,3 +64,10 @@ While the interactive Test toolbar (Steps 1–3) tests your live working draft d
 </figure>
 
 See [Publishing a survey](./publishing-a-survey.md) for complete instructions on versioning, quota management, and taking surveys to production.
+
+## Related Content
+
+- [Test Survey Reference](../reference/test/index.md): Every test toolbar control, the sandbox behavior and inline editing.
+- [How to Review a Survey](./review-a-survey.md): Automated checks before a test session.
+- [How to Publish and Distribute a Survey](./publishing-a-survey.md): Test builds and production links.
+- [Form Behavior Reference](../reference/build/behavior.md): Enabling the modes the toolbar toggles.

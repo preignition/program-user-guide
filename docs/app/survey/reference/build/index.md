@@ -15,6 +15,8 @@ The Survey Builder drawer provides access to the following tools:
 - **[Localize](./localize.md)**: Enable multilingual support and activate supported survey languages.
 - **[Image Library](./image-library.md)**: Upload and manage image and video assets (up to 5 MB per file) used as question illustrations or Easy Read graphics.
 - **[Review](./review.md)**: Audit questionnaire quality with automated rule checks and AI reviews, applying one-click fixes for logic, translation, and accessibility issues.
+- **[Shared Options](./shared-options.md)**: Manage named answer-option lists reused across choice questions.
+- **[Expressions](./expressions.md)**: Index every logical expression, its usage and its deletion status.
 
 ### Advanced Mode Tools
 

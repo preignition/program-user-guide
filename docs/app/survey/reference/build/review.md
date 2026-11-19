@@ -118,6 +118,8 @@ In addition to live rule and model checks, the Review panel and publish workflow
 
 ## Related Content
 
+- [How to Review a Survey](../../how-to/review-a-survey.md) — The step-by-step review and fix routine.
+
 - [Compose](./compose/index.md) — structure the pages, sections and questions a finding refers to.
 - [Form Behavior](./behavior.md) — configure logic and accessibility settings that the rule checks inspect.
 - [Localize](./localize.md) — complete the translations reported by the translation checks.

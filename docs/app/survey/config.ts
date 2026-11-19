@@ -50,7 +50,11 @@ function getSidebar() {
             { text: "Test a form", link: `testing-a-form.md` },
             { text: "Mark a survey as favorite", link: `marking-a-survey-as-favorite.md` },
             { text: "Delete a survey", link: `deleting-a-survey.md` },
+            { text: "Duplicate a survey", link: `duplicate-a-survey.md` },
             { text: "Restore deleted survey items", link: `restore-deleted-items.md` },
+            { text: "Generate a survey with AI or a document", link: `generate-a-survey.md` },
+            { text: "Review a survey", link: `review-a-survey.md` },
+            { text: "Filter the compose tree", link: `filter-the-compose-tree.md` },
             { text: "Add content to a form", link: `adding-content-to-a-form.md` },
             { text: "Put text above a question", link: `text-above-a-question.md` },
             { text: "Control content visibility", link: `controlling-visibility.md` },
@@ -131,6 +135,7 @@ function getSidebar() {
       link: `index.md`,
       base: `${root}/reference/`,
       items: [
+        { text: "Survey Workspace", link: `workspace.md` },
         {
           text: "Build Survey",
           base: `${root}/reference/build/`,
@@ -154,6 +159,8 @@ function getSidebar() {
             { text: "Localize", link: `localize.md` },
             { text: "Image Library", link: `image-library.md` },
             { text: "Review", link: `review.md` },
+            { text: "Shared Options", link: `shared-options.md` },
+            { text: "Expressions", link: `expressions.md` },
             { text: "Prompts", link: `prompt.md` },
             { text: "Restore", link: `restore.md` },
           ],
@@ -186,6 +193,7 @@ function getSidebar() {
           collapsed: true,
           base: `${root}/reference/analyze/`,
           items: [
+            { text: "Analyze Overview", link: `index.md` },
             { text: "Survey Analytics", link: `survey.md` },
             { text: "Behavioral Analytics", link: `behavior.md` },
             { text: "Progress", link: `progress.md` },

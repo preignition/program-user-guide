@@ -178,3 +178,39 @@
 
 - `app/app-survey/src/page/edit/design/restore.ts`: Restore workspace and restore action.
 - `app/app-base/entity/RestoreE.ts`: Restore entity, deleted-items query and restore action.
+
+## Reviewing a survey - review-a-survey
+
+- `app/app-survey/src/page/edit/design/review.ts`: Review panel, run, filters and finding details.
+- `app/app-survey/src/page/edit/design/review-actions.ts`: Apply, insert, dismiss, restore and translate actions.
+- `app/app-survey/src/page/edit/design/review-live.ts`: Live rule findings and markers.
+
+## Generating a survey with AI or a document - generate-a-survey
+
+- `app/app-survey/src/dialog/dialog-survey-create.ts`: Survey creation dialog with new, prompt, OCR and skip options.
+- `app/app-survey/src/dialog/dialog-form-create.ts`: Form creation options, prompt field and PDF/Markdown upload (2 MB).
+- `app/app-survey/src/entity/action/acceptAllGeneratedContent.ts`: Accept all pending generated content.
+- `app/app-survey/src/entity/action/rejectAllGeneratedContent.ts`: Reject all pending generated content.
+
+## Filtering the compose tree - filter-the-compose-tree
+
+- `app/app-survey/src/page/edit/design/tree-filter.ts`: Tree filter kinds and matching.
+- `app/app-survey/src/page/edit/design/modesConfig.ts`: Column headers, media filters and tri-state cycling.
+
+## Duplicating a survey - duplicate-a-survey
+
+- `app/app-survey/src/entity/action/copySurvey.ts`: Copy dialog, name and `copyForm` option.
+- `app/app-survey/actionApi/src/`: Server-side survey copy.
+
+## Reference pages - shared options, expressions, workspace, test, analyze
+
+- `app/app-survey/src/page/edit/design/shared-option.ts`: Shared Options grid, columns and usage detail.
+- `app/app-survey/src/entity/question/settings/BuildSharedChoice.ts`: Shared-option question settings.
+- `app/app-survey/src/page/edit/design/expressions.ts`: Expressions page, statuses and usage.
+- `app/app-survey/src/page/edit/design/expression-rows.ts`: Expression row projection and readable preview.
+- `app/app-survey/src/page/workspace.ts`: Survey workspace, starred list and team scope.
+- `app/app-survey/src/cmp/overview.ts`: Survey overview card, status chips and activity.
+- `app/app-survey/src/page/edit/test.ts`: Test workbench entry component.
+- `app/app-survey/renderer/mixin/form-test-toolbar-mixin.ts`: Test toolbar controls and test run reset.
+- `app/app-survey/renderer/mixin/edit-mixin.ts`: Inline edit button in the test view.
+- `app/app-survey/src/page/analyze/`: Survey, behavior and progress analytics surfaces.

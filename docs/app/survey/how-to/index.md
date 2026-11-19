@@ -21,7 +21,11 @@ Fundamental tasks for building your survey and forms, including adding questions
 - [How to test a form](./testing-a-form.md)
 - [How to mark a survey as favorite](./marking-a-survey-as-favorite.md)
 - [How to delete a survey](./deleting-a-survey.md)
+- [How to duplicate a survey](./duplicate-a-survey.md)
 - [How to restore deleted survey items](./restore-deleted-items.md)
+- [How to generate a survey with AI or a document](./generate-a-survey.md)
+- [How to review a survey](./review-a-survey.md)
+- [How to filter the compose tree](./filter-the-compose-tree.md)
 
 ### Adding Content
 

@@ -41,3 +41,10 @@ Select another choice-based question where you want to reuse the options. In the
 
 > [!NOTE]
 > When you link a question to a shared option group, any future changes made to the shared options will automatically update across all questions using that group.
+
+## Related Content
+
+- [Shared Options Reference](../reference/build/shared-options.md): The form-level library, columns and propagation rules.
+- [Question Reference](../reference/build/compose/question.md): Choice question settings, including shared options.
+- [How to share content across multiple forms and surveys](./sharing-content.md): Sections and other sharing surfaces.
+- [How to share logical expressions across multiple items](./sharing-logical-expressions.md): Sharing conditions rather than options.

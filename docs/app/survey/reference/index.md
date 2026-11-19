@@ -8,6 +8,8 @@ The **Reference** section is an information-oriented guide designed to be consul
 
 It is structured around the natural lifecycle and main interfaces of managing a survey:
 
+- **[Survey Workspace](./workspace.md)**
+  Finding, starring and managing the surveys of the active team.
 - **[Build](./build/index.md)**
   Technical details on the survey construction interface. Includes exhaustive configurations for composing pages, question types, logical form behaviors, localization settings, and managing the image library.
 - **[Test](./test/index.md)**
@@ -16,6 +18,7 @@ It is structured around the natural lifecycle and main interfaces of managing a 
   Comprehensive configuration details for making your survey live. Covers publishing version control, generating distribution links, sending audience invitations, configuring respondent emails and access rights, scheduling batches, integrating webhooks, and defining post-survey redirection.
 - **[Analyze](./analyze/survey.md)**
   Technical reference for survey analytics, respondent paradata, and invitation monitoring:
+  - **[Analyze Overview](./analyze/index.md)**: The three tabs, shared filters, advanced mode and exports.
   - **[Survey Analytics](./analyze/survey.md)**: Workbench UI parameters, metadata cards, card layout options, AnalyticsModel schema, and statistical formulas.
   - **[Behavioral Analytics](./analyze/behavior.md)**: Paradata schema, session timing formulas, Confidence Index scoring rubric, quality flag predicates, and exclusion taxonomy.
   - **[Progress](./analyze/progress.md)**: Invitation run selector cards, funnel and rate counters, masked recipient table, and reminder actions.

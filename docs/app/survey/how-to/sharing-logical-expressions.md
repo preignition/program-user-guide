@@ -72,6 +72,7 @@ You can delete an expression only when no active item uses it and no soft-delete
 
 ## Related Content
 
+- [Expressions Reference](../reference/build/expressions.md): The form-level index, statuses and deletion rules.
 - [How to use form logic](./logic-expression.md)
 - [How to control content visibility](./controlling-visibility.md)
 - [How to share content across multiple forms and surveys](./sharing-content.md)
