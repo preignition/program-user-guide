@@ -50,7 +50,7 @@ In `feature-a.md`, reference the image with a relative path:
 
 ### Traceability (`REF.md`)
 
-Maintain a `REF.md` file next to each docs folder mapping published pages back to the source files they document in `accessibleData`. Always use **repo-relative paths** back to the repository root (e.g., `../../../../../../app/app-survey/...`), never absolute GitLab URLs. All relative links in `REF.md` are checked by `pnpm check:docs-links`.
+Maintain a `REF.md` file next to each docs folder mapping published pages back to the source files they document in `accessibleData`. Write each source as a **backticked repo-relative path** (e.g. `` `app/app-survey/src/page/edit/design/behavior.ts` ``), never a Markdown link: VitePress reads a relative `.md` link as a page and fails the build, and `pnpm check:docs-links` rejects a docs link that leaves `docs/`.
 
 ## Content Best Practices
 

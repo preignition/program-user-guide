@@ -124,7 +124,6 @@ function getSidebar() {
       link: `index.md`,
       base: `${root}/reference/`,
       items: [
-        { text: "Survey Overview", link: "index.md" },
         {
           text: "Build Survey",
           base: `${root}/reference/build/`,
@@ -215,15 +214,6 @@ function getSidebar() {
       base: `${root}/explanation/`,
       link: `index.md`,
       items: [
-        {
-          text: "Principles",
-          collapsed: true,
-          items: [
-            { text: "We have different needs", link: `` },
-            { text: "Accessibility First", link: `` },
-            { text: "Rooted in the disability movement", link: `` },
-          ],
-        },
         {
           text: "Architecture and Key Concepts",
           collapsed: true,
