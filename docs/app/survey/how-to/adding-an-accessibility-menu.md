@@ -9,7 +9,7 @@ Adding an accessibility menu at the start of your survey or within specific sect
 ## Prerequisites
 
 - You must have a survey created and be in the **Compose** mode of the survey builder.
-- You should have already activated the desired accessibility modes in the **Behavior** settings of your survey.
+- You should have already activated the desired accessibility modes in **Form Behavior** (see [Activating Accessibility Modes](./activating-accessibility-modes.md)).
 
 ## Steps
 
@@ -29,8 +29,9 @@ Add the following tag into the markdown content where you want the menu to appea
 <a11y-menu ></a11y-menu>
 ```
 
-> [!TIP]
-> The menu is intelligent: it will only display the accessibility options that you have enabled for your survey in the Behavior settings.
+::: tip Dynamic Display
+The menu is dynamic: it only renders options for accessibility modes that you have enabled for the survey in [Form Behavior](./activating-accessibility-modes.md).
+:::
 
 ### 3. Preview the Accessibility Menu
 

@@ -1,39 +1,62 @@
 ---
-description: The notice wording, consent versioning, respondent reminder schedule, consent retention and sender identity on the Email page's Advanced tab.
+description: Technical reference for consent notice versioning, respondent reminder cadence, consent retention rules, and sender identity on the Advanced tab.
 ---
 
 # Advanced Email Settings
 
-When **Advanced** mode is switched on in the top toolbar, the **Email** page displays an **Advanced** tab for the survey-level email settings that are not tied to a single message: **Consent notices**, **Respondent reminders**, **Consent retention**, and **Sender**.
+When **Advanced Mode** is enabled in the top toolbar, the **Email** page displays an **Advanced** tab. This tab configures survey-level email settings that span across messages: **Consent notices**, **Respondent reminders**, **Consent retention**, and **Sender identity**.
 
 ## Consent Notices and Opt-in Wording
 
-The notice is the wording a respondent reads next to an **Email** or **Account Email** field that carries a notification purpose.
+Consent notices provide the legal explanation and opt-in labels displayed alongside [Account Email](../../build/compose/account-email.md) and **Email** fields in the questionnaire.
 
-- The **Reminder** notice and its **Opt-in label** accompany the checkbox a respondent ticks to receive reminders while the form is unsubmitted.
-- The **Results and reports** and **Follow-up survey** notices and their **Opt-in labels** accompany the checkbox each purpose shows.
-- The **Submission confirmation** notice is transactional: it tells the respondent a confirmation will be sent, and needs no opt-in checkbox.
-- An **Account Email** field offers the opt-in only when the respondent has no account email. Once an account email exists, the field shows that address without the consent checkboxes.
+| Purpose | Notice Description | Opt-in Label Required | Notes |
+| :--- | :--- | :--- | :--- |
+| **Submission confirmation** | Transactional notice explaining that a confirmation receipt will be sent. | No | Automatic notification; no checkbox required. |
+| **Reminders** | Explains that reminders may be sent while the form is incomplete. | Yes | Displayed only when the respondent has no stored account email. |
+| **Results and reports** | Explains that the respondent will be sent the survey findings or report. | Yes | Displayed only when the primary email message is authored. |
+| **Follow-up survey** | Explains that the respondent may be invited to a future study. | Yes | Displayed only when the primary email message is authored. |
 
-Leave a field empty to use the platform's default wording. Every change to the wording increases the notice **Version**, which is recorded with a consent when one is captured — so it is always clear which wording a respondent agreed to.
+- **Default Wording:** Leave notice or label fields empty to use the system default copy.
+- **Notice Versioning:** Every text revision increments the notice **Version** integer. When a respondent ticks an opt-in checkbox, the active notice version is stored inside their `RespondentEmail` consent record for regulatory auditability.
 
 ## Respondent Reminders
 
-Configures the cadence of opt-in reminders sent to respondents who started the form, ticked the reminder opt-in checkbox, and have not yet submitted:
+The **Respondent reminders** section sets the automated reminder cadence for respondents who start the questionnaire, tick the reminder opt-in checkbox, and leave without submitting:
 
-- **Reminders** — `None`, `One reminder`, or `Two reminders`.
-- **First reminder (days)** — days after the respondent's opt-in.
-- **Second reminder (days)** — days after the first reminder.
-- **Deadline** — date after which no reminder is sent (leave empty for no deadline).
+| Setting | Allowed Values | Default | Behavior |
+| :--- | :--- | :--- | :--- |
+| **Reminders** | `None`, `One reminder`, `Two reminders` | `One reminder` | Maximum number of reminder emails a respondent may receive. |
+| **First reminder (days)** | Integer (≥ 1) | `3` days | Delay in days after the respondent's initial opt-in before sending reminder 1. |
+| **Second reminder (days)** | Integer (≥ 1) | `3` days | Delay in days after the first reminder before sending reminder 2. |
+| **Deadline** | Date picker | None | Absolute calendar cut-off date after which no reminders are dispatched. |
 
-*(The schedule for reminders sent to an invited team audience is configured separately on the **Invitation reminder** tab and in **Share → Distribute**.)*
+::: info Hourly Dispatch & Batch Scoping
+An hourly background job processes respondent reminders. The job only contacts unsubmitted sessions with an active, unexpired consent belonging to the survey's active batch. Switching the active batch immediately stops reminders for the previous wave.
+:::
+
+*(Note: Reminders for invited team audiences are managed separately on the [Invitation reminder tab](./index.md#invitation-reminder-email-and-schedule) and in [Distribute](../distribute/index.md#configuration-controls).)*
 
 ## Consent Retention
 
-Sets **Retention (days)** (between `1` and `365`, `180` by default): how long a reminder or follow-up consent record — and the email address it holds — is kept before the platform deletes it. Deleting an expired consent never alters the respondent's submitted survey answers.
+The **Consent retention** section controls the lifecycle of collected operational contact data:
+
+| Parameter | Allowed Range | Default | Operational Impact |
+| :--- | :--- | :--- | :--- |
+| **Retention (days)** | `1` to `365` days | `180` days | Time period after which operational email consents and stored email addresses are automatically purged. |
+
+- **Audit Preservation:** Deleting an expired consent record deletes the stored email address. Submitted questionnaire answers, response IDs, and compliance archives remain intact.
+- **Unsubscribe Handling:** Every email contains a one-click unsubscribe URL (`/u/{token}`). Following the link immediately terminates the consent session without requiring an account login.
 
 ## Sender Identity
 
-Emails are sent from the platform's address — custom domains and SMTP are out of scope. Leave **Display name** and **Reply-to** empty to use the survey title as the sender's display name and the team admin's address for replies, or override either per survey.
+Emails are dispatched through the platform's trusted delivery infrastructure. Custom domain DNS and external SMTP relays are not supported.
 
-For invitations, the **Reply-to** selector in the **Invitations** composer on the Distribute page chooses any member of the survey team, and that choice is frozen with the run. Leaving it blank uses the team owner's email address. The survey-level reply-to on this tab applies to the other survey emails.
+| Field | Default Value | Survey Override | Notes |
+| :--- | :--- | :--- | :--- |
+| **Display name** | Survey Title | Custom sender name | Displayed in recipient email inboxes as the "From" name. |
+| **Reply-to** | Team Administrator Email | Custom valid email address | Target address for recipient email replies. |
+
+::: tip Invitation Reply-To
+For audience invitation runs, the **Reply-To** selector in the **Distribute** composer allows selecting any registered team member. Leaving that selector blank falls back to the team owner's address. The survey-level reply-to configured here applies to confirmations, reminders, and follow-ups.
+:::

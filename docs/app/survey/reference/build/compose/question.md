@@ -1,19 +1,109 @@
 ---
-description: Reference documentation for Survey Questions.
+description: Technical reference for Survey Questions covering all 19 question types, option fields, glossary tooltips, validation constraints, and accessibility settings in Build Compose.
 ---
 
 # Question Reference
 
-Questions are the interactive data collection elements within a survey. The builder provides a wide variety of question types and extensive configuration options for each.
+Questions are the interactive data collection components of a survey. The builder provides **19 question types** organized into four functional data families, supporting comprehensive validation rules, option customization, glossary tooltips, and specialized accessibility modes.
 
 <figure>
   <img src="./assets/question-auto.png" alt="Standard question configuration interface.">
-  <figcaption>The primary interface for configuring a survey question.</figcaption>
+  <figcaption>The primary interface for configuring a survey question in Build → Compose.</figcaption>
 </figure>
 
-## Specialized Configurations
+## The 19 Question Types
 
-Questions can be enhanced with various accessibility and logic configurations:
+The survey engine supports 19 specialized question types aligned with the question-type chooser in the builder:
+
+| Data Family | Type Code (`subType`) | Label in Chooser | HTML Element | Data Group | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Text Based** | `textfield` | Text Field | `a11y-text-field` | `open` | Single-line free text input. |
+| **Text Based** | `textarea` | Text Area | `a11y-text-field` (`type="textarea"`) | `open` | Multi-line text area with automatic vertical height expansion. |
+| **Text Based** | `number` | Number | `a11y-text-field` (`type="number"`) | `open` | Validated numeric input with optional range and step limits. |
+| **Text Based** | `tel` | Telephone | `a11y-text-field-tel` | `open` | Telephone input triggering numeric keypad on mobile devices. |
+| **Text Based** | `date` | Date | `a11y-text-field-date` | `open` | Standardized ISO calendar date selector. |
+| **Text Based** | `email` | Email | `a11y-text-field` (`type="email"`) | `open` | Format-validated email input for standard form answers. |
+| **Text Based** | `url` | URL | `a11y-text-field` (`type="url"`) | `open` | Validated HTTP or HTTPS web address input. |
+| **Text Based** | `accountEmail` | Account Email | `a11y-account-email` | `open` | Specialized respondent account email with verification and opt-in consent checkboxes. |
+| **Choice Based** | `radio` | Radio Group | `a11y-radio-group` | `choice` | Mutually exclusive single-choice selection with `specify` support. |
+| **Choice Based** | `checkbox` | Checkbox Group | `a11y-checkbox-group` | `multi` | Multi-select choice group allowing multiple answers with `specify` support. |
+| **Choice Based** | `dropdown` | Dropdown | `a11y-select` | `choice` | Compact dropdown menu for single-choice selection from long lists. |
+| **Choice Based** | `rating` | Rating | `a11y-rating` | `rating` | Ordinal rating scale (stars or numbered points) for satisfaction or agreement. |
+| **Choice Based** | `ranking` | Ranking | `a11y-ranking` | `choice` | Reorderable list allowing respondents to prioritize items by preference. |
+| **Boolean** | `check` | Checkbox | `a11y-checkbox` | `boolean` | Single standalone binary checkbox (true/false) for explicit declarations. |
+| **Boolean** | `switch` | Switch | `a11y-switch` | `boolean` | Binary toggle switch for binary preferences. |
+| **Media Based** | `file` | File Upload | `a11y-upload` | `media` | Generic file upload field with size and count controls. |
+| **Media Based** | `image` | Image Upload | `a11y-upload` (`accept="image/*"`) | `media` | Image file attachment with camera integration on mobile devices. |
+| **Media Based** | `video` | Video Upload | `a11y-upload` (`accept="video/*"`) | `media` | Video recording and file attachment. |
+| **Media Based** | `audio` | Audio Upload | `a11y-upload` (`accept="audio/*"`) | `media` | Audio sound recording and audio file attachment. |
+
+*(Note: Informational rich text without data collection is provided by the standalone `text` element; see [Text Page Reference](./text-page.md).)*
+
+## Option Fields (Choice Based Questions)
+
+Choice-based questions (`radio`, `checkbox`, `dropdown`, and `ranking`) manage an ordered list of **Options**:
+
+### Option Properties
+
+- **Option Label (`label`):** The visible text presented to the respondent. Translated per survey language in **Localize Mode**.
+- **Option Code (`build.code`):** Unique identifier used to key answers in database records, logic expressions, and CSV/JSON exports. Restricted to alphanumeric characters, hyphens, and underscores (`^[a-zA-Z0-9_\-]+$`).
+
+### Option Customization
+
+- **Specify Field (`props.specify`):** Checking **Specify** on a choice option adds an inline free-text input when that option is selected. This allows capturing qualitative elaborations (e.g. "Other: please specify"). The specify input carries its own translated label (`specifyLabel`).
+- **Fixed Position (`props.fixed`):** When option randomization is enabled on the question, toggling **Fixed Position** ensures this specific option remains anchored at its original index. This is essential for terminal options such as *"None of the above"*, *"All of the above"*, or *"Prefer not to answer"*.
+
+## Glossary Items and Tooltips
+
+Glossary terms provide on-demand definitions for technical, legal, or domain-specific terminology without cluttering question text:
+
+- **Defining Terms:** Add terms under the survey's **Glossary** container in Build → Compose. Each glossary item has a unique term identifier (`name`) and a translated definition (`definition`).
+- **Referencing Terms in Content:** To embed a glossary definition in any question label, helper text, or markdown block, use the `<lapp-tooltip>` custom element:
+
+  ```html
+  Please state your <lapp-tooltip term="grossIncome">gross annual income</lapp-tooltip>.
+  ```
+
+- **Respondent Interaction:** The text renders with an accessible dashed underline. Hovering, tapping, or focusing the element opens an accessible popover containing the translated definition.
+
+## Validation Rules and Constraints
+
+Validation is configured under the **Settings** tab in the question drawer:
+
+### General Settings
+
+- **Required:** When enabled, respondents cannot navigate past the question or submit the survey without providing a valid answer.
+- **Label:** The primary prompt asking for information.
+  - **Standard Mode:** When form-level **Accessible Label** is off, labels are silently constrained to **80 characters** to ensure layout stability.
+  - **Accessible Label Mode:** Enabling [Accessible Label](./form.md#global-question-settings) removes the 80-character limit entirely and increases font readability.
+- **Question Code (`build.code`):** Unique camelCase key representing this question in database records and exported datasets. Derived automatically from the label, but can be manually overridden in Advanced Mode.
+
+### Numeric & Character Constraints
+
+- **Min Length / Max Length:** Applies to text inputs (`textfield`, `textarea`). Constrains minimum and maximum character counts.
+- **Min / Max:** Sets acceptable numeric bounds for `number` fields.
+- **Step:** Controls numeric granularity (e.g. `1` for whole numbers, `0.1` for single-digit decimals).
+
+### Pattern Validation (Strict Unicode Regex)
+
+The **Pattern** field applies an HTML5 regular expression pattern to short text, textarea, and telephone inputs:
+
+- **Implicit Anchoring:** The browser automatically anchors patterns with `^(?:` and `)$`, requiring the entire input string to match.
+- **ES2024 Unicode Sets (`v` Flag):** Pattern validation compiles regex using the strict browser `v` flag. In `v` mode, unescaped parentheses inside character classes trigger syntax errors. To match literal parentheses inside brackets, they must be escaped: `[0-9\-\(\)]`.
+
+## Email Purposes
+
+For email inputs — **Email** (`textfield` with `type="email"`) and [Account Email](./account-email.md) (`a11y-account-email`):
+
+- Use **Email** for a plain questionnaire answer with format validation.
+- Use **Account Email** when managing respondent identity verification or offering consent opt-ins for reminders, survey reports, or follow-up studies.
+- Collected addresses are kept out of data exports unless the survey selects the **Dataset** email purpose.
+
+See [Account Email Reference](./account-email.md#email-purposes-and-export-behavior) and the authoritative [Email Purposes Table](../../share/email/index.md#email-purposes) on the Share Email page.
+
+## Specialized Accessibility Configurations
+
+Questions can be enhanced with rich multimodal accessibility features:
 
 <figure>
   <img src="./assets/question-easyread-auto.png" alt="Easy Read configuration for a question.">
@@ -35,77 +125,7 @@ Questions can be enhanced with various accessibility and logic configurations:
   <figcaption>Settings for defining logical expressions that control when the question is visible to the respondent.</figcaption>
 </figure>
 
-## Question Types
-
-The application supports various question field types, including:
-
-- **Text-based fields**: Short text, text area.
-- **Choice-based fields**: Radio groups, checkbox groups, dropdowns.
-- **Boolean fields**: Checkboxes, switches.
-- **Media fields**: File upload capabilities.
-- **Scale fields**: Ratings, rankings.
-- **[Account Email](./account-email.md)**: Specialized respondent email field for account verification and opt-in survey communications (reminders, results and reports, follow-up surveys) — use **Email** for a plain format-validated email input.
-
-## Field Attributes & Validation Rules
-
-Field attributes define the validation and input behavior of questions when presented to respondents. These settings are configured under the **Settings** tab in the question builder.
-
-<figure>
-  <img src="./assets/question-auto.png" alt="Question Settings and Validation tab">
-  <figcaption>Configuring question settings and validation rules.</figcaption>
-</figure>
-
-### General Settings
-
-- **Required**: When toggled on, respondents must answer this question before they can proceed or submit the survey.
-- **Label**: The text shown to respondents requesting the information. It is limited to **80 characters** when the form-level [Accessible Label](../behavior.md) setting is off; enabling Accessible Label removes the limit. The limit is applied silently (no character counter is shown).
-
-::: tip
-**Best practice — keep labels short.** Write the label as a single, clear phrase asking for exactly one piece of information — ideally under 80 characters. This keeps labels readable on small screens and safely within the 80-character limit while **Accessible Label** is off. Put longer context, examples, or formatting instructions in the **helper text** rather than the label.
-:::
-
-### Character & Number Constraints
-
-- **Min Length / Max Length**: Applied to text fields (Short Text and Text Area). Sets the minimum and maximum number of characters allowed in the response.
-- **Min / Max**: Applied to numeric fields. Sets the acceptable range for numeric inputs.
-- **Step**: Applied to numeric fields. Defines the allowed granularity (e.g., a step of `1` allows integers only, while `0.1` allows decimal points up to one digit).
-
-### Email Purposes
-
-Email fields — the **Email** type (`a11y-text-field` with `type="email"`) and the [Account Email](./account-email.md) type (`a11y-account-email`) — both collect an address, but they serve different jobs:
-
-- **[Account Email](./account-email.md)** (`a11y-account-email`) is the respondent email field: for signed-in respondents it pre-fills and verifies their account email, and for respondents without an account email (or in test preview) it renders the consent notices and opt-in checkboxes for **Reminders**, **Results and reports**, and **Follow-up survey**.
-- **Email** (`a11y-text-field` with `type="email"`) is a standard format-validated email input for collecting an address as a regular form answer, without account verification or consent opt-in checkboxes.
-
-See [Email or Account Email](./account-email.md#email-or-account-email) for the full comparison.
-
-The survey's **Email Purposes** decide what collected addresses are used for. The picker in the question's settings and the one on the survey's [Email page](../../share/email/index.md#email-purposes) edit the same survey-level setting, so the choice applies to every email field. It is visible in both standard and advanced mode.
-
-- **Dataset**: the addresses are part of the survey data — they appear in the `raw`, `humanized` and `anonymized` exports.
-- **Submission confirmation**: the addresses serve the survey's confirmation sent when a respondent submits.
-- **Reminders**: the respondent opts in on the field and the platform may email them while the form is unsubmitted.
-- **Results and reports** and **Follow-up survey**: the respondent opts in on the field and you can send the follow-up from the Email page.
-
-Without **Dataset** an address is *operational only*: it is kept out of every export and serves the survey's email workflow. The Account Email field always carries account verification; it joins the dataset when the survey selects **Dataset**.
-
-::: info
-A respondent has **one** reminder consent per survey, so a survey with more than one reminder field builds with a warning: every reminder field offers the same consent and shares the same record. The reminders themselves — how many, how long after the last contact, and until when — are configured on the survey's [Email page](../../share/email/index.md#reminder-schedule).
-:::
-
-::: info
-Every other question type is always part of the dataset. Anonymous questions and sections keep working as before — they are already excluded from the `anonymized` export.
-:::
-
-### Pattern Validation
-
-The **Pattern** field allows you to define a regular expression (regex) to validate respondent answers for short text, text area, and telephone fields.
-
-- **HTML5 Compliance**: The regular expression is applied directly as the native HTML5 `pattern` attribute on the input field.
-- **Implicit Anchoring**: The browser implicitly anchors the pattern with `^(?:` and `)$`, meaning the pattern must match the entire input, not just a substring.
-- **Authoring-Time Validation**: When configuring a pattern, the survey builder strictly validates that your regex is structurally correct. It compiles and tests the regex using the browser's standard unicodeSets (`v`) flag (introduced in ES2024 to provide stricter character class processing and improved unicode support).
-- **Instant Feedback**: If you enter an invalid regular expression (e.g., unclosed brackets or mismatched parenthesis), an error message is shown immediately on blur, and the form cannot be saved until the expression is corrected.
-
-::: info
-**Unicode Sets (v-flag) Syntax**
-Modern browsers use the strict `v` regex flag for `pattern` validation. In `v` mode, parentheses `(` and `)` inside character classes `[...]` are reserved for set operations. To match literal parentheses inside a character class, they **must** be escaped (for example, `[0-9\-\(\)]`). Unescaped parentheses inside `[...]` (like `[0-9\-()]`) will trigger a syntax error.
-:::
+- **Easy Read:** Provide simplified question phrasing and visual illustrations (see [Using Easy Read](../../../how-to/use-easy-read.md)).
+- **Read Aloud:** Configure text-to-speech audio pronunciation and voice overrides.
+- **Sign Language:** Attach YouTube video IDs translating the question into sign languages (see [Use Sign Language](../../../how-to/use-sign-language.md)).
+- **Visibility Logic:** Define conditional display rules showing or hiding this question dynamically (see [Controlling Visibility](../../../how-to/controlling-visibility.md)).

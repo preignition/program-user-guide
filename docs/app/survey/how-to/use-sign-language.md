@@ -8,10 +8,7 @@ Accessible Surveys allows you to include sign language videos for every question
 
 ## Enabling Sign Language in your Survey
 
-Before you can add sign language videos to your questions, you must enable the sign language mode in your survey's behavior settings.
-
-1. Navigate to the **Behavior** tab of your survey.
-2. In the **Modes Activated** section, ensure that **Sign Language** is selected.
+Before adding sign language videos to your questions, ensure that the **Sign Language** mode is activated for your survey in **Form Behavior** (see [Activating Accessibility Modes](./activating-accessibility-modes.md)).
 
 <figure>
   <img src="./assets/use-sign-language/step-1-sign-language-mode-not-activated.png" alt="Enabling Sign Language mode in Behavior settings">

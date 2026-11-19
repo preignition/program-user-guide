@@ -30,3 +30,9 @@ The available modes include:
 Once you have activated the desired accessibility modes, go back to the **Compose** mode in the left menu. You will now be able to toggle between the different accessibility modes you activated to adjust your survey's content and appearance for each specific mode.
 
 <figure><img src="./assets/shared/toolbar-er.png" alt="Toggle Accessibility Modes - Easy read activated"><figcaption>Use the accessibility toolbar to switch between different accessibility modes while composing your survey.</figcaption></figure>
+
+## Related Content
+
+- [Using Easy Read](./use-easy-read.md): Create simplified wording and attach visual illustrations for cognitive accessibility.
+- [Use Sign Language](./use-sign-language.md): Attach YouTube sign language videos to survey questions.
+- [Adding an Accessibility Menu](./adding-an-accessibility-menu.md): Place an in-survey accessibility menu on your introduction or text pages.

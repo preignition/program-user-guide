@@ -49,26 +49,16 @@ A modal dialog opens to allow you to edit the question:
 
 <figure><img src="./assets/testing-a-form/step-3-edit-question-dialog.png" alt="Edit question dialog"><figcaption>Edit question dialog opened directly from the test view.</figcaption></figure>
 
-## Step 4: Build and Publish a Test Version
+## Step 4: Sharing Test Links with Collaborators
 
-To share the form with team members for feedback, you must first build and publish a test version.
+While the interactive Test toolbar (Steps 1–3) tests your live working draft directly, sharing a standalone test preview with colleagues requires compiling a test build:
 
-1. Click on the **share** link.
-   <figure><img src="./assets/testing-a-form/step-4-click-test-toolbar-share-link.png" alt="Click share link"><figcaption>Click on the share link.</figcaption></figure>
-2. Go to the **Publish** tab.
-   <figure><img src="./assets/testing-a-form/step-4-click-build-and-publish.png" alt="Click Publish"><figcaption>Click on the Publish tab.</figcaption></figure>
-3. Click on **Create a new Version of the...**.
-   <figure><img src="./assets/testing-a-form/step-4-click-create-new-version.png" alt="Click Create a new Version"><figcaption>Click on Create a new Version.</figcaption></figure>
-4. Provide a version message (e.g., "New test version") and build the survey.
-   <figure><img src="./assets/testing-a-form/step-4-click-build-the-survey-dialog.png" alt="Build the survey dialog"><figcaption>Fill out the versioning message and build.</figcaption></figure>
+1. **Build a Test Version:** Navigate to **Share → Publish** and build a new version so all draft edits are compiled (see [Publishing a survey — Build a New Version](./publishing-a-survey.md#step-2-build-a-new-version)).
+2. **Generate the Test Link:** In **Share → Distribute**, click **Display Link for Test** to copy your test preview URL (`/v2test/{surveyId}`). Test responses submitted through this link are never recorded into production datasets or counted against survey quota.
 
-## Step 5: Generate Links for Testing
+<figure>
+  <img src="./assets/testing-a-form/step-5-display-test-link.png" alt="Display Test Link">
+  <figcaption>Click Display Link for Test in Distribute to copy and share the test preview link.</figcaption>
+</figure>
 
-Once the form is published, you can generate a specific test link to distribute to your team.
-
-1. Navigate to the **Distribute** section.
-   <figure><img src="./assets/testing-a-form/step-5-generate-links-to-share.png" alt="Click Distribute"><figcaption>Click on the Distribute section.</figcaption></figure>
-2. Click on **Display Link for Test**.
-   <figure><img src="./assets/testing-a-form/step-5-click-display-link-for-test.png" alt="Click Display Link for Test"><figcaption>Click on Display Link for Test.</figcaption></figure>
-3. Copy the displayed test link and share it with your team members.
-   <figure><img src="./assets/testing-a-form/step-5-display-test-link.png" alt="Display Test Link"><figcaption>Copy the displayed test link.</figcaption></figure>
+See [Publishing a survey](./publishing-a-survey.md) for complete instructions on versioning, quota management, and taking surveys to production.

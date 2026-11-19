@@ -54,35 +54,41 @@ Hover, focus, or tap the info icon in the corner of each tile to read what the m
 
 ## 3. Assessing Data Quality: Confidence Index and Quality Signals
 
-The dashboard evaluates submission authenticity through two complementary visual tools:
+The dashboard evaluates submission authenticity through two interactive visual charts:
 
 ### Confidence Index Distribution
 
-The **Confidence Index** assigns each submission a score from 0 to 100 based on behavioral heuristics:
-
-- **100**: Represents high-confidence human engagement characterized by steady reading times, focus, and deliberate interaction.
-- **Scores below 50**: Warrant closer inspection for automated bot patterns, rapid click-through speeding, or disengaged completion.
+The **Confidence Index** card displays a score histogram (from 0 to 100) classifying responses based on behavioral engagement:
 
 <figure>
   <img src="./assets/behavior-analytics/step-3-confidence-index.png" alt="Confidence Index score distribution histogram">
   <figcaption>The Confidence Index distribution classifies responses from high-confidence human engagement to potential speeders or bots.</figcaption>
 </figure>
 
+- **High Confidence (≥ 70):** Indicates steady reading dwell times, high focus ratios, and deliberate interaction.
+- **Low Confidence (< 50):** Highlights responses exhibiting rapid click-through speeding, high idle gaps, or paste bursts.
+
+::: info Rubric and Theory
+For the exact mathematical penalties and heuristic scoring formulas, see [Confidence Index Scoring Rubric](../reference/analyze/behavior.md#confidence-index-scoring-rubric). For the scientific foundation and satisficing research, see [Understanding Respondent Behavior and Data Quality](../explanation/confidence-index.md).
+:::
+
 ### Quality Signals Breakdown
 
-The **Quality Signals** chart categorizes responses into discrete behavioral flags:
+The **Quality Signals** chart categorizes responses into behavioral indicator flags:
 
-- **Attentive**: High-confidence completed submissions with healthy reading and dwell times.
-- **Revised choices**: Respondents who changed their mind on choice questions, providing a strong signal of genuine human deliberation.
-- **Paste / burst**: Text input entered instantaneously rather than typed incrementally, flagging copy-paste operations or script injection.
-- **Too fast**: Sessions completed significantly faster than human reading speed allows (speeders).
-- **Zero edits**: Submissions where answers were never adjusted or revisited during the session.
-- **Dropped off**: Incomplete sessions saved after respondent inactivity.
+- **Attentive:** Complete sessions meeting human reading dwell thresholds.
+- **Revised choices:** Respondents who altered their initial choice selection, indicating deliberation.
+- **Paste / burst:** Instantaneous text entry flagging copy-pasting or automated script injection.
+- **Too fast:** Submissions completed faster than human reading limits allow (speeders).
+- **Zero edits:** Direct single-pass submissions without revisions.
+- **Dropped off:** Abandoned partial sessions.
 
 <figure>
   <img src="./assets/behavior-analytics/step-3-quality-signals.png" alt="Quality signals bar chart showing counts for attentive, revised choices, paste burst, and speeders">
   <figcaption>Quality signal flags categorize specific behavioral indicators across all completed and partial submissions.</figcaption>
 </figure>
+
+Clicking any score bucket or signal bar immediately filters the entire dashboard to that respondent cohort.
 
 ## 4. Diagnosing Drop-Off Points
 
@@ -252,11 +258,10 @@ Exclusion never permanently deletes survey data. The original submission remains
 
 ## 10. Advanced Behavioral Statistics
 
-Turn on **Advanced** in the top toolbar to add a live statistical summary strip below every behavioral chart. The strip recalculates with the active filters:
+Toggle on **Advanced** in the top toolbar to display a live statistical summary strip below each behavioral card:
 
-- **n** is the number of responses with a recorded value, and **Missing** reports how many lack one (with its share).
-- **Numeric metrics** such as the Confidence Index show **Mean**, **SD** (standard deviation), **Median**, **IQR** (the interquartile range, from Q1 to Q3), and **Range** (minimum–maximum).
-- **Categorical metrics** such as Quality Signals show the **Top** signal with its share and the number of **Categories** observed.
+- **Numeric Metrics (Confidence Index):** Displays **n**, **Missing**, **Mean**, **SD**, **Median**, **IQR**, and **Range**.
+- **Categorical Metrics (Quality Signals):** Displays **n**, **Missing**, **Top** signal with percentage share, and total **Categories**.
 
 <figure>
   <img src="./assets/behavior-analytics/step-9-advanced-confidence.png" alt="Advanced mode statistical summary strip below the Confidence Index chart">
@@ -268,29 +273,25 @@ Turn on **Advanced** in the top toolbar to add a live statistical summary strip 
   <figcaption>Quality Signals gains a top-signal share and category count below its chart.</figcaption>
 </figure>
 
+See [Behavioral Analytics Reference](../reference/analyze/behavior.md#statistical-indicators) for complete metric specifications and formulas.
+
 ## 11. Exporting Behavioral Datasets
 
-To perform multivariate regression modeling or methodology reporting in external tools:
+To analyze timing paradata or train statistical models outside the platform:
 
 1. Click the **Export** button in the behavioral toolbar.
-2. Read the privacy warning and tick **I understand my responsibilities**.
-3. Choose **Download from this browser** to export the behavioral dataset. This export always covers the current filtered cohort; clear all filters to export every loaded response.
-4. The browser export offers the same options as the Analyze tab: keep survey metadata (origin, language, submission time…) or clear the box, use **Humanized labels** or **Raw codes**, choose **CSV** or **JSON**, and pick the CSV multi-value separator. The only column scope is **All behavioral columns**.
+2. Tick **I understand my responsibilities** to acknowledge the data privacy notice.
+3. Select **Download from this browser** to download the behavioral dataset matching your active filters.
 
 <figure>
   <img src="./assets/behavior-analytics/step-10-export-dataset.png" alt="Top of the export dialog on the Behavior tab with privacy warning and download method">
-  <figcaption>The Behavior tab uses the shared export dialog; browser downloads honor the behavioral filters.</figcaption>
+  <figcaption>The Behavior tab uses the shared export dialog; browser downloads honor the active behavioral filters.</figcaption>
 </figure>
 
-<figure>
-  <img src="./assets/behavior-analytics/step-10-export-dataset-options.png" alt="Behavior export dialog showing all behavioral columns, metadata, values, format and separator options">
-  <figcaption>Browser exports offer all behavioral columns, optional metadata, value labels, format, and separator.</figcaption>
-</figure>
+The browser download generates a row-by-row dataset with all Behavioral Respondent Log indicators and question-level active durations.
 
-The file lists one row per response with the Behavioral Respondent Log columns (status, confidence index, quality signals, active and idle time, focus ratio, choice edits, paste bursts, slowest question, last page, and last question) plus one **active seconds** column per survey question.
-
-::: info
-The **Server compliance archive** is also available from the Behavior toolbar, but it contains survey answers rather than behavioral columns. To download the behavioral dataset, choose **Download from this browser**.
+::: tip Detailed Export Options
+For complete instructions on configuring metadata columns, raw codes vs. humanized labels, multi-value separators, or downloading the full server compliance archive, see [How to Export Survey Data](./exporting-survey-data.md#exporting-behavioral-paradata).
 :::
 
 ---

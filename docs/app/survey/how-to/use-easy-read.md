@@ -8,10 +8,7 @@ Easy Read is a specialized accessibility mode designed to make information easie
 
 ## Prerequisites: Enable Easy Read Mode
 
-Before you can add Easy Read content, you must ensure that the **Easy Read** mode is activated for your survey.
-
-1. Navigate to the **Behavior** settings of your survey.
-2. In the **Modes Activated** list, ensure that **Easy Read** is selected.
+Before adding Easy Read content, ensure that the **Easy Read** mode is activated for your survey in **Form Behavior** (see [Activating Accessibility Modes](./activating-accessibility-modes.md)).
 
 <figure><img src="./assets/use-easy-read/step-1-easyread-mode-not-activated.png" alt="Enabling Easy Read mode in Behavior settings"><figcaption>Activating Easy Read mode in the survey settings.</figcaption></figure>
 

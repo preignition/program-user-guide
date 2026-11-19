@@ -13,13 +13,20 @@ The page has two independent channels. The **form channel** is an **Email** or *
   <figcaption>The Email page showing the Purposes picker and the Submission confirmation tab.</figcaption>
 </figure>
 
-At the top of the page, the **Purposes** picker selects how the survey uses email addresses and which purpose messages exist. Below the divider, the page is organised in tabs:
+## Email Tabs and Items
 
-- One tab per active email item, in display order:
-  - **Invitation** and **Invitation reminder** when invitations are turned on in [Share → Distribute](../distribute/index.md#invitations).
-  - **Submission confirmation**, **Reminder**, **Results and reports**, and **Follow-up survey** for each purpose the survey selects (a purpose that is not ticked has no email item and no tab).
-- **Advanced** (when **Advanced** mode is switched on in the top toolbar): consent notices, the respondent reminder schedule, consent retention, and sender identity.
-- **Sent**: the delivery history across all survey email sends.
+The page is organized into message and configuration tabs:
+
+| Tab | Item Identifier | Delivery Channel | Trigger / Cadence | Merge Fields | Send Test |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Invitation** | `email-invitation` | Team Audience | Launched from Distribute | `{{link}}` (required), `{{name}}`, `{{survey_title}}`, `{{organiser}}` | Yes |
+| **Invitation reminder** | `email-invitationReminder` | Team Audience | Automated schedule or manual send | Same as Invitation | Yes |
+| **Submission confirmation** | `email-confirmation` | Form Field / Invitation | Automatic upon submission | `{{link}}`, `{{name}}`, `{{survey_title}}`, `{{organiser}}` | Yes |
+| **Reminder** | `email-reminder` | Form Field (opt-in) | Hourly automated schedule | Same as Confirmation (`{{link}}` optional) | Yes |
+| **Results and reports** | `email-results` | Form opt-in & Audience | Manual one-off send | Same as Confirmation (`{{link}}` optional) | Yes |
+| **Follow-up survey** | `email-followUpSurvey` | Form opt-in & Audience | Manual one-off send | Same as Confirmation (`{{link}}` optional) | Yes |
+| **Advanced** | Survey settings | Survey-level | Configuration tab (Advanced mode) | N/A | N/A |
+| **Sent** | Send log | All sends | Real-time delivery trace table | N/A | N/A |
 
 <figure>
   <img src="./assets/email-advanced-auto.png" alt="The survey Email page in Advanced mode showing the Advanced tab in the tab bar">
@@ -132,73 +139,62 @@ Every message tab — **Invitation**, **Invitation reminder**, **Submission conf
 
 ## Email Purposes
 
-The **Purposes** section at the top of the page sets the survey's **purposes** (`email.defaultPurposes`), which decide how collected addresses are used and which purpose email items and tabs exist. They belong to the survey, not to an individual field — the picker in an **Email** or **Account Email** field's settings in **Build → Compose** edits the same setting and creates or removes the same email items.
+The **Purposes** picker at the top of the page sets the survey's email purposes (`email.defaultPurposes`). Purposes belong to the survey rather than individual fields: configuring purposes here or in an [Account Email](../../build/compose/account-email.md) or **Email** field in Build → Compose modifies the same survey-level setting.
 
-The purposes serve two delivery channels: **Invitations** (a team audience, managed on Distribute) and **form email fields** (the address a respondent gives). Results and follow-ups use both when invitations are on; confirmations add the invitation address for invited submissions, and form reminders remain form-only.
+| Purpose | Key | Delivery Channels | Respondent Consent | Export Behavior | Description / Item Created |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Submission confirmation** | `confirmation` | Form field & Invitations | Automatic (transactional) | Excluded unless **Dataset** selected | Sends a confirmation receipt upon survey completion (`email-confirmation`). |
+| **Reminders** | `reminder` | Form field only | Explicit opt-in checkbox | Excluded unless **Dataset** selected | Sends automated reminder cadence while form is unsubmitted (`email-reminder`). |
+| **Results and reports** | `results` | Form opt-in & Invitations | Explicit opt-in checkbox | Excluded unless **Dataset** selected | Manual one-off email to share findings or reports (`email-results`). |
+| **Follow-up survey** | `follow-up-survey` | Form opt-in & Invitations | Explicit opt-in checkbox | Excluded unless **Dataset** selected | Manual one-off email inviting respondents to a future study (`email-followUpSurvey`). |
+| **Dataset** | `dataset` | Form field answer | None (standard answer) | Included in `raw`, `humanized`, `anonymized` | Includes collected address in dataset exports as questionnaire data. |
 
-- **Dataset** — the answer is part of the survey data: it appears in the `raw`, `humanized` and `anonymized` exports.
-- **Submission confirmation** — creates the `email-confirmation` item and **Submission confirmation** tab; the address serves the confirmation email.
-- **Reminders** — creates the `email-reminder` item and **Reminder** tab; the address serves the reminder emails, and the respondent consents on the field.
-- **Results and reports** — creates the `email-results` item and **Results and reports** tab; the address serves the follow-up email about the survey's results, reports or updates, and the respondent consents on the field.
-- **Follow-up survey** — creates the `email-followUpSurvey` item and **Follow-up survey** tab; the address serves the invitation to a later survey, and the respondent consents on the field.
-
-A purpose other than **Dataset** keeps the address out of every export; it is used for the survey's emails only.
-
-The addresses these emails use stay out of the survey's datasets and exports unless the survey also selects **Dataset** — see [Data Privacy and Security](../../../explanation/data-privacy-and-security.md).
+::: info Operational Addresses vs. Dataset
+Any purpose other than **Dataset** treats the address as *operational only*: it is stored separately from questionnaire answers and omitted from all data exports (see [Data Privacy and Security](../../../explanation/data-privacy-and-security.md)).
+:::
 
 ## Submission Confirmation
 
-The confirmation email is sent when a respondent submits and the survey has somewhere to send it: the form selects the **Submission confirmation** purpose and collects an address, or invitations are on and the submission came through an invitation (with a complete `email-confirmation` item). Each survey language has its own **subject** and **body**, translated in **Build → Compose** (**Localize Mode**) or via the **Translate** action; the respondent receives it in the language they answered in, falling back to the complete primary confirmation. The platform adds a line explaining why the email was sent; it is a transactional one-off, so it carries no unsubscribe link. Test submissions never send email. Both fields support the [merge fields](#merge-fields); unlike an invitation, the confirmation does not require `{{link}}`.
+The confirmation email (`email-confirmation`) is sent automatically when a respondent completes the survey:
 
-With invitations on, a submission made through an invitation link is confirmed at the invitation address as well: one confirmation goes to the form's confirmation address and one to the invited address, deduplicated when they are the same. This works even when the form has no confirmation-purpose field, because the invitation established the address.
+- **Trigger Conditions:** Sent if the form collects an address under the **Submission confirmation** purpose, or if the submission originated from an invited team audience link. When both apply, duplicate sends to the same address are automatically prevented.
+- **Localization:** Translated per survey language in **Build → Compose** (Localize Mode) or via the **Translate** action; falls back to the primary language confirmation if incomplete.
+- **Unsubscribe:** Transactional receipts carry an explanatory notice but omit unsubscribe links. Test submissions never trigger emails.
 
 ## Reminders
 
-A field that carries the **Reminders** purpose shows the respondent a notice and an **opt-in checkbox**. Nothing is sent unless the respondent ticks it: the platform records their consent — the address, the session it came from and the wording version they agreed to — and may email them while the form is unsubmitted. Ticking the box is the only write; typing, prefilling or leaving the field records nothing. A test session shows the checkboxes for preview but records nothing.
+The reminder email (`email-reminder`) reaches respondents who started the survey but have not yet submitted:
 
-Consent is per respondent: one record per session, which a later opt-in in the same session updates, and which the field's checkbox reflects when the respondent comes back. Editors never see the addresses — the contact records are not part of the survey data and are never exported.
-
-Each survey language has its own reminder **subject** and **body** on the `email-reminder` item. A reminder is sent in the language recorded on the respondent's session — the language they answered in — falling back to the complete primary reminder when that language has none, is half-written or is invalid. The platform adds a line explaining why the respondent received it, and the public unsubscribe link. The subject and body support the [merge fields](#merge-fields); `{{link}}` is optional.
+- **Opt-In Requirement:** An email field with the **Reminders** purpose displays an explicit opt-in checkbox and legal notice. Nothing is recorded or scheduled unless the respondent ticks the box.
+- **Storage & Privacy:** Stored as an operational session consent (`RespondentEmail`) with the agreed notice version; never visible to editors or included in exports.
+- **Unsubscribe & Cadence:** Each reminder includes a one-click unsubscribe link. The hourly reminder cadence is managed under **Advanced Settings**.
 
 ## Follow-up Emails
 
-After the survey's data has been analysed you may want to write to the respondents again: to share the results or a report, or to invite them to a later survey. Both are follow-ups, and both need a purpose of their own — **Results and reports** and **Follow-up survey**. A field that carries one asks the respondent to opt in, exactly as a reminder field does; a field may carry both, and then shows a checkbox for each.
+Follow-up emails allow contacting respondents after data collection and analysis:
 
 <figure>
   <img src="./assets/email-results-full-auto.png" alt="The Results and reports tab on the Email page showing the message editor, Send test email button, and Send results and reports action">
   <figcaption>The Results and reports tab includes both Send test email and the one-off Send results and reports action.</figcaption>
 </figure>
 
-Writing the email on the purpose's tab is what makes the opt-in possible: a purpose with no complete subject and body in the primary language is not offered to respondents, so a consent is never collected for an email the survey cannot send. Write the **subject** and **body** per survey language — the email is sent in the language the respondent answered in, falling back to the complete primary message. The subject and body support the [merge fields](#merge-fields); `{{link}}` is optional.
-
-Each follow-up tab renders its own one-off send action beside **Send test email** — **Send results and reports** on **Results and reports**, and **Send follow-up survey** on **Follow-up survey**. It reads the respondents who opted in for that purpose and, when invitations are on, the survey's invited audience; tells you how many will receive the email before you confirm; and sends once you do. The send button stays disabled until the complete primary subject and body exist. A follow-up is not scheduled and not repeated: pressing Send again emails the same recipients again, so use it for a new message rather than a correction. The platform adds a line explaining why the recipient received it, and the public unsubscribe link; a send that the mail service did not accept is left for the next press of Send, and the dialog reports what went out.
-
-An audience recipient did not opt in through a form field, so their reason line names the invitation instead of the consent, and their unsubscribe link is the invitation's organisation-wide one. An audience member who unsubscribed, bounced, complained or is on the customer-wide suppression list is not emailed.
-
-The email is free text you write — the page does not publish a report or a survey for you. `{{link}}` resolves to the survey's public link; a link to a report page or a later survey is written in the body.
-
-## Reminder Schedule
-
-An hourly job sends the respondent opt-in reminders. Each of the survey's reminder fields can name the same **Reminders** purpose, but a respondent consents once per survey, so they receive at most the configured number of reminders for that consent. Writing a reminder message automatically sets the schedule to one reminder if none was set yet; in **Advanced** mode, the **Respondent reminders** section on the **Advanced** tab lets you adjust:
-
-- **Reminders** — how many a consent may receive: `None`, `One reminder`, or `Two reminders`.
-- **First / Second reminder (days)** — how many days after the last contact a reminder goes out: the first after the respondent's opt-in, the second after the first reminder.
-- **Deadline** — no reminder is sent after this day (leave it empty for no deadline).
-
-The job only ever emails a session that has not submitted, whose consent is still active and unexpired, and that belongs to the survey's current batch. Changing the batch therefore stops the reminders of the previous one.
-
-*(For the schedule of reminders sent to invited team audiences, see [Invitation Reminder Email and Schedule](#invitation-reminder-email-and-schedule) above.)*
-
-## Consent Retention
-
-A consent is kept for a bounded period — **180 days** by default, adjustable between 1 and 365 under **Consent retention** on the **Advanced** tab. When it passes, the platform deletes the record, and with it the address. The respondent's responses and every dataset are untouched: purging the collected data ends the reminders and the follow-ups too.
-
-Every reminder carries an unsubscribe link. It opens a public page in the respondent app — no sign-in — that validates the link's token on the server, withdraws the consent, and confirms in the survey's language. An invalid link, or one that was already used, shows a safe message and changes nothing.
+- **Configuration:** Write the **Subject** and **Body** on the **Results and reports** (`email-results`) or **Follow-up survey** (`email-followUpSurvey`) tab. An incomplete primary message is never offered as an opt-in to respondents.
+- **Audience Scope:** Reaches form respondents who ticked the corresponding opt-in checkbox and, if invitations are active, the survey's invited audience (omitting unsubscribed, bounced, or suppressed recipients).
+- **Manual Execution:** Follow-ups are not automated. Click **Send results and reports** or **Send follow-up survey** to review recipient counts and trigger the delivery.
 
 ## Sent History
 
-The **Sent** tab lists the survey's send actions, newest first: the message kind (invitation, invitation reminder, reminder, results or follow-up), when it ran, how many recipients it targeted, and how many the mail service accepted, delivered, opened or refused. One row is one action, not one recipient: a 10,000-person invitation run is a single row. An invitation row's delivered and opened counts update as the mail service reports them, so the row shows engagement without leaving the tab; started and submitted counts stay on the run's **Progress** tab, linked from the row. Submission confirmations are transactional and are not listed. The history is a trace, not an address book: it never carries addresses, and a failed history write never changes whether a mail was sent. The table is a live read, so a finished action appears as it is recorded.
+The **Sent** tab lists all survey email delivery actions, newest first. Each row represents a single batch send action (displaying target count, delivered, opened, and bounce/suppression status) rather than exposing individual recipient addresses.
 
 ## Advanced Settings
 
-In **Advanced** mode, the **Advanced** tab configures the consent notices and opt-in wording, the respondent reminder schedule, consent retention, and the sender identity — see [Advanced Email Settings](./advanced.md).
+In **Advanced Mode**, the **Advanced** tab configures global email options that span across messages:
+
+| Setting Area | Governed Controls | Default | Reference |
+| :--- | :--- | :--- | :--- |
+| **Consent Notices** | Custom notice text and opt-in labels for reminders, results, and follow-ups | System defaults | [Notice Wording](./advanced.md#consent-notices-and-opt-in-wording) |
+| **Respondent Reminders** | Number of reminders (`None`, `One`, `Two`), delay gaps in days, cut-off deadline | 1 reminder, 3 days | [Reminder Schedule](./advanced.md#respondent-reminders) |
+| **Consent Retention** | Expiration period for consent records (`1` to `365` days) | 180 days | [Retention Rules](./advanced.md#consent-retention) |
+| **Sender Identity** | Sender display name and survey-level `Reply-To` address | Survey title, Team admin | [Sender Settings](./advanced.md#sender-identity) |
+
+See [Advanced Email Settings](./advanced.md) for full parameter tables and configuration instructions.

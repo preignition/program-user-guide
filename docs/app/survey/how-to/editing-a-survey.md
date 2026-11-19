@@ -84,16 +84,15 @@ The **Name** under **Form → Internal Settings** is the form's name, not the su
 
 The new name appears in the workspace and at the top of the survey editor. The **Overview** card only displays the name; edit it from the **Introduction Page**.
 
-## Step 3: Add Content Mode
+## Adding Pages, Sections, and Questions
 
-To add actual questions to your page, you need to switch to **Add Content Mode**. Click the "Add Content Mode" button (typically located at the bottom right or in the view toolbar).
+Once your survey structure is open in the editor, you can add questions and structural elements using three distinct workflows:
 
-<figure>
-  <img src="./assets/editing-a-survey/step-3-click-add-content-mode.png" alt="Click Add Content Mode">
-  <figcaption>Click Add Content Mode</figcaption>
-</figure>
+- **Visual Drag-and-Drop:** Toggle **Add Content Mode** in the builder toolbar to drag questions directly onto the form canvas.
+- **Tree View Context Menu:** Right-click any Page or Section in the structure tree to insert child items precisely where needed.
+- **Sequential Add Buttons:** Use the primary action buttons in the settings drawer footer to add elements sequentially.
 
-This will open the interface that allows you to drag and drop new questions into your form sections. For more details on adding questions, refer to the [How to add content to a form](./adding-content-to-a-form.md) guide.
+For detailed walkthroughs and screenshots of each method, see [How to Add Content to a Form](./adding-content-to-a-form.md).
 
 ## Related Content
 

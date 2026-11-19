@@ -38,37 +38,28 @@ Feedback is shown under the field (and as a notification on failure), in the sur
 - **Verified Indicator**: A green checkmark icon (`check_circle`) is displayed within the field if the current value matches the verified email of the respondent's account. Its label is translated.
 - **Automatic Tracking**: The component actively polls for the verification status. As soon as the respondent follows the link in the verification email, the indicator appears without requiring a page refresh, and the platform confirms it with a notification.
 
-## Reminders, Reports, Follow-up Surveys, and Data Exports
+## Email Purposes and Export Behavior
 
-The Account Email field works alongside the survey's [Email Purposes](./question.md#email-purposes) (configured in the question's settings or on [Share → Email](../../share/email/index.md#email-purposes)):
+The Account Email field operates with the survey's [Email Purposes](../../share/email/index.md#email-purposes):
 
-- **Reminders** (`reminder`): Renders a reminder notice and opt-in checkbox below the field (when the respondent has no account email, or during a test preview). When ticked, the platform stores a consent record for the respondent's session and sends scheduled reminders if the form remains unsubmitted.
-- **Results and reports** (`results`): Renders a notice and opt-in checkbox allowing the respondent to request the survey's results, reports, or updates. Once the findings are ready, the editor sends the message from the **Results and reports** tab on **Share → Email**.
-- **Follow-up survey** (`follow-up-survey`): Renders a notice and opt-in checkbox allowing the respondent to be invited to a later survey, sent from the **Follow-up survey** tab on **Share → Email**.
-- **Submission confirmation** (`confirmation`): Sends a transactional confirmation email to the address when the respondent submits the survey (no opt-in checkbox is needed).
-- **Dataset** (`dataset`): The Account Email field always carries the `account-verification` purpose, so its value — typed by the respondent or pre-filled from their account — is **not** part of the survey data (`raw`, `humanized`, `anonymized`) unless the survey also selects **Dataset**. This keeps the respondent's address out of exports by default while still letting a survey collect it as data when needed.
+| Purpose | Interaction on Account Email Field | Export Behavior |
+| :--- | :--- | :--- |
+| **Reminders** (`reminder`) | Displays reminder consent notice and opt-in checkbox when respondent has no account email. | Omitted from exports |
+| **Results and reports** (`results`) | Displays results notice and opt-in checkbox when the primary message is authored. | Omitted from exports |
+| **Follow-up survey** (`follow-up-survey`) | Displays follow-up notice and opt-in checkbox when the primary message is authored. | Omitted from exports |
+| **Submission confirmation** (`confirmation`) | Automatically sends confirmation receipt upon survey completion; no opt-in checkbox needed. | Omitted from exports |
+| **Dataset** (`dataset`) | Collects email value as standard questionnaire data. | Included in `raw`, `humanized`, `anonymized` |
+
+::: info Operational Isolation by Default
+The Account Email field always carries internal account verification. Collected addresses remain operational contact records (`RespondentEmail`) and stay excluded from dataset exports unless the survey explicitly enables the **Dataset** email purpose (see [Data Privacy and Security](../../../explanation/data-privacy-and-security.md)).
+:::
 
 ## Privacy
 
-The field shows the address held by the respondent's **account**, which lives in the platform's authentication service, not in the survey. A signed-in respondent changes it only verification-first (see above); an anonymous session records the value as an answer and cannot change an account here.
+The field displays the email associated with the respondent's platform account, which resides in the authentication service rather than the survey database. A signed-in user updates their account email verification-first; anonymous respondents submit an answer value without modifying account state.
 
-When a respondent ticks an opt-in checkbox for **Reminders**, **Results and reports**, or **Follow-up survey**, the field writes a survey-scoped consent record (`RespondentEmail`) containing the address, the agreed purposes, the notice version, and an expiry (180 days by default, configurable on [Share → Email → Advanced](../../share/email/advanced.md#consent-retention)). Editors never see or export those contact addresses, and respondents can withdraw a purpose by unticking the box or unsubscribe via the link in any email.
+Opting into **Reminders**, **Results and reports**, or **Follow-up survey** generates an operational consent record (`RespondentEmail`) with the active notice version and an expiration timestamp (180 days by default, configurable under [Consent Retention](../../share/email/advanced.md#consent-retention)). Respondents can revoke consent using the one-click unsubscribe link included in all emails.
 
-What a survey stores in its response data is the answer — the value as typed or pre-filled — and it is kept out of the `raw`, `humanized` and `anonymized` datasets unless the survey selects the **Dataset** email purpose. The account itself keeps the address as part of its identity whether or not the survey exports it. Removing the answer from a dataset after collection does not change the account, and changing the account does not rewrite answers already collected.
-
-## When to Use
-
-Use the **Account Email** field when:
-
-- You want respondents to opt in to **reminders** while their form is unsubmitted, receive **results and reports**, or be invited to a **follow-up survey**.
-- You want to send a **submission confirmation** while keeping the respondent's address out of dataset exports by default.
-- The respondent is signed in and you want the address on their account to be verified or updated.
-- You need the email linked to the respondent's platform session for longitudinal tracking.
-
-Use the plain **Email** field instead when:
-
-- You simply need a format-validated email text input for a questionnaire answer (for example, an organization's contact address, a referral email, or a general form answer) with no account verification and no consent opt-in checkboxes.
-
-::: warning
-**Account Security**: This field verifies an address on the respondent's existing account. It does not link credentials or convert an anonymous session into a signed-in account — anonymous sessions record the value and any selected email consents only.
+::: warning Account Security
+This field verifies an address on the respondent's existing account. It does not link credentials or convert an anonymous session into a signed-in account — anonymous sessions record the value and any selected email consents only.
 :::

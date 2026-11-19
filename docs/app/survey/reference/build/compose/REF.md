@@ -39,3 +39,27 @@
 - [modesConfig.ts](../../../../../../../app/app-survey/src/page/edit/design/modesConfig.ts): Grid column header filter buttons (`filterHeader`, `mediaFilterHeader`), tri-state media cycling (with media / without media / off), and sign-language language scoping.
 - [state.ts](../../../../../../../app/app-survey/src/page/edit/design/state.ts): Reactive `treeFilter`, `treeFilterSignLanguage`, media loading state (`treeFilterMediaLoaded`), and candidate media subscriptions.
 - [compose.ts](../../../../../../../app/app-survey/src/page/edit/design/compose.ts): Compose layout and bottom toolbar rendering including the Review FAB when open findings exist (`goToReview()`).
+
+## Form & Structure Containers
+
+- `app/app-survey/src/entity/FormE.ts`: Form entity definition, global theme tokens, questionSettings (`accessibleLabel`, `allowIllustration`, `preserveMediaSpace`), `presentationMode`, and page randomization.
+- `app/app-survey/src/entity/PageE.ts`: Page entity schema, localized headings (`heading`, `subHeading`, `shortHeading`), section randomization (`props.randomize`), and fixed positioning (`props.fixed`).
+- `app/app-survey/src/entity/SectionE.ts`: Section entity schema, Section Sharing properties (`scope`, `storeType`, `prefill`, `frozen`), item randomization, and child question containment.
+- `app/app-survey/src/entity/settings/BuildSection.ts`: Section builder settings rendering sharing parameters, live reference banners, and freeze states.
+- `app/app-survey/src/helper/sectionLibrary.ts`: Section library queries, scope filters (`team`, `customer`, `global`), and library publishing rules.
+- `app/app-survey/src/entity/action/embedSection.ts`: Embed section action implementing Live Reference vs. independent Copy embeddings.
+
+## Text Pages & Informational Elements
+
+- `app/app-survey/src/entity/TextE.ts`: Text entity definition and variants (`intro`, `terms`, `submit`, `thanks`), standalone text items, markdown support, and `endPage` toggle.
+- `app/app-survey/src/entity/settings/BuildText.ts`: Text settings drawer rendering markdown editor, media storage paths, and `endPage` switch in one-question-per-page mode.
+- `app/app-survey/src/page/edit/deploy/terms.ts`: Survey terms deployment page managing `hasTerms`, dialog vs. plain appearance, and respondent acceptance.
+
+## Question Types, Options & Glossary
+
+- `lit-app/schema/survey/questionConfig.ts`: Authoritative server-safe catalog of the 19 question types and their data groups (`open`, `choice`, `multi`, `rating`, `boolean`, `media`).
+- `app/app-survey/src/entity/question/fieldSettings.ts`: UI metadata, Material Symbols icons, and question families (`textBased`, `choiceBased`, `booleanBased`, `mediaBased`, `textContent`) for the question-type chooser.
+- `app/app-survey/src/entity/action/addQuestion.ts`: Question-type picker dialog for adding fields to sections.
+- `app/app-survey/src/entity/OptionE.ts`: Choice option entity schema, translated `label`, `code`, specify text field toggle (`props.specify`), and fixed position (`props.fixed`).
+- `app/app-survey/src/entity/GlossaryE.ts`: Glossary entity schema, definition textarea, and soft-deletion operations.
+- `app/app-survey/src/entity/settings/BuildGlossary.ts`: Glossary editor interface and `<lapp-tooltip>` markup instructions.
