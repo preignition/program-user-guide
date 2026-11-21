@@ -16,7 +16,7 @@
 - `app/app-survey/src/page/analyze/behavior.ts`: Behavioral analytics tab (`app-survey-behavior`) — KPI tiles, friction card, respondent log grid with dataset removal, and the excluded-response restore list.
 - `app/app-survey/src/page/analyze/response-exclusion-mixin.ts`: Shared Analyze/Behavior exclusion flow — row selection, reason and note dialog, batched server action, and session update.
 - `app/app-survey/src/analytics/behavioral-adapter.ts`: Pure behavioral projections — KPI derivation, Confidence Index scoring, QualityFlag predicates, friction calculations (median, IQR, hesitation hotspots), and tabular respondent log rows.
-- `lit-app/schema/survey/exclusion.ts`: Schema definition for response exclusions, reason codes, note requirements, and audit metadata.
+- `lit-app/schema/survey/data/exclusion.ts`: Schema definition for response exclusions, reason codes, note requirements, and audit metadata.
 - `app/app-survey/src/page/analyze/responseExclusionAction.ts`: Client action invoking the response exclusion and restoration service.
 
 ## Invitation Progress - progress

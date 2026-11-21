@@ -126,7 +126,7 @@
 - `app/app-survey/src/page/analyze/behavior.ts`: Behavioral analytics page component (`app-survey-behavior`) — KPI strip, drop-off segmented selector, per-question friction card, respondent log grid, and exclusion dialog.
 - `app/app-survey/src/analytics/behavioral-adapter.ts`: Pure behavioral projections — KPI aggregations, Confidence Index scoring, QualityFlag schema, friction summary (median, IQR, hesitation hotspots), and tabular respondent log rows.
 - `app/app-survey/src/page/analyze/responseExclusionAction.ts`: Client action invoking the server-side response exclusion and restoration pipelines.
-- `lit-app/schema/survey/exclusion.ts`: Schema definition for response exclusions, reason codes (`test`, `bot`, `speeder`, `duplicate`, `quality`, `inappropriate`), and audit trail metadata.
+- `lit-app/schema/survey/data/exclusion.ts`: Schema definition for response exclusions, reason codes (`test`, `bot`, `speeder`, `duplicate`, `quality`, `inappropriate`), and audit trail metadata.
 
 ## Exporting survey data - exporting-survey-data
 
