@@ -106,7 +106,7 @@
 - `app/app-survey/src/page/edit/deploy/email-editor.ts`: Survey Email page (`app-survey-email-editor`) — the Invitation tab, merge field validation, reminder email editor, and `Send test` action.
 - `app/app-survey/src/page/edit/deploy/invitation-composer.ts`: Share → Distribute Invitations section (`app-survey-invitation-composer`) — audience selector, survey access mode, reminder schedule, and `Review and send` confirmation dialog.
 - `app/app-survey/src/page/analyze/progress.ts`: Analytics → Progress tab (`app-survey-progress`) — run selector cards, funnel and rate `lapp-stat` tiles, `Load details` masked recipient table, status CSV download, and reminder/resend/reissue actions.
-- `lit-app/schema/customer/audience.ts`: Audience and recipient schemas, canonical CSV headers, email masking, import warranty, and `AUDIENCE_LIMITS`.
+- `lit-app/schema/customer/audience/audience.ts`: Audience and recipient schemas, canonical CSV headers, email masking, import warranty, and `AUDIENCE_LIMITS`.
 - `lit-app/schema/survey/invitation.ts`: Invitation run and event schemas, merge fields (`INVITATION_MERGE_FIELDS`), funnel counters, and rate formulas.
 
 ## Analyzing survey responses - survey-analytics
