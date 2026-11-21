@@ -2,7 +2,7 @@
 
 ## Campaign & Link Builder - Reference
 
-- `lit-app/schema/survey/campaign.ts`: Campaign Effect Schema, CampaignUtmParams, Source, Medium, ContentType types
+- `lit-app/schema/survey/invitation/campaign.ts`: Campaign Effect Schema, CampaignUtmParams, Source, Medium, ContentType types
 - `lit-app/schema/survey/model/Campaign.ts`: CampaignModel and Firestore repository
 - `app/app-survey/src/entity/CampaignE.ts`: Campaign entity with create action and grid model
 - `app/app-survey/src/page/edit/deploy/campaign.ts`: Campaign management drawer route component

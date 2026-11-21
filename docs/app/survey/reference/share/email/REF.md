@@ -35,5 +35,5 @@
 - `app/app-survey/actionApi/src/services/followUp.ts`: The editor-triggered follow-up: the dry-run recipient count, the form opt-ins, the invited audience when invitations are on, the sends, and the expiry sweep.
 - `lit-app/schema/survey/email/followUp.ts`: The follow-up action's payload and result.
 - `app/app-survey/src/entity/action/sendFollowUp.ts`: The `sendResults`/`sendFollowUpSurvey` actions and their confirmation dialog; the Email page renders them on their message tabs.
-- `lit-app/schema/survey/invitation.ts`: `INVITATION_MERGE_FIELDS`, `validateInvitationContent`, mandatory footer helpers (`invitationFooter`, `invitationReasonLine`, `reminderSubject`), and invitation schemas.
+- `lit-app/schema/survey/invitation/invitation.ts`: `INVITATION_MERGE_FIELDS`, `validateInvitationContent`, mandatory footer helpers (`invitationFooter`, `invitationReasonLine`, `reminderSubject`), and invitation schemas.
 - `app/app-survey/src/entity/action/actions.ts`: Survey action bindings including `sendEmailTestAction` for the per-message test send.
