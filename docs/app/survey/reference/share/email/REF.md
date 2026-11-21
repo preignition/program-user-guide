@@ -6,8 +6,8 @@
 - `app/app-survey/src/entity/email-items.ts`: The shared item vocabulary and sync seam: purpose→message mapping, item labels/icons/descriptions, and `ensure`/`remove`/`syncEmailItems` through `SurveyE.add`/`remove` (used by the Email page, Distribute and the field purpose picker).
 - `app/app-survey/src/page/edit/deploy/invitation-schedule.ts`: The shared invitation reminder count/delay arithmetic the Email page and the Distribute composer both edit.
 - `app/app-survey/src/page/edit/deploy/email-message.ts`: One email item's subject and body editor; it writes through `EmailE.update` inside the item-locale `db-ref-data` read.
-- `lit-app/schema/survey/email.ts`: The `email` configuration schema (`invitationEnabled`, `defaultPurposes`, `notices`, `schedule`, `invitationSchedule`, `sender`), the purpose vocabulary, `invitationsEnabled`, the notice defaults, and the confirmation/reminder/follow-up builders.
-- `lit-app/schema/survey/emailMerge.ts`: The merge fields every survey email supports (`name`, `link`, `survey_title`, `organiser`), their fallbacks, and the placeholder substitution the builders share with invitations.
+- `lit-app/schema/survey/email/email.ts`: The `email` configuration schema (`invitationEnabled`, `defaultPurposes`, `notices`, `schedule`, `invitationSchedule`, `sender`), the purpose vocabulary, `invitationsEnabled`, the notice defaults, and the confirmation/reminder/follow-up builders.
+- `lit-app/schema/survey/email/emailMerge.ts`: The merge fields every survey email supports (`name`, `link`, `survey_title`, `organiser`), their fallbacks, and the placeholder substitution the builders share with invitations.
 - `app/app-survey/src/page/edit/deploy/email-sent.ts`: The Sent tab: an absolute `db-ref` list read of the survey's `emailSend` collection, rendered through `EmailSendE`.
 - `app/app-survey/src/entity/EmailSendE.ts`: The Sent-history Entity: the grid columns (when, message, recipients, sent, delivered, opened, failed) and the detail form, with the Progress link for started/submitted.
 - `lit-app/schema/survey/model/EmailSend.ts`: The `emailSend` model (kind, total/sent/failed counts, the provider's delivered/opened/bounced/complained/unsubscribed counters, server-stamped `at`, run id and purpose), its repository, the best-effort `recordEmailSend` each send action calls, and `recordInvitationFunnelDelta`, which the Mailgun webhook uses to mirror a run's funnel onto its row. The model is the type; there is no separate row struct.
@@ -21,7 +21,7 @@
 - `app/app-survey/functions/src/server-config.ts`: Declares the deployable's Mailgun keys; `MailService` is provided only when the key resolves.
 - `app/app-survey/src/entity/settings/BuildQuestion.ts`: The question settings picker that edits the same survey-level purposes and shows the notice they generate.
 - `app/app-survey/src/entity/question/emailPurposes.ts`: The purposes an editor can choose for the survey's email addresses.
-- `lit-app/schema/survey/respondentEmail.ts`: The reminder consent records (`RespondentEmail`), their retention window and the `ConsentNotice` wording the build carries.
+- `lit-app/schema/survey/email/respondentEmail.ts`: The reminder consent records (`RespondentEmail`), their retention window and the `ConsentNotice` wording the build carries.
 - `app/app-survey/renderer/field/respondent-email-optin-wrapper.ts`: The field's data side: subscribes to the respondent's own record through a document controller and writes a toggle directly; a test session toggles locally without reading or writing.
 - `app/app-survey/renderer/field/respondent-email-optin.ts`: The field's notice, consent checkboxes, state and inline feedback (presentation only).
 - `app/app-respondent/firestore.rules`: The respondent-database rules for `survey/{surveyId}/respondentEmail` — read-own and owner-write, with the send jobs verifying the session.
@@ -33,7 +33,7 @@
 - `app/app-survey/functions/src/reminderJob.ts`: The hourly scheduled function that runs the reminder job.
 - `lit-app/effect-model/service/mail/platformMail.ts`: The mail plumbing the confirmation, the reminders and the follow-ups share.
 - `app/app-survey/actionApi/src/services/followUp.ts`: The editor-triggered follow-up: the dry-run recipient count, the form opt-ins, the invited audience when invitations are on, the sends, and the expiry sweep.
-- `lit-app/schema/survey/followUp.ts`: The follow-up action's payload and result.
+- `lit-app/schema/survey/email/followUp.ts`: The follow-up action's payload and result.
 - `app/app-survey/src/entity/action/sendFollowUp.ts`: The `sendResults`/`sendFollowUpSurvey` actions and their confirmation dialog; the Email page renders them on their message tabs.
 - `lit-app/schema/survey/invitation.ts`: `INVITATION_MERGE_FIELDS`, `validateInvitationContent`, mandatory footer helpers (`invitationFooter`, `invitationReasonLine`, `reminderSubject`), and invitation schemas.
 - `app/app-survey/src/entity/action/actions.ts`: Survey action bindings including `sendEmailTestAction` for the per-message test send.
