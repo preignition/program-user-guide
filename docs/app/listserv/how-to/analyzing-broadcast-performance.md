@@ -24,6 +24,10 @@ The page lists every broadcast that reached the `sent` state in the current chan
 The **Opened** figure comes from a tracking image. Mail servers, security scanners and privacy proxies fetch that image without a person seeing the message, and email clients may prefetch it. A high open count is therefore an upper bound, not proof of reading. **Confirmed** is the human signal: a recipient pressed a button on a page reached from the email.
 :::
 
+::: info Provider prefetches are excluded
+A tracking-image fetch within two minutes of dispatch is treated as provider prefetch, not an open. The count is shown beneath **Opened** as **N prefetched**; those recipients are not counted in **Opened** or **Open Rate**, so a later real fetch can still count them. Broadcasts sent before this filter predate it and show every fetch. Fetches after the window can still come from scanners, so even the filtered open rate is an estimate; **Confirmed** remains the human floor.
+:::
+
 ---
 
 ## Step 2: Read the Summary
@@ -35,7 +39,7 @@ The summary tiles at the top of the page summarize every listed broadcast:
 | **Broadcasts Sent** | Number of sent broadcasts in the channel. |
 | **Total Emails Sent** | Sum of the unique subscriber addresses targeted across those broadcasts. |
 | **Avg Delivery Rate** | Average of `delivered / sent` across broadcasts with data. |
-| **Avg Open Rate** | Average of `opened / delivered`. Image fetches count. |
+| **Avg Open Rate** | Average of `opened / delivered`, after excluding provider prefetches inside the two-minute window. Legacy broadcasts use every fetch. |
 | **Avg Confirm Rate** | Average of `confirmed / delivered`, over the broadcasts that asked for confirmation. |
 | **Total Failures** | Recipients that never received the message, after the provider's retries. |
 
@@ -53,14 +57,14 @@ The summary tiles at the top of the page summarize every listed broadcast:
 | **Sent Date** | When the broadcast was dispatched. |
 | **Sent** | Unique subscriber addresses targeted at dispatch. It is not a count of provider delivery events. |
 | **Delivered** | Addresses whose mail server accepted the message. Delivery is not the same as reaching the inbox: a message can be filed as spam or quarantined afterwards. |
-| **Opened** | Addresses whose mail client fetched the tracking image, counted once per recipient. Scanners and proxies fetch it too. |
+| **Opened** | Addresses that fetched the tracking image after the two-minute provider-prefetch window, counted once per recipient. Early fetches are shown beneath as **N prefetched**. Scanners can still fetch after the window. |
 | **Confirmed** | Addresses that pressed the confirm-receipt link. Shown only for broadcasts that asked for confirmation; **—** otherwise. |
 | **Failed** | Addresses that never received the message. Temporary retries that eventually delivered are not counted. |
 | **Deliv. Rate** | `delivered / sent`. |
-| **Open Rate** | `opened / delivered`. |
+| **Open Rate** | `opened / delivered`, after excluding provider prefetches inside the two-minute window. |
 | **Confirm Rate** | `confirmed / delivered`, for broadcasts that asked for confirmation; **—** otherwise. |
 
-A confirm rate much lower than the open rate is expected. The two columns answer different questions: the open rate is a rough upper bound, while the confirm rate is a floor on the number of people who saw the message.
+A confirm rate much lower than the open rate is expected. The two columns answer different questions: the open rate is an estimate that still includes scanners and proxies, while the confirm rate is a floor on the number of people who saw the message.
 
 ---
 

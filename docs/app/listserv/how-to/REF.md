@@ -29,12 +29,15 @@
 
 - `app/app-listserv/src/page/admin/analytics.ts`: Analytics page with the summary tiles and the sent-only broadcast query.
 - `app/app-listserv/src/entity/AnalyticsEntity.ts`: Analytics grid columns (delivered, opened, confirmed, failed and rates) and the confirmation row detail.
+- `app/app-listserv/src/renderer/stats.ts`: Open-rate helpers that apply the provider-prefetch filter and render the prefetched count.
 - `app/app-listserv/src/renderer/broadcast-receipts.ts`: Per-broadcast list of recipients who confirmed receipt.
 - `app/app-listserv/src/page/admin/broadcast.ts`: Admin broadcast list component rendering delivery stats, response counts, and grid row details.
 - `app/app-listserv/functions/src/service/SubscriptionServiceLive.ts`: Validates the confirm link and records the receipt and `stats.confirmed`.
+- `app/app-listserv/functions/src/service/MailgunServiceLive.ts`: Classifies an early tracking-image fetch as provider prefetch, counts only later fetches as opens, and stores the provider timestamp on the raw event.
 - `api/src/apps/listserv/confirmPage.ts`: Script-free public page whose POST button records a confirmation.
 - `app/app-listserv/docs/adr/0002-disable-click-tracking.md`: ADR documenting click tracking disablement.
 - `app/app-listserv/docs/adr/0003-confirm-receipt-links.md`: ADR documenting the confirm-receipt link as the human engagement signal.
+- `app/app-listserv/docs/adr/0004-exclude-prefetch-from-opens.md`: ADR documenting the two-minute prefetch window and the filtered open count.
 
 ## Importing a Team Audience - importing-a-team-audience.md
 

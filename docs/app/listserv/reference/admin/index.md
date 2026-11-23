@@ -51,8 +51,8 @@ Open a row to read the full post before deciding. The category and score help tr
 | **Host** | Whether an administrator composed it in the app or a subscriber submitted it by email. |
 | **Created** | When the broadcast document was created. |
 | **Responses** | The number of subscriber replies in the thread. |
-| **Delivered / Opened / Failed** | Per-recipient counts from the delivery webhooks. |
-| **Deliv. Rate / Open Rate** | `delivered / sent` and `opened / delivered`. |
+| **Delivered / Opened / Failed** | Per-recipient counts from the delivery webhooks. **Opened** excludes provider prefetches inside the two-minute window; the excluded count appears beneath it. |
+| **Deliv. Rate / Open Rate** | `delivered / sent` and `opened / delivered`, with provider prefetches excluded from the open rate. |
 
 Expand a row for the broadcast editor, the email as subscribers receive it, and the full response thread. Both the expanded row and the broadcast detail show whether the optional confirmation link is on: **Confirm receipt** — **On** or **Off**.
 
@@ -87,7 +87,7 @@ The summary tiles cover every sent broadcast in the channel:
 | **Broadcasts Sent** | Number of sent broadcasts. |
 | **Total Emails Sent** | Sum of unique subscriber addresses targeted. |
 | **Avg Delivery Rate** | Average of `delivered / sent`. |
-| **Avg Open Rate** | Average of `opened / delivered`; the tracking-image fetches behind this figure include scanners and proxies. |
+| **Avg Open Rate** | Average of `opened / delivered`, after excluding provider prefetches inside the two-minute window. |
 | **Avg Confirm Rate** | Average of `confirmed / delivered`, over the broadcasts that asked for confirmation. |
 | **Total Failures** | Recipients that never received the message. |
 
@@ -98,10 +98,10 @@ The grid below the tiles lists each sent broadcast with:
 | **Sent Date** | When dispatch completed. |
 | **Sent** | Unique addresses targeted at dispatch. |
 | **Delivered** | Addresses accepted by their mail server. |
-| **Opened** | Addresses whose client fetched the tracking image, counted once per recipient. |
+| **Opened** | Addresses that fetched the tracking image after the two-minute provider-prefetch window, counted once per recipient; early fetches appear beneath as **N prefetched**. |
 | **Confirmed** | Addresses that pressed the confirm-receipt link; **—** when the broadcast did not ask. |
 | **Failed** | Addresses that never received the message. |
-| **Deliv. Rate / Open Rate / Confirm Rate** | The three ratios above, with **—** when the denominator is missing. |
+| **Deliv. Rate / Open Rate / Confirm Rate** | The three ratios above, with **—** when the denominator is missing. The open rate excludes provider prefetches. |
 
 Expanding a confirmation broadcast lists the recipients who pressed the button, with a "confirmed of delivered" count. Channel owners and editors can read that list; moderators cannot. Click tracking is not collected, so there is no click or click-through figure.
 
