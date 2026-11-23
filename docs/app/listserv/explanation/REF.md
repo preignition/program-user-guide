@@ -41,6 +41,14 @@
 - `app/app-listserv/src/renderer/broadcast-email-view.ts`: Client-side broadcast preview for live rendering.
 - `app/app-listserv/functions/src/service/htmlToMarkdown.ts`: Conversion utility stripping HTML tags and converting rich-text HTML emails to Markdown.
 
+## Measuring Broadcast Engagement - measuring-broadcast-engagement.md
+
+- `app/app-listserv/functions/src/service/MailgunServiceLive.ts`: Classifies a tracking-image fetch inside the two-minute window as provider prefetch, keeps the raw event, and advances the filtered open count only on a later fetch.
+- `lit-app/schema/listserv/model/Broadcast.ts`: Open statistics, `openedExcludingPrefetch`, and the open guard that moves a recipient from prefetch to a counted open.
+- `lit-app/schema/listserv/model/DeliveryEvent.ts`: Raw delivery event with the provider timestamp and prefetch flag.
+- `app/app-listserv/src/renderer/stats.ts`: Open-rate helpers that apply the prefetch filter and render the excluded count.
+- `app/app-listserv/docs/adr/0004-exclude-prefetch-from-opens.md`: Architectural Decision Record recording the evidence, the two-minute window and the trade-offs.
+
 ## User-facing internals moved out of Explanation
 
 - `app/app-listserv/notes/explanation-internals.md`: The implementation detail (storage, lifecycle machine, mail transport, claims, headers) that the Explanation pages no longer expose.

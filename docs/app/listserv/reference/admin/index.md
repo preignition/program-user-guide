@@ -111,3 +111,4 @@ Expanding a confirmation broadcast lists the recipients who pressed the button, 
 - [Channel Settings](../settings/index.md): Configuration and access roles.
 - [Moderating Community Submissions](../../how-to/moderating-community-submissions.md): Reviewing a submission.
 - [Analyzing Broadcast Performance](../../how-to/analyzing-broadcast-performance.md): Reading the metrics.
+- [Measuring Broadcast Engagement](../../explanation/measuring-broadcast-engagement.md): Why provider prefetches are excluded from the open count.

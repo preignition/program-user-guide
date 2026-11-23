@@ -71,7 +71,8 @@ function getSidebar() {
         { text: 'Bounce Handling & List Cleaning', link: 'bounce-handling-list-cleaning.md' },
         { text: 'Broadcast Responses & Threading', link: 'broadcast-responses-threading.md' },
         { text: 'Multilingual Support', link: 'multilingual-support.md' },
-        { text: 'Markdown Content Format', link: 'markdown-content-format.md' }
+        { text: 'Markdown Content Format', link: 'markdown-content-format.md' },
+        { text: 'Measuring Broadcast Engagement', link: 'measuring-broadcast-engagement.md' }
       ]
     }
   ]

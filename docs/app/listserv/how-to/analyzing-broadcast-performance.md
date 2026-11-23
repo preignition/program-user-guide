@@ -25,7 +25,7 @@ The **Opened** figure comes from a tracking image. Mail servers, security scanne
 :::
 
 ::: info Provider prefetches are excluded
-A tracking-image fetch within two minutes of dispatch is treated as provider prefetch, not an open. The count is shown beneath **Opened** as **N prefetched**; those recipients are not counted in **Opened** or **Open Rate**, so a later real fetch can still count them. Broadcasts sent before this filter predate it and show every fetch. Fetches after the window can still come from scanners, so even the filtered open rate is an estimate; **Confirmed** remains the human floor.
+A tracking-image fetch within two minutes of dispatch is treated as provider prefetch, not an open. The count is shown beneath **Opened** as **N prefetched**; those recipients are not counted in **Opened** or **Open Rate**, so a later real fetch can still count them. Broadcasts sent before this filter predate it and show every fetch. Fetches after the window can still come from scanners, so even the filtered open rate is an estimate; **Confirmed** remains the human floor. See [Measuring Broadcast Engagement](../explanation/measuring-broadcast-engagement.md) for why the window works this way.
 :::
 
 ---
@@ -97,6 +97,7 @@ In accordance with our privacy-first principles and [ADR 0002](../explanation/RE
 
 ## Related Content
 
+- [Measuring Broadcast Engagement](../explanation/measuring-broadcast-engagement.md): Why provider prefetches are filtered and what opens and confirmations can tell you.
 - [Creating & Sending Broadcasts](./creating-and-sending-broadcasts.md)
 - [Mailing List & Digest Engine Explanation](../explanation/mailing-list-and-digest-architecture.md)
 - [Broadcast Responses & Threading Explanation](../explanation/broadcast-responses-threading.md)

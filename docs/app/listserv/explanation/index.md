@@ -44,6 +44,12 @@ How replies find their broadcast, who can take part, why digest subscribers cann
 
 Why broadcasts are written in Markdown, how they become email HTML, and what translation preserves.
 
+## Measuring Results
+
+### [Measuring Broadcast Engagement](./measuring-broadcast-engagement.md)
+
+Why the dashboard filters provider prefetches from the open count, how the two-minute window works, and what opens and confirmations can and cannot tell you.
+
 ## Related Content
 
 - [Tutorials](../tutorial/index.md): Guided walkthroughs for subscribers and administrators.
