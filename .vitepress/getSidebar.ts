@@ -48,7 +48,7 @@ export function getSidebar() {
         { text: "Overview", link: "index" },
         {
           text: "Survey App",
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               text: "Analytics & Behavior (2.4.0)",
@@ -90,8 +90,12 @@ export function getSidebar() {
         },
         {
           text: "Listserv App",
-          collapsed: false,
+          collapsed: true,
           items: [
+            {
+              text: "Know Who Received It (1.2.0)",
+              link: "2026-11-23-listserv-confirm-receipts",
+            },
             {
               text: "Audience Import (1.1.0)",
               link: "2026-11-03-listserv-audience-import",
@@ -100,7 +104,7 @@ export function getSidebar() {
         },
         {
           text: "Customer Portal & API",
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               text: "Team API Keys & Endpoints (1.2.0)",
@@ -110,7 +114,7 @@ export function getSidebar() {
         },
         {
           text: "Shared Components",
-          collapsed: false,
+          collapsed: true,
           items: [
             {
               text: "Theme-Aware Markdown (1.1.6)",
