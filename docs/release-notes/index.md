@@ -24,6 +24,7 @@ Stay up to date with the latest improvements and features across the Accessible 
 
 ## Listserv App
 
+* **[Know Who Actually Received Your Broadcast (1.2.0)](./2026-11-23-listserv-confirm-receipts.md)**: Ask recipients to confirm receipt with an optional per-broadcast link, track **Confirmed** and **Confirm Rate** in analytics, and read open counts that exclude provider prefetches.
 * **[Audience Import for Listserv Channels (1.1.0)](./2026-11-03-listserv-audience-import.md)**: Seed a channel from a reusable team Audience in Channel Settings → Audience Import, preview every recipient outcome before committing, record an explicit consent warranty, and audit every run in a privacy-first import history.
 
 ## Shared Components
