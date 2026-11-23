@@ -54,7 +54,7 @@ Open a row to read the full post before deciding. The category and score help tr
 | **Delivered / Opened / Failed** | Per-recipient counts from the delivery webhooks. |
 | **Deliv. Rate / Open Rate** | `delivered / sent` and `opened / delivered`. |
 
-Expand a row for the broadcast editor, the email as subscribers receive it, and the full response thread.
+Expand a row for the broadcast editor, the email as subscribers receive it, and the full response thread. Both the expanded row and the broadcast detail show whether the optional confirmation link is on: **Confirm receipt** — **On** or **Off**.
 
 ## Subscribers
 

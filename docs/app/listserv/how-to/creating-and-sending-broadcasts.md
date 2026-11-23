@@ -34,6 +34,8 @@ Channel staff (`owner`, `editor`, `moderator`) and the channel's signed-in subsc
 3. Compose the body using **Markdown**. Headings (`# Title`), bold (`**text**`), links (`[label](url)`), lists and blockquotes are supported.
 4. Optionally tick **Add a 'confirm you received this' link**. The email footer then asks recipients to confirm receipt, and the analytics page shows how many confirmed and who they are. Leave it off when you do not need that signal.
 
+The broadcast detail shows the current setting as **Confirm receipt** — **On** or **Off** — so you can check it without opening the editor.
+
 ::: tip Choose confirmation deliberately
 Confirmation is a human action: the recipient opens a page and presses a button. It is the only metric that distinguishes a person from a mail scanner or a privacy proxy fetching the tracking image. It asks the recipient for an extra step, so use it on broadcasts where reach matters, not on every routine message.
 :::
