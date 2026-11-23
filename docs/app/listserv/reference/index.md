@@ -20,6 +20,7 @@ Specifications for administrative dashboards guarded by team roles:
 - **Admin Welcome (`/admin/welcome`)**: Control panel landing page
 - **Moderation Queue (`/admin/moderation`)**: Community post review interface with AI widgets
 - **Broadcast List & Detail (`/admin/broadcast`)**: Broadcast creation, editing, and analytics
+- **Analytics (`/admin/analytics`)**: Sent-broadcast delivery, open and confirmation metrics
 - **Subscribers List (`/admin/subscriber`)**: Subscriber status and delivery list auditing
 
 ### 3. [Channel Settings](./settings/index.md)

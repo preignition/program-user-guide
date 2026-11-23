@@ -39,7 +39,7 @@ How-to guides are recipes: each one solves a specific task for a subscriber or a
 ### Analytics & Settings
 
 - **[Analyzing Broadcast Performance](./analyzing-broadcast-performance.md)**
-  Read delivery and open rates, response counts, and language-segmented metrics.
+  Read delivery, open and confirmation metrics, find out who confirmed receipt, and review replies.
 - **[Configuring Channel Settings](./configuring-channel-settings.md)**
   Configure identity, active languages, bounce cleaning, rate limits and access roles.
 

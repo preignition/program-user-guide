@@ -16,6 +16,9 @@
 
 - `app/app-listserv/src/page/admin/broadcast-detail.ts`: Admin detail editor for creating, formatting, and submitting broadcasts.
 - `app/app-listserv/functions/src/machine/send.ts`: Server-side send actor program invoking Mailgun mailing list distribution and status updates.
+- `app/app-listserv/functions/src/machine/renderBroadcastBody.ts`: Builds the HTML and text footer, including the optional confirm-receipt link.
+- `lit-app/schema/listserv/model/Broadcast.ts`: Broadcast and receipt models; the `confirmReceipt` opt-in and the `confirmed` stat.
+- `lit-app/schema/listserv/confirm.ts`: Signed confirm-receipt link and its token input.
 
 ## Moderating Community Submissions - moderating-community-submissions.md
 
@@ -24,8 +27,14 @@
 
 ## Analyzing Broadcast Performance - analyzing-broadcast-performance.md
 
+- `app/app-listserv/src/page/admin/analytics.ts`: Analytics page with the summary tiles and the sent-only broadcast query.
+- `app/app-listserv/src/entity/AnalyticsEntity.ts`: Analytics grid columns (delivered, opened, confirmed, failed and rates) and the confirmation row detail.
+- `app/app-listserv/src/renderer/broadcast-receipts.ts`: Per-broadcast list of recipients who confirmed receipt.
 - `app/app-listserv/src/page/admin/broadcast.ts`: Admin broadcast list component rendering delivery stats, response counts, and grid row details.
+- `app/app-listserv/functions/src/service/SubscriptionServiceLive.ts`: Validates the confirm link and records the receipt and `stats.confirmed`.
+- `api/src/apps/listserv/confirmPage.ts`: Script-free public page whose POST button records a confirmation.
 - `app/app-listserv/docs/adr/0002-disable-click-tracking.md`: ADR documenting click tracking disablement.
+- `app/app-listserv/docs/adr/0003-confirm-receipt-links.md`: ADR documenting the confirm-receipt link as the human engagement signal.
 
 ## Importing a Team Audience - importing-a-team-audience.md
 

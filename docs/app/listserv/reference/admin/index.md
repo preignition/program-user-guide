@@ -47,12 +47,14 @@ Open a row to read the full post before deciding. The category and score help tr
 | Column | What it shows |
 | --- | --- |
 | **Title** | The broadcast subject. |
-| **Status** | Draft, submitted, approved, sending, sent or rejected. |
-| **Origin** | Whether an administrator wrote it or a community member submitted it. |
-| **Sent date** | When dispatch completed. |
+| **Status** | Draft, submitted, detecting language, translating, moderated, rejected, sending or sent. |
+| **Host** | Whether an administrator composed it in the app or a subscriber submitted it by email. |
+| **Created** | When the broadcast document was created. |
 | **Responses** | The number of subscriber replies in the thread. |
+| **Delivered / Opened / Failed** | Per-recipient counts from the delivery webhooks. |
+| **Deliv. Rate / Open Rate** | `delivered / sent` and `opened / delivered`. |
 
-Expand a row for the broadcast editor, the language versions and the delivery and open metrics.
+Expand a row for the broadcast editor, the email as subscribers receive it, and the full response thread.
 
 ## Subscribers
 
@@ -78,14 +80,30 @@ Administrators can change status, delivery mode and vacation mode for an individ
   <figcaption>Channel-level delivery and engagement metrics.</figcaption>
 </figure>
 
-| Metric | What it measures |
-| --- | --- |
-| **Total sent** | Broadcasts dispatched across the channel. |
-| **Delivery rate** | Share of dispatched messages accepted by recipient servers. |
-| **Open rate** | Share of delivered broadcasts opened, counting each recipient once per broadcast. |
-| **Responses** | Replies received across broadcasts. |
+The summary tiles cover every sent broadcast in the channel:
 
-Metrics can be filtered by language to compare engagement between language communities. Click tracking is not collected, so there is no click or click-through figure.
+| Tile | What it measures |
+| --- | --- |
+| **Broadcasts Sent** | Number of sent broadcasts. |
+| **Total Emails Sent** | Sum of unique subscriber addresses targeted. |
+| **Avg Delivery Rate** | Average of `delivered / sent`. |
+| **Avg Open Rate** | Average of `opened / delivered`; the tracking-image fetches behind this figure include scanners and proxies. |
+| **Avg Confirm Rate** | Average of `confirmed / delivered`, over the broadcasts that asked for confirmation. |
+| **Total Failures** | Recipients that never received the message. |
+
+The grid below the tiles lists each sent broadcast with:
+
+| Column | What it shows |
+| --- | --- |
+| **Sent Date** | When dispatch completed. |
+| **Sent** | Unique addresses targeted at dispatch. |
+| **Delivered** | Addresses accepted by their mail server. |
+| **Opened** | Addresses whose client fetched the tracking image, counted once per recipient. |
+| **Confirmed** | Addresses that pressed the confirm-receipt link; **—** when the broadcast did not ask. |
+| **Failed** | Addresses that never received the message. |
+| **Deliv. Rate / Open Rate / Confirm Rate** | The three ratios above, with **—** when the denominator is missing. |
+
+Expanding a confirmation broadcast lists the recipients who pressed the button, with a "confirmed of delivered" count. Channel owners and editors can read that list; moderators cannot. Click tracking is not collected, so there is no click or click-through figure.
 
 ## Related Content
 

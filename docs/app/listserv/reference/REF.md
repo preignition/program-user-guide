@@ -12,6 +12,8 @@
 - `app/app-listserv/src/page/admin/welcome.ts`: Admin landing panel describing administrative functions.
 - `app/app-listserv/src/page/admin/moderation.ts`: Moderation Queue component filtering submitted broadcasts for review.
 - `app/app-listserv/src/page/admin/broadcast.ts`: Reactive grid component listing channel broadcasts and threaded responses.
+- `app/app-listserv/src/page/admin/analytics.ts`: Analytics page with summary tiles, the sent-only broadcast grid and the confirmation row detail.
+- `app/app-listserv/src/entity/AnalyticsEntity.ts`: Column, rate and confirmation-detail configuration for the analytics grid.
 - `app/app-listserv/src/page/admin/subscriber.ts`: Subscriber management grid showing status and delivery lists.
 
 ## Channel Settings Specification - settings/index.md
